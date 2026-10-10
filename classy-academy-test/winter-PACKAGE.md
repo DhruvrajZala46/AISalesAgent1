@@ -88,7 +88,7 @@ coat outfit, The Classy Elegance
 ## Round 2 — three new thumbnails built on the niche's proven outlier patterns
 
 I ranked 1,371 videos from 36 niche channels by how far each beat **its own channel's usual views**
-(the  method) and studied the 48 biggest long-form outliers (2.5× to 22×). What they share:
+(the `yt-viral` method) and studied the 48 biggest long-form outliers (2.5× to 22×). What they share:
 
 1. **A face looking at the viewer, cut out with a white outline**, over a soft or collage background
    (Julianna Lee "elegant / classy" 13×, "effortlessly feminine" 12×).
