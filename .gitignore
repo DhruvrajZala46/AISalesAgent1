@@ -1,3 +1,4 @@
 # Rendered media contains third-party footage; keep it out of the repo
 classy-academy-test/*.mp4
 classy-academy-test/*.jpg
+classy-academy-test/*.mp4
