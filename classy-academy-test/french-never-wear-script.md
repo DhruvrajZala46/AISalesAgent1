@@ -10,7 +10,7 @@ invented.
 
 **Title:** 7 Things Elegant French Women Never Wear (title.py **100/100**, 40 characters). It mirrors
 the channel's all-time #1 format, "8 Things Elegant Ladies Never Wear" (1.24M views, 9.1×).
-**Runtime:** 1,197 spoken words in 68 beats. That's 7:59 at the skill's 150 wpm, or about **9:30 at the channel's calm 126 wpm**.
+**Runtime:** 1,295 spoken words in 71 beats. That's 8:38 at the skill's 150 wpm, or about **10:17 at the channel's calm 126 wpm**.
 
 ---
 
@@ -76,6 +76,12 @@ cobblestones; quick cut to sky-high stilettos on a closet shelf; a script "7" wr
 **Instead of stilettos, elegant French women tend to reach for ballet flats, loafers, or a low kitten heel or block heel when they want a little height.**
 [ON SCREEN: cut-outs float in one per item: ballet flats, loafers, kitten heel, block heel]
 
+**French style isn't against heels. As one Parisian style creator explains, a heel up to about seven centimetres reads as elegant, and a wider heel feels more classic than a thin one.**
+[ON SCREEN: pair: a low block heel walking | a kitten heel on a stair; white script "up to 7 cm"]
+
+**And the opposite is true too. Shoes chosen only for comfort, bulky and heavy, can weigh down even a lovely outfit. The answer is elegant comfort: a soft leather loafer, or a supportive ballet flat.**
+[ON SCREEN: compare: "Heavy" (a thick padded shoe) | "Elegant comfort" (soft leather loafers on the same trousers)]
+
 **A pair of navy ballet flats or camel loafers is a timeless classic. It goes with almost everything, and you may already own one.**
 [ON SCREEN: macro of navy ballet flats, then camel loafers stepping out of a doorway]
 
@@ -92,7 +98,7 @@ cobblestones; quick cut to sky-high stilettos on a closet shelf; a script "7" wr
 **But in France, most women don't wear them out and about, except for a quick errand on the way home from the gym. French style means making a small effort, even for errands.**
 [ON SCREEN: centred clip, a woman doing errands at a market in a knit and trousers]
 
-**It's not about dressing up. It's about looking like you chose your outfit, not just grabbed it.**
+**It's not about dressing up. It's about looking like you chose your outfit, not just grabbed it. Dressing well on an ordinary day is a quiet way of respecting yourself.**
 [ON SCREEN: compare: "Grabbed" (sweatpants + hoodie) | "Chosen" (jeans + soft knit + loafers)]
 
 **Instead, try straight-leg jeans, a soft knit and loafers. Just as comfortable, and so much more polished.**
@@ -158,6 +164,9 @@ cobblestones; quick cut to sky-high stilettos on a closet shelf; a script "7" wr
 
 **French women tend to look put together even in the simplest outfits, because their clothes are clean, pressed and properly tailored.**
 [ON SCREEN: row: an iron gliding over a white shirt, clean loafers, a tailor pinning a hem]
+
+**Too tight, and the clothes cling. Too loose, and they hide you. Both pull attention away from you.**
+[ON SCREEN: pair: a clinging knit dress | a shapeless oversized coat; then one softly fitted blazer]
 
 **It's not about size. It's about fit.**
 [ON SCREEN: row of three women of different sizes and ages, each in perfectly fitted trousers]
@@ -264,6 +273,35 @@ cobblestones; quick cut to sky-high stilettos on a closet shelf; a script "7" wr
 
 ---
 
+## Proof: the tips INSIDE the winning videos, and in our comments
+
+The title won in the niche, but the tips inside matter more. So the transcripts of 16 winning
+videos were read (French style and never-wear, 2.5× to 22.9×, 40,483 words; 2 more, incl. the 24.5×, had no captions available; public captions only),
+and each of our 7 points was looked for inside them. Then the same 7 were checked against our own
+2,685 comments.
+
+| Our point | Taught inside these winners | What our viewers say (likes) |
+|---|---|---|
+| 1 Heels you can't walk in | **20.2×** French Women Over 50 Never Wear (chunky comfort shoes → loafers, low block heels, ballet flats) · **21.7×** French Dressing Rules (heels up to 7 cm read elegant) · **16.2×** 19 Things Over 50 (bulky comfort flats → a loafer) · 6.0× 5 Shoes French Women Over 60 · niche: "shoes for women who hate heels" 32.5× | "Timeless shoes over sneakers (loafers, ballet flats…)" in the top summary comment (210) |
+| 2 Gym clothes as an outfit | **20.2×** (athleisure everywhere: "dressing well is self-respect") · **22.8×** Clothes After 50 Are Aging You (comfort over style) · **16.2×** (thin shiny leggings) · **22.9×** 10 Casual Pieces (casual pants) | "We should love ourselves enough to look good… at home alone or out and about" (171) |
+| 3 A perfectly matching outfit | **20.2×** (matching tweed sets → break up the set) · **16.3×** She's 68 in Paris (Inès: "the deliberate clash") · **16.2×** (matching jewellery sets) · 3.1× She's 68 (nothing should match) | Our #1 video's swaps; "according to your own cultural norms" (263) |
+| 4 Too much jewellery | **16.9×** 10 Things Elegant Ladies Never Wear (jewellery stacks) · **16.3×** (accessories until they start aging the outfit) · **16.2×** (matching statement jewellery) · **21.7×** (limit the elements in an outfit) · **22.8×** ("curated sparkle") | Jewellery and accessories: 30 comments, 431 likes ("jewelry of balanced sizing", 210) |
+| 5 Clothes that don't fit | **20.2×** (tight → "the secret is fit, not tight") · **22.8×** (baggy, ill-fitting) · **16.3×** (a basic is only as good as its fit) · **21.7×** (never all skinny or all baggy; ironed clothes) · 4.5× French Women Get More Beautiful With Age (Mademoiselle Spends) ("fit is more important than the size on the label") | "structured tailoring" · the channel's #1 reason in its own scripts (fit, 200) |
+| 6 Shiny synthetic fabrics | **21.7×** (natural materials look expensive, artificial ones cheap) · **16.9×** (artificial fabrics) · **16.2×** (cheap shiny polyester blouses) · **22.8×** (cheap-looking fabrics) | Fabric and quality: 28 comments, 542 likes · "not about being expensive… but dressing refined" (61) |
+| 7 A style frozen in time | **20.2×** ("the most important one": clothes from a different era of your life) · **22.8×** (outdated trends) · 6.5× 10 Mistakes That Make You Look Older (outdated cuts) · 4.5× (they adapt how they dress) | "Even though I am 74… elegance should not end with age" (268) · "evolved into my 40s as a woman with class" (292) |
+
+**What the winners teach that we left out, and why:**
+- **Loud prints** (in 4 winners): too close to the bright-colour red line. The 667-like comment says bright
+  colours belong to many cultures, and the same is true of prints.
+- **Logos** (in 3 winners): our viewers love this one (732 likes), but our #1 video already made it
+  point 1. Here it gets one line in the turn ("no flashy outfit, no logos").
+
+**Edits made from this read:** point 1 now covers both sides for our 40-70+ viewers (the low-heel
+rule, plus "elegant comfort" instead of heavy shoes). Point 2 adds "a quiet way of respecting
+yourself". Point 5 covers too tight and too loose.
+
+---
+
 ## How the channel's DNA is used (where each point's thinking comes from)
 
 | Point | The channel's own "why" (from 29 transcripts) | The move | Source of the tip |
@@ -307,17 +345,19 @@ likes. So every point ends in one clean, repeatable rule: "walk with ease", "gym
 | 1 | 5+ hooks written against the 21 formulas, scored, top 2 shown (yt-script) | A **93 STRONG** (The Warning), B 77 STRONG (The Question) |
 | 2 | Hook confirms the title, opens a question, pays off early (yt-script) | Title words "7 / elegant French women / never wear"; "why is number 1 in your closet?" is answered in point 1, about a minute in; heels on screen in the first seconds |
 | 3 | Turn: what the video does, no channel intro or subscribe pitch (yt-script) | Pass: the channel's own #1-video opener ("Have you ever seen a woman…", "isn't accidental", "what she knows not to") |
-| 4 | Body: one idea per beat, `[ON SCREEN]` on every beat (yt-script) | 68 beats, 0 missing |
+| 4 | Body: one idea per beat, `[ON SCREEN]` on every beat (yt-script) | 71 beats, 0 missing |
 | 5 | Payoff delivered explicitly (yt-script) | "So, the seven things…" recap of all 7, plus the 5-piece capsule they wear instead |
 | 6 | Close: one ask (yt-script) | One: "Which of these French rules will you try first? Tell us in the comments." |
-| 7 | Never invent a number, result or source (yt-script) | No statistics. Numbers spoken: 7, 1, three pieces (sourced), forty / thirties (sourced). Every French tip is in the sources below |
-| 8 | Runtime at 150 wpm (yt-script) | 7:59 at 150 wpm; about 9:30 at the channel's 126 wpm |
+| 7 | Never invent a number, result or source (yt-script) | No statistics. Numbers spoken: 7, 1, seven centimetres (sourced), three pieces (sourced), forty / thirties (sourced). Every French tip is in the sources below |
+| 8 | Runtime at 150 wpm (yt-script) | 8:38 at 150 wpm; about 10:17 at the channel's 126 wpm |
 | 9 | Title linted (yt-package title.py) | **100/100**, 40 characters |
 | 10 | Channel voice, from 29 own transcripts | All markers present: In today's video, Some of these may surprise you… you'll never unsee them, Let's get started, We get it (2), It's not about… It's about (2), the secret (2), True elegance whispers. It doesn't shout., instead (5), timeless (4), effortless, polished, quiet, stylist guide, Until next time, bye everyone |
-| 11 | Audience fit: tip type and red lines (fit.py, 29 transcripts + 2,685 comments) | **FITS THE CHANNEL**. Runway 0.00, luxury brands 0.00, trend 0.83 (channel 0.48, under the limit), timeless 5.79 (channel 3.37), colour names 7.44 (2.70). Red lines: none |
-| 12 | What viewers ask for (comments) | Budget 4.14 per 1,000 words (channel 0.67), "you may already own" 3.31 (0.24), any age 1.65 (0.03); women of all ages, sizes and skin tones on screen |
+| 11 | Audience fit: tip type and red lines (fit.py, 29 transcripts + 2,685 comments) | **FITS THE CHANNEL**. Runway 0.00, luxury brands 0.00, trend 0.77 (channel 0.48, under the limit), timeless 6.12 (channel 3.37), colour names 6.89 (2.70). Red lines: none |
+| 12 | What viewers ask for (comments) | Budget 3.83 per 1,000 words (channel 0.67), "you may already own" 3.06 (0.24), any age 1.53 (0.03); women of all ages, sizes and skin tones on screen |
 | 13 | Channel stance, in its own words | "That doesn't mean chasing every trend." "True elegance whispers." "It's not about size. It's about fit." "Elegance has no age." |
-| 14 | Length in the channel range (1,100–1,600 words) | 1,197 words |
+| 14 | Length in the channel range (1,100–1,600 words) | 1,295 words |
+| 15 | The tips INSIDE the winning videos, not just the title (yt-viral read on 16 winner transcripts) | All 7 points are taught inside 4 to 6 of the winners each, including the exact-match 20.2× video (see "Proof" above) |
+| 16 | Each tip matched to what our viewers like and quote (2,685 comments) | Every point maps to a liked comment theme; prints and logos left out for audience reasons (see "Proof") |
 
 ---
 
@@ -350,3 +390,8 @@ likes. So every point ends in one clean, repeatable rule: "walk with ease", "gym
   - most people don't wear athletic wear out and about, except a quick errand on the way home from the gym
   - "clean shoes, clothes that are ironed… and that fit well (properly tailored!)"
   - "not every French woman dresses the same way" (there are always exceptions)
+- Winning YouTube videos read for the "Proof" table (public captions): "French Women Over 50 Never Wear
+  These 7 Things" (Chic & Elegant Fashion 50+, https://youtu.be/syZYFpPz-C0); "French Dressing Rules
+  EVERYONE Should Learn" (Mademoiselle Spends, https://youtu.be/DHpCvqbY2ho: heels up to 7 cm,
+  wider heels more classic); "19 Things Women Over 50 Should NEVER Wear!" (Elvira Hartwell,
+  https://youtu.be/A3rY2G2mYMQ: bulky comfort flats → a loafer); plus 13 more listed in the research notes.
