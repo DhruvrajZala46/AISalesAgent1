@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""rank.py - rank collected.json with yt-viral's multiple-over-own-median, then cut it the way that found
+"""rank.py - rank collected.json with the youtube-agent yt-viral multiple-over-own-median (swipe.py, MIT), then cut it the way that found
 the winter video and the 'Winter 2026 Trends' idea.
 
     python3 rank.py OUT_DIR [--today 2026-10-11] [--own "Classy Academy,TheClassyElegance"]
@@ -14,7 +14,7 @@ import json, os, re, sys, subprocess, datetime, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SWIPE = os.path.join(HERE, '..', '..', 'yt-viral', 'swipe.py')
+SWIPE = os.path.join(HERE, 'swipe.py')
 out_dir = sys.argv[1] if len(sys.argv) > 1 and not sys.argv[1].startswith('--') else '.'
 arg = lambda k, d: sys.argv[sys.argv.index(k) + 1] if k in sys.argv else d
 today = datetime.date.fromisoformat(arg('--today', datetime.date.today().isoformat()))
