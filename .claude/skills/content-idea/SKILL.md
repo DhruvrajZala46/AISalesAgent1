@@ -5,7 +5,8 @@ description: >-
   from a guess. Collects fresh public video lists from the niche's channels, ranks
   every video by how far it beat its OWN channel's median views, cuts the results
   by our lane, the last 6 months, the same season last year and our own audience,
-  then hands back 3 ideas with their evidence and linted titles. Use for
+  checks every idea for audience fit against the channel's own transcripts and
+  comments, then hands back 3 ideas with their evidence and linted titles. Use for
   "content-idea", "find my next video idea", "what should I make next", "what's
   trending in my niche", "topic research".
 ---
@@ -24,6 +25,8 @@ W=<session scratchpad>/idea; mkdir -p $W; T=.claude/skills/content-idea/tools
 python3 $T/collect.py $W                         # fresh lists from every channel in channels.json
 python3 $T/rank.py $W --today $(date +%F)        # multiples, formulas, the four cuts, thumbnail sheet
 python3 $T/title.py $W/titles.txt                # lint the candidate titles
+python3 $T/fit.py idea "Title one" "Title two"   # audience fit: does OUR audience want this topic?
+python3 $T/fit.py check script.md --expect trend # audience fit for the script written from the idea
 python3 $T/discover.py $W                        # optional: niche channels we don't track yet
 ```
 
@@ -69,7 +72,48 @@ idea.
 5. **Don't repeat ourselves.** If cut C shows we covered it in the last few months, change the
    angle or drop it.
 
-## Step 5 - Write the 3 ideas
+## Step 5 - Audience fit: what THIS channel's viewers love
+
+The multiple says the niche wants a topic. It does not say **our** viewers want it, or that the tips
+inside are the kind the channel is known for. A hot topic told the wrong way upsets the audience
+that built the channel. So every idea passes this step before it's shown to the user.
+
+The baseline is the channel's own words: `audience/transcripts/` (29 own videos with views) and
+`audience/dna.json` (tip-type rates plus 2,685 comment themes). See it with `python3 $T/fit.py
+profile`. What it says today:
+- **What we teach:** timeless principles and simple swaps ("instead of X, try Y", named pieces and
+  colours). Not fashion news: "runway" is 0.46 per 1,000 words, luxury brands almost never.
+- **Our stance on trends, in our own words:** "Elegant women don't chase every trend." "It's all
+  about choosing quality over trends." "If a cute trend pops up that you love, get it."
+- **What viewers reward:** the calm voice (255 comments), asking for part two (253), timeless
+  advice, budget, women 40-70+ ("I am 74… elegance should not end with age"), sharing with
+  daughters and friends.
+- **Red lines:**
+  - calling a colour "not elegant" (667- and 424-like pushback)
+  - saying quiet luxury is over
+  - shaming or rich-vs-poor language
+  - statistics
+
+For each idea, run `fit.py idea "<title>"` and report:
+1. **Our audience on this topic:** the closest own videos and their median multiple. Example: habits
+   / presence = 2.5×, seasonal wardrobe = 0.8×. Put this next to the niche multiple. A topic the
+   niche loves but our viewers have rewarded below 1× must be flagged plainly to the user, never
+   hidden.
+2. **The lens:** if the idea touches trends, news or luxury, write how it will be told through the
+   channel's stance (for trends: "don't chase, choose what works for you", with the timeless version
+   you may already own).
+3. **Red lines in the title:** none allowed.
+
+When an idea becomes a script, the script must pass `fit.py check script.md` (use `--expect` for the
+topic word, e.g. `trend`) with **"FITS THE CHANNEL"** before it goes to the user. The winter-trends
+script went from "6 things to fix" (runway talk at 20× the channel's level, "the end of quiet
+luxury", a ✕ on bright violet) to FITS after it was rewritten through the channel's lens.
+
+Refresh the baseline when new videos are out: add their transcripts to `audience/transcripts/`
+(first line `# <title>`, second line `# views=<n> date=<yyyymmdd> id=<id>`), then run
+`python3 $T/fit.py build`.
+
+## Step 6 - Write the 3 ideas
 
 For each idea:
 - **A working title.** Write at least 6 titles across the ideas into `titles.txt`, run
@@ -77,9 +121,11 @@ For each idea:
   number, the subject up front, no vague adjectives.
 - **The evidence.** The exact outliers behind it: multiple, views, channel, title.
 - **Why now**, in one line (the season, a live trend wave, or our audience).
+- **Audience fit**, in one line: our audience's multiple on this topic, and the lens if needed.
 - **The promise**, in one sentence: what the viewer gets.
 
-Rank the three by strength of evidence, not by taste. **Never invent** a multiple, a view count or
+Rank the three by strength of evidence (niche multiple **and** our audience's multiple), not by
+taste. When the two disagree, say so, and give the timing reason if a seasonal idea goes first. **Never invent** a multiple, a view count or
 a trend. Every number must come from this run's output.
 
 ## What to hand back
@@ -88,7 +134,7 @@ a trend. Every number must come from this run's output.
    and videos, today's date).
 2. The **right now** table and the **season** table: the top 5 each, with multiples.
 3. The one shared structure.
-4. The 3 ideas, ranked, each with its title score and evidence. Star the first one.
+4. The 3 ideas, ranked, each with its title score, evidence and audience fit. Star the first one.
 5. Honest limits: publish dates are month-accurate; older videos have had more time to collect
    views (so recent high multiples are even stronger than they look); the formula label describes
    the title, not why the video worked.
