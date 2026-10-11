@@ -108,12 +108,13 @@ def idea(titles):
     d = json.load(open(DNA)); STOP = set('the a an of for to in on and or is are with your you my i this that it how what why things never wear that make look elegant ladies women'.split())
     for t in titles:
         tw = toks(t, STOP)
-        near = sorted(((len(tw & toks(v['title'], STOP)), v) for v in d['videos']), key=lambda x: (-x[0], -x[1]['multiple']))
-        near = [v for n, v in near if n][:4]
+        # ALL own videos that share a topic group or 2+ words: never just the closest few (that flatters)
+        near = [v for v in d['videos'] if len(tw & set(GROUPS) & toks(v['title'], STOP)) >= 1 or len((tw - set(GROUPS)) & toks(v['title'], STOP)) >= 2]
         print(f'\n  "{t}"')
         if near:
-            print('    closest of your own videos:'); [print(f"      {v['multiple']:4.1f}x  {v['title']}") for v in near]
-            ms = [v['multiple'] for v in near]; print(f'    your audience on this topic: median {statistics.median(ms):.1f}x your usual views')
+            ms = sorted((v['multiple'] for v in near), reverse=True)
+            print(f'    your audience on this topic: {len(near)} of your videos, median {statistics.median(ms):.1f}x your usual views  [all: {", ".join(f"{m:.1f}" for m in ms)}]')
+            for v in sorted(near, key=lambda v: -v['multiple'])[:3]: print(f"      {v['multiple']:4.1f}x  {v['title']}")
         else: print('    none of your videos are close: new ground. Check it against the channel stance before committing.')
         if re.search(r'trend|runway|2026|2027|new|latest', t, re.I):
             print('    stance: you teach "don\'t chase every trend, choose what works for you". Tell this idea through that lens.')

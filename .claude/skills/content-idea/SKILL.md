@@ -25,6 +25,8 @@ W=<session scratchpad>/idea; mkdir -p $W; T=.claude/skills/content-idea/tools
 python3 $T/collect.py $W                         # fresh lists from every channel in channels.json
 python3 $T/rank.py $W --today $(date +%F)        # multiples, formulas, the four cuts, thumbnail sheet
 python3 $T/title.py $W/titles.txt                # lint the candidate titles
+python3 $T/swipe.py $W/collected.json --min 0 --json > $W/all.json
+python3 $T/shapes.py $W [comments.json]          # winners grouped into shapes, scored 3 ways
 python3 $T/fit.py idea "Title one" "Title two"   # audience fit: does OUR audience want this topic?
 python3 $T/fit.py check script.md --expect trend # audience fit for the script written from the idea
 python3 $T/discover.py $W                        # optional: niche channels we don't track yet
@@ -62,14 +64,23 @@ idea.
 ## Step 4 - Read it like an editor
 
 1. **Drop the off-lane rows** even when the multiple is huge (mindset, beauty-only, men's).
-2. **Name the one structural thing** the top lane outliers share. Example from 11 Oct 2026: "a
+2. **Group the winners into shapes, don't pick from the top of the list.** Run `shapes.py`. A shape
+   (topic + format) counts only when winners come from **several channels**: one channel at 50× is
+   that channel, five channels at 10×+ is a shape. Each shape is scored on niche proof, our
+   audience (ALL our videos with that shape) and our comments (mentions and direct requests). On 11
+   Oct 2026, "French women's style" had 10 winners at 5×+ across 5 channels, crossed with our own
+   #1 format ("Elegant Ladies Never Wear", 9.1×).
+3. **Name the one structural thing** the top lane outliers share. Example from 11 Oct 2026: "a
    numbered list that sorts things into elegant vs not: avoid / mistakes / cheapen / IN & OUT".
-3. **Cross it with timing.** Cut B tells you what this season rewards. A trend wave that is
+4. **Cross it with timing.** Cut B tells you what this season rewards. A trend wave that is
    live in cut A right now (several channels at 10×+ in the last two months) beats an old
    evergreen.
-4. **Cross it with our audience.** Cut C shows which shapes our viewers already chose ("Never
+5. **Cross it with our audience.** Cut C shows which shapes our viewers already chose ("Never
    Wear" 9.4×, "Look Expensive" 5.4×).
-5. **Don't repeat ourselves.** If cut C shows we covered it in the last few months, change the
+6. **Read the requests.** Comments asking "can you do a video on…" are demand, but only count
+   them as an idea when the niche proves it too (in Oct 2026, "handle disrespect" was our top
+   request, while the niche median for it was 0.8×).
+7. **Don't repeat ourselves.** If cut C shows we covered it in the last few months, change the
    angle or drop it.
 
 ## Step 5 - Audience fit: what THIS channel's viewers love
@@ -95,8 +106,10 @@ profile`. What it says today:
   - statistics
 
 For each idea, run `fit.py idea "<title>"` and report:
-1. **Our audience on this topic:** the closest own videos and their median multiple. Example: habits
-   / presence = 2.5×, seasonal wardrobe = 0.8×. Put this next to the niche multiple. A topic the
+1. **Our audience on this topic:** ALL of our videos on the topic and their median multiple (never
+   only the closest few: that flattered habits to 2.5× when the honest median is 0.9×). Topic medians
+   for this channel sit close together (0.7-0.9×). What separates our winners is the **format**, so
+   say which of our formats the idea reuses ("Elegant Ladies Never Wear" = 9.1×). Put this next to the niche multiple. A topic the
    niche loves but our viewers have rewarded below 1× must be flagged plainly to the user, never
    hidden.
 2. **The lens:** if the idea touches trends, news or luxury, write how it will be told through the
