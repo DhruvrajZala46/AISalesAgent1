@@ -11,19 +11,13 @@ size and skin tone, real footage only.
 **Before you buy one more piece, stop. Which 8 dressing rules make some women look elegant in anything, and why do they cost nothing?**
 
 [ON SCREEN: row of three DO clips: a woman in her 60s in a grey knit and wide trousers, a woman in her 30s in a navy blazer and jeans, a woman in her 40s in a cream sweater and midi skirt]
-**Some women seem to know quiet rules that nobody ever wrote down.**
+**Some women know quiet rules that nobody ever wrote down, passed on by a mother or a grandmother.**
 
-[ON SCREEN: close clip, an older woman's hands buttoning a younger woman's coat]
-**They learned them from a mother, a grandmother, an aunt who always looked just right.**
+[ON SCREEN: close clip, an older woman helping a younger woman get dressed]
+**If no one passed them on to you, we're passing them on today.**
 
-[ON SCREEN: text on caramel: "never written down"]
-**And if no one ever passed them on to you, that's completely fine. We're passing them on today.**
-
-[ON SCREEN: single clip, a woman of size in a simple fitted dress and loafers, smiling at a café table]
-**It isn't money, and it isn't a certain body. It's eight small, timeless rules, all in one place, that work at any age and on any budget.**
-
-[ON SCREEN: white screen, "in today's video..."]
-**Some of them you may already follow. One or two may surprise you. Let's begin.**
+[ON SCREEN: white screen, "8 dressing rules"]
+**It isn't money, and it isn't a certain body. Just eight timeless rules, for any age. Let's begin.**
 
 ## 1. Reveal one, not two
 
@@ -289,5 +283,5 @@ From 49 winners (verified quotes, `proof2/craft_rules.md`):
 - `dna.py`: **TEACHES LIKE THE CHANNEL**. All 8 points have validate, why, swap/how-to and inner payoff.
 - `fit.py check`: **FITS THE CHANNEL**. Timeless/classic is at 4.37 per 1,000 words (channel 3.37), swaps at 5.93 (4.09), budget at 3.71 (0.67). No red lines: no trends, brands, hype words or statistics.
 - `hookscore.py`: **77, STRONG**.
-- **Length:** 1,374 spoken words, 78 beats, about 10.4 minutes.
+- **Length:** about 1,330 spoken words, 76 beats, about 10 minutes. The intro was trimmed so rule one starts by 0:30. Our own replay data showed attention below normal during the intro in 18 of 18 of our videos.
 - **No AI clips; real footage only**, every beat marked DO/DON'T, women of every age, size and skin tone.
