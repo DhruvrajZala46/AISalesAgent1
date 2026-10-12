@@ -63,7 +63,7 @@ python3 $T/grid.py x          # contact sheets, one frame per shot, to check con
 
 ## Step 4 - Checks on every clip (all of them, before it goes in the edit)
 
-1. **AI scan:** `python3 $T/aiscan.py` -> `aiscan.json`. Score >= 0.60 = do not use, unless you
+1. **AI scan:** `python3 $T/aiscan.py` -> `aiscan.json`. Score >= 0.40 = do not use, unless you
    open the full-size corner frames, see no sparkle, and write the key and why in `aiok.txt`.
    The build refuses any flagged clip that is not in `aiok.txt`.
 2. **By eye:** AI tells - waxy skin, morphing hands or jewellery, text that melts, a too-perfect

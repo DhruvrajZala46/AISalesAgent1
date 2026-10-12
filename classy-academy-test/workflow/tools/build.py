@@ -15,7 +15,7 @@ def sh(c): subprocess.run(c, shell=True, check=True)
 # ---------- hard gate: never build with an AI-flagged clip (aiscan.json from tools/aiscan.py) ----------
 AISCAN = json.load(open(os.path.join(P, 'aiscan.json'))) if os.path.exists(os.path.join(P, 'aiscan.json')) else None
 assert AISCAN is not None, 'run tools/aiscan.py first (AI watermark scan of raw/ clips)'
-# aiok.txt: clips that scored >= 0.60 but were checked by eye at full size and have NO sparkle ("key  why")
+# aiok.txt: clips that scored >= 0.40 but were checked by eye at full size and have NO sparkle ("key  why")
 AIOK = {l.split()[0] for l in open(os.path.join(P, 'aiok.txt')) if l.strip()} if os.path.exists(os.path.join(P, 'aiok.txt')) else set()
 AIFLAG = []
 
@@ -66,7 +66,7 @@ def vid(spec, t0, t1, cls='med', style=GRADE, reuse_ok=False):
     key = spec[0]
     if not reuse_ok:
         assert key not in USED, f'{key} used twice ({USED.get(key)} and {t0:.1f})'
-        if AISCAN.get(key, 0) >= 0.60 and key not in AIOK: AIFLAG.append(f'{key} ({AISCAN[key]:.2f})')
+        if AISCAN.get(key, 0) >= 0.40 and key not in AIOK: AIFLAG.append(f'{key} ({AISCAN[key]:.2f})')
         USED[key] = round(t0, 1); CREDIT.append(key)
     name = prep(spec, t1 - t0); i = nid('v')
     return i, f'<video id="{i}" class="{cls}" src="assets/{name}" muted playsinline data-start="{t0:.3f}" data-duration="{t1-t0:.3f}" style="{style}"></video>'
