@@ -120,6 +120,7 @@ python3 $T/ffr_cmp.py                                   # every moment must show
 python3 $T/ffr.py . 0 <duration> out/<slug>_v1.mp4 4    # run in the background; <duration> = data-duration in index.html
 # fallback only: npx hyperframes render -o out/<slug>_v1.mp4 --workers 4   (~11 min per minute)
 python3 $T/qa.py out/<slug>_v1.mp4      # black frames, frozen picture, loudness, silence (music must never drop)
+python3 $T/empty.py out/<slug>_v1.mp4   # bare caramel backdrop while the voice talks = a gap to fill (text screens excepted)
 python3 $T/flash.py                     # clips with built-in dark flashes
 ```
 

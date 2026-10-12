@@ -131,6 +131,7 @@ pair([C('sewkit11', 0, 23.69), C('lint2_1', 1.87, 8.9)], [st(43) - 0.05, wd(43, 
 # 44 "Empty your bag every few days, so it keeps its shape."
 pair([C('bagempty42', 0, 8.17), C('bagempty24', 7.53, 14.37)], [st(44) - 0.05, wd(44, 0.5)], en(44) + 0.4)
 # 45 "And when a piece is truly tired, faded or pilled, let it go with gratitude."
+text('when a piece is <i>tired</i>', 'q1', st(45) - 0.05, wd(45, 0.3) + 0.15, dur=1.0)   # no empty backdrop before the clip
 single(C('pill2', 0, 1.8), wd(45, 0.3), wd(45, 0.6))
 canvas_full(C('knitset13', 0.77, 4.33), wd(45, 0.6), en(45) + 0.3)
 text('with <i>gratitude</i>', 'hint', wd(45, 0.72), en(45) + 0.3, dur=1.0, out=0.4)
@@ -163,6 +164,7 @@ card('6. The ten-second check', 55)
 # 56 "It's easy to check only your face, grab your keys and walk out of the door."
 canvas_full(C('doorway21', 0, 4.74), en(55) + 0.3, en(56) + 0.3)
 # 57 "But others see the whole picture, your shoes, your bag, even the back of your coat."
+text('the <i>whole</i> picture', 'q1', st(57) - 0.05, wd(57, 0.38) + 0.15, dur=1.0)   # no empty backdrop before the row
 row([C('shoeclean25', 0, 42.82), C('bagempty29', 1.0, 4.9), C('belt6', 0, 6.88)], [wd(57, 0.38), wd(57, 0.55), wd(57, 0.72)], en(57) + 0.4,
     labels=['your shoes', 'your bag', 'your coat'])
 # 58 "Look at yourself the way the world will see you."
