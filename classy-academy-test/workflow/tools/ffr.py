@@ -109,11 +109,11 @@ CANVASBG = bgr(chain(m_bright(0.82), m_sat(0.9)))
 class Clip:
     """Sequential frame reader for a prepared 720x1280 clip, frame index = floor((t-start)*fps)."""
     def __init__(s, f, start):
-        s.f, s.start = os.path.join(P, f), start; s.p = None; s.idx = -1; s.frame = None; s.done = False
+        s.f, s.start = os.path.join(P, f), start; s.p = None; s.idx = -1; s.frame = None; s.done = False; s.last = start
         pr = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', s.f], capture_output=True, text=True).stdout.split(',')
         s.w, s.h = int(pr[0]), int(pr[1])
     def get(s, t):
-        k = max(0, int(math.floor((t - s.start) * FPS + 1e-6)))
+        k = max(0, int(math.floor((t - s.start) * FPS + 1e-6))); s.last = t
         if s.p is None:
             s.p = subprocess.Popen(['ffmpeg', '-nostdin', '-v', 'error', '-ss', f'{k / FPS:.4f}', '-i', s.f, '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-'], stdout=subprocess.PIPE)
             s.idx = k - 1
@@ -316,9 +316,8 @@ def run_part(i, a, b, path):
     for k in range(k0, k1):
         f = render(k / FPS)
         enc.stdin.write(cv2.convertScaleAbs(f).tobytes())
-        for src in list(CLIPS):
-            c = CLIPS[src]
-            if c.done or k / FPS > c.start + 120: pass
+        for src in list(CLIPS):                      # free decoders of clips that left the screen (memory)
+            if k / FPS - CLIPS[src].last > 1.0: CLIPS.pop(src).close()
     enc.stdin.close(); enc.wait()
     for c in CLIPS.values(): c.close()
 if __name__ == '__main__':
@@ -336,11 +335,18 @@ if __name__ == '__main__':
             if pid == 0:
                 run_part(i, bounds[i], bounds[i + 1], pth); os._exit(0)
             procs.append(pid)
-        for pid in procs: os.waitpid(pid, 0)
+        for pid in procs:
+            _, st = os.waitpid(pid, 0)
+            assert st == 0, f'render worker {pid} failed (status {st}) - out of memory? use fewer workers'
+        for i, pth in enumerate(parts):              # every part must hold exactly its frames
+            n = int(subprocess.run(['ffprobe', '-v', 'error', '-count_packets', '-select_streams', 'v:0', '-show_entries', 'stream=nb_read_packets',
+                                    '-of', 'csv=p=0', pth], capture_output=True, text=True).stdout.strip() or 0)
+            want = int(round(bounds[i + 1] * FPS)) - int(round(bounds[i] * FPS))
+            assert n == want, f'part {i} has {n} frames, expected {want}'
         lst = OUT + '.txt'; open(lst, 'w').write(''.join(f"file '{os.path.abspath(p)}'\n" for p in parts))
         subprocess.run(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', OUT + '.v.mp4'], check=True)
         audio = os.path.join(P, 'assets', 'mix.wav')
         subprocess.run(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-i', OUT + '.v.mp4', '-ss', f'{T0}', '-t', f'{T1 - T0}', '-i', audio,
-                        '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', OUT], check=True)
+                        '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-ac', '2', '-shortest', OUT], check=True)
         for p in parts + [lst, OUT + '.v.mp4']: os.remove(p)
     print(f'rendered {T1 - T0:.1f}s in {time.time() - tm:.1f}s')
