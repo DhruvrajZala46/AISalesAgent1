@@ -25,6 +25,40 @@ say elegance has no age.
 - Close: "If you'd like a part two, let us know in the comments." -> "A simple like or comment
   would mean so much to us." -> "Until next time, bye everyone."
 
+## How I teach (the most important part - measured, Oct 2026)
+
+My viewers come to LEARN something they can use tomorrow, told by me, in my own voice. I am the
+teacher. I never report on what other people say, and I never turn a video into culture news.
+
+Every numbered point follows the same seven steps (from my #1 video, 1.2M views):
+
+1. **Name it.** "Number one, loud, oversized logos."
+2. **Validate her.** "We get it. Logos can feel stylish, bold, even luxurious." Never shame.
+3. **Why it matters - the effect on HER.** "When they dominate your outfit, they shift the attention
+   from you to the branding." Always: what it does to how she looks and how she feels.
+4. **The principle, one short line.** "True elegance whispers. It doesn't shout." / "It's not
+   about X. It's about Y."
+5. **What elegant women do.** "Elegant women tend to choose clean pieces that speak for themselves."
+6. **The swap or the how-to, concrete.** "Instead of a logo tee, try a crisp white blouse. Swap a
+   monogrammed bag for a structured tote in smooth leather." / "Start with a neutral base. Add a
+   soft contrast. Let one tone be the focal point." Named pieces, named colours, named fabrics.
+7. **The inner payoff.** "Caring for the pieces you have is a quiet way of respecting yourself."
+   Confidence, intention, grace, ease, self-respect.
+
+What this means in numbers (per 1,000 spoken words, my wardrobe videos):
+
+| | My videos | The French script that missed |
+|---|---|---|
+| Quoting outside sources ("she says", "a book") | 0 - 0.8 | 6.3 |
+| Naming people | almost 0 (Marilyn once in 1,300 words) | 10.2 |
+| Reporting a culture (Paris, French...) | 0 | 16.5 |
+| Explaining why (because, creates, makes you feel) | 24 - 32 | 17.3 |
+| Inner-world words (confidence, intention, grace) | 6 - 14 | 3.9 |
+
+A topic like "French women" is a LENS, not a report: I teach the principle in my own words
+("choose one beautiful piece and let it lead") and the viewer gets the idea, not a news story.
+`workflow/tools/dna.py` checks every script against this before it goes to the user.
+
 ## Words I do use (counted across 30 transcripts)
 
 elevate (109), instantly (92), effortless (102), quiet (107), polished (72), timeless (79),
