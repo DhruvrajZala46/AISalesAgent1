@@ -4,6 +4,10 @@ Everything needed to make a new video the way this channel makes them, measured 
 uploads, 29 transcripts and 2,685 comments. To start a new video, send the prompts in
 [`PROMPTS.md`](PROMPTS.md).
 
+**The bar: [`GOLD-STANDARD.md`](GOLD-STANDARD.md)** - how the user's favourite video, "8 Dressing Rules
+Every Woman Should Know", was made (idea, script, video, thumbnail, package). Every new video is
+made that way and may only get better.
+
 ## The five stages
 
 | Stage | Playbook | Skills | Ends with |
@@ -26,7 +30,9 @@ Each stage ends with the question **ship it, or change it?** Nothing moves on wi
 4. **No sound effects.** One soft solo-piano bed ~12 dB under the voice.
 5. **Voice: Kokoro `af_heart`, speed 0.80.**
 6. **Never build the video before the script is approved.**
-7. **Public data only.** Never a logged-in session, never the user's cookies or account.
+7. **Public data only.** If YouTube blocks the machine, the user may hand over a cookies file: use
+   it only with `yt-dlp --cookies` for public captions, comments and listings, slowly; never print,
+   read or commit it.
 8. **Never commit** media, keys or cookies. Text (scripts, edits, packages) goes in git under
    `classy-academy-test/videos/<slug>/`; media stays in the scratchpad work folder.
 9. Full 1080p, delivered as a Gofile link.
@@ -51,8 +57,13 @@ workflow/
     build.py          voice timing + edit + music mix -> index.html (refuses AI-flagged clips)
     template.tpl      the page the edit is drawn on (caramel backdrop, cards, fonts)
     edit_example_french.py  a complete beat-by-beat edit to start from
-    qa.py, flash.py   checks after rendering
-    real_search.py, crop.py, thumb_make.py   thumbnails
+    words.py          word timing of the voice, so each picture lands on its word
+    strips.py         frames inside every clip (a frame every ~2 s, key:a:b to zoom)
+    ffr.py, ffr_capture.js, ffr_cmp.py   the fast renderer and its check against the browser
+    qa.py, flash.py, empty.py   checks after rendering
+    audience_proof.py what our own viewers like, thank, share and ask for
+    real_search.py, crop.py, thumb_make.py   thumbnails in the channel's layout
+    thumb_xo.py       the winners' "same woman, red cross / green tick" thumbnail in our look
     chapters.py       chapters from a transcript
 ```
 

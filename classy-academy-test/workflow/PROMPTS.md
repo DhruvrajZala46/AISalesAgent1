@@ -12,10 +12,11 @@ and approve each one ("ship it") before the next.
 ## 0. Start of every session (paste first)
 
 ```
-Read classy-academy-test/workflow/README.md and run classy-academy-test/workflow/setup.sh
+Read classy-academy-test/workflow/GOLD-STANDARD.md and README.md, and run classy-academy-test/workflow/setup.sh
 for a new video folder in the scratchpad named [short-name, e.g. old-money-fall].
 Read classy-academy-test/voice.md fully, especially "How I teach".
 Confirm in 3 lines: the setup worked, the rules that never change, and how my channel teaches.
+Make this video the way GOLD-STANDARD.md describes, or better.
 ```
 
 ---
@@ -68,13 +69,15 @@ show me only what changed plus the check results.
 
 ```
 The script is approved. Build the full video.
-Follow classy-academy-test/workflow/3-VIDEO.md exactly and match edit-style-measured.md.
+Follow classy-academy-test/workflow/3-VIDEO.md exactly: the "stage" edit of GOLD-STANDARD.md.
 
 Non-negotiable:
 - real footage only, never AI clips: run aiscan.py on every clip and look at each one yourself;
 - every clip checked frame by frame against the exact words it sits under, never guess;
 - each clip used once, every creator credited;
-- caramel backdrop / panel rows / full-screen clips / white number cards, like my top videos;
+- white number card, then one calm frame per point with the pictures changing inside it on the
+  exact word, the same woman from mistake to fix, rows only for lists, full-screen only for the
+  hook, title, guide and ending;
 - NO sound effects; one soft solo-piano bed ~12 dB under the voice, steady, no drop-outs;
 - voice: Kokoro af_heart at speed 0.80;
 - full QA (qa.py, flash.py, a per-second contact sheet watched end to end) before you send it.
