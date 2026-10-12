@@ -57,7 +57,7 @@ with `SKIP:` lines for rejects and `DUP:` notes for the same clip found twice. T
 
 ```bash
 python3 $T/dlpicks.py         # downloads every key named in picks.md -> raw/<key>.mp4 + raw/meta.json (creator, user, pin url)
-python3 $T/shots.py           # scene cuts -> shots.json
+python3 $T/shots.py sh        # scene cuts -> shots.json + sh_N.jpg sheets (one frame per shot, with time ranges)
 python3 $T/grid.py x          # contact sheets, one frame per shot, to check content
 ```
 
@@ -67,7 +67,8 @@ python3 $T/grid.py x          # contact sheets, one frame per shot, to check con
    open the full-size corner frames, see no sparkle, and write the key and why in `aiok.txt`.
    The build refuses any flagged clip that is not in `aiok.txt`.
 2. **By eye:** AI tells - waxy skin, morphing hands or jewellery, text that melts, a too-perfect
-   cinematic look, "AI" in the pin text, content-farm accounts. When in doubt, leave it out.
+   cinematic look, "AI" in the pin text, content-farm accounts, uploader names with gemini / veo /
+   sora / ai in them (`raw/meta.json`). When in doubt, leave it out.
 3. **Content:** frame by frame, the clip shows exactly what the words say (the piece, the colour,
    the action). Write each verified segment in `ok.txt`: `loafers29 1.0-9.2 : camel loafers walking, cobbles (b10)`.
 4. **Quality:** no watermarks over the subject, no big text overlays, no low-res (`L` on the grid),
