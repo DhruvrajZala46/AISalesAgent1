@@ -32,7 +32,7 @@ M = {
     'named pieces / colours / materials': (r"\b(blazer|loafers?|ballet flats?|trousers|jeans|knit|cashmere|linen|silk|wool|leather|beige|ivory|navy|camel|cream|chocolate|tote|scarf|hoops|studs|watch|belt|midi|trench|coat|shirt|blouse|sage|rose)\b", re.I, 'max'),
 }
 ANATOMY = [
-    ('validate', r"\bwe get it\b|can (absolutely|feel|be)\b|\bis great\b|\bare wonderful\b|\bit'?s (easy|tempting|normal)\b|\bthere'?s nothing wrong\b|\bbeautiful\b|\blovely\b"),
+    ('validate', r"\bwe get it\b|\bwe'?ve all (been there|had)\b|can (absolutely|feel|be)\b|\bis great\b|\bare wonderful\b|\bit'?s (easy|tempting|normal)\b|\bthere'?s nothing wrong\b|\bbeautiful\b|\blovely\b"),
     ('why (effect on her)', r"\bbecause\b|\bcreates?\b|\bmakes? (it|you|the|an|a|your)\b|\bit can\b|\btakes? away\b|\bshift\w*\b|\bdraws?\b|\boverwhelm\w*\b|\bcompete\b|\blooks? (less|more|cheap|rushed|messy|tired)\b|\bfeel\w*\b"),
     ('swap or how-to', r"\binstead\b|\btry\b|\bswap\b|\bopt for\b|\breach for\b|\bchoose\b|\bpick\b|\bstart with\b|\badd an?\b|\bstick to\b|\blook for\b|\bgo for\b|\baim for\b|\bkeep (it|them|your)\b|\blet (one|it|your)\b|\btake (one|a)\b|\bbefore (heading|you)\b"),
     ('inner payoff', r"\bconfiden\w*|\bintention\w*|\bpresence\b|\brespect\w*|\bgrace\w*|\bease\b|\bcalm\b|\bpolish\w*|\byourself\b"),
