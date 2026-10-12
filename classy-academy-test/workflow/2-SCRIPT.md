@@ -18,6 +18,26 @@ the `yt-script` skill.
    makes it fresh. Do reuse the channel's own principles and phrasing.
 4. **Comments.** What our viewers ask for (part two, budget, over 50, "what to wear instead").
 
+### The proof map - before a word of the script
+
+No tip is invented. Every candidate tip gets a row, and the user sees the map before the script:
+
+| Tip | Niche proof (winners that teach it: multiple, timestamp) | Our viewers (quoted / thanked / asked for, likes) | Pushback | Keep? |
+|---|---|---|---|---|
+
+```bash
+python3 $T/audience_proof.py <scratchpad>/data                      # our videos ranked by love: like rate, thanks, shares, requests
+python3 $T/audience_proof.py <scratchpad>/data --video "<our title>"  # the tips viewers quoted, tried, thanked, pushed back on
+python3 $T/audience_proof.py <scratchpad>/data --ask "<topic words>"  # what viewers ask us to make, with likes
+```
+
+Keep a tip only with **two proofs**: taught by 2+ niche winners; or 1 winner + our viewers' love or
+requests; or quoted/thanked by our viewers with 10+ likes. A tip with pushback is rewritten to
+answer it (e.g. "Say that again" felt demanding -> "Pardon?"). Views say what gets clicked; like
+rate, thank-you comments, shares and "best tip ever" comments say what was worth watching. Aim for both.
+If the winners' transcripts can't be read (YouTube blocks the machine), say so and wait - never fill
+the gap with guesses.
+
 Then **rewrite every tip in our own voice**. The research is where the tips come from; it never
 appears in the script. No "she says", no book titles, no names, no "one French woman shared".
 A culture or a person can be the lens of the title, but the script teaches the principle itself.
