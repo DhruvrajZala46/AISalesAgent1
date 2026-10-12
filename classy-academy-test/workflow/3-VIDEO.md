@@ -116,9 +116,10 @@ The older helpers below still work and are used inside this format (row, pair, c
 Times come from the voice: `st(i)` start of line i, `en(i)` end, `wd(i, 0.4)` 40% through it.
 `C('loafers29', 1.0, 9.2)` = the verified segment from `ok.txt`.
 
-Targets (from the top-5 videos): about **34% caramel-backdrop time**, a layout change about every
-**9 seconds** (6.6 per minute), the intro title card with the episode number, the stylist-guide
-haze card mid-video, the X checklist recap and the white CE end card.
+Keep: the intro title card with the episode number, the stylist-guide haze card (now at the end of a
+point, <=10 s), the checklist recap and the white CE end card. (The older targets "34% caramel time,
+a layout change every 9 s" came from raw views and did not survive the age adjustment in the 79-video
+study; follow the stage rules above instead.)
 
 ## Step 6 - Build, look, fix
 

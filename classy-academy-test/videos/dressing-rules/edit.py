@@ -44,7 +44,8 @@ row([C('minihigh49', 0.0, 6.8), C('midivneck14', 0.0, 12.0), C('curvychic26', 0.
 # 10 "And if you love showing your arms, that's beautiful. Just keep the neckline and the length calm."
 # 11 "It's not about hiding. It's about letting one thing shine, so you feel graceful and completely at ease all evening."
 stage([(C('sleeveless17', 2.3, 13.0), st(10) - 0.15), (C('over60chic2', 5.3, 15.0), at(10, 'keep the neckline')),
-       (C('over60chic40', 1.3, 10.8), st(11) - 0.1), (C('over60chic37', 13.89, 18.52), at(11, 'graceful'))], en(11) + 0.75)
+       (C('over60chic40', 3.0, 6.7), st(11) - 0.1), (C('over60chic40', 7.45, 10.8), at(11, 'one thing shine')),
+       (C('over60chic37', 13.89, 18.52), at(11, 'graceful'))], en(11) + 0.75)
 mark('yes', 'calm neckline & length', at(10, 'keep the neckline'), en(10) + 0.3)
 
 # ================= 2. Fit first =================
@@ -83,7 +84,7 @@ card('3. Balance the shape', 20)
 # 24a "Elegant women tend to pair one relaxed piece with one fitted piece."
 stage([(C('curvychic17', 3.0, 8.87), after(20)), (C('proportion3', 2.3, 6.4), at(21, 'and on you')),
        (C('proportion3', 8.0, 13.0), at(22, 'balance') - 0.3),
-       (C('thicktee38', 0.8, 6.1), st(23) - 0.1), (C('proportion40', 0.0, 6.4), at(23, 'when everything is tight')),
+       (C('thicktee38', 0.8, 6.1), st(23) - 0.1), (C('proportion40', 0.15, 6.4), at(23, 'when everything is tight')),
        (C('proportion6', 2.3, 11.0), at(23, 'The eye')), (C('proportion27', 2.17, 5.77), at(23, 'shape is clear') - 0.2),
        (C('proportion3', 19.1, 24.3), st(24) - 0.1)], at(24, 'Camel') + 0.5)
 mark('no', 'felt wrong', at(21, 'and on you'), at(22, 'balance') - 0.3)
@@ -155,11 +156,11 @@ card("5. What's underneath stays invisible", 37, style='font-size:96px')
 # 43 "When nothing underneath shows, everything you wear on top looks cleaner, and you move through the day with complete ease."
 stage([(C('oversized3', 0.0, 5.8), after(37)),
        (C('whitebra12', 0.0, 3.0), st(39) - 0.1), (C('over60chic0', 12.0, 18.0), at(39, 'pulls')),
-       (C('whitebra0', 3.0, 11.0), st(40) - 0.1), (C('whitebra12', 3.0, 6.6), at(40, 'or even a soft red')),
+       (C('whitebra0', 3.0, 11.0), st(40) - 0.1), (C('whitebra12', 3.0, 6.3), at(40, 'or even a soft red')),
        (C('brafit15', 0.1, 9.9), st(41) - 0.1),
        (C('over60chic19', 27.5, 31.2), st(42) - 0.1), (C('midivneck14', 12.9, 17.0), at(42, 'fitted skirts')),
        (C('thicktee17', 0.0, 7.0), at(42, 'ideally in cotton')), (C('whitebra0', 13.7, 21.7), at(42, 'And if seamless')),
-       (C('over60chic0', 20.0, 27.0), st(43) - 0.1), (C('camelwalk12', 0.0, 3.3), at(43, 'you move'))], en(43) + 0.75)
+       (C('over60chic0', 20.0, 27.0), st(43) - 0.1), (C('camelwalk12', 0.15, 3.3), at(43, 'you move'))], en(43) + 0.75)
 mark('no', 'a visible line', at(39, 'visible strap'), at(39, 'pulls'))
 mark('yes', 'skin tone', at(40, 'a shade close'), at(40, 'or even a soft red'))
 mark('yes', 'or soft red', at(40, 'or even a soft red'), en(40) + 0.3)
@@ -172,13 +173,13 @@ card('6. One star per outfit', 44)
 stage([(C('redcoat2', 9.1, 16.0), after(44)), (C('printskirt11', 0.0, 10.0), at(45, 'a bold print'))], at(46, 'the print') + 0.5)
 # 46 "But when the print, the colour, the shine and the jewellery all speak at once, they compete, and none of them gets to shine."
 #     (the screen fills up, one by one: that is what "competing" looks like)
-row([C('printskirt42', 0.0, 6.0), C('redcoat24', 3.3, 9.5), C('earrings0', 0.0, 7.0), C('earrings25', 9.0, 15.0)],
+row([C('printskirt42', 0.0, 6.0), C('redcoat24', 5.0, 11.2), C('earrings0', 0.0, 7.0), C('earrings25', 9.0, 15.0)],
     [at(46, 'the print'), at(46, 'the colour'), at(46, 'the shine'), at(46, 'jewellery')], en(46) - 0.15)
 # 47 "Let one piece be the star, and let everything else support it."   (busy row -> one calm frame)
 # 48 "A red coat over camel, cream and grey. A printed skirt with a plain navy knit. Bold earrings with a simple black dress, and no necklace."
 # 49 "So if you love colour, wear it. Just let it be the star."
 # 50 "One clear star makes the whole outfit look intentional, and it lets your personality shine through with confidence."
-stage([(C('redcoat2', 16.2, 25.0), st(47) - 0.2), (C('redcoat0', 0.0, 7.0), st(48) - 0.1),
+stage([(C('redcoat2', 16.2, 25.0), en(46) - 0.3), (C('redcoat0', 0.0, 7.0), st(48) - 0.1),
        (C('printskirt1', 0.0, 12.0), at(48, 'A printed skirt')), (C('earrings12', 1.3, 12.7), at(48, 'Bold earrings')),
        (C('redcoat19', 2.8, 9.7), st(49) - 0.1), (C('printskirt3', 0.0, 13.0), st(50) - 0.1),
        (C('over60chic37', 18.52, 24.94), at(50, 'personality'))], en(50) + 0.75)
@@ -236,7 +237,7 @@ mark('yes', 'soft shape, quiet colour', at(63, 'soft shape'), en(63) + 0.3)
 
 # ================= recap 65-73: the women come back as their rule is named, a checklist builds =================
 white(en(64) + 0.35, st(65) + 0.5)
-stage([(C('midivneck14', 18.0, 22.0), st(65) - 0.1), (C('blazerfit3', 8.3, 11.2), st(67) - 0.1),
+stage([(C('midivneck14', 18.0, 22.0), st(65) - 0.1), (C('blazerfit3', 8.0, 10.0), st(67) - 0.1),
        (C('proportion3', 36.56, 40.0), st(68) - 0.1), (C('woolcoat46', 8.6, 14.8), st(69) - 0.1),
        (C('over60chic0', 28.0, 35.0), st(70) - 0.1), (C('redcoat0', 7.0, 15.0), st(71) - 0.1),
        (C('loafers24', 9.0, 13.5), st(72) - 0.1), (C('nails7', 0.0, 5.3), st(73) - 0.1)], en(73) + 0.6, x0=250)
@@ -259,4 +260,4 @@ stage([(C('mother40', 32.53, 38.3), at(74, "It's a few") - 0.3), (C('over60chic4
        (C('over60chic8', 17.43, 22.6), at(75, "We'd love"))], en(75) + 0.3)
 # 76 "A simple like or comment would mean so much to us. Until next time, bye everyone."
 canvas_full(C('camelwalk0', 0.0, 4.8), st(76) - 0.2, at(76, 'Until next time'), fin=0.7)
-canvas_full(C('woolcoat36', 0.0, 7.9), at(76, 'Until next time'), total - 2.6, fin=0.6)
+canvas_full(C('woolcoat33', 7.47, 14.0), at(76, 'Until next time'), total - 2.6, fin=0.6)
