@@ -20,6 +20,11 @@ Read first: the `yt-package` skill (title and thumbnail are one unit).
 | Depth | soft drop shadow on all text, gentle darkening behind the text block |
 | Logo | CE logo top-left |
 
+For a do / don't topic (rules, mistakes), the winners' format is the same woman twice, red cross on the
+mistake and green tick on the fix (8.0M "Dressing Rules EVERYONE Should Learn"): `tools/thumb_xo.py` builds it
+in our look from two frames of ONE creator's own before/after video (never put a cross on a woman who did not
+present that look as a mistake herself). It erases a burned-in caption line and cuts her out (rembg).
+
 `tools/thumb_make.py` builds exactly this (it reproduces the approved French thumbnail pixel for
 pixel). Never change the layout to "try something new" without the user asking.
 
