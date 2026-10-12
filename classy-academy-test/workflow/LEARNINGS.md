@@ -12,4 +12,5 @@ Each line is a mistake that reached the user, and the check that now stops it.
 | French, Oct 2026 | Thumbnails v1/v2 did not look like the channel ("worst"). | Measured thumbnail DNA + `tools/thumb_make.py`; real named women only. |
 | French, Oct 2026 | The thumbnail underline crossed the "y" of "Style". | Underline sits below the lowest descender (`thumb_make.py`). |
 | Winter, Oct 2026 | Too many sound effects and the wrong music. | No sound effects (none in the channel); soft solo piano ~12 dB under, steady. |
-| All | Rendering takes ~11 minutes per minute of video on this machine. | Start the render in the background; a faster FFmpeg renderer is being tested (`fr2/ff/` prototype). |
+| All | Rendering took ~11 minutes per minute of video on this machine. | `tools/ffr.py` fast renderer (~4.3 min per minute), checked against browser frames with `ffr_cmp.py` before every full run. |
+| Put together, Oct 2026 | The fast renderer placed the blurred backdrop of full-screen clips 120 px off, so caramel showed at the edges. | Fixed in `ffr.py`; `ffr_cmp.py` must include full-screen moments. |

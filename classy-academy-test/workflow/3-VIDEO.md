@@ -110,8 +110,15 @@ Check the voice-to-picture sync at every number card and every list.
 
 ## Step 7 - Render and QA
 
+Render with the fast renderer (`tools/ffr.py`, ~4.3 min per minute of video here; the browser
+renderer takes ~11). It draws the same page with FFmpeg and must match the browser before a full run:
+
 ```bash
-npx hyperframes render -o out/<slug>_v1.mp4 --workers 4     # run in the background; ~11 min per minute of video here
+node $T/ffr_capture.js $PWD $PWD $PWD/ff/sprites       # text + graphics captured once from Chrome (fonts match)
+npx hyperframes snapshot --at 5,40,100,200,350,450,530,560 --no-end -o snapcmp   # browser frames: every layout type
+python3 $T/ffr_cmp.py                                   # every moment must show a mean diff < 10; look at ffr_cmp_*.jpg
+python3 $T/ffr.py . 0 <duration> out/<slug>_v1.mp4 4    # run in the background; <duration> = data-duration in index.html
+# fallback only: npx hyperframes render -o out/<slug>_v1.mp4 --workers 4   (~11 min per minute)
 python3 $T/qa.py out/<slug>_v1.mp4      # black frames, frozen picture, loudness, silence (music must never drop)
 python3 $T/flash.py                     # clips with built-in dark flashes
 ```
