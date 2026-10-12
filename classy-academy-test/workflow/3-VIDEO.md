@@ -40,6 +40,9 @@ python3 $T/tts.py              # tts/c001.wav ... one file per line
 Listen to every line that has a name, a foreign word or a number. Re-generate a line by deleting
 its wav and running `tts.py` again.
 
+Then the word timing (so each picture lands on the word it shows): `pip install faster-whisper` once, then
+`python3 $T/words.py <scratchpad>/models` -> `words.json` (the base.en model downloads once, ~150 MB).
+
 ## Step 2 - The shot list
 
 For every beat, write what the viewer must SEE while each noun is said (audio = visual, word by
@@ -70,11 +73,31 @@ python3 $T/grid.py x          # contact sheets, one frame per shot, to check con
    cinematic look, "AI" in the pin text, content-farm accounts, uploader names with gemini / veo /
    sora / ai in them (`raw/meta.json`). When in doubt, leave it out.
 3. **Content:** frame by frame, the clip shows exactly what the words say (the piece, the colour,
-   the action). Write each verified segment in `ok.txt`: `loafers29 1.0-9.2 : camel loafers walking, cobbles (b10)`.
+   the action). Shot sheets show one frame per shot only, so look INSIDE each take too:
+   `python3 $T/strips.py st/a key1 key2 ...` (a frame every ~2 s) and `key:a:b` to zoom on a before -> after.
+   Write each verified segment in `ok.txt`: `loafers29 1.0-9.2 : camel loafers walking, cobbles (b10)`.
 4. **Quality:** no watermarks over the subject, no big text overlays, no low-res (`L` on the grid),
    HDR clips are tone-mapped automatically, no logos of luxury brands.
 
 ## Step 5 - The edit (`edit.py`)
+
+**Default since Oct 2026: the "stage" edit** (from the replay study of 79 videos,
+`classy-academy-test/research-2026-10-12-edit-evidence.md`; the full example is
+`videos/dressing-rules/edit.py`):
+
+1. White number card for every point (2.67x more often at replay peaks than chance).
+2. Then ONE calm centred frame for the whole point: `stage([(C(key,a,b), t), ...], t_end)`. The frame never moves;
+   the pictures change inside it with a soft dissolve, a new picture at least every 5 s, each on the exact word
+   it shows: `at(14, "navy blazer")` (word timing from `python3 $T/words.py <model_dir>` -> `words.json`).
+3. The same woman from the mistake to the fix where the footage allows (the same clip may come back with
+   different seconds; `build.py` refuses repeated footage), marked beside the frame:
+   `mark('no', 'all loose', t0, t1)` / `mark('yes', 'the balance', t0, t1)`. Show the mistake briefly, the fix longer.
+4. One word-timed `row` only where the script lists 2-4 things, with short labels.
+5. Full-screen `canvas_full` only for the hook, the title, the guide plug and the ending (it sits at dips otherwise).
+6. No quote overlays: text is the card, a mark word or a row label. Guide plug at the END of a point, <=10 s,
+   the next number card right after it. Reach point 1 by 0:30.
+
+The older helpers below still work and are used inside this format (row, pair, canvas_full, card):
 
 `edit.py` is the beat-by-beat edit, executed by `build.py`. Start from
 `$T/edit_example_french.py` (the full French video) and keep its grammar:

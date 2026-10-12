@@ -43,6 +43,17 @@ json.dump(T, open(os.path.join(P, 'beats.json'), 'w'), indent=1)
 B = {d['i']: d for d in T}
 st = lambda i: B[i]['start']; en = lambda i: B[i]['end']
 wd = lambda i, f: B[i]['start'] + (B[i]['end'] - B[i]['start']) * f
+# at(12, "navy blazer"): the moment those words start in line 12 (words.json from tools/words.py); falls back to text position
+WORDS = json.load(open(os.path.join(P, 'words.json'))) if os.path.exists(os.path.join(P, 'words.json')) else {}
+def at(i, phrase, end=False):
+    nw = lambda w: re.sub(r'[^a-z0-9]', '', w.lower())
+    want = [nw(w) for w in phrase.split()]
+    if str(i) in WORDS:
+        ws = WORDS[str(i)]; have = [nw(w[0]) for w in ws]
+        for k in range(len(have) - len(want) + 1):
+            if have[k:k + len(want)] == want: return st(i) + (ws[k + len(want) - 1][2] if end else ws[k][1])
+    k = B[i]['text'].lower().find(phrase.lower()); assert k >= 0, f'"{phrase}" not in line {i}'
+    return wd(i, (k + (len(phrase) if end else 0)) / len(B[i]['text']))
 
 # ---------- clip preparation: trim the checked segment, 9:16, SDR, silent; gentle slow-mo (<=1.4x) only if needed ----------
 USED = {}; SHORT = []; CREDIT = []
@@ -62,12 +73,15 @@ def prep(spec, need):
 els, tw = [], []; uid = [0]
 def nid(p): uid[0] += 1; return f"{p}{uid[0]}"
 GRADE = 'filter:contrast(1.03) saturate(0.95) sepia(0.05);'
+SEGS = {}   # key -> [(a, b)]: the same clip may come back only with different footage (e.g. her "before", then her "after")
 def vid(spec, t0, t1, cls='med', style=GRADE, reuse_ok=False):
     key = spec[0]
     if not reuse_ok:
-        assert key not in USED, f'{key} used twice ({USED.get(key)} and {t0:.1f})'
+        for a, b in SEGS.get(key, []):
+            assert spec[2] <= a + 0.05 or spec[1] >= b - 0.05, f'{key} {spec[1]}-{spec[2]} repeats footage already shown ({a}-{b}, at {USED.get(key)})'
         if AISCAN.get(key, 0) >= 0.40 and key not in AIOK: AIFLAG.append(f'{key} ({AISCAN[key]:.2f})')
-        USED[key] = round(t0, 1); CREDIT.append(key)
+        if key not in USED: USED[key] = round(t0, 1); CREDIT.append(key)
+        SEGS.setdefault(key, []).append((spec[1], spec[2]))
     name = prep(spec, t1 - t0); i = nid('v')
     return i, f'<video id="{i}" class="{cls}" src="assets/{name}" muted playsinline data-start="{t0:.3f}" data-duration="{t1-t0:.3f}" style="{style}"></video>'
 def box(x0, y0, x1, y1, inner, z=''):
@@ -126,11 +140,39 @@ def compare(a, b, ha, hb, t0, tb, t1):
     x0 = (W - 2 * PW2 - 40) // 2
     panel(a, x0, x0 + PW2, t0, t1, y0=PH0 + 20, y1=PH1 + 20); header(ha, x0 + PW2 // 2, t0 + 0.2, t1)
     panel(b, x0 + PW2 + 40, x0 + 2 * PW2 + 40, tb, t1, y0=PH0 + 20, y1=PH1 + 20, origin='100% 0%'); header(hb, x0 + PW2 + 40 + PW2 // 2, tb + 0.2, t1)
-def card(txt, i_line, t_in=None):
-    """White chapter card, black script wiping in left to right (their number cards)."""
+def card(txt, i_line, t_in=None, style=''):
+    """White chapter card, black script wiping in left to right (their number cards). style='font-size:96px' for long names."""
     t0 = (en(i_line - 1) + 0.35) if t_in is None else t_in
-    white(t0, en(i_line) + 0.35); text(txt, 'card', t0 + 0.3, en(i_line) + 0.25, dur=1.2, out=0.45)
+    white(t0, en(i_line) + 0.35); text(txt, 'card', t0 + 0.3, en(i_line) + 0.25, dur=1.2, out=0.45, style=style)
 C = lambda k, a, b: (k, a, b)
+
+# ---------- the "stage" edit (from the 79-video replay study, research/edit-evidence): one calm frame per point ----------
+# The frame stays put for the whole point; the pictures change INSIDE it (soft 0.4 s dissolve, a new picture every <=5 s),
+# so the eye never has to re-find the picture. Same woman before -> after where the footage allows.
+def stage(shots, t1, x0=None, w=PW, y0=0, y1=H, xf=0.4, entry='fade'):
+    """shots = [(spec, t), ...]: each picture comes in at t; the frame appears with the first, leaves at t1."""
+    x0 = (W - w) // 2 if x0 is None else x0
+    inner = []; t0 = shots[0][1]
+    for k, (spec, t) in enumerate(shots):
+        assert k == 0 or t > shots[k - 1][1] + 0.8, f'stage shots too close at {t:.1f}'
+        tend = (shots[k + 1][1] + xf) if k + 1 < len(shots) else t1 + 0.55
+        v, h = vid(spec, t, tend, style=GRADE + 'position:absolute;left:0;top:0;')
+        drift(v, t, tend, 1.05)
+        if k: tw.append(f'tl.fromTo("#{v}",{{opacity:0}},{{opacity:1,duration:{xf},ease:"sine.inOut"}},{t:.3f});')
+        inner.append(h)
+    i = box(x0, y0, x0 + w, y1, ''.join(inner))
+    if entry == 'centre': grow_centre(i, t0)
+    else: fade_in(i, t0, 0.5)
+    fade_out(i, t1, 0.55); return i
+MK = {'no': ('#a8432f', 'M17 17 L37 37 M37 17 L17 37'), 'yes': ('#4f6b3a', 'M14 28 L24 38 L41 16')}
+def mark(kind, word, t0, t1, cx=1592, y=330):
+    """The avoid / instead label beside the frame: a white disc with a red cross or a green tick, and one or two words."""
+    col, d = MK[kind]; i = nid('mk')
+    els.append(f'<div id="{i}" class="cl" style="left:{cx-300}px;top:{y}px;width:600px;opacity:0">'
+               f'<svg viewBox="0 0 54 54" style="display:block;margin:0 auto 6px;width:104px;height:104px">'
+               f'<circle cx="27" cy="27" r="26.5" fill="rgba(70,35,15,.16)"/><circle cx="27" cy="27" r="24.5" fill="#fbf7f2"/>'
+               f'<path d="{d}" style="fill:none;stroke:{col};stroke-width:4.6;stroke-linecap:round;stroke-linejoin:round"/></svg>{word}</div>')
+    tw.append(f'tl.fromTo("#{i}",{{opacity:0,scale:0.85}},{{opacity:1,scale:1,duration:0.6,ease:"power2.out"}},{t0:.3f});'); fade_out(i, t1, 0.4)
 
 exec(open(os.path.join(P, 'edit.py')).read())
 if AIFLAG: raise SystemExit('STOP - AI watermark suspected, replace these clips: ' + ', '.join(AIFLAG))

@@ -8,12 +8,13 @@ F=os.getcwd(); P=F+'/pin'; R=F+'/raw'; os.makedirs(R,exist_ok=True)
 tags=sorted([f[:-5] for f in os.listdir(P) if f.endswith('.json')],key=len,reverse=True)
 txt=open(F+'/picks.md').read()
 skip=set(); body=[]
+TOK=r'\b([a-z][a-z0-9]*?_?\d+)\b'   # any search tag + pin number, including tags with digits inside (over60chic0)
 for line in txt.splitlines():
-    if line.startswith('SKIP'): skip.update(re.findall(r'\b([a-z]+\d*_?\d+)\b', line))
+    if line.startswith('SKIP'): skip.update(re.findall(TOK, line))
     if not re.match(r'(SKIP|DUP|CHECK|TODO|#)', line): body.append(line)
 key=lambda t, i: f'{t}_{i}' if t[-1].isdigit() else f'{t}{i}'
 toks=[]
-for tok in re.findall(r'\b([a-z]+\d*_?\d+)\b','\n'.join(body)):
+for tok in re.findall(r'\b([a-z][a-z0-9_]*\d)\b','\n'.join(body)):
     for t in tags:
         m=re.fullmatch(re.escape(t)+r'_?(\d+)',tok)
         if m: toks.append((t,int(m.group(1)))); break
@@ -21,7 +22,7 @@ seen=set(); meta={}; jobs=[]
 if os.path.exists(F+'/raw/meta.json'): meta=json.load(open(F+'/raw/meta.json'))
 for t,i in toks:
     k=key(t, i)
-    if k in seen or k in skip: continue
+    if k in seen or k in skip or f'{t}{i}' in skip: continue
     seen.add(k); out=f'{R}/{k}.mp4'
     pins=json.load(open(f'{P}/{t}.json'))
     if i>=len(pins) or not pins[i]['videos']: print('novideo',k); continue

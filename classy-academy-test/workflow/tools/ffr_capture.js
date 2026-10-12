@@ -32,6 +32,9 @@ const OFF = 200;                      // shift the stage so the oversized backdr
     const parts = cls.includes('chk') ? ['text', 'mark'] : ['all'];
     for (const part of parts) {
       const box = await pg.evaluate((id, part) => {
+        // reset what earlier captures switched on: an svg left visibility:visible shows through its hidden parent
+        // and would be baked into every later sprite that overlaps it
+        for (const e of document.querySelectorAll('#root svg')) e.style.visibility = '';
         for (const e of document.querySelectorAll('#root > *')) e.style.visibility = 'hidden';
         const e = document.getElementById(id);
         e.style.visibility = 'visible'; e.style.opacity = '1'; e.style.transform = 'none';
