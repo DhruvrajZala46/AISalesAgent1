@@ -37,31 +37,45 @@ videos), never print it, read it or commit it.
 
 ## 2. The script: every tip proven, told in our voice
 
-What was done:
-1. **Study the winners' insides:** transcripts + top 100 comments of the biggest videos on the topic
-   (49 read, `proof2/study`), every tip with its timestamp, every comment with its likes.
-2. **The proof map** (in `script.md`, section Proof): a tip stays only with two proofs (taught by
-   winners AND loved/quoted by viewers, with exact likes). The top pushback on each tip becomes its
-   exception line ("I exercise my right to bare arms!!" 185 likes -> "if you love showing your
-   arms, that's beautiful. Just keep the neckline and the length calm").
-3. **The craft rules from 49 winners** (`research-2026-10-12-craft.md`):
-   - the hook removes a barrier ("It isn't money, and it isn't a certain body"), never fear;
-   - pass-it-down framing ("passed on by a mother or a grandmother"), without inventing a story;
-   - every point an upgrade with an exception ("if you love X, keep it, just..."), never a ban;
-   - every point a 2-5 word name viewers can list ("Reveal one, not two");
-   - "It's not your body. It's the balance." (body-neutral, 13 comments, 13,757 likes);
-   - show it: each point has something she can see (before/after, a demo, a test to do now);
-   - one self-identifying question mid-video ("fitted on top, or fitted on the bottom?");
-   - a family-rule question at the close + part two + "a simple like or comment would mean so much".
-4. **Our 7 teaching steps on every point:** name -> validate -> why -> principle -> what elegant
-   women do -> the swap / how-to with named pieces and colours -> the inner payoff.
-5. **Shape:** hook ~10 s (a question: "Before you buy one more piece, stop. Which 8 dressing rules
-   make some women look elegant in anything, and why do they cost nothing?"), intro trimmed so
-   **point 1 starts by 0:30**, 8 points, the guide plug at the END of point 4, recap of the names,
-   close. ~1,330 words, ~9.7 min at voice speed 0.80.
-6. **Gates:** `dna.py` TEACHES LIKE THE CHANNEL, `fit.py` FITS THE CHANNEL, hook score STRONG (77).
-7. **What the user corrected, and is now the rule:** the content must be proven, never invented;
-   in MY voice, never vague; valuable enough to like, share and subscribe; the intro short.
+The exact steps (Dressing Rules), in order. The `yt-script` skill's rules are built in.
+1. **Read first:** `voice.md` ("How I teach"), `2-SCRIPT.md`, the craft rules
+   (`research-2026-10-12-craft.md`), LEARNINGS.
+2. **Study the winners' insides, never guess:** the 8-15 biggest videos on the topic (multiple + like
+   rate), with `yt-dlp` captions + top 100 comments (+ info.json) -> one study file each: the full
+   timestamped transcript and the comments sorted by likes. Read every file to the end.
+   What to check in every winner:
+   - every concrete tip (piece, colour, fabric, fit rule, habit, step) with its timestamp and exact words;
+   - HOW it is taught (why, example, demo, before/after, swap, rule of thumb, story, humour);
+   - the hook (first lines) and the structure (point names, order, length);
+   - the comments: the tips viewers quote, list, thank for, or say they tried (with likes);
+     their requests; their pushback (with likes); shares/saves; the feelings they express.
+3. **Our own viewers:** `audience_proof.py --video` / `--ask` on our videos near the topic.
+4. **The proof map** (a table in `script.md`, section Proof): a tip stays only with two proofs
+   (taught by 2+ winners, or 1 winner + our viewers' love/requests, or quoted/thanked by viewers with
+   10+ likes). Every tip's top pushback becomes its exception line ("if you love X, keep it, just...").
+   Nothing repeated from our last videos. Never invent a tip, number, quote or story.
+5. **Write in our voice:** every point = the 7 teaching steps (name -> validate -> why -> principle ->
+   what elegant women do -> swap / how-to with named pieces, colours, fabrics -> inner payoff), plus
+   "show it" (a before/after, a demo, a test she can do now). Kind, calm, never fear, never shame,
+   never "hide flaws". No quotes, no named people, no culture reports, no statistics.
+6. **The shape:**
+   - **Hook** (~10 s): write 5 against the 21 formulas (`yt-script/hooks.json`), run
+     `hookscore.py`, show the top 2 with scores. Barrier removed, a question she can't close.
+   - **The turn**: no channel intro, no subscribe pitch; pass-it-down framing; **point 1 by 0:30**.
+   - **8 points**, each with a 2-5 word name she can list; one self-identifying question mid-video;
+     the guide plug at the END of point 4; recap of the names.
+   - **Close**: the family/personal question + part two + "A simple like or comment would mean so
+     much to us. Until next time, bye everyone."
+   - `[ON SCREEN: ...]` on every beat (DO / DON'T, women of every age, size and skin tone).
+   - ~1,300 words, ~9.5 min (our voice: ~138 words/min at speed 0.80).
+7. **Gates before the user sees it:** `dna.py` TEACHES LIKE THE CHANNEL, `fit.py check` FITS THE
+   CHANNEL, hook score STRONG. Fix and re-run until all pass.
+8. **Hand back:** the 2 hooks with scores, the full script with [ON SCREEN], the runtime, both check
+   results, one line per point (the tip and why it is valuable to her), the proof table; commit
+   `script.md` + `beats.txt`. Last line: **ship it, or change it?** Never build before "ship it".
+9. **What the user corrected, and is now the rule:** proven, never invented; in MY voice; never vague;
+   valuable enough to like, share and subscribe; the intro short; take time on the research, but
+   keep the user posted while working.
 
 ## 3. The video: the "stage" edit (from the replay data of 79 videos)
 
