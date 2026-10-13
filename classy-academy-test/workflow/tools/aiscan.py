@@ -13,13 +13,17 @@ TS = [cv2.resize(T, None, fx=s, fy=s) for s in (0.7, 0.8, 0.9, 1.0, 1.1, 1.25, 1
 KNOWN = [(149, 140), (220, 206)]          # sparkle centres inside the 260x260 bottom-right corner of a 720-wide frame
 def hp(a): return a - cv2.GaussianBlur(a, (0, 0), 6)
 def corners(path, n=16):
-    cap = cv2.VideoCapture(path); N = int(cap.get(cv2.CAP_PROP_FRAME_COUNT)); out = []
+    """16 frames spread over the clip (ffmpeg fast seek: OpenCV frame seeking took minutes on 4K clips), bottom-right 260x260 corner"""
+    import subprocess
+    d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', path], capture_output=True, text=True).stdout or 0)
+    out = []
     for k in range(n):
-        cap.set(cv2.CAP_PROP_POS_FRAMES, int(N * (k + 0.5) / n)); ok, im = cap.read()
-        if not ok: continue
-        h, w = im.shape[:2]; im = cv2.resize(im, (720, round(h * 720 / w)))
+        b = subprocess.run(['ffmpeg', '-nostdin', '-v', 'error', '-ss', f'{d * (k + 0.5) / n:.3f}', '-i', path, '-frames:v', '1',
+                            '-vf', 'scale=720:-2', '-f', 'image2pipe', '-vcodec', 'png', '-'], capture_output=True).stdout
+        im = cv2.imdecode(np.frombuffer(b, np.uint8), cv2.IMREAD_COLOR) if b else None
+        if im is None: continue
         out.append(cv2.cvtColor(im, cv2.COLOR_BGR2GRAY).astype(np.float32)[-260:, -260:])
-    cap.release(); return out
+    return out
 def score(path):
     fr = corners(path)
     if len(fr) < 4: return None
@@ -33,10 +37,9 @@ def score(path):
         if best > 0.45 and min(np.hypot(loc[0] - a, loc[1] - b) for a, b in KNOWN) < 25: hits += 1
     return hits / len(fr)
 keys = sys.argv[1:] or sorted(f[:-4] for f in os.listdir(F + '/raw') if f.endswith('.mp4'))
-res = {}
-for k in keys:
-    s = score(f'{F}/raw/{k}.mp4')
-    if s is not None: res[k] = round(s, 3)
+from concurrent.futures import ProcessPoolExecutor
+with ProcessPoolExecutor(4) as ex:
+    res = {k: round(s, 3) for k, s in zip(keys, ex.map(score, [f'{F}/raw/{k}.mp4' for k in keys])) if s is not None}
 old = json.load(open('aiscan.json')) if os.path.exists('aiscan.json') and sys.argv[1:] else {}
 old.update(res); json.dump(old, open('aiscan.json', 'w'), indent=0)
 flag = sorted(k for k, v in res.items() if v >= 0.40)

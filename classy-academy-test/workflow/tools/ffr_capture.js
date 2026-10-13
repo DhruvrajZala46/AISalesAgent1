@@ -23,11 +23,11 @@ const OFF = 200;                      // shift the stage so the oversized backdr
     document.querySelectorAll('video,audio').forEach(v => v.remove());
   }, OFF);
   const ids = await pg.evaluate(() => {
-    const keep = ['card','hint','q1','q2','qr1','qr2','qs1','qs2','gtx1','gtx2','title','cl','hd','chk','logo','endlogo','bg','rcp'];
+    const keep = ['card','hint','q1','q2','qr1','qr2','qs1','qs2','gtx1','gtx2','title','cl','hd','chk','logo','endlogo','bg','rcp','ann','alab','kick'];
     return [...document.querySelectorAll('#root > *')].filter(e => e.id && keep.some(k => e.classList.contains(k))).map(e => [e.id, e.className]);
   });
   const meta = {};
-  const MASKED = ['card','hint','q1','q2','qr1','qr2','qs1','qs2','gtx1','gtx2','rcp'];
+  const MASKED = ['card','hint','q1','q2','qr1','qr2','qs1','qs2','gtx1','gtx2','rcp','ann'];
   for (const [id, cls] of ids) {
     const parts = cls.includes('chk') ? ['text', 'mark'] : ['all'];
     for (const part of parts) {
@@ -41,7 +41,7 @@ const OFF = 200;                      // shift the stage so the oversized backdr
         e.style.webkitMaskImage = 'none'; e.style.maskImage = 'none';
         const svg = e.querySelector('svg');
         if (svg) {
-          const p = svg.querySelector('path'); p.style.strokeDashoffset = '0';
+          const p = svg.querySelector('path'); if (p) p.style.strokeDashoffset = '0';
           if (part === 'text') svg.style.visibility = 'hidden';
           if (part === 'mark') { svg.style.visibility = 'visible'; e.style.color = 'transparent'; e.style.textShadow = 'none'; }
           else svg.style.visibility = part === 'all' ? 'visible' : svg.style.visibility;

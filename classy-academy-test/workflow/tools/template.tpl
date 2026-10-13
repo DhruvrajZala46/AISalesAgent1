@@ -80,6 +80,18 @@ body { margin: 0; background: #000; }
 .qs1, .qs2 { left: 820px !important; right: 40px !important; color: #fff; font-family: "Playfair"; font-size: 64px; text-shadow: 0 2px 18px rgba(60,40,25,.25); }
 .qs1 { top: 430px; } .qs2 { top: 528px; }
 .qs1 i, .qs2 i { font-family: "Pinyon"; font-style: normal; font-size: 1.3em; line-height: 0.8; }
+
+/* ---- the "demo" edit: annotations drawn on her, labels, the list beside her ---- */
+.ann { position: absolute; z-index: 46; --p: 100; filter: drop-shadow(0 2px 5px rgba(40,20,8,.55));
+  -webkit-mask-image: linear-gradient(90deg, #000 45%, transparent 55%); mask-image: linear-gradient(90deg, #000 45%, transparent 55%);
+  -webkit-mask-size: 220% 100%; mask-size: 220% 100%;
+  -webkit-mask-position: calc(var(--p) * 1%) 0; mask-position: calc(var(--p) * 1%) 0; }
+.ann svg { display: block; overflow: visible; }
+.alab { position: absolute; z-index: 46; }
+.alab span { display: inline-block; background: #fbf7f2; color: #3b2a20; font-family: "Playfair"; font-size: 34px; padding: 8px 24px 10px; border-radius: 40px; box-shadow: 0 8px 22px rgba(60,30,12,.30); white-space: nowrap; }
+.ckl { font-size: 50px; }
+.ckl svg { left: -84px; top: 4px; width: 62px; height: 62px; filter: drop-shadow(0 4px 10px rgba(60,30,12,.25)); }
+.kick { position: absolute; z-index: 46; font-family: "Pinyon"; font-size: 84px; color: #fff; white-space: nowrap; text-shadow: 0 2px 16px rgba(60,40,25,.3); }
 </style>
 </head>
 <body>

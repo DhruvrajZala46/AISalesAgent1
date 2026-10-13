@@ -134,7 +134,7 @@ SPR = json.load(open(os.path.join(SP, 'sprites.json')))
 
 # ---------------- build layers ----------------
 TEXTZ = {'card': 49, 'hint': 45, 'q1': 45, 'q2': 45, 'qr1': 45, 'qr2': 45, 'qs1': 45, 'qs2': 45, 'gtx1': 45, 'gtx2': 45, 'rcp': 45,
-         'title': 45, 'cl': 46, 'hd': 46, 'chk': 46, 'logo': 47, 'endlogo': 62}
+         'title': 45, 'cl': 46, 'hd': 46, 'chk': 46, 'logo': 47, 'endlogo': 62, 'ann': 46, 'alab': 46, 'kick': 46}
 layers = []   # (z, order, layer)
 def vwin(v): return float(v.a.get('data-start')), float(v.a.get('data-start')) + float(v.a.get('data-duration'))
 for order, n in enumerate(ROOT.kids):
@@ -157,7 +157,7 @@ for order, n in enumerate(ROOT.kids):
     if 'black' in c: layers.append((60, order, dict(kind='fill', id='black', col=(0, 0, 0), a=1.0))); continue
     z = next((TEXTZ[k] for k in c if k in TEXTZ), None)
     if z is not None and n.id:
-        if 'chk' in c: layers.append((z, order, dict(kind='chk', id=n.id, pid=n.kids[0].kids[0].id if n.kids and n.kids[0].kids else None)))
+        if 'chk' in c: layers.append((z, order, dict(kind='chk', id=n.id, pid=next((k.id for k in (n.kids[0].kids if n.kids else []) if k.tag == 'path' and k.id), None))))
         else: layers.append((z, order, dict(kind='sprite', id=n.id, masked=SPR.get(n.id + '_all', {}).get('masked', False),
                                             init_op=0.92 if 'logo' in c else (float(n.style.get('opacity', 1)) if 'opacity' in n.style else 1.0))))
 layers.sort(key=lambda z: (z[0], z[1])); LAYERS = [l for _, _, l in layers]

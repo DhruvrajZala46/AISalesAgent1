@@ -81,7 +81,21 @@ python3 $T/grid.py x          # contact sheets, one frame per shot, to check con
 
 ## Step 5 - The edit (`edit.py`)
 
-**Default since Oct 2026: the "stage" edit** (from the replay study of 79 videos,
+**Default since the body-shape video (Oct 2026): the "demo" edit.** Evidence: `videos/body-shape/edit-evidence.md`
+(the topic winners' replay peaks + the 79-video study); full example: `videos/body-shape/edit.py`.
+1. White number card per point (unchanged), point 1 by 0:30.
+2. **One real woman per point** in one frame on the left (`demo([(C(key,a,b), t), ...], t_end)`), doing the tip on
+   herself: her mistake (brief) -> her fix (long) -> her walking off happy. Never 6-8 women from 6-8 creators in one point.
+   Search with the word "video" in every query, and look for creators' own do/don't or before/after reels.
+3. **The tip drawn on her at the word** (measured on full frames with a 160 px grid: `fr.py`, 720x1280 space):
+   `hline`/`vline`/`ring`/`vshape`/`arrow` + `tag('label', ...)`; a held frame `C(key, t, t)` while lines are drawn.
+4. **A tick/cross list builds on the right**, one line per instruction, timed to the words: `kicker('name', ...)` +
+   `steps([('no', 'the mistake', t), ('yes', 'the fix', t), ...], t_end)`.
+5. Burned-in captions / watermarks: crop past them with `CROP['key'] = (x0, y0, h)` (cut at 2x, stays sharp).
+6. Kept: full-screen only for hook, guide plug, ending; guide plug <= 10 s at the end of point 4; the recap brings each
+   point's woman back while the checklist ticks.
+
+**The earlier "stage" edit** (from the replay study of 79 videos,
 `classy-academy-test/research-2026-10-12-edit-evidence.md`; the full example is
 `videos/dressing-rules/edit.py`):
 
