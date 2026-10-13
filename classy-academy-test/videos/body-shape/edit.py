@@ -44,7 +44,7 @@ card('1. Find your shape', 5)
 # 9 "Try this now. In front of a full-length mirror, in daylight and fitted clothes, look at three widths only: your shoulders, your waist and your hips."
 t9 = at(9, 'look at three widths')
 demo([(C('fitroom33', 0.0, 3.9), after(5)), (C('samedress17', 0.0, 8.1), st(7) - 0.1), (C('samedress14', 14.0, 19.0), st(8) - 0.1),
-      (C('shapetest0', 24.0, 29.0), st(9) - 0.1), (C('shapetest0', 40.6, 40.6), t9, 1.0)], en(9) + 0.3)
+      (C('shapetest0', 24.0, 29.0), st(9) - 0.1), (C('shapetest0', 40.6, 45.6), t9, 1.0)], en(9) + 0.3)
 for key_y, (xa, xb, y), word in [(0, (200, 520, 592), 'shoulders'), (1, (250, 470, 815), 'waist'), (2, (225, 495, 975), 'hips')]:
     tt = at(9, 'your ' + word) - 0.1
     L('shapetest0', xa, xb, y, tt, en(9) + 0.25)
@@ -75,15 +75,15 @@ card('2. Thirds, not halves', 13)
 # 19 "And if a tuck doesn't suit your bust or your tummy, a fitted jacket that ends just above the hip bone creates the same thirds."   (the same woman, her "do")
 # 20 "Get the thirds right, and the whole outfit looks intentional, without changing a thing about you."
 t16 = at(16, 'Place both hands'); t16b = at(16, 'If they cover')
-demo([(C('thirds1', 3.2, 9.4), after(13)), (C('thirds9', 5.0, 11.3), st(15) - 0.1), (C('thirds9', 11.5, 21.5), at(15, 'The eye loves thirds')),
-      (C('torso23', 9.3, 15.0), st(16) - 0.1), (C('torso23', 15.0, 16.2), t16), (C('torso23', 16.2, 16.2), t16 + 0.85, 1.0),
+demo([(C('thirds1', 3.0, 8.7), after(13)), (C('thirds9', 5.0, 11.3), st(15) - 0.1), (C('thirds9', 11.5, 21.5), at(15, 'The eye loves thirds')),
+      (C('torso23', 9.3, 15.0), st(16) - 0.1), (C('torso23', 15.0, 27.5), t16, 1.0),
       (C('longtorso4', 11.0, 21.0), st(17) - 0.1), (C('shorttorso39', 22.0, 28.5), at(17, 'A shorter torso')),
-      (C('lowrise23', 5.5, 11.6), st(18) - 0.1, 1.0), (C('thirds1', 9.6, 19.0), st(19) - 0.1), (C('jacket33', 4.7, 10.5), st(20) - 0.1)], en(20) + 0.6)
-ring(*PT('torso23', 300, 825), 250, 80, t16 + 0.9, en(16) + 0.2)
+      (C('lowrise23', 5.5, 11.6), st(18) - 0.1, 1.0), (C('thirds1', 9.6, 19.0), st(19) - 0.1), (C('jacket33', 6.6, 11.0), st(20) - 0.1)], en(20) + 0.6)
+ring(*PT('torso23', 300, 825), 250, 80, t16 + 0.9, en(16))
 for k_, (txt, w_) in enumerate([('covers it: short torso', 'short'), ('at the edge: balanced', 'balanced'), ('below: long torso', 'long.')]):
-    tg(txt, 760 + k_ * 72, at(16, w_) - 0.2, en(16) + 0.2)
-L('lowrise23', 95, 260, 770, at(18, 'skip low rise'), en(18) + 0.2)
-tg('low rise', PT('lowrise23', 0, 770)[1] + 24, at(18, 'skip low rise') + 0.2, en(18) + 0.2)
+    tg(txt, 760 + k_ * 72, at(16, w_) - 0.2, en(16))
+L('lowrise23', 95, 260, 770, at(18, 'skip low rise'), en(18))
+tg('low rise', PT('lowrise23', 0, 770)[1] + 24, at(18, 'skip low rise') + 0.2, en(18))
 kicker('thirds, not halves', after(13), en(20) + 0.5)
 steps([('no', 'a top to mid-thigh', at(15, 'two equal halves')), ('yes', 'one third top, two below', at(15, 'The eye loves thirds')),
        ('yes', 'both hands under the bust', t16), ('yes', 'long torso: high rise', at(17, 'high-rise')),
@@ -100,16 +100,16 @@ card('3. Show your narrowest point', 21)
 # 27 "And for a dress you already own, turn it inside out, pin a safety pin on each side seam at the waist, thread a soft ribbon through both, ..."
 # 28 "One clear point of shape, and you look at ease in your clothes instead of lost in them."
 t23 = at(23, 'hangs straight down')
-demo([(C('wrapdress13', 0.3, 6.4), after(21)), (C('loosedress2', 1.0, 1.0), st(23) - 0.1, 1.0),
-      (C('loosedress11', 5.1, 8.8), st(24) - 0.1, 1.0), (C('wrapdress13', 8.5, 20.0), st(25) - 0.1),
+demo([(C('wrapdress13', 0.3, 6.4), after(21)), (C('loosedress2', 1.0, 1.0), st(23) - 0.1, 1.06), (C('frustrated15', 0.1, 3.6), at(23, 'makes you look wider')),
+      (C('loosedress11', 5.8, 8.8), st(24) - 0.1, 1.0), (C('wrapdress13', 8.5, 20.0), st(25) - 0.1),
       (C('empire18', 4.3, 9.4), at(25, "If you're fuller"), 1.0), (C('peplum13', 0.0, 8.8), at(25, 'And if your waist')),
       (C('brafit40', 104.0, 113.0), st(26) - 0.1), (C('loosedress19', 6.0, 16.5), st(27) - 0.1), (C('loosedress19', 19.0, 25.0), st(28) - 0.1)], en(28) + 0.6)
 for x_ in (165, 455):
-    a_ = PT('loosedress2', x_, 470); b_ = PT('loosedress2', x_, 820); vline(a_[0], a_[1], b_[1], t23, en(23) + 0.2, dash=True)
-tg('hangs from the fullest point', PT('loosedress2', 0, 860)[1], t23 + 0.3, en(23) + 0.2)
-ring(*PT('loosedress11', 372, 670), 92, 58, at(24, 'one narrow point'), en(24) + 0.2)
-L('empire18', 270, 430, 540, at(25, 'just under'), at(25, 'And if your waist') - 0.1)
-tg('just under the bust', PT('empire18', 0, 540)[1] - 70, at(25, 'just under') + 0.2, at(25, 'And if your waist') - 0.1)
+    a_ = PT('loosedress2', x_, 470); b_ = PT('loosedress2', x_, 820); vline(a_[0], a_[1], b_[1], t23, at(23, 'makes you look wider') - 0.4, dash=True)
+tg('hangs from the fullest point', PT('loosedress2', 0, 860)[1], t23 + 0.3, at(23, 'makes you look wider') - 0.4)
+ring(*PT('loosedress11', 372, 670), 92, 58, at(24, 'one narrow point'), en(24))
+L('empire18', 270, 430, 540, at(25, 'just under'), at(25, 'And if your waist') - 0.45)
+tg('just under the bust', PT('empire18', 0, 540)[1] - 70, at(25, 'just under') + 0.2, at(25, 'And if your waist') - 0.45)
 kicker('your narrowest point', after(21), en(28) + 0.5)
 steps([('no', 'loose all over', t23), ('yes', 'clear waist: a wrap dress', at(25, 'classic wrap dress')),
        ('yes', 'fuller middle: under the bust', at(25, 'just under')), ('yes', 'straighter: peplum, structure', at(25, 'peplum')),
@@ -122,7 +122,7 @@ card('4. Lead the eye to what you love', 29, style='font-size:104px')
 # 32 "Wider hips? Wear the print, the lighter colour and the earrings on top, with darker trousers. Wider shoulders? Try the opposite: a simple top,
 #     with the colour and a wide leg below. Fuller through the middle? Bring the detail up to your face, with earrings or a scarf, because it draws the eye up."
 # 33 "And if you love your shoulders or your hips, show them off, with confidence. These are choices, never rules."
-demo([(C('earrings16', 6.8, 14.8), after(29)), (C('earrings5', 0.0, 5.5), st(31) - 0.1),
+demo([(C('earrings16', 6.0, 14.8), after(29)), (C('earrings5', 0.0, 5.5), st(31) - 0.1),
       (C('pearshape22', 62.5, 70.0), st(32) - 0.1), (C('halter24', 13.7, 21.0), at(32, 'Wider shoulders')),
       (C('appletips43', 3.0, 12.0), at(32, 'Fuller through')), (C('halter24', 27.0, 35.0), st(33) - 0.1)], en(33) + 0.4)
 kicker('lead the eye', after(29), en(33) + 0.3)
@@ -149,14 +149,14 @@ card('5. One colour, top to toe', 36)
 # 42 "And if you love contrast, keep it. Just add a jacket or a scarf that ties the two colours together."
 # 43 "It's timeless, it feels effortless and polished, and it's the easiest outfit you'll put together all week."
 t38 = at(38, 'draws a line'); t39 = at(39, 'creates one long line')
-demo([(C('scarf29', 4.3, 8.6), after(36)), (C('scarf29', 6.5, 6.5), st(38) - 0.1, 1.0),
-      (C('mono11', 1.9, 3.5), st(39) - 0.1), (C('mono11', 3.5, 3.5), st(39) + 2.1, 1.0),
+demo([(C('scarf29', 7.4, 10.4), after(36)), (C('mono27', 5.5, 7.0), at(37, 'and it can')), (C('scarf29', 4.8, 7.4), st(38) - 0.1, 1.0), (C('frustrated15', 5.6, 9.4), at(38, 'straight across')),
+      (C('mono11', 1.9, 3.5), st(39) - 0.1), (C('mono11', 3.5, 3.5), st(39) + 2.1, 1.06),
       (C('mono11', 5.2, 9.2), at(40, 'navy with navy')), (C('mono11', 10.0, 13.4), at(40, 'soft beige knit')),
       (C('cream23', 0.0, 3.5), at(40, 'cream with ivory')), (C('tonal12', 9.0, 12.2), at(40, 'mix textures')),
-      (C('coatopen8', 0.0, 3.3), st(41) - 0.1), (C('coatopen14', 6.5, 9.8), at(41, 'to frame')), (C('mono27', 0.0, 5.8), at(41, 'And the layer')), (C('mono27', 6.0, 8.5), st(42) - 0.1), (C('scarf27', 13.0, 21.7), at(42, 'Just add')),
+      (C('coatopen8', 0.1, 3.3), st(41) - 0.1), (C('coatopen14', 6.6, 9.8), at(41, 'to frame')), (C('mono27', 0.0, 5.4), at(41, 'And the layer')), (C('scarf27', 2.0, 9.0), st(42) - 0.1), (C('scarf27', 13.0, 21.7), at(42, 'Just add')),
       (C('cream14', 0.0, 5.4), st(43) - 0.1), (C('tonal12', 0.0, 6.0), at(43, 'easiest'))], en(43) + 0.6)
-L('scarf29', 60, 480, 840, t38, en(38) + 0.2, dash=True)
-tg('the eye stops here', PT('scarf29', 0, 840)[1] + 26, t38 + 0.3, en(38) + 0.2)
+L('scarf29', 60, 480, 840, t38, at(38, 'straight across') - 0.4, dash=True)
+tg('the eye stops here', PT('scarf29', 0, 840)[1] + 26, t38 + 0.3, at(38, 'straight across') - 0.4)
 a_ = PT('mono11', 372, 330); b_ = PT('mono11', 372, 1210); vline(a_[0], a_[1], b_[1], t39, en(39) + 0.2)
 kicker('one colour', after(36), en(43) + 0.5)
 steps([('no', 'a break at the waist', t38), ('yes', 'one colour, top to toe', t39), ('yes', 'mix textures', at(40, 'mix textures')),
@@ -171,13 +171,13 @@ card('6. Open the neckline', 44)
 # 49 "And if you prefer more coverage, keep your crew neck and add a long pendant necklace. It creates the same long V."
 # 50 "When people see your face first, you feel seen, and you carry yourself with quiet confidence."
 t46 = at(46, 'closed neck')
-demo([(C('bigbust3', 11.2, 16.0), after(44)), (C('bigbust3', 13.0, 13.0), st(46) - 0.1, 1.0), (C('bigbust3', 26.9, 31.6), st(47) - 0.1),
+demo([(C('bigbust3', 12.0, 16.4), after(44)), (C('bigbust3', 13.0, 13.0), st(46) - 0.1, 1.07), (C('bigbust3', 26.9, 31.6), st(47) - 0.1),
       (C('bigbust50_8', 2.0, 6.0), at(48, 'a soft V')), (C('squareneck33', 0.3, 3.5), at(48, 'a scoop')),
       (C('inv50_21', 0.0, 3.5), at(48, 'a square neck')), (C('wrapdress5', 2.3, 6.0), at(48, 'or a wrap')),
       (C('bigbust50_8', 12.0, 18.0), at(48, 'A light V-neck')), (C('pendant22', 0.3, 7.6), st(49) - 0.1),
       (C('bigbust3', 34.5, 41.0), st(50) - 0.1)], en(50) + 0.6)
-ring(*PT('bigbust3', 350, 545), 105, 62, t46, en(46) + 0.2)
-tg('closed neck', PT('bigbust3', 0, 545)[1] - 110, t46 + 0.2, en(46) + 0.2)
+ring(*PT('bigbust3', 350, 545), 105, 62, t46, en(46))
+tg('closed neck', PT('bigbust3', 0, 545)[1] - 110, t46 + 0.2, en(46))
 for w_, lab in [('a soft V', 'soft V'), ('a scoop', 'scoop'), ('a square neck', 'square'), ('or a wrap', 'wrap')]:
     nx = {'a soft V': 'a scoop', 'a scoop': 'a square neck', 'a square neck': 'or a wrap', 'or a wrap': 'A light V-neck'}[w_]
     tg(lab, 150, at(48, w_) + 0.15, at(48, nx) - 0.05)
@@ -194,11 +194,11 @@ card('7. Fine knits, not chunky', 51)
 # 56 "On a really cold day, warmth comes first. A fine knit under a warm coat keeps you cosy without the bulk."
 # 57 "And if your hips are wider than your shoulders, a chunky knit on top can be lovely, because it adds volume where you're narrower."
 # 58 "Soft fabric moves with you, so you feel comfortable and graceful from morning to night."
-demo([(C('chunky41', 0.0, 6.3), after(51)), (C('chunky40', 2.0, 9.5), st(53) - 0.1), (C('chunky40', 10.0, 14.0), at(53, 'padding')),
-      (C('fineknit25', 9.0, 12.6), st(54) - 0.1), (C('fineknit25', 13.0, 22.0), st(55) - 0.1), (C('fineknit29', 2.0, 5.5), at(55, 'Before you buy')),
-      (C('coatopen14', 0.0, 5.8), st(56) - 0.1), (C('chunky43', 7.6, 14.0), st(57) - 0.1), (C('fineknit29', 5.6, 10.5), st(58) - 0.1)], en(58) + 0.6)
+demo([(C('chunky41', 0.0, 6.3), after(51)), (C('chunky40', 2.0, 9.5), st(53) - 0.1), (C('chunky40', 11.0, 13.7), at(53, 'padding')),
+      (C('fineknit25', 8.5, 12.8), at(53, 'often right')), (C('fineknit25', 13.0, 22.0), st(55) - 0.1), (C('fineknit29', 2.0, 5.5), at(55, 'Before you buy')),
+      (C('coatopen14', 0.0, 6.4), st(56) - 0.1), (C('chunky43', 8.0, 12.6), st(57) - 0.1), (C('chunky41', 6.3, 8.5), at(57, 'because it adds')), (C('fineknit29', 5.6, 10.5), st(58) - 0.1)], en(58) + 0.6)
 tg('thick cable knit', 150, at(53, 'thick cable') + 0.1, at(53, 'padding') - 0.05)
-tg('padding', 150, at(53, 'padding') + 0.15, en(53) + 0.2)
+tg('padding', 150, at(53, 'padding') + 0.15, en(53))
 kicker('fine knits', after(51), en(58) + 0.5)
 steps([('no', 'thick cable knit, padding', at(53, 'thick cable')), ('yes', 'fine knits that skim', st(54)),
        ('yes', 'hold it, move it', at(55, 'hold it')), ('yes', 'cold? fine knit, warm coat', at(56, 'A fine knit under')),
@@ -214,20 +214,20 @@ card('8. Shoes that continue the line', 59, style='font-size:104px')
 # 65 "If your feet need a wider strap or a rounder toe, comfort comes first. Choose it in your skin tone or your trouser colour, and let the colour do the work."
 # 66 "When nothing stops the eye, you look finished from head to toe, and you walk with ease."
 t61 = at(61, 'one hard stop'); t62 = at(62, 'continue the line')
-demo([(C('shorttorso32', 0.3, 3.4), after(59)), (C('shorttorso32', 8.3, 12.4), st(61) - 0.1), (C('shorttorso32', 12.4, 12.4), t61 - 0.2, 1.0),
-      (C('loafers29', 2.3, 9.3), st(63) - 0.1), (C('anklestrap10', 17.9, 26.0), at(63, 'With skirts')),
+demo([(C('shorttorso32', 0.1, 4.6), after(59)), (C('shorttorso32', 8.4, 13.9), st(61) - 0.1, 1.0),
+      (C('loafers29', 0.3, 9.3), en(61) - 0.2), (C('anklestrap10', 17.9, 26.0), at(63, 'With skirts')),
       (C('flats31', 0.3, 7.8), st(64) - 0.1), (C('flats1', 1.0, 7.5), at(64, 'A pointed-toe flat')),
       (C('sandals5', 0.0, 6.0), st(65) - 0.1), (C('sandals17', 1.0, 6.5), at(65, 'Choose it')), (C('flats31', 9.3, 15.5), st(66) - 0.1)], en(66) + 0.6)
-ring(*PT('shorttorso32', 150, 1180), 90, 60, t61, en(62) + 0.2)
-tg('hard stop', PT('shorttorso32', 0, 1180)[1] - 120, t61 + 0.2, en(62) + 0.2)
-a_ = PT('shorttorso32', 560, 760); b_ = PT('shorttorso32', 560, 1240); vline(a_[0], a_[1], b_[1], t62, en(62) + 0.2)
+ring(*PT('shorttorso32', 150, 1180), 90, 60, t61, en(61) - 0.5)
+tg('hard stop', PT('shorttorso32', 0, 1180)[1] - 120, t61 + 0.2, en(61) - 0.5)
+tg('one long line', 150, st(62) + 0.3, en(62) + 0.2)
 kicker('shoes', after(59), en(66) + 0.5)
 steps([('no', 'a hard stop at the ankle', t61), ('yes', 'trousers: same colour', st(63)), ('yes', 'skirts: your skin tone', at(63, 'skin tone')),
        ('yes', 'no heels needed', at(64, "don't need heels")), ('yes', 'comfort first, colour works', at(65, 'comfort comes first'))], en(66) + 0.5)
 
 # ================= recap 67-75: each point's woman comes back as its name is said, the list ticks =================
 white(en(66) + 0.35, st(67) + 0.5)
-demo([(C('samedress23', 0.0, 3.8), st(67) - 0.1), (C('shapetest0', 46.0, 48.5), st(68) - 0.1), (C('thirds9', 22.0, 24.5), st(69) - 0.1),
+demo([(C('samedress23', 0.0, 3.8), st(67) - 0.1), (C('shapetest0', 30.0, 33.0), st(68) - 0.1), (C('thirds9', 22.0, 24.5), st(69) - 0.1),
       (C('loosedress19', 16.5, 19.0), st(70) - 0.1), (C('halter24', 22.0, 26.0), st(71) - 0.1), (C('mono11', 19.8, 23.0), st(72) - 0.1),
       (C('bigbust50_8', 19.0, 22.0), st(73) - 0.1), (C('fineknit25', 24.0, 28.0), st(74) - 0.1), (C('flats31', 16.0, 21.0), st(75) - 0.1)],
      en(75) + 0.6, x0=250)
@@ -251,4 +251,4 @@ text('what works on <i>your</i> shape?', 'qr1', st(77) - 0.1, en(77) + 0.2, styl
 text('tell us in the comments', 'qr2', at(77, 'Tell us'), en(77) + 0.2, style='left:1010px;top:520px;font-size:48px')
 # 78 "A simple like or comment would mean so much to us. Until next time, bye everyone."
 canvas_full(C('loafers29', 9.5, 14.1), st(78) - 0.2, at(78, 'Until next time'), fin=0.6)
-canvas_full(C('jacket33', 10.5, 16.5), at(78, 'Until next time'), total - 2.6, fin=0.6)
+canvas_full(C('jacket33', 12.2, 16.5), at(78, 'Until next time'), total - 2.6, fin=0.6)
