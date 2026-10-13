@@ -100,7 +100,7 @@ card('3. Show your narrowest point', 21)
 # 27 "And for a dress you already own, turn it inside out, pin a safety pin on each side seam at the waist, thread a soft ribbon through both, ..."
 # 28 "One clear point of shape, and you look at ease in your clothes instead of lost in them."
 t23 = at(23, 'hangs straight down')
-demo([(C('wrapdress13', 0.3, 6.4), after(21)), (C('loosedress2', 1.0, 1.0), st(23) - 0.1, 1.06), (C('frustrated15', 0.1, 3.6), at(23, 'makes you look wider')),
+demo([(C('wrapdress13', 0.3, 6.4), after(21)), (C('loosedress2', 1.0, 1.0), st(23) - 0.1, 1.06), (C('frustrated15', 0.1, 2.6), at(23, 'makes you look wider')), (C('frustrated15', 2.6, 2.6), at(23, 'because'), 1.06),
       (C('loosedress11', 5.8, 8.8), st(24) - 0.1, 1.0), (C('wrapdress13', 8.5, 20.0), st(25) - 0.1),
       (C('empire18', 4.3, 9.4), at(25, "If you're fuller"), 1.0), (C('peplum13', 0.0, 8.8), at(25, 'And if your waist')),
       (C('brafit40', 104.0, 113.0), st(26) - 0.1), (C('loosedress19', 6.0, 16.5), st(27) - 0.1), (C('loosedress19', 19.0, 25.0), st(28) - 0.1)], en(28) + 0.6)

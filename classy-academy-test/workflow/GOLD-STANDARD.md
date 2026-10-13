@@ -132,6 +132,12 @@ Full rules in `3-VIDEO.md` step 5; the evidence in `research-2026-10-12-edit-evi
 
 ## To make the next one better
 
+- **The edit moved on (body shape, Oct 2026): the "demo" edit** is now the default (3-VIDEO.md step 5,
+  `videos/body-shape/edit-evidence.md`): one real woman per point from mistake to fix, the tip drawn on her
+  at the word, a tick/cross list building beside her. Check every render with `wordsheet.py` (the spoken
+  words under every frame), not only a picture sheet: it caught 8 mismatches the picture sheet hid.
+- Long held frames read as a freeze: use live footage of the same woman, or a clear push-in (>= 1.06).
+
 - Run the AI metadata check while sourcing, not after: the red-coat clip (redcoat0) passed the
   watermark scan and reached the video. It still has to be swapped out (6:34 and 9:01).
 - Pick the thumbnail's mistake -> fix footage while sourcing (one creator's own do/don't clip, no captions).
