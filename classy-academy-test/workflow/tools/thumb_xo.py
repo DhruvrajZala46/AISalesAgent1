@@ -41,6 +41,13 @@ def cutout(im):
     rgba = np.array(out); rgba[:, :, 3] = np.clip(al, 0, 255).astype(np.uint8)
     return Image.fromarray(rgba)
 
+PAD = 48
+def shadow(im):
+    """Soft drop shadow of a cut-out. Padded before the blur: blurring inside the cut-out's own box clipped the
+    shadow into a hard vertical edge beside each woman."""
+    a = Image.new('L', (im.width + 2 * PAD, im.height + 2 * PAD), 0); a.paste(im.getchannel('A').point(lambda v: v * 0.35), (PAD, PAD))
+    sh = Image.new('RGBA', a.size, (40, 20, 8, 0)); sh.putalpha(a.filter(ImageFilter.GaussianBlur(14))); return sh
+
 def backdrop():
     yy, xx = np.mgrid[0:H, 0:W]; r = np.sqrt(((xx - W / 2) / (W * 0.62)) ** 2 + ((yy - H * 0.45) / (H * 0.85)) ** 2)
     c0, c1 = np.array([216, 164, 120]), np.array([168, 113, 76])            # the video's caramel, lighter in the centre
@@ -75,8 +82,7 @@ def build(out, left, right, top, big, small, cy=-1, show=0.80, head_y=26):
         im = cutout(erase_caption(Image.open(path).convert('RGB'), cy))
         bb = im.getbbox(); im = im.crop(bb); s = (H - head_y) / (show * im.height)   # head at the top, cut below the knee
         im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
-        sh = Image.new('RGBA', im.size, (40, 20, 8, 0)); sh.putalpha(im.getchannel('A').point(lambda v: v * 0.35))
-        c.alpha_composite(sh.filter(ImageFilter.GaussianBlur(14)), (round(cx - im.width / 2) + 10, head_y + 12))
+        c.alpha_composite(shadow(im), (round(cx - im.width / 2) + 10 - PAD, head_y + 12 - PAD))
         c.alpha_composite(im, (round(cx - im.width / 2), head_y))
         b = badge('no' if k == 0 else 'yes'); bx = round(cx + (im.width * 0.30 if k == 0 else -im.width * 0.30 - b.width))
         c.alpha_composite(b, (bx, head_y + 30))

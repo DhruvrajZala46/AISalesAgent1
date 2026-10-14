@@ -25,6 +25,12 @@ mistake and green tick on the fix (8.0M "Dressing Rules EVERYONE Should Learn"):
 in our look from two frames of ONE creator's own before/after video (never put a cross on a woman who did not
 present that look as a mistake herself). It erases a burned-in caption line and cuts her out (rembg).
 
+For a body-shape / fit / proportion topic, the winners add **lines drawn on her body** (42 body-shape winners: same
+woman mistake -> fix 67.5x her channel's median, same woman + lines on her 56.8x and 1.84M median views, shape icons
+14.0x; `videos/body-shape/THUMBNAIL.md`): `tools/thumb_shape.py spec.json` builds it - our look, ✗/✓, dashed lines and
+small white labels placed in canvas coordinates (render once with `"grid": true` to read them). Draw only what the
+woman shows or explains herself. Frame above a burned-in caption rather than erasing it over a bag or a pattern.
+
 `tools/thumb_make.py` builds exactly this (it reproduces the approved French thumbnail pixel for
 pixel). Never change the layout to "try something new" without the user asking.
 
