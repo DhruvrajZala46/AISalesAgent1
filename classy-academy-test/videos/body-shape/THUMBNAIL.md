@@ -63,6 +63,29 @@ the caramel stands apart from the white and grey winners. B's words are smaller 
 
 Description credit line: `Thumbnail photos: @mylifeafter_50 @jaymehallyall`
 
+## Round 2 (the user: "3 different options, unique, attractive, eye-catching") - three concepts, three proofs
+
+The first three were too alike (A and B the same photo). Now each option copies a DIFFERENT proven winner pattern, with a
+different woman, layout and age, so Test & compare also tells us which pattern our viewers click.
+
+| | Option 1 - the fix (`option1_the_fix.jpg`) | Option 2 - the test (`option2_the_test.jpg`) | Option 3 - elegant women (`option3_elegant_women.jpg`) |
+|---|---|---|---|
+| Pattern | same woman, mistake -> fix, lines on her | one woman doing the self-test + a question | our channel's own 3-panel layout |
+| Proof | 67.5x median (n=7): SuppleChic 154x, Cathy 241x, Anna Rova 101x, Kaiti Yoo 88x | test/measure thumbnails: Glamrs "WHAT'S YOUR BODY SHAPE?" 90x, Jules Beth 50x, Justine Leconte 10x; the hand test = the biggest replay peak of the topic (10.7x) | our #1 thumbnail ("8 Things Elegant Ladies Never Wear", 1.24M); "Do This / Wear This" winners: Chic After 60 64x, SuppleChic 154x, Cathy 241x |
+| Woman | ALEX @mylifeafter_50, over 50 | Julia @iamjuliahuynh, 20s (our video's hand test) | Jeanne Caldarera @jeannecaldarera, 70s, three looks, waist marked |
+| Words | IT'S NOT / YOU / *it's the cut* (100/100) | WHICH ONE / ARE YOU? / *try the hand test* / short · balanced · long (100/100) | Elegant Women Always / Do This / *at any age* (100/100) |
+| Feed test | words read first, story clear | face and question pull the eye | calmest, most "our channel" |
+
+**Recommended: Option 1** - the strongest proof (the highest multiple of any pattern), the clearest at feed size, a
+woman over 50 (our viewers' biggest request) and a kind promise. Upload all three to Test & compare: YouTube shows
+each to a share of viewers and keeps the one with the most watch time.
+
+Photos: Julia @iamjuliahuynh https://www.pinterest.com/pin/310678074318620159/ (clip torso23, 15.0 s, no caption).
+Jeanne Caldarera @jeannecaldarera https://www.pinterest.com/pin/411305378492972465/ (24.0 s),
+https://www.pinterest.com/pin/411305378493663599/ (18.7 s), https://www.pinterest.com/pin/411305378493742433/ (35.6 s).
+Description credit line: `Thumbnail photos: @mylifeafter_50 @iamjuliahuynh @jeannecaldarera`
+New tool: `tools/thumb_photo.py` (one real photo fading into the caramel, words on the other side, the tip drawn on her).
+
 ## The winners (tags: s same woman 2+ outfits, f mistake -> fix, d drawn on her body, i icons/illustration,
 ## l line-up, t one woman + text, a no real photo)
 
