@@ -22,12 +22,14 @@ Each stage ends with the question **ship it, or change it?** Nothing moves on wi
 
 ## Rules that never change
 
-1. **Teach, don't report.** Every point: name it -> validate -> why (effect on her) -> principle
-   -> what elegant women do -> swap / how-to -> inner payoff. No quotes, no named people, no
-   culture reports. Only tips that are concrete, true and useful on any budget, at any age.
+1. **Teach, don't report - in the creator's habit structure** (`../CHANNEL-DNA.md`, sections 2-3 and the
+   value test in 7). A named woman may be a brief example she can see or hear; never a story about her.
+   No culture reports. Only tips that are concrete, true and useful on any budget, at any age.
 2. **Real footage only. Never AI** - in the video and in the thumbnails.
-3. **Every creator credited, each clip used once.**
-4. **No sound effects.** One soft solo-piano bed ~12 dB under the voice.
+3. **Every clip researched and logged before use** (`ASSET-RESEARCH-GUIDE.md`, `SOURCES-LOG-TEMPLATE.md`):
+   licence or permission, evidence, decision. Credit is not permission. Each clip used once.
+4. **No sound effects.** One soft solo-piano bed ~12 dB under the voice (measured on two of her videos;
+   the speech videos' sound is not measured - `../VISUAL-EDITING-DNA.md` section 6).
 5. **Voice: Kokoro `af_heart`, speed 0.80.**
 6. **Never build the video before the script is approved.**
 7. **Public data only.** If YouTube blocks the machine, the user may hand over a cookies file: use
@@ -44,12 +46,15 @@ workflow/
   PROMPTS.md          the prompts to send, stage by stage, plus an all-in-one
   1-TOPIC.md ... 5-PACKAGE.md   the playbooks
   LEARNINGS.md        every mistake that reached the user, and the check that stops it now
+  ASSET-RESEARCH-GUIDE.md   visual brief per line, where to look, provenance, rights, final audit
+  SOURCES-LOG-TEMPLATE.md   one row per clip: source, licence, evidence, decision
   setup.sh            installs the renderer, voice model, fonts, music into a new work folder
   assets/             fonts, CE logos, GSAP, the AI-sparkle template
   tools/
     dna.py            does the script teach like the channel? (stage 2 gate)
     hookscore.py      hook scores (from the youtube-agent skill)
     tts.py            the voice, one wav per line
+    revsearch.py      reverse image search (Yandex) -> pages holding the same frame + review sheet
     pin_search.py     Pinterest video search -> contact sheets
     dlpicks.py, pin_dl.py   download the picked clips (+ creator credits)
     shots.py, grid.py       scene cuts and frame sheets for checking every clip

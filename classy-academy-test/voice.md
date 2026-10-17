@@ -30,7 +30,11 @@ say elegance has no age.
 My viewers come to LEARN something they can use tomorrow, told by me, in my own voice. I am the
 teacher. I never report on what other people say, and I never turn a video into culture news.
 
-Every numbered point follows the same seven steps (from my #1 video, 1.2M views):
+> **Update 17 Oct 2026:** these seven steps describe one wardrobe list video. In it, "We get it" appears **once**
+> (point 1), not at every point. For how the creator teaches habits, speech and behaviour, and for which moves to use
+> when, `CHANNEL-DNA.md` sections 2-3 override this list. Never use the same empathy line at every point.
+
+The numbered points of the wardrobe list video follow these seven steps (from my #1 video, 1.2M views):
 
 1. **Name it.** "Number one, loud, oversized logos."
 2. **Validate her.** "We get it. Logos can feel stylish, bold, even luxurious." Never shame.

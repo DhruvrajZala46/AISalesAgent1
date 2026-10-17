@@ -1,135 +1,241 @@
-# Channel DNA - The Classy Elegance (draft v0.1, 17 Oct 2026)
+# Channel DNA - The Classy Elegance / Classy Academy (v0.2, 17 Oct 2026)
 
-Read this before any idea, script, visual or edit. It overrides the stage playbooks where they disagree.
-Every line is marked **[O] observed** (seen in the creator's own videos or data), **[H] hypothesis** (a reasonable
-reading that needs more evidence) or **[?] unknown** (needs material from the creator). A rule is only promoted to [O]
-when at least two of the creator's own videos show it.
+Read this before any idea, script, visual or edit. It overrides the stage playbooks where they disagree
+(including the old "no named people" rule in `workflow/README.md` and `voice.md`).
 
-Evidence used: the reference video "6 Ways to INSTANTLY Sound More Elegant" (`reference-breakdown-RUDXBR8nyHw.md`);
-the transcripts of all 30 own uploads (`.claude/skills/content-idea/audience/transcripts/`); per-frame layout labels of
-the own uploads (`<scratchpad>/edit_ev/labels_own/`, 160x90 storyboards); our viewers' 2,685 comments; the creator's
-written feedback (Oct 2026). Not used as evidence of the creator's style: competitor videos (they are research, not DNA).
+**Evidence marks.** **[O]** observed in at least two of the creator's own videos (named). **[O1]** observed in one
+video only - a lead, not a rule. **[H]** hypothesis: a reading the evidence supports but does not prove. **[?]**
+unknown from the outside.
+
+**Evidence used.**
+- Full transcripts of 30 own uploads (`.claude/skills/content-idea/audience/transcripts/`), read closely for six:
+  - "6 Ways to INSTANTLY Sound More Elegant" (the reference, 4.93% liked);
+  - "10 Microhabits That Instantly Elevate Your Presence" (3.86%);
+  - "10 Micro Habits That Increase Your Feminine Energy" (4.69%);
+  - "7 Habits That Make You Instantly Classy" (4.02%);
+  - "How to Own Any Room You Walk Into" (1.68%: the creator's weakest speech/behaviour video, used as a contrast);
+  - "8 Things Elegant Ladies Never Wear" (the #1 by views).
+- Visual evidence:
+  - YouTube storyboards (one frame every ~5 s) of all uploads, with layout labels;
+  - the "most replayed" data;
+  - reverse-image tracing of about 170 frames from 7 videos, each match checked by eye
+    (`source-trace-2026-10-17.md`);
+  - frame-by-frame and audio measurements of two full video files made on 9-12 Oct (`how-you-edit.md`,
+    `edit-style-measured.md`).
+- Not available: the video file of the reference. YouTube refuses this machine ("confirm you're not a bot"), so its
+  motion, transitions and sound are not measured. See `VISUAL-EDITING-DNA.md`.
+
+Competitor videos are research for facts and gaps. They are never the template.
 
 ## 1. How the creator thinks (intellectual DNA)
 
-- **[O] Start from the change she wants, not from a list.** The reference opens on "change your entire presence just by
-  elevating the way you speak"; "10 Microhabits" on "that kind of aura is much simpler than you think". The video is a
-  path to a state (softer, calmer, more composed), and every point is a step on that path.
-- **[O] An abstract quality becomes a small, observable behaviour.** "Elegant voices don't need volume. They rely on
-  presence" -> soften your voice instead of matching their energy. "Presence" -> slow your movements by a little.
-- **[O] The points belong to one subject and build on each other.** Pace -> volume -> replies -> texting -> the soft no ->
-  micro-habits are six sides of one thing (how you sound), ending in boundaries and self-respect.
-- **[O] Small changes, honestly sized.** "These are small changes, but they completely shift the feeling of your voice";
-  "take almost no effort". No grand promises, no guaranteed outcomes.
-- **[H] Elegance is self-possession, not etiquette.** The payoff is always how SHE feels and carries herself (calm,
-  certain, not drained), more than how others judge her. Needs more videos to confirm.
+- **[O] She starts from the woman she will become, not from a list.** Examples:
+  - "change your entire presence just by elevating the way you speak" (reference);
+  - "You know that feeling when you see a woman and everything about her just feels expensive" (10 Microhabits);
+  - "Have you ever met a woman who seemed effortlessly feminine?" (Feminine Energy);
+  - "What truly makes a woman classy?" (7 Habits).
+- **[O] An abstract quality becomes a small, observable behaviour.** Examples:
+  - "Presence" becomes "slow your movements by even 10%" (10 Microhabits);
+  - "Elegant voices rely on presence" becomes "instead of matching their energy, soften yours" (reference);
+  - "feminine energy grows in everyday moments" becomes "coffee from your favourite mug instead of a disposable
+    cup; fresh flowers on your weekly grocery trip" (Feminine Energy).
+- **[O] Elegance is self-possession and self-respect, more than etiquette.** The payoff is how she carries herself and
+  what she tells herself:
+  - "It's not arrogance. It's self-respect." (10 Microhabits);
+  - "these little things whisper, 'I value myself'" (7 Habits);
+  - "Not for anyone else. For yourself." (Feminine Energy);
+  - "trusts herself because she keeps her word" (10 Microhabits).
 
-## 2. How the creator teaches (teaching DNA)
+  Others' reactions are mentioned, but second.
+- **[O] Small changes, honestly sized; any budget, any age.** Examples:
+  - "These are small changes" (reference);
+  - "These aren't major life changes" (Feminine Energy);
+  - "It's not about money. It's not about perfection." (10 Microhabits);
+  - "You don't have to be glamorous, you just have to be intentional." (7 Habits).
 
-The teaching unit is **a habit she can practise**. Inside each habit, in this order (reference, point 1; also
-"10 Microhabits", "Slow your speech"):
-1. **[O] Name the habit** in a few words ("First, slow the pace." / "The secret of speaking softly.").
-2. **[O] A recognisable example**, often a named elegant woman, **seen and heard** (Audrey Hepburn's own film line for
-   pace; Princess Diana's own interview voice for softness).
-3. **[O] Why people do the opposite, honestly** ("People often rush because they're afraid of seeming slow or boring").
-4. **[O] What the opposite communicates** ("rushing makes you sound anxious, scattered, or insecure, even if you know
-   exactly what you're talking about").
-5. **[O] A moment she recognises** ("Think about someone who pauses before speaking and says, 'Let me think about that.'").
-6. **[O] Where to practise it, in her real day** ("on the phone, in a conversation, or even ordering a drink").
-7. **[O] Exact words when words are the practice**, written as a before -> after inside the habit ("instead of rushing
-   with 'Uh, I'm not sure,' you can simply say 'Let me think for a second'"). These are the replay peaks of the
-   reference (2.4x and 2.3x), so they matter - but they serve the habit, they are not the structure.
-8. **[O] One short payoff line** ("Less noise, more intention, and that's where elegance truly begins.").
+  No guaranteed outcomes, no statistics.
+- **[O] The points belong to one subject and move in one direction.** Examples:
+  - the reference goes pace -> volume -> replies -> texting -> the soft no -> tiny habits (how you sound, from
+    delivery to boundaries);
+  - 10 Microhabits goes from outer signals (scent, movement, eye contact, speech) to inner ones (compliments,
+    apologising, boundaries, keeping your word).
 
-Not every point uses all eight; the topic decides. **[O]** Lists of exact phrases appear in several videos
-(reference: replies, texting, soft no, micro-habits; "10 Microhabits": over-apologising, boundary sentence, ending
-conversations), always under a habit heading.
+## 2. How she teaches (teaching DNA)
 
-What counts as value **[O]**: she can use it today, in a named situation, with exact words or one exact action; she
-understands why; it is not something we already taught (see section 6).
+**The unit is a named habit she can practise.** Every point opens with the habit in a few words, usually an
+imperative or a short noun phrase **[O]**:
+- "First, slow the pace."
+- "The secret of speaking softly."
+- "Create your signature."
+- "Move like you're not chasing anything."
+- "Hold eye contact. Then pause."
+- "Emotional poise."
+- "The power of mystery."
+- "Attract, don't chase."
 
-## 3. How the creator writes (scripting DNA)
+Inside a habit, the creator uses some of these moves. The order is flexible and the topic decides which ones appear:
 
-- **[O] Openers:** a question or a promise about her ("Did you know you can change your entire presence just by
-  elevating the way you speak?"; "You know that feeling when you see a woman and everything about her just feels
-  expensive."). Then what she'll know "by the end of this video". Then "So, let's begin."
-- **[O] Transitions lead to the next behaviour:** "Let's start with...", "Now, let's be honest.", "Let's talk about
-  volume.", "Here's how to practice this in your own life.", "Here's what that looks like in real life.",
-  "And one more tiny thing."
-- **[O] Spoken, warm, direct, "you"-led; short sentences; small fragments for rhythm** ("Not fake, not whispering. Just
-  relaxed, steady, and intentional.").
-- **[O] Named women as examples are allowed and used** (reference: Audrey Hepburn, Princess Diana; also Grooming
-  (Audrey's brows, Diana's hairstyle, Grace Kelly), Hairstyles, Haircuts, Color Combos (Kate Middleton, Diana), Never Wear
-  (Marilyn Monroe)). The earlier rule "never name people" came from one rejected French script that reported on
-  people instead of teaching; it was over-generalised. Rule now: a named woman may illustrate a habit, briefly, as an
-  example she can see and hear; never a news story about her.
-- **[O] Close:** check the description for the stylist guide; "A simple like or comment would truly mean the world to
-  us"; "Let us know what videos you'd like to see next"; "Until next time, bye, my loves." (the wardrobe videos say
-  "bye everyone").
-- **Avoid [O, from the creator's feedback]:** "We get it" / "We've all been there" / "Elegant women..." repeated as a
-  template at the start of every point; the same emotional payoff after every tip; manufactured depth; claims about how
-  others will perceive her that aren't explained; points that only exist to fill a number.
+| Move | What it does | Seen in |
+|---|---|---|
+| **The common behaviour, without blame** | "Many women save their favourite pieces for special occasions." "Most people try to prove confidence by talking more." "People often rush because they're afraid of seeming slow." | [O] reference, 10 Microhabits, Feminine Energy, 7 Habits |
+| **Why it matters / what it communicates** | "rushing makes you sound anxious, scattered, or insecure, even if you know exactly what you're talking about"; "it says I'm not reacting. I'm choosing." | [O] reference, 10 Microhabits, 7 Habits |
+| **A recognisable example she can see/hear** | Audrey Hepburn heard in her own film; Princess Diana's own voice | [O1] reference (named women in narration). On screen, famous women appear even when not named (10 Microhabits: Kate Middleton, Amal Clooney, Beyoncé, Margot Robbie) [O]. Named women also in Grooming, Hairstyles, Haircuts, Color Combos, Never Wear transcripts [O]. |
+| **The practice, in a named everyday place** | "on the phone, in a conversation, or even ordering a drink"; "one light spritz before you leave the house, even just to the grocery store"; "hold it when you say hi, when you say thank you, when you say nice to meet you" | [O] reference, 10 Microhabits, Feminine Energy, 7 Habits ("the grocery store" in three videos) |
+| **Several small options, not one** | hand lotion / perfume / matching lounge set / silk pyjamas; coffee mug / flowers / candle / sun | [O] Feminine Energy, 10 Microhabits ("Clean nails, tidy hair, fresh breath...") |
+| **Exact words, as "instead of X, try Y", when speech IS the habit** | reference (replies, texting, soft no, compliments); 10 Microhabits ("Instead of Sorry, I'm late. Say Thank you for waiting."); 7 Habits (four "elegant alternatives to conflict") | [O]. In the reference these are the most-replayed moments (2.4x and 2.3x the median). |
+| **The easier version for the nervous** | "If eye contact feels intimidating, don't overthink it. Hold it when you say hi..." | [O] 10 Microhabits, Own Any Room |
+| **One short payoff line, worded differently each time** | "Less noise, more intention, and that's where elegance truly begins." / "That's elegant." / "boundaries wrapped in grace" / "Because elegance isn't only what people see, it's also what they feel." | [O] all |
 
-## 4. How it looks (visual DNA) - from 160x90 storyboards only; cuts, motion and sound not yet measured
+**What counts as value [O]:**
+- she can use it today, in a place she already goes, with exact words or one exact action;
+- she understands why;
+- it costs nothing or little;
+- it is not something we already taught (section 6).
 
-- **[O] Recognisable elegant women, in their own footage,** matched to the line that names them or the behaviour
-  (Audrey when Audrey is named; Diana when Diana is named), with their own audio when they are the demonstration.
-- **[O] Three teaching layouts:**
-  1. white card, black script title, for each habit ("1. Slow Down the Pace");
-  2. **a full sentence on blurred caramel** for the reason or the payoff (the line she should remember);
-  3. **a rounded-corner clip on cream with the exact phrase written beside it** (before, then after) - the layout of
-     both replay peaks.
-- **[O] The visual shows the exact thing said:** the filler word "Like" alone on a card; chat bubbles with the exact
-  message on texting footage; a woman at a microphone for "on the phone"; a bar for "ordering a drink".
-- **[O] Mix in the reference:** full-screen clips 39% of frames, framed single clips 23%, white cards 20%, caramel/quote
-  cards 12%, rows/collages of 3-4 women 3%; text visible in 45% of frames.
-- **[O] Women of every background; at least one older woman in group shots** (texting triptych).
-- **[H] Footage comes from films, interviews, editorials and Pinterest-style lifestyle clips.** Where exactly each clip
-  was found is **[?]**.
-- **[?] Transitions, zooms, text animation, music changes, sound effects** in this video: not measurable from
-  storyboards. Our older measurement (`edit-style-measured.md`, separated audio of 37 uploads) found a soft solo piano
-  ~12 dB under the voice and no sound effects; this needs re-checking on the speech/behaviour videos specifically.
+**Contrast: the creator's own weakest speech video**, "How to Own Any Room" (1.68% liked, vs 3.9-4.9% for the four
+above). **[H]**, one video, but it matches the creator's feedback on our script:
+- It opens points with "We've probably all been there" and three "Have you ever..." questions.
+- Its habits are inner states with few exact actions: "take the pressure off yourself", "become the calmest
+  version of yourself", "stop making your words smaller". Only two "instead of" swaps.
+- It has two promotions mid-video (the guide at ~2:00, the clothing shop at ~3:45).
+- It leans on psychology claims ("emotions can be contagious").
 
-## 5. What the data says to fix in the creator's own pattern (to discuss, not to impose)
+## 3. How she writes (scripting DNA)
 
-- Intro 0:05-0:22 sits at 0.5x replay; the 40 s static end card drops to 0.0x (people leave). [O]
+- **[O] Openers:**
+  1. a question or a scene about a woman ("Did you know you can change your entire presence...", "Have you ever
+     met a woman who...", "You know that feeling when you see a woman...");
+  2. then the promise, small and concrete ("the best part is these are habits any woman can learn" - in three
+     videos);
+  3. then "In this video / today, we're sharing N simple habits ..." or "By the end of this video...";
+  4. then "So, let's begin / let's get started".
+- **[O] Transitions are short and warm, and change every time:**
+  - "Let's start with..."
+  - "Now, let's be honest."
+  - "Now, this first one is so powerful."
+  - "This one is so common."
+  - "I love this one."
+  - "This will come in handy."
+  - "Here's a quiet cheat code..."
+  - "Here's something subtle."
+  - "Here's the shift."
+  - "Here's how to practice this in your own life."
+  - "Here's what that looks like in real life."
+  - "And one more tiny thing."
+- **[O] Sentences:**
+  - spoken, "you"-led, short, with fragments for rhythm ("Not fake, not whispering. Just relaxed, steady, and
+    intentional.", "Short, warm, firm, no guilt spiral, no paragraph, just self-respect.");
+  - "I" and "we" both used (creator and channel).
+- **[O] Empathy appears at most once or twice per video, and in different words each time:**
+  - "It happens to so many of us." (7 Habits)
+  - "This one is so common." (10 Microhabits)
+  - "We all do it." (reference)
+
+  It is never the opening formula of every point.
+- **[O] "Elegant women..." / "Classy women..." sentences exist** ("Elegant women handle it differently", "Classy women
+  don't let others dictate their energy"), a few times per video, as the principle after the example. They are not a
+  sentence frame repeated for every point.
+- **[O] Close:**
+  1. a recap sentence;
+  2. an invitation to comment the number of the habit she'll try ("I read them") (10 Microhabits, Feminine Energy)
+     or which tip she'll try (Own Any Room);
+  3. the guide link;
+  4. "A simple like or comment would truly mean the world to us";
+  5. "Until next time, bye, my loves" ("bye, everyone" in 7 Habits and the wardrobe videos).
+- **[O] Promotion:** one guide plug of about 10 s inside an early point (reference 2:43, 10 Microhabits 0:46), plus the
+  outro. Our replay data shows plugs are dips (`research-2026-10-12-edit-evidence.md`).
+- **[O1] Delivery speed:**
+  - the reference voice runs at about **186 words/min** (1,364 words, speech ends at 7:19);
+  - the other top videos run at 146-159 words/min, and the #1 wardrobe video at 132;
+  - so "slow" is the feeling of the writing (pauses, short sentences), not a slow voice.
+
+## 4. Content DNA
+
+- **[O] Topics:** everyday presence: how she sounds, moves, receives, declines, keeps her word, dresses and grooms;
+  any budget, any age.
+- **[O] Situations:** the grocery store, the phone, ordering a drink, a dinner party, texting, compliments,
+  invitations, morning coffee.
+- **[O] Not:**
+  - news about people;
+  - social commentary;
+  - etiquette rules for their own sake;
+  - lists of phrases with no habit around them.
+
+## 5. How it looks (summary - full detail in `VISUAL-EDITING-DNA.md`)
+
+- **[O] The picture shows the exact thing said.** Examples:
+  - the named woman speaking, in her own scene;
+  - the filler word "Like" alone on a card;
+  - the real message in a chat bubble on texting footage;
+  - a restaurant for "ordering a drink".
+- **[O] Five teaching layouts** (reference and 10 Microhabits):
+  1. a white card with the habit in black script;
+  2. the reason or payoff as one full sentence on the blurred caramel backdrop;
+  3. a rounded-corner clip on cream with the exact phrase written beside it;
+  4. full-screen scenes of women in the act;
+  5. rows of 3-4 women.
+- **[O] Two sources of footage, used for different jobs:**
+  - recognisable women in famous film scenes, interviews and archive footage, for aspiration and demonstration;
+  - free stock (Pexels, confirmed) and creators' vertical clips, for everyday actions (texting, a restaurant,
+    getting dressed), made specific by the phrase or bubble written over them.
+- **[O] Sound** (two full files measured; the reference not measured):
+  - one soft piano bed about 12 dB under the voice;
+  - no sound effects;
+  - a film's own dialogue is kept when the woman's voice is the lesson.
 
 ## 6. Already taught - don't repeat without a new angle [O]
 
-Pace / pausing before replying; speaking softly; filler words; "Let me think for a second"; "Say that again";
-"I see what you mean, here's how I see it"; texting (light capitals, one message, "I'll text you back in a bit");
-the soft no (three sentences); over-apologising ("Thank you for waiting"); receiving compliments ("Thank you, that's
-kind of you" - taught twice); the boundary sentence; ending conversations warmly; remembering details and names;
-pausing before reacting; not every silence needs filling; keeping goals and decisions private (Never Share).
+- Pace and pausing before replying; speaking softly; filler words.
+- "Let me think for a second"; "Say that again"; "I see what you mean, here's how I see it".
+- Texting (light capitals, one message, "I'll text you back in a bit").
+- The soft no (three sentences); the boundary sentence.
+- Over-apologising ("Thank you for waiting").
+- Receiving compliments ("Thank you, that's kind of you": taught twice).
+- Ending conversations warmly; remembering names.
+- Eye contact, then pause; not every silence needs filling.
+- Signature scent; moving slowly; keeping your word.
+- Conflict alternatives ("I understand your perspective and I'll leave it at that"); mystery and privacy (Never
+  Share, 7 Habits).
+- Everyday rituals (mug, flowers, candle, silk pyjamas); posture.
 
-## 7. Rights and sources (mandatory, separate from style)
+## 7. The value test (every teaching point must pass all eight before the script is written)
 
-- **[O]** No licence records for any footage exist in this repository.
-- **[O]** The reference video uses film and TV/interview footage of public figures (Audrey Hepburn, Princess Diana,
-  Grace Kelly, Angelina Jolie and others). Rights status: **unresolved**.
-- **[O]** Our own recent builds (Winter, French, Put Together, Dressing Rules, Body Shape) used creators' Pinterest /
-  Instagram / TikTok reels, credited in the description but **not licensed**. Credit is not permission.
-  Status: **unresolved**. Never Say used only Mixkit clips checked one by one for the free commercial licence, plus two
-  creator clips (Jeanne Caldarera, unresolved).
-- From now on every clip gets a line in `videos/<slug>/SOURCES-LOG.md`: what it is, source URL, creator, licence or
-  permission basis, evidence, decision (cleared / conditional / unresolved). Unresolved clips are flagged to the
-  creator before the video is delivered, never silently used. Copyright and YouTube's reused-content rules are two
-  separate checks.
+1. What problem does it solve, in her life?
+2. What is the insight (the why) in one sentence?
+3. Why does it work? Not a statistic: the mechanism she can feel.
+4. What will she see or hear that demonstrates it (a woman, a scene, a phrase)?
+5. What exact words or one exact action will she use?
+6. Where will she use it this week (a named place)?
+7. Why does it belong in this video, on this path?
+8. Is it new for this channel (section 6)?
 
-## 8. Process rules that follow from the last failure
+## 8. Rights and sources (mandatory, separate from style)
 
-1. Read this file and the 3-5 closest own videos (transcript + storyboard + heatmap) **before** choosing structure.
-2. Decide the lesson and its teaching unit (usually habits) first; only then the format. Competitor videos are
-   research for what is true and what viewers ask, never the template.
-3. For every point, answer: what problem, what insight, why it works, what example she can see/hear, what exact words
-   or action, what she can do after, why it belongs in THIS video, is it new for us.
-4. Script checkers (`dna.py`, `fit.py`) are smoke alarms, not the standard. Never add a phrase to pass a checker.
-   `dna.py` currently measures only the wardrobe videos (it excludes titles with "sound", "pose", "hair"), so it is
-   blind to the creator's speech/behaviour DNA until it is fixed.
-5. Visuals: for every line, what must she SEE to understand it, in the creator's three layouts first; footage that
-   demonstrates the exact behaviour or the named woman; no decorative B-roll.
-6. Say what was and was not inspected. Never claim a frame, cut or source that wasn't actually seen.
+- The creator's own videos use studio films, TV/interview footage and creators' clips with no licence on record. A
+  few clips are free stock (Pexels). See `source-trace-2026-10-17.md` for each traced clip and its status.
+- Our own recent builds used creators' reels credited but not licensed (unresolved). Never Say used Mixkit
+  free-licence clips plus two creator clips (unresolved).
+- From now on, every asset gets a row in `videos/<slug>/SOURCES-LOG.md` (`workflow/SOURCES-LOG-TEMPLATE.md`),
+  researched with `workflow/ASSET-RESEARCH-GUIDE.md`. Unresolved rows go to the creator before delivery, never
+  silently into a video. Copyright and YouTube's reused/inauthentic-content rules are two separate checks.
 
-## 9. Open questions for the creator [?]
+## 9. Process rules (from the last failure)
 
-See the end of `CHANNEL-DNA-diagnosis.md`.
+1. Read this file and the 3-5 closest own videos (transcript, storyboard, replay) **before** choosing a structure.
+2. Write the teaching architecture first: the habits, each with the eight value answers. The creator approves it
+   **before** any script. The format follows the lesson.
+3. Script checkers (`dna.py`, `fit.py`) are smoke alarms, not the standard. Never add a phrase to pass a checker.
+   `dna.py` measures only wardrobe videos today; it excludes titles with "sound", "pose" or "hair".
+4. Visual brief per line (`workflow/ASSET-RESEARCH-GUIDE.md`, section 1) before any clip is searched.
+5. Say what was and was not inspected. Never claim a frame, cut, source or licence that wasn't actually seen.
+
+## 10. What is still unknown (honestly)
+
+- The reference video's own motion, transitions, text animation, music and any sound effects: its file could not be
+  downloaded here. The two measured videos are wardrobe videos. [?]
+- Where the creator actually searches. Traced clips exist on Pinterest boards, GIF sites, fan YouTube channels and
+  Pexels, which is consistent with Pinterest/YouTube/Pexels searching, but the search path itself cannot be seen.
+  [?]
+- Whether any of the creator's film or interview clips are licensed outside this repository. [?]
+- Which of these patterns cause the like rate, and which only go with it: our data shows association, not cause.
+  [H]

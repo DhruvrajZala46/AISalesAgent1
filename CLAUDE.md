@@ -4,8 +4,11 @@ This repo makes videos for the YouTube channel The Classy Elegance (calm, kind, 
 women of every age). Everything lives in `classy-academy-test/`.
 
 Before any work on a video, read:
-0. `classy-academy-test/CHANNEL-DNA.md` - the creator's own thinking, teaching, scripting and visual DNA,
-   built from her videos (and `CHANNEL-DNA-diagnosis.md`: why the last video missed). It overrides the files below.
+0. `classy-academy-test/CHANNEL-DNA.md` - the creator's own thinking, teaching, scripting and content DNA,
+   built from her videos (and `CHANNEL-DNA-diagnosis.md`: why the last video missed), with
+   `VISUAL-EDITING-DNA.md` (how her videos look, cut and sound, and where her footage comes from) and
+   `workflow/ASSET-RESEARCH-GUIDE.md` + `workflow/SOURCES-LOG-TEMPLATE.md` (every clip researched and its rights
+   logged). They override the files below.
 1. `classy-academy-test/workflow/GOLD-STANDARD.md` - how the user's favourite video
    ("8 Dressing Rules Every Woman Should Know") was made: the recipe and the quality bar every
    new video must meet or beat.
