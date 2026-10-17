@@ -57,6 +57,14 @@ def at(i, phrase, end=False):
 
 # ---------- clip preparation: trim the checked segment, 9:16, SDR, silent; gentle slow-mo (<=1.4x) only if needed ----------
 USED = {}; SHORT = []; CREDIT = []
+_LAND = {}
+def land(key):
+    """True for a landscape source clip (e.g. licensed 16:9 stock): it is prepared at 1920x1080 for full-screen scenes."""
+    if key not in _LAND:
+        wh = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0',
+                             os.path.join(R, key + '.mp4')], capture_output=True, text=True).stdout.strip().split(',')
+        _LAND[key] = int(wh[0]) > int(wh[1])
+    return _LAND[key]
 CROP = {}   # edit.py: CROP['key'] = (x0, y0, h) -> that 9:16 window of the clip (720x1280 space) fills the frame
 def prep(spec, need):
     key, a, b = spec
@@ -74,6 +82,7 @@ def prep(spec, need):
         if cr:
             x0, y0, hh = cr; ww = hh * 720 / 1280
             zc = f"scale=1440:2560:force_original_aspect_ratio=increase,crop=1440:2560,crop={2*ww:.0f}:{2*hh:.0f}:{2*x0:.0f}:{2*y0:.0f},scale=720:1280,"
+        elif land(key): zc = "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,"   # 16:9 source -> full-screen scene
         else: zc = "scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280,"
         vf = f"{tm}{zc}setsar=1,setpts={speed:.4f}*PTS,fps=30"
         if still:
