@@ -62,7 +62,7 @@ card('2. &#8220;Me too!&#8221;', 13)
 scene([(M(12119, 0.3, 4.6), after(13)), (M(12120, 1.5, 6.8), at(14, 'And before'))]
       + fill([(12122, 0.3, 4.5), (12121, 0.5, 4.5)], st(15) - 0.1, st(16) - 0.1)
       + [(M(12132, 0.3, 4.6), st(16) - 0.1), (M(12131, 3.5, 9.0), at(16, 'Instead of'))]
-      + fill([(12133, 0.5, 4.5), (12125, 0.3, 4.8)], st(17) - 0.1, st(18) - 0.1)
+      + fill([(12121, 6.0, 10.5), (12125, 0.3, 4.8)], st(17) - 0.1, st(18) - 0.1)
       + [(M(12124, 3.5, 9.0), st(18) - 0.1), (M(12123, 0.5, 7.0), st(19) - 0.1)], en(19) + 0.3)
 pill(NO('&#8220;Me too! I barely slept.&#8221;'), 110, 790, at(14, 'Me too'), at(16, 'Instead of') - 0.2)
 swap('&#8220;Me too!&#8221;', '&#8220;That sounds exhausting. What&#8217;s been going on?&#8221;', at(16, 'Instead of'), at(16, 'That sounds exhausting'), en(17) + 0.3)
@@ -127,7 +127,7 @@ scene(fill([(51237, 0.3, 4.6), (51239, 1.0, 5.5)], after(48), st(50) - 0.1) + [
        (M(51238, 0.3, 6.0), st(50) - 0.1), (M(51240, 0.3, 6.0), at(50, 'what we')),
        (M(51242, 0.3, 6.5), st(51) - 0.1), (M(51234, 0.5, 7.0), at(51, 'and then turn'))], en(51) + 0.3)
 scene([(M(4735, 0.3, 8.6), en(51) + 0.15)], en(52) + 0.3)
-scene(fill([(52238, 0.3, 5.0), (52238, 6.0, 13.8)], en(52) + 0.15, st(54) - 0.1) + fill([(4581, 0.5, 5.0), (12129, 5.0, 10.0)], st(54) - 0.1, en(54) + 0.3), en(54) + 0.3)
+scene(fill([(52238, 0.3, 5.0), (52238, 9.5, 13.8)], en(52) + 0.15, st(54) - 0.1) + fill([(4581, 0.5, 5.0), (12129, 5.0, 10.0)], st(54) - 0.1, en(54) + 0.3), en(54) + 0.3)
 swap('&#8220;Did you see what she wore?&#8221;', '&#8220;Oh, I wouldn&#8217;t know about that. How was your trip?&#8221;', st(51), at(51, "I wouldn't know"), en(51) + 0.2)
 swap('&#8220;I never liked him anyway.&#8221;', '&#8220;I&#8217;m here. How are you holding up?&#8221;', at(52, 'I never liked'), at(52, "I'm here"), en(52) + 0.2)
 
@@ -146,17 +146,21 @@ canvas_full(C('mirror50_15', 2.0, 9.0), at(60, "It's about"), en(60) + 0.3, fin=
 scene([(M(4781, 1.0, 8.5), en(60) + 0.2)], en(61) + 0.35)
 
 # ================= recap 62-70: the screenshot list of all 8 swaps, on our caramel =================
-kicker('the 8 swaps', st(62) - 0.1, en(70) + 0.6, x=360, y=40)
+kicker('the 8 swaps', st(62) - 0.1, en(70) + 0.6, x=100, y=40)
+demo([(M(41214, 6.0, 10.0), st(62) - 0.1), (M(41229, 5.5, 9.6), st(63) - 0.1), (M(12119, 4.8, 8.0), st(64) - 0.1),
+      (M(43249, 6.0, 11.0), st(65) - 0.1), (M(42157, 5.2, 9.1), st(66) - 0.1), (M(41850, 10.0, 14.0), st(67) - 0.1),
+      (M(52180, 6.0, 10.0), st(68) - 0.1), (M(51239, 6.0, 10.0), st(69) - 0.1), (M(52194, 6.5, 10.5), st(70) - 0.1)],
+     en(70) + 0.6, x0=1230)
 R_ = [('Can I get', 'May I have&#8230;, please'), ('Me too!', 'one more question'), ('I know', 'What did you think of it?'),
       ('Oh yes, of course', 'Tell me about it'), ('Whatever', 'your gentle preference'), ('Calm down', 'Let&#8217;s take a moment'),
       ('unkind words about others', 'kind silence'), ('unkind words about yourself', 'Thank you')]
 for k, (a_, b_) in enumerate(R_):
     pill(f'<b style="color:{RED}">&#10005;</b>&nbsp; <span style="all:unset;opacity:.55;text-decoration:line-through">{a_}</span>&nbsp; &#8594;&nbsp; '
-         f'<b style="color:{GRN}">&#10003;</b>&nbsp; {b_}', 300, 170 + 106 * k, st(63 + k) - 0.15, en(70) + 0.6, 46)
+         f'<b style="color:{GRN}">&#10003;</b>&nbsp; {b_}', 90, 175 + 108 * k, st(63 + k) - 0.15, en(70) + 0.6, 48)
 
 # ================= close =================
 scene([(M(41219, 6.0, 12.4), en(70) + 0.5), (M(12135, 0.3, 7.8), at(71, 'You already own'))], en(71) + 0.3)
-scene([(M(43248, 6.0, 10.2), en(71) + 0.15), (M(12136, 0.3, 5.0), at(72, 'and how calm'))], en(72) + 0.3)
+scene([(M(43248, 6.0, 10.2), en(71) + 0.15), (M(43261, 6.0, 10.5), at(72, 'and how calm'))], en(72) + 0.3)
 scene(fill([(4581, 9.5, 14.0), (52238, 0.3, 0.3)][:1] + [(4781, 8.6, 14.5)], en(72) + 0.15, en(73) + 0.3), en(73) + 0.3)
 pill('a gracious phrase from your mother or grandmother?', 110, 830, at(73, "What's one"), en(73) + 0.2, 40)
 scene([(M(12125, 5.2, 10.0), en(73) + 0.15), (M(41225, 4.6, 8.5), st(74) + 3.0)], total - 2.4)
