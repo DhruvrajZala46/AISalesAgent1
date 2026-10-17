@@ -286,6 +286,10 @@ def kicker(txt, t0, t1, x=LX, y=215):
     i = nid('kk'); els.append(f'<div id="{i}" class="kick" style="left:{x}px;top:{y}px;opacity:0">{txt}</div>')
     tw.append(f'tl.fromTo("#{i}",{{opacity:0,y:10}},{{opacity:1,y:0,duration:0.7,ease:"power2.out"}},{t0:.3f});'); fade_out(i, t1, 0.5); return i
 
+# FILMAUDIO: a woman's own voice from her film/interview, heard as the demonstration (the reference video does this with
+# Audrey Hepburn and Princess Diana). edit.py adds (key, a, b, t0): seconds a..b of raw/<key>.mp4's audio play at t0,
+# at the voice's level; leave a pause in the voice there with gaps.json. Only for footage whose rights are logged.
+FILMAUDIO = []
 exec(open(os.path.join(P, 'edit.py')).read())
 if AIFLAG: raise SystemExit('STOP - AI watermark suspected, replace these clips: ' + ', '.join(AIFLAG))
 
@@ -309,7 +313,14 @@ while len(m) < len(voice):
 m = m[:len(voice)]
 m *= 10 ** ((-17.7 - 12) / 20) / np.sqrt((m ** 2).mean())
 m[:int(sr * 1.2)] *= np.linspace(0, 1, int(sr * 1.2)); m[-int(3.5 * sr):] *= np.linspace(1, 0, int(3.5 * sr))
-mix = voice + m
+fa = np.zeros(len(voice))
+for key, a_, b_, t0_ in FILMAUDIO:
+    sh(f"ffmpeg -nostdin -v error -y -ss {a_} -t {b_-a_:.3f} -i {R}/{key}.mp4 -vn -ac 1 -ar {sr} {A}/_fa.wav")
+    y, _ = sf.read(f'{A}/_fa.wav'); n_ = len(y); r_ = min(int(sr * 0.12), n_ // 4)
+    y[:r_] *= np.linspace(0, 1, r_); y[-r_:] *= np.linspace(1, 0, r_)
+    act = y[np.abs(y) > 10 ** (-40 / 20)]; y *= 10 ** (-17.7 / 20) / (np.sqrt((act ** 2).mean()) + 1e-9)
+    i0 = int(t0_ * sr); fa[i0:i0 + n_] += y[:max(0, len(fa) - i0)]
+mix = voice + m + fa
 sf.write(f'{A}/mix_raw.wav', mix / max(1.0, np.abs(mix).max()), sr)
 sh(f"ffmpeg -nostdin -v error -y -i {A}/mix_raw.wav -af loudnorm=I=-14:TP=-1.0:LRA=9 -ar 48000 {A}/mix.wav")
 html = open(os.path.join(TOOLS, 'template.tpl')).read().replace('%TITLE%', open(os.path.join(P, 'title.txt')).read().strip() if os.path.exists(os.path.join(P, 'title.txt')) else 'The Classy Elegance')
