@@ -10,7 +10,8 @@ level, `edit-style-measured.md` wins (it is the later, separated-audio measureme
 ## The rules that never change
 
 - **Real footage only. Never AI clips.** The channel has never used them and never will.
-- **Every creator credited** (CREDITS.txt -> description). **Each clip used once** per video.
+- **Every clip researched and logged** (`ASSET-RESEARCH-GUIDE.md`, `videos/<slug>/SOURCES-LOG.md`). Credit is not
+  permission. **Each clip used once** per video.
 - **No sound effects.** None were found in any of the channel's videos.
 - **Music:** one soft solo-piano bed, steady ~12 dB under the voice, no ducking, no lifts in
   pauses, fades in with the first word and out after the end card. Mixkit "Classical 4/5/9/10" by
@@ -80,6 +81,21 @@ python3 $T/grid.py x          # contact sheets, one frame per shot, to check con
    HDR clips are tone-mapped automatically, no logos of luxury brands.
 
 ## Step 5 - The edit (`edit.py`)
+
+**For speech, behaviour and habit videos (since Oct 2026): the creator's own teaching layouts.** Measured in her
+"6 Ways to INSTANTLY Sound More Elegant" (`../VISUAL-EDITING-DNA.md`); full example and helpers:
+`../videos/speak-elegantly-2/edit.py`.
+- `card()`: a white card per habit.
+- `quote()`: the reason or payoff as one sentence on caramel.
+- `framed()` + `phrase()`: a rounded framed clip on cream with the exact words in script beside it (struck-through
+  "before", script "after"). This is the layout of Part 1's replay peaks.
+- `word_card()`: one word alone ("Like", "Just.", "Pardon?").
+- `comment()`: a viewer's comment quoted, with no name.
+- `full()`: full-screen scenes for the place.
+- `FILMAUDIO` + `gaps.json`: a named woman heard in her own (rights-logged) footage.
+
+These layouts are drawn only by the browser renderer (`npx hyperframes render`, about 2.3 frames/s here, ~95 min for
+8 min). `ffr.py` does not know the cream, framed or phrase layers yet.
 
 **Default since the body-shape video (Oct 2026): the "demo" edit.** Evidence: `videos/body-shape/edit-evidence.md`
 (the topic winners' replay peaks + the 79-video study); full example: `videos/body-shape/edit.py`.
