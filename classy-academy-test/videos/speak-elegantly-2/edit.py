@@ -99,7 +99,7 @@ comment('I hope the next video will be about how to start a conversation.', st(5
 
 # ================= 1. Let your sentences land =================
 card('1. Let Your Sentences Land', 6)
-full([(M(52188, 0.3, 5.6), en(6) + 0.2)], at(7, "I'm Claire") + 0.2)
+full([(M(52188, 0.3, 5.6), en(6) + 0.2), (M(12123, 8.2, 13.0), at(7, 'even when'))], at(7, "I'm Claire") + 0.2)
 framed([(M(12120, 0.3, 7.0), at(7, "I'm Claire") - 0.3)], en(7) + 0.35)
 phrase([('s', 'it sounds like'), ('q', '&#8220;I&#8217;m Claire?<br>I work in design?&#8221;')], at(7, "I'm Claire"), en(7) + 0.3)
 quote('It quietly asks for <i>permission</i>', st(8) + 0.2, en(8) + 0.3, 'and makes you sound unsure', at(8, 'and it makes'))
@@ -149,7 +149,7 @@ full([(M(52196, 0.5, 7.5), nx(30))], TO(31))
 canvas_full(M(41234, 0.5, 8.5), nx(31), at(31, 'and ask about') + 0.3)
 full([(M(12122, 5.0, 9.0), at(31, 'and ask about'))], TO(32))
 full([(M(51051, 0.3, 11.6), nx(32))], en(32) + 0.4)
-guide(at(32, 'your personal stylist'), en(32) + 0.35)
+guide(at(32, 'to discover'), en(32) + 0.35)
 
 # ================= 4. Holding your place, gracefully =================
 card('4. Holding Your Place, Gracefully', 33, style='font-size:100px')
@@ -186,14 +186,14 @@ phrase([('b', '&#8220;This is Sophie.&#8221;'), ('q', '&#8230;and then silence')
 quote('The name, and a little <i>bridge</i>', st(52) + 0.2, en(52) + 0.3)
 framed([(M(12127, 0.3, 8.0), st(53) - 0.2)], en(53) + 0.4)
 phrase([('a', 'Clara, this is my<br>friend Sophie.')], st(53) + 0.1, en(53) + 0.35, y=230)
-phrase([('q', 'Sophie just came back from Lisbon,<br>and Clara, you&#8217;ve always<br>wanted to go.')], at(53, 'Sophie just'), en(53) + 0.35, y=500)
+phrase([('a sm', 'Sophie just came back from<br>Lisbon, and Clara, you&#8217;ve<br>always wanted to go.')], at(53, 'Sophie just'), en(53) + 0.35, y=500)
 full([(M(51531, 5.2, 10.1), nx(54))], TO(55))
-full([(M(30005, 7.2, 10.6), nx(55)), (M(43829, 0.5, 12.2), at(55, 'It takes ten'))], en(55) + 0.4)
+full([(M(30005, 7.2, 10.6), nx(55)), (M(51224, 10.2, 16.6), at(55, 'and smile')), (M(43829, 0.5, 12.2), at(55, 'It takes ten'))], en(55) + 0.4)
 
 # ================= And one more tiny thing =================
 card('And One More Tiny Thing', 56, style='font-size:104px')
 full([(M(52191, 6.0, 15.3), en(56) + 0.2)], at(57, 'And one of you') + 0.3)
-comment('&#8220;Say that again&#8221; feels demanding. I just ask, &#8220;Pardon?&#8221;', at(57, 'And one of you'), en(57) + 0.35)
+comment('&#8216;Say that again&#8217; feels demanding. I just ask, &#8216;Pardon?&#8217;', at(57, 'And one of you'), en(57) + 0.35)
 word_card('Pardon?', at(58, 'Pardon') - 0.2, en(58) + 0.35, y=250)
 wsub('if you didn&#8217;t catch something', st(58) + 0.2, en(58) + 0.3, 200)
 wsub('&#8220;Sorry, I didn&#8217;t quite catch that.&#8221;', at(58, 'Sorry I'), en(58) + 0.3, 640)
