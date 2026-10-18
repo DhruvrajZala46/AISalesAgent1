@@ -28,7 +28,7 @@ Their verdict was "you have messed up my video again". Their complaints, in thei
      "Audrey Hepburn · Charade, 1963" caption, and a recap list.
 5. **The whole video must feel like the channel**, not only the opening.
 
-### The task the user gave next (not started)
+### The task the user gave next (DONE 18 Oct: `videos/speak-elegantly-2/FAILURE-ANALYSIS.md`; waiting on the user's answers in its section 8)
 
 **Do NOT make another video.** The user asked for an evidence-based failure investigation of the Part 2 video vs
 the original "6 Ways to INSTANTLY Sound More Elegant" (https://youtu.be/RUDXBR8nyHw), with these deliverables:
