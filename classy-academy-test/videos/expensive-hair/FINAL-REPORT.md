@@ -2,23 +2,19 @@
 
 ## What you get
 
-- **The video:** `Why_Her_Hair_Always_Looks_Expensive.mp4`, sent to you in this chat.
-  - 1920×1080, 30 fps, H.264 (CRF 17), AAC 320 kb/s, 10:57.
-  - Master -18 LUFS, true peak -1 dBTP.
+- **The video**, sent in this chat as `Why_Her_Hair_Always_Looks_Expensive_1080p.mp4`:
+  - 1920×1080, 30 fps (19,705 frames), H.264, AAC, 10:56.8;
+  - master -18.0 LUFS, true peak -1.0 dBTP.
+  - The full-quality master (CRF 17, 462 MiB) is over the chat's 400 MiB upload limit. The copy sent is a two-pass
+    H.264 encode at about 4.6 Mb/s of that master: the same picture and the same sound track.
   - Media is never committed, so the file is not in git.
-- **The editable project:** `project/`. Change any shot, then rebuild and re-render.
+- **The editable project**, sent as `Episode31_project.zip` (start with its `README.txt`). The same text files are in `project/` here.
   - `picks.json`: which clip, which second, crop and speed for every shot.
   - `overrides.json`: the layout of each scene.
   - `scenes.json`: the 84 scenes of the approved plan.
-  - `build_timeline.py` turns those into `timeline.json`.
-  - `render.py` draws the picture; `mix.py` builds the sound and joins it to the picture.
-  - Commands:
-    ```
-    python3 -I project/build_timeline.py
-    python3 -I project/render.py video --jobs 4
-    python3 -I project/mix.py
-    python3 -I project/mix.py mux
-    ```
+  - `build_timeline.py` turns those into `timeline.json`; `render.py` draws the picture; `mix.py` builds the sound and joins it to the picture.
+  - The zip also holds the logo, fonts, music, narration and end sting.
+- **The footage** (116 clips, 3 photos), sent as `Episode31_footage_part1-3.zip`. Unzip the three parts inside the project folder.
 - **Records:**
   - `CREDITS.txt`: every creator, in order of appearance, ready for the description.
   - `SOURCES-LOG.md`: every picture with its scene, creator, original post, the route it was found by, and its permission status.
@@ -73,7 +69,15 @@
   - the AI watermark scan ran on all 116 clips used: none flagged (highest 0.19; the AI line is 0.40);
   - full-size frames of the most cinematic clips were checked by eye;
   - a frame sheet of all 198 downloads was reviewed, and clips with ads, overlays or off-topic parts were cut around or dropped.
-- **Final file:** see "Final file checks" below (black frames, loudness, length).
+- **The exported file itself** (`tools/final_qc.py`, `tools/empty_check.py`):
+  - picture and sound are both 656.83 s;
+  - no black frames;
+  - -18.0 LUFS, true peak -1.0 dBTP;
+  - the only stills over 3 s are the three longest point cards and the end card, as intended;
+  - no empty backdrop while the voice talks, apart from the first instant of a white card or a quote as it starts writing on, as in your videos.
+  - All 10:57 were watched again on frame sheets taken from the exported file. Two in-points and three timings were corrected
+    (a hand at 0:28, a product bottle at 1:10, an empty row opening at 2:14, a product shot at 2:42, quote text appearing late),
+    and the video was rendered again before sending.
 
 ## What is not 100% yours (said plainly)
 

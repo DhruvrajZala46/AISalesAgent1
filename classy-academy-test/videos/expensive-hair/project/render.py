@@ -92,14 +92,14 @@ class Clip:
 
 
 def media_frame(m, tvid):
-    path = os.path.join(WD, m['file'])
-    if path not in _MEDIA:
-        if path.lower().endswith(('.mp4', '.mov', '.webm', '.m4v')): _MEDIA[path] = Clip(path)
+    path = os.path.join(WD, m['file']); key = (path, m.get('asset'))   # one reader per shot: two shots of one clip on screen
+    if key not in _MEDIA:                                               # together would otherwise seek on every frame
+        if path.lower().endswith(('.mp4', '.mov', '.webm', '.m4v')): _MEDIA[key] = Clip(path)
         else:
             im = Image.open(path).convert('RGB')
             if max(im.size) > 2600: im.thumbnail((2600, 2600), Image.LANCZOS)
-            _MEDIA[path] = np.asarray(im).astype(np.float32) / 255
-    src = _MEDIA[path]
+            _MEDIA[key] = np.asarray(im).astype(np.float32) / 255
+    src = _MEDIA[key]
     if isinstance(src, Clip):
         sp = m.get('speed', 1.0)
         return src.frame(int(round((m.get('in', 0.0) + tvid * sp) * src.fps)))
