@@ -315,21 +315,19 @@ Inside CENTRE and ROW layouts the picture changes with a soft dissolve while the
 
 ## Part 3: Asset briefs and sourcing status
 
-**Sourcing status for every asset: NOT SELECTED, awaiting your answer (Part 5, Q1).**
+**Sourcing status:** verified candidates for 127 of the 140 assets are in `CLIP-CANDIDATES.md`, with 13 gaps and their
+fallbacks. Each candidate is the creator's original post, verified on 19 Oct 2026. **No candidate has permission yet.**
 
-**What I could establish about your sourcing, from the trace of ~170 frames in 7 of your videos (`source-trace-2026-10-17.md`):**
-- studio film scenes;
-- public figures in interviews and archive;
-- creators' Instagram/TikTok fashion and lifestyle reels that circulate as Pinterest video pins (two pins name the original Instagram creators; the #1 video's opening clip is a pin saved on boards named 'Footage');
-- a few Pexels clips for everyday actions;
-- one AI-animated vintage portrait (Never Wear).
+**How your footage is sourced** (full evidence in `../../sourcing-investigation-2026-10-19.md`):
+- creators' TikTok, Instagram and LTK photos and reels, almost all circulating as Pinterest pins;
+- credits on screen for single-creator TikTok clips ("@allchloerose on TikTok", "@kateehutchins via tiktok");
+- celebrity press and TV footage;
+- film scenes;
+- retailer product photos;
+- some Pexels clips (excluded here by your instruction).
 
-**What I could NOT establish:**
-- where you actually search;
-- whether any clip is licensed or permitted;
-- where your music comes from.
-
-Under your rules, Pexels and other free stock sites are out, and so is AI (project rule). Creators' reels and film or TV footage need permission or a licence, so I have selected nothing. The search terms below work in whatever source you confirm.
+**Excluded for this video:** free stock sites, AI images, and anything without a verified original. Film and TV footage is
+not used. The one named woman (Andie MacDowell) uses licensable Getty editorial photos.
 
 | Family | Assets | What each clip must show | Search terms (source-agnostic) |
 |---|---|---|---|

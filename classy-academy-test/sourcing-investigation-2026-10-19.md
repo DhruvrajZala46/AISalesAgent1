@@ -113,3 +113,25 @@ that to "Why Her Hair Always Looks Expensive"? This file answers from evidence, 
 - **The music source.**
 - **Fonts:** the exact font files are unknown, as before.
 - **Whether the possibly-AI images were knowingly chosen.**
+
+## 8. Applying the workflow to "Why Her Hair Always Looks Expensive"
+
+The result is `videos/expensive-hair/CLIP-CANDIDATES.md`. I used the same route your videos point to, with the
+verification steps your videos skip:
+1. **Discover** clips on Pinterest video pins, searching the words a viewer would type. A second route turned out to be
+   just as productive: TikTok's public "discover" topic pages (`tiktok.com/discover/<topic>`), which list creators'
+   original posts by topic. They are useful for tutorials.
+2. **Find the original** behind each pin: the pin's link, the credit in its text, the TikTok watermark, or the pinner's
+   own account.
+3. **Verify the original:** TikTok's oEmbed or Instagram's public embed confirms the post exists and names its author.
+   Its cover was compared with the brief by eye.
+4. **Record the permission status.** None of the creators grants reuse in public, so every candidate reads "request
+   needed". The permission template and your on-screen credit style are in the candidates file.
+
+The same rule applied to the Andie MacDowell shot. Instead of a pinned copy, I used two Getty editorial photos of
+the Cannes "Annette" premiere (6 July 2021), which can be licensed.
+
+**Excluded, on your instruction or the project's rules:**
+- free stock sites;
+- AI images. Several AI images and AI-watermarked pins came up in the searches and were rejected;
+- reposts by aggregator accounts.
