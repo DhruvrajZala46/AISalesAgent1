@@ -34,8 +34,11 @@ Free stock sites and AI were excluded throughout, as you asked.
 - **127 have at least one verified candidate.** 110 fit the brief fully; 17 are partial fits only (marked PARTIAL or WEAK in
   the tables).
 - **13 are gaps.** No real, verifiable creator clip exists for them; see the table below.
-- **Candidates:** about 230 verified original posts, most with an alternate.
-- **Platforms:** about 165 on Instagram, about 73 on TikTok, and 2 Getty photos.
+- **Candidates:** 237 verified original posts (163 Instagram, 74 TikTok) and 2 Getty photos; most assets have an alternate.
+- **Re-checked after assembly (19 Oct 2026):** every Instagram and TikTok link in this file was opened again.
+  - All 237 resolve to the stated creator.
+  - Two Instagram posts found removed are listed as "do not use".
+  - TikTok's checker rate-limits, so a failed check needs a slow retry before a link is called dead.
 
 **Ask for permission first** for the clips that carry the most of the video:
 1. **The tutorial demos (F4).** In your Hairstyles video, all 5 replay peaks were vertical tutorial clips. Start with:
@@ -434,8 +437,7 @@ No verifiable creator clip shows a single tapered tip next to a single blunt bro
 - 2 gaps: A45 and A46.
 
 **Candidates:**
-- 112 verified original posts (110 Instagram, 2 TikTok).
-- The TikTok alternate @beautosal (A93b) could not be re-verified on 19 Oct, so it is listed as unverified.
+- 113 verified original posts (110 Instagram, 3 TikTok).
 
 **How each candidate was verified:**
 - Instagram: the public embed confirmed the author and caption, and the embed frame was compared by eye with the pin.
@@ -604,6 +606,7 @@ Every row was checked against the rule: one creator's own demo or before/after, 
 | A93 | coily type-4 close-up | Moisturised type-4 coils, soft sheen | https://www.instagram.com/reel/DcJQt7gCu4H/ | @ukafrolista, 23.3K | https://www.pinterest.com/pin/e1_AfqPShzfQDt_UyekgGsLYEZYLx6YyWqF-saUtyQIBo8y5tW6lVWT/ | respectful profile | not granted - request needed |
 | A93 | alt | Wash-and-go on type-4 coils, salon | https://www.tiktok.com/@thekainoirexperience/video/7405755542485994795 | @thekainoirexperience, 143.4K | https://www.pinterest.com/pin/e1_AfqPShzQMj5LV7z4ge_2GTQrh_xHx-1VBeeSw_U5-8eLKCHFhtmY/ | re-verified 19 Oct; text overlay | not granted - request needed |
 | A93b | second | 4C coils on wash day, back of the head | https://www.instagram.com/reel/DS-yhbaEguL/ | @dyracheal, 3,727 | https://www.pinterest.com/pin/e1_AfqPShw4t_JdzORxqwLNg_ZKoGyf0swkzh4OxAf-Yhs0SFHLmeHD/ | bathroom | not granted - request needed |
+| A93b | alt | Type-4 wash day for beginners | https://www.tiktok.com/@beautosal/video/7262822186023488811 | @beautosal, 730.3K | https://www.pinterest.com/pin/e1_AfqPShzzeARHgGa8KAxS5d5KurDutZ0MU5rtQ0CWxnDa0-3XT77e/ | her own TikTok watermark; text; she sells a hair-care line | not granted - request needed |
 | A94 | woman with defined curls, elegant | Defined curls, cream slip dress, Paris street ("Curly hair is chic") | https://www.instagram.com/reel/DWnhj1ojEvK/ | @amandebomie, 16.5K | https://www.pinterest.com/pin/e1_AfqPShzeBr62F6VzXEpKkowYYfNG3xhOTIMi3C4lZIHSTumpnHBd/ | — | not granted - request needed |
 | A94 | alt | Defined curls, cream knit dress, minimal interior | https://www.instagram.com/reel/DBeQwjQPLcq/ | @sayriajade, 285K | https://www.pinterest.com/pin/e1_AfqPShwiYwTrnZrdwz7s6MZ1WS1KQx2SgnDz1Hh3BdFADbI3cXyc/ | — | not granted - request needed |
 | A95 | curls in defined groups (close-up) | Macro of glossy curl clumps | https://www.instagram.com/reel/DLAeaYnMTN9/ | @gimmegoodhair, 2,601 | https://www.pinterest.com/pin/e1_AfqPShxVH_9iOB9gJIqiGutzcfZmfAqY2ETzZj_tG_2eM_ZzREmawQ/ | — | not granted - request needed |
@@ -641,7 +644,6 @@ Every row was checked against the rule: one creator's own demo or before/after, 
 
 ### Unverified leads and gaps
 **Unverified leads:**
-- **A93b alternate:** https://www.tiktok.com/@beautosal/video/7262822186023488811 (@beautosal). TikTok's oEmbed failed three times on 19 Oct, so it may be removed. The pin was https://www.pinterest.com/pin/e1_AfqPShzzeARHgGa8KAxS5d5KurDutZ0MU5rtQ0CWxnDa0-3XT77e/
 - **Lilac cast (extra):**
   - https://www.pinterest.com/pin/e1_AfqPShz2DXrovorteBOvDv8l1MDOsLl6VNVObQ2X4obO0_dSxHWY/
   - https://www.pinterest.com/pin/e1_AfqPShwtG0qi33Cb6moFYDaLFygkcW_247e5ipFHCSWiX0dVgI-h/
