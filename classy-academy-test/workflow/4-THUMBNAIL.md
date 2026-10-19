@@ -5,20 +5,20 @@ the title doesn't use, and show real women, never AI.
 
 Read first: the `yt-package` skill (title and thumbnail are one unit).
 
-## The channel's thumbnail DNA (measured from "8 Things Elegant Ladies Never Wear", 1.24M views)
+## The channel's thumbnail DNA (re-measured 19 Oct 2026 by pixel overlay on the 1.25M, 951k, 698k and 242k uploads)
+
+All 30 uploads use ONE template. `tools/thumb_ce.py` builds it exactly; use it for every video unless the user asks otherwise.
 
 | Part | Exact value |
 |---|---|
 | Canvas | 1280x720 |
-| Photos | 3 real women edge to edge: x 0-401, 403-850, 852-1280, thin light dividers |
-| Framing | close, waist-up, faces in the top third, looking natural; different ages and skin tones |
-| Grade | slightly warm, slightly darker, gentle contrast |
-| Top line | Cormorant SC Regular, cap height 46 px, top at y=200, white |
-| Headline | Montserrat Bold 700, cap height 108 px, top at y=296, white |
-| Underline | red (150,22,26), under the FIRST headline word, y=418-421 (below any descender) |
-| Small line | Cormorant SC, cap height 26 px, top at y=495, like `*avoid these*` |
+| Photos | 3 real women edge to edge: x 0-402, 404-851, 853-1280, thin light dividers; waist-up or closer, faces in the top third (above the words), centre face to camera; cream/white/black/camel clothes, warm light; one Black woman in most; pure aspiration (no before/after, no cross/tick, no arrows) |
+| Top line | Cormorant SC Regular, cap height 54, letter-spacing 2, top y=193 ("How to Look", "The Most") |
+| Headline | **League Spartan Bold** (not Montserrat), 166 px, smaller only to fit ~1,110 px, cap top y=296 ("Expensive", "Elegant Hairstyles") |
+| Small line | Cormorant SC Regular, cap height 30, letter-spacing 3, 84 px under the headline ("\*Instantly\*", "All Hair Types") |
+| Words | the title's own keyword, restated; the three lines read as one phrase. Red underline only under "Never" |
 | Depth | soft drop shadow on all text, gentle darkening behind the text block |
-| Logo | CE logo top-left |
+| Logo | the channel's logo top-left (box x 59-143, y 43-106); for The Classy Elegance the CE logo |
 
 For a do / don't topic (rules, mistakes), the winners' format is the same woman twice, red cross on the
 mistake and green tick on the fix (8.0M "Dressing Rules EVERYONE Should Learn"): `tools/thumb_xo.py` builds it
@@ -31,15 +31,15 @@ woman mistake -> fix 67.5x her channel's median, same woman + lines on her 56.8x
 small white labels placed in canvas coordinates (render once with `"grid": true` to read them). Draw only what the
 woman shows or explains herself. Frame above a burned-in caption rather than erasing it over a bag or a pattern.
 
-`tools/thumb_make.py` builds exactly this (it reproduces the approved French thumbnail pixel for
-pixel). Never change the layout to "try something new" without the user asking.
+`tools/thumb_ce.py` builds exactly this. (`thumb_make.py` used Montserrat and smaller serif lines: superseded.) Never change the layout
+to "try something new" without the user asking; the do/don't and body-shape formats below are only for when the user asks for them.
 
 ## Words
 
 - Headline 2-3 words, max 3 words in the big line; together with the top line it reads as one
   phrase ("French Women / Never Wear").
-- It must not repeat the title's words where it can avoid it - different words, same promise
-  (`python3 .claude/skills/yt-package/title.py --title "<title>" --thumb "<big words>"`).
+- The channel restates the title's keyword ("How to Look / Expensive / *Instantly*" for "How to Instantly Look More Elegant &
+  Expensive"). Follow the channel, not the generic "never repeat the title" lint rule.
 - Make three versions: the channel's #1 format, a variant with other words, and an "at any age"
   (40-70+) version.
 

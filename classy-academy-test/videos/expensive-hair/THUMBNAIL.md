@@ -1,74 +1,71 @@
-# Why Her Hair Always Looks Expensive: thumbnails
+# Why Her Hair Always Looks Expensive: thumbnails (v2, in the channel's own template)
 
-Built with the `yt-package` skill and `workflow/4-THUMBNAIL.md`. The title is unchanged: **Why Her Hair Always Looks Expensive (It's Not the Cut)**.
+v1 (same hair frizzy to glossy, cross and tick on caramel) was rejected: "it does not match my viral thumbnails, most
+importantly the visual and the copy text". v2 copies the template of the user's 30 thumbnails exactly.
 
-## The proof: 102 hair winners, each scored against its own channel
+## What all 30 of the user's thumbnails do (each one looked at; the top 4 measured by pixel overlay)
 
-- **Sources, 19 Oct 2026:**
-  - the niche's 60 channels (`content-idea/channels.json`, 12,804 long videos);
-  - YouTube's own results for 20 searches a woman types ("how to make your hair look expensive", "old money hair",
-    "glossy hair tips", "hair mistakes that make you look older", "elegant hair over 50", ...).
-- **Scoring:** every hair video is scored as a multiple of its channel's median. Men's, wigs, kids and off-topic videos were dropped.
-- **Kept:** the 102 that beat their channel. Each thumbnail was looked at and tagged by eye.
+**One template, all 30, with no exceptions.**
 
-| On the thumbnail | Niche channels: n / median views / median x | Search: n / median views / median x |
-|---|---|---|
-| **Glossy-hair close-ups** | 2 / 1.10M / **22.8x** | 4 / 0.90M / **120x** |
-| **Same hair, frizzy/dull -> glossy (before -> after, x / tick)** | 6 / 0.20M / 8.2x | 8 / **0.56M** / 17.4x |
-| One woman + a few words | 12 / 0.06M / 8.8x | 17 / 0.53M / 27.5x |
-| Same woman, several styles | 7 / 0.13M / 4.7x | 7 / 1.79M / 31.1x |
-| Line-up of different women | 3 / 0.04M / 6.0x | 10 / 0.34M / 88.9x (mostly AI faces on tiny channels) |
-| Big text over a blurred face | 10 / 0.07M / 8.9x (one channel only) | 1 |
+**Pictures.** Three real photos sit edge to edge (x 0-402 | 404-851 | 853-1280) with thin light dividers.
+- **Who:** three different elegant women; at least one Black woman in most thumbnails; sometimes a known woman (Kate Middleton), never named.
+- **Framing:** waist-up or closer; faces in the top third, above the words; the centre face usually looks into the camera.
+- **Clothes and light:** cream, white, black and camel clothes; warm light; Instagram and Pinterest influencer photos,
+  phone selfies included.
+- **What it shows:** pure aspiration ("be her"), never a problem: no before/after, no cross or tick, no arrows, no labels.
+- **Hair videos:** the hair is the hero (Hairstyles 951k: a blonde chignon, a brunette with bangs, a sleek bun;
+  Haircuts 242k: bangs, a glossy blowout, a retro bob).
 
-**Winners of the format:**
-- Beauty Theory "how ANYONE can tame frizzy dry hair": 1.7M, 35x, "BEFORE / AFTER" on the same hair.
-- Hang "Why your wavy hair is FRIZZY": 3.47M, 30x, the same woman with x / tick.
-- kayli boyle: 2.3M, 13x.
-- Glam Girl Gabi: 1.2M, 12x.
-- Elena Spati "How I Get My Hair THIS Shiny": 452k, 188x, glossy hair from behind.
+**Words.** Three centred lines, read as one phrase:
+1. **Small serif setup:** "How to Look", "The Most", "Elegant Ladies". Font: Cormorant SC, cap height 54, letter-spacing 2, top at y=193.
+2. **Big bold keyword:** "Expensive", "Elegant Hairstyles", "Never Wear". Font: League Spartan Bold, 166 px, smaller only to fit
+   about 1,110 px; cap top at y=296.
+3. **Small qualifier:** "\*Instantly\*", "All Hair Types", "\*avoid these\*". Font: Cormorant SC, cap height 30, 84 px below the big line.
 
-**What the lane's winning words say:**
-- Lucrative Elegance "YOU'LL NEVER LOOK RICH WITH THIS HAIR": 25x.
-- Lucrative Elegance "YOUR HAIR REVEALS YOUR CLASS": 15x.
-- Julianna Lee "look clean & expensive": 14x.
+- **Shadow:** soft drop shadow on all text.
+- **Underline:** red underline only under "Never".
+- **Logo:** top-left.
+- **Wording:** the big word is the title's own keyword. The thumbnail restates the promise ("How to Instantly Look More Elegant
+  & Expensive" → "How to Look / Expensive / \*Instantly\*"); it does not avoid the title's words.
 
-**Not copied:** the many AI-face line-ups. We use real women only.
+**How the fonts were measured:** each font was drawn in red over the original and checked by eye.
+- League Spartan Bold 166 covers "Expensive" (698k) exactly, and 146 covers "Elegant Hairstyles" (951k).
+- Cormorant SC at cap 55 with letter-spacing 2 covers "Elegant Ladies" (1.25M).
+- Montserrat, used by the old `thumb_make.py`, was the wrong font.
 
-## The three (YouTube Studio -> Thumbnail -> Test & compare)
+## The two (YouTube Studio -> Thumbnail -> Test & compare)
 
-1. **A (recommended)** `thumb_A_same_haircut.jpg`.
-   - **Picture:** one woman's hair from behind, frizzy (cross) -> glossy (tick). It is the same haircut in the same room, so the picture shows
-     the title's promise: it's the finish, not the cut.
-   - **Words:** "ONE WOMAN, / SAME HAIRCUT / *it's the finish*". `title.py`: 80/100, no repeated title words.
-   - **Build:** `tools/thumb_xo.py`, the channel's look (caramel, Montserrat + Cormorant SC, red underline, CE logo).
-2. **B** `thumb_B_the_finish.jpg`: the same picture with the answer as the words, "THE SECRET IS / THE FINISH / *same haircut*" (80/100).
-   A vs B tests the question ("same haircut?") against the answer.
-3. **C** `thumb_C_pure_shine.jpg`: the channel's #1 three-photo format (`tools/thumb_make.py`).
-   - **Photos:** three women of different ages and hair types: glossy brunette, silver-haired woman of 76, golden curls.
-   - **Words:** "AT ANY AGE, / PURE SHINE / *the haircut can wait*" (80/100).
+1. **A (recommended)** `thumb_A_hair_that_looks_expensive.jpg`: "HAIR THAT LOOKS / **Expensive** / \*It's Not the Cut\*".
+   - **Wording:** the same shape and big word as "How to Look / Expensive / \*Instantly\*" (698k, the channel's #3). It names the subject
+     (hair) and carries the title's twist.
+   - **Photos:**
+     - Kaia Gerber's glossy brunette blowout (Hola, press photo);
+     - a blonde bouncy blowout (@salonthirtyeight, Instagram post C7xeiazsGAH);
+     - a woman in white with long glossy waves (Pinterest, uploaded by AnslenRed; 1170x1636 iPhone photo).
+2. **B** `thumb_B_secret_to_expensive_hair.jpg`: "THE SECRET TO / **Expensive Hair** / All Hair Types".
+   - **Wording:** the shape of the two hair winners ("The Most / Elegant Hairstyles / All Hair Types" 951k, "... Haircuts" 242k).
+   - **Photos:** three hair types and ages:
+     - glossy brunette (Pinterest, xsalena);
+     - long silver hair (Luisa Dunn, Instagram CVLv3cbhEEg);
+     - sleek black silk press (@naomiknowsmore, Instagram DcRjvVBye9e).
 
-**Feed test** (`feed_test.jpg`): at 320x180, next to six winners:
-- A and B read in one glance;
-- the frizzy/glossy contrast is the strongest picture on the sheet;
-- the caramel stands apart from the white and grey winners.
+**Feed test** (`feed_test_ce.jpg`): at 320x180, beside the channel's 1.25M, 951k, 698k and 242k thumbnails, A and B read as the same
+channel's work; "Expensive" reads in one glance.
 
-C's faces stay clear.
+## Photos: real, checked
 
-## Photos (real, from the video's own footage, checked)
+- **Source sizes:** all are real-camera sizes, not AI-generator sizes; found with `tools/real_search.py` (AI sizes and AI words dropped).
+- **Checked by eye:** skin texture, hands, hair strands, real rooms.
+- **Credit:** none of the women is named on the thumbnail, as on the channel's.
+- **Permission:** not asked yet, as with the video's clips.
 
-- **A, B:** @haircarebyleila (Instagram reel DKHyAlZATCo).
-  - Her own client before/after: frizzy, matte lengths, then sleek and glossy, in the same room and light.
-  - Frames 4.4 s and 9.5 s. The stylist's arm in the second frame is cut away.
-  - AI watermark scan: none (all clips scanned for the video).
-- **C:**
-  - @xmondohair (TikTok 7607880947727355150), frame at 43 s. Their TikTok mark was removed from a plain white area.
-  - @lynnezekis (Instagram reel Db6X9GOqR0u, "Here at 76"), 120 s.
-  - @wtheeduarda (Instagram reel Db_kc_KOD0Z), 10 s.
-- **Permission:** as with the video, no creator has been asked yet. Credit them in the description (`CREDITS.txt`).
+## Build
 
-## Tools
+```
+python3 -I workflow/tools/thumb_ce.py spec.json
+```
 
-- The research data and scripts are in the session scratchpad (`thumb/`): `hair_scored.json`, `winners.json`, `tags.json`, `make_c.py`.
-- The cut-out uses rembg (isnet-general-use).
+- **Fonts:** League Spartan and Cormorant SC, from Google Fonts (OFL).
+- **Spec and sources:** the session's `thumb/spec_ce.json` and `thumb/rs/real/keep.json`.
 
 **Ship it, or change it?**
