@@ -5,6 +5,8 @@ Branch: `claude/youtube-channel-analysis-lghfsv`. The channel's YouTube name is 
 
 ## 1. Where things stand right now
 
+**Latest (19 Oct 2026):** deep channel audit + next topic for Classy Academy, in `research-2026-10-19-classy-academy-audit-next-topic.md`. Recommendation: **"7 Things Elegant Ladies Never Do at the Dinner Table"** (dining etiquette for the holiday table; 89/100; passed the point-level originality audit with 14 existing lines excluded). Runner-ups: quality inspection before buying (74), elegant travel (74). Waiting on the user's decision and on the Studio data listed in its section 7. No script until the user approves the topic. The 18 Oct "put together" recommendation was rejected as repetitive (see LEARNINGS).
+
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in
 `videos/speak-elegantly-2/` (Gofile v1.1: https://gofile.io/d/lNo4i7J3).
 
