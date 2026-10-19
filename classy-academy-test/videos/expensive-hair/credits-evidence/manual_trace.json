@@ -1,0 +1,188 @@
+{
+ "_note": "Hand-checked evidence for the sources that the automatic embed checks could not settle (19 Pinterest files, 2 photos, music, narration). Checked 19 Oct 2026.",
+ "pinterest": {
+  "A09_p0.mp4": {
+   "status": "IDENTIFIED",
+   "credit": "Bella On Call Salon",
+   "credit_link": "https://www.pinterest.com/pin/1005991635523171787/",
+   "evidence": "the clip ends on the salon's own branded card (Bella On Call, www.bellaoncall.com; that card is not used in our video); the uploader is the salon's own Pinterest account (Bella On Call Salon, website bellaoncall.com)",
+   "description_credit": "Bella On Call Salon (bellaoncall.com)"
+  },
+  "A13_p0.mp4": {
+   "status": "IDENTIFIED",
+   "credit": "Anh Co Tran (anhcotran.com)",
+   "credit_link": "https://www.pinterest.com/pin/156781630770342311/",
+   "evidence": "uploaded by the stylist's own Pinterest account 'Anh Co Tran' (profile: celebrity hairstylist; website www.anhcotran.com, domain verified by Pinterest; 151k followers); no other creator mark in the clip",
+   "description_credit": "Anh Co Tran (anhcotran.com)"
+  },
+  "A37_p1.mp4": {
+   "status": "IDENTIFIED (original post not located)",
+   "credit": "Philip, @philip_stylist (Instagram)",
+   "credit_link": "https://www.pinterest.com/westchesterhairguru/",
+   "evidence": "uploaded by Pinterest account Westchesterhairguru, display name 'Philip_Stylist', profile 'follow me on ig @philip_stylist', with Instagram @philip_stylist connected to the account; pin title in the first person ('How I blow dry fine hair'); the stylist is on camera. The numeric pin id is not in the account's public feed, so the link is the uploader's profile.",
+   "description_credit": "Philip @philip_stylist"
+  },
+  "A45_p1.mp4": {
+   "status": "IDENTIFIED",
+   "credit": "RnB Visuals (rnbvisuals.nl)",
+   "credit_link": "https://www.pinterest.com/pin/635148353719564595/",
+   "evidence": "uploaded by RnB Visuals, a videomaker in the Netherlands (website rnbvisuals.nl); the pin says 'From the videoshoot with Jaleesa Reintjes-Rothof. Personal branding & B-roll', i.e. the uploader's own shoot",
+   "description_credit": "RnB Visuals (rnbvisuals.nl)"
+  },
+  "A48_p0.mp4": {
+   "status": "PUBLISHER IDENTIFIED, underlying footage UNVERIFIED",
+   "credit": "The Indie Earth (theindieearth.in)",
+   "credit_link": "https://www.pinterest.com/theindieearthindia/",
+   "evidence": "a product advert of the brand The Indie Earth (its products, coupon B3P2 and theindieearth.in in the video), uploaded by the brand's own Pinterest account (website theindieearth.in, domain verified). The part we use (the first 3.5 s: before/after hair with the words 'ROUGH, DAMAGES HAIR') looks like stock footage inside the advert; its original owner is not known. The numeric pin id is not in the account's public feed, so the link is the uploader's profile.",
+   "description_credit": "The Indie Earth (theindieearth.in)"
+  },
+  "A83_p0.mp4": {
+   "status": "ATTRIBUTED (original post not located)",
+   "credit": "Mounir (credited 'by @mounir' on Pinterest)",
+   "credit_link": "https://www.pinterest.com/pin/748019819557226710/",
+   "evidence": "the salon cape in the clip carries the 'Mounir' logo and the pin caption reads 'A Magical Transformation by @mounir'; uploaded by hhairstylemakeup, a re-post account. The original post could not be opened (Instagram rate-limited the check).",
+   "description_credit": "Mounir (credited @mounir on Pinterest)"
+  },
+  "A41_p0.mp4": {
+   "status": "VERIFIED",
+   "credit": "@jessieglasgowhair",
+   "credit_link": "https://www.instagram.com/reel/DGBgXr-q4T4/",
+   "evidence": "the pin links to this Instagram reel; the reel's embed shows author jessieglasgowhair; the uploader is the same creator (Pinterest jessieglasgowhair, Instagram connected)"
+  },
+  "A09_p1.mp4": {
+   "status": "VERIFIED",
+   "credit": "@markjameshairstudio12_",
+   "credit_link": "https://www.instagram.com/reel/DTehjTPD9eq/",
+   "evidence": "the pin links to this Instagram reel; the reel's embed shows author markjameshairstudio12_; the uploader has the same name"
+  },
+  "A60_p0.mp4": {
+   "status": "VERIFIED",
+   "credit": "@markjameshairstudio12_",
+   "credit_link": "https://www.instagram.com/reel/DTehjTPD9eq/",
+   "evidence": "same pin and reel as A09_p1 (a second shot from it)"
+  },
+  "A105_p0.mp4": {
+   "status": "VERIFIED",
+   "credit": "@_kays.hair",
+   "credit_link": "https://www.instagram.com/reel/DO8dpmFDRv-/",
+   "evidence": "the pin links to this Instagram reel; the reel's embed shows author _kays.hair; the uploader 'Sashakay2' is the same stylist ('kays hair', Instagram @_kays.hair connected). Credit @_kays.hair, not Sashakay2."
+  },
+  "A28_p0.mp4": {
+   "status": "UNVERIFIED",
+   "credit": null,
+   "credit_link": "https://www.pinterest.com/pin/976507131686701315/",
+   "evidence": "uploaded by kwkap4alsharg4 (no profile details, 0 followers); Portuguese salon caption 'CABELOS PERFEITO E SAUDAVEL | video de Salao'; no watermark or handle in any frame"
+  },
+  "A29_p1.mp4": {
+   "status": "UNVERIFIED",
+   "credit": null,
+   "credit_link": "https://www.pinterest.com/pin/121949102403535862/",
+   "evidence": "uploaded by beahairs, a wig shop (beahairs.com); the clip shows a salon blonde, not a wig, and nothing shows the shop filmed it; no watermark or handle"
+  },
+  "A43w_p0.mp4": {
+   "status": "UNVERIFIED",
+   "credit": null,
+   "credit_link": "https://www.pinterest.com/pin/991917886696153465/",
+   "evidence": "uploaded by Stefira Wullur (no profile details) to a board named 'mentahan video' (raw video); no watermark or handle"
+  },
+  "A43_p0.mp4": {
+   "status": "UNVERIFIED",
+   "credit": null,
+   "credit_link": "https://www.pinterest.com/pin/924574998478959800/",
+   "evidence": "uploaded by mahlilmessworld, an aesthetic collection account; no caption credit, watermark or handle"
+  },
+  "A54_p0.mp4": {
+   "status": "UNVERIFIED",
+   "credit": null,
+   "credit_link": "https://www.pinterest.com/pin/996069642575887771/",
+   "evidence": "uploaded by sofiat9557 ('long hair+wind'); no watermark or handle"
+  },
+  "A47_p0.mp4": {
+   "status": "UNVERIFIED",
+   "credit": null,
+   "credit_link": "https://www.pinterest.com/pin/452400725091056861/",
+   "evidence": "uploaded by Courtney Leinen, whose pin itself says '(Credits to the rightful owner. If you want this removed, please DM...)', so it is a re-post; TikTok-style caption 'if you get flyaways you need to try this hack' in the first second, no handle"
+  },
+  "A54_p1.mp4": {
+   "status": "UNVERIFIED",
+   "credit": null,
+   "credit_link": "https://www.pinterest.com/pin/633387442144959/",
+   "evidence": "uploaded by rollyd2004 (Rashmi Dhingra); pin page title 'Feliz dia do beijo [Video]', which suggests a re-post; no watermark or handle"
+  }
+ },
+ "photos": {
+  "A82_p1.jpg": {
+   "status": "VERIFIED (photographer as published; agency not stated)",
+   "subject": "Andie MacDowell, 'Annette' screening and opening ceremony, 74th Cannes Film Festival, 6 July 2021",
+   "credit": "Photo: Dominique Charriau",
+   "published_by": "Vogue Italia",
+   "source": "https://www.vogue.it/news/gallery/cannes-2021-festival-cinema-red-carpet-cerimonia-apertura-inaugurazione?image=60e486ddad48a612b1673460",
+   "evidence": "the gallery's image 60e486ddad48a612b1673460 is captioned 'Annette screening - Cannes 2021' with credit 'Dominique Charriau'; our still matches Vogue's image (pixel correlation 0.9987). Found via Pinterest pin https://www.pinterest.com/pin/606930487287653822/ (uploader rossiell0800).",
+   "description_credit": "photo by Dominique Charriau (via Vogue Italia)"
+  },
+  "A82_p0.jpg": {
+   "status": "VERIFIED",
+   "subject": "Andie MacDowell, 'Annette' screening and opening ceremony, 74th Cannes Film Festival, 6 July 2021",
+   "credit": "Photo by Stephane Cardinale - Corbis/Corbis via Getty Images",
+   "published_by": "British Vogue (lead image, credited 'Photo: Getty Images')",
+   "source": "https://www.gettyimages.com/detail/news-photo/andie-macdowell-attends-the-annette-screening-and-opening-news-photo/1327325597",
+   "article": "https://www.vogue.co.uk/beauty/article/andie-macdowell-grey-hair",
+   "evidence": "British Vogue's lead image file is GettyImages-1327325597, credited 'Photo: Getty Images'; Getty's page for 1327325597 gives the credit line above; our still matches Vogue's image (pixel correlation 0.9976). Found via a Pinterest pin of British Vogue's preview account.",
+   "description_credit": "photo by Stephane Cardinale - Corbis/Corbis via Getty Images (via British Vogue)"
+  }
+ },
+ "music": {
+  "files": {
+   "BerceuseinD-flatmajorOp.57.flac": {
+    "piece": "Berceuse in D-flat major, Op. 57",
+    "performer_tag": "OIga Gurevich (sic, the file tag; read as Olga Gurevich)",
+    "md5": "2985eff2df1b221bfdc6ca99389c39bc",
+    "musopen_own_upload_match": "not in Musopen's own archive.org item (musopen-chopin)"
+   },
+   "NocturneinEflatmajorOp.9no.2.flac": {
+    "piece": "Nocturne in E-flat major, Op. 9 No. 2",
+    "performer_tag": "Frank Levy",
+    "md5": "6f7cf7c9fae820801c70a332e6af3b9d",
+    "musopen_own_upload_match": "NocturneOp9No2 in musopen-chopin, same length 271.47 s"
+   },
+   "NocturnesOp.32-No.1.NocturneinBmajor.flac": {
+    "piece": "Nocturne in B major, Op. 32 No. 1",
+    "performer_tag": "Frank Levy",
+    "md5": "c9881f4ac0ddc16d49aead8125feb94f",
+    "musopen_own_upload_match": "'Nocturne Op. 32 no. 1 in B major' in musopen-chopin, same length 301.04 s"
+   }
+  },
+  "downloaded_from": "https://archive.org/details/musopen-chopin-complete-works-flac",
+  "downloaded_item": {
+   "title": "Musopen - The Complete Works of Frederic Chopin (FLAC)",
+   "licenseurl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "uploader": "a private archive.org account, not Musopen",
+   "publicdate": "2026-06-28",
+   "md5_match": "all three files match the item's published md5 exactly"
+  },
+  "musopen_own_item": {
+   "url": "https://archive.org/details/musopen-chopin",
+   "title": "Musopen - The Complete Chopin Collection",
+   "creator": "Aaron Dunn",
+   "uploader": "aaron@musopen.org",
+   "licenseurl": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "publicdate": "2015-01-29"
+  },
+  "file_tags": "ALBUM 'The Complete Works of Frederic Chopin', LABEL 'Musopen'",
+  "use": "the bed under the voice and the end-card swell are cut from these three recordings only; no clip audio is used (the clips are muted: mix.py mixes voice, music bed and swell only)"
+ },
+ "narration": {
+  "what": "synthetic voice, Kokoro-82M model, voice af_heart, run with kokoro-onnx 0.6.1",
+  "licences": {
+   "Kokoro-82M": "Apache-2.0 (Hugging Face model card hexgrad/Kokoro-82M)",
+   "kokoro-onnx": "MIT"
+  },
+  "note": "a stock synthetic voice, not a clone of any real person"
+ },
+ "fonts": {
+  "PinyonScript-Regular.ttf": "Google Fonts, SIL Open Font License",
+  "PlayfairDisplay.ttf": "Google Fonts, SIL Open Font License",
+  "note": "OFL allows use in videos; no credit required"
+ },
+ "logo": "CE / The Classy Elegance logo, the channel's own"
+}

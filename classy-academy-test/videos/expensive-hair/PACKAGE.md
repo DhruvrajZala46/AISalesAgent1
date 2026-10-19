@@ -19,7 +19,8 @@ Thumbnails: `THUMBNAIL.md`.
 
 ## Description
 
-Paste `DESCRIPTION.txt` (3,642 characters; YouTube allows 5,000).
+**Final (19 Oct 2026):** paste `DESCRIPTION-FINAL.txt` (4,603 characters, 4,620 bytes; YouTube allows 5,000). Pin `CREDITS-PINNED-COMMENT.txt` as the first comment:
+it links every original post. Read `CREDITS-ISSUES.md` before publishing. `DESCRIPTION.txt` (v1) is superseded.
 
 **Replace `[YOUR GUIDE LINK]`** with The Classy Elegance's own guide link. The narration says the guide is "linked in the
 description" three times. The earlier packages used classyladyacademy.com, which is Classy Academy's site, and the user said to remove it.
@@ -49,14 +50,17 @@ how to make your hair look expensive, expensive looking hair, hair that looks ex
 
 ## Credits
 
-`DESCRIPTION.txt` ends with the credits block, in the same format as the earlier packages:
-- **Video creators:** 93 handles, in order of first appearance.
-- **Pinterest uploaders:** 13, for the 14 clips whose original creator could not be identified.
-- **Andie MacDowell:** press photos.
-- **Thumbnail photos.**
-- **Music:** Chopin, Musopen recordings, CC0.
+**Final (19 Oct 2026):** `DESCRIPTION-FINAL.txt` has a VISUAL CREDITS block and a MUSIC & AUDIO CREDITS block. The block is built by
+`project/tools/credits_build.py` from `credits-evidence/`.
+- **Instagram and TikTok creators:** the author shown by each post's own embed, in order of first appearance.
+- **Six creators traced from Pinterest:** the salon, stylist, videomaker or brand that uploaded its own clip.
+- **The two Andie MacDowell photographers.**
+- **Seven clips whose original creator is UNVERIFIED:** listed by their Pinterest links.
+- **Music:** the three Chopin recordings, with performers and the CC0 licence.
+- **Narration:** the synthetic voice.
 
-Per shot, with links: `CREDITS.txt` (time, creator, original post) and `SOURCES-LOG.md` (scene, how it was found, permission status).
+Per file (scene, time on screen, link, status, how it was checked): `CREDITS-CHECKLIST.md`. What is still open: `CREDITS-ISSUES.md`.
+`CREDITS.txt` and `SOURCES-LOG.md` are superseded: their Pinterest links do not open the pin.
 
 **Permission:** no creator has been asked yet; nothing is sent without the user's OK.
 

@@ -1,3 +1,5 @@
+> **Superseded on 19 Oct 2026** by `CREDITS-CHECKLIST.md`: the Pinterest links below open Pinterest's Explore page, not the pin, and some handles are wrong (see `CREDITS-ISSUES.md` section 9).
+
 # SOURCES-LOG - The Classy Elegance: Why Her Hair Always Looks Expensive
 
 Every picture in the final export, where it was found, and its permission status. Footage was found the way the channel

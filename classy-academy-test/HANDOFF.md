@@ -15,7 +15,10 @@ Branch: `claude/youtube-channel-analysis-lghfsv`. The channel's YouTube name is 
   - **Brand (user, 19 Oct): the logo is CE / The Classy Elegance** (`workflow/assets/logo_ce*.png`), top-left and on the end card.
     No classyladyacademy.com link, no Classy Academy episode number ("Episode N"), product name ("classy lady guides") or sound.
     Classy Academy is the reference channel whose 30 uploads were studied; its format is copied, never its brand.
-  - Records: `CREDITS.txt` and `SOURCES-LOG.md`.
+  - Records (final, 19 Oct): `DESCRIPTION-FINAL.txt` (copy-ready), `CREDITS-PINNED-COMMENT.txt` (every original post's link),
+    `CREDITS-CHECKLIST.md` (all 116 files, each checked) and `CREDITS-ISSUES.md` (no permission for any clip; 7 UNVERIFIED clips;
+    Getty photo; guide link; which channel name). They are built by `project/tools/credits_build.py` from `credits-evidence/`.
+    `CREDITS.txt` and `SOURCES-LOG.md` are superseded: their Pinterest links do not open the pin.
   - The report is `videos/expensive-hair/FINAL-REPORT.md`.
   - The video file itself is NOT in git (media). It is in the session scratchpad and was sent to the user.
 - **Not done:** no creator has been asked for permission; nothing is sent without the user's OK.
