@@ -1,0 +1,128 @@
+[
+ {
+  "out": "final_A_always_look_put_together.jpg",
+  "top": "Always Look",
+  "big": "Put Together",
+  "small": "*Effortlessly*",
+  "panels": [
+   {
+    "img": "sel/anastajsha.jpg",
+    "face": [
+     1150,
+     640,
+     520,
+     520
+    ],
+    "fw": 0.28,
+    "fy": 0.18,
+    "dx": -0.14
+   },
+   {
+    "img": "sel/kira.png",
+    "face": [
+     556,
+     534,
+     293,
+     293
+    ],
+    "fw": 0.29,
+    "fy": 0.17
+   },
+   {
+    "img": "sel/afroditi.jpg",
+    "face": [
+     600,
+     700,
+     860,
+     860
+    ],
+    "fw": 0.32,
+    "fy": 0.17
+   }
+  ]
+ },
+ {
+  "out": "final_B_on_any_budget.jpg",
+  "top": "How to Always Look",
+  "big": "Put Together",
+  "small": "*On Any Budget*",
+  "panels": [
+   {
+    "img": "sel/anastajsha.jpg",
+    "face": [
+     1150,
+     640,
+     520,
+     520
+    ],
+    "fw": 0.28,
+    "fy": 0.18,
+    "dx": -0.14
+   },
+   {
+    "img": "sel/kira.png",
+    "face": [
+     556,
+     534,
+     293,
+     293
+    ],
+    "fw": 0.29,
+    "fy": 0.17
+   },
+   {
+    "img": "sel/afroditi.jpg",
+    "face": [
+     600,
+     700,
+     860,
+     860
+    ],
+    "fw": 0.32,
+    "fy": 0.17
+   }
+  ]
+ },
+ {
+  "out": "final_C_women_who.jpg",
+  "top": "Women Who Always Look",
+  "big": "Put Together",
+  "small": "*8 Quiet Habits*",
+  "panels": [
+   {
+    "img": "sel/anastajsha.jpg",
+    "face": [
+     1150,
+     640,
+     520,
+     520
+    ],
+    "fw": 0.28,
+    "fy": 0.18,
+    "dx": -0.14
+   },
+   {
+    "img": "sel/kira.png",
+    "face": [
+     556,
+     534,
+     293,
+     293
+    ],
+    "fw": 0.29,
+    "fy": 0.17
+   },
+   {
+    "img": "sel/afroditi.jpg",
+    "face": [
+     600,
+     700,
+     860,
+     860
+    ],
+    "fw": 0.32,
+    "fy": 0.17
+   }
+  ]
+ }
+]
