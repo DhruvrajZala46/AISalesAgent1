@@ -154,12 +154,20 @@ def rich_lines(s, size, max_w):
             words += [(w, style, size) for w in buf.split()]; buf = ''; style = 'script' if ch == '\x01' else 'serif'
         else: buf += ch
     words += [(w, style, size) for w in buf.split()]
-    F = ImageFont.truetype(FONT_SERIF, int(size * SCALE)); lines, cur, cw = [], [], 0
-    for w in words:
-        lw = F.getlength(w[0] + ' ') * (1.3 if w[1] == 'script' else 1)
-        if cur and cw + lw > max_w * SCALE and w[0][:1] not in '.,;:!?': lines.append(cur); cur, cw = [], 0
-        cur.append(w); cw += lw
-    return lines + ([cur] if cur else [])
+    F = ImageFont.truetype(FONT_SERIF, int(size * SCALE))
+    def wrap(mw):
+        lines, cur, cw = [], [], 0
+        for w in words:
+            lw = F.getlength(w[0] + ' ') * (1.3 if w[1] == 'script' else 1)
+            if cur and cw + lw > mw * SCALE and w[0][:1] not in '.,;:!?': lines.append(cur); cur, cw = [], 0
+            cur.append(w); cw += lw
+        return lines + ([cur] if cur else [])
+    best = wrap(max_w); lo, hi = max_w * 0.4, max_w          # balanced lines: the narrowest width that keeps the same
+    for _ in range(14):                                       # number of lines (no single word left alone on the last line)
+        mid = (lo + hi) / 2
+        if len(wrap(mid)) <= len(best): hi = mid
+        else: lo = mid
+    return wrap(hi)
 
 
 def put(frame, rgba, cx, cy, alpha=1.0, wipe=None):
@@ -216,7 +224,7 @@ def draw_quote(fr, sg, t, cx, cy, max_w, color):
     step = sg.get('line_step', min(1.1, max(0.5, (sg['t1'] - sg['t0'] - 1.5) / max(len(lines), 1))))
     out_a = 1 - ease((t - (sg['t1'] - 0.35)) / 0.35) if sg.get('fade_out', True) else 1.0
     for li, im in enumerate(lines):
-        w = (t - sg['t0'] - 0.25 - li * step) / 0.9
+        w = (t - sg['t0'] - 0.05 - li * step) / 0.9
         if w > 0: put(fr, im, cx, y0 + li * lh, alpha=out_a, wipe=min(w, 1))
 
 
