@@ -1,8 +1,8 @@
 # mix.py - the sound of the video, as measured on the channel's 30 uploads (study/<id>/sound*.json):
 #   a very soft bed ~20 dB under the voice (separated stems of the Hairstyles video: 15.7 dB; mix floor of the others ~20 dB),
 #   starting with the first word (no music intro) and stopping with the last word; no ducking, no sound effects;
-#   then 0.5 s of silence and the channel's own logo sting on the white end card, ~6.5 LU louder than the programme,
-#   decaying to digital silence. Master -18 LUFS (median of the four most-viewed uploads: -16.6 to -19.3), true peak -1 dBTP.
+#   then 0.5 s of silence and the music swells on the white end card (~6.5 LU louder than the programme, 5.5 s) and fades
+#   to digital silence - the reference channel's ending, made from our own CC0 piano, never from their sting. Master -18 LUFS (median of the four most-viewed uploads: -16.6 to -19.3), true peak -1 dBTP.
 #   python3 project/mix.py            -> audio/music_bed.wav, audio/mix.wav
 #   python3 project/mix.py mux        -> out/<final>.mp4 (video_only.mp4 + mix.wav)
 import json, os, re, subprocess, sys
@@ -12,7 +12,7 @@ MUSIC = ['music/BerceuseinD-flatmajorOp.57.flac', 'music/NocturneinEflatmajorOp.
          'music/NocturnesOp.32-No.1.NocturneinBmajor.flac']          # Chopin, Musopen recordings, CC0
 VOICE_LUFS = -18.0; UNDER = 20.0; MASTER = -18.0; STING_OVER = 6.5
 END_CARD = clock.get('end_card', last_word + 0.5)
-STING = 'assets/own/end_sting_MNEo.wav'   # cut from the channel's own upload MNEoQmJU96M (end card, 8:13.5-8:19.6)
+SWELL = 5.5                               # seconds of piano on the end card
 
 
 def run(cmd): return subprocess.run(cmd, capture_output=True, text=True, check=True)
@@ -48,9 +48,14 @@ run(['ffmpeg', '-v', 'error', '-y', '-i', f'{WD}/audio/voice.wav', '-af', f'volu
 mi, _ = loudness(f'{WD}/audio/music_raw.wav')
 run(['ffmpeg', '-v', 'error', '-y', '-i', f'{WD}/audio/music_raw.wav', '-af', f'volume={VOICE_LUFS - UNDER - mi:.2f}dB',
      f'{WD}/audio/music_bed.wav'])
-# 3. the channel's logo sting on the end card, STING_OVER LU above the voice
-si, _ = loudness(f'{WD}/{STING}')
-run(['ffmpeg', '-v', 'error', '-y', '-i', f'{WD}/{STING}', '-af', f'volume={VOICE_LUFS + STING_OVER - si:.2f}dB,adelay={int((END_CARD + 0.1) * 1000)}:all=1,'
+# 3. the end-card swell: the same piano picks up where the bed stopped, STING_OVER LU above the voice, then fades out
+fc2 = ''.join(f'[{i}:a]aresample=48000:resampler=soxr,aformat=sample_fmts=fltp:channel_layouts=stereo[a{i}];' for i in range(len(MUSIC)))
+fc2 += ('[a0][a1]acrossfade=d=6:c1=tri:c2=tri[x1];[x1][a2]acrossfade=d=6:c1=tri:c2=tri[x2];'
+        f'[x2]atrim={bed_end:.3f}:{bed_end + SWELL:.3f},asetpts=N/SR/TB,highpass=f=60,'
+        f'afade=t=in:st=0:d=0.25,afade=t=out:st={SWELL - 3.2:.2f}:d=3.2[s]')
+run(cmd + ['-filter_complex', fc2, '-map', '[s]', f'{WD}/audio/swell_raw.wav'])
+si, _ = loudness(f'{WD}/audio/swell_raw.wav')
+run(['ffmpeg', '-v', 'error', '-y', '-i', f'{WD}/audio/swell_raw.wav', '-af', f'volume={VOICE_LUFS + STING_OVER - si:.2f}dB,adelay={int((END_CARD + 0.1) * 1000)}:all=1,'
      f'apad=whole_dur={TOTAL:.3f},atrim=0:{TOTAL:.3f}', '-ar', '48000', '-ac', '2', f'{WD}/audio/sting.wav'])
 # 4. sum and master to MASTER LUFS integrated, true peak -1 dBTP (two-pass loudnorm, linear)
 run(['ffmpeg', '-v', 'error', '-y', '-i', f'{WD}/audio/voice_lev.wav', '-i', f'{WD}/audio/music_bed.wav', '-i', f'{WD}/audio/sting.wav', '-filter_complex',

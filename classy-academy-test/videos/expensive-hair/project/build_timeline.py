@@ -13,8 +13,8 @@ picks = json.load(open(f'{P}/picks.json'))
 ov = json.load(open(f'{P}/overrides.json')) if os.path.exists(f'{P}/overrides.json') else {}
 S = clock['sentences']; TOTAL = clock['total']; END_CARD = clock.get('end_card', S[-1]['end'] + 0.5)
 LEAD_IN = 0.12            # pictures change slightly before the word that names them
-EPISODE = 'Episode 31'; TITLE = 'Why Her Hair Looks Expensive'
-GUIDE = dict(style='guide', line1='Check the description for', text='Personal Stylist Guide', line3='www.classyladyacademy.com')
+EPISODE = ''; TITLE = 'Why Her Hair Looks Expensive'   # no episode label: the 'Episode N' count belongs to the reference channel
+GUIDE = dict(style='guide', line1='Check the description for', text='Personal Stylist Guide', line3='')   # no website line
 
 
 def media(aid):
@@ -96,7 +96,7 @@ for sg in segs:                                       # nothing may run past its
     for m in sg.get('shots', []): m['t1'] = min(m['t1'], sg['t1'])
 tl = dict(fps=30, size=[1920, 1080], duration=TOTAL, segments=segs,
           audio=dict(voice='audio/voice.wav', music='audio/music_bed.wav', sting='audio/sting.wav'),
-          note=f'Classy Academy - {EPISODE}: Why Her Hair Always Looks Expensive. Built by build_timeline.py from scenes.json + clock.json + picks.json + overrides.json.')
+          note=f'The Classy Elegance - Why Her Hair Always Looks Expensive. Built by build_timeline.py from scenes.json + clock.json + picks.json + overrides.json.')
 import subprocess
 _dur = {}
 def clip_len(f):

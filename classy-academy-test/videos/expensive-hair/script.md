@@ -52,7 +52,7 @@ That's also why colourists apply permanent colour to the new growth only, and re
 
 ## Guide
 
-Now, if you're still discovering which colours flatter you best, our classy lady guides are linked in the description below.
+Now, if you're still discovering which colours flatter you best, our personal stylist guide is linked in the description below.
 
 
 ## 5. Colour That Looks Expensive
@@ -115,7 +115,7 @@ Thank you so much for watching. I hope you enjoyed this video and found somethin
   - the reason behind every practical step;
   - one famous woman;
   - a viewer question mid-video;
-  - a second guide mention (classy lady guides);
+  - a second guide mention (personal stylist guide);
   - "And before we finish, I'm curious…";
   - the like/comment line, "It really helps support the channel", the personal stylist guide, "Bye, my loves".
 - **Length:** 1,674 spoken words, about 10:45 at the Grooming video's pace. That's 9% longer than Grooming, because each of the seven points carries its reason. The cheapest cut, if you want one, is the second curl paragraph.

@@ -47,10 +47,10 @@ for f in order:
 cred += ['', 'Andie MacDowell at the Cannes Film Festival, 2021: press photographs (via Pinterest: '
          + ', '.join(source(f)['pin'] for f in order if f.endswith('.jpg')) + ').', '',
          'Music: Frederic Chopin, Berceuse Op. 57; Nocturne Op. 9 No. 2; Nocturne Op. 32 No. 1 - Musopen recordings, CC0 1.0.',
-         'End sting: Classy Academy\'s own.', 'Narration: synthetic voice (Kokoro TTS, voice af_heart).']
+         'Narration: synthetic voice (Kokoro TTS, voice af_heart).']
 os.makedirs(f'{WD}/out', exist_ok=True)
 open(f'{WD}/out/CREDITS.txt', 'w').write('\n'.join(cred) + '\n')
-rows = ['# SOURCES-LOG - Episode 31: Why Her Hair Always Looks Expensive', '',
+rows = ['# SOURCES-LOG - The Classy Elegance: Why Her Hair Always Looks Expensive', '',
         'Every picture in the final export, where it was found, and its permission status. Footage was found the way the channel',
         "finds its own (creators' TikTok / Instagram reels, Pinterest video pins, celebrity press photos via Pinterest); real footage only,",
         'every clip checked by eye for AI (frames of all 198 downloads reviewed). **No creator has been contacted and no permission',

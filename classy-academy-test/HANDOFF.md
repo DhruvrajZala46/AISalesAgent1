@@ -11,7 +11,10 @@ Branch: `claude/youtube-channel-analysis-lghfsv`. The channel's YouTube name is 
 
 - **Deep study:** all 30 uploads were watched second by second, with their sound, best performers first.
   The rules are in `channel-deep-study-2026-10-19.md`; the per-video notes are in `videos/expensive-hair/channel-study/`.
-- **Episode 31 rendered:** "Why Her Hair Always Looks Expensive" (10:57, 1080p30, -18 LUFS) from the editable project in `videos/expensive-hair/project/`.
+- **Hair video rendered:** "Why Her Hair Always Looks Expensive" (10:57, 1080p30, -18 LUFS) from the editable project in `videos/expensive-hair/project/`.
+  - **Brand (user, 19 Oct): the logo is CE / The Classy Elegance** (`workflow/assets/logo_ce*.png`), top-left and on the end card.
+    No classyladyacademy.com link, no Classy Academy episode number ("Episode N"), product name ("classy lady guides") or sound.
+    Classy Academy is the reference channel whose 30 uploads were studied; its format is copied, never its brand.
   - Records: `CREDITS.txt` and `SOURCES-LOG.md`.
   - The report is `videos/expensive-hair/FINAL-REPORT.md`.
   - The video file itself is NOT in git (media). It is in the session scratchpad and was sent to the user.

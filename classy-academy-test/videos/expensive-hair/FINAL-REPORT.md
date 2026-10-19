@@ -1,9 +1,9 @@
-# Final report: Episode 31, "Why Her Hair Always Looks Expensive (It's Not the Cut)"
+# Final report: The Classy Elegance, "Why Her Hair Always Looks Expensive (It's Not the Cut)"
 
 ## What you get
 
 - **The video**, sent in this chat as `Why_Her_Hair_Always_Looks_Expensive_1080p.mp4`:
-  - 1920×1080, 30 fps (19,705 frames), H.264, AAC, 10:56.8;
+  - 1920×1080, 30 fps, H.264, AAC, 10:57;
   - master -18.0 LUFS, true peak -1.0 dBTP.
   - The full-quality master (CRF 17, 462 MiB) is over the chat's 400 MiB upload limit. The copy sent is a two-pass
     H.264 encode at about 4.6 Mb/s of that master: the same picture and the same sound track.
@@ -13,7 +13,7 @@
   - `overrides.json`: the layout of each scene.
   - `scenes.json`: the 84 scenes of the approved plan.
   - `build_timeline.py` turns those into `timeline.json`; `render.py` draws the picture; `mix.py` builds the sound and joins it to the picture.
-  - The zip also holds the logo, fonts, music, narration and end sting.
+  - The zip also holds your CE logo, the fonts, music and narration.
 - **The footage** (116 clips, 3 photos), sent as `Episode31_footage_part1-3.zip`. Unzip the three parts inside the project folder.
 - **Records:**
   - `CREDITS.txt`: every creator, in order of appearance, ready for the description.
@@ -24,12 +24,14 @@
 
 ## How it follows your videos (each point is in the study, with times)
 
+- **Brand (changed 19 Oct on your instruction):** your CE / The Classy Elegance logo top-left on every picture and on the end card;
+  no classyladyacademy.com link anywhere; no Classy Academy episode number, product name or sound.
 - **Opening:**
   - your voice-style narration from the first frame, with no music intro and no hook text;
   - one picture per line: hair close-ups, a row of three looks, the tired-cut back view;
   - "In today's video" on a white card;
-  - then "Episode 31 / Why Her Hair Looks Expensive" over a darkened clip;
-  - then the first "linked below" mention with your 3-line guide call-out.
+  - then the script title "Why Her Hair Looks Expensive" over a darkened clip (no episode label);
+  - then the first "linked below" mention with the guide call-out ("Check the description for / Personal Stylist Guide", no website).
 - **Seven points,** each opening on a white card with the black script title written on in about 1 s.
   The first line of the point is spoken over the card, which leaves with a hard cut, as in your 2026 uploads.
 - **Inside each point,** your layouts and nothing else:
@@ -48,11 +50,11 @@
   - thank you, like and comment over calm full-screen clips;
   - the guide call-out;
   - "Until next time. Bye, my loves." over the opening clip (your bookend);
-  - your white end card with the tan CA / Classy Academy logo.
+  - the white end card with your CE / The Classy Elegance logo.
 - **Sound, as measured on your uploads:**
   - a very soft piano bed 20 dB under the voice, from the first word to the last;
   - no ducking and no sound effects;
-  - 0.5 s of silence, then your own logo sting on the end card, then silence.
+  - 0.5 s of silence, then the piano swells on the end card for about 5 s and fades to silence.
 
 ## Checks done before you see it
 
@@ -86,7 +88,7 @@
 - **Music and fonts:** your piano bed and font files are not available.
   - The bed is a soft solo piano (Chopin, CC0 recordings) at your measured level.
   - The fonts are the closest look-alikes (Pinyon Script, Playfair Display).
-  - The end sting is your own, cut from your 8 Classy Habits video.
+  - The end-card music is the same CC0 piano as the bed (no sound from another channel).
 - **Permission:** the clips are used the way your videos use them: creators' TikTok and Instagram reels, Pinterest pins, press photos.
   - **No creator has been asked, and no request has been sent.** Nothing goes out without your OK.
   - The permission message template is in `CLIP-CANDIDATES.md`, and every creator and link is in `SOURCES-LOG.md`.

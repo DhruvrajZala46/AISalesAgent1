@@ -1,8 +1,8 @@
 {
- "total": 656.84,
+ "total": 657.224,
  "lead": 0.15,
  "tail": 11.1,
- "end_card": 646.24,
+ "end_card": 646.624,
  "sentences": [
   {
    "i": 0,
@@ -399,387 +399,387 @@
   {
    "i": 56,
    "line": 16,
-   "text": "Now, if you're still discovering which colours flatter you best, our classy lady guides are linked in the description below.",
+   "text": "Now, if you're still discovering which colours flatter you best, our personal stylist guide is linked in the description below.",
    "start": 350.457,
-   "end": 357.945
+   "end": 358.329
   },
   {
    "i": 57,
    "line": 17,
    "text": "When hair colour looks expensive, it usually comes down to three quiet things.",
-   "start": 359.045,
-   "end": 363.973
+   "start": 359.429,
+   "end": 364.357
   },
   {
    "i": 58,
    "line": 17,
    "text": "The first is dimension.",
-   "start": 364.293,
-   "end": 365.914
+   "start": 364.677,
+   "end": 366.298
   },
   {
    "i": 59,
    "line": 17,
    "text": "Natural hair is never one flat shade.",
-   "start": 366.234,
-   "end": 368.943
+   "start": 366.618,
+   "end": 369.327
   },
   {
    "i": 60,
    "line": 17,
    "text": "It's a blend of tones, a little lighter where the sun would naturally catch it.",
-   "start": 369.263,
-   "end": 373.722
+   "start": 369.647,
+   "end": 374.106
   },
   {
    "i": 61,
    "line": 17,
    "text": "Colourists even have a word for colour that's all one shade: flat.",
-   "start": 374.042,
-   "end": 378.159
+   "start": 374.426,
+   "end": 378.543
   },
   {
    "i": 62,
    "line": 17,
    "text": "A little variation is what lets light move across it.",
-   "start": 378.479,
-   "end": 381.935
+   "start": 378.863,
+   "end": 382.319
   },
   {
    "i": 63,
    "line": 18,
    "text": "The second is a soft grow-out.",
-   "start": 382.535,
-   "end": 384.583
+   "start": 382.919,
+   "end": 384.967
   },
   {
    "i": 64,
    "line": 18,
    "text": "A harsh line where new growth meets coloured lengths is one of the first things the eye notices.",
-   "start": 384.903,
-   "end": 391.047
+   "start": 385.287,
+   "end": 391.431
   },
   {
    "i": 65,
    "line": 18,
    "text": "Staying closer to your natural shade, or softening the root, lets regrowth blend in instead of announcing itself.",
-   "start": 391.367,
-   "end": 398.642
+   "start": 391.751,
+   "end": 399.026
   },
   {
    "i": 66,
    "line": 19,
    "text": "The third is tone.",
-   "start": 399.242,
-   "end": 400.629
+   "start": 399.626,
+   "end": 401.013
   },
   {
    "i": 67,
    "line": 19,
    "text": "Brassiness, those unwanted orange and yellow tones, happens because lightening leaves warm pigment behind, and the colour that balanced it fades a little with every wash and every sunny day.",
-   "start": 400.949,
-   "end": 413.898
+   "start": 401.333,
+   "end": 414.282
   },
   {
    "i": 68,
    "line": 19,
    "text": "A gloss every few weeks, or a purple shampoo about once a week rather than daily, keeps the tone clear, without the lilac cast that comes from overdoing it.",
-   "start": 414.218,
-   "end": 424.501
+   "start": 414.602,
+   "end": 424.885
   },
   {
    "i": 69,
    "line": 20,
    "text": "Bold or soft, colour looks expensive when it looks intentional.",
-   "start": 425.101,
-   "end": 429.346
+   "start": 425.485,
+   "end": 429.73
   },
   {
    "i": 70,
    "line": 20,
    "text": "I'd love to know, do you colour your hair, or are you embracing your natural shade?",
-   "start": 429.666,
-   "end": 434.743
+   "start": 430.05,
+   "end": 435.127
   },
   {
    "i": 71,
    "line": 20,
    "text": "Let me know in the comments.",
-   "start": 435.063,
-   "end": 436.642
+   "start": 435.447,
+   "end": 437.026
   },
   {
    "i": 72,
    "line": 21,
    "text": "And if your natural shade is silver or white, this one is for you.",
-   "start": 437.742,
-   "end": 441.795
+   "start": 438.126,
+   "end": 442.179
   },
   {
    "i": 73,
    "line": 21,
    "text": "Grey hair can look incredibly elegant.",
-   "start": 442.115,
-   "end": 444.611
+   "start": 442.499,
+   "end": 444.995
   },
   {
    "i": 74,
    "line": 21,
    "text": "Think of Andie MacDowell walking the red carpet at Cannes with her silver curls, a choice she called a power move.",
-   "start": 444.931,
-   "end": 452.014
+   "start": 445.315,
+   "end": 452.398
   },
   {
    "i": 75,
    "line": 21,
    "text": "The difference between silver that looks luminous and silver that looks tired usually comes down to two things.",
-   "start": 452.334,
-   "end": 459.587
+   "start": 452.718,
+   "end": 459.971
   },
   {
    "i": 76,
    "line": 22,
    "text": "The first is yellowing.",
-   "start": 460.187,
-   "end": 461.723
+   "start": 460.571,
+   "end": 462.107
   },
   {
    "i": 77,
    "line": 22,
    "text": "White hair has no pigment, so every change shows.",
-   "start": 462.043,
-   "end": 465.243
+   "start": 462.427,
+   "end": 465.627
   },
   {
    "i": 78,
    "line": 22,
    "text": "Research has found that heat can turn white hair yellow, so daily high heat from styling tools can slowly dull silver.",
-   "start": 465.563,
-   "end": 473.691
+   "start": 465.947,
+   "end": 474.075
   },
   {
    "i": 79,
    "line": 22,
    "text": "Lower heat settings, and a violet shampoo used occasionally rather than every day, help it stay bright.",
-   "start": 474.011,
-   "end": 480.689
+   "start": 474.395,
+   "end": 481.073
   },
   {
    "i": 80,
    "line": 23,
    "text": "The second is texture.",
-   "start": 481.289,
-   "end": 482.867
+   "start": 481.673,
+   "end": 483.251
   },
   {
    "i": 81,
    "line": 23,
    "text": "Grey strands are often a little thicker and wirier, and the scalp tends to produce less oil after menopause.",
-   "start": 483.187,
-   "end": 490.739
+   "start": 483.571,
+   "end": 491.123
   },
   {
    "i": 82,
    "line": 23,
    "text": "So silver hair can feel drier, and wiry strands don't lie as smoothly, which softens the shine.",
-   "start": 491.059,
-   "end": 497.822
+   "start": 491.443,
+   "end": 498.206
   },
   {
    "i": 83,
    "line": 23,
    "text": "Moisture and a smooth finish make a remarkable difference.",
-   "start": 498.142,
-   "end": 501.747
+   "start": 498.526,
+   "end": 502.131
   },
   {
    "i": 84,
    "line": 24,
    "text": "And if you're somewhere in between, grey blending, softening the contrast with highlights or lowlights instead of covering every strand, makes the transition graceful rather than a sharp line.",
-   "start": 502.347,
-   "end": 514.977
+   "start": 502.731,
+   "end": 515.361
   },
   {
    "i": 85,
    "line": 25,
    "text": "Cared for well, silver is one of the most luminous colours hair can be.",
-   "start": 515.577,
-   "end": 519.843
+   "start": 515.961,
+   "end": 520.227
   },
   {
    "i": 86,
    "line": 26,
    "text": "For curly and coily hair, expensive looks different, and it should.",
-   "start": 520.943,
-   "end": 524.954
+   "start": 521.327,
+   "end": 525.338
   },
   {
    "i": 87,
    "line": 26,
    "text": "Because every curl turns, light reflects from it in many directions, so instead of one bright band of shine, curls have a softer sheen spread across each one.",
-   "start": 525.274,
-   "end": 535.727
+   "start": 525.658,
+   "end": 536.111
   },
   {
    "i": 88,
    "line": 26,
    "text": "And because scalp oil travels down a straight strand far more easily than along a coil, curls tend to feel drier, too.",
-   "start": 536.047,
-   "end": 543.77
+   "start": 536.431,
+   "end": 544.154
   },
   {
    "i": 89,
    "line": 26,
    "text": "Expecting curls to look like a glossy blowout misses their own kind of polish.",
-   "start": 544.09,
-   "end": 549.103
+   "start": 544.474,
+   "end": 549.487
   },
   {
    "i": 90,
    "line": 27,
    "text": "For curls, the expensive finish is definition: curls that sit together in smooth, defined groups rather than separating into a cloud.",
-   "start": 549.703,
-   "end": 559.154
+   "start": 550.087,
+   "end": 559.538
   },
   {
    "i": 91,
    "line": 27,
    "text": "Brushing curls once they're dry splits every group into single strands, and that's exactly what frizz is.",
-   "start": 559.474,
-   "end": 566.279
+   "start": 559.858,
+   "end": 566.663
   },
   {
    "i": 92,
    "line": 27,
    "text": "That's why curl specialists style while the hair is still very wet, and then let it dry with as little touching as possible.",
-   "start": 566.599,
-   "end": 574.365
+   "start": 566.983,
+   "end": 574.749
   },
   {
    "i": 93,
    "line": 28,
    "text": "Elegance has never required straight hair.",
-   "start": 574.965,
-   "end": 577.503
+   "start": 575.349,
+   "end": 577.887
   },
   {
    "i": 94,
    "line": 28,
    "text": "It requires hair that looks like the very best version of itself.",
-   "start": 577.823,
-   "end": 581.834
+   "start": 578.207,
+   "end": 582.218
   },
   {
    "i": 95,
    "line": 29,
    "text": "So the next time you see a woman whose hair looks quietly expensive, look a little closer.",
-   "start": 582.434,
-   "end": 587.831
+   "start": 582.818,
+   "end": 588.215
   },
   {
    "i": 96,
    "line": 29,
    "text": "It's probably not the cut.",
-   "start": 588.151,
-   "end": 589.794
+   "start": 588.535,
+   "end": 590.178
   },
   {
    "i": 97,
    "line": 29,
    "text": "It's hair that has been understood: how it catches the light, where it's oldest, and what its colour and texture really need.",
-   "start": 590.951,
-   "end": 598.546
+   "start": 591.335,
+   "end": 598.93
   },
   {
    "i": 98,
    "line": 29,
    "text": "And that's something every one of us can learn, on any budget.",
-   "start": 598.866,
-   "end": 602.343
+   "start": 599.25,
+   "end": 602.727
   },
   {
    "i": 99,
    "line": 30,
    "text": "And before we finish, I'm curious.",
-   "start": 602.943,
-   "end": 605.14
+   "start": 603.327,
+   "end": 605.524
   },
   {
    "i": 100,
    "line": 30,
    "text": "What's the one thing your hair always does that you wish it wouldn't?",
-   "start": 605.46,
-   "end": 609.108
+   "start": 605.844,
+   "end": 609.492
   },
   {
    "i": 101,
    "line": 30,
    "text": "Frizz on humid days, colour that turns brassy, silver that won't behave?",
-   "start": 609.428,
-   "end": 614.314
+   "start": 609.812,
+   "end": 614.698
   },
   {
    "i": 102,
    "line": 30,
    "text": "Tell me in the comments.",
-   "start": 614.634,
-   "end": 616.063
+   "start": 615.018,
+   "end": 616.447
   },
   {
    "i": 103,
    "line": 30,
    "text": "And if you'd like a part two, let me know.",
-   "start": 616.383,
-   "end": 618.9
+   "start": 616.767,
+   "end": 619.284
   },
   {
    "i": 104,
    "line": 31,
    "text": "Thank you so much for watching.",
-   "start": 619.5,
-   "end": 621.378
+   "start": 619.884,
+   "end": 621.762
   },
   {
    "i": 105,
    "line": 31,
    "text": "I hope you enjoyed this video and found something valuable to take away from it.",
-   "start": 621.698,
-   "end": 626.284
+   "start": 622.082,
+   "end": 626.668
   },
   {
    "i": 106,
    "line": 31,
    "text": "If you did, a simple like or comment would truly mean so much to us.",
-   "start": 626.604,
-   "end": 631.063
+   "start": 626.988,
+   "end": 631.447
   },
   {
    "i": 107,
    "line": 31,
    "text": "It really helps support the channel.",
-   "start": 631.383,
-   "end": 633.388
+   "start": 631.767,
+   "end": 633.772
   },
   {
    "i": 108,
    "line": 31,
    "text": "And if you're ready to elevate your personal style and elegance even further, our personal stylist guide is linked in the description below.",
-   "start": 633.708,
-   "end": 642.498
+   "start": 634.092,
+   "end": 642.882
   },
   {
    "i": 109,
    "line": 31,
    "text": "Until next time.",
-   "start": 642.818,
-   "end": 644.204
+   "start": 643.202,
+   "end": 644.588
   },
   {
    "i": 110,
    "line": 31,
    "text": "Bye, my loves.",
-   "start": 644.524,
-   "end": 645.74
+   "start": 644.908,
+   "end": 646.124
   }
  ]
 }

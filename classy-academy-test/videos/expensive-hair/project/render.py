@@ -15,7 +15,7 @@
 #   QUOTE   the line to remember on caramel: white serif, one word in script, soft left-to-right wipe (1.5 s)
 #   CARD    white number card, black script, soft wipe; 0.4 s fade to white before it
 #   WHITE   white card with black script ("In today's video", the payoff line)
-#   END     white end card with the CA logo, then black with the white CA logo
+#   END     white end card with the channel's CE / The Classy Elegance logo
 #   + the title (white script over the title shot) and the guide mention (text over the footage), as in the hair videos.
 import json, os, sys, math, subprocess
 import numpy as np, cv2
@@ -187,7 +187,7 @@ def logo(kind, width):
     """the CA monogram with its spaced 'Classy Academy' line (width = the whole mark, as measured on the channel's frames)"""
     k = (kind, width)
     if k not in _LOGO:
-        im = Image.open(os.path.join(WD, 'assets', f'logo_ca_{kind}.png')).convert('RGBA'); im = im.crop(im.getbbox())
+        im = Image.open(os.path.join(WD, 'assets', f'logo_ce_{kind}.png')).convert('RGBA'); im = im.crop(im.getbbox())   # CE / The Classy Elegance
         lw = int(width * SCALE); im = im.resize((lw, int(im.height * lw / im.width)), Image.LANCZOS)
         _LOGO[k] = np.asarray(im).astype(np.float32) / 255
     return _LOGO[k]
@@ -231,7 +231,7 @@ def draw_quote(fr, sg, t, cx, cy, max_w, color):
 def render_segment(sg, t):
     k = sg['kind']; t0, t1 = sg['t0'], sg['t1']
     if k == 'END':                                      # white end card, tan CA / Classy Academy (measured: 438 px wide)
-        fr = np.ones((H, W, 3), np.float32); put(fr, logo('tan', 454), W / 2, H / 2, alpha=ease((t - t0 - 0.1) / 0.6))
+        fr = np.ones((H, W, 3), np.float32); put(fr, logo('dark', 520), W / 2, H / 2, alpha=ease((t - t0 - 0.1) / 0.6))
         return fr, False
     if k in ('CARD', 'WHITE'):                          # black script written on left to right in ~1 s, fades before the cut
         fr = np.ones((H, W, 3), np.float32)
@@ -292,17 +292,20 @@ def draw_text_overlay(fr, tx, t):
     if not (tx['t0'] <= t < tx['t1']): return
     a = 1 - ease((t - (tx['t1'] - 0.5)) / 0.5)
     w = min(max((t - tx['t0'] - 0.2) / 1.2, 0), 1)
-    if tx['style'] == 'title':                          # "Episode N" small serif over the script title, white, on a darkened clip
+    if tx['style'] == 'title':                          # the script title, white, on a darkened clip (+ a small serif label if one is set)
         fr *= (1 - 0.25 * ease((t - tx['t0']) / 0.6) * a)
-        put(fr, text_image(('ep', tx['episode']), [[(x, 'serif', 44) for x in tx['episode'].split()]], (255, 255, 255), 1400),
-            W / 2, H / 2 - 105 * SCALE, alpha=a * ease((t - tx['t0']) / 0.6))
+        if tx.get('episode'):
+            put(fr, text_image(('ep', tx['episode']), [[(x, 'serif', 44) for x in tx['episode'].split()]], (255, 255, 255), 1400),
+                W / 2, H / 2 - 105 * SCALE, alpha=a * ease((t - tx['t0']) / 0.6))
         img = text_image(('title', tx['text']), [[(x, 'scriptbig', 150) for x in tx['text'].split()]], (255, 255, 255), 1650)
-        put(fr, img, W / 2, H / 2 + 20 * SCALE, alpha=a, wipe=w)
+        put(fr, img, W / 2, H / 2 + (20 if tx.get('episode') else 0) * SCALE, alpha=a, wipe=w)
     elif tx['style'] == 'guide':
         fr *= (1 - 0.38 * ease((t - tx['t0']) / 0.6) * a)
-        put(fr, text_image(('g1', tx['line1']), [[(x, 'serif', 44) for x in tx['line1'].split()]], (255, 255, 255), 1400), W / 2, H / 2 - 115 * SCALE, alpha=a, wipe=w)
-        put(fr, text_image(('g2', tx['text']), [[(x, 'scriptbig', 120) for x in tx['text'].split()]], (255, 255, 255), 1500), W / 2, H / 2 + 5 * SCALE, alpha=a, wipe=w)
-        put(fr, text_image(('g3', tx['line3']), [[(tx['line3'], 'serif', 38)]], (255, 255, 255), 1400), W / 2, H / 2 + 120 * SCALE, alpha=a, wipe=w)
+        y1, y2 = (-115, 5) if tx.get('line3') else (-60, 50)      # without a website line the two lines sit centred
+        put(fr, text_image(('g1', tx['line1']), [[(x, 'serif', 44) for x in tx['line1'].split()]], (255, 255, 255), 1400), W / 2, H / 2 + y1 * SCALE, alpha=a, wipe=w)
+        put(fr, text_image(('g2', tx['text']), [[(x, 'scriptbig', 120) for x in tx['text'].split()]], (255, 255, 255), 1500), W / 2, H / 2 + y2 * SCALE, alpha=a, wipe=w)
+        if tx.get('line3'):
+            put(fr, text_image(('g3', tx['line3']), [[(tx['line3'], 'serif', 38)]], (255, 255, 255), 1400), W / 2, H / 2 + 120 * SCALE, alpha=a, wipe=w)
 
 
 # ---------------------------------------------------------------- full frame at t (transitions + logo)
@@ -320,7 +323,7 @@ def frame_at(t):
     if i + 1 < len(SEG) and SEG[i + 1].get('trans') == 'white' and t > SEG[i + 1]['t0'] - 0.4:
         a = ease((t - (SEG[i + 1]['t0'] - 0.4)) / 0.4); fr = fr * (1 - a) + a; la *= (1 - a)
     if la > 0.001:
-        lg = logo('white', 166); put(fr, lg, int(47 * SCALE) + lg.shape[1] / 2, int(51 * SCALE) + lg.shape[0] / 2, alpha=0.92 * la)
+        lg = logo('white', 150); put(fr, lg, int(40 * SCALE) + lg.shape[1] / 2, int(32 * SCALE) + lg.shape[0] / 2, alpha=0.92 * la)
     return (np.clip(fr, 0, 1) * 255 + 0.5).astype(np.uint8)
 
 

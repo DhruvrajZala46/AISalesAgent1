@@ -24,7 +24,7 @@ This is the brief I work to, written down before editing, so nothing you said is
 - **Hook:**
   - the voice from the first frame (0.15 s), no music intro and no text;
   - one picture per line: full-screen women with beautiful hair, a row, one centred clip.
-- **"In today's video"** on a white card, then **"Episode 31"** in small serif with the script title
+- **"In today's video"** on a white card, then the script title (no episode label: the "Episode N" count is Classy Academy's)
   "Why Her Hair Looks Expensive" over a full clip, then the first "linked below" mention with the guide call-out.
 - **Point cards:**
   - one white card per point, black script written on left to right in ~1 s;
@@ -40,18 +40,18 @@ This is the brief I work to, written down before editing, so nothing you said is
   - a woman who is named is shown on her name (Andie MacDowell at Cannes 2021), with no name on screen;
   - the opening clip comes back for the goodbye (your bookend);
   - one creator's clip is held longer where it shows the whole idea.
-- **Transitions and logo:** short dissolves; your CA logo with "Classy Academy" top left on every picture screen.
-- **Guide mentions:** the 3-line call-out ("Check the description for / Personal Stylist Guide / www.classyladyacademy.com") over a darkened clip,
+- **Transitions and logo:** short dissolves; your CE / The Classy Elegance logo top left on every picture screen.
+- **Guide mentions:** the call-out ("Check the description for / Personal Stylist Guide", no website) over a darkened clip,
   after the intro and mid-video, as in your videos.
 - **Ending:**
   - thank you, like and comment over calm full clips, then the guide call-out;
   - "Until next time. Bye, my loves." over the opening clip;
-  - then the white card with your tan CA / Classy Academy logo for about 10 s.
+  - then the white card with your CE / The Classy Elegance logo for about 10 s.
 - **No on-screen creator credits:** your 2026 videos have none, and the Hairstyles video credits only 25-44 s tutorials.
   The credits go in the description: `CREDITS.txt`.
 - **Sound** (measured):
   - a very soft piano bed about 20 dB under the voice, from the first word to the last, no ducking, no sound effects;
-  - 0.5 s of silence, then your own logo sting on the white end card, then silence;
+  - 0.5 s of silence, then the piano swells on the white end card and fades to silence (our CC0 piano, not another channel's sound);
   - voice at your pace (about 156 wpm);
   - master at -18 LUFS, the median of your four most-viewed videos.
 
