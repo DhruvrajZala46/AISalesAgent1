@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(yt-dlp:*)",
+      "Bash(python3 -I dl_cands.py:*)",
+      "Bash(python3 -I project/render.py:*)",
+      "Bash(python3 -I project/mix.py:*)",
+      "Bash(ls:*)"
+    ]
+  }
+}
