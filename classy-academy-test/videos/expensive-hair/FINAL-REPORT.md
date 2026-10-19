@@ -2,13 +2,13 @@
 
 ## What you get
 
-- **The video**, sent in this chat as `Why_Her_Hair_Always_Looks_Expensive_1080p.mp4`:
+- **The video**, sent in this chat as `Why_Her_Hair_Always_Looks_Expensive_CE_1080p.mp4`:
   - 1920×1080, 30 fps, H.264, AAC, 10:57;
   - master -18.0 LUFS, true peak -1.0 dBTP.
   - The full-quality master (CRF 17, 462 MiB) is over the chat's 400 MiB upload limit. The copy sent is a two-pass
     H.264 encode at about 4.6 Mb/s of that master: the same picture and the same sound track.
   - Media is never committed, so the file is not in git.
-- **The editable project**, sent as `Episode31_project.zip` (start with its `README.txt`). The same text files are in `project/` here.
+- **The editable project**, sent as `TheClassyElegance_hair_project.zip` (start with its `README.txt`). The same text files are in `project/` here.
   - `picks.json`: which clip, which second, crop and speed for every shot.
   - `overrides.json`: the layout of each scene.
   - `scenes.json`: the 84 scenes of the approved plan.
