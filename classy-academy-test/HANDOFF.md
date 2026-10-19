@@ -5,7 +5,7 @@ Branch: `claude/youtube-channel-analysis-lghfsv`. The channel's YouTube name is 
 
 ## 1. Where things stand right now
 
-**Latest (19 Oct 2026):** the dinner-table topic and script (`videos/dinner-table/`) were REJECTED as basic etiquette (see LEARNINGS). New shortlist in `research-2026-10-19-three-new-topics.md`: (1) Why Some Hair Always Looks Expensive (It's Not the Cut), (2) The Length Rules That Make Every Outfit Look More Elegant, (3) Why Elegant Women Never Have to Fix Their Clothes. 19 Oct: the user asked for ONE topic; after a fresh comparison: "Why Her Hair Always Looks Expensive (It's Not the Cut)" (`research-2026-10-19-final-topic.md`). Waiting on approval; no script until approved. Never country-specific.
+**Latest (19 Oct 2026):** the dinner-table topic and script (`videos/dinner-table/`) were REJECTED as basic etiquette (see LEARNINGS). New shortlist in `research-2026-10-19-three-new-topics.md`: (1) Why Some Hair Always Looks Expensive (It's Not the Cut), (2) The Length Rules That Make Every Outfit Look More Elegant, (3) Why Elegant Women Never Have to Fix Their Clothes. 19 Oct: the user asked for ONE topic; after a fresh comparison: "Why Her Hair Always Looks Expensive (It's Not the Cut)" (`research-2026-10-19-final-topic.md`). Topic APPROVED; script written 19 Oct: `videos/expensive-hair/script.md` (1,674 words, 7 points, every claim sourced; reference style = the Grooming Habits and Old Money Fall transcripts, since the user's own script files are not in the repo). Waiting on the user's script approval before any voice or video. Never country-specific.
 
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in
 `videos/speak-elegantly-2/` (Gofile v1.1: https://gofile.io/d/lNo4i7J3).
