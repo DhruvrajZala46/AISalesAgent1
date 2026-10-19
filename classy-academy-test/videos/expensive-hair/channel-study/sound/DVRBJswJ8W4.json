@@ -1,0 +1,50 @@
+{
+ "id": "DVRBJswJ8W4",
+ "duration": 345.7,
+ "first_word": 0.24,
+ "last_word": 339.48,
+ "lufs_total": -19.0,
+ "voice_p90_db": -17.3,
+ "floor_between_words_p5_db": -44.5,
+ "floor_p15_db": -37.9,
+ "before_first_word": {
+  "sec": 0.24,
+  "mean_db": -66.9,
+  "silent": true
+ },
+ "after_last_word": {
+  "sec": 6.2,
+  "mean_db": -41.8,
+  "audible_for_s": 4.0,
+  "quarters_db": [
+   -31.4,
+   -30.3,
+   -38.4,
+   -59.4
+  ]
+ },
+ "music_alone_end_lufs": -29.0,
+ "voice_lufs_est": -18.9,
+ "transients": [
+  32.1,
+  33.35,
+  39.0,
+  45.15,
+  47.6,
+  69.25,
+  79.3,
+  83.85,
+  85.25,
+  157.15,
+  157.5,
+  160.55,
+  163.15,
+  177.6,
+  178.75,
+  190.4,
+  192.05,
+  206.3,
+  225.95,
+  263.3
+ ]
+}

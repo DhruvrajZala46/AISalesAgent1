@@ -1,0 +1,60 @@
+{
+ "id": "Loui0mjLavo",
+ "duration": 543.2,
+ "first_word": 0.08,
+ "last_word": 533.91,
+ "lufs_total": -16.9,
+ "voice_p90_db": -15.3,
+ "floor_between_words_p5_db": -47.1,
+ "floor_p15_db": -40.9,
+ "before_first_word": {
+  "sec": 0.08,
+  "mean_db": -109.8,
+  "silent": true
+ },
+ "after_last_word": {
+  "sec": 9.3,
+  "mean_db": -85.0,
+  "audible_for_s": 2.7,
+  "quarters_db": [
+   -19.8,
+   -48.1,
+   -84.6,
+   -180.0
+  ]
+ },
+ "music_alone_end_lufs": -16.0,
+ "voice_lufs_est": -16.9,
+ "transients": [
+  8.9,
+  13.75,
+  16.5,
+  19.15,
+  34.15,
+  36.35,
+  43.0,
+  43.05,
+  44.3,
+  80.35,
+  95.2,
+  96.7,
+  96.75,
+  99.7,
+  99.75,
+  104.7,
+  127.2,
+  139.3,
+  139.35,
+  144.0,
+  144.2,
+  155.15,
+  157.9,
+  170.65,
+  171.85,
+  171.9,
+  174.1,
+  175.85,
+  180.0,
+  180.25
+ ]
+}

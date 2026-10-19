@@ -1,0 +1,785 @@
+{
+ "total": 656.84,
+ "lead": 0.15,
+ "tail": 11.1,
+ "end_card": 646.24,
+ "sentences": [
+  {
+   "i": 0,
+   "line": 1,
+   "text": "Some women's hair always seems to look expensive.",
+   "start": 0.15,
+   "end": 3.115
+  },
+  {
+   "i": 1,
+   "line": 1,
+   "text": "It isn't the most dramatic colour, or the most complicated haircut.",
+   "start": 3.435,
+   "end": 7.766
+  },
+  {
+   "i": 2,
+   "line": 1,
+   "text": "Often it's something very simple: a clean length, a soft wave, a low twist.",
+   "start": 8.086,
+   "end": 13.398
+  },
+  {
+   "i": 3,
+   "line": 1,
+   "text": "Yet it catches the light, it moves as one, and it looks cared for all the way to the ends.",
+   "start": 13.718,
+   "end": 19.265
+  },
+  {
+   "i": 4,
+   "line": 1,
+   "text": "And then there's hair with a beautiful, expensive cut that somehow still looks a little tired.",
+   "start": 19.585,
+   "end": 25.174
+  },
+  {
+   "i": 5,
+   "line": 2,
+   "text": "The difference is rarely the cut.",
+   "start": 25.774,
+   "end": 27.737
+  },
+  {
+   "i": 6,
+   "line": 2,
+   "text": "It's the finish: the way your hair handles light, holds its colour, and behaves from the root to the very tips.",
+   "start": 28.057,
+   "end": 35.033
+  },
+  {
+   "i": 7,
+   "line": 2,
+   "text": "And once you understand what creates that finish, you can have your own version of it, whatever your hair type, texture, colour, or age.",
+   "start": 35.353,
+   "end": 43.886
+  },
+  {
+   "i": 8,
+   "line": 3,
+   "text": "In today's video, we're sharing what truly makes hair look expensive, and the small, specific changes that help yours look more polished and more luminous.",
+   "start": 44.486,
+   "end": 54.705
+  },
+  {
+   "i": 9,
+   "line": 3,
+   "text": "And if you'd like to discover the colours and hairstyles that flatter you best, our personal stylist guide is linked below.",
+   "start": 55.025,
+   "end": 62.598
+  },
+  {
+   "i": 10,
+   "line": 4,
+   "text": "Let's start with shine, because it's the most misunderstood.",
+   "start": 63.698,
+   "end": 67.261
+  },
+  {
+   "i": 11,
+   "line": 4,
+   "text": "Shine isn't a substance.",
+   "start": 67.798,
+   "end": 69.441
+  },
+  {
+   "i": 12,
+   "line": 4,
+   "text": "It's light bouncing back to the eye from the surface of each hair.",
+   "start": 70.798,
+   "end": 74.51
+  },
+  {
+   "i": 13,
+   "line": 4,
+   "text": "When the outer layer of the strand lies flat, and the strands lie parallel to one another, they reflect light together, almost like a mirror.",
+   "start": 74.83,
+   "end": 83.619
+  },
+  {
+   "i": 14,
+   "line": 4,
+   "text": "That's the soft band of light you see running across glossy hair.",
+   "start": 83.939,
+   "end": 87.865
+  },
+  {
+   "i": 15,
+   "line": 4,
+   "text": "When they fall out of line, the light scatters, and the hair looks matte, even when it's perfectly healthy.",
+   "start": 88.185,
+   "end": 94.414
+  },
+  {
+   "i": 16,
+   "line": 5,
+   "text": "So a polished finish is often decided while your hair dries.",
+   "start": 95.014,
+   "end": 98.939
+  },
+  {
+   "i": 17,
+   "line": 5,
+   "text": "The aim is to let the strands set lying in one direction, which is why stylists keep the airflow travelling down the length of the hair.",
+   "start": 99.259,
+   "end": 108.049
+  },
+  {
+   "i": 18,
+   "line": 5,
+   "text": "And if you air-dry, put your hands away once your hair is in place, because touching it while it dries pulls strands out of line.",
+   "start": 108.369,
+   "end": 116.177
+  },
+  {
+   "i": 19,
+   "line": 6,
+   "text": "And here's something many people don't realize.",
+   "start": 116.777,
+   "end": 119.23
+  },
+  {
+   "i": 20,
+   "line": 6,
+   "text": "Darker hair usually looks shinier, not because it reflects more light, but because the highlight stands out against a deeper colour.",
+   "start": 119.55,
+   "end": 127.934
+  },
+  {
+   "i": 21,
+   "line": 6,
+   "text": "Lighter hair returns more light from inside the strand as a soft glow, so its shine looks gentler.",
+   "start": 128.254,
+   "end": 134.334
+  },
+  {
+   "i": 22,
+   "line": 6,
+   "text": "That's why, on blonde, silver, or very light hair, polish comes less from a mirror-like gleam and more from smoothness and tone.",
+   "start": 134.654,
+   "end": 143.294
+  },
+  {
+   "i": 23,
+   "line": 7,
+   "text": "There's also a difference between hair that glows and hair that simply looks oily.",
+   "start": 144.394,
+   "end": 149.621
+  },
+  {
+   "i": 24,
+   "line": 7,
+   "text": "Healthy shine sits along the lengths while the hair moves freely.",
+   "start": 149.941,
+   "end": 153.653
+  },
+  {
+   "i": 25,
+   "line": 7,
+   "text": "Oil does something else.",
+   "start": 153.973,
+   "end": 155.509
+  },
+  {
+   "i": 26,
+   "line": 7,
+   "text": "It makes strands cling together in little clumps, and those clumps flatten the hair and actually reduce its shine.",
+   "start": 155.829,
+   "end": 162.57
+  },
+  {
+   "i": 27,
+   "line": 7,
+   "text": "Your scalp already supplies oil at the roots, and on straight hair it travels down the strand easily.",
+   "start": 162.89,
+   "end": 169.034
+  },
+  {
+   "i": 28,
+   "line": 7,
+   "text": "That's why any shine product belongs on the mid-lengths and ends, in a far smaller amount than most of us use.",
+   "start": 169.354,
+   "end": 176.33
+  },
+  {
+   "i": 29,
+   "line": 7,
+   "text": "On fine or straight hair, product near the roots is usually the first thing that flattens it.",
+   "start": 176.65,
+   "end": 182.495
+  },
+  {
+   "i": 30,
+   "line": 8,
+   "text": "And sometimes hair looks dull not because it's damaged, but because it's coated.",
+   "start": 183.095,
+   "end": 187.938
+  },
+  {
+   "i": 31,
+   "line": 8,
+   "text": "Hairspray, mousse, gel, and other styling products can slowly build up and leave hair looking dull and feeling rough.",
+   "start": 188.258,
+   "end": 195.959
+  },
+  {
+   "i": 32,
+   "line": 8,
+   "text": "If you use styling products most days and your hair has gradually lost its brightness, a deep-cleansing wash every so often may be all it needs.",
+   "start": 196.279,
+   "end": 206.05
+  },
+  {
+   "i": 33,
+   "line": 8,
+   "text": "If it still looks dull afterwards, then it's time to think about damage.",
+   "start": 206.37,
+   "end": 210.466
+  },
+  {
+   "i": 34,
+   "line": 9,
+   "text": "Now, the next time you stand by a window with the light behind you, look at the outline of your hair.",
+   "start": 211.566,
+   "end": 217.347
+  },
+  {
+   "i": 35,
+   "line": 9,
+   "text": "You might see a soft halo of short, fine hairs standing up around the crown and along your parting.",
+   "start": 217.667,
+   "end": 224.046
+  },
+  {
+   "i": 36,
+   "line": 9,
+   "text": "Very often, those are simply short hairs rather than frizz, and backlight outlines every single one.",
+   "start": 224.366,
+   "end": 230.979
+  },
+  {
+   "i": 37,
+   "line": 9,
+   "text": "That's why hair can look sleek in the mirror and fuzzy in photos taken outdoors.",
+   "start": 231.299,
+   "end": 236.334
+  },
+  {
+   "i": 38,
+   "line": 10,
+   "text": "Look closely at one of those short hairs.",
+   "start": 236.934,
+   "end": 239.302
+  },
+  {
+   "i": 39,
+   "line": 10,
+   "text": "If it ends in a fine, tapered point, it's new growth, and that's good news.",
+   "start": 239.622,
+   "end": 244.507
+  },
+  {
+   "i": 40,
+   "line": 10,
+   "text": "If the end looks blunt or uneven, it has broken, and that's your sign to handle your hair a little more gently.",
+   "start": 244.827,
+   "end": 252.017
+  },
+  {
+   "i": 41,
+   "line": 11,
+   "text": "Frizz itself is different.",
+   "start": 252.617,
+   "end": 254.451
+  },
+  {
+   "i": 42,
+   "line": 11,
+   "text": "Hair that has lost some of its protective outer layer absorbs much more water from the air, so on humid days those strands swell and move out of line with their neighbours.",
+   "start": 254.771,
+   "end": 265.673
+  },
+  {
+   "i": 43,
+   "line": 12,
+   "text": "The elegant fix is to finish only the outer surface, rather than adding more oil all over.",
+   "start": 266.273,
+   "end": 272.481
+  },
+  {
+   "i": 44,
+   "line": 12,
+   "text": "A tiny amount of light smoothing cream pressed over the top layer with your palms, or a soft brush misted with a little hairspray, smoothed over the crown and parting.",
+   "start": 272.801,
+   "end": 283.595
+  },
+  {
+   "i": 45,
+   "line": 12,
+   "text": "The lengths stay light, and the outline looks calm and finished.",
+   "start": 283.915,
+   "end": 287.542
+  },
+  {
+   "i": 46,
+   "line": 13,
+   "text": "This next one changed the way I think about hair.",
+   "start": 288.642,
+   "end": 291.714
+  },
+  {
+   "i": 47,
+   "line": 13,
+   "text": "Hair grows roughly a centimetre a month, a little more or less depending on your hair type.",
+   "start": 292.742,
+   "end": 298.289
+  },
+  {
+   "i": 48,
+   "line": 13,
+   "text": "So if your hair reaches your shoulders, the ends have been with you for years, through every wash, every brush, every summer, and every heat tool.",
+   "start": 298.609,
+   "end": 307.398
+  },
+  {
+   "i": 49,
+   "line": 13,
+   "text": "The roots are new.",
+   "start": 307.718,
+   "end": 308.934
+  },
+  {
+   "i": 50,
+   "line": 13,
+   "text": "The ends have lived a whole life.",
+   "start": 309.254,
+   "end": 311.238
+  },
+  {
+   "i": 51,
+   "line": 14,
+   "text": "That's why the ends are where the finish breaks down first.",
+   "start": 311.838,
+   "end": 315.123
+  },
+  {
+   "i": 52,
+   "line": 14,
+   "text": "Their protective outer layer is the most worn, so they reflect less light and frizz sooner.",
+   "start": 315.443,
+   "end": 321.139
+  },
+  {
+   "i": 53,
+   "line": 14,
+   "text": "And if your hair has been coloured or lightened before, the ends can take new colour more intensely and lose it faster than the roots.",
+   "start": 321.459,
+   "end": 329.801
+  },
+  {
+   "i": 54,
+   "line": 15,
+   "text": "That's also why colourists apply permanent colour to the new growth only, and refresh the lengths with a gentler gloss instead of recolouring the whole head every time.",
+   "start": 330.401,
+   "end": 341.153
+  },
+  {
+   "i": 55,
+   "line": 15,
+   "text": "Layering permanent colour over the same ends again and again is what creates darker bands and that tired, over-processed look.",
+   "start": 341.473,
+   "end": 349.857
+  },
+  {
+   "i": 56,
+   "line": 16,
+   "text": "Now, if you're still discovering which colours flatter you best, our classy lady guides are linked in the description below.",
+   "start": 350.457,
+   "end": 357.945
+  },
+  {
+   "i": 57,
+   "line": 17,
+   "text": "When hair colour looks expensive, it usually comes down to three quiet things.",
+   "start": 359.045,
+   "end": 363.973
+  },
+  {
+   "i": 58,
+   "line": 17,
+   "text": "The first is dimension.",
+   "start": 364.293,
+   "end": 365.914
+  },
+  {
+   "i": 59,
+   "line": 17,
+   "text": "Natural hair is never one flat shade.",
+   "start": 366.234,
+   "end": 368.943
+  },
+  {
+   "i": 60,
+   "line": 17,
+   "text": "It's a blend of tones, a little lighter where the sun would naturally catch it.",
+   "start": 369.263,
+   "end": 373.722
+  },
+  {
+   "i": 61,
+   "line": 17,
+   "text": "Colourists even have a word for colour that's all one shade: flat.",
+   "start": 374.042,
+   "end": 378.159
+  },
+  {
+   "i": 62,
+   "line": 17,
+   "text": "A little variation is what lets light move across it.",
+   "start": 378.479,
+   "end": 381.935
+  },
+  {
+   "i": 63,
+   "line": 18,
+   "text": "The second is a soft grow-out.",
+   "start": 382.535,
+   "end": 384.583
+  },
+  {
+   "i": 64,
+   "line": 18,
+   "text": "A harsh line where new growth meets coloured lengths is one of the first things the eye notices.",
+   "start": 384.903,
+   "end": 391.047
+  },
+  {
+   "i": 65,
+   "line": 18,
+   "text": "Staying closer to your natural shade, or softening the root, lets regrowth blend in instead of announcing itself.",
+   "start": 391.367,
+   "end": 398.642
+  },
+  {
+   "i": 66,
+   "line": 19,
+   "text": "The third is tone.",
+   "start": 399.242,
+   "end": 400.629
+  },
+  {
+   "i": 67,
+   "line": 19,
+   "text": "Brassiness, those unwanted orange and yellow tones, happens because lightening leaves warm pigment behind, and the colour that balanced it fades a little with every wash and every sunny day.",
+   "start": 400.949,
+   "end": 413.898
+  },
+  {
+   "i": 68,
+   "line": 19,
+   "text": "A gloss every few weeks, or a purple shampoo about once a week rather than daily, keeps the tone clear, without the lilac cast that comes from overdoing it.",
+   "start": 414.218,
+   "end": 424.501
+  },
+  {
+   "i": 69,
+   "line": 20,
+   "text": "Bold or soft, colour looks expensive when it looks intentional.",
+   "start": 425.101,
+   "end": 429.346
+  },
+  {
+   "i": 70,
+   "line": 20,
+   "text": "I'd love to know, do you colour your hair, or are you embracing your natural shade?",
+   "start": 429.666,
+   "end": 434.743
+  },
+  {
+   "i": 71,
+   "line": 20,
+   "text": "Let me know in the comments.",
+   "start": 435.063,
+   "end": 436.642
+  },
+  {
+   "i": 72,
+   "line": 21,
+   "text": "And if your natural shade is silver or white, this one is for you.",
+   "start": 437.742,
+   "end": 441.795
+  },
+  {
+   "i": 73,
+   "line": 21,
+   "text": "Grey hair can look incredibly elegant.",
+   "start": 442.115,
+   "end": 444.611
+  },
+  {
+   "i": 74,
+   "line": 21,
+   "text": "Think of Andie MacDowell walking the red carpet at Cannes with her silver curls, a choice she called a power move.",
+   "start": 444.931,
+   "end": 452.014
+  },
+  {
+   "i": 75,
+   "line": 21,
+   "text": "The difference between silver that looks luminous and silver that looks tired usually comes down to two things.",
+   "start": 452.334,
+   "end": 459.587
+  },
+  {
+   "i": 76,
+   "line": 22,
+   "text": "The first is yellowing.",
+   "start": 460.187,
+   "end": 461.723
+  },
+  {
+   "i": 77,
+   "line": 22,
+   "text": "White hair has no pigment, so every change shows.",
+   "start": 462.043,
+   "end": 465.243
+  },
+  {
+   "i": 78,
+   "line": 22,
+   "text": "Research has found that heat can turn white hair yellow, so daily high heat from styling tools can slowly dull silver.",
+   "start": 465.563,
+   "end": 473.691
+  },
+  {
+   "i": 79,
+   "line": 22,
+   "text": "Lower heat settings, and a violet shampoo used occasionally rather than every day, help it stay bright.",
+   "start": 474.011,
+   "end": 480.689
+  },
+  {
+   "i": 80,
+   "line": 23,
+   "text": "The second is texture.",
+   "start": 481.289,
+   "end": 482.867
+  },
+  {
+   "i": 81,
+   "line": 23,
+   "text": "Grey strands are often a little thicker and wirier, and the scalp tends to produce less oil after menopause.",
+   "start": 483.187,
+   "end": 490.739
+  },
+  {
+   "i": 82,
+   "line": 23,
+   "text": "So silver hair can feel drier, and wiry strands don't lie as smoothly, which softens the shine.",
+   "start": 491.059,
+   "end": 497.822
+  },
+  {
+   "i": 83,
+   "line": 23,
+   "text": "Moisture and a smooth finish make a remarkable difference.",
+   "start": 498.142,
+   "end": 501.747
+  },
+  {
+   "i": 84,
+   "line": 24,
+   "text": "And if you're somewhere in between, grey blending, softening the contrast with highlights or lowlights instead of covering every strand, makes the transition graceful rather than a sharp line.",
+   "start": 502.347,
+   "end": 514.977
+  },
+  {
+   "i": 85,
+   "line": 25,
+   "text": "Cared for well, silver is one of the most luminous colours hair can be.",
+   "start": 515.577,
+   "end": 519.843
+  },
+  {
+   "i": 86,
+   "line": 26,
+   "text": "For curly and coily hair, expensive looks different, and it should.",
+   "start": 520.943,
+   "end": 524.954
+  },
+  {
+   "i": 87,
+   "line": 26,
+   "text": "Because every curl turns, light reflects from it in many directions, so instead of one bright band of shine, curls have a softer sheen spread across each one.",
+   "start": 525.274,
+   "end": 535.727
+  },
+  {
+   "i": 88,
+   "line": 26,
+   "text": "And because scalp oil travels down a straight strand far more easily than along a coil, curls tend to feel drier, too.",
+   "start": 536.047,
+   "end": 543.77
+  },
+  {
+   "i": 89,
+   "line": 26,
+   "text": "Expecting curls to look like a glossy blowout misses their own kind of polish.",
+   "start": 544.09,
+   "end": 549.103
+  },
+  {
+   "i": 90,
+   "line": 27,
+   "text": "For curls, the expensive finish is definition: curls that sit together in smooth, defined groups rather than separating into a cloud.",
+   "start": 549.703,
+   "end": 559.154
+  },
+  {
+   "i": 91,
+   "line": 27,
+   "text": "Brushing curls once they're dry splits every group into single strands, and that's exactly what frizz is.",
+   "start": 559.474,
+   "end": 566.279
+  },
+  {
+   "i": 92,
+   "line": 27,
+   "text": "That's why curl specialists style while the hair is still very wet, and then let it dry with as little touching as possible.",
+   "start": 566.599,
+   "end": 574.365
+  },
+  {
+   "i": 93,
+   "line": 28,
+   "text": "Elegance has never required straight hair.",
+   "start": 574.965,
+   "end": 577.503
+  },
+  {
+   "i": 94,
+   "line": 28,
+   "text": "It requires hair that looks like the very best version of itself.",
+   "start": 577.823,
+   "end": 581.834
+  },
+  {
+   "i": 95,
+   "line": 29,
+   "text": "So the next time you see a woman whose hair looks quietly expensive, look a little closer.",
+   "start": 582.434,
+   "end": 587.831
+  },
+  {
+   "i": 96,
+   "line": 29,
+   "text": "It's probably not the cut.",
+   "start": 588.151,
+   "end": 589.794
+  },
+  {
+   "i": 97,
+   "line": 29,
+   "text": "It's hair that has been understood: how it catches the light, where it's oldest, and what its colour and texture really need.",
+   "start": 590.951,
+   "end": 598.546
+  },
+  {
+   "i": 98,
+   "line": 29,
+   "text": "And that's something every one of us can learn, on any budget.",
+   "start": 598.866,
+   "end": 602.343
+  },
+  {
+   "i": 99,
+   "line": 30,
+   "text": "And before we finish, I'm curious.",
+   "start": 602.943,
+   "end": 605.14
+  },
+  {
+   "i": 100,
+   "line": 30,
+   "text": "What's the one thing your hair always does that you wish it wouldn't?",
+   "start": 605.46,
+   "end": 609.108
+  },
+  {
+   "i": 101,
+   "line": 30,
+   "text": "Frizz on humid days, colour that turns brassy, silver that won't behave?",
+   "start": 609.428,
+   "end": 614.314
+  },
+  {
+   "i": 102,
+   "line": 30,
+   "text": "Tell me in the comments.",
+   "start": 614.634,
+   "end": 616.063
+  },
+  {
+   "i": 103,
+   "line": 30,
+   "text": "And if you'd like a part two, let me know.",
+   "start": 616.383,
+   "end": 618.9
+  },
+  {
+   "i": 104,
+   "line": 31,
+   "text": "Thank you so much for watching.",
+   "start": 619.5,
+   "end": 621.378
+  },
+  {
+   "i": 105,
+   "line": 31,
+   "text": "I hope you enjoyed this video and found something valuable to take away from it.",
+   "start": 621.698,
+   "end": 626.284
+  },
+  {
+   "i": 106,
+   "line": 31,
+   "text": "If you did, a simple like or comment would truly mean so much to us.",
+   "start": 626.604,
+   "end": 631.063
+  },
+  {
+   "i": 107,
+   "line": 31,
+   "text": "It really helps support the channel.",
+   "start": 631.383,
+   "end": 633.388
+  },
+  {
+   "i": 108,
+   "line": 31,
+   "text": "And if you're ready to elevate your personal style and elegance even further, our personal stylist guide is linked in the description below.",
+   "start": 633.708,
+   "end": 642.498
+  },
+  {
+   "i": 109,
+   "line": 31,
+   "text": "Until next time.",
+   "start": 642.818,
+   "end": 644.204
+  },
+  {
+   "i": 110,
+   "line": 31,
+   "text": "Bye, my loves.",
+   "start": 644.524,
+   "end": 645.74
+  }
+ ]
+}

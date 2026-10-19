@@ -1,0 +1,1052 @@
+[
+ {
+  "scene": 1,
+  "s0": 0,
+  "s1": 0,
+  "assets": [
+   "A01"
+  ],
+  "layout": "FULL",
+  "plan_layout": "FULL: fade in from black 1.0 s",
+  "see": "Close-up to medium: an elegant woman (30s-50s) turns her head in soft window light; one-length glossy hair moves and catches a clear highlight.",
+  "text": ""
+ },
+ {
+  "scene": 2,
+  "s0": 1,
+  "s1": 1,
+  "assets": [
+   "A02"
+  ],
+  "layout": "FULL",
+  "plan_layout": "FULL: short dissolve",
+  "see": "Medium: a woman with simple, natural-coloured hair (no dramatic colour, no elaborate cut) walking or adjusting her coat; the hair is the subject.",
+  "text": ""
+ },
+ {
+  "scene": 3,
+  "s0": 2,
+  "s1": 2,
+  "assets": [
+   "A03",
+   "A04",
+   "A05"
+  ],
+  "layout": "ROW",
+  "plan_layout": "ROW of 3 on the caramel backdrop: each panel enters on its noun ('clean length', 'soft wave', 'low twist')",
+  "see": "Three examples, one per named style: a clean one-length cut / soft brushed-out waves / a low twist at the nape.",
+  "text": ""
+ },
+ {
+  "scene": 4,
+  "s0": 3,
+  "s1": 3,
+  "assets": [
+   "A06",
+   "A07",
+   "A08"
+  ],
+  "layout": "FULL",
+  "plan_layout": "FULL: cut on each clause, short dissolves",
+  "see": "Three shots, one per clause: sunlight sliding across smooth hair (the light band) / hair swinging as one piece as she turns / close-up of smooth, healthy ends.",
+  "text": ""
+ },
+ {
+  "scene": 5,
+  "s0": 4,
+  "s1": 4,
+  "assets": [
+   "A09"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE: vertical clip grows from the centre (1.2 s) on caramel",
+  "see": "Back-of-head / over-the-shoulder shot (no identifiable face): a fresh, precise cut whose lengths look dry and fuzzy in daylight. Respectful, not mocking.",
+  "text": ""
+ },
+ {
+  "scene": 6,
+  "s0": 5,
+  "s1": 5,
+  "assets": [
+   "A10"
+  ],
+  "layout": "FULL",
+  "plan_layout": "FULL, then fade to white 0.4 s into the title",
+  "see": "Glossy, simple hair in motion, the most beautiful shot of the hook.",
+  "text": "Title in white script over the clip: <i>Why Her Hair Always Looks Expensive</i> (episode label above it if you use one: unknown)"
+ },
+ {
+  "scene": 7,
+  "s0": 6,
+  "s1": 6,
+  "assets": [
+   "A11",
+   "A12",
+   "A13"
+  ],
+  "layout": "ROW",
+  "plan_layout": "ROW of 3: one panel per spoken item, panels grow from their top-left corner (~55%->100%) while fading in, 0.6-0.8 s",
+  "see": "One example per noun: light (a highlight running across hair) / colour (multi-tonal colour in sunlight) / the very tips (ends close-up).",
+  "text": ""
+ },
+ {
+  "scene": 8,
+  "s0": 7,
+  "s1": 7,
+  "assets": [
+   "A14",
+   "A15",
+   "A16",
+   "A17"
+  ],
+  "layout": "ROW",
+  "plan_layout": "ROW of 4, one panel on each of 'hair type, texture, colour, age'",
+  "see": "Four women with polished hair of different types and ages: straight, curly or coily, a coloured shade, silver. Several skin tones; one woman 55+.",
+  "text": ""
+ },
+ {
+  "scene": 9,
+  "s0": 8,
+  "s1": 8,
+  "assets": [
+   "A18"
+  ],
+  "layout": "WHITE",
+  "plan_layout": "WHITE card first ('In today's video', black script, soft left-to-right wipe ~1 s; as in Never Wear 0:28), then CENTRE clip on caramel",
+  "see": "Hands smoothing finished, luminous hair; the result looks polished, not styled-stiff.",
+  "text": "In today's video"
+ },
+ {
+  "scene": 10,
+  "s0": 9,
+  "s1": 9,
+  "assets": [
+   "A19",
+   "A19b"
+  ],
+  "layout": "FULL",
+  "plan_layout": "FULL (guide mention over elegant footage, no text: as in the reference video). Keep it at or under 10 s",
+  "see": "Elegant woman in a refined interior or street (cream/camel styling), hair finished; calm fashion shot.",
+  "text": ""
+ },
+ {
+  "scene": 11,
+  "s0": 10,
+  "s1": 10,
+  "assets": [],
+  "layout": "CARD",
+  "plan_layout": "Fade to white 0.4 s -> CARD: text wipes in left to right with a soft edge (~1-1.5 s), holds ~3 s, fades out 0.5 s",
+  "see": "White number card.",
+  "text": "1. Shine Is a Reflection"
+ },
+ {
+  "scene": 12,
+  "s0": 11,
+  "s1": 11,
+  "assets": [],
+  "layout": "QUOTE",
+  "plan_layout": "QUOTE: white serif, one word in script, soft wipe ~1.5 s",
+  "see": "The sentence on the blurred caramel backdrop.",
+  "text": "Shine isn't a <i>substance</i>."
+ },
+ {
+  "scene": 13,
+  "s0": 12,
+  "s1": 12,
+  "assets": [
+   "A20"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE: vertical clip grows from the centre on caramel",
+  "see": "Macro of smooth hair as a light source moves: the highlight travels across the surface.",
+  "text": ""
+ },
+ {
+  "scene": 14,
+  "s0": 13,
+  "s1": 13,
+  "assets": [
+   "A21",
+   "A21b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE (same layout, picture changes inside it with a soft dissolve)",
+  "see": "Close-up: a comb or paddle brush glides down straight hair, strands lying parallel; then a mirror-like gloss across the section.",
+  "text": ""
+ },
+ {
+  "scene": 15,
+  "s0": 14,
+  "s1": 14,
+  "assets": [
+   "A22"
+  ],
+  "layout": "FULL",
+  "plan_layout": "FULL for this one beat (one-shot emphasis)",
+  "see": "The key shot: a bright band of light running across glossy dark hair, moving as she turns her head.",
+  "text": ""
+ },
+ {
+  "scene": 16,
+  "s0": 15,
+  "s1": 15,
+  "assets": [
+   "A23",
+   "A24"
+  ],
+  "layout": "PAIR",
+  "plan_layout": "PAIR (two panels side by side on caramel), left enters first, right on 'fall out of line'",
+  "see": "Same hair, same light: a smoothed, aligned section beside a brushed-out, tousled section that looks matte. Must be one person or one creator's demo under identical light (no lighting tricks).",
+  "text": ""
+ },
+ {
+  "scene": 17,
+  "s0": 16,
+  "s1": 17,
+  "assets": [
+   "A25",
+   "A25b",
+   "A25c"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE: vertical tutorial clip on caramel (the layout of the Hairstyles video's replay peaks)",
+  "see": "Hair-tutorial demo: dryer nozzle pointed DOWN the hair shaft while a flat or paddle brush guides the hair with light tension (not a round-brush volume blow-out).",
+  "text": ""
+ },
+ {
+  "scene": 18,
+  "s0": 18,
+  "s1": 18,
+  "assets": [
+   "A26",
+   "A26b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE (picture changes inside the same layout)",
+  "see": "Demo: a woman places damp hair with her fingers, then lowers her hands and leaves it; the hair dries undisturbed.",
+  "text": ""
+ },
+ {
+  "scene": 19,
+  "s0": 19,
+  "s1": 19,
+  "assets": [
+   "A27"
+  ],
+  "layout": "FULL",
+  "plan_layout": "FULL, one shot, dissolve",
+  "see": "A breath: a calm full-screen shot of a woman by a window.",
+  "text": ""
+ },
+ {
+  "scene": 20,
+  "s0": 20,
+  "s1": 21,
+  "assets": [
+   "A28",
+   "A29",
+   "A28b",
+   "A29b"
+  ],
+  "layout": "PAIR",
+  "plan_layout": "PAIR: each panel enters on its noun",
+  "see": "Panel 1 on 'Darker hair': smooth dark brunette hair with a crisp highlight. Panel 2 on 'Lighter hair': smooth blonde hair with a soft, even glow. Both healthy, similar light. This is not a good-vs-bad comparison.",
+  "text": ""
+ },
+ {
+  "scene": 21,
+  "s0": 22,
+  "s1": 22,
+  "assets": [
+   "A30",
+   "A31",
+   "A32"
+  ],
+  "layout": "ROW",
+  "plan_layout": "ROW of 3, one per spoken shade",
+  "see": "Three smooth, well-toned light shades: blonde, silver, very light (platinum or white).",
+  "text": ""
+ },
+ {
+  "scene": 22,
+  "s0": 23,
+  "s1": 23,
+  "assets": [],
+  "layout": "CARD",
+  "plan_layout": "Fade to white 0.4 s -> CARD (as above)",
+  "see": "White number card.",
+  "text": "2. Glow, Grease, or Coating"
+ },
+ {
+  "scene": 23,
+  "s0": 24,
+  "s1": 24,
+  "assets": [
+   "A33"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE on caramel",
+  "see": "Hair swinging freely as she walks; light along the lengths.",
+  "text": ""
+ },
+ {
+  "scene": 24,
+  "s0": 25,
+  "s1": 26,
+  "assets": [
+   "A34",
+   "A34b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE (picture changes inside the layout)",
+  "see": "Non-identifiable close-up at the roots / crown: strands separating into small clumps (day-three hair). Respectful detail shot, no face.",
+  "text": ""
+ },
+ {
+  "scene": 25,
+  "s0": 27,
+  "s1": 27,
+  "assets": [
+   "A35"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "A slow tilt from the scalp down a straight, sleek strand to the ends.",
+  "text": ""
+ },
+ {
+  "scene": 26,
+  "s0": 28,
+  "s1": 28,
+  "assets": [
+   "A36",
+   "A36b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE: tutorial clip",
+  "see": "Demo: a pea-sized drop of product on fingertips, pressed through mid-lengths and ends only; hands stay away from the roots.",
+  "text": ""
+ },
+ {
+  "scene": 27,
+  "s0": 29,
+  "s1": 29,
+  "assets": [
+   "A37"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "Fine, straight hair at the crown in soft light, light and airy at the root.",
+  "text": ""
+ },
+ {
+  "scene": 28,
+  "s0": 30,
+  "s1": 30,
+  "assets": [],
+  "layout": "QUOTE",
+  "plan_layout": "QUOTE",
+  "see": "The sentence on caramel.",
+  "text": "Sometimes hair looks dull not because it's damaged, but because it's <i>coated</i>."
+ },
+ {
+  "scene": 29,
+  "s0": 31,
+  "s1": 31,
+  "assets": [
+   "A38",
+   "A39",
+   "A40"
+  ],
+  "layout": "ROW",
+  "plan_layout": "ROW of 3, one panel per product",
+  "see": "One product per noun, no brand names or logos visible: hairspray mist / mousse foam in a palm / gel on fingertips.",
+  "text": ""
+ },
+ {
+  "scene": 30,
+  "s0": 32,
+  "s1": 32,
+  "assets": [
+   "A41",
+   "A41b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "A tasteful wash: lather at the scalp in a bright bathroom or salon basin, then a rinse.",
+  "text": ""
+ },
+ {
+  "scene": 31,
+  "s0": 33,
+  "s1": 33,
+  "assets": [
+   "A42"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "Close-up: fingers examining dry ends in daylight.",
+  "text": ""
+ },
+ {
+  "scene": 32,
+  "s0": 34,
+  "s1": 34,
+  "assets": [
+   "A43w"
+  ],
+  "layout": "CARD",
+  "plan_layout": "CARD -> FULL: woman standing at a window, backlit, the outline of her hair glowing",
+  "see": "White number card, then the window shot.",
+  "text": "3. The Halo"
+ },
+ {
+  "scene": 33,
+  "s0": 35,
+  "s1": 36,
+  "assets": [
+   "A43",
+   "A44",
+   "A44b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE on caramel (two pictures inside one layout)",
+  "see": "Backlit close-up of the crown and parting showing the soft halo of short, fine hairs; then a tighter macro where each short hair is outlined by the light.",
+  "text": ""
+ },
+ {
+  "scene": 34,
+  "s0": 37,
+  "s1": 37,
+  "assets": [
+   "A45",
+   "A46"
+  ],
+  "layout": "PAIR",
+  "plan_layout": "PAIR",
+  "see": "Panel 1: a woman checks sleek hair in an indoor mirror. Panel 2: the same woman (or the same creator's demo) outdoors, backlit, the halo visible.",
+  "text": ""
+ },
+ {
+  "scene": 35,
+  "s0": 38,
+  "s1": 38,
+  "assets": [
+   "A47"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "Macro: fingertips isolate one short hair against a plain background.",
+  "text": ""
+ },
+ {
+  "scene": 36,
+  "s0": 39,
+  "s1": 40,
+  "assets": [
+   "A48",
+   "A49"
+  ],
+  "layout": "PAIR",
+  "plan_layout": "PAIR: tapered tip enters on 'tapered point', blunt tip on 'blunt or uneven'",
+  "see": "Macro of a hair tip that tapers to a fine point (new growth), then a macro of a blunt, uneven tip (breakage). GAP: rarely available as footage; see the asset list.",
+  "text": ""
+ },
+ {
+  "scene": 37,
+  "s0": 41,
+  "s1": 42,
+  "assets": [
+   "A50",
+   "A51",
+   "A51b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE (two pictures)",
+  "see": "A humid, misty or rainy street, then a close-up of hair swelling and lifting out of line in the humidity. Neutral, no embarrassment.",
+  "text": ""
+ },
+ {
+  "scene": 38,
+  "s0": 43,
+  "s1": 43,
+  "assets": [],
+  "layout": "QUOTE",
+  "plan_layout": "QUOTE",
+  "see": "The sentence on caramel.",
+  "text": "The elegant fix is to finish only the <i>outer surface</i>."
+ },
+ {
+  "scene": 39,
+  "s0": 44,
+  "s1": 44,
+  "assets": [
+   "A52",
+   "A53"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE: two tutorial clips in sequence",
+  "see": "Demo 1: palms with a tiny amount of cream pressed lightly over the top layer. Demo 2: hairspray misted onto a soft brush, smoothed over the crown and along the parting.",
+  "text": ""
+ },
+ {
+  "scene": 40,
+  "s0": 45,
+  "s1": 45,
+  "assets": [
+   "A54"
+  ],
+  "layout": "FULL",
+  "plan_layout": "FULL: exit shot -> fade to white",
+  "see": "Backlit hair, now with a calm, smooth outline; she turns away.",
+  "text": ""
+ },
+ {
+  "scene": 41,
+  "s0": 46,
+  "s1": 46,
+  "assets": [],
+  "layout": "CARD",
+  "plan_layout": "CARD",
+  "see": "White number card.",
+  "text": "4. Your Ends Are Years Older Than Your Roots"
+ },
+ {
+  "scene": 42,
+  "s0": 47,
+  "s1": 47,
+  "assets": [
+   "A55"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "Close-up of a parting showing fresh growth at the root.",
+  "text": ""
+ },
+ {
+  "scene": 43,
+  "s0": 48,
+  "s1": 48,
+  "assets": [
+   "A56",
+   "A57",
+   "A58",
+   "A59"
+  ],
+  "layout": "ROW",
+  "plan_layout": "ROW of 4, one panel per noun",
+  "see": "One shot per spoken item: a wash / a brush / a summer day outdoors / a heat tool.",
+  "text": ""
+ },
+ {
+  "scene": 44,
+  "s0": 49,
+  "s1": 50,
+  "assets": [],
+  "layout": "QUOTE",
+  "plan_layout": "QUOTE",
+  "see": "The two sentences on caramel.",
+  "text": "The roots are new. The ends have lived a <i>whole life</i>."
+ },
+ {
+  "scene": 45,
+  "s0": 51,
+  "s1": 52,
+  "assets": [
+   "A60",
+   "A60b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "One continuous tilt down the same head of long hair: glossy at the crown, drier and frizzier at the ends. One clip, so the comparison is honest.",
+  "text": ""
+ },
+ {
+  "scene": 46,
+  "s0": 53,
+  "s1": 53,
+  "assets": [
+   "A61",
+   "A61b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "Long colour-treated hair whose ends read darker or more faded than the mid-lengths, in daylight.",
+  "text": ""
+ },
+ {
+  "scene": 47,
+  "s0": 54,
+  "s1": 54,
+  "assets": [
+   "A62",
+   "A63"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE: two tutorial clips",
+  "see": "Colourist demo: permanent colour brushed onto the regrowth only, in neat sections; then a gloss worked through the lengths.",
+  "text": ""
+ },
+ {
+  "scene": 48,
+  "s0": 55,
+  "s1": 55,
+  "assets": [
+   "A64"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "Close-up of colour banding on the lengths (a visibly darker band). Respectful, non-identifiable. GAP: see the asset list.",
+  "text": ""
+ },
+ {
+  "scene": 49,
+  "s0": 56,
+  "s1": 56,
+  "assets": [
+   "A65",
+   "A65b"
+  ],
+  "layout": "FULL",
+  "plan_layout": "FULL, at or under 10 s, no text",
+  "see": "Elegant woman, calm fashion shot. The guide mention sits at the END of the point; the next card follows immediately.",
+  "text": ""
+ },
+ {
+  "scene": 50,
+  "s0": 57,
+  "s1": 57,
+  "assets": [],
+  "layout": "CARD",
+  "plan_layout": "CARD",
+  "see": "White number card.",
+  "text": "5. Colour That Looks Expensive"
+ },
+ {
+  "scene": 51,
+  "s0": 58,
+  "s1": 60,
+  "assets": [
+   "A66",
+   "A67"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE (two pictures)",
+  "see": "Natural brunette hair in sunlight showing several tones; then sunlit hair with lighter pieces where the sun catches it (top and face frame).",
+  "text": ""
+ },
+ {
+  "scene": 52,
+  "s0": 61,
+  "s1": 62,
+  "assets": [
+   "A68",
+   "A69"
+  ],
+  "layout": "PAIR",
+  "plan_layout": "PAIR",
+  "see": "Panel 1 on 'flat': a single-shade colour with little variation. Panel 2 on 'variation': multi-tonal colour with light moving across it. Same lighting, real hair.",
+  "text": ""
+ },
+ {
+  "scene": 53,
+  "s0": 63,
+  "s1": 64,
+  "assets": [
+   "A70",
+   "A71"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE (two pictures)",
+  "see": "Soft shadow-root blonde close-up; then a top-of-head view of a hard regrowth line at the parting (no face).",
+  "text": ""
+ },
+ {
+  "scene": 54,
+  "s0": 65,
+  "s1": 65,
+  "assets": [
+   "A72"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE: tutorial clip",
+  "see": "Colourist demo: a root smudge or shadow-root application, then the soft, blended result.",
+  "text": ""
+ },
+ {
+  "scene": 55,
+  "s0": 66,
+  "s1": 67,
+  "assets": [
+   "A73",
+   "A74",
+   "A74b"
+  ],
+  "layout": "PAIR",
+  "plan_layout": "PAIR (before/after from one source) -> CENTRE",
+  "see": "The same blonde before and after toner, from one colourist's documented service (not a filter); then a wash and a sunny day.",
+  "text": ""
+ },
+ {
+  "scene": 56,
+  "s0": 68,
+  "s1": 68,
+  "assets": [
+   "A75",
+   "A76",
+   "A77"
+  ],
+  "layout": "ROW",
+  "plan_layout": "ROW of 3, one per spoken item",
+  "see": "Gloss applied at the basin / purple shampoo lather on blonde hair / a respectful close-up of an over-toned lilac cast.",
+  "text": ""
+ },
+ {
+  "scene": 57,
+  "s0": 69,
+  "s1": 69,
+  "assets": [],
+  "layout": "QUOTE",
+  "plan_layout": "QUOTE",
+  "see": "The sentence on caramel.",
+  "text": "Bold or soft, colour looks expensive when it looks <i>intentional</i>."
+ },
+ {
+  "scene": 58,
+  "s0": 70,
+  "s1": 71,
+  "assets": [
+   "A78",
+   "A79",
+   "A80"
+  ],
+  "layout": "ROW",
+  "plan_layout": "ROW of 3 (no comment card)",
+  "see": "Three women: one with coloured hair, one with natural brunette or black hair, one with natural silver.",
+  "text": ""
+ },
+ {
+  "scene": 59,
+  "s0": 72,
+  "s1": 72,
+  "assets": [],
+  "layout": "CARD",
+  "plan_layout": "CARD",
+  "see": "White number card.",
+  "text": "6. Silver That Glows"
+ },
+ {
+  "scene": 60,
+  "s0": 73,
+  "s1": 73,
+  "assets": [
+   "A81"
+  ],
+  "layout": "FULL",
+  "plan_layout": "FULL",
+  "see": "An elegant silver-haired woman (60+) in soft daylight, the hair luminous.",
+  "text": ""
+ },
+ {
+  "scene": 61,
+  "s0": 74,
+  "s1": 74,
+  "assets": [
+   "A82",
+   "A82b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE: framed photo or clip on caramel",
+  "see": "Andie MacDowell on the Cannes red carpet, 2021, with her silver curls. When a woman is named, she is shown: your observed rule.",
+  "text": ""
+ },
+ {
+  "scene": 62,
+  "s0": 75,
+  "s1": 75,
+  "assets": [
+   "A83"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "Close-up of bright, luminous silver hair moving.",
+  "text": ""
+ },
+ {
+  "scene": 63,
+  "s0": 76,
+  "s1": 77,
+  "assets": [
+   "A84"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "White strands backlit, every strand visible.",
+  "text": ""
+ },
+ {
+  "scene": 64,
+  "s0": 78,
+  "s1": 78,
+  "assets": [
+   "A85",
+   "A85b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "A flat iron or hot brush passing over silver hair; the heat dial visible.",
+  "text": ""
+ },
+ {
+  "scene": 65,
+  "s0": 79,
+  "s1": 79,
+  "assets": [
+   "A86",
+   "A87"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE: two tutorial clips",
+  "see": "Demo: the heat dial turned down; then violet shampoo lather on silver hair.",
+  "text": ""
+ },
+ {
+  "scene": 66,
+  "s0": 80,
+  "s1": 82,
+  "assets": [
+   "A88",
+   "A89",
+   "A89b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE (two pictures)",
+  "see": "Macro of wiry, slightly coarser silver strands; then medium shot of a woman 55+ with silver hair in soft light.",
+  "text": ""
+ },
+ {
+  "scene": 67,
+  "s0": 83,
+  "s1": 83,
+  "assets": [
+   "A90"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE: tutorial clip",
+  "see": "Demo: a light cream smoothed through silver lengths; the surface turns smooth and bright.",
+  "text": ""
+ },
+ {
+  "scene": 68,
+  "s0": 84,
+  "s1": 84,
+  "assets": [
+   "A91",
+   "A91b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "Salt-and-pepper hair softly blended with highlights or lowlights (a colourist's result).",
+  "text": ""
+ },
+ {
+  "scene": 69,
+  "s0": 85,
+  "s1": 85,
+  "assets": [],
+  "layout": "QUOTE",
+  "plan_layout": "QUOTE -> FULL exit -> fade to white",
+  "see": "The sentence on caramel, then a full-screen exit of luminous silver hair.",
+  "text": "Cared for well, silver is one of the most <i>luminous</i> colours hair can be."
+ },
+ {
+  "scene": 70,
+  "s0": 86,
+  "s1": 86,
+  "assets": [],
+  "layout": "CARD",
+  "plan_layout": "CARD",
+  "see": "White number card.",
+  "text": "7. Curls and Coils"
+ },
+ {
+  "scene": 71,
+  "s0": 87,
+  "s1": 87,
+  "assets": [
+   "A92",
+   "A92b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "Backlit defined curls, many small highlights spread across each curl.",
+  "text": ""
+ },
+ {
+  "scene": 72,
+  "s0": 88,
+  "s1": 88,
+  "assets": [
+   "A93",
+   "A93b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "Close-up of moisturised coily hair (type 4), soft sheen, respectful and beautiful.",
+  "text": ""
+ },
+ {
+  "scene": 73,
+  "s0": 89,
+  "s1": 89,
+  "assets": [
+   "A94"
+  ],
+  "layout": "FULL",
+  "plan_layout": "FULL, one beat",
+  "see": "Medium shot: a woman with beautifully defined curls, confident and elegant.",
+  "text": ""
+ },
+ {
+  "scene": 74,
+  "s0": 90,
+  "s1": 90,
+  "assets": [
+   "A95",
+   "A95b"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE",
+  "see": "Close-up of curls sitting in smooth, defined groups.",
+  "text": ""
+ },
+ {
+  "scene": 75,
+  "s0": 91,
+  "s1": 91,
+  "assets": [
+   "A96"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE: tutorial clip",
+  "see": "A curl creator's own demo: a brush through dry curls turns defined groups into a soft cloud. Shown neutrally, from the creator's own teaching video.",
+  "text": ""
+ },
+ {
+  "scene": 76,
+  "s0": 92,
+  "s1": 92,
+  "assets": [
+   "A97",
+   "A98"
+  ],
+  "layout": "CENTRE",
+  "plan_layout": "CENTRE: two tutorial clips",
+  "see": "Curl specialist demo: styler applied to soaking-wet curls; then curls drying untouched (air-dry or diffuser held still).",
+  "text": ""
+ },
+ {
+  "scene": 77,
+  "s0": 93,
+  "s1": 94,
+  "assets": [
+   "A99",
+   "A100",
+   "A101",
+   "A102"
+  ],
+  "layout": "QUOTE",
+  "plan_layout": "QUOTE -> ROW of 4",
+  "see": "The sentence on caramel, then four women: straight, wavy, curly and coily hair, mixed ages and skin tones.",
+  "text": "Elegance has never required <i>straight</i> hair."
+ },
+ {
+  "scene": 78,
+  "s0": 95,
+  "s1": 95,
+  "assets": [
+   "A103"
+  ],
+  "layout": "FULL",
+  "plan_layout": "FULL",
+  "see": "An elegant woman walking toward camera in daylight, simple glossy hair.",
+  "text": ""
+ },
+ {
+  "scene": 79,
+  "s0": 96,
+  "s1": 96,
+  "assets": [],
+  "layout": "WHITE",
+  "plan_layout": "WHITE card, black script (payoff on white, as in the reference)",
+  "see": "Payoff sentence.",
+  "text": "It's probably not the cut."
+ },
+ {
+  "scene": 80,
+  "s0": 97,
+  "s1": 97,
+  "assets": [
+   "A104",
+   "A105",
+   "A106",
+   "A107"
+  ],
+  "layout": "ROW",
+  "plan_layout": "ROW of 4, one per noun",
+  "see": "One per spoken item, new clips (each clip used once): a light band / healthy ends / dimensional colour / defined texture.",
+  "text": ""
+ },
+ {
+  "scene": 81,
+  "s0": 98,
+  "s1": 98,
+  "assets": [
+   "A108"
+  ],
+  "layout": "FULL",
+  "plan_layout": "FULL",
+  "see": "Warm, aspirational full-screen shot: a woman of 40+ smiling softly, hair finished.",
+  "text": ""
+ },
+ {
+  "scene": 82,
+  "s0": 99,
+  "s1": 103,
+  "assets": [
+   "A109",
+   "A110",
+   "A111"
+  ],
+  "layout": "ROW",
+  "plan_layout": "ROW of 3, one per item -> FULL lifestyle shot under 'part two'",
+  "see": "Three everyday moments matching the question: frizz on a humid day / brassy colour in sunlight / silver hair in soft light. No comment cards.",
+  "text": ""
+ },
+ {
+  "scene": 83,
+  "s0": 104,
+  "s1": 108,
+  "assets": [
+   "A112",
+   "A113",
+   "A114",
+   "A115",
+   "A116"
+  ],
+  "layout": "FULL",
+  "plan_layout": "FULL -> the guide mention: text allowed here (the reference shows guide text only in the final plug)",
+  "see": "Five calm, elegant clips under the thank-you (a new picture about every 5 s); the guide mention comes last.",
+  "text": "Personal Stylist Guide - link in the description (wording to match your previous end screens)"
+ },
+ {
+  "scene": 84,
+  "s0": 109,
+  "s1": 110,
+  "assets": [],
+  "layout": "WHITE",
+  "plan_layout": "WHITE end card with the CA logo; music ends ~5 s after the last word",
+  "see": "End card.",
+  "text": "CA logo"
+ }
+]

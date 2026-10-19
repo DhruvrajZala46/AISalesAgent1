@@ -1,0 +1,2496 @@
+{
+ "fps": 30,
+ "size": [
+  1920,
+  1080
+ ],
+ "duration": 656.84,
+ "segments": [
+  {
+   "scene": 1,
+   "trans": "black",
+   "trans_dur": 0.3,
+   "kind": "FULL",
+   "t0": 0.0,
+   "t1": 3.315,
+   "shots": [
+    {
+     "file": "raw/A01_0.mp4",
+     "in": 36.8,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A01",
+     "t0": 0.0,
+     "t1": 3.315
+    }
+   ]
+  },
+  {
+   "scene": 2,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 3.315,
+   "t1": 7.966,
+   "shots": [
+    {
+     "file": "raw/A116_0.mp4",
+     "in": 0.2,
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "speed": 0.75,
+     "asset": "A02",
+     "t0": 3.315,
+     "t1": 7.966
+    }
+   ]
+  },
+  {
+   "scene": 3,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "ROW",
+   "t0": 7.966,
+   "t1": 13.598,
+   "panels": [
+    {
+     "file": "raw/A03_1.mp4",
+     "in": 7.4,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.8,
+     "asset": "A03",
+     "enter": 8.066
+    },
+    {
+     "file": "raw/A04_0.mp4",
+     "in": 61.5,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A04",
+     "enter": 9.474
+    },
+    {
+     "file": "raw/A05_1.mp4",
+     "in": 22.0,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A05",
+     "enter": 10.882000000000001
+    }
+   ]
+  },
+  {
+   "scene": 4,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 13.598,
+   "t1": 19.465,
+   "shots": [
+    {
+     "file": "raw/A06_0.mp4",
+     "in": 0.5,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A06",
+     "t0": 13.598,
+     "t1": 15.553666666666667
+    },
+    {
+     "file": "raw/A07_0.mp4",
+     "in": 12.4,
+     "focus": [
+      0.5,
+      0.42
+     ],
+     "speed": 1.0,
+     "asset": "A07",
+     "t0": 15.553666666666667,
+     "t1": 17.509333333333334
+    },
+    {
+     "file": "raw/A08_1.mp4",
+     "in": 7.4,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.8,
+     "asset": "A08",
+     "t0": 17.509333333333334,
+     "t1": 19.465
+    }
+   ]
+  },
+  {
+   "scene": 5,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 19.465,
+   "t1": 25.654,
+   "shots": [
+    {
+     "file": "raw/A09_p0.mp4",
+     "in": 0.2,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 0.5,
+     "asset": "A09",
+     "t0": 19.465,
+     "t1": 25.654
+    }
+   ]
+  },
+  {
+   "scene": 6,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 25.654,
+   "t1": 27.936999999999998,
+   "shots": [
+    {
+     "file": "raw/A10_0.mp4",
+     "in": 0.5,
+     "focus": [
+      0.5,
+      0.42
+     ],
+     "speed": 1.0,
+     "asset": "A10",
+     "t0": 25.654,
+     "t1": 27.936999999999998
+    }
+   ]
+  },
+  {
+   "scene": 7,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "ROW",
+   "t0": 27.936999999999998,
+   "t1": 35.233000000000004,
+   "panels": [
+    {
+     "file": "raw/A11_0.mp4",
+     "in": 11.0,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.9,
+     "asset": "A11",
+     "enter": 28.037
+    },
+    {
+     "file": "raw/A67_1.mp4",
+     "in": 8.5,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.9,
+     "asset": "A12",
+     "enter": 29.861
+    },
+    {
+     "file": "raw/A13_p0.mp4",
+     "in": 27.0,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A13",
+     "enter": 31.685000000000002
+    }
+   ]
+  },
+  {
+   "scene": 8,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "ROW",
+   "t0": 35.233000000000004,
+   "t1": 44.366,
+   "panels": [
+    {
+     "file": "raw/A14_1.mp4",
+     "in": 79.0,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.6,
+     "asset": "A14",
+     "enter": 35.283
+    },
+    {
+     "file": "raw/A15_0.mp4",
+     "in": 21.0,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A15",
+     "enter": 39.18578676470589
+    },
+    {
+     "file": "raw/A16_1.mp4",
+     "in": 4.0,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A16",
+     "enter": 42.26017647058824
+    },
+    {
+     "file": "raw/A17_0.mp4",
+     "in": 4.6,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A17",
+     "enter": 43.326801470588244
+    }
+   ]
+  },
+  {
+   "scene": 9,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "kind": "WHITE",
+   "t0": 44.366,
+   "t1": 47.166,
+   "text": "In today's video",
+   "size": 130
+  },
+  {
+   "scene": 9,
+   "trans": "fromwhite",
+   "trans_dur": 0.6,
+   "kind": "FULL",
+   "t0": 47.166,
+   "t1": 54.905,
+   "shots": [
+    {
+     "file": "raw/A19_1.mp4",
+     "in": 0.0,
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "speed": 0.85,
+     "asset": "A18",
+     "t0": 47.166,
+     "t1": 54.905
+    }
+   ],
+   "texts": [
+    {
+     "style": "title",
+     "episode": "Episode 31",
+     "text": "Why Her Hair Looks Expensive",
+     "t0": 47.565999999999995,
+     "t1": 54.955
+    }
+   ]
+  },
+  {
+   "scene": 10,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 54.905,
+   "t1": 63.248,
+   "shots": [
+    {
+     "file": "raw/A19b_0.mp4",
+     "in": 0.0,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 0.68,
+     "asset": "A19",
+     "t0": 54.905,
+     "t1": 63.248
+    }
+   ],
+   "texts": [
+    {
+     "style": "guide",
+     "line1": "Check the description for",
+     "text": "Personal Stylist Guide",
+     "line3": "www.classyladyacademy.com",
+     "t0": 54.824999999999996,
+     "t1": 63.248
+    }
+   ]
+  },
+  {
+   "scene": 11,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "kind": "CARD",
+   "t0": 63.248,
+   "t1": 67.678,
+   "text": "1. Shine Is a Reflection"
+  },
+  {
+   "scene": 12,
+   "trans": "cut",
+   "trans_dur": 0.5,
+   "kind": "QUOTE",
+   "t0": 67.678,
+   "t1": 70.678,
+   "text": "Shine isn't a <i>substance</i>."
+  },
+  {
+   "scene": 13,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 70.678,
+   "t1": 74.71,
+   "shots": [
+    {
+     "file": "raw/A20_0.mp4",
+     "in": 31.0,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1,
+     "asset": "A20",
+     "t0": 70.678,
+     "t1": 74.71
+    }
+   ]
+  },
+  {
+   "scene": 14,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 74.71,
+   "t1": 83.81899999999999,
+   "shots": [
+    {
+     "file": "raw/A21_0.mp4",
+     "in": 42.0,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.85,
+     "asset": "A21",
+     "t0": 74.71,
+     "t1": 79.2645
+    },
+    {
+     "file": "raw/A21b_0.mp4",
+     "in": 3.4,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.7,
+     "asset": "A21b",
+     "t0": 79.2645,
+     "t1": 83.81899999999999
+    }
+   ]
+  },
+  {
+   "scene": 15,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 83.81899999999999,
+   "t1": 88.065,
+   "shots": [
+    {
+     "file": "raw/A22_1.mp4",
+     "in": 11.5,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A22",
+     "t0": 83.81899999999999,
+     "t1": 88.065
+    }
+   ]
+  },
+  {
+   "scene": 16,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "PAIR",
+   "t0": 88.065,
+   "t1": 94.89399999999999,
+   "panels": [
+    {
+     "file": "raw/A23_0.mp4",
+     "in": 11.6,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1,
+     "asset": "A23",
+     "enter": 88.115
+    },
+    {
+     "file": "raw/A23_0.mp4",
+     "in": 0.5,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A24",
+     "enter": 90.27716822429906
+    }
+   ]
+  },
+  {
+   "scene": 17,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 94.89399999999999,
+   "t1": 108.249,
+   "shots": [
+    {
+     "file": "raw/A25c_0.mp4",
+     "in": 0.1,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1,
+     "asset": "A25",
+     "t0": 94.89399999999999,
+     "t1": 101.57149999999999
+    },
+    {
+     "file": "raw/A26_0.mp4",
+     "in": 33.0,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A25b",
+     "t0": 101.57149999999999,
+     "t1": 108.249
+    }
+   ]
+  },
+  {
+   "scene": 18,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 108.249,
+   "t1": 116.657,
+   "shots": [
+    {
+     "file": "raw/A26_1.mp4",
+     "in": 6.5,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A26",
+     "t0": 108.249,
+     "t1": 116.657
+    }
+   ]
+  },
+  {
+   "scene": 19,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 116.657,
+   "t1": 119.42999999999999,
+   "shots": [
+    {
+     "file": "raw/A27_1.mp4",
+     "in": 0.3,
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "speed": 1.0,
+     "asset": "A27",
+     "t0": 116.657,
+     "t1": 119.42999999999999
+    }
+   ]
+  },
+  {
+   "scene": 20,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 119.42999999999999,
+   "t1": 128.134,
+   "shots": [
+    {
+     "file": "raw/A28_p0.mp4",
+     "in": 0.2,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.95,
+     "asset": "A28",
+     "t0": 119.42999999999999,
+     "t1": 128.134
+    }
+   ]
+  },
+  {
+   "scene": 20,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "PAIR",
+   "t0": 128.134,
+   "t1": 134.534,
+   "panels": [
+    {
+     "file": "raw/A28_p0.mp4",
+     "in": 3.0,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1,
+     "asset": "A28p",
+     "enter": 128.184
+    },
+    {
+     "file": "raw/A29_p1.mp4",
+     "in": 0.3,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A29",
+     "enter": 128.94053061224488
+    }
+   ]
+  },
+  {
+   "scene": 21,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "ROW",
+   "t0": 134.534,
+   "t1": 143.94400000000002,
+   "panels": [
+    {
+     "file": "raw/A30_1.mp4",
+     "in": 101.9,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1,
+     "asset": "A30",
+     "enter": 135.54649999999998
+    },
+    {
+     "file": "raw/A31_0.mp4",
+     "in": 0.3,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 0.5,
+     "asset": "A31",
+     "enter": 136.0865
+    },
+    {
+     "file": "raw/A32_0.mp4",
+     "in": 5.2,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A32",
+     "enter": 136.829
+    }
+   ]
+  },
+  {
+   "scene": 22,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "kind": "CARD",
+   "t0": 143.94400000000002,
+   "t1": 149.821,
+   "text": "2. Glow, Grease, or Coating"
+  },
+  {
+   "scene": 23,
+   "trans": "cut",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 149.821,
+   "t1": 153.853,
+   "shots": [
+    {
+     "file": "raw/A33_0.mp4",
+     "in": 0.2,
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "speed": 1.0,
+     "asset": "A33",
+     "t0": 149.821,
+     "t1": 153.853
+    }
+   ]
+  },
+  {
+   "scene": 24,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 153.853,
+   "t1": 162.76999999999998,
+   "shots": [
+    {
+     "file": "raw/A34_0.mp4",
+     "in": 14.8,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.42,
+     "asset": "A34",
+     "t0": 153.853,
+     "t1": 162.76999999999998
+    }
+   ]
+  },
+  {
+   "scene": 25,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 162.76999999999998,
+   "t1": 169.234,
+   "shots": [
+    {
+     "file": "raw/A104_0.mp4",
+     "in": 13.8,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A35",
+     "t0": 162.76999999999998,
+     "t1": 169.234
+    }
+   ]
+  },
+  {
+   "scene": 26,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 169.234,
+   "t1": 176.53,
+   "shots": [
+    {
+     "file": "raw/A36_0.mp4",
+     "in": 6.0,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A36",
+     "t0": 169.234,
+     "t1": 176.53
+    }
+   ]
+  },
+  {
+   "scene": 27,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 176.53,
+   "t1": 182.975,
+   "shots": [
+    {
+     "file": "raw/A37_p1.mp4",
+     "in": 24.0,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 0.65,
+     "asset": "A37",
+     "t0": 176.53,
+     "t1": 182.975
+    }
+   ]
+  },
+  {
+   "scene": 28,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "QUOTE",
+   "t0": 182.975,
+   "t1": 188.138,
+   "text": "Sometimes hair looks dull not because it's damaged, but because it's <i>coated</i>.",
+   "bg": "cream"
+  },
+  {
+   "scene": 29,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "ROW",
+   "t0": 188.138,
+   "t1": 196.159,
+   "panels": [
+    {
+     "file": "raw/A38_0.mp4",
+     "in": 5.8,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A38",
+     "enter": 188.18800000000002
+    },
+    {
+     "file": "raw/A39_1.mp4",
+     "in": 6.0,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A39",
+     "enter": 188.86202564102564
+    },
+    {
+     "file": "raw/A40_1.mp4",
+     "in": 0.8,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A40",
+     "enter": 189.38858974358976
+    }
+   ]
+  },
+  {
+   "scene": 30,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 196.159,
+   "t1": 206.25,
+   "shots": [
+    {
+     "file": "raw/A41_p0.mp4",
+     "in": 0.6,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A41",
+     "t0": 196.159,
+     "t1": 201.2045
+    },
+    {
+     "file": "raw/A41b_0.mp4",
+     "in": 3.0,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1,
+     "asset": "A41b",
+     "t0": 201.2045,
+     "t1": 206.25
+    }
+   ]
+  },
+  {
+   "scene": 31,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 206.25,
+   "t1": 211.116,
+   "shots": [
+    {
+     "file": "raw/A09_p1.mp4",
+     "in": 8.7,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1,
+     "asset": "A42",
+     "t0": 206.25,
+     "t1": 211.116
+    }
+   ]
+  },
+  {
+   "scene": 32,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "kind": "CARD",
+   "t0": 211.116,
+   "t1": 214.716,
+   "text": "3. The Halo"
+  },
+  {
+   "scene": 32,
+   "trans": "cut",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 214.716,
+   "t1": 217.547,
+   "shots": [
+    {
+     "file": "raw/A43w_p0.mp4",
+     "in": 0.6,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A43w",
+     "t0": 214.716,
+     "t1": 217.547
+    }
+   ]
+  },
+  {
+   "scene": 33,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 217.547,
+   "t1": 231.179,
+   "shots": [
+    {
+     "file": "raw/A43_p0.mp4",
+     "in": 0.4,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A43",
+     "t0": 217.547,
+     "t1": 224.363
+    },
+    {
+     "file": "raw/A43_p0.mp4",
+     "in": 6.3,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 0.7,
+     "asset": "A43b",
+     "t0": 224.363,
+     "t1": 231.179
+    }
+   ]
+  },
+  {
+   "scene": 34,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "PAIR",
+   "t0": 231.179,
+   "t1": 236.814,
+   "panels": [
+    {
+     "file": "raw/A45_p1.mp4",
+     "in": 7.4,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A45",
+     "enter": 231.229
+    },
+    {
+     "file": "raw/A54_p0.mp4",
+     "in": 0.2,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A46",
+     "enter": 234.2629375
+    }
+   ]
+  },
+  {
+   "scene": 35,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 236.814,
+   "t1": 239.502,
+   "shots": [
+    {
+     "file": "raw/A47_p0.mp4",
+     "in": 0.6,
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "speed": 1.0,
+     "asset": "A47",
+     "t0": 236.814,
+     "t1": 239.502
+    }
+   ]
+  },
+  {
+   "scene": 36,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "PAIR",
+   "t0": 239.502,
+   "t1": 252.49699999999999,
+   "panels": [
+    {
+     "file": "raw/A47_p0.mp4",
+     "in": 1.8,
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "speed": 0.5,
+     "asset": "A48",
+     "enter": 239.55200000000002
+    },
+    {
+     "file": "raw/A48_p0.mp4",
+     "in": 0.4,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.4,
+     "asset": "A49",
+     "enter": 244.707
+    }
+   ]
+  },
+  {
+   "scene": 37,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 252.49699999999999,
+   "t1": 266.153,
+   "shots": [
+    {
+     "file": "raw/A51b_0.mp4",
+     "in": 0.5,
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "speed": 1.0,
+     "asset": "A50",
+     "t0": 252.49699999999999,
+     "t1": 257.049
+    },
+    {
+     "file": "raw/A51_0.mp4",
+     "in": 0.15,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1,
+     "asset": "A51",
+     "t0": 257.049,
+     "t1": 261.601
+    },
+    {
+     "file": "raw/A51b_1.mp4",
+     "in": 6.4,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A51b",
+     "t0": 261.601,
+     "t1": 266.153
+    }
+   ]
+  },
+  {
+   "scene": 38,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "QUOTE",
+   "t0": 266.153,
+   "t1": 272.681,
+   "text": "The elegant fix is to finish only the <i>outer surface</i>."
+  },
+  {
+   "scene": 39,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 272.681,
+   "t1": 283.795,
+   "shots": [
+    {
+     "file": "raw/A52_0.mp4",
+     "in": 43.0,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A52",
+     "t0": 272.681,
+     "t1": 278.238
+    },
+    {
+     "file": "raw/A53_1.mp4",
+     "in": 2.0,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A53",
+     "t0": 278.238,
+     "t1": 283.795
+    }
+   ]
+  },
+  {
+   "scene": 40,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 283.795,
+   "t1": 288.192,
+   "shots": [
+    {
+     "file": "raw/A54_p1.mp4",
+     "in": 0.3,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.6,
+     "asset": "A54",
+     "t0": 283.795,
+     "t1": 288.192
+    }
+   ]
+  },
+  {
+   "scene": 41,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "kind": "CARD",
+   "t0": 288.192,
+   "t1": 292.622,
+   "text": "4. Your Ends Are Years Older Than Your Roots"
+  },
+  {
+   "scene": 42,
+   "trans": "cut",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 292.622,
+   "t1": 298.489,
+   "shots": [
+    {
+     "file": "raw/A55_0.mp4",
+     "in": 9.5,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A55",
+     "t0": 292.622,
+     "t1": 298.489
+    }
+   ]
+  },
+  {
+   "scene": 43,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 298.489,
+   "t1": 303.72628082191784,
+   "shots": [
+    {
+     "file": "raw/A10_0.mp4",
+     "in": 0.0,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 0.9,
+     "asset": "A55b",
+     "t0": 298.489,
+     "t1": 303.72628082191784
+    }
+   ]
+  },
+  {
+   "scene": 43,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "ROW",
+   "t0": 303.72628082191784,
+   "t1": 307.598,
+   "panels": [
+    {
+     "file": "raw/A41_p0.mp4",
+     "in": 11.0,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A56",
+     "enter": 303.77628082191785
+    },
+    {
+     "file": "raw/A57_1.mp4",
+     "in": 0.3,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A57",
+     "enter": 304.44866438356166
+    },
+    {
+     "file": "raw/A58_1.mp4",
+     "in": 8.4,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A58",
+     "enter": 305.2312465753425
+    },
+    {
+     "file": "raw/A59_1.mp4",
+     "in": 22.6,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A59",
+     "enter": 306.3148219178082
+    }
+   ]
+  },
+  {
+   "scene": 44,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "QUOTE",
+   "t0": 307.598,
+   "t1": 311.718,
+   "text": "The roots are new. The ends have lived a <i>whole life</i>.",
+   "bg": "cream"
+  },
+  {
+   "scene": 45,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 311.718,
+   "t1": 321.339,
+   "shots": [
+    {
+     "file": "raw/A60_p0.mp4",
+     "in": 0.4,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A60",
+     "t0": 311.718,
+     "t1": 321.339
+    }
+   ]
+  },
+  {
+   "scene": 46,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 321.339,
+   "t1": 330.281,
+   "shots": [
+    {
+     "file": "raw/A61_0.mp4",
+     "in": 0.2,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A61",
+     "t0": 321.339,
+     "t1": 325.81
+    },
+    {
+     "file": "raw/A61b_0.mp4",
+     "in": 11.8,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A61b",
+     "t0": 325.81,
+     "t1": 330.281
+    }
+   ]
+  },
+  {
+   "scene": 47,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 330.281,
+   "t1": 341.353,
+   "shots": [
+    {
+     "file": "raw/A62_0.mp4",
+     "in": 27.5,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A62",
+     "t0": 330.281,
+     "t1": 335.817
+    },
+    {
+     "file": "raw/A63_1.mp4",
+     "in": 0.2,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.75,
+     "asset": "A63",
+     "t0": 335.817,
+     "t1": 341.353
+    }
+   ]
+  },
+  {
+   "scene": 48,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 341.353,
+   "t1": 350.337,
+   "shots": [
+    {
+     "file": "raw/A64_0.mp4",
+     "in": 0.2,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.5,
+     "asset": "A64",
+     "t0": 341.353,
+     "t1": 350.337
+    }
+   ]
+  },
+  {
+   "scene": 49,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 350.337,
+   "t1": 358.595,
+   "shots": [
+    {
+     "file": "raw/A65_1.mp4",
+     "in": 2.5,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A65",
+     "t0": 350.337,
+     "t1": 358.595
+    }
+   ],
+   "texts": [
+    {
+     "style": "guide",
+     "line1": "Check the description for",
+     "text": "Classy Lady Guides",
+     "line3": "www.classyladyacademy.com",
+     "t0": 350.257,
+     "t1": 358.595
+    }
+   ]
+  },
+  {
+   "scene": 50,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "kind": "CARD",
+   "t0": 358.595,
+   "t1": 364.173,
+   "text": "5. Colour That Looks Expensive"
+  },
+  {
+   "scene": 51,
+   "trans": "cut",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 364.173,
+   "t1": 373.92199999999997,
+   "shots": [
+    {
+     "file": "raw/A66_0.mp4",
+     "in": 0.2,
+     "focus": [
+      0.5,
+      0.42
+     ],
+     "speed": 1.0,
+     "asset": "A66",
+     "t0": 364.173,
+     "t1": 369.0475
+    },
+    {
+     "file": "raw/A67_0.mp4",
+     "in": 6.4,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 0.65,
+     "asset": "A67",
+     "t0": 369.0475,
+     "t1": 373.92199999999997
+    }
+   ]
+  },
+  {
+   "scene": 52,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "PAIR",
+   "t0": 373.92199999999997,
+   "t1": 382.415,
+   "panels": [
+    {
+     "file": "raw/A68_1.mp4",
+     "in": 6.6,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 0.5,
+     "asset": "A68",
+     "enter": 373.972
+    },
+    {
+     "file": "raw/A70_1.mp4",
+     "in": 3.3,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1,
+     "asset": "A69",
+     "enter": 378.359
+    }
+   ]
+  },
+  {
+   "scene": 53,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 382.415,
+   "t1": 391.247,
+   "shots": [
+    {
+     "file": "raw/A71_0.mp4",
+     "in": 98.5,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1,
+     "asset": "A70",
+     "t0": 382.415,
+     "t1": 386.831
+    },
+    {
+     "file": "raw/A70_0.mp4",
+     "in": 53.4,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1,
+     "asset": "A71",
+     "t0": 386.831,
+     "t1": 391.247
+    }
+   ]
+  },
+  {
+   "scene": 54,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 391.247,
+   "t1": 399.122,
+   "shots": [
+    {
+     "file": "raw/A71_1.mp4",
+     "in": 7.5,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.88,
+     "asset": "A72",
+     "t0": 391.247,
+     "t1": 399.122
+    }
+   ]
+  },
+  {
+   "scene": 55,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 399.122,
+   "t1": 408.1213315789474,
+   "shots": [
+    {
+     "file": "raw/A74_1.mp4",
+     "in": 0.8,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 0.2,
+     "asset": "A73c",
+     "t0": 399.122,
+     "t1": 408.1213315789474
+    }
+   ]
+  },
+  {
+   "scene": 55,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "PAIR",
+   "t0": 408.1213315789474,
+   "t1": 414.098,
+   "panels": [
+    {
+     "file": "raw/A74_1.mp4",
+     "in": 0.8,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 0.2,
+     "asset": "A73",
+     "enter": 408.1713315789474
+    },
+    {
+     "file": "raw/A73_0.mp4",
+     "in": 7.4,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.4,
+     "asset": "A74",
+     "enter": 409.48438421052634
+    }
+   ]
+  },
+  {
+   "scene": 56,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "ROW",
+   "t0": 414.098,
+   "t1": 424.981,
+   "panels": [
+    {
+     "file": "raw/A75_0.mp4",
+     "in": 0.0,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.95,
+     "asset": "A75",
+     "enter": 414.2298333333333
+    },
+    {
+     "file": "raw/A76_0.mp4",
+     "in": 46.5,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A76",
+     "enter": 416.07550000000003
+    },
+    {
+     "file": "raw/A77_0.mp4",
+     "in": 17.5,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 0.55,
+     "asset": "A77",
+     "enter": 421.7443333333333
+    }
+   ]
+  },
+  {
+   "scene": 57,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "SPLIT",
+   "t0": 424.981,
+   "t1": 429.546,
+   "shots": [
+    {
+     "file": "raw/A16_1.mp4",
+     "in": 6.3,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1,
+     "asset": "A16q",
+     "t0": 424.981,
+     "t1": 429.546
+    }
+   ],
+   "text": "Bold or soft, colour looks expensive when it looks <i>intentional</i>."
+  },
+  {
+   "scene": 58,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "ROW",
+   "t0": 429.546,
+   "t1": 437.29200000000003,
+   "panels": [
+    {
+     "file": "raw/A78_0.mp4",
+     "in": 6.7,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1,
+     "asset": "A78",
+     "enter": 429.596
+    },
+    {
+     "file": "raw/A79_0.mp4",
+     "in": 4.0,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A79",
+     "enter": 432.84910843373495
+    },
+    {
+     "file": "raw/A84_1.mp4",
+     "in": 1.4,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A80",
+     "enter": 433.76663855421685
+    }
+   ]
+  },
+  {
+   "scene": 59,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "kind": "CARD",
+   "t0": 437.29200000000003,
+   "t1": 441.995,
+   "text": "6. Silver That Glows"
+  },
+  {
+   "scene": 60,
+   "trans": "cut",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 441.995,
+   "t1": 444.811,
+   "shots": [
+    {
+     "file": "raw/A81_0.mp4",
+     "in": 116.0,
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "speed": 1.0,
+     "asset": "A81",
+     "t0": 441.995,
+     "t1": 444.811
+    }
+   ]
+  },
+  {
+   "scene": 61,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 444.811,
+   "t1": 452.214,
+   "shots": [
+    {
+     "file": "raw/A82_p1.jpg",
+     "in": 0.0,
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "speed": 1.0,
+     "asset": "A82",
+     "t0": 444.811,
+     "t1": 448.5125
+    },
+    {
+     "file": "raw/A82_p0.jpg",
+     "in": 0.0,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A82b",
+     "t0": 448.5125,
+     "t1": 452.214
+    }
+   ]
+  },
+  {
+   "scene": 62,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 452.214,
+   "t1": 460.067,
+   "shots": [
+    {
+     "file": "raw/A83_p0.mp4",
+     "in": 72.8,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A83",
+     "t0": 452.214,
+     "t1": 460.067
+    }
+   ]
+  },
+  {
+   "scene": 63,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 460.067,
+   "t1": 465.443,
+   "shots": [
+    {
+     "file": "raw/A84_0.mp4",
+     "in": 0.0,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1,
+     "asset": "A84",
+     "t0": 460.067,
+     "t1": 465.443
+    }
+   ]
+  },
+  {
+   "scene": 64,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 465.443,
+   "t1": 473.891,
+   "shots": [
+    {
+     "file": "raw/A85_1.mp4",
+     "in": 7.4,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A85",
+     "t0": 465.443,
+     "t1": 469.66700000000003
+    },
+    {
+     "file": "raw/A85b_0.mp4",
+     "in": 12.4,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A85b",
+     "t0": 469.66700000000003,
+     "t1": 473.891
+    }
+   ]
+  },
+  {
+   "scene": 65,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 473.891,
+   "t1": 481.169,
+   "shots": [
+    {
+     "file": "raw/A86_0.mp4",
+     "in": 8.8,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A86",
+     "t0": 473.891,
+     "t1": 477.53
+    },
+    {
+     "file": "raw/A87_0.mp4",
+     "in": 1.0,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A87",
+     "t0": 477.53,
+     "t1": 481.169
+    }
+   ]
+  },
+  {
+   "scene": 66,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 481.169,
+   "t1": 498.022,
+   "shots": [
+    {
+     "file": "raw/A88_0.mp4",
+     "in": 0.1,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 0.6,
+     "asset": "A88",
+     "t0": 481.169,
+     "t1": 488.75284999999997
+    },
+    {
+     "file": "raw/A89_1.mp4",
+     "in": 0.4,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A89",
+     "t0": 488.75284999999997,
+     "t1": 498.022
+    }
+   ]
+  },
+  {
+   "scene": 67,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 498.022,
+   "t1": 502.227,
+   "shots": [
+    {
+     "file": "raw/A90_0.mp4",
+     "in": 1.2,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1,
+     "asset": "A90",
+     "t0": 498.022,
+     "t1": 502.227
+    }
+   ]
+  },
+  {
+   "scene": 68,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 502.227,
+   "t1": 515.457,
+   "shots": [
+    {
+     "file": "raw/A91_1.mp4",
+     "in": 3.4,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A91",
+     "t0": 502.227,
+     "t1": 515.457
+    }
+   ]
+  },
+  {
+   "scene": 69,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "SPLIT",
+   "t0": 515.457,
+   "t1": 520.4929999999999,
+   "shots": [
+    {
+     "file": "raw/A91_1.mp4",
+     "in": 14.6,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1,
+     "asset": "A91q",
+     "t0": 515.457,
+     "t1": 520.4929999999999
+    }
+   ],
+   "text": "Cared for well, silver is one of the most <i>luminous</i> colours hair can be."
+  },
+  {
+   "scene": 70,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "kind": "CARD",
+   "t0": 520.4929999999999,
+   "t1": 525.154,
+   "text": "7. Curls and Coils"
+  },
+  {
+   "scene": 71,
+   "trans": "cut",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 525.154,
+   "t1": 535.927,
+   "shots": [
+    {
+     "file": "raw/A92_1.mp4",
+     "in": 0.8,
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "speed": 0.6,
+     "asset": "A92",
+     "t0": 525.154,
+     "t1": 530.5405000000001
+    },
+    {
+     "file": "raw/A92b_1.mp4",
+     "in": 7.6,
+     "focus": [
+      0.5,
+      0.32
+     ],
+     "speed": 0.95,
+     "asset": "A92b",
+     "t0": 530.5405000000001,
+     "t1": 535.927
+    }
+   ]
+  },
+  {
+   "scene": 72,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 535.927,
+   "t1": 543.97,
+   "shots": [
+    {
+     "file": "raw/A93_0.mp4",
+     "in": 2.6,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A93",
+     "t0": 535.927,
+     "t1": 543.97
+    }
+   ]
+  },
+  {
+   "scene": 73,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 543.97,
+   "t1": 549.583,
+   "shots": [
+    {
+     "file": "raw/A94_0.mp4",
+     "in": 0.2,
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "speed": 0.82,
+     "asset": "A94",
+     "t0": 543.97,
+     "t1": 549.583
+    }
+   ]
+  },
+  {
+   "scene": 74,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 549.583,
+   "t1": 559.354,
+   "shots": [
+    {
+     "file": "raw/A95b_0.mp4",
+     "in": 0.4,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A95",
+     "t0": 549.583,
+     "t1": 559.354
+    }
+   ]
+  },
+  {
+   "scene": 75,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 559.354,
+   "t1": 566.479,
+   "shots": [
+    {
+     "file": "raw/A96_1.mp4",
+     "in": 0.6,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A96",
+     "t0": 559.354,
+     "t1": 566.479
+    }
+   ]
+  },
+  {
+   "scene": 76,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 566.479,
+   "t1": 574.845,
+   "shots": [
+    {
+     "file": "raw/A97_0.mp4",
+     "in": 11.0,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A97",
+     "t0": 566.479,
+     "t1": 570.662
+    },
+    {
+     "file": "raw/A97_0.mp4",
+     "in": 38.6,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A98",
+     "t0": 570.662,
+     "t1": 574.845
+    }
+   ]
+  },
+  {
+   "scene": 77,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "QUOTE",
+   "t0": 574.845,
+   "t1": 577.703,
+   "text": "Elegance has never required <i>straight</i> hair."
+  },
+  {
+   "scene": 77,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "ROW",
+   "t0": 577.703,
+   "t1": 582.314,
+   "panels": [
+    {
+     "file": "raw/A101_0.mp4",
+     "in": 3.5,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1,
+     "asset": "A99",
+     "enter": 577.7529999999999
+    },
+    {
+     "file": "raw/A100_1.mp4",
+     "in": 76.4,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A100",
+     "enter": 578.4434923076923
+    },
+    {
+     "file": "raw/A101_1.mp4",
+     "in": 55.5,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A101",
+     "enter": 579.9861846153846
+    },
+    {
+     "file": "raw/A102_1.mp4",
+     "in": 15.0,
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "speed": 1.0,
+     "asset": "A102",
+     "enter": 580.6032615384615
+    }
+   ]
+  },
+  {
+   "scene": 78,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "CENTRE",
+   "t0": 582.314,
+   "t1": 588.031,
+   "shots": [
+    {
+     "file": "raw/A103_0.mp4",
+     "in": 0.2,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A103",
+     "t0": 582.314,
+     "t1": 588.031
+    }
+   ]
+  },
+  {
+   "scene": 79,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "QUOTE",
+   "t0": 588.031,
+   "t1": 590.831,
+   "text": "It's probably <i>not the cut</i>."
+  },
+  {
+   "scene": 80,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "ROW",
+   "t0": 590.831,
+   "t1": 598.746,
+   "panels": [
+    {
+     "file": "raw/A104_0.mp4",
+     "in": 18.6,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1,
+     "asset": "A104",
+     "enter": 590.881
+    },
+    {
+     "file": "raw/A105_p0.mp4",
+     "in": 9.0,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1,
+     "asset": "A105",
+     "enter": 595.26648
+    },
+    {
+     "file": "raw/A107_1.mp4",
+     "in": 8.2,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A106",
+     "enter": 596.54244
+    },
+    {
+     "file": "raw/A106_1.mp4",
+     "in": 0.2,
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "speed": 1.0,
+     "asset": "A107",
+     "enter": 597.2108000000001
+    }
+   ]
+  },
+  {
+   "scene": 81,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 598.746,
+   "t1": 602.823,
+   "shots": [
+    {
+     "file": "raw/A108_1.mp4",
+     "in": 4.4,
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "speed": 1.0,
+     "asset": "A108",
+     "t0": 598.746,
+     "t1": 602.823
+    }
+   ]
+  },
+  {
+   "scene": 82,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "SPLIT",
+   "t0": 602.823,
+   "t1": 609.308,
+   "shots": [
+    {
+     "file": "raw/A26_1.mp4",
+     "in": 23.5,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A26q",
+     "t0": 602.823,
+     "t1": 609.308
+    }
+   ],
+   "text": "What's the one thing your hair always does that you <i>wish it wouldn't</i>?"
+  },
+  {
+   "scene": 82,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "ROW",
+   "t0": 609.308,
+   "t1": 619.38,
+   "panels": [
+    {
+     "file": "raw/A109_0.mp4",
+     "in": 0.0,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 0.9,
+     "asset": "A109",
+     "enter": 609.358
+    },
+    {
+     "file": "raw/A74_1.mp4",
+     "in": 16.0,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A110",
+     "enter": 611.9545833333333
+    },
+    {
+     "file": "raw/A111_0.mp4",
+     "in": 28.0,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A111",
+     "enter": 612.4974722222222
+    }
+   ]
+  },
+  {
+   "scene": 83,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 619.38,
+   "t1": 626.484,
+   "shots": [
+    {
+     "file": "raw/A115_0.mp4",
+     "in": 0.0,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 0.9,
+     "asset": "A112",
+     "t0": 619.38,
+     "t1": 626.484
+    }
+   ]
+  },
+  {
+   "scene": 83,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 626.484,
+   "t1": 633.588,
+   "shots": [
+    {
+     "file": "raw/A114_0.mp4",
+     "in": 4.0,
+     "focus": [
+      0.5,
+      0.25
+     ],
+     "speed": 1.0,
+     "asset": "A113",
+     "t0": 626.484,
+     "t1": 633.588
+    }
+   ]
+  },
+  {
+   "scene": 83,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 633.588,
+   "t1": 642.698,
+   "shots": [
+    {
+     "file": "raw/A112_0.mp4",
+     "in": 3.4,
+     "focus": [
+      0.5,
+      0.22
+     ],
+     "speed": 1.0,
+     "asset": "A114",
+     "t0": 633.588,
+     "t1": 642.698
+    }
+   ],
+   "texts": [
+    {
+     "style": "guide",
+     "line1": "Check the description for",
+     "text": "Personal Stylist Guide",
+     "line3": "www.classyladyacademy.com",
+     "t0": 633.5079999999999,
+     "t1": 642.698
+    }
+   ]
+  },
+  {
+   "scene": 84,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "kind": "FULL",
+   "t0": 642.698,
+   "t1": 646.24,
+   "shots": [
+    {
+     "file": "raw/A01_0.mp4",
+     "in": 39.5,
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "speed": 1.0,
+     "asset": "A115",
+     "t0": 642.698,
+     "t1": 646.24
+    }
+   ]
+  },
+  {
+   "scene": 84,
+   "trans": "dissolve",
+   "trans_dur": 0.6,
+   "kind": "END",
+   "t0": 646.24,
+   "t1": 656.84
+  }
+ ],
+ "audio": {
+  "voice": "audio/voice.wav",
+  "music": "audio/music_bed.wav",
+  "sting": "audio/sting.wav"
+ },
+ "note": "Classy Academy - Episode 31: Why Her Hair Always Looks Expensive. Built by build_timeline.py from scenes.json + clock.json + picks.json + overrides.json."
+}

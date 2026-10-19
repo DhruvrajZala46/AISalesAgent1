@@ -1,0 +1,49 @@
+{
+ "id": "RUDXBR8nyHw",
+ "duration": 479.5,
+ "first_word": 0.08,
+ "last_word": 439.76,
+ "lufs_total": -21.3,
+ "voice_p90_db": -19.8,
+ "floor_between_words_p5_db": -47.7,
+ "floor_p15_db": -41.2,
+ "before_first_word": {
+  "sec": 0.08,
+  "mean_db": -180.0,
+  "silent": true
+ },
+ "after_last_word": {
+  "sec": 39.8,
+  "mean_db": -158.8,
+  "audible_for_s": 4.1,
+  "quarters_db": [
+   -95.1,
+   -180.0,
+   -180.0,
+   -180.0
+  ]
+ },
+ "music_alone_end_lufs": -15.3,
+ "voice_lufs_est": -21.4,
+ "transients": [
+  39.55,
+  39.6,
+  40.3,
+  62.65,
+  62.7,
+  68.35,
+  150.0,
+  150.05,
+  265.4,
+  271.85,
+  295.1,
+  356.5,
+  376.35,
+  384.1,
+  393.65,
+  405.1,
+  438.45,
+  438.5,
+  441.1
+ ]
+}

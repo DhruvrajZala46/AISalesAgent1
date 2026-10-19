@@ -1,0 +1,60 @@
+{
+ "id": "sgKAHqv3krg",
+ "duration": 556.4,
+ "first_word": 0.08,
+ "last_word": 548.79,
+ "lufs_total": -22.2,
+ "voice_p90_db": -20.7,
+ "floor_between_words_p5_db": -55.8,
+ "floor_p15_db": -49.2,
+ "before_first_word": {
+  "sec": 0.08,
+  "mean_db": -119.3,
+  "silent": true
+ },
+ "after_last_word": {
+  "sec": 7.6,
+  "mean_db": -96.2,
+  "audible_for_s": 0.2,
+  "quarters_db": [
+   -60.4,
+   -73.5,
+   -85.9,
+   -159.2
+  ]
+ },
+ "music_alone_end_lufs": -50.2,
+ "voice_lufs_est": -22.2,
+ "transients": [
+  3.2,
+  6.0,
+  6.05,
+  13.8,
+  18.8,
+  19.05,
+  33.9,
+  34.9,
+  34.95,
+  39.45,
+  40.1,
+  41.35,
+  43.75,
+  44.15,
+  48.15,
+  59.4,
+  62.6,
+  67.8,
+  70.1,
+  80.0,
+  80.75,
+  82.05,
+  91.0,
+  92.95,
+  93.0,
+  95.0,
+  95.05,
+  103.2,
+  103.25,
+  104.65
+ ]
+}

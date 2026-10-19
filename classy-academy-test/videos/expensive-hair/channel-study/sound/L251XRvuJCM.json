@@ -1,0 +1,39 @@
+{
+ "id": "L251XRvuJCM",
+ "duration": 255.0,
+ "first_word": 0.26,
+ "last_word": 244.1,
+ "lufs_total": -22.2,
+ "voice_p90_db": -20.6,
+ "floor_between_words_p5_db": -46.0,
+ "floor_p15_db": -39.8,
+ "before_first_word": {
+  "sec": 0.26,
+  "mean_db": -99.2,
+  "silent": true
+ },
+ "after_last_word": {
+  "sec": 10.9,
+  "mean_db": -98.5,
+  "audible_for_s": 4.2,
+  "quarters_db": [
+   -28.8,
+   -43.8,
+   -141.4,
+   -180.0
+  ]
+ },
+ "music_alone_end_lufs": -27.0,
+ "voice_lufs_est": -22.2,
+ "transients": [
+  17.3,
+  19.95,
+  41.1,
+  52.4,
+  53.1,
+  54.25,
+  97.9,
+  198.5,
+  202.65
+ ]
+}

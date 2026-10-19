@@ -1,0 +1,704 @@
+{
+ "5": {
+  "assets": [
+   "A09"
+  ]
+ },
+ "9": {
+  "assets": [
+   "A18"
+  ]
+ },
+ "10": {
+  "layout": "FULL",
+  "assets": [
+   "A19"
+  ],
+  "guide": 9
+ },
+ "13": {
+  "assets": [
+   "A20"
+  ]
+ },
+ "14": {
+  "assets": [
+   "A21",
+   "A21b"
+  ]
+ },
+ "15": {
+  "assets": [
+   "A22"
+  ]
+ },
+ "16": {
+  "layout": "PAIR",
+  "assets": [
+   "A23",
+   "A24"
+  ],
+  "enter_on": [
+   [
+    15,
+    "When"
+   ],
+   [
+    15,
+    "scatters"
+   ]
+  ]
+ },
+ "17": {
+  "assets": [
+   "A25",
+   "A25b"
+  ]
+ },
+ "18": {
+  "assets": [
+   "A26"
+  ]
+ },
+ "19": {
+  "assets": [
+   "A27"
+  ]
+ },
+ "20": {
+  "parts": [
+   {
+    "layout": "CENTRE",
+    "assets": [
+     "A28"
+    ]
+   },
+   {
+    "layout": "PAIR",
+    "from_sentence": 21,
+    "assets": [
+     "A28p",
+     "A29"
+    ],
+    "enter_on": [
+     [
+      21,
+      "Lighter"
+     ],
+     [
+      21,
+      "returns"
+     ]
+    ]
+   }
+  ]
+ },
+ "21": {
+  "assets": [
+   "A30",
+   "A31",
+   "A32"
+  ],
+  "enter_on": [
+   [
+    22,
+    "blonde"
+   ],
+   [
+    22,
+    "silver"
+   ],
+   [
+    22,
+    "very light"
+   ]
+  ]
+ },
+ "23": {
+  "layout": "FULL",
+  "assets": [
+   "A33"
+  ]
+ },
+ "24": {
+  "assets": [
+   "A34"
+  ]
+ },
+ "25": {
+  "assets": [
+   "A35"
+  ]
+ },
+ "26": {
+  "assets": [
+   "A36"
+  ]
+ },
+ "27": {
+  "assets": [
+   "A37"
+  ]
+ },
+ "28": {
+  "bg": "cream"
+ },
+ "29": {
+  "assets": [
+   "A38",
+   "A39",
+   "A40"
+  ],
+  "enter_on": [
+   [
+    31,
+    "Hairspray"
+   ],
+   [
+    31,
+    "mousse"
+   ],
+   [
+    31,
+    "gel"
+   ]
+  ]
+ },
+ "30": {
+  "assets": [
+   "A41",
+   "A41b"
+  ]
+ },
+ "31": {
+  "assets": [
+   "A42"
+  ]
+ },
+ "32": {
+  "assets": [
+   "A43w"
+  ],
+  "card_len": 3.6
+ },
+ "33": {
+  "assets": [
+   "A43",
+   "A43b"
+  ]
+ },
+ "34": {
+  "layout": "PAIR",
+  "assets": [
+   "A45",
+   "A46"
+  ],
+  "enter_on": [
+   [
+    37,
+    "That's why"
+   ],
+   [
+    37,
+    "fuzzy"
+   ]
+  ]
+ },
+ "35": {
+  "assets": [
+   "A47"
+  ]
+ },
+ "36": {
+  "layout": "PAIR",
+  "assets": [
+   "A48",
+   "A49"
+  ],
+  "enter_on": [
+   [
+    39,
+    "If it"
+   ],
+   [
+    40,
+    "If the end"
+   ]
+  ]
+ },
+ "37": {
+  "assets": [
+   "A50",
+   "A51",
+   "A51b"
+  ]
+ },
+ "39": {
+  "assets": [
+   "A52",
+   "A53"
+  ]
+ },
+ "40": {
+  "assets": [
+   "A54"
+  ]
+ },
+ "42": {
+  "assets": [
+   "A55"
+  ]
+ },
+ "43": {
+  "parts": [
+   {
+    "layout": "CENTRE",
+    "assets": [
+     "A55b"
+    ]
+   },
+   {
+    "layout": "ROW",
+    "from_word": [
+     48,
+     "every wash"
+    ],
+    "assets": [
+     "A56",
+     "A57",
+     "A58",
+     "A59"
+    ],
+    "enter_on": [
+     [
+      48,
+      "every wash"
+     ],
+     [
+      48,
+      "every brush"
+     ],
+     [
+      48,
+      "every summer"
+     ],
+     [
+      48,
+      "every heat"
+     ]
+    ]
+   }
+  ]
+ },
+ "44": {
+  "bg": "cream"
+ },
+ "45": {
+  "assets": [
+   "A60"
+  ]
+ },
+ "46": {
+  "assets": [
+   "A61",
+   "A61b"
+  ]
+ },
+ "47": {
+  "assets": [
+   "A62",
+   "A63"
+  ]
+ },
+ "48": {
+  "assets": [
+   "A64"
+  ]
+ },
+ "49": {
+  "layout": "FULL",
+  "assets": [
+   "A65"
+  ],
+  "guide": 56,
+  "guide_text": "Classy Lady Guides"
+ },
+ "51": {
+  "layout": "FULL",
+  "assets": [
+   "A66",
+   "A67"
+  ]
+ },
+ "52": {
+  "layout": "PAIR",
+  "assets": [
+   "A68",
+   "A69"
+  ],
+  "enter_on": [
+   [
+    61,
+    "Colourists"
+   ],
+   [
+    62,
+    "A little"
+   ]
+  ]
+ },
+ "53": {
+  "assets": [
+   "A70",
+   "A71"
+  ]
+ },
+ "54": {
+  "assets": [
+   "A72"
+  ]
+ },
+ "55": {
+  "parts": [
+   {
+    "layout": "CENTRE",
+    "assets": [
+     "A73c"
+    ]
+   },
+   {
+    "layout": "PAIR",
+    "from_word": [
+     67,
+     "and the colour"
+    ],
+    "assets": [
+     "A73",
+     "A74"
+    ],
+    "enter_on": [
+     [
+      67,
+      "and the colour"
+     ],
+     [
+      67,
+      "balanced"
+     ]
+    ]
+   }
+  ]
+ },
+ "56": {
+  "assets": [
+   "A75",
+   "A76",
+   "A77"
+  ],
+  "enter_on": [
+   [
+    68,
+    "gloss"
+   ],
+   [
+    68,
+    "purple"
+   ],
+   [
+    68,
+    "lilac"
+   ]
+  ]
+ },
+ "57": {
+  "parts": [
+   {
+    "layout": "SPLIT",
+    "assets": [
+     "A16q"
+    ]
+   }
+  ]
+ },
+ "58": {
+  "assets": [
+   "A78",
+   "A79",
+   "A80"
+  ],
+  "enter_on": [
+   [
+    70,
+    "I'd love"
+   ],
+   [
+    70,
+    "embracing"
+   ],
+   [
+    70,
+    "natural shade"
+   ]
+  ]
+ },
+ "60": {
+  "assets": [
+   "A81"
+  ]
+ },
+ "61": {
+  "assets": [
+   "A82",
+   "A82b"
+  ]
+ },
+ "62": {
+  "assets": [
+   "A83"
+  ]
+ },
+ "63": {
+  "assets": [
+   "A84"
+  ]
+ },
+ "64": {
+  "assets": [
+   "A85",
+   "A85b"
+  ]
+ },
+ "65": {
+  "assets": [
+   "A86",
+   "A87"
+  ]
+ },
+ "66": {
+  "assets": [
+   "A88",
+   "A89"
+  ],
+  "weights": [
+   0.45,
+   0.55
+  ]
+ },
+ "67": {
+  "assets": [
+   "A90"
+  ]
+ },
+ "68": {
+  "assets": [
+   "A91"
+  ]
+ },
+ "69": {
+  "parts": [
+   {
+    "layout": "SPLIT",
+    "assets": [
+     "A91q"
+    ]
+   }
+  ]
+ },
+ "71": {
+  "layout": "FULL",
+  "assets": [
+   "A92",
+   "A92b"
+  ]
+ },
+ "72": {
+  "assets": [
+   "A93"
+  ]
+ },
+ "73": {
+  "assets": [
+   "A94"
+  ]
+ },
+ "74": {
+  "assets": [
+   "A95"
+  ]
+ },
+ "75": {
+  "assets": [
+   "A96"
+  ]
+ },
+ "76": {
+  "assets": [
+   "A97",
+   "A98"
+  ]
+ },
+ "77": {
+  "parts": [
+   {
+    "layout": "QUOTE"
+   },
+   {
+    "layout": "ROW",
+    "from_sentence": 94,
+    "assets": [
+     "A99",
+     "A100",
+     "A101",
+     "A102"
+    ],
+    "enter_on": [
+     [
+      94,
+      "It requires"
+     ],
+     [
+      94,
+      "hair that"
+     ],
+     [
+      94,
+      "very best"
+     ],
+     [
+      94,
+      "version"
+     ]
+    ]
+   }
+  ]
+ },
+ "78": {
+  "layout": "CENTRE",
+  "assets": [
+   "A103"
+  ]
+ },
+ "79": {
+  "parts": [
+   {
+    "layout": "QUOTE",
+    "text": "It's probably <i>not the cut</i>."
+   }
+  ]
+ },
+ "80": {
+  "assets": [
+   "A104",
+   "A105",
+   "A106",
+   "A107"
+  ],
+  "enter_on": [
+   [
+    97,
+    "It's hair"
+   ],
+   [
+    97,
+    "oldest"
+   ],
+   [
+    97,
+    "colour and"
+   ],
+   [
+    97,
+    "texture"
+   ]
+  ]
+ },
+ "81": {
+  "assets": [
+   "A108"
+  ]
+ },
+ "82": {
+  "parts": [
+   {
+    "layout": "SPLIT",
+    "assets": [
+     "A26q"
+    ],
+    "text": "What's the one thing your hair always does that you <i>wish it wouldn't</i>?"
+   },
+   {
+    "layout": "ROW",
+    "from_sentence": 101,
+    "assets": [
+     "A109",
+     "A110",
+     "A111"
+    ],
+    "enter_on": [
+     [
+      101,
+      "Frizz"
+     ],
+     [
+      101,
+      "brassy"
+     ],
+     [
+      101,
+      "silver"
+     ]
+    ]
+   }
+  ]
+ },
+ "83": {
+  "parts": [
+   {
+    "layout": "FULL",
+    "assets": [
+     "A112"
+    ]
+   },
+   {
+    "layout": "FULL",
+    "from_sentence": 106,
+    "assets": [
+     "A113"
+    ]
+   },
+   {
+    "layout": "FULL",
+    "from_sentence": 108,
+    "assets": [
+     "A114"
+    ],
+    "guide": 108
+   }
+  ]
+ },
+ "84": {
+  "assets": [
+   "A115"
+  ]
+ },
+ "8": {
+  "enter_on": [
+   [
+    7,
+    "And once"
+   ],
+   [
+    7,
+    "your own"
+   ],
+   [
+    7,
+    "texture"
+   ],
+   [
+    7,
+    "or age"
+   ]
+  ]
+ }
+}

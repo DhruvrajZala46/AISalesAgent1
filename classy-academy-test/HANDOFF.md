@@ -7,6 +7,17 @@ Branch: `claude/youtube-channel-analysis-lghfsv`. The channel's YouTube name is 
 
 **Latest (19 Oct 2026):** the dinner-table topic and script (`videos/dinner-table/`) were REJECTED as basic etiquette (see LEARNINGS). New shortlist in `research-2026-10-19-three-new-topics.md`: (1) Why Some Hair Always Looks Expensive (It's Not the Cut), (2) The Length Rules That Make Every Outfit Look More Elegant, (3) Why Elegant Women Never Have to Fix Their Clothes. 19 Oct: the user asked for ONE topic; after a fresh comparison: "Why Her Hair Always Looks Expensive (It's Not the Cut)" (`research-2026-10-19-final-topic.md`). Topic APPROVED; script written 19 Oct: `videos/expensive-hair/script.md` (1,674 words, 7 points, every claim sourced; reference style = the Grooming Habits and Old Money Fall transcripts, since the user's own script files are not in the repo). Script approved by the user's edit brief (19 Oct). Edit plan written: `videos/expensive-hair/EDIT-PLAN.md` (reference sheet, 84-scene plan covering all 111 sentences, 140 asset briefs, QC, 8 questions). NO footage selected: the user said do not use Pexels/Pixabay/Unsplash or any free stock site, and to ask which sources they use rather than guess. The user then said: do not ask, investigate the sourcing yourself. Done 19 Oct: `sourcing-investigation-2026-10-19.md` (public preview frames of all 30 uploads, 147 panels reverse-searched; creator credits on screen; Pinterest the main circulation layer; Pexels and possible AI found in past videos) and `videos/expensive-hair/CLIP-CANDIDATES.md` (verified original posts for 127 of 140 assets, 13 gaps with fallbacks, Getty for Andie MacDowell). Next: the user's decisions in EDIT-PLAN Part 5 (permissions are the blocker). Storyboard files from the declined download must not be used. Never country-specific.
 
+**Latest (19 Oct 2026, evening):**
+
+- **Deep study:** all 30 uploads were watched second by second, with their sound, best performers first.
+  The rules are in `channel-deep-study-2026-10-19.md`; the per-video notes are in `videos/expensive-hair/channel-study/`.
+- **Episode 31 rendered:** "Why Her Hair Always Looks Expensive" (10:57, 1080p30, -18 LUFS) from the editable project in `videos/expensive-hair/project/`.
+  - Records: `CREDITS.txt` and `SOURCES-LOG.md`.
+  - The report is `videos/expensive-hair/FINAL-REPORT.md`.
+  - The video file itself is NOT in git (media). It is in the session scratchpad and was sent to the user.
+- **Not done:** no creator has been asked for permission; nothing is sent without the user's OK.
+  The voice is still the synthetic narration until the user records the script.
+
 ## The user's standing requirements for every video edit (19 Oct 2026, stated repeatedly; never drop any of these)
 1. **Deliver the finished, rendered video.** Not plans, reports or candidate lists. Do the research yourself; do not ask the user to do it.
 2. **Visuals must be the SAME kind as in their 30 videos.** Same type of clips and images, sourced the same way: creators'
@@ -16,6 +27,9 @@ Branch: `claude/youtube-channel-analysis-lghfsv`. The channel's YouTube name is 
    Before choosing clips or editing anything, re-check their own videos (all 30), not just old notes.
 4. **The user supplied a YouTube cookie file** for downloads (in the session uploads, never copied into git, never printed).
 5. Keep their on-screen credit convention for single-creator clips ("@handle on TikTok", small white script, bottom right).
+   The deep study (19 Oct) found these credits only on the long (25-44 s) tutorials of the 2025 Hairstyles video and on single
+   demos in q78t and o-X; Haircuts and the 2026 uploads have none. So a credit goes on screen only for a long single-creator hold;
+   otherwise credits go in the description (`CREDITS.txt`).
 
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in
 `videos/speak-elegantly-2/` (Gofile v1.1: https://gofile.io/d/lNo4i7J3).
