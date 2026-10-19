@@ -35,25 +35,26 @@ that to "Why Her Hair Always Looks Expensive"? This file answers from evidence, 
 
 ## 2. What the channel's visuals are made of [C]
 
-**Interim (118 of 147 panels searched so far): 53 have an identical copy online (score of 0.85 or higher, checked by eye); for 43 of those 53, the copies include Pinterest pins.**
+**Result: 63 of the 147 panels have an identical copy online.** Each was checked by eye; 2 high scores that were false matches were dropped. **For 52 of those 63 (83%), the copies include Pinterest pins**, usually dozens of repins. The other 11 are on film/clip sites, news sites, Pexels and marketplaces. The 84 panels with no match are mostly creators' clips: the method finds famous images more easily.
 
 | Source type | Examples found (video → what) | Where the copies live |
 |---|---|---|
 | **Creators' outfit and lifestyle photos and reels** (Instagram, TikTok, LTK) | Feminine Energy: three creators at dinner and in the street. Make Jeans Elegant: mirror selfies (one creator posts on LTK as Kelseyngross). Color Combos and Summer Color Combos: outfit photos. Old Money Fall: three creators in fall outfits (one clip has the creator's own "good morning" text). Pose Like a Classy Lady. 10 Signs. | Pinterest (dozens of repins each), LTK, Pinterest-fed blogs |
 | **Creators' hair tutorials and hair photos** | Hairstyles: half-up clip tutorial, **credited "@allchloerose on TikTok"**. Haircuts: salon bob video; TikTok curtain-bangs video (TikTok logo visible on the pinned copies). Grooming: creator portrait at Christmas. | Pinterest; TikTok |
-| **Celebrities: press, TV and event footage** | Kate Middleton in at least 7 of 30 videos (3 confirmed by the trace: royal tour of Ireland 2020, a green-hat event, a video message in a purple blouse; 4 recognised by eye). Amal Clooney (AFI tribute to George Clooney, TNT 2018). Anne Hathaway interview. Jessica Alba. Jasmine Tookes. Ryan Destiny. Paulina Porizkova. Natasha Poly. | Pinterest, news sites, YouTube |
-| **Film scenes** | "The Wolf of Wall Street" (Margot Robbie) in 5 videos. "Gentlemen Prefer Blondes" (Marilyn Monroe) in 2. "Scent of a Woman" (restaurant scene) in 2. "Breakfast at Tiffany's" and "Sabrina" (Audrey Hepburn). | GIF/clip pages, Pinterest, Russian video sites; some copies carry film-page watermarks (KINOFUN), your copy does not |
+| **Celebrities: press, TV and event footage** | Kate Middleton in 7 of 30 videos, all confirmed by the trace (royal tour of Ireland 2020, a green-hat event, a video message in a purple blouse, Nottingham Trent visit, National Portrait Gallery reopening, a navy suit, a gingham-collar blazer). Meghan Markle (Netflix, "With Love, Meghan"). Angelina Jolie. Günay Uslu (event photo). Amal Clooney (AFI tribute to George Clooney, TNT 2018). Anne Hathaway interview. Jessica Alba. Jasmine Tookes. Ryan Destiny. Paulina Porizkova. Natasha Poly. | Pinterest, news sites, YouTube |
+| **Film scenes** | "The Wolf of Wall Street" (Margot Robbie) in 5 videos. "Gentlemen Prefer Blondes" (Marilyn Monroe) in 2. "Scent of a Woman" (Gabrielle Anwar, restaurant scene) in 2, confirmed by pins naming her and the film. "Breakfast at Tiffany's" and "Sabrina" (Audrey Hepburn). | GIF/clip pages, Pinterest, Russian video sites; some copies carry film-page watermarks (KINOFUN), your copy does not |
 | **Retailer product photos** | Make Jeans Elegant: a Mango/Riani tank top on a plain background. Color Combos: trousers and a jumper. Never Wear: a Trendyol product. | Marketplaces (Ozon, Trendyol, Riani), Pinterest |
 | **Free stock (Pexels)** | **Old Money Fall (Sep 2026): woman in a car's back seat.** Identical clip on Pexels ("Mercedes Maybach" / "Everyday Luxury" pages). Also Sound Elegant (3 clips) and Never Share (1), from the earlier trace. | Pexels |
-| **Possibly AI images [H]** | 8 Easy Ways: a silver-bob woman (60+) in a grey turtleneck on a studio-grey background. Summer Color Combos: two outfit images. Sound Elegant: the dining scene; its largest copy is 1536×2688, exactly double a common AI generator size (768×1344). They appear only on Pinterest and on auto-generated listicle pages ("Hairstyles for women over 60", "What colors to wear with pastel yellow"). Never Wear: an animated colour Audrey Hepburn portrait. | Pinterest, listicle farms |
+| **Possibly AI images [H]** | 8 Easy Ways: a silver-bob woman (60+) in a grey turtleneck on a studio-grey background. Summer Color Combos: two outfit images. Body Language Habits: an older woman in a straw hat (pins "Best Summer Hats for Older Ladies"). Sound Elegant: the dining scene; its largest copy is 1536×2688, exactly double a common AI generator size (768×1344). They appear only on Pinterest and on auto-generated listicle pages ("Hairstyles for women over 60", "What colors to wear with pastel yellow"). Never Wear: an animated colour Audrey Hepburn portrait. | Pinterest, listicle farms |
 
 **Recurring material:**
 - **Wolf of Wall Street (Margot Robbie):** 5 videos.
-- **Kate Middleton:** at least 7 videos.
+- **Kate Middleton:** 7 videos.
 - **Audrey Hepburn:** at least 4 videos.
 - **Gentlemen Prefer Blondes:** 2 videos.
 - **Scent of a Woman:** 2 videos.
 - **Creators named on screen:** two, Chloe Rose (@allchloerose) and Kate Hutchins (@kateehutchins).
+- **The same photo is reused across videos:** Jasmine Tookes at dinner appears in both Feminine Energy and Never Share. That points to a kept personal library, not a fresh search each time.
 - **No single creator** dominates the outfit footage. Each video draws on many different creators' photos.
 
 ## 3. Creator credits: a convention you already use [C]
@@ -74,7 +75,7 @@ that to "Why Her Hair Always Looks Expensive"? This file answers from evidence, 
 
 | Hypothesis | Evidence for | Evidence against or missing | Verdict |
 |---|---|---|---|
-| **H1. Pinterest is the main discovery layer** (search, save, download pins) | 43 of the 53 identified panels (interim) have copies on Pinterest, usually dozens of repins. Pinned copies of TikTok exports keep TikTok's watermark, like the "@eder…" clip. Clips you used also exist as files named "Pinterest-84bf0.mp4" on other sites, so Pinterest downloads of them circulate. Earlier: the #1 video's opening clip is a pin saved on boards named "Footage". | No board or account of yours found. Re-running narration keywords ("hollywood waves", "old money bob") on Pinterest today does not return your exact images in the top 100, but results change over 9 months. | **Most likely [H].** Not provable from outside your account. |
+| **H1. Pinterest is the main discovery layer** (search, save, download pins) | 52 of the 63 identified panels (83%) have copies on Pinterest, usually dozens of repins. Pinned copies of TikTok exports keep TikTok's watermark, like the "@eder…" clip. Clips you used also exist as files named "Pinterest-84bf0.mp4" on other sites, so Pinterest downloads of them circulate. Earlier: the #1 video's opening clip is a pin saved on boards named "Footage". | No board or account of yours found. Re-running narration keywords ("hollywood waves", "old money bob") on Pinterest today does not return your exact images in the top 100, but results change over 9 months. | **Most likely [H].** Not provable from outside your account. |
 | **H2. TikTok searched directly for tutorials** | Credits name TikTok handles ("on TikTok", "via tiktok"). | @classyacademy follows 0 accounts and has liked 0 videos, and its favourites are private. The handle could equally come from the watermark or the pin text. | **Possible [H]** for tutorials. |
 | **H3. Instagram/LTK browsed directly** | Many outfit photos are LTK posts and creators' Instagram posts. | No credit or link to Instagram in any frame or description. | Unproven [?]. |
 | **H4. Free stock for everyday actions** | Pexels clips confirmed in Old Money Fall, Sound Elegant and Never Share. | — | **[C]** part of the past workflow. **Excluded for this video by your instruction.** |

@@ -395,20 +395,19 @@ Under your rules, Pexels and other free stock sites are out, and so is AI (proje
 
 ---
 
-## Part 5: What I need from you before any footage is selected
+## Part 5: Decisions only you can make
 
-1. **Your footage sources (blocking).**
-   - Where do you actually find and download your clips? For example: specific Pinterest boards, particular Instagram/TikTok creators, a paid library subscription you hold, your own filming.
-   - Do you hold licences or written permissions for them?
-   - If a source needs permission we don't have, may I prepare the permission requests (template in `workflow/ASSET-RESEARCH-GUIDE.md` section 5)?
-   - Or would you rather use a paid library? If so, which one do you subscribe to?
-2. **Your frames (to confirm the newest format).**
-   - Your Grooming video (Aug 2026) is the closest reference, and its layouts aren't verified.
-   - Either allow me to fetch its public storyboard preview images (small thumbnails, no video download), or send 10–15 screenshots or the export of your editing project/template.
-   - Same request for Haircuts and Hairstyles, if possible.
-3. **Your brand files.** The CA logo (PNG with transparency), your fonts (names or files), and your editing template if one exists (Canva, CapCut, Premiere…).
-4. **Music.** Which track or library do you use for the piano bed?
-5. **Voice.** Is the narration your own voice or a voice tool? It sets the final timings.
-6. **Title label.** Do you show an episode label above the title (like "Episode 5" in Never Wear)? If so, which number?
-7. **Andie MacDowell.** Show her with licensed editorial images (needs a licence), or omit the image and keep the line over luminous silver-hair footage?
-8. **Hair-tip macro (A48/A49).** Can you film a short macro of your own hair tips? It's the only accurate visual for the new-growth/breakage line.
+The sourcing research is done (`../../sourcing-investigation-2026-10-19.md`, `CLIP-CANDIDATES.md`). What is left are
+decisions and files that only you hold:
+
+1. **Permissions.**
+   - The candidates are verified, but none is permitted yet. Requests must come from your own accounts. The template and
+     the priority order are in `CLIP-CANDIDATES.md`.
+   - Your past videos credited creators on screen. A credit is not a permission, so I recommend asking first.
+2. **Getty licence for Andie MacDowell (A82/A82b).** Buy the editorial licence for the two verified photos, or keep the line over
+   silver-hair footage without showing her?
+3. **Brand files.** The CA logo (PNG), your font names or files, and your editing template, if one exists.
+4. **Music.** Which piano track or library? It cannot be traced from outside.
+5. **Voice.** Your own voice or a voice tool? It sets the final timings.
+6. **Episode label.** Several videos show "Episode 7/8/10" above the title. Do you want one here, and which number?
+7. **Hair-tip macro (A48/A49).** No real creator clip exists. Film your own hair tips with a macro lens, or hold on A47?
