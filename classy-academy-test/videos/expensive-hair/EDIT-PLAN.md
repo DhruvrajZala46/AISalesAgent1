@@ -1,6 +1,6 @@
 # Editing & Visual Production Plan: Why Her Hair Always Looks Expensive (It's Not the Cut)
 
-**Status:** plan only. Nothing has been sourced, downloaded or edited. Footage sources wait on your answers (Part 5).
+**Status:** plan + verified clip candidates (`CLIP-CANDIDATES.md`). Nothing has been downloaded or edited. How your footage is sourced was investigated in `../../sourcing-investigation-2026-10-19.md`. Every candidate still needs the creator's permission (or a licence) before production.
 **Script:** the approved `script.md` / `beats.txt`, unchanged. All 111 sentences are covered once, in order.
 **Timings:** estimates at 156 words/min (your "10 Grooming Habits" pace). Total ≈ 11:20. Re-time everything to the recorded voice-over.
 
@@ -18,7 +18,7 @@
 - Files: `VISUAL-EDITING-DNA.md`, `edit-style-measured.md`, `how-you-edit.md`, `editing-blueprints-top-videos.md`, `reference-breakdown-RUDXBR8nyHw.md`, `research-2026-10-12-edit-evidence.md`, `source-trace-2026-10-17.md`.
 
 **Not inspected:**
-- **The frames of your three hair/beauty videos** (Grooming, Aug 2026; Haircuts, Jan 2026; Hairstyles, Jan 2025). I didn't re-check them this session, because you declined the storyboard download. Only one finding about them is on record (Hairstyles replay peaks and dips).
+- **The full storyboards of your three hair/beauty videos** (Grooming, Aug 2026; Haircuts, Jan 2026; Hairstyles, Jan 2025), because you declined that download. Instead I used YouTube's public preview frames (3 per video, 640×480) and the thumbnails. These confirm the layouts below and show an on-screen creator credit, but they are not a full re-check.
 - **No video file of any speech or hair video.** YouTube refuses downloads here.
 - **No editing project, template, font file, logo file or music file of yours.** The repo's `workflow/assets` holds my earlier approximations: a "CE" logo (wrong; yours is CA) and free look-alike fonts. They are not your originals.
 
@@ -27,17 +27,18 @@
 | Element | What your videos show | Evidence |
 |---|---|---|
 | Mood | Calm, warm, aspirational. Women only; cream, white, black and camel clothes; soft daylight and warm interiors; black-and-white classic film is welcome. No neon, harsh flash or wide establishing shots. | [O] storyboards, 30 videos |
-| Footage types | Recognisable elegant women (film scenes, interviews, archive); creators' fashion/lifestyle reels (most of the wardrobe videos' footage); a few stock clips for everyday actions. | [O] trace of 7 videos |
+| Footage types | Creators' outfit, lifestyle and hair photos/reels (TikTok, Instagram, LTK), almost all circulating as Pinterest pins; celebrity press, TV and event footage (Kate Middleton in at least 7 of 30 videos); famous film scenes (Wolf of Wall Street in 5); retailer product photos; a few Pexels clips (incl. Old Money Fall, Sep 2026). | [O] trace of 147 panels from all 30 videos + 7-video trace (`sourcing-investigation-2026-10-19.md`) |
 | Hair content | **Hairstyles (942k): all 5 replay peaks are vertical hair-tutorial clips on the caramel backdrop. Its dips are full-screen portraits of finished hair.** | [O1] replay study |
 | Casting | Women of several ages (one older woman in groups), several skin tones, a hijab model. Viewers praise diversity (97-like comment) and dislike "too young/thin" models in the niche. | [O] + comments |
-| Layouts | (1) White card, black script, one per point. (2) Blurred caramel backdrop holding one of: a sentence (white serif, one word in script), a centred vertical clip, or a row of 2–4 panels. (3) Cream screen with a rounded framed clip and an exact phrase in script (speech videos). (4) Full-screen clip (hook, emotion, exits). | [O] |
+| Layouts | (1) White card, black script, one per point. (2) Blurred caramel backdrop holding one of: a sentence (white serif, one word in script), a centred vertical clip, or a row of 2–4 panels. (3) Cream screen with a rounded framed clip and an exact phrase in script (speech videos). (4) Full-screen clip (hook, emotion, exits). **Hair videos:** Hairstyles centres a vertical tutorial clip on caramel and uses full-height rows of 3 photos. Haircuts uses rows of 3 (panel heights follow each photo) and a light quote screen ("It's a style that doesn't ask for attention…"). Grooming (Aug 2026) frames photos with caramel margins, one centred or two side by side with a gap, plus full-screen celebrity video. | [O] (hair layouts: public preview frames) |
 | Layout share (top-5 videos) | Caramel 34% · rows 23% · full-screen 27% · white cards 8% · a layout change about every 9 s | [O] storyboards |
-| Newest variation | "Old Money Essentials" (Sep 2026) uses a lookbook style: flat taupe/chocolate background, panels with gaps, number titles in white script over a full-screen clip, product names, "SHOP THE LOOKS ↓". | [O1]. *Rec.:* not used here (this is a teaching video). **Verify against Grooming (Aug 2026).** |
+| Newest variation | "Old Money Essentials" (Sep 2026) uses a lookbook style: flat taupe/chocolate background, panels with gaps, number titles in white script over a full-screen clip, product names, "SHOP THE LOOKS ↓". | [O1]. *Rec.:* not used here (this is a teaching video). Grooming (Aug 2026, the closest reference) uses the caramel layouts with framed photos, not the lookbook style. |
 | Hook and title | 0:00–~0:25 full-screen clips of women → title in white script over a clip (Never Wear shows a serif "Episode 5" label above it) → first point card. | [O] |
 | Point cards | White screen, black script "1. …". Text wipes in left to right with a soft edge (~1–1.5 s), holds ~3 s, fades out 0.5 s. A 0.4 s fade to white comes before it. | [O] measured, 2 videos |
 | Other motion | **Video start:** fade in from black, 1.0 s. **Between clips:** short dissolves. **Panels:** grow from their top-left corner (~55%→100%) while fading in, 0.6–0.8 s, one per spoken item. **Centred vertical clip:** grows from the centre, 1.2 s. **Caramel backdrop:** drifts slowly. **Never used:** zoom punches, shakes, spins, glitches. | [O] measured, 2 videos |
 | Framed clips | Rounded corners, soft shadow. Entrance animation not measured. | [O1] / [?] |
-| Text amount | Only the point card, the line to remember, an exact phrase, or one word. No full subtitles in the measured videos. The amount varies by video (17–96% of frames). | [O] |
+| Text amount | Only the point card, the line to remember, an exact phrase, or one word. No full subtitles in the measured videos. Some 2025 videos show white serif subtitle lines at the bottom (7 Habits, Casual yet Elegant, 8 Color Combos); none were seen in the 2026 frames. The amount varies by video (17–96% of frames). | [O] |
+| Creator credit | Under a single creator's vertical clip: "@allchloerose on TikTok" (Hairstyles, white script) and "@kateehutchins via tiktok" (Beginner's Guide, white serif italic), small, bottom right. None seen on rows of photos. | [O] preview frames |
 | Text never seen | Comment cards, small uppercase labels, strike-through, tick/cross marks, captions naming a person or film, recap lists, text on the mid-video plug. | [O] |
 | Typography | Script for titles, cards and the one key word; serif for sentences. Black on white; white on caramel or footage; no outlines or boxes. Card text ≈640 px wide, centred (on 1280); title ≈1,130 px. **Exact fonts unknown.** The closest free look-alikes are Pinyon Script and Playfair Display, which are approximations. | [O] appearance · [?] font files |
 | Colours | Caramel #C38D62 / #DBA778 / #A8673E; white; cream. Newest: taupe #C4B0A3, chocolate #2E241F. | [O] sampled from frames |
@@ -383,10 +384,11 @@ Under your rules, Pexels and other free stock sites are out, and so is AI (proje
 **Technical**
 - [ ] Each clip is used once. No watermarks, creator text or burned-in captions; crop or replace any that appear.
 - [ ] Every clip has been checked for AI before use.
+- [ ] Every creator clip carries your on-screen credit ("@handle on TikTok/Instagram", small white script, bottom right, while it is on screen) and a description credit, and its permission reply is saved.
 - [ ] Text only where the plan specifies it: no captions, labels, ticks, crosses, strike-throughs, recap lists or comment cards.
 - [ ] Text is checked at full size for collisions with faces or the logo.
 - [ ] Audio: one soft solo-piano bed ~12 dB under the voice, no ducking, from the first word to ~5 s after the last. No sound effects.
-- [ ] Rights: every clip and the music track have a `SOURCES-LOG.md` row. Nothing marked "unresolved" is rendered for delivery without your written decision.
+- [ ] Rights: every clip and the music track have a `SOURCES-LOG.md` row, with the creator's written permission or the licence (Getty for A82/A82b). Nothing marked "unresolved" is rendered for delivery without your written decision.
 - [ ] Final review: a frame-every-2-s sheet of the new video beside your storyboard frames from Grooming, Haircuts and Hairstyles. The layout share is measured with `workflow/tools/layoutmix.py`.
 
 **Pacing note (from your data):** your median first point arrives at ~0:35. In this approved script, point 1 starts at about 1:08. I have not changed the script. Keep the gaps between hook lines tight in the voice edit; the intro guide mention is ≤10 s.
