@@ -1,0 +1,878 @@
+[
+{
+"query": "things elegant women never wear",
+"mode": "rel",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "things elegant women never wear",
+"mode": "year",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "how to look elegant",
+"mode": "rel",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "how to look elegant",
+"mode": "year",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "elegant women habits",
+"mode": "rel",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "elegant women habits",
+"mode": "year",
+"category": "elegant/classy",
+"results": 49
+},
+{
+"query": "classy lady tips",
+"mode": "rel",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "classy lady tips",
+"mode": "year",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "signs of an elegant woman",
+"mode": "rel",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "how to be classy",
+"mode": "rel",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "how to be classy",
+"mode": "year",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "elegant woman secrets",
+"mode": "rel",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "signs of an elegant woman",
+"mode": "year",
+"category": "elegant/classy",
+"results": 28
+},
+{
+"query": "elegant woman secrets",
+"mode": "year",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "how to be a lady",
+"mode": "rel",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "things elegant ladies never do",
+"mode": "rel",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "how to be a lady",
+"mode": "year",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "things elegant ladies never do",
+"mode": "year",
+"category": "elegant/classy",
+"results": 50
+},
+{
+"query": "old money style women",
+"mode": "rel",
+"category": "old money/timeless",
+"results": 50
+},
+{
+"query": "old money outfits",
+"mode": "rel",
+"category": "old money/timeless",
+"results": 50
+},
+{
+"query": "timeless wardrobe essentials women",
+"mode": "rel",
+"category": "old money/timeless",
+"results": 50
+},
+{
+"query": "old money style women",
+"mode": "year",
+"category": "old money/timeless",
+"results": 25
+},
+{
+"query": "timeless wardrobe essentials women",
+"mode": "year",
+"category": "old money/timeless",
+"results": 50
+},
+{
+"query": "old money outfits",
+"mode": "year",
+"category": "old money/timeless",
+"results": 17
+},
+{
+"query": "classic capsule wardrobe",
+"mode": "rel",
+"category": "old money/timeless",
+"results": 50
+},
+{
+"query": "quiet luxury style women",
+"mode": "rel",
+"category": "old money/timeless",
+"results": 50
+},
+{
+"query": "how to look rich",
+"mode": "rel",
+"category": "old money/timeless",
+"results": 50
+},
+{
+"query": "classic capsule wardrobe",
+"mode": "year",
+"category": "old money/timeless",
+"results": 50
+},
+{
+"query": "how to look expensive on a budget",
+"mode": "rel",
+"category": "old money/timeless",
+"results": 50
+},
+{
+"query": "how to look rich",
+"mode": "year",
+"category": "old money/timeless",
+"results": 50
+},
+{
+"query": "quiet luxury style women",
+"mode": "year",
+"category": "old money/timeless",
+"results": 50
+},
+{
+"query": "outfits that look expensive",
+"mode": "rel",
+"category": "old money/timeless",
+"results": 50
+},
+{
+"query": "how to look expensive on a budget",
+"mode": "year",
+"category": "old money/timeless",
+"results": 50
+},
+{
+"query": "outfits that look expensive",
+"mode": "year",
+"category": "old money/timeless",
+"results": 50
+},
+{
+"query": "outfit mistakes that cheapen your look",
+"mode": "rel",
+"category": "mistakes/instead",
+"results": 50
+},
+{
+"query": "fashion mistakes women make",
+"mode": "rel",
+"category": "mistakes/instead",
+"results": 50
+},
+{
+"query": "fashion mistakes women make",
+"mode": "year",
+"category": "mistakes/instead",
+"results": 50
+},
+{
+"query": "outfit mistakes that cheapen your look",
+"mode": "year",
+"category": "mistakes/instead",
+"results": 50
+},
+{
+"query": "style mistakes that make you look older",
+"mode": "rel",
+"category": "mistakes/instead",
+"results": 50
+},
+{
+"query": "style mistakes that make you look older",
+"mode": "year",
+"category": "mistakes/instead",
+"results": 50
+},
+{
+"query": "what not to wear women",
+"mode": "rel",
+"category": "mistakes/instead",
+"results": 50
+},
+{
+"query": "stop wearing these",
+"mode": "rel",
+"category": "mistakes/instead",
+"results": 50
+},
+{
+"query": "what not to wear women",
+"mode": "year",
+"category": "mistakes/instead",
+"results": 50
+},
+{
+"query": "stop wearing these",
+"mode": "year",
+"category": "mistakes/instead",
+"results": 50
+},
+{
+"query": "elegant hairstyles",
+"mode": "rel",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "how to look polished every day",
+"mode": "rel",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "grooming habits women",
+"mode": "rel",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "how to look polished every day",
+"mode": "year",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "grooming habits women",
+"mode": "year",
+"category": "grooming/hair/beauty",
+"results": 49
+},
+{
+"query": "elegant hairstyles",
+"mode": "year",
+"category": "grooming/hair/beauty",
+"results": 13
+},
+{
+"query": "makeup that looks expensive",
+"mode": "rel",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "elegant natural makeup",
+"mode": "rel",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "makeup that looks expensive",
+"mode": "year",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "nails that look expensive",
+"mode": "rel",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "perfume elegant women",
+"mode": "rel",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "elegant natural makeup",
+"mode": "year",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "glow up tips women",
+"mode": "rel",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "perfume elegant women",
+"mode": "year",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "nails that look expensive",
+"mode": "year",
+"category": "grooming/hair/beauty",
+"results": 37
+},
+{
+"query": "hairstyles that make you look younger",
+"mode": "rel",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "fine thin hair",
+"mode": "rel",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "hairstyles that make you look younger",
+"mode": "year",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "how to be more feminine",
+"mode": "rel",
+"category": "feminine/luxury",
+"results": 50
+},
+{
+"query": "glow up tips women",
+"mode": "year",
+"category": "grooming/hair/beauty",
+"results": 49
+},
+{
+"query": "how to be more feminine",
+"mode": "year",
+"category": "feminine/luxury",
+"results": 50
+},
+{
+"query": "fine thin hair",
+"mode": "year",
+"category": "grooming/hair/beauty",
+"results": 50
+},
+{
+"query": "feminine style tips",
+"mode": "rel",
+"category": "feminine/luxury",
+"results": 50
+},
+{
+"query": "how to wear jewelry elegantly",
+"mode": "rel",
+"category": "feminine/luxury",
+"results": 50
+},
+{
+"query": "timeless handbags",
+"mode": "rel",
+"category": "feminine/luxury",
+"results": 50
+},
+{
+"query": "timeless handbags",
+"mode": "year",
+"category": "feminine/luxury",
+"results": 50
+},
+{
+"query": "how to wear jewelry elegantly",
+"mode": "year",
+"category": "feminine/luxury",
+"results": 26
+},
+{
+"query": "understated luxury",
+"mode": "rel",
+"category": "feminine/luxury",
+"results": 50
+},
+{
+"query": "feminine style tips",
+"mode": "year",
+"category": "feminine/luxury",
+"results": 50
+},
+{
+"query": "colors that look expensive",
+"mode": "rel",
+"category": "feminine/luxury",
+"results": 50
+},
+{
+"query": "color combinations outfits elegant",
+"mode": "rel",
+"category": "feminine/luxury",
+"results": 50
+},
+{
+"query": "understated luxury",
+"mode": "year",
+"category": "feminine/luxury",
+"results": 27
+},
+{
+"query": "colors that look expensive",
+"mode": "year",
+"category": "feminine/luxury",
+"results": 50
+},
+{
+"query": "etiquette tips for women",
+"mode": "rel",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "modern etiquette",
+"mode": "rel",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "etiquette tips for women",
+"mode": "year",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "color combinations outfits elegant",
+"mode": "year",
+"category": "feminine/luxury",
+"results": 22
+},
+{
+"query": "how to be more confident woman",
+"mode": "rel",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "how to be more confident woman",
+"mode": "year",
+"category": "social grace",
+"results": 49
+},
+{
+"query": "elegant body language",
+"mode": "rel",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "modern etiquette",
+"mode": "year",
+"category": "social grace",
+"results": 18
+},
+{
+"query": "how to speak elegantly",
+"mode": "rel",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "how to be charming",
+"mode": "rel",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "elegant body language",
+"mode": "year",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "how to speak elegantly",
+"mode": "year",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "how to be charming",
+"mode": "year",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "how to be magnetic woman",
+"mode": "rel",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "how to be magnetic woman",
+"mode": "year",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "how to command respect",
+"mode": "rel",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "how to command respect",
+"mode": "year",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "high value woman habits",
+"mode": "rel",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "high value woman habits",
+"mode": "year",
+"category": "social grace",
+"results": 50
+},
+{
+"query": "style transformation women",
+"mode": "rel",
+"category": "transformation",
+"results": 50
+},
+{
+"query": "makeover over 50",
+"mode": "rel",
+"category": "transformation",
+"results": 50
+},
+{
+"query": "before and after style makeover",
+"mode": "rel",
+"category": "transformation",
+"results": 50
+},
+{
+"query": "makeover over 50",
+"mode": "year",
+"category": "transformation",
+"results": 50
+},
+{
+"query": "style transformation women",
+"mode": "year",
+"category": "transformation",
+"results": 10
+},
+{
+"query": "how to elevate your style",
+"mode": "rel",
+"category": "transformation",
+"results": 50
+},
+{
+"query": "before and after style makeover",
+"mode": "year",
+"category": "transformation",
+"results": 47
+},
+{
+"query": "personal stylist tips",
+"mode": "rel",
+"category": "transformation",
+"results": 50
+},
+{
+"query": "french women style secrets",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "french women style secrets",
+"mode": "year",
+"category": "adjacent",
+"results": 49
+},
+{
+"query": "how to elevate your style",
+"mode": "year",
+"category": "transformation",
+"results": 46
+},
+{
+"query": "personal stylist tips",
+"mode": "year",
+"category": "transformation",
+"results": 50
+},
+{
+"query": "italian women style",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "parisian chic",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "italian women style",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "parisian chic",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "style over 50",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "style over 60",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "style over 50",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "style over 60",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "dress for your body type",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "how to dress for your age",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "color analysis",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "color analysis",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "how to dress for your age",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "elegant fall outfits",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "dress for your body type",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "elegant winter outfits",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "elegant fall outfits",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "elegant shoes women",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "elegant shoes women",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "elegant winter outfits",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "how to walk elegantly",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "how to pose in photos",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "self care routine elegant woman",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "how to walk elegantly",
+"mode": "year",
+"category": "adjacent",
+"results": 16
+},
+{
+"query": "home that looks expensive",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "self care routine elegant woman",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "how to pose in photos",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "home that looks expensive",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "hosting etiquette",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "wardrobe declutter",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "hosting etiquette",
+"mode": "year",
+"category": "adjacent",
+"results": 49
+},
+{
+"query": "petite style tips",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "wardrobe declutter",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "how to look put together",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "jeans outfits elegant",
+"mode": "rel",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "how to look put together",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "petite style tips",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+},
+{
+"query": "jeans outfits elegant",
+"mode": "year",
+"category": "adjacent",
+"results": 50
+}
+]
