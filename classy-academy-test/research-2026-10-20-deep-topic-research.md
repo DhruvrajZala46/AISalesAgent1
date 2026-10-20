@@ -317,8 +317,22 @@ So the recommended title borrows no competitor's wording.
 
 **What could not:**
 - After about 40 metadata requests, YouTube rate-limited this machine and then put up a reCAPTCHA. The captions of the 12 lane videos picked for transcript reading (10 winners, 2 weaker) were refused.
-- A slower retry is scheduled. If it succeeds, the hooks and point lists will be added here.
-- **Until then, nothing in this report claims what those videos say.**
+- A slower retry ran at 18:54 UTC. It read one transcript, the lane's top winner. The next two were refused, so the retry stopped by design. The rest stay unread, and nothing here claims what they say.
+
+**The one transcript read: [Wear THIS, Not THAT: 5 Outdated Fall Shoes](https://youtu.be/dFAGM7iBWRI)** (Style With Serena, 15.4×, 26:30)
+- **Hook (0:00–0:30):** a loss question, "What's the fastest way to ruin a good fall outfit? Wear a shoe style that died 3 years ago."
+  - Then a self-check aimed at the viewer's own wardrobe: "…starting with the flats sitting in your closet."
+  - Then an open loop: "one trend… you're going to love, so be sure to stick around."
+  - Then a softener: "I don't set the trends… you may like some of these, and that's okay."
+- **Point 1 starts at 0:30.** Each point:
+  - names the exact dated detail, not just the item: "this very rounded toe and the low vamp… that combination… reads dated";
+  - gives the current alternative;
+  - offers a calmer, timeless version for viewers who won't follow trends ("a standard ballet flat with a modern toe: almond, pointed, softly squared").
+- **Ending:** a one-line principle ("it's really about proportion: away from heavy, chunky, towards sleeker, softer, more refined").
+  - Then reassurance: "something being past its peak doesn't mean you have to immediately stop wearing it."
+  - Then a comment question.
+- **Money:** shopping links and a guide (affiliate). That is a business choice, not a cause of the views.
+- **What the new video can use** (a pattern, not proof): a loss hook aimed at the viewer's own closet; the precise detail that dates each piece; the fix; and a kind, unshaming tone. The softener and the reassurance already match our channel's voice.
 
 **What the data that could be read shows:**
 - **Length does not separate winners from losers in this lane.** Median 15.1 minutes for the 57 hits, 14.9 for the 153 videos below their channel median. So the lane's results aren't explained by length.
