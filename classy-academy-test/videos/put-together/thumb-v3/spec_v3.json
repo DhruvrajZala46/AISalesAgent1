@@ -1,0 +1,125 @@
+[
+ {
+  "out": "v3_A_how_to_look_put_together_instantly.jpg",
+  "top": "How to Look",
+  "big": "Put Together",
+  "small": "*Instantly*",
+  "panels": [
+   {
+    "img": "sel/chloe.jpg",
+    "face": [
+     1089,
+     766,
+     635,
+     685
+    ],
+    "fw": 0.4,
+    "fy": 0.2
+   },
+   {
+    "img": "sel/yvzux.jpg",
+    "face": [
+     634,
+     90,
+     187,
+     197
+    ],
+    "fw": 0.3,
+    "fy": 0.17
+   },
+   {
+    "img": "sel/diari.jpg",
+    "face": [
+     461,
+     191,
+     490,
+     383
+    ],
+    "fw": 0.4,
+    "fy": 0.17
+   }
+  ]
+ },
+ {
+  "out": "v3_B_always_look_put_together.jpg",
+  "top": "Always Look",
+  "big": "Put Together",
+  "small": "*Effortlessly*",
+  "panels": [
+   {
+    "img": "sel/chloe.jpg",
+    "face": [
+     1089,
+     766,
+     635,
+     685
+    ],
+    "fw": 0.4,
+    "fy": 0.2
+   },
+   {
+    "img": "sel/yvzux.jpg",
+    "face": [
+     634,
+     90,
+     187,
+     197
+    ],
+    "fw": 0.3,
+    "fy": 0.17
+   },
+   {
+    "img": "sel/diari.jpg",
+    "face": [
+     461,
+     191,
+     490,
+     383
+    ],
+    "fw": 0.4,
+    "fy": 0.17
+   }
+  ]
+ },
+ {
+  "out": "v3_C_on_any_budget.jpg",
+  "top": "How to Always Look",
+  "big": "Put Together",
+  "small": "*On Any Budget*",
+  "panels": [
+   {
+    "img": "sel/chloe.jpg",
+    "face": [
+     1089,
+     766,
+     635,
+     685
+    ],
+    "fw": 0.4,
+    "fy": 0.2
+   },
+   {
+    "img": "sel/yvzux.jpg",
+    "face": [
+     634,
+     90,
+     187,
+     197
+    ],
+    "fw": 0.3,
+    "fy": 0.17
+   },
+   {
+    "img": "sel/diari.jpg",
+    "face": [
+     461,
+     191,
+     490,
+     383
+    ],
+    "fw": 0.4,
+    "fy": 0.17
+   }
+  ]
+ }
+]

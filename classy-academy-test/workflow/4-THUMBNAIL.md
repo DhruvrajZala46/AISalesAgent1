@@ -34,6 +34,24 @@ woman shows or explains herself. Frame above a burned-in caption rather than era
 `tools/thumb_ce.py` builds exactly this. (`thumb_make.py` used Montserrat and smaller serif lines: superseded.) Never change the layout
 to "try something new" without the user asking; the do/don't and body-shape formats below are only for when the user asks for them.
 
+## Visual selection: what the 1.25M, 951k and 698k winners show (decoded 20 Oct 2026; `videos/put-together/THUMBNAIL-v3.md`)
+
+- **Grooming is the hero:**
+  - 6 of 9 women have a sleek bun or a sleek ponytail;
+  - gold earrings, rings and bracelets show;
+  - manicured hands are raised to the face.
+- **Clothes are only black, ivory and gold.** No other colour, no busy background (no kitchen, no café clutter, no blue jeans).
+- **The mood is calm and aloof:** eyes closed, profile, back of the head, a hat, at most one pair of sunglasses. At most one direct gaze.
+  Never mid-speech, never a big smile.
+- **Luxury cues:** a Paris street, candles, a car interior, a yacht, designer sunglasses.
+- **Crops are tight, head and torso.** The woman fills her panel.
+- **The centre face sits above y≈195,** where the top line starts on all three winners (measured: 194-216). The chin may touch the top line.
+  A tight close-up portrait cannot be the centre.
+- **One Black woman in most thumbnails.**
+- **The source:** a creator's own Instagram post, with the author confirmed by Instagram's embed (`tools/ig_pins.py`, `tools/igcheck.js`,
+  `tools/embshot.js`, `tools/igslides.js` for multi-photo posts). Brand and jewellery accounts often post AI images: look for the Gemini ✦
+  and "AI influencer" or Higgsfield captions.
+
 ## Words
 
 - Headline 2-3 words, max 3 words in the big line; together with the top line it reads as one

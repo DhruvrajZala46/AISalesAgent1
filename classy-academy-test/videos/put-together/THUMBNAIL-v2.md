@@ -1,3 +1,5 @@
+> **Superseded on 20 Oct 2026 by `THUMBNAIL-v3.md`** (the user rejected v2: the photos and text did not match the channel's winners).
+
 # 8 Ways to Always Look Put Together: thumbnail v2 (19 Oct 2026)
 
 **The video:** https://youtu.be/wz7AdkAUkRU
