@@ -1,0 +1,43 @@
+{
+ "id": "Z04",
+ "pin_id": "e1_AfqPShwO38JKPx2MOyVCo2c9h7FETGHFpkS7lrRLMRuDbIPABsKH",
+ "pin_url": "",
+ "creator": "\u0410\u043b\u043b\u043e \u041b\u0456\u0437\u0443\u0448\u043a\u0430 \ud83c\uddfa\ud83c\udde6 | \u0456\u0434\u0435\u0457 \u0434\u043b\u044f \u0441\u0442\u043e\u0440\u0456\u0441, \u0444\u043e\u0442\u043e \u0456 \u0440\u0456\u043b\u0441",
+ "creator_user": "allo_lizushka",
+ "src_link": "",
+ "pin_title": "Inst @allo_lizushka",
+ "media_url": "https://v1.pinimg.com/videos/mc/720p/b6/31/af/b631afee7fbc27e30c4d3df508e062d4.mp4",
+ "file": "raw/Z04.mp4",
+ "w": 720,
+ "h": 1280,
+ "fps": 30.0,
+ "dur": 7.57,
+ "search_tag": "Z04f",
+ "search_index": 3,
+ "desc": " ",
+ "sig": "f5713cd88914e507ea937f4d214f8be1",
+ "pinner": "allo_lizushka",
+ "board": "/allo_lizushka/%D0%BC%D0%BE%D0%B8-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-allo_lizushka/",
+ "board_id": "650770283595385967",
+ "dom": "Uploaded by user",
+ "candidate_id": "Z04_c4",
+ "rights": "No licence known; creator permission not requested",
+ "in": 0.0,
+ "speed": 0.66,
+ "focus": [
+  0.55,
+  0.6
+ ],
+ "ai_scan": 0.0,
+ "ai_eye": "checked: no tells (magazine pages, plants and speakers fixed; natural window light, she turns pages)",
+ "creator_evidence": "native_creator/pinner is allo_lizushka (\u0410\u043b\u043b\u043e \u041b\u0456\u0437\u0443\u0448\u043a\u0430, Ukrainian reels creator), uploaded directly to Pinterest with title Inst @allo_lizushka",
+ "original_post": "",
+ "note": "Woman (30s) in a cream knit and grey joggers reading in an armchair in a bright plant-filled room, slow page turns; one continuous 7.57 s take. Too short alone for 17.2 s: use as a 2-shot sequence: Z04_part2 (coffee at a window, 5.0 s at 0.75 = 6.7 s) then this clip at 0.72 = 10.5 s, total 17.2 s. Speed 0.72 is below the 0.8 norm but the shot is nearly static.",
+ "sequence": [
+  "Z04_part2",
+  "Z04"
+ ],
+ "short": true,
+ "original_post_note": "exact post not linked; direct Pinterest upload",
+ "creator_profile": "https://www.instagram.com/allo_lizushka/"
+}

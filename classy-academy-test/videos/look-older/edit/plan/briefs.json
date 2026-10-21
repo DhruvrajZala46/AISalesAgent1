@@ -1,0 +1,2093 @@
+[
+ {
+  "id": "H01",
+  "point": "hook",
+  "sent": [
+   0
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "An elegant woman (40s-60s) walking past a shop window and glancing at her own reflection in the glass; city street, daylight, camel/cream/black clothes.",
+  "queries": [
+   "woman looking at reflection shop window video",
+   "woman walking past store window reflection aesthetic video"
+  ],
+  "need_s": 6.9,
+  "text": "Have you ever caught your reflection in a store window and thought, I look older than I feel?"
+ },
+ {
+  "id": "H02",
+  "point": "hook",
+  "sent": [
+   1
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A mature woman (45-65) checking herself in a full-length or hallway mirror, adjusting her jacket or hair; calm, home or boutique.",
+  "queries": [
+   "woman over 50 checking outfit in mirror video",
+   "mature woman mirror outfit check video"
+  ],
+  "need_s": 3.1,
+  "text": "Most of us have."
+ },
+ {
+  "id": "H03",
+  "point": "hook",
+  "sent": [
+   2
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "Close-up of a beautiful mature woman's face (50s-60s), soft daylight, gentle smile; the face is lovely - \"it isn't your face at all\".",
+  "queries": [
+   "beautiful older woman face close up natural light video",
+   "woman 50s smiling close up soft light video"
+  ],
+  "need_s": 4.3,
+  "text": "And often, it isn't your face at all."
+ },
+ {
+  "id": "H04",
+  "point": "hook",
+  "sent": [
+   3
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "Close-up of small outfit details being adjusted: hands fastening a blazer button, smoothing a skirt, a cuff, a collar. Neutral colours.",
+  "queries": [
+   "outfit details close up hands buttoning blazer video",
+   "fashion details aesthetic close up video"
+  ],
+  "need_s": 4.4,
+  "text": "It's a few small details in what you're wearing."
+ },
+ {
+  "id": "H05",
+  "point": "hook",
+  "sent": [
+   4
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Lower legs: the hem of a midi skirt or dress swinging as a woman walks (hem in focus).",
+  "queries": [
+   "midi skirt hem walking legs video",
+   "midi dress walking aesthetic video"
+  ],
+  "need_s": 7.2,
+  "text": "Where a hem stops."
+ },
+ {
+  "id": "H06",
+  "point": "hook",
+  "sent": [
+   5
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman with a soft colour right at her face: a cream collar, ivory knit or silk scarf at the neckline; close to medium shot.",
+  "queries": [
+   "woman silk scarf neckline aesthetic video",
+   "ivory knit sweater woman close up video"
+  ],
+  "need_s": 8.1,
+  "text": "The colour sitting closest to your face."
+ },
+ {
+  "id": "H07",
+  "point": "hook",
+  "sent": [
+   6
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A mature woman putting on or adjusting her glasses (frames she has worn for years); close-up.",
+  "queries": [
+   "older woman putting on glasses close up video",
+   "woman adjusting glasses aesthetic video"
+  ],
+  "need_s": 7.8,
+  "text": "The frames you've worn for years."
+ },
+ {
+  "id": "H08",
+  "point": "hook",
+  "sent": [
+   7
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A woman at her wardrobe swapping one piece for another (holding up a blazer, taking a scarf), bright closet; easy change.",
+  "queries": [
+   "woman choosing outfit from closet video",
+   "closet outfit change aesthetic video"
+  ],
+  "need_s": 5.7,
+  "text": "And these are some of the easiest things in your wardrobe to change."
+ },
+ {
+  "id": "H09",
+  "point": "hook",
+  "sent": [
+   8
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "TITLE SHOT: an elegant woman of 50-65 walking towards camera in a timeless outfit (cream, camel, black), sunny street; calm, confident. Will be darkened slightly under a white script title.",
+  "queries": [
+   "elegant older woman walking street style video",
+   "chic woman over 60 walking outfit video"
+  ],
+  "need_s": 9.4,
+  "text": "In today's video, we're sharing eight things that can make you look older than you are, and exactly what to wear instead."
+ },
+ {
+  "id": "H10",
+  "point": "hook",
+  "sent": [
+   9
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A reel that starts at the shoes and tilts up to the face (outfit pan from feet to head), neutral classic outfit.",
+  "queries": [
+   "outfit reveal from shoes up video",
+   "outfit pan up from shoes aesthetic video"
+  ],
+  "need_s": 4.5,
+  "text": "We'll start at your feet and work our way up."
+ },
+ {
+  "id": "H11",
+  "point": "hook",
+  "sent": [
+   10
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A chic woman (40s+) walking in a classic outfit, vertical reel (grows from the centre).",
+  "queries": [
+   "classic outfit woman 40s walking video",
+   "timeless style woman over 40 video"
+  ],
+  "need_s": 6.3,
+  "text": "Some of these may surprise you, but once you see them, you'll never unsee them."
+ },
+ {
+  "id": "H12",
+  "point": "hook",
+  "sent": [
+   10
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Elegant woman, different age/skin tone, full-length classic outfit (row of 3, panel 1).",
+  "queries": [
+   "elegant outfit over 50 video",
+   "old money outfit woman video"
+  ],
+  "need_s": 10.3,
+  "text": "Some of these may surprise you, but once you see them, you'll never unsee them."
+ },
+ {
+  "id": "H13",
+  "point": "hook",
+  "sent": [
+   10
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Elegant woman, different age/skin tone, full-length classic outfit (row of 3, panel 2).",
+  "queries": [
+   "black woman elegant outfit video",
+   "classic style mature woman video"
+  ],
+  "need_s": 10.3,
+  "text": "Some of these may surprise you, but once you see them, you'll never unsee them."
+ },
+ {
+  "id": "H14",
+  "point": "hook",
+  "sent": [
+   10
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Elegant woman, different age/skin tone, full-length classic outfit (row of 3, panel 3).",
+  "queries": [
+   "asian woman elegant classic outfit video",
+   "grey hair woman chic outfit video"
+  ],
+  "need_s": 10.3,
+  "text": "Some of these may surprise you, but once you see them, you'll never unsee them."
+ },
+ {
+  "id": "S01",
+  "point": "1",
+  "sent": [
+   13,
+   14
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "Feet walking a lot in comfortable shoes through a busy day (city pavement, stairs); a woman on her feet all day.",
+  "queries": [
+   "comfortable shoes walking city feet video",
+   "walking all day comfortable shoes woman video"
+  ],
+  "need_s": 7.0,
+  "text": "We get it. When you're on your feet all day, comfort comes first, and it should."
+ },
+ {
+  "id": "S02",
+  "point": "1",
+  "sent": [
+   15
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "Chunky, bulky \"comfort\" shoes on feet: thick sole orthopedic-style shoes or bulky dad sneakers, close to the feet.",
+  "queries": [
+   "chunky orthopedic shoes on feet video",
+   "bulky comfort shoes women video"
+  ],
+  "need_s": 6.1,
+  "text": "But many comfortable shoes are built far bigger than they need to be."
+ },
+ {
+  "id": "S03",
+  "point": "1",
+  "sent": [
+   16
+  ],
+  "kind": "C",
+  "slot": "CUT",
+  "brief": "Product photo: a comfort shoe with a thick, clumpy sole (plain white background).",
+  "queries": [
+   "thick sole comfort shoes women",
+   "chunky sole orthopedic shoe"
+  ],
+  "need_s": 3.4,
+  "text": "A thick, clumpy sole."
+ },
+ {
+  "id": "S04",
+  "point": "1",
+  "sent": [
+   17
+  ],
+  "kind": "C",
+  "slot": "CUT",
+  "brief": "Product photo: a shoe with a wide, rounded, bulbous toe box (plain background).",
+  "queries": [
+   "wide toe box shoes women round",
+   "wide round toe comfort shoe"
+  ],
+  "need_s": 3.6,
+  "text": "A wide, rounded front."
+ },
+ {
+  "id": "S05",
+  "point": "1",
+  "sent": [
+   18
+  ],
+  "kind": "C",
+  "slot": "CUT",
+  "brief": "Product photo: a women's shoe with Velcro straps (plain background).",
+  "queries": [
+   "velcro strap shoes women",
+   "womens velcro comfort shoes"
+  ],
+  "need_s": 3.2,
+  "text": "Velcro straps."
+ },
+ {
+  "id": "S06",
+  "point": "1",
+  "sent": [
+   19
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A woman walking in heavy chunky shoes; the shoes dominate and the legs look short (tasteful, no mocking).",
+  "queries": [
+   "chunky sneakers outfit walking video",
+   "platform chunky shoes walking video"
+  ],
+  "need_s": 7.8,
+  "text": "All that bulk at the end of the leg can make your legs look shorter, and the whole outfit feel heavy."
+ },
+ {
+  "id": "S07",
+  "point": "1",
+  "sent": [
+   21
+  ],
+  "kind": "C",
+  "slot": "CUT",
+  "brief": "Product photo: a slim-sole almond-toe ballet flat or pump in smooth leather.",
+  "queries": [
+   "almond toe flats leather",
+   "almond toe ballet flat"
+  ],
+  "need_s": 10.0,
+  "text": "Look for a slimmer sole, an almond or softly rounded toe that still gives your toes room, and smooth leather or suede."
+ },
+ {
+  "id": "S08",
+  "point": "1",
+  "sent": [
+   21
+  ],
+  "kind": "C",
+  "slot": "CUT",
+  "brief": "Product photo: a softly rounded toe leather flat or slingback.",
+  "queries": [
+   "round toe leather ballet flat",
+   "soft leather flats"
+  ],
+  "need_s": 10.0,
+  "text": "Look for a slimmer sole, an almond or softly rounded toe that still gives your toes room, and smooth leather or suede."
+ },
+ {
+  "id": "S09",
+  "point": "1",
+  "sent": [
+   21
+  ],
+  "kind": "C",
+  "slot": "CUT",
+  "brief": "Product photo: a suede loafer or suede flat (smooth suede).",
+  "queries": [
+   "suede loafers women",
+   "suede flats women"
+  ],
+  "need_s": 10.0,
+  "text": "Look for a slimmer sole, an almond or softly rounded toe that still gives your toes room, and smooth leather or suede."
+ },
+ {
+  "id": "S10",
+  "point": "1",
+  "sent": [
+   22
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman walking in low block heels (outfit reel, classic trousers or midi skirt).",
+  "queries": [
+   "low block heel outfit video",
+   "block heels elegant outfit video"
+  ],
+  "need_s": 12.9,
+  "text": "A low block heel, a soft loafer or a clean leather sneaker gives you the same ease with a much lighter line."
+ },
+ {
+  "id": "S11",
+  "point": "1",
+  "sent": [
+   22
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman in soft leather loafers, walking or close to the feet.",
+  "queries": [
+   "loafers outfit women video",
+   "leather loafers style video"
+  ],
+  "need_s": 12.9,
+  "text": "A low block heel, a soft loafer or a clean leather sneaker gives you the same ease with a much lighter line."
+ },
+ {
+  "id": "S12",
+  "point": "1",
+  "sent": [
+   22
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman in clean white leather sneakers with an elegant outfit.",
+  "queries": [
+   "white leather sneakers elegant outfit video",
+   "minimal white sneakers outfit video"
+  ],
+  "need_s": 12.9,
+  "text": "A low block heel, a soft loafer or a clean leather sneaker gives you the same ease with a much lighter line."
+ },
+ {
+  "id": "S13",
+  "point": "1",
+  "sent": [
+   23,
+   24
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "Wide or straight trousers falling over a chunkier shoe or loafer, walking; balanced, intentional.",
+  "queries": [
+   "wide leg trousers chunky loafers video",
+   "wide leg pants sneakers outfit video"
+  ],
+  "need_s": 9.5,
+  "text": "And if you love a chunkier shoe, give it balance. Let a straight or wide trouser fall over it, so the shoe looks intentional."
+ },
+ {
+  "id": "M01",
+  "point": "2",
+  "sent": [
+   26
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman in a midi skirt (walking), row panel 1.",
+  "queries": [
+   "midi skirt outfit video",
+   "satin midi skirt outfit video"
+  ],
+  "need_s": 10.7,
+  "text": "Midi skirts, culottes and cropped trousers are back in style, so keep them."
+ },
+ {
+  "id": "M02",
+  "point": "2",
+  "sent": [
+   26
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman in culottes (wide cropped trousers), row panel 2.",
+  "queries": [
+   "culottes outfit video",
+   "culotte pants outfit women video"
+  ],
+  "need_s": 10.7,
+  "text": "Midi skirts, culottes and cropped trousers are back in style, so keep them."
+ },
+ {
+  "id": "M03",
+  "point": "2",
+  "sent": [
+   26
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman in cropped (ankle) trousers, row panel 3.",
+  "queries": [
+   "cropped trousers outfit video",
+   "ankle pants outfit loafers video"
+  ],
+  "need_s": 10.7,
+  "text": "Midi skirts, culottes and cropped trousers are back in style, so keep them."
+ },
+ {
+  "id": "M04",
+  "point": "2",
+  "sent": [
+   27
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "Close-up of a skirt hem moving at the lower leg as a woman walks (where the hem lands).",
+  "queries": [
+   "skirt hem close up walking video",
+   "midi skirt movement video"
+  ],
+  "need_s": 3.9,
+  "text": "What matters is where the hem lands."
+ },
+ {
+  "id": "M05",
+  "point": "2",
+  "sent": [
+   28,
+   29
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A woman in a skirt whose hem stops at mid-calf, the widest point of the calf (the less flattering length); walking or standing.",
+  "queries": [
+   "mid calf skirt outfit video",
+   "mid calf length dress walking video"
+  ],
+  "need_s": 11.2,
+  "text": "When it falls across the widest part of your calf, it draws a line in exactly the wrong place. Your legs look shorter and wider at the same time."
+ },
+ {
+  "id": "M06",
+  "point": "2",
+  "sent": [
+   30
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A woman in a skirt or dress ending just below the knee (a couple of inches under the knee), flattering, walking.",
+  "queries": [
+   "below the knee skirt outfit video",
+   "knee length pencil skirt outfit video"
+  ],
+  "need_s": 8.3,
+  "text": "The most flattering midi lengths sit just above the swell of the calf, a couple of inches below the knee."
+ },
+ {
+  "id": "M07",
+  "point": "2",
+  "sent": [
+   31
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A long midi or maxi skirt ending just above the ankle, showing the slim part of the leg, walking.",
+  "queries": [
+   "long midi skirt ankle outfit video",
+   "maxi skirt above ankle walking video"
+  ],
+  "need_s": 6.2,
+  "text": "Or they fall low enough to show the slimmer part of your leg above the ankle."
+ },
+ {
+  "id": "M08",
+  "point": "2",
+  "sent": [
+   32
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "Cropped trousers ending at or just above the ankle bone, with loafers or flats; close to the ankles.",
+  "queries": [
+   "ankle length trousers loafers video",
+   "cropped trousers ankle bone video"
+  ],
+  "need_s": 6.4,
+  "text": "For cropped trousers, let the hem end at, or just above, the ankle bone."
+ },
+ {
+  "id": "M09",
+  "point": "2",
+  "sent": [
+   34,
+   35
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A woman standing side-on to a mirror, looking at her legs/skirt in profile.",
+  "queries": [
+   "woman side view mirror outfit video",
+   "side profile mirror skirt video"
+  ],
+  "need_s": 8.4,
+  "text": "Stand side-on to a mirror and find the fullest point of your calf. That's the one line your hems should avoid."
+ },
+ {
+  "id": "M10",
+  "point": "2",
+  "sent": [
+   36
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "Hemming a skirt or trousers: pinning a hem, sewing a hem by hand or machine (alteration tutorial).",
+  "queries": [
+   "how to hem a skirt video",
+   "hemming pants tutorial video"
+  ],
+  "need_s": 8.0,
+  "text": "And if a skirt you love sits right on it, hemming it is one of the easiest alterations there is."
+ },
+ {
+  "id": "M11",
+  "point": "2",
+  "sent": [
+   37
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A woman walking or turning in a perfectly fitted midi skirt, looking delighted.",
+  "queries": [
+   "woman twirling midi skirt video",
+   "elegant midi skirt walking video"
+  ],
+  "need_s": 5.2,
+  "text": "Suddenly, the same skirt looks as if it was made for you."
+ },
+ {
+  "id": "D01",
+  "point": "3",
+  "sent": [
+   39
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A classic blazer and tailored trousers outfit on a woman (40s+), timeless; closet or street.",
+  "queries": [
+   "classic blazer tailored trousers outfit video",
+   "blazer and trousers outfit women over 40 video"
+  ],
+  "need_s": 5.9,
+  "text": "A good blazer or tailored trousers can stay with you for years."
+ },
+ {
+  "id": "D02",
+  "point": "3",
+  "sent": [
+   40
+  ],
+  "kind": "P",
+  "slot": "PANEL",
+  "brief": "A vintage fashion photo from the 1980s/90s: women in boxy suits (another decade).",
+  "queries": [
+   "1980s women power suit fashion photo",
+   "90s pleated trousers women vintage photo"
+  ],
+  "need_s": 10.1,
+  "text": "But some of the details that came with them belong to another decade."
+ },
+ {
+  "id": "D03",
+  "point": "3",
+  "sent": [
+   41
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Trousers with deep front pleats (double pleats), front view, on a woman.",
+  "queries": [
+   "pleated trousers women outfit video",
+   "double pleated pants women"
+  ],
+  "need_s": 10.4,
+  "text": "Deep front pleats add fullness just where most of us would rather have less."
+ },
+ {
+  "id": "D04",
+  "point": "3",
+  "sent": [
+   42
+  ],
+  "kind": "P",
+  "slot": "PANEL",
+  "brief": "Trousers with a turned-up cuff at the ankle (cuffed hem), on a woman.",
+  "queries": [
+   "cuffed trousers women",
+   "turn up hem trousers women"
+  ],
+  "need_s": 10.2,
+  "text": "A turned-up cuff puts a heavy line at the ankle and shortens the leg."
+ },
+ {
+  "id": "D05",
+  "point": "3",
+  "sent": [
+   43
+  ],
+  "kind": "P",
+  "slot": "PANEL",
+  "brief": "A jacket with big padded 1980s shoulders (vintage photo or outfit).",
+  "queries": [
+   "80s shoulder pads blazer women",
+   "big shoulder pads jacket 80s"
+  ],
+  "need_s": 10.8,
+  "text": "And big, padded shoulders give a jacket the outline of the year it was bought."
+ },
+ {
+  "id": "D06",
+  "point": "3",
+  "sent": [
+   44
+  ],
+  "kind": "V",
+  "slot": "SPLIT",
+  "brief": "An elegant woman in a modern, softly tailored blazer (natural shoulder), medium shot; calm.",
+  "queries": [
+   "natural shoulder blazer outfit video",
+   "relaxed blazer outfit women video"
+  ],
+  "need_s": 5.9,
+  "text": "Elegant women keep their classics and let the details move on."
+ },
+ {
+  "id": "D07",
+  "point": "3",
+  "sent": [
+   45
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "Flat-front straight trousers falling straight from the hip, walking (no pleats, no cuffs).",
+  "queries": [
+   "straight leg trousers outfit video",
+   "flat front trousers women video"
+  ],
+  "need_s": 5.6,
+  "text": "Look for trousers with a flat front that fall straight from the hip."
+ },
+ {
+  "id": "D08",
+  "point": "3",
+  "sent": [
+   46
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A woman putting on a blazer with natural, soft shoulders; close to the shoulders.",
+  "queries": [
+   "putting on blazer video",
+   "soft shoulder blazer women video"
+  ],
+  "need_s": 7.1,
+  "text": "And for jackets, a natural shoulder, or a light pad that simply follows your own."
+ },
+ {
+  "id": "D09",
+  "point": "3",
+  "sent": [
+   47
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A woman in her closet holding a blazer she owns, deciding to keep it.",
+  "queries": [
+   "woman closet blazer video",
+   "closet organization blazer video"
+  ],
+  "need_s": 4.2,
+  "text": "You may not even need to replace anything."
+ },
+ {
+  "id": "D10",
+  "point": "3",
+  "sent": [
+   48
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A tailor or seamstress altering trousers: unpicking a cuff, pinning a hem, at the sewing machine.",
+  "queries": [
+   "tailor altering trousers video",
+   "alterations tailor hem pants video"
+  ],
+  "need_s": 7.0,
+  "text": "A tailor can often take out a cuff and re-hem the leg, or remove a heavy pad."
+ },
+ {
+  "id": "D11",
+  "point": "3",
+  "sent": [
+   49,
+   50
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A woman confidently walking in a classic blazer that looks modern and fresh (today).",
+  "queries": [
+   "woman walking in blazer street video",
+   "chic blazer outfit walking video"
+  ],
+  "need_s": 5.6,
+  "text": "The piece you love stays. It simply looks like today."
+ },
+ {
+  "id": "R01",
+  "point": "4",
+  "sent": [
+   52
+  ],
+  "kind": "V",
+  "slot": "PAIR",
+  "brief": "A small-print silk scarf being tied or worn (scarf with a small print).",
+  "queries": [
+   "silk scarf tying video",
+   "small print silk scarf video"
+  ],
+  "need_s": 11.3,
+  "text": "Small prints can be lovely on a scarf, or a blouse peeking out from under a jacket."
+ },
+ {
+  "id": "R02",
+  "point": "4",
+  "sent": [
+   52
+  ],
+  "kind": "V",
+  "slot": "PAIR",
+  "brief": "A small-print blouse peeking out from under a jacket or blazer.",
+  "queries": [
+   "printed blouse under blazer outfit video",
+   "floral blouse blazer outfit video"
+  ],
+  "need_s": 11.3,
+  "text": "Small prints can be lovely on a scarf, or a blouse peeking out from under a jacket."
+ },
+ {
+  "id": "R03",
+  "point": "4",
+  "sent": [
+   53
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A whole dress or long tunic covered in a tiny, busy print (ditsy floral), worn by a woman.",
+  "queries": [
+   "ditsy floral dress outfit video",
+   "small floral print maxi dress video"
+  ],
+  "need_s": 7.3,
+  "text": "The trouble starts when a tiny, busy print covers a whole dress or a long tunic."
+ },
+ {
+  "id": "R04",
+  "point": "4",
+  "sent": [
+   54,
+   55
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A woman seen from a distance (across a room or street) in a small busy print dress: the print blurs into texture.",
+  "queries": [
+   "floral print dress walking distance video",
+   "printed dress street video"
+  ],
+  "need_s": 11.0,
+  "text": "From across a room, the pattern stops reading as a print and blurs into one busy texture. The outfit can look fussy, and a little dated."
+ },
+ {
+  "id": "R05",
+  "point": "4",
+  "sent": [
+   56
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A woman in a dress with a medium-scale print with space around each motif; fresh, modern.",
+  "queries": [
+   "large print dress outfit video",
+   "bold print midi dress video"
+  ],
+  "need_s": 6.6,
+  "text": "A print usually looks fresher when its size suits the size of the piece."
+ },
+ {
+  "id": "R06",
+  "point": "4",
+  "sent": [
+   57
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Medium-scale print dress (row panel 1).",
+  "queries": [
+   "medium print dress outfit video",
+   "polka dot midi dress video"
+  ],
+  "need_s": 13.6,
+  "text": "On a dress or a full skirt, try a medium-scale print with some space around each motif, or a simple stripe."
+ },
+ {
+  "id": "R07",
+  "point": "4",
+  "sent": [
+   57
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A full skirt with a medium-scale print (row panel 2).",
+  "queries": [
+   "printed full midi skirt outfit video",
+   "print skirt outfit video"
+  ],
+  "need_s": 13.6,
+  "text": "On a dress or a full skirt, try a medium-scale print with some space around each motif, or a simple stripe."
+ },
+ {
+  "id": "R08",
+  "point": "4",
+  "sent": [
+   57
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A simple striped dress or top (row panel 3).",
+  "queries": [
+   "striped dress outfit video",
+   "breton stripe outfit video"
+  ],
+  "need_s": 13.6,
+  "text": "On a dress or a full skirt, try a medium-scale print with some space around each motif, or a simple stripe."
+ },
+ {
+  "id": "R09",
+  "point": "4",
+  "sent": [
+   58
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A small piece with a tiny print: a silk scarf at the neck, a small printed blouse, a pocket square.",
+  "queries": [
+   "silk scarf neck outfit video",
+   "scarf styling video"
+  ],
+  "need_s": 4.5,
+  "text": "Keep the tiny prints for smaller pieces."
+ },
+ {
+  "id": "R10",
+  "point": "4",
+  "sent": [
+   59
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "Someone taking a phone photo of a woman from a few steps away (outfit photo on the street).",
+  "queries": [
+   "taking outfit photo of friend phone video",
+   "photographing woman street phone video"
+  ],
+  "need_s": 5.9,
+  "text": "To check, ask someone to take a photo of you from a few steps away."
+ },
+ {
+  "id": "R11",
+  "point": "4",
+  "sent": [
+   60,
+   61
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A woman in a clear, bold-but-elegant print that still reads from a distance, walking.",
+  "queries": [
+   "bold print dress elegant walking video",
+   "graphic print dress video"
+  ],
+  "need_s": 8.0,
+  "text": "If you can still see the pattern, it's working. If it melts into texture, go one size bigger."
+ },
+ {
+  "id": "K01",
+  "point": "5",
+  "sent": [
+   64
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "An elegant woman in black (a classic little black dress or black turtleneck), timeless, film-like; could be a classic film scene.",
+  "queries": [
+   "little black dress elegant video",
+   "audrey hepburn black dress video"
+  ],
+  "need_s": 6.5,
+  "text": "Black is one of the most elegant colours there is, and you don't have to give it up."
+ },
+ {
+  "id": "K02",
+  "point": "5",
+  "sent": [
+   65
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A mature woman in a black turtleneck or black top right up to the face, close-up, flat light (respectful).",
+  "queries": [
+   "older woman black turtleneck close up video",
+   "black turtleneck woman portrait video"
+  ],
+  "need_s": 8.3,
+  "text": "But right against the face, a flat, dark colour can dull the skin and deepen the shadows under the eyes."
+ },
+ {
+  "id": "K03",
+  "point": "5",
+  "sent": [
+   66
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "Close-up of a silver-haired woman in soft natural light; gentle, natural colouring.",
+  "queries": [
+   "silver hair woman close up natural light video",
+   "grey haired woman portrait video"
+  ],
+  "need_s": 5.5,
+  "text": "That shows more as our natural colouring softens with time."
+ },
+ {
+  "id": "K04",
+  "point": "5",
+  "sent": [
+   67
+  ],
+  "kind": "P",
+  "slot": "PANEL",
+  "brief": "A mature woman looking wonderful in black (dark hair, high contrast), panel 1.",
+  "queries": [
+   "older woman elegant black outfit",
+   "woman over 50 all black outfit"
+  ],
+  "need_s": 8.9,
+  "text": "Some women still look wonderful in it, so test it."
+ },
+ {
+  "id": "K05",
+  "point": "5",
+  "sent": [
+   67
+  ],
+  "kind": "P",
+  "slot": "PANEL",
+  "brief": "A different mature woman looking wonderful in black, panel 2.",
+  "queries": [
+   "silver hair black outfit woman",
+   "chic older woman black dress"
+  ],
+  "need_s": 8.9,
+  "text": "Some women still look wonderful in it, so test it."
+ },
+ {
+  "id": "K06",
+  "point": "5",
+  "sent": [
+   68
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A woman holding black fabric under her chin by a window (colour test).",
+  "queries": [
+   "color analysis draping video",
+   "seasonal color analysis drape test video"
+  ],
+  "need_s": 6.5,
+  "text": "Stand by a window in daylight and hold something black under your chin. Then try navy, charcoal and a soft ivory. Watch your skin, not the fabric."
+ },
+ {
+  "id": "K07",
+  "point": "5",
+  "sent": [
+   71
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A woman glowing in ivory or cream near her face, fresh and rested, daylight.",
+  "queries": [
+   "cream sweater woman glowing video",
+   "ivory knit woman natural light video"
+  ],
+  "need_s": 5.0,
+  "text": "The right shade makes you look brighter and more rested."
+ },
+ {
+  "id": "K08",
+  "point": "5",
+  "sent": [
+   72
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A woman who looks great in black, confident, walking.",
+  "queries": [
+   "all black outfit chic walking video",
+   "black outfit elegant woman video"
+  ],
+  "need_s": 3.8,
+  "text": "If black still wins, keep it."
+ },
+ {
+  "id": "K09",
+  "point": "5",
+  "sent": [
+   73
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Black trousers with an ivory/cream top at the neckline.",
+  "queries": [
+   "black trousers cream sweater outfit video",
+   "black pants ivory knit outfit video"
+  ],
+  "need_s": 13.0,
+  "text": "If not, move it away from your face: black trousers, skirt or coat, with a warmer colour at the neckline."
+ },
+ {
+  "id": "K10",
+  "point": "5",
+  "sent": [
+   73
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Black skirt with a cream or camel top.",
+  "queries": [
+   "black skirt cream top outfit video",
+   "black midi skirt beige sweater video"
+  ],
+  "need_s": 13.0,
+  "text": "If not, move it away from your face: black trousers, skirt or coat, with a warmer colour at the neckline."
+ },
+ {
+  "id": "K11",
+  "point": "5",
+  "sent": [
+   73
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Black coat with a warm-coloured scarf or collar at the neck (camel, cream).",
+  "queries": [
+   "black coat camel scarf outfit video",
+   "black coat cream scarf video"
+  ],
+  "need_s": 13.0,
+  "text": "If not, move it away from your face: black trousers, skirt or coat, with a warmer colour at the neckline."
+ },
+ {
+  "id": "K12",
+  "point": "5",
+  "sent": [
+   74
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "An ivory knit close to the face (close-up).",
+  "queries": [
+   "ivory knit sweater close up video",
+   "cream cable knit sweater video"
+  ],
+  "need_s": 10.4,
+  "text": "An ivory knit, a cream collar, or a silk scarf in a colour you love."
+ },
+ {
+  "id": "K13",
+  "point": "5",
+  "sent": [
+   74
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A cream collar (blouse collar) at the neckline, close-up.",
+  "queries": [
+   "cream collar blouse close up video",
+   "white collar under sweater video"
+  ],
+  "need_s": 10.4,
+  "text": "An ivory knit, a cream collar, or a silk scarf in a colour you love."
+ },
+ {
+  "id": "K14",
+  "point": "5",
+  "sent": [
+   74
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Tying a silk scarf at the neck (colourful but refined).",
+  "queries": [
+   "how to tie silk scarf neck video",
+   "silk scarf tie video"
+  ],
+  "need_s": 10.4,
+  "text": "An ivory knit, a cream collar, or a silk scarf in a colour you love."
+ },
+ {
+  "id": "K15",
+  "point": "5",
+  "sent": [
+   75,
+   76
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "Guide shot: a calm, elegant clip (woman with colour swatches or getting ready) to sit darkened under the guide call-out.",
+  "queries": [
+   "woman color swatches fabric video",
+   "elegant woman getting ready video"
+  ],
+  "need_s": 11.3,
+  "text": "And if you'd like to know exactly which colours flatter you most, our personal stylist guide is linked in the description. It's sent straight to your email."
+ },
+ {
+  "id": "L01",
+  "point": "6",
+  "sent": [
+   78
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "Close-up beauty shot of a mature woman's face, soft light (no heavy makeup).",
+  "queries": [
+   "mature woman natural makeup close up video",
+   "woman 50s skincare close up video"
+  ],
+  "need_s": 3.8,
+  "text": "This one is backed by research."
+ },
+ {
+  "id": "L02",
+  "point": "6",
+  "sent": [
+   79
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A mature woman looking at her face in a mirror, close, natural (calm, not sad).",
+  "queries": [
+   "older woman looking in mirror face video",
+   "woman 60 mirror makeup video"
+  ],
+  "need_s": 9.7,
+  "text": "Scientists who study faces have found that as we get older, our features slowly lose contrast with the skin around them."
+ },
+ {
+  "id": "L03",
+  "point": "6",
+  "sent": [
+   80
+  ],
+  "kind": "V",
+  "slot": "PAIR",
+  "brief": "Close-up of natural, uncoloured lips of a mature woman (before lip colour).",
+  "queries": [
+   "natural lips close up video",
+   "lips close up no makeup video"
+  ],
+  "need_s": 9.5,
+  "text": "Lips become a little less rosy, and brows a little lighter."
+ },
+ {
+  "id": "L04",
+  "point": "6",
+  "sent": [
+   80
+  ],
+  "kind": "V",
+  "slot": "PAIR",
+  "brief": "Extreme close-up of eyebrows (brushing brows).",
+  "queries": [
+   "eyebrows close up video",
+   "brushing eyebrows close up video"
+  ],
+  "need_s": 9.5,
+  "text": "Lips become a little less rosy, and brows a little lighter."
+ },
+ {
+  "id": "L05",
+  "point": "6",
+  "sent": [
+   81
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A mature woman applying lip colour and brow definition - the same face before and after (makeup reel).",
+  "queries": [
+   "makeup over 50 lipstick before after video",
+   "mature woman lipstick application video"
+  ],
+  "need_s": 9.2,
+  "text": "When the researchers made that contrast slightly stronger in photographs, the same faces were judged a little younger."
+ },
+ {
+  "id": "L06",
+  "point": "6",
+  "sent": [
+   82
+  ],
+  "kind": "P",
+  "slot": "PANEL",
+  "brief": "Portrait of a European woman (40s-60s), natural, elegant.",
+  "queries": [
+   "european woman portrait elegant 50s",
+   "french woman portrait natural"
+  ],
+  "need_s": 11.5,
+  "text": "And they saw the same pattern in women from Europe, Asia, Latin America and Africa."
+ },
+ {
+  "id": "L07",
+  "point": "6",
+  "sent": [
+   82
+  ],
+  "kind": "P",
+  "slot": "PANEL",
+  "brief": "Portrait of an East Asian woman (40s-60s), elegant.",
+  "queries": [
+   "asian woman portrait elegant 50s",
+   "korean woman portrait elegant mature"
+  ],
+  "need_s": 11.5,
+  "text": "And they saw the same pattern in women from Europe, Asia, Latin America and Africa."
+ },
+ {
+  "id": "L08",
+  "point": "6",
+  "sent": [
+   82
+  ],
+  "kind": "P",
+  "slot": "PANEL",
+  "brief": "Portrait of a Latin American woman (40s-60s), elegant.",
+  "queries": [
+   "latina woman portrait elegant",
+   "latin woman portrait mature elegant"
+  ],
+  "need_s": 11.5,
+  "text": "And they saw the same pattern in women from Europe, Asia, Latin America and Africa."
+ },
+ {
+  "id": "L09",
+  "point": "6",
+  "sent": [
+   82
+  ],
+  "kind": "P",
+  "slot": "PANEL",
+  "brief": "Portrait of an African woman (40s-60s), elegant.",
+  "queries": [
+   "african woman portrait elegant mature",
+   "black woman portrait elegant 50s"
+  ],
+  "need_s": 11.5,
+  "text": "And they saw the same pattern in women from Europe, Asia, Latin America and Africa."
+ },
+ {
+  "id": "L10",
+  "point": "6",
+  "sent": [
+   83,
+   84
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "Close-up: applying a soft lip colour (not dark, not dramatic).",
+  "queries": [
+   "applying lipstick close up video",
+   "soft pink lipstick application video"
+  ],
+  "need_s": 7.0,
+  "text": "So a touch of colour on your lips matters. It doesn't need to be dark or dramatic."
+ },
+ {
+  "id": "L11",
+  "point": "6",
+  "sent": [
+   85
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Rose lipstick on lips (swatch or application).",
+  "queries": [
+   "rose lipstick on lips video",
+   "dusty rose lipstick video"
+  ],
+  "need_s": 13.8,
+  "text": "Look for a shade one or two steps deeper than your natural lip, in a rose, a berry or a warm red that suits your skin."
+ },
+ {
+  "id": "L12",
+  "point": "6",
+  "sent": [
+   85
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Berry lipstick on lips.",
+  "queries": [
+   "berry lipstick on lips video",
+   "berry lip color video"
+  ],
+  "need_s": 13.8,
+  "text": "Look for a shade one or two steps deeper than your natural lip, in a rose, a berry or a warm red that suits your skin."
+ },
+ {
+  "id": "L13",
+  "point": "6",
+  "sent": [
+   85
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Warm red lipstick on lips.",
+  "queries": [
+   "red lipstick application video",
+   "warm red lipstick video"
+  ],
+  "need_s": 13.8,
+  "text": "Look for a shade one or two steps deeper than your natural lip, in a rose, a berry or a warm red that suits your skin."
+ },
+ {
+  "id": "L14",
+  "point": "6",
+  "sent": [
+   86
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "Applying a tinted lip balm, quick, everyday.",
+  "queries": [
+   "tinted lip balm application video",
+   "lip balm apply video"
+  ],
+  "need_s": 4.6,
+  "text": "On busy days, a tinted balm is enough."
+ },
+ {
+  "id": "L15",
+  "point": "6",
+  "sent": [
+   87,
+   88
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A very pale, concealer-like nude lip (lips almost disappear) - product swatch or application.",
+  "queries": [
+   "pale nude lipstick swatch video",
+   "very pale nude lip video"
+  ],
+  "need_s": 12.2,
+  "text": "The one thing to be careful with is a very pale nude that erases your lips altogether. It takes away exactly the contrast your face is starting to lose."
+ },
+ {
+  "id": "G01",
+  "point": "7",
+  "sent": [
+   91
+  ],
+  "kind": "P",
+  "slot": "PANEL",
+  "brief": "A woman (30s) in glasses, portrait.",
+  "queries": [
+   "woman wearing glasses portrait",
+   "chic woman glasses portrait"
+  ],
+  "need_s": 13.4,
+  "text": "When researchers added glasses to faces in photographs, it made very little difference to how old those faces looked."
+ },
+ {
+  "id": "G02",
+  "point": "7",
+  "sent": [
+   91
+  ],
+  "kind": "P",
+  "slot": "PANEL",
+  "brief": "A woman (50s) in glasses, portrait.",
+  "queries": [
+   "woman 50s glasses portrait",
+   "mature woman eyeglasses portrait"
+  ],
+  "need_s": 13.4,
+  "text": "When researchers added glasses to faces in photographs, it made very little difference to how old those faces looked."
+ },
+ {
+  "id": "G03",
+  "point": "7",
+  "sent": [
+   91
+  ],
+  "kind": "P",
+  "slot": "PANEL",
+  "brief": "A woman (60s-70s) in glasses, portrait.",
+  "queries": [
+   "older woman glasses portrait elegant",
+   "grey hair woman glasses"
+  ],
+  "need_s": 13.4,
+  "text": "When researchers added glasses to faces in photographs, it made very little difference to how old those faces looked."
+ },
+ {
+  "id": "G04",
+  "point": "7",
+  "sent": [
+   92,
+   93
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A woman trying on frames at an optician or in front of a mirror (glasses try-on).",
+  "queries": [
+   "glasses try on haul video",
+   "trying on eyeglasses video"
+  ],
+  "need_s": 6.7,
+  "text": "So the glasses themselves aren't the problem. Very often, it's the frame."
+ },
+ {
+  "id": "G05",
+  "point": "7",
+  "sent": [
+   94,
+   95
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "Close-up of eyebrows being brushed or framed; brows in focus.",
+  "queries": [
+   "eyebrow brush up close video",
+   "brow grooming close up video"
+  ],
+  "need_s": 6.9,
+  "text": "Remember the brows? They're one of the features that lose contrast with age."
+ },
+ {
+  "id": "G06",
+  "point": "7",
+  "sent": [
+   96
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A woman in glasses whose top line follows her brows (frames sit just under the brows), close-up.",
+  "queries": [
+   "glasses frames that suit your face video",
+   "eyeglasses face shape tips video"
+  ],
+  "need_s": 10.2,
+  "text": "Opticians often suggest that the top of the frame follows the line of your brows, without covering them or cutting across them."
+ },
+ {
+  "id": "G07",
+  "point": "7",
+  "sent": [
+   97
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "Heavy thick frames that sit across the middle of the brows (try-on comparison).",
+  "queries": [
+   "thick frame glasses try on video",
+   "oversized glasses try on video"
+  ],
+  "need_s": 8.2,
+  "text": "A heavy frame sitting across the middle of the brow hides the very feature that keeps your face defined."
+ },
+ {
+  "id": "G08",
+  "point": "7",
+  "sent": [
+   98
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A woman putting on flattering frames and smiling (try-on).",
+  "queries": [
+   "woman putting on glasses smiling video",
+   "new glasses try on video"
+  ],
+  "need_s": 7.2,
+  "text": "So choose a top line that follows your brows, in a colour that suits your hair and skin."
+ },
+ {
+  "id": "G09",
+  "point": "7",
+  "sent": [
+   99
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Tortoiseshell frames on a woman.",
+  "queries": [
+   "tortoiseshell glasses woman video",
+   "tortoise shell eyeglasses women"
+  ],
+  "need_s": 10.5,
+  "text": "Tortoiseshell adds warmth, while thin or clear frames let your brows show."
+ },
+ {
+  "id": "G10",
+  "point": "7",
+  "sent": [
+   99
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Thin metal frames on a woman.",
+  "queries": [
+   "thin metal frame glasses women video",
+   "wire frame glasses woman"
+  ],
+  "need_s": 10.5,
+  "text": "Tortoiseshell adds warmth, while thin or clear frames let your brows show."
+ },
+ {
+  "id": "G11",
+  "point": "7",
+  "sent": [
+   99
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "Clear (transparent) frames on a woman.",
+  "queries": [
+   "clear frame glasses women video",
+   "transparent glasses woman"
+  ],
+  "need_s": 10.5,
+  "text": "Tortoiseshell adds warmth, while thin or clear frames let your brows show."
+ },
+ {
+  "id": "G12",
+  "point": "7",
+  "sent": [
+   100
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "Brow pencil tutorial: short, light hair-like strokes (ideally a mature woman).",
+  "queries": [
+   "eyebrow pencil tutorial short strokes video",
+   "brow pencil hair strokes video"
+  ],
+  "need_s": 9.4,
+  "text": "And if your brows have faded, a pencil close to your hair colour, in short, light strokes, brings the definition back."
+ },
+ {
+  "id": "G13",
+  "point": "7",
+  "sent": [
+   101,
+   102
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A chic woman wearing glasses she loves, smiling, street or caf\u00e9.",
+  "queries": [
+   "chic woman glasses street style video",
+   "woman wearing glasses aesthetic video"
+  ],
+  "need_s": 7.6,
+  "text": "Your glasses are the accessory you wear every single day. Let them be a pair you love."
+ },
+ {
+  "id": "A01",
+  "point": "8",
+  "sent": [
+   104
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman over 50 in a knee-length or just-above-knee dress or skirt, confident.",
+  "queries": [
+   "woman over 50 knee length dress outfit video",
+   "over 60 skirt outfit video"
+  ],
+  "need_s": 7.6,
+  "text": "No knees after fifty."
+ },
+ {
+  "id": "A02",
+  "point": "8",
+  "sent": [
+   105
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman over 60 with long silver or grey hair, beautiful.",
+  "queries": [
+   "long grey hair woman over 60 video",
+   "long silver hair older woman video"
+  ],
+  "need_s": 7.8,
+  "text": "No long hair after sixty."
+ },
+ {
+  "id": "A03",
+  "point": "8",
+  "sent": [
+   106
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman over 50 in a bright colour (red, cobalt, fuchsia) looking great.",
+  "queries": [
+   "older woman bright color outfit video",
+   "over 60 colorful outfit video"
+  ],
+  "need_s": 9.1,
+  "text": "No bright colours, no sneakers, nothing fitted."
+ },
+ {
+  "id": "A04",
+  "point": "8",
+  "sent": [
+   106
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman over 60 in sneakers with a chic outfit.",
+  "queries": [
+   "over 60 sneakers outfit video",
+   "older woman white sneakers outfit video"
+  ],
+  "need_s": 9.1,
+  "text": "No bright colours, no sneakers, nothing fitted."
+ },
+ {
+  "id": "A05",
+  "point": "8",
+  "sent": [
+   106
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman over 50 in a fitted dress or fitted outfit.",
+  "queries": [
+   "woman over 50 fitted dress video",
+   "over 60 fitted outfit video"
+  ],
+  "need_s": 9.1,
+  "text": "No bright colours, no sneakers, nothing fitted."
+ },
+ {
+  "id": "A06",
+  "point": "8",
+  "sent": [
+   107
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A woman (60s) looking thoughtfully at herself in a mirror or at her clothes.",
+  "queries": [
+   "older woman looking at clothes in closet video",
+   "senior woman mirror outfit video"
+  ],
+  "need_s": 7.9,
+  "text": "You've probably heard rules like these, and following them can make a woman look older than she is."
+ },
+ {
+  "id": "A07",
+  "point": "8",
+  "sent": [
+   108
+  ],
+  "kind": "C",
+  "slot": "CUT",
+  "brief": "Product photo: a long, shapeless dark maxi skirt or dress (\"longer\").",
+  "queries": [
+   "long dark maxi skirt",
+   "long black shapeless dress"
+  ],
+  "need_s": 8.8,
+  "text": "One by one, they push you towards clothes that are longer, looser, darker and safer than you really are."
+ },
+ {
+  "id": "A08",
+  "point": "8",
+  "sent": [
+   108
+  ],
+  "kind": "C",
+  "slot": "CUT",
+  "brief": "Product photo: a loose, boxy tunic (\"looser\").",
+  "queries": [
+   "loose tunic top women",
+   "oversized tunic women"
+  ],
+  "need_s": 8.8,
+  "text": "One by one, they push you towards clothes that are longer, looser, darker and safer than you really are."
+ },
+ {
+  "id": "A09",
+  "point": "8",
+  "sent": [
+   108
+  ],
+  "kind": "C",
+  "slot": "CUT",
+  "brief": "Product photo: a dark plain cardigan or dark jumper (\"darker\").",
+  "queries": [
+   "dark long cardigan women",
+   "navy cardigan women"
+  ],
+  "need_s": 8.8,
+  "text": "One by one, they push you towards clothes that are longer, looser, darker and safer than you really are."
+ },
+ {
+  "id": "A10",
+  "point": "8",
+  "sent": [
+   108
+  ],
+  "kind": "C",
+  "slot": "CUT",
+  "brief": "Product photo: a beige elastic-waist trouser or plain safe piece (\"safer\").",
+  "queries": [
+   "elastic waist trousers women beige",
+   "pull on trousers women"
+  ],
+  "need_s": 8.8,
+  "text": "One by one, they push you towards clothes that are longer, looser, darker and safer than you really are."
+ },
+ {
+  "id": "A11",
+  "point": "8",
+  "sent": [
+   109
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "An elegant older woman (60s+), poised, thoughtful, chic outfit.",
+  "queries": [
+   "elegant older woman style video",
+   "chic woman over 60 video"
+  ],
+  "need_s": 4.5,
+  "text": "Elegant women ask a different question."
+ },
+ {
+  "id": "A12",
+  "point": "8",
+  "sent": [
+   111
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A full-length outfit on a woman over 50 (proportions).",
+  "queries": [
+   "full length outfit woman over 50 video",
+   "outfit of the day over 50 video"
+  ],
+  "need_s": 9.6,
+  "text": "Your proportions, your colouring and your life, as they are now."
+ },
+ {
+  "id": "A13",
+  "point": "8",
+  "sent": [
+   111
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A colour that suits her at the face (colouring), woman 50+.",
+  "queries": [
+   "woman over 50 color that suits her video",
+   "camel coat silver hair video"
+  ],
+  "need_s": 9.6,
+  "text": "Your proportions, your colouring and your life, as they are now."
+ },
+ {
+  "id": "A14",
+  "point": "8",
+  "sent": [
+   111
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman 50+ living her life (coffee with friends, walking, travel), happy.",
+  "queries": [
+   "older woman coffee city lifestyle video",
+   "woman over 60 lifestyle travel video"
+  ],
+  "need_s": 9.6,
+  "text": "Your proportions, your colouring and your life, as they are now."
+ },
+ {
+  "id": "A15",
+  "point": "8",
+  "sent": [
+   112
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A woman sorting her wardrobe: keeping some pieces, setting others aside.",
+  "queries": [
+   "closet declutter keep or toss video",
+   "wardrobe edit video"
+  ],
+  "need_s": 7.2,
+  "text": "Keep what flatters you, update what no longer does, and let the number take care of itself."
+ },
+ {
+  "id": "A16",
+  "point": "8",
+  "sent": [
+   113
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "An iconic elegant older woman (red carpet or street style), radiant.",
+  "queries": [
+   "helen mirren red carpet video",
+   "elegant older woman red carpet"
+  ],
+  "need_s": 3.8,
+  "text": "Elegance has no age limit."
+ },
+ {
+  "id": "A17",
+  "point": "8",
+  "sent": [
+   114
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "An older woman laughing or twirling in a dress she loves, joyful.",
+  "queries": [
+   "older woman twirling dress video",
+   "happy woman over 60 dancing dress video"
+  ],
+  "need_s": 5.1,
+  "text": "And neither does wearing what makes you feel like yourself."
+ },
+ {
+  "id": "Z01",
+  "point": "close",
+  "sent": [
+   115
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "A woman finishing getting dressed: final touch in the mirror (earring, collar).",
+  "queries": [
+   "getting ready final touches mirror video",
+   "woman putting on earrings mirror video"
+  ],
+  "need_s": 6.2,
+  "text": "So, the next time you get dressed, take one extra moment for the details."
+ },
+ {
+  "id": "Z02",
+  "point": "close",
+  "sent": [
+   117,
+   118
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "A closet of existing clothes; a woman choosing an outfit from what she owns.",
+  "queries": [
+   "capsule wardrobe closet video",
+   "woman picking outfit from wardrobe video"
+  ],
+  "need_s": 7.3,
+  "text": "And none of this needs a new wardrobe. Most of it starts with what you already own."
+ },
+ {
+  "id": "Z03",
+  "point": "close",
+  "sent": [
+   119,
+   120
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "Calm lifestyle clip: an elegant woman with coffee by a window or at a caf\u00e9.",
+  "queries": [
+   "woman coffee window aesthetic video",
+   "elegant woman cafe aesthetic video"
+  ],
+  "need_s": 7.3,
+  "text": "Thank you so much for watching. Let us know in the comments which one you'll try first."
+ },
+ {
+  "id": "Z04",
+  "point": "close",
+  "sent": [
+   122,
+   123
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "Calm, slow lifestyle clip to hold ~15 s under the thank-you and the guide call-out (reading by a window, walking in a garden).",
+  "queries": [
+   "woman reading by window aesthetic video",
+   "slow living woman garden video"
+  ],
+  "need_s": 17.2,
+  "text": "And if you found something valuable today, a simple like or comment would mean the world to us. Our personal stylist guide is in the description if you'd like to elevate your style even further. Until next time, bye everyone."
+ },
+ {
+  "id": "K16",
+  "point": "5",
+  "sent": [
+   69
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman in a navy top or knit at the neckline, close to medium shot.",
+  "queries": [],
+  "need_s": 6.0,
+  "text": "Then try navy, charcoal and a soft ivory."
+ },
+ {
+  "id": "K17",
+  "point": "5",
+  "sent": [
+   69
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman in a charcoal top or knit at the neckline, close to medium shot.",
+  "queries": [],
+  "need_s": 6.0,
+  "text": "Then try navy, charcoal and a soft ivory."
+ },
+ {
+  "id": "K18",
+  "point": "5",
+  "sent": [
+   69
+  ],
+  "kind": "V",
+  "slot": "PANEL",
+  "brief": "A woman in a soft ivory top or knit at the neckline, close to medium shot.",
+  "queries": [],
+  "need_s": 6.0,
+  "text": "Then try navy, charcoal and a soft ivory."
+ },
+ {
+  "id": "S13b",
+  "point": "1",
+  "sent": [
+   24
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "Second shot of S13 (same reel).",
+  "queries": [],
+  "need_s": 5.0,
+  "text": ""
+ },
+ {
+  "id": "Z04b",
+  "point": "close",
+  "sent": [
+   121
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "First shot of the closing hold: coffee at an open window.",
+  "queries": [],
+  "need_s": 6.5,
+  "text": ""
+ },
+ {
+  "id": "S13old",
+  "point": "1",
+  "sent": [
+   23
+  ],
+  "kind": "V",
+  "slot": "CENTRE",
+  "brief": "Wide trousers over loafers, standing (first shot of the balance line).",
+  "queries": [],
+  "need_s": 5.0,
+  "text": ""
+ },
+ {
+  "id": "M09b",
+  "point": "2",
+  "sent": [
+   35
+  ],
+  "kind": "V",
+  "slot": "FULL",
+  "brief": "The mid-calf line again (second shot of the side-on check).",
+  "queries": [],
+  "need_s": 3.5,
+  "text": ""
+ }
+]

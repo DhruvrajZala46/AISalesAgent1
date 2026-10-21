@@ -1,0 +1,2596 @@
+{
+ "fps": 30,
+ "size": [
+  1920,
+  1080
+ ],
+ "duration": 537.414,
+ "segments": [
+  {
+   "scene": 1,
+   "kind": "FULL",
+   "t0": 0.0,
+   "t1": 6.857,
+   "trans": "black",
+   "trans_dur": 1.0,
+   "shots": [
+    {
+     "file": "media/clips/H01.mp4",
+     "focus": [
+      0.42,
+      0.42
+     ],
+     "in": 0.0,
+     "speed": 0.85,
+     "asset": "H01",
+     "t0": 0.0,
+     "t1": 3.648623655913978
+    },
+    {
+     "file": "media/clips/H02.mp4",
+     "focus": [
+      0.645,
+      0.438
+     ],
+     "in": 0.0,
+     "speed": 0.64,
+     "asset": "H02",
+     "t0": 3.648623655913978,
+     "t1": 6.857
+    }
+   ]
+  },
+  {
+   "scene": 2,
+   "kind": "FULL",
+   "t0": 6.857,
+   "t1": 9.566,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/H03.mp4",
+     "focus": [
+      0.544,
+      0.372
+     ],
+     "in": 4.0,
+     "speed": 1.0,
+     "asset": "H03",
+     "t0": 6.857,
+     "t1": 9.566
+    }
+   ]
+  },
+  {
+   "scene": 3,
+   "kind": "FULL",
+   "t0": 9.566,
+   "t1": 12.841,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/H04.mp4",
+     "focus": [
+      0.45,
+      0.35
+     ],
+     "in": 0.0,
+     "speed": 0.78,
+     "asset": "H04",
+     "t0": 9.566,
+     "t1": 12.841
+    }
+   ]
+  },
+  {
+   "scene": 4,
+   "kind": "ROW",
+   "t0": 12.841,
+   "t1": 19.147,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/clips/H05.mp4",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "in": 0.5,
+     "speed": 1.0,
+     "asset": "H05",
+     "enter": 12.991
+    },
+    {
+     "file": "media/clips/H06.mp4",
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "in": 0.0,
+     "speed": 0.95,
+     "asset": "H06",
+     "enter": 14.27
+    },
+    {
+     "file": "media/clips/H07.mp4",
+     "focus": [
+      0.5,
+      0.32
+     ],
+     "in": 7.95,
+     "speed": 1.0,
+     "asset": "H07",
+     "enter": 16.841
+    }
+   ]
+  },
+  {
+   "scene": 5,
+   "kind": "FULL",
+   "t0": 19.147,
+   "t1": 23.566,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/H08.mp4",
+     "focus": [
+      0.45,
+      0.4
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "H08",
+     "t0": 19.147,
+     "t1": 23.566
+    }
+   ]
+  },
+  {
+   "scene": 6,
+   "kind": "WHITE",
+   "t0": 23.566,
+   "t1": 26.466,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "text": "in today's video...",
+   "size": 96
+  },
+  {
+   "scene": 6,
+   "kind": "FULL",
+   "t0": 26.466,
+   "t1": 31.374,
+   "trans": "fromwhite",
+   "trans_dur": 0.6,
+   "shots": [
+    {
+     "file": "media/clips/H09.mp4",
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "H09",
+     "t0": 26.465999999999998,
+     "t1": 31.374
+    }
+   ],
+   "texts": [
+    {
+     "style": "title",
+     "text": "8 Things that make you look older",
+     "t0": 26.766,
+     "t1": 31.424
+    }
+   ]
+  },
+  {
+   "scene": 7,
+   "kind": "FULL",
+   "t0": 31.374,
+   "t1": 34.275,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/A12_alt_jeanne.mp4",
+     "focus": [
+      0.5,
+      0.86
+     ],
+     "in": 20.5,
+     "speed": 1.0,
+     "pan": [
+      [
+       0.5,
+       0.86
+      ],
+      [
+       0.5,
+       0.22
+      ]
+     ],
+     "asset": "H10",
+     "t0": 31.374,
+     "t1": 34.275
+    }
+   ]
+  },
+  {
+   "scene": 8,
+   "kind": "CENTRE",
+   "t0": 34.275,
+   "t1": 36.055,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/H11.mp4",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 2.0,
+     "speed": 1.0,
+     "asset": "H11",
+     "t0": 34.275000000000006,
+     "t1": 36.055
+    }
+   ],
+   "grow": "dot"
+  },
+  {
+   "scene": 9,
+   "kind": "ROW",
+   "t0": 36.055,
+   "t1": 41.147,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/clips/H12.mp4",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "in": 13.6,
+     "speed": 1.0,
+     "asset": "H12",
+     "enter": 36.105
+    },
+    {
+     "file": "media/clips/H13.mp4",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "in": 22.45,
+     "speed": 0.98,
+     "asset": "H13",
+     "enter": 36.778
+    },
+    {
+     "file": "media/clips/H14.mp4",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 4.5,
+     "speed": 1.0,
+     "asset": "H14",
+     "enter": 39.761
+    }
+   ]
+  },
+  {
+   "scene": 10,
+   "kind": "CARD",
+   "t0": 41.147,
+   "t1": 46.307,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "text": "1. Shoes that look heavier than they need to"
+  },
+  {
+   "scene": 11,
+   "kind": "CENTRE",
+   "t0": 46.307,
+   "t1": 50.631,
+   "trans": "cut",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/S01.mp4",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0.0,
+     "speed": 0.75,
+     "asset": "S01",
+     "t0": 46.307,
+     "t1": 50.631
+    }
+   ]
+  },
+  {
+   "scene": 12,
+   "kind": "CENTRE",
+   "t0": 50.631,
+   "t1": 55.133,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/S02.mp4",
+     "focus": [
+      0.5,
+      0.7
+     ],
+     "in": 3.5,
+     "speed": 1.0,
+     "asset": "S02",
+     "t0": 50.631,
+     "t1": 55.133
+    }
+   ]
+  },
+  {
+   "scene": 13,
+   "kind": "COLLAGE",
+   "t0": 55.133,
+   "t1": 60.615,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/cut/S03.png",
+     "focus": [
+      0.5,
+      0.55
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "S03",
+     "enter": 55.279
+    },
+    {
+     "file": "media/cut/S04.png",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "S04",
+     "enter": 57.146
+    },
+    {
+     "file": "media/cut/S05.png",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "S05",
+     "enter": 59.037
+    }
+   ],
+   "bg": "cream"
+  },
+  {
+   "scene": 14,
+   "kind": "FULL",
+   "t0": 60.615,
+   "t1": 67.103,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/S06.mp4",
+     "focus": [
+      0.5,
+      0.68
+     ],
+     "in": 0.0,
+     "speed": 0.91,
+     "asset": "S06",
+     "t0": 60.615,
+     "t1": 67.103
+    }
+   ]
+  },
+  {
+   "scene": 15,
+   "kind": "QUOTE",
+   "t0": 67.103,
+   "t1": 70.503,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "text": "Comfort can look <i>light</i>"
+  },
+  {
+   "scene": 16,
+   "kind": "COLLAGE",
+   "t0": 70.503,
+   "t1": 77.429,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/cut/S07.png",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "S07",
+     "enter": 70.553
+    },
+    {
+     "file": "media/cut/S08.png",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "S08",
+     "enter": 71.627
+    },
+    {
+     "file": "media/cut/S09.png",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "S09",
+     "enter": 76.698
+    }
+   ],
+   "bg": "caramel"
+  },
+  {
+   "scene": 17,
+   "kind": "ROW",
+   "t0": 77.429,
+   "t1": 84.983,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/clips/S10.mp4",
+     "focus": [
+      0.5,
+      0.55
+     ],
+     "in": 0.0,
+     "speed": 0.88,
+     "asset": "S10",
+     "enter": 77.815
+    },
+    {
+     "file": "media/clips/S11.mp4",
+     "focus": [
+      0.5,
+      0.7
+     ],
+     "in": 0.0,
+     "speed": 0.76,
+     "asset": "S11",
+     "enter": 79.039
+    },
+    {
+     "file": "media/clips/S12.mp4",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "in": 2.9,
+     "speed": 0.55,
+     "asset": "S12",
+     "enter": 80.713
+    }
+   ]
+  },
+  {
+   "scene": 18,
+   "kind": "CENTRE",
+   "t0": 84.983,
+   "t1": 93.284,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/S13_old.mp4",
+     "focus": [
+      0.5,
+      0.55
+     ],
+     "in": 3.0,
+     "speed": 0.96,
+     "asset": "S13old",
+     "t0": 84.98299999999999,
+     "t1": 89.45276923076922
+    },
+    {
+     "file": "media/clips/S13.mp4",
+     "focus": [
+      0.5,
+      0.65
+     ],
+     "in": 3.17,
+     "speed": 0.6,
+     "asset": "S13b",
+     "t0": 89.45276923076922,
+     "t1": 93.28399999999999
+    }
+   ]
+  },
+  {
+   "scene": 19,
+   "kind": "CARD",
+   "t0": 93.284,
+   "t1": 99.217,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "text": "2. A hem at the fullest part of your calf"
+  },
+  {
+   "scene": 20,
+   "kind": "ROW",
+   "t0": 99.217,
+   "t1": 103.195,
+   "trans": "cut",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/clips/M01.mp4",
+     "focus": [
+      0.5,
+      0.55
+     ],
+     "in": 1.0,
+     "speed": 0.9,
+     "asset": "M01",
+     "enter": 99.267
+    },
+    {
+     "file": "media/clips/M02.mp4",
+     "focus": [
+      0.5,
+      0.6
+     ],
+     "in": 0.3,
+     "speed": 1.0,
+     "asset": "M02",
+     "enter": 99.267
+    },
+    {
+     "file": "media/clips/M03.mp4",
+     "focus": [
+      0.5,
+      0.62
+     ],
+     "in": 0.0,
+     "speed": 0.81,
+     "asset": "M03",
+     "enter": 99.753
+    }
+   ]
+  },
+  {
+   "scene": 21,
+   "kind": "FULL",
+   "t0": 103.195,
+   "t1": 105.542,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/M04.mp4",
+     "focus": [
+      0.5,
+      0.62
+     ],
+     "in": 7.4,
+     "speed": 1.0,
+     "asset": "M04",
+     "t0": 103.195,
+     "t1": 105.542
+    }
+   ]
+  },
+  {
+   "scene": 22,
+   "kind": "CENTRE",
+   "t0": 105.542,
+   "t1": 115.358,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/M05.mp4",
+     "focus": [
+      0.5,
+      0.62
+     ],
+     "in": 6.2,
+     "speed": 1.0,
+     "asset": "M05",
+     "t0": 105.542,
+     "t1": 115.35799999999999
+    }
+   ]
+  },
+  {
+   "scene": 23,
+   "kind": "CENTRE",
+   "t0": 115.358,
+   "t1": 122.099,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/M06.mp4",
+     "focus": [
+      0.5,
+      0.55
+     ],
+     "in": 4.4,
+     "speed": 1.0,
+     "asset": "M06",
+     "t0": 115.35799999999999,
+     "t1": 122.09899999999999
+    }
+   ]
+  },
+  {
+   "scene": 24,
+   "kind": "CENTRE",
+   "t0": 122.099,
+   "t1": 126.665,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/M07.mp4",
+     "focus": [
+      0.5,
+      0.6
+     ],
+     "in": 2.0,
+     "speed": 1.0,
+     "asset": "M07",
+     "t0": 122.09899999999999,
+     "t1": 126.66499999999999
+    }
+   ]
+  },
+  {
+   "scene": 25,
+   "kind": "CENTRE",
+   "t0": 126.665,
+   "t1": 131.766,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/M08.mp4",
+     "focus": [
+      0.5,
+      0.72
+     ],
+     "in": 21.3,
+     "speed": 1.0,
+     "asset": "M08",
+     "t0": 126.66499999999999,
+     "t1": 131.766
+    }
+   ]
+  },
+  {
+   "scene": 26,
+   "kind": "CUE",
+   "t0": 131.766,
+   "t1": 134.566,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "text": "a simple test..."
+  },
+  {
+   "scene": 27,
+   "kind": "FULL",
+   "t0": 134.566,
+   "t1": 140.385,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/M09_a2.mp4",
+     "focus": [
+      0.5,
+      0.66
+     ],
+     "in": 0.0,
+     "speed": 0.85,
+     "asset": "M09",
+     "t0": 134.566,
+     "t1": 137.803
+    },
+    {
+     "file": "media/clips/M05.mp4",
+     "focus": [
+      0.5,
+      0.8
+     ],
+     "in": 12.0,
+     "speed": 1.0,
+     "asset": "M09b",
+     "t0": 137.803,
+     "t1": 140.385
+    }
+   ]
+  },
+  {
+   "scene": 28,
+   "kind": "CENTRE",
+   "t0": 140.385,
+   "t1": 146.806,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/M10.mp4",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 2.5,
+     "speed": 1.0,
+     "asset": "M10",
+     "t0": 140.385,
+     "t1": 146.80599999999998
+    }
+   ]
+  },
+  {
+   "scene": 29,
+   "kind": "FULL",
+   "t0": 146.806,
+   "t1": 150.883,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/M11.mp4",
+     "focus": [
+      0.5,
+      0.55
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "M11",
+     "t0": 146.80599999999998,
+     "t1": 150.883
+    }
+   ]
+  },
+  {
+   "scene": 30,
+   "kind": "CARD",
+   "t0": 150.883,
+   "t1": 156.005,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "text": "3. Details your classics have outgrown"
+  },
+  {
+   "scene": 31,
+   "kind": "CENTRE",
+   "t0": 156.005,
+   "t1": 159.237,
+   "trans": "cut",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/D01.mp4",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "in": 2.3,
+     "speed": 1.0,
+     "asset": "D01",
+     "t0": 156.005,
+     "t1": 159.237
+    }
+   ]
+  },
+  {
+   "scene": 32,
+   "kind": "CENTRE",
+   "t0": 159.237,
+   "t1": 163.717,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "raw/D02.jpg",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "D02",
+     "t0": 159.237,
+     "t1": 163.71699999999998
+    }
+   ]
+  },
+  {
+   "scene": 33,
+   "kind": "CENTRE",
+   "t0": 163.717,
+   "t1": 168.517,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/D03.mp4",
+     "focus": [
+      0.5,
+      0.55
+     ],
+     "in": 1.8,
+     "speed": 1.0,
+     "asset": "D03",
+     "t0": 163.71699999999998,
+     "t1": 168.517
+    }
+   ]
+  },
+  {
+   "scene": 34,
+   "kind": "CENTRE",
+   "t0": 168.517,
+   "t1": 173.146,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "raw/D04.jpg",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "D04",
+     "t0": 168.517,
+     "t1": 173.146
+    }
+   ]
+  },
+  {
+   "scene": 35,
+   "kind": "CENTRE",
+   "t0": 173.146,
+   "t1": 178.61,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "raw/D05.jpg",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "D05",
+     "t0": 173.146,
+     "t1": 178.60999999999999
+    }
+   ]
+  },
+  {
+   "scene": 36,
+   "kind": "SPLIT",
+   "t0": 178.61,
+   "t1": 182.962,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/D06.mp4",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "D06",
+     "t0": 178.60999999999999,
+     "t1": 182.962
+    }
+   ],
+   "text": "Elegant women keep their classics and let the <i>details move on</i>"
+  },
+  {
+   "scene": 37,
+   "kind": "CENTRE",
+   "t0": 182.962,
+   "t1": 186.994,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/D07.mp4",
+     "focus": [
+      0.5,
+      0.62
+     ],
+     "in": 4.0,
+     "speed": 0.94,
+     "asset": "D07",
+     "t0": 182.962,
+     "t1": 186.994
+    }
+   ]
+  },
+  {
+   "scene": 38,
+   "kind": "CENTRE",
+   "t0": 186.994,
+   "t1": 192.757,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/D08.mp4",
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "in": 1.5,
+     "speed": 1.0,
+     "asset": "D08",
+     "t0": 186.994,
+     "t1": 192.757
+    }
+   ]
+  },
+  {
+   "scene": 39,
+   "kind": "FULL",
+   "t0": 192.757,
+   "t1": 195.359,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/D08.mp4",
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "in": 17.0,
+     "speed": 1.0,
+     "asset": "D09",
+     "t0": 192.757,
+     "t1": 195.359
+    }
+   ]
+  },
+  {
+   "scene": 40,
+   "kind": "CENTRE",
+   "t0": 195.359,
+   "t1": 200.757,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/D10.mp4",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 10.0,
+     "speed": 1.0,
+     "asset": "D10",
+     "t0": 195.359,
+     "t1": 200.757
+    }
+   ]
+  },
+  {
+   "scene": 41,
+   "kind": "FULL",
+   "t0": 200.757,
+   "t1": 205.132,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/D11.mp4",
+     "focus": [
+      0.5,
+      0.42
+     ],
+     "in": 0.3,
+     "speed": 1.0,
+     "asset": "D11",
+     "t0": 200.757,
+     "t1": 205.132
+    }
+   ]
+  },
+  {
+   "scene": 42,
+   "kind": "CARD",
+   "t0": 205.132,
+   "t1": 210.126,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "text": "4. A tiny print over a big piece"
+  },
+  {
+   "scene": 43,
+   "kind": "PAIR",
+   "t0": 210.126,
+   "t1": 214.702,
+   "trans": "cut",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/clips/R01.mp4",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "in": 5.0,
+     "speed": 1.0,
+     "asset": "R01",
+     "enter": 210.176
+    },
+    {
+     "file": "media/clips/R02_a1.mp4",
+     "focus": [
+      0.5,
+      0.42
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "R02",
+     "enter": 211.856
+    }
+   ]
+  },
+  {
+   "scene": 44,
+   "kind": "CENTRE",
+   "t0": 214.702,
+   "t1": 220.441,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/R03.mp4",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 4.0,
+     "speed": 1.0,
+     "asset": "R03",
+     "t0": 214.702,
+     "t1": 220.441
+    }
+   ]
+  },
+  {
+   "scene": 45,
+   "kind": "FULL",
+   "t0": 220.441,
+   "t1": 230.043,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/R04.mp4",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0.0,
+     "speed": 0.66,
+     "asset": "R04",
+     "t0": 220.441,
+     "t1": 230.043
+    }
+   ]
+  },
+  {
+   "scene": 46,
+   "kind": "FULL",
+   "t0": 230.043,
+   "t1": 235.246,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/R05.mp4",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "in": 6.5,
+     "speed": 1.0,
+     "asset": "R05",
+     "t0": 230.043,
+     "t1": 235.24588785046728
+    }
+   ]
+  },
+  {
+   "scene": 47,
+   "kind": "ROW",
+   "t0": 235.246,
+   "t1": 243.078,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/clips/R06.mp4",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0.5,
+     "speed": 1.0,
+     "asset": "R06",
+     "enter": 235.396
+    },
+    {
+     "file": "media/clips/R07.mp4",
+     "focus": [
+      0.5,
+      0.6
+     ],
+     "in": 0.0,
+     "speed": 0.715,
+     "asset": "R07",
+     "enter": 236.19
+    },
+    {
+     "file": "media/clips/R08.mp4",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "R08",
+     "enter": 242.253
+    }
+   ]
+  },
+  {
+   "scene": 48,
+   "kind": "CENTRE",
+   "t0": 243.078,
+   "t1": 246.302,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/R09.mp4",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 9.0,
+     "speed": 1.0,
+     "asset": "R09",
+     "t0": 243.078,
+     "t1": 246.302
+    }
+   ]
+  },
+  {
+   "scene": 49,
+   "kind": "CENTRE",
+   "t0": 246.302,
+   "t1": 250.611,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/R10_c1.mp4",
+     "focus": [
+      0.5,
+      0.42
+     ],
+     "in": 6.5,
+     "speed": 0.75,
+     "asset": "R10",
+     "t0": 246.302,
+     "t1": 250.611
+    }
+   ]
+  },
+  {
+   "scene": 50,
+   "kind": "CENTRE",
+   "t0": 250.611,
+   "t1": 256.969,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/R11.mp4",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0.5,
+     "speed": 1.0,
+     "asset": "R11",
+     "t0": 250.611,
+     "t1": 256.969
+    }
+   ]
+  },
+  {
+   "scene": 51,
+   "kind": "QUOTE",
+   "t0": 256.969,
+   "t1": 261.088,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "text": "At the right scale, a print lets people <i>see you first</i>"
+  },
+  {
+   "scene": 52,
+   "kind": "CARD",
+   "t0": 261.088,
+   "t1": 265.655,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "text": "5. Black right under your face"
+  },
+  {
+   "scene": 53,
+   "kind": "FULL",
+   "t0": 265.655,
+   "t1": 269.442,
+   "trans": "cut",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/K01.mp4",
+     "focus": [
+      0.3,
+      0.45
+     ],
+     "in": 54.1,
+     "speed": 1.0,
+     "asset": "K01",
+     "t0": 265.655,
+     "t1": 269.442
+    }
+   ]
+  },
+  {
+   "scene": 54,
+   "kind": "CENTRE",
+   "t0": 269.442,
+   "t1": 276.205,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/K02.mp4",
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "in": 9.0,
+     "speed": 1.0,
+     "asset": "K02",
+     "t0": 269.442,
+     "t1": 276.205
+    }
+   ]
+  },
+  {
+   "scene": 55,
+   "kind": "FULL",
+   "t0": 276.205,
+   "t1": 280.453,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/K03.mp4",
+     "focus": [
+      0.414,
+      0.465
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "K03",
+     "t0": 276.205,
+     "t1": 280.453
+    }
+   ]
+  },
+  {
+   "scene": 56,
+   "kind": "PAIR",
+   "t0": 280.453,
+   "t1": 283.802,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "raw/K04.jpg",
+     "focus": [
+      0.45,
+      0.3
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "K04",
+     "enter": 280.503
+    },
+    {
+     "file": "raw/K05.jpg",
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "K05",
+     "enter": 281.786
+    }
+   ]
+  },
+  {
+   "scene": 57,
+   "kind": "CENTRE",
+   "t0": 283.802,
+   "t1": 288.977,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/K06.mp4",
+     "focus": [
+      0.5,
+      0.55
+     ],
+     "in": 8.5,
+     "speed": 1.0,
+     "asset": "K06",
+     "t0": 283.802,
+     "t1": 288.977
+    }
+   ]
+  },
+  {
+   "scene": 58,
+   "kind": "ROW",
+   "t0": 288.977,
+   "t1": 291.845,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/clips/K16.mp4",
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "K16",
+     "enter": 289.127
+    },
+    {
+     "file": "media/clips/K17.mp4",
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "in": 10.6,
+     "speed": 0.8,
+     "asset": "K17",
+     "enter": 289.577
+    },
+    {
+     "file": "media/clips/K18.mp4",
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "in": 3.92,
+     "speed": 0.6,
+     "asset": "K18",
+     "enter": 291.075
+    }
+   ]
+  },
+  {
+   "scene": 59,
+   "kind": "QUOTE",
+   "t0": 291.845,
+   "t1": 295.245,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "text": "Watch your <i>skin</i>, not the fabric"
+  },
+  {
+   "scene": 60,
+   "kind": "FULL",
+   "t0": 295.245,
+   "t1": 297.949,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/K07.mp4",
+     "focus": [
+      0.5,
+      0.16
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "K07",
+     "t0": 295.24499999999995,
+     "t1": 297.949
+    }
+   ]
+  },
+  {
+   "scene": 61,
+   "kind": "FULL",
+   "t0": 297.949,
+   "t1": 300.603,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/K08.mp4",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 8.3,
+     "speed": 0.75,
+     "asset": "K08",
+     "t0": 297.949,
+     "t1": 300.60285714285715
+    }
+   ]
+  },
+  {
+   "scene": 62,
+   "kind": "ROW",
+   "t0": 300.603,
+   "t1": 307.655,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/clips/K09.mp4",
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "in": 6.9,
+     "speed": 0.95,
+     "asset": "K09",
+     "enter": 300.753
+    },
+    {
+     "file": "media/clips/K10.mp4",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "in": 5.0,
+     "speed": 1.0,
+     "asset": "K10",
+     "enter": 303.806
+    },
+    {
+     "file": "media/clips/K11.mp4",
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "in": 8.0,
+     "speed": 1.0,
+     "asset": "K11",
+     "enter": 304.417
+    }
+   ]
+  },
+  {
+   "scene": 63,
+   "kind": "ROW",
+   "t0": 307.655,
+   "t1": 312.735,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/clips/K12.mp4",
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "in": 0.9,
+     "speed": 1.0,
+     "asset": "K12",
+     "enter": 307.853
+    },
+    {
+     "file": "media/clips/K13.mp4",
+     "focus": [
+      0.5,
+      0.25
+     ],
+     "in": 0.5,
+     "speed": 1.0,
+     "asset": "K13",
+     "enter": 308.775
+    },
+    {
+     "file": "media/clips/K14.mp4",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 3.7,
+     "speed": 1.0,
+     "asset": "K14",
+     "enter": 310.027
+    }
+   ]
+  },
+  {
+   "scene": 64,
+   "kind": "FULL",
+   "t0": 312.735,
+   "t1": 322.849,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/K15.mp4",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "K15",
+     "t0": 312.735,
+     "t1": 322.849
+    }
+   ],
+   "texts": [
+    {
+     "style": "guide",
+     "line1": "Check the description for",
+     "text": "Personal Stylist Guide",
+     "line3": "",
+     "t0": 316.59065573770494,
+     "t1": 322.849
+    }
+   ]
+  },
+  {
+   "scene": 65,
+   "kind": "CARD",
+   "t0": 322.849,
+   "t1": 327.694,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "text": "6. Lips that have lost their colour"
+  },
+  {
+   "scene": 66,
+   "kind": "FULL",
+   "t0": 327.694,
+   "t1": 328.835,
+   "trans": "cut",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/L01.mp4",
+     "focus": [
+      0.49,
+      0.48
+     ],
+     "in": 26.17,
+     "speed": 0.97,
+     "asset": "L01",
+     "t0": 327.694,
+     "t1": 328.835
+    }
+   ]
+  },
+  {
+   "scene": 67,
+   "kind": "CENTRE",
+   "t0": 328.835,
+   "t1": 336.942,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/L02.mp4",
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "in": 5.25,
+     "speed": 1.0,
+     "asset": "L02",
+     "t0": 328.835,
+     "t1": 336.942
+    }
+   ]
+  },
+  {
+   "scene": 68,
+   "kind": "PAIR",
+   "t0": 336.942,
+   "t1": 340.867,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/clips/L11.mp4",
+     "focus": [
+      0.5,
+      0.66
+     ],
+     "in": 1.2,
+     "speed": 0.5,
+     "zoom": 2.1,
+     "asset": "L03",
+     "enter": 336.992
+    },
+    {
+     "file": "media/clips/L04.mp4",
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "in": 0.0,
+     "speed": 0.7,
+     "asset": "L04",
+     "enter": 339.142
+    }
+   ]
+  },
+  {
+   "scene": 69,
+   "kind": "CENTRE",
+   "t0": 340.867,
+   "t1": 351.296,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/L05.mp4",
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "in": 16.0,
+     "speed": 1.0,
+     "asset": "L05",
+     "t0": 340.867,
+     "t1": 351.296
+    }
+   ]
+  },
+  {
+   "scene": 70,
+   "kind": "ROW",
+   "t0": 351.296,
+   "t1": 354.673,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "raw/L06.jpg",
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "L06",
+     "enter": 351.446
+    },
+    {
+     "file": "raw/L07.jpg",
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "L07",
+     "enter": 351.985
+    },
+    {
+     "file": "raw/L08.jpg",
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "L08",
+     "enter": 352.389
+    },
+    {
+     "file": "raw/L09.jpg",
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "L09",
+     "enter": 353.602
+    }
+   ]
+  },
+  {
+   "scene": 71,
+   "kind": "FULL",
+   "t0": 354.673,
+   "t1": 364.447,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/L10.mp4",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "in": 6.2,
+     "speed": 1.0,
+     "asset": "L10",
+     "t0": 354.673,
+     "t1": 364.44683898305084
+    }
+   ]
+  },
+  {
+   "scene": 72,
+   "kind": "ROW",
+   "t0": 364.447,
+   "t1": 368.177,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/clips/L11.mp4",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 8.0,
+     "speed": 1.0,
+     "asset": "L11",
+     "enter": 364.597
+    },
+    {
+     "file": "media/clips/L12.mp4",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0.0,
+     "speed": 0.99,
+     "asset": "L12",
+     "enter": 365.129
+    },
+    {
+     "file": "media/clips/L13.mp4",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "in": 6.5,
+     "speed": 0.8,
+     "asset": "L13",
+     "enter": 365.861
+    }
+   ]
+  },
+  {
+   "scene": 73,
+   "kind": "CENTRE",
+   "t0": 368.177,
+   "t1": 371.465,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/L14.mp4",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 18.6,
+     "speed": 1.0,
+     "asset": "L14",
+     "t0": 368.177,
+     "t1": 371.465
+    }
+   ]
+  },
+  {
+   "scene": 74,
+   "kind": "CENTRE",
+   "t0": 371.465,
+   "t1": 382.475,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/L15.mp4",
+     "focus": [
+      0.5,
+      0.6
+     ],
+     "in": 0.0,
+     "speed": 0.9,
+     "asset": "L15",
+     "t0": 371.465,
+     "t1": 382.475
+    }
+   ]
+  },
+  {
+   "scene": 75,
+   "kind": "CARD",
+   "t0": 382.475,
+   "t1": 387.213,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "text": "7. Frames that hide your brows"
+  },
+  {
+   "scene": 76,
+   "kind": "CUE",
+   "t0": 387.213,
+   "t1": 390.013,
+   "trans": "cut",
+   "trans_dur": 0.5,
+   "text": "something surprising..."
+  },
+  {
+   "scene": 77,
+   "kind": "ROW",
+   "t0": 390.013,
+   "t1": 395.927,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "raw/G01.jpg",
+     "focus": [
+      0.45,
+      0.35
+     ],
+     "in": 0,
+     "speed": 1.0,
+     "asset": "G01",
+     "enter": 390.063
+    },
+    {
+     "file": "raw/G02.jpg",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 0,
+     "speed": 1.0,
+     "asset": "G02",
+     "enter": 390.871
+    },
+    {
+     "file": "raw/G03.jpg",
+     "focus": [
+      0.55,
+      0.25
+     ],
+     "in": 0,
+     "speed": 1.0,
+     "asset": "G03",
+     "enter": 392.215
+    }
+   ]
+  },
+  {
+   "scene": 78,
+   "kind": "FULL",
+   "t0": 395.927,
+   "t1": 401.263,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/G04.mp4",
+     "focus": [
+      0.55,
+      0.35
+     ],
+     "in": 0.0,
+     "speed": 0.85,
+     "asset": "G04",
+     "t0": 395.927,
+     "t1": 401.263
+    }
+   ]
+  },
+  {
+   "scene": 79,
+   "kind": "CENTRE",
+   "t0": 401.263,
+   "t1": 406.533,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/G05.mp4",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "G05",
+     "t0": 401.263,
+     "t1": 406.533
+    }
+   ]
+  },
+  {
+   "scene": 80,
+   "kind": "CENTRE",
+   "t0": 406.533,
+   "t1": 415.13,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/G06.mp4",
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "in": 2.3,
+     "speed": 1.0,
+     "asset": "G06",
+     "t0": 406.533,
+     "t1": 415.13
+    }
+   ]
+  },
+  {
+   "scene": 81,
+   "kind": "CENTRE",
+   "t0": 415.13,
+   "t1": 422.023,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/G07.mp4",
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "G07",
+     "t0": 415.13,
+     "t1": 422.02299999999997
+    }
+   ]
+  },
+  {
+   "scene": 82,
+   "kind": "FULL",
+   "t0": 422.023,
+   "t1": 427.591,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/G08.mp4",
+     "focus": [
+      0.5,
+      0.48
+     ],
+     "in": 3.7,
+     "speed": 1.0,
+     "asset": "G08",
+     "t0": 422.02299999999997,
+     "t1": 427.591
+    }
+   ]
+  },
+  {
+   "scene": 83,
+   "kind": "ROW",
+   "t0": 427.591,
+   "t1": 432.519,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/clips/G09.mp4",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 0.0,
+     "speed": 0.7,
+     "asset": "G09",
+     "enter": 427.641
+    },
+    {
+     "file": "media/clips/G10.mp4",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 2.0,
+     "speed": 1.0,
+     "asset": "G10",
+     "enter": 429.646
+    },
+    {
+     "file": "media/clips/G11.mp4",
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "in": 2.4,
+     "speed": 1.0,
+     "asset": "G11",
+     "enter": 430.144
+    }
+   ]
+  },
+  {
+   "scene": 84,
+   "kind": "CENTRE",
+   "t0": 432.519,
+   "t1": 440.586,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/G12.mp4",
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "in": 9.4,
+     "speed": 1.0,
+     "asset": "G12",
+     "t0": 432.519,
+     "t1": 440.586
+    }
+   ]
+  },
+  {
+   "scene": 85,
+   "kind": "CENTRE",
+   "t0": 440.586,
+   "t1": 447.031,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/G13.mp4",
+     "focus": [
+      0.498,
+      0.441
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "G13",
+     "t0": 440.586,
+     "t1": 447.031
+    }
+   ]
+  },
+  {
+   "scene": 86,
+   "kind": "CARD",
+   "t0": 447.031,
+   "t1": 451.513,
+   "trans": "white",
+   "trans_dur": 0.5,
+   "text": "8. Dressing by an age rule"
+  },
+  {
+   "scene": 87,
+   "kind": "ROW",
+   "t0": 451.513,
+   "t1": 458.094,
+   "trans": "cut",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/clips/A01.mp4",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 1.5,
+     "speed": 0.78,
+     "asset": "A01",
+     "enter": 451.563
+    },
+    {
+     "file": "media/clips/A02.mp4",
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "A02",
+     "enter": 452.605
+    },
+    {
+     "file": "media/clips/A03.mp4",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 10.65,
+     "speed": 1.0,
+     "asset": "A03",
+     "enter": 454.798
+    },
+    {
+     "file": "media/clips/A04.mp4",
+     "focus": [
+      0.5,
+      0.55
+     ],
+     "in": 19.6,
+     "speed": 1.0,
+     "asset": "A04",
+     "enter": 456.083
+    },
+    {
+     "file": "media/clips/A05.mp4",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "A05",
+     "enter": 457.301
+    }
+   ]
+  },
+  {
+   "scene": 88,
+   "kind": "CENTRE",
+   "t0": 458.094,
+   "t1": 465.07,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/A06.mp4",
+     "focus": [
+      0.62,
+      0.3
+     ],
+     "in": 0.0,
+     "speed": 0.74,
+     "asset": "A06",
+     "t0": 458.094,
+     "t1": 465.07
+    }
+   ]
+  },
+  {
+   "scene": 89,
+   "kind": "COLLAGE",
+   "t0": 465.07,
+   "t1": 471.878,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/cut/A07.png",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0,
+     "speed": 1.0,
+     "asset": "A07",
+     "enter": 465.22
+    },
+    {
+     "file": "media/cut/A08.png",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0,
+     "speed": 1.0,
+     "asset": "A08",
+     "enter": 468.315
+    },
+    {
+     "file": "media/cut/A09.png",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0,
+     "speed": 1.0,
+     "asset": "A09",
+     "enter": 468.842
+    },
+    {
+     "file": "media/cut/A10.png",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "in": 0,
+     "speed": 1.0,
+     "asset": "A10",
+     "enter": 469.566
+    }
+   ],
+   "bg": "caramel"
+  },
+  {
+   "scene": 90,
+   "kind": "CENTRE",
+   "t0": 471.878,
+   "t1": 474.758,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/A11.mp4",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 1.9,
+     "speed": 0.72,
+     "asset": "A11",
+     "t0": 471.878,
+     "t1": 474.758
+    }
+   ]
+  },
+  {
+   "scene": 91,
+   "kind": "QUOTE",
+   "t0": 474.758,
+   "t1": 478.158,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "text": "What suits me <i>today?</i>"
+  },
+  {
+   "scene": 92,
+   "kind": "ROW",
+   "t0": 478.158,
+   "t1": 480.518,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/clips/A12.mp4",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "in": 0.9,
+     "speed": 1.0,
+     "asset": "A12",
+     "enter": 478.208
+    },
+    {
+     "file": "media/clips/A13.mp4",
+     "focus": [
+      0.4,
+      0.35
+     ],
+     "in": 0.0,
+     "speed": 0.85,
+     "asset": "A13",
+     "enter": 478.208
+    },
+    {
+     "file": "media/clips/A14.mp4",
+     "focus": [
+      0.55,
+      0.55
+     ],
+     "in": 0.0,
+     "speed": 0.85,
+     "asset": "A14",
+     "enter": 478.929
+    }
+   ]
+  },
+  {
+   "scene": 93,
+   "kind": "CENTRE",
+   "t0": 480.518,
+   "t1": 486.387,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/A15.mp4",
+     "focus": [
+      0.6,
+      0.35
+     ],
+     "in": 3.0,
+     "speed": 1.0,
+     "asset": "A15",
+     "t0": 480.518,
+     "t1": 486.387
+    }
+   ]
+  },
+  {
+   "scene": 94,
+   "kind": "FULL",
+   "t0": 486.387,
+   "t1": 488.585,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/A16.mp4",
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "in": 0.3,
+     "speed": 1.0,
+     "asset": "A16",
+     "t0": 486.387,
+     "t1": 488.585
+    }
+   ]
+  },
+  {
+   "scene": 95,
+   "kind": "FULL",
+   "t0": 488.585,
+   "t1": 492.427,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/A17.mp4",
+     "focus": [
+      0.5,
+      0.4
+     ],
+     "in": 6.0,
+     "speed": 1.0,
+     "asset": "A17",
+     "t0": 488.585,
+     "t1": 492.427
+    }
+   ]
+  },
+  {
+   "scene": 96,
+   "kind": "FULL",
+   "t0": 492.427,
+   "t1": 497.508,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/Z01.mp4",
+     "focus": [
+      0.678,
+      0.377
+     ],
+     "in": 15.0,
+     "speed": 0.79,
+     "asset": "Z01",
+     "t0": 492.427,
+     "t1": 497.508
+    }
+   ]
+  },
+  {
+   "scene": 97,
+   "kind": "ROW",
+   "t0": 497.508,
+   "t1": 502.625,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "panels": [
+    {
+     "file": "media/clips/H05.mp4",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "in": 0.5,
+     "speed": 1.0,
+     "asset": "H05",
+     "enter": 497.658
+    },
+    {
+     "file": "media/clips/H06.mp4",
+     "focus": [
+      0.5,
+      0.3
+     ],
+     "in": 0.0,
+     "speed": 0.95,
+     "asset": "H06",
+     "enter": 498.478
+    },
+    {
+     "file": "media/clips/G13.mp4",
+     "focus": [
+      0.498,
+      0.441
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "G13",
+     "enter": 500.501
+    }
+   ]
+  },
+  {
+   "scene": 98,
+   "kind": "CENTRE",
+   "t0": 502.625,
+   "t1": 508.515,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/Z02.mp4",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "in": 1.0,
+     "speed": 0.84,
+     "asset": "Z02",
+     "t0": 502.625,
+     "t1": 508.515
+    }
+   ]
+  },
+  {
+   "scene": 99,
+   "kind": "FULL",
+   "t0": 508.515,
+   "t1": 514.126,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/Z03.mp4",
+     "focus": [
+      0.492,
+      0.388
+     ],
+     "in": 0.0,
+     "speed": 1.0,
+     "asset": "Z03",
+     "t0": 508.515,
+     "t1": 514.126
+    }
+   ]
+  },
+  {
+   "scene": 100,
+   "kind": "FULL",
+   "t0": 514.126,
+   "t1": 529.914,
+   "trans": "dissolve",
+   "trans_dur": 0.5,
+   "shots": [
+    {
+     "file": "media/clips/Z04_part2.mp4",
+     "focus": [
+      0.55,
+      0.4
+     ],
+     "in": 0.0,
+     "speed": 0.75,
+     "asset": "Z04b",
+     "t0": 514.126,
+     "t1": 519.936861111111
+    },
+    {
+     "file": "media/clips/Z04.mp4",
+     "focus": [
+      0.55,
+      0.6
+     ],
+     "in": 0.0,
+     "speed": 0.66,
+     "asset": "Z04",
+     "t0": 519.936861111111,
+     "t1": 529.914
+    }
+   ],
+   "texts": [
+    {
+     "style": "guide",
+     "line1": "Check the description for",
+     "text": "Personal Stylist Guide",
+     "line3": "",
+     "t0": 520.2539999999999,
+     "t1": 529.914
+    }
+   ]
+  },
+  {
+   "scene": 101,
+   "kind": "END",
+   "t0": 529.914,
+   "t1": 537.414,
+   "trans": "dissolve",
+   "trans_dur": 0.6
+  }
+ ],
+ "audio": {
+  "voice": "audio/voice.wav",
+  "music": "audio/music_bed.wav",
+  "sting": "audio/sting.wav"
+ },
+ "note": "The Classy Elegance - 8 Things That Make You Look Older. Built by build_timeline.py from scenes.json + clock.json + picks.json + overrides.json."
+}

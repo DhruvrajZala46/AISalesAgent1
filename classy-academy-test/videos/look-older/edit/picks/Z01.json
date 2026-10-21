@@ -1,0 +1,40 @@
+{
+ "id": "Z01",
+ "pin_id": "e1_AfqPShxaoiABqCBkt7SGsMXqsW9QnkyWecHm7bwwt9WUujg2DBlJ",
+ "pin_url": "",
+ "creator": "Jose Banda",
+ "creator_user": "jbandap",
+ "src_link": "https://www.instagram.com/reel/DU6mi87DoMT/",
+ "pin_title": "",
+ "media_url": "https://v1.pinimg.com/videos/iht/hls/62/85/1a/62851a79fee883f6483a653904be444b.m3u8",
+ "file": "raw/Z01.mp4",
+ "w": 720,
+ "h": 1280,
+ "fps": 24.0,
+ "dur": 33.95,
+ "search_tag": "Z01c",
+ "search_index": 1,
+ "desc": " ",
+ "sig": "351dc8805a1b0766f74115ff353c2a16",
+ "pinner": "jbandap",
+ "board": "/jbandap/im%C3%A1genes/",
+ "board_id": "457608080827375571",
+ "dom": "instagram.com",
+ "candidate_id": "Z01_b1",
+ "rights": "No licence known; creator permission not requested",
+ "in": 15.0,
+ "speed": 0.79,
+ "focus": [
+  0.5,
+  0.45
+ ],
+ "ai_scan": 0.0,
+ "ai_eye": "checked: no tells (belt, earrings and hair consistent; real soft studio daylight, mirror reflection behaves correctly)",
+ "creator_evidence": "native_creator/pinner is jbandap (Jose Banda); src_link is an instagram.com/reel/ that is a mirror-brand ad (end card shows a MARI-type brand logo, Portuguese captions)",
+ "original_post": "https://www.instagram.com/reel/DU6mi87DoMT/",
+ "note": "Woman (30s) in a cream belted blazer and white shirt, seen in a round wood-framed mirror, ties her belt and smooths her jacket: the last touch before leaving. Clean 15.0-19.9 (Portuguese caption fades out by 14.9; next cut 19.92), speed 0.79 for 6.2 s. From 18.6 she steps out of the mirror past the lens (same scene). Cream/beige palette. Brand ad (mirror retailer). For 16:9 keep the reflection centred.",
+ "focus_auto": [
+  0.678,
+  0.377
+ ]
+}

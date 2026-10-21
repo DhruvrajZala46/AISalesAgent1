@@ -1,0 +1,125 @@
+# scenes.py - the script-to-visual plan of "8 Things That Make You Look Older: What to Wear Instead" (sentence numbers are
+# 0-based, as in tts/sentences.json). Layouts are the channel's own, measured on My7qteRU9k0 and QOEUbAZB07o (VISUAL-DNA-REPORT.md).
+#   python3 project/scenes.py -> project/scenes.json
+# A scene: layout, the sentences it covers (s0..s1), its assets (plan/briefs.json ids), and for rows/collages the word that
+# brings in each panel (enter_on: [sentence, word]); FULL/CENTRE scenes with several shots cut on cuts_at words.
+import json, os
+P = os.path.dirname(os.path.abspath(__file__))
+def sc(layout, s0, s1=None, assets=(), **kw): return dict(layout=layout, s0=s0, s1=s0 if s1 is None else s1, assets=list(assets), **kw)
+SC = [
+ # ---- hook (My7 0:00-0:24: one picture per line, no text)
+ sc('FULL', 0, 1, ['H01', 'H02'], first=True, cuts_at=[[0, 'I look older']]),
+ sc('FULL', 2, assets=['H03']),
+ sc('FULL', 3, assets=['H04']),
+ sc('ROW', 4, 6, ['H05', 'H06', 'H07'], enter_on=[[4, 'hem'], [5, 'colour'], [6, 'frames']]),
+ sc('FULL', 7, assets=['H08']),
+ sc('TITLE', 8, assets=['H09'], white='in today\'s video...', title='8 Things that make you look older'),
+ sc('FULL', 9, assets=['H10']),
+ sc('CENTRE', 10, assets=['H11'], grow='dot', until_word=[10, 'but once']),
+ sc('ROW', 10, 11, ['H12', 'H13', 'H14'], from_word=[10, 'but once'], enter_on=[[10, 'but once'], [10, 'see them'], [11, 'started']]),
+ # ---- 1 shoes
+ sc('CARD', 12, text='1. Shoes that look heavier than they need to'),
+ sc('CENTRE', 13, 14, ['S01']),
+ sc('CENTRE', 15, assets=['S02']),
+ sc('COLLAGE', 16, 18, ['S03', 'S04', 'S05'], bg='cream', enter_on=[[16, 'thick'], [17, 'wide'], [18, 'Velcro']]),
+ sc('FULL', 19, assets=['S06']),
+ sc('QUOTE', 20, text='Comfort can look <i>light</i>'),
+ sc('COLLAGE', 21, assets=['S07', 'S08', 'S09'], bg='caramel', enter_on=[[21, 'slimmer'], [21, 'softly'], [21, 'suede']]),
+ sc('ROW', 22, assets=['S10', 'S11', 'S12'], enter_on=[[22, 'block heel'], [22, 'loafer'], [22, 'sneaker']]),
+ sc('CENTRE', 23, 24, ['S13old', 'S13b'], weights=[4.2, 3.6]),
+ # ---- 2 hem
+ sc('CARD', 25, text='2. A hem at the fullest part of your calf'),
+ sc('ROW', 26, assets=['M01', 'M02', 'M03'], enter_on=[[26, 'Midi'], [26, 'culottes'], [26, 'cropped']]),
+ sc('FULL', 27, assets=['M04']),
+ sc('CENTRE', 28, 29, ['M05']),
+ sc('CENTRE', 30, assets=['M06']),
+ sc('CENTRE', 31, assets=['M07']),
+ sc('CENTRE', 32, assets=['M08']),
+ sc('CUE', 33, text='a simple test...'),
+ sc('FULL', 34, 35, ['M09', 'M09b'], cuts_at=[[35, "That's"]]),
+ sc('CENTRE', 36, assets=['M10']),
+ sc('FULL', 37, assets=['M11']),
+ # ---- 3 details
+ sc('CARD', 38, text='3. Details your classics have outgrown'),
+ sc('CENTRE', 39, assets=['D01']),
+ sc('CENTRE', 40, assets=['D02']),
+ sc('CENTRE', 41, assets=['D03']),
+ sc('CENTRE', 42, assets=['D04']),
+ sc('CENTRE', 43, assets=['D05']),
+ sc('SPLIT', 44, assets=['D06'], text='Elegant women keep their classics and let the <i>details move on</i>'),
+ sc('CENTRE', 45, assets=['D07']),
+ sc('CENTRE', 46, assets=['D08']),
+ sc('FULL', 47, assets=['D09']),
+ sc('CENTRE', 48, assets=['D10']),
+ sc('FULL', 49, 50, ['D11']),
+ # ---- 4 print
+ sc('CARD', 51, text='4. A tiny print over a big piece'),
+ sc('PAIR', 52, assets=['R01', 'R02'], enter_on=[[52, 'Small prints'], [52, 'blouse']]),
+ sc('CENTRE', 53, assets=['R03']),
+ sc('FULL', 54, 55, ['R04']),
+ sc('FULL', 56, assets=['R05']),
+ sc('ROW', 57, assets=['R06', 'R07', 'R08'], enter_on=[[57, 'dress'], [57, 'full skirt'], [57, 'stripe']]),
+ sc('CENTRE', 58, assets=['R09']),
+ sc('CENTRE', 59, assets=['R10']),
+ sc('CENTRE', 60, 61, ['R11']),
+ sc('QUOTE', 62, text='At the right scale, a print lets people <i>see you first</i>'),
+ # ---- 5 black
+ sc('CARD', 63, text='5. Black right under your face'),
+ sc('FULL', 64, assets=['K01']),
+ sc('CENTRE', 65, assets=['K02']),
+ sc('FULL', 66, assets=['K03']),
+ sc('PAIR', 67, assets=['K04', 'K05'], enter_on=[[67, 'Some'], [67, 'wonderful']]),
+ sc('CENTRE', 68, assets=['K06']),
+ sc('ROW', 69, assets=['K16', 'K17', 'K18'], enter_on=[[69, 'navy'], [69, 'charcoal'], [69, 'ivory']]),
+ sc('QUOTE', 70, text='Watch your <i>skin</i>, not the fabric'),
+ sc('FULL', 71, assets=['K07']),
+ sc('FULL', 72, assets=['K08']),
+ sc('ROW', 73, assets=['K09', 'K10', 'K11'], enter_on=[[73, 'move it away'], [73, 'skirt'], [73, 'coat']]),
+ sc('ROW', 74, assets=['K12', 'K13', 'K14'], enter_on=[[74, 'ivory'], [74, 'cream'], [74, 'silk']]),
+ sc('FULL', 75, 76, ['K15'], guide=[75, 'our personal']),
+ # ---- 6 lips
+ sc('CARD', 77, text='6. Lips that have lost their colour'),
+ sc('FULL', 78, assets=['L01']),
+ sc('CENTRE', 79, assets=['L02']),
+ sc('PAIR', 80, assets=['L03', 'L04'], enter_on=[[80, 'Lips'], [80, 'brows']]),
+ sc('CENTRE', 81, assets=['L05']),
+ sc('ROW', 82, assets=['L06', 'L07', 'L08', 'L09'], enter_on=[[82, 'Europe'], [82, 'Asia'], [82, 'Latin'], [82, 'Africa']]),
+ sc('FULL', 83, 84, ['L10']),
+ sc('ROW', 85, assets=['L11', 'L12', 'L13'], enter_on=[[85, 'rose'], [85, 'berry'], [85, 'warm red']]),
+ sc('CENTRE', 86, assets=['L14']),
+ sc('CENTRE', 87, 88, ['L15']),
+ # ---- 7 frames
+ sc('CARD', 89, text='7. Frames that hide your brows'),
+ sc('CUE', 90, text='something surprising...'),
+ sc('ROW', 91, assets=['G01', 'G02', 'G03'], enter_on=[[91, 'glasses'], [91, 'photographs'], [91, 'very little']]),
+ sc('FULL', 92, 93, ['G04']),
+ sc('CENTRE', 94, 95, ['G05']),
+ sc('CENTRE', 96, assets=['G06']),
+ sc('CENTRE', 97, assets=['G07']),
+ sc('FULL', 98, assets=['G08']),
+ sc('ROW', 99, assets=['G09', 'G10', 'G11'], enter_on=[[99, 'Tortoiseshell'], [99, 'thin'], [99, 'clear']]),
+ sc('CENTRE', 100, assets=['G12']),
+ sc('CENTRE', 101, 102, ['G13']),
+ # ---- 8 age rule
+ sc('CARD', 103, text='8. Dressing by an age rule'),
+ sc('ROW', 104, 106, ['A01', 'A02', 'A03', 'A04', 'A05'], enter_on=[[104, 'knees'], [105, 'long hair'], [106, 'bright'], [106, 'sneakers'], [106, 'fitted']]),
+ sc('CENTRE', 107, assets=['A06']),
+ sc('COLLAGE', 108, assets=['A07', 'A08', 'A09', 'A10'], bg='caramel', enter_on=[[108, 'they push'], [108, 'looser'], [108, 'darker'], [108, 'safer']]),
+ sc('CENTRE', 109, assets=['A11']),
+ sc('QUOTE', 110, text='What suits me <i>today?</i>'),
+ sc('ROW', 111, assets=['A12', 'A13', 'A14'], enter_on=[[111, 'proportions'], [111, 'colouring'], [111, 'life']]),
+ sc('CENTRE', 112, assets=['A15']),
+ sc('FULL', 113, assets=['A16']),
+ sc('FULL', 114, assets=['A17']),
+ # ---- closing (My7 7:54-8:50)
+ sc('FULL', 115, assets=['Z01']),
+ sc('ROW', 116, assets=['H05', 'H06', 'G13'], enter_on=[[116, 'hems'], [116, 'colour'], [116, 'frames']], reuse=True),
+ sc('CENTRE', 117, 118, ['Z02']),
+ sc('FULL', 119, 120, ['Z03']),
+ sc('FULL', 121, 123, ['Z04b', 'Z04'], weights=[5.3, 9.1], guide=[122, 'Our personal'], last=True),
+ sc('END', 123),
+]
+for i, s in enumerate(SC, 1): s['scene'] = i
+json.dump(SC, open(f'{P}/scenes.json', 'w'), indent=1)
+cov = sorted({k for s in SC if s['layout'] != 'END' for k in range(s['s0'], s['s1'] + 1)})
+print('scenes', len(SC), '| sentences covered', len(cov), 'missing', sorted(set(range(124)) - set(cov)))

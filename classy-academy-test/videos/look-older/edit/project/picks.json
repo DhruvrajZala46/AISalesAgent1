@@ -1,0 +1,1323 @@
+{
+ "H01": {
+  "file": "media/clips/H01.mp4",
+  "focus": [
+   0.42,
+   0.42
+  ],
+  "note": "A woman in a blue striped shirt and white trousers walks past a stone shopfront with windows (the nearest real match found for \"caught your reflection in a store window\"; no real shop-window reflection clip exists in the results).",
+  "in": 0.0,
+  "speed": 0.85
+ },
+ "H02": {
+  "file": "media/clips/H02.mp4",
+  "focus": [
+   0.645,
+   0.438
+  ],
+  "note": "Woman in her late 40s/50s in black belted jacket checks herself in an arched mirror and touches her earring/hair (0-2.33 s, clean until the cut at 2.33). Only 2.33 s clean: play at 0.75 to fill 3.1 s. Crop the 16:9 band on the mirror reflection (right of centre). 720x960 source.",
+  "in": 0.0,
+  "speed": 0.64
+ },
+ "H03": {
+  "file": "media/clips/H03.mp4",
+  "focus": [
+   0.544,
+   0.372
+  ],
+  "note": "Close-up of a beautiful silver-haired woman in her 50s in a black top, soft warm light, gentle smile; 4.0-8.3 s is one clean take (first cut at 10.23). Face sits high: keep focus at y 0.3 for the 16:9 band. Soft bright indoor light, white wall; jewellery close-ups after 10.23 are not used.",
+  "in": 4.0,
+  "speed": 1.0
+ },
+ "H04": {
+  "file": "media/clips/H04.mp4",
+  "focus": [
+   0.45,
+   0.35
+  ],
+  "note": "Close-up of a woman fastening the row of buttons on the cuff of an ivory sleeve: exactly a small outfit detail being adjusted. One clean 3.63 s take (no cuts); play at 0.82 for 4.4 s. Ivory/white palette. Bridal label, but the frame shows only sleeve and hand.",
+  "in": 0.0,
+  "speed": 0.78
+ },
+ "H05": {
+  "file": "media/clips/H05.mp4",
+  "focus": [
+   0.5,
+   0.45
+  ],
+  "note": "Lower legs from behind: a black pleated midi skirt hem swinging as a woman walks over Rome cobbles in leopard pumps; one continuous take 0-12 s (no cuts until a slow shift to waist shots after ~13 s). Hem in focus, vertical reel fits the PANEL. Leopard pumps are louder than the palette; black skirt on palette.",
+  "in": 0.5,
+  "speed": 1.0
+ },
+ "H06": {
+  "file": "media/clips/H06.mp4",
+  "focus": [
+   0.5,
+   0.3
+  ],
+  "note": "Woman in her late 40s/50s in an ivory knit turtleneck, the cream colour right at her face: medium shot 0-4.88 then a face-and-collar close-up 4.88-7.71 (same woman, same sweater); in 0 at 0.95 gives 8.1 s ending before the wide shot at 7.71. Soft daylight, warm stone courtyard.",
+  "in": 0.0,
+  "speed": 0.95
+ },
+ "H07": {
+  "file": "media/clips/H07.mp4",
+  "focus": [
+   0.5,
+   0.32
+  ],
+  "note": "Blonde woman in her 50s in a denim jacket puts on black reading-glasses frames with both hands (7.95-10.5) and settles them, then talks to camera wearing them; clean until the cut at 16.93. Post promotes @lookoptic readers (creator review, not marked sponsored on the pin). Denim blue is off the neutral palette; she speaks to camera (mouth moving under VO).",
+  "in": 7.95,
+  "speed": 1.0
+ },
+ "H08": {
+  "file": "media/clips/H08.mp4",
+  "focus": [
+   0.45,
+   0.4
+  ],
+  "note": "Woman (40s) in a camel trench at her rail of neutral, navy and striped clothes takes a white top off the rail, holds it up against herself and swaps back to browsing (0-5.7 s, one continuous take until ~9.5 s). Bright room. For the 16:9 band keep the torso and the held-up top (focus y 0.4). Pinned also under search tag Z02a.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "H09": {
+  "file": "media/clips/H09.mp4",
+  "focus": [
+   0.5,
+   0.3
+  ],
+  "note": "Silver-haired woman in her 60s in a cream blazer, white top and wide camel trousers, sunglasses, strolling and stepping towards camera under cherry blossom in a sunny stone courtyard; shot 1 0-6.87, shot 2 (same woman, same place) 6.87-12.6, so 0-9.4 has one same-scene cut. Vertical full-length: the 16:9 band will cut head or feet (keep face/torso, y 0.3) or use a blurred-pillarbox. Orange bag and pink blossom add colour beyond the neutral palette.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "H10": {
+  "file": "media/clips/A12_alt_jeanne.mp4",
+  "focus": [
+   0.5,
+   0.86
+  ],
+  "note": "Woman in her 60s, full length: camel duster cardigan, white tee, straight jeans, white sneakers; the frame pans from her sneakers up to her face on 'start at your feet and work our way up' (a pan in the edit over one real single take).",
+  "in": 20.5,
+  "speed": 1.0,
+  "pan": [
+   [
+    0.5,
+    0.86
+   ],
+   [
+    0.5,
+    0.22
+   ]
+  ]
+ },
+ "H11": {
+  "file": "media/clips/H11.mp4",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "White-haired woman in her 60s in a black blazer, white shirt, jeans and black boots walks towards camera down a city street (wet stone pavement, grey daylight): clean 1.8-9.0. Small text labels (Ermolita item tags, ~5% of the frame) appear beside her jacket 2.4-6.6: acceptable as small, but note for the editor. Vertical reel suits the CENTRE slot.",
+  "in": 2.0,
+  "speed": 1.0
+ },
+ "H12": {
+  "file": "media/clips/H12.mp4",
+  "focus": [
+   0.5,
+   0.45
+  ],
+  "note": "White-haired woman in her late 60s/70s, full-length in a pale grey shirt, leather belt and wide chocolate trousers, standing in her hallway and gesturing as she talks (one continuous 40 s take, no cuts): 13.6-23.9 for 10.3 s. Mouth moves (she is speaking). Panel 1: oldest woman, cool grey/chocolate palette.",
+  "in": 13.6,
+  "speed": 1.0
+ },
+ "H13": {
+  "file": "media/clips/H13.mp4",
+  "focus": [
+   0.5,
+   0.45
+  ],
+  "note": "Black woman in her 40s/50s, full-length in a black sleeveless turtleneck and black trousers, puts on a long camel coat and holds a small monogram bag (22.45-32.57, one take; next cut 32.57). Black + camel = classic palette. Busy bright shoe/bag wall behind her; monogram bag is small, not the subject. Panel 2.",
+  "in": 22.45,
+  "speed": 0.98
+ },
+ "H14": {
+  "file": "media/clips/H14.mp4",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "Woman in her 50s with short curly grey hair builds a classic outfit: white tee, belted taupe wide trousers, white sneakers, long grey coat and tan tote; 4.5-14.8 (GRWM title gone by 1.5; same-outfit cuts at 6.17, 7.17, 10.03, 11.63, 12.7; she bends to tie a sneaker at 7.2-8.3). Final full-length look 12.7-15. Panel 3: grey hair, neutral palette.",
+  "in": 4.5,
+  "speed": 1.0
+ },
+ "S01": {
+  "file": "media/clips/S01.mp4",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "POV of feet walking along a city pavement in white leather sneakers and black wide trousers, steady rhythm in sun and shade; one 5.27 s take with no cuts, so speed 0.75 for 7.0 s. Comfort-shoe walking that matches on your feet all day; age not visible.",
+  "in": 0.0,
+  "speed": 0.75
+ },
+ "S02": {
+  "file": "media/clips/S02.mp4",
+  "focus": [
+   0.5,
+   0.7
+  ],
+  "note": "Close to the feet: chunky thick-soled platform comfort sneakers (black, white, tan) in black leggings, turning and stepping on a wood floor; Bought another pair caption gone by 3.0, so 3.5-9.6 is clean (one take, no cuts until 24). The sole bulk is obvious. Respectful: legs and shoes only.",
+  "in": 3.5,
+  "speed": 1.0
+ },
+ "S03": {
+  "file": "media/cut/S03.png",
+  "focus": [
+   0.5,
+   0.55
+  ],
+  "note": "Single warm-white leather chunky sneaker, side view on plain white: the very thick, clumpy, wavy platform sole is the whole story. 800x800, whole shoe visible, easy cut-out.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "S04": {
+  "file": "media/cut/S04.png",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Pair of white leather lace-up barefoot oxfords from the front-top on a light grey background: wide, rounded, bulbous toe box is obvious. 1728x1728, whole shoes visible. Light grey (not pure white) background; cut-out still easy.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "S05": {
+  "file": "media/cut/S05.png",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Pair of white leather two-strap Velcro walking shoes (Hush Puppies Power Walker II) on plain white: the Velcro straps are the subject. 1895x1500, whole product visible. Small brand mark on the insole only.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "S06": {
+  "file": "media/clips/S06.mp4",
+  "focus": [
+   0.5,
+   0.68
+  ],
+  "note": "Woman in a grey sweatshirt and full black midi skirt with chunky grey platform sneakers: feet close-up 0-2.2, full-length against a stone wall 2.2-4.7 (bulky shoes under a midi skirt shorten the leg), walking down a city street 4.7-7.1; at 0.91 the 7.1 s gives 7.8 s, ending before the seated shoe close-up at 7.1. Grey/black palette. Brand reel, young woman, tasteful. For the 16:9 crop keep skirt hem and shoes (focus y 0.68).",
+  "in": 0.0,
+  "speed": 0.91
+ },
+ "S07": {
+  "file": "media/cut/S07.png",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Pair of nude smooth-leather almond-toe flats, top view on light grey: slim sole, almond toe that still leaves room. 1000x1250, whole product visible. Small EVERLANE stamp on the insoles (not the subject).",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "S08": {
+  "file": "media/cut/S08.png",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Pair of cream smooth-leather ballet flats with a softly rounded toe and small bows, top view on a light grey-white background. 3213x4820, whole product visible; cream fits the palette.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "S09": {
+  "file": "media/cut/S09.png",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Pair of taupe suede penny loafers, front view on light grey: smooth suede, slim sole. 1600x2000, whole product visible; taupe/camel on palette.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "S10": {
+  "file": "media/clips/S10.mp4",
+  "focus": [
+   0.5,
+   0.55
+  ],
+  "note": "Blonde woman in her 50s/60s walks towards camera in a hallway in navy cropped wide trousers, striped grey shirt and silver low block-heel mule sandals, then poses and turns; one continuous 11.4 s take (no cuts), at 0.89 gives 12.9 s. Low block heel visible at feet, classic trousers. Indoor, warm wood floor. Shoes are open-toe mules, not pumps.",
+  "in": 0.0,
+  "speed": 0.88
+ },
+ "S11": {
+  "file": "media/clips/S11.mp4",
+  "focus": [
+   0.5,
+   0.7
+  ],
+  "note": "Legs of a woman in white shorts walking down stone steps in brown-and-cream soft leather penny loafers, then standing and crossing her feet (one take, 0-9.8, no cuts). Close to the feet. Speed 0.77 to fill 12.9 s (walking shot). Source is 720x960 (4:3): fine for the vertical PANEL with a slight crop. Bare legs, tasteful.",
+  "in": 0.0,
+  "speed": 0.76
+ },
+ "S12": {
+  "file": "media/clips/S12.mp4",
+  "focus": [
+   0.5,
+   0.45
+  ],
+  "note": "Woman in her 50s with short blonde hair, cream ribbed midi dress and clean white leather sneakers on a cobbled street, styled 3 ways (black blazer, denim shirt, knit) with whip/blur transitions at 2.4, 6.0, 9.0 and 11.4; 0-13.8 for 12.9 s. White sneakers visible in every full-length shot. Small @blog4over40 handle bottom-right. Transitions are quick: editor may prefer the 0-2.3 and 2.5-5.9 parts slowed. Played from 2.6 s (after the first whip transition, which zooms on a logo brooch).",
+  "in": 2.9,
+  "speed": 0.55
+ },
+ "S13": {
+  "file": "media/clips/S13.mp4",
+  "focus": [
+   0.5,
+   0.65
+  ],
+  "note": "Cream straight trousers falling over chunky tan suede platform loafers, feet close-up (Blackstone reel 0-1.17 s).",
+  "in": 0.0,
+  "speed": 0.6
+ },
+ "M01": {
+  "file": "media/clips/M01.mp4",
+  "focus": [
+   0.5,
+   0.55
+  ],
+  "note": "Silver-haired woman (60s) in a dark satin midi skirt and peach knit walking through a shop/home; cuts stay on the same outfit. In 1.0 skips the opening hanger product shot. 9.7 s left, so speed 0.9 gives 10.8 s.",
+  "in": 1.0,
+  "speed": 0.9
+ },
+ "M02": {
+  "file": "media/clips/M02.mp4",
+  "focus": [
+   0.5,
+   0.6
+  ],
+  "note": "Woman 50s+ in light chambray linen wide culottes with a white blazer, then a white shirt; head mostly out of frame, so the culottes are the subject. 0.3-11.0 is the same culottes (cut at ~11.4 to a green top). No text.",
+  "in": 0.3,
+  "speed": 1.0
+ },
+ "M03": {
+  "file": "media/clips/M03.mp4",
+  "focus": [
+   0.5,
+   0.62
+  ],
+  "note": "Woman in her 30s-40s in beige belted ankle-length trousers, tweed jacket and pumps, standing on a city sidewalk. The clip is 8.71 s, so speed 0.81 gives 10.75 s.",
+  "in": 0.0,
+  "speed": 0.81
+ },
+ "M04": {
+  "file": "media/clips/M04.mp4",
+  "focus": [
+   0.5,
+   0.62
+  ],
+  "note": "Golden-hour close-up of the lower legs: a rust midi skirt hem at the lower calf above cream ballet flats. 7.4-8.5 she bends to touch a shoe, then stands and walks out (hem swinging). Keep the out-point before 11.5, when she leaves the frame. In FULL, centre the band on the hem/feet. Out-point at 11.3 (in 7.4 + 3.9 s).",
+  "in": 7.4,
+  "speed": 1.0
+ },
+ "M05": {
+  "file": "media/clips/M05.mp4",
+  "focus": [
+   0.5,
+   0.62
+  ],
+  "note": "Woman (30s) in a white linen A-line skirt whose hem lands right at mid-calf, the widest point, with a light-blue shirt and flat sandals, standing and turning. The 'Spring Outfits Day 3/30' title is only at 0-2 s, before the in-point. Respectful: she looks lovely.",
+  "in": 6.2,
+  "speed": 1.0
+ },
+ "M06": {
+  "file": "media/clips/M06.mp4",
+  "focus": [
+   0.5,
+   0.55
+  ],
+  "note": "Woman (40s, glasses) in a grey tweed pencil skirt ending just below the knee, cream turtleneck and nude pumps. She walks away, turns and stands. Hem is clearly a couple of inches under the knee.",
+  "in": 4.4,
+  "speed": 1.0
+ },
+ "M07": {
+  "file": "media/clips/M07.mp4",
+  "focus": [
+   0.5,
+   0.6
+  ],
+  "note": "Woman (30s-40s) in a white satin maxi skirt ending just above the ankle (slim part of the leg shows), blue striped shirt and tan sandals, posing at her front door. In 2.0 skips a selfie close-up. Mostly standing, gentle movement rather than walking.",
+  "in": 2.0,
+  "speed": 1.0
+ },
+ "M08": {
+  "file": "media/clips/M08.mp4",
+  "focus": [
+   0.5,
+   0.72
+  ],
+  "note": "Woman (30s) in navy cropped trousers and tan loafers. She first adjusts the hem to the ankle (21.3-23.5), then stands with the hem at the ankle bone. Full-length shot, not a tight ankle close-up. Original creator unknown.",
+  "in": 21.3,
+  "speed": 1.0
+ },
+ "M09": {
+  "file": "media/clips/M09_a2.mp4",
+  "focus": [
+   0.5,
+   0.66
+  ],
+  "note": "A woman turning side-on in front of a tall mirror in a white midi skirt (M09_a2, 4 s): the side-on mirror check.",
+  "in": 0.0,
+  "speed": 0.85
+ },
+ "M10": {
+  "file": "media/clips/M10.mp4",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Hands-only hemming tutorial on black trousers: measuring with a tape, pinning the hem, pressing, then sewing at the machine. The cuts are all hemming steps.",
+  "in": 2.5,
+  "speed": 1.0
+ },
+ "M11": {
+  "file": "media/clips/M11.mp4",
+  "focus": [
+   0.5,
+   0.55
+  ],
+  "note": "Woman (30s) in a black tee and a full dark-tartan midi skirt twirling and smiling in a bright hallway. Joyful 'made for you' moment. Full-body vertical: in FULL, keep the band on the skirt and smile, or use the blurred backdrop.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "D01": {
+  "file": "media/clips/D01.mp4",
+  "focus": [
+   0.5,
+   0.45
+  ],
+  "note": "Woman in her 60s in a cream linen blazer, ivory tee and rust linen straight trousers with sunglasses, walking toward the camera on a garden path. Timeless blazer + trousers. 720x1080. Small brand watermark at the bottom (note).",
+  "in": 2.3,
+  "speed": 1.0
+ },
+ "D02": {
+  "file": "raw/D02.jpg",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "Scan of a real late-1980s/early-1990s catalogue page: three women in boxy, padded-shoulder skirt suits (red, black, burgundy) with shirt collars. Small catalogue captions and item numbers are printed on the page (crop or keep small). Paper grain and print screen, real scan, not AI.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "D03": {
+  "file": "media/clips/D03.mp4",
+  "focus": [
+   0.5,
+   0.55
+  ],
+  "note": "Woman (30s) on a cream backdrop in high-waisted wide trousers with deep front double pleats: white pair 1.8-8, black pair 8-12.2, front view, hands in pockets. Caramel/cream palette.",
+  "in": 1.8,
+  "speed": 1.0
+ },
+ "D04": {
+  "file": "raw/D04.jpg",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "ME+EM product photo on a model: black straight trousers with a turned-up cuff at the ankle, grey turtleneck and loafers, cream studio backdrop. The cuff is clearly visible. 725x1016. Shop photo of a real model (not AI).",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "D05": {
+  "file": "raw/D05.jpg",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "Scan of a 1980s fashion page: a camel jacket with very big padded shoulders and puffed sleeve heads over an ivory top, with gold earrings and sunglasses. Camel palette. Small page number '27' bottom-left. Real print scan with halftone.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "D06": {
+  "file": "media/clips/D06.mp4",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "Woman (30s) buttoning a soft cream single-button blazer with natural shoulders (close at 0-3.4 s), then a medium shot in the full outfit. Calm, light interior. 6.77 s clip.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "D07": {
+  "file": "media/clips/D07.mp4",
+  "focus": [
+   0.5,
+   0.62
+  ],
+  "note": "Woman (30s) in black flat-front slim straight trousers, white shirt and grey vest: close-up of the straight fall from the hip (4.0-5.5), standing, then walking across a street (7.7-9.2). She leaves the frame at 9.3, so speed 0.94 keeps the out-point at about 9.26.",
+  "in": 4.0,
+  "speed": 0.94
+ },
+ "D08": {
+  "file": "media/clips/D08.mp4",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "note": "Woman (30s) at her clothes rail swings on a camel blazer with natural, unpadded shoulders (1.5-3.6), close-up of her hands at the lapel (4.4-6.0), then stands in it. 1.5-8.6 = 7.1 s.",
+  "in": 1.5,
+  "speed": 1.0
+ },
+ "D09": {
+  "file": "media/clips/D08.mp4",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "note": "The same woman as D08 at her own rail, putting on a jacket she already owns (D08 clip, 17-20.4 s).",
+  "in": 17.0,
+  "speed": 1.0
+ },
+ "D10": {
+  "file": "media/clips/D10.mp4",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Seamstress altering black trousers: overlocking the edge (10-11.6), pinning the hem (12-13.3), sewing at the machine (13.7-17). A small, thin white caption sits mid-frame (not a big title).",
+  "in": 10.0,
+  "speed": 1.0
+ },
+ "D11": {
+  "file": "media/clips/D11.mp4",
+  "focus": [
+   0.5,
+   0.42
+  ],
+  "note": "Woman (30s) striding confidently down a Paris street in a black blazer and black wide trousers. Modern, fresh. Waist-up survives the 16:9 crop.",
+  "in": 0.3,
+  "speed": 1.0
+ },
+ "R01": {
+  "file": "media/clips/R01.mp4",
+  "focus": [
+   0.5,
+   0.45
+  ],
+  "note": "Woman (40s) tying a small-print grey/plum paisley-peacock silk scarf at her neck, close at chest height, 5.0-16.3. Plum cardigan, soft home light.",
+  "in": 5.0,
+  "speed": 1.0
+ },
+ "R02": {
+  "file": "media/clips/R02_a1.mp4",
+  "focus": [
+   0.5,
+   0.42
+  ],
+  "note": "Navy polka-dot blouse peeking out from under a white blazer, mirror selfie (R02_a1; source link is an LTK page of the creator).",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "R03": {
+  "file": "media/clips/R03.mp4",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Woman (30s) in a cream midi dress covered all over in a tiny busy rosebud print (Priscilla Ditsy dress), turning under a stone arch. Close moments show the print. Brand's own content; she looks pretty (respectful).",
+  "in": 4.0,
+  "speed": 1.0
+ },
+ "R04": {
+  "file": "media/clips/R04.mp4",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Woman seen from a distance on a cobbled street in a small, busy block-print maxi dress: at this distance the print reads as one texture. Cut at ~1.5 s between two angles of the same walk. 7.27 s at 0.7 = 10.4 s, 0.6 s short of 11.0. Full-body far shot, so a tight 16:9 crop loses head or feet; a blurred backdrop is better.",
+  "in": 0.0,
+  "speed": 0.66
+ },
+ "R05": {
+  "file": "media/clips/R05.mp4",
+  "focus": [
+   0.5,
+   0.45
+  ],
+  "note": "Woman (30s) in a cream midi shirt dress with a medium navy leaf print with space around each motif, walking and turning. Fresh and modern, navy/cream palette.",
+  "in": 6.5,
+  "speed": 1.0
+ },
+ "R06": {
+  "file": "media/clips/R06.mp4",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Woman (30s) in a navy midi dress with medium white polka dots, well spaced, with a tan belt; a GRWM with close-ups and full-length standing. Medium-scale print with space around each motif.",
+  "in": 0.5,
+  "speed": 1.0
+ },
+ "R07": {
+  "file": "media/clips/R07.mp4",
+  "focus": [
+   0.5,
+   0.6
+  ],
+  "note": "Woman (30s) in a full black-and-white floral midi skirt (medium motifs with space) and white shirt, walking down stone steps. 9.73 s at 0.715 = 13.6 s (walking, so slowing is allowed).",
+  "in": 0.0,
+  "speed": 0.715
+ },
+ "R08": {
+  "file": "media/clips/R08.mp4",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Women in their 50s-60s in classic blue-and-white striped shirt dresses and stripe shirts, standing and turning under a colonnade. Cuts between women, all in simple stripes. optimumocean is also used by A11 (a different clip), so 2 uses in all.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "R09": {
+  "file": "media/clips/R09.mp4",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "A small paisley-print bandana scarf tied at the neck over a grey tee: a tiny print kept to a small piece (replaces the first pick, whose print was a brand monogram).",
+  "in": 9.0,
+  "speed": 1.0
+ },
+ "R10": {
+  "file": "media/clips/R10_c1.mp4",
+  "focus": [
+   0.5,
+   0.42
+  ],
+  "note": "A phone camera screen framing a woman in a cream skirt on a platform: someone taking her photo from a few steps away (6.5-10 s; a repost, original creator unknown).",
+  "in": 6.5,
+  "speed": 0.75
+ },
+ "R11": {
+  "file": "media/clips/R11.mp4",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Woman (30s, plus-size, Black) in a bold black maxi dress with large white polka dots walking and twirling outdoors in sun. The print reads clearly from a distance. A broken (glitch) frame at ~9.0-9.3 s, so keep the out-point at or before 8.6 s.",
+  "in": 0.5,
+  "speed": 1.0
+ },
+ "K01": {
+  "file": "media/clips/K01.mp4",
+  "focus": [
+   0.3,
+   0.45
+  ],
+  "note": "Audrey Hepburn in the little black dress, pearls and gloves at the Tiffany window (54.1-62.3 s is free of credits; titles appear at 62.5). Horizontal 854x480 film scan, soft; never name the film/actress on screen.",
+  "in": 54.1,
+  "speed": 1.0
+ },
+ "K02": {
+  "file": "media/clips/K02.mp4",
+  "focus": [
+   0.5,
+   0.3
+  ],
+  "note": "Blonde woman (40s) in a black turtleneck right up to the face, selfie close-up, flat indoor light; she talks to camera (mute). Respectful, not unflattering. Age reads 40s rather than 50s+.",
+  "in": 9.0,
+  "speed": 1.0
+ },
+ "K03": {
+  "file": "media/clips/K03.mp4",
+  "focus": [
+   0.414,
+   0.465
+  ],
+  "note": "Silver-haired woman (50s) in soft daylight, natural colouring, static selfie framing; crop tight on the face for FULL. She is talking to camera (mute). Fallback: first choice (Manon Crespi) was already taken by H03.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "K04": {
+  "file": "raw/K04.jpg",
+  "focus": [
+   0.45,
+   0.3
+  ],
+  "note": "Dark-haired mature woman (Carine Roitfeld, never named) in a long black dress, high contrast, looking wonderful in black; 1067x1600.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "K05": {
+  "file": "raw/K05.jpg",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "note": "White-haired mature woman (Grece Ghanem, never named) in a black turtleneck and black midi skirt on a city crosswalk; 1284x1632.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "K06": {
+  "file": "media/clips/K06.mp4",
+  "focus": [
+   0.5,
+   0.55
+  ],
+  "note": "Real colour-analysis session: a consultant holds a BLACK drape under the client's chin, 4.0-14.9 s continuous (in 8.5 to 14.5). Bright room with daylight, not right at a window. DOUBTS: the client is in her 20s-30s, not 40s-60s; she is talking (mute); small subtitles on the drape throughout. The same clip has an ivory drape at 15.0-23 s (a different creator was used for K18).",
+  "in": 8.5,
+  "speed": 1.0
+ },
+ "K07": {
+  "file": "media/clips/K07.mp4",
+  "focus": [
+   0.5,
+   0.16
+  ],
+  "note": "Woman (30s) resting, eyes closed, in an oatmeal/cream turtleneck in soft window daylight, 0-5.8 s close-up; fresh and rested. Replaces Frank & Eileen clip (taken by H06).",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "K08": {
+  "file": "media/clips/K08.mp4",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "Black woman (40s) in all black (leather blazer, hat, sunglasses) walking confidently: 8.45 waist-up walk, 10.1 boots stepping, 11.3 full walk. Creator's own fast cuts; a COACH store sign shows in the background from 11.3 s.",
+  "in": 8.3,
+  "speed": 0.75
+ },
+ "K09": {
+  "file": "media/clips/K09.mp4",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "note": "Blonde woman (50s) in black wide trousers with a cream sweater (6.9-19.2 s), then a rust sweater with black trousers (19.2+): warm colour at the neckline, black below.",
+  "in": 6.9,
+  "speed": 0.95
+ },
+ "K10": {
+  "file": "media/clips/K10.mp4",
+  "focus": [
+   0.5,
+   0.45
+  ],
+  "note": "Red-haired woman (40s) in a black lace-trim silk midi skirt with a white funnel-neck jacket and white tee: light colour at the neck, black below. Caption 'Styling a Minimalist Fall Wardrobe Day 2' only in 0-2.5 s. Top is crisp white rather than cream/camel.",
+  "in": 5.0,
+  "speed": 1.0
+ },
+ "K11": {
+  "file": "media/clips/K11.mp4",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "note": "Blonde woman (40s-50s) in a long black coat and white turtleneck tying a light ivory/grey striped blanket scarf at the neck (8-21 s). Scarf is pale grey-ivory rather than camel. 540x960. Small TikTok logo bottom-right.",
+  "in": 8.0,
+  "speed": 1.0
+ },
+ "K12": {
+  "file": "media/clips/K12.mp4",
+  "focus": [
+   0.5,
+   0.3
+  ],
+  "note": "Close-up of a chunky ivory knit scarf being tied high at the neck over a black pinstripe blazer (0.9-11.3 s). Frame cuts her face at the eyes (only lips/chin visible) - an ivory knit right under the face.",
+  "in": 0.9,
+  "speed": 1.0
+ },
+ "K13": {
+  "file": "media/clips/K13.mp4",
+  "focus": [
+   0.5,
+   0.25
+  ],
+  "note": "Woman (40s) in a burgundy crewneck with a white/cream shirt collar (dickey) showing at the neckline; medium shot, collar visible but small. Crop high for the collar.",
+  "in": 0.5,
+  "speed": 1.0
+ },
+ "K14": {
+  "file": "media/clips/K14.mp4",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "Silver-haired woman (60s) in a white shirt tying a navy/periwinkle silk scarf at the neck, close (3.7-14.1 s; small jump cuts at 12.2/13.6). Same creator as A06 (another worker) - 2 assets total.",
+  "in": 3.7,
+  "speed": 1.0
+ },
+ "K15": {
+  "file": "media/clips/K15.mp4",
+  "focus": [
+   0.5,
+   0.45
+  ],
+  "note": "Calm getting-ready scene: woman (20s-30s) in an ivory satin robe arranging pink roses at a white vanity mirror; creator's own cuts within one scene (0-11.3 s). Sits darkened under the guide call-out.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "L01": {
+  "file": "media/clips/L01.mp4",
+  "focus": [
+   0.49,
+   0.48
+  ],
+  "note": "Close-up of a blonde woman (50s) with soft natural makeup, warm soft light, gentle smile (26.17-29.87 s; cut at 29.87, so speed 0.97). Earlier parts have small captions; this window is clean.",
+  "in": 26.17,
+  "speed": 0.97
+ },
+ "L02": {
+  "file": "media/clips/L02.mp4",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "note": "Woman in a cream blouse seen in a round mirror, calmly touching her hair and looking at her reflection, bright daylight (5.25-14.95 s). DOUBT: she is about 35-40, not mature; no real mature-woman mirror clip found (every other candidate was AI or captioned).",
+  "in": 5.25,
+  "speed": 1.0
+ },
+ "L03": {
+  "file": "media/clips/L11.mp4",
+  "focus": [
+   0.5,
+   0.66
+  ],
+  "note": "The same woman as L11 before her rose lipstick goes on: natural, uncoloured lips, close-up (L03 gap filled from L11).",
+  "in": 1.2,
+  "speed": 0.5,
+  "zoom": 2.1
+ },
+ "L04": {
+  "file": "media/clips/L04.mp4",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "note": "Extreme close-up of a light, natural brow being brushed up with a spoolie and gel, soft light, near-square 722x874 (fits PAIR). Clip is 6.66 s, so speed 0.7 gives 9.5 s.",
+  "in": 0.0,
+  "speed": 0.7
+ },
+ "L05": {
+  "file": "media/clips/L05.mp4",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "note": "Silver-haired woman (50s) having lip liner and lip colour applied by a makeup artist (17.8-22.5 s), then the finished face turning softly to camera (22.5-27 s): same face, more defined lips and brows. Creator's montage cuts.",
+  "in": 16.0,
+  "speed": 1.0
+ },
+ "L06": {
+  "file": "raw/L06.jpg",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "note": "European woman (Ines de la Fressange, ~60, never named), natural smiling portrait, navy blazer and white tee, chin on hand; 1080x1347, slightly soft.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "L07": {
+  "file": "raw/L07.jpg",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "note": "East Asian woman (Michelle Yeoh, 60s, never named), elegant portrait in a cream woven leather jacket, gold earrings, warm wood background; 1080x1212.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "L08": {
+  "file": "raw/L08.jpg",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "note": "Latin American woman (Salma Hayek, 50s, never named), natural makeup, black top, red-carpet backdrop partly visible (crop it out); 1472x1868.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "L09": {
+  "file": "raw/L09.jpg",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "note": "African woman (Iman, Somali-born, never named) in a camel leather trench and charcoal turtleneck, elegant, warm palette; 1080x1080. She was 70 in this photo (brief asked 40s-60s; looks younger).",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "L10": {
+  "file": "media/clips/L10.mp4",
+  "focus": [
+   0.5,
+   0.45
+  ],
+  "note": "Extreme close-up of lips: a soft rose-pink liquid lipstick being applied (6.2-13.2 s), not dark, not dramatic; lips fill the frame, fits FULL crop. Faint @malvina_isfan watermark lower-middle.",
+  "in": 6.2,
+  "speed": 1.0
+ },
+ "L11": {
+  "file": "media/clips/L11.mp4",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Woman (50s, grey-blonde curls) applying a rose-pink lipstick in a close selfie (8-21.8 s), natural light. Some open-mouth application frames, not unflattering.",
+  "in": 8.0,
+  "speed": 1.0
+ },
+ "L12": {
+  "file": "media/clips/L12.mp4",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Close-up of lips with a berry liquid lipstick/gloss being applied and finished (0-13.7 s; creator cuts at 6.9 and 12.1). KIKO tube visible briefly near the end.",
+  "in": 0.0,
+  "speed": 0.99
+ },
+ "L13": {
+  "file": "media/clips/L13.mp4",
+  "focus": [
+   0.5,
+   0.45
+  ],
+  "note": "Woman (60s, short grey hair, red top) lining lips then applying a classic red liquid lipstick (10-16.2 s), finished red lip at 16.2-17.6 s. Window 6.5-17.6 at 0.8 = 13.9 s. Red is classic/slightly cool rather than strongly warm.",
+  "in": 6.5,
+  "speed": 0.8
+ },
+ "L14": {
+  "file": "media/clips/L14.mp4",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "Mature blonde woman (60s) in an ivory sweater opens a tinted lip balm and swipes it on (18.6-23.2 s): quick, everyday, soft rosy tint; cut to a close-up at 19.2 and back at 20.0 (same scene).",
+  "in": 18.6,
+  "speed": 1.0
+ },
+ "L15": {
+  "file": "media/clips/L15.mp4",
+  "focus": [
+   0.5,
+   0.6
+  ],
+  "note": "'Concealer lips' look: woman (20s) pats concealer over her lips, lines and glosses them pale so the lips almost disappear (0-11.3 s at 0.93 = 12.2 s). Small serif title 'Concealer Lips' at forehead height throughout (note). Not mocking.",
+  "in": 0.0,
+  "speed": 0.9
+ },
+ "G01": {
+  "file": "raw/G01.jpg",
+  "focus": [
+   0.45,
+   0.35
+  ],
+  "note": "Woman (late 20s/30s) in thin round metal frames, black-and-camel turtleneck on pale grey; real brand portrait; youngest of the three glasses faces.",
+  "in": 0,
+  "speed": 1.0
+ },
+ "G02": {
+  "file": "raw/G02.jpg",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "Close portrait of a woman in her 50s with long grey hair in thin metal aviator frames, white background; the middle age of the three glasses faces.",
+  "in": 0,
+  "speed": 1.0
+ },
+ "G03": {
+  "file": "raw/G03.jpg",
+  "focus": [
+   0.55,
+   0.25
+  ],
+  "note": "Woman in her 60s with white hair in thin round metal frames, camel trench, holding a red book on a city street; the oldest of the three glasses faces; camel palette.",
+  "in": 0,
+  "speed": 1.0
+ },
+ "G04": {
+  "file": "media/clips/G04.mp4",
+  "focus": [
+   0.55,
+   0.35
+  ],
+  "note": "Woman (40s) at an optician trying on frames: 0-2.0 seen from behind checking herself in a hand mirror with the frame wall around her, 2.1-5.7 turns smiling in the new frames. 5.72s at 25fps: speed 0.85 gives 6.7s. Vertical: FULL crop waist-up, focus [0.55,0.35]. Frames are bold black (the next beat, G07, is about heavy frames - fine as a lead-in).",
+  "in": 0.0,
+  "speed": 0.85
+ },
+ "G05": {
+  "file": "media/clips/G05.mp4",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "Extreme close-up of a spoolie brushing a full, groomed brow up and into shape; 0-13.6 continuous (brush passes 0-5.1 and 9.3-13.6), no text. Model is young (30s); brows clearly the subject.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "G06": {
+  "file": "media/clips/G06.mp4",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "note": "Woman in her 50s with long silver hair, close-up selfie in light grey/cream tortoise round frames whose top line sits just under and follows her brows; talking and smiling, bright home; single take 27.7s, no text. 2.3-12.5 used. Handheld selfie (gentle wobble).",
+  "in": 2.3,
+  "speed": 1.0
+ },
+ "G07": {
+  "file": "media/clips/G07.mp4",
+  "focus": [
+   0.5,
+   0.3
+  ],
+  "note": "Blonde model (40s) in heavy black cat-eye acetate frames whose thick top bar sits right across her brows (clear at 1.6-2.4, 4.8-5.6 close-ups); studio grey, black blazer. Brand edit with cuts every ~1.3s (all the same model and frames); 0-15.3 usable, vicci logo end card from 15.9 - do not use. Small vicci print on the temple in close-ups. Studio polish (brand retouching) is the only doubt.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "G08": {
+  "file": "media/clips/G08.mp4",
+  "focus": [
+   0.5,
+   0.48
+  ],
+  "note": "Woman (40s, short platinum hair, white shirt, red lip) at an optician wall: 3.7-7.0 takes off one pair and puts on round black frames whose top line follows her brows, 7.0-10.9 settles and looks pleased; single take 10.9s, no text. Expression is a soft, content look rather than a broad smile (doubt). Vertical: FULL crop around face/hands at left-centre.",
+  "in": 3.7,
+  "speed": 1.0
+ },
+ "G09": {
+  "file": "media/clips/G09.mp4",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "Woman (30s-40s) in warm brown tortoiseshell round frames, close-ups by the sea, hair in the wind; 3 shots (cuts 1.77, 4.57) of the same model/frames, 540x960. SHORT: 6.7s usable, at speed 0.7 = 9.6s vs 10.5 needed (hold the last frame ~0.9s or trim the panel). Warm tortoise exactly as narrated.",
+  "in": 0.0,
+  "speed": 0.7
+ },
+ "G10": {
+  "file": "media/clips/G10.mp4",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "Woman in her 50s with curly silver hair wearing thin lavender metal round frames, talking to camera; brows clearly visible above the thin rims; single take 29.5s, no text. Doubts: filmed in a car, multicolour cardigan and pink top (outside the palette). Best real thin-metal-frame video found.",
+  "in": 2.0,
+  "speed": 1.0
+ },
+ "G11": {
+  "file": "media/clips/G11.mp4",
+  "focus": [
+   0.5,
+   0.3
+  ],
+  "note": "Woman in her 50s, long blonde hair, clear transparent frames, blue striped shirt and navy shorts, on a porch with a garden behind; 2.4-12.9 waist-up talking, clear frames always visible with brows showing through; single take, no text.",
+  "in": 2.4,
+  "speed": 1.0
+ },
+ "G12": {
+  "file": "media/clips/G12.mp4",
+  "focus": [
+   0.5,
+   0.3
+  ],
+  "note": "Mature Black woman (60s) with grey hair filling her brows with a fine brow pen in short, light hair-like strokes; 9.4-21.3 clean (caption \"How to fill in brows at home\" only 0-5.3, product held to camera 6.6-9.3); no other text. Brow pen rather than wooden pencil (same strokes).",
+  "in": 9.4,
+  "speed": 1.0
+ },
+ "G13": {
+  "file": "media/clips/G13.mp4",
+  "focus": [
+   0.498,
+   0.441
+  ],
+  "note": "Woman in her 60s, silver hair, warm beige knit, layered gold necklaces and hoops, wearing LIGHT translucent taupe-mauve frames whose top line follows her brows; smiling warmly to camera the whole time. USE 0.0-8.2: from 2.9 her hand rests on her chest (rings visible, reads as hand on heart); at 8.4 she lifts her hand toward the camera - stop before. Second clean window 20.7-26.4 (touches her earring). Home selfie by a white door, not a cafe (doubt); warm cream/gold palette. Vertical: FULL crop around face/shoulders, focus [0.5,0.3]. Replaces otherangelawalters (heavy black frames), kept as raw/G13_old.mp4.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "A01": {
+  "file": "media/clips/A01.mp4",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Woman in her 60s, silver-blonde bob, sunglasses, sleeveless yellow-floral shift dress well above the knee, walking toward camera smiling, turning; outfit-change transition to a white above-knee shift at 5.34s (same woman, same place). Cuts at 3.55 and 5.34 within the window; clean to 7.5s. Exactly what the rule forbids, worn with joy.",
+  "in": 1.5,
+  "speed": 0.78
+ },
+ "A02": {
+  "file": "media/clips/A02.mp4",
+  "focus": [
+   0.5,
+   0.3
+  ],
+  "note": "Woman in her 60s with very long silver-white hair blowing in an ocean breeze, smiling to camera, selfie close-up; 9.67s continuous, no cuts, no text. Teal top/wall is cooler than the channel palette (only doubt). Alt: raw/A02_6.mp4 (a 50s creator, long silver hair, black top, bright home).",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "A03": {
+  "file": "media/clips/A03.mp4",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "Woman in her 60s, silver-blonde bob, bright red maxi dress, slips on a cream/stone denim jacket, turns, stands smiling under trees; red + camel/cream sits well with the palette. 10.65-19.75 is free of captions (caption \"Use your hair color...\" starts at 20.0); a soft jump cut near 18.5 (sunglasses and basket appear), same outfit and place. Captions also at 0.9-2.2 (avoid).",
+  "in": 10.65,
+  "speed": 1.0
+ },
+ "A04": {
+  "file": "media/clips/A04.mp4",
+  "focus": [
+   0.5,
+   0.55
+  ],
+  "note": "Woman in her 60s, grey bob, ivory utility jacket, white turtleneck, plum straight trousers and white sneakers; 19.6-28.7 she steps back to full length, lifts each foot to show the sneakers, smiles. Single take, no text. Sponsored #ad caption (Coldwater Creek trousers) on Instagram, but no sponsored label on the pin itself. Outfit is neat rather than high-chic (doubt).",
+  "in": 19.6,
+  "speed": 1.0
+ },
+ "A05": {
+  "file": "media/clips/A05.mp4",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Woman in her 50s, blonde, in a fitted pink rib-knit midi dress with burgundy bag and heels, stands full length (0-4.5) then sits on the sofa (to 10.3); single take, no text. Clear fitted silhouette. Pink is outside the core palette; warm indoor light.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "A06": {
+  "file": "media/clips/A06.mp4",
+  "focus": [
+   0.62,
+   0.3
+  ],
+  "note": "Woman in her 60s, silver hair, navy sweater, browsing her closet: holds up a camel suede jacket, a beige coat, white blouses, reaches to the top shelf, then (after a soft dissolve 5.4-6.0, same closet) holds up a grey sweater smiling. USE 0.0-6.4 ONLY: at 6.45 the camera tilts down to the floor/ottoman. At speed 0.9 the 6.4 s cover 7.1 s. Short cuts at 0.7/1.8/2.73 are all the same closet. Vertical clip: FULL crop around face/hands, focus [0.62,0.3]. Creator also used by K14.",
+  "in": 0.0,
+  "speed": 0.74
+ },
+ "A07": {
+  "file": "media/cut/A07.png",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Long, shapeless black ponte maxi skirt with elastic waist, whole product on plain white, 853x1280: the \"longer\" item; easy cut-out.",
+  "in": 0,
+  "speed": 1.0
+ },
+ "A08": {
+  "file": "media/cut/A08.png",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Loose, boxy, oversized khaki linen tunic with dropped shoulders and long hem, whole garment on plain white, 1538x2560: the \"looser\" item; easy cut-out.",
+  "in": 0,
+  "speed": 1.0
+ },
+ "A09": {
+  "file": "media/cut/A09.png",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Plain dark navy V-neck cardigan with patch pockets, whole garment on plain white, 2640x4048: the \"darker\" item; easy cut-out.",
+  "in": 0,
+  "speed": 1.0
+ },
+ "A10": {
+  "file": "media/cut/A10.png",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "note": "Beige/stone pure-cotton elasticated-waist trousers, whole garment on a plain light-grey background, 1008x1310: the \"safer\" item; easy cut-out. Alt kept: raw/A10_1.jpg (H&M beige pull-on trousers on pure white, 2333x3500).",
+  "in": 0,
+  "speed": 1.0
+ },
+ "A11": {
+  "file": "media/clips/A11.mp4",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "Woman in her 60s, silver-blonde bob, cream knit with a long pearl necklace, camel trousers, slingback heels, a cream cardigan over her shoulder; full length on a pale terrace, calm and poised, modest. USE 1.9-5.5 (she settles the cardigan on her shoulder and stands facing camera); at speed 0.72 that is 5.0 s. From 5.6 she turns her back (to 7.5); 7.6-10.2 she turns front again smiling (alt window). Cuts at 1.8 and 10.23. Doubt: sunglasses on throughout. Vertical: FULL crop around face/upper body. Replaces evassunday (blazer with nothing under), kept as raw/A11_old.mp4. Second alt: raw/A11_alt_helloim50ish.mp4 (60s, cobalt linen shirt and white trousers, walking and smiling on a garden path, single take 13.5 s, no sunglasses).",
+  "in": 1.9,
+  "speed": 0.72
+ },
+ "A12": {
+  "file": "media/clips/A12.mp4",
+  "focus": [
+   0.5,
+   0.45
+  ],
+  "note": "Woman in her 60s, grey hair, glasses, full outfit: navy paisley fringed scarf over a yellow tee, navy wide trousers, pale pointed shoes, yellow bag; walks back from camera to full length (from 3.6) and turns to show proportions; single take, no text; 0.9-10.35 = 9.45s for the 9.6s need (or speed 0.98). Replaced jeannecaldarera (already used by H12); that clip kept as raw/A12_alt_jeanne.mp4 (camel duster, in 18.6).",
+  "in": 0.9,
+  "speed": 1.0
+ },
+ "A13": {
+  "file": "media/clips/A13.mp4",
+  "focus": [
+   0.4,
+   0.35
+  ],
+  "note": "Woman in her 60s, silver hair swept back, pearl earrings, soft light-blue shirt right at her face - the soft colour lights up her skin; close-medium selfie by a stone wall, smiling warmly. USE TWO PIECES: 0.0-3.7 (smiling/laughing, sunglasses held low at her side) + 5.4-7.7 (sunglasses just taken off, smiling to camera) = 6.0 s; the clip has its own cut at 3.77. If only one window is possible: 0.0-6.0 at speed 1.0 (includes her taking sunglasses off at 3.8-5.2). Avoid 9.2-15.0 (sunglasses on). Doubt: more joyful laugh than quiet calm. Replaces dressyourtruth (green drapes), kept as raw/A13_old.mp4. Alt (still photos, not video): raw/A13_alt_bygill.mp4, a 70s white-haired woman in a camel turtleneck, glasses, calm - a 3-photo slideshow (4 s each), best photo 4.0-8.0. Played from 0.0 at 0.85 (the clip cuts at 3.77 s).",
+  "in": 0.0,
+  "speed": 0.85
+ },
+ "A14": {
+  "file": "media/clips/A14.mp4",
+  "focus": [
+   0.55,
+   0.55
+  ],
+  "note": "Two stylish women in their 60s-70s (one white bob with big glasses, one very long silver hair) at a Parisian-style cafe terrace, eating, talking, raising a glass; 8.1s, cuts at 1.93 and 4.67 (wide-close-wide), all the same scene. Doubt: a small persistent caption \"I see my future and it s bright\" sits in the upper third (small, not a title); black outfits. Short (8.1s for 9.6s need): use speed 0.85.",
+  "in": 0.0,
+  "speed": 0.85
+ },
+ "A15": {
+  "file": "media/clips/A15.mp4",
+  "focus": [
+   0.6,
+   0.35
+  ],
+  "note": "Woman in her 60s (silver-blonde bob, glasses, black knit, champagne slip skirt) doing a wardrobe cull: 3.0-10.2 she goes through her clothes rail piece by piece; 22-37 she pulls pieces out and bags them (setting aside), with a pile on the floor. Single take, no text. Doubt: wide static shot, she is talking to camera at times; subject small in frame - crop in. Palette fine (black/cream/white).",
+  "in": 3.0,
+  "speed": 1.0
+ },
+ "A16": {
+  "file": "media/clips/A16.mp4",
+  "focus": [
+   0.5,
+   0.3
+  ],
+  "note": "Famous actress (80, silver-white chignon, never named on screen) on the Golden Globes 2024 red carpet in a lilac gown, swirling her cape and smiling against a cream-rose wall; radiant, 6.76s continuous, no text. Vertical 720x1280: for the FULL slot crop waist-up around the face, focus [0.5,0.3]. Licensable path: Getty Images editorial footage (licence would be needed). Lilac is outside the core palette but the cream wall keeps it soft. Alt: raw/A16_1.mp4 (another famous actress, 67, long silver hair, ivory gown, L Oreal runway 2025, filmed by @isabella_dibiase, credited by Grazia), in 17.8.",
+  "in": 0.3,
+  "speed": 1.0
+ },
+ "A17": {
+  "file": "media/clips/A17.mp4",
+  "focus": [
+   0.5,
+   0.4
+  ],
+  "note": "Woman in her 60s with long white hair, burgundy top and floral maxi skirt, twirling with arms out and laughing on a lawn; 6.0-13.2 continuous twirl, 0-4.8 hand on heart smiling; single take, no text. Doubts: bohemian rather than chic, green garden outside the palette; vertical clip in a FULL 16:9 slot - crop waist-up around her (skirt flare will be partly cut).",
+  "in": 6.0,
+  "speed": 1.0
+ },
+ "Z01": {
+  "file": "media/clips/Z01.mp4",
+  "focus": [
+   0.678,
+   0.377
+  ],
+  "note": "Woman (30s) in a cream belted blazer and white shirt, seen in a round wood-framed mirror, ties her belt and smooths her jacket: the last touch before leaving. Clean 15.0-19.9 (Portuguese caption fades out by 14.9; next cut 19.92), speed 0.79 for 6.2 s. From 18.6 she steps out of the mirror past the lens (same scene). Cream/beige palette. Brand ad (mirror retailer). For 16:9 keep the reflection centred.",
+  "in": 15.0,
+  "speed": 0.79
+ },
+ "Z02": {
+  "file": "media/clips/Z02.mp4",
+  "focus": [
+   0.5,
+   0.45
+  ],
+  "note": "Winter capsule edit: an arm holds up her own pieces one by one in front of a clothes rail (white top, burgundy knit, grey knit, white jeans, black trousers, black blazer, plum coat) = choosing from what she already owns. Title text ends at 0.9; clean 1.0-7.15 (quick piece-to-piece cuts, same set), so in 1.0 at 0.84 for 7.3 s, ending before the try-on shots at 7.2. Black, white, grey, plum palette.",
+  "in": 1.0,
+  "speed": 0.84
+ },
+ "Z03": {
+  "file": "media/clips/Z03.mp4",
+  "focus": [
+   0.492,
+   0.388
+  ],
+  "note": "Woman (30s) in a cream wool jacket and sunglasses sipping coffee at a marble caf\u00e9 table on a London pavement, cream-and-taupe bag beside her; one calm continuous 9.97 s take, use 0-7.3. Cream/ivory palette. Small Coach-style bag logo visible (not the subject). Source 720x1288.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "Z04": {
+  "file": "media/clips/Z04.mp4",
+  "focus": [
+   0.55,
+   0.6
+  ],
+  "note": "Woman (30s) in a cream knit and grey joggers reading in an armchair in a bright plant-filled room, slow page turns; one continuous 7.57 s take. Too short alone for 17.2 s: use as a 2-shot sequence: Z04_part2 (coffee at a window, 5.0 s at 0.75 = 6.7 s) then this clip at 0.72 = 10.5 s, total 17.2 s. Speed 0.72 is below the 0.8 norm but the shot is nearly static.",
+  "in": 0.0,
+  "speed": 0.66
+ },
+ "K16": {
+  "file": "media/clips/K16.mp4",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "note": "Woman (40s) in a NAVY crewneck knit, soft daylight, calm: head bowed, then she lifts her face to the light (0-5.17 s, one shot). 720x1080. Alternative: 10.27-14.37 close shot, hand at the neckline. Same creator and model as K17, so the pair reads as one woman trying navy, then charcoal.",
+  "in": 0.0,
+  "speed": 1.0
+ },
+ "K17": {
+  "file": "media/clips/K17.mp4",
+  "focus": [
+   0.5,
+   0.35
+  ],
+  "note": "Same model as K16 in a CHARCOAL crew sweatshirt (fleece, not knit) by a tall window: hand at the neckline, looks to camera (10.6-14.23 s, at 0.8 speed = 4.5 s). Alternative: 0-3.23 s by the window, arms crossed (speed 0.72). 720x1080.",
+  "in": 10.6,
+  "speed": 0.8
+ },
+ "K18": {
+  "file": "media/clips/K18.mp4",
+  "focus": [
+   0.5,
+   0.3
+  ],
+  "note": "Mature model (late 40s-50s) in a SOFT IVORY knit scarf and cardigan, overcast outdoor light, calm: close-up, hand to forehead, eyes closed; the camera tilts down to the ivory scarf at the neckline (3.92-6.24 s; at 0.6 speed = 3.9 s, 25 fps source). Alternative: 0-1.68 s seated portrait, chin on hand. Not K07/K12/H06's creator.",
+  "in": 3.92,
+  "speed": 0.6
+ },
+ "S13b": {
+  "file": "media/clips/S13.mp4",
+  "focus": [
+   0.5,
+   0.65
+  ],
+  "note": "Blackstone reel: feet walking over a crossing in cream straight trousers falling over chunky tan suede loafers (3.17-5.6 s).",
+  "in": 3.17,
+  "speed": 0.6
+ },
+ "Z04b": {
+  "file": "media/clips/Z04_part2.mp4",
+  "focus": [
+   0.55,
+   0.4
+  ],
+  "note": "SECOND HALF of Z04 (play first): woman (30s) in a cream vest and linen trousers drinking coffee at an open Paris window, soft daylight; one 5.0 s take at 0.75 = 6.7 s.",
+  "in": 0.0,
+  "speed": 0.75
+ },
+ "S13old": {
+  "file": "media/clips/S13_old.mp4",
+  "focus": [
+   0.5,
+   0.55
+  ],
+  "note": "Woman (30s) on a sunny London street in a black jumper and wide pleated khaki trousers whose hem falls over black-and-cream loafers (toe peeking out), posing and shifting her weight, one continuous 9.17 s take; at 0.97 for 9.5 s. Shows the balanced trouser-over-shoe line, but she is posing rather than walking and the shoe is small in frame; red clutch is off-palette.",
+  "in": 3.0,
+  "speed": 0.96
+ },
+ "M09b": {
+  "file": "media/clips/M05.mp4",
+  "focus": [
+   0.5,
+   0.8
+  ],
+  "note": "Second shot (same clip as M05): a hem stopping at mid-calf, the one line to avoid.",
+  "in": 12.0,
+  "speed": 1.0
+ }
+}

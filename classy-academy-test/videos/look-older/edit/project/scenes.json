@@ -1,0 +1,1286 @@
+[
+ {
+  "layout": "FULL",
+  "s0": 0,
+  "s1": 1,
+  "assets": [
+   "H01",
+   "H02"
+  ],
+  "first": true,
+  "cuts_at": [
+   [
+    0,
+    "I look older"
+   ]
+  ],
+  "scene": 1
+ },
+ {
+  "layout": "FULL",
+  "s0": 2,
+  "s1": 2,
+  "assets": [
+   "H03"
+  ],
+  "scene": 2
+ },
+ {
+  "layout": "FULL",
+  "s0": 3,
+  "s1": 3,
+  "assets": [
+   "H04"
+  ],
+  "scene": 3
+ },
+ {
+  "layout": "ROW",
+  "s0": 4,
+  "s1": 6,
+  "assets": [
+   "H05",
+   "H06",
+   "H07"
+  ],
+  "enter_on": [
+   [
+    4,
+    "hem"
+   ],
+   [
+    5,
+    "colour"
+   ],
+   [
+    6,
+    "frames"
+   ]
+  ],
+  "scene": 4
+ },
+ {
+  "layout": "FULL",
+  "s0": 7,
+  "s1": 7,
+  "assets": [
+   "H08"
+  ],
+  "scene": 5
+ },
+ {
+  "layout": "TITLE",
+  "s0": 8,
+  "s1": 8,
+  "assets": [
+   "H09"
+  ],
+  "white": "in today's video...",
+  "title": "8 Things that make you look older",
+  "scene": 6
+ },
+ {
+  "layout": "FULL",
+  "s0": 9,
+  "s1": 9,
+  "assets": [
+   "H10"
+  ],
+  "scene": 7
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 10,
+  "s1": 10,
+  "assets": [
+   "H11"
+  ],
+  "grow": "dot",
+  "until_word": [
+   10,
+   "but once"
+  ],
+  "scene": 8
+ },
+ {
+  "layout": "ROW",
+  "s0": 10,
+  "s1": 11,
+  "assets": [
+   "H12",
+   "H13",
+   "H14"
+  ],
+  "from_word": [
+   10,
+   "but once"
+  ],
+  "enter_on": [
+   [
+    10,
+    "but once"
+   ],
+   [
+    10,
+    "see them"
+   ],
+   [
+    11,
+    "started"
+   ]
+  ],
+  "scene": 9
+ },
+ {
+  "layout": "CARD",
+  "s0": 12,
+  "s1": 12,
+  "assets": [],
+  "text": "1. Shoes that look heavier than they need to",
+  "scene": 10
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 13,
+  "s1": 14,
+  "assets": [
+   "S01"
+  ],
+  "scene": 11
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 15,
+  "s1": 15,
+  "assets": [
+   "S02"
+  ],
+  "scene": 12
+ },
+ {
+  "layout": "COLLAGE",
+  "s0": 16,
+  "s1": 18,
+  "assets": [
+   "S03",
+   "S04",
+   "S05"
+  ],
+  "bg": "cream",
+  "enter_on": [
+   [
+    16,
+    "thick"
+   ],
+   [
+    17,
+    "wide"
+   ],
+   [
+    18,
+    "Velcro"
+   ]
+  ],
+  "scene": 13
+ },
+ {
+  "layout": "FULL",
+  "s0": 19,
+  "s1": 19,
+  "assets": [
+   "S06"
+  ],
+  "scene": 14
+ },
+ {
+  "layout": "QUOTE",
+  "s0": 20,
+  "s1": 20,
+  "assets": [],
+  "text": "Comfort can look <i>light</i>",
+  "scene": 15
+ },
+ {
+  "layout": "COLLAGE",
+  "s0": 21,
+  "s1": 21,
+  "assets": [
+   "S07",
+   "S08",
+   "S09"
+  ],
+  "bg": "caramel",
+  "enter_on": [
+   [
+    21,
+    "slimmer"
+   ],
+   [
+    21,
+    "softly"
+   ],
+   [
+    21,
+    "suede"
+   ]
+  ],
+  "scene": 16
+ },
+ {
+  "layout": "ROW",
+  "s0": 22,
+  "s1": 22,
+  "assets": [
+   "S10",
+   "S11",
+   "S12"
+  ],
+  "enter_on": [
+   [
+    22,
+    "block heel"
+   ],
+   [
+    22,
+    "loafer"
+   ],
+   [
+    22,
+    "sneaker"
+   ]
+  ],
+  "scene": 17
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 23,
+  "s1": 24,
+  "assets": [
+   "S13old",
+   "S13b"
+  ],
+  "weights": [
+   4.2,
+   3.6
+  ],
+  "scene": 18
+ },
+ {
+  "layout": "CARD",
+  "s0": 25,
+  "s1": 25,
+  "assets": [],
+  "text": "2. A hem at the fullest part of your calf",
+  "scene": 19
+ },
+ {
+  "layout": "ROW",
+  "s0": 26,
+  "s1": 26,
+  "assets": [
+   "M01",
+   "M02",
+   "M03"
+  ],
+  "enter_on": [
+   [
+    26,
+    "Midi"
+   ],
+   [
+    26,
+    "culottes"
+   ],
+   [
+    26,
+    "cropped"
+   ]
+  ],
+  "scene": 20
+ },
+ {
+  "layout": "FULL",
+  "s0": 27,
+  "s1": 27,
+  "assets": [
+   "M04"
+  ],
+  "scene": 21
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 28,
+  "s1": 29,
+  "assets": [
+   "M05"
+  ],
+  "scene": 22
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 30,
+  "s1": 30,
+  "assets": [
+   "M06"
+  ],
+  "scene": 23
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 31,
+  "s1": 31,
+  "assets": [
+   "M07"
+  ],
+  "scene": 24
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 32,
+  "s1": 32,
+  "assets": [
+   "M08"
+  ],
+  "scene": 25
+ },
+ {
+  "layout": "CUE",
+  "s0": 33,
+  "s1": 33,
+  "assets": [],
+  "text": "a simple test...",
+  "scene": 26
+ },
+ {
+  "layout": "FULL",
+  "s0": 34,
+  "s1": 35,
+  "assets": [
+   "M09",
+   "M09b"
+  ],
+  "cuts_at": [
+   [
+    35,
+    "That's"
+   ]
+  ],
+  "scene": 27
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 36,
+  "s1": 36,
+  "assets": [
+   "M10"
+  ],
+  "scene": 28
+ },
+ {
+  "layout": "FULL",
+  "s0": 37,
+  "s1": 37,
+  "assets": [
+   "M11"
+  ],
+  "scene": 29
+ },
+ {
+  "layout": "CARD",
+  "s0": 38,
+  "s1": 38,
+  "assets": [],
+  "text": "3. Details your classics have outgrown",
+  "scene": 30
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 39,
+  "s1": 39,
+  "assets": [
+   "D01"
+  ],
+  "scene": 31
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 40,
+  "s1": 40,
+  "assets": [
+   "D02"
+  ],
+  "scene": 32
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 41,
+  "s1": 41,
+  "assets": [
+   "D03"
+  ],
+  "scene": 33
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 42,
+  "s1": 42,
+  "assets": [
+   "D04"
+  ],
+  "scene": 34
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 43,
+  "s1": 43,
+  "assets": [
+   "D05"
+  ],
+  "scene": 35
+ },
+ {
+  "layout": "SPLIT",
+  "s0": 44,
+  "s1": 44,
+  "assets": [
+   "D06"
+  ],
+  "text": "Elegant women keep their classics and let the <i>details move on</i>",
+  "scene": 36
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 45,
+  "s1": 45,
+  "assets": [
+   "D07"
+  ],
+  "scene": 37
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 46,
+  "s1": 46,
+  "assets": [
+   "D08"
+  ],
+  "scene": 38
+ },
+ {
+  "layout": "FULL",
+  "s0": 47,
+  "s1": 47,
+  "assets": [
+   "D09"
+  ],
+  "scene": 39
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 48,
+  "s1": 48,
+  "assets": [
+   "D10"
+  ],
+  "scene": 40
+ },
+ {
+  "layout": "FULL",
+  "s0": 49,
+  "s1": 50,
+  "assets": [
+   "D11"
+  ],
+  "scene": 41
+ },
+ {
+  "layout": "CARD",
+  "s0": 51,
+  "s1": 51,
+  "assets": [],
+  "text": "4. A tiny print over a big piece",
+  "scene": 42
+ },
+ {
+  "layout": "PAIR",
+  "s0": 52,
+  "s1": 52,
+  "assets": [
+   "R01",
+   "R02"
+  ],
+  "enter_on": [
+   [
+    52,
+    "Small prints"
+   ],
+   [
+    52,
+    "blouse"
+   ]
+  ],
+  "scene": 43
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 53,
+  "s1": 53,
+  "assets": [
+   "R03"
+  ],
+  "scene": 44
+ },
+ {
+  "layout": "FULL",
+  "s0": 54,
+  "s1": 55,
+  "assets": [
+   "R04"
+  ],
+  "scene": 45
+ },
+ {
+  "layout": "FULL",
+  "s0": 56,
+  "s1": 56,
+  "assets": [
+   "R05"
+  ],
+  "scene": 46
+ },
+ {
+  "layout": "ROW",
+  "s0": 57,
+  "s1": 57,
+  "assets": [
+   "R06",
+   "R07",
+   "R08"
+  ],
+  "enter_on": [
+   [
+    57,
+    "dress"
+   ],
+   [
+    57,
+    "full skirt"
+   ],
+   [
+    57,
+    "stripe"
+   ]
+  ],
+  "scene": 47
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 58,
+  "s1": 58,
+  "assets": [
+   "R09"
+  ],
+  "scene": 48
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 59,
+  "s1": 59,
+  "assets": [
+   "R10"
+  ],
+  "scene": 49
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 60,
+  "s1": 61,
+  "assets": [
+   "R11"
+  ],
+  "scene": 50
+ },
+ {
+  "layout": "QUOTE",
+  "s0": 62,
+  "s1": 62,
+  "assets": [],
+  "text": "At the right scale, a print lets people <i>see you first</i>",
+  "scene": 51
+ },
+ {
+  "layout": "CARD",
+  "s0": 63,
+  "s1": 63,
+  "assets": [],
+  "text": "5. Black right under your face",
+  "scene": 52
+ },
+ {
+  "layout": "FULL",
+  "s0": 64,
+  "s1": 64,
+  "assets": [
+   "K01"
+  ],
+  "scene": 53
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 65,
+  "s1": 65,
+  "assets": [
+   "K02"
+  ],
+  "scene": 54
+ },
+ {
+  "layout": "FULL",
+  "s0": 66,
+  "s1": 66,
+  "assets": [
+   "K03"
+  ],
+  "scene": 55
+ },
+ {
+  "layout": "PAIR",
+  "s0": 67,
+  "s1": 67,
+  "assets": [
+   "K04",
+   "K05"
+  ],
+  "enter_on": [
+   [
+    67,
+    "Some"
+   ],
+   [
+    67,
+    "wonderful"
+   ]
+  ],
+  "scene": 56
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 68,
+  "s1": 68,
+  "assets": [
+   "K06"
+  ],
+  "scene": 57
+ },
+ {
+  "layout": "ROW",
+  "s0": 69,
+  "s1": 69,
+  "assets": [
+   "K16",
+   "K17",
+   "K18"
+  ],
+  "enter_on": [
+   [
+    69,
+    "navy"
+   ],
+   [
+    69,
+    "charcoal"
+   ],
+   [
+    69,
+    "ivory"
+   ]
+  ],
+  "scene": 58
+ },
+ {
+  "layout": "QUOTE",
+  "s0": 70,
+  "s1": 70,
+  "assets": [],
+  "text": "Watch your <i>skin</i>, not the fabric",
+  "scene": 59
+ },
+ {
+  "layout": "FULL",
+  "s0": 71,
+  "s1": 71,
+  "assets": [
+   "K07"
+  ],
+  "scene": 60
+ },
+ {
+  "layout": "FULL",
+  "s0": 72,
+  "s1": 72,
+  "assets": [
+   "K08"
+  ],
+  "scene": 61
+ },
+ {
+  "layout": "ROW",
+  "s0": 73,
+  "s1": 73,
+  "assets": [
+   "K09",
+   "K10",
+   "K11"
+  ],
+  "enter_on": [
+   [
+    73,
+    "move it away"
+   ],
+   [
+    73,
+    "skirt"
+   ],
+   [
+    73,
+    "coat"
+   ]
+  ],
+  "scene": 62
+ },
+ {
+  "layout": "ROW",
+  "s0": 74,
+  "s1": 74,
+  "assets": [
+   "K12",
+   "K13",
+   "K14"
+  ],
+  "enter_on": [
+   [
+    74,
+    "ivory"
+   ],
+   [
+    74,
+    "cream"
+   ],
+   [
+    74,
+    "silk"
+   ]
+  ],
+  "scene": 63
+ },
+ {
+  "layout": "FULL",
+  "s0": 75,
+  "s1": 76,
+  "assets": [
+   "K15"
+  ],
+  "guide": [
+   75,
+   "our personal"
+  ],
+  "scene": 64
+ },
+ {
+  "layout": "CARD",
+  "s0": 77,
+  "s1": 77,
+  "assets": [],
+  "text": "6. Lips that have lost their colour",
+  "scene": 65
+ },
+ {
+  "layout": "FULL",
+  "s0": 78,
+  "s1": 78,
+  "assets": [
+   "L01"
+  ],
+  "scene": 66
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 79,
+  "s1": 79,
+  "assets": [
+   "L02"
+  ],
+  "scene": 67
+ },
+ {
+  "layout": "PAIR",
+  "s0": 80,
+  "s1": 80,
+  "assets": [
+   "L03",
+   "L04"
+  ],
+  "enter_on": [
+   [
+    80,
+    "Lips"
+   ],
+   [
+    80,
+    "brows"
+   ]
+  ],
+  "scene": 68
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 81,
+  "s1": 81,
+  "assets": [
+   "L05"
+  ],
+  "scene": 69
+ },
+ {
+  "layout": "ROW",
+  "s0": 82,
+  "s1": 82,
+  "assets": [
+   "L06",
+   "L07",
+   "L08",
+   "L09"
+  ],
+  "enter_on": [
+   [
+    82,
+    "Europe"
+   ],
+   [
+    82,
+    "Asia"
+   ],
+   [
+    82,
+    "Latin"
+   ],
+   [
+    82,
+    "Africa"
+   ]
+  ],
+  "scene": 70
+ },
+ {
+  "layout": "FULL",
+  "s0": 83,
+  "s1": 84,
+  "assets": [
+   "L10"
+  ],
+  "scene": 71
+ },
+ {
+  "layout": "ROW",
+  "s0": 85,
+  "s1": 85,
+  "assets": [
+   "L11",
+   "L12",
+   "L13"
+  ],
+  "enter_on": [
+   [
+    85,
+    "rose"
+   ],
+   [
+    85,
+    "berry"
+   ],
+   [
+    85,
+    "warm red"
+   ]
+  ],
+  "scene": 72
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 86,
+  "s1": 86,
+  "assets": [
+   "L14"
+  ],
+  "scene": 73
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 87,
+  "s1": 88,
+  "assets": [
+   "L15"
+  ],
+  "scene": 74
+ },
+ {
+  "layout": "CARD",
+  "s0": 89,
+  "s1": 89,
+  "assets": [],
+  "text": "7. Frames that hide your brows",
+  "scene": 75
+ },
+ {
+  "layout": "CUE",
+  "s0": 90,
+  "s1": 90,
+  "assets": [],
+  "text": "something surprising...",
+  "scene": 76
+ },
+ {
+  "layout": "ROW",
+  "s0": 91,
+  "s1": 91,
+  "assets": [
+   "G01",
+   "G02",
+   "G03"
+  ],
+  "enter_on": [
+   [
+    91,
+    "glasses"
+   ],
+   [
+    91,
+    "photographs"
+   ],
+   [
+    91,
+    "very little"
+   ]
+  ],
+  "scene": 77
+ },
+ {
+  "layout": "FULL",
+  "s0": 92,
+  "s1": 93,
+  "assets": [
+   "G04"
+  ],
+  "scene": 78
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 94,
+  "s1": 95,
+  "assets": [
+   "G05"
+  ],
+  "scene": 79
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 96,
+  "s1": 96,
+  "assets": [
+   "G06"
+  ],
+  "scene": 80
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 97,
+  "s1": 97,
+  "assets": [
+   "G07"
+  ],
+  "scene": 81
+ },
+ {
+  "layout": "FULL",
+  "s0": 98,
+  "s1": 98,
+  "assets": [
+   "G08"
+  ],
+  "scene": 82
+ },
+ {
+  "layout": "ROW",
+  "s0": 99,
+  "s1": 99,
+  "assets": [
+   "G09",
+   "G10",
+   "G11"
+  ],
+  "enter_on": [
+   [
+    99,
+    "Tortoiseshell"
+   ],
+   [
+    99,
+    "thin"
+   ],
+   [
+    99,
+    "clear"
+   ]
+  ],
+  "scene": 83
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 100,
+  "s1": 100,
+  "assets": [
+   "G12"
+  ],
+  "scene": 84
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 101,
+  "s1": 102,
+  "assets": [
+   "G13"
+  ],
+  "scene": 85
+ },
+ {
+  "layout": "CARD",
+  "s0": 103,
+  "s1": 103,
+  "assets": [],
+  "text": "8. Dressing by an age rule",
+  "scene": 86
+ },
+ {
+  "layout": "ROW",
+  "s0": 104,
+  "s1": 106,
+  "assets": [
+   "A01",
+   "A02",
+   "A03",
+   "A04",
+   "A05"
+  ],
+  "enter_on": [
+   [
+    104,
+    "knees"
+   ],
+   [
+    105,
+    "long hair"
+   ],
+   [
+    106,
+    "bright"
+   ],
+   [
+    106,
+    "sneakers"
+   ],
+   [
+    106,
+    "fitted"
+   ]
+  ],
+  "scene": 87
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 107,
+  "s1": 107,
+  "assets": [
+   "A06"
+  ],
+  "scene": 88
+ },
+ {
+  "layout": "COLLAGE",
+  "s0": 108,
+  "s1": 108,
+  "assets": [
+   "A07",
+   "A08",
+   "A09",
+   "A10"
+  ],
+  "bg": "caramel",
+  "enter_on": [
+   [
+    108,
+    "they push"
+   ],
+   [
+    108,
+    "looser"
+   ],
+   [
+    108,
+    "darker"
+   ],
+   [
+    108,
+    "safer"
+   ]
+  ],
+  "scene": 89
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 109,
+  "s1": 109,
+  "assets": [
+   "A11"
+  ],
+  "scene": 90
+ },
+ {
+  "layout": "QUOTE",
+  "s0": 110,
+  "s1": 110,
+  "assets": [],
+  "text": "What suits me <i>today?</i>",
+  "scene": 91
+ },
+ {
+  "layout": "ROW",
+  "s0": 111,
+  "s1": 111,
+  "assets": [
+   "A12",
+   "A13",
+   "A14"
+  ],
+  "enter_on": [
+   [
+    111,
+    "proportions"
+   ],
+   [
+    111,
+    "colouring"
+   ],
+   [
+    111,
+    "life"
+   ]
+  ],
+  "scene": 92
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 112,
+  "s1": 112,
+  "assets": [
+   "A15"
+  ],
+  "scene": 93
+ },
+ {
+  "layout": "FULL",
+  "s0": 113,
+  "s1": 113,
+  "assets": [
+   "A16"
+  ],
+  "scene": 94
+ },
+ {
+  "layout": "FULL",
+  "s0": 114,
+  "s1": 114,
+  "assets": [
+   "A17"
+  ],
+  "scene": 95
+ },
+ {
+  "layout": "FULL",
+  "s0": 115,
+  "s1": 115,
+  "assets": [
+   "Z01"
+  ],
+  "scene": 96
+ },
+ {
+  "layout": "ROW",
+  "s0": 116,
+  "s1": 116,
+  "assets": [
+   "H05",
+   "H06",
+   "G13"
+  ],
+  "enter_on": [
+   [
+    116,
+    "hems"
+   ],
+   [
+    116,
+    "colour"
+   ],
+   [
+    116,
+    "frames"
+   ]
+  ],
+  "reuse": true,
+  "scene": 97
+ },
+ {
+  "layout": "CENTRE",
+  "s0": 117,
+  "s1": 118,
+  "assets": [
+   "Z02"
+  ],
+  "scene": 98
+ },
+ {
+  "layout": "FULL",
+  "s0": 119,
+  "s1": 120,
+  "assets": [
+   "Z03"
+  ],
+  "scene": 99
+ },
+ {
+  "layout": "FULL",
+  "s0": 121,
+  "s1": 123,
+  "assets": [
+   "Z04b",
+   "Z04"
+  ],
+  "weights": [
+   5.3,
+   9.1
+  ],
+  "guide": [
+   122,
+   "Our personal"
+  ],
+  "last": true,
+  "scene": 100
+ },
+ {
+  "layout": "END",
+  "s0": 123,
+  "s1": 123,
+  "assets": [],
+  "scene": 101
+ }
+]
