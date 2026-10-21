@@ -124,8 +124,8 @@ whole sentences, not lists, so they work better as one picture each. **Provision
   - 53 original Instagram posts had their author confirmed by Instagram's own embed. Those are the @handles in `CREDITS.txt`.
   - Where the embed could not confirm the author, or the clip was uploaded straight to Pinterest, the credit names the Pinterest
     uploader and says it is not confirmed as the creator.
-- **Pin links:** numeric links were still being resolved when this report was written; where one is missing, the uploader's
-  Pinterest profile is linked instead.
+- **Pin links:** 103 of the 130 picture uses have the pin's own numeric link. For the other 27, the pin could not be found on its
+  board or among its uploader's pins, so the uploader's Pinterest profile is linked instead.
 - **Real footage only:** all 105 video files passed the AI-watermark scan (highest 0.12; the AI line is 0.40). Every clip and photo
   was checked by eye at the seconds it plays. The workers rejected more than 25 candidates as AI.
 - **Not stock:** no generic stock sites (Pexels, Pixabay, Mixkit, Unsplash) were used.

@@ -200,7 +200,7 @@ Motion: one vertical clip centred on the caramel, dissolve.
 **Narration:** Midi skirts, culottes and cropped trousers are back in style, so keep them.
 - **M01** (enters 1:39.3; clip from 1.0 s, speed 0.9): Silver-haired woman (60s) in a dark satin midi skirt and peach knit walking through a shop/home; cuts stay on the same outfit. In 1.0 skips the opening hanger product shot. 9.7 s left, so speed 0.9 gives 10.8 s.  
   Concept: A woman in a midi skirt (walking), row panel 1.  
-  Source: Charli London, https://www.pinterest.com/Shop_Charli_London/ (uploader profile; numeric pin link not found)  
+  Source: Charli London, https://www.pinterest.com/pin/1130614681452698110/  
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 - **M02** (enters 1:39.3; clip from 0.3 s, speed 1.0): Woman 50s+ in light chambray linen wide culottes with a white blazer, then a white shirt; head mostly out of frame, so the culottes are the subject. 0.3-11.0 is the same culottes (cut at ~11.4 to a green top). No text.  
   Concept: A woman in culottes (wide cropped trousers), row panel 2.  
@@ -208,7 +208,7 @@ Motion: one vertical clip centred on the caramel, dissolve.
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 - **M03** (enters 1:39.8; clip from 0.0 s, speed 0.81): Woman in her 30s-40s in beige belted ankle-length trousers, tweed jacket and pumps, standing on a city sidewalk. The clip is 8.71 s, so speed 0.81 gives 10.75 s.  
   Concept: A woman in cropped (ankle) trousers, row panel 3.  
-  Source: Amanda S. Lowery, https://www.pinterest.com/amandaslowery/ (uploader profile; numeric pin link not found)  
+  Source: Amanda S. Lowery, https://www.pinterest.com/pin/718113103117362009/  
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 Motion: panels grow from their top-left corner (0.6 s), one per spoken item.
 
@@ -248,7 +248,7 @@ Motion: one vertical clip centred on the caramel, dissolve.
 **Narration:** For cropped trousers, let the hem end at, or just above, the ankle bone.
 - **M08** (2:06.7-2:11.8; clip from 21.3 s, speed 1.0): Woman (30s) in navy cropped trousers and tan loafers. She first adjusts the hem to the ankle (21.3-23.5), then stands with the hem at the ankle bone. Full-length shot, not a tight ankle close-up. Original creator unknown.  
   Concept: Cropped trousers ending at or just above the ankle bone, with loafers or flats; close to the ankles.  
-  Source: Stylish Fits, https://www.pinterest.com/Stylish_fits_/ (uploader profile; numeric pin link not found)  
+  Source: Stylish Fits, https://www.pinterest.com/pin/1111333645530064121/  
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 Motion: one vertical clip centred on the caramel, dissolve.
 
@@ -280,7 +280,7 @@ Motion: one vertical clip centred on the caramel, dissolve.
 **Narration:** Suddenly, the same skirt looks as if it was made for you.
 - **M11** (2:26.8-2:30.9; clip from 0.0 s, speed 1.0): Woman (30s) in a black tee and a full dark-tartan midi skirt twirling and smiling in a bright hallway. Joyful 'made for you' moment. Full-body vertical: in FULL, keep the band on the skirt and smile, or use the blurred backdrop.  
   Concept: A woman walking or turning in a perfectly fitted midi skirt, looking delighted.  
-  Source: Son de Flor, https://www.pinterest.com/sondeflor/ (uploader profile; numeric pin link not found)  
+  Source: Son de Flor, https://www.pinterest.com/pin/441563938480086863/  
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 Motion: full-screen clip, soft dissolve in (0.5 s).
 
@@ -384,7 +384,7 @@ Motion: full-screen clip, soft dissolve in (0.5 s).
 **Narration:** Small prints can be lovely on a scarf, or a blouse peeking out from under a jacket.
 - **R01** (enters 3:30.2; clip from 5.0 s, speed 1.0): Woman (40s) tying a small-print grey/plum paisley-peacock silk scarf at her neck, close at chest height, 5.0-16.3. Plum cardigan, soft home light.  
   Concept: A small-print silk scarf being tied or worn (scarf with a small print).  
-  Source: The Scarf Stylist, https://www.pinterest.com/scarfstylist/ (uploader profile; numeric pin link not found)  
+  Source: The Scarf Stylist, https://www.pinterest.com/pin/1095289571908767102/  
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 - **R02** (enters 3:31.9; clip from 0.0 s, speed 1.0): Navy polka-dot blouse peeking out from under a white blazer, mirror selfie (R02_a1; source link is an LTK page of the creator).  
   Concept: A small-print blouse peeking out from under a jacket or blazer.  
@@ -404,7 +404,7 @@ Motion: one vertical clip centred on the caramel, dissolve.
 **Narration:** From across a room, the pattern stops reading as a print and blurs into one busy texture. The outfit can look fussy, and a little dated.
 - **R04** (3:40.4-3:50.0; clip from 0.0 s, speed 0.66): Woman seen from a distance on a cobbled street in a small, busy block-print maxi dress: at this distance the print reads as one texture. Cut at ~1.5 s between two angles of the same walk. 7.27 s at 0.7 = 10.4 s, 0.6 s short of 11.0. Full-body far shot, so a tight 16:9 crop loses head or feet; a blurred backdrop is better.  
   Concept: A woman seen from a distance (across a room or street) in a small busy print dress: the print blurs into texture.  
-  Source: SZ BLOCKPRINTS, https://www.pinterest.com/SZBLOCKPRINTS/ (uploader profile; numeric pin link not found)  
+  Source: SZ BLOCKPRINTS, https://www.pinterest.com/pin/653444227228358120/  
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 Motion: full-screen clip, soft dissolve in (0.5 s).
 
@@ -412,7 +412,7 @@ Motion: full-screen clip, soft dissolve in (0.5 s).
 **Narration:** A print usually looks fresher when its size suits the size of the piece.
 - **R05** (3:50.0-3:55.2; clip from 6.5 s, speed 1.0): Woman (30s) in a cream midi shirt dress with a medium navy leaf print with space around each motif, walking and turning. Fresh and modern, navy/cream palette.  
   Concept: A woman in a dress with a medium-scale print with space around each motif; fresh, modern.  
-  Source: Madame ka, https://www.pinterest.com/madamekaMK/ (uploader profile; numeric pin link not found)  
+  Source: Madame ka, https://www.pinterest.com/pin/712765078563962835/  
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 Motion: full-screen clip, soft dissolve in (0.5 s).
 
@@ -420,7 +420,7 @@ Motion: full-screen clip, soft dissolve in (0.5 s).
 **Narration:** On a dress or a full skirt, try a medium-scale print with some space around each motif, or a simple stripe.
 - **R06** (enters 3:55.4; clip from 0.5 s, speed 1.0): Woman (30s) in a navy midi dress with medium white polka dots, well spaced, with a tan belt; a GRWM with close-ups and full-length standing. Medium-scale print with space around each motif.  
   Concept: Medium-scale print dress (row panel 1).  
-  Source: Annah Ogeto, https://www.pinterest.com/annahogeto/ (uploader profile; numeric pin link not found)  
+  Source: Annah Ogeto, https://www.pinterest.com/pin/950048483862813001/  
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 - **R07** (enters 3:56.2; clip from 0.0 s, speed 0.715): Woman (30s) in a full black-and-white floral midi skirt (medium motifs with space) and white shirt, walking down stone steps. 9.73 s at 0.715 = 13.6 s (walking, so slowing is allowed).  
   Concept: A full skirt with a medium-scale print (row panel 2).  
@@ -428,7 +428,7 @@ Motion: full-screen clip, soft dissolve in (0.5 s).
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 - **R08** (enters 4:02.3; clip from 0.0 s, speed 1.0): Women in their 50s-60s in classic blue-and-white striped shirt dresses and stripe shirts, standing and turning under a colonnade. Cuts between women, all in simple stripes. optimumocean is also used by A11 (a different clip), so 2 uses in all.  
   Concept: A simple striped dress or top (row panel 3).  
-  Source: optimumocean, https://www.pinterest.com/optimumocean/ (uploader profile; numeric pin link not found)  
+  Source: optimumocean, https://www.pinterest.com/pin/1131036893915441085/  
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 Motion: panels grow from their top-left corner (0.6 s), one per spoken item.
 
@@ -444,7 +444,7 @@ Motion: one vertical clip centred on the caramel, dissolve.
 **Narration:** To check, ask someone to take a photo of you from a few steps away.
 - **R10** (4:06.3-4:10.6; clip from 6.5 s, speed 0.75): A phone camera screen framing a woman in a cream skirt on a platform: someone taking her photo from a few steps away (6.5-10 s; a repost, original creator unknown).  
   Concept: Someone taking a phone photo of a woman from a few steps away (outfit photo on the street).  
-  Source: apparelsole, https://www.pinterest.com/apparelsole/ (uploader profile; numeric pin link not found)  
+  Source: apparelsole, https://www.pinterest.com/pin/613826624221336368/  
   Checks: AI scan 0.0; checked by eye: a real phone camera interface filming a real scene; no tells; licence: No licence known; creator permission not requested
 Motion: one vertical clip centred on the caramel, dissolve.
 
@@ -637,7 +637,7 @@ Motion: one vertical clip centred on the caramel, dissolve.
   Checks: AI scan None; checked: no tells (real editorial photograph; skin texture and fine lines visible, jewellery consistent); licence: Copyrighted editorial/press photo of a public figure (shown unnamed). No licence held; permission not requested.
 - **L08** (enters 5:52.4; clip from 0.0 s, speed 1.0): Latin American woman (Salma Hayek, 50s, never named), natural makeup, black top, red-carpet backdrop partly visible (crop it out); 1472x1868.  
   Concept: Portrait of a Latin American woman (40s-60s), elegant.  
-  Source: Valentina, https://www.pinterest.com/valent4nga___/ (uploader profile; numeric pin link not found)  
+  Source: Valentina, https://www.pinterest.com/pin/633037291419067367/  
   Checks: AI scan None; checked: no tells (red-carpet press photo, Spirit Awards backdrop); licence: Copyrighted editorial/press photo of a public figure (shown unnamed). No licence held; permission not requested.
 - **L09** (enters 5:53.6; clip from 0.0 s, speed 1.0): African woman (Iman, Somali-born, never named) in a camel leather trench and charcoal turtleneck, elegant, warm palette; 1080x1080. She was 70 in this photo (brief asked 40s-60s; looks younger).  
   Concept: Portrait of an African woman (40s-60s), elegant.  
@@ -649,7 +649,7 @@ Motion: panels grow from their top-left corner (0.6 s), one per spoken item.
 **Narration:** So a touch of colour on your lips matters. It doesn't need to be dark or dramatic.
 - **L10** (5:54.7-6:04.4; clip from 6.2 s, speed 1.0): Extreme close-up of lips: a soft rose-pink liquid lipstick being applied (6.2-13.2 s), not dark, not dramatic; lips fill the frame, fits FULL crop. Faint @malvina_isfan watermark lower-middle.  
   Concept: Close-up: applying a soft lip colour (not dark, not dramatic).  
-  Source: Beauty Fashion And Style, https://www.pinterest.com/Beautyfashionandstyle/ (uploader profile; numeric pin link not found)  
+  Source: Beauty Fashion And Style, https://www.pinterest.com/pin/927952698193600580/  
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 Motion: full-screen clip, soft dissolve in (0.5 s).
 
@@ -661,7 +661,7 @@ Motion: full-screen clip, soft dissolve in (0.5 s).
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 - **L12** (enters 6:05.1; clip from 0.0 s, speed 0.99): Close-up of lips with a berry liquid lipstick/gloss being applied and finished (0-13.7 s; creator cuts at 6.9 and 12.1). KIKO tube visible briefly near the end.  
   Concept: Berry lipstick on lips.  
-  Source: Makuupista, https://www.pinterest.com/makuupista/ (uploader profile; numeric pin link not found)  
+  Source: Makuupista, https://www.pinterest.com/pin/940407965917725945/  
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 - **L13** (enters 6:05.9; clip from 6.5 s, speed 0.8): Woman (60s, short grey hair, red top) lining lips then applying a classic red liquid lipstick (10-16.2 s), finished red lip at 16.2-17.6 s. Window 6.5-17.6 at 0.8 = 13.9 s. Red is classic/slightly cool rather than strongly warm.  
   Concept: Warm red lipstick on lips.  
@@ -673,7 +673,7 @@ Motion: panels grow from their top-left corner (0.6 s), one per spoken item.
 **Narration:** On busy days, a tinted balm is enough.
 - **L14** (6:08.2-6:11.5; clip from 18.6 s, speed 1.0): Mature blonde woman (60s) in an ivory sweater opens a tinted lip balm and swipes it on (18.6-23.2 s): quick, everyday, soft rosy tint; cut to a close-up at 19.2 and back at 20.0 (same scene).  
   Concept: Applying a tinted lip balm, quick, everyday.  
-  Source: Oh My Cream !, https://www.pinterest.com/ohmycream/ (uploader profile; numeric pin link not found)  
+  Source: Oh My Cream !, https://www.pinterest.com/pin/548242954658637242/  
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 Motion: one vertical clip centred on the caramel, dissolve.
 
@@ -681,7 +681,7 @@ Motion: one vertical clip centred on the caramel, dissolve.
 **Narration:** The one thing to be careful with is a very pale nude that erases your lips altogether. It takes away exactly the contrast your face is starting to lose.
 - **L15** (6:11.5-6:22.5; clip from 0.0 s, speed 0.9): 'Concealer lips' look: woman (20s) pats concealer over her lips, lines and glosses them pale so the lips almost disappear (0-11.3 s at 0.93 = 12.2 s). Small serif title 'Concealer Lips' at forehead height throughout (note). Not mocking.  
   Concept: A very pale, concealer-like nude lip (lips almost disappear) - product swatch or application.  
-  Source: ikatehouse, https://www.pinterest.com/ikatehouse/ (uploader profile; numeric pin link not found)  
+  Source: ikatehouse, https://www.pinterest.com/pin/418412621654676226/  
   Checks: AI scan 0.0; checked: no tells; licence: No licence known; creator permission not requested
 Motion: one vertical clip centred on the caramel, dissolve.
 

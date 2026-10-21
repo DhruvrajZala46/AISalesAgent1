@@ -1,7 +1,7 @@
 {
  "id": "Z01",
  "pin_id": "e1_AfqPShxaoiABqCBkt7SGsMXqsW9QnkyWecHm7bwwt9WUujg2DBlJ",
- "pin_url": "",
+ "pin_url": "https://www.pinterest.com/pin/457608012162458923/",
  "creator": "Jose Banda",
  "creator_user": "jbandap",
  "src_link": "https://www.instagram.com/reel/DU6mi87DoMT/",
@@ -36,5 +36,6 @@
  "focus_auto": [
   0.678,
   0.377
- ]
+ ],
+ "pin_numeric": "457608012162458923"
 }
