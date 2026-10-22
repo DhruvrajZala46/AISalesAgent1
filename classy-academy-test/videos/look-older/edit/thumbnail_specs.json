@@ -1,0 +1,275 @@
+[
+ {
+  "out": "thumbs/A_CE.jpg",
+  "top": "Things That Make You",
+  "big": "Look Older",
+  "small": "*avoid these*",
+  "panels": [
+   {
+    "img": "photos/S1_left.jpg",
+    "face": [
+     325,
+     110,
+     440,
+     630
+    ],
+    "fw": 0.4378,
+    "fy": 0.2361,
+    "dx": 0.14
+   },
+   {
+    "img": "photos/S1_centre.jpg",
+    "face": [
+     155,
+     150,
+     255,
+     292
+    ],
+    "fw": 0.3049,
+    "fy": 0.2195,
+    "dx": 0.1622
+   },
+   {
+    "img": "photos/S1_right.jpg",
+    "face": [
+     455,
+     445,
+     330,
+     335
+    ],
+    "fw": 0.34,
+    "fy": 0.2746,
+    "dx": -0.32
+   }
+  ],
+  "underline": "Older"
+ },
+ {
+  "out": "thumbs/B_CE.jpg",
+  "top": "Why You Look",
+  "big": "Older",
+  "small": "*it's not your face*",
+  "panels": [
+   {
+    "img": "photos/S1_left.jpg",
+    "face": [
+     325,
+     110,
+     440,
+     630
+    ],
+    "fw": 0.4378,
+    "fy": 0.2361,
+    "dx": 0.14
+   },
+   {
+    "img": "photos/S1_centre.jpg",
+    "face": [
+     155,
+     150,
+     255,
+     292
+    ],
+    "fw": 0.3049,
+    "fy": 0.2195,
+    "dx": 0.1622
+   },
+   {
+    "img": "photos/S1_right.jpg",
+    "face": [
+     455,
+     445,
+     330,
+     335
+    ],
+    "fw": 0.34,
+    "fy": 0.2746,
+    "dx": -0.32
+   }
+  ],
+  "underline": "Older"
+ },
+ {
+  "out": "thumbs/C_CE.jpg",
+  "top": "Things That Make You",
+  "big": "Look Older",
+  "small": "*avoid these*",
+  "panels": [
+   {
+    "img": "photos/S2_left.jpg",
+    "face": [
+     562,
+     371,
+     232,
+     275
+    ],
+    "fw": 0.2539,
+    "fy": 0.2229,
+    "dx": 0.01
+   },
+   {
+    "img": "photos/S2_centre.jpg",
+    "face": [
+     559,
+     109,
+     246,
+     246
+    ],
+    "fw": 0.2752,
+    "fy": 0.1604,
+    "dx": 0.0
+   },
+   {
+    "img": "photos/S2_right.jpg",
+    "face": [
+     586,
+     276,
+     420,
+     420
+    ],
+    "fw": 0.4328,
+    "fy": 0.2117,
+    "dx": -0.3
+   }
+  ],
+  "underline": "Older"
+ },
+ {
+  "out": "thumbs/A_CA.jpg",
+  "top": "Things That Make You",
+  "big": "Look Older",
+  "small": "*avoid these*",
+  "panels": [
+   {
+    "img": "photos/S1_left.jpg",
+    "face": [
+     325,
+     110,
+     440,
+     630
+    ],
+    "fw": 0.4378,
+    "fy": 0.2361,
+    "dx": 0.14
+   },
+   {
+    "img": "photos/S1_centre.jpg",
+    "face": [
+     155,
+     150,
+     255,
+     292
+    ],
+    "fw": 0.3049,
+    "fy": 0.2195,
+    "dx": 0.1622
+   },
+   {
+    "img": "photos/S1_right.jpg",
+    "face": [
+     455,
+     445,
+     330,
+     335
+    ],
+    "fw": 0.34,
+    "fy": 0.2746,
+    "dx": -0.32
+   }
+  ],
+  "underline": "Older",
+  "logo": "/tmp/claude-0/-home-user-AISalesAgent1/73fc3aa5-807d-530d-b865-5c7bcc671679/scratchpad/hairvid/assets/logo_ca_white.png"
+ },
+ {
+  "out": "thumbs/B_CA.jpg",
+  "top": "Why You Look",
+  "big": "Older",
+  "small": "*it's not your face*",
+  "panels": [
+   {
+    "img": "photos/S1_left.jpg",
+    "face": [
+     325,
+     110,
+     440,
+     630
+    ],
+    "fw": 0.4378,
+    "fy": 0.2361,
+    "dx": 0.14
+   },
+   {
+    "img": "photos/S1_centre.jpg",
+    "face": [
+     155,
+     150,
+     255,
+     292
+    ],
+    "fw": 0.3049,
+    "fy": 0.2195,
+    "dx": 0.1622
+   },
+   {
+    "img": "photos/S1_right.jpg",
+    "face": [
+     455,
+     445,
+     330,
+     335
+    ],
+    "fw": 0.34,
+    "fy": 0.2746,
+    "dx": -0.32
+   }
+  ],
+  "underline": "Older",
+  "logo": "/tmp/claude-0/-home-user-AISalesAgent1/73fc3aa5-807d-530d-b865-5c7bcc671679/scratchpad/hairvid/assets/logo_ca_white.png"
+ },
+ {
+  "out": "thumbs/C_CA.jpg",
+  "top": "Things That Make You",
+  "big": "Look Older",
+  "small": "*avoid these*",
+  "panels": [
+   {
+    "img": "photos/S2_left.jpg",
+    "face": [
+     562,
+     371,
+     232,
+     275
+    ],
+    "fw": 0.2539,
+    "fy": 0.2229,
+    "dx": 0.01
+   },
+   {
+    "img": "photos/S2_centre.jpg",
+    "face": [
+     559,
+     109,
+     246,
+     246
+    ],
+    "fw": 0.2752,
+    "fy": 0.1604,
+    "dx": 0.0
+   },
+   {
+    "img": "photos/S2_right.jpg",
+    "face": [
+     586,
+     276,
+     420,
+     420
+    ],
+    "fw": 0.4328,
+    "fy": 0.2117,
+    "dx": -0.3
+   }
+  ],
+  "underline": "Older",
+  "logo": "/tmp/claude-0/-home-user-AISalesAgent1/73fc3aa5-807d-530d-b865-5c7bcc671679/scratchpad/hairvid/assets/logo_ca_white.png"
+ }
+]
