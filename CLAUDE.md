@@ -5,6 +5,10 @@ women of every age). Everything lives in `classy-academy-test/`.
 
 **New chat? Read `classy-academy-test/HANDOFF.md` FIRST** - the state of the work, the user's last (rejected) video and the open task.
 
+**Recommending a topic? Check `classy-academy-test/TOPIC-EXCLUSION-REGISTER.md` first** - every topic already
+published, made, recommended or rejected (across all branches), by underlying concept. Add each new recommendation to it.
+Latest pick: `classy-academy-test/research-2026-10-22-new-topic.md`.
+
 Before any work on a video, read:
 0. `classy-academy-test/CHANNEL-DNA.md` - the creator's own thinking, teaching, scripting and content DNA,
    built from her videos (and `CHANNEL-DNA-diagnosis.md`: why the last video missed), with
