@@ -1,5 +1,7 @@
 # Thumbnail research and three new designs: "8 Things That Make You Look Older: What to Wear Instead" (22 Oct 2026)
 
+**Photos replaced (22 Oct 2026):** the v2 photos below were rejected. The same three designs with cleared Unsplash/Pexels photos are in `THUMBNAIL-PHOTOS.md`.
+
 Started again from zero after the first set was rejected. Nothing from the rejected set is reused: no photo, no layout settings, no headline/qualifier pairing.
 
 ## 1. Channel thumbnail DNA (all 30 Classy Academy thumbnails)

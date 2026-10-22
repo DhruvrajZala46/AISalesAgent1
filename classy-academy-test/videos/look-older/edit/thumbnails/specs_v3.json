@@ -1,0 +1,338 @@
+{
+ "note": "thumb_ce.py specs for v3 (22 Oct 2026). img paths point to the session scratchpad; re-download each photo from the CDN address in photos_v3.json to rebuild.",
+ "final": [
+  {
+   "logo": "/tmp/claude-0/-home-user-AISalesAgent1/73fc3aa5-807d-530d-b865-5c7bcc671679/scratchpad/hairvid/assets/logo_ca_white.png",
+   "darken": 25,
+   "bright": 0.8,
+   "out": "ph/final/CA_LookOlder_A_details.jpg",
+   "top": "Details That Make You",
+   "big": "Look Older",
+   "small": "*wear this instead*",
+   "panels": [
+    {
+     "img": "ph/cand/PIN/PIN-04.jpg",
+     "face": [
+      1317,
+      1708,
+      283,
+      283
+     ],
+     "fw": 0.165,
+     "fy": 0.19
+    },
+    {
+     "img": "ph/cand/FIN/UNS-gPc7zFdSADA.jpg",
+     "face": [
+      1290,
+      1080,
+      520,
+      600
+     ],
+     "fw": 0.3,
+     "fy": 0.145
+    },
+    {
+     "img": "ph/cand/FIN/UNS-oG3IJtQgtmk.jpg",
+     "face": [
+      890,
+      650,
+      1500,
+      1500
+     ],
+     "fw": 0.7,
+     "fy": 0.25,
+     "dx": 0.0,
+     "sat": 0.66,
+     "bright": 0.86
+    }
+   ],
+   "sat": 1.08
+  },
+  {
+   "logo": "/tmp/claude-0/-home-user-AISalesAgent1/73fc3aa5-807d-530d-b865-5c7bcc671679/scratchpad/hairvid/assets/logo_ca_white.png",
+   "darken": 10,
+   "bright": 0.86,
+   "out": "ph/final/CA_LookOlder_B_younger.jpg",
+   "top": "How to Look",
+   "big": "Younger",
+   "small": "*at any age*",
+   "panels": [
+    {
+     "img": "ph/cand/PIN/PIN-01.jpg",
+     "face": [
+      1008,
+      1181,
+      964,
+      964
+     ],
+     "fw": 0.36,
+     "fy": 0.22,
+     "bright": 0.78
+    },
+    {
+     "img": "ph/cand/PIN/PIN-02.jpg",
+     "face": [
+      700,
+      1280,
+      450,
+      450
+     ],
+     "fw": 0.34,
+     "fy": 0.22,
+     "bright": 0.95
+    },
+    {
+     "img": "ph/cand/FIN/PEX-7959665.jpg",
+     "face": [
+      1431,
+      962,
+      679,
+      679
+     ],
+     "fw": 0.36,
+     "fy": 0.22,
+     "bright": 0.76
+    }
+   ],
+   "sat": 1.05
+  },
+  {
+   "logo": "/tmp/claude-0/-home-user-AISalesAgent1/73fc3aa5-807d-530d-b865-5c7bcc671679/scratchpad/hairvid/assets/logo_ca_white.png",
+   "darken": 25,
+   "bright": 0.9,
+   "out": "ph/final/CA_LookOlder_C_never-dated.jpg",
+   "top": "Elegant Ladies",
+   "big": "Never Look Dated",
+   "small": "*what to wear instead*",
+   "panels": [
+    {
+     "img": "ph/cand/FIN/PEX-5900573.jpg",
+     "face": [
+      1080,
+      1200,
+      360,
+      400
+     ],
+     "fw": 0.26,
+     "fy": 0.22
+    },
+    {
+     "img": "ph/cand/FIN/PEX-16144965.jpg",
+     "face": [
+      1150,
+      1290,
+      270,
+      300
+     ],
+     "fw": 0.22,
+     "fy": 0.19
+    },
+    {
+     "img": "ph/cand/FIN/UNS-AfWz2PVA3z8.jpg",
+     "face": [
+      223,
+      317,
+      1393,
+      1393
+     ],
+     "fw": 0.65,
+     "fy": 0.19,
+     "dx": 0.06
+    }
+   ],
+   "underline": "Never",
+   "sat": 1.08
+  }
+ ],
+ "b_alt": [
+  {
+   "logo": "/tmp/claude-0/-home-user-AISalesAgent1/73fc3aa5-807d-530d-b865-5c7bcc671679/scratchpad/hairvid/assets/logo_ca_white.png",
+   "darken": 10,
+   "bright": 0.86,
+   "out": "ph/final/CA_LookOlder_B_younger_ALT-no-older-woman.jpg",
+   "top": "How to Look",
+   "big": "Younger",
+   "small": "*at any age*",
+   "panels": [
+    {
+     "img": "ph/cand/PIN/PIN-01.jpg",
+     "face": [
+      1008,
+      1181,
+      964,
+      964
+     ],
+     "fw": 0.36,
+     "fy": 0.22,
+     "bright": 0.78
+    },
+    {
+     "img": "ph/cand/PIN/PIN-02.jpg",
+     "face": [
+      700,
+      1280,
+      450,
+      450
+     ],
+     "fw": 0.34,
+     "fy": 0.22,
+     "bright": 0.95
+    },
+    {
+     "img": "ph/cand/PIN/PIN-03.jpg",
+     "face": [
+      718,
+      833,
+      696,
+      696
+     ],
+     "fw": 0.45,
+     "fy": 0.22,
+     "bright": 0.84
+    }
+   ],
+   "sat": 1.05
+  }
+ ],
+ "paid_preview": [
+  {
+   "logo": "/tmp/claude-0/-home-user-AISalesAgent1/73fc3aa5-807d-530d-b865-5c7bcc671679/scratchpad/hairvid/assets/logo_ca_white.png",
+   "darken": 25,
+   "bright": 0.88,
+   "out": "ph/final/PREVIEW_paid_A.jpg",
+   "top": "Details That Make You",
+   "big": "Look Older",
+   "small": "*wear this instead*",
+   "panels": [
+    {
+     "img": "ph/cand/STOCK/istock-1073221492.jpg",
+     "face": [
+      650,
+      520,
+      130,
+      140
+     ],
+     "fw": 0.17,
+     "fy": 0.14,
+     "dx": -0.06
+    },
+    {
+     "img": "ph/cand/STOCK/istock-1492372153.jpg",
+     "face": [
+      450,
+      330,
+      490,
+      570
+     ],
+     "fw": 0.42,
+     "fy": 0.2
+    },
+    {
+     "img": "ph/cand/STOCK/istock-943104058.jpg",
+     "face": [
+      399,
+      258,
+      546,
+      546
+     ],
+     "fw": 0.4,
+     "fy": 0.2,
+     "bright": 1.0
+    }
+   ],
+   "sat": 1.0
+  },
+  {
+   "logo": "/tmp/claude-0/-home-user-AISalesAgent1/73fc3aa5-807d-530d-b865-5c7bcc671679/scratchpad/hairvid/assets/logo_ca_white.png",
+   "darken": 25,
+   "bright": 0.88,
+   "out": "ph/final/PREVIEW_paid_B.jpg",
+   "top": "How to Look",
+   "big": "Younger",
+   "small": "*at any age*",
+   "panels": [
+    {
+     "img": "ph/cand/STOCK/istock-1309569610.jpg",
+     "face": [
+      260,
+      55,
+      651,
+      651
+     ],
+     "fw": 0.4,
+     "fy": 0.2
+    },
+    {
+     "img": "ph/cand/STOCK/istock-2187102448.jpg",
+     "face": [
+      57,
+      286,
+      708,
+      708
+     ],
+     "fw": 0.44,
+     "fy": 0.21
+    },
+    {
+     "img": "ph/cand/STOCK/istock-2172634020.jpg",
+     "face": [
+      640,
+      330,
+      440,
+      520
+     ],
+     "fw": 0.4,
+     "fy": 0.21
+    }
+   ],
+   "sat": 1.0
+  },
+  {
+   "logo": "/tmp/claude-0/-home-user-AISalesAgent1/73fc3aa5-807d-530d-b865-5c7bcc671679/scratchpad/hairvid/assets/logo_ca_white.png",
+   "darken": 25,
+   "bright": 0.9,
+   "out": "ph/final/PREVIEW_paid_C.jpg",
+   "top": "Elegant Ladies",
+   "big": "Never Look Dated",
+   "small": "*what to wear instead*",
+   "panels": [
+    {
+     "img": "ph/cand/STOCK/getty-1386257547.jpg",
+     "face": [
+      750,
+      380,
+      110,
+      130
+     ],
+     "fw": 0.14,
+     "fy": 0.15
+    },
+    {
+     "img": "ph/cand/STOCK/istock-1362713839.jpg",
+     "face": [
+      440,
+      501,
+      258,
+      258
+     ],
+     "fw": 0.24,
+     "fy": 0.17
+    },
+    {
+     "img": "ph/cand/STOCK/istock-2263859063.jpg",
+     "face": [
+      700,
+      220,
+      240,
+      260
+     ],
+     "fw": 0.3,
+     "fy": 0.17
+    }
+   ],
+   "underline": "Never",
+   "sat": 1.12
+  }
+ ]
+}

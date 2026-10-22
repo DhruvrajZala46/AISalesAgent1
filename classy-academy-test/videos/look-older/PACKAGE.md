@@ -77,6 +77,8 @@ The full list is in `edit/titles.txt`.
 
 ## 3. Thumbnails (your template, exactly: `workflow/tools/thumb_ce.py`)
 
+**Superseded (22 Oct 2026):** the current thumbnails are the v3 set in `THUMBNAIL-PHOTOS.md`, with the same template and cleared Unsplash/Pexels photos. This section records v1.
+
 | | Top line | Headline | Small line | Photos | Purpose |
 |---|---|---|---|---|---|
 | **A (recommended)** | Things That Make You | **Look Older** (dark-red rule under "Older") | \*avoid these\* | Set 1 | your 1.25M thumbnail's exact shape and wording style, plus the niche's proven words |

@@ -11,24 +11,24 @@
 #                                         "panels": [{"img": "a.jpg", "face": [x, y, w, h], "fw": 0.32, "fy": 0.17}, x3], "fonts": "<dir>"}
 #   face = the face box in the source image (pixels); fw = face width as a share of the panel; fy = face centre height as a share of 720.
 #   optional: "underline": a headline word to underline in dark red (the 1.25M's rule under "Never"); "logo": another logo file;
-#   "darken" (0-255, default 85) and "bright" (default 0.90). The channel's own thumbnails keep the text zone BRIGHTER than the edges
+#   "darken" (0-255, default 85), "bright" (default 0.90; a panel may set its own) and "sat" (colour, default 0.92; a panel may set its own). The channel's own thumbnails keep the text zone BRIGHTER than the edges
 #   (median centre/edge luminance 1.21 over all 30, measured 22 Oct 2026), so use a light darken (about 25) and bright ~1.0 for them.
 import json, os, sys
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
 T_ = os.path.dirname(os.path.abspath(__file__)); LOGO = T_ + '/../assets/logo_ce.png'
 W, H = 1280, 720; XS = [(0, 402), (404, 851), (853, 1280)]
 
-def finish(im, bright=0.90):
-    im = ImageEnhance.Color(im).enhance(0.92); im = ImageEnhance.Contrast(im).enhance(1.04)
+def finish(im, bright=0.90, sat=0.92):
+    im = ImageEnhance.Color(im).enhance(sat); im = ImageEnhance.Contrast(im).enhance(1.04)
     im = ImageEnhance.Brightness(im).enhance(bright); im = ImageEnhance.Sharpness(im).enhance(1.2)
     return Image.blend(im, Image.new('RGB', im.size, (205, 170, 140)), 0.05)
 
-def panel(p, pw, bright=0.90):
+def panel(p, pw, bright=0.90, sat=0.92):
     im = Image.open(p['img']).convert('RGB'); iw, ih = im.size; x, y, w, h = p['face']
     s = max(pw * p.get('fw', 0.32) / w, pw / iw, H / ih)
     cx, cy = (x + w / 2) * s, (y + h / 2) * s; im = im.resize((round(iw * s), round(ih * s)), Image.LANCZOS)
     L = min(max(0, round(cx - pw / 2 + p.get('dx', 0) * pw)), im.width - pw); T = min(max(0, round(cy - H * p.get('fy', 0.17))), im.height - H)
-    return finish(im.crop((L, T, L + pw, T + H)), bright)
+    return finish(im.crop((L, T, L + pw, T + H)), p.get('bright', bright), p.get('sat', sat))
 
 def cap_size(path, cap, probe='E'):
     for s in range(8, 400):
@@ -43,7 +43,7 @@ def width(d, t, f, track): return sum(d.textlength(ch, font=f) for ch in t) + tr
 def build(spec):
     FD = spec.get('fonts') or (T_ + '/../assets/fonts')
     c = Image.new('RGB', (W, H))
-    for p, (x0, x1) in zip(spec['panels'], XS): c.paste(panel(p, x1 - x0, spec.get('bright', 0.90)), (x0, 0))
+    for p, (x0, x1) in zip(spec['panels'], XS): c.paste(panel(p, x1 - x0, spec.get('bright', 0.90), spec.get('sat', 0.92)), (x0, 0))
     d = ImageDraw.Draw(c)
     for x0, x1 in XS[1:]: d.rectangle((x0 - 2, 0, x0 - 1, H), fill=(236, 228, 220))
     # gentle darkening behind the text block
