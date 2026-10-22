@@ -1,0 +1,137 @@
+[
+ {
+  "logo": "/tmp/claude-0/-home-user-AISalesAgent1/73fc3aa5-807d-530d-b865-5c7bcc671679/scratchpad/hairvid/assets/logo_ca_white.png",
+  "darken": 25,
+  "bright": 1.0,
+  "out": "v2/A_details.jpg",
+  "top": "Details That Make You",
+  "big": "Look Older",
+  "small": "*wear this instead*",
+  "panels": [
+   {
+    "img": "fr/full/M06_9.5.png",
+    "face": [
+     344,
+     50,
+     144,
+     144
+    ],
+    "fw": 0.2,
+    "fy": 0.072
+   },
+   {
+    "img": "fr/full/L09.jpg",
+    "face": [
+     397,
+     153,
+     298,
+     298
+    ],
+    "fw": 0.3,
+    "fy": 0.25
+   },
+   {
+    "img": "fr/full/G03.jpg",
+    "face": [
+     553,
+     101,
+     460,
+     460
+    ],
+    "fw": 0.3,
+    "fy": 0.17,
+    "dx": -0.05
+   }
+  ]
+ },
+ {
+  "logo": "/tmp/claude-0/-home-user-AISalesAgent1/73fc3aa5-807d-530d-b865-5c7bcc671679/scratchpad/hairvid/assets/logo_ca_white.png",
+  "darken": 25,
+  "bright": 1.0,
+  "out": "v2/B_glow.jpg",
+  "top": "How to Look",
+  "big": "Younger",
+  "small": "*at any age*",
+  "panels": [
+   {
+    "img": "fr/full/K07_14.5.png",
+    "face": [
+     235,
+     248,
+     518,
+     518
+    ],
+    "fw": 0.3,
+    "fy": 0.19
+   },
+   {
+    "img": "fr/full/H06_1.2.png",
+    "face": [
+     120,
+     90,
+     340,
+     450
+    ],
+    "fw": 0.3,
+    "fy": 0.21
+   },
+   {
+    "img": "fr/full/L05_25.9.png",
+    "face": [
+     124,
+     238,
+     425,
+     425
+    ],
+    "fw": 0.7,
+    "fy": 0.36,
+    "dx": 0.12
+   }
+  ]
+ },
+ {
+  "logo": "/tmp/claude-0/-home-user-AISalesAgent1/73fc3aa5-807d-530d-b865-5c7bcc671679/scratchpad/hairvid/assets/logo_ca_white.png",
+  "darken": 25,
+  "bright": 1.0,
+  "out": "v2/C_never_dated.jpg",
+  "top": "Elegant Ladies",
+  "big": "Never Look Dated",
+  "small": "*what to wear instead*",
+  "underline": "Never",
+  "panels": [
+   {
+    "img": "fr/full/D11_3.0.png",
+    "face": [
+     355,
+     170,
+     65,
+     65
+    ],
+    "fw": 0.1,
+    "fy": 0.14
+   },
+   {
+    "img": "fr/full/K04.jpg",
+    "face": [
+     457,
+     111,
+     121,
+     121
+    ],
+    "fw": 0.1,
+    "fy": 0.11
+   },
+   {
+    "img": "fr/full/K05.jpg",
+    "face": [
+     600,
+     110,
+     100,
+     110
+    ],
+    "fw": 0.12,
+    "fy": 0.12
+   }
+  ]
+ }
+]
