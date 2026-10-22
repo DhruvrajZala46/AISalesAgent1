@@ -10,6 +10,7 @@
 # usage: python3 thumb_ce.py spec.json   spec = {"out": "T.jpg", "top": "Hair That Looks", "big": "Expensive", "small": "*It's Not the Cut*",
 #                                         "panels": [{"img": "a.jpg", "face": [x, y, w, h], "fw": 0.32, "fy": 0.17}, x3], "fonts": "<dir>"}
 #   face = the face box in the source image (pixels); fw = face width as a share of the panel; fy = face centre height as a share of 720.
+#   optional: "underline": a headline word to underline in dark red (the 1.25M's rule under "Never"); "logo": another logo file.
 import json, os, sys
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
 T_ = os.path.dirname(os.path.abspath(__file__)); LOGO = T_ + '/../assets/logo_ce.png'
@@ -62,7 +63,11 @@ def build(spec):
     c.paste(Image.new('RGB', (W, H), (14, 9, 6)), (0, 0), sh.filter(ImageFilter.GaussianBlur(7)))
     d = ImageDraw.Draw(c)
     for f, t, tr, x, y in lines: tracked(d, x, y, t, f, tr, (255, 255, 255))
-    lg = Image.open(LOGO).convert('RGBA'); lg.thumbnail((104, 104), Image.LANCZOS); c.paste(lg, (101 - lg.width // 2, 75 - lg.height // 2), lg)
+    if spec.get('underline'):                          # dark-red rule under one headline word, as under "Never" on the 1.25M
+        f, t, tr, x, y = lines[1]; w = spec['underline']; k = t.find(w)   # (measured: 5 px, RGB 121,22,23, 13 px under the letters)
+        x0 = x + d.textlength(t[:k], font=f) + 0.05 * d.textlength(w, font=f); x1 = x + d.textlength(t[:k + len(w)], font=f)
+        d.rectangle((x0, base + 13, x1, base + 17), fill=(121, 22, 23))
+    lg = Image.open(spec.get('logo', LOGO)).convert('RGBA'); lg.thumbnail((104, 104), Image.LANCZOS); c.paste(lg, (101 - lg.width // 2, 75 - lg.height // 2), lg)
     c.save(spec['out'], quality=95); return c
 
 if __name__ == '__main__':
