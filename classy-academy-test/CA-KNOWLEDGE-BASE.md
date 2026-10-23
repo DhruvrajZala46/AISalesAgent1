@@ -1,4 +1,4 @@
-# Classy Academy knowledge base (v1, 21 Oct 2026)
+# Classy Academy knowledge base (v2, 23 Oct 2026; v1 21 Oct)
 
 **What this is:** how the channel thinks, teaches and speaks, rebuilt from its own words. Use it for every script. Update it when new videos or comments come in.
 
@@ -161,3 +161,58 @@ This project's own scripts also cover:
 - Words added to pass a checker.
 - Generic AI phrasing.
 - Unsupported claims and invented quotes.
+
+## 9. Update 23 Oct 2026 (study for the "more attractive" script)
+
+**Read in full for this update:** Body Language (r_mYSc7FHvk), Grooming (HhJI4uLHgj4), LE (QOEUbAZB07o), Microhabits (MVrYflIex4c), Signs (RiTnYAqtD68), At Home (GmiAMO93vFE), Pose in Photos (WWIJxdkTLuo); comments re-scanned by theme (2,254).
+
+**Beliefs about beauty and attractiveness:**
+
+| Belief | In the channel's words | Where |
+|---|---|---|
+| Presence is more than looks | "It's not always what they're wearing. It's not even about beauty. It's how they carry themselves." | Body Language opener [O1] |
+| Elegance is more than beauty | "An elegant woman can be beautiful… But if she doesn't carry these 10 traits…" | Signs opener [O1] |
+| Kindness reads as attractive | "kindness is one of the most attractive things you can wear. And best of all, it costs nothing." | Signs #4 [O1] |
+| Healthy, not flawless | "Whether you have acne scars, hyperpigmentation, texture, or fine lines, none of those things take away from your beauty or your elegance. A healthy, well-cared-for complexion will always feel more timeless than chasing perfection." | Grooming #4 [O1]; echoed in Pose ("Why do I look like that? You're definitely not alone") |
+| Enhance, don't compete | "Is this enhancing my features or distracting from them?" | Grooming #1 [O1] |
+| You look better in person than in photos | "Studies have even shown people are usually perceived as more attractive in real life than in photos." | Pose #1 [O1] |
+| Composure keeps warmth | "Elegant presence doesn't remove warmth or personality." | Body Language #6 [O1] |
+| Care is self-respect, not spending | "elegance isn't about spending more. It's about making yourself enough of a priority" | Grooming #9; At Home [O] |
+
+**Reasoning moves seen again:**
+- **The everyday moment first, then the mechanism:**
+  - "When we feel slightly anxious… our bodies tend to speed up";
+  - "When your hands don't have a place to rest, your body starts searching for something to do".
+- **One-line research mentions without numbers, at most once or twice per video:**
+  - "Body language researchers often talk about…";
+  - "Studies have even shown…".
+- **A personal aside in the first person, used sparingly:**
+  - "It's something I had to [be] aware of myself";
+  - "I know I've had that moment more than once";
+  - "I sure do".
+  Never invent one for her.
+
+**Format of the "Instantly" and habit videos** (LE 5.4×, Microhabits, Body Language 2.4×, Grooming):
+- **Opener:** a scene ("Have you ever noticed how some women…") or a misconception ("You might think… But what if I told you…").
+- **Then:** "In today's video, we're sharing/revealing…", then "Let's get started."
+- **Points:** each opens with the habit's own name, spoken ("Slow your movements", "Five. Tailoring changes everything."). The card carries the number.
+- **The guide:** once, inside the related point or the intro, then again in the outro.
+- **The close:**
+  - an invitation to comment ("Comment the number of the micro-habit you're committing to… I read them");
+  - "A simple like or comment would truly mean…";
+  - the guide;
+  - "Until next time. Bye, my loves."
+- **Never use the old "part two" ask** (user rule, 21 Oct).
+- **Length:** LE 1,252 words (8 points); Microhabits 1,288 (10); Body Language 1,607 (7); Grooming 1,576 (10).
+
+**Comment evidence relevant to looks and beauty:**
+- **Direct request:** "can you make a video on Natural looks and care like skin, health, no makeup look" (6 likes); "basic style for hair and makeup" (18); "makeup tutorials" (5).
+- **Representation:** thanks for including darker skin (68 likes); asks for more darker-skinned women (34). Advice on colour and skin must work for every skin tone.
+- **Tension:** "I'm naturally a very expressive person, I like to laugh and sometimes I'm loud" (115 likes). Composure must never sound like a blank face.
+- **Self-worth:** "We should love ourselves enough to look good… we deserve it" (171).
+
+**Also taught now (add to section 7):**
+- **Look Older (in production):** heavy shoes, hems at the calf, outdated details, print scale, black under the face, lip colour and facial contrast, frames and brows, age rules.
+- **Body Language:** entry pause, slow movements, open posture, hands' anchor, standing/sitting, let the moment land, ending a conversation.
+- **Grooming:** enhance don't distract, scent application, hands and nails, skin (SPF, hydration, makeup off), clothes care, a signature, smile/teeth/lip care, self-care rituals (incl. eye cream, brows), not putting yourself last, handbag essentials.
+
