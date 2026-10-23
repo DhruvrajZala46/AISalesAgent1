@@ -7,7 +7,8 @@ women of every age). Everything lives in `classy-academy-test/`.
 
 **Recommending a topic? Check `classy-academy-test/TOPIC-EXCLUSION-REGISTER.md` first** - every topic already
 published, made, recommended or rejected (across all branches), by underlying concept. Add each new recommendation to it.
-Latest pick: `classy-academy-test/research-2026-10-22-new-topic.md`.
+Latest pick: `classy-academy-test/research-2026-10-23-channel-audit-next-topic.md` (full channel audit; the 22 Oct
+scarf pick was rejected).
 
 Before any work on a video, read:
 0. `classy-academy-test/CHANNEL-DNA.md` - the creator's own thinking, teaching, scripting and content DNA,

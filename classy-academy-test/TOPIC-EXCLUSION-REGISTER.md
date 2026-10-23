@@ -174,12 +174,31 @@ strong idea; never country-specific.
 
 | Topic | Status |
 |---|---|
-| 8 Elegant Ways to Wear a Scarf | REC 22 Oct (`research-2026-10-22-new-topic.md`), awaiting the user |
-| How to walk and move gracefully | CAND 22 Oct (runner-up, rejected: overlaps Body Language) |
+| 8 Elegant Ways to Wear a Scarf | REC 22 Oct (`research-2026-10-22-new-topic.md`), **REJ** 23 Oct |
+| How to walk and move gracefully | CAND 22 Oct (runner-up), CAND 23 Oct (fails novelty B and C against Body Language) |
+
+### 13. Beauty: makeup (new pillar, 23 Oct)
+- **Core desire:** makeup that looks polished and timeless, not overdone or dated.
+- **Central promise:** "a few elegant looks she can do herself".
+
+| Topic | Status |
+|---|---|
+| The Most Elegant & Easy Makeup Looks | REC 23 Oct (`research-2026-10-23-channel-audit-next-topic.md`), awaiting the user |
+
+### 14. Other candidates audited 23 Oct (all failed at least one novelty test)
+
+| Topic | Status |
+|---|---|
+| What Finishing Schools Teach Every Woman | CAND 23 Oct, fails C and E (etiquette) |
+| How to Find Your Personal Style | CAND 23 Oct, fails D (competes with the paid guide) |
+| Things Elegant Women Never Buy | CAND 19 and 23 Oct, fails A, B, C |
+| How to Carry Yourself at a Wedding or Event | CAND 23 Oct, fails B and C; no external proof |
+| Perfumes That Smell Elegant | CAND 18, 19 and 23 Oct, fails C |
 
 ## Considered by Claude and dropped before reaching the user (not in the categories above, listed for honesty)
 
-Scarf tying (19 Oct: "strong demand, but a generic tutorial format that fits any channel"), makeup (partly covered),
+Scarf tying (19 Oct: "strong demand, but a generic tutorial format that fits any channel"; later recommended 22 Oct and
+rejected 23 Oct), makeup (set aside 19 and 22 Oct as "partly covered"; re-examined and recommended 23 Oct),
 texture, prints, evening and party dressing, coats, knitwear, style icons, old money / quiet luxury again.
 
 ## Points already taught (never repeat inside a new video)
