@@ -1,265 +1,191 @@
-# 7 Small Things That Instantly Make You More Attractive: revision, research and quality control
+# 7 Small Things That Instantly Make You More Attractive: diagnosis, change log, research and QA (version 3)
 
-**Not narrated.** The copy-ready script is `script.md` (version 2, 23 Oct 2026).
+**Not narrated.** The copy-ready script is `script.md` (version 3, 24 Oct 2026). Versions 1 (commit 7c7ddd5) and 2 (commit d5a3da3) and their research notes are in git history at the same paths.
 
-- **Version 1** ("7 Things That Instantly Make You More Attractive", commit 7c7ddd5) received a CHANGE verdict.
-  - Its research file is in git history at the same path.
-  - The concept and its evidence are in `../../research-2026-10-23-proven-concept-attractive.md`.
-- **Sources used for this revision:**
-  - script v1 in full;
-  - `CLAUDE.md`, `CA-KNOWLEDGE-BASE.md` (v2), `voice.md`, `CHANNEL-DNA.md`;
-  - the transcripts of all 30 of the channel's long uploads (captured 19 Oct 2026);
-  - the channel's public video and Shorts lists, rechecked today: no new long uploads since 23 Sep 2026, and 7 Shorts, none about the face or makeup;
-  - every script in this repo, including unpublished ones.
-- **The review itself** was not attached. I worked from the per-point notes in your brief and checked each one against the channel and the sources rather than taking it as given.
+**What was read for this revision:**
+- **The script:** version 2 in full (1,561 words).
+- **Project rules and records:**
+  - `CLAUDE.md`;
+  - `CHANNEL-DNA.md` §2–3: openers, transitions, close and promotion;
+  - `CHANNEL-DNA-diagnosis.md` §3 and §5: the script moves per habit, and why "Own Any Room" was the weakest;
+  - `voice.md`;
+  - `workflow/2-SCRIPT.md`;
+  - `workflow/LEARNINGS.md`;
+  - `CA-KNOWLEDGE-BASE.md` v2.
+- **Reference transcripts read in full:**
+  - Grooming (`HhJI4uLHgj4`);
+  - Body Language (`r_mYSc7FHvk`), the closest 7-point "Instantly" video;
+  - Pose in Photos (`WWIJxdkTLuo`);
+  - Microhabits (`MVrYflIex4c`);
+  - Feminine Energy (`-dfv1m_gGmk`);
+  - Own Any Room (`-pOzZpcS5cc`).
+- **Searched by keyword with context:** all 30 long-upload transcripts. Read in part: LE (`QOEUbAZB07o`, opening, ending and guide position), Signs, Casual, Haircuts.
+- **Repo scripts searched,** including the unpublished Look Older.
+- **Guide position in 11 top videos,** measured as a share of the words.
+- **Limits:**
+  - The published videos were not re-watched in this pass. Pacing comes from the transcripts and durations, plus the earlier frame-by-frame study in `channel-deep-study-2026-10-19.md`.
+  - Comments were not re-read.
 
-## 1. Editorial decision table
+## 1. Diagnosis of version 2
 
-| v1 point | Decision | Main reason | Channel content checked for overlap | Final point (v2) |
-|---|---|---|---|---|
-| 1. Soften your face at rest | **KEEP, revised** | New to the channel and useful. Added "This isn't about smiling all the time, or hiding how you feel", so it never asks women to perform. Research line corrected: during a sustained mental task, measured muscle activity rose in the forehead, brow and lips. The jaw is kept only as a practical step. | Body Language ("Shoulders relaxed, chin level, calm expression" at the entry pause); Pose ("think relaxed rather than perfect. A soft smile", for photos); Microhabits | **1. Soften your face at rest** |
-| 2. A lighter hand with makeup | **REVISE** | "Use less" is already taught. Grooming #1: "More makeup, bigger jewelry, louder everything… Is this enhancing my features or distracting from them?" Casual: "Makeup should feel like you, just a little more elevated." The new angle: **where** makeup goes (definition of eyes, brows and lips, not coverage), why it works, and how to check it (a few steps back, in daylight). | Grooming, Casual | **5. Define, don't cover** |
-| 3. An even tone, not a flawless one | **REPLACE** | The opening repeated Grooming almost word for word ("acne scars, hyperpigmentation, texture, or fine lines, none of those things take away from your beauty"; "Wearing SPF every day"). The spot-correcting technique survives as one line in point 5. | Grooming (skin section); Casual ("a glowing, hydrated base, or a matte neutral look") | **4. Let your skin glow**: a new, evidence-based finish point |
-| 4. Clear, bright eyes | **KEEP, tightened** | Nothing on the channel covers the whites of the eyes, eye drops or screen habits. "Over the years" (age framing) was cut. The instant help (drops) now comes before the protective habits. | All 30 transcripts (no hits); Grooming mentions eye cream only | **3. Clear, bright eyes** |
-| 5. Protect your sleep | **REVISE** | It didn't fit "instantly". Reframed around what people actually read as tired (eyelids, mouth corners, swelling, with dark circles lower down) and fixes that take minutes. Sleep is kept as one honest line ("None of this replaces sleep"). | Grooming ("eye cream to wake up looking refreshed"); At Home (bedtime ritual) | **6. Look rested in minutes** |
-| 6. Colour from your plate | **REPLACE** | It takes six weeks. The study was observational, on almost all white skin, and partly industry-funded. It made the video feel like nutrition advice. | No coverage, but a weak fit | **7. Step back from the camera** |
-| 7. Make kindness a habit | **REPLACE** | Substantial overlap. Signs has a whole point ("She's kind to everyone… kindness is one of the most attractive things you can wear"). Never Share says "She's kind because that's simply who she is", almost the same as v1's line. Never Do in Public says "warmth is beautiful. Kindness is elegant." It is also a long-term trait under an "instantly" title. | Signs, Never Share, Never Do in Public, Behaviors, Own Any Room | **2. Let your smile reach your eyes**: warmth that shows in the face, today |
+| What was not working | Why it weakened the video | What changed |
+|---|---|---|
+| **The hook contradicted itself.** "You couldn't describe a single one of her features", then a list of what you noticed about her face. | The second sentence undid the first, so the opening felt unsure of its own idea. | Every sentence now builds on the last. She looks lovely, you can't point to one feature, it's the impression (relaxed, warm, fresh), that impression is made of small details, we miss them because we judge ourselves in the mirror, and others see a moving face from a few steps away in everyday light. |
+| **No central idea.** Seven tips; the camera point read as an add-on. | The viewer had no reason to see the points as one lesson. | **Thesis: the face you judge in the mirror isn't the face other people see.** Each point closes one gap: tension you don't feel (1), expression you hold back (2), eyes (3), skin in light (4), makeup judged at mirror distance (5), what a tired face actually shows (6), the lens (7). The closing returns to the mirror. |
+| **"Define, Don't Cover" was familiar.** | It restated Grooming #1 ("More makeup, bigger jewelry, louder everything… Is this enhancing my features or distracting from them?") and Casual ("Makeup should feel like you, just a little more elevated"). Its facial-contrast lip argument repeats Look Older #6. | **Replaced** by "See Your Makeup the Way Others Do": people assume others want more makeup than they do, and men most of all, which was wrong. So check it from across-a-table distance, in daylight. There is no rule about quantity. |
+| **Research claims went past the evidence.** | It risked trust and conflicted with the channel's "no claims beyond what's true" rule. | Seven wording fixes, listed in section 2. |
+| **Two points mixed instant and slow fixes**, and the heading "Look Rested in Minutes" over-promised. | The title says "instantly". | Each point names something to do today and states its limit ("None of this makes a short night disappear"). The heading is now "Refresh What Really Looks Tired". |
+| **The reassurance about lines around the eyes rested on an overclaim** ("They're exactly what makes a smile look real"). | Kindness built on a false claim isn't kind. | The line now says what is true: people tend to read those smiles as sincere, but the lines don't prove anything. Point 1 now opens with "Your natural resting face isn't the problem. Tension is." Dark circles: "They aren't a flaw, in your face or anyone else's." |
+| **Format.** The heading was spoken as each point's first line; the close recapped all seven; the guide interrupted the makeup point. | The brief: headings are on-screen only, and there should be no long recap. | Headings are cards only. The close is one final thought plus the channel's standard lines. The guide now sits **between** points 4 and 5 (56% of the words), tied to skin colour. Top videos place it at 43–60%: LE 60%, Signs 47%, Never Do in Public 50%. |
+| **Length.** 1,561 words. | Some lines repeated the thesis or an explanation. | 1,477 words. The hook's mirror sentence is not repeated word for word in point 5, and the closing doesn't relist the points. |
 
-**Alternatives researched and rejected (Phase 4):**
+**Preserved:**
+- **Points kept:** 1, 2, 3, 4, 6 (its core finding) and 7 (its core finding).
+- **The channel's own lines:** the "Have you ever met a woman who…" opener, "In today's video, we're sharing…", "Let's get started", the comment-the-number ask with "I read them", the like ask, the guide wording and "Bye, my loves".
 
-| Candidate | Why not |
+**Replaced:** point 5. **Renamed:** point 6.
+
+## 2. Change log
+
+| Original problem | Specific revision | Reason |
+|---|---|---|
+| Hook contradiction | New hook: impression, then details, then mirror versus everyday view | Coherent, and it sets up the thesis and a reason to watch all seven |
+| No thesis | Mirror-versus-others thesis, stated in the hook, carried by transitions, closed in the outro | Turns seven tips into one lesson |
+| Abrupt transitions | Each point's first sentence links to the last: "And when someone does make you smile…", "So much of that warmth shows around the eyes", "Then there's your skin, and how it holds the light", "Makeup is another place where the mirror can mislead us", "Then there are the mornings…", "Everything so far has been about the face people see in person" | Brief bridges, no formula |
+| Point 5 repeated Grooming and Casual | Replaced with the finding that people misjudge others' makeup preferences, plus a distance-and-daylight check | New lesson, verified in the study's manuscript, no quantity rule |
+| "Night out" detail unverified | Verified in the accepted manuscript ("instructed to apply their cosmetics as though they were going on a 'night out'") and kept | It stops the finding from sounding like a rule for everyday makeup |
+| First impressions implied accuracy | "That impression isn't who you are" | Willis & Todorov measured agreement, not accuracy; Said et al. say there is "little evidence" such inferences reflect personality |
+| Lines around the eyes framed as proof of a genuine smile | "Those little lines don't prove what anyone feels. But people tend to read them as a sign that a smile is real." | Krumhuber & Manstead 2009 found these smiles equally common when posed |
+| "A smile you really feel usually travels further" (draft) | Changed to "Some smiles stay at the mouth. Others travel further." | Same evidence |
+| Redness-relief drops offered as a photo-day shortcut | Removed. Now only a caution: they aren't artificial tears, and frequent use can cause rebound redness. | Your brief; AAO's rebound warning |
+| Medical line | Redness that doesn't settle, comes with pain or sensitivity to light, or yellow whites → see a doctor | AAO warning-signs page; AAO says to contact a doctor right away if the whole sclera turns yellow |
+| "Whiter than natural doesn't add anything" | "…doesn't make anyone look healthier or more attractive" | The study found super-white eyes did look younger, so "anything" was wrong |
+| "Sun, wind and dust are linked to yellowish spots" | "Sunglasses help protect them from the sun" | Shorter. AAO recommends sunglasses for UV and goggles for dust. |
+| Tired cues stated as general fact | "In one small study of faces photographed after a night without sleep…" | 10 white Swedish faces after 31 h awake |
+| Dark circles: one cause | Pigment, blood vessels through thin skin, shadows of facial structure; more common in deeper skin tones; "not a flaw" | Pissaridou et al. 2020 classification; AAO |
+| Glow presented as a rule | "That doesn't make matte wrong, especially if your skin is naturally oily." | Ikeda 2021 tested Japanese women only, with edited images |
+| Camera claim | "One analysis calculated… can look noticeably larger" plus "Part of what you see is the lens" | Ward 2018 is a mathematical model, not photos of real people |
+| Guide CTA inside the makeup point | Between points 4 and 5, tied to "which colours bring your skin to life", plus the outro | No longer interrupts a point; matches the top videos' mid-roll |
+| Seven-point recap outro | One closing thought, then the comment question, like ask, guide and sign-off | Your brief; CHANNEL-DNA's close is "a recap sentence" |
+| Spoken headings | Removed; headings are on-screen cards only | Your brief (see section 6 for the DNA note) |
+| Length 1,561 | 1,477 | Repetition removed, substance kept |
+
+## 3. Research appendix
+
+### Original research
+
+| Source | Supports (script line) | Limits that shaped the wording |
+|---|---|---|
+| **Willis J, Todorov A (2006).** First impressions: making up your mind after a 100-ms exposure to a face. *Psychological Science* 17(7):592–598. https://pubmed.ncbi.nlm.nih.gov/16866745/ | "People form first impressions of faces very quickly." | Judgements after 100 ms *agreed with* untimed ones; accuracy was not tested. Faces of strangers. |
+| **Said CP, Sebe N, Todorov A (2009).** Structural resemblance to emotional expressions predicts evaluation of emotionally neutral faces. *Emotion* 9(2):260–264. https://pubmed.ncbi.nlm.nih.gov/19348537/ | "A face that's only concentrating can be misread as annoyed or distant. That impression isn't who you are." | Abstract: trait inferences are made "despite little evidence that these inferences accurately reflect personality"; neutral faces resembling anger are read as threatening. |
+| **Waterink W, van Boxtel A (1994).** Facial and jaw-elevator EMG activity… during a sustained information processing task. *Biological Psychology* 37(3):183–198. https://pubmed.ncbi.nlm.nih.gov/7948464/ | "When we concentrate, the face quietly tenses. The brows draw together, the forehead tightens, the lips press into a line." | Muscle activity rose in the frontalis, corrugator and orbicularis oris inferior during a 20-minute task. The jaw rise isn't reported in the abstract, so "unclench your jaw" is practical advice only. 45 people. |
+| **Gunnery SD, Ruben MA (2016).** Perceptions of Duchenne and non-Duchenne smiles: a meta-analysis. *Cognition and Emotion* 30(3):501–515. https://pubmed.ncbi.nlm.nih.gov/25787714/ | "The cheeks lift, and the skin around the eyes gently crinkles. Smiles like that tend to be seen as more sincere, more trustworthy and more attractive." | These are ratings by observers, and the size of the effect varied with how studies were run. |
+| **Krumhuber EG, Manstead ASR (2009).** Can Duchenne smiles be feigned? *Emotion* 9(6):807–820. https://pubmed.ncbi.nlm.nih.gov/20001124/ | "Those little lines don't prove what anyone feels." | Duchenne and non-Duchenne smiles were about equally common when posed and when spontaneous. |
+| **Friedman HS, Riggio RE, Casella DF (1988).** Nonverbal skill, personal charisma, and initial attraction. *Personality and Social Psychology Bulletin* 14(1):203–211. https://pubmed.ncbi.nlm.nih.gov/30045442/ | "People tend to warm to a face that shows what it feels." | It measured *liking* at first meetings, not attractiveness. 54 students. |
+| **Provine RR, Cabrera MO, Nave-Blodgett J (2013a).** Binocular symmetry/asymmetry of scleral redness as a cue for sadness, healthiness, and attractiveness in humans. *Evolutionary Psychology* 11(4):873–884. https://pubmed.ncbi.nlm.nih.gov/23955871/ | "When they look red, a face can come across as… sadder and less healthy." | Digitally reddened eye images. |
+| **Provine RR, Cabrera MO, Nave-Blodgett J (2013b).** Red, yellow, and super-white sclera. *Human Nature* 24(2):126–136. https://pubmed.ncbi.nlm.nih.gov/23660975/ | "Making them whiter than they naturally are doesn't make anyone look healthier or more attractive." | Edited images. "Super-white" eyes did look younger, so the line names only health and attractiveness. |
+| **Sundelin T et al. (2013).** Cues of fatigue: effects of sleep deprivation on facial appearance. *Sleep* 36(9):1355–1360. https://pmc.ncbi.nlm.nih.gov/articles/PMC3738045/ | Point 6: "In one small study of faces photographed after a night without sleep, people noticed three things most…". Point 3: "more tired" for red eyes. | 10 faces, all white Swedes; 31 h awake after a 5-h night; perceived cues, not measurements. On a 100-mm scale: eyelids +15, mouth corners +11, swollen eyes +10, dark circles +7. |
+| **Pissaridou MK, Ghanem A, Lowe N (2020).** Periorbital discolouration diagnosis and treatment: evidence-based review. *J Cosmet Laser Ther* 22(6–8):217–225. https://pubmed.ncbi.nlm.nih.gov/34078228/ | "Dark circles… can come from natural pigment, from blood vessels showing through thin skin, or from the shadows of your facial structure." | A review (abstract read). It classifies dark circles as shadowing, vascular, hyperpigmentation, post-inflammatory or constitutional. |
+| **Ikeda H et al. (2021).** Facial radiance influences facial attractiveness and affective impressions of faces. *International Journal of Cosmetic Science* 43(2):144–157. https://pmc.ncbi.nlm.nih.gov/articles/PMC8246902/ | Point 4: "In one study in Japan, women compared the same faces with three finishes… glowing… most attractive… matte… came last, even below the oily one." | 10 models aged 30–44 and 160 raters aged 30–49, all in Japan; makeup plus image editing; Shiseido authors. Hence "in Japan" and "That doesn't make matte wrong". |
+| **Jones AL, Kramer RSS, Ward R (2014).** Miscalibrations in judgements of attractiveness with cosmetics. *Quarterly Journal of Experimental Psychology* 67(10):2060–2068. https://pubmed.ncbi.nlm.nih.gov/24670156/ · manuscript: https://cronfa.swan.ac.uk/Record/cronfa26122 | Point 5: night-out makeup; "Men and women agreed… both chose less than the women had applied"; "People assumed others would want more… men… the most… that wasn't true either". | 44 self-applied "night out" looks, computer morphs from −50% to 150%, student observers. The manuscript notes the models "may have incorporated ideas of low lighting". Hence "That isn't a rule to wear less." |
+| **Tagai K, Ohtaka H, Nittono H (2016).** Faces with light makeup are better recognized than faces with heavy makeup. *Frontiers in Psychology* 7:226. https://pubmed.ncbi.nlm.nih.gov/26973553/ | Background for "Makeup looks its best when people notice you first, and the makeup second." (a principle, not a claim) | 38 Japanese raters; Shiseido authors; "possibly because heavy makeup creates an impression of the style of makeup itself". |
+| **Ward B, Ward M, Fried O, Paskhover B (2018).** Nasal distortion in short-distance photographs: the selfie effect. *JAMA Facial Plastic Surgery* 20(4):333–335. https://pmc.ncbi.nlm.nih.gov/articles/PMC5876805/ | Point 7: "One analysis calculated that at about thirty centimetres, the nose can look noticeably larger… At around a metre and a half, that difference all but disappears." | A mathematical model using average face measurements, with no raters and one camera angle. About 30% larger at 12 in; "essentially no difference" at 5 ft. |
+
+### Authoritative practical guidance (American Academy of Ophthalmology)
+
+| Page | Supports |
 |---|---|
-| Colour near the face | Colour videos (8 Color Combos, Summer Color Combos, Color Combos 2024); Command Respect ("The colors that make their skin glow"); the stylist guide itself; Look Older #5 (unpublished) |
-| Lip colour, facial contrast | Look Older #6 (unpublished). Point 5 mentions lips in four words only. |
-| Brows, frames | Grooming ("keep their eyebrows neatly maintained"); Look Older #7 |
-| Hair framing the face | Haircuts ("face-framing", curtain bangs); Hairstyles; the expensive-hair script |
-| Teeth, lip care, scent, nails, hands, clothes care | Grooming; Microhabits |
-| Posture, entrances, hands, fidgeting, eye contact | Body Language ("touching your hair repeatedly, adjusting your bag"); Own Any Room; Microhabits |
-| "Stop checking yourself" (spotlight effect, liking gap) | Fresh research, but not an attractiveness lever. It would be a confidence tip, which the brief warns against. |
-| Lighting, where you sit | Pose ("lighting makes a huge difference… Soft balanced lighting") |
-| Natural flush or blush | Contested: Lu et al. 2021, unretouched faces |
-| Wearing red, drinking water for skin | Failed replications; weak evidence |
+| Eye Strain (5 May 2023), https://www.aao.org/eye-health/diseases/what-is-eye-strain | The 20-20-20 rule; artificial tears for dry eyes |
+| Redness-Relieving Eye Drops (7 Apr 2023), https://www.aao.org/eye-health/treatments/redness-relieving-eye-drops | Rebound redness with frequent use; these are not artificial tears |
+| Home Remedies for Bloodshot Eyes (7 Apr 2023), https://www.aao.org/eye-health/tips-prevention/home-remedies-bloodshot-eyes-when-to-see-doctor | See a doctor for pain, light sensitivity, discharge, or redness lasting more than a week |
+| Why Are the Whites of My Eyes Discolored? (7 Mar 2025), https://www.aao.org/eye-health/tips-prevention/discolored-sclera-whites-of-my-eyes-turn-yellow | Yellow whites: "contact your primary care doctor right away" |
+| Pinguecula and Pterygium (13 Jan 2026), https://www.aao.org/eye-health/diseases/pinguecula-pterygium | Sunglasses protect against UV |
+| How to Get Rid of Bags Under the Eyes (29 Jul 2025), https://www.aao.org/eye-health/tips-prevention/bags-under-eyes | A cool, damp washcloth for a few minutes; concealer for shadows; dark circles more common in darker skin tones; avoid rubbing |
 
-## 2. Final title
+### Practical advice (no research claimed)
 
-**7 Small Things That Instantly Make You More Attractive** (53 characters).
+- the three-place check and tying it to a routine moment;
+- a satin base, powder only where shine appears, and blotting paper;
+- stepping back from the mirror, a window check, and blending edges;
+- curled lashes and concealer only where the shadow is darkest;
+- phone distance or the timer, and the camera at eye level.
 
-- **Every point can be done today:**
-  - points 1, 2, 4, 5 and 7 work the moment you do them;
-  - points 3 and 6 each have an instant part (drops; compress, concealer, lashes) plus a protective habit, and the script says so ("Almost all of them work the moment you try them"; "None of this replaces sleep").
-- **"Small" sets honest expectations:** nothing here transforms a face, and the hook says "can make you look more attractive".
-- **It keeps the proven wording** of the concept ("simple things that make anyone instantly more attractive"; "Instant Ways to Look More Attractive").
-- **It drops nothing the script can't deliver.** v1's title, without "Small", promised the same instant result while two points took weeks.
+### Sources dropped since version 2
 
-## 3. Point map
+- **Russell 2003 (facial contrast):** the makeup point was replaced, and contrast belongs to Look Older.
+- **Rubenstein 2005:** no longer needed.
+- **Mita, Dermer & Knight 1977 (preference for one's mirror image):** the citation is confirmed, but the findings could not be opened, so it is not used.
 
-| # | Point | The insight | What she does | Evidence (section 4) |
+## 4. Originality and channel-DNA check
+
+| Revised point | Closest existing content (verified) | Nature of overlap | What's new | Decision |
 |---|---|---|---|---|
-| 1 | Soften your face at rest | Concentration tightens the face. A tense neutral face reads stern, a soft one reads kinder. Not about smiling. | Brows, jaw, mouth corners; notice them at every reflection | Willis & Todorov 2006; Said 2009; Waterink & van Boxtel 1994 |
-| 2 | Let your smile reach your eyes | A genuine smile lifts the cheeks and crinkles the eyes. Those lines are what make it look real, and the effect is bigger in motion. | Let smiles finish; think of something you're glad about; don't hold back a laugh; leave the eye lines alone | Gunnery & Ruben 2016; Friedman, Riggio & Casella 1988; Rubenstein 2005 |
-| 3 | Clear, bright eyes | Red or yellowish whites read sadder and less healthy. Whiter than natural adds nothing. | Artificial tears; redness drops only occasionally; 20-20-20; no rubbing; sunglasses; a doctor if the redness lasts or the whites turn yellow | Provine 2011, 2013; AAO ×4 |
-| 4 | Let your skin glow | Glowing skin rated highest, matte lowest (below oily). Glow over the whole face beat glow on the cheeks only. | Moisturiser first; satin base; powder only where shiny; blot, don't re-powder | Ikeda et al. 2021 |
-| 5 | Define, don't cover | People prefer less makeup than is worn. Makeup helps most by defining the eyes and lips. | Brows, lashes, a little lip colour; cover only uneven spots; check from a few steps back in daylight | Jones, Kramer & Ward 2014; Tagai 2016; Russell 2003 |
-| 6 | Look rested in minutes | Dark circles aren't what people notice most; eyelids, mouth corners and swelling are | Cool damp cloth; curled lashes; soft mouth corners; concealer only where darkest; head raised and less salt the night before | Sundelin 2013; AAO under-eye bags |
-| 7 | Step back from the camera | A close camera enlarges the nose. From 1.5 m the distortion all but disappears. It's the lens, not your face. | Hold the phone further away or use the timer; sit back on calls; camera at eye level | Ward et al. 2018 |
+| 1. Soften your face at rest | Body Language, entry pause: "Shoulders relaxed, chin level, calm expression" | One phrase | The tension cues of concentrating, the misreading, a routine anchor, "your natural resting face isn't the problem" | **Retain** (new treatment) |
+| 2. Let your smile reach your eyes | Body Language: "let the moment land… a small smile, a gentle nod… You're still expressive"; Grooming: smile that "looks healthy, cared for, and genuine" (teeth care); Pose: "A soft smile" for photos | Related topic, different lesson | What people read in a smile; not holding expression back; "composure… was never about hiding them" answers the expressive-viewer comment | **Differentiate** (done) |
+| 3. Clear, bright eyes | None in the 30 transcripts or the repo scripts | None found | All of it | **Retain** (new) |
+| 4. Let your skin glow | Casual: "a glowing, hydrated base, or a matte neutral look"; Grooming: "a blotting sheet" in the handbag list, plus SPF and hydration | One line each | Glow versus shine versus matte, and where to powder | **Differentiate** (done) |
+| 5. See your makeup the way others do | Grooming #1, "enhance… or distracting"; Casual, "Makeup should feel like you" | Same topic, different lesson | Misjudged expectations, the distance check, and no rule about quantity | **Replaced** v2's point |
+| 6. Refresh what really looks tired | Grooming: "a nourishing eye cream to wake up looking refreshed" | One line | Which cues are actually read as tired; the causes of dark circles; minute-long fixes | **Retain** (new treatment) |
+| 7. Step back from the camera | Pose: "lighting makes a huge difference… certain angles can completely change the way a photo looks"; posing | Same medium, different lesson | Lens-distance distortion; "a close selfie isn't an objective picture"; video-call setup. Lighting deliberately left out. | **Differentiate** (done) |
 
-**Coherence.** The face at rest, then in motion, then the eyes, the skin, makeup, a tired morning, and finally the face on a screen. The hook sets this up: people see your face "moving, in real light, from a few steps away".
+**Look Older (unpublished)** no longer overlaps: the facial-contrast argument for lip colour has been removed.
 
-**Callbacks inside the script:** point 6 reuses point 5's lashes and point 1's softness.
+**Channel DNA:**
+- **Opener:** "Have you ever met a woman who…" (CHANNEL-DNA §3; Feminine Energy).
+- **Turn:** "In today's video, we're sharing…", then "Let's get started".
+- **Transitions:** short and different each time.
+- **Empathy:** two lines ("Many of us learned…", "you're sure it shows").
+- **Principle line:** one "Elegant women…" line, after the example.
+- **Close:** a closing thought, the comment-the-number ask with "I read them", the like ask, the guide, then "Until next time. Bye, my loves."
+- **Absent:** no "Part 2", no editing notes, no named people, no statistics spoken.
 
-**Guide CTA:** inside point 5 ("which shades suit your colouring") and in the outro.
+## 5. Production-readiness report
 
-## 4. Research appendix
+- **Title:** 7 Small Things That Instantly Make You More Attractive (kept).
+  - Five points work the moment you do them (1, 2, 4, 5, 7). Points 3 and 6 are actions for today, with their limits stated.
+  - The introduction says "Most of them work the moment you try them".
+- **Spoken words:** 1,477, counting every line under Hook, Introduction, the points, the Guide CTA, Closing and Sign-off, but not headings or notes.
+- **Estimated runtime:**
+  - About 10:20 at 143 words a minute, the whole-video pace measured on LE, Microhabits, Body Language and Signs.
+  - The range is 9:32 to 10:29 at 141–155 words a minute.
+  - For comparison, Body Language (7 points) is 1,551 words and 10:50.
+- **Points:** 7.
+- **Research:** every research claim was checked against the primary source or official page.
+  - Full text: Ikeda, Sundelin, Ward, and the Jones manuscript.
+  - Abstract only: Willis, Said, Waterink, Gunnery, Krumhuber, Friedman, Provine ×2, Pissaridou, Tagai.
+  - No line goes beyond what the source states.
+- **Read-aloud check (Pass C):**
+  - Each sentence was rendered with Kokoro (af_heart, 0.85) and transcribed back with faster-whisper.
+  - 132 sentences averaging 11.2 words; the longest is 8.4 s (the standard guide line).
+  - Remaining mismatches are harmless: digits, "they're" heard as "they are", "centimeters" spelling.
+  - Fixed during this revision: "Calm" heard as "Come" and "Whiter" heard as "Wider" were reworded; 4 sentences over 9 s were split.
+  - **No person listened to the audio.**
 
-**V** = primary source read (PubMed abstract, PMC full text or the official page). No numbers are spoken. Spoken research references: four ("Across many studies", "in one study in Japan", "When researchers let people choose", "One analysis calculated"). Everything else is sourced below or labelled as practice.
-
-### Point 1: resting face
-
-- **Script:** "We form an impression of a face in a fraction of a second."
-  - **Willis J, Todorov A (2006)**, *Psychological Science* 17(7):592–598. https://pubmed.ncbi.nlm.nih.gov/16866745/ **V**
-  - Judgements after 100 ms correlated highly with untimed judgements.
-- **Script:** "Concentration quietly tightens it. The brows draw together, the forehead tenses, the lips press into a line."
-  - **Waterink W, van Boxtel A (1994)**, *Biological Psychology* 37(3):183–198. https://pubmed.ncbi.nlm.nih.gov/7948464/ **V**
-  - During a 20-minute information task, activity in the frontalis (forehead), corrugator (brow) and orbicularis oris inferior (lip) muscles rose gradually; this was read as mental effort.
-  - The jaw muscles were recorded, but the abstract reports the rise only for these three. So "unclench your jaw" is given as a practical step, not a research claim.
-  - **Limit:** 45 people, lab task.
-- **Script:** "A calm face with that softness tends to be read more kindly."
-  - **Said CP, Sebe N, Todorov A (2009)**, *Emotion* 9(2):260–264. https://pubmed.ncbi.nlm.nih.gov/19348537/ **V**
-  - Neutral faces that structurally resemble happiness are perceived as more positive.
-
-### Point 2: smile
-
-- **Script:** "Across many studies, smiles that reach the eyes are seen as more genuine, more trustworthy and more attractive. And the difference is even bigger when people see a face moving, rather than in a photo."
-  - **Gunnery SD, Ruben MA (2016)**, "Perceptions of Duchenne and non-Duchenne smiles: A meta-analysis", *Cognition and Emotion* 30(3):501–515. https://pubmed.ncbi.nlm.nih.gov/25787714/ **V** (abstract)
-  - Duchenne smiles (cheek raiser active, creating "crow's feet around the eyes") and the people making them are rated more positively: "authentic, genuine, real, attractive, trustworthy".
-  - The difference was greater for videos than photographs, and for natural rather than posed smiles.
-- **Script:** "Those little lines at the corners of your eyes are the sign of a smile that's genuine." Same source: the definition of a Duchenne smile.
-- **Script:** "People tend to warm to a face that shows what it feels."
-  - **Friedman HS, Riggio RE, Casella DF (1988)**, *Personality and Social Psychology Bulletin* 14(1):203–211. https://pubmed.ncbi.nlm.nih.gov/30045442/ **V**
-  - Emotionally expressive people were rated more favourably at first meetings, independent of physical attractiveness.
-  - **Limit:** 54 students. The finding is about *liking*, which is why the script says "warm to", not "more attractive".
-- **Hook:** "people don't see your face the way a photo does. They see it moving."
-  - **Rubenstein AJ (2005)**, *Psychological Science* 16(10):759–762. https://pubmed.ncbi.nlm.nih.gov/16181436/ **V**
-  - "Dynamic and static faces are judged by different evaluative standards"; perceived emotion may matter more for moving faces.
-- **Practice, not research:** thinking of something you're glad about, and not holding back a laugh.
-- **Channel fit:** this answers the 115-like comment "I'm naturally a very expressive person…". It reconciles with Body Language's "let the moment land": "Composure is about not rushing. It was never about keeping your face still."
-
-### Point 3: eyes (unchanged sources from v1, re-checked)
-
-- **Script:** "When they look red or yellowish, a face can look sadder, less healthy and less attractive."
-  - **Provine RR et al. (2011)**, *Ethology* 117(5):395–399. https://doi.org/10.1111/j.1439-0310.2011.01888.x **V**
-    - Reddened whites looked "sadder, less healthy, and less attractive".
-  - **Provine, Cabrera & Nave-Blodgett (2013)**, *Human Nature* 24(2):126–136. https://doi.org/10.1007/s12110-013-9168-x **V**
-    - Red or yellow whites looked less healthy and less attractive.
-    - "Super-white" whites looked younger "although not more healthy or attractive". This supports "whiter than they naturally are doesn't add anything".
-  - **Limits:** digital edits; US student raters.
-- **Script:** "They change with dry air, tiredness and long hours at a screen."
-  - AAO eye strain and bloodshot-eye pages (below).
-  - **Sundelin et al. 2013**: red eyes were a perceived sign of sleep loss.
-- **Script:** drops.
-  - **AAO, "Redness-Relieving Eye Drops"** (7 Apr 2023). https://www.aao.org/eye-health/treatments/redness-relieving-eye-drops **V**
-    - Use them "only occasionally… before an important meeting, for a photograph or for a special event", for no more than 72 hours; "rebound redness".
-  - **AAO, "Eye Strain"** (5 May 2023). https://www.aao.org/eye-health/diseases/what-is-eye-strain **V**
-    - Artificial tears; the 20-20-20 rule.
-- **Script:** "Sun, wind and dust are linked to yellowish spots on the whites of the eyes."
-  - **AAO, pinguecula** (13 Jan 2026). https://www.aao.org/eye-health/diseases/pinguecula-pterygium **V**
-- **Script:** "Try not to rub your eyes."
-  - **AAO, under-eye bags** (29 Jul 2025): "avoid excessive eyelid rubbing." **V**
-- **Script:** "If your eyes stay red, or the whites turn yellow, please see a doctor." A safety referral, with no diagnosis given.
-
-### Point 4: glow
-
-- **Script:** "In one study in Japan, women compared the same faces with three different finishes: glowing, oily, and completely matte. The glowing skin was rated the most attractive. And the flat, matte version came last, even below the oily one… a soft glow across the whole face was rated higher than glow on the cheeks alone."
-  - **Ikeda H, Saheki Y, Sakano Y, Wada A, Ando H, Tagai K (2021)**, "Facial radiance influences facial attractiveness and affective impressions of faces", *International Journal of Cosmetic Science* 43(2):144–157. https://pmc.ncbi.nlm.nih.gov/articles/PMC8246902/ **V** (full text)
-  - **Design:**
-    - 10 female models aged 30–44, living in Japan;
-    - seven finishes made with foundations, oils and lighting, then image editing;
-    - 160 women aged 30–49, living in Japan, compared them in pairs.
-  - **Attractiveness scale values:**
-
-    | Finish | Value |
-    |---|---|
-    | Radiance on the whole face | 1.36 |
-    | Radiant T-zone only | 0.51 |
-    | Radiant cheeks only | 0.44 |
-    | Oily on the whole face | −0.32 |
-    | Matte | −1.26 |
-
-  - **Limits:**
-    - Japanese models and raters only; the authors warn against assuming a universal tendency, which is why the script says "in Japan";
-    - Shiseido authors;
-    - edited images.
-- **Script:** "Glow is soft light spread across the skin. Shine is oil collecting in a few places."
-  - A plain-language version of the paper's definitions. Radiance combines diffuse and specular reflection, linked to moisture and fine texture. Oily shine is strong specular reflection with little diffuse reflection.
-- **Practice, not research:** moisturiser first; a satin base; powder only on the centre of the forehead and the sides of the nose; blotting paper.
-
-### Point 5: makeup
-
-- **Script:** "When researchers let people choose how much looked best on a face, men and women agreed. Both chose far less than the women had put on for a night out."
-  - **Jones AL, Kramer RSS, Ward R (2014)**, *Quarterly Journal of Experimental Psychology* 67(10):2060–2068. https://pubmed.ncbi.nlm.nih.gov/24670156/ **V** (accepted manuscript)
-  - "Models' self-applied cosmetics are far in excess of individual preferences"; men and women agreed.
-  - **Limits:** 44 White models, a "night out" look, computer morphs.
-  - The script's general line is softened to "It's easy to wear more makeup than other people actually prefer."
-- **Script:** "Heavy makeup can also make a face look less like the person wearing it."
-  - **Tagai K, Ohtaka H, Nittono H (2016)**, *Frontiers in Psychology* 7:226. https://pubmed.ncbi.nlm.nih.gov/26973553/ **V**
-  - Light makeup was rated most attractive. Heavy makeup was recognised less well, "possibly because heavy makeup creates an impression of the style of makeup itself, rather than the individual".
-  - **Limits:** 38 Japanese raters; Shiseido authors.
-- **Script:** "Women's faces are rated as more attractive when the eyes and lips stand out a little more against the skin. That's what makeup has always done best."
-  - **Russell R (2003)**, "Sex, beauty, and the relative luminance of facial features", *Perception* 32(9):1093–1107. https://pubmed.ncbi.nlm.nih.gov/14651322/ **V**
-  - "Female faces were found to be more attractive when this luminance difference was increased." Also: "One of the more consistent uses of cosmetics to make the female face more attractive is to darken the eyes and mouth relative to the surrounding skin."
-  - **Limit:** manipulated images.
-- **Practice, not research:** brows, lashes and lip colour; covering only uneven spots; checking from a few steps back in daylight.
-
-### Point 6: rested
-
-- **Script:** "Dark circles aren't actually what they notice most. The biggest giveaways are heavier eyelids, the corners of the mouth turning down, and swollen eyes. Dark circles come further down the list."
-  - **Sundelin T et al. (2013)**, *Sleep* 36(9):1355–1360. https://pmc.ncbi.nlm.nih.gov/articles/PMC3738045/ **V**
-  - After a 5-hour night plus 31 hours awake, the perceived changes on a 100-mm scale were:
-
-    | Cue | Change |
-    |---|---|
-    | Hanging eyelids | +15 |
-    | Droopy mouth corners | +11 |
-    | Swollen eyes | +10 |
-    | Dark circles | +7 |
-    | Red eyes | +5 |
-    | Pale skin | +3 |
-
-  - **Limits:** 10 white Swedish faces; perceived cues, not measurements; severe sleep loss.
-- **Script:** "A cool, damp cloth… head slightly raised… a little less salt… concealer… more common in deeper skin tones."
-  - **AAO, "How to Get Rid of Bags Under the Eyes"** (29 Jul 2025). https://www.aao.org/eye-health/tips-prevention/bags-under-eyes **V**
-  - Quoted advice:
-    - "Wet a clean washcloth with cool water… for a few minutes";
-    - "Sleep with your head raised slightly";
-    - "limit salt";
-    - "concealer to cover shadows";
-    - "People from ethnic groups with darker skin tones are more likely to have dark circles".
-  - "More sleep may not change them" is our cautious inference, worded as "may".
-- **Practice, not research:** curled lashes lifting heavy-looking lids; concealer only where the shadow is darkest.
-
-### Point 7: camera
-
-- **Script:** "One analysis calculated what happens at about thirty centimetres, the distance of a close-up selfie. At that distance, the nose can look noticeably larger than it really is. From a metre and a half away, that distortion all but disappears."
-  - **Ward B, Ward M, Fried O, Paskhover B (2018)**, "Nasal Distortion in Short-Distance Photographs: The Selfie Effect", *JAMA Facial Plastic Surgery* 20(4):333–335. https://pmc.ncbi.nlm.nih.gov/articles/PMC5876805/ **V**
-  - At 12 in (30 cm), perceived nasal size rose about 30% for men and 29% for women. At 5 ft (1.5 m), "essentially no difference".
-  - **Limits:** a mathematical model using average face measurements, with no human raters and one camera angle. Hence "one analysis calculated" and "can look".
-- **Practice, not research:** holding the phone further away or using the timer; sitting back on calls; the camera at eye level.
-
-### Removed claims (v1 sources, not used in v2)
-
-- **Kononov & Ein-Gar 2025 (kindness):** verified, but the point was removed because the channel has already taught it.
-- **Whitehead 2012, Lefevre & Perrett 2015 (diet colour):** the point was replaced.
-- **Fink, Matts, Samson, Coetzee (even tone):** the point was replaced.
-- **AAD sunscreen and iron oxide:** repeated Grooming's SPF line.
-- **Sundelin 2017 (two short nights):** the sleep point was reframed.
-
-## 5. Originality and channel-fit report
-
-| # | Final point | Closest existing content | Overlap | Novelty check |
-|---|---|---|---|---|
-| 1 | Soften your face at rest | Body Language: "calm expression" at the entry pause | Superficial (one phrase) | **PASS**: the resting face, its tension points and the "not about smiling" framing are new |
-| 2 | Let your smile reach your eyes | Grooming: a smile that "looks healthy, cared for, and genuine" (about teeth care); Body Language: "a small smile, a gentle nod" | Superficial | **PASS**: what makes a smile genuine, why, and keeping the eye lines are new. It also resolves the expressive-viewer tension instead of repeating "pause". |
-| 3 | Clear, bright eyes | None | None | **PASS** |
-| 4 | Let your skin glow | Casual: "a glowing, hydrated base, or a matte neutral look if you prefer"; Grooming: a blotting sheet in the handbag list | Superficial (one line each) | **PASS**: the evidence that matte reads worst, whole-face vs cheek glow, and where to powder are new |
-| 5 | Define, don't cover | Grooming: "enhance… not compete"; Casual: "Makeup should feel like you" | **Partial.** The belief is hers; this adds the placement principle, the evidence and the daylight check. "A little colour on your lips" touches Look Older #6 (unpublished). | **PASS with a noted overlap** |
-| 6 | Look rested in minutes | Grooming: eye cream "to wake up looking refreshed" | Superficial | **PASS**: which tiredness cues people actually read, and the matching fixes, are new |
-| 7 | Step back from the camera | Pose: lighting and angles for photos; its line "people are usually perceived as more attractive in real life than in photos" | **Partial** on topic (cameras); none on content. Lighting was deliberately left out. | **PASS with a noted overlap** |
-
-**Against the competitors** (13 written sources; see v1's research and `competitor_content.md`):
-- "Smile" is the most repeated tip (9 of 13), always as "smile more". This script says the opposite ("this isn't about smiling more") and teaches what makes a smile read as genuine.
-- Skincare (4 of 13) and "makeup for symmetry" (4 of 13) never mention finish or placement.
-- Sleep (3–4 of 13) is always "get more sleep".
-- None of the 13 mentions the whites of the eyes, glow versus matte, or camera distance.
-
-**Tone:**
-- Nothing asks a woman to change her features.
-- Crow's feet are reframed as the sign of a real smile.
-- Deeper skin tones are named once (dark circles), with no corrective framing.
-- The camera point tells viewers that what they dislike in selfies is often the lens.
-
-## 6. Quality control
+**QA checklist (checked on the final file):**
 
 | Check | Result |
 |---|---|
-| Channel fit | Opener is a scene question; then "In today's video, we're sharing…"; "Let's get started"; each point opens with its name, spoken; the guide sits inside point 5 and in the outro, in the channel's words. Close: recap, "Comment the number… I read them", like ask, guide, "Until next time, bye, my loves." No "Part 2". No editing directions. |
-| Originality | All seven points checked against the 30 transcripts and the repo scripts (section 5). Kindness, "less makeup" and "healthy not flawless" repeats were removed. |
-| Coherence | One subject (the face people actually see), in one order (rest, motion, eyes, skin, makeup, tired mornings, screens), with two callbacks. |
-| Practical value | Every point has a concrete method, an insight and a limit (section 3). |
-| Research accuracy | Every claim is mapped in section 4, with limits. Wording was narrowed where the sources are narrow: "in Japan", "one analysis calculated", "can look", "warm to" rather than "attractive", "may not change". |
-| Title accuracy | "Small" plus "instantly", hedged by "can make you look" and "almost all of them". Two points state their slower parts. |
-| Narration (Pass C) | Each sentence was rendered with Kokoro (af_heart, 0.85) and transcribed back with faster-whisper. 140 sentences, 1,561 words, 11.2 words per sentence; the longest is 8.6 s. Remaining mismatches are harmless (digits, "make-up", "bye" heard as "buy"). Four sentences over 9 s in the first revision were split. **No person listened to the audio.** |
-| Repetition | Inside the script, the lashes appear once as an action and once as a callback. Across the channel, see section 5. |
-| Retention | One honest forward hook ("the last one may explain why a selfie so often doesn't look like you"). Each point opens on a surprise or correction: tension, not mood; the eye lines; matte rated lowest; placement, not amount; dark circles aren't the main cue; the lens. |
-| Respectful tone | No point implies that a natural face, age, skin or personality is inadequate. |
-| Length | 1,561 spoken words, about 10:55 at the channel's 143 wpm. The closest reference, Body Language (7 points, 315k views), is 1,551 words and 10:50. |
+| Hook coherent, no contradiction | PASS |
+| Title and script make the same promise | PASS (the qualifier is spoken in the introduction) |
+| All seven points serve one central idea | PASS (mirror versus the view others have) |
+| Each point distinct; none just to reach seven | PASS (the eye-related points split: whites in 3, lids and under-eye in 6) |
+| Actionable, realistic, qualified | PASS |
+| Standalone (no earlier video needed) | PASS (the callbacks are inside this video) |
+| Claims checked against the sources; no exaggeration | PASS |
+| Medical guidance proportionate | PASS (one caution, one see-a-doctor line, no diagnosis) |
+| No invented statistics; links work | PASS (every URL above was opened in this revision or the previous one) |
+| Format matches; headings not spoken | PASS |
+| Voice warm and natural | PASS (DNA moves above; one "Here's", no "The truth is", no em dashes in the narration) |
+| Value beyond existing content | PASS (section 4) |
+| CTA and outro in the established style; "Bye, my loves." | PASS |
+| Opening earns attention; each point has a purpose; no repeated thoughts | PASS (the thesis appears in the hook, once in point 5 in new words, and in the close) |
+| Reads smoothly aloud | PASS (machine check only; see the note above) |
+| Length justified; word count and runtime reported | PASS |
+| Saved to the intended file; no unrelated files changed | PASS (`script.md`, `RESEARCH.md`, a one-line `HANDOFF.md` entry) |
 
-**Verdict: ready for your approval.** No major issue is left. Two things are yours to decide:
-1. **Research density:** four spoken research references, more than Body Language or Pose (one each). Each carries a point's main insight. Any of them can be turned into a plain statement if you'd like fewer.
-2. **Point 7 sits next to the Pose video's topic** (cameras). Its content is new, but if you'd rather keep this video entirely in person, the strongest fallback is the colour-near-the-face idea. That one overlaps Look Older #5, which is why it was not used.
+## 6. Remaining limitations
 
-## 7. Limitations
-
-- **Transcripts** are from the 19 Oct capture of all 30 long uploads. The public list rechecked today shows no newer long uploads. Shorts were checked by title only (7, none on these topics).
-- **Not re-read in this pass:** comments and competitor video transcripts, which YouTube blocked earlier. The comment evidence is from the 2,254 comments collected before.
-- **Only abstracts were available** for Russell 2003, Gunnery & Ruben 2016, Friedman 1988, Rubenstein 2005 and Waterink 1994. Nothing in the script goes beyond what those abstracts state.
-- **The review text was not attached.** Your per-point summary of it was used and checked independently.
+1. **Narrow samples.** Several findings come from narrow groups: the glow study used Japanese women only, the tiredness study used 10 white Swedish faces, and the makeup study used 44 White student models. The wording is narrowed to match ("in one study in Japan", "one small study", "That isn't a rule to wear less"), but the evidence itself is still narrow.
+2. **The headings conflict with CHANNEL-DNA.** CHANNEL-DNA says "In a habits video the habit's name opens the point". Your brief says headings are not spoken. I followed the brief, so each point's first spoken sentence carries its idea instead. If you prefer the DNA pattern, each point can open with its heading's words.
+3. **The guide plug is a trade-off.** CHANNEL-DNA notes that plugs cause drop-off, yet the top videos still place the guide at 43–60%. It's at 56% here, between points.
+4. **This pass worked from transcripts.** The published videos were not re-watched and comments were not re-read.

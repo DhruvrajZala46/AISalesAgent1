@@ -1,105 +1,93 @@
-# 7 Small Things That Instantly Make You More Attractive
+# Final title: 7 Small Things That Instantly Make You More Attractive
 
-*Version 2 (23 Oct 2026, revised after the CHANGE review). Ready-to-record voice-over. Numbered headings are the on-screen point cards (the number shows on screen; the point's name is spoken). Other headings are section labels. No heading is read aloud. Everything else is spoken, in order. Research and decisions are in `RESEARCH.md`, not here.*
+*Version 3, 24 Oct 2026. Ready-to-record voice-over. Headings marked **On-screen card** are text on screen only and are never read aloud. Every other line under Hook, Introduction, the seven points, Closing and Sign-off is spoken, in order. Research, change log and QA are in `RESEARCH.md`.*
 
 ## Hook
 
-Have you ever met a woman you'd call beautiful, and later realised you couldn't describe a single one of her features? What stayed with you wasn't the shape of her face. It was how relaxed it looked. How her smile reached her eyes. How her skin seemed to catch the light.
+Have you ever met a woman who always seems to look lovely? If someone asked you why, you might struggle to point to one particular feature. It isn't her bone structure, or a perfect complexion. It's the impression her face gives. Relaxed, warm and fresh.
 
-That's because people don't see your face the way a photo does. They see it moving, in real light, from a few steps away. And that's where small details make the biggest difference.
+That impression is made of small details, and most of us rarely notice them in ourselves. Because we judge our own faces in the mirror, up close, holding still, often under bathroom light. Other people see your face moving, from a few steps away, in everyday light.
 
-In today's video, we're sharing seven small things that can make you look more attractive. Almost all of them work the moment you try them, and none of them involve changing your features. And the last one may explain why a selfie so often doesn't look like you. Let's get started.
+## Introduction
 
-## 1. Soften Your Face at Rest
+In today's video, we're sharing seven small things that change how your face comes across, without changing a single feature. Most of them work the moment you try them. And the last one may change the way you look at your selfies. Let's get started.
 
-Soften your face at rest.
+## Point 1 — On-screen card (not spoken): Soften Your Face at Rest
 
-Most of the day, your face isn't smiling or talking. It's simply resting. At your desk, waiting in line, reading on your phone. That's the face people see most. We form an impression of a face in a fraction of a second.
+Most of the day, your face isn't smiling or talking. It's simply resting. At your desk, in the car, reading on your phone. And when we concentrate, the face quietly tenses. The brows draw together, the forehead tightens, the lips press into a line. We rarely feel it, but it shows.
 
-The trouble is that concentration quietly tightens it. The brows draw together, the forehead tenses, the lips press into a line. And a face held like that can read as stern or distant, even when you feel perfectly content.
+Your natural resting face isn't the problem. Tension is. People form first impressions of faces very quickly. And a face that's only concentrating can be misread as annoyed or distant. That impression isn't who you are, but there's no reason to let tension you don't even feel make it for you.
 
-This isn't about smiling all the time, or hiding how you feel. It's about letting go of tension you never meant to show. So check in with three places. Let the space between your brows smooth out. Unclench your jaw, lips together, teeth slightly apart. And let the corners of your mouth rest a little upward. Not a smile. Just a little softness. A calm face with that softness tends to be read more kindly.
+A few times a day, check in with three places. Let the space between your brows smooth out. Unclench your jaw, lips together, teeth slightly apart. And let the corners of your mouth rest, rather than press down. No smile needed.
 
-Whenever you catch your reflection, notice those three places. Composure was never meant to be a blank face. It's a calm, open one.
+Tie it to a moment you already have, like waiting for your coffee, or stopping at a red light. Elegant women often have this quality. Even on their busiest days, their faces look at ease.
 
-## 2. Let Your Smile Reach Your Eyes
+## Point 2 — On-screen card (not spoken): Let Your Smile Reach Your Eyes
 
-Let your smile reach your eyes.
+And when someone does make you smile, let it finish. Some smiles stay at the mouth. Others travel further. The cheeks lift, and the skin around the eyes gently crinkles.
 
-A real smile doesn't only happen at the mouth. The cheeks lift, and the skin around the eyes gently crinkles. Those little lines at the corners of your eyes are the sign of a smile that's genuine.
+Smiles like that tend to be seen as more sincere, more trustworthy and more attractive. Those little lines don't prove what anyone feels. But people tend to read them as a sign that a smile is real.
 
-Across many studies, smiles that reach the eyes are seen as more genuine, more trustworthy and more attractive. And the difference is even bigger when people see a face moving, rather than in a photo.
+So this isn't about smiling more, or smiling on demand. It's about not holding back the expressions you already have. Many of us learned to keep our faces still to look composed. But composure is about not rushing your reactions. It was never about hiding them.
 
-So this isn't about smiling more. It's about letting the smiles you already have come all the way through. When you greet someone, think of one thing you're genuinely glad about, and let it reach your face. Don't hold back a laugh to keep your face composed. Composure is about not rushing. It was never about keeping your face still. And if you've ever tried to soften those lines around your eyes when you smile, let them be. They're exactly what makes a smile look real.
+The next time a friend shares good news, or someone makes you laugh, let your face show it fully. And if you're naturally expressive, that isn't something to tone down. People tend to warm to a face that shows what it feels.
 
-If you're naturally expressive, that isn't something to tone down. People tend to warm to a face that shows what it feels.
+## Point 3 — On-screen card (not spoken): Clear, Bright Eyes
 
-## 3. Clear, Bright Eyes
+So much of that warmth shows around the eyes. Which brings us to a detail very few of us think about: the whites of the eyes. When they look red, a face can come across as more tired, sadder and less healthy, even when you feel fine. You don't need them brilliantly white, though. Making them whiter than they naturally are doesn't make anyone look healthier or more attractive.
 
-Clear, bright eyes.
+A few gentle habits help. If your eyes feel dry, lubricating drops, often called artificial tears, can help. At a screen, every twenty minutes, look at something about twenty feet away for twenty seconds. Try not to rub your eyes. And outdoors, sunglasses help protect them from the sun.
 
-A detail very few people think about is the whites of your eyes. When they look red or yellowish, a face can look sadder, less healthy and less attractive. And they change with dry air, tiredness and long hours at a screen.
+One thing to be careful with. Redness-relief drops aren't the same as artificial tears, and used often, they can make redness come back worse. And if redness doesn't settle, or comes with pain or sensitivity to light, please see a doctor. The same goes if the whites of your eyes look yellow. That's not something to cover up.
 
-The good news is that you don't need brilliantly white eyes. Just clear ones. Making them whiter than they naturally are doesn't add anything.
+## Point 4 — On-screen card (not spoken): Let Your Skin Glow
 
-If your eyes feel dry, lubricating drops, often called artificial tears, can help. Redness-relief drops are fine once in a while, for a photo or a special day. But used often, they can make the redness come back worse.
+Then there's your skin, and how it holds the light. It's easy to think that polished skin means matte skin, with every bit of shine powdered away. But in one study in Japan, women compared the same faces with three finishes: glowing, oily, and completely matte. The glowing skin was rated the most attractive. And the flat, matte version came last, even below the oily one.
 
-Then protect them day to day. Every twenty minutes at a screen, look at something about twenty feet away, across the room or out of a window, for twenty seconds. Try not to rub your eyes. And outdoors, wear sunglasses. Sun, wind and dust are linked to yellowish spots on the whites of the eyes.
+That doesn't make matte wrong, especially if your skin is naturally oily. But the difference is worth knowing. Glow is soft light spread evenly across the skin. Shine is oil collecting in a few places, usually the forehead and nose.
 
-And if your eyes stay red, or the whites turn yellow, please see a doctor. That's not something to cover up.
+So start with moisturiser, and let it settle for a minute. If you wear a base, a satin finish keeps that softness better than a fully matte one. Powder only where shine actually appears, and leave the rest alone. During the day, a blotting paper lifts shine without flattening everything else. Healthy-looking skin isn't skin with no light on it. It's skin that catches the light softly.
 
-## 4. Let Your Skin Glow
+### Guide CTA (spoken, between points 4 and 5)
 
-Let your skin glow.
+And if you'd like to know which colours bring your skin to life, our personal stylist guide is linked in the description. It's sent straight to your email.
 
-It's easy to think that polished skin means matte skin, with every bit of shine powdered away. But in one study in Japan, women compared the same faces with three different finishes: glowing, oily, and completely matte. The glowing skin was rated the most attractive. And the flat, matte version came last, even below the oily one.
+## Point 5 — On-screen card (not spoken): See Your Makeup the Way Others Do
 
-The difference is in how the light sits. Glow is soft light spread across the skin. Shine is oil collecting in a few places. And interestingly, a soft glow across the whole face was rated higher than glow on the cheeks alone.
+Makeup is another place where the mirror can mislead us. Researchers once asked women to do their own makeup as if for a night out. Then people chose how much of that makeup looked best on each face. Men and women agreed with each other, and both chose less than the women had applied.
 
-So start with moisturiser, and let it settle for a minute. If you wear a base, choose a satin or luminous finish rather than a fully matte one. Powder only where you actually get shiny, usually the centre of the forehead and the sides of the nose. Leave the rest alone. And during the day, press a blotting paper onto any shine instead of adding more powder.
+And here's the interesting part. People assumed others would want more makeup than they did themselves. They assumed men would want the most of all, and that wasn't true either. So it's easy to do our makeup for an audience that wants less than we imagine.
 
-Healthy skin isn't skin with no light on it. It's skin that catches the light softly.
+That isn't a rule to wear less. Wear exactly what you enjoy. The useful part is checking it the way others actually see it. We put it on inches from the mirror. Other people see it from across a table, often in daylight.
 
-## 5. Define, Don't Cover
+So before you leave, step back and look again, by a window if you can. Blend any edge you can still see from there. Makeup looks its best when people notice you first, and the makeup second.
 
-Define, don't cover.
+## Point 6 — On-screen card (not spoken): Refresh What Really Looks Tired
 
-It's easy to wear more makeup than other people actually prefer. When researchers let people choose how much looked best on a face, men and women agreed. Both chose far less than the women had put on for a night out. Heavy makeup can also make a face look less like the person wearing it.
+Then there are the mornings when you've slept badly, and you're sure it shows. In one small study of faces photographed after a night without sleep, people noticed three things most. Heavier-looking eyelids, mouth corners turning down, and swollen eyes. Dark circles were noticed too, but less.
 
-But that doesn't mean makeup doesn't help. It's about where it goes. Women's faces are rated as more attractive when the eyes and lips stand out a little more against the skin. That's what makeup has always done best. So spend it on definition, not coverage.
+That's reassuring. Dark circles often aren't about tiredness at all. They can come from natural pigment, from blood vessels showing through thin skin, or from the shadows of your facial structure. And they're more common in deeper skin tones. They aren't a flaw, in your face or anyone else's.
 
-In practice, that might be brows brushed up and filled only where they're sparse. Lashes curled, with a coat of mascara. And a little colour on your lips. On the skin, cover only where the colour is uneven, a patch of redness or a dark spot, and let the rest show.
+It also shows where a few minutes can help. A cool, damp cloth over closed eyes can ease a little puffiness. Curled lashes can make heavy-looking lids look more open. The softness at the corners of your mouth is the same one from the very first point. And if you'd like to soften a shadow, use a little concealer only where it's darkest, and blend it out.
 
-Then check it the way other people see it. Not close up in a bathroom mirror, but from a few steps back, in daylight.
+None of this makes a short night disappear. It simply helps you look as rested as you can today.
 
-If you'd like to know which shades suit your colouring, our personal stylist guide is linked in the description. It's sent straight to your email.
+## Point 7 — On-screen card (not spoken): Step Back From the Camera
 
-## 6. Look Rested in Minutes
+Everything so far has been about the face people see in person. But there's one view of your face that can be surprisingly unfair: the close-up selfie.
 
-Look rested in minutes.
+A camera held close to your face enlarges whatever is nearest to the lens, usually the nose. One analysis calculated that at about thirty centimetres, the nose can look noticeably larger than it really is. At around a metre and a half, that difference all but disappears. So a close selfie isn't an objective picture of your face. Part of what you see is the lens.
 
-When people look at a tired face, dark circles aren't actually what they notice most. The biggest giveaways are heavier eyelids, the corners of the mouth turning down, and swollen eyes. Dark circles come further down the list.
+So give the camera a little distance. Hold your phone further away, or prop it up and use the timer. On a video call, sit back a little, and raise the screen so the camera is level with your eyes.
 
-That tells you where to spend a few minutes on a tired morning. For swelling, rest a cool, damp cloth over your closed eyes for a few minutes. For heavy-looking lids, those curled lashes from the last point help lift the eye. For the corners of your mouth, that's the softness from the very first point. And for shadows, a touch of concealer only where they're darkest, blended out, rather than covering the whole under-eye.
+And the next time a photo makes you doubt your face, remember how it was taken.
 
-The evening before helps too. Sleeping with your head slightly raised and having a little less salt can mean less puffiness in the morning. And some dark circles are simply part of your natural colouring. They're more common in deeper skin tones, and more sleep may not change them. That's exactly what concealer is for.
+## Closing (spoken, with the guide CTA and engagement question)
 
-None of this replaces sleep. But on the mornings you need it, you'll know where to start.
+The face other people know isn't the one you study up close in the mirror, or the one in a close selfie. It's the one that moves, from a few steps away, in everyday light. And that face deserves a little more of your attention, and a lot less of your criticism.
 
-## 7. Step Back From the Camera
+Thank you so much for watching. Which of these will you try first? Comment the number below. I read them. And if you found something valuable today, a simple like or comment would truly mean the world to us. Our personal stylist guide is in the description if you'd like to discover your best colours and elevate your style even further. Until next time.
 
-Step back from the camera.
+## Sign-off (spoken)
 
-So often now, people see us on a screen. And the camera doesn't always see you the way people do.
-
-If you've ever looked at a selfie and thought, that's not what my face looks like, you may be right. A camera very close to your face exaggerates whatever is nearest to it, usually the nose. One analysis calculated what happens at about thirty centimetres, the distance of a close-up selfie. At that distance, the nose can look noticeably larger than it really is. From a metre and a half away, that distortion all but disappears.
-
-So give the camera a little distance. Hold your phone further away, or prop it up and use the timer. On a video call, sit back from the screen, and raise your laptop so the camera is level with your eyes rather than looking up at you.
-
-It's a small change. But it means the face people see on a screen is much closer to the one they'd see in person.
-
-## Closing
-
-So, soften your face at rest, and let your smile reach your eyes. Keep your eyes clear, let your skin glow, and spend your makeup on definition. Know where to start on a tired morning, and give the camera a little distance. None of this changes who you are. It simply lets more of you show.
-
-Thank you so much for watching. Comment the number of the one you'll try first. I read them. And if you found something valuable today, a simple like or comment would truly mean the world to us. Our personal stylist guide is in the description if you'd like to discover your best colours and elevate your style even further. Until next time, bye, my loves.
+Bye, my loves.
