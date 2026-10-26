@@ -106,3 +106,61 @@ C1 is the A/B alternative for YouTube's Test & compare. C3 is kept only as a ref
 **Description credit:** `Thumbnail: @norwegianwool · @eleonorstorre · (centre: TikTok creator, to be credited once traced)`
 
 **Before publishing:** all three images are Pinterest finds with credit only. Under this repo's rules that is *unresolved*, not cleared. Ask @eleonorstorre and @norwegianwool for permission (template: `workflow/ASSET-RESEARCH-GUIDE.md` §5), or swap in owned or licensed photos using the same spec.
+
+
+# Round 3: the topic's proven thumbnails (research on every 1M+ video found)
+
+**Method.**
+- 42 YouTube searches a viewer types, 50 results each: 2,000 results, which is 1,176 unique long videos (yt-dlp, 26 Oct 2026). The searches cover making old clothes look new, clothing care, laundry, pilling, faded black, shrunk or stretched knits, steaming and ironing, whites, alterations, look expensive, dressing better without buying, and Diana.
+- 158 of them have 1M+ views. Kids', craft-hack-farm (5-Minute Crafts, 123 GO, Blossom), prank, men's-tailoring and off-topic videos were dropped, leaving **51 relevant 1M+ videos**.
+- Each one's views were divided by the median of its own channel's last 80 videos. That multiple measures how far the video beat what its channel normally gets. It is a view multiple, **not CTR**: no tool here can see other channels' CTR.
+- Every thumbnail was looked at and tagged by hand (`thumb3/rel_0-2.jpg`).
+
+| What the thumbnail shows | n | Median multiple | Others |
+|---|---|---|---|
+| **The garment is the subject** (no face needed) | 16 | **212.9x** | 20.6x |
+| Red ✗ / green ✓ drawn on | 5 | 143.3x | 40.5x |
+| Same garment or person, **before \| after side by side** | 14 | 51.7x | 33.8x |
+| No text at all | 15 | 121.3x | 26.5x |
+| **The creator's face** as the hook | 17 | **7.2x** | 104.7x |
+
+The **care / restore** videos alone (n=21) show the same thing: garment-first 212.9x against 88.3x; creator face 54.5x against 206.9x.
+
+**The winners copied:**
+
+| Video | Views | Multiple | Pattern |
+|---|---|---|---|
+| Smart Fox, "White Laundry REALLY WHITE again" | 1.60M | 371x | grey tee → white tee, arrow, no words |
+| Miarti, "fix a stretched sweater band" | 1.29M | 219x | stretched cuff ✗ → fixed cuff ✓, no words |
+| JairWoo, "RE-DYE FADED BLACK JEANS" | 1.95M | 197x | faded jeans \| black jeans |
+| Jordan O'Brien, "Stretch Your Small Clothes" | 1.33M | 121x | the same sweater, "TIGHT → LOOSE" |
+| Ramya Vasudev, "Faded Jeans Black Again" | 1.70M | 77x | faded \| black jeans, "BEFORE → AFTER" |
+| Trefa Craft, "expand the sweater by 20cm" | 1.81M | 75x | the same sweater, arrow, "+20cm" |
+| Star News Today, *our exact title*, Diana | 2.37M | 56x | the same dress twice, yellow circles |
+
+**The proven recipe:** one garment, the same piece twice (before | after), an arrow or ✗/✓, and at most two words.
+
+## The thumbnails built from it (real footage, the channel's type and logo)
+
+1. **PROVEN T1 (recommended): `old-clothes-new_thumbnail_PROVEN_faded_black.jpg`, "Faded → Black".**
+   - Christie Moeller (@icanstyleu) holds the **same jeans** by the waistband twice in her own reel: faded at 7.0 s, restored at 28.3 s.
+   - It copies JairWoo (197x), Ramya (77x) and Jordan O'Brien's word-arrow-word (121x).
+   - Our video teaches it: point 5, "a fabric dye can restore it".
+   - Look: Montserrat Bold Title Case, the red underline, the CE logo, a gentle warm grade.
+   - At phone size it reads in one glance (`thumb3/feed3.jpg`, next to the winners).
+2. **PROVEN T2: `T2_pilled_smooth.jpg`, "Pilled → Smooth" with ✗/✓.**
+   - The same black knit before and after a fabric shaver (clip `shaver41`), following Miarti 219x.
+   - Weaker at phone size: both halves are dark knit, so the words carry the difference.
+3. **Channel-DNA final (round 2): "Don't Replace It / Restore It".** This is the brand-safe option.
+
+**Test & compare: T1 + T2 + the round-2 final.** Then let YouTube's watch-time result decide.
+
+Nothing guarantees CTR. These patterns are the ones whose videos most outperformed their own channels on this topic.
+
+**Rights:**
+- T1 uses @icanstyleu's frames.
+- T2 uses an Amazon influencer post re-pinned on Pinterest; the original creator is not traced.
+
+Both are **unresolved** under `SOURCES-LOG-TEMPLATE.md`. Ask @icanstyleu for permission before publishing T1 (template: `workflow/ASSET-RESEARCH-GUIDE.md` §5).
+
+**Editable source:** `thumbnail/thumb_ba.py` plus `spec_PROVEN_T1_faded_black.json` and `spec_PROVEN_T2_pilled_smooth.json`.
