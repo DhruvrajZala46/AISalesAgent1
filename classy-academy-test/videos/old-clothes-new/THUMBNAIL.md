@@ -1,71 +1,108 @@
-# 8 Ways to Make Old Clothes Look New Again: thumbnails
+# Thumbnail: "8 Ways to Make Your Clothes Look New Again (Without Buying More)"
 
-Built with the `yt-package` skill (title and thumbnail as one unit), `workflow/4-THUMBNAIL.md`, and the channel's own
-tools: `thumb_make.py` (the measured channel layout) and `thumb_xo.py` (same woman, ✗ → ✓). The image files are not committed. They are in the session scratchpad `thumb/`, and they were sent in chat.
+The title and script were checked on 26 Oct 2026: `script.md` v2 is the latest approved script. This file replaces round 1 (the ✗/✓ "Don't Toss It" set), which is still in git history and in the scratchpad `thumb/`.
 
-## Title (decided with the thumbnail)
+**Final:** `old-clothes-new_thumbnail_final.jpg`, 1280x720, JPEG RGB, quality 95. The media is not in git (repo rule); it is in the scratchpad `old-clothes-new/thumbnail/` and was sent in chat.
+**Editable source:** `thumbnail/ca_thumb.py` plus `thumbnail/spec_*.json`. Run `python3 ca_thumb.py spec_FINAL_restore_it.json` inside a folder whose `real/` holds the photos.
 
-**8 Ways to Make Old Clothes Look New Again**. That is 41 characters, scoring 94/100 in `title.py`. It is the exact phrase the topic's videos rank for: Star News Today 2.37M, 5-Minute Crafts 1.68M, Amber Scholl 0.91M.
+## 1. Thumbnail DNA report: all 31 long videos on youtube.com/@ClassyAcademy
 
-The working title "...(Without Buying More)" is 64 characters, scores 76/100, and is cut on desktop.
+**Method.**
+- Every `maxresdefault` thumbnail was downloaded with yt-dlp on 26 Oct 2026 and looked at by eye (`thumb2/ca_sheet_a.jpg`, `ca_sheet_b.jpg`).
+- The view counts are public figures. The channel median is 119k views.
+- No CTR or impression data was available (vidIQ needs re-authorising, and YouTube Studio is not reachable from here). So "strong" below means views, which also depend on impressions, age and topic. It does **not** mean CTR.
 
-## The proof: 40 topic videos, scored by how far each beat its own channel
+**Constant on 31 of 31 thumbnails (the brand rules):**
 
-**Method.** Ten YouTube searches a woman types, for example "how to make old clothes look new again", "make your clothes look new", "clothing care tips" and "how to restore faded black clothes". Kids' channels, men's channels and craft-hack channels were dropped. Each video's views were divided by the median of its channel's last 60 videos (yt-dlp, 26 Oct 2026). The top 24 thumbnails were looked at by eye (`thumb/winners.jpg`).
-
-| On the thumbnail | Examples (multiple of own channel, views) |
+| Element | What the thumbnails show |
 |---|---|
-| **The same garment or woman, before ✗ → after ✓** | Just Marina Here, "How to make your faded clothes black again": **330x**, 0.20M (faded black ✗ → black ✓) |
-| **Three elegant women side by side + one line** (our layout) | Classy Woman **341x** 0.34M; dear peachie 19x 0.64M; Kelli Cardenal 14x; Classy Academy's own "Look Expensive" thumbnail, 5.9x 0.71M |
-| **An older woman** | AnniePicks, Helen Mirren: **241x**, 1.01M |
-| A named royal with circles on the garment | Star News Today, Diana: 58x, 2.37M. **Not used**: our rules forbid a famous face in a thumbnail |
-| Text-heavy how-to / product shots | Rit Dye 25x, Melissa Maker 91x (her own channel face) |
+| Layout | **Three tall photo panels edge to edge**, with thin light dividers. No exceptions: no single-image, split-screen, ✗/✓ or before/after thumbnails |
+| Subjects | Polished women, waist-up or seated, faces in the top third, mostly looking away or past the camera; café tables, gold jewellery, sunglasses, coffee or wine. Mixed ages and skin tones (Princess of Wales on 5). Detail panels without a face are allowed: the jewellery thumbnail (#12) and the shoes thumbnail (#23) |
+| Palette | Warm neutrals: black, cream, camel, chocolate. Slightly dark, gentle contrast, a soft dark vignette behind the words |
+| Top line | Small caps serif (Cormorant SC), white, 1-3 words ("How to Look", "Elegant Ladies", "Become") |
+| Headline | Bold geometric sans in **Title Case** (not capitals), white, 1-3 words, soft shadow, centred across all three panels |
+| Small line | Small caps serif in asterisks: `*avoid these*`, `*instantly*`, `*any budget*`. Present on about two thirds |
+| Red underline | Under the first headline word on the **"Never ..."** thumbnails only (#6, #15, #22, #26) |
+| Logo | "CA" monogram, top-left |
+| Title vs thumbnail | The thumbnail carries the promise in 2-4 words and the title gives the specifics ("Expensive" with the title "How to Instantly Look More Elegant & Expensive...") |
 
-## The three (YouTube Studio → Thumbnail → Test & compare)
+**What varies:** the headline words, and whether one panel is an object. Nothing else.
 
-1. **B: recommended.** `B_dont_toss_it.jpg`, **DON'T / TOSS IT / \*bring it back\***. Scores 98/100 and does not repeat the title's words.
-   - **Who:** Christie Moeller (@icanstyleu), a woman over 50, from her own reveal.
-   - **Before:** at 4.0 s she holds her faded grey jeans (red ✗).
-   - **After:** at 28.3 s the same jeans are black again (green ✓). This is our video's point 5 (faded colour, fabric dye).
-   - **Why:**
-     - it copies the topic's biggest multiple (faded ✗ → black ✓, 330x);
-     - it uses the channel's proven rules format (same woman, mistake → fix);
-     - it shows a woman over 50 (the 241x pattern, and our viewers' most repeated request).
-   - **Look:** caramel backdrop, Montserrat with the red underline, Cormorant SC, CE logo.
-   - **Check:** the cut-out edges were checked at 2x.
-   - **Honesty note:** she restored the colour with coffee. The thumbnail shows only her before and after, not the method.
-2. **A.** `A_throw_it_out.jpg`, **Before You / THROW IT OUT / \*try these 8 first\***. Scores 98/100.
-   - **Layout:** the channel's #1 layout, pixel-measured (`thumb_make.py`).
-   - **Women:** three real women from our video's reels: a camel wool coat (airing20), a cream dress in her closet (closetaes22) and a cream knit (sweaterwoman30). The faces sit in the top third.
-3. **C.** `C_restore_it.jpg`, **Don't Replace It, / RESTORE IT / \*8 elegant ways\***. Scores 98/100.
-   - The same layout as A, with other words and other frames: a white top (closetaes15), a cream knit (sweaterwoman30) and a cream dress (closetaes22).
-   - A vs C tests the words ("throw it out" against "restore it").
+**Strongest references** (views as a multiple of the channel median):
 
-**Feed test** (`thumb/feed_test.jpg`, 320x180, next to six topic winners):
-- All three headlines read in one glance.
-- B stands out most: the only caramel tile, faces close up, ✗/✓ readable.
-- A and C sit beside Classy Academy's own thumbnail and look like the same family.
-
-## Rejected (and why)
-
-- **Pink coat, pilled ✗ → shaved ✓** (depill33): the clip never shows a fully clean result, so a ✓ would overstate it.
-- **Beige sweater before/after** (depill45): the difference is invisible at feed size.
-- **Commons "Before/After shaving"** (CC BY-SA, licensed): Wikimedia rate-limited this server (HTTP 429), and the only copy that downloaded (500 px) is too small.
-- **Camel coat with circles on the buttons** (clothesbrush5): the buttons are too small at feed size, and the frame carries an "M." watermark.
-- **Princess of Wales / Diana photos:** famous faces are not allowed in thumbnails (`SOURCES-LOG-TEMPLATE.md`).
-- **The "women over 60" Pinterest photos:** most come from content-farm sites (sewmamasew-type, too uniform), which the channel treats as likely AI.
-- **Frames with burned-in brand marks** ("SKALL studio", LILYSILK) or a hidden face (whitecoat32 under her hat, 360p).
-
-## Photo credits (description)
-
-`Thumbnail photos: @icanstyleu (Christie Moeller) · @norwegianwool · @bblynnnn (Brooke Justine) · @OfficialKateHutchins · pinned by @craftinaroundbunches`
-
-| Frame | Creator / pinner | Original | Note |
+| Video | Views | Multiple | Thumbnail |
 |---|---|---|---|
-| dye14 4.0 s, 28.3 s (B) | Christie Moeller @icanstyleu | Pinterest pin (her own reel "How to dye black jeans with coffee!") | her own before/after |
-| airing20 2.0 s (A) | Norwegian Wool @norwegianwool | instagram.com/reel/DDLAL6oxqNI | brand reel: the brand owns it |
-| closetaes22 9.8 s, 3.8 s (A, C) | Kate Hutchins @OfficialKateHutchins | instagram.com/reel/DYxLjqToPgi | |
-| closetaes15 3.6 s (C) | Brooke Justine @bblynnnn | instagram.com/reel/DRaflu1kQNS | |
-| sweaterwoman30 2.3 s, 6.8 s (A, C) | pinned by @craftinaroundbunches | a TikTok watermark in the clip: the original is a TikTok creator not yet traced | trace before publishing |
+| My7qteRU9k0, Never Wear | 1.2M | 10.1x | Elegant Ladies / **Never Wear** (underlined) / \*avoid these\* |
+| A-JRkjQs2XI, Hairstyles | 957k | 8.0x | The Most / **Elegant Hairstyles** / \*all hair types\* |
+| QOEUbAZB07o, Look Expensive | 705k | 5.9x | How to Look / **Expensive** / \*instantly\* |
+| q78t2KbuePk, Dress Elegant | 640k | 5.4x | How To / **Dress Elegant** |
+| oHh4T67jJNM, Never Do in Public | 502k | 4.2x | Elegant Ladies / **Never Do In Public** (underlined) / \*Avoid These\* |
 
-These are frames of Pinterest video pins. Their rights status is **unresolved**, exactly like the clips in the video (SOURCES-LOG.md). Option B depends on one creator, so the most useful single permission to ask for is @icanstyleu's (template: `workflow/ASSET-RESEARCH-GUIDE.md` section 5).
+**Correction to round 1.** My first set used capital headlines and ✗/✓ badges on caramel. The channel never does either. The DNA layout (`tools/thumb_make.py`) was right. The new final follows it exactly.
+
+## 2. Concept comparison
+
+**Topic research** (40 topic videos, each scored by views ÷ its own channel's median; `thumb/winners.jpg`):
+- Same garment before ✗ → after ✓: 330x (a small channel).
+- Three elegant women + one line: 341x (Classy Woman).
+- One older woman: 241x.
+- A steamer in hand: Melissa Maker, 91x.
+
+These are view multiples, not CTR.
+
+| | C1: Polished trio | **C2: The care ritual (chosen)** | C3: Tired → restored |
+|---|---|---|---|
+| Visual idea | Three women in fresh classics | Two polished women + **a white shirt being steamed** (the restoring act) | One woman holding her faded jeans ✗, then the same jeans black ✓ |
+| Subject and placement | Three faces, top third | Women left and centre (faces above the words); the steamer, steam and hand on the right, clear of the words | Two cut-outs at the edges, words in the middle |
+| Composition / background | Pure DNA | DNA plus one detail panel (as on #12 and #23) | Caramel backdrop, cut-outs, badges |
+| Colour / contrast | Cream on cream, low contrast | Camel / cream / white, with the dark steamer as the accent | Red hair and black denim on caramel: the most contrast |
+| Text | Elegant Ladies / **Never Rebuy** / \*they do this instead\* | Don't Replace It / **Restore It** / \*8 elegant ways\* | Don't / **Toss It** / \*bring it back\* |
+| Channel fit | Highest | High (one product panel, within the DNA) | **Low**: the channel has never used ✗/✓ or cut-outs |
+| Why it could earn the click | Copies the 10.1x "Elegant Ladies Never..." formula | Shows *how* (care, not shopping) and makes "how do I restore mine?" the curiosity | The clearest transformation |
+| Weak at small size | Says nothing about clothing care, a generic look; "Rebuy" is an awkward word | The steam is faint (the steamer still reads at 168 px); the centre face is a video frame, a little softer than the stills | Busy; looks like another channel |
+
+**Selection: C2.**
+- It keeps all eleven brand rules.
+- It is the only concept whose picture states the promise (restoring with care, not buying).
+- The words are honest to the script ("None of this needs a new wardrobe"; card 1 even says when to let go, which "Restore It" doesn't contradict).
+- `title.py` confirms the thumbnail words don't repeat the title.
+
+C1 is the A/B alternative for YouTube's Test & compare. C3 is kept only as a reference.
+
+**Fix made while designing:**
+- The first C2 put the steamed shirt in the centre panel. At phone size the words covered it.
+- In the final, the shirt and steamer moved to the right panel, mirrored so the steamer, steam and hand sit right of the headline.
+- The headline weight was raised to Bold 700 to match the channel.
+
+## 3. Final audit (the exported file, inspected)
+
+- 1280x720, 16:9, JPEG, RGB, quality 95. Within YouTube's limits (under 2 MB).
+- **Spelling.** "Don't Replace It / Restore It / \*8 elegant ways\*" is correct, and "8" matches the video's eight points.
+- **Edges and artefacts.** Zoomed to 2x at the dividers, the face and the steamer (`thumb2/final_zoom.jpg`): no watermarks, no captions, no stray borders.
+- **Mobile test.** `thumb2/final_mobile.jpg` sets it at 168 px and 246 px wide beside the channel's five strongest thumbnails. "Restore It" reads at once, the camel-coat face and the dark steamer are visible, and it sits in the same family.
+- **Brand.** Three panels, the type system, the warm palette, the vignette, the logo top-left. The underline is off, as on the channel's non-"Never" thumbnails.
+- **Honesty.** It shows steaming, which the video teaches (point 3). There is no fake transformation and no luxury logo.
+- **Logo: unresolved.** It carries this repo's **CE** logo. This repo's channel is "The Classy Elegance", and earlier the user described @ClassyAcademy as a competitor. Not reproducing the CA monogram is deliberate. If the video is going to the Classy Academy channel, replace `assets/logo_ce.png` with the owner's CA logo file and re-run the spec.
+- **CTR.** Not predicted. Test it: upload the final (C2) and C1 to YouTube Studio's Test & compare, and read watch-time share after about 2 weeks or once enough impressions build up.
+
+## 4. Asset ledger
+
+| Panel | Asset | Creator / owner | Where found | Original | Rights status |
+|---|---|---|---|---|---|
+| Left | Frame 2.0 s of the camel wool coat reel (clip `airing20`, also in the video) | Norwegian Wool (@norwegianwool), brand | Pinterest video pin | instagram.com/reel/DDLAL6oxqNI | **Unresolved**: brand content, no licence |
+| Centre | Frame 6.8 s of the cream knit reel (clip `sweaterwoman30`, also in the video) | pinned by @craftinaroundbunches; the original is a TikTok creator, not yet traced | Pinterest video pin | TikTok (watermark in the source clip, not in this frame) | **Unresolved**: trace the creator first |
+| Right | Photo of a white shirt steamed on a hanger, mirrored and cropped | Eleonora Carla Torre (@eleonorstorre); a sponsored post (#adv, @steamone_official) | Pinterest pin of `i.pinimg.com/originals/84/36/ab/8436ab48ac446c9a50496f4089a9f2e5.jpg` (3277x4096) | instagram.com/p/DYgwCZICPMR | **Unresolved**: ask her permission |
+| Fonts | Montserrat, Cormorant SC | Google Fonts | repo `workflow/assets/fonts` | | SIL OFL: cleared |
+| Logo | CE monogram | the channel | repo `workflow/assets/logo_ce.png` | | own |
+
+**AI and quality check.**
+- The two video frames come from clips that passed `aiscan.py` (0.00).
+- The steamer photo is a 3277x4096 original from a named creator's sponsored post. Real hands, rings, fabric weave and steam all look genuine.
+- Rejected:
+  - Pinterest "elegant woman café / black blazer" photos: many are AI. One carried the Gemini sparkle and one a "ChatGPT" mark.
+  - The PROPRESS photo (a brand page).
+  - A CHANEL-bag shirt photo (luxury logo).
+
+**Description credit:** `Thumbnail: @norwegianwool · @eleonorstorre · (centre: TikTok creator, to be credited once traced)`
+
+**Before publishing:** all three images are Pinterest finds with credit only. Under this repo's rules that is *unresolved*, not cleared. Ask @eleonorstorre and @norwegianwool for permission (template: `workflow/ASSET-RESEARCH-GUIDE.md` §5), or swap in owned or licensed photos using the same spec.
