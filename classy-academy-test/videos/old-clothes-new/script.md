@@ -41,7 +41,7 @@ Pilling is often what makes a good sweater look older than it is, and the tool y
 
 A lint roller is lovely for lint and hair, but it can't lift pills, the little balls of fibre that form where fabric rubs.
 
-For pills, a fabric shaver with a guard is the safest choice for most sweaters. Lay the sweater flat on a table rather than your bed, and glide it over gently, with very little pressure.
+For pills, a fabric shaver with a guard is the safest choice for most sweaters. Lay the sweater flat on a table rather than your bed, and glide the shaver over it gently, with very little pressure.
 
 A sweater comb can work too, used very gently. A razor might seem quicker, but one slip can leave a hole that no care will undo. And if a knit is loose, delicate or fuzzy by design, try a small hidden area first.
 
@@ -105,7 +105,7 @@ Even royal wardrobes work this way. At the 2023 BAFTAs, the Princess of Wales wo
 
 On most clothes and shoes, the same few parts wear out long before the rest. The buttons, the zip, and the heel. And because they're the details people notice up close, renewing them makes the whole piece feel cared for again.
 
-If a button is missing or a few no longer match, replacing the whole set can make a coat or cardigan feel renewed. Horn, shell or a good resin in a soft shade often looks more refined than basic plastic. Take the garment with you when you choose, because buttons look different against the fabric.
+If a button is missing or a few no longer match, replacing the whole set can make a coat or cardigan look new again. Horn, shell or a good resin in a soft shade often looks more refined than basic plastic. Take the garment with you when you choose, because buttons look different against the fabric.
 
 A broken zip doesn't have to be the end of a skirt or jacket either. If the fabric is good, a tailor can usually replace it.
 
