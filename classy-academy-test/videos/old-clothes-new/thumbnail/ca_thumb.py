@@ -35,6 +35,11 @@ def build(spec):
         first = big.split()[0]; bb = d.textbbox((W / 2, lines[1][2]), big, font=fb, anchor='ma'); fw_ = d.textlength(first, font=fb)
         fb_ = d.textbbox((bb[0], lines[1][2]), first, font=fb, anchor='la'); uy = max(418, fb_[3] + 8)
         d.rectangle((bb[0] + 14, uy, bb[0] + fw_ + 4, uy + 3), fill=(150, 22, 26))
+    for x, y, t in spec.get('labels', []):                      # small year labels, Cormorant SC, like the small line
+        fl = M.sized(M.FD + 'CormorantSC-Regular.ttf', 30, probe='0')
+        sl = Image.new('L', (W, H), 0); ImageDraw.Draw(sl).text((x + 2, y + 3), t, font=fl, fill=220, anchor='ma')
+        c.paste(Image.new('RGB', (W, H), (12, 8, 6)), (0, 0), sl.filter(ImageFilter.GaussianBlur(5)))
+        ImageDraw.Draw(c).text((x, y), t, font=fl, fill=(255, 255, 255), anchor='ma')
     lg = Image.open(M.LOGO).convert('RGBA'); lg.thumbnail((96, 96), Image.LANCZOS); c.paste(lg, (16, 14), lg)
     c.save(spec['out'], quality=95); return c
 if __name__ == '__main__':

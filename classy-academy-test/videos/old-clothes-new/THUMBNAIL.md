@@ -164,3 +164,38 @@ Nothing guarantees CTR. These patterns are the ones whose videos most outperform
 Both are **unresolved** under `SOURCES-LOG-TEMPLATE.md`. Ask @icanstyleu for permission before publishing T1 (template: `workflow/ASSET-RESEARCH-GUIDE.md` §5).
 
 **Editable source:** `thumbnail/thumb_ba.py` plus `spec_PROVEN_T1_faded_black.json` and `spec_PROVEN_T2_pilled_smooth.json`.
+
+
+# Round 4: Version 2 in the channel's own style (the user's "French Women Never Wear" thumbnail as the reference)
+
+**Final V2:** `old-clothes-new_thumbnail_V2_same_gown.jpg`, 1280x720, reading **Same Gown, / 4 Years Later / \*altered, not replaced\***, with "2019" and "2023" under the outer panels.
+**Version 1** stays `old-clothes-new_thumbnail_PROVEN_faded_black.jpg`. Upload both to Test & compare.
+**Backup copy:** `old-clothes-new_thumbnail_V2_alt_rewear.jpg` (Elegant Ladies / Re-Wear It, underlined), on the same photos.
+
+**Why this picture.**
+- The reference style is three tall photos of real, well-known elegant women. That is the user's French thumbnail and Classy Academy's own, which often shows the Princess of Wales.
+- The script's point 6 has exactly one such woman and one such story: the Princess of Wales at the 2023 BAFTAs wore the white Alexander McQueen gown first worn at the 2019 BAFTAs, altered at the shoulder and with black opera gloves (fact-checked in `script.md`; CNN, PureWow).
+- Royal re-wear is also the angle of the biggest video with our exact title: Star News Today, "10 Fashion Tricks Princess Diana Used to Make Old Clothes Look New Again", 2.37M views, 56x its channel. Royal thumbnails on the topic have a median of 100x (n=4, round 3).
+
+**Copy.** "Same Gown, 4 Years Later" asks the viewer to compare the panels, which opens a curiosity gap. "Altered, not replaced" is the video's promise in three words.
+- It is true: 2019 → 2023 is four years, and the dress was altered.
+- It does not repeat the title's words (`title.py`).
+- Title and thumbnail read as one unit: the thumbnail gives the proof, and the title gives the how.
+
+**The channel's type, exactly.** Top line Cormorant SC (cap 46), headline Montserrat Bold 700 (cap 108) in Title Case, small line Cormorant SC in asterisks, panels at x 0-401 / 403-850 / 852-1280 with light dividers, the warm grade, a vignette behind the words, the CE logo top-left.
+
+**Checks.**
+- Built at 1280x720.
+- At phone size (`thumb4/feed_v2.jpg`, 168 px and 246 px wide, beside Never Wear 1.2M and Hairstyles 957k), "4 Years Later" reads in one glance, she is recognisable, and it sits in the same family.
+- The vignette was deepened (dark 125) because the white gowns sit behind the words.
+- Every photo is a high-resolution original (2045-3456 px wide) with no watermark; Getty-watermarked pins were rejected.
+
+| Panel | Photo | Found on | Source page | Rights |
+|---|---|---|---|---|
+| Left, 2019 | BAFTA red carpet, 10 Feb 2019 (2045x3422) | Pinterest, pinned by @catharinaleroux | people.com/royals/kate-middleton-princess-diana-earrings-bafta-look | press-agency photo: **unresolved** |
+| Centre, 2023 | BAFTA, 19 Feb 2023 (3456x5192) | Pinterest (Grazia's own pin) | graziamagazine.com/articles/kate-middleton-baftas-2023 | press-agency photo: **unresolved** |
+| Right, 2023 | BAFTA, 19 Feb 2023 (2867x4300) | Pinterest (RegalFille's pin) | regalfille.com/2023/02/prince-princess-wales-attended-2023-bafta-night | press-agency photo: **unresolved** |
+
+**Public figure:** `SOURCES-LOG-TEMPLATE.md` warns against a famous face in a thumbnail where it could suggest endorsement. Here she is shown as the subject of a factual story the video tells, as on Classy Academy's own Kate thumbnails. Still, the photos are agency-owned. Before publishing, either license them (Getty / PA / Shutterstock editorial) or accept the risk in writing.
+
+**Editable source:** `thumbnail/ca_thumb.py` (now with year labels) plus `spec_V2_same_gown.json` and `spec_V2_alt_rewear.json`.
