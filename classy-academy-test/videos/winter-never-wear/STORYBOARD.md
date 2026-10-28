@@ -442,8 +442,8 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 
 | On screen | Layout | Clip (seconds used) | What it shows | Transition |
 |---|---|---|---|---|
-| 8:48.2-8:56.0 | full screen | `cobbler2_22` 0.4-13 s | re-soling and finishing leather shoes by hand | dissolve 0.6 s, slow push-in |
-| 8:56.0-8:58.6 | one centred reel on caramel | `cobbler2_13` 0-14 s | a cobbler's finishing machines; gloved hands polishing brown leather loafers | grows from the centre 1.2 s |
+| 8:48.2-8:55.7 | full screen | `cobbler2_22` 0.4-6.25 s | re-soling a leather shoe by hand (a dip to black at 6.3 avoided) | dissolve 0.6 s, slow push-in |
+| 8:55.7-8:58.6 | one centred reel on caramel | `cobbler2_13` 0-14 s | a cobbler's finishing machines; gloved hands polishing brown leather loafers | grows from the centre 1.2 s |
 
 ### Line 49 (8:58.8-9:06.7, 8.0 s)
 > And for truly icy days, a pair of slip-on ice grips can live in your bag and come off the moment you arrive.

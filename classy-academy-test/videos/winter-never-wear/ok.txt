@@ -53,7 +53,7 @@ coatwalk4 0-3.5, 5.6-7.7, 13.3-16.5 grey coats on stairs and street; a cream bel
 coatwalk43 0-5.5 a black long coat by the Louvre
 cobbler2_13 0-14, 17-26 a cobbler's finishing machines; gloved hands polishing brown leather loafers
 cobbler2_2 SKIP (360x640)
-cobbler2_22 0-37 re-soling and finishing leather shoes by hand
+cobbler2_22 0.4-6.2 re-soling a leather shoe by hand (a dip to black at 6.3 avoided)
 cobbler2_34 0-40 hand-stitching a moccasin sole
 coldhands24 SKIP (black and white)
 coldhands39 7-9.5, 10-14.9 a hooded figure in a blizzard; snowy branches

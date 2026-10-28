@@ -10,7 +10,7 @@ The script was used word for word (`beats.txt`, 78 lines, 2,063 words). The vide
 | 4 | Visual references and verified asset sources | `SOURCES-LOG.md` (149 clips), `ok.txt` (what every checked clip shows and which seconds are usable), `picks.md` (every Pinterest search and pick), `CREDITS.txt` |
 | 5 | Music and sound-design plan | `MUSIC-SOUND-PLAN.md` |
 | 6 | Proposed redesigned channel logo | `LOGO-PROPOSAL.md`; the board `logo_options.jpg` is in chat. **Waiting for your choice**: nothing is changed until you approve. |
-| 7 | The final edited video | not committed (media); the link is in chat. Checks in `QC-REPORT.md` |
+| 7 | The final edited video | not committed (media); sent in chat (v3). Checks in `QC-REPORT.md` |
 
 ## How it was made (the order the brief asked for)
 
@@ -29,7 +29,7 @@ The script was used word for word (`beats.txt`, 78 lines, 2,063 words). The vide
 4. **Edit.**
    - `edit.py` is run by `workflow/tools/build.py`.
    - The fast renderer was checked against the browser at 15 layouts.
-   - v1 was rendered and watched at one frame per second; six issues were fixed in v2 (`QC-REPORT.md`).
+   - v1 was rendered and watched at one frame per second; six issues were fixed in v2 and one more in v3 (`QC-REPORT.md`).
 
 ## Needs you
 

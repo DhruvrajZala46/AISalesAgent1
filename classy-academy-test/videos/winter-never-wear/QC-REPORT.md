@@ -1,11 +1,16 @@
-# QC report: 8 Things Elegant Ladies Never Wear in Winter (v2)
+# QC report: 8 Things Elegant Ladies Never Wear in Winter (final, v3)
 
-**Export.** `winter-never-wear_v2.mp4`: 1920x1080, 30 fps, AAC 48 kHz stereo, 14:42 (881.9 s), 696 MB, rendered with
-`tools/ffr.py`. Media is not committed; the file is in the session scratchpad (`winter/work/out/`).
+**Export.** `winter-never-wear_v3.mp4`: 1920x1080, 30 fps, AAC 48 kHz stereo, 14:42 (881.9 s), 26,455 frames, 695 MB,
+rendered with `tools/ffr.py`.
+
+**v3 is v2 with one stretch replaced** (8:47.5-9:01.0, 403 frames), re-rendered without the cobbler reel's dip to
+black. The cuts are on v2's own keyframes and everything else is a stream copy, so it is unchanged and lossless. The
+joins were checked frame by frame: identical before and after the stretch, and 0.8 mean difference inside it
+(re-render noise). The audio is v2's, untouched. The whole file decodes with no errors. Media is not committed; the file is in the session scratchpad (`winter/work/out/`).
 
 ## Checks run on the exported file
 
-| Check | Tool | v1 | v2 |
+| Check | Tool | v1 | v2 / v3 |
 |---|---|---|---|
 | Fast renderer matches the browser | `ffr_cmp.py`, 15 moments covering every layout | mean differences 0.0-8.8 (limit 10) | same page |
 | Black frames | `qa.py` | 0 | **0** |
@@ -16,6 +21,7 @@
 | AI-generated footage | `aiscan.py` on all 248 clips | 3 flagged (label9, scarfwrap26, scarfwrap34), none used | **0 used at 0.40 or above** |
 | The same footage shown twice | build.py assert | 0 | **0** |
 | Clip shorter than its slot | build.py SHORT | 0 | **0** |
+| Dark frames inside the clips | `flash.py`, 222 clip cuts | 8 clips flagged | v2: 1 (cobbler2_22); **v3: 0** |
 | Bare backdrop while the voice talks | `empty.py` | 4 runs | **3 runs, all intended** (see below) |
 
 **The 3 "bare backdrop" runs in v2** are the principle-line screens: white serif text on caramel, which `empty.py`
@@ -41,13 +47,13 @@ One frame per second of v1 (882 frames, `qc/s_01-10.jpg`). Found and fixed in v2
 5. **10:54:** the *Little Women* scene did not match "researchers... an old military experiment". It is replaced by
    loose hair in the snow (snowwalk23). *Little Women* now sits under "I always love hearing from you" (14:01), where
    the March family reads a letter from home.
-6. **Dark frames at clip starts** (`flash.py`): beanie5, coatwalk4, cobbler2_22, socks18, wintercafe2 and wintercafe37
+6. **8:54 (v3):** the cobbler reel (cobbler2_22) dipped to black for 0.4 s between two of its own shots. It is now trimmed
+   to 0.4-6.25 s; the darkest frame left in that stretch is the reel's own dim workshop shot (mean brightness 36 of 255).
+7. **Dark frames at clip starts** (`flash.py`): beanie5, coatwalk4, cobbler2_22, socks18, wintercafe2 and wintercafe37
    were trimmed. label35 (a dark dip) was removed.
 
 ## Known limits (stated, not hidden)
 
-- **8:54 (0.4 s):** the cobbler reel (cobbler2_22) dips to black between two of its own shots. The fix (trim to
-  0.4-6.25 s) is prepared but not yet rendered.
 - **Rights:** 147 Pinterest clips are *unresolved* and 2 film scenes are *unlicensed, owner's decision*. See
   SOURCES-LOG.md.
 - **Burned-in creator text:** some reels still carry a small creator caption, as reels in the channel's own videos do,

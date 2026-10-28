@@ -263,8 +263,8 @@ FULL(C('icy1', 4.7, 9.0), at(46, 'sold as a'), en(46) + 0.3)
 ONE(C('treadboots1', 0.0, 6.8), st(47) - 0.05, at(47, 'Many now come'))
 PAIR([C('treadboots14', 0.0, 6.5), C('cobbler2_13', 17.0, 26.0)], [at(47, 'Many now come'), at(47, 'or brown leather')], en(47) + 0.35)
 # 48 "You can also ask a cobbler to add a thin rubber sole protector to your favorite leather-soled shoes. It's affordable and adds grip."
-FULL(C('cobbler2_22', 0.4, 13.0), st(48) - 0.1, at(48, "It's affordable"))
-ONE(C('cobbler2_13', 0.0, 14.0), at(48, "It's affordable"), en(48) + 0.35)
+FULL(C('cobbler2_22', 0.4, 6.25), st(48) - 0.1, at(48, "It's affordable") - 0.25)
+ONE(C('cobbler2_13', 0.0, 14.0), at(48, "It's affordable") - 0.25, en(48) + 0.35)
 # 49 "And for truly icy days, a pair of slip-on ice grips can live in your bag and come off the moment you arrive."
 FULL(C('icegrips3', 9.8, 12.5), st(49) - 0.1, at(49, 'a pair of slip-on'))
 ONE(C('icegrips0', 0.0, 1.95), at(49, 'a pair of slip-on'), at(49, 'can live in'))
