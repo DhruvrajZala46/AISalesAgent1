@@ -24,8 +24,8 @@ The voice and music of "7 Things Elegant Ladies Avoid in Fall" were separated wi
 |---|---|---|
 | Music | Mixkit "Classical 4", "Classical 9", "Classical 5", "Classical 10" (Jonny S.), soft solo piano, chained with 4 s crossfades | slow, warm, low-register piano, like the channel's beds; free licence; the same tracks as the channel's earlier edits in this repo |
 | Tone | high-pass 40 Hz, +2 dB at 150 Hz, +2 dB at 3.5 kHz, mono | keeps the bed warm and low, out of the voice's way |
-| Level | about 12 dB under the voice (speech RMS -17.7 dBFS, music RMS -29.7 dBFS), steady, no ducking | matches the #1 video (the most viewed) at 11.5-13 dB; the newest video's 19-20 dB is the other end of the channel's range |
-| Start / end | fades in over 1.2 s with the first word (0.7 s), fades out over the last 3.5 s under the end card | the channel's own timing |
+| Level | about 12 dB under the voice, steady, no ducking (measured on the final mix: speech -21.9 dBFS, music alone -34.8 dBFS, 12.8 dB) | matches the #1 video (the most viewed) at 11.5-13 dB; the newest video's 19-20 dB is the other end of the channel's range |
+| Start / end | fades in over the first 1.2 s (the first word is at 0.7 s), fades out over the last 3.5 s under the end card | the channel's own timing |
 | Sound effects | none: no whoosh, ding, riser or impact at any cut or card | none found in the channel's measured videos |
 | Film clips | *You've Got Mail* and *Little Women* scenes play **silent** under the voice | keeps the narration dominant, and keeps the films' soundtracks out (Content ID) |
 | Master | loudness-normalised to -14 LUFS integrated, true peak -1 dBTP, 48 kHz AAC | YouTube's playback target, so nothing is turned down or pumped |

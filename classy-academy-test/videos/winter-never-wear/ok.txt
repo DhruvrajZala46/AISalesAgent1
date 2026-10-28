@@ -6,7 +6,7 @@ beanie41 SKIP (ambiguous)
 beanie5 0-4.6, 6.3-7.3, 8.8-11 fine cashmere beanies: blue, cream, brown, grey, black (pack shot at 5.5 avoided)
 beanie7 SKIP (MAISON CASHMERE mark)
 beret12 0-8.2 a white faux-fur coat, white pillbox hat, white gloves, city street
-beret15 3-11.5, 12-17 putting on a black wool beret (text at 0-2 and 19+)
+beret15 3-5.8 putting on a black wool beret (captions at 0-2, 6-7, 11+ avoided)
 beret16 0-6.5 a white fur coat and cream hat, sunglasses, Christmas street
 beret21 SKIP (make-up)
 beret27 SKIP (234x416)
@@ -51,7 +51,7 @@ coatwalk3 0-10.4 a white long coat crossing a Paris square
 coatwalk36 0-6.8 a brown long coat, windy hair, Paris
 coatwalk4 0-3.5, 5.6-7.7, 13.3-16.5 grey coats on stairs and street; a cream belted coat
 coatwalk43 0-5.5 a black long coat by the Louvre
-cobbler2_13 0-14, 17-26 a cobbler's machines; gloved hands polishing loafers
+cobbler2_13 0-14, 17-26 a cobbler's finishing machines; gloved hands polishing brown leather loafers
 cobbler2_2 SKIP (360x640)
 cobbler2_22 0-37 re-soling and finishing leather shoes by hand
 cobbler2_34 0-40 hand-stitching a moccasin sole
@@ -77,7 +77,7 @@ f80winter6 0-8.4 a black belted coat and silk headscarf, walking across a snow f
 f90winter32 watermark montage; tree-carry 14-15.8 only (film); else skip
 flw10 SKIP (Little Women 2019 - not 80s/90s, text)
 flw2 SKIP (Little Women 2019)
-flw5 0-4.4, 4.5-9.9 Little Women (1994): the March house in snow, a letter, the sisters, a candle, Jo at the window, the sisters in winter coats outside
+flw5 0-2.2 Little Women (1994): the March house in snow, the letter from Father ("Mrs. March and family"), Marmee and the sisters reading it together (caption cropped out; 2.25+ not used)
 flw7 0-7 a snowy park path under a lamp post
 flw9 Little Women (1994) 0-2.5 Laurie holly; 4.5-6 dance; rest mixed
 fwhms16 0-1.8 When Harry Met Sally autumn walk (then modern NYC montage, letterboxed)
@@ -114,11 +114,11 @@ heels42 SKIP (looks generated despite score 0.0; too glossy - safety)
 knitquality23 SKIP (looks generated: mannequin + bow, studio flowers - safety)
 label0 SKIP (PINSPARK mark)
 label13 SKIP (low-res)
-label18 0-11.4 a cream cable-knit zip cardigan, a hand on the knit (logo 11.8 avoided)
+label18 0-10.5 a cream cable-knit zip cardigan, a hand on the knit ("giive" brand caption from 10.8 avoided)
 label22 SKIP (captions)
 label23 0-5.5, 9-13.5, 14-19.5, 24-31, 33-38 sweatshirts on hangers; cotton fleece close; the label at the neck (a wipe at 5.6 avoided)
 label28 0-16.7 hoodies on a rail, a hand feeling the fabric
-label35 0.6-4.6 a ribbed cream knit, close
+label35 SKIP (a dark dip at 1.6 and a cut at 3; not used)
 label4 SKIP (captions/ad)
 label5 SKIP (text/brand)
 label7 SKIP (graphic sweaters)
@@ -163,7 +163,7 @@ socks18 0-10 cream cable wool socks
 socks24 SKIP (split screen)
 socks6 9-16 blue wool socks being worn
 treadboots1 0-6.8 deep boot treads stepping through snow
-treadboots10 2.5-4.9, 4.95-8.1 a green plaid coat and Chelsea boots in a field; brown boots close (NELSON logo 8.3+ avoided)
+treadboots10 2.5-4.85 a green plaid coat and Chelsea boots in a field (motion-blur flash 5.0-5.9 and NELSON logo 8.3+ avoided)
 treadboots14 0-12.9 black lug-sole boots through puddles and leaves
 treadboots16 SKIP (man review)
 treadboots24 SKIP (menswear hiking)
@@ -218,7 +218,7 @@ snowparis35 SKIP (subtitles, a man)
 snowparis41 0-15 a cream headband over the ears, a long scarf, navy jacket
 snowparis44 0-6.7 two women in cream coats and white berets, Eiffel Tower
 snowwalk15 0-4.8 a camel long coat, windy hair
-snowwalk23 0-8.8 a quilted long coat in the snow, from behind
+snowwalk23 0-8.8 long loose hair and a quilted long coat in the snow, from behind
 snowwalk27 0-11.3 a camel coat on a dressmaker's form
 windycoat21 0-5.4 long coats in London, day and night
 windycoat25 0-7 a brown long coat walking towards the Eiffel Tower

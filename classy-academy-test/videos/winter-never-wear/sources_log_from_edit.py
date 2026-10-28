@@ -7,7 +7,7 @@ for l in open('ok.txt'):
     if l.strip() and not l.startswith('#'):
         k, rest = l.split(None, 1); NOTE[k] = rest.strip()
 FILM = {'fymail10': ("You've Got Mail (1998, Warner Bros.)", 'film footage inside a creator\'s comparison reel ("Meg Ryan fall"); the creator\'s own recreations are cut out'),
-        'flw5': ('Little Women (1994, Columbia Pictures)', 'fan montage of the film; the burned-in "Little Women (1994)" caption is cropped out')}
+        'flw5': ('Little Women (1994, Columbia Pictures)', 'fan montage of the film; only its first 2.2 s are used (the house in snow, the letter, the family reading it); the burned-in caption is cropped out')}
 def mmss(t): return f'{int(t // 60)}:{t % 60:04.1f}'
 def lines_at(a, z): return [b['i'] for b in B if b['start'] < z and b['end'] > a]
 first, lines, segs = {}, {}, {}

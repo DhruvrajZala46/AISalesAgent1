@@ -74,7 +74,7 @@ i = nid('ti'); els.append(f'<div id="{i}" class="title" style="opacity:0"><div c
 tw.append(f'tl.fromTo("#{i}",{{opacity:0,y:16}},{{opacity:1,y:0,duration:1.2,ease:"power2.out"}},{st(5)+1.9:.3f});'); fade_out(i, at(5, 'and the smarter') - 0.1, 0.5)
 _log('title over the clip', [], st(5) + 1.9, at(5, 'and the smarter'), '"Episode 32" serif + title in white script, fades up 1.2 s')
 ONE(C('coattry40', 0.0, 4.0), at(5, 'and the smarter'), at(5, 'keep you warmer'))
-ROW([C('snowcoat45', 0.0, 4.4), C('gloves44', 13.0, 19.0), C('coatwalk4', 13.3, 16.5)],
+ROW([C('snowcoat45', 0.0, 4.4), C('gloves44', 13.0, 19.0), C('coatwalk4', 13.3, 16.0)],
     [at(5, 'keep you warmer'), at(5, 'and look far'), at(5, 'more expensive')], en(5) + 0.35)
 # 6 "Some of these may surprise you, because a few of the pieces we reach for to stay warm can actually leave us colder.
 #    But once you see them, you'll never unsee them. Let's get started."
@@ -148,7 +148,7 @@ QUOTE(C('merino2', 0.0, 7.1), st(21) - 0.1, at(21, 'as you move'),
       'Wool can absorb', st(21) + 0.3, 'around <i>a third</i> of its weight', at(21, 'around a third'))
 PAIR([C('commute14', 2.8, 11.3), C('cozyhome42', 0.0, 12.9)], [at(21, 'as you move'), at(21, 'a warm room')], en(21) + 0.35)
 # 22 "A thin silk layer or a good synthetic thermal works well, too, and dries quickly."
-PAIR([C('silklayer43', 2.0, 9.0), C('label35', 0.6, 4.6)], [st(22) - 0.05, at(22, 'a good synthetic')], en(22) + 0.35)
+ONE(C('silklayer43', 2.0, 9.0), st(22) - 0.05, en(22) + 0.35)
 # 23 "And here's a little trick hikers swear by. Dress for how you'll feel 10 minutes into your walk, not the moment you open the door."
 FULL(C('snowcoat14', 0.0, 8.5), st(23) - 0.1, at(23, 'Dress for how') - 0.1)
 QUOTE(C('snowcoat14', 8.6, 16.5), at(23, 'Dress for how') - 0.1, en(23) + 0.45,
@@ -168,9 +168,9 @@ FULL(C('acrylic38', 0.5, 4.5), at(26, 'and it feels warm'), en(26) + 0.3)
 # 27 "But acrylic absorbs very little moisture. So when you go from the cold outside into a heated room, the warmth and
 #     moisture your body gives off has nowhere to go. That's why some acrylic knits feel toasty one minute and strangely
 #     clammy the next."
-ONE(C('acrylic38', 5.5, 11.0), st(27) - 0.05, at(27, 'So when you go'))
+ONE(C('acrylic38', 5.5, 11.0), st(27) - 0.05, at(27, 'the cold outside'))
 PAIR([C('snowcoat8', 0.0, 9.8), C('cozyhome37', 0.0, 10.5)], [at(27, 'the cold outside'), at(27, 'into a heated room')], at(27, "That's why") - 0.1)
-LINE('<i>toasty</i> one minute', at(27, 'feel toasty'), 'and strangely clammy the next', at(27, 'and strangely'), en(27) + 0.45)
+LINE('<i>toasty</i> one minute', at(27, "That's why"), 'and strangely clammy the next', at(27, 'and strangely'), en(27) + 0.45)
 # 28 "And many acrylic sweaters pill quickly. Those little fuzzy balls that appear under the arms and along the sides after
 #     just a few wears."
 FULL(C('acrylic18', 0.0, 12.0), st(28) - 0.1, at(28, 'under the arms'))
@@ -180,7 +180,7 @@ FULL(C('coatfabric10', 13.0, 20.0), st(29) - 0.1, at(29, 'faster than'))
 ONE(C('acrylic18', 12.5, 19.0), at(29, 'faster than'), en(29) + 0.35)
 # 30 "Instead, flip to the label before you buy. Look for wool, merino, cashmere, or a wool-rich blend."
 ONE(C('label23', 9.0, 13.5), st(30) - 0.05, at(30, 'Look for wool'))
-ROW([C('merino2', 7.2, 11.2), C('beanie5', 8.6, 11.0), C('label18', 4.5, 8.0)],
+ROW([C('merino2', 7.2, 11.2), C('scarfwrap14', 12.0, 20.0), C('label18', 4.5, 8.0)],
     [at(30, 'Look for wool'), at(30, 'cashmere'), at(30, 'wool-rich blend')], en(30) + 0.35)
 # 31 "Then give the knit a gentle stretch. A quality knit feels dense and springs right back into shape. If it stays
 #     stretched out or you can see straight through it, put it back."
@@ -191,7 +191,8 @@ FULL(C('silklayer43', 9.5, 17.5), at(31, 'If it stays'), en(31) + 0.3)
 #     Just let it be the supporting fiber, not the whole sweater."
 FULL(C('chunky4', 0.0, 6.5), st(32) - 0.1, at(32, 'It can make'))
 ONE(C('washknit12', 0.0, 5.0), at(32, 'It can make'), at(32, 'Just let it'))
-FULL(C('label18', 8.0, 11.4), at(32, 'Just let it'), en(32) + 0.3)
+FULL(C('label18', 8.0, 10.5), at(32, 'Just let it'), at(32, 'not the whole'))
+FULL(C('chunky34', 0.0, 1.8), at(32, 'not the whole'), en(32) + 0.3)
 # 33 "And washing your knits inside out on a gentle cycle helps them stay smooth for so much longer."
 ONE(C('washknit24', 5.9, 8.9), st(33) - 0.05, at(33, 'on a gentle'))
 FULL(C('washknit12', 5.2, 8.5), at(33, 'on a gentle'), at(33, 'stay smooth'))
@@ -231,7 +232,7 @@ ONE(C('boots16', 6.0, 14.0), st(40) - 0.05, at(40, 'A fine merino'))
 FULL(C('socks12', 0.0, 3.4), at(40, 'A fine merino'), en(40) + 0.3)
 # 41 "And when you shop for winter boots, try them on in the afternoon, wearing the socks you'll actually wear with them."
 FULL(C('boots41', 14.5, 24.0), st(41) - 0.1, at(41, 'wearing the socks'))
-ONE(C('socks18', 5.5, 10.0), at(41, 'wearing the socks'), en(41) + 0.35)
+ONE(C('socks18', 5.5, 9.8), at(41, 'wearing the socks'), en(41) + 0.35)
 # 42 "Of course, you don't want boots that are too loose either. If your foot slides around, cold air moves around inside
 #     with it. The goal is room for your toes and support for your heel."
 FULL(C('heels38', 3.0, 6.4), st(42) - 0.1, at(42, 'If your foot'))
@@ -250,7 +251,7 @@ ONE(C('heels17', 7.0, 13.7), at(44, 'And no outfit'), en(44) + 0.35)
 # 45 "Here's something that surprised me. Researchers at Toronto's WinterLab tested nearly a hundred types of winter footwear
 #     on ice, and fewer than one in 10 met their minimum standard for grip."
 FULL(C('snowcoat17', 8.0, 16.6), st(45) - 0.1, at(45, 'tested nearly'))
-ROW([C('boots41', 9.2, 14.3), C('treadboots14', 7.0, 12.9), C('treadboots10', 2.5, 4.9)],
+ROW([C('boots41', 9.2, 14.3), C('treadboots14', 7.0, 12.9), C('treadboots10', 2.5, 4.85)],
     [at(45, 'tested nearly'), at(45, 'types of winter'), at(45, 'on ice')], at(45, 'and fewer') - 0.1)
 LINE('fewer than <i>one in 10</i>', at(45, 'and fewer'), 'met their minimum standard for grip', at(45, 'met their'), en(45) + 0.45)
 # 46 "The ones that performed best had special soles with tiny grit-like particles built right into the rubber. So even a
@@ -260,10 +261,10 @@ FULL(C('icy1', 4.7, 9.0), at(46, 'sold as a'), en(46) + 0.3)
 # 47 "Instead, keep one pair with a deeply treaded rubber sole for icy mornings. Many now come in sleek black or brown
 #     leather that look just as polished."
 ONE(C('treadboots1', 0.0, 6.8), st(47) - 0.05, at(47, 'Many now come'))
-PAIR([C('treadboots14', 0.0, 6.5), C('treadboots10', 4.95, 8.1)], [at(47, 'Many now come'), at(47, 'or brown leather')], en(47) + 0.35)
+PAIR([C('treadboots14', 0.0, 6.5), C('cobbler2_13', 17.0, 26.0)], [at(47, 'Many now come'), at(47, 'or brown leather')], en(47) + 0.35)
 # 48 "You can also ask a cobbler to add a thin rubber sole protector to your favorite leather-soled shoes. It's affordable and adds grip."
-FULL(C('cobbler2_22', 0.0, 13.0), st(48) - 0.1, at(48, "It's affordable"))
-ONE(C('cobbler2_13', 17.0, 26.0), at(48, "It's affordable"), en(48) + 0.35)
+FULL(C('cobbler2_22', 0.4, 13.0), st(48) - 0.1, at(48, "It's affordable"))
+ONE(C('cobbler2_13', 0.0, 14.0), at(48, "It's affordable"), en(48) + 0.35)
 # 49 "And for truly icy days, a pair of slip-on ice grips can live in your bag and come off the moment you arrive."
 FULL(C('icegrips3', 9.8, 12.5), st(49) - 0.1, at(49, 'a pair of slip-on'))
 ONE(C('icegrips0', 0.0, 1.95), at(49, 'a pair of slip-on'), at(49, 'can live in'))
@@ -309,8 +310,7 @@ FULL(C('coldhands39', 10.0, 14.9), st(60) - 0.1, at(60, "That's actually") - 0.1
 LINE("That's actually a <i>myth</i>.", at(60, "That's actually"), None, None, en(60) + 0.45)
 # 61 "Researchers writing in the British Medical Journal traced it back to a flawed interpretation of an old military
 #     experiment. Your head loses heat much like any other uncovered part of your body."
-FULL(C('flw5', 0.0, 4.4), st(61) - 0.1, at(61, 'traced it back'))                          # Little Women (1994)
-FULL(C('flw5', 4.5, 9.9), at(61, 'traced it back'), at(61, 'Your head loses'))           # Little Women (1994)
+FULL(C('snowwalk23', 0.0, 8.8), st(61) - 0.1, at(61, 'Your head loses'))
 FULL(C('commute13', 6.0, 14.6), at(61, 'Your head loses'), en(61) + 0.3)
 # 62 "But here's what does matter. Your ears are one of the areas most vulnerable to frostbite, along with your fingers,
 #     toes, nose, cheeks, and chin. And on a windy day, cold, stinging ears can make you miserable in minutes."
@@ -324,9 +324,9 @@ PAIR([C('headband5', 0.95, 5.2), C('headband12', 2.5, 8.8)], [st(64) - 0.05, at(
 PAIR([C('winterbun28', 0.0, 12.4), C('blowout12', 28.0, 38.0)], [at(64, 'with a sleek'), at(64, 'or a soft blowout')], en(64) + 0.35)
 # 65 "A wool beret is timeless and effortlessly chic. And if you love a beanie, choose a fine merino or cashmere one rather
 #     than a stiff, heavy knit. Just make sure your hair is completely dry before you put it on. So pretty."
-ROW([C('beret15', 3.0, 11.5), C('snowparis29', 0.0, 6.0), C('beret3', 0.0, 3.5)],
+ROW([C('snowparis29', 0.0, 6.0), C('beret3', 0.0, 3.5), C('beret15', 3.0, 5.8)],
     [st(65) - 0.05, at(65, 'is timeless'), at(65, 'effortlessly chic')], at(65, 'And if you love') - 0.1)
-ONE(C('beanie5', 0.0, 4.6), at(65, 'And if you love') - 0.1, at(65, 'rather than'))
+ONE(C('beanie5', 0.3, 4.6), at(65, 'And if you love') - 0.1, at(65, 'rather than'))
 FULL(C('snowparis3', 0.0, 8.0), at(65, 'rather than'), at(65, 'Just make sure'))
 FULL(C('beret3', 11.0, 14.5), at(65, 'Just make sure'), at(65, 'before you put'))
 FULL(C('beret16', 0.0, 6.5), at(65, 'before you put'), en(65) + 0.3)
@@ -377,7 +377,8 @@ FULL(C('snowparis44', 0.0, 6.7), st(74) - 0.1, at(74, "Often it's"))
 FULL(C('earmuff15', 0.0, 10.0), at(74, "Often it's"), en(74) + 0.3)
 # 75 "And I'm curious, what's the one winter piece you could never live without? Let me know in the comments. I always love hearing from you."
 FULL(C('wintercafe6', 0.0, 5.7), st(75) - 0.1, at(75, 'Let me know'))
-FULL(C('wintercafe2', 0.0, 7.0), at(75, 'Let me know'), en(75) + 0.3)
+FULL(C('wintercafe2', 0.2, 7.0), at(75, 'Let me know'), at(75, 'I always love') - 0.1)
+FULL(C('flw5', 0.0, 2.2), at(75, 'I always love') - 0.1, en(75) + 0.3)                  # Little Women (1994)
 # 76 "If you'd like a part two with even more winter style tips, just comment part two. And if you found this video helpful,
 #     a simple like or comment would truly mean the world to us."
 ROW([C('scarfwrap29', 0.0, 10.0), C('snowparis29', 6.5, 12.2), C('earmuff23', 0.0, 10.8)],
@@ -386,7 +387,7 @@ FULL(C('wintercafe47', 0.0, 8.7), at(76, 'And if you found') - 0.1, en(76) + 0.3
 # 77 "If you're ready to elevate your style even further, be sure to check out the personal stylist guide linked in the
 #     description. It's sent instantly to your email after access."
 FULL(C('scarfwrap2', 0.0, 12.0), st(77) - 0.1, at(77, 'be sure to check'))
-FULL(C('wintercafe37', 0.0, 9.5), at(77, 'be sure to check'), en(77) + 0.3)
+FULL(C('wintercafe37', 0.2, 9.5), at(77, 'be sure to check'), en(77) + 0.3)
 GUIDE(at(77, 'the personal stylist'), en(77) + 0.25)
 # 78 "Thank you so much for spending your time with us today. Until next time. Bye, my loves."
 FULL(C('wintercafe39', 0.0, 4.0), st(78) - 0.1, at(78, 'Until next time'))

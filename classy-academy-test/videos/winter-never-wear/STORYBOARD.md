@@ -58,7 +58,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | 0:55.2-0:56.7 | one centred reel on caramel | `coattry40` 0-4 s | a camel coat, hands at the collar | grows from the centre 1.2 s |
 | 0:56.7-1:00.2 | row of 3 tall panels | `snowcoat45` 0-4.4 s | a white teddy hood and a burgundy scarf | each panel grows from its corner on its word |
 | 0:56.7-1:00.2 | row of 3 tall panels | `gloves44` 13-19 s | black leather gloves with a sheer knit and leather skirt (MUZA logo 20+ avoided) | each panel grows from its corner on its word |
-| 0:56.7-1:00.2 | row of 3 tall panels | `coatwalk4` 13.3-16.5 s | grey coats on stairs and street; a cream belted coat | each panel grows from its corner on its word |
+| 0:56.7-1:00.2 | row of 3 tall panels | `coatwalk4` 13.3-16 s | grey coats on stairs and street; a cream belted coat | each panel grows from its corner on its word |
 
 ### Line 6 (1:00.4-1:13.3, 12.8 s)
 > Some of these may surprise you, because a few of the pieces we reach for to stay warm can actually leave us colder. But once you see them, you'll never unsee them. Let's get started.
@@ -121,7 +121,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 |---|---|---|---|---|
 | 2:00.7-2:05.9 | one centred reel on caramel | `merino13` 0-7.7 s | a fine camel knit, close | grows from the centre 1.2 s |
 | 2:05.9-2:10.4 | two panels on caramel | `coattry25` 0-6.4 s | long coats over outfits, cream jacket, black dress | each panel grows from its corner on its word |
-| 2:05.9-2:10.4 | two panels on caramel | `label18` 0-4 s | a cream cable-knit zip cardigan, a hand on the knit (logo 11.8 avoided) | each panel grows from its corner on its word |
+| 2:05.9-2:10.4 | two panels on caramel | `label18` 0-4 s | a cream cable-knit zip cardigan, a hand on the knit ("giive" brand caption from 10.8 avoided) | each panel grows from its corner on its word |
 
 ### Line 13 (2:10.6-2:23.5, 12.9 s)
 > And if you love your chunky cable knit, and honestly, who doesn't, let it be the star. Wear it on its own on milder days or under a coat cut roomy enough to fit over it.
@@ -210,8 +210,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 
 | On screen | Layout | Clip (seconds used) | What it shows | Transition |
 |---|---|---|---|---|
-| 3:48.7-3:55.0 | two panels on caramel | `silklayer43` 2-9 s | a cream knit over satin trousers (caption at 1 avoided) | each panel grows from its corner on its word |
-| 3:48.7-3:55.0 | two panels on caramel | `label35` 0.6-4.6 s | a ribbed cream knit, close | each panel grows from its corner on its word |
+| 3:48.7-3:55.0 | one centred reel on caramel | `silklayer43` 2-9 s | a cream knit over satin trousers (caption at 1 avoided) | grows from the centre 1.2 s |
 
 ### Line 23 (3:55.2-4:03.8, 8.6 s)
 > And here's a little trick hikers swear by. Dress for how you'll feel 10 minutes into your walk, not the moment you open the door.
@@ -252,10 +251,10 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 
 | On screen | Layout | Clip (seconds used) | What it shows | Transition |
 |---|---|---|---|---|
-| 4:31.7-4:35.6 | one centred reel on caramel | `acrylic38` 5.5-11 s | a woman resting in a cream turtleneck; standing in it (SKALL text from 12) | grows from the centre 1.2 s |
+| 4:31.7-4:36.4 | one centred reel on caramel | `acrylic38` 5.5-11 s | a woman resting in a cream turtleneck; standing in it (SKALL text from 12) | grows from the centre 1.2 s |
 | 4:36.4-4:43.8 | two panels on caramel | `snowcoat8` 0-9.8 s | blowing snow from the hands, a white winter outfit | each panel grows from its corner on its word |
 | 4:36.4-4:43.8 | two panels on caramel | `cozyhome37` 0-10.5 s | wrapped in a cream blanket at home | each panel grows from its corner on its word |
-| 4:45.9-4:50.6 | principle line on caramel | none | | line wipes in: "toasty one minute and strangely clammy the next" |
+| 4:43.9-4:50.6 | principle line on caramel | none | | line wipes in: "toasty one minute and strangely clammy the next" |
 
 ### Line 28 (4:50.8-5:01.0, 10.2 s)
 > And many acrylic sweaters pill quickly. Those little fuzzy balls that appear under the arms and along the sides after just a few wears.
@@ -281,8 +280,8 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 |---|---|---|---|---|
 | 5:10.8-5:14.1 | one centred reel on caramel | `label23` 9-13.5 s | sweatshirts on hangers; cotton fleece close; the label at the neck (a wipe at 5.6 avoided) | grows from the centre 1.2 s |
 | 5:14.1-5:18.6 | row of 3 tall panels | `merino2` 7.2-11.2 s | a cream cable-knit sweater (J'AMEMME logo from 11.3 avoided) | each panel grows from its corner on its word |
-| 5:14.1-5:18.6 | row of 3 tall panels | `beanie5` 8.6-11 s | fine cashmere beanies: blue, cream, brown, grey, black (pack shot at 5.5 avoided) | each panel grows from its corner on its word |
-| 5:14.1-5:18.6 | row of 3 tall panels | `label18` 4.5-8 s | a cream cable-knit zip cardigan, a hand on the knit (logo 11.8 avoided) | each panel grows from its corner on its word |
+| 5:14.1-5:18.6 | row of 3 tall panels | `scarfwrap14` 12-20 s | a camel coat and wool scarves, studio | each panel grows from its corner on its word |
+| 5:14.1-5:18.6 | row of 3 tall panels | `label18` 4.5-8 s | a cream cable-knit zip cardigan, a hand on the knit ("giive" brand caption from 10.8 avoided) | each panel grows from its corner on its word |
 
 ### Line 31 (5:18.8-5:31.2, 12.3 s)
 > Then give the knit a gentle stretch. A quality knit feels dense and springs right back into shape. If it stays stretched out or you can see straight through it, put it back.
@@ -300,7 +299,8 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 |---|---|---|---|---|
 | 5:31.6-5:35.9 | full screen | `chunky4` 0-6.5 s | a cream Aran sweater, arms out | dissolve 0.6 s, slow push-in |
 | 5:35.9-5:40.4 | one centred reel on caramel | `washknit12` 0-5 s | loading a washing machine, setting a gentle cycle | grows from the centre 1.2 s |
-| 5:40.4-5:44.5 | full screen | `label18` 8-11.4 s | a cream cable-knit zip cardigan, a hand on the knit (logo 11.8 avoided) | dissolve 0.6 s, slow push-in |
+| 5:40.4-5:42.8 | full screen | `label18` 8-10.5 s | a cream cable-knit zip cardigan, a hand on the knit ("giive" brand caption from 10.8 avoided) | dissolve 0.6 s, slow push-in |
+| 5:42.8-5:44.5 | full screen | `chunky34` 0-1.8 s | knitting cream wool; an Aran cable close-up | dissolve 0.6 s, slow push-in |
 
 ### Line 33 (5:44.8-5:51.5, 6.7 s)
 > And washing your knits inside out on a gentle cycle helps them stay smooth for so much longer.
@@ -381,7 +381,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | On screen | Layout | Clip (seconds used) | What it shows | Transition |
 |---|---|---|---|---|
 | 7:21.9-7:26.8 | full screen | `boots41` 14.5-24 s | unboxing leather ankle boots | dissolve 0.6 s, slow push-in |
-| 7:26.8-7:29.7 | one centred reel on caramel | `socks18` 5.5-10 s | cream cable wool socks | grows from the centre 1.2 s |
+| 7:26.8-7:29.7 | one centred reel on caramel | `socks18` 5.5-9.8 s | cream cable wool socks | grows from the centre 1.2 s |
 
 ### Line 42 (7:29.9-7:43.5, 13.6 s)
 > Of course, you don't want boots that are too loose either. If your foot slides around, cold air moves around inside with it. The goal is room for your toes and support for your heel.
@@ -417,7 +417,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | 8:06.8-8:12.3 | full screen | `snowcoat17` 8-16.6 s | a camel coat on a snowy avenue | dissolve 0.6 s, slow push-in |
 | 8:12.3-8:17.2 | row of 3 tall panels | `boots41` 9.2-14.3 s | unboxing leather ankle boots | each panel grows from its corner on its word |
 | 8:12.3-8:17.2 | row of 3 tall panels | `treadboots14` 7-12.9 s | black lug-sole boots through puddles and leaves | each panel grows from its corner on its word |
-| 8:12.3-8:17.2 | row of 3 tall panels | `treadboots10` 2.5-4.9 s | a green plaid coat and Chelsea boots in a field; brown boots close (NELSON logo 8.3+ avoided) | each panel grows from its corner on its word |
+| 8:12.3-8:17.2 | row of 3 tall panels | `treadboots10` 2.5-4.85 s | a green plaid coat and Chelsea boots in a field (motion-blur flash 5.0-5.9 and NELSON logo 8.3+ avoided) | each panel grows from its corner on its word |
 | 8:17.3-8:22.1 | principle line on caramel | none | | line wipes in: "fewer than one in 10 met their minimum standard for grip" |
 
 ### Line 46 (8:22.2-8:36.0, 13.7 s)
@@ -435,15 +435,15 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 |---|---|---|---|---|
 | 8:36.5-8:42.2 | one centred reel on caramel | `treadboots1` 0-6.8 s | deep boot treads stepping through snow | grows from the centre 1.2 s |
 | 8:42.2-8:48.1 | two panels on caramel | `treadboots14` 0-6.5 s | black lug-sole boots through puddles and leaves | each panel grows from its corner on its word |
-| 8:42.2-8:48.1 | two panels on caramel | `treadboots10` 4.95-8.1 s | a green plaid coat and Chelsea boots in a field; brown boots close (NELSON logo 8.3+ avoided) | each panel grows from its corner on its word |
+| 8:42.2-8:48.1 | two panels on caramel | `cobbler2_13` 17-26 s | a cobbler's finishing machines; gloved hands polishing brown leather loafers | each panel grows from its corner on its word |
 
 ### Line 48 (8:48.3-8:58.2, 9.9 s)
 > You can also ask a cobbler to add a thin rubber sole protector to your favorite leather-soled shoes. It's affordable and adds grip.
 
 | On screen | Layout | Clip (seconds used) | What it shows | Transition |
 |---|---|---|---|---|
-| 8:48.2-8:56.0 | full screen | `cobbler2_22` 0-13 s | re-soling and finishing leather shoes by hand | dissolve 0.6 s, slow push-in |
-| 8:56.0-8:58.6 | one centred reel on caramel | `cobbler2_13` 17-26 s | a cobbler's machines; gloved hands polishing loafers | grows from the centre 1.2 s |
+| 8:48.2-8:56.0 | full screen | `cobbler2_22` 0.4-13 s | re-soling and finishing leather shoes by hand | dissolve 0.6 s, slow push-in |
+| 8:56.0-8:58.6 | one centred reel on caramel | `cobbler2_13` 0-14 s | a cobbler's finishing machines; gloved hands polishing brown leather loafers | grows from the centre 1.2 s |
 
 ### Line 49 (8:58.8-9:06.7, 8.0 s)
 > And for truly icy days, a pair of slip-on ice grips can live in your bag and come off the moment you arrive.
@@ -550,8 +550,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 
 | On screen | Layout | Clip (seconds used) | What it shows | Transition |
 |---|---|---|---|---|
-| 10:54.5-10:57.6 | full screen | `flw5` 0-4.4 s | Little Women (1994): the March house in snow, a letter, the sisters, a candle, Jo at the window, the sisters in winter coats outside **Film: Little Women (1994), unlicensed, owner's decision.** | dissolve 0.6 s, slow push-in |
-| 10:57.6-11:04.2 | full screen | `flw5` 4.5-9.9 s | Little Women (1994): the March house in snow, a letter, the sisters, a candle, Jo at the window, the sisters in winter coats outside **Film: Little Women (1994), unlicensed, owner's decision.** | dissolve 0.6 s, slow push-in |
+| 10:54.5-11:04.2 | full screen | `snowwalk23` 0-8.8 s | long loose hair and a quilted long coat in the snow, from behind | dissolve 0.6 s, slow push-in |
 | 11:04.2-11:09.6 | full screen | `commute13` 6-14.6 s | a black leather coat in strong wind | dissolve 0.6 s, slow push-in |
 
 ### Line 62 (11:09.9-11:26.4, 16.4 s)
@@ -585,10 +584,10 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 
 | On screen | Layout | Clip (seconds used) | What it shows | Transition |
 |---|---|---|---|---|
-| 11:43.0-11:47.3 | row of 3 tall panels | `beret15` 3-11.5 s | putting on a black wool beret (text at 0-2 and 19+) | each panel grows from its corner on its word |
 | 11:43.0-11:47.3 | row of 3 tall panels | `snowparis29` 0-6 s | a camel beret and camel coat, snowy mountains | each panel grows from its corner on its word |
 | 11:43.0-11:47.3 | row of 3 tall panels | `beret3` 0-3.5 s | a red beret, walking a Paris street; red beret close (text 4.5-10) | each panel grows from its corner on its word |
-| 11:47.3-11:51.8 | one centred reel on caramel | `beanie5` 0-4.6 s | fine cashmere beanies: blue, cream, brown, grey, black (pack shot at 5.5 avoided) | grows from the centre 1.2 s |
+| 11:43.0-11:47.3 | row of 3 tall panels | `beret15` 3-5.8 s | putting on a black wool beret (captions at 0-2, 6-7, 11+ avoided) | each panel grows from its corner on its word |
+| 11:47.3-11:51.8 | one centred reel on caramel | `beanie5` 0.3-4.6 s | fine cashmere beanies: blue, cream, brown, grey, black (pack shot at 5.5 avoided) | grows from the centre 1.2 s |
 | 11:51.8-11:54.7 | full screen | `snowparis3` 0-8 s | a white check coat and beanie on an ice rink | dissolve 0.6 s, slow push-in |
 | 11:54.7-11:57.5 | full screen | `beret3` 11-14.5 s | a red beret, walking a Paris street; red beret close (text 4.5-10) | dissolve 0.6 s, slow push-in |
 | 11:57.5-12:00.5 | full screen | `beret16` 0-6.5 s | a white fur coat and cream hat, sunglasses, Christmas street | dissolve 0.6 s, slow push-in |
@@ -682,7 +681,8 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | On screen | Layout | Clip (seconds used) | What it shows | Transition |
 |---|---|---|---|---|
 | 13:54.1-13:59.3 | full screen | `wintercafe6` 0-5.7 s | a woman at a table by a snowy window | dissolve 0.6 s, slow push-in |
-| 13:59.3-14:03.7 | full screen | `wintercafe2` 0-7 s | a knit sleeve and a mug at a snowy window | dissolve 0.6 s, slow push-in |
+| 13:59.3-14:01.2 | full screen | `wintercafe2` 0.2-7 s | a knit sleeve and a mug at a snowy window | dissolve 0.6 s, slow push-in |
+| 14:01.2-14:03.7 | full screen | `flw5` 0-2.2 s | Little Women (1994): the March house in snow, the letter from Father ("Mrs. March and family"), Marmee and the sisters reading it together (caption cropped out; 2.25+ not used) **Film: Little Women (1994), unlicensed, owner's decision.** | dissolve 0.6 s, slow push-in |
 
 ### Line 76 (14:03.9-14:16.7, 12.8 s)
 > If you'd like a part two with even more winter style tips, just comment part two. And if you found this video helpful, a simple like or comment would truly mean the world to us.
@@ -700,7 +700,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | On screen | Layout | Clip (seconds used) | What it shows | Transition |
 |---|---|---|---|---|
 | 14:17.2-14:20.9 | full screen | `scarfwrap2` 0-12 s | tying a long cream scarf over a cream coat | dissolve 0.6 s, slow push-in |
-| 14:20.9-14:30.4 | full screen | `wintercafe37` 0-9.5 s | a wood stove, tulips and a snowy window | dissolve 0.6 s, slow push-in |
+| 14:20.9-14:30.4 | full screen | `wintercafe37` 0.2-9.5 s | a wood stove, tulips and a snowy window | dissolve 0.6 s, slow push-in |
 | 14:21.9-14:30.4 | guide text over the clip | none | | haze, "Check the description for / Personal Stylist Guide" |
 
 ### Line 78 (14:30.7-14:37.2, 6.5 s)
