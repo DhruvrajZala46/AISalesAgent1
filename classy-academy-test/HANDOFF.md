@@ -1,4 +1,26 @@
-# HANDOFF - read this first in a new chat (written 18 Oct 2026)
+# HANDOFF - read this first in a new chat
+
+## 0. Latest (29 Oct 2026): "8 Things Elegant Ladies Never Wear in Winter", v5
+
+- Branch: `claude/tender-mendel-qk030f`. The channel is now called **The Classy Elegance**.
+- The work is in `videos/winter-never-wear/`. Read `V5-CHANGES.md`, `VISUAL-SCRIPT.md` and `workflow/EDIT-RULES.md` first.
+- **v4 was rejected** ("everything zoomed", "I want the background", "chunky sweater... but the visual shows a normal
+  sweater in a trench"). v5 rebuilt every line her way:
+  - the caramel backdrop;
+  - rows of whole tall reels of different women in the exact garment;
+  - product cut-outs;
+  - full screen only for the *Charade* (1963) scenes.
+- Still open:
+  - the owner's verdict on v5 ("ship it, or change it?");
+  - the logo choice, A, B or C (`LOGO-PROPOSAL.md`); nothing changes until she chooses;
+  - the Pinterest rights (all rows "unresolved" in `SOURCES-LOG.md`).
+- Media is never committed. The v5 work folder was the session scratchpad (`winter/w5`: raw clips, `ok5.txt`, `edit.py`).
+  Rebuild with `workflow/tools/build.py` and `ffr.py`.
+
+---
+
+(Older history below, written 18 Oct 2026.)
+
 
 This file carries the full history of the previous chat (Oct 2026) so a new chat can continue without it.
 Branch: `claude/youtube-channel-analysis-lghfsv`. The channel's YouTube name is **Classy Academy** (@ClassyAcademy).

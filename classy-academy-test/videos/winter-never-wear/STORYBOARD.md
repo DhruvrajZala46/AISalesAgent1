@@ -18,7 +18,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | 0:00.0-0:04.5 | full screen (landscape) | `film_alps` 0-4.1 s | *Charade* (1963): snowy Alps panorama, Megève | dissolve, slow push-in |
 | 0:04.1-0:06.6 | full screen (landscape) | `film_trench` 1-3.6 s | *Charade* (1963): Audrey Hepburn walking a Paris street in a white trench coat, headscarf and sunglasses | dissolve, slow push-in |
 | 0:06.3-0:13.5 | row of 3 reels on caramel | `a_buttoncoat17` 0-9.5 s | a chocolate long coat, leopard trousers, London street | each grows in on its word, holds for the sentence |
-| 0:06.3-0:13.5 | row of 3 reels on caramel | `b_rushing53` 0-8.5 s | a cream coat and a big cream scarf, coffee, Paris (older woman? no: young) | each grows in on its word, holds for the sentence |
+| 0:06.3-0:13.5 | row of 3 reels on caramel | `b_rushing53` 0-8.5 s | a cream coat and a big cream scarf, coffee, Paris | each grows in on its word, holds for the sentence |
 | 0:06.3-0:13.5 | row of 3 reels on caramel | `f_gloves4` 0-4.6 s | a long black coat over a black turtleneck, black leather gloves, sunglasses | each grows in on its word, holds for the sentence |
 | 0:13.2-0:16.4 | one reel centred on caramel | `f_coldhands6` 0-4.4 s | a long black coat, BLOWING ON HER HANDS in falling snow (cold, blue light) | grows from the centre; pictures change inside it |
 
@@ -79,7 +79,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | 0:55.2-1:00.7 | row of 3 reels on caramel | `a_cashmerecoat36` 0-6.6 s | a camel long coat, Milan Galleria (thin black side bars: crop) | each grows in on its word, holds for the sentence |
 | 0:55.2-1:00.7 | row of 3 reels on caramel | `f_mittens24` 0-9.5 s | a long taupe coat, beanie, scarf, coffee, SNOWY park railings | each grows in on its word, holds for the sentence |
 | 0:55.2-1:00.7 | row of 3 reels on caramel | `a_buttoncoat68` 0-8 s | a chocolate belted wool coat with a high collar, mirror | each grows in on its word, holds for the sentence |
-| 1:00.4-1:09.0 | one reel centred on caramel | `c_fuzzy3` 0-4 s | a pile of soft sweaters, then fuzzy cardigans tried on (tiny caption at 0-1) | grows from the centre; pictures change inside it |
+| 1:00.4-1:09.0 | one reel centred on caramel | `c_fuzzy3` 1.4-5 s | a pile of soft sweaters, then fuzzy cardigans tried on (tiny caption at 0-1) | grows from the centre; pictures change inside it |
 | 1:00.4-1:09.0 | one reel centred on caramel | `a_bulkycoat28` 0-6.4 s | pulling up a cream super-chunky turtleneck | grows from the centre; pictures change inside it |
 | 1:00.4-1:09.0 | one reel centred on caramel | `f_coldhands39` 0-4 s | a bundled face in a snowstorm (freezing) | grows from the centre; pictures change inside it |
 | 1:08.6-1:14.1 | full screen (landscape) | `film_closeup` 0-5 s | *Charade* (1963): Audrey Hepburn close-up, fur hat and sunglasses, the snowy Alps behind | dissolve, slow push-in |
@@ -128,7 +128,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 |---|---|---|---|---|
 | 1:42.6-1:52.8 | product cut-outs on caramel | `cut_cableknit1.png` | product cut-out (`p_cableknit1`): Cable-Knit Sweater | each rises in on its word, labelled: Thick knit, Fitted coat |
 | 1:42.6-1:52.8 | product cut-outs on caramel | `cut_coat14.png` | product cut-out (`p_coat14`):  | each rises in on its word, labelled: Thick knit, Fitted coat |
-| 1:52.5-2:02.3 | row of 3 reels on caramel | `x_bulkyunder14` 0-9 s | an olive SUPER-CHUNKY arm-knit cardigan over a white dress (the thickest knit) | each grows in on its word, holds for the sentence |
+| 1:52.5-2:02.3 | row of 3 reels on caramel | `x_bulkyunder14` 10-20 s | an olive SUPER-CHUNKY arm-knit cardigan over a white dress (the thickest knit) | each grows in on its word, holds for the sentence |
 | 1:52.5-2:02.3 | row of 3 reels on caramel | `a_coatoversweater44` 16.5-23 s | trying coats over a cream knit (caption 0-3) | each grows in on its word, holds for the sentence |
 | 1:52.5-2:02.3 | row of 3 reels on caramel | `f_coldhands0` 0-6 s | a woman in a grey wrap rubbing her COLD HANDS | each grows in on its word, holds for the sentence |
 
@@ -137,7 +137,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 
 | On screen | Layout | Clip (seconds used) | What it shows | Movement |
 |---|---|---|---|---|
-| 1:52.5-2:02.3 | row of 3 reels on caramel | `x_bulkyunder14` 0-9 s | an olive SUPER-CHUNKY arm-knit cardigan over a white dress (the thickest knit) | each grows in on its word, holds for the sentence |
+| 1:52.5-2:02.3 | row of 3 reels on caramel | `x_bulkyunder14` 10-20 s | an olive SUPER-CHUNKY arm-knit cardigan over a white dress (the thickest knit) | each grows in on its word, holds for the sentence |
 | 1:52.5-2:02.3 | row of 3 reels on caramel | `a_coatoversweater44` 16.5-23 s | trying coats over a cream knit (caption 0-3) | each grows in on its word, holds for the sentence |
 | 1:52.5-2:02.3 | row of 3 reels on caramel | `f_coldhands0` 0-6 s | a woman in a grey wrap rubbing her COLD HANDS | each grows in on its word, holds for the sentence |
 | 2:02.0-2:06.2 | product cut-outs on caramel | `cut_finemerino26.png` | product cut-out (`p_finemerino26`): Women's Ribbed Turtleneck Sweater Slim Fit Long Sleeve Lightweight Kni | each rises in on its word, labelled: Fine merino, Cashmere |
@@ -275,7 +275,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | 4:02.3-4:05.8 | one reel centred on caramel | `b_office36` 0-3 s | OPENING A DOOR and stepping out, grey suit; 3-8 walking with an iced coffee | grows from the centre; pictures change inside it |
 | 4:05.5-4:15.0 | row of 3 reels on caramel | `b_cottonshirt1` 0-9 s | a crisp white shirt: buttons close, then a blonde bob, smiling | each grows in on its word, holds for the sentence |
 | 4:05.5-4:15.0 | row of 3 reels on caramel | `b_cottonshirt70` 1.5-6 s | a SILVER-HAIRED woman (sixties) in a white shirt and jeans (small labels) | each grows in on its word, holds for the sentence |
-| 4:05.5-4:15.0 | row of 3 reels on caramel | `b_cottonshirt9` 0-4.5 s | a white shirt, red lip, rolling the sleeves | each grows in on its word, holds for the sentence |
+| 4:05.5-4:15.0 | row of 3 reels on caramel | `b_cottonshirt9` 4.3-8.3 s | a white shirt, red lip, rolling the sleeves | each grows in on its word, holds for the sentence |
 | 4:14.7-4:19.8 | row of 3 reels on caramel | `b_raincoat24` 4-10 s | a black suit, black umbrella, wet New York street | each grows in on its word, holds for the sentence |
 | 4:14.7-4:19.8 | row of 3 reels on caramel | `b_rushing57` 0-5 s | a grey suit coat hurrying down the metro steps, Starbucks (back view) | each grows in on its word, holds for the sentence |
 | 4:14.7-4:19.8 | row of 3 reels on caramel | `b_rushing12` 1.4-5.5 s | a long black coat, cap, coffee, walking past a Paris door | each grows in on its word, holds for the sentence |
@@ -317,7 +317,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 |---|---|---|---|---|
 | 4:43.8-4:52.8 | reel left + principle line | `c_fuzzy24` 0-8 s | cream and taupe fuzzy oversized sweaters, white wall | line wipes in: "toasty one minute / strangely clammy the next" |
 | 4:52.5-5:06.2 | one reel centred on caramel | `c_pilling8` 0-4.5 s | PILLING close on a dark knit, then a fabric shaver | grows from the centre; pictures change inside it |
-| 4:52.5-5:06.2 | one reel centred on caramel | `c_pilling3` 0-6 s | a woman shaving PILLS off a black knit (caption 7+) | grows from the centre; pictures change inside it |
+| 4:52.5-5:06.2 | one reel centred on caramel | `c_pilling3` 0.8-4.6 s | a woman shaving PILLS off a black knit (caption 7+) | grows from the centre; pictures change inside it |
 | 4:52.5-5:06.2 | one reel centred on caramel | `c_pilling20` 2-12 s | shaving pills off knits, hands | grows from the centre; pictures change inside it |
 
 ### Line 29 (5:01.5-5:10.3, 8.8 s)
@@ -326,7 +326,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | On screen | Layout | Clip (seconds used) | What it shows | Movement |
 |---|---|---|---|---|
 | 4:52.5-5:06.2 | one reel centred on caramel | `c_pilling8` 0-4.5 s | PILLING close on a dark knit, then a fabric shaver | grows from the centre; pictures change inside it |
-| 4:52.5-5:06.2 | one reel centred on caramel | `c_pilling3` 0-6 s | a woman shaving PILLS off a black knit (caption 7+) | grows from the centre; pictures change inside it |
+| 4:52.5-5:06.2 | one reel centred on caramel | `c_pilling3` 0.8-4.6 s | a woman shaving PILLS off a black knit (caption 7+) | grows from the centre; pictures change inside it |
 | 4:52.5-5:06.2 | one reel centred on caramel | `c_pilling20` 2-12 s | shaving pills off knits, hands | grows from the centre; pictures change inside it |
 | 5:05.9-5:11.6 | 2 framed reels on caramel | `c_cashmere15` 0-8 s | a white cashmere crew, grey trousers, checked floor | each grows in on its word |
 | 5:05.9-5:11.6 | 2 framed reels on caramel | `c_pilling20` 14-21 s | shaving pills off knits, hands | each grows in on its word |
@@ -354,7 +354,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | 5:14.3-5:19.1 | product cut-outs on caramel | `cut_cashmere4.png` | product cut-out (`p_cashmere4`): Cashmere sweater in beige - Frame / Mytheresa | each rises in on its word, labelled: Wool, Merino, Cashmere, Wool-rich blend |
 | 5:14.3-5:19.1 | product cut-outs on caramel | `cut_cashmere46.png` | product cut-out (`p_cashmere46`): Crew Sweater in Cashmere - Wheat - M | each rises in on its word, labelled: Wool, Merino, Cashmere, Wool-rich blend |
 | 5:18.8-5:32.3 | one reel centred on caramel | `c_label13` 0-5 s | a hand on a chunky grey knit, the knit texture (stretching it) | grows from the centre; pictures change inside it |
-| 5:18.8-5:32.3 | one reel centred on caramel | `c_label0` 0-6 s | hands on a dense rust knit, a ribbed cuff (small brand mark top-left) | grows from the centre; pictures change inside it |
+| 5:18.8-5:32.3 | one reel centred on caramel | `c_wool50` 0.6-6.6 s | a brown wool knit polo pulled on, CLOSE: dense knit | grows from the centre; pictures change inside it |
 | 5:18.8-5:32.3 | one reel centred on caramel | `c_label28` 0-5 s | a hand on knits on hangers, feeling the fabric (grey, pink, white) | grows from the centre; pictures change inside it |
 | 5:18.8-5:32.3 | one reel centred on caramel | `c_sweatershop2` 0-3 s | a hand going through knits on a NEW ARRIVALS rail | grows from the centre; pictures change inside it |
 
@@ -364,7 +364,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | On screen | Layout | Clip (seconds used) | What it shows | Movement |
 |---|---|---|---|---|
 | 5:18.8-5:32.3 | one reel centred on caramel | `c_label13` 0-5 s | a hand on a chunky grey knit, the knit texture (stretching it) | grows from the centre; pictures change inside it |
-| 5:18.8-5:32.3 | one reel centred on caramel | `c_label0` 0-6 s | hands on a dense rust knit, a ribbed cuff (small brand mark top-left) | grows from the centre; pictures change inside it |
+| 5:18.8-5:32.3 | one reel centred on caramel | `c_wool50` 0.6-6.6 s | a brown wool knit polo pulled on, CLOSE: dense knit | grows from the centre; pictures change inside it |
 | 5:18.8-5:32.3 | one reel centred on caramel | `c_label28` 0-5 s | a hand on knits on hangers, feeling the fabric (grey, pink, white) | grows from the centre; pictures change inside it |
 | 5:18.8-5:32.3 | one reel centred on caramel | `c_sweatershop2` 0-3 s | a hand going through knits on a NEW ARRIVALS rail | grows from the centre; pictures change inside it |
 | 5:32.0-5:45.0 | row of 3 reels on caramel | `c_cashmere25` 0-10 s | a chocolate cashmere jumper, burgundy trousers, mirror | each grows in on its word, holds for the sentence |
@@ -392,7 +392,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | 5:52.0-5:56.6 | full screen (landscape) | `film_yellowclose` 0-4.2 s | *Charade* (1963): Audrey Hepburn close-up in a mustard wool coat | dissolve, slow push-in |
 | 5:56.3-6:07.6 | row of 3 reels on caramel | `b_whitetee12` 0-16 s | a cream belted wool coat, tying the belt, mirror | each grows in on its word, holds for the sentence |
 | 5:56.3-6:07.6 | row of 3 reels on caramel | `a_buttoncoat36` 0-7.9 s | a rust belted wool coat, Milan pasticceria | each grows in on its word, holds for the sentence |
-| 5:56.3-6:07.6 | row of 3 reels on caramel | `a_buttoncoat23` 0-5 s | a cream belted wool coat with a high collar, walking then close (dark at the end) | each grows in on its word, holds for the sentence |
+| 5:56.3-6:07.6 | row of 3 reels on caramel | `a_buttoncoat23` 0-3.3 s | a cream belted wool coat with a high collar, walking then close (dark at the end) | each grows in on its word, holds for the sentence |
 
 ### Line 35 (6:07.2-6:24.5, 17.2 s)
 > If you'd like to discover what suits you best and always have a timeless style guide to browse from, our personal stylist guide is linked in the description. It's sent instantly to your email after access. Now, let's continue.
@@ -402,7 +402,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | 6:14.0-6:22.4 | guide text | none | | haze, "Check the description for / Personal Stylist Guide" |
 | 5:56.3-6:07.6 | row of 3 reels on caramel | `b_whitetee12` 0-16 s | a cream belted wool coat, tying the belt, mirror | each grows in on its word, holds for the sentence |
 | 5:56.3-6:07.6 | row of 3 reels on caramel | `a_buttoncoat36` 0-7.9 s | a rust belted wool coat, Milan pasticceria | each grows in on its word, holds for the sentence |
-| 5:56.3-6:07.6 | row of 3 reels on caramel | `a_buttoncoat23` 0-5 s | a cream belted wool coat with a high collar, walking then close (dark at the end) | each grows in on its word, holds for the sentence |
+| 5:56.3-6:07.6 | row of 3 reels on caramel | `a_buttoncoat23` 0-3.3 s | a cream belted wool coat with a high collar, walking then close (dark at the end) | each grows in on its word, holds for the sentence |
 | 6:07.2-6:14.2 | full screen (landscape) | `film_headscarf` 0-8 s | *Charade* (1963): Audrey Hepburn close-up in a white headscarf and sunglasses | dissolve, slow push-in |
 | 6:13.8-6:25.3 | full screen (landscape) | `film_closeup2` 3.4-12 s | *Charade* (1963): Audrey Hepburn, fur hat and sunglasses, by the window over the snow | dissolve, slow push-in |
 
@@ -434,8 +434,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | 6:35.9-6:43.4 | one reel centred on caramel | `b_hikesnow13` 0-2.2 s | walking in deep snow down a tree avenue (small figure) | grows from the centre; pictures change inside it |
 | 6:35.9-6:43.4 | one reel centred on caramel | `d_woolsocks25` 0-3.4 s | THICK grey wool socks on her feet, close (cosy, sofa) | grows from the centre; pictures change inside it |
 | 6:35.9-6:43.4 | one reel centred on caramel | `d_woolsocks18` 1.5-7 s | pulling thick cream socks up over leggings, then boots on | grows from the centre; pictures change inside it |
-| 6:43.1-6:56.8 | one reel centred on caramel | `d_woolsocks13` 0-3 s | THICK wool socks close: beige, grey, pink (small text after) | grows from the centre; pictures change inside it |
-| 6:43.1-6:56.8 | one reel centred on caramel | `d_woolsocks25` 6-12 s | THICK grey wool socks on her feet, close (cosy, sofa) | grows from the centre; pictures change inside it |
+| 6:43.1-6:56.8 | one reel centred on caramel | `d_woolsocks25` 3.6-9.4 s | THICK grey wool socks on her feet, close (cosy, sofa) | grows from the centre; pictures change inside it |
 | 6:43.1-6:56.8 | one reel centred on caramel | `d_bootzip13` 0-11 s | seated, pulling black knee boots up, TUGGING them on (legs) | grows from the centre; pictures change inside it |
 
 ### Line 39 (6:56.5-7:09.7, 13.1 s)
@@ -443,8 +442,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 
 | On screen | Layout | Clip (seconds used) | What it shows | Movement |
 |---|---|---|---|---|
-| 6:43.1-6:56.8 | one reel centred on caramel | `d_woolsocks13` 0-3 s | THICK wool socks close: beige, grey, pink (small text after) | grows from the centre; pictures change inside it |
-| 6:43.1-6:56.8 | one reel centred on caramel | `d_woolsocks25` 6-12 s | THICK grey wool socks on her feet, close (cosy, sofa) | grows from the centre; pictures change inside it |
+| 6:43.1-6:56.8 | one reel centred on caramel | `d_woolsocks25` 3.6-9.4 s | THICK grey wool socks on her feet, close (cosy, sofa) | grows from the centre; pictures change inside it |
 | 6:43.1-6:56.8 | one reel centred on caramel | `d_bootzip13` 0-11 s | seated, pulling black knee boots up, TUGGING them on (legs) | grows from the centre; pictures change inside it |
 | 6:56.5-7:02.9 | one reel centred on caramel | `d_bootstry14` 0-6.5 s | PULLING ON black knee boots, tights, white studio | grows from the centre; pictures change inside it |
 | 7:02.6-7:10.5 | product cut-outs on caramel | `cut_socks42.png` | product cut-out (`p_socks42`): Dachstein Woolwear Alpaca Merino Wool Socks | each rises in on its word, labelled: Thickest sock, Thinner sock |
@@ -654,7 +652,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 |---|---|---|---|---|
 | 10:33.7-10:40.1 | white number card | none | | fade to white, black script wipes in: "7. Nothing on your head because you don't want to ruin your hair" |
 | 10:39.9-10:48.0 | row of 3 reels on caramel | `g_blowout0` 0-13 s | a glossy blonde BLOWOUT, hands in the hair (logo card 15+) | each grows in on its word, holds for the sentence |
-| 10:39.9-10:48.0 | row of 3 reels on caramel | `g_blowout1` 4.5-13 s | a glossy dark BLOWOUT, shaking it out (caption 0-3) | each grows in on its word, holds for the sentence |
+| 10:39.9-10:48.0 | row of 3 reels on caramel | `g_blowout1` 5.5-13 s | a glossy dark BLOWOUT, shaking it out (caption 0-3) | each grows in on its word, holds for the sentence |
 | 10:39.9-10:48.0 | row of 3 reels on caramel | `x_hatoff7` 0-4.5 s | Winter hairstyle Yes or No ? Credits:@audreyannej | each grows in on its word, holds for the sentence |
 
 ### Line 60 (10:47.7-10:54.0, 6.3 s)
@@ -663,7 +661,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | On screen | Layout | Clip (seconds used) | What it shows | Movement |
 |---|---|---|---|---|
 | 10:39.9-10:48.0 | row of 3 reels on caramel | `g_blowout0` 0-13 s | a glossy blonde BLOWOUT, hands in the hair (logo card 15+) | each grows in on its word, holds for the sentence |
-| 10:39.9-10:48.0 | row of 3 reels on caramel | `g_blowout1` 4.5-13 s | a glossy dark BLOWOUT, shaking it out (caption 0-3) | each grows in on its word, holds for the sentence |
+| 10:39.9-10:48.0 | row of 3 reels on caramel | `g_blowout1` 5.5-13 s | a glossy dark BLOWOUT, shaking it out (caption 0-3) | each grows in on its word, holds for the sentence |
 | 10:39.9-10:48.0 | row of 3 reels on caramel | `x_hatoff7` 0-4.5 s | Winter hairstyle Yes or No ? Credits:@audreyannej | each grows in on its word, holds for the sentence |
 | 10:47.7-10:52.7 | one reel centred on caramel | `g_coldears21` 0-4.6 s | a face turned up to falling snow, brown coat, snowy forest | grows from the centre; pictures change inside it |
 | 10:52.4-10:54.8 | reel left + principle line | `f_mittens25` 0-4.4 s | a long black coat, red scarf, snow, walking towards the camera | line wipes in: "That's actually / a myth ." |
@@ -734,7 +732,7 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 |---|---|---|---|---|
 | 11:54.6-12:01.8 | one reel centred on caramel | `g_blowout2` 0-7.6 s | a salon blow-dry with a round brush (DRYING the hair) | grows from the centre; pictures change inside it |
 | 11:54.6-12:01.8 | one reel centred on caramel | `g_beret2` 0-5 s | a cream BERET at a Paris balcony window (back view) | grows from the centre; pictures change inside it |
-| 12:01.3-12:04.6 | full screen (landscape) | `film_creamcoat` 0-4 s | *Charade* (1963): Audrey Hepburn in a cream wool coat and pillbox hat, Paris | dissolve, slow push-in |
+| 12:01.3-12:04.6 | full screen (landscape) | `film_creamwalk` 0-3.6 s | *Charade* (1963): Audrey Hepburn walking through an empty apartment in a cream coat | dissolve, slow push-in |
 | 12:04.2-12:08.3 | white number card | none | | fade to white, black script wipes in: "8. The coat that only looks warm" |
 
 ### Line 67 (12:08.1-12:16.1, 8.0 s)
@@ -825,27 +823,26 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | 13:31.8-13:39.8 | row of 3 reels on caramel | `h_wool23` 0-11.7 s | a long oatmeal wool coat: the dense fabric, buttons, then the woman | each grows in on its word, holds for the sentence |
 | 13:31.8-13:39.8 | row of 3 reels on caramel | `a_oversizedcoat32` 0-9 s | putting on a long black coat over a black knit, mirror | each grows in on its word, holds for the sentence |
 | 13:31.8-13:39.8 | row of 3 reels on caramel | `h_longcoat31` 0-7.2 s | a long burgundy coat, white wall | each grows in on its word, holds for the sentence |
-| 13:39.5-13:43.9 | reel left + principle line | `h_maxi23` 0-8 s | a long CREAM wool coat, mirror | line wipes in: "quiet luxury / in its truest form" |
+| 13:39.5-13:43.7 | reel left + principle line | `h_maxi23` 0-8 s | a long CREAM wool coat, mirror | line wipes in: "quiet luxury / in its truest form" |
 
 ### Line 74 (13:43.5-13:53.7, 10.2 s)
 > Staying warm and looking elegant were never opposites. Often it's simply about choosing the right pieces for the weather you're actually in.
 
 | On screen | Layout | Clip (seconds used) | What it shows | Movement |
 |---|---|---|---|---|
-| 13:39.5-13:43.9 | reel left + principle line | `h_maxi23` 0-8 s | a long CREAM wool coat, mirror | line wipes in: "quiet luxury / in its truest form" |
-| 13:43.4-13:48.6 | full screen (landscape) | `film_terrace` 6-13 s | *Charade* (1963): Audrey Hepburn in a fur hat, sunglasses and black fur coat on a snowy ski-resort terrace | dissolve, slow push-in |
-| 13:48.3-13:56.0 | row of 3 reels on caramel | `a_oversizedcoat16` 0-14 s | an olive long coat, a navy wool scarf and beanie, street | each grows in on its word, holds for the sentence |
-| 13:48.3-13:56.0 | row of 3 reels on caramel | `b_hikesnow18` 0-9 s | a cream teddy coat, bucket hat, plaid scarf, snow | each grows in on its word, holds for the sentence |
-| 13:48.3-13:56.0 | row of 3 reels on caramel | `a_cashmerecoat7` 14-22 s | cream knit close with a ring; 14-25 a cream long coat over a cream knit | each grows in on its word, holds for the sentence |
+| 13:39.5-13:43.7 | reel left + principle line | `h_maxi23` 0-8 s | a long CREAM wool coat, mirror | line wipes in: "quiet luxury / in its truest form" |
+| 13:43.4-13:56.0 | row of 3 reels on caramel | `a_oversizedcoat16` 0-14 s | an olive long coat, a navy wool scarf and beanie, street | each grows in on its word, holds for the sentence |
+| 13:43.4-13:56.0 | row of 3 reels on caramel | `b_hikesnow18` 0-9 s | a cream teddy coat, bucket hat, plaid scarf, snow | each grows in on its word, holds for the sentence |
+| 13:43.4-13:56.0 | row of 3 reels on caramel | `a_cashmerecoat7` 14-25 s | cream knit close with a ring; 14-25 a cream long coat over a cream knit | each grows in on its word, holds for the sentence |
 
 ### Line 75 (13:54.2-14:03.4, 9.2 s)
 > And I'm curious, what's the one winter piece you could never live without? Let me know in the comments. I always love hearing from you.
 
 | On screen | Layout | Clip (seconds used) | What it shows | Movement |
 |---|---|---|---|---|
-| 13:48.3-13:56.0 | row of 3 reels on caramel | `a_oversizedcoat16` 0-14 s | an olive long coat, a navy wool scarf and beanie, street | each grows in on its word, holds for the sentence |
-| 13:48.3-13:56.0 | row of 3 reels on caramel | `b_hikesnow18` 0-9 s | a cream teddy coat, bucket hat, plaid scarf, snow | each grows in on its word, holds for the sentence |
-| 13:48.3-13:56.0 | row of 3 reels on caramel | `a_cashmerecoat7` 14-22 s | cream knit close with a ring; 14-25 a cream long coat over a cream knit | each grows in on its word, holds for the sentence |
+| 13:43.4-13:56.0 | row of 3 reels on caramel | `a_oversizedcoat16` 0-14 s | an olive long coat, a navy wool scarf and beanie, street | each grows in on its word, holds for the sentence |
+| 13:43.4-13:56.0 | row of 3 reels on caramel | `b_hikesnow18` 0-9 s | a cream teddy coat, bucket hat, plaid scarf, snow | each grows in on its word, holds for the sentence |
+| 13:43.4-13:56.0 | row of 3 reels on caramel | `a_cashmerecoat7` 14-25 s | cream knit close with a ring; 14-25 a cream long coat over a cream knit | each grows in on its word, holds for the sentence |
 | 13:55.8-13:59.5 | product cut-outs on caramel | `cut_coat42.png` | product cut-out (`p_coat42`):  | each rises in on its word, labelled: A wool coat, Leather gloves, A cable knit |
 | 13:55.8-13:59.5 | product cut-outs on caramel | `cut_gloves0.png` | product cut-out (`p_gloves0`): Italian Leather Cashmere-Lined Gloves Black | each rises in on its word, labelled: A wool coat, Leather gloves, A cable knit |
 | 13:55.8-13:59.5 | product cut-outs on caramel | `cut_cableknit24.png` | product cut-out (`p_cableknit24`): In vs. out: Diese 5 Strickpullover-Styles sind im Winter 2025/2026 out | each rises in on its word, labelled: A wool coat, Leather gloves, A cable knit |
@@ -871,14 +868,14 @@ the end card. No sound effects anywhere. Film clips play silent under the voice.
 | 14:10.2-14:17.7 | one reel centred on caramel | `f_coldhands47` 0-9.1 s | a white hood, red scarf, snow, smiling | grows from the centre; pictures change inside it |
 | 14:17.2-14:21.2 | full screen (landscape) | `film_pillbox` 0-4 s | *Charade* (1963): Audrey Hepburn close-up in a cream coat and pillbox hat | dissolve, slow push-in |
 | 14:20.8-14:24.5 | full screen (landscape) | `film_leopard` 0-4.6 s | *Charade* (1963): Audrey Hepburn close-up in a leopard pillbox hat and red coat | dissolve, slow push-in |
-| 14:24.0-14:31.1 | full screen (landscape) | `film_creamwalk` 0-8 s | *Charade* (1963): Audrey Hepburn walking through an empty apartment in a cream coat | dissolve, slow push-in |
+| 14:24.0-14:31.1 | full screen (landscape) | `film_creamwalk` 3.7-10 s | *Charade* (1963): Audrey Hepburn walking through an empty apartment in a cream coat | dissolve, slow push-in |
 
 ### Line 78 (14:30.7-14:37.2, 6.5 s)
 > Thank you so much for spending your time with us today. Until next time. Bye, my loves.
 
 | On screen | Layout | Clip (seconds used) | What it shows | Movement |
 |---|---|---|---|---|
-| 14:24.0-14:31.1 | full screen (landscape) | `film_creamwalk` 0-8 s | *Charade* (1963): Audrey Hepburn walking through an empty apartment in a cream coat | dissolve, slow push-in |
+| 14:24.0-14:31.1 | full screen (landscape) | `film_creamwalk` 3.7-10 s | *Charade* (1963): Audrey Hepburn walking through an empty apartment in a cream coat | dissolve, slow push-in |
 | 14:30.6-14:34.3 | full screen (landscape) | `film_gloves` 0-4.6 s | *Charade* (1963): Audrey Hepburn in a cream coat, pillbox hat and white gloves | dissolve, slow push-in |
 | 14:34.0-14:39.3 | one reel centred on caramel | `b_rushing3` 1-6.9 s | a chocolate belted coat walking away towards the Eiffel Tower, then turning | grows from the centre; pictures change inside it |
 

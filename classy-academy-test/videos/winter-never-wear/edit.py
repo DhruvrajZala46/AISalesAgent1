@@ -177,7 +177,7 @@ ROW([C('a_cashmerecoat36', 0.0, 6.6), C('f_mittens24', 0.0, 9.5), C('a_buttoncoa
     [at(5, 'and the smarter'), at(5, 'keep you warmer'), at(5, 'look far more')])
 # 6 "Some of these may surprise you, because a few of the pieces we reach for to stay warm can actually leave us colder.
 #    But once you see them, you'll never unsee them. Let's get started."
-ONE([(C('c_fuzzy3', 0.0, 4.0), st(6) - 0.05), (C('a_bulkycoat28', 0.0, 6.4), at(6, 'the pieces we reach')),
+ONE([(C('c_fuzzy3', 1.4, 5.0), st(6) - 0.05), (C('a_bulkycoat28', 0.0, 6.4), at(6, 'the pieces we reach')),
      (C('f_coldhands39', 0.0, 4.0), at(6, 'can actually leave'))])
 FS(C('film_closeup', 0.0, 5.0), at(6, 'But once') - 0.1)
 
@@ -195,7 +195,7 @@ QUOTE(C('a_chunkyunder24', 0.0, 12.9), st(9) - 0.05, "It isn't the <i>fabric</i>
 #     gets squeezed out."
 CUTS([('cut_cableknit1.png', 'Thick knit', at(10, 'thick sweater')), ('cut_coat14.png', 'Fitted coat', at(10, 'inside of a coat'))])
 # 11 "So you look bulkier, your coat pulls across the shoulders and buttons, and you're often not as warm as you'd expect."
-ROW([C('x_bulkyunder14', 0.0, 9.0), C('a_coatoversweater44', 16.5, 23.0), C('f_coldhands0', 0.0, 6.0)],
+ROW([C('x_bulkyunder14', 10.0, 20.0), C('a_coatoversweater44', 16.5, 23.0), C('f_coldhands0', 0.0, 6.0)],
     [at(11, 'look bulkier'), at(11, 'your coat pulls'), at(11, 'not as warm')])
 # 12 "Instead, try a fine merino or cashmere knit under your coat. It's thin, but it holds warmth beautifully without the bulk."
 CUTS([('cut_finemerino26.png', 'Fine merino', at(12, 'fine merino')), ('cut_cashmere12.png', 'Cashmere', at(12, 'cashmere'))])
@@ -243,7 +243,7 @@ QUOTE(C('b_hikesnow41', 0.0, 6.0), at(23, 'Dress for') - 0.1, "Dress for how you
 ONE([(C('b_office36', 0.0, 3.0), at(23, 'open the door') - 0.3)])
 # 24 "Now, this doesn't mean cotton is off limits. On a dry day when you're mostly indoors, your favorite cotton shirt is
 #     perfectly fine. It's the damp, active, in-and-out days where it lets you down."
-ROW([C('b_cottonshirt1', 0.0, 9.0), C('b_cottonshirt70', 1.5, 6.0), C('b_cottonshirt9', 0.0, 4.5)],
+ROW([C('b_cottonshirt1', 0.0, 9.0), C('b_cottonshirt70', 1.5, 6.0), C('b_cottonshirt9', 4.3, 8.3)],
     [at(24, 'cotton is off'), at(24, 'your favorite'), at(24, 'perfectly fine')])
 ROW([C('b_raincoat24', 4.0, 10.0), C('b_rushing57', 0.0, 5.0), C('b_rushing12', 1.4, 5.5)],
     [at(24, 'the damp'), at(24, 'active'), at(24, 'in-and-out')])
@@ -261,7 +261,7 @@ FRAMED([C('b_hikesnow16', 2.0, 11.0), C('c_fuzzy19', 0.0, 8.0)], [at(27, 'the co
 QUOTE(C('c_fuzzy24', 0.0, 8.0), at(27, "That's why") - 0.1, 'toasty one minute', at(27, 'toasty'), 'strangely <i>clammy</i> the next', at(27, 'strangely'))
 # 28 "And many acrylic sweaters pill quickly. Those little fuzzy balls that appear under the arms and along the sides after
 #     just a few wears."
-ONE([(C('c_pilling8', 0.0, 4.5), at(28, 'pill quickly') - 0.1), (C('c_pilling3', 0.0, 6.0), at(28, 'Those little')),
+ONE([(C('c_pilling8', 0.0, 4.5), at(28, 'pill quickly') - 0.1), (C('c_pilling3', 0.8, 4.6), at(28, 'Those little')),
      (C('c_pilling20', 2.0, 12.0), at(28, 'under the arms'))])
 # 29 "And as we've said before on this channel, nothing takes away from an elegant look faster than clothing that looks worn
 #     down."
@@ -272,7 +272,7 @@ CUTS([('cut_cableknit4.png', 'Wool', at(30, 'wool,')), ('cut_finemerino11.png', 
       ('cut_cashmere4.png', 'Cashmere', at(30, 'cashmere')), ('cut_cashmere46.png', 'Wool-rich blend', at(30, 'wool-rich'))])
 # 31 "Then give the knit a gentle stretch. A quality knit feels dense and springs right back into shape. If it stays stretched
 #     out or you can see straight through it, put it back."
-ONE([(C('c_label13', 0.0, 5.0), st(31) - 0.05), (C('c_label0', 0.0, 6.0), at(31, 'feels dense')),
+ONE([(C('c_label13', 0.0, 5.0), st(31) - 0.05), (C('c_wool50', 0.6, 6.6), at(31, 'feels dense')),
      (C('c_label28', 0.0, 5.0), at(31, 'If it stays')), (C('c_sweatershop2', 0.0, 3.0), at(31, 'put it back'))])
 # 32 "Now, a little acrylic in a blend isn't a bad thing. It can make a sweater more affordable and easier to care for. Just
 #     let it be the supporting fiber, not the whole sweater."
@@ -283,7 +283,7 @@ ONE([(C('c_wash11', 0.0, 8.0), st(33) - 0.05), (C('c_wash33', 12.5, 17.0), at(33
 # 34 "And here's a secret many well-dressed women don't share. They know exactly what flatters them. The colors that make
 #     their skin glow in that soft winter light and the coat shapes that complement their figure."
 FS(C('film_yellowclose', 0.0, 4.2), st(34) - 0.05)
-ROW([C('b_whitetee12', 0.0, 16.0), C('a_buttoncoat36', 0.0, 7.9), C('a_buttoncoat23', 0.0, 5.0)],
+ROW([C('b_whitetee12', 0.0, 16.0), C('a_buttoncoat36', 0.0, 7.9), C('a_buttoncoat23', 0.0, 3.3)],
     [at(34, 'They know'), at(34, 'skin glow'), at(34, 'coat shapes')])
 # 35 guide plug: "...our personal stylist guide is linked in the description... Now, let's continue."
 FS(C('film_headscarf', 0.0, 8.0), st(35) - 0.05)
@@ -300,8 +300,7 @@ ONE([(C('b_hikesnow13', 0.0, 2.2), at(37, 'Then winter') - 0.1), (C('d_woolsocks
      (C('d_woolsocks18', 1.5, 7.0), at(37, 'suddenly'))])
 # 38 "It feels like you've just made them warmer, but often it's the opposite. When your boots are too tight, they squeeze
 #     your feet, and that can restrict the blood flow that keeps your toes warm."
-ONE([(C('d_woolsocks13', 0.0, 3.0), st(38) - 0.05), (C('d_woolsocks25', 6.0, 12.0), at(38, 'but often')),
-     (C('d_bootzip13', 0.0, 11.0), at(38, 'When your boots'))])
+ONE([(C('d_woolsocks25', 3.6, 9.4), st(38) - 0.05), (C('d_bootzip13', 0.0, 11.0), at(38, 'When your boots'))])
 # 39 "The tightness also crushes the insulation in your socks and in the boot itself. So the thickest sock in a tight boot
 #     can leave you with colder feet than a thinner sock with a little room."
 ONE([(C('d_bootstry14', 0.0, 6.5), st(39) - 0.05)])
@@ -379,7 +378,7 @@ ONE([(C('f_gloves15', 0.0, 8.0), at(57, 'chic with')), (C('f_lined16', 0.0, 6.0)
 # ================= 7. NOTHING ON YOUR HEAD =================
 CARD("7. Nothing on your head because<br>you don't want to ruin your hair", 58, style=TWO)
 # 59 "I completely understand this one. You've done a beautiful blowout, and the last thing you want is hat hair."
-ROW([C('g_blowout0', 0.0, 13.0), C('g_blowout1', 4.5, 13.0), C('x_hatoff7', 0.0, 4.5)],
+ROW([C('g_blowout0', 0.0, 13.0), C('g_blowout1', 5.5, 13.0), C('x_hatoff7', 0.0, 4.5)],
     [st(59) - 0.05, at(59, 'beautiful blowout'), at(59, 'hat hair')])
 # 60 "And you may have heard that we lose most of our body heat through our heads. That's actually a myth."
 ONE([(C('g_coldears21', 0.0, 4.6), st(60) - 0.05)])
@@ -405,7 +404,7 @@ FRAMED([C('g_beanie28', 0.0, 9.0), C('g_beanie5', 0.0, 8.0), C('g_beanie48', 0.0
 ONE([(C('g_blowout2', 0.0, 7.6), at(65, 'Just make sure') - 0.1), (C('g_beret2', 0.0, 5.0), at(65, 'So pretty') - 0.3)])
 
 # ================= 8. THE COAT THAT ONLY LOOKS WARM =================
-FS(C('film_creamcoat', 0.0, 4.0), st(66) - 0.05)                               # "Saving one of my favorites for last": Audrey's cream coat
+FS(C('film_creamwalk', 0.0, 3.6), st(66) - 0.05)                              # "Saving one of my favorites for last": Audrey's cream coat
 CARD('8. The coat that only looks warm', 66, t_in=at(66, 'Number eight') - 0.35)
 # 67 "Your coat is often the first thing people notice in winter, and it's the piece doing most of the work to keep you warm."
 ROW([C('a_oversizedcoat1', 0.0, 11.6), C('a_oversizedcoat4', 0.0, 8.0), C('f_mittens2', 0.0, 9.8)],
@@ -443,9 +442,8 @@ QUOTE(C('h_maxi23', 0.0, 8.0), at(73, "That's quiet") - 0.1, 'quiet <i>luxury</i
 # ================= CLOSE =================
 # 74 "Staying warm and looking elegant were never opposites. Often it's simply about choosing the right pieces for the weather
 #     you're actually in."
-FS(C('film_terrace', 6.0, 13.0), st(74) - 0.05)
-ROW([C('a_oversizedcoat16', 0.0, 14.0), C('b_hikesnow18', 0.0, 9.0), C('a_cashmerecoat7', 14.0, 22.0)],
-    [at(74, 'Often'), at(74, 'the right pieces'), at(74, 'the weather')])
+ROW([C('a_oversizedcoat16', 0.0, 14.0), C('b_hikesnow18', 0.0, 9.0), C('a_cashmerecoat7', 14.0, 25.0)],
+    [st(74) - 0.05, at(74, 'looking elegant'), at(74, 'never opposites')])
 # 75 "And I'm curious, what's the one winter piece you could never live without? Let me know in the comments. I always love
 #     hearing from you."
 CUTS([('cut_coat42.png', 'A wool coat', at(75, "what's the one")), ('cut_gloves0.png', 'Leather gloves', at(75, 'could never')),
@@ -459,7 +457,7 @@ ONE([(C('f_coldhands47', 0.0, 9.1), at(76, 'And if you found') - 0.1)])
 # 77 guide plug: "...the personal stylist guide linked in the description. It's sent instantly to your email after access."
 FS(C('film_pillbox', 0.0, 4.0), st(77) - 0.05)
 FS(C('film_leopard', 0.0, 4.6), at(77, 'be sure to') - 0.1)
-FS(C('film_creamwalk', 0.0, 8.0), at(77, 'linked in the') - 0.1)
+FS(C('film_creamwalk', 3.7, 10.0), at(77, 'linked in the') - 0.1)
 GUIDE(at(77, 'the personal stylist'), en(77) + 0.25)
 # 78 "Thank you so much for spending your time with us today. Until next time. Bye, my loves."
 FS(C('film_gloves', 0.0, 4.6), st(78) - 0.05)

@@ -1,49 +1,56 @@
-# QC report: 8 Things Elegant Ladies Never Wear in Winter (v4, after the owner's review)
+# QC report v5: 8 Things Elegant Ladies Never Wear in Winter (29 Oct 2026)
 
-**Export.** `winter-never-wear_v4.mp4`: 1920x1080, 30 fps, AAC 48 kHz stereo, 14:42 (881.9 s), rendered with
-`tools/ffr.py`. The copy sent in chat is a re-encode of it, made to fit the 400 MiB upload limit. Media is not
-committed. What changed from v3: `V4-CHANGES.md`.
+How v5 was checked before delivery (`workflow/EDIT-RULES.md` section 7).
 
-## Checks run on the exported file
+## 1. The sound-off check, all 78 lines
 
-| Check | Tool | Result |
+- **The check.** One frame per second of the render, with the words spoken in that second under each frame: 882 frames
+  on 19 sheets. For every line I asked whether a viewer with the sound off would know what the sentence is about.
+- **Found in the first v5 render and fixed in v5.1:**
+
+| Time | What was wrong | Fix |
 |---|---|---|
-| Fast renderer matches the browser | `ffr_cmp.py`, 10 moments covering every layout | 8 of 10 under the limit of 10. Two at 12.0 (52.5 s, the title over the snow scene) and 12.2 (13:38, two women in white berets); both were checked on the comparison sheet: the same frame, the difference is the browser's smoother scaling of falling snow and fine fur |
-| Black frames | `qa.py` | **0** |
-| Silence (the music never drops) | `qa.py` | only the last second of the end card |
-| Bare backdrop while the voice talks | `empty.py` | **0** |
-| Integrated loudness | ffmpeg ebur128 | **-14.6 LUFS** |
-| Voice above the music | `assets/mix_raw.wav`, speech vs pauses | **12.8 dB** (speech -21.9 dBFS, music alone -34.8 dBFS) |
-| Sound effects | edit.py / build.py | **none** |
-| AI-generated footage | `aiscan.py` on 365 downloads, including all 200 clips used | 5 flagged (label9, cottonshirt12, scarfwrap26, scarfwrap34, washknit0 borderline), **none used** |
-| The same footage shown twice | build.py assert | **0** |
-| Clip shorter than its slot | build.py SHORT | **0** |
-| Blurred backdrop behind full-screen scenes | edit.py | **none**: every full-screen scene is full-bleed |
-| Frozen picture | `qa.py` | 11 holds of 1.4-4.7 s, all intended: the white number cards, "in today's video", and the new-name monogram card |
-| Dark frames inside clips | `flash.py` | 5 clips with a few dark frames at the very end of their segment (coatwalk4, f80winter6, waveby2, careabel27, insideout39). Each falls in the last 0.1-0.5 s, where the next scene is already dissolving over it; none is visible at 1 fps |
+| 1:01 | a small creator caption ("cozy sweater haul") at the start of the clip | clip starts 1.4 s later |
+| 2:01 | a dark frame inside the "you look bulkier" panel | a later, clean part of the same reel (the arm-knit cardigan) |
+| 4:15 | a caption ("4 steps to style a white shirt") appeared as the cotton-shirt row faded out | the caption-free seconds of that reel are used |
+| 4:54 | an "Amazon must have" title on the pilling clip | the clip starts after the title |
+| 5:23 | a brand mark on the "dense knit" close-up | replaced by a dense brown wool knit pulled on, close |
+| 5:57 | a short dark cut at the end of the cream belted-coat panel | the clean first 3.3 s are used |
+| 6:43 | brand text across the thick-socks clip | removed; the thick wool socks being pulled on now carry the line |
+| 10:43 | a red blur frame at the start of the second blowout reel | starts 1 s later |
+| 12:03 | the *Charade* cream-coat shot cut to a boy in a car window | replaced by Audrey Hepburn walking in her cream coat |
+| 13:44 | a *Charade* terrace shot full of men at tables | replaced by a row of three women in warm, elegant winter coats |
 
-## Watched end to end, line by line
+- **Checked and kept:**
+  - one small creator label ("Casual") in a cotton-shirt reel; she accepts small creator captions;
+  - the price tag on a cut-out sock;
+  - the film scenes, where Audrey Hepburn is the subject and passers-by are in the background.
 
-- **Method:** one frame per second (882 frames), each labelled with the words being spoken at that moment
-  (`qc4/s_00-12.jpg` in the session files).
-- **Checked on every frame:**
-  - that the picture shows what the words say;
-  - that the transition is clean;
-  - that no caption, logo, man or off-topic clip appears.
-- **Result:** every line matched, and nothing had to be replaced after the render. A stretch-by-stretch preview of
-  the same edit had already been checked before rendering (`prev/sheet_00-07.jpg`), and the issues found there were
-  fixed first:
-  - soft over-enlarged shots moved to the caramel layout;
-  - three framings changed so the face stays in frame;
-  - the guide plug at the end moved to a darker scene so its text reads;
-  - a too-early dissolve into the guide plug was fixed.
+## 2. Side by side with her videos
 
-## Known limits (stated, not hidden)
+Two 2-minute stretches were compared, frame every 6 s, left her video and right ours:
+- `My7qteRU9k0` ("8 Things Elegant Ladies Never Wear") 1:00-3:00 against v5 1:18-3:18;
+- `Loui0mjLavo` ("7 Things Elegant Ladies Avoid in Fall") 1:00-3:00 against v5 10:00-12:00.
 
-- **Rights:**
-  - 199 Pinterest clips are *unresolved* (found and credited, with no licence).
-  - 1 film scene (*Little Women*, 1994) is *unlicensed, owner's decision*.
-  - See SOURCES-LOG.md.
-- **Small creator captions** remain on a few reels, as in the channel's own videos. Examples: "Check Care Label" at
-  12:48; a small Swedish line at 1:47.
-- **Logo:** the current CE logo is used until a redesign is approved (LOGO-PROPOSAL.md).
+| | Her videos | v5 |
+|---|---|---|
+| Backdrop | caramel blurred gradient behind every explanation | the same gradient, every explanation |
+| Rows | 2-4 whole tall reels side by side, filling in left to right | 3 whole tall reels (608 px each), filling in on the spoken words |
+| A single reel | in slot 1 or centred, with the backdrop around it | the same |
+| Cut-outs | products cut out on caramel (trousers, coats, knits) | knits, coats, base layers, socks, boots, gloves, mittens, labelled |
+| Cards | white, black script wiping in | the same |
+| Full screen | landscape only (film icons, street style) | landscape only (*Charade*, 1963) |
+| Never zoomed | vertical reels are never blown up | `FS()` refuses a vertical clip; none is zoomed |
+
+## 3. Automatic checks
+
+- **AI watermark scan:** every clip used, none flagged (`aiscan.json`).
+- **Duplicates:** none. The perceptual duplicate check (`tools/dedupe.py`) found 186 copies among the downloads, and
+  only one copy of each is ever used. The build stops if the same footage appears twice.
+- **Dark-frame scan (`flash.py`):** the two real dark frames are fixed (table above). The others are single first
+  frames that are invisible because the panel fades in.
+- **Empty backdrop while talking (`empty.py`):** 0 runs.
+- **Renderer against the browser:** 10 moments covering every layout, mean difference 0.0-8.5. The 53.9 s moment
+  showed 20, which is film motion between the two capture times, not a layout difference.
+- **Length:** 14:41.9 at 1080p30. Voice loudness and music level are unchanged from v4 (piano about 12 dB under
+  the voice, -14 LUFS, no sound effects).
