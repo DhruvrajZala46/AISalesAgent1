@@ -22,6 +22,9 @@ Each stage ends with the question **ship it, or change it?** Nothing moves on wi
 
 ## Rules that never change
 
+0. **`EDIT-RULES.md` before every edit.** Copy the owner's videos 99%: the caramel backdrop with rows of
+   full-length women wearing the exact named item, full-screen only for landscape footage (never a zoomed
+   vertical reel), product cut-outs for lists, the mistake then the swap. Her videos decide, not my ideas.
 1. **Teach, don't report - in the creator's habit structure** (`../CHANNEL-DNA.md`, sections 2-3 and the
    value test in 7). A named woman may be a brief example she can see or hear; never a story about her.
    No culture reports. Only tips that are concrete, true and useful on any budget, at any age.

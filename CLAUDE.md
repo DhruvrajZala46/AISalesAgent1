@@ -6,6 +6,8 @@ women of every age). Everything lives in `classy-academy-test/`.
 **New chat? Read `classy-academy-test/HANDOFF.md` FIRST** - the state of the work, the user's last (rejected) video and the open task.
 
 Before any work on a video, read:
+00. `classy-academy-test/workflow/EDIT-RULES.md` - the owner's edit copied 99% (caramel backdrop, rows of women in the
+   exact named item, never a zoomed vertical reel). It overrides everything below on how a video looks.
 0. `classy-academy-test/CHANNEL-DNA.md` - the creator's own thinking, teaching, scripting and content DNA,
    built from her videos (and `CHANNEL-DNA-diagnosis.md`: why the last video missed), with
    `VISUAL-EDITING-DNA.md` (how her videos look, cut and sound, and where her footage comes from) and
