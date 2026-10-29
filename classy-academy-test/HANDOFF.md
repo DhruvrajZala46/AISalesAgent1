@@ -3,6 +3,16 @@
 This file carries the full history of the previous chat (Oct 2026) so a new chat can continue without it.
 Branch: `claude/youtube-channel-analysis-lghfsv`. The channel's YouTube name is **Classy Academy** (@ClassyAcademy).
 
+## 0. Latest (29 Oct 2026)
+
+The user asked for a new video copying the **format** of their own "7 Things Elegant Ladies Never Do in Public"
+(`oHh4T67jJNM`, 508k views), with similar but new tips and no copied wording.
+- **Script v1 is in `videos/classy-women-public/`** (`script.md` + `beats.txt`), titled "7 Things Classy Women Never
+  Do in Public".
+- Each tip is a close cousin of one of the original's tips, proven by 12 niche winners plus comments.
+- The format was checked against the original's storyboard.
+- It is **waiting for the user's "ship it, or change it?"**. Build nothing before that.
+
 ## 1. Where things stand right now
 
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in
