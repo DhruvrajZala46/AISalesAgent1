@@ -15,7 +15,7 @@ for s in SB:
     for c in s['clips']:
         k = c[0]; first.setdefault(k, (s['t0'], s['t1'])); lines.setdefault(k, set()).update(lines_at(s['t0'], s['t1']))
         segs.setdefault(k, []).append(f'{c[1]:g}-{c[2]:g}')
-out = ['# SOURCES-LOG / asset ledger - 8 Things Elegant Ladies Never Wear in Winter (Episode 32)', '',
+out = ['# SOURCES-LOG / asset ledger - 8 Things Elegant Ladies Never Wear in Winter (Episode 15)', '',
        f'Every clip in the render: {len(first)} Pinterest video pins, plus music, fonts and logo. Generated from `raw/meta.json`',
        '(the Pinterest search record of each pin) and the built edit (`storyboard.json`).', '',
        '**How the footage was found.** Pinterest video search with `tools/pin_search.py`, the way the channel sources its',
@@ -30,7 +30,7 @@ out = ['# SOURCES-LOG / asset ledger - 8 Things Elegant Ladies Never Wear in Win
        '- The name given is the Pinterest pinner, which is often not the original creator. A TikTok mark or an Instagram',
        '  outbound link means the clip started there.', '',
        '**AI check.** `tools/aiscan.py` ran on every download. Clips scoring 0.40 or more are never used (the build stops).',
-       'label9 (1.00), scarfwrap26 (0.63) and scarfwrap34 (0.44) were flagged and are not used. washknit0 (0.38) is borderline and is not used. heels42, knitquality23,',
+       'label9 (1.00), cottonshirt12 (0.81), scarfwrap26 (0.63) and scarfwrap34 (0.44) were flagged and are not used. washknit0 (0.38) is borderline and is not used. heels42, knitquality23,',
        'woolcare43 and the cosy-fireplace search results were also left out because they look computer-made to the eye, even',
        'where the score was low.', '',
        '| # | First on screen | Lines | What it shows (key, seconds used) | Where we got it | Creator / pinner (handle) | Outbound link | Licence or permission basis | Commercial use on monetised YouTube? | Edit/crop/speed allowed? | AI scan | Decision | Notes |',

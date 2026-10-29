@@ -26,3 +26,17 @@ bun: winterbun17, winterbun28, winterbun43, winterbun47, winterbun14
 windows: wintercafe2, wintercafe6, wintercafe33, wintercafe37, wintercafe39, wintercafe40, wintercafe47, wintercafe32
 snow: snowwalk15, snowwalk23, snowwalk27, snowparis0, snowparis3, snowparis4, snowparis13, snowparis14, snowparis15, snowparis19, snowparis24, snowparis29, snowparis35, snowparis41, snowparis44
 SKIP duplicates already removed (same file as a kept clip): bootsfit18 coatlabel11 coattry27 coatweave1 coatweave10 coatweave2 coatweave36 commute12 commute5 headband1 heels22 longcoat28 longcoat36 longcoat45 merino4 mittens7 snowcoat48 snowparis19 snowparis4 socks26 undercoat24 undercoat5 windycoat18 windycoat24 windycoat48 woolcare40 woolcare49 woolcare7 flw2_3 flwB23
+
+## round 3 (user feedback 29 Oct: every visual must show what the line says)
+grab knit / pull coat over / can't bend arms: grabknit10, grabknit46, grabknit39, grabknit11, grabknit23, stiffarms14, stiffarms43, stiffarms19, stiffarms25, stiffarms47, stiffarms29
+try a coat on over a sweater: mirrorcoat7, mirrorcoat22, mirrorcoat23, mirrorcoat3, mirrorcoat31, mirrorcoat11
+fine merino / thermal / silk layers: merinotop8, merinotop14, merinotop17, merinotop35, merinotop45, merinotop30, thermaltop11, thermaltop9, silkcami35, silkcami2, silkcami44, silkcami34, silkcami19
+cotton / damp: cottonshirt12, cottonshirt22, cottonshirt24, cottonshirt34, cottonshirt31, wetfabric20, wetfabric6, wetfabric0, wetfabric34
+door / hike: opendoor0, opendoor12, opendoor13, opendoor36, opendoor38, opendoor4, opendoor48, hikewinter31, hikewinter47, hikewinter26, hikewinter43
+price / hanger / put it on: pricetag3, pricetag38, pricetag12, pricetag47, pricetag36, pricetag16, pullsweater1, pullsweater5, pullsweater13, pullsweater30, pullsweater15
+label / stretch / wash: careabel1, careabel6, careabel27, careabel12, careabel28, careabel2, knitstretch6, knitstretch10, knitstretch15, knitstretch27, knitstretch28, knitstretch0, knitstretch21, insideout1, insideout37, insideout39
+ice / grips: slipice1, slipice10, slipice12, slipice17, slipice48, slipice19, slipice46, gripsbag4, gripsbag0, gripsbag2, gripsbag16
+cold hands / ears / hair: sleeves3, sleeves19, sleeves6, sleeves49, sleeves4, coverears15, coverears14, coverears1, coverears3, coverears16, coverears22, coverears8, blowdry4, blowdry29, blowdry40, blowdry12, blowdry3, hathair7, hathair8, hathair20, hathair23, hathair19, hathair4
+holding fabric to the light: fabriclight0, fabriclight3, fabriclight18, fabriclight4, fabriclight32
+coffee / phone / close: phonecoffee16, phonecoffee11, phonecoffee15, phonecoffee32, phonecoffee7, phonecoffee9, waveby8, waveby26, waveby38, waveby10, waveby2
+reading (line 61): readpaper4, readpaper5, readpaper25, readpaper29, readpaper40, readpaper39, readpaper3

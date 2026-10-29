@@ -13,7 +13,7 @@ def desc(k):
     n = NOTE.get(k, '')
     n = re.sub(r'^[\d.,\- ]+', '', n)          # drop the checked ranges, keep the words
     return n
-out = ['# Storyboard: 8 Things Elegant Ladies Never Wear in Winter (Episode 32)', '',
+out = ['# Storyboard: 8 Things Elegant Ladies Never Wear in Winter (Episode 15)', '',
        'Generated from the edit that was rendered (`edit.py` -> `storyboard.json`), so it matches the video exactly.',
        'Times are video time. "Clip" is the pin key in SOURCES-LOG.md with the seconds used.', '',
        '**Sound on every line:** the voice-over, plus one soft piano bed about 12 dB under it, steady from the first word to',

@@ -248,3 +248,120 @@ woolcare23 0-35.8 coats on hangers, a label at the neck, buttons, cloth close-up
 woolcare43 SKIP (looks computer-made)
 woolcare5 SKIP (text)
 woolcare6 0-10 a cashmere cardigan close and folded (check AI)
+blowdry12 21-33 blow-drying long dark hair at home (product box 8-14 avoided)
+blowdry29 0-3, 4-8.7 blow-drying soft blonde waves, white shirt
+blowdry3 5.5-12.9 a finished glossy blowout, hands in the hair (caption before 4)
+blowdry4 SKIP (product unboxing)
+blowdry40 SKIP (product ad)
+careabel27 1-5, 22.5-24.8 fingers turning a knit's care label; a label on a folded knit
+careabel28 0-5.5 washing a wool jumper by hand in a bowl (captions from 7.5)
+careabel6 5.3-8 the label inside a knit's neckline
+cottonshirt12 0-10 a cotton tee and shorts at home by the window (check AI)
+cottonshirt22 SKIP (captions throughout)
+cottonshirt24 SKIP (dark, unrelated)
+cottonshirt31 0-4.5 a lounge set at a snowy window, making the bed
+cottonshirt34 0-3.5, 5.5-9.5 a ribbed knit lounge set; pouring coffee at home
+coverears1 0-3 a face wrapped in a wool scarf in falling snow (ads after 3)
+coverears14 0-16.7 a fur hat, warming her face with knit mittens (check AI)
+coverears15 0-8 a cold hand to the face, teal beanie, falling snow
+coverears16 0-9.3 hair whipped by wind, a shearling coat and knit hat in the snow
+coverears3 0-4.4 a frosted face, hair and beanie in the cold
+fabriclight0 0-10 a hand holding fabric up to the sunlight at a window
+fabriclight18 2-4, 8.5-12.5 hands holding linen up to the light; feeling a wool cloth (logo at 17)
+fabriclight3 0-5.8 a hand against sheer fabric, the light shining through
+fabriclight32 0-11 opening a window curtain to the morning light (check AI)
+fabriclight4 SKIP (montage, text)
+grabknit10 0-3.2 reaching into a wardrobe of sweaters (logo top right, ad after 10)
+grabknit11 0-12 arms full of sweaters, trying them on (caption at 6)
+grabknit23 4.5-17 a woman in her fifties holding up knit sweaters (caption 0-2)
+grabknit39 15-24 a sweater wall, choosing a knit
+grabknit46 0-14.6 pulling clothes from a drawer, layering a thick blazer-coat over a knit
+gripsbag16 2-15 stepping into ice grips and walking on ice (men's trainers)
+gripsbag2 0.3-2.3 stretching an ice grip over a brown boot in the snow (ad montage after)
+hathair19 SKIP (captions, TikTok mark)
+hathair20 SKIP (caps, group)
+hathair23 2-9.5 curly hair; a lined beanie (captions from 10)
+hathair4 0-21.5 trying knit beanies on long hair, grey blazer
+hathair7 9-32 putting on and adjusting knit beanies, long hair
+hathair8 SKIP (ponytail beanie tricks, nails close)
+hikewinter31 0-13.7 a camel coat and scarf walking briskly through deep snow
+hikewinter43 0-2.3 a long coat on a snowy forest path (montage after)
+insideout1 SKIP (TikTok man)
+insideout39 0-14 folding knit sweaters by hand
+knitstretch10 0-20 a hand pressing and pinching a dense knit
+knitstretch15 0-1.5 a sheer knit stretched over a hand (factory after)
+knitstretch27 SKIP (measuring tape, captions)
+knitstretch28 0-15 hands working a cream knit in soapy water (gentle hand wash)
+knitstretch6 0-26 soft cardigans on hangers: pink, yellow, grey
+merinotop14 SKIP (TikTok mark)
+merinotop17 0-10 a fine cream knit, a hand at the cuff
+merinotop30 0-11 a fine cream turtleneck outdoors
+merinotop35 0-6 a woman in her fifties in a fine cream turtleneck
+merinotop45 0-14 trying knits: faux fur, black, rust
+merinotop8 SKIP (captions, dark)
+mirrorcoat11 2.5-24 trying a long chocolate coat on over a sweater, arms out
+mirrorcoat22 SKIP (captions)
+mirrorcoat23 0-4.8 swinging a long trench coat on, then the finished look
+mirrorcoat3 0-17.5 a burgundy coat in front of the mirror, buttoning and turning
+mirrorcoat31 0-3 burgundy coat in the mirror (outfit changes after)
+mirrorcoat7 0-6.6 a belted trench in the mirror, sitting and moving in it
+opendoor0 0-9.2 a long brown coat by white double doors, adjusting the collar
+opendoor12 0-4.5 opening the front door in a navy coat
+opendoor13 SKIP (looks computer-made)
+opendoor36 SKIP (house tour)
+opendoor38 SKIP (looks computer-made)
+opendoor4 0-10 a cream coat at a front door with a Christmas tree (check AI)
+opendoor48 0-1.6, 8-13.7 a black coat in a doorway; a black coat and bag
+phonecoffee11 0-10 a cream coat at a Paris cafe, coffee
+phonecoffee15 0-4 a cream coat at a cafe table at dusk, coffee
+phonecoffee16 SKIP (brand graphics)
+phonecoffee32 0-4, 4.5-9.4 a chocolate coat at a cafe; walking in the Tuileries
+phonecoffee7 0-11.4 a grey blazer, phone and coffee in hand
+phonecoffee9 SKIP (watermark)
+pricetag12 SKIP (graphics)
+pricetag16 0-7 unfolding a cream knit on a bed
+pricetag3 6.5-9, 14-16 fingers reading a price tag on a sweater, in a shop (captions elsewhere)
+pricetag36 SKIP (caption over it)
+pricetag38 0-9.3 knit sweaters on hangers held up one by one
+pricetag47 SKIP (caption at start)
+pullsweater1 0-6.5 pulling a chunky knit over the head, then tucking it in
+pullsweater13 SKIP (brand ad text)
+pullsweater15 2-30 knitting a soft knit by the window; holding it up
+pullsweater30 SKIP (shop stockroom)
+pullsweater5 SKIP (caption throughout)
+silkcami19 0-6 a soft cardigan over a satin skirt
+silkcami2 0-14 a black silk camisole, then a blazer over it
+silkcami34 0-27 a bronze silk camisole, styling
+silkcami35 0-23.7 an ivory silk camisole, black trousers
+silkcami44 5-11, 14-31 an ivory silk camisole under a jacket
+sleeves3 0-6.7 a hand pulled into a long knit sleeve
+sleeves4 0-23 a soft knit in the wind by the sea, hands in the sleeves at 16-22
+sleeves49 0-14.5 a chunky cream knit, hands drawn into the sleeves, thinking
+sleeves6 SKIP (comment overlay)
+slipice1 0-6.1 pointed heels stepping carefully through snow, from above
+slipice10 0-4.6 a pale heeled boot on wet stone, from above
+slipice12 0-10.6 a silver heel stepping on a wet ledge
+slipice17 SKIP (adding grip pads to heels: captions in Hindi)
+slipice19 0-6.2 pointed heels on a dusty pavement, from above
+slipice46 0-10.5 black heels walking a wet street
+slipice48 SKIP (summer)
+stiffarms14 0-40 a long quilted coat in the mirror, zipping and moving the arms
+stiffarms19 SKIP (a man in the frame)
+stiffarms25 3-13.4 a rust long coat in the mirror (caption 0-2.5)
+stiffarms29 SKIP (captions)
+stiffarms43 1.5-6 zipping a puffer coat closed (fast)
+stiffarms47 SKIP (captions, TikTok mark)
+thermaltop11 0-8 a fitted black long-sleeve base layer
+thermaltop9 1.5-8.5 a fitted grey thermal set (check AI)
+waveby2 0-18.7 a chocolate leather trench coat on stone steps (check AI)
+wetfabric0 0-25 water drops sinking into cream cotton, close
+wetfabric20 SKIP (looks computer-made, captions)
+wetfabric34 SKIP (water-repellent demo: the opposite of the point)
+wetfabric6 SKIP (looks computer-made)
+readpaper25 SKIP (captions)
+readpaper29 0-1.5, 6.5-7.5 reading a newspaper at a cafe table (short shots)
+readpaper3 0-6.9 a cream coat reading Le Monde at a Paris cafe
+readpaper39 0-12 hands turning a newspaper beside a coffee
+readpaper4 0-7.4 sitting down at a cafe table and opening a newspaper
+readpaper40 9-13.2 reading a newspaper at a cafe, brown leather
+readpaper5 SKIP (captions)

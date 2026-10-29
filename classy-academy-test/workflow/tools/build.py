@@ -67,19 +67,23 @@ def land(key):
     return _LAND[key]
 CROP = {}   # edit.py: CROP['key'] = (x0, y0, h) -> that 9:16 window of the clip (720x1280 space) fills the frame
 def prep(spec, need):
-    key, a, b = spec
+    key, a, b = spec[:3]
+    fy = spec[3] if len(spec) > 3 else None   # CB(...): full-bleed 16:9 cut of the clip, fy = vertical focus (0 top .. 1 bottom)
     seg = b - a; speed = 1.0
     still = seg < 0.05            # C(key, t, t): a held frame (the analysis moments: lines drawn on a still woman)
     if still: seg = need
     if need > seg: speed = min(1.4, need / seg)
     if need > seg * speed + 0.05: SHORT.append(f'{key} {a}-{b} needs {need:.1f}s has {seg*speed:.1f}s')
-    name = f'{key}_{a:g}_{b:g}_{speed:.2f}' + ('_c%g_%g_%g' % CROP[key] if key in CROP else '') + '.mp4'; name = name.replace('-', 'm'); out = os.path.join(A, name)
+    name = f'{key}_{a:g}_{b:g}_{speed:.2f}' + (f'_b{fy:g}' if fy is not None else '_c%g_%g_%g' % CROP[key] if key in CROP else '') + '.mp4'; name = name.replace('-', 'm'); out = os.path.join(A, name)
     if not os.path.exists(out):
         src = os.path.join(R, key + '.mp4'); tm = ''
         if SHOTS.get(key, {}).get('hdr'):
             tm = 'zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p,'
         cr = CROP.get(key)   # (x0, y0, h) in 720x1280 space: zoom past a burned-in caption, cut at 2x for sharpness
-        if cr:
+        if fy is not None:   # full-bleed scene: fills 1920x1080 edge to edge (the channel's hook/title scenes), no blurred copy
+            zc = (f"scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,"
+                  f"crop=1920:1080:(iw-1920)/2:(ih-1080)*{fy},unsharp=5:5:0.35:5:5:0,")
+        elif cr:
             x0, y0, hh = cr; ww = hh * 720 / 1280
             zc = f"scale=1440:2560:force_original_aspect_ratio=increase,crop=1440:2560,crop={2*ww:.0f}:{2*hh:.0f}:{2*x0:.0f}:{2*y0:.0f},scale=720:1280,"
         elif land(key): zc = "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,"   # 16:9 source -> full-screen scene
@@ -166,6 +170,24 @@ def card(txt, i_line, t_in=None, style=''):
     t0 = (en(i_line - 1) + 0.35) if t_in is None else t_in
     white(t0, en(i_line) + 0.35); text(txt, 'card', t0 + 0.3, en(i_line) + 0.25, dur=1.2, out=0.45, style=style)
 C = lambda k, a, b: (k, a, b)
+CB = lambda k, a, b, fy=0.35: (k, a, b, fy)   # the same clip cut full-bleed 16:9
+
+# ---------- full-bleed scenes (measured on "8 Things Elegant Ladies Never Wear" 0:00-0:12 and "Avoid in Fall" 0:00-0:12):
+# the clip fills the frame edge to edge, slow push-in, ~0.35 s dissolve into the next scene. No blurred copy behind it.
+def bleeds(shots, t_end, fin=0.35, fout=0.45, push=1.045, first_fin=None):
+    """shots = [(CB(...), t), ...] back to back; each dissolves in on top of the one before; the last fades at t_end."""
+    ids = []
+    for k, (spec, t) in enumerate(shots):
+        nxt = shots[k + 1][1] if k + 1 < len(shots) else None
+        off = (nxt + fin + 0.02) if nxt is not None else t_end
+        v, h = vid(spec, t, off + fout)
+        drift(v, t, off + fout, push)
+        i = box(0, 0, W, H, h)
+        fade_in(i, t, (first_fin if (k == 0 and first_fin is not None) else fin))
+        if nxt is not None: tw.append(f'tl.set("#{i}",{{opacity:0}},{off:.3f});')
+        else: fade_out(i, t_end, fout)
+        ids.append(i)
+    return ids
 
 # ---------- the "stage" edit (from the 79-video replay study, research/edit-evidence): one calm frame per point ----------
 # The frame stays put for the whole point; the pictures change INSIDE it (soft 0.4 s dissolve, a new picture every <=5 s),
