@@ -1,0 +1,897 @@
+a_chunkyunder1 2.5-9 a brown chunky turtleneck knit, mirror try-on (cap from 10)
+a_chunkyunder2 4-20 an oversized cream cable knit (caption 0-3, TikTok end 22+)
+a_chunkyunder8 SKIP (same creator/footage as a_chunkyunder2)
+a_chunkyunder10 0.6-4.7 a cream chunky sweater try-on
+a_chunkyunder24 0-12.9 a very chunky rust hand-knit cardigan, close
+a_chunkyunder25 SKIP (caption throughout)
+a_chunkyunder42 3-11 a grey chunky knit worn off the shoulder (caption 0-3)
+a_chunkyunder44 0-10 a cream ribbed chunky sweater, knee boots
+a_chunkyunder46 0-8 a cream cable cardigan at a market (check AI)
+a_chunkyunder53 SKIP (caption throughout)
+a_chunkyunder3 0-9.6 a white chunky knit dress, sunglasses
+a_bulkycoat9 SKIP (captions throughout)
+a_bulkycoat29 0-30 a grey chunky mohair turtleneck knit
+a_bulkycoat28 0-6.4 pulling up a cream super-chunky turtleneck
+a_bulkycoat39 0-23 a red chunky turtleneck pulled up to the face
+a_bulkycoat41 0-14 a yellow super-chunky turtleneck
+a_chunkyunder20 SKIP (subtitles throughout: checked close on ds1.jpg)
+a_chunkyunder32 2.2-6.5 a black long coat over a camel knit, on the stairs (title 0-2)
+a_chunkyunder36 0-8.7 a green long coat open over a taupe knit
+a_chunkyunder40 0-10 a white long coat over a cream knit, crossing a Paris street
+a_coatoversweater2 SKIP (mixed outfits)
+a_coatoversweater5 SKIP (captions throughout)
+a_coatoversweater15 2-28 trying long coats on over a cream knit, checked floor
+a_coatoversweater18 SKIP (dark)
+a_coatoversweater21 9-24 a burgundy coat pulled on over a knit (caption 0-3)
+a_coatoversweater25 SKIP (outfit collage)
+a_coatoversweater30 0-7.5 a rust long coat over a black turtleneck, in a lift
+a_coatoversweater35 SKIP (brand ad)
+a_coatoversweater44 4-24 trying coats over a cream knit (caption 0-3)
+a_coatoversweater53 SKIP (captions)
+a_coatoversweater57 0-20 putting on a knit, then swinging a long coat on over it
+a_coatoversweater59 SKIP (captions throughout)
+a_bulkycoat47 4-20 trying on chunky knits, brown and cream
+a_bulkycoat51 0-4.6 a camel belted long coat
+a_bulkycoat26 SKIP (captions, TikTok)
+a_coatoversweater46 0-7.5 a camel double-breasted long coat, cream trousers, a black fine knit
+a_coatoversweater49 SKIP (captions)
+a_coatoversweater50 SKIP (cross marks, captions)
+a_coatoversweater41 SKIP (brand montage)
+a_coatoversweater42 0-10 a camel coat over a fine knit, an autumn park
+a_coatoversweater47 SKIP (captions)
+a_coatoversweater13 0-4.9 a grey long coat in the mirror
+a_cableknit1 0-11 a cream cable knit worn on its own with taupe trousers (logo 12+)
+a_cableknit4 0-12 a cream cable knit worn on its own (TikTok end 14+)
+a_cableknit8 SKIP (same clip as a_chunkyunder46)
+a_cableknit10 SKIP (same clip as a_chunkyunder3)
+a_cableknit11 SKIP (captions)
+a_cableknit15 0-9 a cream cable knit with wide jeans
+a_cableknit22 SKIP (same clip as a_chunkyunder8)
+a_cableknit24 0-8.2 a chunky brown hand-knit cardigan
+a_cableknit25 0-4 a cream knit with knee boots (legs)
+a_cableknit33 0-8.5 a woman in her forties in a chunky pink-brown hand-knit cardigan
+a_cableknit37 SKIP (caption throughout)
+a_cableknit41 0-9.9 a cream knit and wide jeans at the mirror
+a_cableknit46 0-5 a cream cable knit mirror selfie
+a_cableknit47 SKIP (word captions)
+a_cableknit51 5-24 a soft pink fuzzy knit (small caption)
+a_cableknit54 0-8.5 a cream cable knit (TikTok end 9+)
+a_cableknit55 0-24 a cream cable knit mirror selfie, wide jeans
+a_oversizedcoat1 0-11.6 a cream oversized long coat, coffee in hand, street
+a_oversizedcoat2 0-5.6 black and olive long coats, outfit change
+a_oversizedcoat4 0-8 a black long coat and a cream wool scarf, street
+a_oversizedcoat8 0-9.9 a camel long coat, seated, studio
+a_oversizedcoat9 SKIP (same clip as a_chunkyunder40)
+a_oversizedcoat11 SKIP (same clip as a_coatoversweater46)
+a_oversizedcoat12 0-9.6 an oatmeal teddy long coat by a Paris door
+a_oversizedcoat13 1.5-11.4 a grey long coat in a kitchen
+a_oversizedcoat16 0-14 an olive long coat, a navy wool scarf and beanie, street
+a_oversizedcoat17 SKIP (same clip as a_coatoversweater13)
+a_oversizedcoat22 6-17 a light blue knit, then a long taupe coat over it (caption 0-5)
+a_oversizedcoat23 0-12 a grey long coat over a taupe knit, Paris arcade
+a_oversizedcoat24 3-26 a long black coat over a blue knit, autumn street ("Look of the day" 0-2.5)
+a_oversizedcoat25 SKIP (brand montage, beach)
+a_oversizedcoat26 0-5.8 a chocolate long coat crossing a Paris street
+a_oversizedcoat27 SKIP (same clip as a_bulkycoat51)
+a_oversizedcoat28 0-26 putting on a long black wool coat with a scarf collar
+a_oversizedcoat29 SKIP (caption throughout)
+a_oversizedcoat30 0-8.2 a dense olive wool coat, close, and on a hanger
+a_oversizedcoat31 SKIP (montage, text)
+a_oversizedcoat32 0-22 putting on a long black coat over a black knit, mirror
+a_oversizedcoat34 SKIP (men in frame)
+a_oversizedcoat35 SKIP (caption throughout)
+a_oversizedcoat36 0-6.8 a grey long coat, houndstooth scarf, clear umbrella, autumn path
+a_oversizedcoat37 0-4.5 a brown long coat, gloves, New York street
+a_oversizedcoat38 4-10.9 a dense navy wool coat, close (caption 0-3.5)
+a_oversizedcoat39 0-5.1 a long charcoal coat over a grey knit, street
+a_oversizedcoat40 SKIP (same clip as a_coatoversweater5, captions)
+a_oversizedcoat42 SKIP (caption throughout)
+a_oversizedcoat43 SKIP (brand montage)
+a_oversizedcoat44 0-4 street-style montage, NYC: an olive long coat, a black long coat (faint small caption mid-frame)
+a_oversizedcoat45 SKIP (big captions, collage)
+a_oversizedcoat46 SKIP (short cream jacket, not a long coat)
+a_oversizedcoat48 SKIP (brand lookbook)
+a_oversizedcoat49 4-26 try-on of long coats: plaid, cream, navy, brown, camel (caption "FAVOURITE COATS FOR WINTER" 0-3.5)
+# G06 P1 fine knit under a long coat
+a_fineturtle2 4-11 a grey fine knit, then a long black coat over it, bedroom (caption 0-3)
+a_fineturtle5 1.5-7 a long black coat over a black fine turtleneck, Paris crossing with a coffee (flat-lay 7-8)
+a_fineturtle6 0-22 a long black coat over a black knit dress, mirror
+a_fineturtle7 2-12 a rust long coat over a black fine turtleneck (caption 0-1.5)
+a_fineturtle10 SKIP (talking to camera, caption)
+a_fineturtle12 SKIP (subtitles throughout)
+a_fineturtle14 SKIP (a chunky knit, no coat)
+a_fineturtle18 SKIP (caption throughout)
+a_fineturtle20 0-4.8 a camel long coat over a black fine turtleneck, snow
+a_fineturtle25 0-8 a camel long coat over a cream fine turtleneck, Paris square
+a_fineturtle27 4-11.6 a black fine turtleneck, then a camel long coat put on over it, closet
+a_fineturtle36 1.5-4.8 a beige long coat (trench-like) over white
+a_fineturtle37 SKIP (TikTok mark, numbered captions)
+a_fineturtle38 0-3 cream knit close; 16-22.3 a grey long coat over a cream turtleneck knit dress, knee boots
+a_fineturtle41 0-1.6 long grey and olive coats; 3.2-3.8 a grey puffer (fast outfit swaps)
+a_fineturtle42 0-10 mirror selfie on a chair: brown, charcoal, camel, burgundy long coats, a fur coat
+a_fineturtle46 0-7.5 a long black coat, mirror selfie, trousers change
+a_fineturtle47 0-7.5 a chocolate long coat over black, city street
+# G07 P1 cashmere and coats
+a_cashmerecoat1 0-7 a cream cashmere knit (camel blazer over shoulders 1-4)
+a_cashmerecoat3 SKIP (small caption, knits only)
+a_cashmerecoat4 4-11 fine knits, grey then cream, walk-in closet (faint small caption)
+a_cashmerecoat6 SKIP (same clip as a_oversizedcoat49)
+a_cashmerecoat7 8-10 cream knit close with a ring; 14-25 a cream long coat over a cream knit
+a_cashmerecoat13 0-10.3 a cream long coat over a cream knit, Paris crossing
+a_cashmerecoat15 SKIP (same clip as a_fineturtle42)
+a_cashmerecoat18 SKIP (talking to camera)
+a_cashmerecoat19 SKIP (caption mid-frame)
+a_cashmerecoat23 0-9.2 a camel long coat over black, white and striped tops, outfit swaps
+a_cashmerecoat24 SKIP (same brand lookbook as a_oversizedcoat48)
+a_cashmerecoat35 3-9.3 a cream knit, then a cream long coat over it (caption 0-1.5)
+a_cashmerecoat36 0-6.6 a camel long coat, Milan Galleria (thin black side bars: crop)
+a_cashmerecoat45 13-20 a black fine turtleneck, a long taupe coat put on over it
+a_cashmerecoat47 0-13 mirror selfie: cream knits and cardigans with jeans
+# G08 COATS street elegance
+a_buttoncoat5 0-5.5 a long black coat over white, Paris by the Louvre
+a_buttoncoat9 SKIP (dark, brand mark)
+a_buttoncoat11 0-11.6 a long cream oversized coat, coffee, city street
+a_buttoncoat12 SKIP (talking selfie, short beige coat)
+a_buttoncoat13 0-3.5 a camel double-breasted belted coat, Paris crowd
+a_buttoncoat14 0-7 a long black coat with a cap and trainers (casual)
+a_buttoncoat17 0-26 a chocolate long coat, leopard trousers, London street
+a_buttoncoat18 SKIP (brand lookbook)
+a_buttoncoat21 SKIP (same clip as a_cashmerecoat13)
+a_buttoncoat22 0-7.4 a camel coat walking away down an arcade (back view)
+a_buttoncoat23 0-10.5 a cream belted wool coat with a high collar, walking then close (dark at the end)
+a_buttoncoat27 SKIP (shop montage)
+a_buttoncoat31 0-5.4 a chocolate long coat crossing a Paris street
+a_buttoncoat33 0-2, 3.5-7.5 a rust long coat over a black turtleneck, lift
+a_buttoncoat34 8-13.9 a beige long coat walking towards the camera, autumn leaves (small before 8)
+a_buttoncoat36 0-7.9 a rust belted wool coat, Milan pasticceria
+a_buttoncoat37 2-9.5 a long black coat, white wall (plain)
+a_buttoncoat38 SKIP (dark fur coat)
+a_buttoncoat40 0-9 a khaki double-breasted long coat by a wall (check aspect)
+a_buttoncoat41 0-5.5 a beige long coat, coffee, low bun, walking
+a_buttoncoat42 2.5-9.5 a long grey coat, coffee, cafe door
+a_buttoncoat44 7-12 a camel coat in a field at sunset (brand bag close 0-6)
+a_buttoncoat45 SKIP (red X captions)
+a_buttoncoat47 0-8.6 a beige trench posing by a wall (trench, not wool)
+a_buttoncoat48 SKIP (TikTok, captions)
+a_buttoncoat49 18-26 a cream long coat put on (shirts before)
+a_buttoncoat50 0-10.1 a long black coat, SLEEK LOW BUN, side view, Milan cathedral
+a_buttoncoat51 0-17 a beige trench, coffee (trench)
+a_buttoncoat53 SKIP (same clip as a_cashmerecoat13)
+a_buttoncoat55 SKIP (fast montage, blur)
+a_buttoncoat56 0-3.5 a long black leather coat walking (leather, not wool)
+a_buttoncoat58 SKIP (brand ad)
+a_buttoncoat59 SKIP (same clip as a_fineturtle5)
+a_buttoncoat61 0-6 a long black coat, cap, coffees (casual)
+a_buttoncoat65 0-14 a long dark coat in strong wind, hair blowing (blue, darker tone)
+a_buttoncoat66 0-19.7 a long cream teddy/shearling coat, knee boots, city street
+a_buttoncoat68 0-13 a chocolate belted wool coat with a high collar, mirror
+a_buttoncoat71 SKIP (same clip as a_fineturtle20)
+a_buttoncoat72 SKIP (Ralph Lauren ad)
+# G09 COAT try-on / shop / hanger
+a_coattryon11 SKIP (same clip as a_fineturtle36)
+a_coattryon13 0-21 coats on shop hangers, a hand feeling the wool (beige, grey, navy)
+a_coattryon17 SKIP (TikTok)
+a_coattryon23 SKIP (closet hands, boots)
+a_coattryon32 0-6.5 a short navy peacoat, closet (cropped length)
+a_coattryon33 SKIP (caption mid-frame)
+a_coattryon34 2.5-8.8 a cropped cream shearling jacket try-on (caption 0-2)
+a_coattryon35 0-26 a camel belted coat laid on a bed, the label close
+a_coattryon42 0-17 a camel long coat tried on over a black dress
+a_coattryon43 SKIP (unboxing caption)
+a_coattryon46 0-8 a black faux-fur short jacket on a shop hanger, price tag 6-6.6
+a_coattryon47 SKIP (talking, caption)
+a_coattryon53 SKIP (subtitles)
+a_coattryon55 5-19 a black tee, then a chocolate long coat put on, living room
+a_coattryon57 0-9.4 a camel long coat, mirror, turning
+a_coattryon59 SKIP (same clip as a_oversizedcoat49)
+# G10 P2 cotton tee / easy cotton
+b_whitetee1 SKIP (caption throughout)
+b_whitetee6 SKIP (captions)
+b_whitetee10 2-24 a white cotton tee with cream trousers, choosing belts
+b_whitetee37 0-12 a white cotton tee with black jeans, then a pink cardigan
+b_whitetee45 SKIP (caption at the top)
+b_whitetee56 SKIP (labels)
+b_sweatshirt7 0-8 a cream cotton sweatshirt (bike shorts); 12-24 soft cotton close: cuff, neckline
+b_sweatshirt21 SKIP (brand)
+b_sweatshirt44 SKIP (brand text)
+b_sweatshirt61 SKIP (coats and knits, not cotton)
+b_sweatshirt63 SKIP (small caption mid-frame)
+b_sweatshirt64 0-10 a blue cotton sweatshirt with a white skirt, closet
+b_sweatshirt70 SKIP (brand)
+b_sweatshirt72 SKIP (brand text)
+b_sweatshirt4 SKIP (logo tracksuit)
+# G11 COATS white/cream
+b_whitetee12 0-16 a cream belted wool coat, tying the belt, mirror
+b_whitetee13 SKIP (caption throughout)
+b_whitetee17 SKIP (same clip as a_buttoncoat5)
+b_whitetee24 SKIP (same clip as a_cashmerecoat13)
+b_whitetee27 0-4.7 a CROPPED brown shearling jacket with jeans, Paris steps
+b_whitetee43 0-4.5 a long white coat, Barcelona street (a man passes at 5)
+b_whitetee48 0-4 a CROPPED black shearling jacket, closet door
+b_whitetee49 SKIP (small captions)
+b_whitetee29 SKIP (same clip as a_oversizedcoat49)
+# G12 P2 rain in coats
+b_raincoat0 0-5.6 a trench and a black umbrella crossing a wet New York street
+b_raincoat1 SKIP (DIARIES caption, graphics)
+b_raincoat2 8.5-12 a black coat and umbrella, London rain (velvet dress before)
+b_raincoat9 0-8.3 a long black coat, green umbrella, snow falling, Eiffel Tower (back view)
+b_raincoat11 SKIP (fashion week captions)
+b_raincoat12 SKIP (staged rose petals)
+b_raincoat15 0-4.5 a white trench, clear umbrella
+b_raincoat19 5-26 a beige trench, clear umbrella, autumn street (check aspect)
+b_raincoat24 4-22 a black suit, black umbrella, wet New York street
+b_raincoat26 0-16.9 a black blazer dress, umbrella in the wind
+b_raincoat36 0-5.9 a short beige trench, clear umbrella, Paris quay, smiling
+b_raincoat37 0-1.8 a cream trench and headscarf under an umbrella, Eiffel Tower (night after 2)
+b_raincoat39 SKIP (caption, pink blazer)
+b_raincoat46 0-11 a long black wool coat walking a wet cobbled street ("bombshe" text 11.5+)
+b_raincoat47 SKIP (ad captions)
+# G13 P2 train / metro in coats
+b_metro0 0-26 a long black coat waiting on a New York subway platform (check aspect)
+b_metro1 0-7.6 a long black coat hurrying past a moving train (legs, motion, darker)
+b_metro3 0-15 a long black coat and a burgundy striped scarf, London tube platform, train passing
+b_metro6 SKIP (fur jacket)
+b_metro10 SKIP (sideways video)
+b_metro12 0-10 a taupe long coat in the subway, coffee; 20-26 home at the mirror
+b_metro21 SKIP (leather jacket)
+b_metro22 0-3, 6-7.7 a beige long coat hurrying down the metro stairs, Paris
+b_metro28 0-3.5 a black coat and coffee walking the subway platform (brand text 4+)
+b_metro30 0-5 Paris street style: a black coat walking fast, metro stairs and platform
+b_metro32 SKIP (jewellery ad)
+b_metro42 SKIP (ad captions)
+b_metro45 0-6 a long cream coat on a London tube platform, train passing
+b_metro51 SKIP (skincare ad)
+b_metro62 SKIP (captions)
+# G14 P2 walk briskly in a coat (coffee)
+b_rushing3 1-6.9 a chocolate belted coat walking away towards the Eiffel Tower, then turning
+b_rushing4 0-3, 7-9 a long black coat walking fast, Paris (cafe seated 3-7)
+b_rushing6 SKIP (small captions, montage)
+b_rushing12 1.4-6.3 a long black coat, cap, coffee, walking past a Paris door
+b_rushing13 SKIP (caption 0-3; beige trench)
+b_rushing15 0-4.8 a long chocolate coat on stone steps, Eiffel Tower behind
+b_rushing17 0-13 a long taupe coat walking briskly towards the camera, city
+b_rushing18 SKIP (fast outfit swaps, waving)
+b_rushing21 0-4.5 a beige trench and cap, New York street (trench)
+b_rushing22 0-5.1 a rust long coat over a cream knit, knee boots, walking briskly towards the camera
+b_rushing24 0-1.5 a trench crossing New York; 3-9 cafe phone call
+b_rushing27 0-2.5 walking briskly, SoHo; 9.5-11 on a subway platform with a shopping bag
+b_rushing43 0-10.2 a taupe trench, white boots, walking briskly
+b_rushing44 0-10.1 a black coat crossing the Duomo square, Milan
+b_rushing47 0-6.9 a long black coat walking briskly past a fountain, Paris
+b_rushing49 0-11.7 a black short coat crossing a street (short coat)
+b_rushing50 0-5.6 a taupe coat with a houndstooth scarf, coffee, autumn
+b_rushing53 0-11 a cream coat and a big cream scarf, coffee, Paris
+b_rushing55 SKIP (rag & bone ad)
+b_rushing57 0-12 a grey suit coat hurrying down the metro steps, Starbucks (back view)
+b_rushing67 SKIP (brand ad)
+# G15 P2 shop / office / door
+b_office11 3.5-12 at an office desk in a navy suit (caption 0-3)
+b_office14 0-10 in a boutique touching coats on the rail (warm shop)
+b_office27 SKIP (kitchen ad)
+b_office36 0-3 OPENING A DOOR and stepping out, grey suit; 3-8 walking with an iced coffee
+b_office37 0-9 a cream suit at a desk with a laptop, bright office
+b_office38 0-2 stepping out of a door in a black suit; 2-13 walking
+b_office7 0-10 a cream suit mirror selfie in a warm lobby
+b_office61 0-6.8 a black suit with a laptop, office lounge
+b_office20 SKIP (probably the same try-on as a_coatoversweater15)
+b_office13 3-15 getting dressed: brown shirt, white trousers, a trench (caption 0-2)
+# G16 P2 merino / fitted base layer
+b_merinobase1 SKIP (captions throughout, thermal set)
+b_merinobase7 SKIP (outdoor brand ad)
+b_merinobase17 0-5 a white fitted long-sleeve base layer in the snow, smiling (check AI)
+b_merinobase21 4.3-7 a beige fitted THERMAL top (small step caption at the top); 15-20 a long grey coat over the layers
+b_merinobase22 0-15 a HIKER in a green half-zip on a mountain trail
+b_turtlelayer6 2-11 a grey FINE TURTLENECK at the mirror, then a white long coat over it
+b_turtlelayer10 SKIP (talking)
+b_turtlelayer12 3.5-10 a cream fine turtleneck with cream trousers (small caption)
+b_turtlelayer14 SKIP (talking, captions)
+b_turtlelayer18 1.5-8 a brown fitted turtleneck (small caption, TikTok end)
+b_turtlelayer21 0-9 a grey knit over a black fine turtleneck, stairs
+b_turtlelayer23 SKIP (yellow captions)
+b_turtlelayer31 3-14 a cream chunky knit, then a teddy coat (caption 0-2)
+b_turtlelayer40 0-8 a brown fine knit with a skirt and tights
+b_turtlelayer45 2.5-8.8 a black fitted turtleneck as the base (caption 0-2)
+b_turtlelayer47 SKIP (captions)
+b_turtlelayer48 2-12 layering: white top, jeans, a black puffer, a camel scarf (caption 0-1)
+# G17 P2 silk layer
+b_silkcami1 0-12 a black SILK camisole; 12-26 a blazer put on over it
+b_silkcami2 3-18 a white silk halter top (caption 0-2)
+b_silkcami4 7-22 silk camisoles with a pleated skirt (brand text 4-6)
+b_silkcami5 0-9 a white camisole under a grey cardigan, satin skirt
+b_silkcami15 0-23.8 a white silk camisole, black satin trousers
+b_silkcami17 SKIP (salon, small caption)
+b_silkcami18 0-26 a brown SATIN camisole, close and at the mirror
+b_silkcami19 3-20 camisoles tried on with jeans (caption 0-2)
+b_silkcami21 5-24 a white silk camisole, then a black slip dress (caption 0-4)
+b_silkcami25 SKIP (satin trousers, not a layer)
+b_silkcami33 0-26 a white silk camisole, a blazer over it
+b_silkcami48 SKIP? (too polished: check AI) a silk camisole, trench, slip dress in a hotel
+# G18 SNOW walks
+b_hikesnow2 0-9.9 a cream coat and scarf, blowing snow from her hands, snowy forest
+b_hikesnow12 0-9.6 a hiker on a mountain top at sunrise (small figure)
+b_hikesnow13 0-5 walking in deep snow down a tree avenue (small figure)
+b_hikesnow14 0-9.3 a long beige coat on a snowy mountain ledge, arms open
+b_hikesnow16 2-11 a white knit and beanie looking at the snowy mountains
+b_hikesnow17 0-19 WALKING BRISKLY through a snowy forest trail in a long brown coat and beanie (back view)
+b_hikesnow18 0-9 a cream teddy coat, bucket hat, plaid scarf, snow
+b_hikesnow27 0-5.2 a cream coat, green plaid scarf, white MITTENS, coffee, snowy street
+b_hikesnow28 0-21.5 a brown shearling coat, cream scarf, MITTENS, snowy forest, spinning
+b_hikesnow31 0-26 a cream hooded puffer jacket in the snow (puffer)
+b_hikesnow32 0-7.2 a long cream teddy coat stepping out onto a snowy balcony (back)
+b_hikesnow41 0-6 a camel coat walking through a snowy forest (back)
+b_hikesnow51 0-9 a cream coat walking a snowy road; a hand on a rail; a cabin (YouTube end card 11+)
+# G19 P2 crisp cotton shirt (dry day, fine)
+b_cottonshirt0 2-12 a crisp white shirt with jeans (small caption)
+b_cottonshirt1 0-15.8 a crisp white shirt: buttons close, then a blonde bob, smiling
+b_cottonshirt4 0-11.5 a woman in her late forties in a crisp white shirt and jeans, bright apartment
+b_cottonshirt9 0-26 a white shirt, red lip, rolling the sleeves
+b_cottonshirt10 6-9.9 a white shirt at the bathroom mirror (caption 0-3)
+b_cottonshirt13 0-14.8 a white shirt and jeans, Paris
+b_cottonshirt14 4-26 a white shirt tucked into jeans (caption 0-3)
+b_cottonshirt16 SKIP (captions throughout)
+b_cottonshirt20 SKIP (sewing brand)
+b_cottonshirt23 0-13.9 a white shirt with cream trousers
+b_cottonshirt26 3-26 a white shirt with jeans (caption 0-3)
+b_cottonshirt36 SKIP (captions)
+b_cottonshirt39 10-23 a white shirt put on over a tank top
+b_cottonshirt51 SKIP (caption at the top)
+b_cottonshirt55 SKIP (big text)
+b_cottonshirt58 2.5-8.1 a white shirt tucked into black trousers (small caption)
+b_cottonshirt62 0-4 a woman in her fifties in a white shirt and jeans, closet
+b_cottonshirt70 1.5-16 a SILVER-HAIRED woman (sixties) in a white shirt and jeans (small labels)
+b_cottonshirt71 0-11 a white shirt in Paris, coffee
+b_cottonshirt72 0-17.6 a woman in her fifties with glasses, white shirt and jeans
+# G20 P3 fuzzy cozy sweater
+c_fuzzy0 0-5 a pink FUZZY sweater put on, close of the fluff
+c_fuzzy3 0-13 a pile of soft sweaters, then fuzzy cardigans tried on (tiny caption at 0-1)
+c_fuzzy15 0-26 a black FUZZY mohair sweater, turning, warm room
+c_fuzzy19 0-21 a cream fuzzy off-shoulder sweater, closet
+c_fuzzy21 0-19 trying on a pile of soft sweaters (stripes, cable, fair-isle)
+c_fuzzy24 0-15.9 cream and taupe fuzzy oversized sweaters, white wall
+c_fuzzy28 0-14.5 a white FUZZY sweater dress, close (small icons 0-6)
+# G21 P3 soft sweaters on the hanger / shop
+c_sweatershop1 0-12 a shop rail of soft jackets and knits; 15-18 a fuzzy jacket on the hanger
+c_sweatershop2 0-17 a hand going through knits on a NEW ARRIVALS rail
+c_sweatershop3 SKIP (Hello October text)
+c_sweatershop9 0-7.7 a boutique rail of knits in neutrals
+c_sweatershop12 0-11 knits folded, then held up on hangers (burgundy and cream cable)
+c_sweatershop15 0-26 a hand flicking through knits on hangers, pinks and browns
+c_sweatershop16 0-18.9 SHOP fitting-room mirror selfie trying on sweaters
+c_sweatershop20 0-15.9 a rail of cream and grey knits (small caption at the start)
+c_sweatershop27 SKIP (OUTONO text)
+c_sweatershop28 0-6.2 neutral knits on a rail, a fair-isle sweater on a stand
+c_sweatershop32 0-18 neutral knits on a gold rail (small text 19+)
+c_sweatershop36 0-7.9 a hand holding up knits on hangers (red, rust): soft on the hanger, a PRICE TAG visible
+c_sweatershop38 3-21 a beige cashmere jumper styled, bright room (caption 0-2)
+c_sweatershop39 0-9 knit sets and sweaters on a rail
+c_sweatershop40 0-22 shopping in a knitwear boutique
+# G22 P3 pilling close
+c_pilling3 0-6 a woman shaving PILLS off a black knit (caption 7+)
+c_pilling8 0-5.6 PILLING close on a dark knit, then a fabric shaver
+c_pilling18 SKIP (product ad text)
+c_pilling20 2-26 shaving pills off knits, hands
+c_pilling23 SKIP (TO THIS text, ad)
+# G23 P3 wool knit worn
+c_wool2 0-12 a cream wool knit, sitting on the floor, white studio
+c_wool7 0-23 an oatmeal wool knit by the sea, sunny
+c_wool11 0-10 a camel wool turtleneck, white wall (letterboxed: crop)
+c_wool22 0-8 a grey knit put on, cream trousers
+c_wool33 0-19.7 an olive wool crew knit, jeans, a vest over it (caption 0-2)
+c_wool41 SKIP (small caption)
+c_wool50 0-14.5 a brown wool knit polo pulled on, CLOSE: dense knit
+c_wool51 SKIP (captions)
+c_wool55 0-10.4 a navy argyle wool knit, Christmas tree
+c_wool61 0-7.8 a taupe fine wool V-neck, close
+# G24 P3 cashmere worn
+c_cashmere2 0-12.4 a grey cashmere crew, jeans, coffee, city
+c_cashmere5 SKIP (caption at the top)
+c_cashmere7 0-20 a navy cashmere crew, jeans, cognac tote
+c_cashmere10 0-25 a camel cashmere jumper, wide jeans
+c_cashmere12 SKIP (shop card, captions)
+c_cashmere14 0-12 a stone cashmere jumper, burgundy trousers
+c_cashmere15 0-14.9 a white cashmere crew, grey trousers, checked floor
+c_cashmere21 SKIP (caption)
+c_cashmere25 0-26 a chocolate cashmere jumper, burgundy trousers, mirror
+c_cashmere28 SKIP (captions)
+# CUT-OUTS chosen (cut/*.png, checked on cut_sheet.jpg)
+CUT thick knit: p_cableknit23 (very chunky cream cable), p_cableknit1, p_cableknit47
+CUT fitted coat: p_coat14 (black fitted), p_coat39 (black slim), p_coat1 (rust fitted)
+CUT fine merino: p_finemerino26 (fitted taupe rib turtleneck), p_finemerino11 (cream turtleneck), p_finemerino39 (brown)
+CUT cashmere: p_cashmere4 (camel crew), p_cashmere12 (burgundy), p_cashmere0 (grey)
+CUT merino base layer: p_merinotop22, p_merinotop32 (black), p_merinotop56 (cream)   [p_merinotop10 has a body: skip]
+CUT silk: p_silk3 (champagne), p_silk19; CUT thermal: p_thermal18 (burgundy), p_thermal65 (white)
+CUT label fibres: wool p_cableknit4, merino p_finemerino11, cashmere p_cashmere4, blend p_cashmere46
+CUT socks: thick p_socks42 / p_socks10, fine merino p_socks15
+CUT lug soles: black p_lugboot46, brown p_lugboot38, p_lugboot10
+CUT lined gloves: cashmere p_gloves4, wool p_gloves49, fleece p_gloves28; leather mittens p_mittens2, p_mittens14
+CUT headbands: p_headband55 (twist), p_headband58, p_headband34; white tee p_tee12
+# G72 targeted P1 search
+x_tightcoat1 0-11.8 a long forest-green coat over a white top, jeans, outside (not chunky)
+x_tightcoat12 SKIP (salon montage)
+x_bulkyunder22 0-26 a taupe chunky turtleneck knit, try-on by a rail
+x_bulkyunder14 0-26 an olive SUPER-CHUNKY arm-knit cardigan over a white dress (the thickest knit)
+x_bulkyunder18 0-16 a red chunky knit cardigan, dried grasses
+x_bulkyunder9 SKIP (crochet tutorial)
+x_bulkyunder28 SKIP (crochet)
+x_layers25 11-26 a camel coat and grey scarf layered on (letterboxed 0-10)
+x_layers22 SKIP (captions, puffer)
+# G25 P1/P3 fine merino knits worn
+c_merino1 SKIP (same clip as c_cashmere15)
+c_merino2 SKIP (same clip as c_cashmere2)
+c_merino6 SKIP (same clip as c_wool33)
+c_merino10 0-12.6 a grey fine merino knit, black trousers, bright room
+c_merino14 0-3.5 a cream fine knit, camel blazer, satin skirt; 4-7 a cream knit, white skirt
+c_merino15 SKIP (same clip as c_wool61)
+c_merino29 0-10.1 a blue fine knit, white midi skirt
+c_merino34 SKIP (same clip as c_cashmere14)
+c_merino36 SKIP (talking close-up)
+c_merino42 SKIP (brand text)
+c_merino44 0-8.1 a cream FINE ribbed turtleneck, jeans, concrete wall
+c_merino51 0-16.9 a grey fine knit, black jeans, loft mirror
+c_merino52 CHECK AI (too smooth) a camel fine crew knit, smiling
+c_merino54 3-26 fine knits tried on: white, navy, grey, wide trousers
+c_merino62 0-21.7 knits and cardigans tried on, living room
+c_merino63 0-26 a chocolate fine knit, burgundy trousers, mirror selfie
+c_merino66 0-11.4 a teal fine knit, hair flip
+c_merino68 CHECK AI (too smooth) a grey chunky turtleneck, close
+c_merino69 0-13.4 a brown fine V-neck knit, brown trousers, a hallway
+# G26 P3 label / dense knit by hand
+c_label0 0-10.8 hands on a dense rust knit, a ribbed cuff (small brand mark top-left)
+c_label1 SKIP (brand ad)
+c_label2 SKIP (captions)
+c_label3 0-2.5 a cream cable knit with its LABEL close
+c_label9 0-22.3 knits at the mirror: black, grey, taupe cardigan
+c_label13 0-21 a hand on a chunky grey knit, the knit texture (stretching it)
+c_label26 0-6.8 the neck LABEL of a cream ribbed knit, close
+c_label28 0-15.5 a hand on knits on hangers, feeling the fabric (grey, pink, white)
+c_label30 0-2.5 sewing a MAISON CASHMERE label; 14-24 folding a cream cashmere knit, label close
+c_label32 0-20.6 a grey knit cardigan, buttons, the label inside at 14
+c_label36 SKIP (a man, brand)
+# G27 P3 wash knits gently (line 33 only: the owner never uses abstract sink shots elsewhere)
+c_wash0 SKIP (Norwegian caption)
+c_wash10 SKIP (Norwegian captions)
+c_wash11 0-26 a woman in her kitchen washing a navy knit by hand, showing the wool wash (talking)
+c_wash14 SKIP (same clip as c_label13)
+c_wash16 SKIP (captions; socks)
+c_wash21 0-14.9 a cream knit laid flat to dry
+c_wash26 0-16 a beige knit gently washed in suds, close (hands)
+c_wash29 SKIP (captions)
+c_wash33 0-25 a woman mending/brushing a knit, mirror selfie in a smooth knit
+# G28 P4 autumn ankle boots on women
+d_ankleboots2 0-2, 3-6.4 a black leather jacket, shorts, tights, knee boots, stone steps (autumn)
+d_ankleboots7 0-1.2 an ankle boot pulled on over a white sock; 5-8 white shirt, green knit, ankle boots
+d_ankleboots10 0-12.7 a beige blazer, black ankle boots by a Paris door, autumn
+d_ankleboots12 0-13.2 a leather jacket and jeans, ankle boots, subway corridor
+d_ankleboots14 0-9.4 seated outfit swaps, ankle boots
+d_ankleboots16 SKIP (captions, camera)
+d_ankleboots21 0-16.3 jeans and suede ankle boots, black blazer, concrete steps
+d_ankleboots23 SKIP (shop titles)
+d_ankleboots26 0-26 skirts with tan knee boots and ankle boots, outfit swaps
+d_ankleboots27 0-5.9 a black dress and taupe knee boots, mirror selfie
+d_ankleboots29 0-2.8 a long taupe knit and knee boots walking past a wall (short)
+d_ankleboots33 0-5 an oversized taupe knit, sheer tights, ankle boots, living room
+d_ankleboots40 0-11 a sage knit, leather skirt, ankle boots, city street
+d_ankleboots42 0-7 a black blazer and tall boots, a colonnade
+d_ankleboots46 0-6 a black knit, flared jeans, pointed ankle boots, crossing a Paris street (a man passes 6.4+)
+d_ankleboots48 0-5.5 a leather jacket, slouchy knee boots, crossing
+d_ankleboots50 3-19 New York street style: women in ankle and knee boots (caption 0-2.5)
+d_ankleboots54 SKIP (caption)
+d_ankleboots57 0-5 a rust long coat, knee boots (maybe the same woman as b_rushing22: dedupe)
+d_ankleboots3 0-12 black sock-style ankle boots with jeans, close
+# CHARADE (film/charade.mp4, 1963, public-domain mark) - landscape full-screen moments
+CH 176-182 snowy Alps panorama | 184-204 Audrey on the ski terrace, black fur hat, sunglasses | 208-216 close-up, sunglasses
+CH 264-272 Audrey in black walking along the terrace windows | 288-298 close-up by the window | 448-520 cream coat + pillbox hat (interiors)
+d_ankleboots11 0-14.7 boots close: green, cream, black lug-sole, tan zip, a model walking (studio, product)
+d_ankleboots13 0-26 trying beige suede ankle boots on in a shop (feet, mirror)
+d_ankleboots51 0-14.7 lacing pointed heeled ankle boots, close (tan, black)
+# G29 P4 knee boots on women
+d_kneeboots0 0-2.5, 4.5-8 grey slouchy knee boots, metro platform and escalator (brand card 9+)
+d_kneeboots4 0-4.9 a black short coat, black knee boots, coffee, arcade
+d_kneeboots5 0-7 a white shirt dress, black knee boots, walking briskly
+d_kneeboots8 0-16.4 a black knit, white mini skirt, white knee boots, sunlit street
+d_kneeboots13 0-9.2 a cream knit dress, black knee boots, black umbrella, rain
+d_kneeboots18 SKIP (same clip as d_ankleboots2)
+d_kneeboots20 0-5.3 a suede jacket, tan over-knee boots, walking
+d_kneeboots25 0-4.2 a long black coat, black knee boots, walking briskly
+d_kneeboots29 0-5 a long black coat, black heeled knee boots, Mayfair street; 4.3-5 the boot close
+d_kneeboots40 SKIP (caption at the top)
+d_kneeboots50 0-5.5 a grey chunky knit dress, black knee boots, townhouse steps
+d_kneeboots51 0-21.5 a black blazer dress, black over-knee boots, Paris hotel street (phone call)
+d_kneeboots53 SKIP (same footage as d_ankleboots42)
+d_kneeboots63 0-8.3 a grey blazer dress, black knee boots, crossing a street
+d_kneeboots1 0-4 pulling black knee boots on, seated; 4-10 the boots on (legs)
+d_kneeboots37 SKIP (same clip as d_ankleboots7)
+# G30 P4 thick wool socks / socks into boots
+d_woolsocks0 0-2.5 a cream knit sock pulled up, then a black heeled knee boot pulled on over it, closet (tiny caption)
+d_woolsocks1 SKIP (same clip as d_ankleboots7)
+d_woolsocks7 0-1.6 thick black wool socks pulled up (text 1.8+)
+d_woolsocks8 10-16 blue wool socks worn on the bed (knitting and a sink before)
+d_woolsocks12 SKIP (captions)
+d_woolsocks13 0-3 THICK wool socks close: beige, grey, pink (small text after)
+d_woolsocks16 0-19 a white knit, skirt, cream knee boots (no socks seen)
+d_woolsocks18 1.5-7 pulling thick cream socks up over leggings, then boots on
+d_woolsocks19 SKIP (caption)
+d_woolsocks23 0-1.5 cream socks over black boots (lying on grass after)
+d_woolsocks25 0-26 THICK grey wool socks on her feet, close (cosy, sofa)
+d_woolsocks29 SKIP (small caption, dark)
+d_woolsocks30 SKIP (caption)
+d_woolsocks35 SKIP (split screen)
+d_woolsocks38 0-12.9 black lug-sole boots stepping through puddles and autumn leaves (TREADED soles in the wet)
+d_woolsocks40 2-13.4 knee-high cream socks with loafers/boots, a black coat, townhouse steps
+d_woolsocks14 SKIP (Santoni ad)
+d_woolsocks10 0-8.3 a cream cable knit, black knee boots, walking, sunny street
+d_woolsocks31 0-10.2 a cream ribbed knit, mini skirt, brown knee boots, mirror
+d_woolsocks36 4-18.9 pulling tights on, then a taupe knit and knee boots (caption 0-2)
+# CHARADE extra cuts (raw/film_*.mp4): film_trench (white trench + headscarf walking a Paris street), film_headscarf (close),
+#   film_yellowcoat (mustard coat walking towards the camera, park), film_redhat (red coat, white pillbox hat), film_yellowclose
+# G31 P4 boot shop / try on / pulling on
+d_bootstry1 0-18.4 a hand running along a shelf of suede ankle boots in a shop
+d_bootstry2 SKIP (western store, caption)
+d_bootstry10 SKIP (unboxing, brand box)
+d_bootstry11 SKIP (group, shorts)
+d_bootstry14 0-26 PULLING ON black knee boots, tights, white studio
+d_bootstry15 SKIP (DSW captions)
+d_bootstry21 0-13.2 boots tried with outfits: a black jacket, lace-up boots, then heeled ankle boots
+d_bootstry31 SKIP (tote bag ads)
+d_bootstry37 SKIP (trainers in the mix)
+d_bootstry39 0-15.2 trying on white then black sock ankle boots in a shop (legs, midi skirt)
+d_bootstry43 0-26 mirror selfie trying on knee boots (tan, taupe), crouching
+d_bootstry46 SKIP (sale captions)
+d_bootstry55 0-11.4 black lug-sole boots close: the TREADED sole (studio)
+d_bootstry56 0-26 trying on black over-knee boots in a SHOP, mirror selfie
+d_bootstry60 SKIP (captions)
+d_bootstry66 SKIP (Portuguese captions)
+# G32 P4 pulling up / zipping boots
+d_bootzip1 SKIP (lace bodysuit)
+d_bootzip13 0-11.9 seated, pulling black knee boots up, TUGGING them on (legs)
+d_bootzip18 0-6.5 black knee boots on, white skirt, walking a few steps
+d_bootzip34 SKIP (unboxing, talking)
+d_bootzip51 SKIP (caption)
+d_bootzip52 SKIP (captions)
+d_bootzip59 SKIP (fast cuts, man?)
+d_bootzip61 0-7.1 black heeled knee boots, walking (legs)
+# G33 P5 sleek pointed heeled boots with a long coat
+e_pointed6 0-6.5 a long black coat, pointed heeled knee boots, London street; 4.5-6 the boots close
+e_pointed10 0-8.5 a long olive-brown coat, heeled knee boots, cobbled square
+e_pointed13 0-9.3 a chocolate belted long coat, heeled knee boots, New York crossing (tiny caption 0-1)
+e_pointed14 0-9.9 a camel trench, coffee, pointed heeled boots
+e_pointed15 SKIP (caption)
+e_pointed16 1.5-7 tan pointed heeled knee boots (product); 10-20 worn with a blazer
+e_pointed17 SKIP (watermark)
+e_pointed20 0-9.2 a long green leather coat, pointed boots (leather)
+e_pointed21 0-6.3 a chocolate long coat with fur collar, coffee, heeled boots
+e_pointed23 SKIP (captions)
+e_pointed26 SKIP (captions)
+e_pointed33 0-13.7 a long black coat, croc bag, Paris cafe
+e_pointed35 0-4.5 a grey blazer, black heeled knee boots, London arcade
+# G34 P5 heels on ice / careful steps
+e_iceslip3 SKIP (caption, ice-skate heels gimmick)
+e_iceslip11 SKIP (skates)
+e_iceslip22 0-6.2 stepping carefully on snow (feet POV)
+e_iceslip31 0-9.6 black stiletto pumps walking on paving, close (dry)
+e_iceslip9 0-2.6 a black coat, stepping carefully in plastic-covered boots (blurry)
+e_iceslip15 0-10.5 black heels on a WET icy stone street, careful steps (low angle)
+e_iceslip23 SKIP (pink pumps, glitter)
+# G35 P5 treaded lug-sole boots (black)
+e_lugboots0 0-13.6 black lug-sole boots pulled on over grey socks, then walking (lamp-lit room)
+e_lugboots2 SKIP (caption 0-2; then a camel coat over jeans and black chelsea boots 2-14)
+e_lugboots7 SKIP (captions)
+e_lugboots9 SKIP (caption)
+e_lugboots12 SKIP (captions)
+e_lugboots16 SKIP (caption)
+e_lugboots18 0-16.9 black lug boots with black jeans, cobbled street
+e_lugboots21 0-8.8 black lug-sole chelsea boots pulled on, pampas
+e_lugboots22 SKIP (caption)
+e_lugboots35 SKIP (caption)
+# G36 P5 brown leather boots worn
+e_lugbrown2 0-3.5 crossing a New York street in brown knee boots; 4-9 a sage blazer, black boots by a column
+e_lugbrown6 SKIP (caption)
+e_lugbrown12 0-16 brown leather lug-sole knee boots: the boot close, pulled on, seated (studio)
+e_lugbrown13 SKIP (TikTok)
+e_lugbrown23 0-8.6 brown knee boots, a bench, white studio
+e_lugbrown26 0-17.5 brown chelsea boots shown, then outfits in a closet
+e_lugbrown32 0-18.6 brown knee boots with jackets, walk-in closet
+e_lugbrown35 CHECK AI (too glossy) a trench over jeans, autumn street
+e_lugbrown36 SKIP (caption)
+e_lugbrown40 CHECK AI (too glossy) a brown leather jacket, pleated skirt, brown knee boots, autumn leaves
+# G37 P5 cobbler (hands only: the exact detail named)
+e_cobbler1 SKIP (captions, a man)
+e_cobbler3 0-10 a boot pressed on a sole machine (hands)
+e_cobbler10 SKIP (a man, workshop)
+e_cobbler11 SKIP (brand)
+e_cobbler19 SKIP (a man talking)
+e_cobbler26 SKIP (captions)
+e_cobbler34 0-11 sanding a sole; 14-26 hands holding leather-soled shoes with a new sole edge
+e_cobbler39 0-14.9 a sole being fitted on a machine (letterboxed: crop)
+e_cobbler40 0-19.8 a leather sole being fitted and stitched on a machine (hands)
+e_cobbler48 SKIP (dark)
+e_cobbler55 SKIP (a man talking)
+e_cobbler56 0-14.2 a brogue's leather sole, then the thin RUBBER SOLE PROTECTOR on it (7-13), wooden floor
+# G38 P5 ice grips
+e_cleats0 SKIP (captions, same as e_cleats1)
+e_cleats1 SKIP (captions)
+e_cleats2 0-10.5 walking on snow with clear ICE GRIPS strapped over boots (POV feet)
+e_cleats8 SKIP (a man, brand)
+e_cleats5 SKIP (captions)
+# G39 P5 elegant heels on dry pavement
+e_heelsstreet9 SKIP (crowd, puffers)
+e_heelsstreet12 0-18 a cream blazer, belt, strappy heels, a Paris shop street (dry)
+e_heelsstreet22 0-12 a cream outfit, heels, Paris street and cafe
+e_heelsstreet24 0-6.6 black pointed heels crossing a dry zebra crossing (legs)
+e_heelsstreet30 SKIP (love-lock montage)
+e_heelsstreet31 0-4.5 a black off-shoulder top, leather skirt, heels, dry street
+e_heelsstreet33 0-5.3 a grey leather jacket, black trousers, heels, cobbles
+e_heelsstreet37 0-6.9 a black suit, pointed heels, walking briskly, Paris
+e_heelsstreet41 0-9.6 a khaki jacket, white trousers, heels, walking towards the camera
+e_heelsstreet47 0-6.4 a black coat, fur collar, heeled boots, crossing
+# G40 P6 leather gloves with coats
+f_gloves1 0-15.1 a cream long coat, BLACK LEATHER GLOVES, night city lights (warm)
+f_gloves2 SKIP (caption, TikTok)
+f_gloves3 0-10 a beige trench, putting on black leather gloves, London; 10-24 gloved hand on a map, a door
+f_gloves4 0-8.9 a long black coat over a black turtleneck, black leather gloves, sunglasses
+f_gloves5 SKIP (caption)
+f_gloves8 0-26 a navy belted coat trying on coloured leather gloves (tan, pink, orange, red) by a shop
+f_gloves11 SKIP (caption)
+f_gloves12 SKIP (TikTok)
+f_gloves13 0-15.7 a long black coat, jeans, black leather gloves, walking a glass arcade
+f_gloves15 0-16.1 coats and GLOVES close: black leather, shearling mitten, quilted leather
+f_gloves16 0-12.4 black leather gloves close with brown coats (studio)
+f_gloves17 SKIP (caption)
+f_gloves18 0-11.7 a long black coat, black gloves, sunglasses, walking steps
+f_gloves20 0-5.3 a taupe long coat, black leather gloves, brick street
+f_gloves23 SKIP (talking, captions)
+f_gloves24 SKIP (captions)
+f_gloves31 0-15.3 a tan suede coat, black gloves tucked in the belt, putting them on
+f_gloves32 0-8.5 a black belted jacket, gloves, Vienna columns
+f_gloves35 0-6.2 a long black coat, red tie, leather gloves, a palace square
+f_gloves36 0-6.2 a long cream coat, white trousers, sunglasses (gloves?)
+f_gloves41 SKIP (coffee, a man?)
+f_gloves42 SKIP (talking, captions)
+f_gloves44 SKIP (day captions)
+f_gloves45 SKIP (product shelf)
+f_gloves47 SKIP (montage, a man)
+# G41 P6 cold, tense, hunched
+f_coldhands0 0-15.5 a woman in a grey wrap rubbing her COLD HANDS
+f_coldhands6 0-9.4 a long black coat, BLOWING ON HER HANDS in falling snow (cold, blue light)
+f_coldhands8 0-16.7 a fur trapper hat, blowing on gloved hands, snow
+f_coldhands18 0-10.1 a mint beanie, rubbing her cold face, snow (puffer)
+f_coldhands24 SKIP (caption)
+f_coldhands30 SKIP (ad)
+f_coldhands38 0-11.7 hands rubbed together in fingerless knit gloves against a grey coat (cold hands close)
+f_coldhands39 0-5.8 a bundled face in a snowstorm (freezing)
+f_coldhands47 0-9.1 a white hood, red scarf, snow, smiling
+f_coldhands51 0-9 bundled in a cream scarf in a snowstorm, laughing
+f_coldhands53 0-8.8 a long quilted coat, snow, hair blowing
+# close checks (ds1.jpg)
+a_coatoversweater21 3-9.4 a cream CHUNKY knit held up and worn; 11.5-24 a chocolate long coat put on OVER it (caption 0-2)
+a_coatoversweater44 1-9 a cream chunky knit; 16.5-23 a camel long coat pulled on over the cream knit (caption 0-1.5)
+a_oversizedcoat28 0-5 a purple knit; 5-14 a long black wool coat swung on and CLOSED at the front with both hands
+a_coatoversweater57 8-14 a chunky grey knit, then a long grey coat swung on over it, arms up
+# G42 P6 thin leather gloves close / lined gloves
+f_lined0 0-8 taupe leather gloves close; 8.5-10 the CASHMERE LINING shown
+f_lined2 0-6.5 chocolate leather gloves; 6.8-8 the lining folded back
+f_lined8 0-7.8 burgundy leather gloves; 5.8-6.5 the lining
+f_lined9 0-9.8 brown leather gloves, ruched cuff
+f_lined12 SKIP (dark, abstract)
+f_lined15 0-14.9 a black leather glove with a ring, fur cuff (THIN, sleek)
+f_lined16 0-26 black leather gloves laid out and put on (hands)
+f_lined19 0-12.6 ruched brown gloves; 9-10.5 the lining
+f_lined21 0-21.3 a houndstooth blazer, putting on tan leather gloves; then a camel coat
+f_lined23 SKIP (captions)
+f_lined25 SKIP (captions)
+f_lined38 0-8.9 dark brown leather gloves, a THIN unlined one stretched (hand inside)
+f_lined42 SKIP (a man)
+f_lined45 SKIP (unboxing)
+f_lined53 0-6.0 a red lip, black and brown leather gloves held under the chin (elegant close)
+f_lined54 SKIP (caption)
+f_lined55 SKIP (fabric gloves)
+f_lined58 0-17.3 cream leather gloves on black fur
+f_lined59 SKIP (shop)
+# G43 COATS long wool (from the mittens search: no mittens seen)
+f_mittens2 0-9.8 a long chocolate belted wool coat, Paris door, sunglasses
+f_mittens10 0-11.4 camel wool coats on a mannequin (shop, DETAIL of a coat on display)
+f_mittens12 0-9.8 two women: cream and camel long coats with big cream scarves, autumn
+f_mittens13 0-14.8 a long grey tweed coat, red boots, construction hoarding
+f_mittens14 0-13.6 a long grey coat, burgundy scarf, clear umbrella, wet pavement; 2-12 details: the long hem, lug boots
+f_mittens16 SKIP (fast outfit swaps, furs)
+f_mittens18 SKIP (fur-trimmed cape)
+f_mittens20 SKIP (same woman as e_pointed21)
+f_mittens21 0-12.6 a long RED wool coat, small dog, townhouse steps
+f_mittens22 SKIP (caption)
+f_mittens24 0-9.5 a long taupe coat, beanie, scarf, coffee, SNOWY park railings
+f_mittens25 0-4.4 a long black coat, red scarf, snow, walking towards the camera
+f_mittens35 0-12.2 a camel coat and BERET looking at snowy mountains (back view)
+f_mittens39 SKIP (fast cuts, caption)
+f_mittens44 SKIP (TikTok)
+f_mittens46 SKIP (captions)
+f_mittens47 0-17 coats tried on: a brown puffer, a chocolate coat, a cream coat and a grey bucket hat
+f_mittens48 3-20 coats and scarves tried on, grey knit hat (caption 0-2)
+# G44 P7 beautiful blowout
+g_blowout0 0-14 a glossy blonde BLOWOUT, hands in the hair (logo card 15+)
+g_blowout1 4.5-13 a glossy dark BLOWOUT, shaking it out (caption 0-3)
+g_blowout2 0-7.6 a salon blow-dry with a round brush (DRYING the hair)
+g_blowout6 SKIP (captions)
+g_blowout8 SKIP (TikTok)
+g_blowout12 SKIP (caption)
+g_blowout15 SKIP (small captions, product)
+g_blowout16 SKIP (TikTok)
+g_blowout17 SKIP (captions)
+g_blowout7 0-9.5 dark glossy curls being finished in a salon
+# G45 P7 hat hair
+g_hathair0 SKIP (caption)
+g_hathair16 SKIP (dark, cap)
+g_hathair19 0.6-4.5 a cap on (small red X), then off: glossy hair fixed (small green tick) - her "don't / do" caption style
+g_hathair36 SKIP (captions)
+g_hathair37 SKIP (BAD HAIR DAY cap)
+g_hathair38 SKIP (a man)
+g_hathair56 SKIP (cowboy hat)
+g_hathair48 SKIP (caption)
+# G46 P7 ears covered
+g_earmuffs4 SKIP (TikTok end, no earmuffs seen)
+g_earmuffs11 SKIP (caption, TikTok)
+g_earmuffs13 SKIP (TikTok)
+g_earmuffs16 SKIP (caption)
+g_earmuffs18 0-10.9 white fluffy EARMUFFS in the snow, cream vest, on the phone
+g_earmuffs21 SKIP (caption)
+g_earmuffs28 SKIP (brand box, TikTok)
+g_earmuffs38 SKIP (crop top)
+g_earmuffs40 SKIP (captions)
+g_earmuffs1 0-5.2 brown EARMUFFS, a big camel scarf, a brown jacket, snowy forest
+# G47 P7 knit headband worn
+g_headband2 0-5.2 a rust chunky KNIT HEADBAND with a cream trench, curls
+g_headband3 SKIP (TikTok)
+g_headband5 SKIP (captions)
+g_headband6 SKIP (montage, caption)
+g_headband8 0-26 a green scarf, leather jacket, SLEEK LOW BUN, London street
+g_headband9 0-11.1 a cream padded headband on glossy dark waves, small red X / green tick (her caption style)
+g_headband11 SKIP (caption)
+g_headband12 SKIP (caption)
+g_headband18 SKIP (EAR WARMER caption)
+g_headband25 0-12.7 a brown knit headband put on over soft blonde waves (SOFT BLOWOUT)
+# G48 P7 wool beret worn
+g_beret1 0-3 a red wool BERET, cream knit, walking a Paris street (caption 4+)
+g_beret2 0-8 a cream BERET at a Paris balcony window (back view)
+g_beret4 0-8.3 a white pillbox hat, white faux-fur coat, cream gloves, Paris
+g_beret8 SKIP (cap)
+g_beret14 0-6.4 a grey long coat and a cream BERET, walking past a Paris gate, autumn
+g_beret16 SKIP (caption)
+g_beret17 SKIP (captions)
+g_beret20 SKIP (captions)
+g_beret25 SKIP (make-up close)
+g_beret31 SKIP (captions)
+g_beret33 0-9.5 a burgundy long coat, grey pillbox hat, CREAM LEATHER GLOVES, the Louvre
+g_beret44 SKIP (dark)
+g_beret46 0-4.1 a beige BERET with a bow, black dress, Paris bridge
+g_beret49 SKIP (same woman as g_beret33, caption)
+g_beret52 SKIP (product)
+# G49 P7 fine cashmere beanie worn
+g_beanie5 0-15 fine cashmere cable beanies close (hands)
+g_beanie7 SKIP (brand lookbook)
+g_beanie8 SKIP (caption)
+g_beanie11 SKIP (shop product)
+g_beanie12 SKIP (caption)
+g_beanie24 SKIP (caption)
+g_beanie25 SKIP (captions)
+g_beanie26 SKIP (brand)
+g_beanie28 0-13.9 a beige chunky cable beanie with a pom (small brand patch), sunglasses
+g_beanie33 SKIP (captions)
+g_beanie45 SKIP (cap)
+g_beanie51 SKIP (letterboxed)
+g_beanie48 0-9 thick heavy knit beanies stacked (product, the STIFF HEAVY KNIT)
+g_beanie34 SKIP (a man)
+# G50 P7 sleek low bun
+g_lowbun4 SKIP (magazine montage)
+g_lowbun11 0-21.8 twisting a blonde SLEEK LOW BUN, white shirt (back view)
+g_lowbun14 0-15.1 sleek bun, mirror selfie: coats tried on (fur, olive, grey)
+g_lowbun16 0-12.4 a SLEEK LOW BUN made, cream knit (back view)
+g_lowbun17 0-11.2 a camel long coat, a SLEEK BUN, Palais-Royal columns
+g_lowbun22 0-12.1 coats with a sleek bun: black, fur, trench, grey (fast)
+g_lowbun23 SKIP (caption)
+g_lowbun24 0-12.7 a low bun twisted, black knit (back)
+g_lowbun34 SKIP (captions)
+g_lowbun36 SKIP (caption)
+# G51 P7/P6 cold faces, wind, ears
+g_coldears3 0-9.3 WIND whipping her hair, a cream beanie and teddy coat, snow falling
+g_coldears16 SKIP (selfie, mountain)
+g_coldears21 0-4.6 a face turned up to falling snow, brown coat, snowy forest
+g_coldears24 SKIP (TikTok)
+g_coldears25 0-6.8 a cream teddy coat, snow, a cold face (fast pan)
+g_coldears26 SKIP (Pinterest end, TikTok)
+g_coldears43 SKIP (dark, a man)
+g_coldears46 SKIP (sideways)
+g_coldears54 SKIP (caption)
+g_coldears42 SKIP (montage)
+# G52 P8 coats on hangers / rail
+h_coatrail0 0-7.2 a rail of long coats (camel, black, grey) in warm window light
+h_coatrail12 SKIP (caption 0-2; then a brown coat)
+h_coatrail15 SKIP (caption)
+h_coatrail20 SKIP (knits)
+h_coatrail24 0-12.5 a hand through dark coats on a rail, then one tried on (an older woman, glasses)
+h_coatrail39 SKIP (caption)
+h_coatrail47 0-8.6 a black rail with navy, burgundy, grey coats (small text mid)
+h_coatrail52 SKIP (caption)
+h_coatrail59 SKIP (captions)
+h_coatrail64 SKIP (a man)
+h_coatrail74 SKIP (caption)
+h_coatrail78 SKIP (caption)
+# G53 P8 windy street in a long coat
+h_windy1 0-14.1 a beige trench blowing in the WIND, hair blowing, Paris street
+h_windy6 0-7.8 a long olive coat, striped top, windy street
+h_windy7 0-8.2 a long khaki trench, cap, coffee, wind, stone wall
+h_windy14 SKIP (fast swaps)
+h_windy21 SKIP (try-on)
+h_windy27 0-13.2 a camel long coat walking a cobbled square in the wind
+h_windy31 0-11.1 a long cream coat, WIND in her hair, balustrade
+h_windy35 0-3.5 an olive long coat blowing open, walking fast
+h_windy45 SKIP (black leather, dark sky)
+h_windy51 SKIP (fast swaps)
+h_windy53 0-3.5 a camel coat on museum steps, wind in her hair
+h_windy54 SKIP (car, sideways)
+h_windy59 2.5-7.6 a long black coat in the WIND, a London phone box
+h_windy60 SKIP (caption)
+# G54 P8 dense wool coat fabric
+h_wool1 SKIP (brand lookbook, logo)
+h_wool4 SKIP (brand film)
+h_wool6 0-4 a hand in the pocket of a DENSE camel wool coat (close)
+h_wool8 0-19.2 a long cream coat, purple turtleneck, walking a crossing
+h_wool9 0-9.4 a hand pressing DENSE cream felted wool (close)
+h_wool10 SKIP (sewing)
+h_wool12 0-19.6 a TIGHTLY WOVEN green wool fabric (close, no woman)
+h_wool16 0-12.2 a Black woman in a long cream belted wool coat and scarf (studio)
+h_wool18 SKIP (letterboxed)
+h_wool23 0-11.7 a long oatmeal wool coat: the dense fabric, buttons, then the woman
+# G55 P8 coat details / label
+h_coatlabel3 SKIP (caption)
+h_coatlabel6 0-7.6 a shop rail of wool coats in every shade
+h_coatlabel7 SKIP (caption)
+h_coatlabel12 0-10.6 a chocolate belted wool coat close: the belt, a hand stroking the dense fabric
+h_coatlabel15 SKIP (MaxMara ad)
+h_coatlabel17 SKIP (brand)
+h_coatlabel19 SKIP (brand)
+h_coatlabel38 0-7.2 a navy wool coat on a hanger; 4-5.5 the inside LABEL
+h_coatlabel47 SKIP (captions)
+h_coatlabel52 SKIP (flat lay)
+h_coatlabel56 SKIP (captions)
+h_coatlabel58 SKIP (captions)
+h_coatlabel61 SKIP (captions)
+# G56 P8 cropped jackets (the mistake)
+h_cropped2 0-6.9 a black cropped shearling jacket, dark street
+h_cropped4 0-7.8 a red cropped leather jacket, Paris
+h_cropped5 0-9 a cream CROPPED trench jacket, black trousers, living room
+h_cropped6 0-9.4 a beige CROPPED jacket, light jeans
+h_cropped7 0-5.7 a black cropped shearling aviator, autumn
+h_cropped8 SKIP (dark)
+h_cropped12 SKIP (TikTok)
+h_cropped14 SKIP (caption)
+h_cropped16 0-5.6 a black CROPPED shearling jacket in falling SNOW
+h_cropped21 0-6.3 a black cropped quilted jacket, mirror
+h_cropped23 SKIP (caption)
+h_cropped26 SKIP (caption)
+h_cropped31 SKIP (caption)
+h_cropped33 SKIP (caption)
+h_cropped37 0-8.1 a brown CROPPED jacket, suede skirt, knee boots
+h_cropped42 SKIP (caption)
+h_cropped45 0-11.8 a CROPPED grey jacket, jeans, coffee, autumn path
+h_cropped50 SKIP (small caption)
+h_cropped52 SKIP (caption)
+# G57 P8 long wool coats, the long clean line
+h_longcoat0 0-7.8 a long olive coat, mirror selfie, boutique (outfit swaps)
+h_longcoat1 0-12.6 a long taupe coat, burgundy bag, cobbled street (tiny caption 0-1)
+h_longcoat5 0-8.9 a long camel coat over black, sunny Paris street
+h_longcoat8 0-14.8 street style: camel, black, burgundy long coats walking a pavement (fast)
+h_longcoat19 0-8.4 a long charcoal belted wool coat, white studio
+h_longcoat24 0-14.9 a long grey belted coat, columns, walking
+h_longcoat28 0-5 a long black coat, colonnade, walking
+h_longcoat31 0-7.2 a long burgundy coat, white wall
+h_longcoat43 0-4.4 a long charcoal coat crossing a zebra crossing, coffee
+h_longcoat44 SKIP (caption)
+h_longcoat47 0-7.3 long coats tried on, cream sofa (fast swaps)
+h_longcoat51 SKIP (leather and trench)
+# G58 COATS maxi
+h_maxi16 SKIP (leather)
+h_maxi23 0-8 a long CREAM wool coat, mirror
+h_maxi30 SKIP (dark, leather)
+h_maxi36 0-7.6 a long cream coat walking, stone wall (small caption mid)
+h_maxi49 SKIP (captions)
+h_maxi54 0-4.9 a long black coat crossing at night (dark)
+h_maxi59 0-5.1 a long beige trench stepping out of a lift with flowers

@@ -1,51 +1,56 @@
-# slog.py - writes SOURCES-LOG.md for the built edit (one row per clip on screen), plus music, fonts and logo.
+# sources_log_from_edit.py - writes SOURCES-LOG.md for the built edit (one row per clip or cut-out on screen), plus music,
+# fonts and logo.  usage (inside the work folder): python3 sources_log_from_edit.py [SOURCES-LOG.md] [ok5.txt]
 import json, sys, re
 B = json.load(open('beats.json')); SB = json.load(open('storyboard.json')); META = json.load(open('raw/meta.json'))
 AI = json.load(open('aiscan.json'))
+OKF = sys.argv[2] if len(sys.argv) > 2 else 'ok5.txt'
 NOTE = {}
-for l in open('ok.txt'):
-    if l.strip() and not l.startswith('#'):
-        k, rest = l.split(None, 1); NOTE[k] = rest.strip()
-FILM = {'fymail10': ("You've Got Mail (1998, Warner Bros.)", 'film footage inside a creator\'s comparison reel ("Meg Ryan fall"); the creator\'s own recreations are cut out'),
-        'flw5': ('Little Women (1994, Columbia Pictures)', 'fan montage of the film; only its first 2.2 s are used (the house in snow, the letter, the family reading it); the burned-in caption is cropped out')}
+for l in open(OKF):
+    p = l.split(None, 1)
+    if len(p) == 2 and not l.startswith('#') and not p[1].startswith('SKIP'): NOTE.setdefault(p[0], p[1].strip())
 def mmss(t): return f'{int(t // 60)}:{t % 60:04.1f}'
 def lines_at(a, z): return [b['i'] for b in B if b['start'] < z and b['end'] > a]
 first, lines, segs = {}, {}, {}
 for s in SB:
     for c in s['clips']:
-        k = c[0]; first.setdefault(k, (s['t0'], s['t1'])); lines.setdefault(k, set()).update(lines_at(s['t0'], s['t1']))
-        segs.setdefault(k, []).append(f'{c[1]:g}-{c[2]:g}')
-out = ['# SOURCES-LOG / asset ledger - 8 Things Elegant Ladies Never Wear in Winter (Episode 15)', '',
-       f'Every clip in the render: {len(first)} Pinterest video pins, plus music, fonts and logo. Generated from `raw/meta.json`',
-       '(the Pinterest search record of each pin) and the built edit (`storyboard.json`).', '',
-       '**How the footage was found.** Pinterest video search with `tools/pin_search.py`, the way the channel sources its',
-       'reels (VISUAL-EDITING-DNA.md). The key is the search tag plus the result number, e.g. `windycoat41` = search',
-       '"windy day long wool coat woman video", result 41. Pinterest returns ad-style pin IDs (`e1_...`), so there is no',
-       'public pin URL; the pin ID and the outbound link (if the pin has one) are recorded instead.', '',
+        k = 'p_' + c[0][4:-4] if c[0].endswith('.png') else c[0]
+        first.setdefault(k, (s['t0'], s['t1'])); lines.setdefault(k, set()).update(lines_at(s['t0'], s['t1']))
+        if not c[0].endswith('.png'): segs.setdefault(k, []).append(f'{c[1]:g}-{c[2]:g}')
+nfilm = sum(k.startswith('film_') for k in first); ncut = sum(k.startswith('p_') for k in first)
+out = ['# SOURCES-LOG / asset ledger v5 - 8 Things Elegant Ladies Never Wear in Winter (Episode 15)', '',
+       f'Every asset in the render: {len(first) - nfilm - ncut} Pinterest video pins, {nfilm} scenes from *Charade* (1963) and {ncut} product',
+       'cut-outs made from Pinterest product photos, plus music, fonts and logo. Generated from `raw/meta.json` (the search',
+       'record of each pin) and the built edit (`storyboard.json`).', '',
+       '**How the footage was found.** Pinterest\'s real Videos tab, several pages deep (`tools/pinsearch2.py`), one search per',
+       'garment combination the script names (`picks.md`); every result sheet was looked at by eye, every pick was downloaded and',
+       'checked frame by frame (`ok5.txt`: what each clip shows and which seconds are clean). The key is the search tag plus the',
+       'result number, e.g. `a_fineturtle5` = the "fine turtleneck under a long coat" search, result 5.', '',
        '**Rights status (read this).**',
        '- Under `workflow/SOURCES-LOG-TEMPLATE.md`, a clip that is only found on Pinterest and credited is **unresolved**.',
-       '  None of these clips has a licence or the creator\'s written permission.',
-       '- Two rows are **1980s-90s film scenes**. The owner chose to use them ("Use film scenes, my risk"), so they are',
-       '  marked **unlicensed, owner\'s decision**. Film scenes can trigger Content ID claims; they play silent, under the voice.',
+       '  None of the Pinterest clips or product photos has a licence or the creator\'s written permission.',
+       '- The *Charade* rows come from the Internet Archive item `charade-1963-cary-grant-audrey-hepburn-comedy-mystery-romance-',
+       '  thriller-full-movie`, marked **Public Domain Mark 1.0** there. *Charade* is widely reported to have entered the US',
+       '  public domain because it was published without a valid copyright notice; that is the archive\'s and the reports\'',
+       '  claim, not a legal opinion. They play silent, under the voice.',
        '- The name given is the Pinterest pinner, which is often not the original creator. A TikTok mark or an Instagram',
        '  outbound link means the clip started there.', '',
-       '**AI check.** `tools/aiscan.py` ran on every download. Clips scoring 0.40 or more are never used (the build stops).',
-       'label9 (1.00), cottonshirt12 (0.81), scarfwrap26 (0.63) and scarfwrap34 (0.44) were flagged and are not used. washknit0 (0.38) is borderline and is not used. heels42, knitquality23,',
-       'woolcare43 and the cosy-fireplace search results were also left out because they look computer-made to the eye, even',
-       'where the score was low.', '',
-       '| # | First on screen | Lines | What it shows (key, seconds used) | Where we got it | Creator / pinner (handle) | Outbound link | Licence or permission basis | Commercial use on monetised YouTube? | Edit/crop/speed allowed? | AI scan | Decision | Notes |',
-       '|---|---|---|---|---|---|---|---|---|---|---|---|---|']
+       '**AI check.** `tools/aiscan.py` ran on every clip used; none scored 0.40 or more (the build stops if one does).', '',
+       '| # | First on screen | Lines | What it shows (key, seconds used) | Where we got it | Creator / pinner (handle) | Outbound link | Licence or permission basis | Commercial use on monetised YouTube? | Edit/crop/speed allowed? | AI scan | Decision |',
+       '|---|---|---|---|---|---|---|---|---|---|---|---|']
 for n, k in enumerate(sorted(first, key=lambda k: first[k][0]), 1):
     m = META.get(k, {}); a, z = first[k]
     what = re.sub(r'^[\d.,\- ]+', '', NOTE.get(k, m.get('title', ''))).replace('|', '/')
     src = (m.get('src') or '-').replace('|', '/')
-    if k in FILM:
-        basis, dec, note = 'none (film studio copyright)', "**unlicensed, owner's decision**", f'{FILM[k][0]}; {FILM[k][1]}'
+    if k.startswith('film_'):
+        where, basis, com, ed, dec = 'Internet Archive', 'Public Domain Mark 1.0 (archive item)', 'yes if public domain', 'yes', 'public-domain mark'
+    elif k.startswith('p_'):
+        where, basis, com, ed, dec = f'Pinterest image pin {m.get("pin_id", "?")} (product photo, background removed)', 'none: found on Pinterest, credited only', 'unknown', 'unknown', 'unresolved'
     else:
-        basis, dec, note = 'none: found on Pinterest, credited only', 'unresolved', ('TikTok/Instagram origin' if 'instagram' in src or 'tiktok' in src else '')
-    out.append(f'| {n} | {mmss(a)}-{mmss(z)} | {",".join(map(str, sorted(lines[k])))} | {what} (`{k}`, {", ".join(segs[k])} s) | '
-               f'Pinterest, pin id {m.get("pin_id", "?")} | {m.get("creator", "?").replace("|", "/")} (@{m.get("user", "?")}) | {src} | {basis} | unknown | unknown | '
-               f'{AI.get(k, 0):.2f} | {dec} | {note} |')
+        where, basis, com, ed, dec = f'Pinterest video pin {m.get("pin_id", "?")}', 'none: found on Pinterest, credited only', 'unknown', 'unknown', 'unresolved'
+    used = f', {", ".join(segs[k])} s' if k in segs else ''
+    out.append(f'| {n} | {mmss(a)}-{mmss(z)} | {",".join(map(str, sorted(lines[k])))} | {what} (`{k}`{used}) | {where} | '
+               f'{m.get("creator", "?").replace("|", "/")} (@{m.get("user", "")}) | {src} | {basis} | {com} | {ed} | '
+               f'{AI.get(k, 0):.2f} | {dec} |')
 out += ['', '## Not footage', '',
         '| Asset | Source | Licence | Decision |', '|---|---|---|---|',
         '| Music: "Classical 4", "Classical 9", "Classical 5", "Classical 10" by Jonny S. | Mixkit | Mixkit Free Licence (music) | cleared (same tracks as the channel\'s earlier edits) |',

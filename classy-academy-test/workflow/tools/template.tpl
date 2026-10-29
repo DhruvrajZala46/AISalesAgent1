@@ -25,6 +25,7 @@ body { margin: 0; background: #000; }
 .snow { position: absolute; inset: 0; mix-blend-mode: screen; pointer-events: none; z-index: 40; }
 .snow video { width: 100%; height: 100%; object-fit: cover; }
 .white { position: absolute; inset: 0; background: #fff; z-index: 48; }
+.cream { position: absolute; inset: 0; background: #f8f4ef; z-index: 48; }
 .card, .q1, .q2, .qr1, .qr2, .qs1, .qs2, .hint, .rcp, .gtx1, .gtx2 { position: absolute; left: 0; right: 0; text-align: center; z-index: 45;
   --p: 100;
   -webkit-mask-image: linear-gradient(90deg, #000 45%, transparent 55%); mask-image: linear-gradient(90deg, #000 45%, transparent 55%);

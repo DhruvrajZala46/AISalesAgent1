@@ -141,6 +141,7 @@ for order, n in enumerate(ROOT.kids):
     c = n.cls
     if n.id == 'bg': layers.append((0, order, dict(kind='bg'))); continue
     if 'w' in c:
+        zb = int(float(n.style.get('z-index', 0) or 0))      # a reel on the cream screen sits above it (z-index:49)
         x0, y0, w, h = px(n.style.get('left')), px(n.style.get('top')), px(n.style.get('width')), px(n.style.get('height'))
         canv = [k for k in n.kids if 'canvas' in k.cls]
         if canv:
@@ -149,13 +150,15 @@ for order, n in enumerate(ROOT.kids):
                                           fx=px(fgw.style.get('left')), fw=px(fgw.style.get('width')))))
         else:
             vids = [k for k in n.kids if k.tag == 'video']
-            layers.append((0, order, dict(kind='box', id=n.id, x=x0, y=y0, w=w, h=h,
+            layers.append((zb, order, dict(kind='box', id=n.id, x=x0, y=y0, w=w, h=h,
                                           vids=[dict(id=v.id, src=v.a['src'], win=vwin(v), grade='filter' in (v.a.get('style') or '')) for v in vids])))
         continue
     if 'white' in c or 'endwhite' in c: layers.append((48 if 'white' in c else 61, order, dict(kind='fill', id=n.id, col=(255, 255, 255), a=1.0))); continue
+    if 'cream' in c: layers.append((int(float(n.style.get('z-index', 48) or 48)), order, dict(kind='fill', id=n.id, col=(239, 244, 248), a=1.0))); continue   # #f8f4ef
     if 'haze' in c: layers.append((44, order, dict(kind='fill', id=n.id, col=(228, 238, 248), a=0.42))); continue      # rgba(248,238,228,.42) in BGR
     if 'black' in c: layers.append((60, order, dict(kind='fill', id='black', col=(0, 0, 0), a=1.0))); continue
     z = next((TEXTZ[k] for k in c if k in TEXTZ), None)
+    if z is not None and n.style.get('z-index'): z = int(float(n.style['z-index']))   # e.g. a label on the cream screen
     if z is not None and n.id:
         if 'chk' in c: layers.append((z, order, dict(kind='chk', id=n.id, pid=next((k.id for k in (n.kids[0].kids if n.kids else []) if k.tag == 'path' and k.id), None))))
         else: layers.append((z, order, dict(kind='sprite', id=n.id, masked=SPR.get(n.id + '_all', {}).get('masked', False),
