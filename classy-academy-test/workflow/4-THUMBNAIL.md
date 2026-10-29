@@ -31,6 +31,11 @@ woman mistake -> fix 67.5x her channel's median, same woman + lines on her 56.8x
 small white labels placed in canvas coordinates (render once with `"grid": true` to read them). Draw only what the
 woman shows or explains herself. Frame above a burned-in caption rather than erasing it over a bag or a pattern.
 
+`tools/thumb_spec.py spec.json` is the same look with each panel framed by hand (face box, face height, offset), so a body or
+outfit topic keeps the waist and the styling below the words; it also writes an editable SVG with live text and the graded
+panels as PNGs. The red underline is used only in her "Elegant Ladies Never..." series (`"underline": false` otherwise),
+measured on all 31 thumbnails (`videos/tummy/THUMBNAIL.md`).
+
 `tools/thumb_make.py` builds exactly this (it reproduces the approved French thumbnail pixel for
 pixel). Never change the layout to "try something new" without the user asking.
 

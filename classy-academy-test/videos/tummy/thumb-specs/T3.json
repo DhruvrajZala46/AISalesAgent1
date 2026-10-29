@@ -1,0 +1,51 @@
+{
+ "out": "out/T3_put_together.jpg",
+ "top": "Always Look",
+ "big": "Put Together",
+ "small": "*at any age*",
+ "logo": "workflow logo: CA monogram (white, from the channel avatar)",
+ "logo_xy": [
+  40,
+  25
+ ],
+ "logo_size": 110,
+ "panels": [
+  {
+   "src": "real/op4.jpg",
+   "face": [
+    639,
+    121,
+    183,
+    183
+   ],
+   "fh": 0.17,
+   "fy": 0.07,
+   "dx": -0.1
+  },
+  {
+   "src": "real/ql6.jpg",
+   "face": [
+    483,
+    96,
+    158,
+    158
+   ],
+   "fh": 0.17,
+   "fy": 0.07,
+   "dx": 0
+  },
+  {
+   "src": "real/mm16.jpg",
+   "face": [
+    304,
+    63,
+    122,
+    122
+   ],
+   "fh": 0.17,
+   "fy": 0.07,
+   "dx": 0
+  }
+ ],
+ "underline": false
+}

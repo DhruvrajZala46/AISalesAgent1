@@ -1,0 +1,51 @@
+{
+ "out": "out/T2_look_expensive.jpg",
+ "top": "How to Look",
+ "big": "Expensive",
+ "small": "*at every size*",
+ "logo": "workflow logo: CA monogram (white, from the channel avatar)",
+ "logo_xy": [
+  40,
+  25
+ ],
+ "logo_size": 110,
+ "panels": [
+  {
+   "src": "real/ks6.jpg",
+   "face": [
+    239,
+    57,
+    113,
+    113
+   ],
+   "fh": 0.16,
+   "fy": 0.06,
+   "dx": -0.08
+  },
+  {
+   "src": "real/ks2_9.jpg",
+   "face": [
+    238,
+    94,
+    248,
+    248
+   ],
+   "fh": 0.26,
+   "fy": 0.08,
+   "dx": 0
+  },
+  {
+   "src": "real/ks9.jpg",
+   "face": [
+    312,
+    45,
+    133,
+    133
+   ],
+   "fh": 0.16,
+   "fy": 0.06,
+   "dx": 0
+  }
+ ],
+ "underline": false
+}

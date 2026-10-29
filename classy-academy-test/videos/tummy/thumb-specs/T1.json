@@ -1,0 +1,50 @@
+{
+ "out": "out/T1_stop_covering_up.jpg",
+ "top": "Stop",
+ "big": "Covering Up",
+ "small": "*style it instead*",
+ "logo": "workflow logo: CA monogram (white, from the channel avatar)",
+ "logo_xy": [
+  40,
+  25
+ ],
+ "logo_size": 110,
+ "panels": [
+  {
+   "src": "real/ag24.jpg",
+   "face": [
+    370,
+    138,
+    102,
+    102
+   ],
+   "fh": 0.17,
+   "fy": 0.07,
+   "dx": -0.12
+  },
+  {
+   "src": "real/hm6.jpg",
+   "face": [
+    256,
+    197,
+    166,
+    166
+   ],
+   "fh": 0.17,
+   "fy": 0.07,
+   "dx": 0.02
+  },
+  {
+   "src": "real/pl9.jpg",
+   "face": [
+    432,
+    90,
+    139,
+    139
+   ],
+   "fh": 0.17,
+   "fy": 0.07,
+   "dx": 0
+  }
+ ]
+}
