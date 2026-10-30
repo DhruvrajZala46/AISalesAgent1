@@ -11,7 +11,8 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   Do in Public".
 - Each tip is a close cousin of one of the original's tips, proven by 12 niche winners plus comments.
 - The format was checked against the original's storyboard.
-- It is **waiting for the user's "ship it, or change it?"**. Build nothing before that.
+- **Approved by the user on 30 Oct 2026 ("ship it").** Next stage: the video (3-VIDEO.md), sourcing per the
+  [ON SCREEN] notes, every clip logged in `SOURCES-LOG.md`.
 
 ## 1. Where things stand right now
 
