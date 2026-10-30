@@ -145,7 +145,7 @@ q('&#8220;That isn&#8217;t vanity.<br>It&#8217;s <i>self-respect</i>, spoken out
 # ================= 2. LOUD PHONE CALLS =================
 card_at('2. Loud Phone Calls', 17, st(17) + 3.2)
 full([(C('p2_trainphone19', 0.3, 6.4), st(17) + 3.0, 0.4)], nx(18))
-row([C('p2_videophone33', 0.3, 9.0), C('p2_waiting2', 0.1, 2.5), C('p2_queue9', 0.3, 10.3)],          # G: train, waiting room, queue
+row([C('p2_videophone33', 0.3, 9.0), C('p2_waitingh', 0.0, 3.6), C('p2_queue9', 0.3, 10.3)],          # G: train, waiting room, queue
     [nx(18), at(18, 'in the waiting'), at(18, 'in the pharmacy')], at(18, 'The phone') - 0.45)
 CROP['x_speaker5'] = (50, 190, 1090)                                                                # past the brand mark top right
 vframe([(C('x_speaker5', 0.3, 6.4), at(18, 'The phone') - 0.2), (C('x_loudvideo42', 0.3, 3.4), at(18, 'A video'))], en(18) + 0.3)  # D
