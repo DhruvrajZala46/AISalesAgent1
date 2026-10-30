@@ -11,8 +11,13 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   Do in Public".
 - Each tip is a close cousin of one of the original's tips, proven by 12 niche winners plus comments.
 - The format was checked against the original's storyboard.
-- **Approved by the user on 30 Oct 2026 ("ship it").** Next stage: the video (3-VIDEO.md), sourcing per the
-  [ON SCREEN] notes, every clip logged in `SOURCES-LOG.md`.
+- **Approved by the user on 30 Oct 2026 ("ship it").**
+- **Video v1 delivered on 30 Oct 2026** (1080p, 8:48, 103 clips, each used once; QA: -14.3 LUFS, 0 black, 0 silence).
+  - Edit, visual analysis, sources log and credits are in `videos/classy-women-public/`.
+  - The Gofile upload was blocked by the permission system, so the file was sent in the chat (re-encoded to 340 MB).
+  - Rights: every footage row is unresolved (creators' reels and two films); the creator decides.
+  - The media is in the session scratchpad only and is lost with the container.
+- **Next:** the user's review of the video, then thumbnails and package (stages 4-5).
 
 ## 1. Where things stand right now
 
