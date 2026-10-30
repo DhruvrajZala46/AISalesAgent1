@@ -65,7 +65,7 @@ def _frames(shots, t1, x0, y0, w, h, radius=0, shadow=False, xf=0.45, dr=1.04, e
 FACE = json.load(open(os.path.join(P, 'facepos.json')))     # tools/facepos.py: median face height (0..1) in each shot
 FACEFIX = {'p3_conv24': 0.35, 'p2_softcall15': 0.33, 'p2_laughgroup34': 0.45, 'g_hair27': 0.3,       # detector misses, read by eye
            'p5_nail14': 0.5, 'p6_bestfriends24': 0.5, 'p7_alone24': 0.45, 'x_airpods40': 0.5, 'g_mirror2': 0.28,
-           'p2_softcall18': 0.5, 'p6_bestfriends8': 0.515}
+           'p2_softcall18': 0.5, 'p6_bestfriends8': 0.515, 'p4_armarm1': 0.52, 'h_phonedown31': 0.27}
 def _fy(spec):
     """the vertical position of the 16:9 window in a portrait clip: the face sits at 38% of the screen height"""
     k, a, b = spec; F = FACEFIX.get(k, FACE.get(f'{k} {a:g} {b:g}'))
@@ -112,11 +112,10 @@ def card_at(txt, i_line, t_out):
     white(t0, t_out); text(txt, 'card', t0 + 0.3, t_out - 0.1, dur=1.2, out=0.45)
 
 # ================= HOOK (A: full-screen clips of women in cafes and restaurants, ~5 s each) =================
-full([(C('h_cafe0', 0.3, 7.9), 0.0, 0.35), (C('h_cafe39', 0.3, 7.3), at(1, 'who seems'), 0.4)], nx(2))
-full([(C('p6_party41', 10.6, 13.8), nx(2), 0.4), (C('h_cafe41', 0.3, 6.8), at(2, 'fussing'), 0.45),
-      (C('h_phonedown31', 0.3, 10.0), at(2, 'scrolling'), 0.4)], nx(3))
+full([(C('h_cafe0', 0.3, 7.9), 0.0), (C('h_cafe39', 0.3, 7.3), at(1, 'who seems'))], at(2, 'fussing'))          # calm, not the loudest
+full([(C('h_cafe41', 0.3, 6.8), at(2, 'fussing') - 0.1), (C('h_phonedown31', 0.3, 10.0), at(2, 'scrolling'))], nx(3))
 full([(C('h_film2', 0.3, 4.6), nx(3))], nx(4))                                                   # Casablanca: the one you remember
-full([(C('h_walk26', 0.3, 9.2), nx(4), 0.4), (C('p7_alone23', 0.3, 7.8), at(4, 'It comes'), 0.45)], nx(5))
+full([(C('h_walk26', 0.3, 9.2), nx(4), 0.4), (C('z_leave6', 0.3, 7.0), at(4, 'It comes'))], nx(5))
 
 # ================= THE TURN (B: the title over a full-screen clip) =================
 full([(C('h_walk40', 0.3, 6.2), nx(5), 0.35), (C('h_public23', 0.3, 9.7), at(5, 'and the gentle'), 0.4)], nx(6))
@@ -146,14 +145,14 @@ q('&#8220;That isn&#8217;t vanity.<br>It&#8217;s <i>self-respect</i>, spoken out
 # ================= 2. LOUD PHONE CALLS =================
 card_at('2. Loud Phone Calls', 17, st(17) + 3.2)
 full([(C('p2_trainphone19', 0.3, 6.4), st(17) + 3.0, 0.4)], nx(18))
-row([C('p2_videophone33', 0.3, 9.0), C('p2_queue9', 0.3, 10.3), C('p2_waiting2', 0.2, 2.1)],          # G: train, waiting room, queue
-    [nx(18), at(18, 'in the waiting'), at(18, 'in the pharmacy')], at(18, 'The phone') - 0.1)
+row([C('p2_videophone33', 0.3, 9.0), C('p2_waiting2', 0.1, 2.5), C('p2_queue9', 0.3, 10.3)],          # G: train, waiting room, queue
+    [nx(18), at(18, 'in the waiting'), at(18, 'in the pharmacy')], at(18, 'The phone') - 0.45)
 CROP['x_speaker5'] = (50, 190, 1090)                                                                # past the brand mark top right
 vframe([(C('x_speaker5', 0.3, 6.4), at(18, 'The phone') - 0.2), (C('x_loudvideo42', 0.3, 3.4), at(18, 'A video'))], en(18) + 0.3)  # D
 wide([(C('p2_videophone2', 0.3, 12.0), nx(19), 0.5)], en(19) + 0.35)                                 # J
 q('&#8220;Everyone nearby becomes part of that <i>call</i>,<br>whether they chose to or not.&#8221;', st(19) + 0.1, en(19) + 0.3, QT, size=52)
 full([(C('x_whisper19', 0.3, 10.0), nx(20), 0.35)], nx(21))
-vframe([(C('p2_trainphone0', 0.3, 9.0), nx(21))], en(21) + 0.3, x0=40)                                # E
+vframe([(C('p2_trainphone0', 0.3, 4.95), nx(21)), (C('p2_trainphone0', 5.25, 9.1), at(21, 'Can I'))], en(21) + 0.3, x0=40)   # skips a black frame at 5.1                                # E
 q('&#8220;I&#8217;m on the train right now.<br>Can I call you back in <i>ten minutes</i>?&#8221;', at(21, "I'm on"), en(21) + 0.3, QR)
 full([(C('x_airpods40', 0.3, 7.3), nx(22), 0.6), (C('p2_softcall15', 2.0, 12.0), at(22, 'And let'), 0.4)], nx(23))
 full([(C('p2_laughgroup34', 0.3, 7.9), nx(23), 0.4), (C('p1_laugh42', 4.3, 11.2), at(23, 'Be warm'), 0.45)], nx(24))
@@ -215,6 +214,7 @@ full([(C('p5_brush36', 0.3, 5.6), nx(45), 0.45), (C('p5_trainmakeup11', 2.0, 10.
       (C('p5_nail14', 0.3, 4.8), at(45, 'A nail'), 0.5)], en(45) + 0.3)
 oncream([(C('p7_alonecafe26', 0.9, 5.5), nx(46)),
          (C('p5_carmirror4', 8.7, 14.0), at(46, 'And while') - 0.2)], en(46) + 0.3, x0=75)   # M
+q('&#8220;It feels like no one<br>is really <i>looking</i>.&#8221;', st(46) + 0.2, at(46, 'But people') - 0.3, MT, size=58, cls='dark')
 q('&#8220;People are closer<br>than we <i>think</i>.&#8221;', at(46, 'But people') - 0.1, at(46, 'And while') - 0.3, MT, size=58, cls='dark')
 q('&#8220;While we&#8217;re fixing ourselves,<br>we&#8217;re only <i>half there</i>.&#8221;', at(46, 'And while') - 0.2, en(46) + 0.3, MT, size=58, cls='dark')
 row([C('p5_getready25', 0.0, 4.5), C('p5_carmirror2', 0.3, 9.0), C('p5_compact16', 0.3, 9.5)],         # G: at home, in the car, the powder room
@@ -228,7 +228,7 @@ q('&#8220;All that&#8217;s left is the lovely part:<br>being there, calm and ful
 
 # ================= 6. RUSHING TO NICKNAMES =================
 card_at('6. Rushing to Nicknames', 51, en(51) + 0.35)
-oncream([(C('p6_meet45', 0.1, 6.8), nx(52)), (C('p6_meet6', 3.3, 8.0), at(52, 'Or someone'))], en(52) + 0.3, x0=75)   # M
+oncream([(C('p6_meet45', 0.1, 6.8), nx(52)), (C('p6_meet6', 2.65, 6.9), at(52, 'Or someone'))], en(52) + 0.3, x0=75)   # M
 q('&#8220;Hi, I&#8217;m <i>Elizabeth</i>.&#8221;', at(52, 'Elizabeth') - 0.3, en(52) + 0.25, (760, 200, 1840, 400), size=60, cls='dark')
 q('&#8220;Liz!&#8221;', at(52, 'Liz'), en(52) + 0.25, (760, 420, 1840, 560), size=60, cls='dark')
 q('&#8220;hun&#8221; &nbsp;&#183;&nbsp; &#8220;sweetie&#8221;', at(52, 'hun'), en(52) + 0.25, (760, 600, 1840, 760), size=56, cls='dark')
@@ -246,7 +246,7 @@ card_at('7. Hiding Behind Your Phone', 58, st(58) + 3.6)
 full([(C('p7_alone24', 0.3, 10.0), st(58) + 3.4, 0.4)], nx(59))
 full([(C('p7_alone3', 0.3, 6.5), nx(59), 0.4), (C('p7_alone16', 0.3, 3.0), at(59, 'or eat'), 0.4),
       (C('p7_alone4', 0.3, 6.4), at(59, "there's no"), 0.4)], nx(60))
-full([(C('p7_alonecafe32', 0.3, 7.2), nx(60), 0.45), (C('p7_alonecafe28', 0.3, 4.7), at(60, "You're not"), 0.4)], nx(61))
+full([(C('z_alonetable34', 0.3, 7.5), nx(60)), (C('p7_alonecafe28', 0.3, 4.7), at(60, "You're not"), 0.4)], nx(61))
 vframe([(C('p7_bag6', 0.3, 5.0), nx(61))], en(61) + 0.3, x0=40)                                      # E
 q('&#8220;Let the phone rest in your bag,<br>so they have <i>all of you</i>.&#8221;', st(61) + 0.4, en(61) + 0.3, QR, size=56)
 oncream([(C('x_tidy23', 0.3, 5.6), nx(62))], at(62, 'and say') - 0.1, x0=75)   # M
