@@ -3,7 +3,7 @@
 This file carries the full history of the previous chat (Oct 2026) so a new chat can continue without it.
 Branch: `claude/youtube-channel-analysis-lghfsv`. The channel's YouTube name is **Classy Academy** (@ClassyAcademy).
 
-## 0. Latest (29 Oct 2026)
+## 0. Latest (31 Oct 2026)
 
 The user asked for a new video copying the **format** of their own "7 Things Elegant Ladies Never Do in Public"
 (`oHh4T67jJNM`, 508k views), with similar but new tips and no copied wording.
@@ -17,7 +17,11 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   - The Gofile upload was blocked by the permission system, so the file was sent in the chat (re-encoded to 340 MB).
   - Rights: every footage row is unresolved (creators' reels and two films); the creator decides.
   - The media is in the session scratchpad only and is lost with the container.
-- **Next:** the user's review of the video, then thumbnails and package (stages 4-5).
+- **User review (31 Oct 2026): "GOOD", but remove the website.** The user does not want classyladyacademy.com
+  mentioned. It was taken out of the guide screen and the outro (`edit.py`); never put the site on screen again.
+- **Video v2 delivered on 31 Oct 2026** (same edit without the site, 8:47; QA: -14.3 LUFS, 0 black, 0 silence; the
+  only freezes are the white cards and the quote screen). Sent in the chat as a re-encode under 500 MiB.
+- **Next:** thumbnails and package (stages 4-5), only when the user asks.
 
 ## 1. Where things stand right now
 
