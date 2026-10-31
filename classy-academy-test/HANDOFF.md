@@ -21,7 +21,8 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   mentioned. It was taken out of the guide screen and the outro (`edit.py`); never put the site on screen again.
 - **Video v2 delivered on 31 Oct 2026** (same edit without the site, 8:47; QA: -14.3 LUFS, 0 black, 0 silence; the
   only freezes are the white cards and the quote screen). Sent in the chat as a re-encode under 500 MiB.
-- **Next:** thumbnails and package (stages 4-5), only when the user asks.
+- **Thumbnails (31 Oct 2026):** all 31 channel thumbnails analysed; three options A/B/C sent
+  (`videos/classy-women-public/THUMBNAIL.md`, A recommended). Waiting for the user's choice; then the package (stage 5).
 
 ## 1. Where things stand right now
 

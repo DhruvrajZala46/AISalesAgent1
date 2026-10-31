@@ -18,7 +18,7 @@ Read first: the `yt-package` skill (title and thumbnail are one unit).
 | Underline | red (150,22,26), under the FIRST headline word, y=418-421 (below any descender) |
 | Small line | Cormorant SC, cap height 26 px, top at y=495, like `*avoid these*` |
 | Depth | soft drop shadow on all text, gentle darkening behind the text block |
-| Logo | CE logo top-left |
+| Logo | **CA "Classy Academy" logo** top-left (all 31 thumbnails, checked 31 Oct 2026; `tools/thumb_ca.py`) |
 
 For a do / don't topic (rules, mistakes), the winners' format is the same woman twice, red cross on the
 mistake and green tick on the fix (8.0M "Dressing Rules EVERYONE Should Learn"): `tools/thumb_xo.py` builds it
