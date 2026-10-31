@@ -186,8 +186,7 @@ vframe([(C('c_walkold0', 6.3, 14.8), nx(33))], nx(34))                          
 full([(C('g_drape0', 0.3, 4.9), nx(34), 0.45), (C('g_mirror2', 0.3, 6.9), at(34, 'the shapes'), 0.4),
       (C('g_hair27', 0.3, 9.0), at(34, 'the hairstyles'), 0.35)], nx(35))
 full([(C('g_mirror38', 0.3, 10.2), nx(35), 0.4), (C('p7_leave13', 0.3, 9.9), at(35, 'so getting'), 0.4)], en(36) + 0.35)
-q('<div><span style="font-size:44px">Discover Your Best Look</span><br><i style="font-size:120px">Elegance &amp; Style Guides</i><br>'
-  '<span style="font-size:34px;letter-spacing:1px">www.classyladyacademy.com</span></div>', at(35, 'our elegance') - 0.2, en(36) + 0.2, QC, cls='over')
+q('<div><span style="font-size:44px">Discover Your Best Look</span><br><i style="font-size:120px">Elegance &amp; Style Guides</i></div>', at(35, 'our elegance') - 0.2, en(36) + 0.2, QC, cls='over')
 
 # ================= 4. BICKERING IN FRONT OF OTHERS =================
 card_at('4. Bickering in Front of Others', 37, st(37) + 3.4)
@@ -261,6 +260,5 @@ q('&#8220;That&#8217;s exactly the kind of elegance people remember,<br>even whe
 oncream([(C('p7_older11', 0.3, 7.1), nx(64))], en(64) + 0.3)                                         # L
 full([(C('z_elegant2', 0.3, 8.0), nx(65), 0.35), (C('p7_thanks31', 0.3, 8.0), at(65, 'And tell me'), 0.4)], nx(66))
 full([(C('c_rail0', 0.3, 7.2), nx(66), 0.45), (C('p7_leave41', 0.3, 7.3), nx(67), 0.4)], total - 2.6)   # O, then the end card
-q('<div><span style="font-size:44px">Check The Description For</span><br><i style="font-size:116px">Personal Stylist Guide</i><br>'
-  '<span style="font-size:34px;letter-spacing:1px">www.classyladyacademy.com</span></div>', nx(66) + 0.3, at(66, 'and our favourite') - 0.2, QC, cls='over')
+q('<div><span style="font-size:44px">Check The Description For</span><br><i style="font-size:116px">Personal Stylist Guide</i></div>', nx(66) + 0.3, at(66, 'and our favourite') - 0.2, QC, cls='over')
 q('<i style="font-size:116px">Elegant Clothing Links</i>', at(66, 'and our favourite'), en(66) + 0.4, QC, cls='over')

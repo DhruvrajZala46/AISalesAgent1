@@ -35,7 +35,7 @@ Nothing is added that the creator's video does not have.
 | K | **Quote alone on caramel** | 2:37, 3:56 | the line to remember |
 | L | **Vertical clip on cream, centred, no frame** | 2:47, 2:57, 5:54, 5:59 | a woman, quietly |
 | M | **Vertical clip at the left on cream + dark-grey serif text on the right** | 4:16, 4:21 | the practical line |
-| N | **Guide over full-screen clips**: "Discover Your Best Look" (serif) / "Elegance & Style Guides" (script) / the site | 3:12-3:21 | the guide plug |
+| N | **Guide over full-screen clips**: "Discover Your Best Look" (serif) / "Elegance & Style Guides" (script) / the site (left out of the new video, at the creator's request) | 3:12-3:21 | the guide plug |
 | O | **Outro over full-screen clips**: "Check The Description For" / "Personal Stylist Guide" (script) / the site; then "Elegant Clothing Links" | 6:09, 6:14 | the description |
 | P | **CA logo on white** (end card) | 6:19 to the end | the end |
 
