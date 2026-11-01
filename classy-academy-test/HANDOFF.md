@@ -24,6 +24,11 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
 - **Thumbnails (31 Oct 2026):** all 31 channel thumbnails analysed; three options A/B/C sent
   (`videos/classy-women-public/THUMBNAIL.md`, A recommended). Waiting for the user's choice; then the package (stage 5).
 
+- **New video (1 Nov 2026):** the user asked for a copy of the format of their "7 Behaviors That Quietly Signal You Have
+  Class" (`rHI_hcgK39E`, 120k), with similar but new tips and the exact same style. Script v1 is in
+  `videos/class-signals/` (`script.md` + `beats.txt`): "7 Quiet Habits That Show You Have Class". It is waiting for the
+  user's "ship it". Visual note: viewers asked not to show Meghan Markle.
+
 ## 1. Where things stand right now
 
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in
