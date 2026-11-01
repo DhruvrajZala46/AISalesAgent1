@@ -1,0 +1,124 @@
+# 8 Things Elegant Ladies Never Say: What to Say Instead — Verified Clip Segments (`ok.txt`)
+# Format: <key> <in>-<out> : <line> : <creator / source description>
+# Every segment below is mapped 1-to-1 to the exact spoken beat in `edit.py` and `beats.txt`,
+# with zero repeated time ranges (`build.py` SEGS check enforced) and zero AI-generated footage.
+
+# --- PILLAR 1: ICONIC CINEMA (Audrey Hepburn, Grace Kelly, Angelina Jolie, Scent of a Woman) ---
+audrey_tiffany_table 0.0-6.2 : line 1a : Audrey Hepburn seated poised at table, Breakfast at Tiffany's (1961, Paramount)
+grace_kelly_blue 0.4-5.8 : line 2 : Grace Kelly in ice-blue chiffon gown, To Catch a Thief (1955, Paramount)
+audrey_sabrina_bw 0.5-5.0 : line 4a : Audrey Hepburn in white headscarf smiling close-up, Sabrina (1954, Paramount)
+charade 81.1-86.0 : line 7a : Audrey Hepburn at Megève terrace under title card, Charade (1963, Universal / US Public Domain)
+grace_kelly_rear_window 0.4-6.2 : line 16 : Grace Kelly smiling with effortless poise, Rear Window (1954, Paramount)
+jolie_tourist_train 0.4-6.8 : line 33b : Angelina Jolie calm close-up on train, The Tourist (2010 — 3.13x replay peak in RUDXBR8nyHw)
+scent_woman_dinner 0.4-5.8 : line 51a : Gabrielle Anwar at candlelit dinner table, Scent of a Woman (1992, Universal)
+charade 154.0-161.2 : line 55 : Audrey Hepburn listening with warm indulgent smile, Charade (1963, US Public Domain)
+charade 95.2-102.5 : line 75a : Audrey Hepburn speaking softly at café table, Charade (1963, US Public Domain)
+charade 179.35-183.75 : line 75_audio : Audrey Hepburn spoken line (FILMAUDIO 4.4s demonstration), Charade (1963, US Public Domain)
+charade 254.0-258.9 : line 83 : Audrey Hepburn warm closing smile, Charade (1963, US Public Domain)
+
+# --- PILLAR 2: REAL PUBLIC FIGURES IN INTERVIEWS, SPEECHES & TALKS ---
+jolie_thr_listen 0.5-6.8 : line 1b : Angelina Jolie speaking softly while listeners lean in, The Hollywood Reporter Actress Roundtable (2024)
+emma_un_podium 0.4-5.2 : line 3a : Emma Watson in crisp white suit at UN podium, HeForShe Speech (2014)
+amal_interview_smile 0.4-5.2 : line 4b : Amal Clooney smiling warmly in seated interview
+diana_cream_smile 0.3-5.8 : line 7b : Princess Diana smiling warmly in cream blazer
+amal_thank_you_nod 0.3-7.2 : line 18b : Amal Clooney nodding graciously to a compliment in interview
+diana_sincere_nod 0.4-5.5 : line 24 : Princess Diana nodding with sincere empathy in interview
+emma_un_speaking 0.5-5.8 : line 25a : Emma Watson speaking with calm conviction at UN podium (RUDXBR8nyHw 1:09 match)
+amal_stage_composed 0.4-5.8 : line 25b : Amal Clooney speaking into microphone on stage
+tracee_podcast_calm 0.5-7.5 : line 28b : Tracee Ellis Ross speaking thoughtfully at podcast mic (RUDXBR8nyHw 3:38 match)
+zendaya_roundtable_drained 0.4-6.8 : line 31 : Zendaya listening thoughtfully at THR Actress Roundtable (RUDXBR8nyHw 4:57 match)
+gwyneth_vogue_garden 0.4-6.0 : line 34a : Gwyneth Paltrow seated calmly in garden, Vogue feature (RUDXBR8nyHw 5:51 match)
+kate_middleton_warm_greeting 0.4-5.2 : line 44a : Kate Middleton greeting warmly with eye contact and smile
+white_sofa_interview_two 0.4-7.2 : line 56a : Rosie Huntington-Whiteley seated conversation on white sofa (RUDXBR8nyHw 3:23 match)
+cate_blanchett_calm_pause 0.4-7.0 : line 57a : Cate Blanchett pausing with steady composure at roundtable
+michelle_obama_stage_suit 0.4-7.2 : line 62 : Michelle Obama on stage in tailored suit (Never Share 5:14 match)
+jolie_thr_roundtable_nod 0.4-7.2 : line 70 : Angelina Jolie nodding with warm respect at THR Roundtable (RUDXBR8nyHw 2:23 match)
+diana_interview_soft 0.2-7.5 : line 75b : Princess Diana speaking softly at table (RUDXBR8nyHw 1:44 match)
+amal_stage_listening 0.4-6.8 : line 77b : Amal Clooney seated on stage leaning in kindly (RUDXBR8nyHw 6:31 match)
+
+# --- PILLAR 3: REFINED LIFESTYLE & CREATOR REELS (Diverse Women 30-70+, Hijabi, Tailored Wardrobe) ---
+camelwalk14 0.0-4.6 : line 3b : Sherief Ashraf (@okadaily) — woman in camel coat walking past townhouse
+over60chic37 13.89-18.52 : line 5 : Светлана (@4ff85b2807fe2e9) — poised woman in cream blouse
+over60chic14 8.6-13.7 : line 6b : Marilyn Hansen (@hansen0671) — elegant silver-haired woman
+camelwalk4 0.0-5.5 : line 7c : Curated Bliss (@yourcuratedbliss) — poised woman in camel coat
+over60chic19 0.0-8.2 : line 18c : Jeanne Caldarera (@jeannecaldarera) — elegant woman over 60 smiling warmly
+camelwalk15 0.0-4.0 : line 22a : Mint Velvet (@mintvelvet) — woman walking on city pavement
+navyblazer15 3.09-10.1 : line 27 : Chernice Mbogori (@chernicembogori) — confident woman in navy blazer
+fabrictest20 0.0-3.93 : line 30c : Stephani Malia (@stephanischell) — woman inspecting garment in boutique
+white_sofa_polkadot_calm 0.4-6.0 : line 34b : Elegant woman in polka-dot dress on white sofa (RUDXBR8nyHw 5:12 match)
+woolcoat33 0.0-7.47 : line 37a : Musa (@musarvilakazi) — woman in tailored wool coat in boutique
+over60chic4 0.0-6.8 : line 45b : Jeanne Caldarera (@jeannecaldarera) — warm conversation over coffee
+woolcoat46 0.0-7.8 : line 47 : Selina Sun (@BillyLouSun) — effortless confidence in tailored coat
+proportion3 8.0-13.0 : line 48a : Meli (@sofi_sketches) — balanced silhouette demonstration
+midivneck9 3.3-8.8 : line 48b : LILYSILK (@lilysilk) — flattering silk neckline and color
+navyblazer4 0.0-5.8 : line 48c : HerDrapery (@TheStyledWoman) — timeless navy blazer wardrobe piece
+fabriclight16 1.0-7.2 : line 48d : Grisha Couture (@gcoutures) — refined fabric drape under guide card
+logo_handbag_street 0.4-6.5 : line 59a : Street-style logo handbag shot (My7qteRU9k0 0:49 parallel)
+over60chic0 3.0-9.0 : line 63 : Jeanne Caldarera (@jeannecaldarera) — smiling warmly when outfit is admired
+hijab_burgundy_speaking 0.4-8.5 : line 71 : Sefamerve modest-fashion model in burgundy hijab speaking gently (RUDXBR8nyHw 3:28 match)
+over60chic8 1.8-8.2 : line 72 : Antonietta Cardelli (@antoniettacarde) — mature woman smiling gently over tea
+over60chic23 0.0-6.0 : line 82a : Jeanne Caldarera (@jeannecaldarera) — warm natural smile
+curvychic17 3.0-8.87 : line 82b : Liz Thul (@lizthul_) — midsize elegant style smile
+over60chic2 5.3-11.5 : line 82c : Beth Djalali (@bdjalali) — Style at a Certain Age warm smile
+over60chic8 17.43-22.6 : line 84 : Antonietta Cardelli (@antoniettacarde) — closing comment prompt panel
+camelwalk0 0.0-4.8 : line 85a : Negin (@n388865) — woman in camel coat walking down tree-lined street
+woolcoat33 7.47-14.0 : line 85b : Musa (@musarvilakazi) — graceful closing turn and smile
+
+# --- PILLAR 4: CURATED EVERYDAY CONVERSATIONAL ACTIONS (Pexels & Mixkit Cleared 1080p) ---
+mk41236 1.0-7.5 : line 6a : Mixkit 41236 — Two cheerful women during a cafe date
+mk12122 0.3-6.5 : line 6c : Mixkit 12122 — Two women chatting warmly at home
+px8922355 0.4-4.8 : line 9 : Pexels 8922355 — Two women laughing at restaurant table (RUDXBR8nyHw 1:19 match)
+mk12128 0.3-6.2 : line 10a : Mixkit 12128 — Friends complimenting outfit at dinner
+compliment_wave_off 0.5-6.8 : line 10b : Pexels — Woman brushing off a compliment self-consciously
+mk12129 0.4-5.6 : line 11 : Mixkit 12129 — Two friends at a nice dinner together
+mk12127 0.4-5.4 : line 12 : Mixkit 12127 — Two women chatting warmly at dinner table
+flowers_gift_smile 0.5-4.8 : line 13 : Pexels — Woman receiving a bouquet of flowers with a warm smile
+awkward_giver_pause 0.4-8.8 : line 15a : Pexels — Friend looking slightly awkward after compliment is deflected
+sleeve_flaw_check 0.4-6.5 : line 15b : Pexels — Woman looking down at sleeve/hem flaw
+dinner_warm_smile 0.4-7.5 : line 18a : Pexels — Poised woman making eye contact and smiling warmly at dinner
+sofa_wine_compliment 0.5-8.0 : line 18d : Pexels — Two women with wine on sofa smiling (RUDXBR8nyHw 6:41 match)
+meeting_hesitant_hand 0.4-6.2 : line 20 : Pexels — Woman in beige blouse raising hand hesitantly at meeting table
+office_door_apology 0.4-6.5 : line 21a : Pexels — Woman leaning into office doorway apologetically
+roundtable_uncertain 0.5-6.8 : line 21b : Pexels — Woman gesturing uncertainly in group discussion
+mk41229 0.3-6.0 : line 22b : Mixkit 41229 — Ordering politely at coffee shop counter
+table_reach_water 0.4-6.0 : line 22c : Pexels — Reaching for water carafe at brunch table
+mk12132 0.3-6.8 : line 23 : Mixkit 12132 — Woman listening sincerely to her friend on sofa
+colleague_warm_moment 0.4-7.2 : line 28a : Pexels — Poised woman in cream blouse approaching colleague warmly
+cafe_arrival_smile 0.4-7.5 : line 28c : Pexels — Woman arriving at café table smiling warmly in gratitude
+mk51051 0.5-8.5 : line 28d : Mixkit 51051 — Woman enjoying morning coffee and conversation in garden
+px9520296 0.4-7.5 : line 30a : Pexels 9520296 — Woman in camel coat looking at phone in car (RUDXBR8nyHw 4:08 match)
+desk_notebook_coffee 0.4-6.5 : line 30b : Pexels 10040704 — Woman at desk with planner and coffee (RUDXBR8nyHw 4:37 match)
+nervous_overexplaining_talk 0.4-6.8 : line 32a : Creator/Pexels — Woman speaking rapidly with nervous hand gestures (RUDXBR8nyHw 5:22 match)
+boutique_counter_hanger 0.4-6.8 : line 32b : Pexels — Woman at boutique counter returning hanger
+doorway_warm_decline 0.4-8.5 : line 35 : Pexels — Two women chatting warmly at doorway (RUDXBR8nyHw 5:32 match)
+blazer_desk_calm_no 0.4-8.5 : line 36 : Pexels — Poised woman in tailored blazer smiling calmly at desk
+rushed_street_coffee_watch 0.4-6.2 : line 39 : Pexels — Busy woman walking briskly checking watch with coffee
+coffee_sigh_exhausted 0.4-8.2 : line 40 : Pexels — Woman sighing heavily over coffee with friend
+mk3183 0.5-6.5 : line 41a : Mixkit 3183 — Close friends relaxing on couch together
+cozy_knit_window_calm 0.4-5.5 : line 41b : Pexels — Woman in soft knitwear looking peacefully out window
+dinner_drained_listener 0.4-7.5 : line 42 : Pexels — Listener at café table looking fatigued by complaints
+calm_breath_daylight 0.4-6.5 : line 43b : Pexels — Poised woman breathing calmly in soft natural light
+mk12117 8.5-14.5 : line 44b : Mixkit 12117 — Woman greeted warmly at friend's apartment
+mk41810 0.3-6.5 : line 45a : Mixkit 41810 — Friends chatting warmly in coffee shop
+mk49916 0.3-7.5 : line 46 : Mixkit 49916 — Morning coffee of a poised woman in sunlight
+mk43250 0.3-6.0 : line 49 : Mixkit 43250 — Woman reading with coffee at home
+dinner_interrupt_cut 0.4-6.8 : line 51b : Pexels — Someone cutting in across dinner table
+mk12123 0.5-6.5 : line 52 : Mixkit 12123 — Two women in living room discussion
+storyteller_pauses_awkward 0.4-5.5 : line 53a : Pexels — Storyteller at dinner losing smile after interruption
+dinner_guests_uncomfortable 0.4-5.5 : line 53b : Pexels — Dinner guests looking subtly uncomfortable
+mk12120 1.5-7.2 : line 56b : Mixkit 12120 — Two friends sitting on sofa in calm conversation
+cream_blazer_tea_nod 0.4-6.8 : line 57b : Pexels — Composed woman in cream blazer nodding once over tea
+luxury_hotel_balcony 0.4-6.5 : line 59b : Pexels — Woman on luxury hotel balcony
+fine_dining_champagne 0.4-6.5 : line 59c : Pexels — Fine dining table with champagne glasses
+cafe_group_chatting 0.4-6.5 : line 61a : Pexels — Casual group of friends chatting at café
+leather_bag_wave_off 0.4-6.8 : line 61b : Pexels — Woman holding leather handbag waving off compliment
+mk41810 4.8-9.1 : line 64a : Mixkit 41810 — Two friends smiling over afternoon coffee
+px8922355 5.0-10.5 : line 64b : Pexels 8922355 — Two friends laughing over lunch
+whispering_table_two 0.4-9.8 : line 67 : Mixkit 51237 — Two women leaning in closely at restaurant table
+mk42716 0.5-6.0 : line 68a : Mixkit 42716 — Friends having wine on a terrace balcony
+terrace_woman_quiet_listen 0.4-6.0 : line 68b : Pexels — One woman listening quietly without joining gossip
+mk12122 6.8-12.5 : line 73 : Mixkit 12122 — Two women smiling warmly on sofa as conversation pivots
+px8922355 10.8-18.5 : line 78 : Pexels 8922355 — Two women looking at menu warmly at restaurant table
+mk41221 0.3-7.5 : line 79 : Mixkit 41221 — Warm thank-you exchange at café
+cream_blouse_desk_nod 0.4-7.5 : line 80 : Pexels — Woman in cream blouse nodding warmly at desk
+px9520296 8.0-15.0 : line 81 : Pexels 9520296 — Woman in camel coat smiling warmly before ending phone call
