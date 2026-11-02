@@ -231,3 +231,22 @@ Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF
 83 32/33 words matched
 84 43/44 words matched
 85 52/52 words matched
+[claude/youtube-channel-analysis-lghfsv e51293e] ci(status): step 4 whisper word timings done [skip ci]
+ 3 files changed, 15831 insertions(+)
+ create mode 100644 classy-academy-test/videos/never-say-v2/render-output/words.json
+ create mode 100644 classy-academy-test/videos/never-say-v2/render-output/words_report.txt
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+To https://github.com/DhruvrajZala46/AISalesAgent1
+   ff4a2c5..e51293e  claude/youtube-channel-analysis-lghfsv -> claude/youtube-channel-analysis-lghfsv
+=== Step 5: Assembling Timeline, Audio Mix (-19.5 LUFS + -12dB Solo Piano + Charade Audio) & HTML Stage (build.py) ===
+Traceback (most recent call last):
+  File "/home/runner/work/AISalesAgent1/AISalesAgent1/classy-academy-test/workflow/tools/build.py", line 293, in <module>
+    exec(open(os.path.join(P, 'edit.py')).read())
+  File "<string>", line 507, in <module>
+  File "<string>", line 42, in framed
+  File "<string>", line 48, in _framed
+  File "/home/runner/work/AISalesAgent1/AISalesAgent1/classy-academy-test/workflow/tools/build.py", line 102, in vid
+    assert spec[2] <= a + 0.05 or spec[1] >= b - 0.05, f'{key} {spec[1]}-{spec[2]} repeats footage already shown ({a}-{b}, at {USED.get(key)})'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: mk41810 4.8-9.1 repeats footage already shown (0.3-6.5, at 581.8)
