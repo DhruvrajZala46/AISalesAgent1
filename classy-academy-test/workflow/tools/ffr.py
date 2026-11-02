@@ -1,11 +1,4 @@
 # ffr.py - fast renderer for the video page: same index.html, same timeline, drawn with numpy/OpenCV + FFmpeg
-# instead of a browser screenshot per frame. Text/graphics are captured once from Chrome (ffr_capture.js), so fonts match.
-# Speed here: ~4.3 min per minute of video (the browser renderer: ~11). Checked frame by frame against the browser.
-# usage (inside the work folder, after build.py):
-#   node $T/ffr_capture.js $PWD $PWD $PWD/ff/sprites                 # once per build: text + graphics as PNG sprites
-#   python3 $T/ffr_cmp.py                                             # vs browser snapshots in snapcmp/: every diff < 10
-#   python3 $T/ffr.py . 0 <duration> out/<slug>_v1.mp4 4              # <project> <t0> <t1> <out.mp4> [workers]
-# env: FFR_PRESET (default veryfast), FFR_CRF (default 16).
 import sys, os, re, json, math, subprocess
 from html.parser import HTMLParser
 import numpy as np, cv2
@@ -16,7 +9,6 @@ FPS, W, H = 30, 1920, 1080
 SP = os.path.join(P, 'ff', 'sprites')
 html = open(os.path.join(P, 'index.html'), encoding='utf-8').read()
 
-# ---------------- parse the stage ----------------
 class Node:
     def __init__(s, tag, a, parent):
         s.tag, s.a, s.parent, s.kids = tag, a, parent, []
@@ -36,11 +28,10 @@ body = html[html.index('<div id="root"'):html.index('<script>\nconst tl')]
 pp = Parse(); pp.feed(body); ROOT = pp.root.kids[0]
 px = lambda v: float(str(v).replace('px', '')) if v not in (None, '') else 0.0
 
-# ---------------- parse the timeline ----------------
 def jsobj(s):
-    s = re.sub(r'([{,])\s*"?([A-Za-z_\-][\w\-]*)"?\s*:', r'\1"\2":', s)
+    s = re.sub(r'([,{])\s*"?([A-Za-z_\-][\w\-]*)"?\s*:', r'\1"\2":', s)
     return json.loads(s)
-TW = {}   # id -> prop -> [tween]
+TW = {}
 for m in re.finditer(r'tl\.(fromTo|to|set)\("#([\w]+)",(\{[^}]*\})(?:,(\{[^}]*\}))?,([\d.]+)\);', html):
     kind, id_, a, b, t = m.group(1), m.group(2), jsobj(m.group(3)), m.group(4), float(m.group(5))
     b = jsobj(b) if b else None
@@ -52,8 +43,6 @@ for m in re.finditer(r'tl\.(fromTo|to|set)\("#([\w]+)",(\{[^}]*\})(?:,(\{[^}]*\}
         if k in ('duration', 'ease', 'transformOrigin'): continue
         TW.setdefault(id_, {}).setdefault(k, []).append(dict(t=t, d=d, ease=ease, frm=None if frm is None else frm.get(k), to=v, org=org))
 DUR = float(re.search(r'data-duration="([\d.]+)"', html).group(1))
-for k, v in [('bg', None)]:
-    pass
 m = re.search(r'tl\.fromTo\("#bg",\s*\{\s*x:\s*(-?[\d.]+),\s*y:\s*(-?[\d.]+),\s*rotation:\s*0\s*\},\s*\{\s*x:\s*(-?[\d.]+),\s*y:\s*(-?[\d.]+),\s*rotation:\s*([\d.]+)', html)
 BGT = tuple(float(x) for x in m.groups())
 TW.setdefault('black', {})['opacity'] = [dict(t=0, d=1.0, ease='none', frm=1, to=0, org=None)]
@@ -90,7 +79,6 @@ def origin(id_):
             if z['org']: return z['org']
     return '50% 50%'
 
-# ---------------- colour: CSS filter matrices (sRGB) ----------------
 def m_contrast(c): return np.array([[c, 0, 0, (0.5 - 0.5 * c)], [0, c, 0, (0.5 - 0.5 * c)], [0, 0, c, (0.5 - 0.5 * c)]])
 def m_sat(s): return np.array([[0.213 + 0.787 * s, 0.715 - 0.715 * s, 0.072 - 0.072 * s, 0], [0.213 - 0.213 * s, 0.715 + 0.285 * s, 0.072 - 0.072 * s, 0], [0.213 - 0.213 * s, 0.715 - 0.715 * s, 0.072 + 0.928 * s, 0]])
 def m_sepia(a): return np.array([[0.393 + 0.607 * (1 - a), 0.769 - 0.769 * (1 - a), 0.189 - 0.189 * (1 - a), 0], [0.349 - 0.349 * (1 - a), 0.686 + 0.314 * (1 - a), 0.168 - 0.168 * (1 - a), 0], [0.272 - 0.272 * (1 - a), 0.534 - 0.534 * (1 - a), 0.131 + 0.869 * (1 - a), 0]])
@@ -105,9 +93,7 @@ def bgr(M):
 GRADE = bgr(chain(m_contrast(1.03), m_sat(0.95), m_sepia(0.05)))
 CANVASBG = bgr(chain(m_bright(0.82), m_sat(0.9)))
 
-# ---------------- media ----------------
 class Clip:
-    """Sequential frame reader for a prepared 720x1280 clip, frame index = floor((t-start)*fps)."""
     def __init__(s, f, start):
         s.f, s.start = os.path.join(P, f), start; s.p = None; s.idx = -1; s.frame = None; s.done = False; s.last = start
         pr = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', s.f], capture_output=True, text=True).stdout.split(',')
@@ -129,19 +115,20 @@ def load_sprite(key):
     im = cv2.imread(os.path.join(SP, key + '.png'), cv2.IMREAD_UNCHANGED)
     if im.shape[2] == 3: im = np.dstack([im, np.full(im.shape[:2], 255, np.uint8)])
     rgb = im[..., :3].astype(np.float32); a = im[..., 3:4].astype(np.float32) / 255
-    return rgb * a, a          # premultiplied
+    return rgb * a, a
 SPR = json.load(open(os.path.join(SP, 'sprites.json')))
 
-# ---------------- build layers ----------------
 TEXTZ = {'card': 49, 'hint': 45, 'q1': 45, 'q2': 45, 'qr1': 45, 'qr2': 45, 'qs1': 45, 'qs2': 45, 'gtx1': 45, 'gtx2': 45, 'rcp': 45,
-         'title': 45, 'cl': 46, 'hd': 46, 'chk': 46, 'logo': 47, 'endlogo': 62, 'ann': 46, 'alab': 46, 'kick': 46}
-layers = []   # (z, order, layer)
+         'title': 45, 'cl': 46, 'hd': 46, 'chk': 46, 'logo': 47, 'endlogo': 62, 'ann': 46, 'alab': 46, 'kick': 46, 'ph': 46, 'wordc': 46}
+layers = []
 def vwin(v): return float(v.a.get('data-start')), float(v.a.get('data-start')) + float(v.a.get('data-duration'))
 for order, n in enumerate(ROOT.kids):
     c = n.cls
     if n.id == 'bg': layers.append((0, order, dict(kind='bg'))); continue
+    if 'cream' in c: layers.append((0, order, dict(kind='fill', id=n.id, col=(228, 237, 245), a=1.0))); continue
     if 'w' in c:
         x0, y0, w, h = px(n.style.get('left')), px(n.style.get('top')), px(n.style.get('width')), px(n.style.get('height'))
+        rad = px(n.style.get('border-radius'))
         canv = [k for k in n.kids if 'canvas' in k.cls]
         if canv:
             bgv = canv[0].kids[0]; fgw = [k for k in n.kids if 'w' in k.cls][0]; fgv = fgw.kids[0]
@@ -149,11 +136,11 @@ for order, n in enumerate(ROOT.kids):
                                           fx=px(fgw.style.get('left')), fw=px(fgw.style.get('width')))))
         else:
             vids = [k for k in n.kids if k.tag == 'video']
-            layers.append((0, order, dict(kind='box', id=n.id, x=x0, y=y0, w=w, h=h,
+            layers.append((0, order, dict(kind='box', id=n.id, x=x0, y=y0, w=w, h=h, rad=rad,
                                           vids=[dict(id=v.id, src=v.a['src'], win=vwin(v), grade='filter' in (v.a.get('style') or '')) for v in vids])))
         continue
     if 'white' in c or 'endwhite' in c: layers.append((48 if 'white' in c else 61, order, dict(kind='fill', id=n.id, col=(255, 255, 255), a=1.0))); continue
-    if 'haze' in c: layers.append((44, order, dict(kind='fill', id=n.id, col=(228, 238, 248), a=0.42))); continue      # rgba(248,238,228,.42) in BGR
+    if 'haze' in c: layers.append((44, order, dict(kind='fill', id=n.id, col=(228, 238, 248), a=0.42))); continue
     if 'black' in c: layers.append((60, order, dict(kind='fill', id='black', col=(0, 0, 0), a=1.0))); continue
     z = next((TEXTZ[k] for k in c if k in TEXTZ), None)
     if z is not None and n.id:
@@ -166,12 +153,28 @@ def sprite(key):
     if key not in CACHE: CACHE[key] = load_sprite(key)
     return CACHE[key]
 
-# ---------------- drawing helpers (float32 premultiplied BGR canvas) ----------------
-def affine(scale, ox, oy, tx, ty):
-    # x' = ox + (x-ox)*s + tx
-    return np.array([[scale, 0, ox - ox * scale + tx], [0, scale, oy - oy * scale + ty]], np.float32)
+RMASK = {}
+SHADOW = {}
+def rmask(h, w, r):
+    key = (h, w, int(round(r)))
+    if key not in RMASK:
+        ri = int(round(r))
+        m = np.zeros((h * 2, w * 2), np.uint8)
+        cv2.rectangle(m, (ri * 2, 0), ((w - ri) * 2, h * 2), 255, -1)
+        cv2.rectangle(m, (0, ri * 2), (w * 2, (h - ri) * 2), 255, -1)
+        for cx, cy in [(ri * 2, ri * 2), ((w - ri) * 2, ri * 2), (ri * 2, (h - ri) * 2), ((w - ri) * 2, (h - ri) * 2)]:
+            cv2.circle(m, (cx, cy), ri * 2, 255, -1, lineType=cv2.LINE_AA)
+        mf = cv2.resize(m, (w, h), interpolation=cv2.INTER_AREA).astype(np.float32)[..., None] / 255.0
+        RMASK[key] = mf
+        pad = 80
+        sh = np.zeros((h + 2 * pad, w + 2 * pad, 1), np.float32)
+        sh[pad:pad + h, pad:pad + w] = mf
+        sh = cv2.GaussianBlur(sh, (0, 0), 22.0)[..., None] * 0.26
+        sh_col = np.array([20, 40, 70], np.float32) * sh
+        SHADOW[key] = (sh_col, sh, pad)
+    return RMASK[key], SHADOW[key]
+
 def comp(dst, rgb, a, M, op):
-    """Composite premultiplied (rgb, a) through affine M (src->dst) with opacity op."""
     if op <= 0.002: return
     if M is None and rgb.shape[:2] == dst.shape[:2]:
         dst *= (1 - a * op); dst += rgb * op; return
@@ -192,27 +195,25 @@ def comp(dst, rgb, a, M, op):
     reg = dst[y0:y1, x0:x1]
     reg *= (1 - aa * op); reg += r * op
 def cover(frame, w, h, drift, grade):
-    """object-fit: cover of a source frame into w x h, then CSS scale(drift) about the centre, clipped to the box."""
     fh, fw = frame.shape[:2]; s = max(w / fw, h / fh) * drift
     M = np.array([[s, 0, w / 2 - fw * s / 2], [0, s, h / 2 - fh * s / 2]], np.float32)
     out = cv2.warpAffine(frame, M, (int(round(w)), int(round(h))), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
     if grade is not None: out = cv2.transform(out, grade)
     return out.astype(np.float32)
-ONES = {}
-def ones(h, w):
-    if (h, w) not in ONES: ONES[(h, w)] = np.ones((h, w, 1), np.float32)
-    return ONES[(h, w)]
 def wipe_alpha(w, p):
-    """mask: linear-gradient(90deg,#000 45%,transparent 55%), mask-size 220%, mask-position p% (p: 100 hidden -> 0 shown)."""
     x = np.arange(w, dtype=np.float32) + 0.5; mw = 2.2 * w; off = (w - mw) * p / 100.0
     mx = x - off
     a = np.clip((0.55 * mw - mx) / (0.10 * mw), 0, 1)
     return a[None, :, None]
 
 BG = None
-ROOTC = np.array([98, 141, 195], np.float32)       # #c38d62 (BGR)
+BGCACHE = {}
+ROOTC = np.array([98, 141, 195], np.float32)
 def draw_bg(dst, t):
     global BG
+    q = int(t * 2)
+    if q in BGCACHE:
+        np.copyto(dst, BGCACHE[q]); return
     m = SPR['bg_all']
     if BG is None:
         rgb, a = sprite('bg_all'); BG = rgb + ROOTC * (1 - a)
@@ -222,6 +223,7 @@ def draw_bg(dst, t):
     R = cv2.getRotationMatrix2D((cx - m['x'], cy - m['y']), -rot, 1.0).astype(np.float32)
     R[0, 2] += m['x'] + tx; R[1, 2] += m['y'] + ty
     cv2.warpAffine(BG, R, (W, H), dst=dst, flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=tuple(float(x) for x in ROOTC))
+    BGCACHE.clear(); BGCACHE[q] = dst.copy()
 
 CLIPS = {}
 def clip(src, start):
@@ -229,7 +231,6 @@ def clip(src, start):
     return CLIPS[src]
 BLURBG = {}
 def canvas_bg(src, frame, t):
-    # .canvas inset:-60px -> 2040x1200 at (-60,-60); object-fit cover; blur(38px) brightness(.82) saturate(.9)
     key = (src, id(frame))
     if key in BLURBG: return BLURBG[key]
     q = 4; w, h = 2040 // q, 1200 // q; pad = 48
@@ -239,7 +240,7 @@ def canvas_bg(src, frame, t):
     big = np.zeros((h + 2 * pad, w + 2 * pad, 4), np.float32)
     big[pad:pad + h, pad:pad + w, :3] = small; big[pad:pad + h, pad:pad + w, 3] = 1
     big = cv2.GaussianBlur(big, (0, 0), 38 / q)
-    M = np.array([[q, 0, -(pad * q + 60) + (q - 1) / 2], [0, q, -(pad * q + 60) + (q - 1) / 2]], np.float32)   # region starts at (-60,-60): .canvas inset -60px
+    M = np.array([[q, 0, -(pad * q + 60) + (q - 1) / 2], [0, q, -(pad * q + 60) + (q - 1) / 2]], np.float32)
     up = cv2.warpAffine(big, M, (W, H), flags=cv2.INTER_LINEAR)
     res = (up[..., :3], up[..., 3:4]); BLURBG.clear(); BLURBG[key] = res
     return res
@@ -263,9 +264,12 @@ def render(t):
                 content *= (1 - vo); content += img * vo; ca *= (1 - vo); ca += vo
             s = val(L['id'], 'scale', t, 1.0); ty = val(L['id'], 'y', t, 0.0)
             ox, oy = [float(z.strip('%')) / 100 for z in origin(L['id']).split()]
-            M = affine(s, L['x'] + w * ox, L['y'] + h * oy, 0, ty); M[0, 2] += L['x'] * s; M[1, 2] += L['y'] * s
-            # affine() maps local box coords about the origin; build explicitly instead:
             M = np.array([[s, 0, L['x'] + w * ox - w * ox * s], [0, s, L['y'] + h * oy - h * oy * s + ty]], np.float32)
+            if L.get('rad', 0) > 0:
+                rm, (sh_col, sh_a, pad) = rmask(h, w, L['rad'])
+                content *= rm; ca *= rm
+                Ms = np.array([[1, 0, L['x'] - pad], [0, 1, L['y'] + 26 - pad + ty]], np.float32)
+                comp(dst, sh_col, sh_a, Ms, op)
             comp(dst, content, ca, M, op)
         elif k == 'canvas':
             op = val(L['id'], 'opacity', t, 0.0)
@@ -308,15 +312,15 @@ def render(t):
                 comp(dst, rgb, a, M, op * max(0.0, min(1.0, po)))
     return dst
 
-# ---------------- run: split the range across workers, encode, concat, add audio ----------------
 def run_part(i, a, b, path):
+    cv2.setNumThreads(1)
     enc = subprocess.Popen(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
                             '-c:v', 'libx264', '-preset', os.environ.get('FFR_PRESET', 'veryfast'), '-crf', os.environ.get('FFR_CRF', '16'), '-pix_fmt', 'yuv420p', '-g', '60', path], stdin=subprocess.PIPE)
     k0, k1 = int(round(a * FPS)), int(round(b * FPS))
     for k in range(k0, k1):
         f = render(k / FPS)
         enc.stdin.write(cv2.convertScaleAbs(f).tobytes())
-        for src in list(CLIPS):                      # free decoders of clips that left the screen (memory)
+        for src in list(CLIPS):
             if k / FPS - CLIPS[src].last > 1.0: CLIPS.pop(src).close()
     enc.stdin.close(); enc.wait()
     for c in CLIPS.values(): c.close()
@@ -337,8 +341,8 @@ if __name__ == '__main__':
             procs.append(pid)
         for pid in procs:
             _, st = os.waitpid(pid, 0)
-            assert st == 0, f'render worker {pid} failed (status {st}) - out of memory? use fewer workers'
-        for i, pth in enumerate(parts):              # every part must hold exactly its frames
+            assert st == 0, f'render worker {pid} failed (status {st})'
+        for i, pth in enumerate(parts):
             n = int(subprocess.run(['ffprobe', '-v', 'error', '-count_packets', '-select_streams', 'v:0', '-show_entries', 'stream=nb_read_packets',
                                     '-of', 'csv=p=0', pth], capture_output=True, text=True).stdout.strip() or 0)
             want = int(round(bounds[i + 1] * FPS)) - int(round(bounds[i] * FPS))

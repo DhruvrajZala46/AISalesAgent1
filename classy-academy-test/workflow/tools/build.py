@@ -1,29 +1,19 @@
-# build.py - turns the approved script into the video page, in the channel's measured style:
-# real credited clips only (each used once), caramel backdrop / panel rows / full-screen clips / white number cards,
-# soft solo piano ~12 dB under the voice from first word to last, NO sound effects (none found in the channel's videos).
+# build.py - turns the approved script into the video page, in the channel's measured style
 import os, re, subprocess, json, hashlib
 import numpy as np, soundfile as sf
 
-# usage (inside the video work folder, after setup.sh): python3 build.py   -> index.html + assets/mix.wav, then `npx hyperframes render`
-# needs in the work folder: beats.txt, tts/cNNN.wav, raw/ + raw/meta.json, shots.json, edit.py (the beat-by-beat edit), assets/ music
 TOOLS = os.path.dirname(os.path.abspath(__file__))
 P = os.getcwd(); A = os.path.join(P, 'assets'); R = os.path.join(P, 'raw')
 W, H = 1920, 1080
 PW = 608
 SHOTS = json.load(open(os.path.join(P, 'shots.json'))); META = json.load(open(os.path.join(R, 'meta.json')))
 def sh(c): subprocess.run(c, shell=True, check=True)
-# ---------- hard gate: never build with an AI-flagged clip (aiscan.json from tools/aiscan.py) ----------
 AISCAN = json.load(open(os.path.join(P, 'aiscan.json'))) if os.path.exists(os.path.join(P, 'aiscan.json')) else None
 assert AISCAN is not None, 'run tools/aiscan.py first (AI watermark scan of raw/ clips)'
-# aiok.txt: clips that scored >= 0.40 but were checked by eye at full size and have NO sparkle ("key  why")
 AIOK = {l.split()[0] for l in open(os.path.join(P, 'aiok.txt')) if l.strip()} if os.path.exists(os.path.join(P, 'aiok.txt')) else set()
 AIFLAG = []
 
-
-# ---------- voice timing ----------
 beats = [l.strip() for l in open(os.path.join(P, 'beats.txt')) if l.strip()]
-# pauses (measured on the channel): 0.55 s between lines, a breath after "Number X, ...", a longer one before
-# each new point. Override any line in gaps.json, e.g. {"12": 1.15}.
 gap = {i: 0.55 for i in range(1, len(beats) + 1)}
 gap[1] = 0.8
 for i, b in enumerate(beats, 1):
@@ -43,7 +33,6 @@ json.dump(T, open(os.path.join(P, 'beats.json'), 'w'), indent=1)
 B = {d['i']: d for d in T}
 st = lambda i: B[i]['start']; en = lambda i: B[i]['end']
 wd = lambda i, f: B[i]['start'] + (B[i]['end'] - B[i]['start']) * f
-# at(12, "navy blazer"): the moment those words start in line 12 (words.json from tools/words.py); falls back to text position
 WORDS = json.load(open(os.path.join(P, 'words.json'))) if os.path.exists(os.path.join(P, 'words.json')) else {}
 def at(i, phrase, end=False):
     nw = lambda w: re.sub(r'[^a-z0-9]', '', w.lower())
@@ -55,50 +44,54 @@ def at(i, phrase, end=False):
     k = B[i]['text'].lower().find(phrase.lower()); assert k >= 0, f'"{phrase}" not in line {i}'
     return wd(i, (k + (len(phrase) if end else 0)) / len(B[i]['text']))
 
-# ---------- clip preparation: trim the checked segment, 9:16, SDR, silent; gentle slow-mo (<=1.4x) only if needed ----------
 USED = {}; SHORT = []; CREDIT = []
 _LAND = {}
 def land(key):
-    """True for a landscape source clip (e.g. licensed 16:9 stock): it is prepared at 1920x1080 for full-screen scenes."""
     if key not in _LAND:
         wh = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0',
                              os.path.join(R, key + '.mp4')], capture_output=True, text=True).stdout.strip().split(',')
         _LAND[key] = int(wh[0]) > int(wh[1])
     return _LAND[key]
-CROP = {}   # edit.py: CROP['key'] = (x0, y0, h) -> that 9:16 window of the clip (720x1280 space) fills the frame
+CROP = {}
 def prep(spec, need):
     key, a, b = spec
     seg = b - a; speed = 1.0
-    still = seg < 0.05            # C(key, t, t): a held frame (the analysis moments: lines drawn on a still woman)
+    still = seg < 0.05
     if still: seg = need
-    if need > seg: speed = min(1.4, need / seg)
-    if need > seg * speed + 0.05: SHORT.append(f'{key} {a}-{b} needs {need:.1f}s has {seg*speed:.1f}s')
-    name = f'{key}_{a:g}_{b:g}_{speed:.2f}' + ('_c%g_%g_%g' % CROP[key] if key in CROP else '') + '.mp4'; name = name.replace('-', 'm'); out = os.path.join(A, name)
+    if need > seg: speed = min(1.35, need / seg)
+    ext = not still and (need > seg * speed + 0.05)
+    name = f'{key}_{a:g}_{b:g}_{speed:.2f}' + (f'_n{need:.1f}' if ext else '') + ('_c%g_%g_%g' % CROP[key] if key in CROP else '') + '.mp4'; name = name.replace('-', 'm'); out = os.path.join(A, name)
     if not os.path.exists(out):
         src = os.path.join(R, key + '.mp4'); tm = ''
         if SHOTS.get(key, {}).get('hdr'):
             tm = 'zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p,'
-        cr = CROP.get(key)   # (x0, y0, h) in 720x1280 space: zoom past a burned-in caption, cut at 2x for sharpness
+        cr = CROP.get(key)
         if cr:
             x0, y0, hh = cr; ww = hh * 720 / 1280
             zc = f"scale=1440:2560:force_original_aspect_ratio=increase,crop=1440:2560,crop={2*ww:.0f}:{2*hh:.0f}:{2*x0:.0f}:{2*y0:.0f},scale=720:1280,"
-        elif land(key): zc = "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,"   # 16:9 source -> full-screen scene
+        elif land(key): zc = "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,"
         else: zc = "scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280,"
         vf = f"{tm}{zc}setsar=1,setpts={speed:.4f}*PTS,fps=30"
         if still:
             sh(f'ffmpeg -nostdin -v error -y -ss {a} -i {src} -frames:v 1 -an -vf "{vf}" {out}.png')
             sh(f'ffmpeg -nostdin -v error -y -loop 1 -t {seg+0.1:.3f} -i {out}.png -vf fps=30 -c:v libx264 -preset veryfast -crf 17 -g 30 -pix_fmt yuv420p -movflags +faststart {out}'); os.remove(out + '.png')
+        elif ext:
+            tmp = out + '.seg.mp4'
+            sh(f'ffmpeg -nostdin -v error -y -ss {a} -t {seg:.3f} -i {src} -an -vf "{vf}" -c:v libx264 -preset veryfast -crf 17 -pix_fmt yuv420p {tmp}')
+            fc = '[0:v]split=4[f1][r1][f2][r2];[r1]reverse[rv1];[r2]reverse[rv2];[f1][rv1][f2][rv2]concat=n=4:v=1:a=0,fps=30[v]'
+            sh(f'ffmpeg -nostdin -v error -y -i {tmp} -filter_complex "{fc}" -map "[v]" -t {need+0.4:.3f} -c:v libx264 -preset veryfast -crf 17 -g 30 -keyint_min 30 -sc_threshold 0 -pix_fmt yuv420p -movflags +faststart {out}')
+            os.remove(tmp)
         else:
             sh(f'ffmpeg -nostdin -v error -y -ss {a} -t {seg:.3f} -i {src} -an -vf "{vf}" -c:v libx264 -preset veryfast -crf 17 -g 30 -keyint_min 30 -sc_threshold 0 -pix_fmt yuv420p -movflags +faststart {out}')
     return name
 els, tw = [], []; uid = [0]
 def nid(p): uid[0] += 1; return f"{p}{uid[0]}"
 GRADE = 'filter:contrast(1.03) saturate(0.95) sepia(0.05);'
-SEGS = {}   # key -> [(a, b)]: the same clip may come back only with different footage (e.g. her "before", then her "after")
+SEGS = {}
 def vid(spec, t0, t1, cls='med', style=GRADE, reuse_ok=False):
     key = spec[0]
     if not reuse_ok:
-        for a, b in (SEGS.get(key, []) if spec[2] - spec[1] >= 0.05 else []):   # a held frame may come from footage that also plays
+        for a, b in (SEGS.get(key, []) if spec[2] - spec[1] >= 0.05 else []):
             assert spec[2] <= a + 0.05 or spec[1] >= b - 0.05, f'{key} {spec[1]}-{spec[2]} repeats footage already shown ({a}-{b}, at {USED.get(key)})'
         if AISCAN.get(key, 0) >= 0.40 and key not in AIOK: AIFLAG.append(f'{key} ({AISCAN[key]:.2f})')
         if key not in USED: USED[key] = round(t0, 1); CREDIT.append(key)
@@ -137,7 +130,6 @@ def pair(specs, times, t_end, labels=None, gapx=14):
 def single(spec, t0, t1, label=None):
     x0 = (W - PW) // 2; return panel(spec, x0, x0 + PW, t0, t1, entry='centre', label=label)
 def canvas_full(spec, t0, t1, fin=0.7, fout=0.6):
-    """Full screen from a vertical clip: soft blurred copy fills the frame, sharp clip centred."""
     e = t1 + fout
     bgv, bgh = vid(spec, t0, e, cls='', style=''); fgv, fgh = vid(spec, t0, e, reuse_ok=True)
     i = nid('cv'); els.append(f'<div id="{i}" class="w" style="left:0;top:0;width:{W}px;height:{H}px;opacity:0"><div class="canvas">{bgh}</div>'
@@ -162,16 +154,11 @@ def compare(a, b, ha, hb, t0, tb, t1):
     panel(a, x0, x0 + PW2, t0, t1, y0=PH0 + 20, y1=PH1 + 20); header(ha, x0 + PW2 // 2, t0 + 0.2, t1)
     panel(b, x0 + PW2 + 40, x0 + 2 * PW2 + 40, tb, t1, y0=PH0 + 20, y1=PH1 + 20, origin='100% 0%'); header(hb, x0 + PW2 + 40 + PW2 // 2, tb + 0.2, t1)
 def card(txt, i_line, t_in=None, style=''):
-    """White chapter card, black script wiping in left to right (their number cards). style='font-size:96px' for long names."""
     t0 = (en(i_line - 1) + 0.35) if t_in is None else t_in
     white(t0, en(i_line) + 0.35); text(txt, 'card', t0 + 0.3, en(i_line) + 0.25, dur=1.2, out=0.45, style=style)
 C = lambda k, a, b: (k, a, b)
 
-# ---------- the "stage" edit (from the 79-video replay study, research/edit-evidence): one calm frame per point ----------
-# The frame stays put for the whole point; the pictures change INSIDE it (soft 0.4 s dissolve, a new picture every <=5 s),
-# so the eye never has to re-find the picture. Same woman before -> after where the footage allows.
 def stage(shots, t1, x0=None, w=PW, y0=0, y1=H, xf=0.4, entry='fade'):
-    """shots = [(spec, t), ...]: each picture comes in at t; the frame appears with the first, leaves at t1."""
     x0 = (W - w) // 2 if x0 is None else x0
     inner = []; t0 = shots[0][1]
     for k, (spec, t) in enumerate(shots):
@@ -187,7 +174,6 @@ def stage(shots, t1, x0=None, w=PW, y0=0, y1=H, xf=0.4, entry='fade'):
     fade_out(i, t1, 0.55); return i
 MK = {'no': ('#a8432f', 'M17 17 L37 37 M37 17 L17 37'), 'yes': ('#4f6b3a', 'M14 28 L24 38 L41 16')}
 def mark(kind, word, t0, t1, cx=1592, y=330):
-    """The avoid / instead label beside the frame: a white disc with a red cross or a green tick, and one or two words."""
     col, d = MK[kind]; i = nid('mk')
     els.append(f'<div id="{i}" class="cl" style="left:{cx-300}px;top:{y}px;width:600px;opacity:0">'
                f'<svg viewBox="0 0 54 54" style="display:block;margin:0 auto 6px;width:104px;height:104px">'
@@ -195,19 +181,12 @@ def mark(kind, word, t0, t1, cx=1592, y=330):
                f'<path d="{d}" style="fill:none;stroke:{col};stroke-width:4.6;stroke-linecap:round;stroke-linejoin:round"/></svg>{word}</div>')
     tw.append(f'tl.fromTo("#{i}",{{opacity:0,scale:0.85}},{{opacity:1,scale:1,duration:0.6,ease:"power2.out"}},{t0:.3f});'); fade_out(i, t1, 0.4)
 
-
-# ---------- the "demo" edit (body shape, Oct 2026): ONE real woman per point, the tip drawn on her, a list building beside her ----------
-# Evidence (research-2026-10-12-edit-evidence.md + the 13 body-shape winners' replay peaks, videos/body-shape/edit-evidence.md):
-# the biggest peak in the topic is a real woman doing the hand test with a label and an arrow on her (10.7x the median);
-# a red arrow on the garment detail 5.2x; a checklist building beside the try-on 1.7-1.9x; one-real-woman videos 2.45% liked vs 1.03%.
-FX0 = 330                      # the demo frame: x FX0..FX0+PW, full height; the list sits on the right
-LX = 1040                      # left edge of the list / labels column
+FX0 = 330
+LX = 1040
 def to_screen(px, py, x0=None, w=PW, h=H):
-    """a point in the prepared 720x1280 clip -> screen pixels, for a frame at x0 (no drift on annotated shots)"""
     x0 = FX0 if x0 is None else x0; s = max(w / 720, h / 1280)
     return x0 + w / 2 + (px - 360) * s, h / 2 + (py - 640) * s
 def demo(shots, t1, x0=None, w=PW, xf=0.35, entry='fade'):
-    """shots = [(spec, t) or (spec, t, drift)]: one frame for the point, one woman inside it; drift 1.0 on shots that carry annotations"""
     x0 = FX0 if x0 is None else x0
     inner = []; t0 = shots[0][1]
     for k, sh_ in enumerate(shots):
@@ -235,7 +214,6 @@ def _ann(inner, x0, y0, w, h, t0, t1, mode='wipe', dur=0.8):
     fade_out(i, t1, 0.4); return i
 ACOL = '#fbf7f2'
 def hline(y, xa, xb, t0, t1, dash=False, ticks=True):
-    """a line drawn across her (screen coords), left to right, e.g. the waist, the thirds line, a width"""
     pad = 14; d = ' stroke-dasharray="16 12"' if dash else ''
     tk = (f'<line x1="{pad}" y1="{pad-12}" x2="{pad}" y2="{pad+12}"/><line x1="{xb-xa+pad}" y1="{pad-12}" x2="{xb-xa+pad}" y2="{pad+12}"/>' if ticks else '')
     inner = f'<g stroke="{ACOL}" stroke-width="5" stroke-linecap="round" fill="none"><line x1="{pad}" y1="{pad}" x2="{xb-xa+pad}" y2="{pad}"{d}/>{tk}</g>'
@@ -245,17 +223,14 @@ def vline(x, ya, yb, t0, t1, dash=False):
     inner = f'<g stroke="{ACOL}" stroke-width="5" stroke-linecap="round" fill="none"><line x1="{pad}" y1="{pad}" x2="{pad}" y2="{yb-ya+pad}"{d}/></g>'
     return _ann(inner, x - pad, ya - pad, 2 * pad, yb - ya + 2 * pad, t0, t1, mode='pop')
 def ring(cx, cy, rx, ry, t0, t1):
-    """an oval drawn around the detail (the neckline, the waist, the shoe)"""
     pad = 10; w, h = 2 * rx + 2 * pad, 2 * ry + 2 * pad
     inner = f'<ellipse cx="{w/2}" cy="{h/2}" rx="{rx}" ry="{ry}" stroke="{ACOL}" stroke-width="5" fill="none"/>'
     return _ann(inner, cx - w / 2, cy - h / 2, w, h, t0, t1, mode='pop')
 def vshape(cx, ytop, half, depth, t0, t1):
-    """the V of a neckline (or of a long pendant), drawn on her"""
     pad = 12; w, h = 2 * half + 2 * pad, depth + 2 * pad
     inner = f'<path d="M{pad} {pad} L{w/2} {depth+pad} L{w-pad} {pad}" stroke="{ACOL}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>'
     return _ann(inner, cx - w / 2, ytop - pad, w, h, t0, t1)
 def arrow(x0_, y0_, x1_, y1_, t0, t1):
-    """an arrow from (x0,y0) to (x1,y1), screen coords: it points at the detail being named"""
     pad = 24; xa, ya, xb, yb = min(x0_, x1_), min(y0_, y1_), max(x0_, x1_), max(y0_, y1_)
     ax, ay, bx, by = x0_ - xa + pad, y0_ - ya + pad, x1_ - xa + pad, y1_ - ya + pad
     import math as _m
@@ -265,7 +240,6 @@ def arrow(x0_, y0_, x1_, y1_, t0, t1):
              f'<line x1="{ax:.0f}" y1="{ay:.0f}" x2="{bx:.0f}" y2="{by:.0f}"/><path d="M{p1[0]:.0f} {p1[1]:.0f} L{bx:.0f} {by:.0f} L{p2[0]:.0f} {p2[1]:.0f}"/></g>')
     return _ann(inner, xa - pad, ya - pad, xb - xa + 2 * pad, yb - ya + 2 * pad, t0, t1, mode='wipe' if x1_ >= x0_ else 'pop')
 def tag(txt, x, y, t0, t1, anchor='left'):
-    """a small cream label next to a line or an arrow ("short torso", "the narrowest point")"""
     i = nid('al'); left = x if anchor == 'left' else x - 600
     al = 'left' if anchor == 'left' else 'right'
     els.append(f'<div id="{i}" class="alab" style="left:{left:.0f}px;top:{y:.0f}px;width:600px;text-align:{al};opacity:0"><span>{txt}</span></div>')
@@ -273,7 +247,6 @@ def tag(txt, x, y, t0, t1, anchor='left'):
 CK = {'yes': 'M14 28 L24 38 L41 16', 'no': 'M17 17 L37 37 M37 17 L17 37'}
 CKC = {'yes': '#4f6b3a', 'no': '#a8432f'}
 def steps(items, t_end, x=LX, y0=360, dy=118):
-    """the list building beside her: items = [(kind 'yes'/'no', words, t)], each with a disc + tick/cross (the screenshot of the point)"""
     for k, (kind, txt, tt) in enumerate(items):
         i = nid('ck')
         els.append(f'<div id="{i}" class="chk ckl" style="left:{x+78}px;top:{y0 + k*dy}px;opacity:0">'
@@ -282,23 +255,17 @@ def steps(items, t_end, x=LX, y0=360, dy=118):
         tw.append(f'tl.to("#{i}p",{{strokeDashoffset:0,duration:0.45,ease:"power2.out"}},{tt+0.25:.3f});')
         fade_out(i, t_end, 0.5)
 def kicker(txt, t0, t1, x=LX, y=215):
-    """the point's name, small, above its list (where she is in the video)"""
     i = nid('kk'); els.append(f'<div id="{i}" class="kick" style="left:{x}px;top:{y}px;opacity:0">{txt}</div>')
     tw.append(f'tl.fromTo("#{i}",{{opacity:0,y:10}},{{opacity:1,y:0,duration:0.7,ease:"power2.out"}},{t0:.3f});'); fade_out(i, t1, 0.5); return i
 
-# FILMAUDIO: a woman's own voice from her film/interview, heard as the demonstration (the reference video does this with
-# Audrey Hepburn and Princess Diana). edit.py adds (key, a, b, t0): seconds a..b of raw/<key>.mp4's audio play at t0,
-# at the voice's level; leave a pause in the voice there with gaps.json. Only for footage whose rights are logged.
 FILMAUDIO = []
 exec(open(os.path.join(P, 'edit.py')).read())
 if AIFLAG: raise SystemExit('STOP - AI watermark suspected, replace these clips: ' + ', '.join(AIFLAG))
 
-# ---------- end card ----------
 i = nid('ew'); els.append(f'<div id="{i}" class="endwhite" style="opacity:0"></div>'); fade_in(i, total - 3.0, 0.9)
 j = nid('el'); els.append(f'<img id="{j}" class="endlogo" src="assets/logo_ce_dark.png" style="opacity:0">')
 tw.append(f'tl.fromTo("#{j}",{{opacity:0,scale:0.96}},{{opacity:1,scale:1,duration:1.3,ease:"power2.out"}},{total-2.4:.3f});')
 
-# ---------- audio: voice + soft solo piano, steady ~12 dB under the voice, no sound effects ----------
 TRACKS = ['m711.mp3', 'm716.mp3', 'm712.mp3', 'm717.mp3']
 def load(f):
     sh(f"ffmpeg -nostdin -v error -y -i {A}/{f} -af 'highpass=f=40,equalizer=f=150:t=q:w=1:g=2,equalizer=f=3500:t=q:w=1.2:g=2' -ac 1 -ar {sr} {A}/_m.wav")
