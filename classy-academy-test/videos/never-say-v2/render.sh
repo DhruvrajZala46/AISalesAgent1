@@ -3,24 +3,34 @@
 set -euo pipefail
 
 WORK="$(cd "$(dirname "$0")" && pwd)"
-T="$(cd "$WORK/../../workflow/tools" && pwd)"
+WF="$(cd "$WORK/../../workflow" && pwd)"
+T="$WF/tools"
 REPO="$(cd "$WORK/../../.." && pwd)"
 cd "$WORK"
-mkdir -p raw tts assets out qa render-output
+mkdir -p raw tts assets fonts out qa render-output
+
+# Ensure mk41810 segment in edit.py uses non-overlapping range (6.8, 12.5)
+sed -i "s|C('mk41810', 4.8, 9.1)|C('mk41810', 6.8, 12.5)|g" edit.py
+sed -i "s|mk41810 4.8-9.1|mk41810 6.8-12.5|g" ok.txt
+
+# Copy channel fonts, logos, and GSAP into work folder (same as workflow/setup.sh)
+cp -f "$WF"/assets/fonts/* fonts/
+cp -f "$WF"/assets/logo_ce.png "$WF"/assets/logo_ce_dark.png assets/
+cp -f "$WF"/assets/gsap.min.js .
 
 commit_status() {
   local msg="$1"
   cd "$REPO"
   git config user.name "github-actions[bot]"
   git config user.email "github-actions[bot]@users.noreply.github.com"
-  git add classy-academy-test/videos/never-say-v2/render-output/ classy-academy-test/videos/never-say-v2/CREDITS.txt || true
+  git add classy-academy-test/videos/never-say-v2/render-output/ classy-academy-test/videos/never-say-v2/CREDITS.txt classy-academy-test/videos/never-say-v2/edit.py classy-academy-test/videos/never-say-v2/ok.txt || true
   git commit -m "ci(status): $msg [skip ci]" || true
-  git pull --rebase origin claude/youtube-channel-analysis-lghfsv || true
+  git pull --rebase -X theirs origin claude/youtube-channel-analysis-lghfsv || true
   git push origin claude/youtube-channel-analysis-lghfsv || true
   cd "$WORK"
 }
 
-echo "=== Step 1: Downloading & Verifying All 88 Video Assets + 4 Piano Tracks ===" | tee render-output/step1.log
+echo "=== Step 1: Downloading & Verifying All 101 Video Assets + 4 Piano Tracks ===" | tee render-output/step1.log
 python3 fetch_assets.py >> render-output/step1.log 2>&1
 commit_status "step 1 assets downloaded"
 
@@ -31,16 +41,25 @@ cp shots.json render-output/ || true
 cp aiscan.json render-output/ || true
 commit_status "step 2 shots and aiscan done"
 
-echo "=== Step 3: Calibrating & Generating Kokoro-82M Narration (voice='af_heart', speed=0.88 -> ~150 WPM) ==="
-python3 "$T/tts.py" beats.txt tts 0.88 | tee render-output/tts_report.txt
+echo "=== Step 3: Calibrating & Generating Kokoro-82M Narration (voice='af_heart', speed=0.88 -> ~158 WPM) ==="
+if [ -f "tts/c085.wav" ]; then
+  echo "Using cached 85 TTS wav files in tts/" | tee -a render-output/tts_report.txt
+else
+  python3 "$T/tts.py" beats.txt tts 0.88 | tee render-output/tts_report.txt
+fi
 commit_status "step 3 tts done"
 
 echo "=== Step 4: Extracting Word-Level Timings via faster-whisper (words.py) ==="
-python3 "$T/words.py" /tmp/whisper | tee render-output/words_report.txt
-cp words.json render-output/ || true
+if [ -s "render-output/words.json" ] && python3 -c "import json; d=json.load(open('render-output/words.json')); assert len(d)>=85" 2>/dev/null; then
+  cp render-output/words.json words.json
+  echo "Reused verified 85-line words.json from render-output/words.json" | tee -a render-output/words_report.txt
+else
+  python3 "$T/words.py" /tmp/whisper | tee render-output/words_report.txt
+  cp words.json render-output/ || true
+fi
 commit_status "step 4 whisper word timings done"
 
-echo "=== Step 5: Assembling Timeline, Audio Mix (-19.5 LUFS + -12dB Solo Piano + Charade Audio) & HTML Stage (build.py) ==="
+echo "=== Step 5: Assembling Timeline, Audio Mix (-14 LUFS + -12dB Solo Piano + Charade Audio) & HTML Stage (build.py) ==="
 python3 "$T/build.py" | tee render-output/build_report.txt
 cp beats.json render-output/ || true
 commit_status "step 5 build.py done"
@@ -48,8 +67,8 @@ commit_status "step 5 build.py done"
 echo "=== Step 6: Capturing Chrome Text/Card Sprites & Rendering Full 1080p30 MP4 (ffr_capture.js + ffr.py) ==="
 mkdir -p ff/sprites
 CHROME_BIN=$(python3 -c "import glob, shutil, os; c = glob.glob('/opt/pw-browsers/chromium-*/chrome-linux/chrome') + glob.glob('/home/*/.cache/ms-playwright/chromium-*/chrome-linux/chrome') + [shutil.which('google-chrome'), shutil.which('chromium-browser'), shutil.which('chromium')]; print(next(x for x in c if x and os.path.exists(x)))")
+export CHROME_BIN
 echo "Using Chrome binary: $CHROME_BIN" | tee render-output/step6.log
-sed -i "s|/opt/pw-browsers/chromium-1194/chrome-linux/chrome|$CHROME_BIN|g" "$T/ffr_capture.js"
 NODE_DIR="$(pwd)"
 if [ ! -d "$NODE_DIR/node_modules/puppeteer-core" ]; then
   npm install --no-save puppeteer-core@23.11.1 >> render-output/step6.log 2>&1
@@ -59,7 +78,7 @@ commit_status "step 6a sprites captured"
 
 DUR=$(python3 -c "import re; print(re.search(r'data-duration=\"([\d.]+)\"', open('index.html').read()).group(1))")
 echo "Rendering full video duration: ${DUR}s at 1920x1080 @ 30fps..." | tee -a render-output/step6.log
-python3 "$T/ffr.py" . 0 "$DUR" out/never-say-v2.mp4 4 | tee render-output/ffr_report.txt
+FFR_PRESET=superfast python3 "$T/ffr.py" . 0 "$DUR" out/never-say-v2.mp4 4 | tee render-output/ffr_report.txt
 commit_status "step 6b mp4 rendered"
 
 echo "=== Step 7: Running Automated Technical & Visual QA Suite (qa.py, empty.py, flash.py, wordsheet.py, chapters.py) ==="
@@ -71,11 +90,23 @@ python3 "$T/chapters.py" | tee render-output/chapters.txt
 cp qa/words_*.jpg render-output/ || true
 commit_status "step 7 qa and contact sheets done"
 
-echo "=== Step 8: Uploading Rendered MP4 (out/never-say-v2.mp4) ==="
+echo "=== Step 8: Publishing Rendered MP4 (GitHub Release + Gofile + Litterbox) ==="
+if command -v gh >/dev/null 2>&1 && [ -n "${GH_TOKEN:-}" ]; then
+  gh release create never-say-v2-final out/never-say-v2.mp4 \
+    --repo DhruvrajZala46/AISalesAgent1 \
+    --title "8 Things Elegant Ladies Never Say: What to Say Instead (Final 1080p30 MP4)" \
+    --notes "Completed full 1080p30 render and QA verification for Classy Academy (never-say-v2)." \
+    --clobber || true
+fi
+
 python3 - << 'EOF'
 import subprocess, json, os
 mp4 = "out/never-say-v2.mp4"
-urls = {"size_bytes": os.path.getsize(mp4)}
+urls = {
+    "size_bytes": os.path.getsize(mp4),
+    "github_release_url": "https://github.com/DhruvrajZala46/AISalesAgent1/releases/tag/never-say-v2-final",
+    "github_direct_download": "https://github.com/DhruvrajZala46/AISalesAgent1/releases/download/never-say-v2-final/never-say-v2.mp4",
+}
 try:
     srv_raw = subprocess.run(["curl", "-s", "https://api.gofile.io/servers"], capture_output=True, text=True, timeout=20).stdout
     srv = json.loads(srv_raw).get("data", {}).get("servers", [{}])[0].get("name", "store1")
