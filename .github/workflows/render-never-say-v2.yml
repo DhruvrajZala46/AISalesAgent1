@@ -5,9 +5,25 @@ on:
       - claude/youtube-channel-analysis-lghfsv
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   probe:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "GitHub Actions runner active"
+        with:
+          ref: claude/youtube-channel-analysis-lghfsv
+      - name: Check environment
+        run: |
+          mkdir -p classy-academy-test/videos/never-say-v2/render-output
+          echo "Runner: $(uname -a)" > classy-academy-test/videos/never-say-v2/render-output/probe.txt
+          echo "CPU: $(nproc) cores" >> classy-academy-test/videos/never-say-v2/render-output/probe.txt
+          echo "Disk: $(df -h / | tail -1)" >> classy-academy-test/videos/never-say-v2/render-output/probe.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add classy-academy-test/videos/never-say-v2/render-output/probe.txt
+          git commit -m "ci: runner probe [skip ci]" || true
+          git push origin claude/youtube-channel-analysis-lghfsv
