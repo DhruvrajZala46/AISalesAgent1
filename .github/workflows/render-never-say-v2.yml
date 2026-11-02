@@ -1,0 +1,13 @@
+name: Render Never Say V2
+on:
+  push:
+    branches:
+      - claude/youtube-channel-analysis-lghfsv
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "GitHub Actions runner active"
