@@ -24,3 +24,116 @@ boutique_counter_hanger 0.00
 cafe_arrival_smile 0.00
 cafe_group_chatting 0.00
 calm_breath_daylight 0.00
+[claude/youtube-channel-analysis-lghfsv 54a5e32] ci(status): step 2 shots and aiscan done [skip ci]
+ 5 files changed, 2348 insertions(+)
+ create mode 100644 classy-academy-test/videos/never-say-v2/render-output/aiscan.json
+ create mode 100644 classy-academy-test/videos/never-say-v2/render-output/aiscan_report.txt
+ create mode 100644 classy-academy-test/videos/never-say-v2/render-output/shots.json
+ create mode 100644 classy-academy-test/videos/never-say-v2/render-output/step2.log
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+To https://github.com/DhruvrajZala46/AISalesAgent1
+   b82aabe..54a5e32  claude/youtube-channel-analysis-lghfsv -> claude/youtube-channel-analysis-lghfsv
+=== Step 3: Calibrating & Generating Kokoro-82M Narration (voice='af_heart', speed=0.88 -> ~150 WPM) ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1012: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/home/runner/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+Defaulting to user installation because normal site-packages is not writeable
+Collecting en-core-web-sm==3.8.0
+  Downloading https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl (12.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 62.7 MB/s eta 0:00:00
+Installing collected packages: en-core-web-sm
+Successfully installed en-core-web-sm-3.8.0
+/home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+[38;5;2m✔ Download and installation successful[0m
+You can now load the package via spacy.load('en_core_web_sm')
+c001.wav  (12.5s)  Have you ever met a woman who didn't try to stand out, didn'
+c002.wav  (4.4s)  Her presence felt calm, warm, and effortlessly magnetic.
+c003.wav  (11.5s)  Most people assume that kind of poise comes from having a pe
+c004.wav  (8.7s)  But in reality, sounding truly elegant has very little to do
+c005.wav  (11.4s)  More often than not, what separates a woman whose words carr
+c006.wav  (15.8s)  Because the truth is, there are small, everyday phrases that
+c007.wav  (22.8s)  So today, we are going through eight things elegant ladies n
+c008.wav  (5.0s)  Number one: downgrading yourself the moment someone gives yo
+c009.wav  (2.4s)  We have all done this at some point.
+c010.wav  (16.2s)  Someone looks at you and says, "I love your dress, you look 
+c011.wav  (4.6s)  Most of us do this because we don't want to seem vain or boa
+c012.wav  (4.8s)  We think brushing off a compliment makes us sound humble and
+c013.wav  (3.4s)  But think about what actually happens in that moment.
+c014.wav  (7.2s)  When someone gives you a genuine compliment, they are offeri
+c015.wav  (21.6s)  When you immediately argue with them or point out a flaw the
+c016.wav  (5.9s)  An elegant woman never uses self-deprecation to shrink away 
+c017.wav  (8.0s)  She receives a compliment the same way she would receive a b
+c018.wav  (34.6s)  Next time someone compliments your outfit, your work, or the
+c019.wav  (4.3s)  Number two: pre-apologizing before you even share a thought.
+c020.wav  (6.7s)  Have you ever noticed how often women soften their own voice
+c021.wav  (14.7s)  It sounds like starting a question at work with, "Sorry to b
+c022.wav  (11.6s)  Even in everyday life, we say "I'm sorry" when someone else 
+c023.wav  (9.2s)  Of course, a sincere apology when you have genuinely hurt so
+c024.wav  (5.7s)  Elegant women apologize with complete grace when an apology 
+c025.wav  (13.2s)  The problem is that when you apologize simply for taking up 
+c026.wav  (5.2s)  People take their cue on how to value your words from the wa
+c027.wav  (17.0s)  If you label your own thought as silly before anyone else ha
+c028.wav  (40.6s)  Instead of saying, "Sorry to bother you," try saying, "Do yo
+c029.wav  (5.9s)  Number three: giving a long, nervous explanation every singl
+c030.wav  (13.2s)  Think about the last time you had to decline an invitation y
+c031.wav  (9.8s)  When we feel uncomfortable setting a boundary, our natural i
+c032.wav  (18.4s)  We end up giving a four-sentence timeline of our entire week
+c033.wav  (21.3s)  Here is the quiet truth about over-explaining: the longer yo
+c034.wav  (17.5s)  An elegant woman understands that kindness and boundaries ar
+c035.wav  (13.6s)  If you are declining a social invitation, you never need to 
+c036.wav  (14.2s)  If someone asks you to take on a commitment you don't have t
+c037.wav  (16.4s)  And when you are in a shop and decide something isn't for yo
+c038.wav  (5.8s)  Number four: turning a simple "How are you?" into an exhaust
+c039.wav  (5.8s)  We live in a culture where being stressed and busy is almost
+c040.wav  (14.7s)  So when someone asks, "How has your week been?" it is remark
+c041.wav  (15.9s)  Now, sharing your honest struggles with a close friend or a 
+c042.wav  (13.1s)  However, in everyday social interactions, greetings, and cas
+c043.wav  (21.6s)  Interestingly, emotions are contagious—psychology shows that
+c044.wav  (17.2s)  A woman of poise knows how to stay honest and grounded while
+c045.wav  (17.6s)  Instead of listing everything that went wrong that morning, 
+c046.wav  (16.7s)  And on a good week, sharing one small, specific positive det
+c047.wav  (11.8s)  And speaking of carrying yourself with effortless confidence
+c048.wav  (19.9s)  If you want to discover your exact body shape, find the colo
+c049.wav  (7.1s)  Everything is sent straight to your email the moment you ord
+c050.wav  (7.2s)  Number five: jumping in to publicly correct small, unimporta
+c051.wav  (21.4s)  Picture this scenario: you are at dinner with friends or col
+c052.wav  (9.8s)  Or in a group discussion, someone shares an opinion and anot
+c053.wav  (16.8s)  When we correct tiny factual details that don't change the h
+c054.wav  (12.8s)  An elegant woman always asks herself a quiet question before
+c055.wav  (10.8s)  When a detail is harmless—like whether a trip happened in Ma
+c056.wav  (21.4s)  And when she does need to offer a different perspective in a
+c057.wav  (26.1s)  And if someone says something genuinely rude or pointed in a
+c058.wav  (12.5s)  Number six: making money and price tags the center of casual
+c059.wav  (16.9s)  We have probably all heard both sides of this. On one hand, 
+c060.wav  (10.3s)  As the old saying goes, money talks, but wealth whispers—and
+c061.wav  (24.8s)  But there is another side to this that many kind, well-meani
+c062.wav  (11.9s)  Whether you are building your savings from scratch or living
+c063.wav  (17.6s)  When someone asks where you got something or hints at how mu
+c064.wav  (24.7s)  And if friends invite you to an expensive dinner or trip tha
+c065.wav  (7.5s)  There is nothing more sophisticated than a woman who lives w
+c066.wav  (4.3s)  Number seven: gossip starters disguised as concern.
+c067.wav  (16.8s)  You know the exact phrases I am talking about. They almost a
+c068.wav  (17.6s)  It is so easy to get pulled into these moments because in th
+c069.wav  (17.0s)  Yet have you ever noticed what people think five minutes aft
+c070.wav  (12.8s)  An elegant woman protects her reputation as a safe, trustwor
+c071.wav  (17.8s)  When someone tries to pull you into speaking poorly about so
+c072.wav  (9.4s)  Or, if someone presses you for private details you shouldn't
+c073.wav  (19.5s)  And my favorite way to pivot a group conversation back to hi
+c074.wav  (9.1s)  And finally, number eight: replacing the five automatic "rou
+c075.wav  (18.0s)  When you listen to timelessly graceful women—think of the wa
+c076.wav  (12.7s)  Most of us have a few automatic one-word replies that sound 
+c077.wav  (10.3s)  First, when you didn't quite hear what someone said, instead
+c078.wav  (19.8s)  Second, when someone asks where you would like to eat or wha
+c079.wav  (16.0s)  Third, when someone thanks you for a gesture or a favor, ins
+c080.wav  (12.3s)  Fourth, when agreeing to help with something at work or at h
+c081.wav  (20.1s)  And fifth, right before you hang up the phone or walk away f
+c082.wav  (13.5s)  Remember, my loves, none of these eight shifts are about bec
+c083.wav  (11.9s)  Even choosing just one or two of these phrases to practice t
+c084.wav  (15.0s)  Now I would love to hear from you: which of these eight verb
+c085.wav  (19.7s)  If you enjoyed today's video, please give it a thumbs up, su
+TTS SUMMARY: speed=0.88, total_words=3096, speech_duration=1172.6s (19.54m), spoken_WPM=158.4
