@@ -41,6 +41,8 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   - Video v1 built (2 Nov 2026): 120 clips, each used once; none from Part 1 or from the last video
     (`tools/oldclash.py`); only Part 1's layouts (`VISUAL-ANALYSIS.md`, `edit.py`, `SOURCES-LOG.md`, `CREDITS.txt`).
     The CA "Classy Academy" logo is drawn in the corner and on the end card. No Meghan Markle.
+  - Video v1 delivered in the chat (2 Nov 2026): 1080p, 8:28, 351 MB send copy. QA: -12.7 LUFS, true peak -1.5 dB,
+    0 black frames, 0 silence; the only freezes are the white point cards. Waiting for the user's review.
   - Title screen: the episode number was left off (Part 1 shows "Episode 21"; the current number is unknown).
 
 ## 1. Where things stand right now
