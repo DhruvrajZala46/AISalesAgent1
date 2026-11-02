@@ -1,37 +1,52 @@
-# 7 Quiet Habits That Show You Have Class - script v1
+# 7 Quiet Habits That Show You Have Class - script v2
+
+**v2 (2 Nov 2026), after the user's review.** v1's tips were close cousins of the original's tips. Some also
+repeated older videos:
+- the wrong order: "8 Classy Habits";
+- keeping secrets: "Never Share";
+- celebrating others: "8 Classy Habits".
+
+The user wants this to work as a second part of the original: **the same format and voice, but different
+behaviours**, none the channel has taught before. The title stays standalone (no "Part 2" on screen), as before.
 
 **The format is copied from your own video** "7 Behaviors That Quietly Signal You Have Class" (`rHI_hcgK39E`:
 120k views, 3,676 likes, 3.05% liked, 8:00, 1,147 words). This script follows it step by step:
 
-1. **The hook** (~40 s): someone who doesn't try to stand out, yet everyone notices; "it's not what they're
-   wearing", it's how they act and what they don't do; then "In today's video..." and "Let's begin."
+1. **The hook** (~40 s): someone who doesn't try to stand out, yet everyone notices; "it isn't their clothes", it's how
+   they act and what they quietly leave out; then "In today's video..." and "Let's begin."
 2. **Seven behaviours, each in the same four steps:**
-   1. an opening line ("You've probably...", "Pay attention to this", "This one sounds simple...");
+   1. an opening line;
    2. a real everyday scene, with the words people actually say in quotes;
-   3. "Elegant people..." and what they do instead;
+   3. "Elegant people..." and what they do instead, with the exact words;
    4. how people feel around them ("And because of that, people...", "That's class.").
-3. **The guide plug after point 3**, in the same words.
-4. **The close:** "None of these are big changes...", "real class isn't about being perfect", the two questions, the
-   like and comment ask, the description, "Until next time. Bye, everyone."
+3. **The guide plug after point 4**, in the same words. The original has it after its point 3; here point 4 is a
+   money moment, and the plug sits better after it than in the middle of the dinner pair.
+4. **The close:** small choices, "real class was never about being flawless", the two questions, the like and comment
+   ask, the description, "Until next time. Bye, everyone."
 
-The voice speaks of "elegant people" and "someone", never only "women", as the original does.
+The voice speaks of "elegant people" and "someone", as the original does.
 
-Length: 1,186 words and 68 beats, about 8:00 at the original's pace (it speaks 1,147 words in about 7:40). Standalone: no "Part 2", and no reference to the earlier video.
+Length: 1,203 words and 69 beats, about 8:10 at the original's pace (it speaks 1,147 words in about 7:40).
 
-**The tips are new, but each one is a close cousin of an original tip:**
+**Seven new behaviours.** Each one was checked against the channel's 30 saved transcripts and `CHANNEL-DNA.md`
+section 6 ("already taught"):
 
-| # | Original video (its chapters) | This video |
+| # | This video | Why it is new for the channel |
 |---|---|---|
-| 1 | Consistent respect for all (the barista, the stranger) | Staying kind when things go wrong (the wrong order, the late train) |
-| 2 | Active listening (not relating it back to yourself) | Letting people finish (no finishing their sentences) |
-| 3 | Reliability (if they say it, they do it) | Respecting other people's time (on time, late warned early, careful cancelling) |
-| 4 | Not correcting someone's story mid-telling | Letting others have their moment (no topping their good news) |
-| 5 | Speaking positively of others (no gossip) | Keeping confidences (what's told to them stays with them) |
-| 6 | Not highlighting small mistakes | Saving others from awkward moments (the forgotten name, the wrong dress code) |
-| 7 | Meaningful thanks ("I really appreciated that...") | Compliments that feel real ("That colour is so beautiful on you...") |
+| 1 | Leaving places better than they found them (fitting room, hotel room, trolley) | never taught; "kindness without applause" (Never Share) was about good deeds, not places |
+| 2 | Introducing people well ("Anna, this is Claire. Claire's just come back from Lisbon...") | never taught; "remembering names" and "including someone left out" are other moments |
+| 3 | Taking no gracefully ("No problem at all. We'll miss you. Another time.") | the mirror of the soft no the channel taught: this time *she* is the one being told no |
+| 4 | Being graceful with the bill (no maths at the table, pay back the same day) | never taught; "money is personal" (Never Share) was about not talking about money |
+| 5 | The guest everyone invites back (something small in hand, "Can I help?", the thank-you message next morning) | never taught; the channel's dinner parties so far were about what to wear |
+| 6 | Sharing the credit ("Thank you. But honestly, it was Sarah's idea.") | never taught |
+| 7 | Apologising cleanly ("I'm sorry. I was wrong to say that. It won't happen again.") | the other side of "avoid over-apologising" (10 Microhabits): no "sorry" for everything, but a real one when it's due |
 
-**Title:** **7 Quiet Habits That Show You Have Class**. It is the original's shape ("7 Behaviors That Quietly Signal
-You Have Class"), 39 characters, and scores 100/100 on `title.py`.
+Nothing here repeats the original either: it taught respect for all, listening, reliability, not correcting stories,
+speaking well of others, not highlighting mistakes and meaningful thanks. Nothing repeats "7 Things Classy Women
+Never Do in Public" (just made). The points move in one direction: from places, to people you meet, to friends, to
+the dinner table, to home, to work, to the hardest one (owning a mistake).
+
+**Title:** **7 Quiet Habits That Show You Have Class** (100/100 on `title.py`, 39 characters).
 Runner-ups:
 - *7 Subtle Signs Someone Has Real Class* (100/100)
 - *7 Quiet Habits of People With Real Class* (100/100)
@@ -45,7 +60,7 @@ cards.
 
 **There's a quality to them that's hard to name. It isn't their clothes. It isn't their job title.**
 
-**It's how they treat people, how they react when things don't go to plan, and just as much, what they quietly leave out.**
+**It's in the small things they do without thinking, especially when they believe nobody is watching.**
 
 **Most of these habits are easy to miss. But once you see them, you'll start noticing them everywhere.**
 
@@ -53,55 +68,73 @@ cards.
 
 **They may look simple, but they change how people feel around you, and how they remember you. Let's begin.**
 
-## 1. (Staying Kind When Things Go Wrong)
+## 1. (Leaving Places Better Than They Found Them)
 
-**You learn a lot about someone when things don't go their way.**
+**You can learn a lot about someone from the places they've just left.**
 
-**The coffee order comes out wrong. The train is delayed again. The queue at the shop just isn't moving.**
+**The fitting room, with three dresses on the floor. The hotel room, with towels everywhere. The shopping trolley, left in the middle of the car park.**
 
-**It's easy to let a little frustration slip out. A sigh, a sharp tone, a look at the person behind the counter, as if it's their fault.**
+**None of it feels like a big deal. Someone else will tidy it up, right?**
 
-**Most of the time, it isn't.**
+**But elegant people leave a little trace of care wherever they go.**
 
-**Elegant people seem to remember that. They still ask for what needs fixing, but they ask gently. "I think this one might be the oat milk. No rush at all."**
+**The clothes go back on their hangers. The towels go into one neat pile. The trolley goes back where it belongs.**
 
-**The same request, just without the edge.**
+**It takes ten seconds. And usually, nobody sees it.**
 
-**And you'd be surprised how often that small kindness becomes the best part of someone's day.**
+**That's exactly what makes it class. It isn't done for an audience. It's simply who they are when no one is watching.**
 
-**People notice who stays gracious when it would be so easy not to. That's class.**
+## 2. (Introducing People Well)
 
-## 2. (Letting People Finish)
+**Here's a moment most of us rush through.**
 
-**You've probably done this without meaning to.**
+**You're out with a friend, and someone you know comes over to say hello. There's a little pause. Everyone smiles. Nobody quite knows what to say.**
 
-**Someone's explaining something, and halfway through, you already know where it's going. So you finish the sentence for them, or jump in with your answer before they've reached the end.**
+**Or there's the quick version. "Oh, this is Anna." And then, silence.**
 
-**It usually comes from a good place. We're interested, we're excited, we want to help.**
+**Elegant people make that moment easy. They introduce people with a name and a little bridge.**
 
-**But for the other person, it can feel like being cut off, just slightly.**
+**"Anna, this is Claire. Claire's just come back from Lisbon, and Anna has been dying to go."**
 
-**Elegant people are more patient in those moments. They let the other person get all the way to the end. And before they reply, they pause, just for a breath.**
+**And just like that, there's something to talk about.**
 
-**It sounds tiny. But that pause says, "I'm not waiting for my turn. I'm really listening."**
+**It's a small gift. Nobody has to search for small talk, and nobody is left standing there, wondering how to join in.**
 
-**And because of that, people open up around them. They feel taken seriously. And that's something they don't forget.**
+**That's why people feel so welcome around them, wherever they are.**
 
-## 3. (Respecting Other People's Time)
+## 3. (Taking No Gracefully)
 
-**This one sounds obvious, but it says more than you might think.**
+**This one says more about someone than they might realise.**
 
-**Meeting at seven, arriving at quarter past. A quick "running late!" sent once you're already late. A plan cancelled an hour before, simply because the sofa felt nicer.**
+**You invite a friend to dinner, and she says, "I'm so sorry, I can't make it this time."**
 
-**We've all done it at least once.**
+**And the reply comes straight back. "Oh, come on! Just one drink." "You always say that." "What else are you doing?"**
 
-**But when someone treats your time as carefully as their own, you feel it.**
+**It's meant playfully. But it puts the other person in a corner. Now she has to say no twice, or explain herself.**
 
-**Elegant people arrive when they said they would. If they're running late, they let you know early, not at the last minute. And if they have to cancel, they do it kindly, and they offer another day.**
+**Elegant people make a no easy to say. "No problem at all. We'll miss you. Another time."**
 
-**Nothing fussy. Just considerate.**
+**And then they truly let it go. No sulking, no little comment the next time they meet.**
 
-**And over time, that builds something quietly valuable. People know they can count on you, and they feel respected around you.**
+**Because people relax around someone who doesn't take a no personally.**
+
+**And funnily enough, theirs are the invitations people most want to say yes to next time.**
+
+## 4. (Being Graceful With the Bill)
+
+**Pay attention to this one at the end of a meal.**
+
+**The bill arrives, and the table goes quiet. Someone opens the calculator. "Well, I only had the salad." "Who had the second glass of wine?"**
+
+**Or someone says, "I'll send you my share," and three weeks later, you're still wondering whether to remind them.**
+
+**Money moments are a little awkward for almost everyone. That's exactly why handling them gracefully stands out.**
+
+**Elegant people take the drama out of it. If splitting evenly is fair, they split it, without the maths. If they owe someone, they pay it back the same day. "Sent! Thank you for organising."**
+
+**And when they're treating someone, they do it quietly, often before the bill even reaches the table.**
+
+**No fuss, no scorekeeping. People feel completely at ease with them, even when money is on the table.**
 
 ## The guide
 
@@ -109,73 +142,57 @@ cards.
 
 **It's sent straight to your email as soon as you have access.**
 
-## 4. (Letting Others Have Their Moment)
+## 5. (The Guest Everyone Invites Back)
 
-**You've definitely seen this one happen.**
+**You've probably been on both sides of this one.**
 
-**Someone shares a little good news. "We've finally booked our trip to Italy!"**
+**Someone invites you into their home. You arrive, you enjoy the evening, and you leave. Which is lovely.**
 
-**And before they can say another word, someone else jumps in. "Oh, we went last summer. You have to stay in Florence, not Rome. And honestly, avoid August."**
+**But there's a certain kind of guest every host remembers.**
 
-**Nothing unkind was meant. But the moment has quietly moved. It isn't their news anymore. It's a comparison.**
+**They arrive with something small in their hands. A few flowers, a bar of good chocolate, something they baked.**
 
-**Elegant people notice that. When someone shares something they're happy about, they let it stay theirs. They ask about it. "How exciting! Where are you going first?"**
+**They ask, "Can I help with anything?" And they mean it.**
 
-**And they save their own stories for later, if they're wanted at all.**
+**At the end of the evening, they carry a few plates to the kitchen. And the next morning, there's a little message. "Thank you for last night. That lemon tart was heavenly."**
 
-**Because sometimes the most generous thing you can give someone is the whole spotlight on their good news.**
+**None of it costs much. But every part of it says, "I noticed the effort you made for us."**
 
-**And people feel truly celebrated around them.**
+**And that's why their name is always first on the next guest list.**
 
-## 5. (Keeping Confidences)
+## 6. (Sharing the Credit)
 
-**Pay attention to how people handle something told to them in confidence.**
+**This happens all the time, at work, in families, and among friends.**
 
-**"Can I tell you something? But please, keep it between us."**
+**Something goes well. The party was a success. The project came together. The trip was perfectly planned. And everyone turns to one person to say, "Well done!"**
 
-**And a week later, somehow, three other people know.**
+**It's so easy to just say "Thank you," and quietly keep all of it.**
 
-**Usually it travels innocently. "I probably shouldn't say this, but..." A little detail shared to feel close to someone else.**
+**Elegant people pass the light along. "Thank you. But honestly, it was Sarah's idea." "I couldn't have done it without Mark."**
 
-**Elegant people are careful here. What's shared with them stays with them. They don't trade other people's private news to make a conversation more interesting, or to feel included.**
+**It doesn't make them smaller. If anything, it makes them look even more gracious.**
 
-**There's a quiet strength in that. Being someone who simply doesn't repeat things.**
+**Because secure people don't need all the credit. They're happy to share it.**
 
-**And because of that, people trust them. With their worries, their plans, and their real stories.**
+**And people never forget who said their name when they weren't expecting it.**
 
-## 6. (Saving Others From Awkward Moments)
+## 7. (Apologising Cleanly)
 
-**This happens more often than we realise.**
+**And finally, one that sounds simple but is surprisingly rare. A real apology.**
 
-**Someone greets you warmly, and you can see it in their face. They've forgotten your name. Or a guest arrives in jeans when everyone else has dressed up.**
+**We've all heard the other kind. "I'm sorry if you felt that way." "I'm sorry, but you have to understand..." "Sorry! Anyway..."**
 
-**There's a moment where it could turn awkward. A pause. A few glances around the table.**
+**They contain the word sorry, but somehow they don't feel like an apology at all.**
 
-**Elegant people quietly step in before that happens. They offer their name first. "Hi, it's Claire. We met at Anna's birthday."**
+**Elegant people don't apologise for everything. But when they really are in the wrong, they say it cleanly.**
 
-**They greet the guest in jeans like the most welcome person in the room.**
+**"I'm sorry. I was wrong to say that. It won't happen again."**
 
-**Nobody else even notices it happened. And that's the point.**
+**No "but," no "if," no long story about why.**
 
-**Around them, people feel safe, because they know they'll never be left standing alone in an embarrassing moment.**
+**It takes quiet confidence to own a mistake that simply.**
 
-## 7. (Compliments That Feel Real)
-
-**Most of us give compliments the quick way. "You look nice." "Great job." And then we move on.**
-
-**They're kind words. But they can slip past without really landing.**
-
-**When someone takes one second longer, it feels completely different.**
-
-**Instead of "You look nice," they might say, "That colour is so beautiful on you. It really lights up your face."**
-
-**Or instead of "Great job," "The way you explained that made it so easy to follow."**
-
-**Suddenly, it isn't just politeness. It's being seen.**
-
-**Elegant people notice the thing that took effort, the choice, the care, not just the result. And they mean every word.**
-
-**That's the kind of compliment people remember for years.**
+**People trust them more for it, not less. A clean apology closes a moment that could otherwise stay open for years.**
 
 ## Close
 
@@ -195,31 +212,38 @@ cards.
 
 **Until next time. Bye, everyone.**
 
-## Proof: why these seven
+## Value test (CHANNEL-DNA section 7, in short)
 
-| Evidence | What it says | Where it is used |
-|---|---|---|
-| The original's own chapters, one for one | the seven behaviours its viewers clicked for (120k views, 3.05% liked) | each new tip is the cousin of one (table above) |
-| Its top comment on a point: "not rushing gratitude / appreciation is so elegant" (21 likes) | the thank-you point landed most | point 7 keeps that shape: "Instead of X, they might say..." with two quoted examples |
-| "Elegance is... being kind... and how good other people feel because of you" (39 likes) | the audience defines class as how people feel around you | every point ends on how people feel around them |
-| "I treat everyone the same... we are all equal" (16 likes) | respect for everyone | point 1: kindness to the person behind the counter |
-| "Number four is so true..." (5 likes); "I really needed to hear the part about not correcting a story" | the conversation points hit home | point 4: letting others have their moment, the same kind of dinner scene |
-| "Someone is gossiping about me. 'I speak well of others'" | the gossip point mattered | point 5: keeping confidences |
-| "Your voice... very calming and soothing" (24); "the background music... not overpowering" (12) | the calm, slow delivery is loved | short sentences, pauses, soft endings, no hype |
+| # | Problem in her life | Exact words / action | Where, this week |
+|---|---|---|---|
+| 1 | leaving a mess "because someone is paid to tidy it" | hangers back, towels in one pile, trolley back | the shop, a hotel, the supermarket |
+| 2 | the awkward pause when two people meet | name + a bridge: "Claire's just come back from Lisbon..." | a café, a party, the school gate |
+| 3 | pushing a friend who said no | "No problem at all. We'll miss you. Another time." | any invitation, by message or in person |
+| 4 | the awkward bill, the debt nobody mentions | split evenly without the maths; "Sent! Thank you for organising." | dinner with friends |
+| 5 | being a forgettable guest | something small in hand, "Can I help with anything?", plates to the kitchen, the next-morning message | the next dinner invitation |
+| 6 | taking all the praise | "Thank you. But honestly, it was Sarah's idea." | work, family events |
+| 7 | apologies that make things worse | "I'm sorry. I was wrong to say that. It won't happen again." | the next disagreement |
 
-Note for the video stage: viewers asked twice not to show Meghan Markle (16 and 4 likes). Keep her out of the visuals.
+Each costs nothing and works at any age. Each ends on how people feel around you, the channel's own definition of
+class. The top comment on the original says it: "how good other people feel because of you", 39 likes.
 
 ## Final check
 
-- [x] Same shape: hook, "Let's begin", 7 points of scene → quote → "Elegant people..." → how people feel, the guide
-  after point 3, the same close and sign-off.
-- [x] Same voice:
+- [x] **Same shape as the original:**
+  - hook, then "Let's begin";
+  - 7 points, each: scene, quotes, "Elegant people...", how people feel;
+  - the guide plug mid-video;
+  - the same close and "Bye, everyone."
+- [x] **Same voice:**
   - "elegant people", "someone";
-  - "You've probably...", "We've all done it", "Pay attention to this", "That's class.";
+  - "You've probably...", "Pay attention to this", "That's exactly what makes it class.";
   - short spoken sentences.
-- [x] Tips are similar, not the same; no sentence of the original is copied (checked by 6-word overlap; only the
-  channel's own recurring phrases repeat on purpose: the guide plug ("the personal stylist guide is linked below"),
-  the sign-off ("a simple like or comment would truly mean the world to us... Until next time. Bye, everyone.") and
-  "And because of that, people trust them").
-- [x] Every tip is kind: it shows what to do, never shames.
-- [x] Standalone, no "Part 2".
+- [x] **Seven behaviours the channel has never taught** (30 transcripts + CHANNEL-DNA section 6 checked), none from the
+  original, none from "7 Things Classy Women Never Do in Public".
+- [x] **No sentence of the original is copied** (6-word overlap check). Only the channel's own recurring lines repeat:
+  - the guide plug;
+  - "a simple like or comment would truly mean the world to us";
+  - "Be sure to check the description below...";
+  - "Until next time. Bye, everyone."
+- [x] Kind: every point shows what to do, never shames.
+- [x] Visual note: viewers asked not to show Meghan Markle; keep her out.
