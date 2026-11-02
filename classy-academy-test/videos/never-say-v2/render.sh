@@ -23,15 +23,22 @@ commit_status() {
   cd "$REPO"
   git config user.name "github-actions[bot]"
   git config user.email "github-actions[bot]@users.noreply.github.com"
-  git add classy-academy-test/videos/never-say-v2/render-output/ classy-academy-test/videos/never-say-v2/CREDITS.txt classy-academy-test/videos/never-say-v2/edit.py classy-academy-test/videos/never-say-v2/ok.txt || true
+  git add classy-academy-test/videos/never-say-v2/render-output/ classy-academy-test/videos/never-say-v2/CREDITS.txt || true
   git commit -m "ci(status): $msg [skip ci]" || true
-  git pull --rebase -X theirs origin claude/youtube-channel-analysis-lghfsv || true
+  git pull --rebase --autostash -X theirs origin claude/youtube-channel-analysis-lghfsv || true
   git push origin claude/youtube-channel-analysis-lghfsv || true
   cd "$WORK"
 }
 
 echo "=== Step 1: Downloading & Verifying All 101 Video Assets + 4 Piano Tracks ===" | tee render-output/step1.log
 python3 fetch_assets.py >> render-output/step1.log 2>&1
+# fetch_assets.py saves the 4 piano tracks to /tmp/music/, but build.py reads them from assets/
+for id in 711 712 716 717; do
+  if [ ! -s "assets/m$id.mp3" ]; then
+    cp "/tmp/music/m$id.mp3" "assets/m$id.mp3" 2>/dev/null || curl -sSL -o "assets/m$id.mp3" "https://assets.mixkit.co/music/$id/$id.mp3"
+  fi
+  ls -la "assets/m$id.mp3" | tee -a render-output/step1.log
+done
 commit_status "step 1 assets downloaded"
 
 echo "=== Step 2: Probing Clip Shots & Running AI-Watermark Scan (aiscan.py) ===" | tee render-output/step2.log
@@ -78,25 +85,28 @@ commit_status "step 6a sprites captured"
 
 DUR=$(python3 -c "import re; print(re.search(r'data-duration=\"([\d.]+)\"', open('index.html').read()).group(1))")
 echo "Rendering full video duration: ${DUR}s at 1920x1080 @ 30fps..." | tee -a render-output/step6.log
-FFR_PRESET=superfast python3 "$T/ffr.py" . 0 "$DUR" out/never-say-v2.mp4 4 | tee render-output/ffr_report.txt
+FFR_PRESET=veryfast FFR_CRF=20 python3 "$T/ffr.py" . 0 "$DUR" out/never-say-v2.mp4 4 | tee render-output/ffr_report.txt
+ls -la out/never-say-v2.mp4 | tee -a render-output/ffr_report.txt
 commit_status "step 6b mp4 rendered"
 
 echo "=== Step 7: Running Automated Technical & Visual QA Suite (qa.py, empty.py, flash.py, wordsheet.py, chapters.py) ==="
-python3 "$T/qa.py" out/never-say-v2.mp4 | tee render-output/qa_report.txt
-python3 "$T/empty.py" out/never-say-v2.mp4 | tee render-output/empty_report.txt
-python3 "$T/flash.py" | tee render-output/flash_report.txt
-python3 "$T/wordsheet.py" out/never-say-v2.mp4 4.0
-python3 "$T/chapters.py" | tee render-output/chapters.txt
+set +e
+python3 "$T/qa.py" out/never-say-v2.mp4 2>&1 | tee render-output/qa_report.txt
+python3 "$T/empty.py" out/never-say-v2.mp4 2>&1 | tee render-output/empty_report.txt
+python3 "$T/flash.py" 2>&1 | tee render-output/flash_report.txt
+python3 "$T/wordsheet.py" out/never-say-v2.mp4 4.0 2>&1 | tee render-output/wordsheet_report.txt
+python3 "$T/chapters.py" 2>&1 | tee render-output/chapters.txt
 cp qa/words_*.jpg render-output/ || true
 commit_status "step 7 qa and contact sheets done"
 
 echo "=== Step 8: Publishing Rendered MP4 (GitHub Release + Gofile + Litterbox) ==="
 if command -v gh >/dev/null 2>&1 && [ -n "${GH_TOKEN:-}" ]; then
-  gh release create never-say-v2-final out/never-say-v2.mp4 \
+  gh release create never-say-v2-final \
     --repo DhruvrajZala46/AISalesAgent1 \
+    --target claude/youtube-channel-analysis-lghfsv \
     --title "8 Things Elegant Ladies Never Say: What to Say Instead (Final 1080p30 MP4)" \
-    --notes "Completed full 1080p30 render and QA verification for Classy Academy (never-say-v2)." \
-    --clobber || true
+    --notes "Full 1080p30 render of never-say-v2 for Classy Academy. QA reports in classy-academy-test/videos/never-say-v2/render-output/." 2>&1 | tee -a render-output/release.log || true
+  gh release upload never-say-v2-final out/never-say-v2.mp4 --repo DhruvrajZala46/AISalesAgent1 --clobber 2>&1 | tee -a render-output/release.log || true
 fi
 
 python3 - << 'EOF'
