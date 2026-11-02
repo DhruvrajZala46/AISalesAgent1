@@ -1,12 +1,10 @@
-=== Step 1: Downloading & Verifying All 88 Video Assets + 4 Piano Tracks ===
-[claude/youtube-channel-analysis-lghfsv b82aabe] ci(status): step 1 assets downloaded [skip ci]
- 2 files changed, 13 insertions(+)
- create mode 100644 classy-academy-test/videos/never-say-v2/render-output/full_pipeline.log
- create mode 100644 classy-academy-test/videos/never-say-v2/render-output/step1.log
+=== Step 1: Downloading & Verifying All 101 Video Assets + 4 Piano Tracks ===
+[claude/youtube-channel-analysis-lghfsv 0522b08] ci(status): step 1 assets downloaded [skip ci]
+ 3 files changed, 3 insertions(+), 3 deletions(-)
 error: cannot pull with rebase: You have unstaged changes.
 error: Please commit or stash them.
 To https://github.com/DhruvrajZala46/AISalesAgent1
-   08bc51a..b82aabe  claude/youtube-channel-analysis-lghfsv -> claude/youtube-channel-analysis-lghfsv
+   4479b43..0522b08  claude/youtube-channel-analysis-lghfsv -> claude/youtube-channel-analysis-lghfsv
 === Step 2: Probing Clip Shots & Running AI-Watermark Scan (aiscan.py) ===
 AI WATERMARK - DO NOT USE: none
 dinner_warm_smile  0.12
@@ -24,17 +22,29 @@ boutique_counter_hanger 0.00
 cafe_arrival_smile 0.00
 cafe_group_chatting 0.00
 calm_breath_daylight 0.00
-[claude/youtube-channel-analysis-lghfsv 54a5e32] ci(status): step 2 shots and aiscan done [skip ci]
- 5 files changed, 2348 insertions(+)
- create mode 100644 classy-academy-test/videos/never-say-v2/render-output/aiscan.json
- create mode 100644 classy-academy-test/videos/never-say-v2/render-output/aiscan_report.txt
- create mode 100644 classy-academy-test/videos/never-say-v2/render-output/shots.json
- create mode 100644 classy-academy-test/videos/never-say-v2/render-output/step2.log
+On branch claude/youtube-channel-analysis-lghfsv
+Your branch is up to date with 'origin/claude/youtube-channel-analysis-lghfsv'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   classy-academy-test/videos/never-say-v2/render.sh
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	classy-academy-test/videos/never-say-v2/aiscan.json
+	classy-academy-test/videos/never-say-v2/assets/
+	classy-academy-test/videos/never-say-v2/fonts/
+	classy-academy-test/videos/never-say-v2/gsap.min.js
+	classy-academy-test/videos/never-say-v2/qa/
+	classy-academy-test/videos/never-say-v2/raw/
+	classy-academy-test/videos/never-say-v2/shots.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
 error: cannot pull with rebase: You have unstaged changes.
 error: Please commit or stash them.
-To https://github.com/DhruvrajZala46/AISalesAgent1
-   b82aabe..54a5e32  claude/youtube-channel-analysis-lghfsv -> claude/youtube-channel-analysis-lghfsv
-=== Step 3: Calibrating & Generating Kokoro-82M Narration (voice='af_heart', speed=0.88 -> ~150 WPM) ===
+Everything up-to-date
+=== Step 3: Calibrating & Generating Kokoro-82M Narration (voice='af_heart', speed=0.88 -> ~158 WPM) ===
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 /home/runner/.local/lib/python3.12/site-packages/torch/nn/modules/rnn.py:1012: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
   super().__init__("LSTM", *args, **kwargs)
@@ -43,7 +53,7 @@ Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF
 Defaulting to user installation because normal site-packages is not writeable
 Collecting en-core-web-sm==3.8.0
   Downloading https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl (12.8 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 62.7 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 104.8 MB/s eta 0:00:00
 Installing collected packages: en-core-web-sm
 Successfully installed en-core-web-sm-3.8.0
 /home/runner/.local/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
@@ -137,116 +147,33 @@ c083.wav  (11.9s)  Even choosing just one or two of these phrases to practice t
 c084.wav  (15.0s)  Now I would love to hear from you: which of these eight verb
 c085.wav  (19.7s)  If you enjoyed today's video, please give it a thumbs up, su
 TTS SUMMARY: speed=0.88, total_words=3096, speech_duration=1172.6s (19.54m), spoken_WPM=158.4
-[claude/youtube-channel-analysis-lghfsv ff4a2c5] ci(status): step 3 tts done [skip ci]
- 2 files changed, 208 insertions(+)
- create mode 100644 classy-academy-test/videos/never-say-v2/render-output/tts_report.txt
+[claude/youtube-channel-analysis-lghfsv 72c9080] ci(status): step 3 tts done [skip ci]
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 error: cannot pull with rebase: You have unstaged changes.
 error: Please commit or stash them.
 To https://github.com/DhruvrajZala46/AISalesAgent1
-   54a5e32..ff4a2c5  claude/youtube-channel-analysis-lghfsv -> claude/youtube-channel-analysis-lghfsv
+   0522b08..72c9080  claude/youtube-channel-analysis-lghfsv -> claude/youtube-channel-analysis-lghfsv
 === Step 4: Extracting Word-Level Timings via faster-whisper (words.py) ===
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-1 37/37 words matched
-2 8/8 words matched
-3 26/26 words matched
-4 19/19 words matched
-5 29/29 words matched
-6 37/39 words matched
-7 57/58 words matched
-8 11/11 words matched
-9 8/8 words matched
-10 47/49 words matched
-11 14/14 words matched
-12 11/12 words matched
-13 9/9 words matched
-14 18/18 words matched
-15 59/59 words matched
-16 10/11 words matched
-17 19/20 words matched
-18 106/106 words matched
-19 6/9 words matched
-20 18/18 words matched
-21 44/44 words matched
-22 36/36 words matched
-23 23/23 words matched
-24 12/12 words matched
-25 32/32 words matched
-26 16/16 words matched
-27 44/44 words matched
-28 108/109 words matched
-29 13/13 words matched
-30 40/40 words matched
-31 26/26 words matched
-32 51/53 words matched
-33 52/53 words matched
-34 40/40 words matched
-35 39/40 words matched
-36 43/43 words matched
-37 45/47 words matched
-38 14/14 words matched
-39 18/18 words matched
-40 41/41 words matched
-41 35/36 words matched
-42 27/27 words matched
-43 47/48 words matched
-44 45/45 words matched
-45 50/52 words matched
-46 38/41 words matched
-47 28/28 words matched
-48 51/51 words matched
-49 19/19 words matched
-50 13/15 words matched
-51 59/59 words matched
-52 22/22 words matched
-53 45/45 words matched
-54 32/32 words matched
-55 25/27 words matched
-56 57/59 words matched
-57 71/72 words matched
-58 25/27 words matched
-59 45/45 words matched
-60 23/24 words matched
-61 62/64 words matched
-62 30/30 words matched
-63 53/54 words matched
-64 70/70 words matched
-65 17/17 words matched
-66 7/7 words matched
-67 49/49 words matched
-68 48/48 words matched
-69 49/49 words matched
-70 29/30 words matched
-71 50/51 words matched
-72 24/24 words matched
-73 59/60 words matched
-74 21/21 words matched
-75 36/38 words matched
-76 31/32 words matched
-77 29/29 words matched
-78 52/53 words matched
-79 42/42 words matched
-80 37/38 words matched
-81 51/51 words matched
-82 31/32 words matched
-83 32/33 words matched
-84 43/44 words matched
-85 52/52 words matched
-[claude/youtube-channel-analysis-lghfsv e51293e] ci(status): step 4 whisper word timings done [skip ci]
- 3 files changed, 15831 insertions(+)
- create mode 100644 classy-academy-test/videos/never-say-v2/render-output/words.json
- create mode 100644 classy-academy-test/videos/never-say-v2/render-output/words_report.txt
+Reused verified 85-line words.json from render-output/words.json
+[claude/youtube-channel-analysis-lghfsv d521df9] ci(status): step 4 whisper word timings done [skip ci]
+ 1 file changed, 1 insertion(+)
 error: cannot pull with rebase: You have unstaged changes.
 error: Please commit or stash them.
 To https://github.com/DhruvrajZala46/AISalesAgent1
-   ff4a2c5..e51293e  claude/youtube-channel-analysis-lghfsv -> claude/youtube-channel-analysis-lghfsv
-=== Step 5: Assembling Timeline, Audio Mix (-19.5 LUFS + -12dB Solo Piano + Charade Audio) & HTML Stage (build.py) ===
+   72c9080..d521df9  claude/youtube-channel-analysis-lghfsv -> claude/youtube-channel-analysis-lghfsv
+=== Step 5: Assembling Timeline, Audio Mix (-14 LUFS + -12dB Solo Piano + Charade Audio) & HTML Stage (build.py) ===
+[in#0 @ 0x55c338027e00] Error opening input: No such file or directory
+Error opening input file /home/runner/work/AISalesAgent1/AISalesAgent1/classy-academy-test/videos/never-say-v2/assets/m711.mp3.
+Error opening input files: No such file or directory
 Traceback (most recent call last):
-  File "/home/runner/work/AISalesAgent1/AISalesAgent1/classy-academy-test/workflow/tools/build.py", line 293, in <module>
-    exec(open(os.path.join(P, 'edit.py')).read())
-  File "<string>", line 507, in <module>
-  File "<string>", line 42, in framed
-  File "<string>", line 48, in _framed
-  File "/home/runner/work/AISalesAgent1/AISalesAgent1/classy-academy-test/workflow/tools/build.py", line 102, in vid
-    assert spec[2] <= a + 0.05 or spec[1] >= b - 0.05, f'{key} {spec[1]}-{spec[2]} repeats footage already shown ({a}-{b}, at {USED.get(key)})'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: mk41810 4.8-9.1 repeats footage already shown (0.3-6.5, at 581.8)
+  File "/home/runner/work/AISalesAgent1/AISalesAgent1/classy-academy-test/workflow/tools/build.py", line 275, in <module>
+    xf = int(sr * 4); m = trim_silence(load(TRACKS[0])); k = 1
+                                       ^^^^^^^^^^^^^^^
+  File "/home/runner/work/AISalesAgent1/AISalesAgent1/classy-academy-test/workflow/tools/build.py", line 271, in load
+    sh(f"ffmpeg -nostdin -v error -y -i {A}/{f} -af 'highpass=f=40,equalizer=f=150:t=q:w=1:g=2,equalizer=f=3500:t=q:w=1.2:g=2' -ac 1 -ar {sr} {A}/_m.wav")
+  File "/home/runner/work/AISalesAgent1/AISalesAgent1/classy-academy-test/workflow/tools/build.py", line 10, in sh
+    def sh(c): subprocess.run(c, shell=True, check=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'ffmpeg -nostdin -v error -y -i /home/runner/work/AISalesAgent1/AISalesAgent1/classy-academy-test/videos/never-say-v2/assets/m711.mp3 -af 'highpass=f=40,equalizer=f=150:t=q:w=1:g=2,equalizer=f=3500:t=q:w=1.2:g=2' -ac 1 -ar 24000 /home/runner/work/AISalesAgent1/AISalesAgent1/classy-academy-test/videos/never-say-v2/assets/_m.wav' returned non-zero exit status 254.
