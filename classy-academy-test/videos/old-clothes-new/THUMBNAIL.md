@@ -4,7 +4,7 @@ The video: https://youtu.be/wxId6FzO9Gk on The Classy Elegance.
 - Uploaded 26 Oct 2026; 150 views when checked (2 Nov 2026).
 - The user reports few clicks and a 2% click-through rate.
 - **This repo has no build of it.** Its video, script and package were made outside this branch. Its own captions and
-  chapters () were read here.
+  chapters (`yt-dlp`) were read here.
 
 ## Why the current thumbnail misses
 
@@ -71,11 +71,11 @@ Montserrat Bold headline.
 
 | | Words | Photos | Proof it copies |
 |---|---|---|---|
-| **A, recommended** | Same Gown, / **Restyled** / *not replaced*, with 2019 and 2023 at the bottom | Kate Middleton at the BAFTAs, 2019 and 2023, same Alexander McQueen gown; red circles on the flower shoulder (2019) and the cape sleeve (2023) | the Diana "make old clothes look new" winner (2.37M, 60x): famous woman, the change circled. Keeps the video's own royal-gown story but makes the change visible and says the promise in one word. : 98/100 |
+| **A, recommended** | Same Gown, / **Restyled** / *not replaced*, with 2019 and 2023 at the bottom | Kate Middleton at the BAFTAs, 2019 and 2023, same Alexander McQueen gown; red circles on the flower shoulder (2019) and the cape sleeve (2023) | the Diana "make old clothes look new" winner (2.37M, 60x): famous woman, the change circled. Keeps the video's own royal-gown story but makes the change visible and says the promise in one word. `title.py`: 98/100 |
 | B | Elegant Women / **Never Replace** / *they restore* | woman in a white knit · woman in a cream coat · woman in a camel knit | the channel's "Never" family (its 20k winner and Classy Academy's 1.2M), red underline under "Never". 98/100 |
 | C | Keep Every Piece / **Expensive** / *8 care secrets* | woman in white at a café · woman at Carette in Paris · woman in a cream coat in New York | the "look expensive" winners (329x, 20x, Classy Academy's 711k): looking expensive is the reason to care for clothes. 98/100 |
 
-Feed test: , at 320x180 next to the current thumbnail and the channel's two best. All three read in one
+Feed test: `feed_test.jpg`, at 320x180 next to the current thumbnail and the channel's two best. All three read in one
 glance.
 
 **Not used:**
@@ -99,5 +99,5 @@ glance.
 Rights: unresolved, as with all the channel's footage; the creator decides. Press photos of Kate carry the news
 agencies' copyright.
 
-Built with  (B and C;  puts The Classy Elegance's CE logo) and
- (A, run in the work folder with the two cropped press photos).
+Built with `tools/thumb_ca.py thumb_spec.json` (B and C; `"logo": "ce"` puts The Classy Elegance's CE logo) and
+`thumb_A.py` (A, run in the work folder with the two cropped press photos).
