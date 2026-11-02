@@ -1,0 +1,24 @@
+empty   52.50-  59.50 (7.25s) talking=True
+empty  132.75- 137.75 (5.25s) talking=True
+empty  140.25- 147.25 (7.25s) talking=True
+empty  169.00- 173.00 (4.25s) talking=True
+empty  240.75- 244.50 (4.00s) talking=True
+empty  282.75- 286.75 (4.25s) talking=True
+empty  354.25- 356.00 (2.00s) talking=True
+empty  397.50- 398.50 (1.25s) talking=True
+empty  478.25- 478.75 (0.75s) talking=True
+empty  542.25- 546.75 (4.75s) talking=True
+empty  612.75- 614.50 (2.00s) talking=True
+empty  630.00- 631.00 (1.25s) talking=True
+empty  716.00- 716.75 (1.00s) talking=True
+empty  782.75- 785.25 (2.75s) talking=True
+empty  803.00- 809.00 (6.25s) talking=True
+empty  820.75- 831.00 (10.50s) talking=True
+empty  912.75- 917.00 (4.50s) talking=True
+empty  962.00- 962.75 (1.00s) talking=True
+empty 1033.50-1039.00 (5.75s) talking=True
+empty 1051.50-1055.00 (3.75s) talking=True
+empty 1074.50-1084.25 (10.00s) talking=True
+empty 1162.75-1165.75 (3.25s) talking=True
+empty 1178.25-1180.00 (2.00s) talking=True
+runs: 23  while talking: 23

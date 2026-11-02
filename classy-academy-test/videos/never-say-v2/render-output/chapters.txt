@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/runner/work/AISalesAgent1/AISalesAgent1/classy-academy-test/workflow/tools/chapters.py", line 18, in <module>
+    from deadair import load, parse_ts  # noqa: E402  (same parser, one implementation)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'deadair'

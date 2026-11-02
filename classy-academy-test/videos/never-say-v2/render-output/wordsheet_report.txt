@@ -1,0 +1,6 @@
+qa/words_0.jpg
+qa/words_1.jpg
+qa/words_2.jpg
+qa/words_3.jpg
+qa/words_4.jpg
+qa/words_5.jpg
