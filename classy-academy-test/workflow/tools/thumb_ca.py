@@ -4,6 +4,7 @@
 import sys, json
 sys.path.insert(0, '/home/user/AISalesAgent1/classy-academy-test/workflow/tools')
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
+import types; sys.modules.setdefault('crop', types.SimpleNamespace(crop=None))   # thumb_make's photo-search cropper is not needed here
 from thumb_make import sized, finish, FD
 import cv2
 casc = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')

@@ -1,0 +1,134 @@
+{
+ "A.jpg": {
+  "top": "7 Quiet Habits of",
+  "big": "High Class",
+  "small": "",
+  "underline": false,
+  "panels": [
+   {
+    "src": "fr/z_older31.png",
+    "face": [
+     335,
+     396,
+     168,
+     168
+    ],
+    "cw": 494.1176470588235,
+    "fy": 0.19,
+    "dx": 0.0
+   },
+   {
+    "src": "fr/h_kate3.png",
+    "face": [
+     346,
+     301,
+     242,
+     242
+    ],
+    "cw": 576.1904761904763,
+    "fy": 0.17,
+    "dx": 0.0
+   },
+   {
+    "src": "fr/h_film13.png",
+    "face": [
+     298,
+     251,
+     340,
+     340
+    ],
+    "cw": 708.3333333333334,
+    "fy": 0.22,
+    "dx": 0.0
+   }
+  ]
+ },
+ "B.jpg": {
+  "top": "Become",
+  "big": "Effortlessly Classy",
+  "small": "*7 quiet habits*",
+  "underline": false,
+  "panels": [
+   {
+    "src": "fr/h_soft2.png",
+    "face": [
+     280,
+     367,
+     182,
+     182
+    ],
+    "cw": 478.9473684210526,
+    "fy": 0.19,
+    "dx": 0.0
+   },
+   {
+    "src": "fr/h_lunch14.png",
+    "face": [
+     272,
+     390,
+     188,
+     188
+    ],
+    "cw": 470.0,
+    "fy": 0.19,
+    "dx": 0.0
+   },
+   {
+    "src": "fr/h_grace3.png",
+    "face": [
+     262,
+     252,
+     280,
+     280
+    ],
+    "cw": 608.695652173913,
+    "fy": 0.19,
+    "dx": 0.0
+   }
+  ]
+ },
+ "C.jpg": {
+  "top": "7 Quiet Habits",
+  "big": "Truly Classy",
+  "small": "*at any age*",
+  "underline": false,
+  "panels": [
+   {
+    "src": "fr/z_older12_clean.png",
+    "face": [
+     264,
+     356,
+     68,
+     68
+    ],
+    "cw": 309.09090909090907,
+    "fy": 0.22,
+    "dx": 0.0
+   },
+   {
+    "src": "fr/h_calm36.png",
+    "face": [
+     189,
+     292,
+     147,
+     147
+    ],
+    "cw": 408.33333333333337,
+    "fy": 0.17,
+    "dx": 0.0
+   },
+   {
+    "src": "fr/g_style44.png",
+    "face": [
+     282,
+     96,
+     121,
+     121
+    ],
+    "cw": 403.33333333333337,
+    "fy": 0.19,
+    "dx": 0.0
+   }
+  ]
+ }
+}
