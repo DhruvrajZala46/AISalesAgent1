@@ -70,10 +70,13 @@ def build(spec, out):
         big = spec['big']; first = big.split()[0]; bb = d.textbbox((W / 2, lines[1][2]), big, font=fb, anchor='ma')
         fw_ = d.textlength(first, font=fb); fb_ = d.textbbox((bb[0], lines[1][2]), first, font=fb, anchor='la')
         uy = fb_[3] + 10; d.rectangle((bb[0] - 18, uy, bb[0] + fw_ + 6, uy + 3), fill=(150, 22, 26))
-    lg = logo(); lg = lg.resize((172, 120), Image.LANCZOS)
-    lsh = Image.new('L', (W, H), 0); lsh.paste(lg.split()[3].point(lambda v: v * 0.6), (40, 22))
-    c.paste(Image.new('RGB', (W, H), (10, 8, 6)), (0, 0), lsh.filter(ImageFilter.GaussianBlur(4)))
-    c.paste(lg, (38, 20), lg)
+    if spec.get('logo') == 'ce':     # The Classy Elegance channel: its own CE logo (assets/logo_ce.png)
+        lg = Image.open(FD + '../logo_ce.png').convert('RGBA'); lg.thumbnail((96, 96), Image.LANCZOS); c.paste(lg, (16, 14), lg)
+    else:                            # Classy Academy: the drawn CA logo
+        lg = logo(); lg = lg.resize((172, 120), Image.LANCZOS)
+        lsh = Image.new('L', (W, H), 0); lsh.paste(lg.split()[3].point(lambda v: v * 0.6), (40, 22))
+        c.paste(Image.new('RGB', (W, H), (10, 8, 6)), (0, 0), lsh.filter(ImageFilter.GaussianBlur(4)))
+        c.paste(lg, (38, 20), lg)
     c.save(out, quality=95); print(out, 'panel src px per out px', info)
 
 if __name__ == '__main__':

@@ -1,0 +1,92 @@
+{
+ "B.jpg": {
+  "logo": "ce",
+  "top": "Elegant Women",
+  "big": "Never Replace",
+  "small": "*they restore*",
+  "underline": true,
+  "panels": [
+   {
+    "src": "fr/knit23.png",
+    "face": [
+     216,
+     179,
+     178,
+     178
+    ],
+    "cw": 523.5294117647059,
+    "fy": 0.2,
+    "dx": 0.0
+   },
+   {
+    "src": "fr/h_quiet41.png",
+    "face": [
+     301,
+     327,
+     108,
+     108
+    ],
+    "cw": 450.0,
+    "fy": 0.12,
+    "dx": 0.0
+   },
+   {
+    "src": "fr/pr2_21.png",
+    "face": [
+     337,
+     346,
+     199,
+     199
+    ],
+    "cw": 552.7777777777778,
+    "fy": 0.2,
+    "dx": 0.0
+   }
+  ]
+ },
+ "C.jpg": {
+  "logo": "ce",
+  "top": "Keep Every Piece",
+  "big": "Expensive",
+  "small": "*8 care secrets*",
+  "underline": false,
+  "panels": [
+   {
+    "src": "fr/h_quiet17.png",
+    "face": [
+     196,
+     253,
+     105,
+     105
+    ],
+    "cw": 437.5,
+    "fy": 0.2,
+    "dx": 0.0
+   },
+   {
+    "src": "fr/h_lunch34.png",
+    "face": [
+     281,
+     480,
+     188,
+     188
+    ],
+    "cw": 552.9411764705882,
+    "fy": 0.12,
+    "dx": 0.0
+   },
+   {
+    "src": "fr/knit29.png",
+    "face": [
+     288,
+     336,
+     89,
+     89
+    ],
+    "cw": 342.3076923076923,
+    "fy": 0.18,
+    "dx": 0.0
+   }
+  ]
+ }
+}
