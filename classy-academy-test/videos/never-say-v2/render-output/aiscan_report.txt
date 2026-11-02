@@ -1,0 +1,16 @@
+AI WATERMARK - DO NOT USE: none
+dinner_warm_smile  0.12
+blazer_desk_calm_no 0.06
+mk41810            0.06
+terrace_woman_quiet_listen 0.06
+amal_interview_smile 0.00
+amal_stage_composed 0.00
+amal_stage_listening 0.00
+amal_thank_you_nod 0.00
+audrey_sabrina_bw  0.00
+audrey_tiffany_table 0.00
+awkward_giver_pause 0.00
+boutique_counter_hanger 0.00
+cafe_arrival_smile 0.00
+cafe_group_chatting 0.00
+calm_breath_daylight 0.00
