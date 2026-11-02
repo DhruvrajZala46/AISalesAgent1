@@ -36,8 +36,12 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     5. the guest everyone invites back;
     6. sharing the credit;
     7. apologising cleanly.
-  - v2 is waiting for the user's "ship it".
-  - Visual note: viewers asked not to show Meghan Markle.
+  - v2 approved (2 Nov 2026); the user then asked for the video in the same style as Part 1, with similar but
+    not identical visuals, every clip once, matched line by line, and no website.
+  - Video v1 built (2 Nov 2026): 120 clips, each used once; none from Part 1 or from the last video
+    (`tools/oldclash.py`); only Part 1's layouts (`VISUAL-ANALYSIS.md`, `edit.py`, `SOURCES-LOG.md`, `CREDITS.txt`).
+    The CA "Classy Academy" logo is drawn in the corner and on the end card. No Meghan Markle.
+  - Title screen: the episode number was left off (Part 1 shows "Episode 21"; the current number is unknown).
 
 ## 1. Where things stand right now
 
