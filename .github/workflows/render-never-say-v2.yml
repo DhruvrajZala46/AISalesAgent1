@@ -9,18 +9,61 @@ permissions:
   contents: write
 
 jobs:
-  probe:
+  render:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:
           ref: claude/youtube-channel-analysis-lghfsv
-      - name: Run asset & TTS speed probe
+
+      - name: Install system & Python dependencies
         run: |
-          python3 classy-academy-test/videos/never-say-v2/fetch_assets_probe.py
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng libsndfile1 fonts-dejavu-core
+          pip install -q kokoro soundfile faster-whisper pillow opencv-python-headless numpy scipy
+
+      - name: Run full never-say-v2 production pipeline
+        run: |
+          chmod +x classy-academy-test/videos/never-say-v2/render.sh
+          cd classy-academy-test/videos/never-say-v2
+          ./render.sh 2>&1 | tee render-output/full_pipeline.log
+
+      - name: Upload MP4 and QA bundle to GitHub Actions Artifacts & Release
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: never-say-v2-mp4-and-qa
+          path: |
+            classy-academy-test/videos/never-say-v2/out/never-say-v2.mp4
+            classy-academy-test/videos/never-say-v2/render-output/*
+            classy-academy-test/videos/never-say-v2/beats.json
+            classy-academy-test/videos/never-say-v2/words.json
+            classy-academy-test/videos/never-say-v2/CREDITS.txt
+
+      - name: Publish GitHub Release with final MP4
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release delete never-say-v2-final -y || true
+          gh release create never-say-v2-final \
+            classy-academy-test/videos/never-say-v2/out/never-say-v2.mp4 \
+            --title "8 Things Elegant Ladies Never Say: What to Say Instead (Final 1080p30 MP4)" \
+            --notes "Complete rendered 1080p30 video for Classy Academy (never-say-v2)." || true
+
+      - name: Commit QA reports, contact sheets, and download URLs back to branch
+        if: always()
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add classy-academy-test/videos/never-say-v2/render-output/asset_probe.json
-          git commit -m "ci: asset probe results [skip ci]" || true
+          cp classy-academy-test/videos/never-say-v2/beats.json classy-academy-test/videos/never-say-v2/render-output/ || true
+          cp classy-academy-test/videos/never-say-v2/words.json classy-academy-test/videos/never-say-v2/render-output/ || true
+          cp classy-academy-test/videos/never-say-v2/shots.json classy-academy-test/videos/never-say-v2/render-output/ || true
+          cp classy-academy-test/videos/never-say-v2/aiscan.json classy-academy-test/videos/never-say-v2/render-output/ || true
+          cp classy-academy-test/videos/never-say-v2/CREDITS.txt classy-academy-test/videos/never-say-v2/ || true
+          git add classy-academy-test/videos/never-say-v2/render-output/ classy-academy-test/videos/never-say-v2/CREDITS.txt
+          git commit -m "ci: complete never-say-v2 render & QA outputs [skip ci]" || true
+          git pull --rebase origin claude/youtube-channel-analysis-lghfsv || true
           git push origin claude/youtube-channel-analysis-lghfsv
