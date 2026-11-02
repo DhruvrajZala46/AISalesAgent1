@@ -506,7 +506,7 @@ full([(C('michelle_obama_stage_suit', 0.4, 7.2), nx(62))], en(62) + 0.25)       
 # Line 64: And if friends invite you to an expensive dinner or trip that doesn't align with your financial priorities right now, you never need to say, "I'm too broke for that." Instead, say with complete confidence, "I'm going to sit this dinner out, but I would love to grab coffee with you next week," or "That is outside what I'm prioritizing right now, so let's plan a lunch together soon instead."
 framed([
     (C('over60chic0', 3.0, 9.0), nx(63)),
-    (C('mk41810', 4.8, 9.1), nx(64)),
+    (C('mk41810', 6.8, 12.5), nx(64)),
     (C('px8922355', 5.0, 10.5), at(64, 'That is outside')),
 ], en(64) + 0.35)
 phrase([

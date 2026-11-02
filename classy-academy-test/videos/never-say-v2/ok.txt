@@ -112,7 +112,7 @@ luxury_hotel_balcony 0.4-6.5 : line 59b : Pexels — Woman on luxury hotel balco
 fine_dining_champagne 0.4-6.5 : line 59c : Pexels — Fine dining table with champagne glasses
 cafe_group_chatting 0.4-6.5 : line 61a : Pexels — Casual group of friends chatting at café
 leather_bag_wave_off 0.4-6.8 : line 61b : Pexels — Woman holding leather handbag waving off compliment
-mk41810 4.8-9.1 : line 64a : Mixkit 41810 — Two friends smiling over afternoon coffee
+mk41810 6.8-12.5 : line 64a : Mixkit 41810 — Two friends smiling over afternoon coffee
 px8922355 5.0-10.5 : line 64b : Pexels 8922355 — Two friends laughing over lunch
 whispering_table_two 0.4-9.8 : line 67 : Mixkit 51237 — Two women leaning in closely at restaurant table
 mk42716 0.5-6.0 : line 68a : Mixkit 42716 — Friends having wine on a terrace balcony
