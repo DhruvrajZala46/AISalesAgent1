@@ -93,3 +93,4 @@ c083.wav  (11.9s)  Even choosing just one or two of these phrases to practice t
 c084.wav  (15.0s)  Now I would love to hear from you: which of these eight verb
 c085.wav  (19.7s)  If you enjoyed today's video, please give it a thumbs up, su
 TTS SUMMARY: speed=0.88, total_words=3096, speech_duration=1172.6s (19.54m), spoken_WPM=158.4
+Using cached 85 TTS wav files in tts/
