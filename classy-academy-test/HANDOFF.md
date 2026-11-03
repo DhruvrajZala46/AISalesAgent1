@@ -45,6 +45,11 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     0 black frames, 0 silence; the only freezes are the white point cards. Waiting for the user's review.
   - Title screen: the episode number was left off (Part 1 shows "Episode 21"; the current number is unknown).
 
+- **New script (3 Nov 2026):** the user pasted a Paris Never Ages script ("French Women Over 60 Never Wear These 10
+  Things", 564k) and attached 29 Classy Academy scripts, asking for the same kind of script in the channel's own format.
+  Script v1 is in `videos/age-swaps/`: "8 Things That Quietly Age You: What to Wear Instead". It uses the structure of the
+  #1 video and drops 5 items already taught on either channel. It is waiting for the user's "ship it".
+
 ## 1. Where things stand right now
 
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in
