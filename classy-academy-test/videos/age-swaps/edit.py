@@ -159,154 +159,264 @@ def twoframes(a, b, t0, tb, t1, la=None, lb=None, mid=None, tm=None):
         for k, (txt, tt) in enumerate(zip(mid, tm)):
             q(txt, tt, t1, (690, 330 + k * 140, 1230, 450 + k * 140), size=48, dur=0.9)
 
-FACEFIX.update({'h_film34': 0.4, 'h_silver4': 0.22, 'r_audrey3_4': 0.45, 'r_audrey2_22': 0.5, 'r_audrey3_0': 0.5, 'h_film3': 0.4})
+# ======================= v2 (user review, 3 Nov 2026): The Classy Elegance channel's own layouts =======================
+# Read off the storyboards of the channel's own videos (7 Things Elegant French Women Never Wear, 8 Things That Make You
+# Look Older, 7 Things Elegant Ladies Never Wear in Winter, 8 Ways to Always Look Put Together):
+#  - full screen from a vertical reel = the WHOLE clip, sharp, in the centre, over a soft blurred copy of itself
+#    (never a 16:9 crop of a vertical clip: that cut faces in v1)
+#  - one clip at the left (or left third) of the caramel backdrop, the line to remember beside it
+#  - rows of whole 9:16 clips from the left edge, one per spoken item, caramel showing at the right
+#  - product photos cut out on the caramel with their name in script; real photos in frames
+from PIL import Image as _PILImage
+CANV = set()                                   # specs prepared as blurred-backdrop full screens
+_prep_fill2 = prep
+def prep(spec, need):
+    if tuple(spec) not in CANV: return _prep_fill2(spec, need)
+    key, a, b = spec
+    seg = b - a; speed = 1.0
+    if need > seg: speed = min(1.4, need / seg)
+    if need > seg * speed + 0.05: SHORT.append(f'{key} {a}-{b} needs {need:.1f}s has {seg*speed:.1f}s')
+    name = f'K_{key}_{a:g}_{b:g}_{speed:.2f}' + ('_c%g_%g_%g' % CROP[key] if key in CROP else '') + '.mp4'
+    name = name.replace('-', 'm'); out = os.path.join(A, name)
+    if not os.path.exists(out):
+        w, h = SHOTS[key]['w'], SHOTS[key]['h']
+        tm = ('zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p,'
+              if SHOTS[key].get('hdr') else '')
+        pre = ''
+        if key in CROP:
+            x0, y0, hh = CROP[key]; ww = hh * 720 / 1280
+            pre = f'scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280,crop={ww:.0f}:{hh:.0f}:{x0:.0f}:{y0:.0f},'
+        if w / h >= 1.70 and key not in CROP:
+            fc = f'[0:v]{tm}scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080,setsar=1,setpts={speed:.4f}*PTS,fps=30[o]'
+        else:
+            fc = (f'[0:v]{tm}{pre}setsar=1,split[a][b];[a]scale=480:270:force_original_aspect_ratio=increase,crop=480:270,boxblur=12:2,'
+                  f'scale=1920:1080,eq=brightness=-0.04:saturation=0.92[bg];[b]scale=-2:1080:flags=lanczos[fg];'
+                  f'[bg][fg]overlay=(W-w)/2:0,setsar=1,setpts={speed:.4f}*PTS,fps=30[o]')
+        sh(f'ffmpeg -nostdin -v error -y -ss {a} -t {seg:.3f} -i {R}/{key}.mp4 -an -filter_complex "{fc}" -map "[o]" -c:v libx264 -preset veryfast -crf 17 -g 30 -keyint_min 30 -sc_threshold 0 -pix_fmt yuv420p -movflags +faststart {out}')
+    return name
+
+def cfull(shots, t1):
+    """A: full screen the channel's way - the whole vertical clip in the centre over its own soft blurred copy"""
+    for s in shots: CANV.add(tuple(s[0]))
+    return _frames([s[:2] for s in shots], t1, 0, 0, W, H, dr=1.025)
+
+def lclip(shots, t1, x=0):
+    """one whole vertical clip (or a few in turn) on the caramel backdrop: x=0 at the left edge, x=330 the left third"""
+    return _frames(shots, t1, x, 0, PW, H)
+QL = (PW + 50, 60, 1870, 1020)                         # beside a clip at x=0
+QL3 = (330 + PW + 40, 60, 1880, 1020)                  # beside a clip at the left third
+
+def lrow(specs, times, t_end, w=PW, x0=0, labels=None):
+    """a row of whole vertical clips from the left edge, one per spoken item (caramel shows at the right)"""
+    for k, (s, tt) in enumerate(zip(specs, times)):
+        panel(s, x0 + k * w, x0 + (k + 1) * w, tt, t_end, label=(labels or [None] * len(specs))[k])
+
+def _rise(i, t0, t1):
+    tw.append(f'tl.fromTo("#{i}",{{opacity:0,y:34}},{{opacity:1,y:0,duration:0.8,ease:"power2.out"}},{t0:.3f});'); fade_out(i, t1, 0.5)
+PHOTOS = []
+def prod(png, cx, ybot, hh, t0, t1, label=None, maxw=430, lsize=60):
+    """a product photo cut out on the caramel backdrop (the channel's packshots), its name in script underneath"""
+    im = _PILImage.open(os.path.join(A, png)); r = im.width / im.height
+    h2 = hh; w2 = hh * r
+    if w2 > maxw: w2 = maxw; h2 = w2 / r
+    i = nid('pd'); PHOTOS.append(png)
+    els.append(f'<div id="{i}" style="position:absolute;z-index:46;left:{cx-w2/2:.0f}px;top:{ybot-h2:.0f}px;width:{w2:.0f}px;height:{h2:.0f}px;opacity:0">'
+               f'<img src="assets/{png}" style="width:100%;height:100%;display:block;filter:drop-shadow(0 22px 26px rgba(70,35,15,.38))"></div>')
+    _rise(i, t0, t1)
+    if label: plabel(label, cx, ybot + 6, t0 + 0.35, t1, lsize)
+def plabel(txt, cx, y, t0, t1, size=60):
+    i = nid('pl'); els.append(f'<div id="{i}" class="cl" style="left:{cx-330}px;top:{y}px;width:660px;font-size:{size}px;text-shadow:0 2px 14px rgba(60,40,25,.35);opacity:0">{txt}</div>')
+    tw.append(f'tl.fromTo("#{i}",{{opacity:0,y:14}},{{opacity:1,y:0,duration:0.8,ease:"power2.out"}},{t0:.3f});'); fade_out(i, t1, 0.5)
+def photo(png, x0, y0, w, h, t0, t1, label=None, pos='50% 50%'):
+    """a real photo (jewellery, a film portrait, a vintage postcard) in a frame on the caramel backdrop"""
+    i = nid('ph'); PHOTOS.append(png)
+    els.append(f'<div id="{i}" class="w" style="left:{x0}px;top:{y0}px;width:{w}px;height:{h}px;opacity:0;border-radius:4px;box-shadow:0 24px 56px rgba(60,30,12,.30)">'
+               f'<img src="assets/{png}" class="photo" style="object-position:{pos}"></div>')
+    _rise(i, t0, t1)
+    if label: plabel(label, x0 + w // 2, y0 + h + 8, t0 + 0.35, t1, 56)
+
+# v2 beat map (3 Nov 2026, after the creator's review): new intro, every phrase shown as it is said, product photos
+# where the script names colours/pieces, no 16:9 crops of vertical clips, the CE logo.
 CROP['bag_empty13'] = (0, 0, 1080)                                                          # above her KEEP/REMOVE captions
-CROP['w_wide17'] = (56, 190, 1080)                                                          # below her caption
+CROP['t_pool27'] = (56, 100, 1080); CROP['t_pool10'] = (56, 100, 1080)                    # grey screen-record bands                                                          # below her caption
+FACEFIX.update({'r_audrey2_22': 0.5})
 
 def en_(i): return en(i) + 0.5                                                              # hand-over just before a white card
 
-# ================= HOOK (A full-screen, D centred, E row; as the #1 video's first 45 s) =================
-full([(C('h_walk33', 0.0, 5.0), 0.0), (C('h_silver4', 3.0, 12.7), at(1, 'walk into') - 0.1),
-      (C('h_silver21', 0.0, 3.9), at(1, 'How does') - 0.1)], nx(2))
-centre([(C('h_silver35', 0.3, 9.0), nx(2))], at(2, 'And yet') - 0.1)                          # D: not trying to look younger
-prow([C('h_sixty20', 0.3, 9.0), C('h_silver10', 0.3, 9.0), C('h_sixty27', 0.3, 9.0)],          # E: lighter and brighter
-     [at(2, 'And yet') - 0.2, at(2, 'lighter'), at(2, 'half her age')], nx(3))
-full([(C('h_film3', 0.3, 6.0), nx(3)), (C('h_walk26', 0.3, 6.2), at(3, 'it comes down'))], en(3) + 0.35)   # Audrey (Sabrina); stopped wearing
-white(en(3) + 0.35, at(4, 'eight') - 0.1); text("In today&#8217;s video", 'card', en(3) + 0.65, at(4, 'eight') - 0.25, dur=1.0, out=0.4)   # B
-full([(C('r_audrey3_4', 0.0, 11.0), at(4, 'eight') - 0.3)], nx(5))                               # C: the title over Malena
-q('<i style="font-size:116px">8 Things That<br>Quietly Age You</i>', at(4, 'eight') + 0.1, en(4) + 0.4, QC, cls='over')
-centre([(C('h_older23', 1.4, 6.3), nx(5))], at(5, 'Some of these') - 0.1)                    # D
-prow([C('h_sixty5', 0.3, 9.0), C('h_silver43', 0.3, 9.0), C('h_walk17', 0.3, 9.0)],          # E: you'll see them
-     [at(5, 'Some of these') - 0.2, at(5, 'but once'), at(5, "you'll never")], en_(5))
+# ================= HOOK =================
+# 1 "Have you ever seen a woman in her sixties walk into a cafe and thought, 'How does she look so fresh?'"
+cfull([(C('v_paris60_9', 0.0, 6.5), 0.0), (C('v_grey23', 0.0, 12.73), at(1, 'walk into') - 0.1),
+       (C('h_silver21', 0.0, 3.9), at(1, 'How does') - 0.1)], nx(2))
+# 2 "She isn't trying to look younger. No trendy outfit, no designer label in sight. And yet she seems lighter and
+#    brighter than women half her age."
+lrow([C('v_grey14', 0.3, 12.0), C('v_grey5', 7.2, 11.6), C('v_paris60_44', 0.0, 9.0)],
+     [nx(2), at(2, 'No trendy'), at(2, 'no designer')], at(2, 'And yet') - 0.1)
+cfull([(C('v_paris60_25', 0.0, 15.5), at(2, 'And yet') - 0.2), (C('v_sixties32', 0.0, 9.0), at(2, 'half her age') - 0.3)], nx(3))
+# 3 "That kind of elegance isn't accidental. More often than not, it comes down to what she has quietly stopped wearing."
+lclip([(C('v_grey44', 0.0, 7.4), nx(3))], at(3, 'More often') - 0.1)
+q('That kind of elegance<br>isn&#8217;t <i>accidental</i>.', st(3) + 0.2, at(3, 'More often') - 0.2, QL)
+cfull([(C('z_closet10', 0.0, 7.8), at(3, 'More often') - 0.2)], en(3) + 0.35)
+# 4 "In today's video ..." + the title
+white(en(3) + 0.35, at(4, 'eight') - 0.1); text("in today&#8217;s video...", 'card', en(3) + 0.65, at(4, 'eight') - 0.25, dur=1.0, out=0.4)
+cfull([(C('v_sixties48', 0.0, 8.77), at(4, 'eight') - 0.3), (C('v_paris60_22', 4.1, 26.5), at(4, 'and the simple') - 0.1)], nx(5))
+q('<i style="font-size:116px">8 Things That<br>Quietly Age You</i>', at(4, 'eight') + 0.1, at(4, 'and the simple') - 0.3, QC, cls='over')
+# 5 "Most of them are easy to fix, and many need nothing new at all. Some of these may surprise you, but once you see
+#    them, you'll never unsee them. Let's get started."
+lrow([C('w_tuck22', 0.0, 8.15), C('z_wardrobe42', 0.0, 7.0), C('v_sixties15', 15.0, 18.0)],
+     [nx(5), at(5, 'and many'), at(5, 'Some of these')], at(5, "you'll never") - 0.1)
+cfull([(C('z_door48', 0.0, 6.2), at(5, "you'll never") - 0.2)], en_(5))
 
 # ================= 1. TROUSERS THAT POOL AROUND YOUR SHOES =================
 card_at('1. Trousers that pool around your shoes', 6, en(6) + 0.3, size=96)
-centre([(C('t_pool18', 0.0, 2.8), st(7) - 0.2), (C('t_pool37', 0.0, 2.9), at(7, 'A little'))], at(8, 'bunches') - 0.3)                    # D: a little extra length
-prow([C('t_pool10', 0.0, 6.2), C('t_pool27', 0.0, 8.0), C('t_pool32', 0.0, 7.7)],            # E: the mistake, one per phrase
-     [at(8, 'bunches') - 0.3, at(8, 'steals length'), at(8, 'makes even')], nx(9))
-q('&#8220;Elegant women keep one clean,<br><i>unbroken line</i> down to the shoe.&#8221;', st(9) + 0.1, en(9) + 0.3, QC)   # F
-centre([(C('t_straight1', 0.3, 9.0), nx(10))], at(10, 'in navy') - 0.1)                       # D: the swap
-prow([C('t_straight23', 0.3, 6.0), C('t_straight26', 0.3, 6.0), C('t_straight44', 4.1, 10.0), C('t_straight16', 0.3, 6.0)],   # E: navy, cream, camel, grey
-     [at(10, 'navy') - 0.2, at(10, 'cream'), at(10, 'camel'), at(10, 'grey')], en(10) + 0.3, n=4)
-gside([(C('t_tailor8', 0.3, 9.0), nx(11)), (C('t_hem4', 0.3, 8.0), at(11, 'and ask'))], en(11) + 0.35)   # G
-q('Take them to a <i>tailor</i>,<br>with the shoes you&#8217;ll wear.', st(11) + 0.2, at(11, 'and ask') - 0.2, QG, size=56)
-q('&#8220;A hem that just meets<br>the <i>top of the shoe</i>.&#8221;', at(11, 'and ask'), en(11) + 0.3, QG, size=56)
-full([(C('t_wool10', 0.0, 4.2), nx(12)), (C('t_wool40', 0.3, 8.0), at(12, 'and suddenly'))], en_(12))   # A: exit
+lclip([(C('t_wool30', 0.0, 5.28), st(7))], st(8) - 0.35, x=330)                               # a little extra length
+lrow([C('t_pool27', 0.0, 8.0), C('t_pool10', 0.0, 6.2)], [st(8) - 0.2, at(8, 'steals length')], nx(9))   # bunches / steals length
+q('It makes even good trousers<br>look <i>borrowed</i>.', at(8, 'makes even') - 0.1, en(8) + 0.3, (1256, 60, 1880, 1020), size=54)
+lclip([(C('t_straight1', 0.3, 9.0), nx(9))], nx(10))
+q('Elegant women keep one clean,<br><i>unbroken line</i> down to the shoe.', st(9) + 0.1, en(9) + 0.3, QL, size=56)
+lrow([C('t_straight44', 4.1, 12.0), C('t_wool42', 0.0, 7.9), C('t_straight26', 0.3, 6.0)],      # straight leg / wool / twill
+     [nx(10), at(10, 'wool crepe'), at(10, 'cotton twill')], at(10, 'in navy') - 0.15)
+for k, (png, w_) in enumerate([('ph_tnavy.png', 'navy'), ('ph_tcream.png', 'cream'), ('ph_tcamel.png', 'camel'), ('ph_tgrey.png', 'grey')]):
+    prod(png, 300 + k * 440, 880, 780, at(10, w_) - 0.15, en(10) + 0.45, label=w_, maxw=400)
+lclip([(C('t_tailor8', 0.3, 9.0), nx(11)), (C('t_hem18', 0.0, 8.3), at(11, 'wear the shoes')), (C('t_hem0', 8.0, 17.1), at(11, 'and ask'))], en(11) + 0.35)
+q('Take your favourite pair<br>to a <i>tailor</i>.', st(11) + 0.2, at(11, 'wear the shoes') - 0.2, QL, size=58)
+q('Wear the <i>shoes</i><br>you&#8217;ll pair them with.', at(11, 'wear the shoes'), at(11, 'and ask') - 0.2, QL, size=58)
+q('A hem that just meets<br>the <i>top of the shoe</i>.', at(11, 'and ask'), en(11) + 0.3, QL, size=58)
+cfull([(C('t_hem0', 0.0, 8.0), nx(12)), (C('t_wool40', 0.3, 8.0), at(12, 'and suddenly'))], en_(12))
 
 # ================= 2. STIFF BLOUSES WITH RUFFLES AT THE NECK =================
 card_at('2. Stiff blouses with ruffles at the neck', 13, en(13) + 0.3, size=96)
-prow([C('b_jabot1', 0.3, 8.0), C('b_jabot2', 0.3, 8.07), C('b_bow2', 0.3, 8.0)],              # E: frilled collar, big bow, on the hanger
+lrow([C('b_jabot1', 0.3, 8.0), C('b_jabot6', 0.0, 8.0), C('b_bow2', 0.3, 8.0)],               # frilled collar / big bow / on the hanger
      [st(14) - 0.2, at(14, 'big bow'), at(14, 'on the hanger')], nx(15))
-centre([(C('b_jabot45', 0.3, 9.5), nx(15))], at(15, 'The eye') - 0.1)                       # D: stiff, crowding the chin
-prow([C('b_victorian15', 0.0, 5.8), C('b_jabot27', 0.0, 7.8), C('b_victorian0', 0.3, 12.0)],
-     [at(15, 'The eye') - 0.2, at(15, 'instead of'), at(15, 'old-fashioned')], nx(16))
-q('&#8220;Elegant women let <i>softness</i><br>frame the face.&#8221;', st(16) + 0.1, en(16) + 0.3, QC)   # F
-centre([(C('b_silk0', 0.3, 9.0), nx(17))], at(17, 'in silk') - 0.1)                           # D: the swap
-prow([C('b_silk10', 0.3, 9.0), C('b_satin6', 0.3, 9.0), C('b_silk47', 0.3, 8.9)],
-     [at(17, 'in silk') - 0.2, at(17, 'satin crepe'), at(17, 'with an open')], en(17) + 0.3)
-full([(C('b_satin18', 0.0, 6.0), nx(18))], at(18, 'Cream') - 0.1)                            # A: the sheen near the face
-prow([C('b_satin5', 0.3, 8.9), C('b_satin20', 0.3, 9.0), C('b_silk39', 0.0, 5.27)],
-     [at(18, 'Cream') - 0.2, at(18, 'blush'), at(18, 'especially')], en(18) + 0.3)
-gside([(C('g_ready45', 1.0, 6.8), nx(19)), (C('b_satin38', 0.3, 8.5), at(19, "If it's your"))], en_(19))                                         # G: the mirror test
-q('Notice what you see first<br>in the <i>mirror</i>.', st(19) + 0.2, at(19, "If it's your") - 0.2, QG, size=56)
-q('&#8220;If it&#8217;s your face, <i>keep it</i>.<br>If it&#8217;s the blouse, let it go.&#8221;', at(19, "If it's your"), en(19) + 0.3, QG, size=56)
+lrow([C('b_victorian0', 0.3, 12.0), C('b_victorian3', 0.0, 8.8), C('b_jabot27', 0.0, 7.8)],    # stiff fabric / all those frills / the eye
+     [nx(15), at(15, 'all those frills'), at(15, 'The eye')], at(15, 'old-fashioned') - 0.4)
+lclip([(C('b_jabot9', 0.0, 6.1), at(15, 'old-fashioned') - 0.5)], en(15) + 0.35, x=330)       # old-fashioned
+lclip([(C('b_silk39', 0.0, 5.27), nx(16))], nx(17))
+q('Elegant women let <i>softness</i><br>frame the face.', st(16) + 0.1, en(16) + 0.3, QL)
+lrow([C('b_silk0', 0.3, 15.0), C('b_satin6', 0.3, 12.0), C('b_silk10', 0.3, 15.2)],           # drapes / satin crepe / moves
+     [nx(17), at(17, 'satin crepe'), at(17, 'moves when')], at(17, 'with an open') - 0.15)
+lrow([C('b_silk47', 0.0, 8.9), C('b_satin38', 0.3, 3.6)], [at(17, 'open collar') - 0.3, at(17, 'V-neck') - 0.1], nx(18),
+     labels=['open collar', 'gentle V-neck'])
+cfull([(C('b_satin18', 0.0, 6.0), nx(18))], at(18, 'Cream') - 0.1)                             # the sheen near the face
+for k, (png, w_, lab) in enumerate([('ph_bcream.png', 'Cream', 'cream'), ('ph_bblush.png', 'blush', 'blush'), ('ph_bblue.png', 'powder blue', 'powder blue')]):
+    prod(png, 420 + k * 540, 860, 700, at(18, w_) - 0.15, en(18) + 0.45, label=lab, maxw=500)
+lclip([(C('g_ready45', 1.0, 6.8), nx(19)), (C('b_satin20', 0.3, 11.0), at(19, "If it's your"))], en_(19))
+q('Notice what you see first<br>in the <i>mirror</i>.', st(19) + 0.2, at(19, "If it's your") - 0.2, QL, size=58)
+q('If it&#8217;s your face, <i>keep it</i>.<br>If it&#8217;s the blouse, let it go.', at(19, "If it's your"), en(19) + 0.3, QL, size=58)
 
 # ================= 3. THE BIG CHUNKY ROLL NECK =================
 card_at('3. The big chunky roll neck', 20, en(20) + 0.3)
-centre([(C('r_chunky18', 0.3, 12.0), st(21) - 0.2)], nx(22))                                   # D
-full([(C('r_chunky0', 0.3, 8.0), nx(22))], at(22, 'It piles') - 0.1)                          # A: the thick rolls
-prow([C('r_chunky33', 0.0, 9.1), C('r_chunky4', 0.3, 9.0), C('r_mock7', 0.7, 5.2)],
-     [at(22, 'It piles') - 0.2, at(22, 'under the chin'), at(22, 'shortens')], nx(23))
-full([(C('r_audrey2_22', 0.3, 12.0), nx(23)), (C('r_audrey3_0', 0.3, 8.0), at(23, "That's the version"))], nx(24))   # A: Funny Face, Sabrina
-centre([(C('r_merino24', 0.0, 8.07), nx(24))], at(24, 'in merino') - 0.1)                    # D: the swap
-prow([C('r_fine12', 1.9, 9.97), C('r_merino9', 0.0, 5.8), C('r_fine21', 0.3, 8.0)],
-     [at(24, 'in merino') - 0.2, at(24, 'cashmere'), at(24, 'soft cotton')], at(24, 'folded over') - 0.1)
-full([(C('r_fine36', 0.0, 2.1), at(24, 'folded over') - 0.2), (C('r_fine3', 0.0, 8.93), at(24, 'just once'))], nx(25))                        # A: folded over once
-gside([(C('r_mock1', 0.3, 8.8), nx(25))], en(25) + 0.35)                                      # G
-q('A <i>mock neck</i> rises<br>just a little way.', at(25, 'a mock neck') - 0.1, en(25) + 0.3, QG, size=60)
-full([(C('r_merino42', 0.0, 8.11), nx(26))], en(26) + 0.4)                                    # A: exit
+lclip([(C('r_chunky18', 0.3, 12.0), st(21) - 0.2)], nx(22), x=330)
+lrow([C('r_chunky31', 6.1, 14.69), C('r_chunky33', 0.0, 9.1), C('r_chunky4', 0.3, 10.37)],    # thick rolls / under the chin / shortens
+     [nx(22), at(22, 'It piles'), at(22, 'shortens')], nx(23) - 0.2)
+full([(C('r_audrey2_22', 0.3, 12.0), nx(23))], at(23, 'in a slim') - 0.1)                       # Funny Face, all in black
+photo('ph_audrey.png', 150, 75, 698, 930, at(23, 'in a slim') - 0.3, at(23, "That's the version") - 0.1)
+q('A slim turtleneck that<br>simply <i>follows the neck</i>.', at(23, 'in a slim'), at(23, "That's the version") - 0.2, (930, 60, 1860, 1020), size=58)
+cfull([(C('r_audrey3_0', 0.3, 8.0), at(23, "That's the version") - 0.2)], nx(24))
+lrow([C('r_merino24', 0.0, 8.07), C('r_fine32', 0.0, 8.8), C('r_merino9', 0.0, 5.8), C('r_fine7', 1.3, 22.0)],
+     [nx(24), at(24, 'in merino'), at(24, 'cashmere'), at(24, 'soft cotton')], at(24, 'folded over') - 0.1, w=480,
+     labels=[None, 'merino', 'cashmere', 'soft cotton'])
+cfull([(C('r_merino42', 0.0, 8.11), at(24, 'folded over') - 0.2)], nx(25))                    # folded over just once
+lclip([(C('r_mock1', 0.3, 8.8), nx(25))], en(25) + 0.35)
+prod('ph_mock.png', 960, 880, 760, at(25, 'a mock neck') - 0.2, en(25) + 0.3, label='mock neck', maxw=440)
+q('Rises just a little<br>way up the <i>neck</i>.', at(25, 'rises') - 0.1, en(25) + 0.3, (1240, 60, 1890, 1020), size=56)
+cfull([(C('r_merino3', 1.5, 15.0), nx(26))], en(26) + 0.4)
 
-# ================= THE GUIDE (K: text over full-screen clips, no website) =================
-full([(C('g_drape38', 0.3, 9.0), st(27) - 0.1), (C('g_drape19', 1.5, 5.5), at(27, 'They know')),
-      (C('g_ready16', 0.3, 8.0), at(27, 'the necklines')), (C('w_wrap0', 0.3, 9.0), at(27, 'the shapes')),
-      (C('g_drape45', 0.3, 12.0), at(28, 'our personal') - 0.3)], en_(28))
+# ================= THE GUIDE (text over full-screen clips, no website) =================
+cfull([(C('g_ready16', 0.3, 8.0), st(27) - 0.1), (C('g_drape38', 0.3, 9.0), at(27, 'They know')),
+       (C('g_drape19', 1.5, 8.6), at(27, 'the necklines')), (C('w_wrap0', 0.3, 9.0), at(27, 'the shapes')),
+       (C('g_drape45', 0.3, 12.0), at(28, 'our personal') - 0.3)], en_(28))
 q('<div><span style="font-size:44px">Check The Description For</span><br><i style="font-size:120px">Personal Stylist Guide</i></div>', at(28, 'our personal') - 0.2, en(28) + 0.3, QC, cls='over')
 
 # ================= 4. THE LONG CARDIGAN THAT HAS LOST ITS SHAPE =================
 card_at('4. The long cardigan that has lost its shape', 29, en(29) + 0.3, size=90)
-centre([(C('c_long17', 0.3, 9.0), st(30) - 0.2)], nx(31))                                    # D
-prow([C('c_long12', 0.3, 15.2), C('c_long10', 0.3, 7.8), C('c_long0', 0.3, 11.0)],            # E: stretched, past the hips, sagging pockets
-     [at(31, 'stretched') - 0.2, at(31, 'hangs past'), at(31, 'sags at')], nx(32))
-q('They simply choose ones that<br><i>hold their shape</i>.', at(32, 'They simply') - 0.2, en(32) + 0.3, QC)   # F
-centre([(C('c_fine12', 1.4, 7.63), nx(33))], at(33, 'that ends') - 0.1)                       # D: the swap
-twoframes(C('c_fine33', 0.3, 7.97), C('c_saggy44', 0.3, 9.0), at(33, 'that ends') - 0.2, at(33, 'and buttons'), en(33) + 0.3,   # H
-          mid=['Ends at the hip', 'Neat cuffs', 'Buttons that close'], tm=[at(33, 'ends around'), at(33, 'neat cuffs'), at(33, 'buttons that')])
-prow([C('c_silk24', 0.3, 9.0), C('c_silk30', 0.3, 9.0), C('c_shoulders1', 0.3, 9.0)],        # E: as a top, over silk, over the shoulders
-     [at(34, 'Button it') - 0.2, at(34, 'leave it'), at(34, 'drape it')], at(34, 'Same comfort') - 0.1)
-full([(C('c_fine40', 0.0, 7.03), at(34, 'Same comfort') - 0.2)], en_(34))                     # A: exit
+lclip([(C('c_long17', 0.3, 11.1), st(30) - 0.2)], nx(31), x=330)
+lrow([C('c_saggy6', 0.0, 10.97), C('c_long10', 0.3, 7.8), C('c_long0', 0.3, 15.2)],           # stretched / past the hips / pockets
+     [nx(31), at(31, 'hangs past'), at(31, 'sags at')], nx(32))
+lclip([(C('c_fine16', 5.6, 15.0), nx(32))], nx(33))
+q('Elegant women still<br><i>love their knits</i>.', st(32) + 0.1, at(32, 'They simply') - 0.2, QL)
+q('They simply choose ones that<br><i>hold their shape</i>.', at(32, 'They simply'), en(32) + 0.3, QL)
+lclip([(C('c_fine17', 0.0, 18.2), nx(33))], en(33) + 0.35)
+prod('ph_cardi.png', 940, 900, 780, at(33, 'fine-knit') - 0.2, en(33) + 0.3, maxw=560)
+for k, (txt, w_) in enumerate([('Ends at the <i>hip</i>', 'ends around'), ('Neat <i>cuffs</i>', 'neat cuffs'), ('Buttons that <i>close</i>', 'buttons that')]):
+    q(txt, at(33, w_) - 0.1, en(33) + 0.3, (1260, 300 + k * 160, 1890, 440 + k * 160), size=56, dur=0.9)
+lrow([C('c_silk24', 0.3, 15.0), C('c_silk30', 0.3, 15.0), C('c_shoulders1', 0.3, 14.65)],     # as a top / over silk / over the shoulders
+     [nx(34), at(34, 'leave it'), at(34, 'drape it')], at(34, 'Same comfort') - 0.1)
+cfull([(C('c_fine40', 0.0, 7.03), at(34, 'Same comfort') - 0.2)], en_(34))
 
 # ================= 5. WORDS ACROSS YOUR CHEST =================
 card_at('5. Words across your chest', 35, en(35) + 0.3)
-prow([C('s_slogan2', 0.3, 9.0), C('s_slogan7', 0.3, 9.0), C('s_slogan40', 0.0, 7.6)],         # E: slogan, big print, a joke
-     [st(36) - 0.2, at(36, 'a big brand'), at(36, 'a cheerful')], nx(37))
-centre([(C('s_slogan46', 0.3, 9.0), nx(37)), (C('s_slogan34', 0.3, 8.0), at(37, 'and for a moment'))], en(37) + 0.35)   # D
-centre([(C('s_plain13', 0.3, 8.0), nx(38))], at(38, 'navy') - 0.1)                            # D: the swap
-prow([C('s_plain35', 1.6, 9.4), C('s_plain14', 0.0, 7.0), C('s_vneck12', 0.3, 9.0)],
-     [at(38, 'navy') - 0.2, at(38, 'ivory'), at(38, 'with a scoop')], en(38) + 0.3)
-centre([(C('s_breton0', 4.0, 12.0), nx(39))], at(39, 'It was worn') - 0.1)                    # D: the Breton
-prow([C('s_breton19', 0.3, 9.0), C('s_breton17', 0.3, 9.0), C('s_breton2', 0.3, 9.0)],
-     [at(39, 'It was worn') - 0.2, at(39, 'as far back'), at(39, "and it's still")], en(39) + 0.3)
-gside([(C('s_breton37', 0.0, 7.7), nx(40))], en_(40))                                          # G
-q('Let your <i>face</i> be the first thing<br>people notice.', at(40, 'and let') - 0.1, en(40) + 0.3, QG, size=56)
+lrow([C('s_slogan2', 0.3, 13.79), C('s_slogan34', 0.3, 10.79), C('s_slogan7', 0.3, 10.49), C('s_slogan40', 0.0, 7.6)],
+     [st(36) - 0.2, at(36, 'the name of'), at(36, 'a big brand'), at(36, 'a cheerful')], nx(37), w=480)
+lclip([(C('s_slogan46', 0.3, 16.7), nx(37))], en(37) + 0.35, x=330)
+q('The slogan does the talking,<br><i>not you</i>.', at(37, 'and for a moment') - 0.2, en(37) + 0.3, QL3, size=56)
+lclip([(C('s_plain13', 0.3, 11.91), nx(38))], en(38) + 0.35)
+for k, (png, w_, lab) in enumerate([('ph_teenavy.png', 'navy', 'navy'), ('ph_teeivory.png', 'ivory', 'ivory'), ('ph_teegrey.png', 'heather grey', 'heather grey')]):
+    prod(png, 860 + k * 410, 760, 560, at(38, w_) - 0.15, en(38) + 0.3, label=lab, maxw=380)
+lclip([(C('s_breton21', 0.0, 13.2), nx(39)), (C('s_breton19', 0.0, 12.27), at(39, "and it's still"))], en(39) + 0.35)
+prod('ph_breton.png', 930, 880, 720, at(39, 'a classic') - 0.1, en(39) + 0.3, label='Breton stripe', maxw=520)
+photo('ph_sailors.png', 1290, 120, 560, 800, at(39, 'French sailors') - 0.3, en(39) + 0.3, label='French sailors')
+lclip([(C('s_breton35', 0.0, 9.89), nx(40))], en_(40))
+q('Save the slogans for<br><i>weekends at home</i>.', st(40) + 0.2, at(40, 'and let') - 0.2, QL)
+q('Let your <i>face</i> be the first thing<br>people notice.', at(40, 'and let'), en(40) + 0.3, QL)
 
 # ================= 6. THE WIDE BELT WITH AN OVERSIZED BUCKLE =================
 card_at('6. The wide belt with an oversized buckle', 41, en(41) + 0.3, size=90)
-centre([(C('w_wide13', 0.3, 9.0), st(42) - 0.2)], nx(43))                                      # D
-prow([C('w_wide17', 1.2, 12.0), C('w_wide5', 0.3, 10.0), C('w_wide34', 0.3, 10.0)],          # E: wide belt, shiny buckle, heavy line
-     [at(43, 'a very wide') - 0.2, at(43, 'shiny buckle'), at(43, 'heavy line')], at(43, 'It cuts') - 0.1)
-centre([(C('w_buckle35', 0.0, 7.5), at(43, 'It cuts') - 0.2)], nx(44))                         # D: two blocks
-q('Elegant women define the waist<br><i>more softly</i>.', st(44) + 0.1, en(44) + 0.3, QC)   # F
-centre([(C('w_buckle44', 1.3, 9.0), nx(45))], at(45, 'cognac') - 0.1)                          # D: the swap
-twoframes(C('w_slim32', 0.3, 10.56), C('w_slim12', 0.3, 9.59), at(45, 'cognac') - 0.2, at(45, 'black with'), en(45) + 0.3,   # I
-          la='Cognac with camel', lb='Black with charcoal')
-prow([C('w_wrap13', 0.3, 9.0), C('w_blazer21', 0.3, 9.0), C('w_tuck21', 1.5, 11.7)],           # E: wrap dress, shaped jacket, half-tuck
-     [at(46, 'a wrap dress') - 0.2, at(46, 'a softly'), at(46, 'a half-tuck')], en(46) + 0.3)
-centre([(C('w_buckle1', 0.3, 8.0), nx(47)), (C('w_slim27', 0.0, 3.93), at(47, 'when you catch'))], en_(47))   # D
+lclip([(C('w_blazer12', 4.0, 17.1), st(42) - 0.2)], nx(43), x=330)
+lrow([C('w_wide21', 0.0, 10.66), C('w_buckle1', 0.3, 11.03), C('w_buckle35', 0.0, 7.5)],      # very wide / shiny buckle / heavy line
+     [nx(43), at(43, 'shiny buckle'), at(43, 'heavy line')], at(43, 'It cuts') - 0.1)
+lclip([(C('w_buckle29', 0.0, 5.27), at(43, 'It cuts') - 0.2)], nx(44), x=330)                    # two blocks
+q('It cuts the outfit<br>into <i>two blocks</i>.', at(43, 'It cuts'), en(43) + 0.3, QL3, size=56)
+lclip([(C('w_slim47', 0.0, 14.81), nx(44))], nx(45))
+q('Elegant women define the waist<br><i>more softly</i>.', st(44) + 0.1, en(44) + 0.3, QL)
+lclip([(C('w_buckle44', 1.3, 24.5), nx(45))], en(45) + 0.35)
+prod('ph_beltcog.png', 1260, 420, 300, at(45, 'cognac') - 0.15, en(45) + 0.3, label='cognac with camel', maxw=900)
+prod('ph_beltblk.png', 1260, 800, 300, at(45, 'black with') - 0.15, en(45) + 0.3, label='black with charcoal', maxw=900)
+lrow([C('w_wrap13', 0.3, 15.17), C('w_blazer21', 0.3, 14.55), C('w_tuck21', 1.5, 11.7)],       # wrap dress / shaped jacket / half-tuck
+     [nx(46), at(46, 'a softly'), at(46, 'a half-tuck')], en(46) + 0.3, labels=['a wrap dress', 'a shaped jacket', 'a half-tuck'])
+cfull([(C('w_wide34', 5.0, 10.0), nx(47)), (C('w_slim27', 0.0, 3.93), at(47, 'when you catch'))], en_(47))
 
 # ================= 7. HEAVY EARRINGS THAT DANGLE DOWN TO YOUR JAWLINE =================
 card_at('7. Heavy earrings that dangle down to your jawline', 48, en(48) + 0.3, size=84)
-centre([(C('e_statement28', 0.3, 9.0), st(49) - 0.2)], nx(50))                               # D
-prow([C('e_dangle1', 0.3, 10.1), C('e_dangle14', 0.3, 9.54), C('e_dangle20', 0.3, 8.63)],     # E: long heavy drops at the jaw
-     [at(50, 'long, heavy') - 0.2, at(50, 'toward the jaw'), at(50, 'pull on')], at(50, 'Add a few') - 0.1)
-prow([C('e_layer23', 0.3, 9.94), C('e_layer14', 0.3, 9.0), C('e_layer18', 0.0, 8.0)],         # E: a few necklaces, crowded
+lclip([(C('e_statement22', 1.2, 9.4), st(49) - 0.2)], nx(50), x=330)
+lrow([C('e_dangle1', 0.3, 10.1), C('e_dangle14', 0.3, 9.54), C('e_dangle20', 0.3, 8.63)],      # long heavy drops / jaw / earlobes
+     [nx(50), at(50, 'toward the jaw'), at(50, 'pull on')], at(50, 'Add a few') - 0.1)
+lrow([C('e_layer23', 0.3, 9.94), C('e_layer14', 0.3, 12.0), C('e_layer18', 0.0, 8.0)],        # a few necklaces / crowded
      [at(50, 'Add a few') - 0.2, at(50, 'on top'), at(50, 'crowded')], nx(51))
-q('Elegant women keep that space<br><i>calm and bright</i>.', st(51) + 0.1, en(51) + 0.3, QC)   # F
-prow([C('e_hoops31', 0.0, 15.9), C('e_pearl5', 0.0, 9.5), C('e_pearl12', 0.0, 8.1)],             # E: hoops, delicate drop, pearl studs
-     [at(52, 'small gold') - 0.2, at(52, 'a delicate'), at(52, 'classic pearl')], en(52) + 0.3)
-gside([(C('e_hoops20', 0.0, 6.75), nx(53)), (C('e_layer17', 0.0, 2.7), at(53, 'resting'))], en(53) + 0.35)   # G
-q('Gold for warm undertones,<br><i>silver</i> for cool.', st(53) + 0.2, at(53, 'And if') - 0.2, QG, size=58)
-q('One necklace is enough,<br>near the <i>collarbone</i>.', at(53, 'And if'), en(53) + 0.3, QG, size=58)
-full([(C('e_pearl25', 0.0, 10.05), nx(54))], en_(54))                                         # A: exit
+lclip([(C('e_hoops18', 3.7, 18.57), nx(51))], nx(52))
+q('Elegant women keep that space<br><i>calm and bright</i>.', st(51) + 0.1, en(51) + 0.3, QL)
+for k, (png, w_, lab) in enumerate([('ph_hoopg.png', 'small gold', 'gold hoops'), ('ph_hoops.png', 'silver hoops', 'silver hoops'),
+                                    ('ph_drop.png', 'a delicate', 'a delicate drop'), ('ph_pearl.png', 'classic pearl', 'pearl studs')]):
+    photo(png, 70 + k * 455, 150, 420, 600, at(52, w_) - 0.2, at(52, 'sitting close') - 0.1, label=lab)
+cfull([(C('e_pearl25', 0.0, 10.05), at(52, 'sitting close') - 0.2)], nx(53))                 # close to the face
+lclip([(C('e_hoops26', 0.0, 8.67), nx(53)), (C('e_layer28', 2.2, 7.75), at(53, 'And if'))], en(53) + 0.35)
+q('Gold for <i>warm</i> undertones,<br>silver for cool.', st(53) + 0.2, at(53, 'And if') - 0.2, QL, size=58)
+q('One necklace is enough,<br>near the <i>collarbone</i>.', at(53, 'And if'), en(53) + 0.3, QL, size=58)
+cfull([(C('e_hoops1', 0.0, 7.07), nx(54))], en_(54))
 
 # ================= 8. THE BAG THAT CARRIES THE WHOLE HOUSE =================
 card_at('8. The bag that carries the whole house', 55, en(55) + 0.3, size=96)
-prow([C('bag_big21', 0.0, 8.9), C('bag_heavy2', 0.0, 6.8), C('bag_big3', 1.3, 9.8)],          # E: enormous tote, heavy shoulder bag, packed
-     [at(56, 'An enormous') - 0.2, at(56, 'a heavy'), at(56, 'packed')], nx(57))
-centre([(C('bag_heavy7', 0.3, 9.0), nx(57)), (C('bag_heavy49', 0.3, 9.0), at(57, 'it pulls'))], en(57) + 0.35)   # D
-q('Elegant women carry less,<br>and they <i>carry it well</i>.', st(58) + 0.1, en(58) + 0.3, QC)   # F
-centre([(C('bag_mid15', 0.0, 6.07), nx(59))], at(59, 'in a colour') - 0.1)                    # D: the swap
-prow([C('bag_mid45', 0.0, 11.63), C('bag_mid30', 3.3, 12.0), C('bag_heavy37', 0.3, 9.0)],
-     [at(59, 'in a colour') - 0.2, at(59, 'one that sits'), at(59, 'or your shoulder')], en(59) + 0.3)
-centre([(C('bag_empty13', 0.3, 7.0), nx(60)), (C('bag_pack37', 1.3, 12.0), at(60, 'put back'))], at(60, "You'll be") - 0.1)   # D
-full([(C('bag_heavy21', 0.0, 7.8), at(60, "You'll be") - 0.2), (C('z_door14', 0.0, 7.4), at(60, 'walking out'))], nx(61))   # A
+lrow([C('bag_big28', 0.0, 12.0), C('bag_heavy2', 0.0, 6.8), C('bag_big3', 1.3, 9.8)],           # enormous tote / heavy bag / packed
+     [st(56) - 0.2, at(56, 'a heavy'), at(56, 'packed')], nx(57))
+lclip([(C('bag_heavy49', 0.3, 15.2), nx(57)), (C('bag_heavy7', 0.3, 12.0), at(57, 'it pulls'))], en(57) + 0.35, x=330)
+q('It pulls one side<br>of your body <i>down</i>.', at(57, 'it pulls'), en(57) + 0.3, QL3, size=56)
+lclip([(C('bag_heavy6', 1.1, 6.9), nx(58))], nx(59))
+q('Elegant women carry less,<br>and they <i>carry it well</i>.', st(58) + 0.1, en(58) + 0.3, QL)
+lclip([(C('bag_mid15', 0.0, 6.07), nx(59)), (C('bag_mid30', 3.3, 19.91), at(59, 'in a colour'))], en(59) + 0.35)
+prod('ph_bag.png', 1180, 840, 640, at(59, 'a clear') - 0.2, en(59) + 0.3, label='a clear, structured shape', maxw=560)
+lclip([(C('bag_empty13', 0.3, 7.0), nx(60)), (C('bag_pack37', 1.3, 12.0), at(60, 'put back'))], at(60, "You'll be") - 0.1, x=330)
+q('Put back only what<br>you&#8217;ll <i>truly use</i>.', at(60, 'put back'), at(60, "You'll be") - 0.2, QL3, size=56)
+cfull([(C('t_wool36', 0.0, 8.97), at(60, "You'll be") - 0.2), (C('z_door7', 0.0, 11.2), at(60, 'walking out'))], nx(61))
 
 # ================= CLOSE =================
-centre([(C('z_closet18', 2.2, 12.0), nx(61)), (C('z_wardrobe40', 0.3, 9.0), at(61, 'the better')),
-        (C('z_wardrobe42', 0.0, 11.0), at(61, 'just waiting'))], en(61) + 0.35)                   # D
-prow([C('z_older14', 0.0, 8.3), C('z_older19', 0.3, 9.0), C('z_older30', 0.0, 9.0)],          # E: women of every age
-     [at(62, 'Start with') - 0.2, at(62, 'and notice'), at(62, 'the first time')], at(62, 'Because') - 0.1)
-gside([(C('z_older12', 0.0, 5.3), at(62, 'Because') - 0.2), (C('z_older15', 0.3, 9.0), at(62, "It's to let"))], en(62) + 0.35)   # G
-q('&#8220;The goal was never to look younger.<br>It&#8217;s to let your clothes show<br><i>the woman you are today</i>.&#8221;', at(62, 'Because') - 0.1, en(62) + 0.3, QG, size=50)
-full([(C('z_door8', 0.0, 5.93), nx(63)), (C('z_older16', 0.3, 12.0), nx(64)), (C('z_older26', 0.0, 7.9), at(64, 'a simple'))], nx(65))
-full([(C('z_door36', 0.0, 6.6), nx(65)), (C('z_older36', 0.3, 15.0), at(65, 'access to')), (C('z_door7', 0.3, 12.0), nx(66))], total - 2.6)      # L: outro text, then the end card
+lclip([(C('z_closet18', 2.2, 12.0), nx(61)), (C('z_closet12', 1.0, 5.1), at(61, 'the better')),
+       (C('z_wardrobe42', 7.0, 13.35), at(61, 'just waiting'))], en(61) + 0.35, x=330)
+q('The better version is already<br><i>in your closet</i>.', at(61, 'the better'), en(61) + 0.3, QL3, size=54)
+lrow([C('z_older14', 0.0, 8.3), C('z_older19', 0.3, 9.0), C('z_older30', 0.0, 9.0)],          # women of every age
+     [nx(62), at(62, 'and notice'), at(62, 'the first time')], at(62, 'Because') - 0.1)
+lclip([(C('z_older12', 0.0, 5.3), at(62, 'Because') - 0.2), (C('z_older15', 0.3, 11.3), at(62, "It's to let"))], en(62) + 0.35)
+q('The goal was never to look younger.<br>It&#8217;s to let your clothes show<br><i>the woman you are today</i>.', at(62, 'Because') - 0.1, en(62) + 0.3, QL, size=50)
+cfull([(C('z_door8', 0.0, 5.93), nx(63)), (C('z_older16', 0.3, 12.0), nx(64)), (C('z_older26', 0.0, 7.9), at(64, 'a simple'))], nx(65))
+cfull([(C('z_door36', 0.0, 6.6), nx(65)), (C('z_older36', 0.3, 15.0), at(65, 'access to')), (C('z_door14', 0.0, 7.4), nx(66))], total - 2.6)
 q('<div><span style="font-size:44px">Check The Description For</span><br><i style="font-size:120px">Personal Stylist Guide</i></div>', nx(65) + 0.3, en(65) + 0.4, QC, cls='over')
+
+open(os.path.join(P, 'used.txt'), 'w').write('\n'.join(USED) + '\n')

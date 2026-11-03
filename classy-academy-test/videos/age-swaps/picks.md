@@ -102,3 +102,6 @@ SKIP z_smile2 z_smile8 z_smile20 z_smile22 z_smile25 z_smile27 z_smile31 z_smile
 p2b stiff ruffles at the neck: b_jabot1 b_jabot4 b_jabot16 b_jabot17 b_jabot26 b_jabot45 b_jabot46 b_jabot2 b_jabot6 b_jabot9 b_jabot27 b_jabot22 b_victorian0 b_victorian5 b_victorian6 b_victorian15 b_victorian36 b_victorian3 b_victorian12 b_stiff0 b_stiff9 b_stiff5 b_stiff36 b_stiff23
 p3 audrey black turtleneck (Funny Face / b&w): r_audrey3_1 r_audrey3_4 r_audrey3_0 r_audrey3_32 r_audrey3_45 r_audrey3_27 r_audrey2_22 r_audrey2_37
 DUP b_victorian13=b_jabot45 b_victorian40=b_jabot46 b_stiff13=b_jabot45 b_stiff1=b_jabot1 b_stiff27=b_jabot36 b_stiff33=b_jabot22 b_victorian43=b_bow37
+# v2 re-edit (user: new intro clips): real-looking older women only; AI-looking pins (polished red-lip silver bob series etc.) left out
+v2 hook: v_grey0 v_grey4 v_grey5 v_grey14 v_grey20 v_grey23 v_grey44 v_sixties2 v_sixties15 v_sixties27 v_sixties30 v_sixties32 v_sixties48 v_paris60_9 v_paris60_17 v_paris60_22 v_paris60_25 v_paris60_35 v_paris60_41 v_paris60_44 v_paris60_45 v_cafe40 v_cafe47
+v2 trousers: v_hemlen45 v_hemlen19

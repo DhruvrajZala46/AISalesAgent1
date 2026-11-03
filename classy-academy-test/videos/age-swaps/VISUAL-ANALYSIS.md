@@ -82,3 +82,55 @@ Other details:
 - **Sound:** the soft piano bed ~12 dB under the voice, with no sound effects.
 - **Branding:** the CA logo top-left; the end card is the CA logo on white.
 - **No website on screen.**
+
+## 6. v2 (3 Nov 2026): the creator's review and The Classy Elegance channel's own layouts
+
+**The creator's review of v1:**
+- she did not like the intro clips (one had an Instagram watermark, "@YULI_SH_1");
+- the pictures did not match the script;
+- some clips were zoomed until faces were cut;
+- the logo must be her CE circle logo (she sent the file);
+- she asked for the edit to follow all her channel's videos.
+
+**What was inspected:** the YouTube storyboards (one frame every ~4.9 s, enlarged 2x, read by eye) of 7 videos of The
+Classy Elegance channel:
+
+| Video | ID | Views |
+|---|---|---|
+| 7 Things Elegant French Women Never Wear | `-RHBMH18XKY` | 22k |
+| 7 Things Elegant Ladies Never Wear in Winter | `JF7PzFJl4eU` | 847 |
+| 8 Things That Make You Look Older: What to Wear Instead | `-L_1AEivuSk` | 655 |
+| 8 Ways to Always Look Put Together | `wz7AdkAUkRU` | 147 |
+| 7 Elegant Summer Color Combos | `pWYznSVbKAo` | 335 |
+| 7 Quiet Habits That Show You Have Class (our upload) | `HJU9O_S77Mg` | 340 |
+| 7 Things Classy Women Never Do in Public (our upload) | `fl3xoswi-4Q` | 418 |
+
+The other 7 channel videos' storyboards were refused by YouTube (HTTP 429, then "Sign in to confirm you're not a bot").
+
+**What the channel's own videos do (and v1 did not):**
+
+| Seen in | Layout | v2 helper |
+|---|---|---|
+| French 0:04-0:19, 1:13, 3:07, 9:11; winter 0:19, 1:18; put-together 0:04-0:19, 0:34-0:39, 0:59 | **Full screen from a vertical reel = the whole clip, sharp, centred over a soft blurred copy of itself.** A 16:9 crop of a vertical reel is never used (that is what cut faces in v1). True full frame only for 16:9 film scenes. | `cfull()` |
+| French 0:24, 0:39, 3:26; winter 0:24-0:34, 0:59-1:03; put-together 0:29, 0:49 | One whole clip at the left edge or the left third of the caramel backdrop, often with the line to remember in white serif (one word in script) beside it | `lclip()` + `q()` |
+| French 0:29, 1:58; winter 0:49-0:54, 1:23; L_1 0:39, 1:18-1:23 | Rows of whole 9:16 clips from the left edge (2-4), the caramel showing at the right; small script labels under panels | `lrow()` |
+| winter 1:08-1:13, 1:38; L_1 0:59, 1:13, 7:43 | **Product photos cut out on the caramel**, with their names in small script | `prod()` |
+| L_1 2:37, 2:52 | Real still photos (vintage photographs) used as panels | `photo()` |
+| French 4:40-4:50, 5:10 | Jewellery close-ups in panels | `photo()` row of the four earrings |
+| every video | "in today's video..." in lowercase script on white; point cards in script on white; the title in script over a full-screen clip | `card_at()`, `text()` |
+| every video | **Logo:** the white CE circle top-left; the end card is the CE logo on white | `assets/logo_ce.png` (white, cut from the creator's file), `assets/logo_ce_dark.png` (her black badge, exactly as sent) |
+
+**How v2 matches the script (every noun the voice names is on screen as it is said):**
+- trousers in navy, cream, camel, grey;
+- blouses in cream, blush, powder blue;
+- merino, cashmere, soft cotton;
+- the mock neck;
+- the cardigan with "Ends at the hip / Neat cuffs / Buttons that close";
+- tees in navy, ivory, heather grey;
+- the Breton stripe beside a real early-1900s postcard of French navy sailors;
+- the slim belts "cognac with camel" / "black with charcoal";
+- gold hoops, silver hoops, a delicate drop, pearl studs;
+- the structured bag;
+- Audrey Hepburn's 1957 Funny Face portrait in the slim black turtleneck.
+
+Each is a real product or archive photo found on Pinterest (`SOURCES-LOG.md`, Photos).
