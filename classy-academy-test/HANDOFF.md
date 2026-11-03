@@ -50,7 +50,10 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   - **FINAL: v1, approved 3 Nov 2026.** It is in `videos/age-swaps/`: "8 Things That Quietly Age You: What to Wear
     Instead", 1,377 words. It uses the structure of the #1 video and drops 5 items already taught on either channel.
   - A v2 (new hook, technical points 3-7, shoulder point) was written and not chosen; it is in git history (dbf45d7).
-  - Next: the video, when the user asks.
+  - **Video v1 built (3 Nov 2026)**, in the layouts of the #1 video "8 Things Elegant Ladies Never Wear"
+    (`videos/age-swaps/VISUAL-ANALYSIS.md`, `edit.py`, `SOURCES-LOG.md`, `CREDITS.txt`).
+    - 143 clips, each used once; none from the two previous videos (`tools/oldclash.py`).
+    - The CA logo is in the corner and on the end card; no website on screen.
 
 ## 1. Where things stand right now
 
