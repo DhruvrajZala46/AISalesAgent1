@@ -47,7 +47,7 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
 
 - **New script (3 Nov 2026):** the user pasted a Paris Never Ages script ("French Women Over 60 Never Wear These 10
   Things", 564k) and attached 29 Classy Academy scripts, asking for the same kind of script in the channel's own format.
-  Script v1 is in `videos/age-swaps/`: "8 Things That Quietly Age You: What to Wear Instead". It uses the structure of the
+  Script v2 is in `videos/age-swaps/`: "8 Things That Quietly Age You: What to Wear Instead" (v2 = the user's six changes: hook, points 3-7). It uses the structure of the
   #1 video and drops 5 items already taught on either channel. It is waiting for the user's "ship it".
 
 ## 1. Where things stand right now

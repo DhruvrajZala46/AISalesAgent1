@@ -1,4 +1,14 @@
-# 8 Things That Quietly Age You: What to Wear Instead - script v1 (3 Nov 2026)
+# 8 Things That Quietly Age You: What to Wear Instead - script v2 (3 Nov 2026)
+
+**v2, the user's six changes:**
+1. a new hook;
+2. point 3 made informative (knit gauge, yarn, collar types, the rib test);
+3. construction details in point 4 (fashioning marks, linking, grosgrain button band, rib);
+4. point 5 replaced by a shoulder-structure topic (dropped shoulders, set-in vs raglan sleeves, sleeve head);
+5. point 6 made technical (width, buckle, hardware, contrast, rule of thirds, torso length);
+6. point 7 now explains how to balance statement earrings.
+
+Everything else is unchanged: the structure, the guide after point 3, the outro and the tone.
 
 ## What the user asked
 
@@ -19,12 +29,12 @@ channel's own format and DNA, matching its structure exactly.
 
 | Part | "8 Things Elegant Ladies Never Wear" (1.2M) | This script |
 |---|---|---|
-| Hook | "Have you ever seen a woman walk by and thought..." · "That kind of elegance isn't accidental" · it's what she knows not to wear | the same three beats, about a woman in her sixties |
+| Hook | "Have you ever seen a woman walk by and thought..." · "That kind of elegance isn't accidental" · it's what she knows not to wear | v2: two women of the same age, one fresh, one tired · the difference is in small details (hem, collar, shoulder seam) · "That kind of elegance isn't accidental" |
 | Promise | "In today's video, we're uncovering eight things... and the subtle swaps..." · "Some of these may surprise you... Let's get started." | the same |
 | Each point | "Number one, ___." · empathy ("We get it", "Let's be clear") · why it misses · "Elegant women..." · "Instead of X, try Y" · one payoff line | the same, 8 times |
 | Guide plug | after point 3: "here's a secret... they've figured out what flatters them... linked in the description" | the same, after point 3, no website |
 | Close | "Thank you so much for watching... a simple like or comment... check the description below... Until next time, bye everyone." | the same, plus the comment question |
-| Length | 1,170 words (the channel's scripts run 1,092-1,630) | 1,377 words |
+| Length | 1,170 words (the channel's scripts run 1,092-2,501) | v2: 2,095 words, about 13-14 minutes (the added technical detail) |
 
 Left out of the pasted script, because the channel never does them:
 - the narrator persona ("I'm Elen...", 30 years in a couture house);
@@ -40,11 +50,11 @@ Left out of the pasted script, because the channel never does them:
 | 2. Stiff blouse with ruffles at the throat | **2. Stiff blouses with ruffles at the neck** | new for both channels |
 | 3. Thick baggy turtleneck | **3. The big chunky roll neck** | new |
 | 4. Short puffer jacket | left out | already taught: "7 Things Elegant Ladies Avoid in Fall" #1 (puffer coats) |
-| 5. Chandelier earrings, pile of necklaces | **7. Heavy earrings that dangle down to your jawline** | kept with an age angle (jaw, earlobes); the jewelry video taught balance in general |
+| 5. Chandelier earrings, pile of necklaces | **7. Heavy earrings that dangle down to your jawline** | v2: how to balance statement earrings (one statement, where they end, scale, weight, hair) |
 | 6. Chunky sneaker, painful heel | left out | already taught: "8 Things That Make You Look Older" #1 (heavy shoes), "6 Elegant Summer Shoes" (sneakers, heel height) |
-| 7. T-shirt with words across the chest | **5. Words across your chest** | new (logos were taught, slogans were not) |
+| 7. T-shirt with words across the chest | left out in v2 | replaced at the user's request by a shoulder-structure point |
 | 8. Wide belt with a big buckle | **6. The wide belt with an oversized buckle** | new |
-| 9. Boxy blazer with padded shoulders | left out | already taught: "8 Things That Make You Look Older" #3 (padded shoulders) |
+| 9. Boxy blazer with padded shoulders | **5. Shoulder seams that slip down your arm** (v2) | the user asked for a shoulder-structure point; the padded shoulder itself was taught ("8 Things That Make You Look Older" #3), so this one is about where the seam lands, set-in vs raglan sleeves and the sleeve head |
 | 10. Enormous bag with a logo | **8. The bag that carries the whole house** | kept for its size; logos were taught in the #1 video |
 | - | **4. The long cardigan that has lost its shape** | added: the same kind of "adds years" piece, never taught |
 
@@ -70,11 +80,11 @@ The spoken lines are in `beats.txt`. Each bold line below is one beat.
 
 ## Hook
 
-**Have you ever seen a woman in her sixties walk into a café and thought, "How does she look so fresh?"**
+**Two women can be the same age, the same size, and even shop in the same stores. And yet one always looks fresh and polished, while the other somehow looks a little tired.**
 
-**She isn't trying to look younger. No trendy outfit, no designer label in sight. And yet she seems lighter and brighter than women half her age.**
+**The difference is rarely her face, and it's almost never her age. It's hidden in small details most of us never notice. Where a hem falls, how a collar sits, where a shoulder seam lands.**
 
-**That kind of elegance isn't accidental. More often than not, it comes down to what she has quietly stopped wearing.**
+**That kind of elegance isn't accidental. And the good news is, every one of these details can be changed.**
 
 **In today's video, we're uncovering eight things that can add years to any woman's look, at any age, and the simple swaps elegant women choose instead.**
 
@@ -120,11 +130,17 @@ The spoken lines are in `beats.txt`. Each bold line below is one beat.
 
 **But a thick, loose collar that bunches into several rolls doesn't really hide anything. It piles extra volume under the chin and shortens the neck.**
 
+**Here's what makes the difference. Knitwear is described by its gauge, the number of needles per inch on the knitting machine. The higher the number, the finer the knit.**
+
+**A chunky roll neck is often knitted at around three to five gauge, so every fold is thick and heavy. A fine knit, around twelve gauge or more, lies close to the neck and folds into one thin, neat roll.**
+
+**The yarn matters too. Merino and cashmere drape softly, while a thick, fluffy yarn adds bulk.**
+
 **Think of Audrey Hepburn in Funny Face, dressed all in black in a slim turtleneck that simply follows the neck. That's the version that lasts.**
 
-**Instead of a bulky roll neck, try a fine knit in merino, cashmere or soft cotton that fits close without clinging, folded over just once.**
+**Then match the collar to your neck. If your neck is long, a classic turtleneck folded over once looks beautiful. If it's shorter, a mock neck rises only an inch or two, and a funnel neck stands slightly away from the skin, so the neck has room to breathe.**
 
-**And if a full turtleneck feels like too much, a mock neck rises just a little way up the neck and gives you the same polish.**
+**And before you buy, stretch the collar gently and let go. If the rib springs back, it will keep its shape wear after wear. If it stays stretched, it will soon start to sag.**
 
 **A small change, but your jawline will thank you.**
 
@@ -142,25 +158,39 @@ The spoken lines are in `beats.txt`. Each bold line below is one beat.
 
 **But when a cardigan has stretched out, hangs past the hips and sags at the pockets, it pulls your whole outline down and makes even a smart outfit look tired.**
 
-**Elegant women still love their knits. They simply choose ones that hold their shape.**
+**Elegant women still love their knits. They simply choose ones that are built to hold their shape, and you can see it in the construction.**
 
-**Instead, try a fine-knit cardigan that ends around the hip, with neat cuffs and buttons that close without pulling.**
+**Look closely around the armholes and shoulders. On well-made knitwear, you'll often see small marks where the stitches were narrowed to shape the piece. They're called fashioning marks, and they mean the cardigan was knitted to shape, not cut from a larger piece of fabric.**
+
+**Inside, seams joined loop by loop, called linking, lie flat and stretch with the knit, while thick overlocked seams can twist and pull.**
+
+**Check the button band, too. Better cardigans often have a thin grosgrain ribbon sewn behind the buttons, so the front doesn't stretch, the buttons don't gape, and the hem stays straight.**
+
+**And the rib at the cuffs and hem should feel firm, so the cardigan stays close to the body.**
+
+**So instead of a long, slouchy cardigan, try a fine-knit one that ends around the hip, in merino, cashmere or a smooth cotton. Longer, smoother fibres tend to pill less and keep their shape for years.**
 
 **Button it all the way and wear it as a top, leave it open over a silk blouse, or drape it over your shoulders on a cool evening. Same comfort, with a much fresher line.**
 
-## 5. Words across your chest
+## 5. Shoulder seams that slip down your arm
 
-**Number five, words across your chest.**
+**Number five, shoulder seams that slip down your arm.**
 
-**A slogan, the name of a city, a big brand name or a cheerful little joke. It's fun, we know.**
+**We see it everywhere. Oversized jumpers and roomy shirts with the shoulder seam halfway down the upper arm. It's called a dropped shoulder, and it feels so easy to wear.**
 
-**But words get read. Everyone's gaze goes straight to the print, and for a moment the slogan does the talking, not you.**
+**But when the seam falls below your own shoulder, the fabric collapses over the edge. Your shoulders look rounder and more sloped, and the whole upper body can look heavier and a little tired.**
 
-**Instead, try a simple, soft tee in navy, ivory or heather grey, with a scoop or a V-neck that frames your collarbones.**
+**Elegant women pay attention to the shoulder, because it's the hanger for everything else.**
 
-**Or if you'd like some character, a classic Breton stripe. It was worn by French sailors as far back as the 1850s, and it's still one of the chicest pieces you can own.**
+**Here's how to find the right spot. Feel for the small bony point at the very top outer edge of your shoulder. On a blouse, a jacket or a fitted knit, that's exactly where the seam should land.**
 
-**Save the slogans for weekends at home, and let your face be the first thing people notice.**
+**Then look at the sleeve. A set-in sleeve, sewn in right at the natural shoulder, gives the cleanest, most lifted line, which is why it's the classic choice for blouses and jackets. A raglan sleeve runs diagonally from the underarm up to the collar, and it softens broad shoulders.**
+
+**If your shoulders slope a little, look for jackets with a sleeve head, a soft strip of padding along the top of the sleeve. It isn't a big shoulder pad. It simply holds the line so the fabric doesn't cave in.**
+
+**And remember, the shoulder is one of the hardest places for a tailor to change, so it's the one detail worth getting right in the fitting room.**
+
+**When the shoulder fits, everything below it hangs better, and you instantly look taller and more lifted.**
 
 ## 6. The wide belt with an oversized buckle
 
@@ -168,11 +198,17 @@ The spoken lines are in `beats.txt`. Each bold line below is one beat.
 
 **A belt can be a lovely way to define the waist.**
 
-**But a very wide belt with a large, shiny buckle draws a heavy line across your middle and puts a spotlight exactly where you may not want one. It cuts the outfit into two blocks, and each one looks shorter.**
+**But a very wide belt, five centimetres or more, with a large, shiny buckle draws a heavy horizontal line across your middle. And it can cut the outfit into two equal blocks, which makes both halves look shorter.**
 
-**Elegant women define the waist more softly.**
+**Elegant women define the waist more precisely.**
 
-**Instead, try a slim belt in the same tone as your outfit, cognac with camel, black with charcoal, so it adds shape without stopping the eye.**
+**Start with the width. A slim belt of two to three centimetres, about an inch, adds definition without bulk. Keep the buckle no taller than the belt itself, and choose brushed or matte hardware, which catches far less light than polished gold or chrome.**
+
+**Then think about contrast. A belt in the same tone as your outfit, cognac with camel, black with charcoal, shapes the waist while the line almost disappears. A contrasting belt draws a sharp line, so save it for days you want the waist to be the focus.**
+
+**Placement matters most. Many stylists use the rule of thirds. Rather than splitting you in half, the belt sits so the top makes up about one third of the outfit, and the bottom two thirds. With a high-waisted skirt or trousers, that's usually your natural waist, the narrowest point just above the belly button.**
+
+**If you're short-waisted, a tonal belt or no belt at all keeps the upper body from looking compressed. If you're long-waisted, a belt at the natural waist balances your proportions beautifully.**
 
 **Or let your clothes shape the waist for you, with a wrap dress, a softly shaped jacket, or a half-tuck of your blouse.**
 
@@ -182,15 +218,23 @@ The spoken lines are in `beats.txt`. Each bold line below is one beat.
 
 **Number seven, heavy earrings that dangle down to your jawline.**
 
-**Big statement earrings can be fabulous for an evening out.**
+**Statement earrings can be fabulous, and there's no need to give them up. The secret is balance.**
 
-**But every day, long, heavy drops draw attention downward, toward the jaw and neck, and over time they can pull on the earlobes too. Add a few necklaces on top, and that space starts to feel crowded.**
+**Long, heavy drops that end right at the jaw draw a line across it and pull attention downward, and over time they can stretch the earlobes too. Add a few necklaces on top, and the space around your face starts to feel crowded.**
 
-**Elegant women keep that space calm and bright.**
+**Elegant women keep that space calm and bright, even when they wear a bold earring.**
 
-**Instead, try small gold or silver hoops, a delicate drop or classic pearl studs, sitting close to the face where they catch the light.**
+**Here's how to balance it. First, let the earrings be the only statement near your face. Skip the necklace, or choose a simple or high neckline, so the earrings have room.**
 
-**Gold tends to flatter warm undertones and silver cooler ones. And if you love necklaces, one is enough, resting near the collarbone.**
+**Second, watch where they end. Earrings that finish above the jawline lift the eye toward the cheekbones. If you love a longer drop, let it fall clearly below the jaw rather than right on it.**
+
+**Third, match the scale to your features. Delicate features suit a smaller statement, like a sculpted hoop or a short drop, while stronger features can carry more.**
+
+**Fourth, think about weight. Hollow metal, resin and other lightweight designs are kinder to your ears, and for heavier pieces, a larger supportive earring back keeps them sitting straight.**
+
+**Then keep the rest quiet. Hair swept back shows them off, and fewer rings keep everything in harmony.**
+
+**For everyday, small gold or silver hoops, a delicate drop or classic pearl studs sit close to the face where they catch the light. Gold tends to flatter warm undertones and silver cooler ones.**
 
 **When one pair becomes your everyday pair, it starts to feel like part of you.**
 
@@ -226,7 +270,26 @@ The spoken lines are in `beats.txt`. Each bold line below is one beat.
 
 - **Audrey Hepburn in "Funny Face" (1957):** she wears a slim black turtleneck with black trousers in the Paris café
   dance scene.
-- **The Breton stripe:** the French Navy adopted the striped sailor's shirt in 1858.
+- **Knit gauge:** the number of needles per inch on the knitting machine. Chunky knits are about 3-5 gauge; fine
+  knits about 12 gauge and up.
+- **Fully fashioned knitwear:** shaped on the machine by narrowing stitches, which leaves visible "fashioning marks".
+  **Linking** joins the pieces loop by loop; cut-and-sew pieces are overlocked instead.
+- **Grosgrain ribbon behind the button band:** a common sign of a better cardigan; it stops the front from stretching.
+- **Pilling:** longer, smoother fibres tend to pill less; the script says "tend to".
+- **Mock neck** (about 1-2 inches high) and **funnel neck** (stands away from the neck): standard knitwear terms.
+- **Sleeves:**
+  - a dropped shoulder puts the seam below the shoulder point;
+  - a set-in sleeve sits at the shoulder point;
+  - a raglan sleeve runs diagonally from the underarm to the collar.
+- **Sleeve head:** a strip of padding at the top of a jacket sleeve that supports its shape.
+- **The shoulder:** the hardest area of a jacket for a tailor to change (standard tailoring advice).
+- **Belts:**
+  - "five centimetres or more" for a wide belt and 2-3 cm for a slim one are common retail definitions;
+  - the rule of thirds (a 1:2 split rather than halves) is a common stylist rule, attributed to "many stylists";
+  - the natural waist is the narrowest point, usually just above the navel.
+- **Statement earrings:** the balance rules (one statement near the face, the end point relative to the jaw, scale to
+  features, weight) are styling advice, worded as advice. "Over time they can stretch the earlobes" follows common
+  dermatology advice on heavy earrings.
 - **Heavy earrings:** they can stretch the piercing and earlobe over time (common dermatology advice). The script says
   only "they can pull on the earlobes".
 - **Gold for warm undertones, silver for cool:** a styling convention, so the script says "tends to".
@@ -236,7 +299,7 @@ The spoken lines are in `beats.txt`. Each bold line below is one beat.
 - [x] **The channel's #1 format, beat for beat:**
   - hook, promise, "Let's get started";
   - "Number one..." for 8 points;
-  - the guide plug after point 3;
+  - the guide plug after point 3, unchanged;
   - the channel's own close and "bye everyone".
 - [x] **The pasted script's ideas,** minus five already taught on Classy Academy or The Classy Elegance, plus one new
   item (the cardigan).
