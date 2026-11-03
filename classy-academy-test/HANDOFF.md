@@ -79,6 +79,12 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     - Clips: 129, each used once; 0 repeats from the two earlier videos.
     - Captions: every used segment checked at four moments for burned-in text (`tools/cand.py`).
     - Media lives only in the scratchpad (`cwa/`); the edit is `videos/age-swaps/edit.py`.
+  - **Video v2 delivered in the chat (3 Nov 2026):**
+    - a preview first, then the final: 1080p, 9:41, 361 MB, 128 clips + 22 photos;
+    - after the first render, 5 more captioned clips were replaced (found on a 5-second contact sheet).
+    - QA of the final: -12.6 LUFS, 0 black frames, 0 silence; the only stills are the white cards, the product and photo
+      screens and the title.
+    - Waiting for the user's review; thumbnails and the package only if asked.
 
 ## 1. Where things stand right now
 
