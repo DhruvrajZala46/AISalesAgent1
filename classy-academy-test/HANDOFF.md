@@ -63,6 +63,22 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     - Known small flaws, offered as a v2:
       - three creator captions remain (b_jabot45, w_wide5, z_wardrobe40);
       - three short empty-caramel gaps (about 4:35, 6:35 and 7:50).
+  - **User review of v1 (3 Nov 2026), with two screenshots and the CE logo file:**
+    - the intro clips were disliked (one had the Instagram watermark "@YULI_SH_1");
+    - the pictures did not match the script; photos may be used where there is no video;
+    - zoomed clips cut faces;
+    - the logo must be her CE circle logo;
+    - watch all the channel's videos and re-edit.
+  - **Video v2 built (3 Nov 2026)** in The Classy Elegance channel's own layouts.
+    - Analysis: storyboards of 7 channel videos (`videos/age-swaps/VISUAL-ANALYSIS.md` section 6).
+    - Intro: new real clips of women in their 60s.
+    - Matching: every named colour, fabric or piece is shown as it is said, with 22 product and archive photos
+      (`tools/phsearch.py` + `tools/cutout.py`).
+    - Framing: vertical reels go full screen only as the whole clip over its blurred copy (`cfull()`), never as a crop.
+    - Logo: the CE logo from her file (white in the corner, her black badge on the white end card).
+    - Clips: 129, each used once; 0 repeats from the two earlier videos.
+    - Captions: every used segment checked at four moments for burned-in text (`tools/cand.py`).
+    - Media lives only in the scratchpad (`cwa/`); the edit is `videos/age-swaps/edit.py`.
 
 ## 1. Where things stand right now
 

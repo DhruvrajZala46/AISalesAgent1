@@ -251,7 +251,7 @@ cfull([(C('v_paris60_9', 0.0, 6.5), 0.0), (C('v_grey23', 0.0, 12.73), at(1, 'wal
 #    brighter than women half her age."
 lrow([C('v_grey14', 0.3, 12.0), C('v_grey5', 7.2, 11.6), C('v_paris60_44', 0.0, 9.0)],
      [nx(2), at(2, 'No trendy'), at(2, 'no designer')], at(2, 'And yet') - 0.1)
-cfull([(C('v_paris60_25', 0.0, 15.5), at(2, 'And yet') - 0.2), (C('v_sixties32', 0.0, 9.0), at(2, 'half her age') - 0.3)], nx(3))
+cfull([(C('v_paris60_25', 0.0, 15.5), at(2, 'And yet') - 0.2), (C('v_paris60_9', 6.5, 10.2), at(2, 'half her age') - 0.3)], nx(3))
 # 3 "That kind of elegance isn't accidental. More often than not, it comes down to what she has quietly stopped wearing."
 lclip([(C('v_grey44', 0.0, 7.4), nx(3))], at(3, 'More often') - 0.1)
 q('That kind of elegance<br>isn&#8217;t <i>accidental</i>.', st(3) + 0.2, at(3, 'More often') - 0.2, QL)
@@ -262,7 +262,7 @@ cfull([(C('v_sixties48', 0.0, 8.77), at(4, 'eight') - 0.3), (C('v_paris60_22', 4
 q('<i style="font-size:116px">8 Things That<br>Quietly Age You</i>', at(4, 'eight') + 0.1, at(4, 'and the simple') - 0.3, QC, cls='over')
 # 5 "Most of them are easy to fix, and many need nothing new at all. Some of these may surprise you, but once you see
 #    them, you'll never unsee them. Let's get started."
-lrow([C('w_tuck22', 0.0, 8.15), C('z_wardrobe42', 0.0, 7.0), C('v_sixties15', 15.0, 18.0)],
+lrow([C('w_tuck22', 0.0, 8.15), C('z_wardrobe32', 0.0, 6.5), C('v_sixties15', 15.0, 18.0)],
      [nx(5), at(5, 'and many'), at(5, 'Some of these')], at(5, "you'll never") - 0.1)
 cfull([(C('z_door48', 0.0, 6.2), at(5, "you'll never") - 0.2)], en_(5))
 
@@ -330,16 +330,16 @@ q('<div><span style="font-size:44px">Check The Description For</span><br><i styl
 # ================= 4. THE LONG CARDIGAN THAT HAS LOST ITS SHAPE =================
 card_at('4. The long cardigan that has lost its shape', 29, en(29) + 0.3, size=90)
 lclip([(C('c_long17', 0.3, 11.1), st(30) - 0.2)], nx(31), x=330)
-lrow([C('c_saggy6', 0.0, 10.97), C('c_long10', 0.3, 7.8), C('c_long0', 0.3, 15.2)],           # stretched / past the hips / pockets
+lrow([C('c_long7', 0.0, 16.0), C('c_long10', 0.3, 7.8), C('c_long0', 0.3, 15.2)],           # stretched / past the hips / pockets
      [nx(31), at(31, 'hangs past'), at(31, 'sags at')], nx(32))
 lclip([(C('c_fine16', 5.6, 15.0), nx(32))], nx(33))
 q('Elegant women still<br><i>love their knits</i>.', st(32) + 0.1, at(32, 'They simply') - 0.2, QL)
 q('They simply choose ones that<br><i>hold their shape</i>.', at(32, 'They simply'), en(32) + 0.3, QL)
-lclip([(C('c_fine17', 0.0, 18.2), nx(33))], en(33) + 0.35)
+lclip([(C('c_fine25', 0.0, 15.1), nx(33))], en(33) + 0.35)
 prod('ph_cardi.png', 940, 900, 780, at(33, 'fine-knit') - 0.2, en(33) + 0.3, maxw=560)
 for k, (txt, w_) in enumerate([('Ends at the <i>hip</i>', 'ends around'), ('Neat <i>cuffs</i>', 'neat cuffs'), ('Buttons that <i>close</i>', 'buttons that')]):
     q(txt, at(33, w_) - 0.1, en(33) + 0.3, (1260, 300 + k * 160, 1890, 440 + k * 160), size=56, dur=0.9)
-lrow([C('c_silk24', 0.3, 15.0), C('c_silk30', 0.3, 15.0), C('c_shoulders1', 0.3, 14.65)],     # as a top / over silk / over the shoulders
+lrow([C('c_silk24', 0.3, 15.0), C('c_silk30', 0.3, 15.0), C('c_shoulders26', 0.0, 15.47)],     # as a top / over silk / over the shoulders
      [nx(34), at(34, 'leave it'), at(34, 'drape it')], at(34, 'Same comfort') - 0.1)
 cfull([(C('c_fine40', 0.0, 7.03), at(34, 'Same comfort') - 0.2)], en_(34))
 
@@ -408,8 +408,7 @@ q('Put back only what<br>you&#8217;ll <i>truly use</i>.', at(60, 'put back'), at
 cfull([(C('t_wool36', 0.0, 8.97), at(60, "You'll be") - 0.2), (C('z_door7', 0.0, 11.2), at(60, 'walking out'))], nx(61))
 
 # ================= CLOSE =================
-lclip([(C('z_closet18', 2.2, 12.0), nx(61)), (C('z_closet12', 1.0, 5.1), at(61, 'the better')),
-       (C('z_wardrobe42', 7.0, 13.35), at(61, 'just waiting'))], en(61) + 0.35, x=330)
+lclip([(C('z_closet12', 1.0, 5.1), nx(61)), (C('z_closet18', 2.2, 12.0), at(61, 'Very often') - 0.1)], en(61) + 0.35, x=330)
 q('The better version is already<br><i>in your closet</i>.', at(61, 'the better'), en(61) + 0.3, QL3, size=54)
 lrow([C('z_older14', 0.0, 8.3), C('z_older19', 0.3, 9.0), C('z_older30', 0.0, 9.0)],          # women of every age
      [nx(62), at(62, 'and notice'), at(62, 'the first time')], at(62, 'Because') - 0.1)
