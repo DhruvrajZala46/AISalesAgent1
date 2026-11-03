@@ -54,6 +54,15 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     (`videos/age-swaps/VISUAL-ANALYSIS.md`, `edit.py`, `SOURCES-LOG.md`, `CREDITS.txt`).
     - 143 clips, each used once; none from the two previous videos (`tools/oldclash.py`).
     - The CA logo is in the corner and on the end card; no website on screen.
+  - Video v1 delivered in the chat (3 Nov 2026).
+    - Files: 1080p, 9:41, 366 MB send copy.
+    - QA:
+      - -12.6 LUFS, peak -1.3 dB;
+      - 0 black frames, 0 silence;
+      - the only freezes are the white cards and the quote screens.
+    - Known small flaws, offered as a v2:
+      - three creator captions remain (b_jabot45, w_wide5, z_wardrobe40);
+      - three short empty-caramel gaps (about 4:35, 6:35 and 7:50).
 
 ## 1. Where things stand right now
 
