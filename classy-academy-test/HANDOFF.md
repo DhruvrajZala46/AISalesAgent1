@@ -86,6 +86,16 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
       screens and the title.
     - Waiting for the user's review; thumbnails and the package only if asked.
 
+- **New video (4 Nov 2026): "How to Look Effortlessly Elegant at Home"**, in `videos/elegant-at-home/`.
+  - It is a new video in the format of the creator's "How to Look Elegant & Expensive at Home" (`GmiAMO93vFE`).
+  - Script v1 (49 lines, 1,293 words) was sent; the user then asked for the video (taken as approval of the script).
+  - Visual analysis: the original's storyboard (`VISUAL-ANALYSIS.md`).
+  - Video v1 built (4 Nov 2026):
+    - 130 clips, each used once; 0 repeats from the three earlier videos;
+    - 14 product/texture photos;
+    - the CE logo; no website on screen.
+  - Status: rendering; then QA, then sent in the chat.
+
 ## 1. Where things stand right now
 
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in
