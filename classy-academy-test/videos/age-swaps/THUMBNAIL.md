@@ -71,3 +71,40 @@ Built with:
 - `thumb_B.py` for B (the two-half layout).
 
 Both run in the thumbnail work folder, with the frames picked by face size and sharpness.
+
+## v2 (4 Nov 2026): Pinterest photos of elegant women, as the channel uses
+
+**Why v2:** the creator asked for photos downloaded properly from Pinterest: attractive, elegant women as on the
+channel's own thumbnails, instead of frames of the video's reels.
+
+**What changed:** the same three layouts and words, with new photos.
+- Every photo is a full-size Pinterest original, between 474x1185 and 1600x2569, with the face of every panel at 0.8-1.7
+  source pixels per output pixel.
+- The women are well-known elegant women (press and street-style photos, like the channel's own Kate Middleton and
+  Grace Kelly thumbnails), plus one product photo.
+- AI-looking pins (perfect-light "cosy fireplace" knits) were left out.
+
+| | Words | Photos |
+|---|---|---|
+| **A, recommended** | Elegant Women / **Never** Wear / \*8 things that age you\* | Inès de la Fressange in navy silk and sunglasses · Kate Middleton in a cream coat · Amal Clooney in a cream coat and sunglasses |
+| B | ✗ **Ages You** / ✓ **Ageless** | a model in a bulky cream roll neck (point 3's mistake) · Kate Middleton in a slim black turtleneck under a camel coat (point 3's swap) |
+| C | Clothes That Make You / **Look** Older / \*what to wear instead\* | Jackie Kennedy Onassis in a camel coat and scarf · Victoria Beckham in a white shirt · Caroline de Maigret on a Paris street |
+
+Feed test: `feed_test_v2.jpg`, at 320x180 next to the channel's #1, its #2, its latest, and three topic winners.
+
+| Thumb | Photo | Source (as found on Pinterest) |
+|---|---|---|
+| A | Inès de la Fressange | mojeh.com, pinned by @margotspage |
+| A | Kate, Princess of Wales | pinned by @farmdalefamily |
+| A | Amal Clooney | pinned by @tsugi27 |
+| B | cream roll-neck sweater (product photo) | ebay.com listing |
+| B | Kate, Princess of Wales | people.com, pinned by @avonmary54 |
+| C | Jacqueline Kennedy Onassis | harpersbazaar.com, pinned by @anncutter |
+| C | Victoria Beckham | harpersbazaar.com, pinned by @sunny_k |
+| C | Caroline de Maigret | pinned by @shepherdessofskymeadow |
+
+**Rights:** press and street-style photos belong to their photographers and agencies; none is licensed. This is the
+same as the channel's own Kate and Grace Kelly thumbnails; the creator decides.
+
+Built with `workflow/tools/thumb_ca.py thumb_spec.json` (A, C) and `thumb_B.py` (B) in the thumbnail work folder.
+The originals are in `orig/` there; faces are in `faces.json`.

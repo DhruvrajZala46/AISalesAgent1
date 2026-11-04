@@ -4,10 +4,10 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 sys.path.insert(0, '/home/user/AISalesAgent1/classy-academy-test/workflow/tools')
 from pc import pcrop
 FD = '/home/user/AISalesAgent1/classy-academy-test/workflow/assets/fonts/'
-B = json.load(open('fr/best.json'))
+B = {k: {'face': v} for k, v in json.load(open('faces.json')).items()}
 def build(out, left, right, wl, wr, fwl=0.42, fwr=0.42, fyl=0.24, fyr=0.24):
     W, H = 1280, 720; c = Image.new('RGB', (W, H))
-    a, _ = pcrop(f'fr/{left}.png', 640, fw=fwl, fy=fyl, box=B[left]['face']); b, _ = pcrop(f'fr/{right}.png', 640, fw=fwr, fy=fyr, box=B[right]['face'])
+    a, _ = pcrop(f'orig/{left}.jpg', 640, fw=fwl, fy=fyl, box=B[left]['face']); b, _ = pcrop(f'orig/{right}.jpg', 640, fw=fwr, fy=fyr, box=B[right]['face'])
     c.paste(a, (0, 0)); c.paste(b, (640, 0))
     g = Image.new('L', (W, H), 0); dg = ImageDraw.Draw(g)
     for y in range(380, H): dg.line((0, y, W, y), fill=int(150 * ((y - 380) / (H - 380)) ** 1.3))
@@ -31,4 +31,4 @@ def build(out, left, right, wl, wr, fwl=0.42, fwr=0.42, fyl=0.24, fyr=0.24):
             d.line((cx - 15, cy + 1, cx - 4, cy + 13), fill=(40, 96, 72), width=8); d.line((cx - 4, cy + 13, cx + 17, cy - 12), fill=(40, 96, 72), width=8)
     lg = Image.open('/home/user/AISalesAgent1/classy-academy-test/workflow/assets/logo_ce.png').convert('RGBA'); lg.thumbnail((96, 96), Image.LANCZOS); c.paste(lg, (16, 14), lg)
     c.save(out, quality=95); print(out)
-build('B.jpg', 'b_jabot26', 'b_silk39', 'Ages You', 'Ageless', fwl=0.40, fwr=0.40, fyl=0.26, fyr=0.26)
+build('B.jpg', 'chunky11', 'kate11', 'Ages You', 'Ageless', fwl=0.36, fwr=0.34, fyl=0.20, fyr=0.22)
