@@ -1,0 +1,92 @@
+{
+ "A.jpg": {
+  "logo": "ce",
+  "top": "Elegant Women",
+  "big": "Never Wear",
+  "small": "*8 things that age you*",
+  "underline": true,
+  "panels": [
+   {
+    "src": "fr/z_older19.png",
+    "face": [
+     340,
+     138,
+     119,
+     119
+    ],
+    "cw": 396.6666666666667,
+    "fy": 0.2,
+    "dx": 0.0
+   },
+   {
+    "src": "fr/z_older15b.png",
+    "face": [
+     274,
+     122,
+     163,
+     163
+    ],
+    "cw": 582.1428571428571,
+    "fy": 0.2,
+    "dx": 0.0
+   },
+   {
+    "src": "fr/v_grey23.png",
+    "face": [
+     103,
+     199,
+     516,
+     516
+    ],
+    "cw": 1228.5714285714287,
+    "fy": 0.24,
+    "dx": 0.0
+   }
+  ]
+ },
+ "C.jpg": {
+  "logo": "ce",
+  "top": "Clothes That Make You",
+  "big": "Look Older",
+  "small": "*what to wear instead*",
+  "underline": true,
+  "panels": [
+   {
+    "src": "fr/v_paris60_9.png",
+    "face": [
+     61,
+     2,
+     178,
+     178
+    ],
+    "cw": 635.7142857142857,
+    "fy": 0.2,
+    "dx": 0.0
+   },
+   {
+    "src": "fr/v_paris60_25b.png",
+    "face": [
+     282,
+     127,
+     179,
+     179
+    ],
+    "cw": 688.4615384615385,
+    "fy": 0.2,
+    "dx": 0.0
+   },
+   {
+    "src": "fr/v_grey44.png",
+    "face": [
+     284,
+     74,
+     208,
+     208
+    ],
+    "cw": 693.3333333333334,
+    "fy": 0.2,
+    "dx": 0.0
+   }
+  ]
+ }
+}
