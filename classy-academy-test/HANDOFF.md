@@ -94,7 +94,11 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     - 130 clips, each used once; 0 repeats from the three earlier videos;
     - 14 product/texture photos;
     - the CE logo; no website on screen.
-  - Status: rendering; then QA, then sent in the chat.
+  - **Video v1 delivered in the chat (4 Nov 2026):**
+    - 1080p, 9:05, 339 MB.
+    - QA: -12.7 LUFS, 0 black frames; the only silence is the last 4 s of the end card. The only freezes are the white
+      cards, the cream text screens and the product photos.
+  - Waiting for the user's review; thumbnails and the package only if asked.
 
 ## 1. Where things stand right now
 
