@@ -100,6 +100,18 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
       cards, the cream text screens and the product photos.
   - Waiting for the user's review; thumbnails and the package only if asked.
 
+- **New video (5-6 Nov 2026): "6 Proportion Mistakes That Cheapen Your Outfits (How to Fix Your Lines)"**, in
+  `videos/proportion-lines/`.
+  - The topic came from a strategy note the user pasted. 6 of its 7 points were already taught on the channels, and its
+    proof was partly wrong, so the script uses 6 new line mistakes backed by real winners (`script.md`).
+  - A second pasted plan ("8 Fit Mistakes") was checked as well: 5 of its 8 points overlap. The user chose the proportion
+    script ("ship it").
+  - Video v1 built (6 Nov 2026), from the most-liked videos' comments and measured edit (`VISUAL-ANALYSIS.md`):
+    - 95 clips, each used once; 0 repeats from the four earlier videos;
+    - 10 product photos;
+    - the CE logo; no website on screen.
+  - Status: rendering; then QA, then sent in the chat.
+
 ## 1. Where things stand right now
 
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in
