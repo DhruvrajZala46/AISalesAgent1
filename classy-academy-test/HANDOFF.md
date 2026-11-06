@@ -134,6 +134,10 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     found and replaced.
   - First render QA: 0 black frames, 0 silence, -14.5 LUFS; the only freezes are the white cards and quote screens. One
     product label stayed on screen after 8:32 (a timing bug), fixed in `edit.py`, then rendered again.
+  - **Video v1 delivered in the chat (6 Nov 2026):**
+    - 1080p, 10:29, 371 MB.
+    - QA: -14.5 LUFS, 0 black frames, 0 silence; the only freezes are the white cards and the quote screens.
+  - Waiting for the user's review; thumbnails and the package only if asked.
 
 ## 1. Where things stand right now
 
