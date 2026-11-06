@@ -117,6 +117,23 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     - Two last fixes before the final render: a small "1° modelo" caption trimmed, and a tank-top close-up trimmed.
   - Waiting for the user's review; thumbnails and the package only if asked.
 
+- **New video (6 Nov 2026): "8 Things Elegant Ladies Never Wear on Christmas & NYE"**, in `videos/holiday-never-wear/`.
+  - The user wrote the full script; it is voiced as given (63 lines, 1,395 words, `script.md` + `beats.txt`).
+  - Format: the channel's own winter "Never Wear" upload (`JF7PzFJl4eU`) plus the #1 video (`VISUAL-ANALYSIS.md`):
+    - white numbered cards;
+    - the mistake in a row;
+    - the principle on caramel;
+    - a clip with the named pieces cut out beside it;
+    - colour swatches, fabric circles and the three outfit formulas built piece by piece.
+  - Video v1 built (6 Nov 2026):
+    - 139 clips, each used once; 0 repeats from the five earlier videos (64 downloaded clips matched earlier footage and
+      were left out);
+    - 52 product photos (Pinterest retailer shots);
+    - the CE logo; no website on screen.
+  - AI: one clip with the Gemini watermark (a_gloves6) and one from an AI studio (e_thanks1, "Silent Lens" end card) were
+    found and replaced.
+  - Render started; delivery in the chat once QA passes.
+
 ## 1. Where things stand right now
 
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in
