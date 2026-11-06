@@ -385,7 +385,7 @@ lrow([C('e_nude0', 0.0, 10.15), C('e_nude14', 0.0, 8.0)], [at(41, 'With bare leg
 photo('ph_p_nudepump.png', 1310, 140, 520, 520, at(41, 'a shoe close') + 0.2, at(41, 'or a low-cut') - 0.1, label='close to your skin tone')
 photo('ph_p_loafer.png', 1080, 120, 640, 760, at(41, 'or a low-cut') - 0.2, nx(42), label='a low-cut pump or loafer')
 cframe([(C('e_nude3', 0.0, 6.23), at(41, 'or a low-cut') - 0.2)], nx(42), x0=330, bg=False)
-lrow([C('e_finestrap0', 0.0, 12.0), C('e_finestrap19', 0.0, 21.17)], [nx(42), at(42, 'in the same colour')], nx(43), labels=['a very fine strap', 'the same colour'])
+lrow([C('e_finestrap0', 10.0, 22.0), C('e_finestrap19', 0.0, 21.17)], [nx(42), at(42, 'in the same colour')], nx(43), labels=['a very fine strap', 'the same colour'])
 cfull([(C('e_nude12', 0.0, 7.07), nx(43))], en_(43))
 
 # ================= 6. A JACKET BUTTONED THE WRONG WAY =================
@@ -397,7 +397,7 @@ q('Elegant women let a jacket<br>fall in a <i>clean V</i>.', st(47) + 0.1, en(47
 lclip([(C('f_blazer14', 0.0, 9.03), nx(48))], at(48, 'A double-breasted') - 0.1)
 photo('ph_p_twobutton.png', 820, 120, 560, 780, nx(48) + 0.3, at(48, 'On a one-button') - 0.1, label='close only the top button')
 q('On a one-button jacket,<br>close it when you <i>stand</i>,<br>open it when you <i>sit</i>.', at(48, 'On a one-button'), at(48, 'A double-breasted') - 0.2, QL, size=56)
-lrow([C('f_double1', 2.3, 10.0), C('f_double30', 0.0, 5.0)], [at(48, 'A double-breasted') - 0.2, at(48, 'so choose one')], nx(49))
+lclip([(C('f_double1', 4.4, 9.2), at(48, 'A double-breasted') - 0.2), (C('f_double30', 0.0, 5.0), at(48, 'so choose one'))], nx(49))
 photo('ph_p_double.png', 1300, 120, 540, 760, at(48, 'that fastens flat') - 0.3, nx(49), label='fastens flat')
 lrow([C('f_double33', 0.0, 14.0), C('f_openblazer8', 0.0, 6.78), C('f_openblazer7', 0.0, 5.27)],
      [nx(49), at(49, 'Two long'), at(49, 'will lengthen')], nx(50))

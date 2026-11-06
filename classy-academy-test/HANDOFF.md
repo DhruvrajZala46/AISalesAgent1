@@ -110,7 +110,12 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     - 95 clips, each used once; 0 repeats from the four earlier videos;
     - 10 product photos;
     - the CE logo; no website on screen.
-  - Status: rendering; then QA, then sent in the chat.
+  - **Video v1 delivered in the chat (6 Nov 2026):**
+    - 1080p, 9:46, 314 MB.
+    - QA: -12.8 LUFS, 0 black frames, 0 silence; the only stills are the white cards, the quote screens and the product
+      photos.
+    - Two last fixes before the final render: a small "1° modelo" caption trimmed, and a tank-top close-up trimmed.
+  - Waiting for the user's review; thumbnails and the package only if asked.
 
 ## 1. Where things stand right now
 
