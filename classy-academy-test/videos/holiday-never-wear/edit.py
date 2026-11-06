@@ -225,6 +225,7 @@ def prod(png, cx, ybot, hh, t0, t1, label=None, maxw=430, lsize=60):
     _rise(i, t0, t1)
     if label: plabel(label, cx, ybot + 6, t0 + 0.35, t1, lsize)
 def plabel(txt, cx, y, t0, t1, size=60):
+    t0 = min(t0, t1 - 1.0)                     # never fade in after the fade-out starts (the label would stay on screen)
     i = nid('pl'); els.append(f'<div id="{i}" class="cl" style="left:{cx-330}px;top:{y}px;width:660px;font-size:{size}px;text-shadow:0 2px 14px rgba(60,40,25,.35);opacity:0">{txt}</div>')
     tw.append(f'tl.fromTo("#{i}",{{opacity:0,y:14}},{{opacity:1,y:0,duration:0.8,ease:"power2.out"}},{t0:.3f});'); fade_out(i, t1, 0.5)
 def photo(png, x0, y0, w, h, t0, t1, label=None, pos='50% 50%'):
@@ -466,8 +467,8 @@ q('A hem that&#8217;s<br><i>come down</i>.', at(51, "A hem"), at(51, 'These tiny
 q('Tiny things people<br><i>notice in photos</i>.', at(51, 'These tiny'), en(51) + 0.3, QR2, size=60)
 lclip([(K('z_steam1', 0, 12.2), nx(52))], nx(53))
 q('Ten minutes<br><i>before you leave</i>.', nx(52) + 0.3, at(52, 'Steam your') - 0.6, QL, size=66)
-prod('ph_steamer.png', 1264, 820, 560, at(52, 'Steam your'), at(52, 'or hang it') - 0.1, label='steam your velvet')
-q('Or hang it in the bathroom<br>while you <i>shower</i>.', at(52, 'or hang it'), at(52, 'Never press') - 0.2, QL, size=62)
+prod('ph_steamer.png', 1264, 880, 520, at(52, 'Steam your'), at(52, 'Never press') - 0.1, label='steam your velvet', lsize=54)
+q('Or hang it in the bathroom<br>while you <i>shower</i>.', at(52, 'or hang it'), at(52, 'Never press') - 0.2, (PW + 50, 40, 1870, 320), size=54)
 q('Never press it flat<br>with a <i>hot iron</i>.', at(52, 'Never press'), en(52) + 0.3, QL, size=62)
 lclip([(K('z_roller0'), nx(53)), (K('z_polish4'), at(53, 'Wipe your'))], nx(54))
 pieces([('ph_roller.png', 'a lint roller'), ('ph_polish.png', 'a cloth and polish'), ('ph_tights.png', 'spare tights'), ('ph_minirollers.png', 'a mini lint roller')],

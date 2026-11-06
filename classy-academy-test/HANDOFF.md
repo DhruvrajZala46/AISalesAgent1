@@ -132,7 +132,8 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     - the CE logo; no website on screen.
   - AI: one clip with the Gemini watermark (a_gloves6) and one from an AI studio (e_thanks1, "Silent Lens" end card) were
     found and replaced.
-  - Render started; delivery in the chat once QA passes.
+  - First render QA: 0 black frames, 0 silence, -14.5 LUFS; the only freezes are the white cards and quote screens. One
+    product label stayed on screen after 8:32 (a timing bug), fixed in `edit.py`, then rendered again.
 
 ## 1. Where things stand right now
 
