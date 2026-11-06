@@ -1,0 +1,92 @@
+{
+ "A.jpg": {
+  "logo": "ce",
+  "top": "Outfit Mistakes That",
+  "big": "Look Cheap",
+  "small": "*fix your lines*",
+  "underline": true,
+  "panels": [
+   {
+    "src": "orig/kate3.jpg",
+    "face": [
+     341,
+     91,
+     110,
+     110
+    ],
+    "cw": 691.2952083333332,
+    "fy": 0.1,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/blackwoman14.jpg",
+    "face": [
+     465,
+     108,
+     132,
+     132
+    ],
+    "cw": 756.0865277777776,
+    "fy": 0.1,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/over507.jpg",
+    "face": [
+     376,
+     233,
+     269,
+     269
+    ],
+    "cw": 1170,
+    "fy": 0.12,
+    "dx": 0.0
+   }
+  ]
+ },
+ "C.jpg": {
+  "logo": "ce",
+  "top": "Mistakes That Make You",
+  "big": "Look Shorter",
+  "small": "*fix your lines*",
+  "underline": true,
+  "panels": [
+   {
+    "src": "orig/jeanne15.jpg",
+    "face": [
+     444,
+     82,
+     129,
+     129
+    ],
+    "cw": 698.6194444444444,
+    "fy": 0.1,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/midiboots12.jpg",
+    "face": [
+     157,
+     30,
+     141,
+     141
+    ],
+    "cw": 474,
+    "fy": 0.06,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/kate11.jpg",
+    "face": [
+     237,
+     204,
+     139,
+     139
+    ],
+    "cw": 542.438263888889,
+    "fy": 0.12,
+    "dx": -0.06
+   }
+  ]
+ }
+}
