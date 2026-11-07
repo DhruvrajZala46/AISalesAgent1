@@ -77,9 +77,9 @@ If it springs back smooth, it will still look beautiful in February. If it stays
 
 Because a modest piece in a good fibre will always look richer than an expensive one that's mostly synthetic. And there's a quiet confidence in knowing that what you're wearing was chosen well.
 
-Number two. Snip the stitches.
-
 ### 2. Snip the stitches
+
+Number two. Snip the stitches.
 
 This one surprises so many women. When you buy a new coat, it often comes with a few small stitches that were never meant to stay.
 
@@ -95,9 +95,9 @@ Once they're gone, your coat falls and moves the way it was designed to, and you
 
 It takes two minutes, and it's one of the first details a tailor would notice.
 
-Number three. Give your coat a waist.
-
 ### 3. Give your coat a waist
+
+Number three. Give your coat a waist.
 
 A straight coat that falls from the shoulders keeps you warm, but on its own it can make even a beautiful outfit look shapeless.
 
@@ -109,9 +109,9 @@ Here's a little secret. Buy that belt one size bigger than you normally would, b
 
 A brown or black leather belt over a camel, grey or cream coat gives you shape in seconds, and suddenly the whole look feels intentional.
 
-Number four. Tie your scarf with intention.
-
 ### 4. Tie your scarf with intention
+
+Number four. Tie your scarf with intention.
 
 In winter, your scarf is the piece people notice first, because it sits right next to your face.
 
@@ -127,9 +127,9 @@ And because your scarf sits so close to your face, its colour matters more than 
 
 If you'd like to know exactly which colours, shapes and hairstyles flatter you best, our personal stylist guide is linked in the description. It's sent instantly to your email after access.
 
-Number five. Wear your jewellery on top.
-
 ### 5. Wear your jewellery on top
+
+Number five. Wear your jewellery on top.
 
 In winter, our jewellery tends to disappear under high collars and thick knits, and with it, that little touch of polish.
 
