@@ -1,90 +1,102 @@
 {
- "A.jpg": {
-  "logo": "ce",
+ "A2.jpg": {
   "top": "Elegant Ladies",
   "big": "Never Wear",
-  "small": "*on Christmas & NYE*",
-  "underline": true,
+  "small": "on Christmas & NYE",
+  "script": false,
+  "xs": [
+   0,
+   414,
+   856,
+   1280
+  ],
+  "dark": 40,
   "panels": [
    {
-    "src": "orig/kate_velvet3.jpg",
+    "src": "orig/kate_white11.jpg",
     "face": [
-     312,
-     185,
-     289,
-     289
-    ],
-    "fw": 0.3,
-    "fy": 0.2,
-    "dx": 0.0
-   },
-   {
-    "src": "orig/michelle8.jpg",
-    "face": [
-     168,
-     191,
-     114,
-     114
+     506,
+     108,
+     208,
+     208
     ],
     "fw": 0.27,
-    "fy": 0.13,
+    "fy": 0.18,
     "dx": 0.0
    },
    {
-    "src": "orig/mirren14.jpg",
+    "src": "orig/zendaya11.jpg",
     "face": [
-     273,
-     142,
-     159,
-     159
+     201,
+     215,
+     155,
+     155
     ],
-    "fw": 0.28,
+    "fw": 0.25,
     "fy": 0.2,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/palermo_velvet8.jpg",
+    "face": [
+     214,
+     116,
+     271,
+     271
+    ],
+    "fw": 0.3,
+    "fy": 0.18,
     "dx": 0.0
    }
   ]
  },
- "C.jpg": {
-  "logo": "ce",
+ "C2.jpg": {
   "top": "Holiday Outfits That",
   "big": "Look Cheap",
-  "small": "*what to wear instead*",
-  "underline": true,
+  "small": "What to Wear Instead",
+  "script": false,
+  "xs": [
+   0,
+   414,
+   856,
+   1280
+  ],
+  "dark": 40,
   "panels": [
    {
-    "src": "orig/palermo1.jpg",
+    "src": "orig/cate10.jpg",
     "face": [
-     273,
-     98,
-     122,
-     122
+     375,
+     210,
+     403,
+     403
     ],
-    "fw": 0.24,
-    "fy": 0.17,
+    "fw": 0.36,
+    "fy": 0.2,
+    "dx": 0.06
+   },
+   {
+    "src": "orig/amal8.jpg",
+    "face": [
+     344,
+     108,
+     167,
+     167
+    ],
+    "fw": 0.25,
+    "fy": 0.18,
     "dx": 0.0
    },
    {
-    "src": "orig/naomi8.jpg",
+    "src": "orig/kerry14.jpg",
     "face": [
-     322,
-     146,
-     217,
-     217
-    ],
-    "fw": 0.26,
-    "fy": 0.13,
-    "dx": 0.0
-   },
-   {
-    "src": "orig/amal2.jpg",
-    "face": [
-     432,
-     164,
-     154,
-     154
+     610,
+     114,
+     177,
+     177
     ],
     "fw": 0.27,
-    "fy": 0.2,
+    "fy": 0.19,
     "dx": 0.0
    }
   ]

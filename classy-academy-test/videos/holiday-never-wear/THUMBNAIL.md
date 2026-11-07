@@ -80,3 +80,52 @@ licensed. This is the same as the channel's own Kate and Grace Kelly thumbnails;
 - A and C: `workflow/tools/thumb_ca.py thumb_spec.json` (`"logo": "ce"`).
 - B: `make_b.py` (the two-half layout).
 - Both run in the thumbnail work folder.
+
+## v2 (7 Nov 2026): clean, bright photos, like the creator's own examples
+
+**Why v2:** the creator said the images must be very clean, and sent four of her own thumbnails to copy:
+"Make Them Respect You", "How to Own Any Room" and "Speak More Elegantly".
+
+**What those examples do (measured on the files she sent):**
+- **Photos:** bright, sharp, modern photos, framed from the waist up, with big faces. There is no dark veil over them;
+  the text reads through a soft shadow alone. The middle panel is the widest (about 0-414 / 418-856 / 860-1280).
+- **Frame:** a thin warm frame, about 6 px, gold-cream at the top and bottom and cream at the sides. White dividers.
+- **Text:** a Cormorant SC top line, a Montserrat SemiBold headline, and a Cormorant SC bottom line. Pinyon script is
+  used only for one word ("Gracefully").
+
+**What changed:**
+- the dark ellipse, the colour wash and the darkening are gone;
+- the older or grainy photos (a 1990s Naomi Campbell, a night shot of Michelle Obama) are swapped for sharp, recent
+  ones;
+- the frame, the panel widths and the text sizes are copied from the examples;
+- in B, Kate's photo is now the bright Christmas carol 2024 one (red coat, black velvet bow).
+
+| | Words | Photos |
+|---|---|---|
+| **B, recommended** | ✗ **Cheap** / ✓ **Chic** | a reindeer Christmas sweater and a pink sequin mini on caramel · Kate, Princess of Wales, in the red coat with a black velvet bow (Christmas carol service 2024) |
+| A | Elegant Ladies / **Never Wear** / on Christmas & NYE | Kate in an ivory coat and trousers (carol service 2023) · Zendaya in black velvet off-shoulder with diamonds · Olivia Palermo in a green velvet blazer |
+| C | Holiday Outfits That / **Look Cheap** / What to Wear Instead | Cate Blanchett in a green velvet suit · Amal Clooney in black velvet · Kerry Washington in a red dress |
+
+- **Feed test:** `feed_test2.jpg`, at 320x180 next to the creator's three examples.
+- **Sharpness:** 1.40 to 3.19 source pixels per output pixel, so nothing is upscaled.
+
+| Thumb | Photo | Source (as found on Pinterest) |
+|---|---|---|
+| A | Kate, Princess of Wales (ivory coat) | harpersbazaar.com, pin by @mhc110 https://www.pinterest.com/pin/e1_AfqPShwA0IzFN0HhR1RfCx5m5QD1PgyfiT1o_elG8K08OPf75C6G/ |
+| A | Zendaya | pin by @Zendayabr_ https://www.pinterest.com/pin/e1_AfqPShyatzU8yupj2-RP2uxIcnCpm2GdSIOI-Sw6KEHktTTcjgCg/ |
+| A | Olivia Palermo | pin by @lorenachapela https://www.pinterest.com/pin/e1_AfqPShyeQAQNqkB_u5j9ThnWQVU4EgXagNq3PswckikkVvP5recl/ |
+| B | Kate, Princess of Wales (red coat, bow) | pagesix.com, pin by @preview_pagesix_com https://www.pinterest.com/pin/e1_AfqPShy8-dZTcZdWWQ538N8er2jkZaxPUeSvcpNtk1Hn-xh7QxsbDg/ |
+| B | reindeer sweater, sequin mini | as in v1 above |
+| C | Cate Blanchett | pin by @gateva79 https://www.pinterest.com/pin/e1_AfqPShxjqEB9mHx97PkZbNB3La2uJKjArSNNjfyzTbvD5Mhz7tna/ |
+| C | Amal Clooney | pin by @ellewilson79 https://www.pinterest.com/pin/e1_AfqPShxkDyp5dy27RrcE6utPSruUgtB3cC_5BhZ0IeB88QfD-t1D/ |
+| C | Kerry Washington | Instagram post CpdAU2hLayY, pin by @plaid26 https://www.pinterest.com/pin/e1_AfqPShzfHM_8-PNzb6ezdqoicOE6FrOyViO7Imcecj-rs1BvfrI/ |
+
+**Left out:**
+- photos with agency credits or watermarks printed on them ("Andrew H. Walker/REX", "JUST JARED");
+- close-ups where the headline would cover a face.
+
+**Rights:** the same as v1: none of the photos is licensed, and the creator decides.
+
+**Build:**
+- A and C: `workflow/tools/thumb_clean.py thumb_spec.json` (the new clean builder).
+- B: `make_b.py`.
