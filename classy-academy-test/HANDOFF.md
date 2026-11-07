@@ -137,7 +137,10 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   - **Video v1 delivered in the chat (6 Nov 2026):**
     - 1080p, 10:29, 371 MB.
     - QA: -14.5 LUFS, 0 black frames, 0 silence; the only freezes are the white cards and the quote screens.
-  - Waiting for the user's review; thumbnails and the package only if asked.
+  - Chapters written (7 Nov 2026, `CHAPTERS.txt`).
+  - **User review (7 Nov 2026): remove the Classy Closet promotion** (never promote Classy Closet unless asked) and put
+    the stylist-guide (e-book) line of the earlier videos in its place. v2: the two Classy Closet lines became one guide line
+    (word for word from the gold-standard video), with the channel's guide screen; chapters recomputed.
 
 ## 1. Where things stand right now
 
@@ -282,3 +285,5 @@ User rules for that answer:
 - The user approves each stage ("ship it, or change it?").
 - Never commit media, keys or cookies. Never use the owner's login.
 - Commits go to `claude/youtube-channel-analysis-lghfsv`. No PR unless asked.
+- No Classy Closet promotion in a video (7 Nov 2026), even when a pasted script has one: the mid-video slot gets the
+  personal stylist guide (the "e-book") line of the earlier videos instead. No website on screen.

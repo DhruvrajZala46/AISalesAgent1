@@ -2,6 +2,8 @@
 
 The user's own script, given 6 Nov 2026. Headings are labels, not voiced. `beats.txt` is the voiced text, one line per beat (numbers = beat lines).
 
+**v2 (7 Nov 2026):** the user asked to remove the Classy Closet promotion and put the stylist-guide (e-book) line from the earlier videos in its place. Line 43 is that line, word for word from the gold-standard video (`../dressing-rules/beats.txt`, line 36).
+
 ## Hook
 
 1. Have you ever walked into a holiday party and noticed one woman who looks incredibly elegant?
@@ -102,54 +104,52 @@ The user's own script, given 6 Nov 2026. Headings are labels, not voiced. `beats
 
 42. One styling tip: let your coat fall slightly longer than your dress, so the layers look intentional instead of accidental.
 
-## Classy Closet CTA
+## Second guide mention (replaces the Classy Closet CTA, user request 7 Nov 2026)
 
-43. And if you'd like to see how a whole outfit looks on you before you buy it, you can try it with Classy Closet.
-
-44. Simply upload a full-body photo, browse our elegant outfits, and tap to try them on. It's completely free, and the link is right below.
+43. And if you'd like to know which colours, shapes and fabrics flatter you most, our personal stylist guide is linked in the description.
 
 ## 7. Towering heels you can't walk in
 
-45. Number seven, towering heels you can't walk in.
+44. Number seven, towering heels you can't walk in.
 
-46. If you're gripping the wall by nine o'clock, the whole look suffers. Elegance is in how you move.
+45. If you're gripping the wall by nine o'clock, the whole look suffers. Elegance is in how you move.
 
-47. Choose heels between one and a half and three inches, like a kitten heel, a slingback or a block heel in satin or suede. A pointed toe makes the foot look longer and sleeker.
+46. Choose heels between one and a half and three inches, like a kitten heel, a slingback or a block heel in satin or suede. A pointed toe makes the foot look longer and sleeker.
 
-48. And if you'll be on your feet all night, satin ballet flats with a delicate strap look gorgeous with a midi dress.
+47. And if you'll be on your feet all night, satin ballet flats with a delicate strap look gorgeous with a midi dress.
 
-49. Try the walk test at home. Walk across your room and back. If you can do it smoothly, with your shoulders relaxed, you're ready.
+48. Try the walk test at home. Walk across your room and back. If you can do it smoothly, with your shoulders relaxed, you're ready.
 
 ## 8. Skipping the finishing touches
 
-50. Number eight, skipping the finishing touches.
+49. Number eight, skipping the finishing touches.
 
-51. Holiday outfits come with their own special problems. Velvet that's creased from the closet. Lint all over black. Scuffed heels. A hem that's come down. Snagged tights. These tiny things are exactly what people notice in photos.
+50. Holiday outfits come with their own special problems. Velvet that's creased from the closet. Lint all over black. Scuffed heels. A hem that's come down. Snagged tights. These tiny things are exactly what people notice in photos.
 
-52. So give yourself ten minutes before you leave. Steam your velvet, or hang it in the bathroom while you shower. Never press it flat with a hot iron.
+51. So give yourself ten minutes before you leave. Steam your velvet, or hang it in the bathroom while you shower. Never press it flat with a hot iron.
 
-53. Run a lint roller over anything black. Wipe your shoes with a soft cloth and a little polish. And keep a spare pair of tights and a mini lint roller in your bag.
+52. Run a lint roller over anything black. Wipe your shoes with a soft cloth and a little polish. And keep a spare pair of tights and a mini lint roller in your bag.
 
-54. One more tip. Take a quick photo with flash before you go. Flash shows what the mirror doesn't, like see-through fabric, lint and bra straps, so you can fix it before you walk in.
+53. One more tip. Take a quick photo with flash before you go. Flash shows what the mirror doesn't, like see-through fabric, lint and bra straps, so you can fix it before you walk in.
 
 ## Bonus: three outfit formulas
 
-55. Now, as promised, here are three outfit formulas you can copy this season.
+54. Now, as promised, here are three outfit formulas you can copy this season.
 
-56. For Christmas dinner: a bottle-green velvet midi dress, nude kitten heels, pearl earrings and a camel wool coat.
+55. For Christmas dinner: a bottle-green velvet midi dress, nude kitten heels, pearl earrings and a camel wool coat.
 
-57. For the office party: a satin midi skirt in champagne or chocolate brown, a fine-knit sweater, a tailored blazer and gold hoops.
+56. For the office party: a satin midi skirt in champagne or chocolate brown, a fine-knit sweater, a tailored blazer and gold hoops.
 
-58. For New Year's Eve: a black satin slip dress or a silk top with tailored trousers, one sparkle piece like a crystal clutch or a sequin jacket, and a classic red lip.
+57. For New Year's Eve: a black satin slip dress or a silk top with tailored trousers, one sparkle piece like a crystal clutch or a sequin jacket, and a classic red lip.
 
-59. Notice the pattern? One star, and everything else stays quiet.
+58. Notice the pattern? One star, and everything else stays quiet.
 
 ## Ending
 
-60. Thank you so much for watching. Tell me in the comments, which of these have you done before? And what are you wearing this Christmas? I read every one.
+59. Thank you so much for watching. Tell me in the comments, which of these have you done before? And what are you wearing this Christmas? I read every one.
 
-61. If you'd like a part two with more holiday outfit ideas, let us know. A simple like or comment would truly mean the world to us.
+60. If you'd like a part two with more holiday outfit ideas, let us know. A simple like or comment would truly mean the world to us.
 
-62. And if you'd like to elevate your style even further, you'll find our personal stylist guide and my favourite holiday pieces linked in the description.
+61. And if you'd like to elevate your style even further, you'll find our personal stylist guide and my favourite holiday pieces linked in the description.
 
-63. Until next time, bye my loves.
+62. Until next time, bye my loves.

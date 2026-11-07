@@ -57,7 +57,9 @@ The user gave the full script (`script.md`, voiced as `beats.txt`). They asked f
 - **Product photos** (Pinterest originals, cut out onto the caramel) for every named piece that has no matching clip.
 - **The three outfit formulas** as the winter video's growing check list: each piece appears as it is said, beside a clip of that outfit.
 - **The undertone colours** as a row of emerald, sapphire and wine, then olive, rust, chocolate and burgundy outfits.
-- **Classy Closet:** a woman taking a full-length mirror photo, then scrolling outfits on her phone.
+- **The guide, a second time** (v2, 7 Nov 2026: in place of the Classy Closet promotion, at the user's request):
+  "colours / shapes / fabrics" over three coat clips, then "Check The Description For / Personal Stylist Guide" over a
+  full-screen clip, the same guide screen as the earlier videos.
 - **Footage:**
   - Pinterest video pins of Instagram and TikTok creators only;
   - every clip checked for AI (watermark scan, metadata), captions, ads and duplicates;
