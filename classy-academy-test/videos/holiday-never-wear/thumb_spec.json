@@ -1,0 +1,92 @@
+{
+ "A.jpg": {
+  "logo": "ce",
+  "top": "Elegant Ladies",
+  "big": "Never Wear",
+  "small": "*on Christmas & NYE*",
+  "underline": true,
+  "panels": [
+   {
+    "src": "orig/kate_velvet3.jpg",
+    "face": [
+     312,
+     185,
+     289,
+     289
+    ],
+    "fw": 0.3,
+    "fy": 0.2,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/michelle8.jpg",
+    "face": [
+     168,
+     191,
+     114,
+     114
+    ],
+    "fw": 0.27,
+    "fy": 0.13,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/mirren14.jpg",
+    "face": [
+     273,
+     142,
+     159,
+     159
+    ],
+    "fw": 0.28,
+    "fy": 0.2,
+    "dx": 0.0
+   }
+  ]
+ },
+ "C.jpg": {
+  "logo": "ce",
+  "top": "Holiday Outfits That",
+  "big": "Look Cheap",
+  "small": "*what to wear instead*",
+  "underline": true,
+  "panels": [
+   {
+    "src": "orig/palermo1.jpg",
+    "face": [
+     273,
+     98,
+     122,
+     122
+    ],
+    "fw": 0.24,
+    "fy": 0.17,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/naomi8.jpg",
+    "face": [
+     322,
+     146,
+     217,
+     217
+    ],
+    "fw": 0.26,
+    "fy": 0.13,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/amal2.jpg",
+    "face": [
+     432,
+     164,
+     154,
+     154
+    ],
+    "fw": 0.27,
+    "fy": 0.2,
+    "dx": 0.0
+   }
+  ]
+ }
+}
