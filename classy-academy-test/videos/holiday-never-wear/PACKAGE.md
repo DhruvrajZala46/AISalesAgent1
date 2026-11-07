@@ -16,7 +16,7 @@ B (✗ Cheap / ✓ Chic) → A (Never Wear) → C (Look Cheap), all three in Tes
 
 ## Description
 
-`DESCRIPTION.txt`, ready to paste: 4,908 characters (limit 5,000).
+`DESCRIPTION.txt`, ready to paste: 4,890 characters (limit 5,000).
 
 **Layout:** the channel's own published layout ("7 Things Classy Women Never Do in Public", "7 Quiet Habits"):
 - two search lines;
