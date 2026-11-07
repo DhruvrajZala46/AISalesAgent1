@@ -10,7 +10,6 @@
    856,
    1280
   ],
-  "dark": 40,
   "panels": [
    {
     "src": "orig/kate_white11.jpg",
@@ -48,7 +47,9 @@
     "fy": 0.18,
     "dx": 0.0
    }
-  ]
+  ],
+  "underline": true,
+  "dark": 30
  },
  "C2.jpg": {
   "top": "Holiday Outfits That",
@@ -61,7 +62,6 @@
    856,
    1280
   ],
-  "dark": 40,
   "panels": [
    {
     "src": "orig/cate10.jpg",
@@ -99,6 +99,8 @@
     "fy": 0.19,
     "dx": 0.0
    }
-  ]
+  ],
+  "underline": true,
+  "dark": 30
  }
 }

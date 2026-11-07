@@ -28,17 +28,28 @@ def build(spec, out):
         c.paste(Image.new('RGB', (W, H), (18, 12, 8)), (0, 0), g.filter(ImageFilter.GaussianBlur(90)))
     d = ImageDraw.Draw(c)
     for x in xs[1:-1]: d.rectangle((x - 2, 0, x + 2, H), fill=(246, 242, 236))
-    ft = sized(FD + 'CormorantSC-Regular.ttf', 50, probe='M'); fb = sized(FD + 'Montserrat.ttf', 92, 600, 'R')
-    while d.textlength(spec['big'], font=fb) > 1040: fb = ImageFont.truetype(FD + 'Montserrat.ttf', fb.size - 2); fb.set_variation_by_axes([600])
-    if spec.get('script'): fs = ImageFont.truetype(FD + 'PinyonScript-Regular.ttf', 92)
-    else: fs = sized(FD + 'CormorantSC-Regular.ttf', 38, probe='W')
-    lines = [(ft, spec['top'], 205), (fb, spec['big'], 285), (fs, spec['small'], 430 if spec.get('script') else 455)]
+    hw = spec.get('weight', 800); cap = spec.get('cap', 112)
+    ft = sized(FD + 'CormorantSC-Regular.ttf', spec.get('top_cap', 56), probe='M'); fb = sized(FD + 'Montserrat.ttf', cap, hw, 'R')
+    while d.textlength(spec['big'], font=fb) > 1120:
+        fb = ImageFont.truetype(FD + 'Montserrat.ttf', fb.size - 2); fb.set_variation_by_axes([hw])
+    fs = sized(FD + 'CormorantSC-Regular.ttf', spec.get('small_cap', 42), probe='W')
+    yb = 278; bh = fb.getbbox('R')[3] - fb.getbbox('R')[1]
+    lines = [(ft, spec['top'], yb - 18 - (ft.getbbox('M')[3] - ft.getbbox('M')[1]), 1), (fb, spec['big'], yb, 0), (fs, spec['small'], yb + bh + 62, 1)]
     def top_of(f, t, y): return y - f.getbbox(t)[1]
-    sh = Image.new('L', (W, H), 0); ds = ImageDraw.Draw(sh)
-    for f, t, y in lines: ds.text((W / 2 + 2, top_of(f, t, y) + 4), t, font=f, fill=235, anchor='la' if False else 'ma')
-    c.paste(Image.new('RGB', (W, H), (8, 5, 3)), (0, 0), sh.filter(ImageFilter.GaussianBlur(9)))
+    # two shadows so the words stand out on any photo: a wide soft glow and a tight dark drop
+    for blur, off, alpha in ((22, 0, 200), (5, 4, 245)):
+        sh = Image.new('L', (W, H), 0); ds = ImageDraw.Draw(sh)
+        for f, tx, y, sw in lines: ds.text((W / 2 + off * 0.6, top_of(f, tx, y) + off), tx, font=f, fill=alpha, anchor='ma', stroke_width=sw + 3)
+        c.paste(Image.new('RGB', (W, H), (6, 4, 2)), (0, 0), sh.filter(ImageFilter.GaussianBlur(blur)))
     d = ImageDraw.Draw(c)
-    for f, t, y in lines: d.text((W / 2, top_of(f, t, y)), t, font=f, fill=(255, 255, 255), anchor='ma')
+    for f, tx, y, sw in lines: d.text((W / 2, top_of(f, tx, y)), tx, font=f, fill=(255, 255, 255), anchor='ma', stroke_width=sw, stroke_fill=(255, 255, 255))
+    if spec.get('underline'):   # the channel's own highlight: a red line under the first word of the headline
+        big = spec['big']; first = big.split()[0]; yt = top_of(fb, big, yb)
+        bb = d.textbbox((W / 2, yt), big, font=fb, anchor='ma'); fw_ = d.textbbox((bb[0], yt), first, font=fb, anchor='la')[2] - bb[0]
+        uy = bb[3] + 12
+        ush = Image.new('L', (W, H), 0); ImageDraw.Draw(ush).rectangle((bb[0] - 4, uy + 3, bb[0] + fw_ + 8, uy + 11), fill=200)
+        c.paste(Image.new('RGB', (W, H), (6, 4, 2)), (0, 0), ush.filter(ImageFilter.GaussianBlur(4)))
+        d = ImageDraw.Draw(c); d.rectangle((bb[0] - 8, uy, bb[0] + fw_ + 4, uy + 7), fill=(170, 24, 30))
     # thin warm frame: gold top and bottom, cream sides (as measured: ~6 px)
     for i in range(6):
         d.line((0, i, W, i), fill=(253, 212, 160)); d.line((0, H - 1 - i, W, H - 1 - i), fill=(250, 214, 166))

@@ -129,3 +129,16 @@ licensed. This is the same as the channel's own Kate and Grace Kelly thumbnails;
 **Build:**
 - A and C: `workflow/tools/thumb_clean.py thumb_spec.json` (the new clean builder).
 - B: `make_b.py`.
+
+## v3 (7 Nov 2026): the words stand out
+
+The creator asked for the font to be highlighted.
+- **Headline:** bigger (capital height 112 px, up from 92) and bolder (Montserrat ExtraBold 800, up from SemiBold 600).
+- **Shadow:** two layers, a wide soft glow and a tight dark drop. The words read on any photo, still with no dark veil
+  over the photos.
+- **Top and bottom lines:** larger (56 and 42 px), with a slightly heavier stroke.
+- **Red underline:** the channel's own highlight, under the first word of the headline ("Never", "Look"), as on its 23k
+  and 1.6k thumbnails.
+- **B:** "Cheap" and "Chic" are larger (138 px) and heavier (Playfair 800), with the same double shadow.
+
+The photos are unchanged from v2. Feed test: `feed_test_bold.jpg`.
