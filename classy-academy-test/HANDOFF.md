@@ -141,6 +141,9 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   - **User review (7 Nov 2026): remove the Classy Closet promotion** (never promote Classy Closet unless asked) and put
     the stylist-guide (e-book) line of the earlier videos in its place. v2: the two Classy Closet lines became one guide line
     (word for word from the gold-standard video), with the channel's guide screen; chapters recomputed.
+  - **Video v2 delivered in the chat (7 Nov 2026):** 1080p, 10:20, 363 MB; 138 clips, each used once.
+    QA: -12.8 LUFS, 0 black frames, 0 silence; the only freezes are the white cards and the quote screens.
+  - Waiting for the user's review.
 
 ## 1. Where things stand right now
 
