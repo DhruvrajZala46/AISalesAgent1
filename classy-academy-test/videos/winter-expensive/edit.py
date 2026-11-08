@@ -413,8 +413,8 @@ lrow([K('k_pill8', 0.23, 10.29), K('k_pill9'), K('k_pill16', 0, 8.0)], [nx(20), 
 lclip([(K('k_shaver6'), nx(21))], nx(22))
 item('ph_shaver.png', 1264, 900, 620, nx(21) + 0.3, nx(22), label='a fabric shaver')
 lrow([K('k_handwash0'), K('k_dryflat0', 0, 4.5)], [nx(22), at(22, 'and dry')], nx(23), labels=['cold or by hand', 'dry flat'])
-bsplit(23, [(K('k_neutral0'), nx(23))], None, [('ph_cashmere3.png', 'one great cashmere sweater')], en_(23),
-       bclip=K('k_thrift4', 0, 8.67), blabel='secondhand merino &amp; lambswool')
+bsplit(23, [(K('k_neutral0'), nx(23))], [('ph_thmerino.png', 'secondhand<br>merino'), ('ph_thlamb.png', 'secondhand<br>lambswool')],
+       [('ph_cashmere3.png', 'one great cashmere sweater')], en_(23), btimes=[at(23, 'merino'), at(23, 'lambswool')])
 
 # ================= 3. TWO OR THREE COLOURS FROM ONE FAMILY =================
 card_at('3. Stick to two or three colours from the same family', 24, en(24) + 0.3, size=84)
