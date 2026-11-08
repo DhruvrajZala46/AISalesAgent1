@@ -159,7 +159,11 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   - **Video v1 delivered in the chat (8 Nov 2026):** 1080p, 12:15, 380 MiB. QA: -15.1 LUFS, 0 black frames, 0 silence;
     the only freezes are the white cards ("in today's video..." and the nine point cards); the two renders differ only at
     3:19-3:29. Chapters in `CHAPTERS.txt`.
-  - Waiting for the user's review. Thumbnails, description and tags only if asked.
+  - **Thumbnails (8 Nov 2026, `THUMBNAIL.md`):** both channels' 47 thumbnails and the topic's top 20 read fresh; three
+    built in the bold clean style. A (recommended) "How to Look / Expensive / in Winter" (Rosie, Kate, Amal in coats, the
+    716k's own words); B "Look / Expensive / on Any Budget" (the bonus outfit cut out on the caramel + Inès de la
+    Fressange); C "Always Look / Put Together / This Winter" (Jasmine Tookes, Tracee Ellis Ross, Olivia Palermo).
+  - Waiting for the user's review.
 
 ## 1. Where things stand right now
 
