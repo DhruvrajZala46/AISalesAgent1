@@ -165,6 +165,13 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     Fressange); C "Always Look / Put Together / This Winter" (Jasmine Tookes, Tracee Ellis Ross, Olivia Palermo).
   - Waiting for the user's review.
 
+- **Classy Academy thumbnails (8 Nov 2026): "7 Elegant Ways to Dress a Tummy (Without Hiding It)"**, in `videos/dress-a-tummy/`
+  (`THUMBNAIL.md`). All 31 CA thumbnails and the topic's top 20 read fresh; three finished thumbnails in the channel's measured
+  layout with the REAL CA logo (`assets/logo_ca.png`, new `tools/ca_logo.py` + `tools/thumb_ca_real.py`, editable layers):
+  1 "Elegant Ladies / Never Hide / *they style it*" (recommended; Mindy Kaling, Precious Lee, Christina Hendricks),
+  2 "The Most / Flattering Outfits / *one woman, three looks*" (Ashley Graham x3), 3 "Your Tummy Is / Not the Problem /
+  *it's how you style it*". Waiting for the user's review.
+
 ## 1. Where things stand right now
 
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in

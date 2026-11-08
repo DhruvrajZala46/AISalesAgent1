@@ -1,0 +1,147 @@
+{
+ "T1_never_hide": {
+  "top": "Elegant Ladies",
+  "big": "Never Hide",
+  "small": "*they style it*",
+  "panels": [
+   {
+    "src": "mk7.jpg",
+    "face": [
+     305,
+     90,
+     112,
+     112
+    ],
+    "fw": 0.17,
+    "fy": 0.1,
+    "dx": -0.1,
+    "bright": 0.96
+   },
+   {
+    "src": "pl7.jpg",
+    "face": [
+     432,
+     90,
+     139,
+     139
+    ],
+    "fw": 0.18,
+    "fy": 0.09,
+    "dx": -0.04,
+    "bright": 0.96
+   },
+   {
+    "src": "ch1.jpg",
+    "face": [
+     282,
+     30,
+     135,
+     135
+    ],
+    "fw": 0.18,
+    "fy": 0.09,
+    "dx": 0.0,
+    "bright": 0.96
+   }
+  ],
+  "small_cap": 30,
+  "dark": 85
+ },
+ "T2_flattering_outfits": {
+  "top": "The Most",
+  "big": "Flattering Outfits",
+  "small": "*one woman, three looks*",
+  "panels": [
+   {
+    "src": "ag8.jpg",
+    "face": [
+     300,
+     141,
+     95,
+     95
+    ],
+    "fw": 0.18,
+    "fy": 0.1,
+    "dx": 0.0,
+    "bright": 1.0
+   },
+   {
+    "src": "ag30.jpg",
+    "face": [
+     700,
+     455,
+     147,
+     147
+    ],
+    "fw": 0.19,
+    "fy": 0.1,
+    "dx": 0.0,
+    "bright": 0.96
+   },
+   {
+    "src": "ag19.jpg",
+    "face": [
+     271,
+     43,
+     85,
+     85
+    ],
+    "fw": 0.18,
+    "fy": 0.1,
+    "dx": 0.0,
+    "bright": 0.96
+   }
+  ],
+  "small_cap": 30,
+  "dark": 85,
+  "underline": false
+ },
+ "T3_not_the_problem": {
+  "top": "Your Tummy Is",
+  "big": "Not the Problem",
+  "small": "*it's how you style it*",
+  "panels": [
+   {
+    "src": "pl1.jpg",
+    "face": [
+     2050,
+     560,
+     360,
+     360
+    ],
+    "fw": 0.24,
+    "fy": 0.17,
+    "dx": -0.06,
+    "bright": 0.96
+   },
+   {
+    "src": "mk17.jpg",
+    "face": [
+     1301,
+     249,
+     441,
+     441
+    ],
+    "fw": 0.3,
+    "fy": 0.15,
+    "dx": 0.05,
+    "bright": 0.96
+   },
+   {
+    "src": "ch18.jpg",
+    "face": [
+     494,
+     162,
+     201,
+     201
+    ],
+    "fw": 0.26,
+    "fy": 0.15,
+    "dx": 0.0,
+    "bright": 0.96
+   }
+  ],
+  "small_cap": 30,
+  "dark": 85
+ }
+}
