@@ -53,10 +53,10 @@ def build(spec, name, outdir='.'):
     lines = [(ft, top, top_y(ft, top, yb - 96)), (fb, big, top_y(fb, big, yb))]
     if small: lines.append((fs, small, top_y(fs, small, yb + cap + 91)))
     sh = Image.new('L', (W, H), 0); ds = ImageDraw.Draw(sh)
-    for f, t, y in lines: ds.text((W / 2 + 3, y + 5), t, font=f, fill=200, anchor='ma')
+    for f, t, y in lines: ds.text((W / 2 + 3, y + 5), t, font=f, fill=200, anchor='ma', features=['lnum'])   # lining figures: '$60', not Cormorant's old-style '$6o'
     shadow = Image.new('RGBA', (W, H), (12, 8, 6, 0)); shadow.putalpha(sh.filter(ImageFilter.GaussianBlur(7)))
     text = Image.new('RGBA', (W, H), (0, 0, 0, 0)); dt = ImageDraw.Draw(text)
-    for f, t, y in lines: dt.text((W / 2, y), t, font=f, fill=(255, 255, 255, 255), anchor='ma')
+    for f, t, y in lines: dt.text((W / 2, y), t, font=f, fill=(255, 255, 255, 255), anchor='ma', features=['lnum'])
     if spec.get('underline', True):
         first = big.split()[0]; bb = dt.textbbox((W / 2, lines[1][2]), big, font=fb, anchor='ma'); fw_ = dt.textlength(first, font=fb)
         fb_ = dt.textbbox((bb[0], lines[1][2]), first, font=fb, anchor='la'); uy = max(yb + cap + 14, fb_[3] + 8)

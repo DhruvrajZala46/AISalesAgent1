@@ -163,6 +163,11 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     built in the bold clean style. A (recommended) "How to Look / Expensive / in Winter" (Rosie, Kate, Amal in coats, the
     716k's own words); B "Look / Expensive / on Any Budget" (the bonus outfit cut out on the caramel + Inès de la
     Fressange); C "Always Look / Put Together / This Winter" (Jasmine Tookes, Tracee Ellis Ross, Olivia Palermo).
+  - **Classy Academy thumbnails for this video (8 Nov 2026, `THUMBNAIL-CA.md`):** the CA "expensive" thumbnails studied
+    (716k, 310k, 100k, 97k, 74k, 72k: waist-up, glossy, warm neutrals, selfies); three built with the real CA logo:
+    1 "The Art of / Quiet Luxury / *this winter*" (recommended; Jasmine Tookes, Sofia Richie, Leonie Hanne in cream, camel,
+    chocolate), 2 "A $60 Coat Can Look / Like $600 / *if it fits*" (the video's line 8), 3 "Always Look / Polished / *even in
+    winter*". The rendered video carries the CE logo; a CA upload would need a re-render with the CA logo.
   - Waiting for the user's review.
 
 - **Classy Academy thumbnails (8 Nov 2026): "7 Elegant Ways to Dress a Tummy (Without Hiding It)"**, in `videos/dress-a-tummy/`
