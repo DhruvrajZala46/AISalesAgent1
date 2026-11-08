@@ -152,9 +152,14 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   - Format: the storyboard of the channel's 716k "How to Instantly Look More Elegant & Expensive: No Matter Your Budget"
     (`VISUAL-ANALYSIS.md`); every tip ends with a Budget / Splurge pair on the caramel; the bonus builds the same outfit at
     three budgets, piece by piece.
-  - Video v1 built (8 Nov 2026): 145 clips, each used once; 0 repeats from the six earlier videos; 46 product photos;
+  - Video v1 built (8 Nov 2026): 144 clips, each used once; 0 repeats from the six earlier videos; 48 product photos;
     the CE logo; no website, no Classy Closet.
-  - Render started; delivery in the chat once QA passes.
+  - The first render, read every 5 s, showed the budget-knitwear thrift clip (k_thrift4) reaching a denim skirt and a
+    blouse under "secondhand merino & lambswool"; it was replaced by two secondhand-listing photos and re-rendered.
+  - **Video v1 delivered in the chat (8 Nov 2026):** 1080p, 12:15, 380 MiB. QA: -15.1 LUFS, 0 black frames, 0 silence;
+    the only freezes are the white cards ("in today's video..." and the nine point cards); the two renders differ only at
+    3:19-3:29. Chapters in `CHAPTERS.txt`.
+  - Waiting for the user's review. Thumbnails, description and tags only if asked.
 
 ## 1. Where things stand right now
 
