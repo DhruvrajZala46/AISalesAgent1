@@ -16,11 +16,12 @@ B (✗ Cheap / ✓ Chic) → A (Never Wear) → C (Look Cheap), all three in Tes
 
 ## Description
 
-`DESCRIPTION.txt`, ready to paste: 4,890 characters (limit 5,000).
+`DESCRIPTION.txt`, ready to paste: 4,937 characters (limit 5,000).
 
 **Layout:** the channel's own published layout ("7 Things Classy Women Never Do in Public", "7 Quiet Habits"):
 - two search lines;
-- the guidance paragraph;
+- the guide link ("✨ Classy Lady Guides", stan.store; added 8 Nov 2026: the video says the guide is linked in the
+  description) and the guidance paragraph;
 - the shop link, named "My Favourite Holiday Pieces" as the script's outro says;
 - chapters;
 - the hook;

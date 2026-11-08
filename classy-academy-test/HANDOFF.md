@@ -168,6 +168,9 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     1 "The Art of / Quiet Luxury / *this winter*" (recommended; Jasmine Tookes, Sofia Richie, Leonie Hanne in cream, camel,
     chocolate), 2 "A $60 Coat Can Look / Like $600 / *if it fits*" (the video's line 8), 3 "Always Look / Polished / *even in
     winter*". The rendered video carries the CE logo; a CA upload would need a re-render with the CA logo.
+  - **Package (8 Nov 2026, `PACKAGE.md`):** title recommended "8 Ways to Look Expensive in Winter (On Any Budget)" (50 chars,
+    94/100; the original kept as an option), `DESCRIPTION.txt` (4,881 chars, stan.store guide link, shopmy, chapters, credits
+    incl. the CA thumbnail photos), `TAGS.txt` (15). The Christmas description got the missing stan.store guide link too.
   - Waiting for the user's review.
 
 - **Classy Academy thumbnails (8 Nov 2026): "7 Elegant Ways to Dress a Tummy (Without Hiding It)"**, in `videos/dress-a-tummy/`
