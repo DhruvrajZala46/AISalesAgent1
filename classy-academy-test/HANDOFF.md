@@ -145,6 +145,17 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     QA: -12.8 LUFS, 0 black frames, 0 silence; the only freezes are the white cards and the quote screens.
   - Waiting for the user's review.
 
+- **New video (7-8 Nov 2026): "How to Look Expensive & Put-Together in Winter (No Matter Your Budget)"**, in
+  `videos/winter-expensive/`.
+  - A first script by Claude (8 new tips, `script-draft-claude.md`) was sent; the user then gave their own script, which is
+    the one voiced (`script.md`, `beats.txt`, 77 lines). The Classy Closet lines were removed at the user's choice.
+  - Format: the storyboard of the channel's 716k "How to Instantly Look More Elegant & Expensive: No Matter Your Budget"
+    (`VISUAL-ANALYSIS.md`); every tip ends with a Budget / Splurge pair on the caramel; the bonus builds the same outfit at
+    three budgets, piece by piece.
+  - Video v1 built (8 Nov 2026): 145 clips, each used once; 0 repeats from the six earlier videos; 46 product photos;
+    the CE logo; no website, no Classy Closet.
+  - Render started; delivery in the chat once QA passes.
+
 ## 1. Where things stand right now
 
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in
