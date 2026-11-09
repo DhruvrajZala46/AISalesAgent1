@@ -180,6 +180,16 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   2 "The Most / Flattering Outfits / *one woman, three looks*" (Ashley Graham x3), 3 "Your Tummy Is / Not the Problem /
   *it's how you style it*". Waiting for the user's review.
 
+- **New video (9 Nov 2026): "7 Subtle Body Language Habits That Make You Appear Naturally Poised"**, in
+  `videos/poised-body-language/`, from the user's own script (66 voiced lines; the mid-video guide line kept, no website).
+  - Format: the channel's "7 Body Language Habits That Instantly Make You Look Elegant & Confident" (`r_mYSc7FHvk`,
+    320k), read from its storyboard and captions (`VISUAL-ANALYSIS.md`). The video file itself could not be watched:
+    YouTube's bot check blocked downloads and the vidIQ account has no credits.
+  - 126 clips, each used once; 0 repeats from the seven earlier videos (pins, posts and footage checked); 0 AI flags; the
+    CE logo; film scenes (Roman Holiday, Rear Window, To Catch a Thief, Funny Face) and royal press footage as found on Pinterest.
+  - First render read every 5 s: a 12 s static text screen (the 1966 study) became a clip with the two results beside it;
+    eight empty caramel pauses got the line being spoken; a door clip with a "What I Wore" caption was swapped. Re-rendered.
+
 ## 1. Where things stand right now
 
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in
