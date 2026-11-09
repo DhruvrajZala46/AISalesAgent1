@@ -198,6 +198,9 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     hands-at-the-chin trio in black like CA's 322k: Jasmine Tookes, Lupita Nyong'o, Zendaya), 2 "You Look / Calmer / *than you
     feel*" (Kate in red at a podium between Amal Clooney and Helen Mirren), 3 "The Secret to / Quiet Confidence" (Tookes, Kate,
     Anne Hathaway). Real CA logo; `thumb_ca_real.py` gained a script small line.
+  - **Package (9 Nov 2026, `PACKAGE.md`):** three titles (recommended "7 Body Language Habits That Make You Look Calm &
+    Poised", 55 chars), `DESCRIPTION.txt` (4,286 chars, guide + shop links, chapters, credits with the CA thumbnail photos),
+    `TAGS.txt` (15). Waiting for the user's review.
 
 ## 1. Where things stand right now
 
