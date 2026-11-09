@@ -189,6 +189,8 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     CE logo; film scenes (Roman Holiday, Rear Window, To Catch a Thief, Funny Face) and royal press footage as found on Pinterest.
   - First render read every 5 s: a 12 s static text screen (the 1966 study) became a clip with the two results beside it;
     eight empty caramel pauses got the line being spoken; a door clip with a "What I Wore" caption was swapped. Re-rendered.
+  - **Video v1 delivered in the chat (9 Nov 2026):** 1080p, 10:20, 320 MiB. QA: -12.5 LUFS, 0 black frames, 0 silence;
+    the only freezes are the white cards and one 4 s quote screen. Chapters in `CHAPTERS.txt`. Waiting for the user's review.
 
 ## 1. Where things stand right now
 
