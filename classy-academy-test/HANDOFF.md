@@ -194,6 +194,10 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   - **Thumbnails (9 Nov 2026, `THUMBNAIL.md`):** A "Effortlessly / Composed / without saying a word" (recommended; Jasmine
     Tookes, Michelle Obama, Kate), B "You Look / Calmer / than you feel" (Amal Clooney, Kate at a podium, Helen Mirren),
     C "Become / Magnetic / 7 tiny signals" (Lupita Nyong'o, Sofia Richie, Zendaya; CA's own 322k words). Waiting for review.
+  - **Classy Academy thumbnails (9 Nov 2026, `THUMBNAIL-CA.md`):** 1 "Effortlessly / Composed / *without a word*" (recommended;
+    hands-at-the-chin trio in black like CA's 322k: Jasmine Tookes, Lupita Nyong'o, Zendaya), 2 "You Look / Calmer / *than you
+    feel*" (Kate in red at a podium between Amal Clooney and Helen Mirren), 3 "The Secret to / Quiet Confidence" (Tookes, Kate,
+    Anne Hathaway). Real CA logo; `thumb_ca_real.py` gained a script small line.
 
 ## 1. Where things stand right now
 

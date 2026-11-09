@@ -1,0 +1,146 @@
+{
+ "P1_effortlessly_composed": {
+  "top": "Effortlessly",
+  "big": "Composed",
+  "small": "without a word",
+  "small_script": true,
+  "small_cap": 46,
+  "underline": false,
+  "panels": [
+   {
+    "src": "tookes13.jpg",
+    "face": [
+     122,
+     200,
+     523,
+     523
+    ],
+    "fw": 0.5721,
+    "fy": 0.2708,
+    "dx": 0.0,
+    "bright": 0.95
+   },
+   {
+    "src": "lupitablk7.jpg",
+    "face": [
+     737,
+     346,
+     634,
+     634
+    ],
+    "fw": 0.3786,
+    "fy": 0.1736,
+    "dx": 0.0
+   },
+   {
+    "src": "zendaya5.jpg",
+    "face": [
+     217,
+     151,
+     291,
+     291
+    ],
+    "fw": 0.4979,
+    "fy": 0.2872,
+    "dx": 0.0
+   }
+  ],
+  "yb": 316,
+  "dark": 95
+ },
+ "P2_you_look_calmer": {
+  "top": "You Look",
+  "big": "Calmer",
+  "small": "than you feel",
+  "small_script": true,
+  "small_cap": 46,
+  "underline": false,
+  "panels": [
+   {
+    "src": "amal1.jpg",
+    "face": [
+     334,
+     335,
+     684,
+     684
+    ],
+    "fw": 0.5348,
+    "fy": 0.2812,
+    "dx": 0.0
+   },
+   {
+    "src": "katespeech1.jpg",
+    "face": [
+     406,
+     98,
+     119,
+     119
+    ],
+    "fw": 0.2584,
+    "fy": 0.1361,
+    "dx": 0.22
+   },
+   {
+    "src": "mirren33.jpg",
+    "face": [
+     137,
+     178,
+     346,
+     346
+    ],
+    "fw": 0.24,
+    "fy": 0.16,
+    "dx": 0.0
+   }
+  ],
+  "yb": 316,
+  "dark": 95
+ },
+ "P3_quiet_confidence": {
+  "top": "The Secret to",
+  "big": "Quiet Confidence",
+  "small": "*7 subtle signals*",
+  "small_cap": 28,
+  "underline": false,
+  "panels": [
+   {
+    "src": "tookesblk29.jpg",
+    "face": [
+     214,
+     186,
+     325,
+     325
+    ],
+    "fw": 0.5721,
+    "fy": 0.2014,
+    "dx": 0.0
+   },
+   {
+    "src": "kateblack19.jpg",
+    "face": [
+     748,
+     435,
+     541,
+     541
+    ],
+    "fw": 0.3563,
+    "fy": 0.1667,
+    "dx": 0.0
+   },
+   {
+    "src": "anne12.jpg",
+    "face": [
+     240,
+     307,
+     549,
+     549
+    ],
+    "fw": 0.4662,
+    "fy": 0.2361,
+    "dx": 0.0
+   }
+  ],
+  "yb": 316,
+  "dark": 95
+ }
+}

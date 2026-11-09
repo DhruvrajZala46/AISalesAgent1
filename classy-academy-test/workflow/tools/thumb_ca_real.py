@@ -47,11 +47,12 @@ def build(spec, name, outdir='.'):
     cap = spec.get('cap', 108); fb = sized(FD + 'Montserrat.ttf', cap, 700, 'N')
     probe = ImageDraw.Draw(Image.new('L', (8, 8)))
     while probe.textlength(big, font=fb) > spec.get('maxw', 1060): cap -= 2; fb = sized(FD + 'Montserrat.ttf', cap, 700, 'N')
-    fs = sized(FD + 'CormorantSC-Regular.ttf', spec.get('small_cap', 26), probe='A')
+    fs = (sized(FD + 'PinyonScript-Regular.ttf', spec.get('small_cap', 44), probe='E') if spec.get('small_script')   # the channel's script line ("& Eloquently")
+          else sized(FD + 'CormorantSC-Regular.ttf', spec.get('small_cap', 26), probe='A'))
     def top_y(f, txt, ytop): return ytop - f.getbbox(txt)[1]
     yb = spec.get('yb', 296)
     lines = [(ft, top, top_y(ft, top, yb - 96)), (fb, big, top_y(fb, big, yb))]
-    if small: lines.append((fs, small, top_y(fs, small, yb + cap + 91)))
+    if small: lines.append((fs, small, top_y(fs, small, yb + cap + spec.get('small_gap', 91))))
     sh = Image.new('L', (W, H), 0); ds = ImageDraw.Draw(sh)
     for f, t, y in lines: ds.text((W / 2 + 3, y + 5), t, font=f, fill=200, anchor='ma', features=['lnum'])   # lining figures: '$60', not Cormorant's old-style '$6o'
     shadow = Image.new('RGBA', (W, H), (12, 8, 6, 0)); shadow.putalpha(sh.filter(ImageFilter.GaussianBlur(7)))
