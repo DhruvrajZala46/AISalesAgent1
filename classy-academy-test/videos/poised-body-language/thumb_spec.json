@@ -1,0 +1,158 @@
+{
+ "A.jpg": {
+  "top": "Effortlessly",
+  "big": "Composed",
+  "small": "without saying a word",
+  "script": false,
+  "underline": false,
+  "xs": [
+   0,
+   414,
+   856,
+   1280
+  ],
+  "yb": 360,
+  "panels": [
+   {
+    "src": "tookes3.jpg",
+    "face": [
+     20,
+     162,
+     376,
+     376
+    ],
+    "fw": 0.24,
+    "fy": 0.15,
+    "dx": 0.0
+   },
+   {
+    "src": "michelle22.jpg",
+    "face": [
+     734,
+     324,
+     525,
+     525
+    ],
+    "fw": 0.18,
+    "fy": 0.12,
+    "dx": 0.0
+   },
+   {
+    "src": "katesmile20.jpg",
+    "face": [
+     120,
+     282,
+     541,
+     541
+    ],
+    "fw": 0.25,
+    "fy": 0.12,
+    "dx": 0.0
+   }
+  ]
+ },
+ "B.jpg": {
+  "top": "You Look",
+  "big": "Calmer",
+  "small": "than you feel",
+  "script": false,
+  "underline": false,
+  "xs": [
+   0,
+   414,
+   856,
+   1280
+  ],
+  "yb": 360,
+  "panels": [
+   {
+    "src": "amal21.jpg",
+    "face": [
+     221,
+     206,
+     280,
+     280
+    ],
+    "fw": 0.22,
+    "fy": 0.13,
+    "dx": 0.0
+   },
+   {
+    "src": "katespeech12.jpg",
+    "face": [
+     211,
+     146,
+     181,
+     181
+    ],
+    "fw": 0.18,
+    "fy": 0.12,
+    "dx": 0.0
+   },
+   {
+    "src": "mirren9.jpg",
+    "face": [
+     268,
+     121,
+     651,
+     651
+    ],
+    "fw": 0.25,
+    "fy": 0.12,
+    "dx": 0.0
+   }
+  ]
+ },
+ "C.jpg": {
+  "top": "Become",
+  "big": "Magnetic",
+  "small": "7 tiny signals",
+  "script": false,
+  "underline": false,
+  "xs": [
+   0,
+   414,
+   856,
+   1280
+  ],
+  "yb": 360,
+  "panels": [
+   {
+    "src": "lupita11.jpg",
+    "face": [
+     208,
+     312,
+     611,
+     611
+    ],
+    "fw": 0.24,
+    "fy": 0.15,
+    "dx": 0.0
+   },
+   {
+    "src": "sofia9.jpg",
+    "face": [
+     379,
+     176,
+     413,
+     413
+    ],
+    "fw": 0.18,
+    "fy": 0.12,
+    "dx": 0.0
+   },
+   {
+    "src": "zendaya3.jpg",
+    "face": [
+     38,
+     199,
+     404,
+     404
+    ],
+    "fw": 0.25,
+    "fy": 0.12,
+    "dx": 0.0
+   }
+  ]
+ }
+}

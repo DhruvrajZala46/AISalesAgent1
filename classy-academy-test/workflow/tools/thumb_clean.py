@@ -33,7 +33,7 @@ def build(spec, out):
     while d.textlength(spec['big'], font=fb) > 1120:
         fb = ImageFont.truetype(FD + 'Montserrat.ttf', fb.size - 2); fb.set_variation_by_axes([hw])
     fs = sized(FD + 'CormorantSC-Regular.ttf', spec.get('small_cap', 42), probe='W')
-    yb = 278; bh = fb.getbbox('R')[3] - fb.getbbox('R')[1]
+    yb = spec.get("yb", 278); bh = fb.getbbox('R')[3] - fb.getbbox('R')[1]
     lines = [(ft, spec['top'], yb - 18 - (ft.getbbox('M')[3] - ft.getbbox('M')[1]), 1), (fb, spec['big'], yb, 0), (fs, spec['small'], yb + bh + 62, 1)]
     def top_of(f, t, y): return y - f.getbbox(t)[1]
     # two shadows so the words stand out on any photo: a wide soft glow and a tight dark drop
