@@ -223,6 +223,9 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     wrong / right reach 6-8 and made small channels' videos travel. Built without a borrowed face: 1 BEFORE / AFTER
     (recommended), 2 WRONG / RIGHT (the heel check), 3 LOOKS CHEAP! (three boots, red X). Suggested title "8 Winter Boot
     Rules That Instantly Elevate Every Outfit". Waiting for the user's review.
+  - **Package (11 Nov 2026, `PACKAGE.md`):** three titles (recommended "8 Winter Boot Rules That Instantly Elevate Every
+    Outfit", 55 chars), `DESCRIPTION.txt` (3,595 chars: guide + shop links, chapters, credits with the v2 thumbnail 1
+    photo), `TAGS.txt` (15). Waiting for the user's review.
 
 - **Classy Academy idea research (11 Nov 2026, `research-2026-11-11.md`):** the user asked for the one next idea with the
   highest odds of 10M views. About 32,000 videos scored. The elegance niche has no 10M video (best: Anna Bey 8.7M);
