@@ -227,9 +227,10 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
 - **Classy Academy idea research (11 Nov 2026, `research-2026-11-11.md`):** the user asked for the one next idea with the
   highest odds of 10M views. About 32,000 videos scored. The elegance niche has no 10M video (best: Anna Bey 8.7M);
   hairstyles is the only lane topic with many (24 at 10M+ from 19 channels, small channels included) and it is the
-  channel's own second-best video (966k, 8.0x). Pick: "10 Easy, Elegant 2-Minute Hairstyles"; second, table manners in
-  the "Never Do" format; third, the put-together wave. Rights for tutorial clips must be settled first. Waiting for the
-  user's choice.
+  channel's own second-best video (966k, 8.0x). **The user rejected hairstyles: outside the channel's niche.** Re-ranked
+  inside the niche: the pick is "12 Table Manners Elegant Ladies Never Forget" (26 adult etiquette videos at 1M+ from 18
+  channels, 7 at 5M+, Jamila Musayeva 7.2M at 124x; new ground for the channel, in its "Never Do" format); second,
+  dressing rules; third, the put-together wave. Waiting for the user's choice.
 
 ## 1. Where things stand right now
 
