@@ -392,7 +392,7 @@ lclip([(K('r1_click8'), nx(7)), (K('r1_tired3'), at(7, 'and it makes'))], en_(7)
 q('A worn heel<br><i>does two things.</i>', nx(7) + 0.2, at(7, 'It clicks') - 0.2, QL, size=70)
 qstack(['It clicks and scrapes', '<i>with every step,</i>', 'and the whole shoe <i>looks tired.</i>'],
        [at(7, 'It clicks'), at(7, 'with every'), at(7, 'and it makes')], en(7) + 0.4, size=62)
-fix([(K('r1_cobbler1'), nx(8)), (K('r1_heeltip18'), at(8, 'replace the heel'))], en_(8),
+fix([(K('r1_cobbler1'), nx(8)), (K('r1_repair2', 6.7, 14.5), at(8, 'replace the heel'))], en_(8),
     'Take your boots<br><i>to a cobbler</i>', nx(8) + 0.2, 'ph_heeltip.png', 'a new heel tip', at(8, 'the heel tip'))
 lclip([(K('r1_cobbler6', 0, 4.7), nx(9)), (K('r1_repair15'), at(9, 'which is'))], en_(9))
 q('Usually quick, and it protects<br><i>the heel itself</i>', nx(9) + 0.2, en(9) + 0.4, QL, size=62)
