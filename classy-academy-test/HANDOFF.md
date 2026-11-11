@@ -216,7 +216,13 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     the only freezes are the white rule cards. Chapters in `CHAPTERS.txt`.
   - **Thumbnails (11 Nov 2026, `THUMBNAIL.md`):** copied from the topic's proven winners (24 YouTube searches): A Anna Bey's
     face + red-X layout (3.9M family, 412k boots) with Olivia Palermo; B Carl Murawski's side by side (1.28M) "Tired to
-    Elegant"; C Elvira Hartwell's caps + X/tick (622k) "STOP RUINING YOUR BOOTS". Waiting for the user's review.
+    Elegant"; C Elvira Hartwell's caps + X/tick (622k) "STOP RUINING YOUR BOOTS". **Rejected by the user as "still basic, not great".**
+  - **Thumbnails v2 (11 Nov 2026, `THUMBNAIL.md` section A, `make_thumbs_v2.py`):** 42 searches, 38 lane videos with 1M+
+    views, every thumbnail read and counted, each winner scored against its own channel (`yt-viral`). Finding: the
+    creator's-face formula is the most common (15 of 38) but reaches about 1 view per subscriber; before / after and
+    wrong / right reach 6-8 and made small channels' videos travel. Built without a borrowed face: 1 BEFORE / AFTER
+    (recommended), 2 WRONG / RIGHT (the heel check), 3 LOOKS CHEAP! (three boots, red X). Suggested title "8 Winter Boot
+    Rules That Instantly Elevate Every Outfit". Waiting for the user's review.
 
 ## 1. Where things stand right now
 
