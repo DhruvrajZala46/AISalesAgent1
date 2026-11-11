@@ -202,6 +202,15 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     Poised", 55 chars), `DESCRIPTION.txt` (4,286 chars, guide + shop links, chapters, credits with the CA thumbnail photos),
     `TAGS.txt` (15). Waiting for the user's review.
 
+- **New video (11 Nov 2026): "Understated Winter Footwear Rules That Instantly Elevate Everyday Outfits"**, in
+  `videos/winter-footwear/`, from the user's own script (51 voiced lines; the Classy Closet paragraph removed by the standing
+  rule; the guide line after rule four kept; no website).
+  - Format: the channel's own winter video (`JF7PzFJl4eU`) layouts (`VISUAL-ANALYSIS.md`): number cards, the problem in a
+    row of clips, the fix beside its product cut out on the caramel, "the test" written line by line beside a clip.
+    Classy Academy's shoe video (`1GLuLkBCIEs`) could not be read: YouTube's sign-in check.
+  - 95 clips, each used once; 0 repeats from the eight earlier videos (pin ids, posts, pin images and footage checked);
+    0 AI flags; 12 product cut-outs; the CE logo.
+
 ## 1. Where things stand right now
 
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in
