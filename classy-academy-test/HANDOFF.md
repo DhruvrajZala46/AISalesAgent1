@@ -224,6 +224,13 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     (recommended), 2 WRONG / RIGHT (the heel check), 3 LOOKS CHEAP! (three boots, red X). Suggested title "8 Winter Boot
     Rules That Instantly Elevate Every Outfit". Waiting for the user's review.
 
+- **Classy Academy idea research (11 Nov 2026, `research-2026-11-11.md`):** the user asked for the one next idea with the
+  highest odds of 10M views. About 32,000 videos scored. The elegance niche has no 10M video (best: Anna Bey 8.7M);
+  hairstyles is the only lane topic with many (24 at 10M+ from 19 channels, small channels included) and it is the
+  channel's own second-best video (966k, 8.0x). Pick: "10 Easy, Elegant 2-Minute Hairstyles"; second, table manners in
+  the "Never Do" format; third, the put-together wave. Rights for tutorial clips must be settled first. Waiting for the
+  user's choice.
+
 ## 1. Where things stand right now
 
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in
