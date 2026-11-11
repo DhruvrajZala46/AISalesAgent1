@@ -210,6 +210,10 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     Classy Academy's shoe video (`1GLuLkBCIEs`) could not be read: YouTube's sign-in check.
   - 95 clips, each used once; 0 repeats from the eight earlier videos (pin ids, posts, pin images and footage checked);
     0 AI flags; 12 product cut-outs; the CE logo.
+  - First render read every 5 s: the "replace the heel tip" clip turned out to be scuff removal with a caption; swapped
+    for a cobbler working on a heel, re-rendered (only those 4 s changed).
+  - **Video v1 delivered in the chat (11 Nov 2026):** 1080p, 7:33, 262 MiB. QA: -15.0 LUFS, 0 black frames, 0 silence;
+    the only freezes are the white rule cards. Chapters in `CHAPTERS.txt`. Waiting for the user's review.
 
 ## 1. Where things stand right now
 
