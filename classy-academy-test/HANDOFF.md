@@ -235,6 +235,10 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   channels, 7 at 5M+, Jamila Musayeva 7.2M at 124x; new ground for the channel, in its "Never Do" format); second,
   dressing rules; third, the put-together wave. Waiting for the user's choice.
 
+- **Scarf script (12 Nov 2026, `videos/elegant-scarf-ties/`):** the user chose idea 2, "10 Elegant Ways to Tie a Scarf This
+  Winter". Script v1 in the hairstyles script's format: 89 lines, 1,550 words, ten ties each proven from written
+  tutorials read that day (Proof table), taught in the order of how they begin. Hook 75 STRONG; `dna.py` and `fit.py`
+  pass. Waiting for the user's "ship it" before any video work.
 - **Next idea after the hairstyles video (12 Nov 2026, `research-2026-11-12.md`):** every topic given the same search
   depth (16 topics x 8 searches) and checked for this year. Hair is the only makeable topic near the lane where many
   small creators reach 10M (37 at 10M+ from 29 channels), and it is live this year (Moni Hairstyle, 100k subscribers,
