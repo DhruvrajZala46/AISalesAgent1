@@ -1,0 +1,161 @@
+{
+ "name": "S4_afternoon_tea",
+ "speed": 0.9,
+ "gap": 0.35,
+ "music": {
+  "file": "m711",
+  "start": 0,
+  "gain": -16
+ },
+ "lines": [
+  {
+   "say": "You're invited to afternoon tea at the Ritz. Four rules.",
+   "shots": [
+    {
+     "clip": "ritz0",
+     "start": 0.2,
+     "mode": "fill"
+    },
+    {
+     "clip": "ritz0",
+     "start": 2.6,
+     "mode": "fill"
+    }
+   ],
+   "screen": [
+    {
+     "text": "You're invited to",
+     "y": 1170,
+     "size": 76
+    },
+    {
+     "text": "afternoon tea at the Ritz.",
+     "y": 1266,
+     "size": 76
+    }
+   ]
+  },
+  {
+   "say": "One. Keep your pinky in. A raised pinky is a classic mistake.",
+   "shots": [
+    {
+     "clip": "ritz1",
+     "start": 4.9,
+     "mode": "fill"
+    }
+   ],
+   "screen": [
+    {
+     "text": "1. Pinky in",
+     "y": 1215,
+     "size": 92
+    }
+   ]
+  },
+  {
+   "say": "Two. Tea first, then milk, so you can judge the strength.",
+   "shots": [
+    {
+     "clip": "ritz17",
+     "start": 1.8,
+     "mode": "fill"
+    },
+    {
+     "clip": "milk1",
+     "start": 3.2,
+     "mode": "fill"
+    }
+   ],
+   "screen": [
+    {
+     "text": "2. Tea first, then milk",
+     "y": 1215,
+     "size": 82
+    }
+   ]
+  },
+  {
+   "say": "Three. Small sips. Never gulp.",
+   "shots": [
+    {
+     "clip": "ritz13",
+     "start": 6.6,
+     "mode": "fill",
+     "crop": "crop=iw:ih*0.80:0:ih*0.20"
+    }
+   ],
+   "screen": [
+    {
+     "text": "3. Small sips",
+     "y": 1215,
+     "size": 92
+    }
+   ]
+  },
+  {
+   "say": "Four. Let the host pour.",
+   "shots": [
+    {
+     "clip": "ritz0",
+     "start": 14.4,
+     "mode": "fill"
+    }
+   ],
+   "screen": [
+    {
+     "text": "4. Let the host pour",
+     "y": 1215,
+     "size": 88
+    }
+   ]
+  },
+  {
+   "say": "And the scone. In Cornwall, jam goes first. In Devon, it's cream.",
+   "shots": [
+    {
+     "clip": "ritz17",
+     "start": 9.9,
+     "mode": "fill",
+     "w": 0.8
+    },
+    {
+     "clip": "scone0",
+     "start": 62.0,
+     "mode": "fill",
+     "w": 1.2,
+     "crop": "crop=iw*0.84:ih*0.9:0:0"
+    }
+   ],
+   "screen": [
+    {
+     "text": "Cornwall: jam first",
+     "y": 1170,
+     "size": 78
+    },
+    {
+     "text": "Devon: cream first",
+     "y": 1266,
+     "size": 78
+    }
+   ]
+  },
+  {
+   "say": "Which side are you on?",
+   "min": 2.6,
+   "shots": [
+    {
+     "clip": "ritz1",
+     "start": 15.0,
+     "mode": "fill"
+    }
+   ],
+   "screen": [
+    {
+     "text": "Jam or cream first?",
+     "y": 1215,
+     "size": 90
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{"name":"S6_diana_broke_rules","speed":0.9,"gap":0.35,
+ "music":{"file":"m712","start":35.5,"gain":-16},
+ "lines":[
+  {"say":"Five times Princess Diana broke royal rules. Number five changed the world.","shots":[{"clip":"diring0","start":0.0,"mode":"fit"},{"clip":"diring0","start":3.5,"mode":"fit"}],
+   "screen":[{"text":"5 times Princess Diana","y":1170,"size":78},{"text":"broke royal rules","y":1266,"size":78}]},
+  {"say":"One. She chose her engagement ring from a jeweller's catalogue. Anyone could buy it.","shots":[{"clip":"diring25","start":12.0,"mode":"fit","crop":"crop=iw:ih*0.92:0:0"},{"clip":"diring1","start":7.8,"mode":"fill"}],
+   "screen":[{"text":"1. A catalogue ring","y":1215,"size":84}]},
+  {"say":"Two. She left one word out of her wedding vows. Obey.","shots":[{"clip":"wed8138","start":9.0,"mode":"fit","crop":"crop=iw:ih*0.9:0:0"}],
+   "screen":[{"text":"2. No “obey”","y":1215,"size":90}]},
+  {"say":"Three. She took William and Harry to McDonald's and theme parks, and queued like everyone else.","shots":[{"clip":"kneel29","start":10.0,"mode":"fit","crop":"crop=iw:ih*0.88:0:ih*0.12"},{"clip":"kneel29","start":15.0,"mode":"fit","crop":"crop=iw:ih*0.88:0:ih*0.12"}],
+   "screen":[{"text":"3. Queued like everyone","y":1215,"size":84}]},
+  {"say":"Four. The night her husband confessed on TV, she wore black to a party.","shots":[{"clip":"dress2","start":0.0,"mode":"fill","w":1.3},{"clip":"dress2","start":10.5,"mode":"fill"}],
+   "screen":[{"text":"4. The black dress","y":1215,"size":88}]},
+  {"say":"And five. In 1987, she shook hands with AIDS patients, without gloves, in front of the cameras.","shots":[{"clip":"diaids11","start":0.0,"mode":"fit","crop":"crop=iw:ih*0.54:0:ih*0.228","w":1.6},{"clip":"diaids11","start":10.4,"mode":"fit","crop":"crop=iw:ih*0.54:0:ih*0.228"}],
+   "screen":[{"text":"5. No gloves","y":1215,"size":92},{"text":"London, April 1987","y":1330,"size":46,"small":true}]},
+  {"say":"She didn't break rules to rebel. She broke them to be human.","min":4.0,"shots":[{"clip":"diring0","start":4.6,"mode":"fit"}],
+   "screen":[{"text":"She broke them","y":1170,"size":82},{"text":"to be human.","y":1266,"size":82}]}
+ ]}

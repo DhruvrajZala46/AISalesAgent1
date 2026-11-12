@@ -23,11 +23,15 @@ for i,t in enumerate(S["texts"]):
     alpha=(f"'if(gt(t,{b}-0.2),({b}-t)/0.2,1)'" if a==0 else f"'if(lt(t,{a}+0.25),(t-{a})/0.25,if(gt(t,{b}-0.2),({b}-t)/0.2,1))'")
     dt.append(f"drawtext=fontfile={font}:textfile={D}/t{i}.txt:fontsize={size}:fontcolor=white:shadowcolor=black@0.75:shadowx=0:shadowy=4:"
               f"borderw=2:bordercolor=black@0.25:x=(w-text_w)/2:y={y}:enable='between(t,{a},{b})':alpha={alpha}")
-m=S["music"]
+m=S["music"]; V=S.get("voice")
 fc=f"[1:v]scale=120:-1,format=rgba,colorchannelmixer=aa=0.85[lg];[0:v]{','.join(dt)}[v0];[v0][lg]overlay=(W-w)/2:95[v]"
 af=f"[2:a]atrim=start={m['start']}:duration={TOTAL},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.4,afade=t=out:st={TOTAL-1.6}:d=1.6,volume={m.get('gain',4)}dB[a]"
+if V:
+    af=(f"[2:a]atrim=start={m['start']}:duration={TOTAL},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.4,afade=t=out:st={TOTAL-1.6}:d=1.6,volume={m.get('gain',-15)}dB[mu];"
+        f"[3:a]aresample=48000,apad,atrim=duration={TOTAL},volume={V.get('gain',2)}dB[vo];[mu]aresample=48000[mu2];[vo][mu2]amix=inputs=2:duration=first:normalize=0[a]")
 os.makedirs("out",exist_ok=True)
-run(f"ffmpeg -nostdin -v error -y -i {D}/body.mp4 -i assets/logo_ce.png -i assets/{m['file']}.mp3 -filter_complex \"{fc};{af}\" -map \"[v]\" -map \"[a]\" "
+vin=f"-i {V['file']}" if V else ""
+run(f"ffmpeg -nostdin -v error -y -i {D}/body.mp4 -i assets/logo_ce.png -i assets/{m['file']}.mp3 {vin} -filter_complex \"{fc};{af}\" -map \"[v]\" -map \"[a]\" "
     f"-c:v libx264 -crf 17 -preset slow -pix_fmt yuv420p -r 30 -c:a aac -b:a 192k -movflags +faststart -t {TOTAL} out/{name}.mp4")
 for ts in S.get("check",[]):
     run(f"ffmpeg -nostdin -v error -y -ss {ts} -i out/{name}.mp4 -frames:v 1 -vf scale=360:-2 chk/{name}_{ts}.jpg")

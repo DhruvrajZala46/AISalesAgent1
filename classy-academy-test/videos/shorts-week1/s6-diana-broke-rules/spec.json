@@ -1,0 +1,175 @@
+{
+ "name": "S6_diana_broke_rules",
+ "segs": [
+  {
+   "clip": "diring0",
+   "start": 0.0,
+   "mode": "fit",
+   "dur": 2.896
+  },
+  {
+   "clip": "diring0",
+   "start": 3.5,
+   "mode": "fit",
+   "dur": 2.746
+  },
+  {
+   "clip": "diring25",
+   "start": 12.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.92:0:0",
+   "dur": 2.692
+  },
+  {
+   "clip": "diring1",
+   "start": 7.8,
+   "mode": "fill",
+   "dur": 2.692
+  },
+  {
+   "clip": "wed8138",
+   "start": 9.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.9:0:0",
+   "dur": 3.913
+  },
+  {
+   "clip": "kneel29",
+   "start": 10.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:ih*0.12",
+   "dur": 2.959
+  },
+  {
+   "clip": "kneel29",
+   "start": 15.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:ih*0.12",
+   "dur": 2.959
+  },
+  {
+   "clip": "dress2",
+   "start": 0.0,
+   "mode": "fill",
+   "dur": 2.839
+  },
+  {
+   "clip": "dress2",
+   "start": 10.5,
+   "mode": "fill",
+   "dur": 2.183
+  },
+  {
+   "clip": "diaids11",
+   "start": 0.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.54:0:ih*0.228",
+   "dur": 4.64
+  },
+  {
+   "clip": "diaids11",
+   "start": 10.4,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.54:0:ih*0.228",
+   "dur": 2.9
+  },
+  {
+   "clip": "diring0",
+   "start": 4.6,
+   "mode": "fit",
+   "dur": 4.0
+  }
+ ],
+ "texts": [
+  {
+   "text": "5 times Princess Diana",
+   "y": 1170,
+   "size": 78,
+   "a": 0,
+   "b": 5.641
+  },
+  {
+   "text": "broke royal rules",
+   "y": 1266,
+   "size": 78,
+   "a": 0,
+   "b": 5.641
+  },
+  {
+   "text": "1. A catalogue ring",
+   "y": 1215,
+   "size": 84,
+   "a": 5.641,
+   "b": 11.026
+  },
+  {
+   "text": "2. No \u201cobey\u201d",
+   "y": 1215,
+   "size": 90,
+   "a": 11.026,
+   "b": 14.939
+  },
+  {
+   "text": "3. Queued like everyone",
+   "y": 1215,
+   "size": 84,
+   "a": 14.939,
+   "b": 20.857
+  },
+  {
+   "text": "4. The black dress",
+   "y": 1215,
+   "size": 88,
+   "a": 20.857,
+   "b": 25.879
+  },
+  {
+   "text": "5. No gloves",
+   "y": 1215,
+   "size": 92,
+   "a": 25.879,
+   "b": 33.418
+  },
+  {
+   "text": "London, April 1987",
+   "y": 1330,
+   "size": 46,
+   "small": true,
+   "a": 25.879,
+   "b": 33.418
+  },
+  {
+   "text": "She broke them",
+   "y": 1170,
+   "size": 82,
+   "a": 33.418,
+   "b": 37.418
+  },
+  {
+   "text": "to be human.",
+   "y": 1266,
+   "size": 82,
+   "a": 33.418,
+   "b": 37.418
+  }
+ ],
+ "music": {
+  "file": "m712",
+  "start": 35.5,
+  "gain": -16
+ },
+ "voice": {
+  "file": "tts/S6_diana_broke_rules/voice.wav",
+  "gain": 2
+ },
+ "check": [
+  0.2,
+  5.5,
+  10.7,
+  16.0,
+  21.3,
+  26.6,
+  31.8,
+  37.1
+ ]
+}

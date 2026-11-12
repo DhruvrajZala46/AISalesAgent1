@@ -1,0 +1,134 @@
+{
+ "name": "S5_grace_kelly_walked_away",
+ "segs": [
+  {
+   "clip": "gkwed29",
+   "start": 0.2,
+   "dur": 1.0,
+   "mode": "fit"
+  },
+  {
+   "clip": "gkwed12",
+   "start": 16.6,
+   "dur": 2.4,
+   "mode": "fill"
+  },
+  {
+   "clip": "gkwed13",
+   "start": 0.0,
+   "dur": 0.8,
+   "mode": "fit"
+  },
+  {
+   "clip": "gkwed16",
+   "start": 6.0,
+   "dur": 0.8,
+   "mode": "fill"
+  },
+  {
+   "clip": "gkwed17",
+   "start": 1.0,
+   "dur": 0.8,
+   "mode": "fill"
+  },
+  {
+   "clip": "gkwed35",
+   "start": 4.0,
+   "dur": 0.8,
+   "mode": "fill"
+  },
+  {
+   "clip": "gkwed8",
+   "start": 6.5,
+   "dur": 6.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.43:0:ih*0.01"
+  },
+  {
+   "clip": "grace3",
+   "start": 6.0,
+   "dur": 4.0,
+   "mode": "fill"
+  }
+ ],
+ "texts": [
+  {
+   "text": "Born 12 November 1929",
+   "a": 0,
+   "b": 3.4,
+   "y": 1430,
+   "size": 46,
+   "small": true
+  },
+  {
+   "text": "Grace Kelly won",
+   "a": 0,
+   "b": 3.4,
+   "y": 1170,
+   "size": 80
+  },
+  {
+   "text": "the Oscar at 25.",
+   "a": 0,
+   "b": 3.4,
+   "y": 1268,
+   "size": 80
+  },
+  {
+   "text": "A year later, she walked",
+   "a": 3.4,
+   "b": 6.6,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "away from Hollywood",
+   "a": 3.4,
+   "b": 6.6,
+   "y": 1266,
+   "size": 76
+  },
+  {
+   "text": "to marry a prince.",
+   "a": 6.6,
+   "b": 10.6,
+   "y": 1215,
+   "size": 80
+  },
+  {
+   "text": "Monaco, April 1956",
+   "a": 7.0,
+   "b": 10.6,
+   "y": 1330,
+   "size": 46,
+   "small": true
+  },
+  {
+   "text": "Elegance knows",
+   "a": 12.6,
+   "b": 99,
+   "y": 1170,
+   "size": 80
+  },
+  {
+   "text": "when to walk away.",
+   "a": 12.6,
+   "b": 99,
+   "y": 1268,
+   "size": 80
+  }
+ ],
+ "music": {
+  "file": "m716",
+  "start": 0.0
+ },
+ "check": [
+  0.0,
+  1.8,
+  7.0,
+  8.5,
+  10.0,
+  11.5,
+  13.5
+ ]
+}

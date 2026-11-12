@@ -1,0 +1,126 @@
+{
+ "name": "S13_queen_colours",
+ "segs": [
+  {
+   "clip": "qcrowd0",
+   "start": 6.0,
+   "dur": 1.2,
+   "mode": "fill"
+  },
+  {
+   "clip": "qcrowd0",
+   "start": 4.0,
+   "dur": 0.8,
+   "mode": "fill"
+  },
+  {
+   "clip": "qcrowd0",
+   "start": 4.6,
+   "dur": 0.8,
+   "mode": "fill"
+  },
+  {
+   "clip": "qcrowd0",
+   "start": 8.0,
+   "dur": 0.8,
+   "mode": "fill"
+  },
+  {
+   "clip": "qcrowd0",
+   "start": 10.0,
+   "dur": 0.8,
+   "mode": "fill"
+  },
+  {
+   "clip": "queen47",
+   "start": 8.6,
+   "dur": 1.6,
+   "mode": "fill"
+  },
+  {
+   "clip": "queen47",
+   "start": 10.4,
+   "dur": 5.0,
+   "mode": "fill"
+  },
+  {
+   "clip": "queen15",
+   "start": 0.5,
+   "dur": 5.0,
+   "mode": "fill"
+  }
+ ],
+ "texts": [
+  {
+   "text": "The Queen dressed like a rainbow",
+   "a": 0,
+   "b": 4.4,
+   "y": 1170,
+   "size": 70
+  },
+  {
+   "text": "for one reason.",
+   "a": 0,
+   "b": 4.4,
+   "y": 1262,
+   "size": 80
+  },
+  {
+   "text": "In a crowd of thousands,",
+   "a": 4.4,
+   "b": 7.2,
+   "y": 1215,
+   "size": 78
+  },
+  {
+   "text": "everyone had to be able to say",
+   "a": 7.2,
+   "b": 11.0,
+   "y": 1170,
+   "size": 68
+  },
+  {
+   "text": "\u201cI saw the Queen.\u201d",
+   "a": 7.2,
+   "b": 11.0,
+   "y": 1262,
+   "size": 82
+  },
+  {
+   "text": "Sophie, Countess of Wessex, 2016",
+   "a": 7.6,
+   "b": 11.0,
+   "y": 1380,
+   "size": 42,
+   "small": true
+  },
+  {
+   "text": "She dressed for the people",
+   "a": 11.0,
+   "b": 99,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "who came to see her.",
+   "a": 11.0,
+   "b": 99,
+   "y": 1266,
+   "size": 76
+  }
+ ],
+ "music": {
+  "file": "m717",
+  "start": 35.5
+ },
+ "check": [
+  0.0,
+  1.5,
+  2.4,
+  3.2,
+  4.0,
+  5.0,
+  8.5,
+  13.0
+ ]
+}
