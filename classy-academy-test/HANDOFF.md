@@ -242,6 +242,12 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   (five buns not in the two-minute video). 2nd: "10 Elegant Ways to Tie a Scarf This Winter" (in-niche, seasonal).
   3rd: table manners. Base rate told to the user: 10M is 83x the channel's median; 0.1% of elegance-channel videos and
   about 1.1% of hair-channel videos reach 80x. Waiting for the user's choice.
+- **Bun video script (12 Nov 2026, `videos/five-elegant-buns/`):** the user approved the idea ("ship it, now write the
+  script"). Script v1 "5 Elegant Buns You Can Do in 2 Minutes": claw-clip bun, knotted bun, braided bun, half-up bun (for
+  bobs), ballerina bun; none is in either earlier hair video. 59 lines, 1,257 words (about 8.5 min). Every step from a
+  written tutorial read that day (`script.md`, Proof). Hook 72 STRONG; `fit.py` FITS; `dna.py` TEACHES LIKE THE CHANNEL
+  (the first draft was all steps: a "what makes it so elegant" line and a payoff were added to every bun). Thin proof:
+  knotted and ballerina buns have no 1M+ winner in the data. Waiting for the user's review; then voice and clips.
 - **Classy Academy hairstyles script (12 Nov 2026, `videos/elegant-2-minute-hairstyles/`):** the user came back to the
   hairstyles idea ("ship it") and uploaded all the channel's scripts (`MY_CHANNEL_SCRIPT.txt`, 30 entries, 28 different).
   Script v1 "10 Easy, Elegant 2-Minute Hairstyles" written in the format of the channel's own two hair scripts: 91 lines,
