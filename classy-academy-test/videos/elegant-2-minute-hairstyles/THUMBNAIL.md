@@ -136,6 +136,12 @@ No thumbnail can guarantee views. What follows is what the numbers show and what
 **Logo:** these thumbnails carry the Classy Academy logo, as asked. The rendered video carries the Classy Elegance
 logo, as asked on the same day. Whichever channel it is uploaded to, one of the two needs changing.
 
+**1920x1080 versions (asked for the same day):** `thumb_spec_ca_1080.json` rebuilds all three natively at 1080p
+(`"scale": 1.5` in the spec; the builder now multiplies every measure). Words and logo are drawn at full size; the logo
+is a sharp copy taken from the channel's public avatar (`"logo"` in the spec). The pictures are 720p video frames, so at
+1080p they sit at 0.74 to 1.06 source pixels per output pixel: slightly enlarged, most in thumbnail 2's right panel.
+The 1280x720 build is unchanged pixel for pixel.
+
 **Files:** `CA-Hairstyles_Thumbnail1/2/3` (.jpg and .png), two previews, and
 `CA-Hairstyles-thumbnails_editable-source.zip` (six layers per thumbnail, the spec, the nine frames, the frame script).
 Rebuild: `python3 make_thumb_frames.py` in the video's work folder, then

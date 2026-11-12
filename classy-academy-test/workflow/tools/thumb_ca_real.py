@@ -17,7 +17,7 @@ def finish(im, p):   # the channel's grade (thumb_make.finish), per photo adjust
     im = ImageEnhance.Color(im).enhance(p.get('color', 0.9)); im = ImageEnhance.Contrast(im).enhance(p.get('contrast', 1.04))
     im = ImageEnhance.Brightness(im).enhance(p.get('bright', 0.9)); im = ImageEnhance.Sharpness(im).enhance(1.2)
     return Image.blend(im, Image.new('RGB', im.size, (205, 170, 140)), 0.05)
-def panel(p, pw):
+def panel(p, pw, H=H):
     im = Image.open(p['src']).convert('RGB')
     if p.get('flip'): im = im.transpose(Image.FLIP_LEFT_RIGHT)
     SW, SH = im.size
@@ -32,44 +32,50 @@ def panel(p, pw):
     c = im.crop((int(x0), int(y0), int(x0 + cw), int(y0 + ch))).resize((pw, H), Image.LANCZOS)
     if cw < pw: c = c.filter(ImageFilter.UnsharpMask(1.4, 60, 2))
     return finish(c, p), cw / pw
-def build(spec, name, outdir='.'):
-    xs = spec.get('xs', [0, 402, 851, W]); photos = Image.new('RGB', (W, H)); info = []
+def build(spec, name, outdir='.', W=W, H=H):
+    SC = spec.get('scale', 1)              # 1.5 -> a native 1920x1080 build: every measure below is in 1280x720 units, times SC
+    k = lambda v: int(round(v * SC)); W, H = k(W), k(H)
+    xs = [k(x) for x in spec.get('xs', [0, 402, 851, 1280])]; photos = Image.new('RGB', (W, H)); info = []
     for p, x0, x1 in zip(spec['panels'], xs, xs[1:]):
-        im, s = panel(p, x1 - x0); photos.paste(im, (x0, 0)); info.append(round(s, 2))
+        im, s = panel(p, x1 - x0, H); photos.paste(im, (x0, 0)); info.append(round(s, 2))
     d = ImageDraw.Draw(photos)
-    for x in xs[1:-1]: d.rectangle((x - 1, 0, x, H), fill=(236, 228, 220))
+    for x in xs[1:-1]: d.rectangle((x - k(1), 0, x, H), fill=(236, 228, 220))
     # layer: gentle darkening behind the words
-    g = Image.new('L', (W, H), 0); ImageDraw.Draw(g).ellipse(tuple(spec.get('ellipse', (150, 150, W - 150, 600))), fill=spec.get('dark', 95))
-    dark = Image.new('RGBA', (W, H), (18, 12, 8, 0)); dark.putalpha(g.filter(ImageFilter.GaussianBlur(90)))
+    g = Image.new('L', (W, H), 0); ImageDraw.Draw(g).ellipse(tuple(k(v) for v in spec.get('ellipse', (150, 150, 1130, 600))), fill=spec.get('dark', 95))
+    dark = Image.new('RGBA', (W, H), (18, 12, 8, 0)); dark.putalpha(g.filter(ImageFilter.GaussianBlur(90 * SC)))
     # words
     top, big, small = spec['top'], spec['big'], spec.get('small', '')
-    ft = sized(FD + 'CormorantSC-Regular.ttf', spec.get('top_cap', 46), probe='E')
-    cap = spec.get('cap', 108); fb = sized(FD + 'Montserrat.ttf', cap, 700, 'N')
+    ft = sized(FD + 'CormorantSC-Regular.ttf', k(spec.get('top_cap', 46)), probe='E')
+    cap = k(spec.get('cap', 108)); fb = sized(FD + 'Montserrat.ttf', cap, 700, 'N')
     probe = ImageDraw.Draw(Image.new('L', (8, 8)))
-    while probe.textlength(big, font=fb) > spec.get('maxw', 1060): cap -= 2; fb = sized(FD + 'Montserrat.ttf', cap, 700, 'N')
-    fs = (sized(FD + 'PinyonScript-Regular.ttf', spec.get('small_cap', 44), probe='E') if spec.get('small_script')   # the channel's script line ("& Eloquently")
-          else sized(FD + 'CormorantSC-Regular.ttf', spec.get('small_cap', 26), probe='A'))
+    while probe.textlength(big, font=fb) > k(spec.get('maxw', 1060)): cap -= 2; fb = sized(FD + 'Montserrat.ttf', cap, 700, 'N')
+    fs = (sized(FD + 'PinyonScript-Regular.ttf', k(spec.get('small_cap', 44)), probe='E') if spec.get('small_script')   # the channel's script line ("& Eloquently")
+          else sized(FD + 'CormorantSC-Regular.ttf', k(spec.get('small_cap', 26)), probe='A'))
     def top_y(f, txt, ytop): return ytop - f.getbbox(txt)[1]
-    yb = spec.get('yb', 296)
-    lines = [(ft, top, top_y(ft, top, yb - 96)), (fb, big, top_y(fb, big, yb))]
-    if small: lines.append((fs, small, top_y(fs, small, yb + cap + spec.get('small_gap', 91))))
+    yb = k(spec.get('yb', 296))
+    lines = [(ft, top, top_y(ft, top, yb - k(96))), (fb, big, top_y(fb, big, yb))]
+    if small: lines.append((fs, small, top_y(fs, small, yb + cap + k(spec.get('small_gap', 91)))))
     sh = Image.new('L', (W, H), 0); ds = ImageDraw.Draw(sh)
-    for f, t, y in lines: ds.text((W / 2 + 3, y + 5), t, font=f, fill=200, anchor='ma', features=['lnum'])   # lining figures: '$60', not Cormorant's old-style '$6o'
-    shadow = Image.new('RGBA', (W, H), (12, 8, 6, 0)); shadow.putalpha(sh.filter(ImageFilter.GaussianBlur(7)))
+    for f, t, y in lines: ds.text((W / 2 + k(3), y + k(5)), t, font=f, fill=200, anchor='ma', features=['lnum'])   # lining figures: '$60', not Cormorant's old-style '$6o'
+    shadow = Image.new('RGBA', (W, H), (12, 8, 6, 0)); shadow.putalpha(sh.filter(ImageFilter.GaussianBlur(7 * SC)))
     text = Image.new('RGBA', (W, H), (0, 0, 0, 0)); dt = ImageDraw.Draw(text)
     for f, t, y in lines: dt.text((W / 2, y), t, font=f, fill=(255, 255, 255, 255), anchor='ma', features=['lnum'])
     if spec.get('underline', True):
         first = big.split()[0]; bb = dt.textbbox((W / 2, lines[1][2]), big, font=fb, anchor='ma'); fw_ = dt.textlength(first, font=fb)
-        fb_ = dt.textbbox((bb[0], lines[1][2]), first, font=fb, anchor='la'); uy = max(yb + cap + 14, fb_[3] + 8)
-        dt.rectangle((bb[0] + 14, uy, bb[0] + fw_ + 4, uy + 3), fill=(150, 22, 26, 255))
-    logo = Image.new('RGBA', (W, H), (0, 0, 0, 0)); L = Image.open(LOGO).convert('RGBA')
-    lx, ly = LOGO_XY; logo.paste(L, (lx, ly), L)
-    lsh = Image.new('RGBA', (W, H), (8, 6, 4, 0)); a = Image.new('L', (W, H), 0); a.paste(L.split()[3].point(lambda v: v * 0.45), (lx + 1, ly + 2))
-    lsh.putalpha(a.filter(ImageFilter.GaussianBlur(3)))
+        fb_ = dt.textbbox((bb[0], lines[1][2]), first, font=fb, anchor='la'); uy = max(yb + cap + k(14), fb_[3] + k(8))
+        dt.rectangle((bb[0] + k(14), uy, bb[0] + fw_ + k(4), uy + k(3)), fill=(150, 22, 26, 255))
+    logo = Image.new('RGBA', (W, H), (0, 0, 0, 0)); L = Image.open(LOGO).convert('RGBA'); lx, ly = k(LOGO_XY[0]), k(LOGO_XY[1])
+    if spec.get('logo'):   # a sharper logo file for a large build: drawn where the standard logo's letters sit (141x94 at 36,29)
+        L = Image.open(spec['logo']).convert('RGBA'); L = L.resize((round(L.width * k(94) / L.height), k(94)), Image.LANCZOS); lx, ly = lx + k(3), ly + k(3)
+        L.putalpha(L.split()[3].point(lambda v: int(v * spec.get('logo_alpha', 0.92))))
+    elif SC != 1: L = L.resize((k(L.width), k(L.height)), Image.LANCZOS)
+    logo.paste(L, (lx, ly), L)
+    lsh = Image.new('RGBA', (W, H), (8, 6, 4, 0)); a = Image.new('L', (W, H), 0); a.paste(L.split()[3].point(lambda v: v * 0.45), (lx + k(1), ly + k(2)))
+    lsh.putalpha(a.filter(ImageFilter.GaussianBlur(3 * SC)))
     out = photos.convert('RGBA')
     if spec.get('logo_dark'):   # optional: a soft dark patch behind the logo when it lands on blonde hair or a white wall
-        gl = Image.new('L', (W, H), 0); ImageDraw.Draw(gl).ellipse((lx - 50, ly - 45, lx + L.width + 50, ly + L.height + 45), fill=spec['logo_dark'])
-        ld = Image.new('RGBA', (W, H), (18, 12, 8, 0)); ld.putalpha(gl.filter(ImageFilter.GaussianBlur(38))); out = Image.alpha_composite(out, ld)
+        gl = Image.new('L', (W, H), 0); ImageDraw.Draw(gl).ellipse((lx - k(50), ly - k(45), lx + L.width + k(50), ly + L.height + k(45)), fill=spec['logo_dark'])
+        ld = Image.new('RGBA', (W, H), (18, 12, 8, 0)); ld.putalpha(gl.filter(ImageFilter.GaussianBlur(38 * SC))); out = Image.alpha_composite(out, ld)
     for layer in (dark, shadow, text, lsh, logo): out = Image.alpha_composite(out, layer)
     out = out.convert('RGB'); out.save(f'{outdir}/{name}.jpg', quality=95); out.save(f'{outdir}/{name}.png')
     os.makedirs(f'{outdir}/layers', exist_ok=True)

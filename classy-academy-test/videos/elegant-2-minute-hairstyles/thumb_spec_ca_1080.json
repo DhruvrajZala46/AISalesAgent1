@@ -1,0 +1,116 @@
+{
+ "H1_in_2_minutes_1080": {
+  "top": "Elegant Hair",
+  "big": "In 2 Minutes",
+  "small": "10 easy styles",
+  "underline": false,
+  "yb": 350,
+  "dark": 118,
+  "panels": [
+   {
+    "src": "din13.png",
+    "box": [
+     446,
+     186,
+     611
+    ]
+   },
+   {
+    "src": "pinf.png",
+    "box": [
+     350,
+     163,
+     615
+    ],
+    "bright": 0.84
+   },
+   {
+    "src": "tw_c_c.png",
+    "box": [
+     446,
+     189,
+     586
+    ]
+   }
+  ],
+  "logo_dark": 120,
+  "scale": 1.5,
+  "logo": "logo_ca_hires.png"
+ },
+ "H2_elegant_hairstyles_1080": {
+  "top": "2-Minute",
+  "big": "Elegant Hairstyles",
+  "small": "*no heat*",
+  "underline": false,
+  "yb": 350,
+  "dark": 110,
+  "panels": [
+   {
+    "src": "chig38.png",
+    "box": [
+     302,
+     109,
+     638
+    ]
+   },
+   {
+    "src": "pony.png",
+    "box": [
+     382,
+     124,
+     623
+    ]
+   },
+   {
+    "src": "din43f.png",
+    "box": [
+     242,
+     130,
+     475
+    ]
+   }
+  ],
+  "logo_dark": 60,
+  "maxw": 1150,
+  "scale": 1.5,
+  "logo": "logo_ca_hires.png"
+ },
+ "H3_easier_than_it_looks_1080": {
+  "top": "Elegant Hair",
+  "big": "Easier Than It Looks",
+  "small": "*2 minutes*",
+  "underline": false,
+  "yb": 350,
+  "dark": 118,
+  "panels": [
+   {
+    "src": "tw_a_c.png",
+    "box": [
+     302,
+     251,
+     574
+    ]
+   },
+   {
+    "src": "tw_b_c.png",
+    "box": [
+     360,
+     137,
+     640
+    ]
+   },
+   {
+    "src": "tw_c2_c.png",
+    "box": [
+     432,
+     188,
+     600
+    ]
+   }
+  ],
+  "logo_dark": 120,
+  "maxw": 1150,
+  "scale": 1.5,
+  "logo": "logo_ca_hires.png"
+ }
+}
