@@ -1,0 +1,25 @@
+You are a YouTube Shorts analyst. Watch this Short completely (every frame and the full audio) and break it down so a creator can understand exactly WHY it works. Be precise and literal: quote on-screen text and speech verbatim, give timestamps in seconds. If something is absent, say "none". Return ONLY JSON with exactly these keys:
+{
+ "duration_s": number,
+ "format_name": "a short name for the format (e.g. 'rule then exception, silent archive')",
+ "topic": "what it is about in one line",
+ "hook": {"first_frame_visual": "", "first_frame_text": "", "first_words_spoken": "", "first_3s_audio": "", "why_it_stops_the_scroll": ""},
+ "transcript": [{"t": number, "speaker": "creator / narrator / person in footage / song lyric", "text": ""}],
+ "on_screen_text": [{"t_start": number, "t_end": number, "text": "", "style": "font look, colour, box, position, how it animates in"}],
+ "shots": [{"t_start": number, "t_end": number, "visual": "", "footage_type": "archive news | film scene | press photo | creator on camera | stock | screen recording | AI-generated | graphic | other", "camera_or_edit_motion": "", "purpose": "why this shot is here"}],
+ "audio": {"voice": "none | creator on camera | voice-over (human) | voice-over (synthetic) | original footage audio | mix", "voice_style": "", "music": "genre, mood, tempo; name the song if recognisable", "music_changes": [{"t": number, "change": ""}], "sound_effects": [""], "picture_sound_sync": [""]},
+ "editing": {"cuts": number, "avg_shot_s": number, "transitions": [""], "caption_style": "", "animations_and_graphics": [""], "framing": "how the picture fills 9:16 (full, pillarbox with blur, split screen...)"},
+ "structure": [{"beat": "hook | setup | build | tension | reveal | payoff | lesson | cta | loop", "t_start": number, "t_end": number, "what_happens": ""}],
+ "emotion_arc": "",
+ "value_to_viewer": "what the viewer learns, feels or gets",
+ "why_viewers_finish": "",
+ "rewatch_trigger": "",
+ "share_trigger": "",
+ "comment_trigger": "",
+ "loop": "does the end lead back into the start, and how",
+ "cta": "",
+ "why_it_works": ["mechanism 1", "mechanism 2", "mechanism 3"],
+ "weaknesses": [""],
+ "audience_guess": "who watches this (age, gender, interests)",
+ "adaptation": "How a faceless elegance channel for women 40+ (calm, kind, timeless; real archive, film or stock footage only, never AI; a soft female voice-over or no voice) could make an ORIGINAL Short using the same mechanism. Give one concrete idea: title, first-frame text, first 3 seconds, and the payoff."
+}

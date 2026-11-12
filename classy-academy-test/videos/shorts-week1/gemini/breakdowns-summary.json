@@ -1,0 +1,2348 @@
+[
+ {
+  "id": "3n-yU_BpA4M",
+  "grp": "film",
+  "ch": "Luciano Films",
+  "views": 86805847,
+  "like": 0.08083198589145729,
+  "com": 0.00038313087366107954,
+  "dur": 60,
+  "voice": "footage",
+  "cuts": 11,
+  "avgshot": 5.45,
+  "hook_text": true,
+  "fmt": "classic film quote edit",
+  "hook": {
+   "first_frame_visual": "A man in a suit speaking to Marilyn Monroe in a blue dress.",
+   "first_frame_text": "Father, I love her. I love her very much.",
+   "first_words_spoken": "Father, I love her. I love her very much.",
+   "first_3s_audio": "Dialogue from male character declaring love, followed by older man's retort.",
+   "why_it_stops_the_scroll": "Iconic Marilyn Monroe visual paired with dramatic, humorous dialogue immediately grabs attention."
+  },
+  "why": [
+   "Iconic star power of Marilyn Monroe",
+   "Witty, sharply written dialogue with a strong philosophical punchline",
+   "Clear narrative conflict with high comedic payoff"
+  ],
+  "value": "Pure entertainment and appreciation of classic Hollywood wit, confidence, and charm.",
+  "share_t": "Relatable or witty quotes about wealth and dating.",
+  "com_t": "Debating Marilyn's character's logic and praising her timeless charisma.",
+  "rew": "Catching the clever wordplay and delivery of the monologue.",
+  "emo": "From tense confrontation to amused disbelief, ending in witty triumph and admiration for Marilyn's sharp wit.",
+  "adapt": {
+   "title": "Timeless Wit: Marilyn on Wealth",
+   "first_frame_text": "They told me you were stupid...",
+   "first_3s_s": "Marilyn delivering her legendary retort about being smart when it's important.",
+   "payoff": "The full breakdown of why Gentlemen Prefer Blondes remains a masterclass in sharp character writing."
+  }
+ },
+ {
+  "id": "mxJLUbDBxv4",
+  "grp": "etiquette",
+  "ch": "Gohar Khan",
+  "views": 74759817,
+  "like": 0.036688345558684284,
+  "com": 9.558610877819564e-05,
+  "dur": 29,
+  "voice": "creator",
+  "cuts": 14,
+  "avgshot": 2.07,
+  "hook_text": true,
+  "fmt": "etiquette comedy sketch",
+  "hook": {
+   "first_frame_visual": "A white plate with salad on a wooden table, glass of water, fork on left, knife on right, hands dropping a salad plate",
+   "first_frame_text": "YOUR RICH FRIEND'S PARENTS",
+   "first_words_spoken": "Your rich friend's parents invite you to a fancy dinner.",
+   "first_3s_audio": "Swoosh sound, then narrator's voice speaking quickly and authoritatively",
+   "why_it_stops_the_scroll": "Relatable awkward social scenario combined with high-contrast visual setup and rapid text overlay."
+  },
+  "why": [
+   "Extremely high pacing with cuts every 2 seconds holding attention",
+   "Split perspective between direct-to-camera expressions and crystal-clear overhead demonstrations",
+   "Relatable social anxiety framed through absurdly pedantic rules"
+  ],
+  "value": "Entertaining mix of actual etiquette tips and hyper-specific comedic exaggeration.",
+  "share_t": "Tagging a friend who needs etiquette lessons or always panics at fancy restaurants.",
+  "com_t": "Debating whether soup really needs to be scooped outwards or sharing worst dinner party blunders.",
+  "rew": "Checking all the subtle utensil placement details shown in overhead shots.",
+  "emo": "From curiosity and social anxiety at a high-society dinner to humorous overwhelm by absurd rules, ending in amusement.",
+  "adapt": "Title: 'The Quiet Elegance of Afternoon Tea'. First-frame text: 'When invited to a proper English tea'. First 3 seconds: Slow, calm pan over fine china and silver tiered trays with soft classical piano. Payoff: Gracefully folding the linen napkin and placing it beside the cup, embodying timeless poise."
+ },
+ {
+  "id": "hMTe-huyYgU",
+  "grp": "etiquette",
+  "ch": "Genoa",
+  "views": 50253649,
+  "like": 0.02817578480718883,
+  "com": 7.13182041765763e-05,
+  "dur": 18,
+  "voice": "creator",
+  "cuts": 4,
+  "avgshot": 3.4,
+  "hook_text": true,
+  "fmt": "pov cultural misunderstanding sketch",
+  "hook": {
+   "first_frame_visual": "A young blonde man sitting in a Japanese ramen restaurant holding chopsticks over a bowl of noodles, looking confused.",
+   "first_frame_text": "POV: you think you know Japanese manners",
+   "first_words_spoken": "\u3069\u3046\u3084\u3063\u3066\u98df\u3079\u308b\u3093\u3060\u308d How do I eat this?",
+   "first_3s_audio": "Ambient restaurant sounds and the creator speaking in English with Japanese subtitles.",
+   "why_it_stops_the_scroll": "The POV text frames a relatable and slightly embarrassing cultural faux-pas situation instantly recognizable to travelers or anime fans."
+  },
+  "why": [
+   "Strong visual POV hook instantly targets niche interest (Japanese culture/travel)",
+   "Escalation of logic: taking a correct rule and stretching it to an absurd extreme",
+   "Punchy editing and expressive acting keep retention high"
+  ],
+  "value": "Pure comedic entertainment highlighting a common cultural nuance/misconception about ramen vs other foods in Japan.",
+  "share_t": "Relatable for anyone who has traveled or loves Japanese culture and food.",
+  "com_t": "Viewers rushing to comment on whether tea-slurping is actually taboo or pointing out the comedic timing.",
+  "rew": "The comedic escalation from slurping noodles to slurping tea is quick and rewards a second viewing for the facial expressions.",
+  "emo": "From nervous uncertainty to smug confidence, ending in sudden comedic shock.",
+  "adapt": "A calm, elegant channel for women 40+ could do a respectful etiquette guide instead: Title: 'Quiet Grace at the Tea Table'. First-frame text: 'The subtle art of Japanese hospitality'. First 3 seconds: peaceful footage of a matcha whisking ceremony with soft acoustic notes, leading into a gentle voiceover explaining true mindfulness in dining without slapstick."
+ },
+ {
+  "id": "Mc-Ap2CNNGM",
+  "grp": "film",
+  "ch": "gabschase",
+  "views": 45049981,
+  "like": 0.05320024441297767,
+  "com": 0.00017311882995022795,
+  "dur": 30,
+  "voice": "creator",
+  "cuts": 25,
+  "avgshot": 1.16,
+  "hook_text": true,
+  "fmt": "POV comedy sketch",
+  "hook": {
+   "first_frame_visual": "A person looking down through glasses indoors in a living room",
+   "first_frame_text": "The \"transformation\" scene in teen movies",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Fast-paced upbeat pop song starting with a drum beat and vocal sample",
+   "why_it_stops_the_scroll": "Relatable text-on-screen hook combined with fast kinetic movement immediately sets up a recognizable pop culture trope."
+  },
+  "why": [
+   "Extremely high pacing with cuts under 1.5 seconds locked to a recognizable song beat",
+   "Relatable pop-culture nostalgia targeting a massive millennial/Gen Z movie trope",
+   "High physical comedy and expressive acting from the creator"
+  ],
+  "value": "Pure entertainment and nostalgic relatability for anyone who grew up watching 2000s teen rom-coms.",
+  "share_t": "Tagging a friend who loves teen rom-coms or acts like this.",
+  "com_t": "Debating which teen movie makeover this parodies best (e.g., Princess Diaries, Mean Girls).",
+  "rew": "Spotting all the classic exaggerated movie tropes packed into quick flashes.",
+  "emo": "Starts humorous and frantic, accelerates through recognizable pop-culture tropes, ends in a satisfying, funny glam reveal.",
+  "adapt": "How a faceless elegance channel for women 40+ could adapt this: Title: 'The timeless elegance transformation'. First frame text: 'The classic morning routine in old Hollywood'. First 3 seconds: A soft black-and-white archive clip of a classic actress applying lipstick in a vanity mirror to calm classical music. Payoff: A graceful, unhurried reveal of a chic, timeless outfit walking out into a sunlit garden."
+ },
+ {
+  "id": "H6qzUSoN2Pc",
+  "grp": "royal",
+  "ch": "British Windsor Documentary",
+  "views": 32764942,
+  "like": 0.01329897058874696,
+  "com": 0.00018107768968429733,
+  "dur": 8,
+  "voice": "none",
+  "cuts": 1,
+  "avgshot": 3.5,
+  "hook_text": true,
+  "fmt": "micro-interaction breakdown",
+  "hook": {
+   "first_frame_visual": "Prince William reaching out toward Kate Middleton's waist on a red carpet.",
+   "first_frame_text": "Notice Kate's subtle hand movement reminding her sweet Prince William of No PDA",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Soft piano melody playing with a pop sound effect.",
+   "why_it_stops_the_scroll": "Catches a famous royal couple in a subtle, candid moment of body language."
+  },
+  "why": [
+   "Leverages curiosity around royal body language.",
+   "Clear visual cues guide viewer attention quickly.",
+   "Fast 7-second micro-narrative with a warm payoff."
+  ],
+  "value": "Entertaining insight into royal etiquette and body language.",
+  "share_t": "Relatable romantic dynamic shared among royal fans.",
+  "com_t": "Debating protocol versus spontaneous love in public.",
+  "rew": "Desire to closely inspect the fast hand movement and facial expressions.",
+  "emo": "Curiosity -> slight awkwardness -> romantic resolution.",
+  "adapt": "Create a Short titled 'The Art of Royal Composure'. First-frame text: 'Notice how Princess Grace handles public moments with total grace.' First 3 seconds show vintage archive footage of Princess Grace subtly adjusting posture. Payoff features a warm, elegant smile toward Prince Rainier."
+ },
+ {
+  "id": "qDCxpsSTNzQ",
+  "grp": "royal",
+  "ch": "Royal_by_H3art",
+  "views": 31430434,
+  "like": 0.02402174911106859,
+  "com": 0.00014301425172811804,
+  "dur": 31,
+  "voice": "human vo",
+  "cuts": 5,
+  "avgshot": 6.2,
+  "hook_text": true,
+  "fmt": "aura reveal archive",
+  "hook": {
+   "first_frame_visual": "Prince Charles walking into a room with Princess Diana following behind him with her head bowed.",
+   "first_frame_text": "Define Aura",
+   "first_words_spoken": "Inside, Prince Charles declined to borrow a pen.",
+   "first_3s_audio": "Formal British narrator voice-over with ambient room noise.",
+   "why_it_stops_the_scroll": "It uses the trending Gen Z slang 'Aura' over high-status historical figures, creating a 'cool' factor for old footage."
+  },
+  "why": [
+   "Juxtaposition of formal, old-fashioned narration with modern, aggressive Phonk music.",
+   "Use of the 'Aura' trend which appeals to younger audiences while using older footage.",
+   "Slow-motion editing highlights the subject's micro-expressions, making her seem more charismatic."
+  ],
+  "value": "Nostalgic appreciation for a fashion and cultural icon.",
+  "share_t": "Fans of the British Royal Family or 'Aura' trend enthusiasts.",
+  "com_t": "Users commenting on Diana's beauty or comparing her to Charles.",
+  "rew": "The 'reveal' moment at 0:07 is highly aesthetic and visually rewarding.",
+  "emo": "Curiosity -> Anticipation -> Awe/Admiration",
+  "adapt": {
+   "title": "The Definition of Grace",
+   "first_frame_text": "Timeless Grace",
+   "first_3s": "Archive footage of Grace Kelly or Audrey Hepburn walking away from a crowd with a soft, vintage narrator.",
+   "payoff": "A sudden music shift to a soft but rhythmic beat as she turns around, removes her gloves or sunglasses, and smiles in slow motion."
+  }
+ },
+ {
+  "id": "8inuho3oH1g",
+  "grp": "oldmoney",
+  "ch": "BLENIN",
+  "views": 30647491,
+  "like": 0.014787833692487257,
+  "com": 0.00012895019693455494,
+  "dur": 11,
+  "voice": "none",
+  "cuts": 2,
+  "avgshot": 3.5,
+  "hook_text": true,
+  "fmt": "POV lifestyle sketch",
+  "hook": {
+   "first_frame_visual": "A young man dressed in a white shirt and vest leaning on a balcony inside a historic hall with a woman standing next to him.",
+   "first_frame_text": "POV: you started dressing old money in Public",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Upbeat vintage swing jazz music playing",
+   "why_it_stops_the_scroll": "The POV text sets up an aspirational or comedic lifestyle experiment, paired with clean aesthetic visuals and swing music."
+  },
+  "why": [
+   "Strong visual juxtaposition of modern person in classic old money attire inside a historic European building",
+   "Perfect audio sync with Dean Martin's 'Sway'",
+   "Short, punchy runtime under 11 seconds"
+  ],
+  "value": "Entertaining aesthetic fulfillment and lighthearted relatable lifestyle humor.",
+  "share_t": "Tagging a friend who tries out aesthetic dressing trends.",
+  "com_t": "Commenting on the outfit, the location, or the confidence.",
+  "rew": "Watching the swagger and synchronization with the music beat.",
+  "emo": "From curious setup to confident, playful swagger.",
+  "adapt": "A faceless elegance channel for women 40+ could make an original Short titled 'Dressing with timeless elegance in public'. First-frame text: 'POV: You stopped dressing for trends and started dressing in quiet luxury.' First 3 seconds: A graceful woman in a cream cashmere coat and silk scarf walking through a sunlit historic museum. Payoff: A subtle, confident smile as she reflects classic elegance in a grand mirror."
+ },
+ {
+  "id": "q2L_WgJBqlU",
+  "grp": "royal",
+  "ch": "TheRoyalFamily",
+  "views": 29038178,
+  "like": 0.014819559271246289,
+  "com": 5.998998973007191e-05,
+  "dur": 26,
+  "voice": "none",
+  "cuts": 5,
+  "avgshot": 5.0,
+  "hook_text": true,
+  "fmt": "historical temporal contrast",
+  "hook": {
+   "first_frame_visual": "Queen Elizabeth II in turquoise beside Princess Diana in her wedding dress on the balcony.",
+   "first_frame_text": "55, 20, 1981",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Melancholic pop song playing.",
+   "why_it_stops_the_scroll": "Iconic royal wedding imagery paired with age labels."
+  },
+  "why": [
+   "Stark temporal contrast",
+   "High emotional resonance",
+   "Universally recognized historical figures"
+  ],
+  "value": "Evokes poignant reflection on time, royalty, and historical tragedy.",
+  "share_t": "High emotional engagement around Princess Diana.",
+  "com_t": "Discussions regarding royal history and Diana's legacy.",
+  "rew": "Observing subtle expressions across both time periods.",
+  "emo": "Joyful celebration shifts to deep solemn grief.",
+  "adapt": "Title: 'Grace Through Time: 1953 vs 2002'. First-frame text: '27 | 76'. First 3s: Coronation footage with soft instrumental. Payoff: Transition to Golden Jubilee displaying lifelong duty."
+ },
+ {
+  "id": "GCXFjFUYLlY",
+  "grp": "royal",
+  "ch": "Royal Exclusive",
+  "views": 27591322,
+  "like": 0.06309121396937777,
+  "com": 0.0002889314256127343,
+  "dur": 59,
+  "voice": "human vo",
+  "cuts": 10,
+  "avgshot": 5.3,
+  "hook_text": true,
+  "fmt": "Numbered listicle, archive slideshow",
+  "hook": {
+   "first_frame_visual": "Princess Diana in a red embellished dress",
+   "first_frame_text": "10 times Diana broke royal rules!",
+   "first_words_spoken": "10 times Diana broke royal rules!",
+   "first_3s_audio": "Upbeat instrumental music with female voice-over saying '10 times Diana broke royal rules!'",
+   "why_it_stops_the_scroll": "Combines royal intrigue with an iconic photo of Princess Diana."
+  },
+  "why": [
+   "Countdown structure drives viewer retention.",
+   "High audience interest in Princess Diana and royal family trivia.",
+   "Clean visual presentation matching spoken narration."
+  ],
+  "value": "Quick pop culture and royal fashion trivia.",
+  "share_t": "Admiration for Princess Diana's rebellious choices.",
+  "com_t": "Viewers sharing their favorite Diana style moment.",
+  "rew": "Quick transitions between iconic archive photos.",
+  "emo": "Curiosity to admiration for rebellious style.",
+  "adapt": "Title: '5 Royal Fashion Rules Grace Kelly Broke'. First text: '5 Times Grace Kelly Broke Protocol'. First 3s: '5 times Grace Kelly rewrote royal style rules...' Payoff: Her iconic casual trousers look."
+ },
+ {
+  "id": "WJCOGtkHdts",
+  "grp": "royal",
+  "ch": "Celeb Rewind",
+  "views": 24535271,
+  "like": 0.030247434397606614,
+  "com": 7.185573780701261e-05,
+  "dur": 39,
+  "voice": "synthetic",
+  "cuts": 8,
+  "avgshot": 4.35,
+  "hook_text": true,
+  "fmt": "fact-based listicle",
+  "hook": {
+   "first_frame_visual": "An AI-generated or edited image of a Royal Guard getting a haircut, revealing a bizarrely elongated, cone-shaped head under his bearskin hat.",
+   "first_frame_text": "THE ROYAL GUARDS",
+   "first_words_spoken": "The Royal Guards have some secrets",
+   "first_3s_audio": "Synthetic male voice-over with a mysterious, low-tempo synth bass track.",
+   "why_it_stops_the_scroll": "The thumbnail/first frame is visually shocking and absurd, making the viewer curious if that is actually what is under the hat."
+  },
+  "why": [
+   "Uses a 'pattern interrupt' visual hook (the long head).",
+   "Leverages high-authority, recognizable figures (Royal Guards).",
+   "Combines educational trivia with viral, high-emotion clips (the shouting and fainting)."
+  ],
+  "value": "Learns interesting trivia about a world-famous institution.",
+  "share_t": "The 'toilet' fact and the 'fainting' footage are highly shareable 'did you know' moments.",
+  "com_t": "Viewers often comment on whether the 'toilet' fact is true or debate the AI-generated first image.",
+  "rew": "The first frame is so weird that viewers might go back to see if they saw it correctly.",
+  "emo": "Intrigue -> Disgust/Surprise -> Awe -> Humor",
+  "adapt": {
+   "title": "The Grace of the Queen's Guard",
+   "first_frame_text": "The Elegance of Discipline",
+   "first_3s": "Soft archival footage of a guard standing perfectly still in the rain, with a gentle female voice saying, 'There is a quiet strength in the tradition of the Royal Guard.'",
+   "payoff": "A montage of historical footage showing the guards through the decades, focusing on the timeless nature of their service and the dignity of their uniform."
+  }
+ },
+ {
+  "id": "RUJp6mB0eyM",
+  "grp": "royal",
+  "ch": "The British Royal Family",
+  "views": 23441802,
+  "like": 0.05057307454435457,
+  "com": 0.00041263892596652763,
+  "dur": 48,
+  "voice": "synthetic",
+  "cuts": 11,
+  "avgshot": 4.3,
+  "hook_text": true,
+  "fmt": "historical highlight reel",
+  "hook": {
+   "first_frame_visual": "Close-up of Princess Diana in a blue and white polka dot dress during an interview.",
+   "first_frame_text": "Princess Diana's most",
+   "first_words_spoken": "Princess Diana's most colourful acts",
+   "first_3s_audio": "Princess Diana's most colourful acts. In 1987, when AIDS was",
+   "why_it_stops_the_scroll": "Princess Diana is a global icon with enduring appeal. The phrase 'most colourful acts' promises a list of her most famous or controversial moments, triggering nostalgia and curiosity."
+  },
+  "why": [
+   "Leverages the massive, evergreen interest in the British Royal Family.",
+   "Uses a 'listicle' format which is highly effective for retention.",
+   "Combines high-stakes humanitarian work with relatable 'human' moments (running a race, being tired while pregnant)."
+  ],
+  "value": "Viewer learns about specific historical moments that defined Princess Diana's public image and humanitarian legacy.",
+  "share_t": "Diana remains a highly shareable figure, especially for those who remember her or admire her humanitarian work.",
+  "com_t": "People often comment with their own memories of Diana or expressions of love and respect for her ('She was an angel', 'Gone too soon').",
+  "rew": "The fast-paced nature of the facts and the iconic imagery might make viewers want to see the photos again or catch a detail they missed in the captions.",
+  "emo": "Starts with admiration, moves to tension (minefield), then lightheartedness (race), then sympathy (pregnancy), and ends on a high note of profound compassion.",
+  "adapt": {
+   "title": "The Quiet Grace of Princess Diana",
+   "first_frame_text": "Moments of Pure Kindness",
+   "first_3s": "Archive footage of Diana smiling softly at a child. A soft female voice says, 'Diana's legacy wasn't just in her title, but in her touch.'",
+   "payoff": "A montage of her most gentle interactions with the elderly and children, ending with a quote about leading with the heart, set to soft piano music."
+  }
+ },
+ {
+  "id": "2OD4IytPA24",
+  "grp": "royal",
+  "ch": "The British Royal Family",
+  "views": 23168500,
+  "like": 0.056961866327125195,
+  "com": 0.00034754084209163305,
+  "dur": 47,
+  "voice": "synthetic",
+  "cuts": 10,
+  "avgshot": 4.27,
+  "hook_text": true,
+  "fmt": "historical narrative with payoff",
+  "hook": {
+   "first_frame_visual": "A split-screen style pillarboxed image of Princess Diana and Queen Elizabeth II side-by-side.",
+   "first_frame_text": "Unusual gesture by Queen Elizabeth II at Princess Diana's funeral",
+   "first_words_spoken": "Unusual gesture by Queen Elizabeth II at Princess Diana's funeral",
+   "first_3s_audio": "Synthetic male voice-over with somber, slow orchestral music.",
+   "why_it_stops_the_scroll": "It promises a specific, 'unusual' moment involving two of the most famous women in history, using a high-contrast thumbnail and a clear, intriguing hook."
+  },
+  "why": [
+   "High-stakes historical subject matter.",
+   "Clear 'mystery' established in the first 3 seconds.",
+   "Uses authentic archive footage to provide credibility.",
+   "Explains the 'why' (protocol) which makes the 'what' (the bow) more impactful."
+  ],
+  "value": "Learns a specific historical fact about the relationship between the Queen and Diana and the rigid nature of royal protocol.",
+  "share_t": "Royal family enthusiasts or history buffs sharing a 'did you know' fact.",
+  "com_t": "Debate about the Queen's treatment of Diana or the necessity of royal protocol.",
+  "rew": "The moment of the bow happens quickly (35-40s); viewers may rewatch to see the subtle movement again.",
+  "emo": "Intrigue -> Sadness -> Tension -> Respectful Resolution.",
+  "adapt": {
+   "title": "The Grace of a Queen",
+   "first_frame_text": "The day the Queen bowed to a Princess",
+   "first_3_seconds": "Soft, human female voice-over: 'In a thousand years of history, a Queen rarely bows her head to anyone...'",
+   "payoff": "Silent, slow-motion footage of the bow with a quote about respect and humanity over protocol."
+  }
+ },
+ {
+  "id": "unCt7j5dY7w",
+  "grp": "etiquette",
+  "ch": "NihongoDekita",
+  "views": 22719033,
+  "like": 0.044201485160041805,
+  "com": 0.0002336807204778478,
+  "dur": 41,
+  "voice": "creator",
+  "cuts": 12,
+  "avgshot": 3.3,
+  "hook_text": true,
+  "fmt": "cultural etiquette breakdown",
+  "hook": {
+   "first_frame_visual": "A woman in a pink kimono standing outside in Kyoto, clapping hands and speaking to camera.",
+   "first_frame_text": "In Japan, we don't hug",
+   "first_words_spoken": "In Japan, we don't hug",
+   "first_3s_audio": "Upbeat background music, sound of a man screaming playfully and hugging a woman.",
+   "why_it_stops_the_scroll": "Contrasts a western norm (hug) with a cultural surprise (rejection of hug) instantly featuring action and humor."
+  },
+  "why": [
+   "Strong visual and cultural contrast hook (hug vs no hug)",
+   "Numbered list structure (15, 30, 45 degrees) makes complex etiquette digestible",
+   "Practical skits showing real-life usage (accepting a gift, seeing someone off) instead of just talking to camera"
+  ],
+  "value": "Clear, actionable, precise guide to Japanese bowing etiquette with exact degrees and real-world contexts.",
+  "share_t": "Shareable with anyone planning a trip to Japan or interested in cultural etiquette.",
+  "com_t": "Viewers commenting on how cute the demonstrations are or sharing cultural comparison notes.",
+  "rew": "To check the exact angle degrees for each social situation.",
+  "emo": "Curious -> amused -> enlightened -> satisfied",
+  "adapt": "A calm elegance channel for women 40+ could create: 'The Art of the Bow: Japanese Etiquette for Travelers'. First-frame text: 'Three ways to bow in Japan'. First 3 seconds: Serene archive footage of women bowing in a traditional Kyoto garden. Payoff: A timeless reminder that grace is universal."
+ },
+ {
+  "id": "B7SL_jFHBbk",
+  "grp": "film",
+  "ch": "Luciano Films",
+  "views": 21524355,
+  "like": 0.028199590649754663,
+  "com": 0.00027415455654768747,
+  "dur": 58,
+  "voice": "footage",
+  "cuts": 13,
+  "avgshot": 4.4,
+  "hook_text": true,
+  "fmt": "film scene dialogue / flirtation exchange",
+  "hook": {
+   "first_frame_visual": "Close-up of Margot Robbie looking directly at the camera with striking blue eyes and blonde hair in a black dress",
+   "first_frame_text": "So, Bay Ridge, that's near Staten Island, right?",
+   "first_first_words_spoken": "So, Bay Ridge, that's near Staten Island, right?",
+   "first_3s_audio": "So, Bay Ridge, that's near Staten Island, right?",
+   "why_it_stops_the_scroll": "High-contrast close-up of a universally recognized, highly attractive actress (Margot Robbie) paired with conversational dialogue immediately engages viewers."
+  },
+  "why": [
+   "Iconic A-list star power (Margot Robbie and Leonardo DiCaprio)",
+   "Flawless dialogue rhythm loaded with subtext and tension",
+   "A strong punchline ending ('We're not gonna be friends')"
+  ],
+  "value": "Entertainment, cinematic storytelling, charisma masterclass in flirtation",
+  "share_t": "Relatable dating / flirting dynamics",
+  "com_t": "Debating the chemistry or quoting iconic lines from the movie",
+  "rew": "Subtle micro-expressions and delivery of the final line",
+  "emo": "Curiosity -> Playful banter -> Sexual tension -> Confident romantic charge",
+  "adapt": {
+   "title": "The Art of Subtle Confidence",
+   "first_frame_text": "When someone tries to play it cool...",
+   "first_3s": "Archive footage of a classic 1950s cinematic dialogue scene between two poised individuals with a calm, warm female voiceover.",
+   "payoff": "A timeless reminder that true elegance requires no explanation."
+  }
+ },
+ {
+  "id": "XT_klGDLzlk",
+  "grp": "etiquette",
+  "ch": "Anastasiia Arora",
+  "views": 21284909,
+  "like": 0.028610223327710727,
+  "com": 0.00019300059023038342,
+  "dur": 14,
+  "voice": "none",
+  "cuts": 1,
+  "avgshot": 7,
+  "hook_text": true,
+  "fmt": "educational comparison",
+  "hook": {
+   "first_frame_visual": "A woman in a red dress sitting at a table with a bowl of soup, holding a spoon.",
+   "first_frame_text": "How to eat soup elegantly",
+   "first_words_spoken": "I could have my Gucci on",
+   "first_3s_audio": "Upbeat pop music starts, lyrics 'I could have my Gucci on'",
+   "why_it_stops_the_scroll": "The text overlay promises a specific social skill ('elegantly') and the visual is clean, high-quality, and immediately presents a 'how-to' premise."
+  },
+  "why": [
+   "Clear 'Before vs After' structure",
+   "High-quality, aesthetic visual presentation",
+   "Short, punchy duration that respects the viewer's time"
+  ],
+  "value": "Quick, actionable etiquette advice.",
+  "share_t": "People share etiquette tips to signal their own sophistication or to help friends.",
+  "com_t": "Debates on etiquette or questions about other table manners.",
+  "rew": "The speed of the demonstration makes it easy to watch twice to confirm the technique.",
+  "emo": "Curiosity -> Correction -> Satisfaction",
+  "adapt": "Title: 'The Art of the Tea Cup'. First-frame text: 'How to hold a tea cup properly'. First 3 seconds: A slow-motion, elegant shot of a hand picking up a vintage porcelain tea cup. Payoff: A side-by-side comparison of holding the handle with a finger through it vs. pinching the handle, with a soft voice-over: 'For true elegance, always pinch the handle, never loop your finger through.'"
+ },
+ {
+  "id": "BH5PCK6bBzQ",
+  "grp": "royal",
+  "ch": "The Private Circle",
+  "views": 21235067,
+  "like": 0.01731381398514071,
+  "com": 3.6119499881964114e-05,
+  "dur": 53,
+  "voice": "synthetic",
+  "cuts": 22,
+  "avgshot": 2.4,
+  "hook_text": true,
+  "fmt": "fact-listicle with visual cues",
+  "hook": {
+   "first_frame_visual": "A close-up of Queen Elizabeth II putting her finger to her lips in a 'shush' gesture.",
+   "first_frame_text": "of",
+   "first_words_spoken": "The Queen of England had top secret rules",
+   "first_3s_audio": "Suspenseful, low-frequency rhythmic pulse with a deep synthetic voice-over.",
+   "why_it_stops_the_scroll": "It uses a high-authority figure (The Queen) combined with 'top secret' intrigue and a visually jarring, slightly creepy AI-enhanced smiling face at 0:02 to trigger immediate curiosity."
+  },
+  "why": [
+   "High-speed information density prevents boredom.",
+   "Visual aids (circles/arrows) guide the eye to small details in archive footage.",
+   "The 'pattern interrupt' of the creepy face at 0:02 forces the viewer to pay attention.",
+   "The 'Save the best for last' structure with the banana rule."
+  ],
+  "value": "Entertainment through 'insider' knowledge and trivia about a world-famous figure.",
+  "share_t": "The 'Monopoly' and 'Banana' facts are highly relatable and 'shareable' trivia.",
+  "com_t": "Viewers often comment on the Monopoly rule or the absurdity of the banana rule.",
+  "rew": "The fast pace of the facts might make viewers miss a detail, and the seamless loop encourages an immediate second watch.",
+  "emo": "Intrigue -> Surprise -> Amusement -> Disbelief",
+  "adapt": {
+   "title": "The Silent Language of a Lady",
+   "first_frame_text": "The Secret Language of Elegance",
+   "first_3s": "Archive footage of Grace Kelly or Audrey Hepburn. Soft female VO: 'A true lady never needs to speak to be understood.'",
+   "payoff": "Show a specific subtle gesture, like how a lady places her napkin or exits a car, explaining its hidden meaning in high society."
+  }
+ },
+ {
+  "id": "RBksATZpOoI",
+  "grp": "royal",
+  "ch": "Austin Sweatt",
+  "views": 18874090,
+  "like": 0.03835199471868578,
+  "com": 0.00015762349337107115,
+  "dur": 54,
+  "voice": "creator",
+  "cuts": 21,
+  "avgshot": 2.5,
+  "hook_text": true,
+  "fmt": "Rapid trivia list / Secret facts reveal",
+  "hook": {
+   "first_frame_visual": "Creator speaking directly to camera with centered text overlay.",
+   "first_frame_text": "Did you know the Queen of England",
+   "first_words_spoken": "Did you know the Queen of England",
+   "first_3s_audio": "Creator asking about top secret rules of the Queen over background music.",
+   "why_it_stops_the_scroll": "Teases secret royal signals using intriguing archival footage."
+  },
+  "why": [
+   "High intrigue hook focusing on secret knowledge.",
+   "Rapid transition between host and supporting archival visual evidence.",
+   "Bite-sized visual demonstrations keep retention high throughout."
+  ],
+  "value": "Entertaining, trivia-packed insights into royal family etiquette.",
+  "share_t": "Surprising facts that people love sharing with friends.",
+  "com_t": "Outrageous rules provoke viewers to discuss or debate royal traditions.",
+  "rew": "Quick visual details like signal gestures and banana footage.",
+  "emo": "Starts with curiosity, builds fascination through secret signals, ends in amused astonishment.",
+  "adapt": "Title: 'Secret Royal Etiquette Rules You Never Knew'. First frame text: 'The Secret Code of Royal Handbags'. First 3s: Soft narration over archive footage of a queen adjusting her bag. Payoff: Elegant archive clip showing precise etiquette rule for afternoon tea."
+ },
+ {
+  "id": "FTPAo5E2paY",
+  "grp": "royal",
+  "ch": "Gabi Jones",
+  "views": 18684965,
+  "like": 0.06516447849915694,
+  "com": 0.00010757312095580591,
+  "dur": 38,
+  "voice": "creator",
+  "cuts": 11,
+  "avgshot": 3.37,
+  "hook_text": true,
+  "fmt": "historical storytelling GRWM",
+  "hook": {
+   "first_frame_visual": "Creator in a floral dress holding up a black velvet dress in a bedroom setting.",
+   "first_frame_text": "why was Princess Diana's revenge dress SO culturally significant?!?",
+   "first_words_spoken": "Why was Princess Diana's revenge dress SO culturally significant?!?",
+   "first_3s_audio": "Upbeat, rhythmic pop instrumental with the creator's enthusiastic voice-over.",
+   "why_it_stops_the_scroll": "It combines a high-interest celebrity gossip topic (Princess Diana) with a visual promise of a transformation/cosplay."
+  },
+  "why": [
+   "Leverages the 'GRWM' trend which provides high visual retention.",
+   "Uses a 'storytime' narrative style that keeps viewers listening for the resolution.",
+   "Taps into the evergreen public fascination with Princess Diana."
+  ],
+  "value": "Learns the specific historical context behind a famous pop-culture image while enjoying a fashion transformation.",
+  "share_t": "Fans of the Royal Family or fashion history enthusiasts would share this as a 'did you know' piece of trivia.",
+  "com_t": "People often comment with their own opinions on the Royals or complimenting the dress recreation.",
+  "rew": "The side-by-side comparison at the end happens quickly, prompting a rewatch to see how well the creator matched the look.",
+  "emo": "Curiosity leads to a sense of injustice/drama, ending in a feeling of empowerment and triumph.",
+  "adapt": "Title: The Dress That Broke the Rules. First-frame text: 'The night Diana stopped being a victim.' First 3 seconds: Show a high-quality archive clip of Diana stepping out of the car in the dress with a voice-over saying, 'In June 1994, Princess Diana was supposed to stay home. Instead, she wore this.' Payoff: A montage of the dress from different angles with a concluding thought on how she used fashion as a silent weapon."
+ },
+ {
+  "id": "Typgqz_0ExE",
+  "grp": "royal",
+  "ch": "Theviralscope",
+  "views": 17767776,
+  "like": 0.06890243325895148,
+  "com": 0.00022191860140515055,
+  "dur": 14,
+  "voice": "none",
+  "cuts": 6,
+  "avgshot": 1.86,
+  "hook_text": true,
+  "fmt": "Rule then exception",
+  "hook": {
+   "first_frame_visual": "Little girl curtsying to Queen Elizabeth II on a street",
+   "first_frame_text": "The queen could never bow to anyone",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Emotional vocal pop music",
+   "why_it_stops_the_scroll": "States an absolute royal rule, intriguing viewers to see the rare exception."
+  },
+  "why": [
+   "Clear setup and payoff narrative structure.",
+   "Taps into deep cultural fascination with Princess Diana.",
+   "Short duration keeps retention high."
+  ],
+  "value": "Emotional historical fact highlighting respect and broken protocol.",
+  "share_t": "Strong emotional connection to Princess Diana and Royal history.",
+  "com_t": "Debates and respect for Diana and the Queen.",
+  "rew": "Observing the exact moment of the Queen's bow.",
+  "emo": "Curiosity -> Anticipation -> Emotional respect / nostalgia",
+  "adapt": "Title: 'The One Rule Royalty Never Broke'. Text: 'Royal ladies always stood tall...', Payoff: Archive clip of Grace Kelly bowing head in respect during a solemn state event."
+ },
+ {
+  "id": "BXeRneR9qm8",
+  "grp": "oldmoney",
+  "ch": "Old Money aesthetic",
+  "views": 16505132,
+  "like": 0.05111264787218909,
+  "com": 0.00031511411117463343,
+  "dur": 16,
+  "voice": "none",
+  "cuts": 15,
+  "avgshot": 1.0,
+  "hook_text": true,
+  "fmt": "then vs now comparison",
+  "hook": {
+   "first_frame_visual": "A glamorous woman in a black gown standing in a luxurious archway at night, with on-screen text 'rich people now'",
+   "first_frame_text": "rich people now",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Upbeat pop/electronic remix song vocals and beat",
+   "why_it_stops_the_scroll": "High-glam, aspirational imagery paired with an intriguing text hook contrasting rich people then and now"
+  },
+  "why": [
+   "Extremely fast pacing keeping retention high with ~1s cuts",
+   "Clear structural dichotomy (Now vs Then) easy to process instantly",
+   "Trending audio track (Money Money Money remix)"
+  ],
+  "value": "Visual entertainment contrasting flashy modern influencer wealth with old-money elegance",
+  "share_t": "Tagging friends with opinions on modern vs old money aesthetics",
+  "com_t": "Debating whether modern wealth looks tacky compared to old money",
+  "rew": "Comparing the aesthetic details of modern vs vintage wealth",
+  "emo": "Curiosity to amusement to nostalgia or aesthetic appreciation",
+  "adapt": {
+   "title": "Elegance Then vs Now",
+   "first_frame_text": "class then",
+   "first_3s_audio": "Soft classical piano melody, calm and timeless",
+   "payoff": "A serene transition from hurried modern city glamour to slow, graceful archival footage of quiet luxury and poise."
+  }
+ },
+ {
+  "id": "37aRGW3j3Zc",
+  "grp": "etiquette",
+  "ch": "Lionfield",
+  "views": 16384591,
+  "like": 0.05067975148113248,
+  "com": 0.0005111509954688525,
+  "dur": 16,
+  "voice": "creator",
+  "cuts": 1,
+  "avgshot": 8.5,
+  "hook_text": true,
+  "fmt": "reaction and correction",
+  "hook": {
+   "first_frame_visual": "A man in a suit sitting at an outdoor restaurant table with a plate of spaghetti.",
+   "first_frame_text": "SPAGHETTI",
+   "first_words_spoken": "Spaghetti etiquette.",
+   "first_3s_audio": "Spaghetti etiquette. The Italians do not use a spoon.",
+   "why_it_stops_the_scroll": "The authoritative tone and the immediate correction of a common social habit create instant curiosity."
+  },
+  "why": [
+   "Clear, actionable advice.",
+   "High-contrast personality shift between the two segments.",
+   "Cultural authority (Italians confirming the rule)."
+  ],
+  "value": "Learns a specific dining etiquette rule and a cultural nuance.",
+  "share_t": "The humorous correction about arm placement.",
+  "com_t": "Debate over dining etiquette.",
+  "rew": "The quick demonstration of the fork technique.",
+  "emo": "Informative to humorous.",
+  "adapt": {
+   "title": "The Art of the Tea Cup",
+   "first_frame_text": "TEA ETIQUETTE",
+   "first_3s_audio": "When holding a teacup, never loop your finger through the handle. It is considered improper.",
+   "payoff": "Show a graceful, slow-motion clip of a hand holding the cup by pinching the handle, followed by a soft text overlay: 'Elegance is in the details.'"
+  }
+ },
+ {
+  "id": "uWo7gdH5dkw",
+  "grp": "etiquette",
+  "ch": "Anastasiia Arora",
+  "views": 16006551,
+  "like": 0.0368068049138131,
+  "com": 0.0002341541285190045,
+  "dur": 14,
+  "voice": "none",
+  "cuts": 4,
+  "avgshot": 3.3,
+  "hook_text": true,
+  "fmt": "Do's and Don'ts comparison tutorial",
+  "hook": {
+   "first_frame_visual": "A woman in an elegant black turtleneck and trousers stands indoors, about to drop a glove on the floor.",
+   "first_frame_text": "How to pick from floor elegantly",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Music beat drops instantly with a strong bass beat.",
+   "why_it_stops_the_scroll": "Clear instructional text on screen paired with an immediate visual action (dropping a prop)."
+  },
+  "why": [
+   "Visual contrast between bad and good posture",
+   "Relatable everyday scenario",
+   "Fast pacing with no fluff"
+  ],
+  "value": "Actionable poise and etiquette tip.",
+  "share_t": "Tagging a friend who needs posture tips.",
+  "com_t": "Debating which awkward posture looked funniest.",
+  "rew": "Comparing the awkward posture in the first half with the graceful posture in the second half.",
+  "emo": "From curiosity to amusement at the exaggerated 'wrong' ways, ending in satisfaction with the right way.",
+  "adapt": "Title: 'Grace in every movement'. First frame text: 'The art of graceful movement'. First 3 seconds: Archive clip of a classic 1950s actress gracefully kneeling to pick up a dropped glove. Payoff: Soft text overlay revealing the timeless posture rule."
+ },
+ {
+  "id": "7BIS1XIQII8",
+  "grp": "royal",
+  "ch": "dawn",
+  "views": 15749978,
+  "like": 0.032654458310989384,
+  "com": 0.0004391117244735199,
+  "dur": 23,
+  "voice": "none",
+  "cuts": 2,
+  "avgshot": 7.6,
+  "hook_text": true,
+  "fmt": "royal drama timeline archive",
+  "hook": {
+   "first_frame_visual": "Princess Diana and Prince Charles walking down the aisle in 1981.",
+   "first_frame_text": "In 1981, Camilla wore white to Charles and Diana's wedding...",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Melancholic French pop music.",
+   "why_it_stops_the_scroll": "Intriguing royal gossip hook about Princess Diana and Camilla."
+  },
+  "why": [
+   "Leverages enduring public interest in Princess Diana.",
+   "Simple side-by-side narrative structure.",
+   "Clear contrast storytelling without needing narration."
+  ],
+  "value": "Entertaining royal historical trivia and drama summary.",
+  "share_t": "High audience affection for Princess Diana.",
+  "com_t": "Opinions on royal wedding etiquette and Diana vs. Camilla.",
+  "rew": "Re-examining the historic outfit details in footage.",
+  "emo": "Intrigue -> Indignation -> Satisfying resolution",
+  "adapt": "Title: 'The Royal Dress Code Rule Broken Twice'. First-frame text: 'Royal protocol dictates guests never wear white...' First 3s: Archival footage of historic royal wedding dress. Payoff: Show historical footage contrasting two royal outfits with soft classical music audio."
+ },
+ {
+  "id": "7eDTG_oASxk",
+  "grp": "etiquette",
+  "ch": "Anastasiia Arora",
+  "views": 13856529,
+  "like": 0.032536575357364025,
+  "com": 0.0003075806358143515,
+  "dur": 16,
+  "voice": "none",
+  "cuts": 10,
+  "avgshot": 1.5,
+  "hook_text": true,
+  "fmt": "comparison / etiquette vs common behavior",
+  "hook": {
+   "first_frame_visual": "A young red-haired woman holding two cherries by their stems in front of a white table with two bowls",
+   "first_frame_text": "How to eat elegantly",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Pop music song playing with upbeat rhythm",
+   "why_it_stops_the_scroll": "Clear visual title and immediate demonstration of bad manners (eating multiple cherries greedily and spitting pits out clumsily)"
+  },
+  "why": [
+   "Strong visual contrast (red cross vs green checkmark)",
+   "Relatable everyday situation turned into comedy and education",
+   "Zero talking required, making it universally understandable"
+  ],
+  "value": "Clear visual lesson on table etiquette for eating cherries",
+  "share_t": "Tagging a friend who needs etiquette lessons",
+  "com_t": "Debating whether anyone actually eats cherries the messy way",
+  "rew": "Comparing the two contrasting techniques side-by-side",
+  "emo": "Amusement at the exaggerated bad manners followed by satisfaction and validation of learning proper etiquette.",
+  "adapt": "Title: 'How to eat grapes gracefully'. First-frame text: 'Graceful dining habits'. First 3 seconds: Archive clip of a classic 1950s actress gracefully handling fruit at a table. Payoff: A timeless reminder on how to use a fruit bowl and napkin with poise."
+ },
+ {
+  "id": "HAS47GZIVQc",
+  "grp": "etiquette",
+  "ch": "Anastasiia Arora",
+  "views": 13786825,
+  "like": 0.03605072233817431,
+  "com": 0.00010263421781302076,
+  "dur": 17,
+  "voice": "none",
+  "cuts": 10,
+  "avgshot": 1.6,
+  "hook_text": true,
+  "fmt": "educational demonstration, dos and donts",
+  "hook": {
+   "first_frame_visual": "A woman with red hair in a green suit standing in a room with a shoe rack and clothing rail, text overlay in center",
+   "first_frame_text": "How to stand elegantly",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Upbeat pop music playing",
+   "why_it_stops_the_scroll": "Clear bold title promising an actionable elegance tutorial with an attractive subject in a striking green suit"
+  },
+  "why": [
+   "Visual contrast between incorrect and correct posture creates instant clarity",
+   "Fast pacing with rapid jump cuts maintains high engagement",
+   "Strong visual branding with coordinated green suit and clean background"
+  ],
+  "value": "Clear visual guide on posture dos and don'ts when wearing professional attire",
+  "share_t": "Relatable awkward standing habits that friends or colleagues might recognize",
+  "com_t": "Discussing which bad posture habit everyone is guilty of",
+  "rew": "Comparing individual bad posture examples with the correct ones",
+  "emo": "Starts curious, amused during the bad posture demonstration, and empowered/informed during the correct posture section.",
+  "adapt": "How a faceless elegance channel for women 40+ could make an ORIGINAL Short: Title: 'Timeless Posture: How to Stand with Grace at Any Event'. First-frame text: 'The elegance test: Are you standing like this?'. First 3 seconds: Archival footage of a 1950s grace class with a gentle string arrangement. Payoff: Three timeless rules for effortless, dignified posture using classic film clips."
+ },
+ {
+  "id": "GIJ6IXAO09g",
+  "grp": "etiquette",
+  "ch": "Arieff Yong",
+  "views": 13314426,
+  "like": 0.024006141909534817,
+  "com": 0.0007790797740736251,
+  "dur": 72,
+  "voice": "mix",
+  "cuts": 1,
+  "avgshot": 56.5,
+  "hook_text": false,
+  "fmt": "reaction parody",
+  "hook": {
+   "first_frame_visual": "A man in a suit sitting at a dining table with a plate of rice.",
+   "first_frame_text": "none",
+   "first_words_spoken": "we push the rice onto the back of the fork",
+   "first_3s_audio": "we push the rice onto the back of the fork and eat like so",
+   "why_it_stops_the_scroll": "The juxtaposition of a formal, stiff Western etiquette lesson followed immediately by a comedic, exaggerated Malaysian cultural response creates instant intrigue."
+  },
+  "why": [
+   "Strong, immediate contrast between two different cultural approaches.",
+   "Humorous, satirical tone that makes the content engaging.",
+   "Clear, concise instructions that are easy to follow, even if they are meant to be funny."
+  ],
+  "value": "Entertainment through cultural contrast and a humorous take on etiquette.",
+  "share_t": "The relatable cultural commentary and the funny, satirical tone make it highly shareable.",
+  "com_t": "Viewers are likely to comment on their own cultural experiences with eating rice.",
+  "rew": "The comedic delivery and the specific cultural references make it worth rewatching.",
+  "emo": "Starts with a neutral, instructional tone, then shifts to humorous, satirical, and confident.",
+  "adapt": "Title: The Art of Tea. First-frame text: 'The Proper Way to Steep'. First 3 seconds: A slow, elegant shot of a silver tea service being set up. Payoff: A gentle, kind voice-over explaining that while there are many 'rules', the true elegance of tea lies in the warmth and the quiet moment it provides, regardless of the vessel used."
+ },
+ {
+  "id": "6XfKZETByVM",
+  "grp": "royal",
+  "ch": "Ownerpeace DRK",
+  "views": 13184992,
+  "like": 0.061277852880001746,
+  "com": 0.0004433070569932845,
+  "dur": 17,
+  "voice": "none",
+  "cuts": 7,
+  "avgshot": 1.87,
+  "hook_text": true,
+  "fmt": "historical archive montage",
+  "hook": {
+   "first_frame_visual": "Princess Diana in a purple suit looking downcast at a public event.",
+   "first_frame_text": "When Princess Diana wore her revenge dress after Charles confessed to cheating",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Slowed, dramatic vocals: 'This is the end / Hold your breath and count to ten'",
+   "why_it_stops_the_scroll": "It combines high-stakes historical gossip with a legendary fashion moment, using a 'sad-to-stunning' narrative arc that viewers find emotionally satisfying."
+  },
+  "why": [
+   "Universal theme: The 'revenge glow-up' is a highly relatable emotional concept.",
+   "Iconic imagery: The Serpentine Gallery dress is one of the most famous fashion moments in history.",
+   "Music-Visual Synergy: Using 'Skyfall' (a song about a world crumbling) perfectly mirrors the end of the marriage and the birth of a new persona."
+  ],
+  "value": "Nostalgia, fashion appreciation, and a 'justice' narrative where the wronged party wins through elegance.",
+  "share_t": "High relatability for anyone who enjoys 'revenge' stories or fashion history.",
+  "com_t": "Debates about the Royal family, admiration for Diana's style, or personal stories of 'revenge' outfits.",
+  "rew": "The satisfying contrast between the first half (sad) and the second half (powerful).",
+  "emo": "Betrayal and sadness transitioning into power and triumph.",
+  "adapt": {
+   "title": "The Power of the Statement Look",
+   "first_frame_text": "When fashion becomes a weapon of grace.",
+   "first_3s": "Archive footage of a somber historical figure (e.g., Jackie Kennedy or Grace Kelly) with a soft female voice-over saying, 'They expected her to hide...'",
+   "payoff": "A montage of their most confident, iconic fashion moments with the voice-over concluding, '...instead, she chose to shine.'"
+  }
+ },
+ {
+  "id": "4Pe6BtrgHj8",
+  "grp": "etiquette",
+  "ch": "William Hanson",
+  "views": 12942637,
+  "like": 0.0194976495130011,
+  "com": 0.00048429079792626495,
+  "dur": 19,
+  "voice": "creator",
+  "cuts": 0,
+  "avgshot": 19,
+  "hook_text": false,
+  "fmt": "cultural etiquette explainer",
+  "hook": {
+   "first_frame_visual": "A well-dressed man in a suit sitting in a luxurious, dimly lit room with a tea set on the table.",
+   "first_frame_text": "none",
+   "first_words_spoken": "In Britain, if someone says",
+   "first_3s_audio": "In Britain, if someone says, 'Would anyone like the last biscuit?'",
+   "why_it_stops_the_scroll": "The creator uses a specific, relatable cultural scenario (British etiquette) that promises a 'secret' or 'hidden' meaning, creating immediate curiosity."
+  },
+  "why": [
+   "High-value cultural 'insider' knowledge.",
+   "The creator's persona matches the topic perfectly (authority).",
+   "Concise, no-fluff delivery."
+  ],
+  "value": "Provides a 'social hack' for navigating British culture, preventing potential embarrassment.",
+  "share_t": "Highly shareable for people interested in travel, etiquette, or British culture.",
+  "com_t": "Viewers often comment with their own experiences of cultural misunderstandings or confirm the accuracy of the advice.",
+  "rew": "The cultural insight is specific enough that viewers may rewatch to confirm they understood the nuance.",
+  "emo": "Curiosity -> Caution -> Amusement/Understanding.",
+  "adapt": "Title: 'The Art of the Hostess'. First-frame text: 'The unspoken rule of the last tea cake'. First 3 seconds: A slow, elegant shot of a silver tea tray being placed on a lace tablecloth. Voice-over: 'In the quiet corners of a drawing room, when the last tea cake remains, a true hostess knows the dance of politeness...' Payoff: Explain that the offer is a gesture of grace, not a genuine request for the guest to take the final item."
+ },
+ {
+  "id": "6d0A6d1xgso",
+  "grp": "makeover",
+  "ch": "Fabiosa Stories",
+  "views": 12668791,
+  "like": 0.03241801052681349,
+  "com": 0.0005644579660363803,
+  "dur": 26,
+  "voice": "none",
+  "cuts": 7,
+  "avgshot": 3.7,
+  "hook_text": false,
+  "fmt": "makeover transformation reveal",
+  "hook": {
+   "first_frame_visual": "An older woman with disheveled, long hair sitting in a salon chair.",
+   "first_frame_text": "none",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Uplifting cinematic instrumental background music.",
+   "why_it_stops_the_scroll": "High visual contrast promising a dramatic beauty transformation."
+  },
+  "why": [
+   "High contrast between before and after visuals.",
+   "Brisk pacing holds attention through step-by-step progress.",
+   "Authentic emotional payoff adds heart to beauty content."
+  ],
+  "value": "Inspiration and satisfaction from viewing a youth-restoring transformation.",
+  "share_t": "Relatable emotional reaction and inspiring makeover result.",
+  "com_t": "Praising the dramatic change and new hairstyle.",
+  "rew": "Observing specific details of the haircut and makeup style.",
+  "emo": "Curiosity -> anticipation -> awe -> warm emotion.",
+  "adapt": {
+   "title": "Timeless Elegance Makeover",
+   "first_frame_text": "Redefining Classic Style",
+   "first_3s_audio": "Soft orchestral melody playing.",
+   "payoff": "Archival footage transition showing a graceful, sophisticated mature styling reveal."
+  }
+ },
+ {
+  "id": "Zbbanat_lnw",
+  "grp": "royal",
+  "ch": "what's that?",
+  "views": 11160832,
+  "like": 0.026099487923480973,
+  "com": 0.00020141867559694474,
+  "dur": 25,
+  "voice": "none",
+  "cuts": 6,
+  "avgshot": 3.3,
+  "hook_text": true,
+  "fmt": "text-on-screen archive slideshow",
+  "hook": {
+   "first_frame_visual": "A high-quality archive photo of Princess Diana wearing a pink dress and the Spencer Tiara.",
+   "first_frame_text": "She ENDED his image in one dress",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Upbeat, rhythmic French pop music (Moi... Lolita by Aliz\u00e9e).",
+   "why_it_stops_the_scroll": "It uses a bold, controversial claim ('ENDED his image') paired with one of the most recognizable and beloved fashion icons in history. The high-contrast text and the promise of a 'revenge' story create immediate intrigue."
+  },
+  "why": [
+   "Leverages the 'Revenge Dress'\u2014one of the most viral fashion moments in history.",
+   "Uses a 'villain' arc (Charles/Camilla) to create emotional investment.",
+   "The music choice (French pop) adds a layer of 'chic' and 'cool' that fits the fashion theme."
+  ],
+  "value": "Historical fashion trivia and a satisfying 'revenge' narrative involving famous figures.",
+  "share_t": "Fans of Princess Diana or people who enjoy royal family drama/fashion history.",
+  "com_t": "The comparison to Camilla is highly polarizing and almost guarantees a debate in the comments about who wore it better or the ethics of the situation.",
+  "rew": "The comparison between Diana's dress and Camilla's dress happens quickly at the end, prompting a rewatch to see the details of both.",
+  "emo": "Intrigue -> Scandal -> Anticipation -> Triumph -> Indignation/Comparison",
+  "adapt": {
+   "title": "The Power of the 'Revenge' Look",
+   "first_frame_text": "Elegance is the best revenge.",
+   "first_3s": "A soft, slow-motion clip of Diana walking, with a gentle female voice-over saying: 'When the world expected her to hide, she chose to shine.'",
+   "payoff": "A side-by-side comparison of the 'Revenge Dress' and the original dress she was supposed to wear that night, showing how a single choice changed her legacy."
+  }
+ },
+ {
+  "id": "d4KBkmLORhE",
+  "grp": "royal",
+  "ch": "Royal News",
+  "views": 10653406,
+  "like": 0.019565104343155608,
+  "com": 0.0005034070793885073,
+  "dur": 58,
+  "voice": "synthetic",
+  "cuts": 20,
+  "avgshot": 2.85,
+  "hook_text": true,
+  "fmt": "historical narrative documentary",
+  "hook": {
+   "first_frame_visual": "Princess Diana smiling and waving at a crowd.",
+   "first_frame_text": "Diana nearly drove Charles crazy with a single photo",
+   "first_words_spoken": "Diana nearly drove Charles crazy with a single photo.",
+   "first_3s_audio": "Diana nearly drove Charles crazy with a single photo.",
+   "why_it_stops_the_scroll": "It uses a provocative, high-stakes claim about a famous historical figure to create immediate curiosity."
+  },
+  "why": [
+   "strong, curiosity-driven hook",
+   "fast-paced, engaging archival footage",
+   "clear, dramatic narrative structure"
+  ],
+  "value": "historical insight into a famous royal moment and its lasting impact.",
+  "share_t": "the content is highly shareable for those interested in royal history and celebrity drama.",
+  "com_t": "the controversial nature of the royal family's history invites debate and personal opinions.",
+  "rew": "the fast-paced editing and dense historical information may encourage a second watch to catch details.",
+  "emo": "starts with intrigue, moves to sympathy for Diana, then to judgment of Charles, ending with a poignant, reflective tone.",
+  "adapt": {
+   "title": "The Grace of Grace Kelly",
+   "first_frame_text": "How one photo changed Grace Kelly's life forever",
+   "first_3s_audio": "How one photo changed Grace Kelly's life forever.",
+   "payoff": "Show the transition from Hollywood star to Princess of Monaco, focusing on the weight of the crown and the sacrifice of her career."
+  }
+ },
+ {
+  "id": "nbt8b7D_Ebs",
+  "grp": "oldmoney",
+  "ch": "Tanya Harchani",
+  "views": 9994974,
+  "like": 0.015224852010620538,
+  "com": 0.00015958020501103854,
+  "dur": 13,
+  "voice": "creator",
+  "cuts": 1,
+  "avgshot": 12.0,
+  "hook_text": true,
+  "fmt": "expensive vs cheap comparison",
+  "hook": {
+   "first_frame_visual": "creator in a black dress pointing to a photo of a high-end black dress on the top left",
+   "first_frame_text": "Expensive",
+   "first_words_spoken": "Looks expensive,",
+   "first_3s_audio": "creator speaks clearly 'Looks expensive, looks cheap'",
+   "why_it_stops_the_scroll": "visual comparison with high contrast clothing items paired with strong binary statements"
+  },
+  "why": [
+   "binary choice format drives instant engagement",
+   "fast pacing prevents drop-off",
+   "high contrast visual aids simplify complex style rules"
+  ],
+  "value": "quick style guide on spotting luxury versus tacky items",
+  "share_t": "debating taste choices with friends",
+  "com_t": "disagreeing or agreeing with specific expensive vs cheap judgments",
+  "rew": "checking details of the compared items",
+  "emo": "curiosity to rapid validation of style choices",
+  "adapt": {
+   "title": "Timeless Elegance: Expensive vs Cheap Details",
+   "first_frame_text": "Timeless",
+   "first_3s_sec": "Calm piano chords fade in as a soft voice-over compares two classic coat fabrics.",
+   "payoff": "A concluding frame encouraging quiet confidence and investing in quality pieces."
+  }
+ },
+ {
+  "id": "PuD18cAVdMg",
+  "grp": "history",
+  "ch": "Helen Christie",
+  "views": 9402739,
+  "like": 0.04274860761316463,
+  "com": 0.00015655012863804898,
+  "dur": 41,
+  "voice": "creator",
+  "cuts": 12,
+  "avgshot": 3.3,
+  "hook_text": true,
+  "fmt": "historical sketch / satirical etiquette",
+  "hook": {
+   "first_frame_visual": "Creator dressed in 18th-century French court gown and powdered wig, holding a champagne flute inside a gilded hall",
+   "first_frame_text": "Versailles: Bathroom Etiquette",
+   "first_words_spoken": "Madam Florentine, how are you?",
+   "first_3s_audio": "Dialogue exchange between two court ladies in upper-class accents over classical background music",
+   "why_it_stops_the_scroll": "High-production period costume and aristocratic persona create immediate visual contrast and curiosity"
+  },
+  "why": [
+   "High visual fidelity with authentic-looking period costumes and set design",
+   "Comedic juxtaposition of ultra-polite royal etiquette with gross bodily functions",
+   "Dual-role performance by a single creator demonstrating high acting skill"
+  ],
+  "value": "Entertaining historical trivia delivered through humor and high-effort character performance",
+  "share_t": "Relatability of bathroom urgency combined with ridiculous historical facts",
+  "com_t": "Viewers sharing other gross or surprising historical facts about Versailles",
+  "rew": "Noticing background details like Monsieur Poulet behind the vase",
+  "emo": "Curiosity and polite aristocratic tone turning into shock, ending in absurd comedic amusement",
+  "adapt": "A faceless elegance channel could create a Short titled 'The Dark Secret of Versailles Etiquette' using real archive paintings and a soft voice-over revealing how courtiers actually lived without indoor plumbing, maintaining a calm, elegant tone while sharing the same fascinating historical trivia."
+ },
+ {
+  "id": "W9yTv-TLyw4",
+  "grp": "oldmoney",
+  "ch": "Gold glowups",
+  "views": 9222114,
+  "like": 0.010122407942473927,
+  "com": 8.295278067479972e-05,
+  "dur": 15,
+  "voice": "none",
+  "cuts": 6,
+  "avgshot": 2.0,
+  "hook_text": true,
+  "fmt": "comparison list / aesthetic vs cheap",
+  "hook": {
+   "first_frame_visual": "A woman in a floral midi dress walking outside with ornate text overlay",
+   "first_frame_text": "Elegant Vs Cheap",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Upbeat pop dance music with catchy vocal hook",
+   "why_it_stops_the_scroll": "High-contrast text 'Elegant Vs Cheap' immediately triggers curiosity and judgment over clothing choices"
+  },
+  "why": [
+   "Extremely fast pacing (under 15s)",
+   "Polarizing labels ('Elegant' vs 'Cheap') driving engagement",
+   "High aesthetic quality in outfit selections"
+  ],
+  "value": "Style inspiration and visual contrast between casual/streetwear vs classy/tailored looks",
+  "share_t": "Tagging a friend whose style matches one of the categories",
+  "com_t": "Debating whether the 'cheap' outfits actually look bad or if they are just casual",
+  "rew": "Comparing specific outfits to decide personal style preference",
+  "emo": "Curiosity to aesthetic appreciation to critical comparison",
+  "adapt": "A faceless elegance channel for women 40+ could create: Title: 'Timeless vs Trendy After 40'. First-frame text: 'Timeless Style Vs Fast Fashion'. First 3 seconds: Archive clip of Audrey Hepburn in a classic trench coat. Payoff: Side-by-side outfit formula for looking polished and ageless."
+ },
+ {
+  "id": "OImD7snXpuE",
+  "grp": "royal",
+  "ch": "A brief update",
+  "views": 8569071,
+  "like": 0.04427271054236801,
+  "com": 0.0006157026823561154,
+  "dur": 59,
+  "voice": "human vo",
+  "cuts": 5,
+  "avgshot": 10,
+  "hook_text": true,
+  "fmt": "numbered listicle compilation",
+  "hook": {
+   "first_frame_visual": "Close-up of Queen Elizabeth II drinking wine",
+   "first_frame_text": "5 times",
+   "first_words_spoken": "5 times the queen was a total badass",
+   "first_3s_audio": "Energetic male voice-over delivering the hook: \"5 times the queen was a total badass\"",
+   "why_it_stops_the_scroll": "Combines a surprising juxtaposition (the Queen drinking wine) with a bold claim ('total badass') and clear numbered preview."
+  },
+  "why": [
+   "Strong chronological numbered list structure sets clear expectations",
+   "High-contrast archival photos combined with dynamic motion graphics",
+   "Fast pacing and punchy script eliminate any dead air"
+  ],
+  "value": "Entertaining historical trivia about Queen Elizabeth II that challenges conventional perceptions.",
+  "share_t": "Fun, surprising trivia about a major historical figure makes people want to share with friends.",
+  "com_t": "Viewers debating the historical facts or sharing opinions on the royal family.",
+  "rew": "The density of historical facts makes viewers rewatch to absorb details.",
+  "emo": "Starts surprising and curiosity-driven, builds through fascinating historical trivia, ends on an impressive and memorable note.",
+  "adapt": "Title: 3 Quiet Rules Queen Elizabeth Broke. First-frame text: She broke the rules. First 3s: 'Queen Elizabeth seemed traditional, but she quietly broke every rule.' Payoff: Her legacy of quiet resilience."
+ },
+ {
+  "id": "C3JFR7h2JZ8",
+  "grp": "royal",
+  "ch": "Trends Tube",
+  "views": 7932020,
+  "like": 0.015806818439691277,
+  "com": 0.00024798222899084977,
+  "dur": 59,
+  "voice": "synthetic",
+  "cuts": 20,
+  "avgshot": 2.7,
+  "hook_text": false,
+  "fmt": "visual essay",
+  "hook": {
+   "first_frame_visual": "A white chicken walking on dirt, with an egg appearing suddenly on the ground behind it.",
+   "first_frame_text": "none",
+   "first_words_spoken": "Princess Catherine, the Princess of Wales, has displayed a preference for certain colors throughout her public appearances.",
+   "first_3s_audio": "A chicken clucking sound effect followed by a surprised 'Wow' and then the narrator's voice.",
+   "why_it_stops_the_scroll": "The video starts with a completely unrelated, bizarre clip of a chicken laying an egg, creating immediate cognitive dissonance that forces the viewer to pause to understand what is happening."
+  },
+  "why": [
+   "The bizarre hook creates immediate curiosity.",
+   "The topic is highly specific and visually appealing.",
+   "The narration is clear and well-paced."
+  ],
+  "value": "Insight into royal fashion psychology.",
+  "share_t": "Fashion enthusiasts interested in royal style.",
+  "com_t": "Debating the color choices or the bizarre opening.",
+  "rew": "To compare the outfits mentioned in the narration.",
+  "emo": "Confusion to curiosity to informative engagement.",
+  "adapt": {
+   "title": "The Psychology of Royal Color",
+   "first_frame_text": "Why she stopped wearing blue.",
+   "first_3s_audio": "A soft, calm female voice-over: 'Have you noticed a change in the Princess of Wales' wardrobe?'",
+   "payoff": "A summary of how her color choices reflect her evolving public role."
+  }
+ },
+ {
+  "id": "VfhtIGMFNpQ",
+  "grp": "royal",
+  "ch": "Theviralscope",
+  "views": 7322918,
+  "like": null,
+  "com": 0.00023528871960603684,
+  "dur": 14,
+  "voice": "none",
+  "cuts": 9,
+  "avgshot": 1.4,
+  "hook_text": true,
+  "fmt": "before-and-after comparison slideshow",
+  "hook": {
+   "first_frame_visual": "Black and white photo of a young Princess Diana smiling outdoors wearing a sweater and skirt",
+   "first_frame_text": "princess diana before charles commented on her body...",
+   "first_words_spoken": "none",
+   "first_3s_audio": "melancholic, slow pop song with emotional vocal styling",
+   "why_it_stops_the_scroll": "Teases a tragic narrative about a universally beloved historical figure using rare younger archive photos"
+  },
+  "why": [
+   "Leverages one of the most famous and sympathetic figures in modern history",
+   "Clear before-and-after contrast structure that hits on an emotional, visual level",
+   "Melancholic music immediately primes the viewer to feel empathy and sadness"
+  ],
+  "value": "Emotional storytelling and visual proof of a historical tragedy involving body image",
+  "share_t": "Evokes strong sympathy for Diana and anger toward Charles, driving shares among fans",
+  "com_t": "Viewers rushing to express sorrow, anger at Charles, and admiration for Diana in the comments",
+  "rew": "Comparing the physical changes in posture and weight across the photos",
+  "emo": "From nostalgic and warm to sorrowful, empathetic, and tragic",
+  "adapt": "Title: 'Grace Kelly before Hollywood changed her...', First-frame text: 'Grace Kelly before the studio demands...', First 3 seconds: Archive photo of natural young Grace Kelly with warm acoustic music, Payoff: Elegant yet constrained later Hollywood portraits showing the toll of perfectionism."
+ },
+ {
+  "id": "CspE3CJGGwE",
+  "grp": "makeover",
+  "ch": "Aylen Park",
+  "views": 6563194,
+  "like": 0.05820169265147427,
+  "com": 0.0010138356416098625,
+  "dur": 41,
+  "voice": "none",
+  "cuts": 28,
+  "avgshot": 1.4,
+  "hook_text": true,
+  "fmt": "Transformation Makeover",
+  "hook": {
+   "first_frame_visual": "A young woman hugging her mother, both smiling at the camera in a bathroom setting.",
+   "first_frame_text": "Turning my 50 year old mom into an ABG \ud83d\udc85",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Upbeat, melodic R&B/Pop music with a heavy bass beat.",
+   "why_it_stops_the_scroll": "The contrast between the text '50 year old mom' and the youthful appearance of the woman on screen creates immediate cognitive dissonance and curiosity. The 'ABG' subculture reference targets a specific, high-engagement niche."
+  },
+  "why": [
+   "Subversion of expectations: A 50-year-old adopting a Gen Z aesthetic.",
+   "High-speed rhythmic editing: Keeps the viewer engaged through the repetitive process.",
+   "Visual satisfaction: The 'clean' application of makeup tools is inherently satisfying to watch."
+  ],
+  "value": "Entertainment, makeup inspiration, and a heartwarming look at a mother-daughter relationship.",
+  "share_t": "The 'shock factor' of a 50-year-old looking like a 20-something trendsetter.",
+  "com_t": "Users commenting on how young the mother looks ('She looks like your sister!') or asking about specific products used.",
+  "rew": "The mother's youthful appearance makes viewers want to re-examine her 'before' state or look closer at the makeup details.",
+  "emo": "Curiosity -> Satisfaction -> Amazement.",
+  "adapt": {
+   "title": "Timeless Elegance: A 1950s Hollywood Makeover",
+   "first_frame_text": "Giving my grandmother a 1950s Hollywood Starlet makeover \u2728",
+   "first_3s": "A shot of a grandmother in casual wear, followed by a 1-second black-and-white flash of her in a gown and red lipstick.",
+   "payoff": "A slow-motion reveal of the grandmother in a classic silk dress, pearls, and a vintage 'Old Hollywood' wave hairstyle, using soft lighting and a classic jazz track."
+  }
+ },
+ {
+  "id": "AtWtfwoXRy4",
+  "grp": "royal",
+  "ch": "The British Royal Family",
+  "views": 6074322,
+  "like": 0.030620042862396824,
+  "com": 0.00018586436478013513,
+  "dur": 47,
+  "voice": "synthetic",
+  "cuts": 6,
+  "avgshot": 7.6,
+  "hook_text": true,
+  "fmt": "listicle documentary",
+  "hook": {
+   "first_frame_visual": "Kate Middleton walking on a red carpet in a gold sequined gown.",
+   "first_frame_text": "4 dress code rules",
+   "first_words_spoken": "4 dress code rules that every member of the royal family must follow.",
+   "first_3s_audio": "4 dress code rules that every member of the royal family must follow.",
+   "why_it_stops_the_scroll": "The high-quality, glamorous footage of royalty combined with the promise of exclusive, 'forbidden' knowledge creates immediate intrigue."
+  },
+  "why": [
+   "High-interest subject matter (Royalty)",
+   "Clear, numbered list structure",
+   "Visual proof (archive footage) for every claim"
+  ],
+  "value": "Educational entertainment about royal culture.",
+  "share_t": "People love sharing 'did you know' facts about celebrities.",
+  "com_t": "Viewers often comment on their opinions of these rules (e.g., 'that's so outdated').",
+  "rew": "The rapid-fire facts make it easy to miss one, encouraging a rewatch.",
+  "emo": "Curiosity -> Satisfaction of learning secrets -> Mild surprise at strictness.",
+  "adapt": {
+   "title": "Timeless Elegance: The Hidden Meaning Behind Royal Accessories",
+   "first_frame_text": "The Secret Language of Royal Jewelry",
+   "first_3s_audio": "Have you ever wondered why royals wear specific jewels at certain times? It's not just fashion; it's a language.",
+   "payoff": "By understanding these subtle rules, you gain a new appreciation for the deliberate, timeless image the royal family projects."
+  }
+ },
+ {
+  "id": "EBy1G3us0FQ",
+  "grp": "royal",
+  "ch": "A brief update",
+  "views": 5752365,
+  "like": 0.021898471324403094,
+  "com": 0.00033916484784953665,
+  "dur": 30,
+  "voice": "synthetic",
+  "cuts": 7,
+  "avgshot": 4,
+  "hook_text": true,
+  "fmt": "educational listicle",
+  "hook": {
+   "first_frame_visual": "A young girl sitting on a stool in a studio setting, looking at the camera.",
+   "first_frame_text": "Charlotte has to",
+   "first_words_spoken": "Princess Charlotte has to follow the rules when it comes to sitting.",
+   "first_3s_audio": "Princess Charlotte has to follow the rules when it comes to sitting.",
+   "why_it_stops_the_scroll": "It immediately introduces a specific, relatable, and slightly mysterious rule about a famous royal figure."
+  },
+  "why": [
+   "High-interest subject matter (Royal family)",
+   "Clear, actionable etiquette advice",
+   "Fast-paced visual changes keep engagement high"
+  ],
+  "value": "Learns a specific etiquette technique used by royalty.",
+  "share_t": "People interested in etiquette or royal family trivia.",
+  "com_t": "People debating the necessity of such rules.",
+  "rew": "To see the visual difference between the 'Duchess Slant' and crossing legs.",
+  "emo": "Curiosity to learning to appreciation of royal etiquette.",
+  "adapt": "Title: 'The Timeless Elegance of Sitting'. First-frame text: 'The Secret to Graceful Sitting'. First 3 seconds: A slow, elegant shot of a woman sitting properly. Payoff: Explain that the 'Duchess Slant' is about both modesty and posture, encouraging viewers to practice it for a more polished look."
+ },
+ {
+  "id": "F84W79B4-mM",
+  "grp": "royal",
+  "ch": "news.com.au",
+  "views": 5732644,
+  "like": 0.03830780351963248,
+  "com": 0.0004772666853200722,
+  "dur": 52,
+  "voice": "synthetic",
+  "cuts": 8,
+  "avgshot": 6.3,
+  "hook_text": true,
+  "fmt": "listicle / compilation",
+  "hook": {
+   "first_frame_visual": "Kate Middleton in a green coat and hat, smiling in a carriage.",
+   "first_frame_text": "She may be one of the more polished",
+   "first_words_spoken": "She may be one of the more polished royal family members, but Kate Middleton has been known to break a royal rule or two.",
+   "first_3s_audio": "She may be one of the more polished royal family members, but Kate Middleton has been known to break a royal rule or two.",
+   "why_it_stops_the_scroll": "It promises a 'behind the scenes' look at a public figure known for perfection, creating immediate curiosity."
+  },
+  "why": [
+   "High-interest subject matter (Royal Family)",
+   "Fast-paced list format",
+   "Relatable content (humanizing a public figure)"
+  ],
+  "value": "Entertainment and insight into the human side of the royal family.",
+  "share_t": "People who follow royal news will want to share this with others who enjoy the same topic.",
+  "com_t": "Viewers will likely comment on whether they think these rules are outdated or if they like Kate's behavior.",
+  "rew": "The quick cuts and specific examples make it easy to re-watch to catch details.",
+  "emo": "Curiosity to surprise to admiration.",
+  "adapt": "Title: 'Timeless Elegance: The Grace of Queen Elizabeth'. First frame text: 'The Queen's Unspoken Rules'. First 3 seconds: A slow, high-quality clip of Queen Elizabeth waving, soft piano music. Payoff: A final shot of her smiling, with the text 'True grace is in the details'."
+ },
+ {
+  "id": "eDUP1O5KE1s",
+  "grp": "oldmoney",
+  "ch": "Surbhi Gandhi",
+  "views": 5607200,
+  "like": 0.032226244828078184,
+  "com": 4.084034812384078e-05,
+  "dur": 49,
+  "voice": "creator",
+  "cuts": 12,
+  "avgshot": 3.9,
+  "hook_text": true,
+  "fmt": "listicle lifestyle hack",
+  "hook": {
+   "first_frame_visual": "Creator looking directly at camera with microphone in foreground, wearing a blue floral dress and pearl necklace",
+   "first_frame_text": "5 BODY LANGUAGE HACKS",
+   "first_words_spoken": "paanch body language hacks jo aapko help karenge zyada classy lagne mein",
+   "first_3s_audio": "Upbeat background music with creator speaking Hindi energetically",
+   "why_it_stops_the_scroll": "Clear numbered list promise ('5 body language hacks') targeting a universal desire ('look classier') with high visual clarity."
+  },
+  "why": [
+   "Clear numbered list structure sets expectations for length",
+   "Use of recognizable celebrity examples (Aishwarya Rai, Deepika Padukone) anchors abstract concepts",
+   "Kinetic typography and split-screen cutaways maintain high visual engagement"
+  ],
+  "value": "Actionable etiquette and body language adjustments that immediately improve personal presentation.",
+  "share_t": "Sending to friends who rush or lack posture awareness.",
+  "com_t": "Agreeing with celebrity examples or asking for more tips.",
+  "rew": "Checking specific tips like eye smiles and hand awareness.",
+  "emo": "curiosity at hook -> amusement during comedic film clip -> practical enlightenment through actionable tips",
+  "adapt": "Title: '3 Timeless Elegance Habits'. First-frame text: 'Elegance Habits'. First 3 seconds: Slow, calm pan of classic film footage of Audrey Hepburn with soft ambient string music. Payoff: Mastering quiet grace over hurried reactions."
+ },
+ {
+  "id": "n6M3shXBVeU",
+  "grp": "oldmoney",
+  "ch": "Lisa Glamour",
+  "views": 5093600,
+  "like": 0.044326016962462696,
+  "com": 0.0009633657923668918,
+  "dur": 34,
+  "voice": "none",
+  "cuts": 11,
+  "avgshot": 3,
+  "hook_text": true,
+  "fmt": "social experiment street style",
+  "hook": {
+   "first_frame_visual": "A stylish woman in a black midi dress, black wide-brim hat, and heels confidently walking toward the camera on a city sidewalk.",
+   "first_frame_text": "People's Reactions to an Elegant Lady",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Upbeat vocal jazz music",
+   "why_it_stops_the_scroll": "Striking, highly polished visual aesthetic and immediate intrigue about how passersby will react."
+  },
+  "why": [
+   "Strong visual contrast between the elegant subject and casual passersby",
+   "Captivating sync between the upbeat soundtrack lyrics ('She's a lady') and the visual narrative",
+   "Genuine, candid reactions from people on the street"
+  ],
+  "value": "Aesthetically pleasing street style inspiration and social validation of classic elegance.",
+  "share_t": "Aesthetic appeal and conversation around public elegance and confidence.",
+  "com_t": "Discussing the reactions of specific people in the background or praising the outfit.",
+  "rew": "Observing specific background reactions of pedestrians.",
+  "emo": "Intrigue and admiration as the viewer observes genuine public reactions to high elegance.",
+  "adapt": "Title: 'How People React to Timeless Elegance in the City'. First-frame text: 'Classic Elegance Never Fails'. First 3 seconds: A woman in a 1950s-inspired silhouette coat and vintage hat walking down a European street. Payoff: A warm smile from an elderly passerby appreciating her timeless style."
+ },
+ {
+  "id": "uNwYY1-nifM",
+  "grp": "oldmoney",
+  "ch": "Old Money",
+  "views": 4526877,
+  "like": 0.02462978340255324,
+  "com": 0.0003717794850622184,
+  "dur": 20,
+  "voice": "none",
+  "cuts": 12,
+  "avgshot": 1.6,
+  "hook_text": true,
+  "fmt": "listicle montage",
+  "hook": {
+   "first_frame_visual": "Ivanka Trump walking in a pink dress",
+   "first_frame_text": "TOP 3 Most Elegant women in the world",
+   "first_words_spoken": "none",
+   "first_3s_audio": "French pop song",
+   "why_it_stops_the_scroll": "The high-quality, aspirational imagery of a well-known figure combined with a clear, bold listicle title promises a quick, visually pleasing ranking."
+  },
+  "why": [
+   "High-status, aspirational subjects",
+   "Fast-paced, rhythmic editing",
+   "Clear, simple listicle format"
+  ],
+  "value": "Visual inspiration for fashion and style",
+  "share_t": "Viewers might share to agree or disagree with the ranking",
+  "com_t": "Debating the ranking or adding other candidates",
+  "rew": "The high-quality fashion images invite a second look to appreciate the outfits",
+  "emo": "Aspirational, admiring, and visually satisfying",
+  "adapt": "Title: '3 Timeless Style Icons'. First-frame text: 'The Most Elegant Women in History'. First 3 seconds: A slow-motion, black-and-white clip of Audrey Hepburn. Payoff: A final slide asking, 'Who is your ultimate style icon? Comment below.'"
+ },
+ {
+  "id": "lXQ5yQVhFVU",
+  "grp": "royal",
+  "ch": "Royal News",
+  "views": 3742792,
+  "like": 0.025204446306393728,
+  "com": 0.0010155520264016808,
+  "dur": 57,
+  "voice": "synthetic",
+  "cuts": 25,
+  "avgshot": 2.28,
+  "hook_text": true,
+  "fmt": "royal comparison essay",
+  "hook": {
+   "first_frame_visual": "Princess Diana curtsying to an older gentleman in a suit, kneeling gracefully on one knee.",
+   "first_frame_text": "the same",
+   "first_words_spoken": "the same curtsey.",
+   "first_3s_audio": "Narrator voice-over: 'The same curtsey, Diana and Kate exude nobility and elegance...'",
+   "why_it_stops_the_scroll": "High-contrast claim combining beloved royal icons (Diana, Kate) versus a controversial one (Camilla) using striking archival footage."
+  },
+  "why": [
+   "High-status subjects (Diana, Kate, Camilla) instantly capture attention from a massive global audience.",
+   "Clear narrative contrast pitting beloved icons against a controversial figure.",
+   "Rapid-fire pacing with zero dead air and clear word-by-word captions."
+  ],
+  "value": "Entertainment and royal gossip insight detailing subtle body language and etiquette differences among royal family members.",
+  "share_t": "Sharing with friends who follow royal family drama and fashion.",
+  "com_t": "Debating in comments whether the criticism of Camilla is fair or biased.",
+  "rew": "Comparing Camilla's awkward curtsy footage closely against Diana's.",
+  "emo": "Intrigue and curiosity at the hook -> admiration for Diana and Kate -> mild scandalous tension regarding Camilla.",
+  "adapt": "Title: The Art of the Royal Curtsey. First-frame text: True Elegance. First 3 seconds: Archive clip of Princess Diana gracefully curtsying in a stunning gown. Payoff: A timeless reminder of how grace defines true royalty."
+ },
+ {
+  "id": "r-ifRZPyGtk",
+  "grp": "makeover",
+  "ch": "MAKEOVERGUY",
+  "views": 3453545,
+  "like": 0.013680725167907179,
+  "com": 0.002739503901063979,
+  "dur": 195,
+  "voice": "mix",
+  "cuts": 28,
+  "avgshot": 6.9,
+  "hook_text": false,
+  "fmt": "makeover transformation story",
+  "hook": {
+   "first_frame_visual": "Mary, a woman with extremely long grey hair, standing against a white background.",
+   "first_frame_text": "none",
+   "first_words_spoken": "Hello, my name is Mary, I'm from Colorado...",
+   "first_3s_audio": "Mary introducing herself in a soft, somewhat weary voice.",
+   "why_it_stops_the_scroll": "The visual of her incredibly long, unkempt hair combined with the vulnerable statement 'I feel old on the inside' creates immediate empathy and curiosity for the 'after' result."
+  },
+  "why": [
+   "Extreme visual contrast between the 'before' and 'after'.",
+   "High emotional stakes regarding a long-term marriage and self-image.",
+   "Professional 'TV-style' production values like the curtain reveal."
+  ],
+  "value": "Inspiration and emotional satisfaction; the 'Cinderella effect' of seeing someone's life improved through a change in appearance.",
+  "share_t": "The husband's genuine, shocked reaction is highly emotional and wholesome.",
+  "com_t": "The question 'What do YOU think?' and the debate over whether she should have kept her long hair.",
+  "rew": "The side-by-side comparison at the end makes viewers want to go back and look at the 'before' details again.",
+  "emo": "Starts with sadness and a sense of being 'ugly' or 'invisible', moves through anticipation, and ends in high-energy joy and self-love.",
+  "adapt": {
+   "title": "The Weight of the Past",
+   "first_frame_text": "Is your hair aging you?",
+   "first_3s_audio": "Soft female voice-over: 'Mary felt 80 at 60, until she let go of the weight.'",
+   "payoff": "Archive film clips of elegant women from the 1950s getting chic, shorter haircuts, ending with a side-by-side of a dated look vs. a timeless one."
+  }
+ },
+ {
+  "id": "3NKUX3Qt30U",
+  "grp": "style",
+  "ch": "Woman Of Elegance",
+  "views": 2768963,
+  "like": 0.032849120771927975,
+  "com": 0.00105562985131979,
+  "dur": 60,
+  "voice": "none",
+  "cuts": 14,
+  "avgshot": 4.2,
+  "hook_text": true,
+  "fmt": "negative listicle demonstration",
+  "hook": {
+   "first_frame_visual": "A woman in a pink dress walking down a city street while eating from a foil container.",
+   "first_frame_text": "1. Eat on the Go",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Upbeat pop music (remix of 'Girls Just Want to Have Fun')",
+   "why_it_stops_the_scroll": "It presents a visual contradiction: a very well-dressed, 'elegant' woman performing a messy, everyday action, immediately labeled with a red 'X' to signal a 'don't' list."
+  },
+  "why": [
+   "Negative framing ('Don't do this') is often more clickable than positive framing.",
+   "High production value in the creator's outfit and setting makes her an authority on 'elegance'.",
+   "The use of a familiar, upbeat song keeps the mood light despite the 'corrective' nature of the content."
+  ],
+  "value": "Learns specific social 'rules' for maintaining a high-class or 'elegant' image through negative examples.",
+  "share_t": "Relatability; viewers might share it with friends as a 'we've all done this' or as a guide for someone they think needs etiquette tips.",
+  "com_t": "Debate over the rules. Some viewers may find 'eating on the go' or 'running for a bus' to be perfectly normal, leading to defensive or inquisitive comments.",
+  "rew": "The fast pace of the text and the reaction video overlays might cause viewers to rewatch to catch details they missed.",
+  "emo": "Judgmental/Educational -> Humorous -> Professional",
+  "adapt": "Title: '3 Public Habits That Dim Your Elegance'. First frame: A black-and-white clip of a 1950s film star looking distressed while carrying too many bags. Text: '1. Overloading yourself'. Payoff: A clip of Audrey Hepburn walking gracefully with a single small bag. Soft female VO: 'True elegance is found in the ease of your movement. Avoid carrying more than you can manage with grace.'"
+ },
+ {
+  "id": "Y4L73cvER4s",
+  "grp": "style",
+  "ch": "Classy After 50",
+  "views": 1243815,
+  "like": 0.021881871500182906,
+  "com": 0.0006166511900885581,
+  "dur": 18,
+  "voice": "none",
+  "cuts": 5,
+  "avgshot": 3.4,
+  "hook_text": false,
+  "fmt": "dress lookbook montage",
+  "hook": {
+   "first_frame_visual": "A smiling woman walking toward the camera in a cream floral midi dress with a mandarin collar",
+   "first_frame_text": "none",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Upbeat lounge electronic music playing with instrumental beat",
+   "why_it_stops_the_scroll": "High-fashion aesthetic, elegant styling, and smooth continuous movement"
+  },
+  "why": [
+   "High aesthetic consistency across all clips",
+   "Pacing perfectly matches the upbeat background track",
+   "Clear, elegant subject focus with zero clutter"
+  ],
+  "value": "Visual inspiration for stylish spring and summer dresses",
+  "share_t": "Sharing outfit ideas with friends interested in fashion",
+  "com_t": "Asking where to buy specific dresses featured in the video",
+  "rew": "Checking out specific dress designs from the quick cuts",
+  "emo": "Inspirational and uplifting, evoking desire for elegant wardrobe upgrades",
+  "adapt": "A channel for women 40+ could create a Short titled 'Timeless Elegance: 5 Midi Dresses for Every Occasion', featuring real archive footage of classic style icons in timeless silhouettes, set to a soft acoustic soundtrack with calm pacing."
+ },
+ {
+  "id": "kYZER5dVNco",
+  "grp": "film",
+  "ch": "Vintage Memories 66",
+  "views": 1204473,
+  "like": 0.05080562204383162,
+  "com": 0.001248678882797705,
+  "dur": 180,
+  "voice": "none",
+  "cuts": 14,
+  "avgshot": 18.5,
+  "hook_text": false,
+  "fmt": "cinematic fashion archive showcase",
+  "hook": {
+   "first_frame_visual": "Close-up of Audrey Hepburn wearing an enormous black-and-white striped hat and lace gown with a dramatic bow",
+   "first_frame_text": "none",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Classical romantic waltz music with soft chimes",
+   "why_it_stops_the_scroll": "Striking, instantly recognizable elegance of Audrey Hepburn in high-contrast black and white with a colossal hat, creating immediate visual arresting power"
+  },
+  "why": [
+   "Leverages the universal, timeless appeal of Audrey Hepburn and legendary costume designers like Givenchy and Cecil Beaton",
+   "Flawless visual consistency across high-end AI reconstructions of iconic film moments",
+   "Clean, elegant text overlays providing immediate context without cluttering the screen"
+  ],
+  "value": "A curated visual archive of cinematic fashion history linking iconic dresses to their films and designers",
+  "share_t": "Sent to friends who love classic Hollywood fashion or Audrey Hepburn style",
+  "com_t": "Debating which movie had Audrey's best costume",
+  "rew": "Spotting favorite movie costumes and noting the credited designers",
+  "emo": "Nostalgic awe, admiration of timeless elegance, visual delight",
+  "adapt": "A Short titled 'Timeless Elegance: 3 Givenchy Masterpieces' featuring real archival film clips of Audrey Hepburn, soft ambient piano music, and a calm voice-over discussing how simplicity defines true style."
+ },
+ {
+  "id": "wBuLsxq8TMo",
+  "grp": "style",
+  "ch": "Aliceinparis",
+  "views": 966861,
+  "like": 0.011702819743479156,
+  "com": 0.00040440145998235524,
+  "dur": 63,
+  "voice": "creator",
+  "cuts": 10,
+  "avgshot": 5.7,
+  "hook_text": true,
+  "fmt": "right vs wrong listicle",
+  "hook": {
+   "first_frame_visual": "Creator on camera in a chic cream blazer and striped top, sitting in front of a luxury bag display.",
+   "first_frame_text": "5 things Parisians NEVER Wear in Paris \u274c",
+   "first_words_spoken": "Five things Parisians never wear in Paris",
+   "first_3s_audio": "Creator's voice over a light, sophisticated jazz-pop track.",
+   "why_it_stops_the_scroll": "It uses a strong negative hook ('NEVER Wear') and taps into the universal desire to look like a local rather than a tourist in a high-status city like Paris."
+  },
+  "why": [
+   "Cultural Gatekeeping: It offers 'secret' rules of a highly admired culture.",
+   "Visual Contrast: The use of X and Check marks makes the advice instantly digestible.",
+   "Authority: The creator's own style and accent reinforce her expertise on the subject."
+  ],
+  "value": "Practical fashion advice for traveling to Paris and an understanding of the 'Quiet Luxury' aesthetic.",
+  "share_t": "Sending to a friend or family member who is planning a trip to France.",
+  "com_t": "Debating the 'red beret' rule or sharing their own experiences with heels in Paris.",
+  "rew": "Checking the specific brand names (Goyard) or re-examining the 'correct' outfit examples.",
+  "emo": "Informative and slightly exclusive, making the viewer feel like they are getting 'insider' knowledge to avoid embarrassment.",
+  "adapt": {
+   "title": "The Silent Language of Parisian Streets",
+   "first_frame_text": "3 Footwear Choices to Avoid in Paris",
+   "first_3s": "Soft female voice-over: 'Parisian elegance isn't about the height of the heel, but the ease of the stride.'",
+   "payoff": "Show a montage of 1960s French film clips featuring women in ballet flats and trench coats, contrasting with modern stock footage of tourists struggling in stilettos on cobblestones."
+  }
+ },
+ {
+  "id": "DqmjcTOqLQM",
+  "grp": "style",
+  "ch": "Desi Rich",
+  "views": 869824,
+  "like": 0.09116786844235156,
+  "com": 0.001491106246780958,
+  "dur": 49,
+  "voice": "creator",
+  "cuts": 10,
+  "avgshot": 4.8,
+  "hook_text": true,
+  "fmt": "myth vs reality lookbook",
+  "hook": {
+   "first_frame_visual": "A woman in a flowing burgundy halter-neck maxi dress walking toward a full-length mirror.",
+   "first_frame_text": "They said it's too",
+   "first_words_spoken": "They said it's too hot to dress classy.",
+   "first_3s_audio": "The creator's voice speaking clearly over a very faint ambient background.",
+   "why_it_stops_the_scroll": "It addresses a common fashion frustration (staying stylish in the heat) and immediately challenges a popular belief with a confident tone."
+  },
+  "why": [
+   "High visual aesthetic and aspirational lifestyle.",
+   "Strong rhythmic synchronization between music and editing.",
+   "Solves a specific, seasonal problem for the target audience."
+  ],
+  "value": "Provides specific visual examples of how to use fabrics (linen), silhouettes (maxi dresses), and accessories (hats) to maintain a high-end aesthetic in summer.",
+  "share_t": "Sharing with friends who are planning summer vacations or complaining about the weather.",
+  "com_t": "Asking for links to specific items or debating which outfit was the best.",
+  "rew": "Viewers likely rewatch to catch details of specific outfits, accessories, or to see the brand of a bag/shoe.",
+  "emo": "Skepticism to Inspiration",
+  "adapt": {
+   "title": "The Art of Summer Linen",
+   "first_frame_text": "They say linen is too hard to style.",
+   "first_3s": "A soft female voice-over says, 'They say linen is too difficult to keep elegant,' over a clip of a vintage film star in a crisp white suit.",
+   "payoff": "A montage of high-quality stock footage showing timeless linen pieces (wide-leg trousers, button-downs, midi skirts) in neutral tones, set to a slow, jazzy lo-fi beat."
+  }
+ },
+ {
+  "id": "a9_JPn-dK9A",
+  "grp": "style",
+  "ch": "Julianna Lee",
+  "views": 681075,
+  "like": 0.028632676283816026,
+  "com": 0.0002775024777006938,
+  "dur": 58,
+  "voice": "creator",
+  "cuts": 13,
+  "avgshot": 4.46,
+  "hook_text": true,
+  "fmt": "educational style guide",
+  "hook": {
+   "first_frame_visual": "Creator on the right eating a snack; on the left, a press photo of a model in a black wrap top and trousers.",
+   "first_frame_text": "among the",
+   "first_words_spoken": "Among the different body types,",
+   "first_3s_audio": "Among the different body types, there's one that's rarely discussed",
+   "why_it_stops_the_scroll": "It uses a 'hidden knowledge' hook by claiming there is a common but rarely discussed body type, immediately making the viewer wonder if they belong to it."
+  },
+  "why": [
+   "Niche Authority: The creator uses specific terminology ('hip dips', 'high hip placement') that makes her sound like an expert.",
+   "Visual Proof: The split-screen comparison between Figure 8, Apple, and Hourglass makes the abstract concept easy to understand.",
+   "Problem/Solution: It identifies a common styling struggle (high-waisted skirts laying weirdly) and provides an immediate alternative."
+  ],
+  "value": "Learns how to identify a specific body type and receives practical fashion advice to improve their appearance.",
+  "share_t": "Tagging friends who have struggled to find their body type or who fit the description perfectly.",
+  "com_t": "Users asking for help with other body types or confirming that they finally found their match.",
+  "rew": "Viewers who identify as a 'Figure 8' will rewatch to take notes on the specific clothing items mentioned (e.g., column skirts, asymmetrical tops).",
+  "emo": "Curiosity (what is this type?) -> Recognition (that's me!) -> Relief (here is how to fix my styling issues).",
+  "adapt": {
+   "title": "The Forgotten Silhouette: The Figure 8",
+   "first_frame_text": "The most common body type no one mentions",
+   "first_3s": "Archive footage of a 1950s fashion show. Voiceover: 'In the world of timeless elegance, one silhouette is often misidentified.'",
+   "payoff": "Show classic film stars (e.g., Sophia Loren) who fit the type, followed by stock footage of elegant wrap dresses and column skirts as the 'timeless' solution."
+  }
+ },
+ {
+  "id": "sJoHVCsLRhU",
+  "grp": "style",
+  "ch": "Lydia Tomlinson",
+  "views": 548617,
+  "like": 0.028699438770581297,
+  "com": 0.0010189257715309589,
+  "dur": 95,
+  "voice": "creator",
+  "cuts": 14,
+  "avgshot": 6.7,
+  "hook_text": true,
+  "fmt": "critique and transformation",
+  "hook": {
+   "first_frame_visual": "A woman in a well-lit, organized walk-in closet wearing a long grey coat, black leggings, white socks, and grey Ugg boots.",
+   "first_frame_text": "is my",
+   "first_words_spoken": "This is my official plea for this look to be banned.",
+   "first_3s_audio": "The creator's voice making a bold, controversial statement about a popular fashion trend.",
+   "why_it_stops_the_scroll": "It uses a strong 'negative' hook ('plea for this look to be banned') which creates immediate curiosity and debate, especially since the outfit shown is very common."
+  },
+  "why": [
+   "Strong negative hook creates immediate engagement.",
+   "High-quality aesthetic environment (closet) establishes authority.",
+   "Clear problem/solution structure provides tangible value.",
+   "The 'Why I'd never wear this' series title creates a recurring format viewers can recognize."
+  ],
+  "value": "Learns how to style leggings in a more sophisticated, 'grown-up' way by focusing on proportions and footwear.",
+  "share_t": "Controversial fashion opinions often lead to users sharing with friends to ask 'Do you agree?'",
+  "com_t": "The strong opening statement ('plea for this look to be banned') invites viewers to defend the Ugg/legging look or agree with the creator.",
+  "rew": "The split-screen comparison at 1:16 happens quickly, prompting a rewatch to see the details of both outfits.",
+  "emo": "Critical/Opinionated -> Constructive/Educational -> Confident/Satisfied.",
+  "adapt": {
+   "title": "The Trench Coat Mistake",
+   "first_frame_text": "Stop wearing your trench like this.",
+   "first_3s": "Voice-over: 'The skinny jean and trench coat combo is officially tired. Here is how to make it timeless.'",
+   "payoff": "Archive footage of a woman in a 1960s film wearing a trench with wide trousers and a silk scarf, followed by modern stock footage of a similar 'elevated' look."
+  }
+ },
+ {
+  "id": "XGvaZoz7KS4",
+  "grp": "style",
+  "ch": "Classy Academy",
+  "views": 507688,
+  "like": 0.049384661445612266,
+  "com": 0.000191062227194655,
+  "dur": 79,
+  "voice": "human vo",
+  "cuts": 28,
+  "avgshot": 2.7,
+  "hook_text": true,
+  "fmt": "listicle guide",
+  "hook": {
+   "first_frame_visual": "A woman with her hair pulled back in a high bun, wearing a black sleeveless top, standing in front of a marbled bathroom mirror looking over her shoulder.",
+   "first_frame_text": "Ever wondered how some women always look so effortlessly elegant?",
+   "first_words_spoken": "Ever wondered how some women always look so effortlessly elegant?",
+   "first_3s_audio": "Calm, warm female voice-over saying: 'Ever wondered how some women always look so effortlessly elegant?' accompanied by soft atmospheric background music.",
+   "why_it_stops_the_scroll": "It addresses a universal aspiration (effortless elegance) immediately with high-aesthetic lifestyle imagery and a relatable question."
+  },
+  "why": [
+   "High-aesthetic, cohesive visual tone across all clips builds immediate trust and luxury positioning",
+   "Clear listicle framework (3 items) with bold section headers keeps viewers oriented and reduces cognitive load",
+   "Warm, calm voice-over pacing matches the 'effortless elegance' theme perfectly"
+  ],
+  "value": "Actionable framework for personal style improvement focused on timeless principles rather than consumerism",
+  "share_t": "Aesthetic style inspiration that women love sharing with friends who appreciate fashion and lifestyle content.",
+  "com_t": "Viewers debating which of the 3 habits they struggle with most or asking for brand recommendations.",
+  "rew": "The density of style advice makes viewers want to rewatch to note down the three specific rules.",
+  "emo": "Curiosity -> Aspiration -> Clarity -> Empowerment -> Desire for self-improvement",
+  "adapt": "Title: '3 Quiet Luxury Rules Every Woman Over 40 Needs'. First-frame text: 'Why some women over 40 always look expensive'. First 3 seconds: Calm voice-over with classic archival footage of timeless mature icons. Payoff: A curated guide to effortless style after 40."
+ },
+ {
+  "id": "koOp07NFd_8",
+  "grp": "style",
+  "ch": "Libby",
+  "views": 467990,
+  "like": 0.026152268210859208,
+  "com": 0.00019231180153422083,
+  "dur": 44,
+  "voice": "human vo",
+  "cuts": 14,
+  "avgshot": 3.07,
+  "hook_text": true,
+  "fmt": "educational fashion guide with outfit montage",
+  "hook": {
+   "first_frame_visual": "The creator is sitting on a light-colored couch in a modern living room, looking pensive and slightly distressed.",
+   "first_frame_text": "uncomfortable truth about why you don't look as good as other women in clothes",
+   "first_words_spoken": "This is the uncomfortable truth about why you don't look as good as other women in clothes.",
+   "first_3s_audio": "Creator's voice-over with a soft, rhythmic lo-fi beat starting immediately.",
+   "why_it_stops_the_scroll": "It uses a 'negative hook' by addressing a common insecurity ('not looking as good as others') and promises an 'uncomfortable truth,' which triggers curiosity and a desire for self-improvement."
+  },
+  "why": [
+   "High relatability: Addresses a universal struggle for women.",
+   "Visual evidence: The creator looks great in her outfits, proving she knows what she's talking about.",
+   "Actionable advice: Breaks down a complex topic (styling) into three simple steps."
+  ],
+  "value": "Learns why their clothes might not look 'right' and gets a simple 3-step process to fix it.",
+  "share_t": "Women who struggle with body image or fashion might share this with friends who have similar complaints.",
+  "com_t": "Viewers might comment their own body shape or ask for specific advice for their proportions.",
+  "rew": "The rapid montage of outfits at the end might prompt a rewatch to see the styling details more closely.",
+  "emo": "From frustration/insecurity to clarity and finally to confidence/empowerment.",
+  "adapt": {
+   "title": "The Secret to Timeless Silhouette",
+   "first_frame_text": "Why some clothes never look right on you",
+   "first_3s": "Archive footage of a 1950s fashion atelier. A soft, mature female voice says, 'The secret to elegance isn't the dress itself, but the harmony between the fabric and your unique frame.'",
+   "payoff": "A montage of classic film stars (e.g., Audrey Hepburn, Lauren Bacall) with different body types, each wearing silhouettes that perfectly complement their proportions, followed by a text overlay: 'Dress for your lines, not the trends.'"
+  }
+ },
+ {
+  "id": "T6RjG_4sBLE",
+  "grp": "style",
+  "ch": "Desi Rich",
+  "views": 453694,
+  "like": 0.11131952373185451,
+  "com": 0.0023518054018787996,
+  "dur": 180,
+  "voice": "creator",
+  "cuts": 8,
+  "avgshot": 32,
+  "hook_text": true,
+  "fmt": "outfit inspiration and lifestyle commentary",
+  "hook": {
+   "first_frame_visual": "A stylish Black woman in a red strapless jumpsuit standing in front of an arched mirror in a modern home, gesturing with her hands.",
+   "first_frame_text": "DESI RICH STYLE MENTOR Look, some of us are",
+   "first_words_spoken": "Look, some of us are still dressing like we get paid under the table,",
+   "first_3s_audio": "Confident speech from the creator with background music playing.",
+   "why_it_stops_the_scroll": "Relatable and humorous opening statement combined with high fashion visual presentation."
+  },
+  "why": [
+   "Strong, highly relatable hook addressing financial aspirations with humor.",
+   "Clever narrative metaphors ('fluent wire transfer', 'silent luxury with a Bluetooth speaker') for each outfit.",
+   "Polished visual presentation with high production quality and smooth modeling shots."
+  ],
+  "value": "Actionable fashion styling tips combined with confidence-boosting mindset advice.",
+  "share_t": "Relatable humor and career/fashion advice makes it highly shareable among working women.",
+  "com_t": "Audience comments on their favorite outfit or relates to the humorous financial commentary.",
+  "rew": "Viewers rewatch to catch specific outfit details and styling combinations.",
+  "emo": "Humorous and engaging start -> aspirational and stylish middle -> empowered and motivational finish.",
+  "adapt": "Title: Quiet Elegance After 40. First-frame text: 'Dress for the life you have curated.' First 3 seconds: Calm archival footage of a timeless woman walking in a classic trench coat. Payoff: 'True elegance never shouts; it simply enters the room.'"
+ },
+ {
+  "id": "dHflxfgVPKU",
+  "grp": "style",
+  "ch": "Midlife Posh Closet",
+  "views": 421184,
+  "like": 0.0030105607050600214,
+  "com": 2.1368333080079017e-05,
+  "dur": 11,
+  "voice": "none",
+  "cuts": 3,
+  "avgshot": 2.5,
+  "hook_text": true,
+  "fmt": "Side-by-side comparison (Do vs. Don't)",
+  "hook": {
+   "first_frame_visual": "Two women standing side-by-side in similar outfits; the left has a red 'X' and the right has a green checkmark.",
+   "first_frame_text": "LOOK THINNER",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Upbeat, rhythmic electronic pop music.",
+   "why_it_stops_the_scroll": "Immediate visual contrast using the 'X vs Checkmark' trope and a high-value promise ('Look Thinner') targeted at a specific demographic."
+  },
+  "why": [
+   "Visual contrast (X vs Checkmark) is instantly readable and creates a 'game' for the viewer.",
+   "High-speed delivery respects the viewer's time and fits the Short format perfectly.",
+   "Relatable models for the target demographic (women 40+) make the advice feel attainable."
+  ],
+  "value": "Quick, actionable fashion advice for improving silhouette and looking more polished.",
+  "share_t": "Sending to a friend or relative who enjoys classic fashion and styling tips.",
+  "com_t": "Viewers might comment on which look they prefer or ask for specific clothing brand names.",
+  "rew": "To study the specific styling details (tucking, belts, scarf placement) of the 'correct' outfits.",
+  "emo": "Curiosity leading to visual satisfaction as the 'better' outfits are revealed.",
+  "adapt": {
+   "title": "The Art of the Silhouette",
+   "first_frame_text": "INSTANT ELEGANCE",
+   "first_3_seconds": "Split screen using archival footage. Left: A woman in a bulky, shapeless 1950s coat. Right: A woman in a cinched-waist trench coat. Soft piano music.",
+   "payoff": "A series of 3 more comparisons using classic cinema clips showing the power of tailoring and waist definition, ending with a quote: 'Elegance is refusal.' - Coco Chanel."
+  }
+ },
+ {
+  "id": "3IPIlXKH-DU",
+  "grp": "etiquette",
+  "ch": "Woman Of Elegance",
+  "views": 352464,
+  "like": 0.05939613691043624,
+  "com": 0.0007575241726814654,
+  "dur": 43,
+  "voice": "none",
+  "cuts": 9,
+  "avgshot": 4.2,
+  "hook_text": true,
+  "fmt": "etiquette do's and don'ts tutorial",
+  "hook": {
+   "first_frame_visual": "A woman in a red dress sitting in an armchair in a luxurious room",
+   "first_frame_text": "How to Sit ELEGANTLY",
+   "first_words_spoken": "someone to count on",
+   "first_3s_audio": "Upbeat R&B/soul song playing with vocals starting right away",
+   "why_it_stops_the_scroll": "Strong title card paired with an immediate visual of a poised, well-dressed woman in a high-end setting."
+  },
+  "why": [
+   "Clear contrast between incorrect ('don't') and correct ('do') examples using visual markers.",
+   "Use of recognizable royal names ('Sussex', 'Spencer', 'Cambridge', 'Queen') adds authority and intrigue.",
+   "Consistent aesthetic, wardrobe, and setting maintain professional branding."
+  ],
+  "value": "Actionable posture tips categorized by royal names (Sussex, Spencer, Cambridge, Queen).",
+  "share_t": "Tagging a friend who needs etiquette lessons or sharing advice on poise.",
+  "com_t": "Discussing which royal posture style is preferred or most comfortable.",
+  "rew": "Reviewing the specific leg and ankle placements for each named posture.",
+  "emo": "From curiosity about posture mistakes to satisfaction in learning polished, correct techniques.",
+  "adapt": "A faceless elegance channel for women 40+ could create a Short titled '3 Timeless Postures of Grace'. First-frame text: 'How Graceful Women Sit'. First 3 seconds: Archive footage of Audrey Hepburn sitting elegantly, accompanied by soft classical piano. Payoff: Clear graphic breakdown of three classic sitting postures."
+ },
+ {
+  "id": "RBqODyQyCiA",
+  "grp": "etiquette",
+  "ch": "Woman Of Elegance",
+  "views": 337426,
+  "like": 0.04215146432106595,
+  "com": 0.0009039018925631102,
+  "dur": 61,
+  "voice": "none",
+  "cuts": 15,
+  "avgshot": 4,
+  "hook_text": true,
+  "fmt": "educational etiquette guide",
+  "hook": {
+   "first_frame_visual": "A woman sitting at a table with a plate of food and a ball of fufu, smiling and giving a thumbs up.",
+   "first_frame_text": "HOW TO EAT WITH YOUR HAND ELEGANTLY!",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Upbeat, rhythmic Afrobeat music.",
+   "why_it_stops_the_scroll": "The text is clear, addresses a specific cultural pain point, and the creator's friendly, confident demeanor promises a solution."
+  },
+  "why": [
+   "Clear, actionable 'Do vs Don't' structure.",
+   "High-contrast visual cues (Red X/Green Check).",
+   "Addresses a specific cultural niche with authority."
+  ],
+  "value": "Practical etiquette advice for eating traditional food, helping them feel more confident in social settings.",
+  "share_t": "Highly relatable content for people who eat this type of food, likely to be shared with friends/family.",
+  "com_t": "Viewers often comment on the etiquette rules, sharing their own experiences or debating the 'correct' way.",
+  "rew": "The density of information (many rules) encourages rewatching to catch all the tips.",
+  "emo": "Informative, slightly humorous, authoritative.",
+  "adapt": "Title: 'The Art of Tea: A Timeless Ritual'. First-frame text: 'How to Drink Tea Elegantly'. First 3 seconds: Close-up of a delicate teacup being lifted, soft piano music. Payoff: A montage of the correct way to hold the cup, stir, and sip, ending with a serene smile."
+ },
+ {
+  "id": "4h4LP7d1l8w",
+  "grp": "style",
+  "ch": "Estilo Victoria Moda",
+  "views": 300951,
+  "like": 0.010054792972942438,
+  "com": 0.00010632960182886915,
+  "dur": 10,
+  "voice": "none",
+  "cuts": 6,
+  "avgshot": 1.4,
+  "hook_text": false,
+  "fmt": "AI fashion lookbook slideshow",
+  "hook": {
+   "first_frame_visual": "A sophisticated older woman with silver hair in a black wrap top and a beige floral skirt.",
+   "first_frame_text": "none",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Upbeat swing/jazz music with lyrics 'Choo choo train, tracking down the track'",
+   "why_it_stops_the_scroll": "High-quality, aesthetically pleasing visual of an elegant woman; aspirational style that appeals to a specific demographic."
+  },
+  "why": [
+   "High visual quality: The AI images are very polished and 'expensive' looking.",
+   "Niche appeal: Targets a specific demographic (mature women) often underserved in mainstream fashion content.",
+   "Perfect pacing: The cuts match the upbeat tempo, keeping energy high and preventing boredom."
+  ],
+  "value": "Style inspiration for women over 50; visual satisfaction from high-quality, cohesive imagery.",
+  "share_t": "Sending to a friend or family member for style ideas for an upcoming event.",
+  "com_t": "Asking where to buy the clothes (even though they are AI-generated).",
+  "rew": "To look closer at specific outfit details or patterns.",
+  "emo": "Aspiration and admiration for the timeless style and grace presented.",
+  "adapt": "Title: Timeless Evening Elegance: The Black & Gold Collection. First-frame text: 'The Art of Evening Elegance'. First 3 seconds: Soft piano music. A slow zoom on a vintage archive photo of Audrey Hepburn in a black gown. Payoff: A montage of 5 classic, real-world evening looks from archive footage of galas or classic films, showing that true style never ages."
+ },
+ {
+  "id": "LOaAyMD_OhY",
+  "grp": "etiquette",
+  "ch": "Woman Of Elegance",
+  "views": 232572,
+  "like": 0.05365650207247648,
+  "com": 0.0013415200454052938,
+  "dur": 60,
+  "voice": "mix",
+  "cuts": 10,
+  "avgshot": 6,
+  "hook_text": true,
+  "fmt": "educational listicle with visual demonstrations",
+  "hook": {
+   "first_frame_visual": "A woman sitting at an outdoor restaurant table with food, looking at the camera.",
+   "first_frame_text": "NEVER spit ANYTHING out!",
+   "first_words_spoken": "Get into the groove, boy, you got to prove you're up to me",
+   "first_3s_audio": "Upbeat pop song with female vocals.",
+   "why_it_stops_the_scroll": "The bold, negative command 'NEVER spit ANYTHING out!' is immediately provocative and creates curiosity about what other 'don'ts' follow."
+  },
+  "why": [
+   "Strong, provocative hook.",
+   "Clear, visual demonstrations of 'what not to do'.",
+   "High-energy, recognizable music keeps the pace fast."
+  ],
+  "value": "Practical, actionable advice on social dining etiquette.",
+  "share_t": "People share this to 'call out' friends or to share helpful etiquette tips.",
+  "com_t": "Viewers comment on which etiquette rules they agree with or disagree with.",
+  "rew": "The list of tips is long enough that viewers might rewatch to catch all the 'don'ts'.",
+  "emo": "Amused, slightly shocked, then informed.",
+  "adapt": "Title: '3 Dining Mistakes You Might Be Making'. First-frame text: 'Stop doing this at dinner!'. First 3 seconds: A slow, elegant shot of a table setting with a soft voice-over: 'Dining is an art. Let's refine our table manners.' Payoff: A final shot of a perfectly set table with the text: 'Elegance is in the details.'"
+ },
+ {
+  "id": "u6y0Mgbp9R0",
+  "grp": "style",
+  "ch": "Beth Djalali",
+  "views": 228827,
+  "like": 0.013075380090636158,
+  "com": 0.000288427501999327,
+  "dur": 43,
+  "voice": "creator",
+  "cuts": 10,
+  "avgshot": 4.2,
+  "hook_text": true,
+  "fmt": "legacy rules listicle",
+  "hook": {
+   "first_frame_visual": "Close-up of an elegant older woman with short grey hair, gold hoop earrings, and a red top.",
+   "first_frame_text": "MY MOTHERS ACCESORY RULES.",
+   "first_words_spoken": "My mother had rules about accessories, not suggestions.",
+   "first_3s_audio": "Upbeat, rhythmic acoustic guitar and light percussion.",
+   "why_it_stops_the_scroll": "It uses the 'authority of legacy'\u2014positioning advice as 'rules' rather than tips, which creates immediate curiosity about high-standard etiquette."
+  },
+  "why": [
+   "Legacy Authority: Attributing advice to a mother makes it feel more 'proven' and timeless.",
+   "Strong Metaphors: Comparing an earlobe to a sentence or a bracelet to a diary makes the advice memorable.",
+   "Aesthetic Consistency: The creator's own polished appearance serves as proof of the rules' effectiveness."
+  ],
+  "value": "Practical, timeless fashion advice and a sense of connection to traditional elegance.",
+  "share_t": "High relatability for mothers and daughters; likely to be shared as a 'this reminds me of you' post.",
+  "com_t": "Viewers sharing their own family fashion rules or commenting on the 'unfinished sentence' metaphor.",
+  "rew": "The poetic phrasing (e.g., 'unfinished sentence') makes viewers want to hear the quotes again.",
+  "emo": "Starts with firm authority, moves into sentimental nostalgia, and ends with an empowering mindset shift.",
+  "adapt": {
+   "title": "The 3 Laws of Timeless Jewelry",
+   "first_frame_text": "Rules for the Elegant Woman",
+   "first_3s": "Slow-motion archive footage of a woman in the 1950s fastening a pearl necklace. Voiceover: 'Jewelry is never an afterthought.'",
+   "payoff": "A montage of classic style icons like Jackie O and Audrey Hepburn with the text: 'Dress from the jewelry box out.'"
+  }
+ },
+ {
+  "id": "qDAY8AQG0IA",
+  "grp": "oldmoney",
+  "ch": "BLENIN Women",
+  "views": 224345,
+  "like": 0.01930063072499944,
+  "com": 0.0001248077737413359,
+  "dur": 15,
+  "voice": "none",
+  "cuts": 4,
+  "avgshot": 3,
+  "hook_text": true,
+  "fmt": "couple outfit transition showcase",
+  "hook": {
+   "first_frame_visual": "A young couple posing against a wooden wall, the woman holding a black handbag and looking at the man.",
+   "first_frame_text": "you dress like my grandparents",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Bouncy vintage-style pop music playing.",
+   "why_it_stops_the_scroll": "Provocative/playful caption paired with clean aesthetic outfits sparks curiosity."
+  },
+  "why": [
+   "High visual aesthetic and stylish coordinated outfits",
+   "Perfect beat-syncing making transitions satisfying",
+   "Relatable and humorous hook statement"
+  ],
+  "value": "Fashion inspiration for couples and satisfying aesthetic transitions",
+  "share_t": "Tagging a partner to suggest matching outfits",
+  "com_t": "Discussing favorite outfits or the 'grandparent' aesthetic",
+  "rew": "Checking out the details of each individual outfit",
+  "emo": "Playful amusement and aesthetic satisfaction",
+  "adapt": "Title: 'Classic elegance never dates', First-frame text: 'They called our style old-fashioned', First 3s: Soft, warm archival footage of 1950s couples walking in Paris, Payoff: Showing how timeless pieces create effortless modern grace."
+ },
+ {
+  "id": "03zALvckmbc",
+  "grp": "etiquette",
+  "ch": "Jamila Musayeva",
+  "views": 205350,
+  "like": 0.04156318480642805,
+  "com": 0.0007012417823228634,
+  "dur": 63,
+  "voice": "creator",
+  "cuts": 5,
+  "avgshot": 10.5,
+  "hook_text": false,
+  "fmt": "etiquette tutorial, instructional walkthrough",
+  "hook": {
+   "first_frame_visual": "A well-dressed woman in a black dress, sheer black tights, and heels stands next to a dark grey SUV in a brightly lit showroom.",
+   "first_frame_text": "none",
+   "first_words_spoken": "So as I approach the car,",
+   "first_3s_audio": "Soft spoken British-accented female voice explaining car etiquette calmly.",
+   "why_it_stops_the_scroll": "Elegant presenter, high-end car showroom setting, and immediate instructional posture create high perceived value and curiosity about posture/etiquette."
+  },
+  "why": [
+   "High utility and solves a very specific, relatable problem for women.",
+   "Calm, authoritative, and elegant delivery builds immediate trust.",
+   "Clear visual cut-ins to close-ups ensure the technique is fully understood."
+  ],
+  "value": "Actionable, highly practical etiquette advice that prevents awkwardness or wardrobe malfunctions when getting into a car in a skirt.",
+  "share_t": "Shared among women friends who wear skirts/dresses frequently and want practical tips for elegance.",
+  "com_t": "Viewers thanking the creator or discussing how helpful this elegance tip is for everyday life.",
+  "rew": "Viewers rewatch to memorize the exact sequence of leg placement and hand positioning.",
+  "emo": "From curiosity about polite posture to satisfaction and empowerment upon learning a practical, elegant life hack.",
+  "adapt": "Original Short Idea: Title: 'The Graceful Exit: How to Step Out of a Car in a Skirt'. First-frame visual: Vintage archival footage of a 1950s actress stepping elegantly from a classic car. First-frame text: 'The secret to exiting a car with absolute grace'. First 3 seconds: A soft, warm voice-over says, 'Never step out of a car foot-first when wearing a skirt.' Payoff: Demonstrating the simultaneous leg-swing and upright posture technique using timeless archival film footage."
+ },
+ {
+  "id": "Co14Ue1bhIc",
+  "grp": "style",
+  "ch": "Classy Academy",
+  "views": 100328,
+  "like": 0.043427557611035804,
+  "com": 0.00020931345187784068,
+  "dur": 35,
+  "voice": "synthetic",
+  "cuts": 15,
+  "avgshot": 2.3,
+  "hook_text": true,
+  "fmt": "listicle / wardrobe guide",
+  "hook": {
+   "first_frame_visual": "A stylish brunette woman in a white sleeveless vest holding a glass of champagne against a warm beige background.",
+   "first_frame_text": "5 Wardrobe Must-Haves",
+   "first_words_spoken": "Look effortlessly elegant this spring with these essentials.",
+   "first_3s_audio": "Calm, elegant female voice-over saying 'Look effortlessly elegant this spring with these essentials.'",
+   "why_it_stops_the_scroll": "Aesthetic visual pairing of an elegant woman, champagne, warm beige branding, and a clear promise of spring fashion curation."
+  },
+  "why": [
+   "Strong visual branding with consistent warm beige color palette",
+   "Fast pacing keeps retention high through a numbered list format",
+   "Aspirational yet attainable classic fashion advice"
+  ],
+  "value": "Actionable, timeless capsule wardrobe formula for spring.",
+  "share_t": "Relatable fashion inspiration that women can send to friends for shopping ideas.",
+  "com_t": "Viewers debating their favorite item or asking where specific pieces are from.",
+  "rew": "Quick flashing outfits make viewers pause or replay to inspect specific styling ideas.",
+  "emo": "Inspirational and aspirational; feels calm, luxurious, and organized.",
+  "adapt": "A faceless elegance channel for women 40+ could create '5 Timeless Wardrobe Rules for Spring' using stock film footage of classic icons like Audrey Hepburn or elegant street style, accompanied by a soothing voice-over, soft jazz, and serif typography."
+ },
+ {
+  "id": "mH7OmwJTLI4",
+  "grp": "style",
+  "ch": "Classy Academy",
+  "views": 92971,
+  "like": 0.03561325574641555,
+  "com": 0.0008712394187434791,
+  "dur": 30,
+  "voice": "none",
+  "cuts": 0,
+  "avgshot": 29,
+  "hook_text": true,
+  "fmt": "POV lifestyle contrast",
+  "hook": {
+   "first_frame_visual": "A woman dressed in an elegant, neutral-toned outfit (white top, brown blazer, wide-brimmed hat, pearls) sitting at a cafe table in a European-style plaza, drinking coffee.",
+   "first_frame_text": "Pov: you decide to start dressing old money in public",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Upbeat, rhythmic pop song with female vocals.",
+   "why_it_stops_the_scroll": "The visual contrast between the woman's highly curated, sophisticated aesthetic and the busy, casual, and slightly chaotic public setting immediately creates a 'main character' vibe that viewers want to watch."
+  },
+  "why": [
+   "Strong visual contrast between the subject and the environment.",
+   "Clear, relatable 'POV' hook that taps into a popular aesthetic trend.",
+   "High-quality, aspirational visual presentation."
+  ],
+  "value": "Aspirational lifestyle content; inspiration for dressing with a specific aesthetic.",
+  "share_t": "Viewers who identify with the 'old money' aesthetic or aspire to it will share this as a relatable 'POV' or style inspiration.",
+  "com_t": "Viewers comment on the outfit, the vibe, or share their own experiences with dressing up in public.",
+  "rew": "The aesthetic is pleasing and the song is catchy, encouraging multiple views to soak in the style.",
+  "emo": "The video evokes a sense of aspiration, confidence, and 'main character energy' by highlighting the subject's deliberate choice to stand out through style.",
+  "adapt": "Title: 'POV: You choose elegance over convenience.' First-frame text: 'POV: You choose elegance over convenience.' First 3 seconds: A slow-motion, black-and-white clip of a woman in a classic trench coat and silk scarf walking through a busy train station, looking calm and composed. Payoff: The video continues with her sitting in a quiet, classic library or cafe, reading a book, emphasizing the peace found in choosing a timeless, elegant lifestyle."
+ },
+ {
+  "id": "VdfhaSaOJAU",
+  "grp": "style",
+  "ch": "Mademoiselle Spends",
+  "views": 73925,
+  "like": 0.027866080486980048,
+  "com": 0.0028271897193101114,
+  "dur": 133,
+  "voice": "creator",
+  "cuts": 12,
+  "avgshot": 10.9,
+  "hook_text": true,
+  "fmt": "rule then cultural nuance",
+  "hook": {
+   "first_frame_visual": "Split screen: Top left shows a tote on a desk; Top right shows a bag on a cafe table. Both have large red 'X' icons over them. Bottom half shows the creator.",
+   "first_frame_text": "Elegant women never put their bags here",
+   "first_words_spoken": "Where to put your bag, there are differences between France and UK, US and other cultures.",
+   "first_3s_audio": "Where to put your bag, there are differences between France and UK, US and other cultures.",
+   "why_it_stops_the_scroll": "It uses a 'negative hook' by telling the viewer what NOT to do to be 'elegant,' creating immediate curiosity about whether they are making a social faux pas."
+  },
+  "why": [
+   "Authority: The creator speaks with confidence on a niche topic (etiquette).",
+   "Cultural Curiosity: Comparing France to the US/UK is a popular trope for 'elegance' content.",
+   "Visual Aids: Showing the actual bags and their 'feet' makes the advice tangible."
+  ],
+  "value": "Learns social etiquette that varies by country, helping them avoid embarrassment in international settings.",
+  "share_t": "Women interested in fashion and etiquette are likely to share this with friends as a 'did you know' or to settle a debate about bag placement.",
+  "com_t": "The CTA specifically asks for a keyword ('formula') to get a lead magnet.",
+  "rew": "The cultural nuances (France vs US/UK) are detailed and might require a second watch to remember the specific 'rules' for each region.",
+  "emo": "Informative and slightly corrective at first, moving into helpful and sophisticated guidance.",
+  "adapt": {
+   "title": "The Secret of the Floor",
+   "first_frame_text": "Is your bag dirty or elegant?",
+   "first_3s": "Archive footage of a 1950s Parisian cafe. Voiceover: 'In Paris, the floor is the most elegant place for your bag.'",
+   "payoff": "Show a series of vintage clips of style icons (Grace Kelly, etc.) never placing bags on tables, followed by a text summary of the 'No Empty Chair' rule."
+  }
+ },
+ {
+  "id": "QX9T5JbCA7Y",
+  "grp": "ours",
+  "ch": "OURS",
+  "views": 9168,
+  "like": 0.020287958115183247,
+  "com": 0,
+  "dur": 24,
+  "voice": "synthetic",
+  "cuts": 0,
+  "avgshot": 23.49,
+  "hook_text": true,
+  "fmt": "expected vs elevated color pairing",
+  "hook": {
+   "first_frame_visual": "Creator in satin blouse talking directly to camera holding a styling tool.",
+   "first_frame_text": "remember",
+   "first_words_spoken": "Remember, polka dots and red are an expected choice...",
+   "first_3s_audio": "Voiceover explaining expected vs elevated styling choices for polka dots.",
+   "why_it_stops_the_scroll": "Immediate visual graphics of trendy fashion items appearing alongside dynamic styling advice."
+  },
+  "why": [
+   "Side-by-side visual contrast immediately proves the styling tip.",
+   "Rapid, predictable structure keeps retention high.",
+   "Descriptive outcome words ('soft', 'expensive', 'sophisticated') appeal to aesthetic goals."
+  ],
+  "value": "Teaches quick, actionable color pairing rules to make outfits look richer and more stylish.",
+  "share_t": "High practical value for women looking to elevate daily outfit styling easily.",
+  "com_t": "Viewers sharing their favorite color combo or asking for advice on other patterns.",
+  "rew": "Fast-paced graphics make viewers rewatch to study specific accessory details.",
+  "emo": "Curious -> Inspired -> Empowered to style.",
+  "adapt": {
+   "title": "Color Pairings That Look Instantly Expensive",
+   "first_frame_text": "INSTANTLY EXPENSIVE",
+   "first_3s": "Archive footage of Audrey Hepburn in black tailored outfit, voiceover: 'Black and gold is traditional...'",
+   "payoff": "'...but pairing charcoal with deep olive green creates timeless luxury.'"
+  }
+ },
+ {
+  "id": "KWbkQjkoy2g",
+  "grp": "ours",
+  "ch": "OURS",
+  "views": 375,
+  "like": 0.04533333333333334,
+  "com": 0,
+  "dur": 19,
+  "voice": "none",
+  "cuts": 6,
+  "avgshot": 3.08,
+  "hook_text": true,
+  "fmt": "silent aesthetic archival story",
+  "hook": {
+   "first_frame_visual": "Prince Charles and Princess Diana sitting together during an old interview",
+   "first_frame_text": "The night Charles admitted his affair on TV,",
+   "first_words_spoken": "none",
+   "first_3s_audio": "Soft, melancholic piano music",
+   "why_it_stops_the_scroll": "High emotional historical drama and immediate compelling text prompt."
+  },
+  "why": [
+   "Leverages famous historical cultural moment with high emotional resonance",
+   "Minimalist text creates clear narrative tension without needing voiceover",
+   "Empowering message appeals strongly to fashion and royalty enthusiasts"
+  ],
+  "value": "Inspiring moment of grace under pressure and iconic fashion history",
+  "share_t": "Empowering message about quiet confidence and moving on",
+  "com_t": "Viewer admiration for Princess Diana's legacy and style",
+  "rew": "Analyzing Diana's poise and outfit detail",
+  "emo": "Hurt and scandal -> suspenseful decision -> triumphant, confident empowerment",
+  "adapt": "Title: 'When words aren't needed.' Text: 'When betrayed, she didn't argue.' First 3s: Archival clip of Grace Kelly looking serene amidst press chaos with soft piano music. Payoff: Frame of her walking past cameras smiling, with text: 'She let her posture speak.'"
+ }
+]
