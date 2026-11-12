@@ -242,7 +242,24 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   - **v2 (12 Nov 2026):** the user asked for no "Classy Academy" in the script and the channel's exact style. Rewritten on
     the channel's own how-to script (958K hair video) and the phrases of its biggest scripts; the channel's name is
     spoken nowhere. 77 lines, 1,608 words; hook 72 STRONG; `dna.py` and `fit.py` pass. v1 kept as `script_v1.md`.
-    **Rule from the user: never say the channel's name in a script.** Waiting for the user's "ship it".
+    **Rule from the user: never say the channel's name in a script.**
+- **Scarf video (12 Nov 2026, `videos/elegant-scarf-ties/`):** the user approved script v2 ("ship it, now build the full
+  video") and asked for: visuals found very carefully and matched line by line; better music ("BG music of previous video
+  was not good, and sound effects are too much"); the channel's own editing, re-researched; Pinterest / Instagram / TikTok
+  only; no clip twice.
+  - **Edit built:** 10:58, 54 reels and 1 photo, 226 elements; layouts of the channel's own tutorial video (white card per
+    tie, vertical clip at the left with stacked step lines, full screen only for hook, guide and ending).
+  - **Sound:** no sound effects (none were ever added). The bed changed from "Romantic" (51% of its energy below 120 Hz and
+    10 dB swells, measured) to "Piano Reflections" by Ahjay Stelino, levelled to within 0.9 dB, 14 dB under the voice.
+    Chosen by measurement, not by ear.
+  - **Footage:** 84 Pinterest video searches in four rounds, 537 downloads; every tie verified on large frames before a
+    line was assigned. One real photo stands in for "a cream scarf on a camel coat" (no real video exists in the search
+    results; the two matches were AI-made).
+  - **Logo:** The Classy Elegance mark, as asked for the previous video; flagged to the user in case this one is meant
+    for Classy Academy.
+  - YouTube is still blocked from this machine, so the channel's look and sound come from the October measurements.
+  - Files: `edit.py`, `VISUAL-ANALYSIS.md`, `SOURCES-LOG.md`, `CREDITS.txt`, `CHAPTERS.txt`, `picks.md`.
+  - **Status: rendering (12 Nov 2026).** The work folder is `cws` in the session scratchpad; the media is not in git.
 - **Next idea after the hairstyles video (12 Nov 2026, `research-2026-11-12.md`):** every topic given the same search
   depth (16 topics x 8 searches) and checked for this year. Hair is the only makeable topic near the lane where many
   small creators reach 10M (37 at 10M+ from 29 channels), and it is live this year (Moni Hairstyle, 100k subscribers,
