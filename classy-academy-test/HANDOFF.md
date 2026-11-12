@@ -238,7 +238,11 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
 - **Scarf script (12 Nov 2026, `videos/elegant-scarf-ties/`):** the user chose idea 2, "10 Elegant Ways to Tie a Scarf This
   Winter". Script v1 in the hairstyles script's format: 89 lines, 1,550 words, ten ties each proven from written
   tutorials read that day (Proof table), taught in the order of how they begin. Hook 75 STRONG; `dna.py` and `fit.py`
-  pass. Waiting for the user's "ship it" before any video work.
+  pass.
+  - **v2 (12 Nov 2026):** the user asked for no "Classy Academy" in the script and the channel's exact style. Rewritten on
+    the channel's own how-to script (958K hair video) and the phrases of its biggest scripts; the channel's name is
+    spoken nowhere. 77 lines, 1,608 words; hook 72 STRONG; `dna.py` and `fit.py` pass. v1 kept as `script_v1.md`.
+    **Rule from the user: never say the channel's name in a script.** Waiting for the user's "ship it".
 - **Next idea after the hairstyles video (12 Nov 2026, `research-2026-11-12.md`):** every topic given the same search
   depth (16 topics x 8 searches) and checked for this year. Hair is the only makeable topic near the lane where many
   small creators reach 10M (37 at 10M+ from 29 channels), and it is live this year (Moni Hairstyle, 100k subscribers,
