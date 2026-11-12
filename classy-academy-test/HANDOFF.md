@@ -265,6 +265,13 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     peak -1.8 dBFS; freezes only on cards, photos and the end card; the four fixed spots and the CE logo checked by eye;
     the clip panel scanned for black flashes across the whole video (none). The three thumbnails were also rebuilt
     natively at 1920x1080 on request (`thumb_spec_ca_1080.json`). Waiting for the user's review.
+  - **Thumbnails v2 (12 Nov 2026, `THUMBNAIL.md` section A, `make_thumbs_v2.py`):** the user called v1 "still basic".
+    Added research: the 262 winners against 84 low-view hair videos from the same searches, hits against the same
+    channel's usual videos (13 channels), brightness measured. What separates winners: a step beside the result (19%
+    against 1%), hair from behind, brightness 147 against 126, fewer words; v1 measured 85-98. Three new thumbnails at
+    1920x1080: A three steps of the claw-clip French twist + a "2 MIN" badge (lead), B a set of four results + band
+    "10 Easy, Elegant HAIRSTYLES", C one large twist with a gold clip + "1 CLIP. 2 MIN." (a Princess Polly product
+    photo, not in the video). Waiting for the user's choice.
   - **The user then asked for the Classy Elegance logo on this video, not the Classy Academy logo** (corner logo and end
     card swapped to `logo_ce.png` / `logo_ce_dark.png`), and to keep the current voice (a directed-pacing voice test,
     `B_directed.mp3`, was offered and declined).
