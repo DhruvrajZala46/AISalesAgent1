@@ -235,6 +235,13 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   channels, 7 at 5M+, Jamila Musayeva 7.2M at 124x; new ground for the channel, in its "Never Do" format); second,
   dressing rules; third, the put-together wave. Waiting for the user's choice.
 
+- **Next idea after the hairstyles video (12 Nov 2026, `research-2026-11-12.md`):** every topic given the same search
+  depth (16 topics x 8 searches) and checked for this year. Hair is the only makeable topic near the lane where many
+  small creators reach 10M (37 at 10M+ from 29 channels), and it is live this year (Moni Hairstyle, 100k subscribers,
+  "5 Quick Bun Styles / Perfect for Work & Busy Morning", 11.1M). **Pick: "5 Elegant Buns You Can Do in 2 Minutes"**
+  (five buns not in the two-minute video). 2nd: "10 Elegant Ways to Tie a Scarf This Winter" (in-niche, seasonal).
+  3rd: table manners. Base rate told to the user: 10M is 83x the channel's median; 0.1% of elegance-channel videos and
+  about 1.1% of hair-channel videos reach 80x. Waiting for the user's choice.
 - **Classy Academy hairstyles script (12 Nov 2026, `videos/elegant-2-minute-hairstyles/`):** the user came back to the
   hairstyles idea ("ship it") and uploaded all the channel's scripts (`MY_CHANNEL_SCRIPT.txt`, 30 entries, 28 different).
   Script v1 "10 Easy, Elegant 2-Minute Hairstyles" written in the format of the channel's own two hair scripts: 91 lines,
