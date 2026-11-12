@@ -1,4 +1,4 @@
-# S4 - "You're invited to afternoon tea at the Ritz" (24 s, channel voice) - Thu 13 Nov, 7:00 am ET
+# S4 - "You're invited to afternoon tea at the Ritz" (24 s, channel voice) - Fri 13 Nov, 7:00 am ET
 
 Title: Afternoon Tea at the Ritz: 4 Rules 🫖
 

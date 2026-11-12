@@ -43,7 +43,7 @@ subscribe.
 
 ## 4. The week: 21 Shorts, 3 a day
 
-| Slot (US Eastern, a starting test) | Wed 12 | Thu 13 | Fri 14 | Sat 15 | Sun 16 | Mon 17 | Tue 18 |
+| Slot (US Eastern, a starting test) | Thu 12 | Fri 13 | Sat 14 | Sun 15 | Mon 16 | Tue 17 | Wed 18 |
 |---|---|---|---|---|---|---|---|
 | 7:00 am | - | C1 (V) | A2 (S) | E2 (S) | D2 (V) | G2 (S) | F2 (V) |
 | 12:00 pm | - | A1 (S) | D1 (V) | B2 (S) | C2 (V) | E3 (S) | D3 (V) |

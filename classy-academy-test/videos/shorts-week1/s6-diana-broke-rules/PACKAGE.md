@@ -1,4 +1,4 @@
-# S6 - "5 Times Princess Diana Broke Royal Rules" (37 s, channel voice) - Thu 13 Nov, 12:30 pm ET
+# S6 - "5 Times Princess Diana Broke Royal Rules" (37 s, channel voice) - Fri 13 Nov, 12:30 pm ET
 
 Title: 5 Times Princess Diana Broke Royal Rules 🤍
 

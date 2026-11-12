@@ -75,27 +75,27 @@ download. Fact: "ok" = confirmed by web search today; "verify" = before build.
 
 | # | Day / slot ET | Code | Short (first-frame text) | Footage | Fact |
 |---|---|---|---|---|---|
-| 1 | Wed 4:00 am | S | The Night Diana Wore the Revenge Dress | posted | ok |
-| 2 | Wed 12:30 pm | S | Define grace: Princess Diana >>> | built | describes footage |
-| 3 | Wed 7:00 pm | S | Princess Diana left out one word | built | ok |
-| 4 | Thu 7:00 am | D | "You're invited to afternoon tea at the Ritz." | tea hands 30 | verify (pinky, scone) |
-| 5 | Thu 12:30 pm | S | "Grace Kelly won the Oscar at 25. A year later, she walked away." | Grace 38 + wedding 21 | ok (Oscar 1955, wedding Apr 1956) |
-| 6 | Thu 7:00 pm | L | 5 times Princess Diana broke royal rules | Diana 35 + wedding + revenge dress + 1987 hospital | ok (ring verify) |
-| 7 | Fri 7:00 am | F | "Yesterday this shop refused to serve her." (Pretty Woman) | check (3 pins) | dialogue verify |
-| 8 | Fri 12:30 pm | S | "In 1956, Grace Kelly hid a secret behind her bag." | Grace 42 (bag) | ok (photo 1956, renamed 1977) |
-| 9 | Fri 7:00 pm | D | "Your rich friend's mother invites you to dinner." (the napkin) | napkin 40 | verify |
-| 10 | Sat 7:00 am | L | The Queen's secret handbag signals | Queen 40 | ok (arm: Vickers; table: Telegraph) |
-| 11 | Sat 12:30 pm | C | Audrey Hepburn at 24, and at 60 | Audrey 37 + later years: check | ok |
-| 12 | Sat 7:00 pm | D | "Stop holding your wine glass like this." | wine 28 | verify |
-| 13 | Sun 7:00 am | S | "The Queen never wore beige. Here's why." | Queen 40 | ok (Countess of Wessex, 2016) |
-| 14 | Sun 12:30 pm | S | Define elegance: Grace Kelly >>> | Grace 38 | describes footage |
-| 15 | Sun 7:00 pm | D | Royal women never cross their legs at the knee | Kate 27: check sitting shots | verify |
-| 16 | Mon 7:00 am | S | "1987. Princess Diana took off her gloves." | 1987 hospital clip + Diana 35 | ok |
-| 17 | Mon 12:30 pm | F | "She never raised her voice." (The Devil Wears Prada) | check (2 pins) | scene verify |
-| 18 | Mon 7:00 pm | L | 4 royal habits Kate Middleton never breaks | Kate 27 | verify each |
-| 19 | Tue 7:00 am | C | The Queen at 25, and at 96 | Queen 40 | ok |
-| 20 | Tue 12:30 pm | D | How to step out of a car like a princess | Kate 27 + car: check | verify |
-| 21 | Tue 7:00 pm | S | "Everyone bowed to the Queen. In 1997, she bowed her head." | not yet found | ok (never say "only time") |
+| 1 | Thu 4:00 am | S | The Night Diana Wore the Revenge Dress | posted | ok |
+| 2 | Thu 12:30 pm | S | Define grace: Princess Diana >>> | built | describes footage |
+| 3 | Thu 7:00 pm | S | Princess Diana left out one word | built | ok |
+| 4 | Fri 7:00 am | D | "You're invited to afternoon tea at the Ritz." | tea hands 30 | verify (pinky, scone) |
+| 5 | Fri 12:30 pm | S | "Grace Kelly won the Oscar at 25. A year later, she walked away." | Grace 38 + wedding 21 | ok (Oscar 1955, wedding Apr 1956) |
+| 6 | Fri 7:00 pm | L | 5 times Princess Diana broke royal rules | Diana 35 + wedding + revenge dress + 1987 hospital | ok (ring verify) |
+| 7 | Sat 7:00 am | F | "Yesterday this shop refused to serve her." (Pretty Woman) | check (3 pins) | dialogue verify |
+| 8 | Sat 12:30 pm | S | "In 1956, Grace Kelly hid a secret behind her bag." | Grace 42 (bag) | ok (photo 1956, renamed 1977) |
+| 9 | Sat 7:00 pm | D | "Your rich friend's mother invites you to dinner." (the napkin) | napkin 40 | verify |
+| 10 | Sun 7:00 am | L | The Queen's secret handbag signals | Queen 40 | ok (arm: Vickers; table: Telegraph) |
+| 11 | Sun 12:30 pm | C | Audrey Hepburn at 24, and at 60 | Audrey 37 + later years: check | ok |
+| 12 | Sun 7:00 pm | D | "Stop holding your wine glass like this." | wine 28 | verify |
+| 13 | Mon 7:00 am | S | "The Queen never wore beige. Here's why." | Queen 40 | ok (Countess of Wessex, 2016) |
+| 14 | Mon 12:30 pm | S | Define elegance: Grace Kelly >>> | Grace 38 | describes footage |
+| 15 | Mon 7:00 pm | D | Royal women never cross their legs at the knee | Kate 27: check sitting shots | verify |
+| 16 | Tue 7:00 am | S | "1987. Princess Diana took off her gloves." | 1987 hospital clip + Diana 35 | ok |
+| 17 | Tue 12:30 pm | F | "She never raised her voice." (The Devil Wears Prada) | check (2 pins) | scene verify |
+| 18 | Tue 7:00 pm | L | 4 royal habits Kate Middleton never breaks | Kate 27 | verify each |
+| 19 | Wed 7:00 am | C | The Queen at 25, and at 96 | Queen 40 | ok |
+| 20 | Wed 12:30 pm | D | How to step out of a car like a princess | Kate 27 + car: check | verify |
+| 21 | Wed 7:00 pm | S | "Everyone bowed to the Queen. In 1997, she bowed her head." | not yet found | ok (never say "only time") |
 | 22-25 | spares | S/D/F | Define grace: Audrey Hepburn >>>; Jam or cream first? (scones); Roman Holiday's last line; Jackie Kennedy | pools found | verify |
 
 **The plan changes with the numbers.** Every morning I pull each Short's views and likes. After 48 hours, the format

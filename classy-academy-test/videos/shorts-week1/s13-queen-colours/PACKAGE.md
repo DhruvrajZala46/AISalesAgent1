@@ -1,4 +1,4 @@
-# S13 - "The Queen Dressed Like a Rainbow for One Reason" (16 s, silent) - Thu 13 Nov, 7:00 pm ET
+# S13 - "The Queen Dressed Like a Rainbow for One Reason" (16 s, silent) - Fri 13 Nov, 7:00 pm ET
 
 Title: Why the Queen Always Wore Bright Colours 🤍
 
