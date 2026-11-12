@@ -243,6 +243,20 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   channel's own hair scripts get the same kind of flags (both tools are tuned on wardrobe videos). Rights for whole tutorial clips to be settled before the build. Waiting for the
   user's review of the script.
 
+- **Classy Academy hairstyles video (12 Nov 2026, `videos/elegant-2-minute-hairstyles/`):** the user approved the script
+  ("ship it, now build the full video") and said the last video's music was not good and its sound effects too much.
+  - Sound: no sound effects exist in any build; the music bed was changed after measuring 40 piano tracks (new: Mixkit
+    "Romantic" by Francisco Alvear, 13 dB under the voice). Chosen by measurement, not by ear (`VISUAL-ANALYSIS.md`).
+  - Footage: 367 Pinterest video pins downloaded in three rounds, screened on time-labelled frame strips, every pick
+    verified again at large size; 61 clips used; 0 AI flags; 0 duplicates; 0 repeats from the nine earlier videos.
+  - Layout: the channel's hairstyles video (replay peaks = vertical tutorial clips on caramel): a clip at the left, the step
+    words stacking beside it, the tool cut out as it is named, white script cards, the CA logo.
+  - Style 8 (tucked side) uses five real photos: no clean video of it on a bob was found.
+  - Builder additions: `MAXSLOW` (per-clip slow motion up to 2x), `FLIP` (mirrored clip), `TRACKS_EDIT` / `MUSIC_DB` /
+    `MUSIC_CREDIT` / `ENDLOGO` (set in `edit.py`).
+  - Docs: `SOURCES-LOG.md` (61 clips, 16 photos, all unresolved), `CREDITS.txt`, `CHAPTERS.txt`, `edit.py`, `picks.md`.
+  - Render started 12 Nov 2026 (10:47, 1080p); see the chat for the delivered file.
+
 ## 1. Where things stand right now
 
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in
