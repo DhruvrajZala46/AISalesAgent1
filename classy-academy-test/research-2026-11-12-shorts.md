@@ -81,6 +81,66 @@ The winners publish at every hour (Classy After 50 at 11:45-13:05 UTC, Desi Rich
 23:55 UTC, Beth Djalali 16:16 UTC). No hour separates winners from the rest in this data, and our own
 viewer-online data was not available. Any posting time is a starting assumption to test.
 
+## 7. Cross-niche: the biggest Shorts next to our niche (added the same day)
+
+Method: YouTube Data API search (Shorts only, US, English, most viewed) for royal etiquette, Princess Diana, Kate
+Middleton, Queen Elizabeth rules, Audrey Hepburn / Grace Kelly, old money, classy woman, etiquette, body language,
+makeovers over 50 and film scenes. Stats for 95 Shorts, Shorts lists for 18 of their channels, 4 public frames per
+Short for 17 winners, top comments on 3.
+
+| Short | Views | Liked | Length | What it is (from frames and title) |
+|---|---|---|---|---|
+| Marilyn Monroe "Gentlemen Prefer Blondes" scene (Luciano Films) | 86.8M | 8.1% | 60 s | The film scene as shot, colour-graded, small serif subtitles, no narration |
+| "Dining Etiquette" (Gohar Khan) | 74.8M | 3.7% | 29 s | POV hands on a plate, wrong vs right, creator reacting |
+| "POV: You THINK you know Japanese manners" | 50.3M | 2.8% | 18 s | Creator acting the mistake, POV caption on top |
+| "The transformation scene in teen movies" | 45.0M | 5.3% | 30 s | Creator parodying a film trope |
+| Kate "married to a goddess" | 32.8M | 1.3% | 8 s | Press footage, one caption at the top: "Notice Kate's subtle hand movement…", red cross, loop |
+| "Princess Diana is pure Aura" | 31.4M | 2.4% | 31 s | Archive edit, "Define Aura" caption, music |
+| "INSANE reactions to old money style" (BLENIN) | 30.6M | 1.5% | 11 s | Reaction clip |
+| Queen Elizabeth and Princess Diana | 29.0M | 1.5% | 26 s | Archive photo with their ages 55/20 in 1981, then 71 in 1997 |
+| "Rebellious Diana was constantly breaking rules" (The Sun's Fabulous) | 27.6M | 6.3% | 59 s | Getty photos, numbered pink caption boxes |
+| "Secrets royal guards don't want you to know" | 24.5M | 3.0% | 39 s | |
+| "Princess Diana's most colourful acts" | 23.4M | 5.1% | 48 s | Archive photos, one-line serif captions low-centre |
+| "Unusual gesture by Queen Elizabeth at Diana's funeral" | 23.2M | 5.7% | 47 s | Getty archive, caption "In the end, the palace had to break protocol" |
+| "3 levels of bowing" (Japan) | 22.7M | 4.4% | 41 s | |
+| "Elegant way to eat soup" (Anastasiia Arora) | 21.3M | 2.9% | 14 s | On-camera demo, green tick, one caption |
+| "Queen Elizabeth top secret rules" | 21.2M | 1.7% | 53 s | Photos, big yellow/red word-by-word captions |
+| "Princess Diana's revenge dress is iconic" | 18.7M | 6.5% | 38 s | Creator explaining, holding a replica |
+| "The moment the Queen broke tradition for Diana" (Theviralscope, 27K subs) | 17.8M | 6.9% | 14 s | "The queen could never bow to anyone" -> "but at Princess Diana's funeral…" |
+| "Spaghetti etiquette goes WRONG" | 16.4M | 5.1% | 16 s | Comedy duo + an etiquette expert |
+| "Rich people now vs old money" | 16.5M | 5.1% | 16 s | |
+| "Queen avenges Diana at Charles and Camilla's wedding" (dawn, 7.7K subs) | 15.7M | 3.3% | 23 s | Unverified story |
+| "Diana's revenge dress revolutionized royal fashion" | 13.2M | 6.1% | 17 s | |
+| "Dark secret of Diana's revenge dress" | 11.2M | 2.6% | 25 s | |
+
+How often these channels hit (latest 80 Shorts each, or fewer):
+- One-off outliers on small channels: TheRoyalFamily (16.7K subs) 1 of 42 Shorts at 29M, median 16K; dawn (7.7K) 1 of
+  15 at 15M, median 24K; Theviralscope (27K) 2 of 14 at 10M+, median 111K; Trends Tube 13 of 80 over 1M, median 5.5K.
+- Consistent: Luciano Films (film scenes, quote titles) median 1.35M, 45 of 80 over 1M; Helen Christie (history "did
+  WHAT?!", on camera) median 5.2M; William Hanson (etiquette, on camera) median 375K.
+- Big royal channels are NOT consistent: The British Royal Family (550K subs) median 30K and 0 of 80 over 1M; The
+  Royal Family Channel (3.7M subs) median 30K.
+
+Comments on the Queen-bowed Short (17.8M): the top comments, 80K-99K likes each, are about the character of a woman
+("That's respect that was earned. Diana was a real one."; "The Queen knew Diana would have made a great Queen.").
+The emotion is admiration for a woman's grace, not the protocol. Woman Of Elegance's "never do" Short: the top
+comments are friendly push-back ("If my feet are killing me… I don't care where I change my shoes", 2,783 likes),
+which is why it has 2,923 comments.
+
+Descriptions of the winners are empty or boilerplate; they play no visible part.
+
+## 8. What this means for us
+
+The biggest Shorts next to our niche are built from Classy Academy's own footage world (royal archive, classic film,
+serif captions). The plan and scripts are in `videos/shorts-week1/PLAN.md`.
+
+## 9. Still not inspected
+
+The competitor Shorts' motion, sound and spoken words. Four still frames per Short were seen, not the video. A
+retry with other YouTube player clients was refused by the permission system as bot-check circumvention and was
+not attempted. The ways to see them properly: vidIQ "watch short-form content" (10 credits per Short; the account has
+0 until 26 Nov) or the user uploading the files.
+
 ## 6. Open questions for the user
 
 1. Does "real footage only, never AI" apply to Shorts? Our existing 12 Shorts appear to use a generated presenter.
