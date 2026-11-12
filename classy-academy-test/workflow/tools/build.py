@@ -66,14 +66,16 @@ def land(key):
         _LAND[key] = int(wh[0]) > int(wh[1])
     return _LAND[key]
 CROP = {}   # edit.py: CROP['key'] = (x0, y0, h) -> that 9:16 window of the clip (720x1280 space) fills the frame
+FLIP = set()   # edit.py: FLIP.add('key') -> that clip is mirrored left-right (a tutorial filmed the other way round)
+MAXSLOW = {}   # edit.py: MAXSLOW['key'] = 2.0 -> that clip may be slowed up to 2x (sped-up tutorial reels back to real time); default 1.4
 def prep(spec, need):
     key, a, b = spec
     seg = b - a; speed = 1.0
     still = seg < 0.05            # C(key, t, t): a held frame (the analysis moments: lines drawn on a still woman)
     if still: seg = need
-    if need > seg: speed = min(1.4, need / seg)
+    if need > seg: speed = min(MAXSLOW.get(key, 1.4), need / seg)
     if need > seg * speed + 0.05: SHORT.append(f'{key} {a}-{b} needs {need:.1f}s has {seg*speed:.1f}s')
-    name = f'{key}_{a:g}_{b:g}_{speed:.2f}' + ('_c%g_%g_%g' % CROP[key] if key in CROP else '') + '.mp4'; name = name.replace('-', 'm'); out = os.path.join(A, name)
+    name = f'{key}_{a:g}_{b:g}_{speed:.2f}' + ('_c%g_%g_%g' % CROP[key] if key in CROP else '') + ('_f' if key in FLIP else '') + '.mp4'; name = name.replace('-', 'm'); out = os.path.join(A, name)
     if not os.path.exists(out):
         src = os.path.join(R, key + '.mp4'); tm = ''
         if SHOTS.get(key, {}).get('hdr'):
@@ -84,6 +86,7 @@ def prep(spec, need):
             zc = f"scale=1440:2560:force_original_aspect_ratio=increase,crop=1440:2560,crop={2*ww:.0f}:{2*hh:.0f}:{2*x0:.0f}:{2*y0:.0f},scale=720:1280,"
         elif land(key): zc = "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,"   # 16:9 source -> full-screen scene
         else: zc = "scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280,"
+        if key in FLIP: zc += "hflip,"
         vf = f"{tm}{zc}setsar=1,setpts={speed:.4f}*PTS,fps=30"
         if still:
             sh(f'ffmpeg -nostdin -v error -y -ss {a} -i {src} -frames:v 1 -an -vf "{vf}" {out}.png')
@@ -295,11 +298,11 @@ if AIFLAG: raise SystemExit('STOP - AI watermark suspected, replace these clips:
 
 # ---------- end card ----------
 i = nid('ew'); els.append(f'<div id="{i}" class="endwhite" style="opacity:0"></div>'); fade_in(i, total - 3.0, 0.9)
-j = nid('el'); els.append(f'<img id="{j}" class="endlogo" src="assets/logo_ce_dark.png" style="opacity:0">')
+j = nid('el'); els.append(f'<img id="{j}" class="endlogo" src="assets/{globals().get('ENDLOGO', 'logo_ce_dark.png')}" style="opacity:0">')
 tw.append(f'tl.fromTo("#{j}",{{opacity:0,scale:0.96}},{{opacity:1,scale:1,duration:1.3,ease:"power2.out"}},{total-2.4:.3f});')
 
 # ---------- audio: voice + soft solo piano, steady ~12 dB under the voice, no sound effects ----------
-TRACKS = ['m711.mp3', 'm716.mp3', 'm712.mp3', 'm717.mp3']
+TRACKS = globals().get('TRACKS_EDIT') or ['m711.mp3', 'm716.mp3', 'm712.mp3', 'm717.mp3']   # edit.py may set TRACKS_EDIT, MUSIC_DB, MUSIC_CREDIT, ENDLOGO
 def load(f):
     sh(f"ffmpeg -nostdin -v error -y -i {A}/{f} -af 'highpass=f=40,equalizer=f=150:t=q:w=1:g=2,equalizer=f=3500:t=q:w=1.2:g=2' -ac 1 -ar {sr} {A}/_m.wav")
     y, _ = sf.read(f'{A}/_m.wav'); return y
@@ -311,7 +314,7 @@ while len(m) < len(voice):
     nxt *= np.sqrt((m[-sr*20:] ** 2).mean() / ((nxt[:sr*20] ** 2).mean() + 1e-12))
     ramp = np.linspace(0, 1, xf); m = np.concatenate([m[:-xf], m[-xf:] * (1 - ramp) + nxt[:xf] * ramp, nxt[xf:]])
 m = m[:len(voice)]
-m *= 10 ** ((-17.7 - 12) / 20) / np.sqrt((m ** 2).mean())
+m *= 10 ** ((-17.7 - globals().get('MUSIC_DB', 12)) / 20) / np.sqrt((m ** 2).mean())
 m[:int(sr * 1.2)] *= np.linspace(0, 1, int(sr * 1.2)); m[-int(3.5 * sr):] *= np.linspace(1, 0, int(3.5 * sr))
 fa = np.zeros(len(voice))
 for key, a_, b_, t0_ in FILMAUDIO:
@@ -329,7 +332,7 @@ open(os.path.join(P, 'index.html'), 'w').write(html)
 cr = []
 for k_ in CREDIT:
     mt = META.get(k_, {}); cr.append(f"{mt.get('creator','?')} (@{mt.get('user','?')}) {mt.get('url','')}")
-open(os.path.join(P, 'CREDITS.txt'), 'w').write('\n'.join(dict.fromkeys(cr)) + '\n\nMusic: "Classical 4", "Classical 9", "Classical 5", "Classical 10" by Jonny S. (Mixkit, free license)\n')
+open(os.path.join(P, 'CREDITS.txt'), 'w').write('\n'.join(dict.fromkeys(cr)) + '\n\n' + globals().get('MUSIC_CREDIT', 'Music: "Classical 4", "Classical 9", "Classical 5", "Classical 10" by Jonny S. (Mixkit, free license)') + '\n')
 words = sum(len(b.split()) for b in beats)
 print('SHORT:', SHORT)
 print(f'total {total:.1f}s, {words/total*60:.0f} words/min, {len(els)} elements, {len(USED)} unique clips')
