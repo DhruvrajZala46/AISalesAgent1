@@ -94,7 +94,7 @@ Format: the channel's own two hair scripts ("The Most Elegant & Easy Hairstyles"
 [ON SCREEN: close-up: fingers gently pulling the sides of the twist wider]
 **And one more tiny thing. Gently pull at the sides of the twist. It shows off the shape, and makes your hair look fuller.**
 [ON SCREEN: the rope twist over one shoulder; then wrapped into a bun]
-**Wear it over one shoulder, or wrap it into a bun.**
+**Wear it over one shoulder, or wrap it into a bun. It feels polished, because every strand has its place.**
 
 ## The guide
 [ON SCREEN: full-screen clip of a woman choosing between two hairstyles at a mirror; then the white card: "Check The Description For / Personal Stylist Guide"]
@@ -231,11 +231,11 @@ Measured on the 28 different scripts in the user's file `MY_CHANNEL_SCRIPT.txt` 
 
 ## Final check
 
-- **Length:** 91 spoken lines, 1545 words. The channel's own ten-item scripts are 1,537 and 1,555 words. About 10 to 11 minutes at the channel's pace.
+- **Length:** 91 spoken lines, 1,554 words. The channel's own ten-item scripts are 1,537 and 1,555 words. About 10 to 11 minutes at the channel's pace.
 - **Hook:** "You might think elegant hair takes an hour and a salon. But what if you never needed more than 2 minutes?" scores 72, STRONG (`hookscore.py`; formula: The Question). Second: "Have you ever wondered why some women never look rushed, even before 8 a.m.? Their hair took 2 minutes." also 72, not used: its second sentence is a claim nobody can check.
 - **Style 1 starts at about 0:35.**
-- **`fit.py check`:** no red line. One flag left: "swap: instead / try" below the channel. The channel's own two hair scripts get four flags each on this checker (it is tuned on wardrobe videos).
-- **`dna.py`:** one flag left: "inner world" words at 5.1 per 1,000 (the channel's wardrobe range starts at 6.3). The channel's own hair scripts score 3.3 and 16.2. The tool is built on 15 wardrobe videos and leaves hair titles out, so it is read as a smoke alarm (`CHANNEL-DNA.md` rule 9.3); no phrase was added to pass it.
-- **What the first run of the checkers did change:** "why it is elegant" lines were added to every style (the channel's hair scripts run at 23 to 30 per 1,000 words; the first draft was at 13.5), plus the budget and any-age line and named colors.
+- **`fit.py check`:** no red line. VERDICT: 1 thing(s) to fix before this goes out: "swap: instead / try" is below the channel's level. The channel's own two hair scripts get four flags each on this checker (it is tuned on wardrobe videos).
+- **`dna.py`:** VERDICT: 1 thing(s) to fix: "why / effect on her" at 20.6 per 1,000 words (wardrobe range 23.8 to 32.4; the channel's own hair scripts 23.1 and 29.6) and "inner world" at 5.1 (wardrobe range 6.3 to 13.7; the channel's own hair scripts 3.3 and 16.2). The tool is built on 15 wardrobe videos and leaves hair titles out, so it is read as a smoke alarm (`CHANNEL-DNA.md` rule 9.3); no phrase was added only to pass it.
+- **What the first run of the checkers did change:** a "why it is elegant" line was added to every style (the first draft was at 13.5), plus the budget and any-age line and named colors.
 - **No names, no statistics, no health claims, no shaming, no Classy Closet, no website.**
 - **Rights (for the build):** each style needs one whole tutorial clip. Permission or own filming is to be settled before the video stage.
