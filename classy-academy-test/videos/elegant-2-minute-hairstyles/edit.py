@@ -382,7 +382,7 @@ q('You might think elegant hair takes<br><i>an hour and a salon.</i>', 0.3, en(1
 cfull([(K('cv_ease1', 5.6, 9.4), nx(2))], nx(3))
 q('What if you never needed more than<br><i>two minutes?</i>', nx(2) + 0.1, en(2) + 0.3, LOW, size=66, cls='over')
 lrow([K('hv_twist13', 16.4, 21.3), K('cv_dinner13', 25.0, 30.2), K('s9a14', 12.0, 14.5)], [nx(3), at(3, 'ten easy'), at(3, 'you can do')], nx(4))
-q('<div><span style="font-size:60px">10 Easy, Elegant</span><br><i style="font-size:150px">2-Minute Hairstyles</i></div>',
+q('<div><span style="font-size:64px;display:block;margin-bottom:44px">10 Easy, Elegant</span><i style="font-size:150px">2-Minute Hairstyles</i></div>',
   at(3, 'ten easy') - 0.1, en(3) + 0.3, QC, cls='over')
 lclip([(K('s1a5', 1.8, 6.5), nx(4))], nx(5))
 q('No heat. <i>No special skill.</i>', nx(4) + 0.2, nx(5) - 0.1, RT, size=60)
@@ -553,9 +553,11 @@ lclip([(K('s9a10', 6.0, 12.6), nx(73))], nx(74))
 lclip([(K('s9a10', 15.2, 22.6), nx(74))], nx(75))
 qstack(['Start <i>near one ear</i>', 'Curve a small section up,<br>tuck the ends under', 'Work toward the back,<br><i>section by section</i>'],
        [nx(73) + 0.3, at(73, 'take a small'), nx(74) + 0.3], nx(75) - 0.1, size=56, rh=220)
-lclip([(K('s9b28', 17.4, 22.0), nx(75))], nx(76))
+_c9 = CROP['s9a10']; CROP['s9a10'] = (0, 24, 830)     # this window only: the hand at the ear, on the band
+lclip([(K('s9a10', 12.6, 15.2), nx(75)), (K('s9b28', 20.8, 23.3), at(75, 'just behind') - 0.3)], nx(76))
+CROP['s9a10'] = _c9
 q('If the band slips:<br><i>a bobby pin across it,</i><br>just behind each ear', nx(75) + 0.3, en(75) + 0.3, QL, size=58)
-lclip([(K('s9a10', 23.3, 24.3), nx(76)), (K('s9b28', 22.2, 23.5), nx(76) + 1.7)], nx(77))
+lclip([(K('s9a10', 23.3, 24.3), nx(76)), (K('s9b28', 23.5, 24.8), nx(76) + 1.7)], nx(77))
 q('A soft roll at the nape.<br><i>Timeless.</i>', nx(76) + 0.2, en(76) + 0.3, QL, size=68)
 
 # ================= 10. THE FRENCH PIN BUN =================
@@ -564,7 +566,9 @@ q('The one that takes<br><i>a little practice</i>', at(77, 'The one that') - 0.1
 card_from('10. The French Pin Bun', at(77, 'The French pin') - 0.3, en(77) + 0.5)
 item('ph_pin.png', 520, 960, 800, nx(78), nx(79) - 0.1, maxw=300)
 q('One pin. <i>No elastic.</i><br>Medium to long hair.', nx(78) + 0.2, nx(79) - 0.2, (900, 0, 1820, H), size=70)
+_c10 = CROP['s10a24']; CROP['s10a24'] = (250, 0, 835)   # this window only: the source's corner watermark sits at the left here
 lclip([(K('s10a24', 3.6, 5.5), nx(79)), (K('s10b28', 0.3, 1.5), nx(79) + 3.2)], nx(80))
+CROP['s10a24'] = _c10
 lclip([(K('s10b28', 1.5, 4.3), nx(80)), (K('s10a24', 5.5, 7.0), at(80, 'and wrap') + 0.7)], nx(81))
 lclip([(K('s10b28', 4.3, 6.4), nx(81)), (K('s10a24', 7.0, 8.3), nx(81) + 3.7)], nx(82))
 lclip([(K('s10b28', 6.4, 12.4), nx(82))], nx(83))
