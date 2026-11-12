@@ -259,7 +259,14 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     for Classy Academy.
   - YouTube is still blocked from this machine, so the channel's look and sound come from the October measurements.
   - Files: `edit.py`, `VISUAL-ANALYSIS.md`, `SOURCES-LOG.md`, `CREDITS.txt`, `CHAPTERS.txt`, `picks.md`.
-  - **Status: rendering (12 Nov 2026).** The work folder is `cws` in the session scratchpad; the media is not in git.
+  - **Delivered in the chat on 12 Nov 2026:** 1080p, 10:58, 258 MiB. QA on the delivered file: 0 black frames, 0 silence,
+    -12.7 LUFS; the only still moments are the white cards, three text lines on the caramel and the one photo. The file
+    was also read on 262 time-labelled tiles at two offsets.
+  - The first render ended on a 15-second plain thank-you screen. The ending was rebuilt over three clips as its own
+    short composition (`cws_tail`) and joined on with a half-second dissolve; `edit.py` holds the same ending.
+  - **Waiting for the user's review.** Open points told to the user: the music was chosen by measurement, the logo is
+    The Classy Elegance, one line uses a photo, and no clip is licensed.
+  - The work folders are `cws` and `cws_tail` in the session scratchpad; the media is not in git.
 - **Next idea after the hairstyles video (12 Nov 2026, `research-2026-11-12.md`):** every topic given the same search
   depth (16 topics x 8 searches) and checked for this year. Hair is the only makeable topic near the lane where many
   small creators reach 10M (37 at 10M+ from 29 channels), and it is live this year (Moni Hairstyle, 100k subscribers,
