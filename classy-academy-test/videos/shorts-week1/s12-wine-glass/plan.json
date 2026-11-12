@@ -1,0 +1,143 @@
+{
+ "name": "S12_wine_glass",
+ "speed": 0.9,
+ "gap": 0.35,
+ "music": {
+  "file": "m716",
+  "start": 40,
+  "gain": -16
+ },
+ "lines": [
+  {
+   "say": "Stop holding your wine glass like this.",
+   "shots": [
+    {
+     "clip": "wine21",
+     "start": 0.2,
+     "mode": "fill"
+    }
+   ],
+   "screen": [
+    {
+     "text": "Stop holding your",
+     "y": 1170,
+     "size": 80
+    },
+    {
+     "text": "wine glass like this.",
+     "y": 1266,
+     "size": 80
+    }
+   ]
+  },
+  {
+   "say": "Hold it by the stem.",
+   "shots": [
+    {
+     "clip": "wine16",
+     "start": 8.4,
+     "mode": "fill"
+    }
+   ],
+   "screen": [
+    {
+     "text": "Hold it by the stem",
+     "y": 1215,
+     "size": 86
+    }
+   ]
+  },
+  {
+   "say": "Your hand warms the wine,",
+   "shots": [
+    {
+     "clip": "wine21",
+     "start": 2.4,
+     "mode": "fill"
+    }
+   ],
+   "screen": [
+    {
+     "text": "1. It warms the wine",
+     "y": 1215,
+     "size": 82
+    }
+   ]
+  },
+  {
+   "say": "it leaves fingerprints on the glass,",
+   "shots": [
+    {
+     "clip": "wine21",
+     "start": 4.4,
+     "mode": "fill"
+    }
+   ],
+   "screen": [
+    {
+     "text": "2. Fingerprints",
+     "y": 1215,
+     "size": 88
+    }
+   ]
+  },
+  {
+   "say": "and you can't swirl it properly.",
+   "shots": [
+    {
+     "clip": "wine16",
+     "start": 8.9,
+     "mode": "fill"
+    }
+   ],
+   "screen": [
+    {
+     "text": "3. No swirl",
+     "y": 1215,
+     "size": 92
+    }
+   ]
+  },
+  {
+   "say": "Even Riedel, the glassmaker, says it. Hold it by the stem.",
+   "shots": [
+    {
+     "clip": "wine30",
+     "start": 0.2,
+     "mode": "fill"
+    }
+   ],
+   "screen": [
+    {
+     "text": "Maximilian Riedel:",
+     "y": 1170,
+     "size": 66,
+     "small": true
+    },
+    {
+     "text": "\u201chold it by the stem\u201d",
+     "y": 1266,
+     "size": 78
+    }
+   ]
+  },
+  {
+   "say": "Which way do you hold yours?",
+   "min": 2.4,
+   "shots": [
+    {
+     "clip": "wine16",
+     "start": 11.2,
+     "mode": "fill"
+    }
+   ],
+   "screen": [
+    {
+     "text": "Stem or bowl?",
+     "y": 1215,
+     "size": 92
+    }
+   ]
+  }
+ ]
+}

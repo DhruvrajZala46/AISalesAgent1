@@ -1,0 +1,132 @@
+{
+ "name": "S12_wine_glass",
+ "segs": [
+  {
+   "clip": "wine21",
+   "start": 0.2,
+   "mode": "fill",
+   "dur": 2.74
+  },
+  {
+   "clip": "wine16",
+   "start": 8.4,
+   "mode": "fill",
+   "dur": 1.715
+  },
+  {
+   "clip": "wine21",
+   "start": 2.4,
+   "mode": "fill",
+   "dur": 1.95
+  },
+  {
+   "clip": "wine21",
+   "start": 4.4,
+   "mode": "fill",
+   "dur": 2.249
+  },
+  {
+   "clip": "wine16",
+   "start": 8.9,
+   "mode": "fill",
+   "dur": 2.142
+  },
+  {
+   "clip": "wine30",
+   "start": 0.2,
+   "mode": "fill",
+   "dur": 3.785
+  },
+  {
+   "clip": "wine16",
+   "start": 11.2,
+   "mode": "fill",
+   "dur": 2.4
+  }
+ ],
+ "texts": [
+  {
+   "text": "Stop holding your",
+   "y": 1170,
+   "size": 80,
+   "a": 0,
+   "b": 2.74
+  },
+  {
+   "text": "wine glass like this.",
+   "y": 1266,
+   "size": 80,
+   "a": 0,
+   "b": 2.74
+  },
+  {
+   "text": "Hold it by the stem",
+   "y": 1215,
+   "size": 86,
+   "a": 2.74,
+   "b": 4.455
+  },
+  {
+   "text": "1. It warms the wine",
+   "y": 1215,
+   "size": 82,
+   "a": 4.455,
+   "b": 6.405
+  },
+  {
+   "text": "2. Fingerprints",
+   "y": 1215,
+   "size": 88,
+   "a": 6.405,
+   "b": 8.654
+  },
+  {
+   "text": "3. No swirl",
+   "y": 1215,
+   "size": 92,
+   "a": 8.654,
+   "b": 10.796
+  },
+  {
+   "text": "Maximilian Riedel:",
+   "y": 1170,
+   "size": 66,
+   "small": true,
+   "a": 10.796,
+   "b": 14.581
+  },
+  {
+   "text": "\u201chold it by the stem\u201d",
+   "y": 1266,
+   "size": 78,
+   "a": 10.796,
+   "b": 14.581
+  },
+  {
+   "text": "Stem or bowl?",
+   "y": 1215,
+   "size": 92,
+   "a": 14.581,
+   "b": 16.981
+  }
+ ],
+ "music": {
+  "file": "m716",
+  "start": 40,
+  "gain": -16
+ },
+ "voice": {
+  "file": "tts/S12_wine_glass/voice.wav",
+  "gain": 2
+ },
+ "check": [
+  0.2,
+  2.6,
+  4.9,
+  7.3,
+  9.6,
+  12.0,
+  14.3,
+  16.7
+ ]
+}

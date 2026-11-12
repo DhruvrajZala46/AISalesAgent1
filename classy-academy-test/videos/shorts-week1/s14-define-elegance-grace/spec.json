@@ -1,0 +1,13 @@
+{"name":"S14_define_elegance_grace",
+ "segs":[{"clip":"gkwed29","start":0.2,"dur":1.0,"mode":"fit"},
+         {"clip":"gkwed35","start":4.0,"dur":1.0,"mode":"fill"},
+         {"clip":"gkwed17","start":1.0,"dur":1.0,"mode":"fill"},
+         {"clip":"gkwed13","start":0.0,"dur":1.0,"mode":"fit"},
+         {"clip":"gkwed16","start":4.0,"dur":8.0,"mode":"fill"},
+         {"clip":"grace3","start":6.0,"dur":4.0,"mode":"fill"}],
+ "texts":[{"text":"Define elegance","a":0,"b":4.0,"y":1200,"size":96},
+          {"text":"Grace Kelly >>>","a":4.0,"b":12.0,"y":1200,"size":92},
+          {"text":"Calm is the most expensive","a":12.0,"b":99,"y":1170,"size":72},
+          {"text":"thing you can wear.","a":12.0,"b":99,"y":1264,"size":72}],
+ "music":{"file":"m712","start":131.5},
+ "check":[0.0,1.5,3.5,5.0,9.0,13.0,15.5]}
