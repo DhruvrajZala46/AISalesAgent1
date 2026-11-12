@@ -272,6 +272,9 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     1920x1080: A three steps of the claw-clip French twist + a "2 MIN" badge (lead), B a set of four results + band
     "10 Easy, Elegant HAIRSTYLES", C one large twist with a gold clip + "1 CLIP. 2 MIN." (a Princess Polly product
     photo, not in the video). Waiting for the user's choice.
+  - **Upload package (12 Nov 2026):** `PACKAGE.md` (title kept: "10 Easy, Elegant 2-Minute Hairstyles", 100/100),
+    `DESCRIPTION.txt` (3,514 chars: guide + shop links, 13 chapters, credits, thumbnail A's credit), `TAGS.txt` (15).
+    Signed as Classy Academy; the video carries the CE logo, so the user must say which channel it goes to.
   - **The user then asked for the Classy Elegance logo on this video, not the Classy Academy logo** (corner logo and end
     card swapped to `logo_ce.png` / `logo_ce_dark.png`), and to keep the current voice (a directed-pacing voice test,
     `B_directed.mp3`, was offered and declined).
