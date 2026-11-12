@@ -260,6 +260,11 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     fixed before delivery: the hook title's line spacing; a two-frame black flash at the end of the toothbrush clip
     (source); two seconds of bare wall in style 9 (the window began with the woman out of frame); a TikTok watermark in
     one style 10 window (per-window crop). A 720p preview of the first render was sent; the corrected render followed.
+  - **Delivered 12 Nov 2026:** `10-Easy-Elegant-2-Minute-Hairstyles_1080p.mp4` (1920x1080, 30 fps, 10:47, 233 MiB,
+    crf 18; the send limit is now 400 MiB, not 500). QA on the final render: no black frames, no silence, -13.8 LUFS,
+    peak -1.8 dBFS; freezes only on cards, photos and the end card; the four fixed spots and the CE logo checked by eye;
+    the clip panel scanned for black flashes across the whole video (none). The three thumbnails were also rebuilt
+    natively at 1920x1080 on request (`thumb_spec_ca_1080.json`). Waiting for the user's review.
   - **The user then asked for the Classy Elegance logo on this video, not the Classy Academy logo** (corner logo and end
     card swapped to `logo_ce.png` / `logo_ce_dark.png`), and to keep the current voice (a directed-pacing voice test,
     `B_directed.mp3`, was offered and declined).
