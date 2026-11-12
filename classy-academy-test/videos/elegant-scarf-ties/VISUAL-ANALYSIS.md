@@ -74,7 +74,7 @@ not right, the fastest fix is for the creator to name the track she uses, or sen
 | 8 Shoulder throw | scarf opened out, one end flicked over the opposite shoulder; then the two colour pairs | `t8c9` `t7a30` `t7b6` `pg319` `bgrey7` `bgrey0` |
 | 9 Blanket triangle | square folded corner to corner, point in front, corners behind and forward, edge rolled | `bfold7` `t9c48` `t7c25` `t9c16` `t9a41` |
 | 10 Belted wrap | scarf opened over the shoulders, a slim belt at the waist, three women | `t10b11` `t10a19` `t10b34` |
-| Close | the ten names beside a clip; coats and scarves; the guide; thank you | `t10b26` `t7a26` `t7b17` `bcash7` `bcoat29` `t7b6` `bleave6` |
+| Close | the ten names beside a clip; coats and scarves; the guide; the thank-you and "Bye, my loves" over three clips | `t10b26` `t7a26` `t7b17` `bcash7` `bcoat29` `t7b6` `bleave6` `bsnow8` `bcoat13` `bgrey0` |
 
 ## 5. Where the picture is not ideal
 

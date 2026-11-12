@@ -599,7 +599,10 @@ q('A part two?<br><i>Let us know.</i>', at(74, 'So let us') - 0.1, at(74, 'and w
 q('Which one will you<br><i>try first?</i>', at(74, 'and which one'), en(74) + 0.3, QL, size=66)
 cfull([(K('bleave6', 0.3, 8.9), nx(75))], nx(76))
 q(GUIDE, at(75, 'be sure') - 0.2, en(75) + 0.3, QC, cls='over')
-q('<span style="font-size:60px">Thank you for spending your time with us.</span><br><i style="font-size:74px">A like or comment means the world to us.</i>',
-  nx(76) + 0.3, total - 3.2, QC)
+# the outro runs over clips, as on the channel (this ending was rendered as its own short composition and joined on)
+cfull([(K('bsnow8', 5.1, 8.6), nx(76) - 0.25), (K('bcoat13', 12.8, 14.3), nx(76) + 5.2), (K('bgrey0', 23.5, 29.3), nx(76) + 7.3)], total - 3.2)
+q('<span style="font-size:58px">Thank you for spending your time with us.</span><br><i style="font-size:70px">A like or comment means the world to us.</i>',
+  nx(76) + 0.3, at(77, 'Until') - 0.35, LOW, cls='over')
+q('Until next time.<br><i>Bye, my loves.</i>', at(77, 'Until') - 0.05, total - 3.2, LOW, size=70, cls='over')
 open(os.path.join(P, 'used.txt'), 'w').write('\n'.join(USED) + '\n')
 json.dump(USED, open(os.path.join(P, 'used_times.json'), 'w'), indent=0)
