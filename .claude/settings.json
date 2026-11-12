@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(bash classy-academy-test/videos/shorts-week1/tools/upload_temp.sh:*)"
-    ]
-  }
-}
