@@ -1,0 +1,73 @@
+{
+ "name": "S2_define_grace_diana",
+ "segs": [
+  {
+   "clip": "kneel1",
+   "start": 0.0,
+   "dur": 4.0,
+   "mode": "fit"
+  },
+  {
+   "clip": "kneel1",
+   "start": 11.0,
+   "dur": 5.5,
+   "mode": "fit"
+  },
+  {
+   "clip": "kneel29",
+   "start": 10.0,
+   "dur": 2.5,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:ih*0.12"
+  },
+  {
+   "clip": "kneel29",
+   "start": 15.0,
+   "dur": 1.6,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:ih*0.12"
+  }
+ ],
+ "texts": [
+  {
+   "text": "Define grace",
+   "a": 0,
+   "b": 4.0,
+   "y": 1200,
+   "size": 96
+  },
+  {
+   "text": "Princess Diana >>>",
+   "a": 4.0,
+   "b": 10.3,
+   "y": 1200,
+   "size": 88
+  },
+  {
+   "text": "She didn't look down on them.",
+   "a": 10.3,
+   "b": 99,
+   "y": 1170,
+   "size": 68
+  },
+  {
+   "text": "She came down to them.",
+   "a": 10.3,
+   "b": 99,
+   "y": 1260,
+   "size": 68
+  }
+ ],
+ "music": {
+  "file": "m712",
+  "start": 35.5
+ },
+ "check": [
+  0.3,
+  2.5,
+  5.0,
+  8.0,
+  11.0,
+  13.0
+ ]
+}

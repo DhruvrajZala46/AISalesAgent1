@@ -1,0 +1,125 @@
+{
+ "name": "S3_obey",
+ "segs": [
+  {
+   "clip": "wed472",
+   "start": 5.6,
+   "dur": 3.0,
+   "mode": "fill",
+   "crop": "crop=iw*0.74:ih*0.70:iw*0.06:ih*0.04"
+  },
+  {
+   "clip": "wed810",
+   "start": 5.0,
+   "dur": 2.5,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0"
+  },
+  {
+   "clip": "wed8138",
+   "start": 9.0,
+   "dur": 5.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.9:0:0"
+  },
+  {
+   "clip": "wed1113",
+   "start": 0.0,
+   "dur": 3.5,
+   "mode": "fit",
+   "crop": "crop=iw:ih/2:0:0"
+  },
+  {
+   "clip": "wed8138",
+   "start": 21.0,
+   "dur": 3.5,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.9:0:0"
+  }
+ ],
+ "texts": [
+  {
+   "text": "In 1947, Princess Elizabeth",
+   "a": 0,
+   "b": 3.0,
+   "y": 1170,
+   "size": 74
+  },
+  {
+   "text": "promised to \u201cobey.\u201d",
+   "a": 0,
+   "b": 3.0,
+   "y": 1262,
+   "size": 74
+  },
+  {
+   "text": "In 1981, the world watched",
+   "a": 3.0,
+   "b": 5.5,
+   "y": 1170,
+   "size": 74
+  },
+  {
+   "text": "Diana say her vows.",
+   "a": 3.0,
+   "b": 5.5,
+   "y": 1262,
+   "size": 74
+  },
+  {
+   "text": "She left out one word.",
+   "a": 5.5,
+   "b": 8.1,
+   "y": 1215,
+   "size": 80
+  },
+  {
+   "text": "\u201cObey.\u201d",
+   "a": 8.1,
+   "b": 10.5,
+   "y": 1190,
+   "size": 118
+  },
+  {
+   "text": "Kate left it out too,",
+   "a": 10.5,
+   "b": 14.0,
+   "y": 1170,
+   "size": 74
+  },
+  {
+   "text": "in 2011.",
+   "a": 10.5,
+   "b": 14.0,
+   "y": 1262,
+   "size": 74
+  },
+  {
+   "text": "Elegance begins",
+   "a": 14.0,
+   "b": 99,
+   "y": 1170,
+   "size": 74
+  },
+  {
+   "text": "with self-respect.",
+   "a": 14.0,
+   "b": 99,
+   "y": 1262,
+   "size": 74
+  }
+ ],
+ "music": {
+  "file": "m711",
+  "start": 147.0
+ },
+ "check": [
+  0.0,
+  2.0,
+  4.0,
+  6.5,
+  9.0,
+  11.5,
+  15.5
+ ]
+}
