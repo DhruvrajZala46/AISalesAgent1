@@ -256,6 +256,21 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
     `MUSIC_CREDIT` / `ENDLOGO` (set in `edit.py`).
   - Docs: `SOURCES-LOG.md` (61 clips, 16 photos, all unresolved), `CREDITS.txt`, `CHAPTERS.txt`, `edit.py`, `picks.md`.
   - Render started 12 Nov 2026 (10:47, 1080p); see the chat for the delivered file.
+  - Render QA (12 Nov 2026): the first render was read every 2.5 s and every clip scanned for black frames. Four flaws
+    fixed before delivery: the hook title's line spacing; a two-frame black flash at the end of the toothbrush clip
+    (source); two seconds of bare wall in style 9 (the window began with the woman out of frame); a TikTok watermark in
+    one style 10 window (per-window crop). A 720p preview of the first render was sent; the corrected render followed.
+  - **The user then asked for the Classy Elegance logo on this video, not the Classy Academy logo** (corner logo and end
+    card swapped to `logo_ce.png` / `logo_ce_dark.png`), and to keep the current voice (a directed-pacing voice test,
+    `B_directed.mp3`, was offered and declined).
+  - **Title and Classy Academy thumbnails (12 Nov 2026, `THUMBNAIL.md`):** 294 hair videos with 1M+ views found (70
+    searches); 262 thumbnails read and tagged; 243 scored against their own channel. Findings: the hair seen from behind
+    or the side (295x against 62x), a step beside the result (454x) and a time promise in the title (14% of the 1M+
+    titles against 6% under 100k) mark the winners; creators' faces and warnings sit at the bottom. Title kept: "10 Easy,
+    Elegant 2-Minute Hairstyles". Three thumbnails in the channel's layout, built from frames of the video's own clips:
+    1 "Elegant Hair / In 2 Minutes", 2 "2-Minute / Elegant Hairstyles" (the channel's own 967k thumbnail plus the new
+    promise), 3 "Elegant Hair / Easier Than It Looks" (one French twist in three steps). The thumbnails carry the CA
+    logo and the video the CE logo, both as asked; the user decides which channel it goes to.
 
 ## 1. Where things stand right now
 

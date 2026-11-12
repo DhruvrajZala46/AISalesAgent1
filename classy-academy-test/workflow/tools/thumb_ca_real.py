@@ -67,6 +67,9 @@ def build(spec, name, outdir='.'):
     lsh = Image.new('RGBA', (W, H), (8, 6, 4, 0)); a = Image.new('L', (W, H), 0); a.paste(L.split()[3].point(lambda v: v * 0.45), (lx + 1, ly + 2))
     lsh.putalpha(a.filter(ImageFilter.GaussianBlur(3)))
     out = photos.convert('RGBA')
+    if spec.get('logo_dark'):   # optional: a soft dark patch behind the logo when it lands on blonde hair or a white wall
+        gl = Image.new('L', (W, H), 0); ImageDraw.Draw(gl).ellipse((lx - 50, ly - 45, lx + L.width + 50, ly + L.height + 45), fill=spec['logo_dark'])
+        ld = Image.new('RGBA', (W, H), (18, 12, 8, 0)); ld.putalpha(gl.filter(ImageFilter.GaussianBlur(38))); out = Image.alpha_composite(out, ld)
     for layer in (dark, shadow, text, lsh, logo): out = Image.alpha_composite(out, layer)
     out = out.convert('RGB'); out.save(f'{outdir}/{name}.jpg', quality=95); out.save(f'{outdir}/{name}.png')
     os.makedirs(f'{outdir}/layers', exist_ok=True)
