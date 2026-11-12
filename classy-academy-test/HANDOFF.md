@@ -239,7 +239,7 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   hairstyles idea ("ship it") and uploaded all the channel's scripts (`MY_CHANNEL_SCRIPT.txt`, 30 entries, 28 different).
   Script v1 "10 Easy, Elegant 2-Minute Hairstyles" written in the format of the channel's own two hair scripts: 91 lines,
   1,554 words, hook 72 STRONG. Every step read in a written tutorial (proof table in `script.md`); the winners'
-  captions and comments could not be read (YouTube block, no vidIQ credits). Checkers: `fit.py` one flag, `dna.py` two (why 20.6, inner 5.1); the
+  captions and comments could not be read (YouTube block, no vidIQ credits). Checkers: `fit.py` one flag, `dna.py` one (inner-world words); the
   channel's own hair scripts get the same kind of flags (both tools are tuned on wardrobe videos). Rights for whole tutorial clips to be settled before the build. Waiting for the
   user's review of the script.
 
