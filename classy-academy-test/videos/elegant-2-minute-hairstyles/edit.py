@@ -353,7 +353,7 @@ TT = (PW + 40, 30, 1880, 230)
 # Layout of the channel's own hairstyles video ("The Most Elegant & Easy Hairstyles", A-JRkjQs2XI): its replay peaks are the
 # vertical tutorial clips on the caramel backdrop, so every step is a whole vertical clip at the left with the step written
 # beside it; white script cards per style; full screen only for the hook, the guide and the ending. Every clip checked by eye.
-TRACKS_EDIT = ['m659.mp3']; MUSIC_DB = 13; ENDLOGO = 'logo_ca_dark.png'
+TRACKS_EDIT = ['m659.mp3']; MUSIC_DB = 13; ENDLOGO = 'logo_ce_dark.png'
 MUSIC_CREDIT = 'Music: "Romantic" by Francisco Alvear (Mixkit, free license)'
 MID = (PW + 1880) // 2
 RT = (PW + 40, 30, 1880, 230)
