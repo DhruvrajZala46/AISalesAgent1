@@ -235,6 +235,14 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   channels, 7 at 5M+, Jamila Musayeva 7.2M at 124x; new ground for the channel, in its "Never Do" format); second,
   dressing rules; third, the put-together wave. Waiting for the user's choice.
 
+- **Classy Academy hairstyles script (12 Nov 2026, `videos/elegant-2-minute-hairstyles/`):** the user came back to the
+  hairstyles idea ("ship it") and uploaded all the channel's scripts (`MY_CHANNEL_SCRIPT.txt`, 30 entries, 28 different).
+  Script v1 "10 Easy, Elegant 2-Minute Hairstyles" written in the format of the channel's own two hair scripts: 89 lines,
+  about 1,545 words, hook 72 STRONG. Every step read in a written tutorial (proof table in `script.md`); the winners'
+  captions and comments could not be read (YouTube block, no vidIQ credits). Checkers: one flag each, the same kind the
+  channel's own hair scripts get. Rights for whole tutorial clips to be settled before the build. Waiting for the
+  user's review of the script.
+
 ## 1. Where things stand right now
 
 **The user REJECTED the last video.** That is "6 More Ways to INSTANTLY Sound More Elegant (Part 2)", in
