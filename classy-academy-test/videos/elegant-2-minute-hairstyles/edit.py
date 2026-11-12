@@ -431,7 +431,7 @@ qstack(['Brush back,<br><i>toward the ponytail</i>', 'Secure it low,<br><i>at th
 lclip([(K('s2b23', 1.3, 8.8), nx(22)), (K('s2a25', 6.2, 9.5), at(22, 'and pin'))], nx(23))
 qstack(['Take <i>one small strand</i>', 'Wrap it around the elastic', '<i>Pin the end</i> underneath'],
        [nx(22) + 0.3, at(22, 'wrap it'), at(22, 'and pin')], nx(23) - 0.1, size=60, rh=170)
-lclip([(K('s2c1', 8.0, 15.2), nx(23))], nx(24))
+lclip([(K('s2c1', 7.5, 14.45), nx(23))], nx(24))
 q('For flyaways:<br><i>hairspray on a clean toothbrush</i>', at(23, 'Spray a touch') - 0.1, en(23) + 0.3, QL, size=60)
 lclip([(K('s2d12', 4.5, 14.0), nx(24))], nx(25))
 q('Or a ribbon<br><i>around the elastic</i>', nx(24) + 0.3, at(24, 'Black') - 0.2, QL, size=64)
