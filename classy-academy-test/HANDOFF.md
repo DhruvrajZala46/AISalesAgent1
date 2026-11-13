@@ -281,6 +281,10 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   - Told to the user: no guarantee (0.2% of these videos reach 10M); B shows one woman's face four times from a reel that
     may be a repost; B's "1 scarf" is the script's line though ties 9 and 10 need a blanket scarf; the thumbnails carry
     the CA logo while the video carries the CE logo. **Waiting for the user's review.**
+- **Scarf package (13 Nov 2026, `videos/elegant-scarf-ties/PACKAGE.md`, `DESCRIPTION.txt`, `TAGS.txt`):** title options
+  (recommended "10 Elegant Ways to Tie a Scarf"), a 3,305-character description in the last packages' layout with 13
+  chapters and the credits (48 account names, one photo, music, thumbnail line), 15 tags. Told to the user: the credit
+  names are Pinterest account names and an @name can link to an unrelated YouTube channel. Waiting for the user's review.
 - **Next idea after the hairstyles video (12 Nov 2026, `research-2026-11-12.md`):** every topic given the same search
   depth (16 topics x 8 searches) and checked for this year. Hair is the only makeable topic near the lane where many
   small creators reach 10M (37 at 10M+ from 29 channels), and it is live this year (Moni Hairstyle, 100k subscribers,
