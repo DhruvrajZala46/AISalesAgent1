@@ -55,7 +55,7 @@ def ph_scale(marker_id='phm'):
 # S1 hook: celebrities pay hundreds of rupees a bottle for alkaline water - why?
 s = scene(0.0, st(2) - 0.05, f'''
   <video id="vsplash" class="vid full" src="{cut('bw_splash', 'blackwater13', 0.0, 3.3)}" muted playsinline data-start="0" data-duration="3.3"></video>
-  <video id="vblk" class="vid full" src="{cut('bw_hand', 'blackwater5', 0.2, 3.9)}" muted playsinline data-start="3.25" data-duration="3.7"></video>
+  <video id="vblk" class="vid full" src="{cut('bw_hand2', 'blackwater5', 0.2, 4.3)}" muted playsinline data-start="3.25" data-duration="{st(2) - 3.25 + 0.05:.3f}"></video>
   <div class="shade top"></div><div class="shade bot"></div>
   <div class="hookA" id="ha">સેલિબ્રિટી ને ક્રિકેટરો</div>
   <div class="hookB" id="hb"><span class="yl">₹ સેંકડો</span>ની એક બોટલ!</div>
@@ -112,7 +112,7 @@ sfx(st(3), 'sfx1490', -17); sfx(at(3, 'સાત'), 'sfx2364', -14); sfx(at(3, '
 # S4 the twist: made at home, with electricity
 BOLT = '<svg viewBox="0 0 100 140"><path d="M58 4 L14 80 L48 80 L36 136 L88 52 L54 52 Z" fill="#ffd84a" stroke="#fff" stroke-width="5" stroke-linejoin="round"/></svg>'
 s = scene(st(4) - 0.05, st(5) - 0.05, f'''
-  <video id="vbat" class="vid full" src="{cut('elec_battery', 'electro0', 6.8, 10.6)}" muted playsinline data-start="{st(4) - 0.05:.3f}" data-duration="3.8"></video>
+  <video id="vbat" class="vid full" src="{cut('elec_battery2', 'electro0', 6.8, 11.2)}" muted playsinline data-start="{st(4) - 0.05:.3f}" data-duration="{st(5) - st(4) + 0.05:.3f}"></video>
   <div class="shade top"></div><div class="shade bot"></div>
   <div class="ttl" id="tw">હવે <span class="yl">મજાની વાત</span></div>
   <div class="bolt" id="bo">{BOLT}</div>
@@ -125,7 +125,7 @@ sfx(st(4), 'sfx2364', -14); sfx(at(4, 'વીજળીથી') - 0.15, 'sfx1317'
 
 # S5 electrolysis: minus side alkaline, plus side acidic
 s = scene(st(5) - 0.05, st(6) - 0.05, f'''
-  <video id="velec" class="vid full" src="{cut('elec_bubbles', 'electro34', 47.5, 54.3, speed=0.95)}" muted playsinline data-start="{st(5) - 0.05:.3f}" data-duration="7.2"></video>
+  <video id="velec" class="vid full" src="{cut('elec_bubbles2', 'electro34', 46.6, 54.3, speed=0.95)}" muted playsinline data-start="{st(5) - 0.05:.3f}" data-duration="{st(6) - st(5) + 0.05:.3f}"></video>
   <div class="shade top"></div><div class="shade bot"></div>
   <div class="pole minus" id="pm"><b>−</b><span>આલ્કલાઇન</span></div>
   <div class="pole plus" id="pp"><b>+</b><span>એસિડિક</span></div>
@@ -138,7 +138,7 @@ sfx(st(5), 'sfx1490', -17); sfx(at(5, 'માઇનસ'), 'sfx3005', -14); sfx(a
 # S6 Enagic Kangen does exactly this; recognised in Japan as a medical device
 JP = '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#fff"/><circle cx="30" cy="20" r="11" fill="#bc002d"/></svg>'
 s = scene(st(6) - 0.05, st(7) - 0.05, f'''
-  <video id="vk8" class="vid full" src="{cut('k8_screen', 'kangen2', 13.0, 20.4)}" muted playsinline data-start="{st(6) - 0.05:.3f}" data-duration="7.3"></video>
+  <video id="vk8" class="vid full" src="{cut('k8_screen2', 'kangen2', 13.0, 21.2)}" muted playsinline data-start="{st(6) - 0.05:.3f}" data-duration="{st(7) - st(6) + 0.05:.3f}"></video>
   <div class="shade top"></div><div class="shade bot"></div>
   <div class="jp top" id="jp1">{JP}<span>જાપાનનું Enagic Kangen</span></div>
   <div class="med" id="md"><svg viewBox="0 0 100 100"><rect x="6" y="6" width="88" height="88" rx="22" fill="#fff"/><path d="M40 22h20v18h18v20H60v18H40V60H22V40h18z" fill="#e53935"/></svg><div>જાપાનમાં<br><span class="yl">મેડિકલ ડિવાઇસ</span>ની માન્યતા</div></div>
