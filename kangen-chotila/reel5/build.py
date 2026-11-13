@@ -109,7 +109,7 @@ CUTS = []  # soft whoosh on scene changes
 # ============================ 1. HOOK: grandfather (memory, sepia) ============================
 t_a = 0.0; t_b = at(1, 'खेत') - 0.12; t_c = st(2)
 shot('kisan1', 2.0, t_a, t_b, 'mem', zoom=(1.12, 1.0))
-shot('kisan33', 16.0, t_b, t_c, 'mem', crop=(0.12, 0.24, 0.76, 0.76), zoom=(1.0, 1.1))
+shot('kisan33', 16.0, t_b, t_c + 0.45, 'mem', crop=(0.12, 0.24, 0.76, 0.76), zoom=(1.0, 1.1))
 hl('हमारे दादाजी', '80 में भी हल!', 0.0, t_c, tp=at(1, 'अस्सी') - 0.05, color='y')
 sfx(0.0, 'sfx498', -9); sfx(at(1, 'हल'), 'sfx1143', -17); CUTS.append(t_b)
 # ============================ 2. today: tired shopkeeper (split then/now) ============================
@@ -129,7 +129,7 @@ hl('जो', 'हर घर में है!', at(3, 'जो') - 0.1, t_f, tp=a
 sfx(t_e, 'sfx498', -10)
 # ============================ 4. reveal: drinking water ============================
 t_g = st(5)
-shot('matka28', 2.0, t_f, t_g, 'bright', zoom=(1.18, 1.0))
+shot('matka28', 2.0, t_f, t_g + 0.45, 'bright', zoom=(1.18, 1.0))
 hl('वो है…', 'आपका पीने का पानी', t_f, t_g, tp=at(4, 'पीने') - 0.1, color='c')
 sfx(at(4, 'पानी') - 0.05, 'sfx1143', -10)
 # ============================ 5. then: well/matka vs now: RO ============================
@@ -251,7 +251,7 @@ shot('familyin4', 2.0, t_t, t_u, 'bright', zoom=(1.0, 1.08)); CUTS.append(t_t)
 hl('आज की सफ़ाई के साथ', 'पूरे परिवार के लिए', t_t, t_u, tp=at(15, 'पूरे') - 0.1, color='g')
 # ============================ 16. callback: the shopkeeper; RO vs Kangen ============================
 t_v = at(16, 'याद') - 0.12; t_w = st(17)
-shot('shopk31', 20.0, t_u, t_v, zoom=(1.0, 1.1)); CUTS.append(t_u)
+shot('shopk31', 20.0, t_u, t_v + 0.45, zoom=(1.0, 1.1)); CUTS.append(t_u)
 hl('तो अगली बार कोई कहे', 'RO है तो सब ठीक!', t_u, t_v, tp=at(16, 'RO') - 0.1, color='c')
 split(t_v, t_w, ('rokitchen17', 0.0, (0, 0, 1, 0.6), 0.6, ''), ('kangenk85', 8.0, None, None, ''),
       'RO<small>सिर्फ़ साफ़</small>', 'Kangen ✓<small>साफ़ भी, भरा भी</small>', ta=at(16, 'साफ़') - 0.1, tb=at(16, 'भरा') - 0.1, colb='var(--g)')
