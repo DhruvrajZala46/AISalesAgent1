@@ -93,7 +93,7 @@ def split(t0, t1, top, bot, la, lb, ta=None, tb=None, colb='var(--y)'):
                     f'<div class="lab" id="{i}l{h}" style="visibility:hidden{";color:" + colb if h == "b" else ""}">{labs[h]}</div></div>' for h, f, c in hv)
     els.append(f'<div class="split" id="{i}">{inner}<div class="line"></div></div>')
     vis(i, t0, t1)
-    T(f'tl.fromTo("#{i} .half.a",{{x:-1080}},{{x:0,duration:.35,ease:"power3.out"}},{t0:.3f});tl.fromTo("#{i} .half.b",{{x:1080}},{{x:0,duration:.35,ease:"power3.out"}},{t0 + 0.22:.3f});')
+    T(f'tl.fromTo("#{i} .half.a",{{x:-1080}},{{x:0,duration:.35,ease:"power3.out"}},{t0:.3f});tl.fromTo("#{i} .half.b",{{x:1080}},{{x:0,duration:.35,ease:"power3.out"}},{t0:.3f});')
     for h, t in (('a', ta if ta is not None else t0 + 0.3), ('b', tb if tb is not None else t0 + 0.5)):
         T(f'tl.set("#{i}l{h}",{{visibility:"visible"}},{t:.3f});tl.fromTo("#{i}l{h}",{{autoAlpha:0,y:30,scale:1.2}},{{autoAlpha:1,y:0,scale:1,duration:.3,ease:"back.out(2)"}},{t:.3f});')
         sfx(t, 'sfx3005', -19)
