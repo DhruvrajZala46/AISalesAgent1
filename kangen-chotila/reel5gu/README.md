@@ -33,3 +33,7 @@ The owner did not like the Microsoft Gujarati voice, so the final Gujarati video
 - Music: one continuous track, Mixkit "Staring at the Night Sky" (168), a film score at a steady ~117 BPM, from
   0:08 of the track. `mix_gu.py m168 8.0 -4` ducks it under the voice with a sidechain compressor (about 11 dB under
   speech, 7 dB under in the pauses), with no silence anywhere.
+
+## Faster (owner: "make it fast")
+`elevenlabs_align.py ritesh_steady.mp3 steady_words.json --steady --fast --target=80` gives shorter pauses (0.10 s inside a
+line, 0.18 s between lines) and a 1.15x tempo, with the pitch kept. The voice is 80.0 s and the video 79.96 s.

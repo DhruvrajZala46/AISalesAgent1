@@ -48,7 +48,7 @@ TX = [("hl('हमारे दादाजी', '80 में भी हल!'",
  ("cap='बोरिंग'", "cap='બોર'"), ("cap='नगरपालिका'", "cap='નગરપાલિકા'"),
  ("MY0, MY1, MT0, MT1 = 705, 1350, 20.15, 23.55", "MY0, MY1 = 705, 1350\n_t1, _t2 = at(6, 'गंदगी') + 0.15, at(6, 'मैग्नीशियम') + 0.15; _v = (1052 - 771) / (_t2 - _t1)\nMT0, MT1 = _t1 - (771 - MY0) / _v, _t1 + (MY1 - 771) / _v"),
  ("['m188', 14.0, 0.0, 37.75, -20]", "['m188', 14.0, 0.0, t_k + 0.2, -20]"),
- ("DUR = round(B[-1]['end'] + 1.6, 2)", "DUR = round(min(B[-1]['end'] + 1.1, 89.8), 2)"),
+ ("DUR = round(B[-1]['end'] + 1.6, 2)", "DUR = round(min(B[-1]['end'] + 0.85, 89.8), 2)"),
  ("<title>Kangen reel 5</title>", "<title>Kangen reel 5 Gujarati</title>")]
 for a, b in TX:
     c = s.count(a); assert c >= 1, a[:50]; s = s.replace(a, b)

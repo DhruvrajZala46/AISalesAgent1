@@ -4,6 +4,9 @@ import sys
 SR = 44100; MAXDUR = 89.85; LEAD = 0.2; TAIL = 1.1; SRC = sys.argv[1] if len(sys.argv) > 1 else 'ritesh_take1.mp3'
 WJ = sys.argv[2] if len(sys.argv) > 2 else 'scribe_words.json'
 STEADY = '--steady' in sys.argv
+for _a in sys.argv:
+    if _a.startswith('--target='): MAXDUR = float(_a.split('=')[1])
+CAP_IN, CAP_LINE = (0.1, 0.18) if '--fast' in sys.argv else (0.13, 0.24)
 lines = [l.strip() for l in open('../beats.txt') if l.strip()]
 tts_lines = [l.strip() for l in open('script_tags.txt') if l.strip()]
 SW = json.load(open(WJ))
@@ -26,8 +29,8 @@ def word_at(t): return next((k for k in range(len(toks)) if tm[k][0] - 0.02 <= t
 DRAMA = {('છે…', 2): 0.32, ('પણ…', 6): 0.34, ('વિચારો…', 9): 0.32, ('આવે.', 10): 0.5}
 cuts = []   # (start, end) of audio to drop
 for s, e in sil:
-    d = e - s; cap = 0.13
-    if any(s - 0.25 <= be <= e + 0.25 or s <= bs <= e for be, bs in bounds): cap = 0.24
+    d = e - s; cap = CAP_IN
+    if any(s - 0.25 <= be <= e + 0.25 or s <= bs <= e for be, bs in bounds): cap = CAP_LINE
     if not STEADY and any(abs(s - bounds[i][0]) < 0.6 for i in (9,)): cap = 0.36       # after "આખું ઘર અટકી જાય છે."
     k = word_at(s)
     if not STEADY and k is not None and (toks[k][1], toks[k][0]) in DRAMA: cap = DRAMA[(toks[k][1], toks[k][0])]
@@ -39,6 +42,7 @@ for c0, c1 in cuts:
 keep.append(y[int(last * SR):int((tm[-1][1] + 0.12) * SR)])
 body = np.concatenate(keep); body_d = len(body) / SR
 total = LEAD + body_d + TAIL; tempo = max(1.0, total / MAXDUR)
+TAIL_S = TAIL
 print('cuts', len(cuts), 'removed', round(sum(c1 - c0 for c0, c1 in cuts), 2), 's; body', round(body_d, 2), 'total', round(total, 2), 'tempo', round(tempo, 4))
 v = np.concatenate([np.zeros(int(SR * LEAD), np.float32), body, np.zeros(int(SR * TAIL), np.float32)])
 v.astype(np.float32).tofile('voice.f32')
