@@ -23,3 +23,13 @@ The owner did not like the Microsoft Gujarati voice, so the final Gujarati video
   ones ("છે…", "પણ… ખાલી", "વિચારો…", the beat before "પણ જાપાનમાં"). A light 1.05x tempo brings the voice to
   89.8 s, and it writes `beats.json` with every word's time, so the edit stays in sync.
 - The audio stays out of git (ElevenLabs output in the scratchpad).
+
+## Final Gujarati voice and music (owner's choice: no emotion changes)
+- The emotion-tag take sounded like "AI shortness of breath" to the owner. The final take has no tags:
+  `elevenlabs_script_steady.txt` (ellipses turned into commas), the same Ritesh voice on eleven_v4,
+  language_code gu, stability 0.8 and similarity 0.85, for one steady, consistent narrator tone (about 1,300 credits).
+- `elevenlabs_align.py ritesh_steady.mp3 steady_words.json --steady` caps every pause evenly (0.13 s inside a line,
+  0.24 s between lines; no dramatic holds) at a 1.05x tempo, giving 89.8 s.
+- Music: one continuous track, Mixkit "Staring at the Night Sky" (168), a film score at a steady ~117 BPM, from
+  0:08 of the track. `mix_gu.py m168 8.0 -4` ducks it under the voice with a sidechain compressor (about 11 dB under
+  speech, 7 dB under in the pauses), with no silence anywhere.

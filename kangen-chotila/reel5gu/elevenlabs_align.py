@@ -1,9 +1,12 @@
 # align2.py: ElevenLabs take -> pauses capped (dramatic ones kept), light tempo to fit <= 89.85 s, beats.json with word times
 import json, re, subprocess, difflib, numpy as np
-SR = 44100; MAXDUR = 89.85; LEAD = 0.2; TAIL = 1.1; SRC = 'ritesh_take1.mp3'
+import sys
+SR = 44100; MAXDUR = 89.85; LEAD = 0.2; TAIL = 1.1; SRC = sys.argv[1] if len(sys.argv) > 1 else 'ritesh_take1.mp3'
+WJ = sys.argv[2] if len(sys.argv) > 2 else 'scribe_words.json'
+STEADY = '--steady' in sys.argv
 lines = [l.strip() for l in open('../beats.txt') if l.strip()]
 tts_lines = [l.strip() for l in open('script_tags.txt') if l.strip()]
-SW = json.load(open('scribe_words.json'))
+SW = json.load(open(WJ))
 def norm(t): return re.sub(r'[^઀-૿a-zA-Z0-9]', '', t)
 toks = []
 for li, (disp, tl) in enumerate(zip(lines, tts_lines)):
@@ -25,9 +28,9 @@ cuts = []   # (start, end) of audio to drop
 for s, e in sil:
     d = e - s; cap = 0.13
     if any(s - 0.25 <= be <= e + 0.25 or s <= bs <= e for be, bs in bounds): cap = 0.24
-    if any(abs(s - bounds[i][0]) < 0.6 for i in (9,)): cap = 0.36       # after "આખું ઘર અટકી જાય છે."
+    if not STEADY and any(abs(s - bounds[i][0]) < 0.6 for i in (9,)): cap = 0.36       # after "આખું ઘર અટકી જાય છે."
     k = word_at(s)
-    if k is not None and (toks[k][1], toks[k][0]) in DRAMA: cap = DRAMA[(toks[k][1], toks[k][0])]
+    if not STEADY and k is not None and (toks[k][1], toks[k][0]) in DRAMA: cap = DRAMA[(toks[k][1], toks[k][0])]
     if d > cap: m = (s + e) / 2; cuts.append((m - (d - cap) / 2, m + (d - cap) / 2))
 def warp(t): return t - sum(min(max(0, t - c0), c1 - c0) for c0, c1 in cuts)
 keep, last = [], 0.0

@@ -27,3 +27,4 @@ Pinterest / Instagram re-posts used for WhatsApp sharing as the owner decided; r
 - music: Mixkit 'Echoes' (188) and 'A New Life' (543), Mixkit Stock Music Free License
 - sound effects: Mixkit free sound effects 166, 498, 1143, 1311, 1317, 1490, 2364, 3005
 - voice: Microsoft Edge neural voice hi-IN-MadhurNeural (+36% rate)
+- Gujarati final: music Mixkit 'Staring at the Night Sky' (168), Mixkit Stock Music Free License; voice ElevenLabs 'Ritesh – Gujarati E-Learning Narrator' (eleven_v4)
