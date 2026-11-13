@@ -22,6 +22,22 @@ This folder lives here only until the project gets its own repository. Text only
   the winners' exact spoken scripts could not be read. Fix: paste transcripts (YouTube "Show transcript"), or
   vidIQ credits (transcript tool; credits refill 12 Dec).
 
+## Reel 4 (current): Hindi, Meanwhile Mayank style, 3:04 (`reel4/`)
+"आपकी रसोई में एक मशीन ऐसी भी है…": your RO cleans water but also strips the minerals; Enagic Kangen filters, keeps
+minerals and adds hydrogen. It covers Japan's 50 years with it, the India vs Japan elders split (longest life), Japan's
+health ministry recognition, five kinds of water for the whole family, and the callback. The CTA is "आज ही फ्री डेमो
+बुक कराएं" (no personal name).
+- `beats.txt`: the approved script, one line per beat; `beats_tts.txt` is the same with RO/NGT/Enagic/Kangen spelled
+  out for the voice.
+- Voice: `tts.py hi-IN-MadhurNeural "+32%"` (Microsoft Edge neural, male), then `assemble_voice.py` → `beats.json`.
+- Edit: `build.py` (HyperFrames: one picture per idea, a 1-3 word headline top-left, stamps, chips, splits, particles,
+  sound effects on every beat), `style.css`, `mix.py` (voice + Mixkit music at -21 dB + SFX, loudness -14 LUFS).
+- Footage credits: `reel4/CREDITS.txt` (Pinterest/Instagram re-posts for WhatsApp only, as the owner decided).
+- Facts on screen: NGT expert committee (RO not needed where TDS is under 500; RO strips minerals), Ohsawa et al.,
+  Nature Medicine 2007 (hydrogen selectively reduces the most harmful radicals), Aoki 2012 (athletes' fatigue),
+  Japan's MHLW lists alkaline ionizers as household medical devices, Japan among the longest life expectancies.
+  It makes no disease or cure claims.
+
 ## Scripts
 - `scripts/v6-alkaline-explainer-60s.txt`: current, 60 s, for WhatsApp. Modelled on Khan Sir's "सभी Celebrity लोग ये
   पानी क्यों पीते हैं?" (4.7M views, about 2,600x his channel median) and his "RO फिल्टर का पानी पीते हो तो ये जान लो" (he
