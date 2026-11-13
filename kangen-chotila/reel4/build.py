@@ -10,11 +10,12 @@ def at(i, word, k=0, end=False):
     return hits[k][2] if end else hits[k][1]
 st = lambda i: B[i - 1]['start']; en = lambda i: B[i - 1]['end']
 def dur(src): return float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f'raw/{src}.mp4'], capture_output=True, text=True).stdout)
-def cut(name, src, a, need, w=W, h=H, top=1.0, bot=1.0):
+def cut(name, src, a, need, w=W, h=H, top=1.0, bot=1.0, slow=None):
     out = f'assets/{name}.mp4'
     if not os.path.exists(out):
         avail = max(0.5, dur(src) - a); speed = 1.0
         if avail < need + 0.2: speed = max(0.45, avail / (need + 0.2))
+        if slow: speed = slow
         take = min(avail, (need + 0.2) * speed)
         pre = f"crop=iw:ih*{top}:0:0," if top < 1 else (f"crop=iw:ih*{bot}:0:ih*{1 - bot:.3f}," if bot < 1 else "")
         vf = f"{pre}setpts=PTS/{speed},scale={w}:{h}:force_original_aspect_ratio=increase:flags=lanczos,crop={w}:{h},fps=30"
@@ -27,9 +28,9 @@ n = [0]
 def nid(p='e'): n[0] += 1; return f'{p}{n[0]}'
 def sfx(t, f, g=-14): SFX.append((round(t, 3), f, g))
 
-def shot(src, a, t0, t1, cls='', top=1.0, zoom=(1.0, 1.09), inner='', bot=1.0):
-    i = nid('sh'); name = f'{src}_{a}_{int(t0 * 10)}_t{top}_b{bot}'.replace('.', 'p')
-    f = cut(name, src, a, t1 - t0, top=top, bot=bot)
+def shot(src, a, t0, t1, cls='', top=1.0, zoom=(1.0, 1.09), inner='', bot=1.0, slow=None):
+    i = nid('sh'); name = f'{src}_{a}_{int(t0 * 10)}_t{top}_b{bot}_s{slow}'.replace('.', 'p')
+    f = cut(name, src, a, t1 - t0, top=top, bot=bot, slow=slow)
     els.append(f'<div class="shot {cls}" id="{i}"><video id="{i}v" src="{f}" muted playsinline data-start="{t0:.3f}" data-duration="{t1 - t0 + 0.05:.3f}"></video>{inner}</div>')
     T(f'tl.set("#{i}",{{visibility:"visible"}},{t0:.3f});')
     if t1 < DUR: T(f'tl.set("#{i}",{{visibility:"hidden"}},{t1:.3f});')
@@ -168,7 +169,8 @@ shot('bones22', 3.0, at(15, 'हमारे') - 0.2, st(16) - 0.05, 'rust', zoo
 hl('वैसे ही शरीर के अंदर', 'भी जंग!', at(15, 'हमारे') - 0.2, st(16) - 0.05, tp=at(15, 'जंग', 1) - 0.1, color='r', big=True)
 sfx(at(15, 'जंग', 1) - 0.1, 'sfx1143', -11)
 # L16 - scientists: big cause of ageing & tiredness
-shot('oldman5', 0.5, st(16) - 0.05, st(17) - 0.05, zoom=(1.0, 1.08))
+shot('oldman5', 0.0, st(16) - 0.05, st(16) + 2.0, zoom=(1.0, 1.06))
+shot('oldman5', 4.6, st(16) + 2.0, st(17) - 0.05, zoom=(1.06, 1.12))
 hl('बुढ़ापे और थकान की', 'बड़ी वजह', st(16) - 0.05, st(17) - 0.05, tp=at(16, 'बुढ़ापे'), color='r')
 # L17 - 2007: hydrogen removes the most dangerous particles, leaves the good ones
 shot('bubbles35', 6.0, st(17) - 0.05, st(18) - 0.05, 'dim', zoom=(1.0, 1.12))
@@ -199,7 +201,7 @@ i = nid('sp'); t_a, t_b = st(21) - 0.05, at(21, 'मंत्रालय') - 0.
 els.append(f'''<div class="split" id="{i}"><div class="half a"><video id="{i}a" src="{cut('india_eld15b', 'oldman15', 0.5, t_b - t_a + 0.3, 1080, 960, top=0.75)}" muted playsinline data-start="{t_a:.3f}" data-duration="{t_b - t_a + 0.1:.3f}"></video><div class="lab">भारत</div></div>
 <div class="half b"><video id="{i}b" src="{cut('japan_eld_d', 'japan24', 5.0, t_b - t_a + 0.3, 1080, 960, top=0.66)}" muted playsinline data-start="{t_a:.3f}" data-duration="{t_b - t_a + 0.1:.3f}"></video><div class="lab" style="color:var(--y)">जापान: सबसे लंबी उम्र</div></div><div class="line"></div></div>''')
 T(f'tl.set("#{i}",{{visibility:"visible"}},{t_a:.3f});tl.set("#{i}",{{visibility:"hidden"}},{t_b:.3f});')
-T(f'tl.fromTo("#{i} .half.a",{{x:-1080}},{{x:0,duration:.35,ease:"power3.out"}},{t_a:.3f});tl.fromTo("#{i} .half.b",{{x:1080}},{{x:0,duration:.35,ease:"power3.out"}},{at(21, "जापान") - 0.1:.3f});')
+T(f'tl.fromTo("#{i} .half.a",{{x:-1080}},{{x:0,duration:.35,ease:"power3.out"}},{t_a:.3f});tl.fromTo("#{i} .half.b",{{x:1080}},{{x:0,duration:.35,ease:"power3.out"}},{t_a + 0.25:.3f});')
 sfx(t_a, 'sfx1143', -12)
 shot('kangen2', 20.0, t_b, st(22) - 0.05, 'dim', zoom=(1.0, 1.1))
 hl('जापान का स्वास्थ्य मंत्रालय', 'मेडिकल डिवाइस की मान्यता', t_b, st(22) - 0.05, tp=at(21, 'मंत्रालय') + 0.2, color='g')
@@ -224,10 +226,20 @@ for k, name in enumerate(ICON):
 shot('kangenk8_31', 0.3, st(23) - 0.05, st(24) - 0.05, zoom=(1.0, 1.1), bot=0.64)
 hl('पूरे परिवार का पानी', 'एक नल से', st(23) - 0.05, st(24) - 0.05, tp=at(23, 'एक') - 0.1, color='y')
 el('<div class="chip g" id="ID" style="left:0;right:0;margin:0 auto;width:fit-content;top:1250px">एक बूंद भी बर्बाद नहीं</div>', at(23, 'एक', 1) - 0.05, st(24) - 0.05, 'autoAlpha:0,y:40', s='sfx3005')
-# L24 - callback
-shot('rokitchen17', 0.5, st(24) - 0.05, st(25) - 0.05, zoom=(1.0, 1.15), top=0.6)
-hl('तो अगली बार याद रखिए', 'साफ़ ही नहीं…', st(24) - 0.05, at(24, 'नहीं,') - 0.1, tp=at(24, 'सिर्फ़') - 0.1, color='c')
-hl('पानी', 'मिनरल्स से भरा भी!', at(24, 'नहीं,') - 0.1, st(25) - 0.05, tp=at(24, 'से') - 0.3, color='g')
+# L24 - callback: back to the first scene (the RO), then RO vs Kangen split
+t_y = at(24, 'याद') - 0.1
+shot('rokitchen17', 0.0, st(24) - 0.05, t_y, zoom=(1.0, 1.12), top=0.6, slow=0.6)
+hl('तो अगली बार कोई कहे', 'RO है तो सब ठीक?', st(24) - 0.05, t_y, tp=at(24, 'RO') - 0.1, color='c')
+i = nid('sp'); t_e = st(25) - 0.05
+els.append(f'''<div class="split" id="{i}"><div class="half a"><video id="{i}a" src="{cut('ro_cb', 'rokitchen17', 0.0, t_e - t_y + 0.2, 1080, 960, top=0.6, slow=0.55)}" muted playsinline data-start="{t_y:.3f}" data-duration="{t_e - t_y + 0.1:.3f}"></video><div class="lab" id="{i}la" style="visibility:hidden">RO: सिर्फ़ साफ़</div></div>
+<div class="half b"><video id="{i}b" src="{cut('kg_cb', 'kangenk8_31', 5.9, t_e - t_y + 0.2, 1080, 960, bot=0.64, slow=0.55)}" muted playsinline data-start="{t_y:.3f}" data-duration="{t_e - t_y + 0.1:.3f}"></video><div class="lab" id="{i}lb" style="visibility:hidden;color:var(--g);font-size:80px">Kangen: मिनरल्स से भरा ✓</div></div><div class="line"></div></div>''')
+T(f'tl.set("#{i}",{{visibility:"visible"}},{t_y:.3f});tl.set("#{i}",{{visibility:"hidden"}},{t_e:.3f});')
+T(f'tl.fromTo("#{i} .half.a",{{x:-1080}},{{x:0,duration:.35,ease:"power3.out"}},{t_y:.3f});tl.fromTo("#{i} .half.b",{{x:1080}},{{x:0,duration:.35,ease:"power3.out"}},{t_y + 0.2:.3f});')
+for lab, t in ((f'{i}la', at(24, 'साफ़') - 0.1), (f'{i}lb', at(24, 'मिनरल्स') - 0.1)):
+    T(f'tl.set("#{lab}",{{visibility:"visible"}},{t:.3f});tl.fromTo("#{lab}",{{autoAlpha:0,scale:1.4}},{{autoAlpha:1,scale:1,duration:.3,ease:"back.out(2)"}},{t:.3f});')
+    sfx(t, 'sfx3005', -14)
+hl('याद रखिए:', '', t_y, t_e, tp=t_y + 0.3)
+sfx(t_y, 'sfx1490', -15)
 # L25 - which water at your home? we'll show the difference at your home, free
 shot('glassro15', 0.4, st(25) - 0.05, at(25, 'आपके', 1) - 0.15, 'dim', top=0.7)
 hl('आपके घर में', 'कौन सा पानी?', st(25) - 0.05, at(25, 'आपके', 1) - 0.15, tp=at(25, 'सा') - 0.2, color='y')
