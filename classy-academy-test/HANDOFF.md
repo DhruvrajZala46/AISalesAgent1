@@ -267,6 +267,20 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   - **Waiting for the user's review.** Open points told to the user: the music was chosen by measurement, the logo is
     The Classy Elegance, one line uses a photo, and no clip is licensed.
   - The work folders are `cws` and `cws_tail` in the session scratchpad; the media is not in git.
+- **Scarf thumbnails (13 Nov 2026, `videos/elegant-scarf-ties/THUMBNAIL.md`):** asked for the three most proven thumbnails
+  in the Classy Academy look, with the why behind each.
+  - Research: 88 YouTube searches, 832 neck-scarf long-form videos, 58 at 1M+ (2 at 10M+); 214 thumbnails tagged by eye in
+    three view tiers (`thumbnail-research-tags.txt`); each winner against its own channel (median 286x).
+  - What separates the 1M+ thumbnails from the 2k-100k ones: five or more finished looks at once (17% against 1%), the head
+    cropped so the scarf is the subject (31% against 15%), a white or very light background (37% against 15%). Titles: a
+    number of ways (67% against 25%); season words are rare among winners (3% against 11%).
+  - Built (`make_thumbs.py`, 1920x1080 and 1280x720, CA logo): **A the set** (all ten ties, five by two, "10 WAYS" disc),
+    **B one scarf** (one woman holds it open, then three ways; "1 SCARF. 10 WAYS."), **C three knots** (three large ties,
+    no words). Every picture is a frame of a clip in the video; nothing is enlarged.
+  - Title recommended: "10 Elegant Ways to Tie a Scarf" (the season dropped); the approved title stays as the test title.
+  - Told to the user: no guarantee (0.2% of these videos reach 10M); B shows one woman's face four times from a reel that
+    may be a repost; B's "1 scarf" is the script's line though ties 9 and 10 need a blanket scarf; the thumbnails carry
+    the CA logo while the video carries the CE logo. **Waiting for the user's review.**
 - **Next idea after the hairstyles video (12 Nov 2026, `research-2026-11-12.md`):** every topic given the same search
   depth (16 topics x 8 searches) and checked for this year. Hair is the only makeable topic near the lane where many
   small creators reach 10M (37 at 10M+ from 29 channels), and it is live this year (Moni Hairstyle, 100k subscribers,
