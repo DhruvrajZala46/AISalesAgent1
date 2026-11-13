@@ -1,0 +1,38 @@
+{
+ "CA_scarf_1080": {
+  "top": "10 Elegant Ways",
+  "big": "To Tie a Scarf",
+  "small": "this winter",
+  "underline": false,
+  "dark": 118,
+  "panels": [
+   {
+    "src": "lil_navy.png",
+    "box": [
+     380,
+     150,
+     603
+    ]
+   },
+   {
+    "src": "esc_brown.png",
+    "box": [
+     360,
+     100,
+     674
+    ]
+   },
+   {
+    "src": "belt.png",
+    "box": [
+     366,
+     200,
+     644
+    ]
+   }
+  ],
+  "logo_dark": 120,
+  "scale": 1.5,
+  "logo": "logo_ca_hires.png"
+ }
+}

@@ -147,3 +147,26 @@ three different concepts). vidIQ has no credits until 12 Dec 2026 and was not us
 **Files:** `CA-Scarf_Thumbnail-A_The-Set`, `-B_One-Scarf`, `-C_Three-Knots` (1920x1080 .jpg and .png, 1280x720 .jpg), four
 check sheets, and `CA-Scarf-thumbnails_editable-source.zip` (layers, frames, logo, the script). Rebuild: `python3
 make_thumbs.py` in the video's work folder (needs `raw/` and `logo_ca_hires.png`). Fonts: Montserrat (Open Font License).
+
+## 8. Thumbnail D: the channel's own layout (13 Nov 2026)
+
+After A, B and C the user asked for "one thumbnail exact same as Classy Academy".
+
+- **What it is:** the layout measured on the channel's 31 thumbnails, built with `workflow/tools/thumb_ca_real.py` and
+  `thumb_spec_ca_1080.json` at the tool's own default positions: three tall panels edge to edge with thin light dividers;
+  the channel's slightly dark, warm grade; a soft darkening behind the words; a fine small-caps top line, "10 Elegant
+  Ways"; the heavy white headline, "To Tie a Scarf"; a small third line, "this winter"; the CA logo top-left.
+- **Pictures:** three women from clips in the video, each at the frame's own size (nothing enlarged): the drape on a navy
+  coat (t2c42 at 28.05 s), the fake knot on a brown coat (t1c38 at 11.85 s), the belted wrap (t10b34 at 38.0 s).
+- **Check:** placed among the channel's eight most-viewed thumbnails it reads as one of the family
+  (`CA-Scarf_Thumbnail-D_among-your-own-thumbnails.jpg`). Brightness 103; the channel's median is 109.
+- **Honest limits:**
+  - the channel's own thumbnails use glossy portrait photos; these are frames of indoor reels with white walls, so D looks
+    a little flatter than the originals beside it;
+  - the headline lies across the scarves, as the channel's headline lies across the clothes;
+  - against the scarf research, D is the weakest of the four on paper: it has six words, faces to the camera and three
+    looks, where the million-view scarf thumbnails show many looks, few words and no eyes. It is the one that matches the
+    channel; A is the one that matches the topic's winners. Test & compare takes three: A, B and D would be my three;
+  - the left woman is from the reel whose owner is not confirmed (section 6).
+- **Credit line for D:** `Thumbnail: @ld2000, @katherinevescala, @chamchuche`
+

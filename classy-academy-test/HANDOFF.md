@@ -285,6 +285,11 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   (recommended "10 Elegant Ways to Tie a Scarf"), a 3,305-character description in the last packages' layout with 13
   chapters and the credits (48 account names, one photo, music, thumbnail line), 15 tags. Told to the user: the credit
   names are Pinterest account names and an @name can link to an unrelated YouTube channel. Waiting for the user's review.
+- **Scarf thumbnail D (13 Nov 2026):** the user asked for "one thumbnail exact same as Classy Academy". Built with
+  `thumb_ca_real.py` and `videos/elegant-scarf-ties/thumb_spec_ca_1080.json` at the tool's default positions: three panels
+  from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
+  eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
+  Waiting for the user's review.
 - **Next idea after the hairstyles video (12 Nov 2026, `research-2026-11-12.md`):** every topic given the same search
   depth (16 topics x 8 searches) and checked for this year. Hair is the only makeable topic near the lane where many
   small creators reach 10M (37 at 10M+ from 29 channels), and it is live this year (Moni Hairstyle, 100k subscribers,
