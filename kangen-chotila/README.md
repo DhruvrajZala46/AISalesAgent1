@@ -23,7 +23,17 @@ This folder lives here only until the project gets its own repository. Text only
   vidIQ credits (transcript tool; credits refill 12 Dec).
 
 ## Scripts
-- `scripts/v4-kidney-stone-short-50s.txt`: current, about 50 s. Sources: NIH/NIDDK (fluids are the most important way
+- `scripts/v6-alkaline-explainer-60s.txt`: current, 60 s, for WhatsApp. Modelled on Khan Sir's "सभी Celebrity लोग ये
+  पानी क्यों पीते हैं?" (4.7M views, about 2,600x his channel median) and his "RO फिल्टर का पानी पीते हो तो ये जान लो" (he
+  explains electrolysis). Copied moves: celebrity hook + "કેમ?", a "સમજો." teaching beat, question-then-answer
+  ("લોહીનું pH? સાત પોઇન્ટ ચાર."), simple chemistry with plus/minus plates, then the twist ("ઘરે, વીજળીથી"). It ends on
+  a free home pH demo and "call Hardevsinh" (the WhatsApp sender). Facts: blood pH about 7.4; electrolysis gives alkaline
+  water at the cathode and acidic water at the anode; Japan's health ministry classes alkaline ionized-water machines as
+  household medical devices (Enagic certified 2006); no disease claims. Credits: `scripts/v6-CREDITS.txt`.
+- Transcripts: with the user's cookies, `tools/get_scripts.py` (yt-dlp + node JS runtime + `yt-dlp-ejs`) pulls Hindi
+  captions slowly. The cookies file stays in the scratchpad and is never committed.
+- `scripts/v5-kidney-stone-55s.txt`: kidney-stone version (no urine mention).
+- `scripts/v4-kidney-stone-short-50s.txt`: about 50 s. Sources: NIH/NIDDK (fluids are the most important way
   to prevent kidney stones), Foods (MDPI) 2019 review (Gujarat in India's stone belt), NHS urine colour chart,
   Phillips et al. 1984 (thirst falls with age).
 - `scripts/v3-health-signals-86s.txt`: earlier, 86 s (four body signals; also Armstrong 2012 UConn 1.5%
