@@ -170,7 +170,7 @@ hl('वैसे ही शरीर के अंदर', 'भी जंग!', 
 sfx(at(15, 'जंग', 1) - 0.1, 'sfx1143', -11)
 # L16 - scientists: big cause of ageing & tiredness
 shot('oldman5', 0.0, st(16) - 0.05, st(16) + 2.0, zoom=(1.0, 1.06))
-shot('oldman5', 4.6, st(16) + 2.0, st(17) - 0.05, zoom=(1.06, 1.12))
+shot('oldman5', 4.6, st(16) + 2.0, st(17) - 0.05, zoom=(1.06, 1.12), slow=0.64)
 hl('बुढ़ापे और थकान की', 'बड़ी वजह', st(16) - 0.05, st(17) - 0.05, tp=at(16, 'बुढ़ापे'), color='r')
 # L17 - 2007: hydrogen removes the most dangerous particles, leaves the good ones
 shot('bubbles35', 6.0, st(17) - 0.05, st(18) - 0.05, 'dim', zoom=(1.0, 1.12))
@@ -228,11 +228,11 @@ hl('पूरे परिवार का पानी', 'एक नल से'
 el('<div class="chip g" id="ID" style="left:0;right:0;margin:0 auto;width:fit-content;top:1250px">एक बूंद भी बर्बाद नहीं</div>', at(23, 'एक', 1) - 0.05, st(24) - 0.05, 'autoAlpha:0,y:40', s='sfx3005')
 # L24 - callback: back to the first scene (the RO), then RO vs Kangen split
 t_y = at(24, 'याद') - 0.1
-shot('rokitchen17', 0.0, st(24) - 0.05, t_y, zoom=(1.0, 1.12), top=0.6, slow=0.6)
+shot('rokitchen17', 0.0, st(24) - 0.05, t_y, zoom=(1.0, 1.12), top=0.6, slow=0.55)
 hl('तो अगली बार कोई कहे', 'RO है तो सब ठीक?', st(24) - 0.05, t_y, tp=at(24, 'RO') - 0.1, color='c')
 i = nid('sp'); t_e = st(25) - 0.05
-els.append(f'''<div class="split" id="{i}"><div class="half a"><video id="{i}a" src="{cut('ro_cb', 'rokitchen17', 0.0, t_e - t_y + 0.2, 1080, 960, top=0.6, slow=0.55)}" muted playsinline data-start="{t_y:.3f}" data-duration="{t_e - t_y + 0.1:.3f}"></video><div class="lab" id="{i}la" style="visibility:hidden">RO: सिर्फ़ साफ़</div></div>
-<div class="half b"><video id="{i}b" src="{cut('kg_cb', 'kangenk8_31', 5.9, t_e - t_y + 0.2, 1080, 960, bot=0.64, slow=0.55)}" muted playsinline data-start="{t_y:.3f}" data-duration="{t_e - t_y + 0.1:.3f}"></video><div class="lab" id="{i}lb" style="visibility:hidden;color:var(--g);font-size:80px">Kangen: मिनरल्स से भरा ✓</div></div><div class="line"></div></div>''')
+els.append(f'''<div class="split" id="{i}"><div class="half a"><video id="{i}a" src="{cut('ro_cb2', 'rokitchen17', 0.0, t_e - t_y + 0.2, 1080, 960, top=0.6, slow=0.45)}" muted playsinline data-start="{t_y:.3f}" data-duration="{t_e - t_y + 0.1:.3f}"></video><div class="lab" id="{i}la" style="visibility:hidden">RO: सिर्फ़ साफ़</div></div>
+<div class="half b"><video id="{i}b" src="{cut('kg_cb2', 'kangenk8_31', 5.3, t_e - t_y + 0.2, 1080, 960, bot=0.64, slow=0.47)}" muted playsinline data-start="{t_y:.3f}" data-duration="{t_e - t_y + 0.1:.3f}"></video><div class="lab" id="{i}lb" style="visibility:hidden;color:var(--g);font-size:80px">Kangen: मिनरल्स से भरा ✓</div></div><div class="line"></div></div>''')
 T(f'tl.set("#{i}",{{visibility:"visible"}},{t_y:.3f});tl.set("#{i}",{{visibility:"hidden"}},{t_e:.3f});')
 T(f'tl.fromTo("#{i} .half.a",{{x:-1080}},{{x:0,duration:.35,ease:"power3.out"}},{t_y:.3f});tl.fromTo("#{i} .half.b",{{x:1080}},{{x:0,duration:.35,ease:"power3.out"}},{t_y + 0.2:.3f});')
 for lab, t in ((f'{i}la', at(24, 'साफ़') - 0.1), (f'{i}lb', at(24, 'मिनरल्स') - 0.1)):
