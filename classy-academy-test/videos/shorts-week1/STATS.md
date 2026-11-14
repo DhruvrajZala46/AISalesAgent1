@@ -71,3 +71,17 @@ race (Mon 00:00), #18 engagement ring (Mon 17:30). Researched and held (facts ve
 heir born in hospital (1982, ~4 s), baby William on the 1983 tour (no film found), the "Uptown Girl" dance (Dec
 1985: only a clip from The Crown - actors, rejected), the leprosy hospital (Indonesia, Nov 1989: no film found).
 Open slots: Mon 7 am and 7 pm ET, Tue x3.
+
+| Checked (UTC) | Short | Id | Age | Views | Likes | Comments | Note |
+|---|---|---|---|---|---|---|---|
+| 14 Nov 18:06 | #3 Diana's vows | Mr_V0fXzsMA | 42 h | 25,087 | 704 | 8 | slowing |
+| 14 Nov 18:06 | #6 Diana broke 5 rules | bC6W4eR1FfY | 24.6 h | 23,633 | 939 | 13 | +7,622 in 6 h, about to lead |
+| 14 Nov 18:06 | #1 Revenge dress | KWbkQjkoy2g | 57 h | 16,931 | 795 | 14 | |
+| 14 Nov 18:06 | #2 Define Grace: Diana | -zgZp0sMIhc | 48.6 h | 3,776 | 167 | 2 | |
+| 14 Nov 18:06 | #13 Queen colours | xG3FwJjuE2Q | 18 h | 2,082 | 72 | 1 | |
+| 14 Nov 18:06 | #5 Grace Kelly walked away | mxg-TOehFH4 | 45 h | 206 | 8 | 0 | flop |
+| 14 Nov 18:06 | #12 Wine glass | n__XOhL2CtE | 6 h | 94 | 3 | 0 | weak (same as the etiquette demo #4) |
+| 14 Nov 18:06 | #14 Define Elegance: Grace Kelly | e4SHVssyUIU | 36 min | 88 | 1 | 0 | went public on its own at 17:30; weak start |
+| 14 Nov 18:06 | #4 Afternoon tea | ZM8bGiNtc5k | 30 h | 45 | 4 | 0 | flop |
+
+Shorts total ~72,100 views.
