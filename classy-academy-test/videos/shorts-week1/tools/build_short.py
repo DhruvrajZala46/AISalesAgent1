@@ -1,6 +1,4 @@
 # build_short.py spec.json -> silent Short in the Classy Elegance look (serif text, CE monogram, piano bed)
-# optional "shade": true -> overlays assets/shade.png (soft black gradient behind the text band at y~1240 and the
-# monogram) for bright footage; make it with make_shade.py.
 import json, subprocess, sys, os, numpy as np
 S=json.load(open(sys.argv[1])); name=S["name"]; F="fonts/PlayfairDisplay.ttf"; FS="fonts/CormorantSC-Regular.ttf"
 def run(c): subprocess.run(c,shell=True,check=True)
@@ -8,12 +6,13 @@ os.makedirs(f"seg/{name}",exist_ok=True); D=f"seg/{name}"
 lst=open(f"{D}/list.txt","w")
 for k,g in enumerate(S["segs"]):
     c,s,d,mode=g["clip"],g["start"],g["dur"],g.get("mode","fill"); pre=(g["crop"]+",") if g.get("crop") else ""
+    sl=g.get("slow",1); pre=(f"setpts={sl}*PTS," if sl!=1 else "")+pre   # "slow": 2 plays the real clip at half speed (no frames invented)
     if mode=="fill":
         fc=f"[0:v]{pre}scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30"
     else:
         fc=(f"[0:v]{pre}split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=30:2,eq=brightness=-0.12[bg];"
             f"[b]scale=1080:-2[fg];[bg][fg]overlay=0:(H-h)/2-60,setsar=1,fps=30")
-    run(f"ffmpeg -nostdin -v error -y -ss {s} -t {d} -i raw/{c}.mp4 -an -filter_complex \"{fc}\" -c:v libx264 -crf 16 -pix_fmt yuv420p {D}/s{k}.mp4")
+    run(f"ffmpeg -nostdin -v error -y -ss {s} -t {round(d/sl,3)} -i raw/{c}.mp4 -an -filter_complex \"{fc}\" -c:v libx264 -crf 16 -pix_fmt yuv420p {D}/s{k}.mp4")
     lst.write(f"file 's{k}.mp4'\n")
 lst.close()
 run(f"ffmpeg -nostdin -v error -y -f concat -safe 0 -i {D}/list.txt -c copy {D}/body.mp4")

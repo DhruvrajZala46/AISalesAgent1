@@ -24,3 +24,8 @@ is the user's call (Studio).
 What did not work: litterbox.catbox.moe (HTTP 412 to this machine) and tmpfiles.org (the connection is cut during
 the handshake from this cloud machine). Google Drive is connected in Zapier (fashionone227@gmail.com) as a spare
 route.
+
+**Measure the file right before step 1** (`stat -c %s file.mp4`) and put that exact number in
+`X-Upload-Content-Length`. A rebuilt file has a new size; a wrong size makes step 2 fail with HTTP 400, and the
+failed slot still leaves an empty private video (Taj Mahal, 14 Nov: `G4zo2VFSynE`, unscheduled and renamed at once).
+After any failed or timed-out step, list the uploads playlist and unschedule the empty twin.

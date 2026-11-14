@@ -86,3 +86,13 @@ Tags: audrey hepburn, breakfast at tiffany's, little black dress, givenchy, audr
 
 Facts (checked 12 Nov): Givenchy black satin dress; sold at Christie's, London, 5 Dec 2006, for £467,200 incl. premium
 (Wikipedia, HELLO!, UPI). Format proof: "story behind the iconic look" (revenge dress 11.2-18.7M).
+
+## Next batch (built 14 Nov from our own winners: Diana, one dated moment, silent, real film)
+
+| # | Slot (ET) | IST | UTC | Short | YouTube id |
+|---|---|---|---|---|---|
+| 16 | Sun 15, 7:00 am | 5:30 pm | 12:00 | The Day Diana Sat Alone at the Taj Mahal | OUj53Pj-Wkg |
+| 17 | Sun 15, 12:30 pm | 11:00 pm | 17:30 | Diana's Wedding Dress Was Crushed in the Coach | cqDJf_ZrXbA |
+| 18 | Mon 16, 12:30 pm | 11:00 pm | 17:30 | Diana's Engagement Ring Came From a Catalogue (William & Kate's engagement anniversary) | oJLgH-P0VTc |
+
+`G4zo2VFSynE` is an empty twin of #16 (a failed first try): private, unscheduled, "EMPTY DUPLICATE - safe to delete".
