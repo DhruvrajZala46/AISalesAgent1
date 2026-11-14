@@ -290,6 +290,20 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **French winter script (14 Nov 2026, `videos/french-winter-eight/`):** the user approved the idea ("I like this topic
+  ... ship it, now write the script") and asked for the exact Classy Academy script style, proven tips that are not
+  basic, and said "my channel is a clone of Classy Academy".
+  - Script v1 "The Only 8 Things French Women Wear All Winter": long wool coat, fine turtleneck, classic sweater, wool
+    blazer, dark straight jeans, leather boots, big scarf, leather gloves; then three outfits from the eight. 74 lines,
+    1,589 words.
+  - Read first: five Classy Academy wardrobe scripts in full and the script of the French video that got 25,000 views.
+  - Every tip from 11 pages read that day (French and Paris-based women quoted in Who What Wear, PureWow, My Chic
+    Obsession); table in `script.md`, Proof. The winners' captions could not be read (YouTube block, no vidIQ credits).
+  - Hook 77 STRONG (The Warning, the formula of the French hit); `fit.py` FITS; `dna.py` one flag ("French" said 16
+    times; the tool expects none; the French hit scores higher on the same line).
+  - No names, quotes, brands, statistics, channel name, Classy Closet or website.
+  - Told to the user: the coat length differs from the winter-expensive video's advice. Waiting for the user's review;
+    then voice and clips.
 - **Next idea after the scarf video (14 Nov 2026, `research-2026-11-14.md`):** the user said "my videos are not getting
   views" and asked for the one proven next topic.
   - **Found: the videos made here are uploaded to The Classy Elegance** (`@TheClassyElegance`, 301 subscribers, 21 long
