@@ -49,3 +49,18 @@ as approved until the user answers. Next build: "The Night Diana Danced With Joh
 
 14 Nov 00:50: #16 "The Day Diana Sat Alone at the Taj Mahal" built (s16-taj-mahal/), the proven form; ready to
 replace #12 or #14 the moment the user says "swap". Not uploaded yet.
+
+| Checked (UTC) | Short | Id | Age | Views | Likes | Comments | Note |
+|---|---|---|---|---|---|---|---|
+| 14 Nov 12:16 | #3 Diana's vows | Mr_V0fXzsMA | 36.3 h | 24,057 | 682 | 8 | slowing: +3,636 in 12 h |
+| 14 Nov 12:16 | #6 Diana broke 5 rules | bC6W4eR1FfY | 18.8 h | 16,011 | 614 | 8 | fastest now: +13,018 in 12 h (~1,085/h) |
+| 14 Nov 12:16 | #1 Revenge dress | KWbkQjkoy2g | 51.3 h | 15,935 | 778 | 14 | +2,099 in 12 h |
+| 14 Nov 12:16 | #2 Define Grace: Diana | -zgZp0sMIhc | 42.8 h | 3,270 | 146 | 2 | +889 in 12 h |
+| 14 Nov 12:16 | #13 Queen colours | xG3FwJjuE2Q | 12.3 h | 1,749 | 62 | 1 | modest |
+| 14 Nov 12:16 | #5 Grace Kelly walked away | mxg-TOehFH4 | 39.3 h | 196 | 7 | 0 | flop |
+| 14 Nov 12:16 | #4 Afternoon tea | ZM8bGiNtc5k | 24.3 h | 38 | 2 | 0 | flop |
+| 14 Nov 12:16 | #12 Wine glass | n__XOhL2CtE | 16 min | 1 | 0 | 0 | went public on its own at 12:00 (no "swap" from the user, so the schedule was kept) |
+
+Channel 14 Nov 12:16: 313 subscribers, 103,803 total views. Shorts so far: ~61,300 views.
+New signal: #6 is a VOICED list and is now the fastest, so the voice is not what sank #4. The lever is the topic:
+all three Diana stories are at 15-24K; the Queen is modest; Grace Kelly and etiquette demos flop.
