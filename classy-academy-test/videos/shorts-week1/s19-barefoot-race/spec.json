@@ -1,0 +1,155 @@
+{
+ "name": "S19_barefoot_race",
+ "shade": true,
+ "segs": [
+  {
+   "clip": "race12",
+   "start": 12.3,
+   "dur": 3.0,
+   "mode": "fill"
+  },
+  {
+   "clip": "race39",
+   "start": 5.95,
+   "dur": 2.25,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.85:0:0"
+  },
+  {
+   "clip": "race39",
+   "start": 8.2,
+   "dur": 3.55,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.85:0:0"
+  },
+  {
+   "clip": "race41",
+   "start": 16.1,
+   "dur": 3.5,
+   "mode": "fit",
+   "crop": "crop=iw*0.80:ih*0.76:0:ih*0.10"
+  },
+  {
+   "clip": "race41",
+   "start": 19.6,
+   "dur": 2.4,
+   "mode": "fit",
+   "crop": "crop=iw*0.80:ih*0.76:0:ih*0.10"
+  },
+  {
+   "clip": "race12",
+   "start": 17.0,
+   "dur": 4.0,
+   "mode": "fill"
+  }
+ ],
+ "texts": [
+  {
+   "text": "June 1991. Princess Diana",
+   "a": 0,
+   "b": 3.0,
+   "y": 1170,
+   "size": 72
+  },
+  {
+   "text": "at Harry’s school sports day.",
+   "a": 0,
+   "b": 3.0,
+   "y": 1262,
+   "size": 66
+  },
+  {
+   "text": "Wetherby School, London",
+   "a": 0,
+   "b": 3.0,
+   "y": 1350,
+   "size": 46,
+   "small": true
+  },
+  {
+   "text": "Then came",
+   "a": 3.0,
+   "b": 5.25,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "the mothers’ race.",
+   "a": 3.0,
+   "b": 5.25,
+   "y": 1262,
+   "size": 76
+  },
+  {
+   "text": "She kicked off her shoes",
+   "a": 5.25,
+   "b": 8.8,
+   "y": 1170,
+   "size": 74
+  },
+  {
+   "text": "and ran barefoot.",
+   "a": 5.25,
+   "b": 8.8,
+   "y": 1262,
+   "size": 74
+  },
+  {
+   "text": "A princess, racing",
+   "a": 8.8,
+   "b": 12.3,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "with the other moms.",
+   "a": 8.8,
+   "b": 12.3,
+   "y": 1262,
+   "size": 76
+  },
+  {
+   "text": "She didn’t win.",
+   "a": 12.3,
+   "b": 14.7,
+   "y": 1215,
+   "size": 84
+  },
+  {
+   "text": "The most elegant thing",
+   "a": 14.7,
+   "b": 16.7,
+   "y": 1170,
+   "size": 74
+  },
+  {
+   "text": "a mother can do?",
+   "a": 14.7,
+   "b": 16.7,
+   "y": 1262,
+   "size": 74
+  },
+  {
+   "text": "Show up.",
+   "a": 16.7,
+   "b": 99,
+   "y": 1190,
+   "size": 118
+  }
+ ],
+ "music": {
+  "file": "m712",
+  "start": 92.5
+ },
+ "check": [
+  0.0,
+  1.5,
+  4.0,
+  6.5,
+  8.0,
+  10.5,
+  13.5,
+  15.5,
+  17.5
+ ]
+}
