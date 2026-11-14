@@ -290,6 +290,24 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **Next idea after the scarf video (14 Nov 2026, `research-2026-11-14.md`):** the user said "my videos are not getting
+  views" and asked for the one proven next topic.
+  - **Found: the videos made here are uploaded to The Classy Elegance** (`@TheClassyElegance`, 301 subscribers, 21 long
+    videos, 19 Shorts), not to Classy Academy. Read that channel's public list first in every idea or packaging task.
+  - Its usual long video has 377 views. One broke out: "7 Things Elegant French Women Never Wear", 25,000 (66x). Its
+    second-fastest is "8 Ways to Look Expensive in Winter". The hairstyles (69 views) and scarf (33) videos were under
+    two days old and cannot be judged yet. The scarf video went up with thumbnail D.
+  - About half its thumbnails carry the CA logo and half the CE logo.
+  - Classy Academy (136k): last upload 24 Oct; its videos of the last 6 months have a median of 66k against 208k before,
+    while the niche is flat (44 channels, -4%).
+  - The French-women wave is live on nine channels, small new ones included: French Fashion (8,750 subscribers) "The
+    Only 10 Clothes You Need All Winter (The French Way, 50+)" 658k in 22 days; Graceful Aging with Ruby (5,850) 565k in
+    22 days; Paris Never Ages 1.0M.
+  - **Pick: "The Only 8 Things French Women Wear All Winter"** (94/100; 117 Pinterest video pins counted, not screened).
+    Series after it: French never-wear in winter, French dressing rules, French women and age. The bun script stays a
+    marked extra (the only topic with many 10M videos).
+  - Told to the user: no topic guarantees views; no French-style video from an individual creator has reached 10M;
+    test scarf thumbnails A and C against D; use one logo; send Studio numbers. Waiting for the user's choice.
 - **Next idea after the hairstyles video (12 Nov 2026, `research-2026-11-12.md`):** every topic given the same search
   depth (16 topics x 8 searches) and checked for this year. Hair is the only makeable topic near the lane where many
   small creators reach 10M (37 at 10M+ from 29 channels), and it is live this year (Moni Hairstyle, 100k subscribers,
