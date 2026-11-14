@@ -57,7 +57,7 @@ winter wardrobe was only 8 pieces? Before you buy anything else this season, see
 **Then use it to bring the rest of your wardrobe into winter. Under a shirt with the top buttons open. Under a V-neck. Even under a short-sleeved dress you'd normally save for spring.**
 [ON SCREEN: close-up of a fine, smooth knit; then three folded turtlenecks: black, cream, navy]
 **And this is the one place you don't need to spend. A simple cotton turtleneck in black, cream or navy does the job beautifully.**
-**One thin layer, and half your closet works in winter. And when the coat comes off, you still feel polished.**
+**One thin layer, and half your closet works in winter. And when the coat comes off, you still feel at ease.**
 
 ## 3. A V-neck sweater
 [ON SCREEN: transition: white card, black script: "3. A V-neck sweater"]
@@ -93,9 +93,9 @@ winter wardrobe was only 8 pieces? Before you buy anything else this season, see
 [ON SCREEN: transition: white card, black script: "5. Dark straight-leg jeans"]
 **Now, the lower half. Number five, dark straight-leg jeans.**
 [ON SCREEN: a deep, even indigo pair worn with a blazer at a dinner table]
-**In a deep, even blue, jeans can look as polished as tailored trousers. And in winter, two small details take them further.**
+**In a deep, even blue, jeans can look as refined as tailored trousers. And in winter, two small details take them further.**
 [ON SCREEN: close-up at the ankle: cropped jeans showing bare skin above a boot; then full-length jeans resting on the top of the foot]
-**First, the length. Instead of the cropped jeans you wear in spring, choose a full length that reaches the top of your foot. With no bare ankle above your boots, it looks more polished, and it feels warmer.**
+**First, the length. Instead of the cropped jeans you wear in spring, choose a full length that reaches the top of your foot. With no bare ankle above your boots, it looks neater, and it feels warmer.**
 [ON SCREEN: full-length view: dark jeans with dark boots, one unbroken line]
 **Second, match your boots to your denim. Dark jeans with black or dark brown boots create one unbroken line, and that makes your legs look longer.**
 [ON SCREEN: hands pulling thin black tights on, then jeans over them; then the woman stepping outside into the cold]
