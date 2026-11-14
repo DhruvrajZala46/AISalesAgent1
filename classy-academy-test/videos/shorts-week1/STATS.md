@@ -46,3 +46,6 @@ Saturday's slots: #12 wine (format D, like #4) and #14 Define Elegance: Grace Ke
 match losing formats; #15 Audrey LBD matches #1's "story behind a look" with a non-Diana icon (an honest test).
 Recommendation sent to the user (push, 00:2x UTC): swap #12 and #14 for new Diana one-moment Shorts. Schedule kept
 as approved until the user answers. Next build: "The Night Diana Danced With John Travolta" (White House, 9 Nov 1985).
+
+14 Nov 00:50: #16 "The Day Diana Sat Alone at the Taj Mahal" built (s16-taj-mahal/), the proven form; ready to
+replace #12 or #14 the moment the user says "swap". Not uploaded yet.

@@ -1,0 +1,149 @@
+{
+ "name": "S16_taj_mahal",
+ "segs": [
+  {
+   "clip": "taj2",
+   "start": 6.6,
+   "dur": 3.0,
+   "mode": "fill",
+   "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10"
+  },
+  {
+   "clip": "taj2",
+   "start": 10.0,
+   "dur": 2.8,
+   "mode": "fill",
+   "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10"
+  },
+  {
+   "clip": "taj2",
+   "start": 13.5,
+   "dur": 4.0,
+   "mode": "fill",
+   "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10"
+  },
+  {
+   "clip": "taj2",
+   "start": 21.8,
+   "dur": 2.8,
+   "mode": "fill",
+   "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10"
+  },
+  {
+   "clip": "taj2",
+   "start": 29.1,
+   "dur": 3.0,
+   "mode": "fill",
+   "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10"
+  },
+  {
+   "clip": "taj2",
+   "start": 25.0,
+   "dur": 3.4,
+   "mode": "fill",
+   "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10"
+  }
+ ],
+ "texts": [
+  {
+   "text": "In 1992, Princess Diana",
+   "a": 0,
+   "b": 3.0,
+   "y": 1170,
+   "size": 74
+  },
+  {
+   "text": "visited the Taj Mahal,",
+   "a": 0,
+   "b": 3.0,
+   "y": 1262,
+   "size": 74
+  },
+  {
+   "text": "built by an emperor",
+   "a": 3.0,
+   "b": 5.8,
+   "y": 1170,
+   "size": 74
+  },
+  {
+   "text": "for the wife he loved.",
+   "a": 3.0,
+   "b": 5.8,
+   "y": 1262,
+   "size": 74
+  },
+  {
+   "text": "She sat in front of it",
+   "a": 5.8,
+   "b": 7.8,
+   "y": 1215,
+   "size": 80
+  },
+  {
+   "text": "alone.",
+   "a": 7.8,
+   "b": 9.8,
+   "y": 1190,
+   "size": 118
+  },
+  {
+   "text": "Ten months later,",
+   "a": 9.8,
+   "b": 12.6,
+   "y": 1170,
+   "size": 74
+  },
+  {
+   "text": "she and Charles separated.",
+   "a": 9.8,
+   "b": 12.6,
+   "y": 1262,
+   "size": 72
+  },
+  {
+   "text": "One photograph",
+   "a": 12.6,
+   "b": 15.6,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "said everything.",
+   "a": 12.6,
+   "b": 15.6,
+   "y": 1262,
+   "size": 78
+  },
+  {
+   "text": "Sometimes elegance",
+   "a": 15.6,
+   "b": 99,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "is saying nothing at all.",
+   "a": 15.6,
+   "b": 99,
+   "y": 1262,
+   "size": 72
+  }
+ ],
+ "music": {
+  "file": "m712",
+  "start": 14.0
+ },
+ "check": [
+  0.0,
+  1.5,
+  4.0,
+  6.5,
+  8.5,
+  11.0,
+  14.0,
+  17.0,
+  18.8
+ ],
+ "shade": true
+}
