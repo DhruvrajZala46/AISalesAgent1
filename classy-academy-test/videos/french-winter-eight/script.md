@@ -1,317 +1,283 @@
-# The Only 8 Things French Women Wear All Winter - script v1 (14 Nov 2026)
+# 8 French-inspired winter essentials - script v2 (14 Nov 2026)
 
-Idea approved by the user (14 Nov 2026, "I like this topic ... ship it, now write the script") from `../../research-2026-11-14.md`.
-Written after reading the channel's own wardrobe scripts in full and the script of the one video that broke out on The Classy
-Elegance ("7 Things Elegant French Women Never Wear", 25,000 views). The channel's name is never spoken.
+v2 answers the user's brief of 14 Nov 2026: analyse the 30 channel scripts, check every piece for overlap, upgrade every
+tip, make the French angle credible, fact-check, and rewrite. v1 ("The Only 8 Things French Women Wear All Winter") is
+kept in `script_v1.md`. The channel's name is never spoken.
 
-**Title:** The Only 8 Things French Women Wear All Winter (46 characters, `title.py` 94/100).
+**Recommended title:** The Only 8 Winter Pieces You Need (The French Way): 50 characters, `title.py` 94/100.
+**Literal alternative:** 8 French-Inspired Winter Essentials You'll Wear All Season: 58 characters, 94/100.
+**The proposed title** (8 French-Inspired Winter Wardrobe Essentials for Effortless Elegance): 68 characters, 76/100, cut near 60.
+**Thumbnail words:** ONLY 8 PIECES (small line: all winter).
 
-## The two best hooks (seven written, scored with `hookscore.py`)
-
-| | Hook | Score | Formula |
-|---|---|---|---|
-| **A, used** | Before you buy one more thing for winter, stop. French women wear the same 8 pieces all season. How many of them do you already own? | **77 STRONG** | The Warning |
-| B | You might think looking elegant all winter requires a closet full of clothes. But what if I told you French women only wear 8 things? | 59 WORKABLE | The Question |
-
-Why A: it is the formula of the French video that broke out ("Before you buy another pair of heels, stop."), it says the
-title's promise in the first ten seconds, and its question is answered by the video itself: the viewer counts her own
-pieces as she watches. B is the channel's classic "You might think ... But what if I told you" opener, if you prefer it.
+**Hooks (six written, scored with `hookscore.py`):** A, used, 74 STRONG (The Warning); B, 73 STRONG: "What if your whole
+winter wardrobe was only 8 pieces? Before you buy anything else this season, see how many you already own."
 
 ---
 
 ## Hook
-[ON SCREEN: full screen: a shop rail crowded with winter clothes, a hand reaching for one more hanger and stopping; then a woman on a winter street in a long navy coat, a scarf and leather gloves]
+[ON SCREEN: full screen: a shop rail crowded with winter clothes, a hand reaching for one more hanger and stopping. Cut to a calm wardrobe with eight pieces on wooden hangers. A script "8" writes on.]
 **Before you buy one more thing for winter, stop.**
-**French women wear the same eight pieces all season. How many of them do you already own?**
+**Eight pieces can carry you through the whole season. How many of them do you already own?**
 
-## The turn
-[ON SCREEN: a woman crossing a cold, grey city street in a long coat, a soft knit and jeans, calm and unhurried]
-**Have you ever seen a woman on a cold, grey day wearing something so simple, a long coat, a soft knit, a pair of jeans, and yet she looks more elegant than anyone around her?**
-**That kind of elegance isn't accidental.**
-[ON SCREEN: the sentence on the blurred caramel backdrop: "not more clothes. the right ones."]
-**And here's the secret. It isn't about having more clothes. It's about having the right ones, and knowing how to wear them.**
-[ON SCREEN: a row of three women in winter coats: one in her thirties, one in her fifties, one in her seventies]
-**Of course, no woman owns just eight things, and not every French woman dresses the same way. But the style the world calls French chic comes back to the same few pieces, winter after winter.**
-[ON SCREEN: the title in black script on a white card: "The Only 8 Things French Women Wear All Winter"]
-**In today's video, we're revealing the eight pieces French women wear all winter, and exactly how they wear them, at any age, and on any budget.**
-[ON SCREEN: a close-up of a hand in a slim leather glove]
-**You may already own most of them. And the last one is the smallest piece on the list. It might be the most French of all.**
+## Introduction
+[ON SCREEN: a woman at an overfull wardrobe on a dark morning; then a second woman walking a cold street in a long coat, fine knit and boots]
+**You might think looking elegant in winter means buying more. But here's the truth. The best-dressed women often wear less: the right pieces, again and again.**
+[ON SCREEN: three short Parisian street-style clips in a row: a long coat, a fine knit under a blazer, tall boots on a pavement]
+**Look at Parisian street style on a cold day, and you'll notice it. A long coat, a fine knit, a good pair of boots. Nothing complicated, yet it always looks finished.**
+[ON SCREEN: a row of three women of different ages in winter outfits]
+**Of course, not every French woman dresses the same way. But that classic French approach, fewer pieces, chosen with care and worn often, is one any of us can borrow.**
+[ON SCREEN: the title in black script on a white card]
+**So in today's video, we're sharing eight French-inspired winter essentials, exactly what to look for in each one, and how to wear them.**
+[ON SCREEN: a folded wool skirt at the back of a shelf, half hidden; then eight pieces laid out, three outfit silhouettes appearing beside them]
+**One of them is a piece most of us pack away in winter, and shouldn't. And at the end, we'll turn all eight into complete outfits, without adding a single extra piece.**
 **So, let's get started, everyone.**
 
-## 1. The long wool coat
-[ON SCREEN: white card, black script: "1. The long wool coat"]
-**Number one, the long wool coat.**
-[ON SCREEN: a woman in a short, bulky puffer jacket; then, on the same kind of street, a woman in a long navy wool coat]
-**Now, listen. We all want to be warm when the temperature drops, and a big puffer jacket feels like the obvious answer.**
-**But a short, bulky jacket can hide your shape, and the whole outfit underneath it.**
-[ON SCREEN: a long camel coat seen from the side, the hem at mid-calf, the woman walking]
-**French women tend to choose wool instead. And the detail that matters is the length. Look for a coat that falls below your knee, even to the middle of your calf.**
-[ON SCREEN: the words on the caramel backdrop: "one long line"]
-**Because a long coat creates one clean line from your shoulders all the way down. It makes you look taller and more polished, and it covers whatever you're wearing underneath. A dress, a skirt, even your cosiest knit.**
-[ON SCREEN: a row of three long coats on three women: navy, camel, black]
-**Choose a simple, slightly roomy cut, almost like a man's overcoat, with room for a sweater and a jacket underneath. And keep to one classic colour, like navy, camel or black.**
-**It doesn't need to be new, and it doesn't need a label. It needs to be wool, and it needs to be long.**
-[ON SCREEN: a woman buttoning her long coat at a hallway mirror and stepping outside]
-**The moment you put it on, you feel dressed.**
+## 1. A long wool coat
+[ON SCREEN: transition: white card, black script: "1. A long wool coat"]
+**Let's start with the piece everyone sees first. Number one, a long wool coat.**
+[ON SCREEN: a woman buttoning a long coat at a hallway mirror and stepping outside]
+**In winter, your coat is your outfit for most of the day. Get it right, and you feel polished before you've even thought about the rest.**
+[ON SCREEN: close-up: fingers turning out the composition label inside a coat, the wool percentage in focus; words beside it: "60% wool or more"]
+**So instead of looking at the price first, look at the label inside, because many coats sold as wool are mostly synthetic. As a guide, you want wool to be well over half of the fabric. A good blend is perfectly fine, and kinder to your budget.**
+[ON SCREEN: comparison, two clips side by side: a short coat with a skirt hem showing below it; a long coat covering the same skirt]
+**Then check the length. A coat that falls below the knee feels warmer, and it looks cleaner too, because it covers the hem of everything underneath. No skirt or cardigan peeking out to break the line.**
+[ON SCREEN: a woman in a fitting room pulling a coat on over a blazer, rolling her shoulders, lifting her arms]
+**Then, the step most people skip. Try it on over a thick sweater, or even a blazer. If the shoulders sit flat and your arms move freely, it's the right size.**
+[ON SCREEN: outfit demonstration: the same coat worn open over a knit and jeans; then belted over a skirt; three coats in a row: navy, camel, charcoal]
+**Wear it open over a knit and jeans by day, or belted over a skirt in the evening. In a timeless navy or camel, it goes with everything on this list.**
 
-## 2. The fine turtleneck
-[ON SCREEN: white card, black script: "2. The fine turtleneck"]
-**Number two, the fine turtleneck. And this one is probably already in your drawer.**
-[ON SCREEN: a warm café in winter: a woman takes off her coat, hangs it on the chair and sits down across from a friend]
-**Here's something French women understand about winter. It's cold outside, but cafés, offices and restaurants are warm. So the coat comes off. And the person sitting across the table only really sees your top half.**
-[ON SCREEN: the words on the caramel backdrop: "every layer, lovely on its own"]
-**So every layer has to look lovely on its own.**
-[ON SCREEN: a row of three: a thin turtleneck under an open shirt, under a crew-neck sweater, under a blazer]
-**That's why the first layer is so often a thin, fitted turtleneck. Under a shirt. Under a sweater. Under a blazer. Even under a dress.**
-**Because a thin layer keeps you warm without adding bulk. And that one clean line at your neck frames your face, and makes everything on top of it look intentional.**
-[ON SCREEN: four folded turtlenecks in black, cream, navy and grey]
-**Keep it thin, and keep it neutral.**
-[ON SCREEN: the woman at the café table, coat and sweater off, in her turtleneck, smiling]
-**Take off your coat, take off your sweater, and you still look polished. That's the quiet confidence of a good first layer.**
+## 2. A fine turtleneck
+[ON SCREEN: transition: white card, black script: "2. A fine turtleneck"]
+**So what goes underneath? Number two is the piece that quietly makes winter dressing work. A fine turtleneck.**
+[ON SCREEN: comparison: one bulky sweater under a tight coat; then a thin turtleneck, a knit and a coat going on one after another; words: "thin layers hold warm air"]
+**Several thin layers keep you warmer than one thick one, because warm air is held between them. So instead of one bulky knit, try a thin, fitted turtleneck as your first layer. It feels just as warm, and it looks so much sleeker.**
+[ON SCREEN: a warm café: a woman takes off her coat, hangs it on the chair and sits down across from a friend; the camera stays on her top half]
+**And here's the part I love. In winter, you're always moving between a cold street and a warm café or office. The coat comes off, and the person across the table really only sees your top half. So every layer needs to look good on its own.**
+[ON SCREEN: three outfit demonstrations in a row: under an open-collared shirt, under a V-neck, under a short-sleeved dress]
+**Then use it to bring the rest of your wardrobe into winter. Under a shirt with the top buttons open. Under a V-neck. Even under a short-sleeved dress you'd normally save for spring.**
+[ON SCREEN: close-up of a fine, smooth knit; then three folded turtlenecks: black, cream, navy]
+**And this is the one place you don't need to spend. A simple cotton turtleneck in black, cream or navy does the job beautifully.**
+**One thin layer, and half your closet works in winter. And when the coat comes off, you still feel polished.**
 
-## 3. The classic sweater
-[ON SCREEN: white card, black script: "3. The classic sweater"]
-**Number three, the classic sweater.**
-[ON SCREEN: a navy crew-neck sweater with jeans; then a grey V-neck over a white shirt]
-**Not a statement knit. Just a soft crew neck or V-neck in navy, grey or cream. And if you love colour, a deep red is beautiful too.**
-**A plain sweater in a classic colour never looks dated, because there's nothing on it to go out of style.**
-[ON SCREEN: close-up of a V-neck showing the edge of a turtleneck; then a shirt collar; then a fine gold chain]
-**Here's the detail that makes it so chic. Let the neckline show a little of what's underneath. The collar of a shirt, the edge of your turtleneck, or a fine gold chain. That small glimpse makes a simple sweater look thought through.**
-[ON SCREEN: a woman indoors with her sweater draped over her shoulders, the sleeves tied loosely in front]
-**And here's a little French habit I love. When it's warm inside, don't stuff your sweater into your bag. Drape it over your shoulders, and tie the sleeves loosely in front. So pretty.**
-[ON SCREEN: one folded navy sweater on a shelf beside a tall pile of bright knits]
-**One good sweater you wear all winter will always look more elegant than five you never reach for.**
+## 3. A V-neck sweater
+[ON SCREEN: transition: white card, black script: "3. A V-neck sweater"]
+**Which brings us to number three. A V-neck sweater. And the neckline is the whole point.**
+[ON SCREEN: comparison close-ups: a round neck over a shirt, the collar hidden; a V-neck over the same shirt, the collar framed; then the V over a turtleneck; then with one fine chain]
+**A round neck hides what's underneath. A V-neck frames it: the collar of a shirt, the top of your turtleneck, or one fine necklace. That small glimpse makes the plainest knit look intentional.**
+[ON SCREEN: a fine-knit sweater sliding easily under a blazer; a chunky knit bunching at the shoulders of the same blazer]
+**Choose a fine or medium knit, not a chunky one, because it slips easily under a blazer and a coat.**
+[ON SCREEN: close-up of a care label inside a sweater]
+**And read the label here too. Wool holds its shape for years, while a sweater that's mostly acrylic tends to lose its shape after a few washes. You don't need cashmere, either. Plain, good-quality wool feels warm, and it costs far less.**
+[ON SCREEN: outfit demonstration: the V-neck over the turtleneck with jeans; then tucked into a skirt with a delicate chain; then four sweaters in a row: navy, grey, cream, deep red]
+**Wear it over the turtleneck with jeans, or on its own, tucked into a skirt, with a delicate chain resting in the V.**
 
-## 4. The wool blazer
-[ON SCREEN: white card, black script: "4. The wool blazer"]
-**Number four, the wool blazer.**
-[ON SCREEN: a woman in a charcoal blazer over a soft cream knit, carrying a small handbag]
-**The French even have a name for the idea behind it. Masculine and feminine, together. Something tailored and strong, worn with something soft.**
-**That balance is what gives French style its ease. It keeps an outfit from feeling too sweet, or too severe.**
-[ON SCREEN: a side view of a longer blazer that covers the hips]
-**Look for a wool blazer that's slightly oversized, and long enough to cover your hips. Charcoal grey or navy will go with almost everything you own.**
-[ON SCREEN: a woman taking off her long coat in a restaurant, the blazer underneath]
-**And in winter, wear it under your coat, over a thin knit. Because when the coat comes off at dinner, you're still wearing a jacket. You still feel put together.**
-[ON SCREEN: the blazer with a cream knit and a small structured handbag]
-**Then soften it. A cream knit underneath. A small, ladylike handbag. It's about harmony, not overstatement.**
+## 4. A wool blazer
+[ON SCREEN: transition: white card, black script: "4. A wool blazer"]
+**Next, number four. A wool blazer.**
+[ON SCREEN: a charcoal blazer worn over a soft cream knit, with a small handbag; words: "tailored + soft"]
+**A classic French styling approach is to mix something tailored, almost borrowed from menswear, with something soft and feminine. That contrast makes an outfit feel balanced, never too sweet, and never too severe.**
+[ON SCREEN: a woman taking off her long coat at a restaurant table; the blazer underneath]
+**And in winter, the blazer has a job most people forget. Wear it under your coat. When the coat comes off at a restaurant, you're still wearing a jacket, and you still feel put together.**
+[ON SCREEN: close-up of a shoulder seam sitting exactly at the edge of the shoulder; then a tailor pinning a sleeve]
+**So fit the shoulders first. The seam should sit right at the edge of your shoulder, because that's the hardest part for a tailor to change. Sleeves and waist are simple to adjust.**
+[ON SCREEN: side view: a blazer long enough to cover the hips; then outfit demonstration: over the turtleneck with jeans; then belted at the waist over a midi skirt]
+**Choose one long enough to cover your hips. Wear it over the turtleneck with jeans. Or, for something dressier, belt it at the waist over a skirt.**
+**And a simple wool-blend blazer that fits your shoulders will always look more refined than an expensive one that doesn't.**
 
-## The guide
+## The personal stylist guide
 [ON SCREEN: a woman holding two sweaters up to her face at a mirror; then the white card: "Check The Description For / Personal Stylist Guide"]
-**And here's a secret most well-dressed women never share. They know exactly what flatters them.**
-**They know which colours make their skin glow, and which cuts suit their shape, so getting dressed feels easy.**
-**If you'd like to discover yours, you can access our personal stylist guide in the description. It's sent instantly to your email after access.**
+**And here's a secret most well-dressed women never share. They aren't guessing. They know which colours and cuts flatter them.**
+**If you'd like to discover yours, you can access our personal stylist guide in the description. It's sent instantly to your email.**
 
-## 5. Dark, straight jeans
-[ON SCREEN: white card, black script: "5. Dark, straight jeans"]
-**Number five, dark, straight jeans. Yes, denim. In France, jeans are worn all winter, for almost every occasion.**
-[ON SCREEN: two pairs side by side: a faded, ripped pair and a dark, even indigo pair with a straight leg]
-**The secret is in the colour and the cut. Choose a dark, even blue, with a straight leg. No rips, no heavy fading.**
-**Because in a dark, clean wash, jeans stop looking casual. They behave like a pair of tailored trousers.**
-[ON SCREEN: close-up at the ankle: a straight hem falling over an ankle boot, the boot just showing]
-**And here's the winter detail. Let the hem fall straight over your boot, so the boot just peeks out beneath. It makes your legs look longer, and the whole outfit feels calm and intentional.**
-[ON SCREEN: a pair of clips: the same dark jeans with a blazer at dinner, and with a long coat at a market]
-**Then wear them exactly as you would your best trousers. It's not about owning more denim. It's about one pair you can wear with ease, everywhere.**
+## 5. Dark straight-leg jeans
+[ON SCREEN: transition: white card, black script: "5. Dark straight-leg jeans"]
+**Now, the lower half. Number five, dark straight-leg jeans.**
+[ON SCREEN: a deep, even indigo pair worn with a blazer at a dinner table]
+**In a deep, even blue, jeans can look as polished as tailored trousers. And in winter, two small details take them further.**
+[ON SCREEN: close-up at the ankle: cropped jeans showing bare skin above a boot; then full-length jeans resting on the top of the foot]
+**First, the length. Instead of the cropped jeans you wear in spring, choose a full length that reaches the top of your foot. With no bare ankle above your boots, it looks more polished, and it feels warmer.**
+[ON SCREEN: full-length view: dark jeans with dark boots, one unbroken line]
+**Second, match your boots to your denim. Dark jeans with black or dark brown boots create one unbroken line, and that makes your legs look longer.**
+[ON SCREEN: hands pulling thin black tights on, then jeans over them; then the woman stepping outside into the cold]
+**And for the coldest days, here's a trick borrowed from French winter dressing. A pair of thin tights under your jeans. Nobody sees them, and you'll feel the difference.**
+**You don't need expensive denim. The colour and the length matter far more than the label.**
 
-## 6. Leather boots
-[ON SCREEN: white card, black script: "6. Leather boots"]
-**Number six, leather boots. And this is where French women do something clever.**
-[ON SCREEN: a woman in a wool midi skirt and tall leather boots walking down a winter street]
-**They don't put their skirts and dresses away for winter. They simply change their shoes.**
-[ON SCREEN: close-up: the hem of a midi skirt meeting the top of a tall boot, no leg showing]
-**A tall leather boot that meets the hem of your skirt covers your legs completely. There's no gap for the cold, and it creates one long, graceful line from your waist to the ground.**
-[ON SCREEN: three tall boots: black, brown, tan, with a flat sole and a low block heel]
-**Look for smooth leather in black, brown or tan, with a flat sole or a low heel you can walk in all day.**
-[ON SCREEN: hands pulling a tall boot on over a thick wool sock]
-**And no one needs to know about the thick, warm socks inside.**
-[ON SCREEN: a simple leather ankle boot under dark straight jeans]
-**If you prefer trousers, a simple leather ankle boot does the same under your jeans.**
-**You stay warm, you stay comfortable, and you still get to wear the skirt you love. Your feet can thank me later.**
+## 6. A wool midi skirt
+[ON SCREEN: transition: white card, black script: "6. A wool midi skirt"]
+**And now, the piece I promised. The one most of us pack away for winter. Number six, a wool midi skirt.**
+[ON SCREEN: Parisian street-style clips: wool and knit midi skirts with tights and boots on cold streets]
+**We get it. When it's cold, a skirt is the last thing you reach for. But in Parisian winter style, skirts don't disappear. The fabric simply gets heavier, and what's underneath gets warmer.**
+[ON SCREEN: close-up of a wool skirt turned back to show its lining; then two shapes side by side, both walking: a soft A-line, and a straight skirt with a back slit]
+**Look for wool or a wool blend, new or secondhand, ideally lined, so it doesn't feel scratchy. Aim for a hem around mid-calf, and a shape you can walk in: a soft A-line, or a straight skirt with a slit at the back.**
+[ON SCREEN: outfit demonstration: the turtleneck tucked into the skirt; then the V-neck worn over the skirt]
+**Then, two ways to wear it. Tuck in the turtleneck for one long, clean line. Or wear the V-neck over the top, and let it sit softly at your hip.**
+[ON SCREEN: close-up: opaque tights under the skirt; then the skirt moving as she walks]
+**Underneath, opaque tights keep you warm. And a skirt moves with a quiet grace when you walk. It makes the same sweater you wore with jeans feel like a completely different outfit.**
 
-## 7. The big, soft scarf
-[ON SCREEN: white card, black script: "7. The big, soft scarf"]
-**Number seven, the big, soft scarf. And it comes with a little French rule.**
-[ON SCREEN: a woman bundled in a woolly hat, thick mittens, a giant scarf and furry boots]
-**Let's be honest, we've all done it. The woolly hat, the thick mittens, the giant scarf, the furry boots, all at once. And when it's freezing, staying warm really is the priority.**
-[ON SCREEN: the words on the caramel backdrop: "dressed like a Christmas tree"]
-**But the French have a saying for wearing every winter accessory at the same time. They call it dressing like a Christmas tree.**
-[ON SCREEN: a woman in a navy coat with one generous scarf, her head bare, slim gloves on her hands]
-**So instead, choose one piece to be the star. Most often, that's a generous scarf in wool or cashmere.**
-[ON SCREEN: a row of three neutral coats, each with one scarf: burgundy, forest green, a soft check]
-**And this is where the colour goes. When your coat, your knit and your jeans are navy, grey or camel, your scarf can be burgundy, forest green, or a soft check. It makes a simple outfit feel alive.**
-**One beautiful piece, with room around it to be seen. True elegance whispers. It doesn't shout.**
+## 7. Tall leather boots
+[ON SCREEN: transition: white card, black script: "7. Tall leather boots"]
+**Which brings us to what you wear with it. Number seven, tall leather boots.**
+[ON SCREEN: comparison close-ups: a skirt hem ending above a boot, a strip of leg showing; then the hem covering the top of the boot]
+**Here's the detail that makes a skirt and boots look so polished. The top of the boot disappears under the hem of the skirt. No gap, no strip of leg. Just one line from your waist to the floor.**
+[ON SCREEN: close-up of a boot ending just below the knee, the shaft close to the leg; the woman walking comfortably on a low heel]
+**So look for a boot that ends just below your knee, with a shaft that sits close to your leg, and a heel you can walk in with ease.**
+[ON SCREEN: tall boots zipped on; straight jeans pulled down over them; only the foot of the boot showing]
+**The same boots work with your jeans, too. Wear them underneath the straight leg. They look like a simple ankle boot, with a hidden layer of warmth up to your knee.**
+[ON SCREEN: smooth leather boots on a wet pavement; then a cobbler's hands fitting a new heel tip]
+**Choose smooth leather in black or dark brown, because it copes with rain far better than suede. And let a cobbler keep them going for years. Caring for the pieces you own is a quiet way of respecting yourself.**
 
 ## 8. Leather gloves
-[ON SCREEN: white card, black script: "8. Leather gloves"]
-**And number eight, the smallest piece on the list. Leather gloves.**
-[ON SCREEN: a pair of clips on the same coat: thick knitted mittens, then slim leather gloves]
-**We get it. Thick knitted mittens are cosy. But in the city, French women tend to reach for a slim leather glove instead.**
-**Because it keeps the line of your arm clean, right down to your fingertips. And it makes even a coat you've had for years look considered.**
-[ON SCREEN: close-up: the cuff of a leather glove slipping under a coat sleeve]
-**Choose a pair long enough to slip under your coat sleeve, so no cold air gets in. With a soft lining, they're just as warm as they are sleek.**
-[ON SCREEN: three pairs of gloves: black, brown, burgundy]
-**Black or brown will go with everything. And if your scarf is neutral, try burgundy or a deep red. Just let one of them speak, the scarf or the gloves, never both.**
-[ON SCREEN: a gloved hand closing a coat button, then lifting a coffee cup outside a café]
-**It's a small detail. But those little moments of intention, they add up, and they show.**
+[ON SCREEN: transition: white card, black script: "8. Leather gloves"]
+**And finally, the smallest piece on the list. Number eight, leather gloves.**
+[ON SCREEN: comparison on the same coat: thick knitted gloves, then slim leather gloves; a gloved hand lifting a coffee cup]
+**Instead of thick knitted gloves, try a slim leather pair. They finish a coat the way jewellery finishes a dress, and they make even an older coat look intentional.**
+[ON SCREEN: close-up: a hand easing into a snug leather glove, smoothing each finger; then the cuff slipping under a coat sleeve; then the soft lining turned out. Small caption: "If they get wet, dry them away from heat"]
+**Fit matters most. Leather gives a little with wear, so choose a pair that feels snug, and long enough to slip under your coat sleeve, so no cold air gets in. A wool or cashmere lining gives you real warmth.**
+[ON SCREEN: comparison: brown gloves matched to brown boots and a bag; then burgundy gloves against a navy coat]
+**Match them to your boots or your bag for a quiet look. Or let them be your one touch of colour, in burgundy or deep red.**
+[ON SCREEN: the words on the caramel backdrop: "looking like a Christmas tree"; then a woman in burgundy gloves with a plain scarf and no hat]
+**There's a French expression for wearing too much at once: looking like a Christmas tree. So if your gloves are the colour, keep your scarf and your hat quiet. True elegance whispers. It doesn't shout.**
 
-## How the eight come together
-[ON SCREEN: all eight pieces laid out together in a grid, each with its name]
-**So how do eight pieces last a whole winter? Here's how they come together.**
-[ON SCREEN: outfit one worn: turtleneck, jeans, boots, long coat, scarf]
-**For a walk to the market: the turtleneck, the jeans and the boots, under the long coat and the scarf.**
-[ON SCREEN: outfit two worn: turtleneck under the sweater, blazer, long coat; then the coat coming off at a table]
-**For lunch with a friend: the sweater over the turtleneck, then the blazer, then the coat. Take the coat off, and every layer still looks lovely.**
-[ON SCREEN: outfit three worn: a midi skirt, turtleneck, tall boots, blazer, leather gloves]
-**And for dinner: a skirt or a dress you already own, with the tall boots, the blazer and the gloves.**
-[ON SCREEN: the words on the caramel backdrop: "everything works with everything"]
-**Same pieces, three different days. That's the quiet secret of a small wardrobe. Everything works with everything, so getting dressed feels easy.**
+## Three outfits from the eight
+[ON SCREEN: all eight pieces in a grid, each with its number; the numbers in use light up for each outfit]
+**So, can eight pieces really make a winter wardrobe? Let's put them together.**
+[ON SCREEN: outfit one worn at a market; tags light up: 2, 3, 5, 7, 1]
+**For the market, or an everyday walk: the turtleneck, the V-neck, the jeans and the boots, with the long coat on top.**
+[ON SCREEN: outfit two worn at a lunch table, the coat coming off; tags: 2, 4, 5, 7, 1]
+**For lunch with a friend: the turtleneck and the blazer, with the jeans and boots. When the coat comes off, you're still in a jacket.**
+[ON SCREEN: outfit three worn on an evening street; tags: 3, 6, 4, 7, 1, 8]
+**And for dinner: the V-neck tucked into the midi skirt, the blazer belted over it, the tall boots, the coat and the gloves.**
+[ON SCREEN: outfit one again with the skirt in place of the jeans; words on the caramel backdrop: "every piece works with every other piece"]
+**Swap the jeans for the skirt, and you have a fourth. Every piece works with every other piece, and getting dressed starts to feel easy.**
 
 ## Recap and close
-[ON SCREEN: a clip on the left; on the right the list of the eight pieces writes on, one at a time, as a checklist]
-**So, those are the eight pieces French women wear all winter. Not a closet full of clothes. Just eight, worn well.**
+[ON SCREEN: a clip on the left; on the right the eight pieces write on as a numbered checklist]
+**So, those are our eight. A long wool coat, a fine turtleneck, a V-neck sweater, a wool blazer, dark straight-leg jeans, a wool midi skirt, tall leather boots and leather gloves.**
 [ON SCREEN: the full sentence on the blurred caramel backdrop]
-**You don't need a new wardrobe to look elegant this winter. Elegance was never about having more. It's about choosing with intention, and wearing what you love with confidence, again and again.**
-[ON SCREEN: a woman opening a calm, half-empty wardrobe and taking out her coat]
-**Which of the eight do you already own? Let us know in the comments, and tell us if you'd like a part two.**
+**What makes them work is the care you take in choosing them, and the confidence to wear what you love, again and again. Elegance was never about having more. It's about choosing with intention.**
+[ON SCREEN: a woman opening a calm wardrobe and taking out her coat; words: "Which do you already own?"]
+**Which of the eight do you already own, and which one would you add first? Let us know in the comments.**
 [ON SCREEN: the white card: "Check The Description For / Personal Stylist Guide"]
-**If you'd like to elevate your style even further, be sure to check the description below for our personal stylist guide.**
+**And if you'd like to discover the colours and cuts that suit you best, our personal stylist guide is linked in the description.**
 [ON SCREEN: the white end card with the channel's logo]
-**Thank you so much for spending your time with us today. We truly hope this video was helpful. A simple like or comment would truly mean the world to us.**
+**Thank you so much for spending your time with us today. A simple like or comment would truly mean the world to us.**
 **Until next time. Bye, my loves.**
 
 ---
 
-## What each piece gives her (one line per point)
+## A. Audit of v1 against the 30 channel scripts
 
-| # | Piece | The tip that is not basic | Why it is worth her time |
+**The channel, measured** (28 different scripts; two of the 30 are repeats):
+- Length: median 1,281 words, range 1,076 to 1,614.
+- Openers and median views: "You might think ... but here's the truth" 474k (4 scripts: 958k, 706k, 243k, 95k); "Have you
+  ever ..." 144k (12 scripts, including 1.2M, 641k and 504k); a plain statement 76k (5); "Did you know" 49k (3).
+- Topics: appearance (what to wear, hair, colour) 14 scripts, median 156k; behaviour 11 scripts, median 119k. The four
+  biggest are all appearance.
+- The promise line ("In today's video ...") arrives after about 65 words, then "let's get started, everyone".
+- The guide: named in 23 of 28 scripts; first mention at the middle (median 50% of the script), second in the close.
+- Close: thanks, "a simple like or comment would truly mean the world to us", then "bye everyone" (10 older scripts) or
+  "Bye, my loves" (17 newer ones). A part-two ask in 13.
+- What separates the big scripts from generic advice: every point says what the choice does to how she looks and feels,
+  gives a swap ("instead of X, try Y"), and ends on an inner payoff. `dna.py` measures exactly this.
+
+**What was strong in v1:** the format, the honest caveat about French women, the lunch test, the Christmas tree
+expression, gloves (never taught on the channel), the three outfits.
+
+**What was weak in v1:**
+- Three tips repeated the channel: the puffer opening (fall video, point 1), the sweater draped over the shoulders (four
+  videos), the jeans hem falling over the boot (fall video, point 2).
+- "French women wear the same eight pieces" and "the French even have a name for it" claimed more than the sources support.
+- Several tips stopped at "choose navy, camel or black": no label, fit or fabric detail.
+- The scarf section sat beside a whole scarf video published days earlier.
+- The dinner outfit needed "a skirt you already own", which was not one of the eight.
+
+**Overlap, piece by piece** (every sentence in the 28 scripts that names the piece was read):
+
+| Piece | Where the channel already taught it | What v2 teaches instead |
+|---|---|---|
+| Long wool coat | Old Money Essentials (neutral, wool or blend, belted); fall video (puffer and teddy coats, wool wrap coat); Color Combos (camel, navy) | the label, the length that covers every hem, trying it on over a blazer |
+| Fine turtleneck | three one-line mentions (fall, Casual yet Elegant, Color Combos); never a section | why thin layers are warmer, the lunch test, using it to bring spring pieces into winter |
+| Sweater | Old Money Essentials has a knit-sweater section; "draped over your shoulders" in four videos | the V-neck as a frame, knit weight for layering, the fibre label; nothing draped |
+| Wool blazer | named in ten scripts as a layer; "padding for narrow shoulders" (706K) | worn under the coat, shoulders first, belted over a skirt |
+| Dark straight jeans | dark wash and straight leg in three videos; hem over the boot (fall) | kept to one sentence; new: full length for winter, boots matched to the denim, tights underneath |
+| Tall leather boots | Old Money Essentials has a knee-high boot section (black or brown, flat heel, with jeans or a midi skirt) | the boot top hidden under the hem, the close shaft, smooth leather for rain, worn under straight jeans |
+| Scarf | two passing mentions; a whole video days ago | **replaced** by the wool midi skirt; the scarf is named once, inside the gloves rule |
+| Wool midi skirt | never taught (passing mentions only) | new section |
+| Leather gloves | never mentioned in any of the 28 scripts | new section |
+| Outfit formulas | Casual yet Elegant lists outfits; none built from a numbered set | four outfits from the eight, by number |
+
+**Still overlapping, said plainly:** "dark, even blue reads like tailored trousers" (one sentence), "black or dark brown"
+boots, a heel "you can walk in". On The Classy Elegance, "8 Ways to Look Expensive in Winter" told viewers to check a
+coat label for at least half wool and to end a coat around the knee; this script says well over half, and below the knee.
+
+## B. The final eight
+
+| # | Piece | Decision | Why |
 |---|---|---|---|
-| 1 | Long wool coat | the length: below the knee, even to mid-calf; a roomy, overcoat cut | one long line makes her look taller and finished, and it covers anything underneath |
-| 2 | Fine turtleneck | the lunch test: the coat comes off indoors and people see her top half, so every layer must look good alone | she stays warm without bulk and looks polished at every stage of taking layers off |
-| 3 | Classic sweater | let the neckline show a little of what is underneath; drape it over the shoulders indoors | a plain knit looks thought through, and she has something to do with it when it is warm |
-| 4 | Wool blazer | wear it under the coat, long enough to cover the hips; pair strong with soft | when the coat comes off at dinner she is still wearing a jacket |
-| 5 | Dark, straight jeans | a dark, even wash behaves like trousers; the hem falls over the boot | one pair works from the market to dinner, and her legs look longer |
-| 6 | Leather boots | keep the skirts, change the shoes: a tall boot that meets the hem; warm socks hidden inside | she keeps wearing the pieces she loves all winter and stays warm |
-| 7 | Big, soft scarf | the Christmas tree saying: one star accessory, and the scarf is where the colour goes | she stops piling everything on, and a neutral outfit comes alive |
-| 8 | Leather gloves | long enough to slip under the sleeve; scarf or gloves carries the colour, never both | a small, affordable piece that makes an old coat look considered |
+| 1 | Long wool coat | kept, upgraded | the piece seen most; now taught through the label, the length and the fitting-room step |
+| 2 | Fine turtleneck | kept, upgraded | never had its own section; carries the layering fact and the lunch test |
+| 3 | V-neck sweater | changed from "classic sweater" | the neckline gives a real lesson; the draped-sweater tip is dropped |
+| 4 | Wool blazer | kept, upgraded | the under-the-coat use and the shoulder rule are new for the channel |
+| 5 | Dark straight-leg jeans | kept, new angle | winter-proofing (length, boot colour, tights) instead of the wash |
+| 6 | Wool midi skirt | **replaces the scarf** | new for the channel, completes the dinner outfit, avoids the scarf video |
+| 7 | Tall leather boots | kept, new angle | the hem rule and the under-jeans trick, not the list of pairings |
+| 8 | Leather gloves | kept, upgraded | fit, length and the one-colour rule; never taught before |
 
-Each point ends on one rule she can repeat or screenshot: "one long line", "every layer, lovely on its own", "show a
-little of what's underneath", "strong with soft", "dark, even, straight", "change the shoes, keep the skirt", "one star,
-not the whole tree", "under the sleeve". The grid of all eight and the three outfits are the screens made to be saved.
+## Fact check
 
-## Proof
+| Claim in the script | Status | Source read on 14 Nov 2026 |
+|---|---|---|
+| Many "wool" coats are mostly synthetic; check the composition label | established | PureWow, two stylists; The Irish Times (a hat labelled "With Wool" was 11% wool) |
+| Wool well over half of the fabric; a blend is fine | expert guidance | PureWow: at least 60% wool in a blend, avoid under 50%; Reviewed, FIDM textile-science lecturer: blends "blend the best of both worlds" |
+| A longer coat keeps the legs warmer; choose it in proportion to height | expert guidance | PureWow, stylist |
+| Several thin layers are warmer than one thick one, because air is held between them | established | Yahoo News UK, citing the University of Portsmouth |
+| The person across the table sees your top half; each layer should stand alone | a Paris-based woman's own tip | Who What Wear, "7 Outfits French Girls Are Wearing for Winter" |
+| Turtleneck under shirts, knits and dresses | styling advice, two pages | PureWow; Who What Wear UK |
+| A V-neck shows what is underneath | styling advice | Who What Wear UK |
+| Wool lasts; mostly-acrylic knits lose their shape after a few washes; no need for cashmere | expert opinion | The Irish Times, a costume and sustainable-fashion specialist |
+| Mixing tailored, menswear-style pieces with feminine ones as a French approach | styling description, one page | Who What Wear UK calls it "le masculin-feminin"; no dictionary source was found, so the script does not name it |
+| Blazer under the coat, over a thin knit | French and Paris-based women's own tips | Who What Wear; My Chic Obsession |
+| Shoulders are the hardest part of a jacket to alter; sleeves and waist are routine | established among tailors | several tailoring guides (Care of Carl, Oscar Jacobson, Gentleman's Gazette) |
+| Blazer long enough to cover the hips; belted over a skirt | styling advice | Who What Wear, Marissa Cox |
+| Thin tights under jeans | styling report | Who What Wear, "8 Items French Women Wear in Winter" |
+| Skirts stay in Parisian winter wardrobes, in heavier fabrics with tights | styling report, three pages | PureWow; My Chic Obsession; Who What Wear |
+| The skirt should cover the top of a tall boot; boots end just under the knee | styling advice | PureWow ("tall boots that meet the hem"); stylist quoted in Woman & Home |
+| Straight-leg jeans can be worn over tall boots | styling advice | Jones Bootmaker; Habbot Studios |
+| Smooth leather copes with rain better than suede | established | Permanent Style; several shoemakers' guides |
+| Leather gloves stretch slightly with use; buy them close-fitting | maker's guidance | Dents |
+| Gloves long enough to go under the coat sleeve; lined for warmth | styling and maker's advice | PureWow; Dents; My Chic Obsession |
+| Dry wet leather gloves at room temperature, away from heat (on-screen caption) | makers' guidance | Dents; Cornelia James; Hestra |
+| "Looking like a Christmas tree" is a French expression for being overdressed | established | EF's French-language blog ("ressembler a un sapin de Noel"); a Parisian writer in Who What Wear |
 
-**Every tip comes from a page that was read on 14 Nov 2026.** Nothing was invented. Eleven pages were read in full:
+- **Subjective styling advice, not fact:** dark boots with dark jeans make the legs look longer; a mid-calf hem; an A-line
+  or a slit for walking; matching gloves to boots or bag; a lining so wool does not feel scratchy (wool can itch:
+  Reviewed).
+- **Removed because it could not be supported:** "a lining stops a skirt clinging to tights" (the pages disagree).
+- **Not readable:** the winners' own captions (YouTube refuses this machine; vidIQ has no credits until 12 Dec) and any
+  French-language magazine page. The French pages are English-language fashion media quoting French and Paris-based women,
+  which is why the script says "French-inspired" and "Parisian street style".
 
-| Key | Page |
-|---|---|
-| A | Who What Wear, "8 Items French Women Wear in Winter to Look Chic": https://www.whowhatwear.com/french-girl-winter-items |
-| B | Who What Wear, "7 Outfits French Girls Are Wearing for Winter" (seven French and Paris-based women, quoted): https://www.whowhatwear.com/french-girl-winter-outfits-and-tips |
-| C | Who What Wear, "How to Master French-Girl Winter Style" (a Parisian's three rules): https://www.whowhatwear.com/french-girl-winter-style |
-| D | Who What Wear, "The Fashion Staples French Girls Wear in Winter" (Marissa Cox, who lives in Paris): https://www.whowhatwear.com/french-fashion-staples-winter |
-| E | Who What Wear UK, "6 Wardrobe Staples French Women are Wearing in Winter 2026": https://www.whowhatwear.com/fashion/winter/french-wardrobe-staples-winter-2026 |
-| F | Who What Wear UK, "5 Pieces You'll Find in a French Woman's 2025 Winter Capsule Wardrobe": https://www.whowhatwear.com/fashion/french-girl-winter-capsule-wardrobe-2025 |
-| G | Who What Wear UK, "6 Things French Girls Wear in Winter to Look Chic": https://www.whowhatwear.com/uk/french-winter-wear |
-| H | Who What Wear, "I'm an Editor Living in Paris - 5 Elegant Outfits I've Spotted This December": https://www.whowhatwear.com/fashion/outfit-ideas/december-in-paris-outfits |
-| I | PureWow, "How French Women Stay Chic When It's Freezing Outside": https://www.yahoo.com/lifestyle/french-women-stay-chic-freezing-170000225.html |
-| J | My Chic Obsession, "The Chic Pieces That Make Up a Parisian Winter Wardrobe": https://www.mychicobsession.com/parisian-winter-wardrobe/ |
-| K | My Chic Obsession, "What to Wear in Paris This Winter: 9 Chic Essentials": https://www.mychicobsession.com/what-to-wear-in-paris-winter/ |
+## F. Scorecard
 
-| # | Piece | Pages that name it | What they say, in their words |
-|---|---|---|---|
-| 1 | Long wool coat | A, B, F, G, H, I, J, K | A: "a long, slightly oversize wool coat - usually in a classic color such as navy, black, or camel ... the elongated silhouette". I: "Instead of a Puffer Jacket, Try a Cozy Wool Coat"; "old-school overcoats with a bit of a masculine edge"; "at least mid-calf". B: "an extra-long menswear-inspired coat"; "An oversize coat allows for the perfect coat-over sweater-over-shirt situation". G: "As temperatures drop, so do hemlines." |
-| 2 | Fine turtleneck | A, B, C, F, I | B: "offices, restaurants and cafes are often overheated so you need to be able to strip down to something chic ... the person having lunch with you only really sees is your top! So your layers need to look great together but also be able to stand alone"; "a lightweight, thin sweater under blazers and coats so I can be warm without looking like a snowman". I: slim turtlenecks "can go under button-up shirts, crewneck sweaters, wrap dresses, blazers"; "Stick with neutral hues". |
-| 3 | Classic sweater | A, B, E, J | A: "a relaxed crewneck sweater (perhaps nonchalantly thrown around your shoulders) ... in classic colors (a pop of red is great too)". E: the V-neck "offers a glimpse at whatever lies beneath, creating a silhouette that appears more thoughtful and intentional". B: "a cashmere crewneck sweater". |
-| 4 | Wool blazer | B, D, E, J | D: "slightly oversized and longer-lined (which covers your derriere) and preferably in a go-with-everything charcoal grey". E: "The French have a concept called 'le masculin-feminin' ... they'll subvert these concepts with an exuberantly graceful accessory that softens the overall look. Ladylike bags are one way". J: blazers "are great for layering too and look fabulous over a sweater". |
-| 5 | Dark, straight jeans | E, F, H, J | F: "indigo jeans ... this dark blue denim will always be in style". E: "Where there's a French woman, there's bound to be a pair of straight-leg jeans". H: "French women are committed to denim, regardless of the season or occasion". J: "In the winter, you'll want to wear these jeans with ankle boots." |
-| 6 | Leather boots | A, B, D, G, I, J, K | I: "Don't Store Skirts and Dresses for Spring; Adjust Your Footwear ... tall boots that meet the hem of their frocks". A: "leather knee-high boots with a walkable heel or a flat sole, preferably in versatile brown, tan or black". B: "I wear these boots with warm, thick socks without anyone seeing them!" J: ankle boots, "If you only get one pair of shoes, this is it!" |
-| 7 | Big, soft scarf | C, K, B | C: "over-accessorizing in winter can make you look like a sapin de Noel, aka a Christmas tree. (Yes, it's a saying.) I rarely come across women wearing the full winter package in the streets of Paris (oversize beanies, knitted gloves, oversize scarves, furry boots)". K: "warm blanket scarves in wool and cashmere ... a chance to add both pattern and color"; "colorful scarves ... the perfect way to spice up a neutral outfit". B: "We French always have that little piece that will make a basic look wow!" |
-| 8 | Leather gloves | A, C, G, I, K | I: "you won't find any chunky handknit mittens ... posh leather or suede gloves that are long enough to reach up under their coat sleeves for maximum warmth ... a special pop by way of orangey red". K: gloves "lined with cashmere"; "neutral colors, or maybe even burgundy". C: "Wear leather gloves ... to make you appear lighter and more French." |
-
-- **The channel's own advice, not from a page:**
-  - "It doesn't need to be new, and it doesn't need a label";
-  - "one good sweater ... five you never reach for";
-  - jeans that "behave like tailored trousers" (the channel's quiet-luxury script);
-  - the hem that falls over the boot and makes the legs look longer (the channel's fall script);
-  - "let one of them speak, the scarf or the gloves, never both" (the channel's one-statement rule, applied to pages C,
-    I and K);
-  - the three outfits (my combinations; each pairing is in a page above).
-- **Thin proof, said plainly:**
-  - navy for the blazer is mine (page D says charcoal grey);
-  - the scarf colours burgundy, forest green and a soft check are the channel's palette (page K only says colour and
-    pattern);
-  - "soft lining" for the gloves rests on one page (K);
-  - "frames your face" and "makes an old coat look considered" are my wording of the effect.
-- **One thing to know:** "8 Ways to Look Expensive in Winter" told viewers a coat ending just below the hip or around the
-  knee looks most polished. This script says below the knee, even to mid-calf, because that is what the French pages say.
-- **New against the earlier videos:**
-  - "7 Things Elegant French Women Never Wear" names a blazer, a navy sweater and jeans in its last lines and teaches none
-    of them; here each gets its how.
-  - "8 Ways to Look Expensive in Winter" taught coat fit, knit quality, thin-to-thick layering and matching gloves to the
-    coat. None of those tips is repeated; the reasons here are new (the length, the lunch test, the Christmas tree saying,
-    the glove under the sleeve).
-  - The scarf video teaches knots; here the scarf gets one rule and no knot.
-- **Not readable:**
-  - What the wave's biggest videos teach inside (French Fashion 658k, Graceful Aging with Ruby 565k, Paris Never Ages
-    1.0M): YouTube refuses this machine and vidIQ has no credits until 12 Dec. Their titles are proof of the topic, not
-    of these tips.
-  - No French-language page: the French search returned shop pages, and parisselectbook.com returned no text. Five other
-    pages returned no text (myfrenchcountryhomemagazine.com, lilycherie.com, theeverygirl.com, two on
-    blog.petitedressing.com).
-  - The channel's comments on its French video.
-
-## How this follows the channel's own scripts
-
-Read in full before writing: "8 Things Elegant Ladies Never Wear" (1.2M), "How to Dress Elegant: A Beginner's Guide"
-(641K), "7 Things Elegant Ladies Avoid in Fall", "How to Dress Quiet Luxury" (95K), "6 Old Money Wardrobe Essentials You
-Need This Fall"; the openings and closes of "How to Instantly Look More Elegant & Expensive" (706K) and "How to Dress
-Casual yet Elegant" (143K); and the script of "7 Things Elegant French Women Never Wear" (25,000 views on The Classy
-Elegance).
-
-| The channel's own words | In this script |
-|---|---|
-| "Have you ever seen a woman walk by on a crisp fall day wearing something so simple yet somehow she looks incredibly pulled together? ... That kind of elegance isn't accidental." (fall; 1.2M) | the turn, the same sentence shape |
-| "The secret to effortless elegance isn't about having more clothes. It's about having the right ones." (143K) | "It isn't about having more clothes. It's about having the right ones, and knowing how to wear them." |
-| "In today's video, we're revealing ..." / "So, let's get started, everyone." | the turn |
-| "Number one, ..." (1.2M and fall) | every piece |
-| "Now, listen. We all want to be warm when the temperatures drop, but some puffer coats ... completely drown your shape." (fall) | piece 1 |
-| "Elegant women tend to ..." | "French women tend to ..." (twice) |
-| "Layer a thin turtleneck sweater or fitted long sleeve underneath and you'll be just as warm" (fall) | piece 2 |
-| "a knit sweater draped over your shoulders. So pretty." (706K) | piece 3 |
-| "It's about harmony, not overstatement." (1.2M) | piece 4 |
-| "And yes, denim can absolutely look refined ... it works just like tailoring" (95K) | piece 5 |
-| "Go for a straight leg ... that drapes over the boot ... so the boot just peeks out beneath ... instantly makes your legs look longer" (fall) | piece 5 |
-| "It's not about X. It's about Y." | the turn, piece 5, the close |
-| "A flatter heel is perfect for long walks ... Your feet can thank me later." (fall essentials) | piece 6 |
-| "Let's be honest, we've all done it. The oversized sweater, the thick scarf, the chunky boots, the giant coat, all layered at once ... Staying warm really is the priority." (fall) | piece 7 |
-| "True elegance whispers. It doesn't shout." (1.2M) | piece 7 |
-| "We get it." (1.2M, once) | piece 8, once |
-| "Those little moments of intention, they add up and they show." (1.2M) | piece 8 |
-| "And here's a secret. Many well-dressed women don't share. They figured out what flatters them ..." / "personal stylist guide ... sent instantly to your email" (1.2M) | the guide |
-| "getting dressed feels simpler" (95K) | the guide and the outfits |
-| "let us know if you'd like a part two" / "Thank you so much for spending your time with us today. We truly hope this video was helpful." / "would truly mean the world to us" / "Until next time. Bye, my loves." | the close |
-
-**Taken from the French video that broke out:** the warning hook; the honest line that not every French woman dresses
-the same way; one clean rule at the end of every point; a checklist on screen in the recap. **Left out this time:** named
-people and quotes. That script named one French author ten times; the channel's own videos name almost no one, so here
-French women are the lens and the lessons are told in the channel's own voice.
+| | Score | Why not higher |
+|---|---|---|
+| Channel fit | 8 / 10 | the format, voice lines and guide placement match; it is denser and longer than any of the 28 scripts |
+| Originality | 8 / 10 | jeans and boots still share ground with two earlier videos |
+| Tip quality | 8 / 10 | the V-neck and jeans sections are thinner than the coat, turtleneck and gloves |
+| Usefulness | 8.5 / 10 | no brand or price examples, on purpose |
+| Retention potential | 7 / 10 | about 11.5 minutes against the channel's usual 8 to 9; the guide plug sits at the middle, where the channel's own replay data dips |
+| Factual accuracy | 8.5 / 10 | several lines are styling advice, marked above; no French-language source |
+| Publish readiness | 7.5 / 10 | needs a read-aloud pass, a decision on length and title, and a footage check for about ten very specific shots |
 
 ## Final check
 
-- **Length:** 74 spoken lines, 1,589 words. The channel's range is 1,100 to 1,600; the ten-item scarf script had 1,608
-  and ran 10:58. About 10.5 to 12 minutes.
-- **Hook:** 77, STRONG (`hookscore.py`, The Warning). Seven hooks were written and scored; the channel's "You might think"
-  opener scored 59.
-- **Piece 1 starts at about 1:15.**
-- **`dna.py`:** one flag, "reporting a culture": the spoken script says "French" 16 times, and the tool expects none
-  because Classy Academy has never made a French video. The French video that got 25,000 views scores 16.5 on that
-  line; this script scores 10.1. Everything else passes: no quotes, no named person, "why / effect on her" 22.0 (the
-  channel's range starts at 23.8, not flagged), "inner world" 7.6, all seven points the tool reads have a why and a
-  how-to.
-- **`fit.py check`:** FITS THE CHANNEL. No red lines.
-- **Not in the script:** names, quotes, brands, statistics, health claims, shaming, any colour or piece called not
-  elegant, Classy Closet, a website, the channel's name.
-- **"The only 8":** softened in the turn ("no woman owns just eight things ... comes back to the same few pieces") and
-  paid off in "How the eight come together". The dinner outfit uses "a skirt or a dress you already own", which is not
-  one of the eight.
-- **For the build:** 117 Pinterest video pins came up in five searches (counted, not screened). Shots that may be hard
-  to find as real video: the coat coming off at a café table, a glove cuff slipping under a sleeve, a skirt hem meeting
-  a boot. A real photo can stand in where no clip exists.
+- **Length:** 65 spoken lines, 1,712 words: about 7% over the 1,600 asked for, and above the channel's longest script
+  (1,614). First cuts to reach 1,600: the fitting-room step in the coat (30 words), the fourth outfit (22), the blazer's
+  last line (20), the jeans' last line (16), "Under a V-neck" and the cobbler sentence (24).
+- **Hook:** 74, STRONG. The first piece starts at about 1:10. The guide starts at 49% of the script; the outfits at 86%.
+- **`fit.py check`:** FITS THE CHANNEL, no red lines.
+- **`dna.py`:** one flag, "reporting a culture": "French" or "Parisian" is said 8 times; the tool expects none because the
+  channel has never made a French video. "Why / effect on her" 25.9 (the channel's range is 23.8 to 32.4), "inner world"
+  6.9 (6.3 to 13.7). The first rewrite scored 16.5 and 2.4: it read like a shopping guide, and was rewritten.
+- **Not in the script:** names, quotes, brands, prices, statistics, health claims, shaming, body-shape or age rules, any
+  colour or piece called not elegant, Classy Closet, a website, the channel's name.

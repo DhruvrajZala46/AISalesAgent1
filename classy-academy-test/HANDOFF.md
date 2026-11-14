@@ -290,6 +290,21 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **French winter script v2 (14 Nov 2026, `videos/french-winter-eight/script.md`; v1 kept as `script_v1.md`):** the user
+  sent a nine-step brief: analyse the 30 channel scripts, check each piece for overlap, upgrade every tip, make the
+  French angle credible, fact-check, rewrite, and score it honestly. Proposed title: "8 French-Inspired Winter Wardrobe
+  Essentials for Effortless Elegance".
+  - Overlap search of all 28 different scripts found three v1 tips the channel had already taught (puffer opening,
+    sweater draped over the shoulders, jeans hem over the boot). All three are gone.
+  - Final eight: long wool coat, fine turtleneck, V-neck sweater, wool blazer, dark straight-leg jeans, **wool midi skirt
+    (replaces the scarf)**, tall leather boots, leather gloves; then four outfits by number.
+  - Language changed to "French-inspired" and "Parisian street style"; no claim about what French women all wear. The
+    "masculin-feminin" name was dropped (one source only); the Christmas tree expression is kept (two sources).
+  - Fact check table in `script.md` (wool label, thin layers, shoulders and tailoring, leather and suede, glove fit).
+  - 65 lines, 1,712 words (7% over the 1,600 asked for; first cuts listed in the file). Hook 74 STRONG; `fit.py` FITS;
+    `dna.py` one flag ("French" said 8 times).
+  - Title recommended: "The Only 8 Winter Pieces You Need (The French Way)"; the proposed title is 68 characters.
+  - Scorecard given: 7 to 8.5 out of 10 per line. Waiting for the user's review; then voice and clips.
 - **French winter script (14 Nov 2026, `videos/french-winter-eight/`):** the user approved the idea ("I like this topic
   ... ship it, now write the script") and asked for the exact Classy Academy script style, proven tips that are not
   basic, and said "my channel is a clone of Classy Academy".
