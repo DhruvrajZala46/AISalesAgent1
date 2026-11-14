@@ -64,3 +64,10 @@ replace #12 or #14 the moment the user says "swap". Not uploaded yet.
 Channel 14 Nov 12:16: 313 subscribers, 103,803 total views. Shorts so far: ~61,300 views.
 New signal: #6 is a VOICED list and is now the fastest, so the voice is not what sank #4. The lever is the topic:
 all three Diana stories are at 15-24K; the Queen is modest; Grace Kelly and etiquette demos flop.
+
+14 Nov 18:15 UTC - batch 2 status. Scheduled: #16 Taj Mahal (Sun 12:00 UTC), #17 wedding dress (Sun 17:30), #19 barefoot
+race (Mon 00:00), #18 engagement ring (Mon 17:30). Researched and held (facts verified, not enough real film yet):
+"5 More Times Diana Broke Royal Rules" - black gown at her first engagement (9 Mar 1981, 7 s of film: blk39), first
+heir born in hospital (1982, ~4 s), baby William on the 1983 tour (no film found), the "Uptown Girl" dance (Dec
+1985: only a clip from The Crown - actors, rejected), the leprosy hospital (Indonesia, Nov 1989: no film found).
+Open slots: Mon 7 am and 7 pm ET, Tue x3.
