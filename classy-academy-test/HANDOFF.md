@@ -301,7 +301,7 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   - Language changed to "French-inspired" and "Parisian street style"; no claim about what French women all wear. The
     "masculin-feminin" name was dropped (one source only); the Christmas tree expression is kept (two sources).
   - Fact check table in `script.md` (wool label, thin layers, shoulders and tailoring, leather and suede, glove fit).
-  - 65 lines, 1,712 words (7% over the 1,600 asked for; first cuts listed in the file). Hook 74 STRONG; `fit.py` FITS;
+  - 65 lines, 1,716 words (7% over the 1,600 asked for; first cuts listed in the file). Hook 74 STRONG; `fit.py` FITS;
     `dna.py` one flag ("French" said 8 times).
   - Title recommended: "The Only 8 Winter Pieces You Need (The French Way)"; the proposed title is 68 characters.
   - Scorecard given: 7 to 8.5 out of 10 per line. Waiting for the user's review; then voice and clips.

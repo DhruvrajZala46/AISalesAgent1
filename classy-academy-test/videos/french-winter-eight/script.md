@@ -100,7 +100,7 @@ winter wardrobe was only 8 pieces? Before you buy anything else this season, see
 **Second, match your boots to your denim. Dark jeans with black or dark brown boots create one unbroken line, and that makes your legs look longer.**
 [ON SCREEN: hands pulling thin black tights on, then jeans over them; then the woman stepping outside into the cold]
 **And for the coldest days, here's a trick borrowed from French winter dressing. A pair of thin tights under your jeans. Nobody sees them, and you'll feel the difference.**
-**You don't need expensive denim. The colour and the length matter far more than the label.**
+**You don't need expensive denim. When the colour and the length are right, you can wear them anywhere with confidence.**
 
 ## 6. A wool midi skirt
 [ON SCREEN: transition: white card, black script: "6. A wool midi skirt"]
@@ -271,13 +271,13 @@ coat label for at least half wool and to end a coat around the knee; this script
 
 ## Final check
 
-- **Length:** 65 spoken lines, 1,712 words: about 7% over the 1,600 asked for, and above the channel's longest script
+- **Length:** 65 spoken lines, 1,716 words: about 7% over the 1,600 asked for, and above the channel's longest script
   (1,614). First cuts to reach 1,600: the fitting-room step in the coat (30 words), the fourth outfit (22), the blazer's
   last line (20), the jeans' last line (16), "Under a V-neck" and the cobbler sentence (24).
 - **Hook:** 74, STRONG. The first piece starts at about 1:10. The guide starts at 49% of the script; the outfits at 86%.
 - **`fit.py check`:** FITS THE CHANNEL, no red lines.
 - **`dna.py`:** one flag, "reporting a culture": "French" or "Parisian" is said 8 times; the tool expects none because the
-  channel has never made a French video. "Why / effect on her" 25.9 (the channel's range is 23.8 to 32.4), "inner world"
-  6.9 (6.3 to 13.7). The first rewrite scored 16.5 and 2.4: it read like a shopping guide, and was rewritten.
+  channel has never made a French video. "Why / effect on her" 25.6 (the channel's range is 23.8 to 32.4), "inner world"
+  6.4 (6.3 to 13.7). The first rewrite scored 16.5 and 2.4: it read like a shopping guide, and was rewritten.
 - **Not in the script:** names, quotes, brands, prices, statistics, health claims, shaming, body-shape or age rules, any
   colour or piece called not elegant, Classy Closet, a website, the channel's name.
