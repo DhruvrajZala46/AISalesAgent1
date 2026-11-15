@@ -290,6 +290,28 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **French winter video (15 Nov 2026, `videos/french-winter-eight/`):** the user approved script v2 ("ship it, now build
+  the full video") with the same rules as the scarf video: every visual matched to its line, never guess, better music,
+  no sound effects, Pinterest / Instagram / TikTok only, no clip twice, none from earlier videos, photos where no clip exists.
+  - **Edit built and rendered:** 12:08, 65 lines, 117 different clips (each once; one market film gives two shots back to
+    back), 14 real photos, 11 product cut-outs, 295 elements. Layouts of the channel's wardrobe videos; CE logo.
+  - **Footage:** 207 search phrases in six rounds, 584 clips downloaded, screened twice on frame strips, then every chosen
+    window viewed by me (`eye_notes.txt`). 0 repeats from the eleven earlier videos, 0 duplicates, 0 AI-scan flags used.
+    Removed by eye as AI-made or suspect: three near-still clips from one account, an "...ai" account, a clip with a
+    computer-made closet, a machine-smooth product clip.
+  - **Where no true clip exists the line shows a real photo or the piece itself** (labels, linings, a V-neck over a
+    turtleneck, a turtleneck under a dress, a V-neck tucked into a skirt, a back slit, matched and burgundy gloves, the
+    two boot colours). The recap shows the eight cut-outs appearing as they are named.
+  - **Honest limits told to the user:** 58 of the 117 clip rows are marked PARTLY in `SOURCES-LOG.md` (the dinner outfit,
+    boots under trousers not jeans, wide or flared jeans in the hem shots, the belted coat by day, tights with a skirt
+    above the knee, fabric gloves at the sleeve, two skirts that are not wool, two small clips shown soft).
+  - **Sound:** "Classical 4" by Jonny S. (Mixkit) alone, evened, 15 dB under the voice; no ducking; no sound effects.
+    It is the first track of the bed of the user's favourite build; chosen by measurement, not by ear.
+  - **Rights:** nothing shown is licensed; every row is unresolved. Music cleared.
+  - Files: `edit.py`, `clips.py` (slot -> clip and seconds, crops, slow limits), `eye_notes.txt`, `VISUAL-ANALYSIS.md`,
+    `SOURCES-LOG.md`, `CREDITS.txt`, `CHAPTERS.txt`. Media is in the session scratchpad only.
+  - **Still unanswered by the user:** which title to use; one logo for thumbnails; Studio numbers. Next after the review:
+    thumbnails (1920x1080) and the upload package.
 - **French winter script v2 (14 Nov 2026, `videos/french-winter-eight/script.md`; v1 kept as `script_v1.md`):** the user
   sent a nine-step brief: analyse the 30 channel scripts, check each piece for overlap, upgrade every tip, make the
   French angle credible, fact-check, rewrite, and score it honestly. Proposed title: "8 French-Inspired Winter Wardrobe
