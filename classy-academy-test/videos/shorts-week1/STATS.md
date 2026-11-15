@@ -85,3 +85,23 @@ Open slots: Mon 7 am and 7 pm ET, Tue x3.
 | 14 Nov 18:06 | #4 Afternoon tea | ZM8bGiNtc5k | 30 h | 45 | 4 | 0 | flop |
 
 Shorts total ~72,100 views.
+
+| Checked (UTC) | Short | Id | Age | Views | Likes | Comments | Note |
+|---|---|---|---|---|---|---|---|
+| 15 Nov 00:16 | #6 Diana broke 5 rules | bC6W4eR1FfY | 30.8 h | 29,302 | 1,008 | 16 | LEADER (voiced list) |
+| 15 Nov 00:16 | #3 Diana's vows | Mr_V0fXzsMA | 48.3 h | 25,998 | 709 | 8 | |
+| 15 Nov 00:16 | #1 Revenge dress | KWbkQjkoy2g | 63.3 h | 17,911 | 805 | 14 | |
+| 15 Nov 00:16 | #2 Define Grace: Diana | -zgZp0sMIhc | 54.8 h | 4,146 | 170 | 2 | |
+| 15 Nov 00:16 | #13 Queen colours | xG3FwJjuE2Q | 24.3 h | 2,636 | 76 | 2 | |
+| 15 Nov 00:16 | #14 Define Elegance: Grace Kelly | e4SHVssyUIU | 6.8 h | 1,118 | 21 | 1 | better than #5, low likes (1.9%) |
+| 15 Nov 00:16 | #5 Grace Kelly walked away | mxg-TOehFH4 | 51.3 h | 220 | 9 | 0 | |
+| 15 Nov 00:16 | #15 Audrey LBD | sVgaKYUNUSM | 16 min | 159 | 5 | 0 | went public on its own at 00:00; OK start |
+| 15 Nov 00:16 | #12 Wine glass | n__XOhL2CtE | 12.3 h | 123 | 3 | 0 | flop |
+| 15 Nov 00:16 | #4 Afternoon tea | ZM8bGiNtc5k | 36.3 h | 55 | 4 | 0 | flop |
+
+Channel 15 Nov 00:16: 324 subscribers, 125,551 total views. Shorts ~81,700 views. Scheduled and confirmed private
+with publishAt: #16 OUj53Pj-Wkg (12:00), #17 cqDJf_ZrXbA (17:30), #19 mItuZHt4ODY (16 Nov 00:00), #18 oJLgH-P0VTc
+(16 Nov 17:30).
+Plan for the open slots (Mon 7 am / 7 pm ET, Tue x3): Diana only. The voiced list (#6) now leads, so the next
+list goes first once each item has real film; one-moment Shorts fill the rest. Decide at the 15 Nov 12:15 check,
+with #15's first 12 h (does "story behind a look" work without Diana?).
