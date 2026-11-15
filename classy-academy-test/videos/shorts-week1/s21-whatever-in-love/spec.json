@@ -1,0 +1,148 @@
+{
+ "name": "S21_whatever_in_love",
+ "shade": true,
+ "segs": [
+  {
+   "clip": "eng28",
+   "start": 0.0,
+   "dur": 2.8,
+   "mode": "fill"
+  },
+  {
+   "clip": "int11",
+   "start": 0.0,
+   "dur": 2.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.41:0:ih*0.12"
+  },
+  {
+   "clip": "int11",
+   "start": 2.0,
+   "dur": 2.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.41:0:ih*0.12"
+  },
+  {
+   "clip": "int11",
+   "start": 4.0,
+   "dur": 1.9,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.41:0:ih*0.12"
+  },
+  {
+   "clip": "int11",
+   "start": 7.0,
+   "dur": 2.5,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.5:0:0"
+  },
+  {
+   "clip": "int11",
+   "start": 10.0,
+   "dur": 3.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.5:0:0"
+  },
+  {
+   "clip": "diring0",
+   "start": 4.6,
+   "dur": 3.2,
+   "mode": "fill"
+  }
+ ],
+ "texts": [
+  {
+   "text": "In 1981, Charles and Diana",
+   "a": 0,
+   "b": 2.8,
+   "y": 1170,
+   "size": 70
+  },
+  {
+   "text": "announced their engagement.",
+   "a": 0,
+   "b": 2.8,
+   "y": 1262,
+   "size": 62
+  },
+  {
+   "text": "February 24, 1981",
+   "a": 0,
+   "b": 2.8,
+   "y": 1350,
+   "size": 46,
+   "small": true
+  },
+  {
+   "text": "Asked if they were in love,",
+   "a": 2.8,
+   "b": 4.8,
+   "y": 1215,
+   "size": 70
+  },
+  {
+   "text": "Diana: “Of course.”",
+   "a": 4.8,
+   "b": 6.8,
+   "y": 1215,
+   "size": 80
+  },
+  {
+   "text": "Charles: “Whatever",
+   "a": 6.8,
+   "b": 10.0,
+   "y": 1170,
+   "size": 80
+  },
+  {
+   "text": "‘in love’ means.”",
+   "a": 6.8,
+   "b": 10.0,
+   "y": 1262,
+   "size": 80
+  },
+  {
+   "text": "Years later, she said",
+   "a": 10.0,
+   "b": 14.2,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "it traumatized her.",
+   "a": 10.0,
+   "b": 14.2,
+   "y": 1262,
+   "size": 76
+  },
+  {
+   "text": "Love should never need",
+   "a": 14.2,
+   "b": 99,
+   "y": 1170,
+   "size": 74
+  },
+  {
+   "text": "a definition.",
+   "a": 14.2,
+   "b": 99,
+   "y": 1262,
+   "size": 74
+  }
+ ],
+ "music": {
+  "file": "m717",
+  "start": 108.0
+ },
+ "check": [
+  0.0,
+  1.5,
+  3.8,
+  5.8,
+  7.8,
+  9.5,
+  12.0,
+  15.0,
+  17.2
+ ]
+}

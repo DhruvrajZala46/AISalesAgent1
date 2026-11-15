@@ -1,0 +1,190 @@
+{
+ "name": "S20_wrong_name",
+ "shade": true,
+ "segs": [
+  {
+   "clip": "vcl3",
+   "start": 6.95,
+   "dur": 3.0,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0"
+  },
+  {
+   "clip": "vcl27",
+   "start": 2.0,
+   "dur": 2.6,
+   "mode": "fit"
+  },
+  {
+   "clip": "vcl27",
+   "start": 6.0,
+   "dur": 2.8,
+   "mode": "fit"
+  },
+  {
+   "clip": "vcl3",
+   "start": 3.7,
+   "dur": 3.0,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0"
+  },
+  {
+   "clip": "bal15",
+   "start": 15.0,
+   "dur": 2.6,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:0"
+  },
+  {
+   "clip": "vcl38",
+   "start": 9.9,
+   "dur": 2.8,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.92:0:0"
+  },
+  {
+   "clip": "vcl3",
+   "start": 25.95,
+   "dur": 3.2,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0"
+  }
+ ],
+ "texts": [
+  {
+   "text": "At the altar in 1981,",
+   "a": 0,
+   "b": 3.0,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "Diana said her vows",
+   "a": 0,
+   "b": 3.0,
+   "y": 1262,
+   "size": 76
+  },
+  {
+   "text": "St Paul’s Cathedral, July 29, 1981",
+   "a": 0,
+   "b": 3.0,
+   "y": 1350,
+   "size": 46,
+   "small": true
+  },
+  {
+   "text": "in front of",
+   "a": 3.0,
+   "b": 5.6,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "750 million people.",
+   "a": 3.0,
+   "b": 5.6,
+   "y": 1262,
+   "size": 76
+  },
+  {
+   "text": "And she got",
+   "a": 5.6,
+   "b": 8.4,
+   "y": 1170,
+   "size": 80
+  },
+  {
+   "text": "his name wrong.",
+   "a": 5.6,
+   "b": 8.4,
+   "y": 1262,
+   "size": 80
+  },
+  {
+   "text": "“Philip Charles",
+   "a": 8.4,
+   "b": 11.4,
+   "y": 1170,
+   "size": 84
+  },
+  {
+   "text": "Arthur George.”",
+   "a": 8.4,
+   "b": 11.4,
+   "y": 1262,
+   "size": 84
+  },
+  {
+   "text": "It was Charles Philip",
+   "a": 11.4,
+   "b": 14.0,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "Arthur George.",
+   "a": 11.4,
+   "b": 14.0,
+   "y": 1262,
+   "size": 76
+  },
+  {
+   "text": "Charles slipped too.",
+   "a": 14.0,
+   "b": 16.8,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "He left out “worldly.”",
+   "a": 14.0,
+   "b": 16.8,
+   "y": 1262,
+   "size": 74
+  },
+  {
+   "text": "Nobody remembers",
+   "a": 16.8,
+   "b": 18.4,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "the slip.",
+   "a": 16.8,
+   "b": 18.4,
+   "y": 1262,
+   "size": 78
+  },
+  {
+   "text": "Everyone remembers",
+   "a": 18.4,
+   "b": 99,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "her smile.",
+   "a": 18.4,
+   "b": 99,
+   "y": 1262,
+   "size": 78
+  }
+ ],
+ "music": {
+  "file": "m711",
+  "start": 76.0
+ },
+ "check": [
+  0.0,
+  2.0,
+  4.2,
+  7.0,
+  9.8,
+  12.7,
+  15.4,
+  18.0,
+  19.7
+ ]
+}

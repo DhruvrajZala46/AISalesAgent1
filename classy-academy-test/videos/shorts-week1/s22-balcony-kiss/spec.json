@@ -1,0 +1,29 @@
+{
+ "name": "S22_balcony_kiss",
+ "shade": true,
+ "segs": [
+  {"clip": "bal15", "start": 31.0, "dur": 3.0, "mode": "fit", "crop": "crop=iw:ih*0.9:0:0"},
+  {"clip": "bal5", "start": 6.0, "dur": 1.0, "mode": "fit", "crop": "crop=iw:ih*0.94:0:ih*0.06"},
+  {"clip": "bal5", "start": 8.0, "dur": 0.9, "mode": "fit", "crop": "crop=iw:ih*0.94:0:ih*0.06"},
+  {"clip": "vcl3", "start": 19.65, "dur": 2.35, "mode": "fill", "crop": "crop=iw:ih*0.92:0:0"},
+  {"clip": "bal0", "start": 1.0, "dur": 2.9, "mode": "fit"},
+  {"clip": "wk3", "start": 10.95, "dur": 3.55, "mode": "fit", "crop": "crop=iw:ih*0.48:0:ih*0.18"},
+  {"clip": "vcl3", "start": 25.95, "dur": 3.15, "mode": "fill", "crop": "crop=iw:ih*0.92:0:0"}
+ ],
+ "texts": [
+  {"text": "July 1981. Charles and Diana", "a": 0, "b": 3.0, "y": 1170, "size": 66},
+  {"text": "stepped onto the balcony.", "a": 0, "b": 3.0, "y": 1262, "size": 66},
+  {"text": "Buckingham Palace, July 29, 1981", "a": 0, "b": 3.0, "y": 1350, "size": 46, "small": true},
+  {"text": "The crowd below", "a": 3.0, "b": 4.9, "y": 1170, "size": 78},
+  {"text": "called for a kiss.", "a": 3.0, "b": 4.9, "y": 1262, "size": 78},
+  {"text": "So he kissed his bride.", "a": 4.9, "b": 7.25, "y": 1215, "size": 76},
+  {"text": "The first royal kiss", "a": 7.25, "b": 10.15, "y": 1170, "size": 76},
+  {"text": "on the palace balcony.", "a": 7.25, "b": 10.15, "y": 1262, "size": 76},
+  {"text": "In 2011, William and Kate", "a": 10.15, "b": 13.7, "y": 1170, "size": 72},
+  {"text": "kissed there twice.", "a": 10.15, "b": 13.7, "y": 1262, "size": 76},
+  {"text": "Some traditions begin", "a": 13.7, "b": 99, "y": 1170, "size": 76},
+  {"text": "with a moment of joy.", "a": 13.7, "b": 99, "y": 1262, "size": 76}
+ ],
+ "music": {"file": "m717", "start": 10.0},
+ "check": [0.0, 1.8, 3.4, 4.4, 6.0, 8.5, 11.8, 14.5, 16.6]
+}

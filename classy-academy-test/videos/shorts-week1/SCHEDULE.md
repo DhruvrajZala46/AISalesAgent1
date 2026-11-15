@@ -97,3 +97,8 @@ Facts (checked 12 Nov): Givenchy black satin dress; sold at Christie's, London, 
 
 `G4zo2VFSynE` is an empty twin of #16 (a failed first try): private, unscheduled, "EMPTY DUPLICATE - safe to delete".
 | 19 | Sun 15, 7:00 pm | 5:30 am | 00:00 | Princess Diana Ran the Mothers' Race Barefoot | mItuZHt4ODY |
+| 20 | Mon 16, 7:00 am | 5:30 pm | 12:00 | Diana Said the Wrong Name at Her Wedding | -hytnq411RY |
+| 21 | Mon 16, 7:00 pm | 5:30 am | 00:00 | "Whatever 'In Love' Means": Diana's Engagement Interview | 5j64rt-rmMU |
+| 22 | Tue 17, 7:00 am | 5:30 pm | 12:00 | The First Royal Balcony Kiss: Charles and Diana, 1981 | veJU_EbGbpo |
+| 23 | Tue 17, 12:30 pm | 11:00 pm | 17:30 | 4 Royal Rules Diana Broke Before She Was 21 (voice) | T15CqfLAlTI |
+| 24 | Tue 17, 7:00 pm | 5:30 am | 00:00 | Diana's Revenge Dress Almost Never Happened | 1w6Y8SZIKYs |

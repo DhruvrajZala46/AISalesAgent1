@@ -1,0 +1,176 @@
+{
+ "name": "S24_revenge_dress_hidden",
+ "shade": true,
+ "segs": [
+  {
+   "clip": "dress5",
+   "start": 11.8,
+   "dur": 2.8,
+   "mode": "fill",
+   "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10"
+  },
+  {
+   "clip": "dress2",
+   "start": 0.0,
+   "dur": 2.9,
+   "mode": "fill"
+  },
+  {
+   "clip": "dress6",
+   "start": 0.0,
+   "dur": 2.4,
+   "mode": "fit"
+  },
+  {
+   "clip": "dress2",
+   "start": 9.7,
+   "dur": 2.7,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.84:0:ih*0.16"
+  },
+  {
+   "clip": "dress2",
+   "start": 13.6,
+   "dur": 2.7,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.84:0:ih*0.16"
+  },
+  {
+   "clip": "dress5",
+   "start": 5.7,
+   "dur": 2.7,
+   "mode": "fill",
+   "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10"
+  },
+  {
+   "clip": "dress2",
+   "start": 18.3,
+   "dur": 3.1,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.84:0:ih*0.16"
+  }
+ ],
+ "texts": [
+  {
+   "text": "Diana’s revenge dress",
+   "a": 0,
+   "b": 2.8,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "almost never happened.",
+   "a": 0,
+   "b": 2.8,
+   "y": 1262,
+   "size": 72
+  },
+  {
+   "text": "Serpentine Gallery, London, June 29, 1994",
+   "a": 0,
+   "b": 2.8,
+   "y": 1350,
+   "size": 42,
+   "small": true
+  },
+  {
+   "text": "She’d had it for almost",
+   "a": 2.8,
+   "b": 5.7,
+   "y": 1170,
+   "size": 74
+  },
+  {
+   "text": "three years. Never worn.",
+   "a": 2.8,
+   "b": 5.7,
+   "y": 1262,
+   "size": 74
+  },
+  {
+   "text": "She thought it was",
+   "a": 5.7,
+   "b": 8.1,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "too daring.",
+   "a": 5.7,
+   "b": 8.1,
+   "y": 1262,
+   "size": 78
+  },
+  {
+   "text": "That night, she was meant",
+   "a": 8.1,
+   "b": 10.8,
+   "y": 1170,
+   "size": 68
+  },
+  {
+   "text": "to wear Valentino.",
+   "a": 8.1,
+   "b": 10.8,
+   "y": 1262,
+   "size": 76
+  },
+  {
+   "text": "But the fashion house",
+   "a": 10.8,
+   "b": 13.5,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "told the press first.",
+   "a": 10.8,
+   "b": 13.5,
+   "y": 1262,
+   "size": 76
+  },
+  {
+   "text": "So she wore",
+   "a": 13.5,
+   "b": 16.2,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "the daring one.",
+   "a": 13.5,
+   "b": 16.2,
+   "y": 1262,
+   "size": 78
+  },
+  {
+   "text": "Don’t save your best",
+   "a": 16.2,
+   "b": 99,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "for someday.",
+   "a": 16.2,
+   "b": 99,
+   "y": 1262,
+   "size": 78
+  }
+ ],
+ "music": {
+  "file": "m716",
+  "start": 68.5
+ },
+ "check": [
+  0.0,
+  1.5,
+  4.2,
+  6.9,
+  9.4,
+  12.1,
+  14.8,
+  17.0,
+  19.0
+ ]
+}

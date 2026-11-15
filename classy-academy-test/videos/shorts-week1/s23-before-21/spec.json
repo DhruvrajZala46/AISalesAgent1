@@ -1,0 +1,188 @@
+{
+ "name": "S23_before_21",
+ "segs": [
+  {
+   "clip": "diring0",
+   "start": 0.0,
+   "mode": "fill",
+   "dur": 2.448
+  },
+  {
+   "clip": "eng28",
+   "start": 0.0,
+   "mode": "fill",
+   "dur": 2.298
+  },
+  {
+   "clip": "eng6",
+   "start": 16.3,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.94:0:0",
+   "slow": 1.4,
+   "dur": 2.777
+  },
+  {
+   "clip": "eng27",
+   "start": 0.3,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.86:0:ih*0.12",
+   "dur": 3.61
+  },
+  {
+   "clip": "blk39",
+   "start": 0.0,
+   "mode": "fill",
+   "dur": 3.999
+  },
+  {
+   "clip": "blk39",
+   "start": 4.55,
+   "mode": "fill",
+   "dur": 2.666
+  },
+  {
+   "clip": "vcl3",
+   "start": 6.95,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0",
+   "dur": 2.351
+  },
+  {
+   "clip": "vcl27",
+   "start": 2.0,
+   "mode": "fit",
+   "dur": 2.351
+  },
+  {
+   "clip": "eng6",
+   "start": 30.85,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.94:0:0",
+   "slow": 2,
+   "dur": 5.632
+  },
+  {
+   "clip": "diring0",
+   "start": 4.6,
+   "mode": "fill",
+   "dur": 3.379
+  },
+  {
+   "clip": "vcl3",
+   "start": 25.95,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0",
+   "dur": 3.6
+  }
+ ],
+ "texts": [
+  {
+   "text": "4 royal rules Diana broke",
+   "y": 1170,
+   "size": 72,
+   "a": 0,
+   "b": 4.745
+  },
+  {
+   "text": "before she was 21",
+   "y": 1262,
+   "size": 76,
+   "a": 0,
+   "b": 4.745
+  },
+  {
+   "text": "1. A catalogue ring",
+   "y": 1215,
+   "size": 84,
+   "a": 4.745,
+   "b": 11.133
+  },
+  {
+   "text": "Age 19, February 1981",
+   "y": 1330,
+   "size": 46,
+   "small": true,
+   "a": 4.745,
+   "b": 11.133
+  },
+  {
+   "text": "2. A black gown",
+   "y": 1215,
+   "size": 88,
+   "a": 11.133,
+   "b": 17.797
+  },
+  {
+   "text": "Age 19, March 1981",
+   "y": 1330,
+   "size": 46,
+   "small": true,
+   "a": 11.133,
+   "b": 17.797
+  },
+  {
+   "text": "3. No “obey”",
+   "y": 1215,
+   "size": 90,
+   "a": 17.797,
+   "b": 22.499
+  },
+  {
+   "text": "Age 20, July 1981",
+   "y": 1330,
+   "size": 46,
+   "small": true,
+   "a": 17.797,
+   "b": 22.499
+  },
+  {
+   "text": "4. A hospital birth",
+   "y": 1215,
+   "size": 84,
+   "a": 22.499,
+   "b": 31.511
+  },
+  {
+   "text": "Age 20, June 1982",
+   "y": 1330,
+   "size": 46,
+   "small": true,
+   "a": 22.499,
+   "b": 31.511
+  },
+  {
+   "text": "Elegance isn’t about age.",
+   "y": 1170,
+   "size": 74,
+   "a": 31.511,
+   "b": 35.111
+  },
+  {
+   "text": "It’s knowing who you are.",
+   "y": 1262,
+   "size": 72,
+   "a": 31.511,
+   "b": 35.111
+  }
+ ],
+ "music": {
+  "file": "m711",
+  "start": 113.0,
+  "gain": -16
+ },
+ "voice": {
+  "file": "tts/S23_before_21/voice.wav",
+  "gain": 2
+ },
+ "check": [
+  0.2,
+  5.1,
+  10.1,
+  15.0,
+  20.0,
+  24.9,
+  29.9,
+  34.8
+ ],
+ "shade": true
+}
