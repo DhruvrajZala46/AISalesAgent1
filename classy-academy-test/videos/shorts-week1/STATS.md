@@ -122,3 +122,20 @@ with #15's first 12 h (does "story behind a look" work without Diana?).
 
 Channel 15 Nov 12:16: 332 subscribers, 146,331 total views. Shorts ~88,200. All three early Diana hits are now
 slowing (each Short gets its main push in the first ~24-36 h), so the channel needs a fresh Diana Short in every slot.
+
+| Checked (UTC) | Short | Id | Age | Views | Likes | Comments | Note |
+|---|---|---|---|---|---|---|---|
+| 15 Nov 17:46 | #6 Diana broke 5 rules | bC6W4eR1FfY | 48.3 h | 33,522 | 1,054 | 16 | leader |
+| 15 Nov 17:46 | #3 Diana's vows | Mr_V0fXzsMA | 65.8 h | 26,727 | 722 | 8 | |
+| 15 Nov 17:46 | #1 Revenge dress | KWbkQjkoy2g | 80.8 h | 18,410 | 815 | 14 | |
+| 15 Nov 17:46 | #2 Define Grace: Diana | -zgZp0sMIhc | 72.3 h | 4,590 | 187 | 2 | |
+| 15 Nov 17:46 | #13 Queen colours | xG3FwJjuE2Q | 41.8 h | 3,394 | 89 | 2 | |
+| 15 Nov 17:46 | #15 Audrey LBD | sVgaKYUNUSM | 17.8 h | 3,072 | 49 | 0 | |
+| 15 Nov 17:46 | #16 Taj Mahal | OUj53Pj-Wkg | 5.8 h | 1,739 | 67 | 1 | modest start (3.9% likes) |
+| 15 Nov 17:46 | #14 Define Elegance: Grace Kelly | e4SHVssyUIU | 24.3 h | 1,257 | 22 | 1 | |
+| 15 Nov 17:46 | #5 Grace Kelly walked away | mxg-TOehFH4 | 68.8 h | 238 | 9 | 0 | |
+| 15 Nov 17:46 | #12 Wine glass | n__XOhL2CtE | 29.8 h | 135 | 3 | 0 | |
+| 15 Nov 17:46 | #17 Wedding dress | cqDJf_ZrXbA | 16 min | 111 | 9 | 0 | went public on its own at 17:30; 8% likes |
+| 15 Nov 17:46 | #4 Afternoon tea | ZM8bGiNtc5k | 53.8 h | 63 | 4 | 0 | |
+
+Channel 15 Nov 17:46: 335 subscribers, 152,670 total views. Shorts ~93,300.
