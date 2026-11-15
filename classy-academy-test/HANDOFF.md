@@ -310,6 +310,9 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   - **Rights:** nothing shown is licensed; every row is unresolved. Music cleared.
   - Files: `edit.py`, `clips.py` (slot -> clip and seconds, crops, slow limits), `eye_notes.txt`, `VISUAL-ANALYSIS.md`,
     `SOURCES-LOG.md`, `CREDITS.txt`, `CHAPTERS.txt`. Media is in the session scratchpad only.
+  - **Video v1 delivered in the chat (15 Nov 2026):** 1080p, 12:08, 304 MiB send copy. QA: -12.5 LUFS, 0 black frames,
+    0 silence; the only freezes are the white cards, the photo screens, the cut-out grids and the text-only lines.
+    The render took 83 minutes. Waiting for the user's review.
   - **Still unanswered by the user:** which title to use; one logo for thumbnails; Studio numbers. Next after the review:
     thumbnails (1920x1080) and the upload package.
 - **French winter script v2 (14 Nov 2026, `videos/french-winter-eight/script.md`; v1 kept as `script_v1.md`):** the user

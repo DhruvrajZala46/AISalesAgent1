@@ -70,6 +70,9 @@ not right, the fastest fix is for the creator to name the track she uses, or sen
 - Average time on one picture: about 5 seconds; the longest single clip stays 14.8 s (a hand on the cloth of a coat in
   a shop, while the two label photos appear beside it).
 
+- Finished file: 1080p, 30 frames per second, -12.5 LUFS, 0 black frames, 0 silence. The only still stretches are
+  the white cards, the photo screens, the cut-out grids and the text-only lines.
+
 ## 5. Where the picture is not an exact match (said plainly)
 
 58 of the 117 clip rows in `SOURCES-LOG.md` are marked **PARTLY**, each with what is off. The ones that matter most:
