@@ -105,3 +105,20 @@ with publishAt: #16 OUj53Pj-Wkg (12:00), #17 cqDJf_ZrXbA (17:30), #19 mItuZHt4OD
 Plan for the open slots (Mon 7 am / 7 pm ET, Tue x3): Diana only. The voiced list (#6) now leads, so the next
 list goes first once each item has real film; one-moment Shorts fill the rest. Decide at the 15 Nov 12:15 check,
 with #15's first 12 h (does "story behind a look" work without Diana?).
+
+| Checked (UTC) | Short | Id | Age | Views | Likes | Comments | Note |
+|---|---|---|---|---|---|---|---|
+| 15 Nov 12:16 | #6 Diana broke 5 rules | bC6W4eR1FfY | 42.8 h | 31,941 | 1,043 | 16 | leader; +2,639 in 12 h |
+| 15 Nov 12:16 | #3 Diana's vows | Mr_V0fXzsMA | 60.3 h | 26,475 | 713 | 8 | |
+| 15 Nov 12:16 | #1 Revenge dress | KWbkQjkoy2g | 75.3 h | 18,237 | 813 | 14 | |
+| 15 Nov 12:16 | #2 Define Grace: Diana | -zgZp0sMIhc | 66.8 h | 4,494 | 184 | 2 | |
+| 15 Nov 12:16 | #13 Queen colours | xG3FwJjuE2Q | 36.3 h | 3,253 | 88 | 2 | |
+| 15 Nov 12:16 | #15 Audrey LBD | sVgaKYUNUSM | 12.3 h | 1,956 | 33 | 0 | modest: the look-story works a little without Diana |
+| 15 Nov 12:16 | #14 Define Elegance: Grace Kelly | e4SHVssyUIU | 18.8 h | 1,242 | 21 | 1 | |
+| 15 Nov 12:16 | #5 Grace Kelly walked away | mxg-TOehFH4 | 63.3 h | 230 | 9 | 0 | |
+| 15 Nov 12:16 | #16 Taj Mahal | OUj53Pj-Wkg | 16 min | 188 | 4 | 0 | went public on its own at 12:00 |
+| 15 Nov 12:16 | #12 Wine glass | n__XOhL2CtE | 24.3 h | 132 | 3 | 0 | |
+| 15 Nov 12:16 | #4 Afternoon tea | ZM8bGiNtc5k | 48.3 h | 59 | 4 | 0 | |
+
+Channel 15 Nov 12:16: 332 subscribers, 146,331 total views. Shorts ~88,200. All three early Diana hits are now
+slowing (each Short gets its main push in the first ~24-36 h), so the channel needs a fresh Diana Short in every slot.
