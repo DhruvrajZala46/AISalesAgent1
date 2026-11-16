@@ -1,0 +1,166 @@
+{
+ "name": "S28_three_dresses",
+ "segs": [
+  {
+   "clip": "vcl3",
+   "start": 3.8,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0",
+   "dur": 1.893
+  },
+  {
+   "clip": "dress2",
+   "start": 14.0,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.84:0:ih*0.16",
+   "dur": 1.743
+  },
+  {
+   "clip": "blk39",
+   "start": 0.0,
+   "mode": "fill",
+   "dur": 4.161
+  },
+  {
+   "clip": "blk39",
+   "start": 4.55,
+   "mode": "fill",
+   "dur": 2.972
+  },
+  {
+   "clip": "bal15",
+   "start": 5.7,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.9:0:0",
+   "dur": 3.023
+  },
+  {
+   "clip": "wd5",
+   "start": 0.0,
+   "mode": "fill",
+   "dur": 3.023
+  },
+  {
+   "clip": "dress5",
+   "start": 11.8,
+   "mode": "fill",
+   "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10",
+   "dur": 3.701
+  },
+  {
+   "clip": "dress6",
+   "start": 0.0,
+   "mode": "fit",
+   "dur": 3.701
+  },
+  {
+   "clip": "dress2",
+   "start": 9.7,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.84:0:ih*0.16",
+   "dur": 3.701
+  },
+  {
+   "clip": "dress2",
+   "start": 18.3,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.84:0:ih*0.16",
+   "dur": 3.4
+  }
+ ],
+ "texts": [
+  {
+   "text": "3 dresses that made",
+   "y": 1170,
+   "size": 78,
+   "a": 0,
+   "b": 3.636
+  },
+  {
+   "text": "Diana a legend",
+   "y": 1262,
+   "size": 82,
+   "a": 0,
+   "b": 3.636
+  },
+  {
+   "text": "1. The black gown",
+   "y": 1215,
+   "size": 84,
+   "a": 3.636,
+   "b": 10.77
+  },
+  {
+   "text": "London, March 1981",
+   "y": 1330,
+   "size": 46,
+   "small": true,
+   "a": 3.636,
+   "b": 10.77
+  },
+  {
+   "text": "2. The wedding dress",
+   "y": 1215,
+   "size": 80,
+   "a": 10.77,
+   "b": 16.816
+  },
+  {
+   "text": "St Paul’s Cathedral, July 1981",
+   "y": 1330,
+   "size": 46,
+   "small": true,
+   "a": 10.77,
+   "b": 16.816
+  },
+  {
+   "text": "3. The revenge dress",
+   "y": 1215,
+   "size": 80,
+   "a": 16.816,
+   "b": 27.918
+  },
+  {
+   "text": "London, June 1994",
+   "y": 1330,
+   "size": 46,
+   "small": true,
+   "a": 16.816,
+   "b": 27.918
+  },
+  {
+   "text": "Some dresses are worn.",
+   "y": 1170,
+   "size": 76,
+   "a": 27.918,
+   "b": 31.318
+  },
+  {
+   "text": "Some are remembered.",
+   "y": 1262,
+   "size": 76,
+   "a": 27.918,
+   "b": 31.318
+  }
+ ],
+ "music": {
+  "file": "m712",
+  "start": 67.0,
+  "gain": -16
+ },
+ "voice": {
+  "file": "tts/S28_three_dresses/voice.wav",
+  "gain": 2
+ },
+ "check": [
+  0.2,
+  4.6,
+  9.0,
+  13.4,
+  17.8,
+  22.2,
+  26.6,
+  31.0
+ ],
+ "shade": true
+}

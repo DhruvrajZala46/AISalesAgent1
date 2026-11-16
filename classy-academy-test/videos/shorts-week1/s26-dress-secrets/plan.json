@@ -1,0 +1,168 @@
+{
+ "name": "S26_dress_secrets",
+ "speed": 0.9,
+ "gap": 0.35,
+ "music": {
+  "file": "m711",
+  "start": 25.5,
+  "gain": -16
+ },
+ "lines": [
+  {
+   "say": "Four secrets hidden in Princess Diana's wedding dress.",
+   "shots": [
+    {
+     "clip": "bal15",
+     "start": 0.2,
+     "mode": "fit",
+     "crop": "crop=iw:ih*0.9:0:0"
+    },
+    {
+     "clip": "vcl3",
+     "start": 0.0,
+     "mode": "fill",
+     "crop": "crop=iw:ih*0.92:0:0"
+    }
+   ],
+   "screen": [
+    {
+     "text": "4 secrets hidden in",
+     "y": 1170,
+     "size": 78
+    },
+    {
+     "text": "Diana’s wedding dress",
+     "y": 1262,
+     "size": 76
+    }
+   ]
+  },
+  {
+   "say": "One. Its silk was British, spun at a silk farm in Dorset.",
+   "shots": [
+    {
+     "clip": "bal15",
+     "start": 5.7,
+     "mode": "fit",
+     "crop": "crop=iw:ih*0.9:0:0"
+    },
+    {
+     "clip": "wd5",
+     "start": 0.0,
+     "mode": "fill"
+    }
+   ],
+   "screen": [
+    {
+     "text": "1. British silk",
+     "y": 1215,
+     "size": 88
+    },
+    {
+     "text": "Lullingstone silk farm, Dorset",
+     "y": 1330,
+     "size": 46,
+     "small": true
+    }
+   ]
+  },
+  {
+   "say": "Two. It was embroidered with about ten thousand pearls.",
+   "shots": [
+    {
+     "clip": "vcl38",
+     "start": 28.0,
+     "mode": "fit",
+     "crop": "crop=iw:ih*0.92:0:0"
+    },
+    {
+     "clip": "vcl3",
+     "start": 22.1,
+     "mode": "fill",
+     "crop": "crop=iw:ih*0.92:0:0"
+    }
+   ],
+   "screen": [
+    {
+     "text": "2. 10,000 pearls",
+     "y": 1215,
+     "size": 88
+    }
+   ]
+  },
+  {
+   "say": "Three. A tiny gold horseshoe, set with diamonds, was sewn in for luck.",
+   "shots": [
+    {
+     "clip": "vcl38",
+     "start": 0.3,
+     "mode": "fit",
+     "crop": "crop=iw:ih*0.92:0:0",
+     "w": 1.4
+    },
+    {
+     "clip": "vcl38",
+     "start": 31.0,
+     "mode": "fit",
+     "crop": "crop=iw:ih*0.92:0:0"
+    }
+   ],
+   "screen": [
+    {
+     "text": "3. A gold horseshoe",
+     "y": 1215,
+     "size": 84
+    }
+   ]
+  },
+  {
+   "say": "And four. A secret spare dress was made, in case the design leaked. Diana never knew.",
+   "shots": [
+    {
+     "clip": "alt0",
+     "start": 5.35,
+     "mode": "fill",
+     "w": 1,
+     "crop": "crop=iw:ih*0.92:0:0"
+    },
+    {
+     "clip": "vcl34",
+     "start": 3.5,
+     "mode": "fill",
+     "w": 1.3
+    }
+   ],
+   "screen": [
+    {
+     "text": "4. A secret spare dress",
+     "y": 1215,
+     "size": 78
+    }
+   ]
+  },
+  {
+   "say": "True elegance keeps a few secrets.",
+   "min": 3.4,
+   "shots": [
+    {
+     "clip": "vcl38",
+     "start": 21.0,
+     "mode": "fit",
+     "crop": "crop=iw:ih*0.92:0:0"
+    }
+   ],
+   "screen": [
+    {
+     "text": "True elegance",
+     "y": 1170,
+     "size": 80
+    },
+    {
+     "text": "keeps a few secrets.",
+     "y": 1262,
+     "size": 80
+    }
+   ]
+  }
+ ]
+}

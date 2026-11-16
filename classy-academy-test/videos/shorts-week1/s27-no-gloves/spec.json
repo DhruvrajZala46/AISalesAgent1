@@ -1,0 +1,136 @@
+{
+ "name": "S27_no_gloves",
+ "shade": true,
+ "segs": [
+  {
+   "clip": "diaids11",
+   "start": 9.78,
+   "dur": 2.9,
+   "slow": 1.4,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.54:0:ih*0.228"
+  },
+  {
+   "clip": "diaids11",
+   "start": 0.2,
+   "dur": 3.2,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.54:0:ih*0.228"
+  },
+  {
+   "clip": "diaids11",
+   "start": 3.35,
+   "dur": 3.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.54:0:ih*0.228"
+  },
+  {
+   "clip": "diaids11",
+   "start": 6.45,
+   "dur": 3.1,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.54:0:ih*0.228"
+  },
+  {
+   "clip": "diaids11",
+   "start": 11.9,
+   "dur": 2.7,
+   "slow": 1.6,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.54:0:ih*0.228"
+  }
+ ],
+ "texts": [
+  {
+   "text": "April 1987. Princess Diana",
+   "a": 0,
+   "b": 2.9,
+   "y": 1170,
+   "size": 72
+  },
+  {
+   "text": "opened an AIDS ward.",
+   "a": 0,
+   "b": 2.9,
+   "y": 1262,
+   "size": 76
+  },
+  {
+   "text": "Middlesex Hospital, London",
+   "a": 0,
+   "b": 2.9,
+   "y": 1350,
+   "size": 46,
+   "small": true
+  },
+  {
+   "text": "Back then, many feared",
+   "a": 2.9,
+   "b": 6.1,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "AIDS spread by touch.",
+   "a": 2.9,
+   "b": 6.1,
+   "y": 1262,
+   "size": 76
+  },
+  {
+   "text": "She shook hands",
+   "a": 6.1,
+   "b": 9.1,
+   "y": 1170,
+   "size": 82
+  },
+  {
+   "text": "without gloves.",
+   "a": 6.1,
+   "b": 9.1,
+   "y": 1262,
+   "size": 82
+  },
+  {
+   "text": "The pictures went",
+   "a": 9.1,
+   "b": 12.2,
+   "y": 1170,
+   "size": 80
+  },
+  {
+   "text": "around the world.",
+   "a": 9.1,
+   "b": 12.2,
+   "y": 1262,
+   "size": 80
+  },
+  {
+   "text": "Elegance is having",
+   "a": 12.2,
+   "b": 99,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "the courage to be kind.",
+   "a": 12.2,
+   "b": 99,
+   "y": 1262,
+   "size": 74
+  }
+ ],
+ "music": {
+  "file": "m717",
+  "start": 73.5
+ },
+ "check": [
+  0.0,
+  1.5,
+  4.5,
+  7.6,
+  10.7,
+  13.0,
+  14.6
+ ]
+}

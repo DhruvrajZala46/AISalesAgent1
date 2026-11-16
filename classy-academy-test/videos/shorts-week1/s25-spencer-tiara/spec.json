@@ -1,0 +1,141 @@
+{
+ "name": "S25_spencer_tiara",
+ "shade": true,
+ "segs": [
+  {
+   "clip": "vcl3",
+   "start": 3.7,
+   "dur": 3.0,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0"
+  },
+  {
+   "clip": "vcl38",
+   "start": 17.5,
+   "dur": 2.6,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.92:0:0"
+  },
+  {
+   "clip": "vcl38",
+   "start": 25.0,
+   "dur": 2.6,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.92:0:0"
+  },
+  {
+   "clip": "wd5",
+   "start": 19.6,
+   "dur": 2.7,
+   "mode": "fill"
+  },
+  {
+   "clip": "wk3",
+   "start": 4.9,
+   "dur": 3.5,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.48:0:ih*0.18"
+  },
+  {
+   "clip": "vcl3",
+   "start": 26.0,
+   "dur": 3.2,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0"
+  }
+ ],
+ "texts": [
+  {
+   "text": "At her wedding, Diana",
+   "a": 0,
+   "b": 3.0,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "didn’t wear a royal tiara.",
+   "a": 0,
+   "b": 3.0,
+   "y": 1262,
+   "size": 72
+  },
+  {
+   "text": "St Paul’s Cathedral, July 29, 1981",
+   "a": 0,
+   "b": 3.0,
+   "y": 1350,
+   "size": 46,
+   "small": true
+  },
+  {
+   "text": "She wore her own family’s:",
+   "a": 3.0,
+   "b": 5.6,
+   "y": 1215,
+   "size": 70
+  },
+  {
+   "text": "the Spencer tiara.",
+   "a": 5.6,
+   "b": 8.2,
+   "y": 1215,
+   "size": 80
+  },
+  {
+   "text": "Her sisters had worn it",
+   "a": 8.2,
+   "b": 10.9,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "at their weddings too.",
+   "a": 8.2,
+   "b": 10.9,
+   "y": 1262,
+   "size": 76
+  },
+  {
+   "text": "In 2011, Kate wore a tiara",
+   "a": 10.9,
+   "b": 14.4,
+   "y": 1170,
+   "size": 72
+  },
+  {
+   "text": "lent by the Queen.",
+   "a": 10.9,
+   "b": 14.4,
+   "y": 1262,
+   "size": 76
+  },
+  {
+   "text": "Diana came to her wedding",
+   "a": 14.4,
+   "b": 99,
+   "y": 1170,
+   "size": 68
+  },
+  {
+   "text": "as herself.",
+   "a": 14.4,
+   "b": 99,
+   "y": 1262,
+   "size": 80
+  }
+ ],
+ "music": {
+  "file": "m716",
+  "start": 143.0
+ },
+ "check": [
+  0.0,
+  1.5,
+  4.2,
+  6.8,
+  9.5,
+  12.5,
+  15.2,
+  17.4
+ ]
+}

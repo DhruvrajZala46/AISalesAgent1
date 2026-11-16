@@ -1,0 +1,158 @@
+{
+ "name": "S30_diana_did_it_first",
+ "shade": true,
+ "segs": [
+  {
+   "clip": "vcl3",
+   "start": 6.95,
+   "dur": 3.0,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0"
+  },
+  {
+   "clip": "wed1113",
+   "start": 0.0,
+   "dur": 2.6,
+   "mode": "fit",
+   "crop": "crop=iw:ih/2:0:0"
+  },
+  {
+   "clip": "eng6",
+   "start": 16.3,
+   "dur": 2.3,
+   "slow": 1.45,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.94:0:0"
+  },
+  {
+   "clip": "eng6",
+   "start": 35.3,
+   "dur": 2.5,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.94:0:0"
+  },
+  {
+   "clip": "vcl3",
+   "start": 19.65,
+   "dur": 2.35,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0"
+  },
+  {
+   "clip": "wk3",
+   "start": 10.95,
+   "dur": 3.4,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.48:0:ih*0.18"
+  },
+  {
+   "clip": "vcl3",
+   "start": 26.0,
+   "dur": 3.2,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0"
+  }
+ ],
+ "texts": [
+  {
+   "text": "In 1981, Diana left “obey”",
+   "a": 0,
+   "b": 3.0,
+   "y": 1170,
+   "size": 70
+  },
+  {
+   "text": "out of her wedding vows.",
+   "a": 0,
+   "b": 3.0,
+   "y": 1262,
+   "size": 70
+  },
+  {
+   "text": "In 2011, so did Kate.",
+   "a": 3.0,
+   "b": 5.6,
+   "y": 1215,
+   "size": 80
+  },
+  {
+   "text": "Diana’s sapphire ring",
+   "a": 5.6,
+   "b": 7.9,
+   "y": 330,
+   "size": 80
+  },
+  {
+   "text": "is now Kate’s.",
+   "a": 7.9,
+   "b": 10.4,
+   "y": 1215,
+   "size": 84
+  },
+  {
+   "text": "Diana’s balcony kiss",
+   "a": 10.4,
+   "b": 12.75,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "started a tradition.",
+   "a": 10.4,
+   "b": 12.75,
+   "y": 1262,
+   "size": 78
+  },
+  {
+   "text": "Kate and William",
+   "a": 12.75,
+   "b": 16.15,
+   "y": 1170,
+   "size": 80
+  },
+  {
+   "text": "kissed there twice.",
+   "a": 12.75,
+   "b": 16.15,
+   "y": 1262,
+   "size": 80
+  },
+  {
+   "text": "Some women",
+   "a": 16.15,
+   "b": 17.75,
+   "y": 1170,
+   "size": 80
+  },
+  {
+   "text": "follow traditions.",
+   "a": 16.15,
+   "b": 17.75,
+   "y": 1262,
+   "size": 80
+  },
+  {
+   "text": "Diana started them.",
+   "a": 17.75,
+   "b": 99,
+   "y": 1215,
+   "size": 84
+  }
+ ],
+ "music": {
+  "file": "m717",
+  "start": 186.0,
+  "gain": 7
+ },
+ "check": [
+  0.0,
+  1.5,
+  4.2,
+  6.6,
+  9.0,
+  11.5,
+  14.5,
+  16.8,
+  19.0
+ ]
+}

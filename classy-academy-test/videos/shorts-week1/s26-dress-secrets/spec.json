@@ -1,0 +1,166 @@
+{
+ "name": "S26_dress_secrets",
+ "segs": [
+  {
+   "clip": "bal15",
+   "start": 0.2,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.9:0:0",
+   "dur": 1.957
+  },
+  {
+   "clip": "vcl3",
+   "start": 0.0,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0",
+   "dur": 1.807
+  },
+  {
+   "clip": "bal15",
+   "start": 5.7,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.9:0:0",
+   "dur": 2.138
+  },
+  {
+   "clip": "wd5",
+   "start": 0.0,
+   "mode": "fill",
+   "dur": 2.138
+  },
+  {
+   "clip": "vcl38",
+   "start": 28.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.92:0:0",
+   "dur": 1.754
+  },
+  {
+   "clip": "vcl3",
+   "start": 22.1,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0",
+   "dur": 1.754
+  },
+  {
+   "clip": "vcl38",
+   "start": 0.3,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.92:0:0",
+   "dur": 2.88
+  },
+  {
+   "clip": "vcl38",
+   "start": 31.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.92:0:0",
+   "dur": 2.057
+  },
+  {
+   "clip": "alt0",
+   "start": 5.35,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0",
+   "dur": 2.508
+  },
+  {
+   "clip": "vcl34",
+   "start": 3.5,
+   "mode": "fill",
+   "dur": 3.261
+  },
+  {
+   "clip": "vcl38",
+   "start": 21.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.92:0:0",
+   "dur": 3.4
+  }
+ ],
+ "texts": [
+  {
+   "text": "4 secrets hidden in",
+   "y": 1170,
+   "size": 78,
+   "a": 0,
+   "b": 3.764
+  },
+  {
+   "text": "Diana’s wedding dress",
+   "y": 1262,
+   "size": 76,
+   "a": 0,
+   "b": 3.764
+  },
+  {
+   "text": "1. British silk",
+   "y": 1215,
+   "size": 88,
+   "a": 3.764,
+   "b": 8.039
+  },
+  {
+   "text": "Lullingstone silk farm, Dorset",
+   "y": 1330,
+   "size": 46,
+   "small": true,
+   "a": 3.764,
+   "b": 8.039
+  },
+  {
+   "text": "2. 10,000 pearls",
+   "y": 1215,
+   "size": 88,
+   "a": 8.039,
+   "b": 11.547
+  },
+  {
+   "text": "3. A gold horseshoe",
+   "y": 1215,
+   "size": 84,
+   "a": 11.547,
+   "b": 16.483
+  },
+  {
+   "text": "4. A secret spare dress",
+   "y": 1215,
+   "size": 78,
+   "a": 16.483,
+   "b": 22.252
+  },
+  {
+   "text": "True elegance",
+   "y": 1170,
+   "size": 80,
+   "a": 22.252,
+   "b": 25.652
+  },
+  {
+   "text": "keeps a few secrets.",
+   "y": 1262,
+   "size": 80,
+   "a": 22.252,
+   "b": 25.652
+  }
+ ],
+ "music": {
+  "file": "m711",
+  "start": 25.5,
+  "gain": -16
+ },
+ "voice": {
+  "file": "tts/S26_dress_secrets/voice.wav",
+  "gain": 2
+ },
+ "check": [
+  0.2,
+  3.8,
+  7.4,
+  11.0,
+  14.6,
+  18.2,
+  21.8,
+  25.4
+ ],
+ "shade": true
+}

@@ -1,0 +1,219 @@
+{
+ "name": "S29_stopped_the_world",
+ "segs": [
+  {
+   "clip": "race39",
+   "start": 8.4,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.85:0:0",
+   "dur": 1.637
+  },
+  {
+   "clip": "taj2",
+   "start": 26.0,
+   "mode": "fill",
+   "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10",
+   "dur": 1.487
+  },
+  {
+   "clip": "wd18",
+   "start": 0.3,
+   "mode": "fit",
+   "dur": 2.778
+  },
+  {
+   "clip": "wd48",
+   "start": 12.2,
+   "mode": "fit",
+   "dur": 2.778
+  },
+  {
+   "clip": "diaids11",
+   "start": 0.3,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.54:0:ih*0.228",
+   "dur": 2.618
+  },
+  {
+   "clip": "diaids11",
+   "start": 3.4,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.54:0:ih*0.228",
+   "dur": 2.618
+  },
+  {
+   "clip": "race39",
+   "start": 5.95,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.85:0:0",
+   "dur": 2.607
+  },
+  {
+   "clip": "race41",
+   "start": 16.1,
+   "mode": "fit",
+   "crop": "crop=iw*0.80:ih*0.76:0:ih*0.10",
+   "dur": 2.607
+  },
+  {
+   "clip": "taj2",
+   "start": 10.0,
+   "mode": "fill",
+   "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10",
+   "dur": 2.212
+  },
+  {
+   "clip": "taj2",
+   "start": 15.0,
+   "mode": "fill",
+   "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10",
+   "dur": 2.212
+  },
+  {
+   "clip": "dress5",
+   "start": 11.8,
+   "mode": "fill",
+   "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10",
+   "dur": 3.3
+  },
+  {
+   "clip": "dress2",
+   "start": 13.6,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.84:0:ih*0.16",
+   "dur": 3.3
+  },
+  {
+   "clip": "dress2",
+   "start": 18.3,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.84:0:ih*0.16",
+   "dur": 3.721
+  }
+ ],
+ "texts": [
+  {
+   "text": "5 times Princess Diana",
+   "y": 1170,
+   "size": 76,
+   "a": 0,
+   "b": 3.124
+  },
+  {
+   "text": "stopped the world",
+   "y": 1262,
+   "size": 80,
+   "a": 0,
+   "b": 3.124
+  },
+  {
+   "text": "1. Her wedding",
+   "y": 1215,
+   "size": 86,
+   "a": 3.124,
+   "b": 8.679
+  },
+  {
+   "text": "July 1981",
+   "y": 1330,
+   "size": 46,
+   "small": true,
+   "a": 3.124,
+   "b": 8.679
+  },
+  {
+   "text": "2. No gloves",
+   "y": 1215,
+   "size": 90,
+   "a": 8.679,
+   "b": 13.915
+  },
+  {
+   "text": "April 1987",
+   "y": 1330,
+   "size": 46,
+   "small": true,
+   "a": 8.679,
+   "b": 13.915
+  },
+  {
+   "text": "3. Barefoot",
+   "y": 1215,
+   "size": 92,
+   "a": 13.915,
+   "b": 19.129
+  },
+  {
+   "text": "June 1991",
+   "y": 1330,
+   "size": 46,
+   "small": true,
+   "a": 13.915,
+   "b": 19.129
+  },
+  {
+   "text": "4. Alone",
+   "y": 1215,
+   "size": 96,
+   "a": 19.129,
+   "b": 23.553
+  },
+  {
+   "text": "February 1992",
+   "y": 1330,
+   "size": 46,
+   "small": true,
+   "a": 19.129,
+   "b": 23.553
+  },
+  {
+   "text": "5. The revenge dress",
+   "y": 1215,
+   "size": 80,
+   "a": 23.553,
+   "b": 30.154
+  },
+  {
+   "text": "June 1994",
+   "y": 1330,
+   "size": 46,
+   "small": true,
+   "a": 23.553,
+   "b": 30.154
+  },
+  {
+   "text": "Elegance isn’t a crown.",
+   "y": 1170,
+   "size": 76,
+   "a": 30.154,
+   "b": 33.875
+  },
+  {
+   "text": "It’s how you make people feel.",
+   "y": 1262,
+   "size": 62,
+   "a": 30.154,
+   "b": 33.875
+  }
+ ],
+ "music": {
+  "file": "m712",
+  "start": 172.5,
+  "gain": -16
+ },
+ "voice": {
+  "file": "tts/S29_stopped_the_world/voice.wav",
+  "gain": 2
+ },
+ "check": [
+  0.2,
+  5.0,
+  9.7,
+  14.5,
+  19.3,
+  24.0,
+  28.8,
+  33.6
+ ],
+ "shade": true
+}

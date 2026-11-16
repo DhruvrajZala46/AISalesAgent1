@@ -1,0 +1,213 @@
+{
+ "name": "S29_stopped_the_world",
+ "speed": 0.9,
+ "gap": 0.35,
+ "music": {
+  "file": "m712",
+  "start": 172.5,
+  "gain": -16
+ },
+ "lines": [
+  {
+   "say": "Five times Princess Diana stopped the world.",
+   "shots": [
+    {
+     "clip": "race39",
+     "start": 8.4,
+     "mode": "fill",
+     "crop": "crop=iw:ih*0.85:0:0"
+    },
+    {
+     "clip": "taj2",
+     "start": 26.0,
+     "mode": "fill",
+     "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10"
+    }
+   ],
+   "screen": [
+    {
+     "text": "5 times Princess Diana",
+     "y": 1170,
+     "size": 76
+    },
+    {
+     "text": "stopped the world",
+     "y": 1262,
+     "size": 80
+    }
+   ]
+  },
+  {
+   "say": "1981. Seven hundred and fifty million people watched her wedding.",
+   "shots": [
+    {
+     "clip": "wd18",
+     "start": 0.3,
+     "mode": "fit"
+    },
+    {
+     "clip": "wd48",
+     "start": 12.2,
+     "mode": "fit"
+    }
+   ],
+   "screen": [
+    {
+     "text": "1. Her wedding",
+     "y": 1215,
+     "size": 86
+    },
+    {
+     "text": "July 1981",
+     "y": 1330,
+     "size": 46,
+     "small": true
+    }
+   ]
+  },
+  {
+   "say": "1987. She shook hands with AIDS patients, without gloves.",
+   "shots": [
+    {
+     "clip": "diaids11",
+     "start": 0.3,
+     "mode": "fit",
+     "crop": "crop=iw:ih*0.54:0:ih*0.228"
+    },
+    {
+     "clip": "diaids11",
+     "start": 3.4,
+     "mode": "fit",
+     "crop": "crop=iw:ih*0.54:0:ih*0.228"
+    }
+   ],
+   "screen": [
+    {
+     "text": "2. No gloves",
+     "y": 1215,
+     "size": 90
+    },
+    {
+     "text": "April 1987",
+     "y": 1330,
+     "size": 46,
+     "small": true
+    }
+   ]
+  },
+  {
+   "say": "1991. She ran the mothers' race at her son's school, barefoot.",
+   "shots": [
+    {
+     "clip": "race39",
+     "start": 5.95,
+     "mode": "fill",
+     "crop": "crop=iw:ih*0.85:0:0"
+    },
+    {
+     "clip": "race41",
+     "start": 16.1,
+     "mode": "fit",
+     "crop": "crop=iw*0.80:ih*0.76:0:ih*0.10"
+    }
+   ],
+   "screen": [
+    {
+     "text": "3. Barefoot",
+     "y": 1215,
+     "size": 92
+    },
+    {
+     "text": "June 1991",
+     "y": 1330,
+     "size": 46,
+     "small": true
+    }
+   ]
+  },
+  {
+   "say": "1992. She sat alone in front of the Taj Mahal.",
+   "shots": [
+    {
+     "clip": "taj2",
+     "start": 10.0,
+     "mode": "fill",
+     "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10"
+    },
+    {
+     "clip": "taj2",
+     "start": 15.0,
+     "mode": "fill",
+     "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10"
+    }
+   ],
+   "screen": [
+    {
+     "text": "4. Alone",
+     "y": 1215,
+     "size": 96
+    },
+    {
+     "text": "February 1992",
+     "y": 1330,
+     "size": 46,
+     "small": true
+    }
+   ]
+  },
+  {
+   "say": "And 1994. The night her husband confessed on TV, she wore the revenge dress.",
+   "shots": [
+    {
+     "clip": "dress5",
+     "start": 11.8,
+     "mode": "fill",
+     "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10"
+    },
+    {
+     "clip": "dress2",
+     "start": 13.6,
+     "mode": "fill",
+     "crop": "crop=iw:ih*0.84:0:ih*0.16"
+    }
+   ],
+   "screen": [
+    {
+     "text": "5. The revenge dress",
+     "y": 1215,
+     "size": 80
+    },
+    {
+     "text": "June 1994",
+     "y": 1330,
+     "size": 46,
+     "small": true
+    }
+   ]
+  },
+  {
+   "say": "Elegance isn't a crown. It's how you make people feel.",
+   "min": 3.6,
+   "shots": [
+    {
+     "clip": "dress2",
+     "start": 18.3,
+     "mode": "fill",
+     "crop": "crop=iw:ih*0.84:0:ih*0.16"
+    }
+   ],
+   "screen": [
+    {
+     "text": "Elegance isn’t a crown.",
+     "y": 1170,
+     "size": 76
+    },
+    {
+     "text": "It’s how you make people feel.",
+     "y": 1262,
+     "size": 62
+    }
+   ]
+  }
+ ]
+}

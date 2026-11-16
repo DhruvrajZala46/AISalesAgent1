@@ -1,0 +1,159 @@
+{
+ "name": "S28_three_dresses",
+ "speed": 0.9,
+ "gap": 0.35,
+ "music": {
+  "file": "m712",
+  "start": 67.0,
+  "gain": -16
+ },
+ "lines": [
+  {
+   "say": "Three dresses that made Princess Diana a legend.",
+   "shots": [
+    {
+     "clip": "vcl3",
+     "start": 3.8,
+     "mode": "fill",
+     "crop": "crop=iw:ih*0.92:0:0"
+    },
+    {
+     "clip": "dress2",
+     "start": 14.0,
+     "mode": "fill",
+     "crop": "crop=iw:ih*0.84:0:ih*0.16"
+    }
+   ],
+   "screen": [
+    {
+     "text": "3 dresses that made",
+     "y": 1170,
+     "size": 78
+    },
+    {
+     "text": "Diana a legend",
+     "y": 1262,
+     "size": 82
+    }
+   ]
+  },
+  {
+   "say": "One. The black gown. At her first official engagement, she wore black, a color royals saved for mourning.",
+   "shots": [
+    {
+     "clip": "blk39",
+     "start": 0.0,
+     "mode": "fill",
+     "w": 1.4
+    },
+    {
+     "clip": "blk39",
+     "start": 4.55,
+     "mode": "fill",
+     "w": 1
+    }
+   ],
+   "screen": [
+    {
+     "text": "1. The black gown",
+     "y": 1215,
+     "size": 84
+    },
+    {
+     "text": "London, March 1981",
+     "y": 1330,
+     "size": 46,
+     "small": true
+    }
+   ]
+  },
+  {
+   "say": "Two. The wedding dress. A twenty five foot train, the longest in royal wedding history.",
+   "shots": [
+    {
+     "clip": "bal15",
+     "start": 5.7,
+     "mode": "fit",
+     "crop": "crop=iw:ih*0.9:0:0"
+    },
+    {
+     "clip": "wd5",
+     "start": 0.0,
+     "mode": "fill"
+    }
+   ],
+   "screen": [
+    {
+     "text": "2. The wedding dress",
+     "y": 1215,
+     "size": 80
+    },
+    {
+     "text": "St Paul’s Cathedral, July 1981",
+     "y": 1330,
+     "size": 46,
+     "small": true
+    }
+   ]
+  },
+  {
+   "say": "And three. The revenge dress. She had kept it for almost three years, thinking it was too daring. Then, on the night her husband confessed on TV, she finally wore it.",
+   "shots": [
+    {
+     "clip": "dress5",
+     "start": 11.8,
+     "mode": "fill",
+     "crop": "crop=iw*0.82:ih*0.82:iw*0.09:ih*0.10"
+    },
+    {
+     "clip": "dress6",
+     "start": 0.0,
+     "mode": "fit"
+    },
+    {
+     "clip": "dress2",
+     "start": 9.7,
+     "mode": "fill",
+     "crop": "crop=iw:ih*0.84:0:ih*0.16"
+    }
+   ],
+   "screen": [
+    {
+     "text": "3. The revenge dress",
+     "y": 1215,
+     "size": 80
+    },
+    {
+     "text": "London, June 1994",
+     "y": 1330,
+     "size": 46,
+     "small": true
+    }
+   ]
+  },
+  {
+   "say": "Some dresses are worn. Some are remembered.",
+   "min": 3.4,
+   "shots": [
+    {
+     "clip": "dress2",
+     "start": 18.3,
+     "mode": "fill",
+     "crop": "crop=iw:ih*0.84:0:ih*0.16"
+    }
+   ],
+   "screen": [
+    {
+     "text": "Some dresses are worn.",
+     "y": 1170,
+     "size": 76
+    },
+    {
+     "text": "Some are remembered.",
+     "y": 1262,
+     "size": 76
+    }
+   ]
+  }
+ ]
+}
