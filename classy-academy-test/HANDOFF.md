@@ -290,6 +290,20 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **Charm script v1 (16 Nov 2026, `videos/unforgettable-charm/script.md`, `beats.txt`):** the user accepted the topic,
+  pasted the transcript of the reference video and asked for it in Classy Academy's exact format and DNA, "no other
+  changes", after checking every channel script.
+  - Read in full first: all 11 Classy Academy behaviour and speech transcripts, and the three behaviour scripts made here.
+  - The script keeps the reference's five rules in order (attention on one person, contrasts, how they feel about
+    themselves, calm inside, discover you slowly) and its closing "your own charm"; each is told as a named habit with a
+    practice and exact words (15 sentences). Working title "5 Quiet Habits That Make a Woman Unforgettable". 57 lines,
+    1,514 words, about 10:40.
+  - Changed on purpose, and told to the user: the "are you just pretty" framing, the science and nervous-system wording,
+    the lines about God, the newsletter promotion and channel intro, slang. Mystery is the one rule the channel has
+    taught before.
+  - Sources read today for each habit are in the script's section C. Hook 70 (workable); `fit.py` no red lines; style
+    rates measured against the channel's 11 behaviour scripts (the first draft was too low on "inner world" and was
+    rewritten). **Waiting for the user's review; no voice or video started.**
 - **Next topic from a reference channel (16 Nov 2026, `research-2026-11-16.md`):** the user approved the French winter
   package and sent The Intemporelle (`@theintemporelle`) to analyse fully, asking for ONE topic that is proven on that
   channel, not a guess.
