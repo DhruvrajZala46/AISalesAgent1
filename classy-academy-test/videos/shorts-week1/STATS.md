@@ -173,3 +173,20 @@ Subscribers 340. Shorts ~98,900 views.
 | 16 Nov 12:19 | #20 Wrong name | -hytnq411RY | 19 min | 206 | 11 | 0 | went public on its own at 12:00 |
 
 #29 FYMS7FtmTi0 and #30 ZNSsiY9DQTE finished processing (HD, publishAt kept). Shorts total ~114,700 views.
+
+| Checked (UTC) | Short | Id | Age | Views | Likes | Comments | Note |
+|---|---|---|---|---|---|---|---|
+| 16 Nov 17:46 | #6 Diana broke 5 rules | bC6W4eR1FfY | 72.3 h | 34,593 | 1,069 | 16 | |
+| 16 Nov 17:46 | #3 Diana's vows | Mr_V0fXzsMA | 89.8 h | 28,000 | 750 | 8 | |
+| 16 Nov 17:46 | #1 Revenge dress | KWbkQjkoy2g | 104.8 h | 18,757 | 821 | 14 | |
+| 16 Nov 17:46 | #17 Wedding dress | cqDJf_ZrXbA | 24.3 h | 11,745 | 338 | 2 | 11.7K in its first day |
+| 16 Nov 17:46 | #16 Taj Mahal | OUj53Pj-Wkg | 29.8 h | 8,294 | 241 | 4 | |
+| 16 Nov 17:46 | #19 Barefoot race | mItuZHt4ODY | 17.8 h | 5,563 | 233 | 5 | |
+| 16 Nov 17:46 | #15 Audrey LBD | sVgaKYUNUSM | 41.8 h | 5,107 | 69 | 0 | |
+| 16 Nov 17:46 | #2 Define Grace: Diana | -zgZp0sMIhc | 96.3 h | 5,004 | 203 | 2 | |
+| 16 Nov 17:46 | #13 Queen colours | xG3FwJjuE2Q | 65.8 h | 3,738 | 105 | 2 | |
+| 16 Nov 17:46 | #20 Wrong name | -hytnq411RY | 5.8 h | 3,343 | 161 | 4 | fast start: ~580/h, 4.8% likes |
+| 16 Nov 17:46 | #14 Define Elegance: Grace Kelly | e4SHVssyUIU | 48.3 h | 1,326 | 23 | 1 | |
+| 16 Nov 17:46 | #18 Engagement ring | oJLgH-P0VTc | 16 min | 34 | 3 | 0 | went public on its own at 17:30 |
+
+Channel 16 Nov 17:46: 357 subscribers, 163,868 total views. Shorts ~126,000 views.
