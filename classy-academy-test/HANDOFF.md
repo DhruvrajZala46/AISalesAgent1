@@ -290,6 +290,18 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **French winter package (16 Nov 2026, `videos/french-winter-eight/PACKAGE.md`, `DESCRIPTION.txt`, `TAGS.txt`):** the
+  user approved the thumbnails ("ship it") and asked for the description, tags and titles.
+  - Titles: 1 "The Only 8 Winter Pieces You Need (The French Way)" (recommended, with thumbnail A), 2 "8 Things Elegant
+    French Women Wear All Winter", 3 "What French Women Wear All Winter (Only 8 Things)" (2 and 3 pair with thumbnail C).
+  - Description: 4,869 characters in the last packages' layout (two search lines, stan.store guide link, shopmy link, 12
+    chapters, hook, the eight pieces, four outfits, comment ask without "part two", signature, 3 hashtags, credits for
+    113 clip accounts and 18 photo accounts, music, thumbnail line). No website, no Classy Closet.
+  - Tags: 15, 374 characters. Search words taken from the most frequent phrases in the 251 topic titles with 100k+
+    views (no keyword tool available).
+  - Told to the user: credit names are Pinterest account names (an @name can link to an unrelated YouTube channel); the
+    thumbnail line credits where photos were found and does not name the women; the description signs as Classy Academy
+    while the video carries the CE logo. **Waiting for the user's review.**
 - **French winter thumbnails and title (16 Nov 2026, `videos/french-winter-eight/THUMBNAIL.md`):** asked for the three
   most proven thumbnails in the exact Classy Academy format, learned from million-view videos, with the why, and a title.
   - Research: 87 YouTube searches, 1,290 long videos on the topic, 21 at 1M+ (none at 10M); 228 thumbnails tagged by
