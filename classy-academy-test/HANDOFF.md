@@ -290,6 +290,23 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **French winter thumbnails and title (16 Nov 2026, `videos/french-winter-eight/THUMBNAIL.md`):** asked for the three
+  most proven thumbnails in the exact Classy Academy format, learned from million-view videos, with the why, and a title.
+  - Research: 87 YouTube searches, 1,290 long videos on the topic, 21 at 1M+ (none at 10M); 228 thumbnails tagged by
+    eye in three view tiers; plus 42 over-performers against 45 under-performers from the 59 niche channels, each
+    against its own channel; phrase table from all niche titles (`thumbnail-research-tags.txt`).
+  - What separates winners: a claim, not a label (60% against 33%); 3 words or fewer (86% against 44%); for French
+    topics a well-known real woman (56% against 6%); few collages of cut-out items (5% against 27%).
+  - Title: "The Only 8 Winter Pieces You Need (The French Way)".
+  - Built (`thumb_spec_ca_1080.json`, `tools/thumb_ca_real.py`, 1920x1080, CA logo): **A** "French Women / Always Wear /
+    \*all winter\*" (Caroline de Maigret, Ines de la Fressange, Catherine Deneuve; recommended), **B** "All Winter / Only 8
+    Pieces / \*the French way\*" (Marion Cotillard, Camille Charriere, Lea Seydoux), **C** "This Winter / Stop Buying /
+    \*wear these 8 instead\*" (Caroline de Maigret, Juliette Binoche, Ines de la Fressange; the long shot).
+  - Backgrounds softly blurred behind each woman (`thumb_soften.py`); the small line now matches the real thumbnails
+    (`small_cap` 35, asterisks; the builder's default was 25% too small and is corrected).
+  - Told to the user: no guarantee; five of the nine pins do not name the woman; press and agency photos are not
+    licensed; "Always Wear" is a generalisation; B repeats the title; C is hit-or-miss; the CA logo is on the thumbnails
+    while the video carries the CE logo. **Waiting for the user's review.** The files are in the session scratchpad only.
 - **French winter video (15 Nov 2026, `videos/french-winter-eight/`):** the user approved script v2 ("ship it, now build
   the full video") with the same rules as the scarf video: every visual matched to its line, never guess, better music,
   no sound effects, Pinterest / Instagram / TikTok only, no clip twice, none from earlier videos, photos where no clip exists.

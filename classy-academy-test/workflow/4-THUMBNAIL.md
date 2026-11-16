@@ -16,7 +16,7 @@ Read first: the `yt-package` skill (title and thumbnail are one unit).
 | Top line | Cormorant SC Regular, cap height 46 px, top at y=200, white |
 | Headline | Montserrat Bold 700, cap height 108 px, top at y=296, white |
 | Underline | red (150,22,26), under the FIRST headline word, y=418-421 (below any descender) |
-| Small line | Cormorant SC, cap height 26 px, top at y=495, like `*avoid these*` |
+| Small line | Cormorant SC small capitals 26 px high (a capital would be 35 px: `small_cap` 35 in `thumb_ca_real.py`), top at y=495, written with its asterisks, like `*avoid these*` (312 px wide on the 1.2M thumbnail) |
 | Depth | soft drop shadow on all text, gentle darkening behind the text block |
 | Logo | **CA "Classy Academy" logo** top-left (all 31 thumbnails, checked 31 Oct 2026). Use the REAL logo, `assets/logo_ca.png` at (33, 26), extracted from the 31 thumbnails by `tools/ca_logo.py` (8 Nov 2026); `tools/thumb_ca_real.py` builds with it and saves editable layers. `thumb_ca.py` only draws an approximation. |
 

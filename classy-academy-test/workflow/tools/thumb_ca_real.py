@@ -50,7 +50,7 @@ def build(spec, name, outdir='.', W=W, H=H):
     probe = ImageDraw.Draw(Image.new('L', (8, 8)))
     while probe.textlength(big, font=fb) > k(spec.get('maxw', 1060)): cap -= 2; fb = sized(FD + 'Montserrat.ttf', cap, 700, 'N')
     fs = (sized(FD + 'PinyonScript-Regular.ttf', k(spec.get('small_cap', 44)), probe='E') if spec.get('small_script')   # the channel's script line ("& Eloquently")
-          else sized(FD + 'CormorantSC-Regular.ttf', k(spec.get('small_cap', 26)), probe='A'))
+          else sized(FD + 'CormorantSC-Regular.ttf', k(spec.get('small_cap', 35)), probe='A'))   # capital height 35 -> small capitals 26 px, as measured on the 1.2M thumbnail ('*avoid these*' is 312 px wide)
     def top_y(f, txt, ytop): return ytop - f.getbbox(txt)[1]
     yb = k(spec.get('yb', 296))
     lines = [(ft, top, top_y(ft, top, yb - k(96))), (fb, big, top_y(fb, big, yb))]
