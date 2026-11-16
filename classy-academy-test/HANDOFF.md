@@ -290,6 +290,12 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **Style-icon videos (16 Nov 2026, `research-2026-11-16c.md`):** the user asked which Intemporelle videos introduce an
+  elegant woman, and which woman (Queen Elizabeth, Diana, others) is perfect for the channel. The videos could not be
+  watched (YouTube blocks this machine; vidIQ 0 credits). Its two real style introductions (Olivia Palermo, Carolyn
+  Bessette) did 0.9x. Across YouTube Princess Diana is the most proven (6 style videos with 1M+; "10 Fashion Tricks
+  Princess Diana Used..." 2.37M). Pick: **Princess Diana as style rules** ("8 Things Princess Diana Never Wore",
+  100/100). Second: Carolyn Bessette-Kennedy (FX/Hulu "Love Story", Feb 2026). **Waiting for the user.**
 - **Next topic from The Intemporelle, after charm (16 Nov 2026, `research-2026-11-16b.md`):** the user asked again for
   one proven topic from that channel. Every topic of its 25 videos was tested (38 YouTube searches, 231 videos against
   their own channels, the 59-channel niche). Pick: **looking prettier without changing your face** (its "Pretty
