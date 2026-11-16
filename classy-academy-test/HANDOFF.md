@@ -290,6 +290,19 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **Next topic from a reference channel (16 Nov 2026, `research-2026-11-16.md`):** the user approved the French winter
+  package and sent The Intemporelle (`@theintemporelle`) to analyse fully, asking for ONE topic that is proven on that
+  channel, not a guess.
+  - The channel: 67,100 subscribers, 25 long videos since Nov 2025, usual video 75,000 views. One clear winner: "Give
+    Me 10 Minutes and I'll Make You Unforgettable" (500,000; 6.7x; thumbnail "the science of charm"). It is slowing:
+    first eight videos median 179,500, last eight 36,500.
+  - The pick: **how to be unforgettable, told as the small habits of charming women**. Working title "7 Tiny Habits
+    That Make a Woman Unforgettable" (94/100). Across YouTube: 13 charm videos at 1M+ on 11 channels; 25 of 32 big ones
+    did 4x their own channel or more, on 19 channels. Neither of the user's channels has made it.
+  - Told to the user: the reference video's contents could not be read (YouTube pages blocked here, vidIQ 0 credits
+    until 12 Dec), so the pick copies the topic, not its points; that channel's two other charm videos did 1.1x and
+    0.4x; in the 59 elegance channels the word family is usual 1.0x; the user's behaviour videos are usual 0.9x and
+    win only as concrete lists. **Waiting for the user's answer; no script started.**
 - **French winter package (16 Nov 2026, `videos/french-winter-eight/PACKAGE.md`, `DESCRIPTION.txt`, `TAGS.txt`):** the
   user approved the thumbnails ("ship it") and asked for the description, tags and titles.
   - Titles: 1 "The Only 8 Winter Pieces You Need (The French Way)" (recommended, with thumbnail A), 2 "8 Things Elegant
