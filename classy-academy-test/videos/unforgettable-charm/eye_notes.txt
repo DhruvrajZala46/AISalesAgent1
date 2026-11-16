@@ -136,3 +136,5 @@ b21a weights30 1.0-6.6: woman in black lifting dumbbells side-on in a plain gym,
 a9a wedda3: 0.3-4.0 opens on a plastic cup, a lemonade dispenser and Corona beer bottles -> use 4.0-8.9 (guests greeting, canapes, guests in suits).
 e47 / d41 notice24: very short skirt under a long belted blazer; searched the screened clips for a calmer walk: slowwalk22 (cream suit) is flagged "AI: unclear, very polished" -> not used; notice24 kept.
 titles over full clips (hook question, "Never loud, never fake", the title, guide x2, 15 more lines): hard to read on bright clips -> a soft dark glow behind the words (the channel's "title over a dark clip").
+# after the first full render (16 Nov): flash.py found 6 dark frames in cinema43 (the source fades through black at 4.87-5.30 s and back to the same shot)
+b24b cinema43 -> cinema43x: the same reel with 4.87-5.30 s cut out (ffmpeg trim + concat; a small jump inside one shot, no dark frame left); window 0.3-5.95 at 1.67x.

@@ -65,7 +65,8 @@ the creator to name the track she uses, or send the file.
 - **One sentence alone on the caramel** for the payoffs ("Attention shared with the whole room is felt by no one.";
   "The more we smooth ourselves down, the easier we are to forget.").
 - **Motion:** fades, the left-to-right text wipe, a slow drift of at most 2.5% on full clips and 4% on the others. No zoom punches, no
-  arrows, circles or emoji. The only crops are the 7 that remove a caption or a small watermark.
+  arrows, circles or emoji. The only crops are the 7 that remove a caption or a small watermark; one reel
+  (`cinema43x`) has its own 0.4 s fade through black cut out.
 - **Logo:** The Classy Elegance mark in the corner and on the end card. No website on screen. The script never says
   the channel's name.
 

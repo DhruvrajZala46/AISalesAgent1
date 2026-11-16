@@ -25,7 +25,7 @@ C = {
  'b21a': ('weights30', 1.0, 6.6), 'b21b': ('reaction4', 0.3, 6.3), 'b21c': ('ballet0', 13.0, 22.6),
  'b22a': ('mirror38', 16.0, 25.8),
  'b23a': ('planner22', 4.0, 14.9), 'b23b': ('piano32', 0.3, 26.6),
- 'b24a': ('alivea5', 8.9, 19.1), 'b24b': ('cinema43', 0.3, 6.4),
+ 'b24a': ('alivea5', 8.9, 19.1), 'b24b': ('cinema43x', 0.3, 5.95),
  'b25a': ('softfirm23', 0.3, 22.5),
  # 3
  'c27a': ('ready37', 0.3, 7.3), 'c28a': ('walkhappy30', 0.3, 7.0),
@@ -56,6 +56,6 @@ C = {
  'f54a': ('typing40', 0.3, 7.3), 'f55a': ('glamb30', 0.3, 7.3), 'f56a': ('four1', 0.3, 7.3), 'f57a': ('walkhappy16', 0.3, 4.9),
 }
 
-MAXSLOW.update({'weights30': 1.5, 'weddb2': 1.45, 'knock33': 1.55, 'party32': 1.45, 'fascin1': 1.55, 'hugc4': 1.45, 'nod29': 1.6, 'cinema43': 1.55, 'mirrorsmile34': 1.5})
+MAXSLOW.update({'weights30': 1.5, 'weddb2': 1.45, 'knock33': 1.55, 'party32': 1.45, 'fascin1': 1.55, 'hugc4': 1.45, 'nod29': 1.6, 'cinema43x': 1.85, 'mirrorsmile34': 1.5})
 # crops in the 720x1280 space (x0, y0, h): past burned-in captions and small watermarks, measured on the frame sheets
 CROP.update({'dianaa12': (36, 0, 1150), 'hugc4': (36, 0, 1150), 'drape4': (100, 358, 922), 'wedda10': (73, 0, 1020), 'hello5': (108, 384, 896), 'hairst48': (98, 50, 930), 'lovely1': (107, 380, 900)})
