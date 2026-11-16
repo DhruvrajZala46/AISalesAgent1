@@ -290,6 +290,11 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **Next topic from The Intemporelle, after charm (16 Nov 2026, `research-2026-11-16b.md`):** the user asked again for
+  one proven topic from that channel. Every topic of its 25 videos was tested (38 YouTube searches, 231 videos against
+  their own channels, the 59-channel niche). Pick: **looking prettier without changing your face** (its "Pretty
+  Privilege" video, 102k, 1.4x; niche 14 videos, usual 2.16x, 6 at 3x+; 10 how-to videos for women with 1M+). Working
+  title "7 Ways to Look Prettier Without Changing Your Face" (94/100). Second: hobbies. **Waiting for the user.**
 - **Charm thumbnails (16 Nov 2026, `videos/unforgettable-charm/THUMBNAIL.md`):** the user asked for the three most
   proven thumbnails in the exact Classy Academy format, learned from million-view videos, with the why behind each.
   - Read: 102 YouTube searches (4,442 videos, 2,227 in the lane), all 136 1M+ thumbnails, samples of the middle and low
