@@ -290,6 +290,23 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **Charm video v1 (16 Nov 2026, `videos/unforgettable-charm/`):** the user approved the script ("ship it, now build the
+  full video"), said the last music was not good and the sound effects were too much, and asked for the channel's own
+  editing re-checked, visuals from Pinterest / Instagram / TikTok only, no clip twice, every visual matched to its line.
+  - Sound: Kokoro af_heart 0.80 voice; ONE solo-piano bed, "Classical vibes 3" by Grigoriy Nuzhny (Mixkit), chosen from
+    234 measured tracks, evened to within 1.0 dB, 15 dB under the voice, no ducking; **no sound effects**.
+  - Look: the channel's behaviour-video layouts (white card per habit; clip on the caramel with the lesson beside it;
+    rows with script labels; the speech video's framed clip on cream with the exact words; Marilyn Monroe and Princess
+    Diana in real archive film; full clips with the line over a soft dark glow). CE logo; no website; no channel name.
+  - Footage: 600 Pinterest video pins of IG / TikTok reels downloaded (169 searches), screened twice, 108 used once each
+    from 103 creators; 130 downloads that repeat earlier videos and 9 picks with captions or watermarks thrown out; the
+    121 snapshots of the first build led to 4 more fixes, the first render to a fifth (a cinema reel's own fade to
+    black cut out; `eye_notes.txt`). 23 of 108 rows are PARTLY a match
+    (`SOURCES-LOG.md`, `VISUAL-ANALYSIS.md` section 5). Rights: all unresolved.
+  - Finished file (sent to the user, not in git): 10:47.6, 1920x1080, 30 fps, -13.6 LUFS, 0 black frames, 0 silence,
+    0 flashes in the 108 clips; still stretches are only the white cards and the text screens. Delivery copy 274 MB
+    (libx264 crf 18). Render: segmented capture stalled twice; `--resume` kept the finished segments.
+  - **Waiting for the user's review ("Ship it, or change it?").** No title package or thumbnails made yet.
 - **Charm script v1 (16 Nov 2026, `videos/unforgettable-charm/script.md`, `beats.txt`):** the user accepted the topic,
   pasted the transcript of the reference video and asked for it in Classy Academy's exact format and DNA, "no other
   changes", after checking every channel script.
