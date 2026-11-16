@@ -1,0 +1,138 @@
+# my own check of every chosen window (vs/v_NN.jpg, 8 frames at 216 px), 16 Nov
+h1a glamb3 0.3-7.3: woman in a white strapless gown walks through a palace doorway under a chandelier, twirls at 4-6. OK.
+h1b fascin42 0.3-8.2: three young women at a round cafe table, Black woman with a mug listening and smiling, friend talking. OK.
+h2a alone35 0.3-5.9: woman in sunglasses and olive jacket stirs and sips coffee at an outdoor table; a passer-by at 2.7. OK.
+h2b quiet23: young woman reading under a tree, white blouse, grass. OK (clip ends 5.1).
+h2d carb36 3.3-9.3: couple from the back seat, night traffic, his arm round her. OK (no faces).
+h3a warma14: two East Asian women holding hands at a cafe table, smiling at each other. OK.
+h3b music31: party crowd dancing (7-11.5), cut to a singer at 12. Use 7.1-11.8.
+h3c seena49: two women on a sofa, one with a clipboard, both smiling. OK.
+h4a crowd33: glass-roofed event hall, crowd chatting. OK.
+h4b divb16: REJECT - caption over her chest the whole window ("what I imagine people saying...").
+h4c teapour5: hands pour tea from a glass pot into a white cup. OK.
+h4d alivea2: two young women laughing hard, sunny. OK.
+h5b ageda8 0.3-12: grey-haired woman ~55-60 talking to camera at home. OK (silent panel).
+h5c ageda5 24.4-36: silver-haired woman ~60 talking/smiling in a car. OK.
+h5d paint27: woman in white painting at an easel in a bright studio. OK.
+h6a styl39: REJECT - caption "them: office is not a fashion show / me: oh but it is" across the upper third all the time.
+h6b lookback12: woman in black leather jacket walks into a cafe door, turns and smiles over her shoulder. OK.
+h6c hello7: REJECT - caption "Sometimes you meet the best ones later <3" mid-frame; "Welcome to Las Vegas" airport sign.
+a9a wedda10: night wedding reception, candlelit tables, guests dancing; caption "She never says no to a good night." at the lower fifth -> crop the bottom, or use as 'a wedding'.
+a9b wedda0: LANDSCAPE 720x540 (garden reception, small figures) - cannot go in a vertical row panel.
+a9c lunch3: long outdoor lunch, older guests clapping and cheering. OK.
+a9d crowd2: ornate hall, crowd mingling. OK.
+a9e weddb2: LANDSCAPE 720x540 - not for a vertical panel.
+a9f lookaway47: blonde woman at a cafe table looks away while the friend talks; man on the phone behind. OK.
+a10a busy2 5.8-14: crowded wine bar, women greeting, a warm hug 10.5-14. OK ("yes" print on a tote bottom-left at 5.8-7).
+a11a boredl0 0.3-10.1: one woman talks standing, the other sits chin on hand, eyes on her. OK - exact.
+a11b simpleb29: four women at a cafe table. OK.
+a11c walkhappy7: woman in white top and dark trousers walks away down a tree-lined road. OK.
+a12a lobby20: hotel check-in with a suitcase - not a gathering. REPLACE.
+a12b fascin1: two women at a counter, one whispers, the other listens with her mug. OK.
+a12c coffee9: REJECT - caption "Us after we spent 2 hours finding a perfect song..." on the wall mid-frame.
+a13a warma42: two women laughing on a cafe bench; a stranger enters the right edge at 7.5 -> use 0.3-7.0.
+a13b pour2: hands pour wine into glasses against a brown curtain. OK.
+a13c window17: woman opens a tall window and looks out at a field. OK - exact.
+a14a edge11: woman alone by an open window at night, Eiffel Tower, champagne. OK.
+a14b alivea5: two women running hand in hand in a field - not a conversation. REPLACE.
+a15a calma29 0.3-7.9: backlit woman sips tea on a window seat, then gazes out calmly. OK.
+a15b lookback6 4.3-12.3: young woman in a yellow floral dress turns, smiles warmly, walks towards camera with flowers. OK.
+b17d mirror5: woman in a white tank top fixing her hair, seen in a round mirror. OK.
+b17a quiet15 0.3-7.3: curly-haired woman reading by a tall window (wide, then close). OK.
+b17b sensible26: woman in a brown blazer writing at a white desk, pen at her chin. OK - exact.
+b17c nod19: South Asian woman smiling warmly with a mug among friends. OK for "the sweet one".
+b18a four10: close-ups of different women laughing (quick cuts). OK.
+b18b compl31: woman laughs hard with a hand on her chest among friends. OK.
+b19a marilynd39: real B&W night newsreel, Marilyn among men in tuxedos leaning in, she talks and smiles. OK (4:3).
+b19b marilynd14 1.1-9.0: sepia newsreel, Marilyn laughs and talks with an older man; cut to the crowd at 9.6 -> end at 9.0.
+b20a dianaa12 12.6-22: Diana in red, head tilted, shy smile, receiving flowers. Small "welondits" mark bottom-centre -> CROP the bottom.
+b20b dianae23: Diana holds a patient's hand - but a burned-in subtitle "I've been deeply moved." -> REJECT; use dianac28 (Angola) instead.
+b20c dianab4 14.5-23: Diana in a green jacket on a hospital bedside with an elderly woman, a crocheted blanket. OK. The square file is letterboxed (black bands top and bottom) -> crop the picture band before use.
+b21a boxing30: woman in black boxing at a bag in a gym ("Combat Sports" printed on the bags). OK.
+b21b reaction4: woman in a grey jumper laughing heartily. OK.
+b21c ballet0: ballet at a barre by tall windows, on pointe. OK - beautiful.
+b22a mirror38 16-25.8: red-haired woman in a white slip dress touching her hair at a gilt mirror (jewellery brand film, no logo in the window). OK.
+b23a journal34: REJECT - faint "konfor" watermark across the lower third.
+b23b piano32: woman in a white dress playing piano at home, eyes on the keys. OK.
+b24a simplea11: REJECT - caption "just women in their 30s..." mid-frame.
+b24b cinema43: two women in red cinema seats with popcorn and a drink, smiling. OK.
+b24c coffee46: REJECT - caption "coffee, donuts & yap soon?" mid-frame.
+b25a softfirm23: woman ~40 in a black blazer speaking gently with open hands (podcast mic in frame). OK.
+c27a ready37: woman in a bathrobe blow-drying her hair at a hotel mirror. OK.
+c28a walkhappy30: woman in a grey coat with a bouquet of red roses walks across a crossing, smiling. OK.
+c29d olderb16 21.7-32.4: two women in their 70s in bed laughing over a phone. OK.
+c29b nervb12: worried woman, chin on her fists, frowning. OK.
+c30a ask19: two women at a wooden table, one eats strawberries, the other reads. OK (calm).
+c31a seena27: woman on a sofa listening closely to a speaker seen from behind. OK.
+c33a party43: friends raising wine glasses together. OK.
+c33b hugc4 8.7-12.3: two young women run to each other and hug at an airport kerb; TikTok mark bottom-right -> CROP the bottom.
+g34a glamb32 11.3-22.3: woman in a pale pink gown in a gold ballroom. OK.
+g34b drape4: colour analysis, striped drapes under a Black woman's face; caption at the top quarter -> CROP below it.
+g34c hairst18: elegant updo with pearl pins. OK.
+g34d styl24: woman in a white satin trouser suit on a New York street. OK.
+g34e adjustb23: mirror selfie in a black dress (phone hides her face). OK for the guide title.
+d36a nervb40: woman with long dark hair walks down an office corridor towards a door, from behind. OK.
+d36b glamb16: woman in a pale gown walks alone into an empty ballroom. OK (where should I stand).
+d36c edge9: woman in a white dress holding champagne, back to camera, glancing at a mirror. OK.
+d37a laughb42: candlelit dinner party, guests laughing and talking (quick cuts, dark). OK.
+d37b calmtable3: blonde woman with red wine, calm small smile at a candlelit table, laughs behind her hand. OK - exact.
+d37c slowwalk9: woman in a long navy coat walks slowly through a park. OK (dark).
+d37d shoulders30: woman sits on a rock, eyes closed, calm, mountains. OK.
+d38z shoulders11: woman on a sofa, hand on her chest, eyes closed, breathing. OK.
+d38a parked25 8.3-19: woman ~55 in the driver's seat, calm, looking ahead (the car is moving). OK for "in the car".
+d38b elev14: woman in a long coat waits at a lift and steps in. OK.
+d38c frontdoor12: woman in a cream teddy jacket knocks on a white front door. OK - exact.
+d39a lunch33: family at an outdoor table, a woman standing at the end sharing something. OK.
+d39b music11: singer in a sequinned gown and a pianist in a restaurant, guests at tables. OK.
+d39c nod29 3.3-6.3: woman in an orange top laughing with a friend over coffee. OK.
+d40a knock33: woman in an olive coat with a huge pink bouquet at a door, from behind. OK.
+d40b shoulders10: REJECT - faint "...FITNESS" watermark over her hands, centre.
+d40c hello5: lilac caption box (Fred Rogers quote) across the top quarter -> CROP below it.
+d40d myst10 5.3-12.7: woman in a black dress with a coffee cup on a red-carpeted staircase, calm, looking away. OK -> move to "she seems to know exactly who she is".
+d41a notice24: woman in a beige blazer walking down a shopping street past people. OK.
+e43a mystb21: woman in sunglasses sips coffee, sits back, looks away. OK.
+e43b cold10 10.7-14.8: woman leaning against a window, arms crossed, turned away. OK - exact.
+e43c scroll21: woman scrolling her phone in a dark room, face lit by the screen. OK.
+e44b calma27: woman wrapped in a blanket with a blue mug, calm smile. OK.
+e45a edge8: REJECT - very low-cut dress (too revealing for the channel).
+e45b oldfriend29: two women in their 80s on a park bench, one talks with her hands, the other listens. OK - lovely.
+e47a turnsmile49: REJECT - posed snow portrait reel with added snow, quick cuts, low resolution; AI cannot be ruled out.
+e47b deep1 0.3-8.9: mother and daughter laughing together on a sofa. OK ("your sister" / family).
+e47c olderb27: REJECT - a photographer's arm and camera fill the foreground.
+e48a comfort2: a friend holds the hand of an upset friend on a sofa, listening. OK.
+f49a paint30: woman kneels at an easel, then her hand paints a landscape (blending colour). Use 14.2-19.8.
+f50a softfirm37: woman in a white shirt speaking gently to camera, open hands. OK.
+f50b agedb31: woman ~55, platinum bob, white blouse, dancing and laughing. OK.
+f50c turnsmile45: REJECT - posted by rawpixel (a stock-photo site), against the "no stock websites" rule.
+f51a scroll28: woman scrolling her phone outdoors, a little wistful. OK.
+f51b hairst48: woman checks her low chignon in a hand mirror, smiling; small caption box on her back -> CROP the bottom.
+f52b piano45: woman in white playing a grand piano from sheet music. OK.
+f52c frontdoor1: woman walks up a long path to a front door, from behind. OK.
+f53a paint0: painting in sunlight 36.7-42.8; from 43.7 product shots of the finished painting -> end at 42.8.
+f53b restwalk22: REJECT for this line - she dances through a restaurant (contradicts "never about being the loudest").
+f54a typing40: woman in a pale blue blouse typing on her phone, soft smile. OK.
+f55a glamb30: woman in a burgundy dress twirls in a hall with chandeliers. OK.
+f56a four1: Black woman ~55-60, soft warm smile to camera, chin on hand. OK.
+f57a walkhappy16: woman walks out of a doorway and away down a Paris street towards the Eiffel Tower. OK.
+# replacements (second round of my own check)
+h6c hugc4 8.5-14: two young women hug at an airport kerb; TikTok mark bottom-right (cropped); 7.6 is an empty kerb -> start 8.5.
+a9a wedda3: wedding drinks in a garden, quick cuts (guests, champagne poured, canapes, a laughing group). OK for "a party".
+a12a lunch16 0.3-10: three-generation family at a garden table (landscape). OK.
+a12c compl37: two women laughing; dissolves to a coffee cup at 2.6 -> too short, drop.
+a14b ease7 0.3-3.2: six friends laughing on a sofa (landscape stock look). OK.
+b20b dianaf14 11-18: real 1984 film, Diana in a red coat bending to children in wheelchairs at a playground. OK.
+b23a planner22 4-14.9: hands writing in a notebook at a white desk. OK.
+b24a alivea5 8.9-19.1: two women in a meadow, far then close, running hand in hand, laughing. OK.
+c29d lovely1: two women at tea in a dark tea room; caption "bring back tea parties" above their heads -> CROP below it.
+g34d mirrorsmile34: hair blur fills the frame for the first second -> drop (the row keeps two clips, "outfit formulas" as words).
+d38z journal47: woman in white writing at a round table, seen from above. OK.
+e45a piano41 10.1-22.3: blonde woman in a white dress playing a grand piano by tall windows. OK.
+e47c olderb16: two women in their 70s laughing over a phone. OK.
+f53b ballet10: dancer at a barre in a large studio, extensions. OK.
+alivea46 0.3-3: two women friends, quick cuts (hair touched, at a table, heads together). OK for 'one lovely conversation'.
+# after the 121 snapshots of the first build (16 Nov)
+b21a boxing30: REPLACE - a big printed brand ("COMBAT SPORTS") on the punch bag fills a third of the frame all through; the camera moves, so no crop removes it.
+b21a weights30 1.0-6.6: woman in black lifting dumbbells side-on in a plain gym, no logo; at 7.0 she starts pulling off her top -> end at 6.6. OK.
+a9a wedda3: 0.3-4.0 opens on a plastic cup, a lemonade dispenser and Corona beer bottles -> use 4.0-8.9 (guests greeting, canapes, guests in suits).
+e47 / d41 notice24: very short skirt under a long belted blazer; searched the screened clips for a calmer walk: slowwalk22 (cream suit) is flagged "AI: unclear, very polished" -> not used; notice24 kept.
+titles over full clips (hook question, "Never loud, never fake", the title, guide x2, 15 more lines): hard to read on bright clips -> a soft dark glow behind the words (the channel's "title over a dark clip").
