@@ -139,3 +139,21 @@ slowing (each Short gets its main push in the first ~24-36 h), so the channel ne
 | 15 Nov 17:46 | #4 Afternoon tea | ZM8bGiNtc5k | 53.8 h | 63 | 4 | 0 | |
 
 Channel 15 Nov 17:46: 335 subscribers, 152,670 total views. Shorts ~93,300.
+
+| Checked (UTC) | Short | Id | Age | Views | Likes | Comments | Note |
+|---|---|---|---|---|---|---|---|
+| 16 Nov 00:16 | #6 Diana broke 5 rules | bC6W4eR1FfY | 54.8 h | 34,201 | 1,062 | 16 | |
+| 16 Nov 00:16 | #3 Diana's vows | Mr_V0fXzsMA | 72.3 h | 27,115 | 733 | 8 | |
+| 16 Nov 00:16 | #1 Revenge dress | KWbkQjkoy2g | 87.3 h | 18,624 | 816 | 14 | |
+| 16 Nov 00:16 | #2 Define Grace: Diana | -zgZp0sMIhc | 78.8 h | 4,734 | 192 | 2 | |
+| 16 Nov 00:16 | #15 Audrey LBD | sVgaKYUNUSM | 24.3 h | 4,193 | 66 | 0 | |
+| 16 Nov 00:16 | #13 Queen colours | xG3FwJjuE2Q | 48.3 h | 3,500 | 92 | 2 | |
+| 16 Nov 00:16 | #16 Taj Mahal | OUj53Pj-Wkg | 12.3 h | 2,829 | 94 | 1 | half of #3's pace at 12 h |
+| 16 Nov 00:16 | #17 Wedding dress | cqDJf_ZrXbA | 6.8 h | 1,908 | 71 | 0 | 3.7% likes |
+| 16 Nov 00:16 | #14 Define Elegance: Grace Kelly | e4SHVssyUIU | 30.8 h | 1,291 | 23 | 1 | |
+| 16 Nov 00:16 | #5 Grace Kelly walked away | mxg-TOehFH4 | 75.3 h | 242 | 9 | 0 | |
+| 16 Nov 00:16 | #12 Wine glass | n__XOhL2CtE | 36.3 h | 140 | 3 | 0 | |
+| 16 Nov 00:16 | #4 Afternoon tea | ZM8bGiNtc5k | 60.3 h | 73 | 4 | 0 | |
+| 16 Nov 00:16 | #19 Barefoot race | mItuZHt4ODY | 16 min | 50 | 4 | 0 | went public on its own at 00:00 |
+
+Subscribers 340. Shorts ~98,900 views.
