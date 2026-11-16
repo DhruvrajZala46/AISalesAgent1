@@ -1,0 +1,350 @@
+# YouTube 1M+ charm/presence lane, read by eye 16 Nov 2026
+# id | kind | words | face | expr | women | tone
+# kind: P = payoff in other people (people notice you / everyone will be a fan / get them addicted) | S = signs or warning about the viewer (signs you are / this makes you unattractive) | C = command (start doing this / don't react / talk like this) | R = a named rule or secret (the 1 second rule) | L = a trait label (effortless charm / be more charismatic / confident) | T = names a topic (table manners / posture) | V = two-sided contrast (ordinary girl / lady; tick / cross) | N = no words | X = off-topic (music, show clip, animation story)
+# face: own = creator | celeb = well-known person | anon = model / stock / unnamed | cartoon | none ; expr: warm = smile or laugh | neutral | serious
+W001|X
+W002|X
+W003|C|2|celeb|serious|n|dark
+W004|T|1|celeb|warm|y|mid
+W005|X
+W006|N|0|own|neutral|y|mid
+W007|X
+W008|C|3|own|neutral|y|dark
+W009|R|3|celeb|neutral|n|dark
+W010|R|3|celeb|serious|n|dark
+W011|V|0|anon|warm|n|light
+W012|T|3|own|warm|y|light
+W013|S|3|cartoon|sad|n|light
+W014|L|2|celeb|warm|y|dark
+W015|X
+W016|C|3|celeb|warm|y|dark
+W017|R|4|celeb|serious|n|dark
+W018|X
+W019|T|6|own|neutral|y|light
+W020|C|3|own|warm|y|dark
+W021|L|5|cartoon|warm|n|light
+W022|T|3|celeb|warm|n|dark
+W023|V|3|anon|none|y|light
+W024|T|2|own|neutral|n|light
+W025|C|3|own|neutral|y|mid
+W026|S|8|cartoon|warm|n|light
+W027|L|5|celeb|neutral|n|dark
+W028|C|3|celeb|warm|y|dark
+W029|C|3|celeb|warm|y|dark
+W030|P|7|own|warm|y|light
+W031|T|2|own|neutral|y|light
+W032|X
+W033|L|1|celeb|warm|y|dark
+W034|C|3|own|serious|y|dark
+W035|V|3|celeb|none|y|dark
+W036|N|0|own|neutral|y|mid
+W037|P|4|own|serious|n|dark
+W038|C|2|celeb|serious|n|dark
+W039|C|3|celeb|serious|n|dark
+W040|N|0|own|neutral|y|light
+W041|Q|5|cartoon|none|n|light
+W042|V|0|anon|warm|y|mid
+W043|N|0|own|warm|y|light
+W044|X
+W045|C|8|own|warm|n|light
+W046|L|3|own|warm|y|dark
+W047|R|3|celeb|warm|y|mid
+W048|C|3|celeb|neutral|n|dark
+W049|L|3|own|warm|n|dark
+W050|L|4|anon|neutral|y|mid
+W051|T|5|own|warm|y|dark
+W052|X
+W053|S|6|cartoon|warm|n|light
+W054|P|3|own|warm|n|dark
+W055|L|7|cartoon|neutral|y|light
+W056|C|3|celeb|warm|y|dark
+W057|V|0|anon|neutral|y|light
+W058|Q|6|own|neutral|y|mid
+W059|C|3|celeb|neutral|n|dark
+W060|S|4|anon|warm|y|light
+W061|T|4|cartoon|none|y|light
+W062|V|2|cartoon|warm|n|mid
+W063|C|4|own|neutral|y|light
+W064|S|2|cartoon|warm|n|light
+W065|V|2|anon|warm|y|dark
+W066|L|3|own|neutral|n|dark
+W067|P|3|own|warm|y|dark
+W068|Q|4|cartoon|warm|y|light
+W069|T|2|own|warm|y|mid
+W070|L|2|celeb|warm|y|mid
+W071|N|0|celeb|warm|y|dark
+W072|T|4|own|neutral|y|light
+W073|X
+W074|X
+W075|X
+W076|N|0|own|neutral|n|dark
+W077|N|0|own|neutral|n|dark
+W078|L|1|own|neutral|n|light
+W079|X
+W080|C|4|celeb|warm|y|mid
+W081|L|3|cartoon|none|n|dark
+W082|L|6|own|neutral|y|light
+W083|P|4|own|neutral|n|light
+W084|L|4|own|neutral|y|light
+W085|T|3|anon|neutral|y|dark
+W086|X
+W087|C|2|celeb|warm|y|mid
+W088|S|2|cartoon|neutral|y|light
+W089|L|3|own|neutral|y|dark
+W090|P|5|celeb|warm|y|mid
+W091|C|3|celeb|warm|y|dark
+W092|L|4|own|warm|y|dark
+W093|S|6|own|warm|y|light
+W094|X
+W095|X
+W096|N|0|own|neutral|y|dark
+W097|L|4|own|warm|n|light
+W098|V|0|own|neutral|y|light
+W099|S|4|cartoon|sad|y|light
+W100|X
+W101|X
+W102|C|3|celeb|serious|n|dark
+W103|X
+W104|S|5|cartoon|sad|n|dark
+W105|L|3|own|serious|y|dark
+W106|L|3|anon|neutral|y|mid
+W107|T|5|own|none|y|light
+W108|C|3|own|neutral|y|dark
+W109|X
+W110|C|3|celeb|serious|n|dark
+W111|X
+W112|Q|4|celeb|neutral|n|light
+W113|T|3|anon|none|y|light
+W114|V|2|celeb|neutral|y|mid
+W115|X
+W116|V|5|own|serious|n|dark
+W117|X
+W118|T|2|celeb|neutral|y|dark
+W119|P|3|cartoon|none|n|light
+W120|X
+W121|X
+W122|V|0|own|warm|y|light
+W123|L|5|own|warm|y|light
+W124|P|4|own|neutral|y|dark
+W125|N|0|own|neutral|y|dark
+W126|X
+W127|T|3|celeb|serious|n|dark
+W128|P|5|own|neutral|y|light
+W129|N|0|own|neutral|n|light
+W130|L|3|own|warm|y|dark
+W131|S|4|cartoon|warm|y|light
+W132|X
+W133|T|2|own|warm|y|light
+W134|T|5|own|warm|y|light
+W135|Q|4|celeb|warm|y|light
+W136|L|1|celeb|warm|n|light
+# middle (100k-1M) and low (2k-100k) thumbnails read by eye; same codes as tags_W.txt, plus K = a reveal claim ("it was never looks", "charisma is easy")
+M001|P|4|own|warm|y|light
+M002|T|4|own|neutral|y|mid
+M003|X
+M004|N|1|own|neutral|n|light
+M005|X
+M006|C|3|celeb|neutral|n|dark
+M007|K|3|cartoon|warm|n|light
+M008|L|3|anon|warm|y|mid
+M009|X
+M010|T|9|own|warm|y|light
+M011|T|6|own|warm|y|light
+M012|C|2|celeb|neutral|n|dark
+M013|X
+M014|L|4|anon|neutral|y|dark
+M015|T|3|anon|warm|y|light
+M016|N|0|own|warm|n|mid
+M017|T|3|celeb|warm|n|mid
+M018|P|5|own|neutral|y|light
+M019|X
+M020|C|2|none|none|n|dark
+M021|Q|3|none|none|n|dark
+M022|N|0|own|neutral|n|light
+M023|T|3|celeb|neutral|y|dark
+M024|C|4|anon|neutral|y|light
+M025|X
+M026|T|5|own|warm|y|light
+M027|L|2|cartoon|neutral|y|light
+M028|T|5|cartoon|none|n|mid
+M029|L|6|anon|neutral|y|dark
+M030|L|5|own|neutral|y|light
+M031|X
+M032|K|5|own|neutral|y|light
+M033|X
+M034|C|5|own|neutral|n|mid
+M035|X
+M036|T|4|anon|warm|y|dark
+M037|L|4|cartoon|neutral|n|mid
+M038|T|2|anon|none|y|dark
+M039|T|8|own|warm|n|dark
+M040|C|4|own|warm|n|dark
+L001|L|4|anon|neutral|y|dark
+L002|X
+L003|K|4|own|warm|y|light
+L004|C|3|celeb|warm|y|light
+L005|T|9|own|neutral|n|light
+L006|X
+L007|T|3|none|none|n|mid
+L008|T|5|celeb|neutral|y|light
+L009|L|7|anon|neutral|y|dark
+L010|L|4|own|neutral|y|light
+L011|X
+L012|K|3|celeb|neutral|y|dark
+L013|L|6|celeb|warm|y|mid
+L014|T|5|own|warm|n|dark
+L015|T|4|anon|neutral|y|light
+L016|L|6|anon|warm|y|mid
+L017|T|3|own|warm|y|dark
+L018|L|3|celeb|neutral|n|mid
+L019|L|2|cartoon|neutral|n|dark
+L020|S|8|own|warm|n|mid
+L021|L|5|own|warm|y|light
+L022|T|4|own|warm|y|light
+L023|T|8|own|neutral|y|light
+L024|T|3|celeb|warm|y|light
+L025|L|2|anon|serious|n|dark
+L026|T|7|own|warm|y|dark
+L027|X
+L028|T|5|own|warm|y|mid
+L029|P|5|own|neutral|n|dark
+L030|T|5|anon|warm|y|light
+L031|T|4|celeb|warm|y|mid
+L032|R|3|anon|neutral|n|dark
+L033|T|4|anon|warm|y|mid
+L034|C|3|own|neutral|n|dark
+L035|C|3|anon|warm|y|mid
+L036|L|5|own|neutral|y|mid
+L037|L|4|own|neutral|y|light
+L038|L|4|own|warm|y|light
+L039|N|0|celeb|warm|y|mid
+L040|C|3|own|neutral|n|dark
+L041|X
+L042|X
+L043|T|0|anon|neutral|y|dark
+L044|L|2|anon|neutral|y|light
+L045|X
+L046|T|5|celeb|warm|y|light
+L047|Q|4|own|neutral|n|mid
+L048|X
+L049|L|4|own|warm|y|light
+L050|K|4|anon|serious|n|dark
+L051|C|4|own|neutral|y|dark
+L052|L|2|anon|none|n|dark
+L053|C|2|own|warm|y|dark
+L054|T|2|celeb|warm|y|light
+L055|L|4|celeb|neutral|y|mid
+L056|S|4|own|neutral|y|mid
+L057|T|5|own|warm|n|dark
+L058|L|5|own|neutral|y|light
+L059|X
+L060|C|3|celeb|neutral|y|light
+# niche (59 elegance channels) charm / presence / class-behaviour thumbnails, read by eye 16 Nov 2026
+# kind: P = a claim about the viewer or about how other people see her | A = names a trait to become ("Become X", "Be X", "How to be X") | C = names a topic | T = before/after | Q = quiz | V = vlog/podcast/other
+# face: own = the creator's own face | anon = anonymous model / stock / Pinterest woman | celeb = a well-known woman | cartoon | none
+O01 P perception "What YOU see / What THEY see" cartoon
+O02 P signs "10 Signs that show You have CLASS" own
+O03 V "I feel more feminine" own
+O04 P instruction "DO THIS DAILY" own
+O05 P perception "GET PEOPLE ADDICTED TO YOUR VIBE" own
+O06 P claim "YOUR APPEARANCE MATTERS!" own
+O07 P warning "OLD LADY LOOKS" own
+O08 P perception "YOU DON'T HAVE ANY CLASS" own
+O09 A "BECOME UNBREAKABLE" own
+O10 A "THAT WOMAN ENERGY" own
+O11 P warning "15 THINGS MAKING YOU UGLY / PRETTY GIRLS DON'T DO THIS" anon
+O12 C "The Art of Eye Contact" own
+O13 C "NEW Etiquette Rules Chic Women Know" own
+O14 A "How to be a classy woman" own
+O15 C tick/cross Brigitte Macron vs Melania celeb
+O16 P perception "PEOPLE WILL RESPECT YOU MORE" own
+O17 P warning "15 BAD CONVERSATION HABITS" own
+O18 A "how to be Admired" own
+O19 A "IT GIRL ENERGY" own
+O20 P claim "LOOKING GOOD IS STRATEGY" anon
+O21 C "15 Pretty Girl Habits" anon
+O22 A "How To Be ATTRACTIVE" anon
+O23 A "BECOME AN EXCELLENT ENGLISH SPEAKER" own
+O24 P perception "it's not your face, it's your energy" own
+O25 P perception "THEY NOTICE / YOU DON'T" anon
+O26 P instruction "stop being insecure" own
+O27 P warning "YOU'RE DOING TOO MUCH!" anon
+O28 T "How to go from UNREFINED To Elegant" own
+O29 C "BUSINESS ETIQUETTE" own
+O30 P perception "MAKE EVERYONE LOOK" own
+O31 A "How To Instantly SOUND ULTRA SOFT" anon
+O32 C "dark feminine MICRO HABITS" anon
+O33 P signs "10 Signs You're Elegant" (Classy Academy) anon
+O34 T "BEFORE / AFTER 10x" own
+U01 A "Become MORE LIKABLE" anon
+U02 A "Be unbothered COMMAND RESPECT" anon
+U03 Q "WHAT WOMAN ARE YOU?" celeb
+U04 C "Attractive?" anon
+U05 C "ETIQUETTE REVIEW" celeb
+U06 A "LET THEM" anon
+U07 C "Facial Aesthetics" anon
+U08 C "10 BODY LANGUAGE SECRETS" anon
+U09 P claim "AS A WOMAN, YOU ALLOW TOO MUCH" own
+U10 C "15 Habits of Classy & Elegant Women" anon
+U11 C "Dealing with In-Laws ELEGANTLY" own
+U12 V "natural and easy routines" own
+U13 V vlog own
+U14 A "BECOME UNSTOPPABLE" own
+U15 P claim "IT'S NOT BEAUTY" own
+U16 P warning "these gestures are offensive" own
+U17 A "FIND YOUR SIGNATURE STYLE" anon
+U18 A "BE UNFORGETTABLE!" own
+U19 A "MORE CONFIDENCE" own
+U20 P warning "are you dumb? ...or just inarticulate?" own
+U21 Q "Which One Are You?" anon
+U22 A "Heal the Mother Wound" own
+U23 C "HABITS THAT MAKE PEOPLE FEEL AT EASE AROUND YOU" anon
+U24 C "DINING ETIQUETTES ELEGANT WOMEN NEVER BREAK" anon
+U25 P warning "KILLING YOUR CONFIDENCE" own
+U26 A "DO THIS TO BE CONFIDENT" own
+U27 C "Top 1% Respect Code" anon
+U28 C tick/cross celeb
+U29 A "Make Them Respect You" (Classy Academy) celeb
+U30 P claim "THIS IS WHY YOU'RE STUCK" own
+U31 C "Etiquette review" own
+U32 C "HIGH CLASS reaction to chaos" anon
+U33 P warning "THIS DENIM IS AGING YOU" own
+U34 P claim "MORE THAN LOOKS" own
+U35 P claim "THIS SCREAMS CLASSY" anon
+U36 A "Become Magnetic" (Classy Academy) celeb
+U37 V podcast own
+U38 A "Become confident" own
+U39 V no text, a man own
+U40 A "SPEAK LIKE A PRO" own
+U41 A "HABITS THAT MAKE YOU MAGNETIC" anon
+U42 C "ETIQUETTE REVIEW" celeb
+U43 P perception "WOW, WHAT AN ELEGANT WOMAN!" own
+U44 C "THE PERFECT GUEST" own
+U45 C "detachment = power of belief" own
+U46 C tick/cross anon
+U47 V vlog own
+U48 C "Lawyer" own
+U49 P claim "Smart=Sexy" own
+U50 A "Learn How To Communicate ELEGANTLY" own
+U51 P claim "WHY STRONG WOMEN SHRINK" own
+U52 V "Thai Self-Care Secrets" own
+U53 V podcast own
+U54 A "Increase Feminine Energy" (Classy Academy) anon
+U55 A "RESPECT YOURSELF" own
+U56 V "the new paradigm is coming" own
+U57 A "ELEVATE YOUR EVENTS" own
+U58 P perception "get them addicted to you" own
+U59 A "HOW TO BE CLASSY ONLINE" own
+U60 A "FIT & FEMININE" own
+U61 A "SAY NO GRACEFULLY!" own
+U62 C "SEDUCTIVE STYLING SECRETS TO BE IRRESISTIBLE OVER 50" anon
+U63 V podcast own
+U64 C "Elegant Hand Gestures" anon
+U65 P perception "people will stop overlooking your value" own
+U66 P instruction "STOP BEING A DOORMAT!" own
+U67 A "BECOME CONFIDENT" own
+U68 C "MOTHER OF THE BRIDE SECRETS" anon
+U69 P claim "You forgot how to do this..." own
+U70 A "Own Any Room" (Classy Academy) celeb
+U71 P claim "LIFE FEELS OFF?" own
+U72 T "THEN / NOW" own

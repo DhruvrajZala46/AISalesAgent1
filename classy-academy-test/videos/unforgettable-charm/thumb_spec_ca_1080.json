@@ -1,0 +1,116 @@
+{
+ "A_its_charm": {
+  "underline": true,
+  "dark": 105,
+  "scale": 1.5,
+  "maxw": 900,
+  "logo": "build/logo_ca_hires.png",
+  "logo_dark": 110,
+  "top": "Not Her Looks",
+  "big": "It's Charm",
+  "small": "*it can be learned*",
+  "small_cap": 35,
+  "panels": [
+   {
+    "src": "photos/orig/diana3_4.jpg",
+    "box": [
+     785,
+     480,
+     1563
+    ]
+   },
+   {
+    "src": "photos/orig/amalhd_27c.jpg",
+    "box": [
+     625,
+     70,
+     1099
+    ]
+   },
+   {
+    "src": "photos/orig/katehd_4s.jpg",
+    "box": [
+     851,
+     176,
+     1159
+    ]
+   }
+  ]
+ },
+ "B_never_forget": {
+  "underline": true,
+  "dark": 105,
+  "scale": 1.5,
+  "maxw": 900,
+  "logo": "build/logo_ca_hires.png",
+  "logo_dark": 110,
+  "top": "The Woman People",
+  "big": "Never Forget",
+  "small": "*it's not her looks*",
+  "small_cap": 35,
+  "panels": [
+   {
+    "src": "photos/orig/dianagetty_4.jpg",
+    "box": [
+     730,
+     338,
+     1396
+    ]
+   },
+   {
+    "src": "photos/orig/cbk1_16.jpg",
+    "box": [
+     644,
+     207,
+     1079
+    ]
+   },
+   {
+    "src": "photos/orig/kate1_26s.jpg",
+    "box": [
+     552,
+     266,
+     1536
+    ]
+   }
+  ]
+ },
+ "C_never_do": {
+  "underline": true,
+  "dark": 105,
+  "scale": 1.5,
+  "maxw": 900,
+  "logo": "build/logo_ca_hires.png",
+  "logo_dark": 110,
+  "top": "Charming Women",
+  "big": "Never Do This",
+  "small": "*avoid these*",
+  "small_cap": 35,
+  "panels": [
+   {
+    "src": "photos/orig/dianahd_17s.jpg",
+    "box": [
+     624,
+     176,
+     779
+    ]
+   },
+   {
+    "src": "photos/orig/jackie1_7.jpg",
+    "box": [
+     672,
+     226,
+     1086
+    ]
+   },
+   {
+    "src": "photos/orig/kate2_14s.jpg",
+    "box": [
+     579,
+     123,
+     1156
+    ]
+   }
+  ]
+ }
+}

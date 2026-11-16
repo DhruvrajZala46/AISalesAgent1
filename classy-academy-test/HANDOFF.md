@@ -290,6 +290,19 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **Charm thumbnails (16 Nov 2026, `videos/unforgettable-charm/THUMBNAIL.md`):** the user asked for the three most
+  proven thumbnails in the exact Classy Academy format, learned from million-view videos, with the why behind each.
+  - Read: 102 YouTube searches (4,442 videos, 2,227 in the lane), all 136 1M+ thumbnails, samples of the middle and low
+    tiers, 186 thumbnails scored against their own channel (250 channel lists), the 106 charm/presence thumbnails of the
+    59 elegance channels at 3x+ or under 0.7x, and all 32 Classy Academy thumbnails.
+  - Found: 1-3 words and an expressive real face separate winners; talking heads and neutral posed faces sit on losers;
+    "not your looks" is the strongest niche phrase (5 videos, 5.1x); CA's own winners are "Elegant Ladies / Never ...",
+    its trait-label behaviour thumbnails all lost (0.2-0.6x).
+  - Built (1920x1080, CA logo, sent to the user, not in git): **C recommended** "Charming Women / Never Do This /
+    \*avoid these\*" (Diana, Jackie Kennedy, Kate, all laughing); A "Not Her Looks / It's Charm / \*it can be learned\*";
+    B "The Woman People / Never Forget / \*it's not her looks\*". Title kept: "5 Quiet Habits That Make a Woman
+    Unforgettable" (94/100). Seven of nine pins do not name the woman; rights unresolved.
+  - **Waiting for the user's choice.**
 - **Charm video v1 (16 Nov 2026, `videos/unforgettable-charm/`):** the user approved the script ("ship it, now build the
   full video"), said the last music was not good and the sound effects were too much, and asked for the channel's own
   editing re-checked, visuals from Pinterest / Instagram / TikTok only, no clip twice, every visual matched to its line.
