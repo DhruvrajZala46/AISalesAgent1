@@ -157,3 +157,19 @@ Channel 15 Nov 17:46: 335 subscribers, 152,670 total views. Shorts ~93,300.
 | 16 Nov 00:16 | #19 Barefoot race | mItuZHt4ODY | 16 min | 50 | 4 | 0 | went public on its own at 00:00 |
 
 Subscribers 340. Shorts ~98,900 views.
+
+| Checked (UTC) | Short | Id | Age | Views | Likes | Comments | Note |
+|---|---|---|---|---|---|---|---|
+| 16 Nov 12:19 | #6 Diana broke 5 rules | bC6W4eR1FfY | 66.8 h | 34,483 | 1,066 | 16 | |
+| 16 Nov 12:19 | #3 Diana's vows | Mr_V0fXzsMA | 84.3 h | 27,639 | 740 | 8 | |
+| 16 Nov 12:19 | #1 Revenge dress | KWbkQjkoy2g | 99.3 h | 18,729 | 821 | 14 | |
+| 16 Nov 12:19 | #17 Wedding dress | cqDJf_ZrXbA | 18.8 h | 7,975 | 247 | 2 | +6,067 in 12 h - best of batch 2 |
+| 16 Nov 12:19 | #16 Taj Mahal | OUj53Pj-Wkg | 24.3 h | 6,162 | 189 | 3 | |
+| 16 Nov 12:19 | #15 Audrey LBD | sVgaKYUNUSM | 36.3 h | 4,959 | 67 | 0 | |
+| 16 Nov 12:19 | #2 Define Grace: Diana | -zgZp0sMIhc | 90.8 h | 4,872 | 195 | 2 | |
+| 16 Nov 12:19 | #19 Barefoot race | mItuZHt4ODY | 12.3 h | 4,282 | 188 | 2 | ~350/h, 4.4% likes |
+| 16 Nov 12:19 | #13 Queen colours | xG3FwJjuE2Q | 60.3 h | 3,656 | 98 | 2 | |
+| 16 Nov 12:19 | #14 Define Elegance: Grace Kelly | e4SHVssyUIU | 42.8 h | 1,323 | 23 | 1 | |
+| 16 Nov 12:19 | #20 Wrong name | -hytnq411RY | 19 min | 206 | 11 | 0 | went public on its own at 12:00 |
+
+#29 FYMS7FtmTi0 and #30 ZNSsiY9DQTE finished processing (HD, publishAt kept). Shorts total ~114,700 views.
