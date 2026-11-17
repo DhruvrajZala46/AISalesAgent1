@@ -190,3 +190,23 @@ Subscribers 340. Shorts ~98,900 views.
 | 16 Nov 17:46 | #18 Engagement ring | oJLgH-P0VTc | 16 min | 34 | 3 | 0 | went public on its own at 17:30 |
 
 Channel 16 Nov 17:46: 357 subscribers, 163,868 total views. Shorts ~126,000 views.
+
+| Checked (UTC) | Short | Id | Age | Views | Likes | Comments | Note |
+|---|---|---|---|---|---|---|---|
+| 17 Nov 00:15 | #6 Diana broke 5 rules | bC6W4eR1FfY | 78.8 h | 34,809 | 1,071 | 16 | |
+| 17 Nov 00:15 | #3 Diana's vows | Mr_V0fXzsMA | 96.3 h | 28,508 | 758 | 8 | |
+| 17 Nov 00:15 | #20 Wrong name | -hytnq411RY | 12.3 h | 24,012 | 732 | 17 | BREAKOUT: +20,669 in 6.5 h (~3,200/h), fastest on the channel; user push-notified |
+| 17 Nov 00:15 | #1 Revenge dress | KWbkQjkoy2g | 111.3 h | 18,783 | 822 | 14 | |
+| 17 Nov 00:15 | #17 Wedding dress | cqDJf_ZrXbA | 30.8 h | 15,986 | 387 | 3 | |
+| 17 Nov 00:15 | #16 Taj Mahal | OUj53Pj-Wkg | 36.3 h | 11,690 | 326 | 4 | |
+| 17 Nov 00:15 | #19 Barefoot race | mItuZHt4ODY | 24.3 h | 7,182 | 291 | 5 | |
+| 17 Nov 00:15 | #15 Audrey LBD | sVgaKYUNUSM | 48.3 h | 5,448 | 70 | 0 | |
+| 17 Nov 00:15 | #2 Define Grace: Diana | -zgZp0sMIhc | 102.8 h | 5,041 | 203 | 2 | |
+| 17 Nov 00:15 | #13 Queen colours | xG3FwJjuE2Q | 72.3 h | 3,900 | 108 | 2 | |
+| 17 Nov 00:15 | #18 Engagement ring | oJLgH-P0VTc | 6.8 h | 1,736 | 75 | 4 | |
+| 17 Nov 00:15 | #21 Whatever in love | 5j64rt-rmMU | 15 min | 63 | 3 | 0 | went public on its own at 00:00 |
+
+Channel 17 Nov 00:15: 387 subscribers (+30 in 6.5 h), 181,337 total views. Shorts ~159,000 views.
+Signal: the wedding "slip/secret" angle wins - #3 (a word left out of the vows) 28.5K and #20 (the wrong name) 24K in
+12 h. #25 (tiara) and #26 (dress secrets) already scheduled Wed match it; next batch: more true wedding-day slips
+and hidden details, each told as one moment.
