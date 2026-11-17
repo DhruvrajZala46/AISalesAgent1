@@ -13,6 +13,16 @@ branch (`claude/youtube-channel-analysis-lghfsv`). A new chat must start on this
 - **Princess Diana video** (`videos/princess-diana-style-rules/`): script approved; video v1 delivered (12:06); three
   thumbnails delivered and shipped by the user; titles, description and tags delivered (`PACKAGE.md`). **Waiting for
   the user's "ship it, or change it?" on the package.** Nothing else is in progress.
+- **New topic and script (17 Nov 2026, later the same day; `research-2026-11-17b.md`,
+  `videos/french-beautiful-with-age/script.md` + `beats.txt`):** the user asked again for the one best proven topic
+  and its script in The Intemporelle's format. Pick: "French Women Get More Beautiful With Age: 7 Rules" (94/100;
+  other title "7 Rules French Women Age By", 100/100). Proof: the "more beautiful / prettier" title family is the
+  niche's strongest in six months with losers counted (22 videos, 13 channels, 2.81x, 64% at 2x+ against 21%); the
+  French title is its live wave (490,000 and 304,000 in Oct 2026). Told to the user: 36 copies of the exact title in
+  six weeks have a usual result of 1.14x, and on channels under 2,000 subscribers a usual 270 views. Script v1: 41
+  lines, 1,734 words, seven rules, each on the published words of Ines de la Fressange, Mireille Guiliano or Caroline
+  de Maigret (sources in the script's section B); `fit.py` FITS; hook 57. **Waiting for "ship it, or change it?"; no
+  voice or video started.** The Diana video is now uploaded to The Classy Elegance (seen in today's list).
 - **Charm video** (`videos/unforgettable-charm/`): finished and uploaded by the user to The Classy Elegance.
 - **Next topic already researched:** "7 Ways to Look Prettier Without Changing Your Face" (`research-2026-11-16b.md`).
   Second style icon: Carolyn Bessette-Kennedy (`research-2026-11-16c.md`).
