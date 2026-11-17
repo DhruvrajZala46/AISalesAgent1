@@ -290,7 +290,7 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
-- **Diana video v1 (17 Nov 2026, `videos/princess-diana-style-rules/`): built and checked at 179 snapshots; the render was running when this was written (QA numbers follow).** The user approved the script
+- **Diana video v1 (17 Nov 2026, `videos/princess-diana-style-rules/`): delivered in the chat on 17 Nov (318 MB re-encode). QA of the render: 12:06, 1080p30, -13.3 LUFS, 0 black frames, 0 silence; the only still stretches are the white cards, the sentence screens and three photograph screens; no dark frames in any prepared clip (`flash.py`); checked at 179 snapshots and 121 frames of the finished file.** The user approved the script
   ("ship it, now build the full video") and asked for unique, all-new clips and the channel's own old style, researched
   first. 12:06, 1080p, voice Kokoro `af_heart` 0.80, one piano bed ("Classical vibes 3", 15 dB under), no sound effects.
   - **96 clips in 105 windows + 54 press photographs of Diana** (about 160 pictures). Every rule is proved with real
