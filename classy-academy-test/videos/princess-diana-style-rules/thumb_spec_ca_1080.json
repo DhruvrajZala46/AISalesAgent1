@@ -1,0 +1,40 @@
+{
+ "A_style_rules": {
+  "underline": true,
+  "dark": 105,
+  "scale": 1.5,
+  "maxw": 900,
+  "logo": "build/logo_ca_hires.png",
+  "logo_dark": 110,
+  "top": "Princess Diana's",
+  "big": "Style Rules",
+  "small": "*8 timeless rules*",
+  "small_cap": 35,
+  "panels": [
+   {
+    "src": "photos/orig/tpink_32.jpg",
+    "box": [
+     937,
+     106,
+     1212
+    ]
+   },
+   {
+    "src": "photos/orig/trev_13.jpg",
+    "box": [
+     828,
+     156,
+     1085
+    ]
+   },
+   {
+    "src": "photos/orig/thalter_11.jpg",
+    "box": [
+     542,
+     15,
+     767
+    ]
+   }
+  ]
+ }
+}

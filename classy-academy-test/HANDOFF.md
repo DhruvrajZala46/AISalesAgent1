@@ -290,6 +290,15 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **Diana thumbnails (17 Nov 2026, `videos/princess-diana-style-rules/THUMBNAIL.md`):** the user asked for the most
+  clickable thumbnail, one in the channel's style and one built on the biggest videos, "the one you would bet on".
+  Research: 79 YouTube searches (3,480 videos; 690 Diana style videos), 177 thumbnails read, 127 scored against their own
+  channels. Findings: Diana herself in a famous outfit 21.4x; one picture 46.2x against 14x for collages; no words
+  14.3x against 5.4x (1-3 words) and 2.7x (4+); other royals and tabloid text fail most; 11 of the 13 with 1M+ have no
+  words. Three sent at 1920x1080: **A** your three-photo format ("Princess Diana's / Style Rules / *8 timeless
+  rules*"), **B** one picture, the black dress, no words (my first choice), **C** two pictures with a gold ring round
+  the detail (clutch, flag). Honest limits said: no promise of 10M (one Diana style video above 10M exists), no words
+  is new for the channel, photos not licensed, CA logo. **Waiting for the user's choice.**
 - **Diana video v1 (17 Nov 2026, `videos/princess-diana-style-rules/`): delivered in the chat on 17 Nov (318 MB re-encode). QA of the render: 12:06, 1080p30, -13.3 LUFS, 0 black frames, 0 silence; the only still stretches are the white cards, the sentence screens and three photograph screens; no dark frames in any prepared clip (`flash.py`); checked at 179 snapshots and 121 frames of the finished file.** The user approved the script
   ("ship it, now build the full video") and asked for unique, all-new clips and the channel's own old style, researched
   first. 12:06, 1080p, voice Kokoro `af_heart` 0.80, one piano bed ("Classical vibes 3", 15 dB under), no sound effects.
