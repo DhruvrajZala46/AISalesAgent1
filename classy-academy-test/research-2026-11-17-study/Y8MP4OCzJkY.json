@@ -1,0 +1,144 @@
+{
+ "title_on_screen": "BRIGHT SIDE HAS COLLECTED THE MOST BASIC RULES THAT WILL HELP YOU TO LOOK PERFECT ALL THE TIME.",
+ "hook_verbatim": "",
+ "promise": "The video presents basic style and dress code rules to help viewers look polished and perfect all the time.",
+ "points": [
+  {
+   "n": 1,
+   "start": "0:09",
+   "name": "JACKET",
+   "exact_words": "THE MIDDLE BUTTON ON A JACKET SHOULD ALWAYS BE CLOSED. THE UPPER ONE DEPENDS ON YOUR MOOD. THE LOWER ONE SHOULD NEVER BE CLOSED.",
+   "why_given": "Proper button etiquette maintains the intended silhouette and formality of a jacket.",
+   "how_shown": "2D animation of a man in a navy suit showing button rules labeled with ALWAYS, SOMETIMES, and NEVER.",
+   "example_pieces": "Navy suit jacket, white shirt, red tie"
+  },
+  {
+   "n": 2,
+   "start": "0:38",
+   "name": "A SHIRT OR A BLOUSE",
+   "exact_words": "WHEN YOU ARE WEARING A SHIRT OR A BLOUSE, YOU CAN UNBUTTON NO MORE THAN 2 BUTTONS.",
+   "why_given": "Unbuttoning more than two buttons looks overly revealing and inappropriate for casual/formal wear.",
+   "how_shown": "Animation comparing a woman with too many buttons unbuttoned (red X) vs. two buttons unbuttoned (green checkmark).",
+   "example_pieces": "White button-down blouse"
+  },
+  {
+   "n": 3,
+   "start": "0:58",
+   "name": "BIJOUTERIE",
+   "exact_words": "WEAR EARRINGS THAT MATCH YOUR BRACELET AND A NECKLACE THAT GOES WELL WITH YOUR RING. 3 OR 4 THINGS IN ONE LOOK IS TOO MUCH.",
+   "why_given": "Wearing too many matching jewelry pieces creates an overcrowded look.",
+   "how_shown": "Animation comparing a woman wearing full set jewelry (red X) vs. paired sets (green checkmark).",
+   "example_pieces": "Purple gemstone earrings, necklace, bracelet, ring, brown sweater"
+  },
+  {
+   "n": 4,
+   "start": "1:19",
+   "name": "TIE",
+   "exact_words": "THE TIP OF YOUR TIE SHOULD REACH YOUR WAIST AND CROSS IT JUST A LITTLE.",
+   "why_given": "A tie that is too short or too long looks ill-fitted.",
+   "how_shown": "Animation comparing short tie (red X), long tie (red X), and proper length tie reaching the belt line (green checkmark).",
+   "example_pieces": "Blue striped tie, white dress shirt, brown leather belt"
+  },
+  {
+   "n": 5,
+   "start": "1:37",
+   "name": "DRESS",
+   "exact_words": "OPT FOR EITHER A MINISKIRT OR CLEAVAGE. BOTH AT ONCE LOOK TOO VULGAR.",
+   "why_given": "Combining a short hemline with deep cleavage looks tacky and vulgar.",
+   "how_shown": "Animation showing short dress with low cut (red X), long gown with cleavage (green checkmark), and high-neck short dress (green checkmark).",
+   "example_pieces": "Black mini dress, red evening gown"
+  },
+  {
+   "n": 6,
+   "start": "1:57",
+   "name": "SHIRT",
+   "exact_words": "IF YOU ARE WEARING A SHIRT WITHOUT A JACKET, YOU DON'T NEED A TIE.",
+   "why_given": "A tie worn with just a shirt without a jacket looks incomplete.",
+   "how_shown": "Animation comparing a shirt with tie and no jacket (red X) against a shirt without a tie (green checkmark).",
+   "example_pieces": "White shirt, red striped tie"
+  },
+  {
+   "n": 7,
+   "start": "2:11",
+   "name": "SHIRT",
+   "exact_words": "YOUR OFFICE SHIRT CLEAVAGE SHOULD NOT BE DEEPER THAN 4\" FROM YOUR COLLARBONE.",
+   "why_given": "Excessive cleavage is inappropriate for an office environment.",
+   "how_shown": "Animation measuring neckline distance greater than 4 inches (red X) vs. less than 4 inches (green checkmark).",
+   "example_pieces": "White office button-down shirt"
+  },
+  {
+   "n": 8,
+   "start": "2:31",
+   "name": "BELT",
+   "exact_words": "IF YOU TUCKED IN YOUR SHIRT, YOU SHOULD WEAR A BELT.",
+   "why_given": "A tucked-in shirt without a belt leaves the waistband looking bare and incomplete.",
+   "how_shown": "Animation comparing tucked shirt with no belt (red X) vs. tucked shirt with belt (green checkmark).",
+   "example_pieces": "White button-down shirt, navy trousers, brown belt"
+  },
+  {
+   "n": 9,
+   "start": "2:46",
+   "name": "CARDIGAN",
+   "exact_words": "YOUR NAKED SKIN SHOULD NOT BE SEEN BETWEEN YOUR CARDIGAN AND YOUR JEANS. WEAR A TOP IF NECESSARY.",
+   "why_given": "Exposing bare waist skin between a cardigan and pants looks messy.",
+   "how_shown": "Animation showing midriff exposure (red X) vs. wearing a layer underneath to cover skin (green checkmark).",
+   "example_pieces": "Red buttoned cardigan, blue jeans, black undershirt"
+  },
+  {
+   "n": 10,
+   "start": "3:03",
+   "name": "BELT",
+   "exact_words": "YOUR BELT SHOULD BE THE SAME COLOR AS YOUR SHOES.",
+   "why_given": "Matching leather accessories creates a cohesive outfit.",
+   "how_shown": "Animation showing brown belt with black shoes (red X) vs. black belt with black shoes (green checkmark).",
+   "example_pieces": "Grey suit trousers, black shoes, brown and black belts"
+  },
+  {
+   "n": 11,
+   "start": "3:20",
+   "name": "TAGS ON CLOTHES",
+   "exact_words": "ALL VISIBLE TAGS ON CLOTHES SHOULD BE CUT OFF.",
+   "why_given": "Visible exterior tags look untidy and unpolished.",
+   "how_shown": "Animation showing a visible tag on a jacket sleeve (red X) vs. tag removed (green checkmark).",
+   "example_pieces": "Suit jacket sleeve with manufacturer tag"
+  },
+  {
+   "n": 12,
+   "start": "3:35",
+   "name": "PRINTS",
+   "exact_words": "DON'T WEAR TOO MANY PRINTS. YOU CAN WEAR 2 DIFFERENT PRINTS OF THE SAME COLOR OR 2 COORDINATING PRINTS OF DIFFERENT SIZES.",
+   "why_given": "Mixing conflicting patterns without shared color/scale creates visual chaos.",
+   "how_shown": "Animation showing clashing pattern combination (red X) vs. matching color scheme patterns (green checkmark).",
+   "example_pieces": "Blue striped blouse, pink floral skirt, light blue floral skirt"
+  },
+  {
+   "n": 13,
+   "start": "3:52",
+   "name": "BLOUSE",
+   "exact_words": "AN OFFICE BLOUSE WITHOUT SLEEVES SHOULD COVER YOUR SHOULDERS. \"SPAGHETTI\" STRAPS ARE NOT OKAY IN FORMAL SITUATIONS.",
+   "why_given": "Spaghetti straps are too casual and informal for professional settings.",
+   "how_shown": "Animation showing thin camisole straps (red X) vs. sleeveless blouse covering shoulders (green checkmark).",
+   "example_pieces": "White camisole top, blue sleeveless collar blouse"
+  },
+  {
+   "n": 14,
+   "start": "4:07",
+   "name": "SOCKS",
+   "exact_words": "YOUR SOCKS SHOULD BE LONG ENOUGH THAT YOUR NAKED LEGS AREN'T SEEN WHEN YOU ARE SITTING.",
+   "why_given": "Exposing bare leg skin when seated in formal trousers looks unsuited for business attire.",
+   "how_shown": "Animation showing seated man with short socks exposing leg skin (red X) vs. tall socks covering skin (green checkmark).",
+   "example_pieces": "Suit trousers, dress socks, dress shoes"
+  }
+ ],
+ "mid_video_asks": null,
+ "ending_verbatim": "",
+ "structure_notes": "The video uses animated illustrations set to upbeat background music without narration. Each rule begins with a bold label indicating the garment or topic, followed by text explaining the rule and an animated comparison demonstrating correct vs. incorrect examples tagged with checkmark and cross icons.",
+ "visual_style": [
+  "2D animated vector graphics",
+  "Bright solid color backgrounds alternating between yellow and light blue",
+  "On-screen text text overlays introducing and explaining each style tip",
+  "Green checkmark and red X icon graphics to evaluate outfits"
+ ],
+ "duration": "4:35",
+ "_model": "gemini-3.6-flash"
+}

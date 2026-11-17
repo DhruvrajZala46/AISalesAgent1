@@ -1,0 +1,81 @@
+{
+ "title_on_screen": "AUDREY À LA MODE",
+ "hook_verbatim": "Hi everybody, welcome back to my channel. In today's video, I want to talk about dressing rules I think everyone should know. Now when I say rules, I don't mean you must follow these things or you'll never be stylish, instead, what I mean are some tips and tricks. These are helpful things that many of us may not even consider every day, but when you do, they really transform how you look and feel in your clothing. So these are things that are nice to have in your back pocket when you are kind of stuck on what to wear, and things that are just helpful for hopefully the rest of your life. So let's get started.",
+ "promise": "The speaker promises to share practical dressing tips and rules that transform how clothing looks and fits on your body.",
+ "points": [
+  {
+   "n": 1,
+   "start": "0:37",
+   "name": "FIND YOUR BEST BRA",
+   "exact_words": "When it comes to looking and feeling your best in your clothing, I think undergarments are so important, and many of us don't give them a second thought. So this first tip is all about finding your perfect bra.",
+   "why_given": "A properly fitted bra improves posture, enhances comfort, and makes all outerwear fit and drape better on your body.",
+   "how_shown": "Section title card, speaker talking to camera, measuring tape demonstration, graphic text diagram showing band and cup math, product images of nude bras.",
+   "example_pieces": [
+    "flexible tape measure",
+    "t-shirt bra",
+    "nude bra"
+   ]
+  },
+  {
+   "n": 2,
+   "start": "4:40",
+   "name": "NO WHITE UNDERWEAR",
+   "exact_words": "My next rule or tip would be to never wear white undergarments underneath white clothing. White under white will shine like a beacon and you will see it from miles away.",
+   "why_given": "White undergarments stand out visibly under white clothing, whereas skin-tone seamless undergarments remain invisible.",
+   "how_shown": "Title graphic overlay, talking head shot, full-body b-roll clips of white outfit with labeled arrows for nude undergarments.",
+   "example_pieces": [
+    "white t-shirt",
+    "white skirt",
+    "nude bra",
+    "nude underwear"
+   ]
+  },
+  {
+   "n": 3,
+   "start": "5:35",
+   "name": "SIZE UP IN WHITE",
+   "exact_words": "My next dressing rule is to size up in white garments. If something is very skin tight and white, it's very obvious what's underneath it.",
+   "why_given": "Tight white clothes are easily see-through and reveal undergarment lines; sizing up and tailoring provides a high-end, polished look.",
+   "how_shown": "Title overlay on outdoor street style clip, speaker to camera, try-on footage of a white button-down shirt and white jeans.",
+   "example_pieces": [
+    "white button-down shirt",
+    "white jeans",
+    "white pants",
+    "white skirt"
+   ]
+  },
+  {
+   "n": 4,
+   "start": "6:35",
+   "name": "INSTANTLY LOOK TALLER",
+   "exact_words": "It is a two-step formula for looking taller. The first part of this formula is to find a pair of shoes in a color as close to your natural skin color as possible, and then pair that with something high-waisted.",
+   "why_given": "This combination creates a visual illusion that makes legs appear to start higher up and extend farther down.",
+   "how_shown": "Title card graphic, talking head, side-by-side visual comparison (barefoot in mid-rise jeans vs pointed skin-tone heels in high-waisted jeans).",
+   "example_pieces": [
+    "skin-tone shoes",
+    "pointed-toe heels",
+    "high-waisted jeans"
+   ]
+  },
+  {
+   "n": 5,
+   "start": "7:34",
+   "name": "KEEP IT IN THE (COLOR) FAMILY",
+   "exact_words": "My next dressing rule is to keep colors all within the same family. Colors are broken essentially into two main categories: warm colors (yellow-based) and cool colors (blue-based).",
+   "why_given": "Matching cool undertones with cool undertones (or warm with warm) creates harmony in an outfit and prevents awkward color clashing.",
+   "how_shown": "Title card with a color wheel graphic, speaker to camera, graphic diagram of cool vs warm color wheels, b-roll outfit detail shots with label overlays.",
+   "example_pieces": [
+    "pocket color wheel",
+    "blue handbag",
+    "floral print dress",
+    "grey blazer"
+   ]
+  }
+ ],
+ "mid_video_asks": "At 9:10, the speaker asks viewers to leave a comment if they would like to see this become a mini-series.",
+ "ending_verbatim": "If you want this to be maybe a little mini series, please let me know in the comments down below and I'd be happy to make more. And like always, thank you so much for watching, and I'll see you in my next one. Have a great day!",
+ "structure_notes": "The video opens with a brief intro setting expectations, followed by 5 distinct rules introduced with title overlay cards and light jazz music transitions. Each point combines talking-head explanation with practical visual demonstrations or b-roll outfits, concluding with a call for viewer feedback.",
+ "visual_style": "Warm indoor aesthetic with a brick fireplace background, clean minimalist serif typography for overlays, high-definition outfit b-roll, and side-by-side comparison shots.",
+ "duration": "3:40",
+ "_model": "gemini-3.5-flash"
+}
