@@ -1,0 +1,294 @@
+1 O
+2 X
+3 O
+4 X
+5 S b
+6 S f
+7 S b
+8 X f
+9 S w t b
+10 G w f
+11 T b
+12 G b
+13 R w b
+14 R w f
+15 O
+16 R w f
+17 T w b
+18 X
+19 G b
+20 G w f
+21 R f
+22 G w f
+23 R b
+24 X
+25 G w f
+26 G b
+27 R w b e
+28 T b
+29 S b
+30 M w t b
+31 M w t b
+32 F w
+33 T w b
+34 G b
+35 T w t b
+36 S b
+37 T b
+38 M w b e
+39 S b
+40 G b
+41 R w f
+42 S b
+43 M b
+44 F w
+45 G w f
+46 X
+47 M w b
+48 M b
+49 O
+50 G f
+51 S b
+52 M b
+53 O
+54 M w t b
+55 T w b e
+56 S b
+57 X
+58 T b
+59 X
+60 G w f
+61 G w f e
+62 R b
+63 R w f
+64 S b
+65 X
+66 F w
+67 R w b
+68 R w b
+69 G b
+70 S b
+71 S w b
+72 G w f
+73 S w f
+74 X
+75 S b
+76 F w
+77 R b
+78 R w b e
+79 G w f e
+80 S b
+81 S f
+82 R w b
+83 M w t b
+84 F w t
+85 F w e
+86 S f
+87 R b
+88 S w b e
+89 S b
+90 S b
+91 T b
+92 R b
+93 G f
+94 O
+95 S f
+96 G b
+97 M w b
+98 S b
+99 F
+100 S b
+101 G w b
+102 F
+103 G f
+104 M w b e
+105 S b
+106 T w b e
+107 F w e
+108 T b
+109 X
+110 S b
+111 F w
+112 M b
+113 G f
+114 S b
+115 M b
+116 T w b
+117 R b
+118 M b
+119 O
+120 M b
+121 R w f e
+122 G b
+123 T w t b
+124 O
+125 S w
+126 S w b e
+127 T w f
+128 T b
+129 G w t b
+130 G w f
+131 R w b
+132 T f
+133 R w b e
+134 G w b e
+135 O
+136 O
+137 G b
+138 R b
+139 R w
+140 T w b
+141 S b
+142 O
+143 S w f
+144 X
+145 S b
+146 T b
+147 O
+148 R w b
+149 G w e
+150 O
+151 X
+152 F
+153 G
+154 M w f
+155 T w b
+156 F w n
+157 G b
+158 M b
+159 T w b e
+160 S b
+161 T b
+162 T w b e
+163 G b
+164 M b
+165 G f
+166 G w b e
+167 T w b e
+168 T b
+169 M b
+170 T b
+171 G f
+172 S w t
+173 O
+174 G f
+175 S f
+176 G w f
+177 X
+178 M w f
+179 S b
+180 O
+181 S f
+182 M w t b
+183 S b
+184 F w n
+185 M b
+186 S w b e
+187 G w f e
+188 R w b
+189 R
+190 O
+191 R b
+192 O
+193 S b
+194 T w f
+195 M b
+196 T w b
+197 M w b
+198 T w b
+199 S b
+200 M b
+201 T w b e
+202 T w b
+203 X
+204 R w b
+205 O
+206 G w f
+207 O
+208 R w b e
+209 S
+210 O
+211 F w n
+212 X
+213 G f
+214 R w b e
+215 G w b
+216 R b
+217 F
+218 O
+219 M b
+220 O
+221 F w
+222 T
+223 X
+224 G
+225 G w f
+226 F w
+227 X
+228 T w b e
+229 M f
+230 S b
+231 F w t
+232 F
+233 F w e
+234 G f
+235 O
+236 T w b
+237 S b
+238 T w f
+239 G f
+240 F w
+241 R w b
+242 M w f
+243 T w b
+244 O
+245 F
+246 S w b
+247 F w n
+248 O
+249 G f
+250 X
+251 M f
+252 M w f e
+253 G b
+254 G f
+255 F w n
+256 G w f e
+257 T w t b
+258 R w
+259 R b
+260 T f
+261 S b
+262 O
+263 F w
+264 G w f
+265 F w n
+266 T w b
+267 M
+268 O
+269 M w b e
+270 S b
+271 M b
+272 S f
+273 O
+274 G w b
+275 T w b
+276 O
+277 M w b e
+278 G
+279 T f
+280 O
+281 S b
+282 F w
+283 T w f
+284 G b
+285 F w
+286 M w b
+287 T w b
+288 O
+289 F w n
+290 O
+291 S f
+292 M b
+293 S w b e
+294 M f

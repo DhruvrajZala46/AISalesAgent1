@@ -1,0 +1,198 @@
+EYE-CHECK NOTES (my own viewing of vs/*.jpg; windows in seconds)
+djeans0: text 0.3-2.5 and from 13.9; CLEAN 3.6-13.4: dark indigo straight jeans, white tee, black heels, navy blazer goes on ~9.5. -> j35 (whole line)
+djeans2: woman ~45 short dark hair, navy blazer, white tee; text only at 0.3; clean 4.0-21 (talks, adjusts sleeves) -> b31
+drape36 (360w): young woman holds red, grey, pink sweaters to her face 5.7-13.7 -> g32
+shopa35: 3.9-7.1 woman browsing rail; 10.2-14.1 blonde holds white coat-dress on hanger (short takes)
+djeans41: caption mid always - NO.  jcrop22 watermark - NO. jboots18 TikTok - NO. jboots7 subway black bar - NO
+jcrop33: 2.0-8.8 cuffed jeans above brown suede ankle boots, close (take 0-9); logo end 14.6 -> j36a
+jhem43: 10.0-14.0 flared raw-hem jeans resting on tan pointed boot, close, carpet -> j36c
+jhem1: 12.8-16.5 seated, wide jeans hem over brown pointed boot on pavers (cut 14.3 same scene) -> j36b
+jlen39: captions + logo - NO
+jboots24: 0.3-6.6 dark flared jeans, black top, black pointed heels, crossing Paris street -> j37b
+jwalk17: takes 2.7-6.4 (walking full body: brown suede long coat, black turtleneck, dark jeans, dark brown boots), 7.6-9.2 -> j37a
+bjeans5: jeans are TUCKED INTO tall boots (boots visible to knee) - NOT 'under the jeans' - NO
+bjeanb5: 9.2-15.9 light straight jeans over black pointed boots, mirror, black top; clean -> o48b
+jwalk48: 0.3-11.9 brown blazer, dark wide jeans, black heels, crossing road, single take -> j39
+tightb22 caption - NO. tightb34: 0.3-2.0 hand pulls black tight over foot (then shorts) -> j38b (short)
+tighta27 captions - NO
+packb21: 2.4-6.5 pink check skirt hanging on rail (hanger advert; text from 13.7) -> s41a
+packb36: 0.3-4.4 hand opens wardrobe, yellow skirt hung among skirts (colourful) -> s40
+lining0: 0.3-9.3 close on brown tweed wool midi skirt turning (bare legs, no face) -> s42a
+aline3: 26 s single take, charcoal plaid A-line wool midi, brown knit tucked + belt, tall brown boots, hem covers boot tops; she talks/gestures -> o46a (12.7-21.5)
+aline18: maxi A-line wool skirt, phone mirror selfie (ankle length, not mid-calf)
+midia26: captions low over hem - NO (crop would cut hem)
+sksw9 sneakers satin - NO. sksw16: 5.4-8.7 olive turtleneck sweater over plaid midi, loafers (caption only at 5.0)
+sksw25: 8.7-12.6 woman ~40 cream sweater over olive satin midi, sits at hip (close-ups 5-8) -> s43b
+midib24: 0.3-5.7 cream cropped sweater, black knit midi, black tall boots, no gap, nearly still, fitting room -> o46c
+midie31 holds a snack bar - NO. midie41: 1.6-7.3 striped sweater, black satin midi, black boots, London street, headphones
+midic13: 0.3-4.2 SoHo street, long grey pleated skirt (slit), brown jacket, coffee, walking -> s41b
+midid8: 0.3-5.3 teal mid-calf skirt, black heeled boots, twirl/walk on wet street -> s42 'Aim for mid-calf'
+skmove13: 0.3-9.4 long cream pleated skirt flowing, leather jacket, crossing NYC street, single take -> s44b(+c)
+sktt21: 0.3-5.8 black turtleneck tucked into black full midi, belt, heels, lift mirror selfie, static -> s43a/s43z
+sktt36: 9.0-12.4 standing: black turtleneck, grey tweed above-knee skirt, black opaque tights, heels -> s44a (8.1 putting on shoe)
+bhem24: 1.2-4.7 black V top, beige knee-length A-line skirt, black tall boots, strip of leg between -> o46b
+bhem4: 5-11.5 woman 45-50 cream knit + cream satin midi with side slit, tan boots (576w)
+slit20/slit19 summer - NO
+aline4 (540w): cream turtleneck tucked into brown suede A-line midi, tall brown boots no gap; takes 0-2.6 full, 2.6-4.7 close, 4.8-8.2 full turning -> s42b
+aline25 - NO
+bclose19: 2.7 zip close-up brown leather knee boot; bare knees 3.9-5.1; 6.2-8.6 mirror -> o45 (check fine)
+bclose39: black knee-high block-heel boots close, bare thighs + mini -> o47a only with CROP below knee
+bclose18 suede advert - NO
+bflat17: 9.2-12.5 woman walks in closet, grey blazer, leggings, flat tall black boots (far) -> o47b
+bzip26: 0.3-4.6 woman pulls on black tall boot and pulls GREY TROUSER leg over it -> o48a PARTLY
+bcare31: brushing brown leather ankle boot, text box top-left (y 180-370 of 1280) always -> CROP (104,370,910) -> o49d
+bcare24: 5.7-12.5 gloved hands polish brown boot on a foot, clean, no text (alt)
+cobb20 (720, Cheaney): takes 3.7-7.6 hands hold brown boot at brush machine; 8.6-11.4 sole on wheel; 13.4-20.7 purple gloves polish tan boot -> o49c (check logo)
+cobb29/cobb49 360w cluttered (alt)
+brain17: 0.3-7.5 black boot tips in dark rain puddle, ripples -> o49b. brain4 320w - NO
+bgap25 caption - NO. dinb14 mini skirt - NO. bflat31 caption - NO
+glvb23: 3.7-8.2 blonde (face out of frame) grey check blazer pulls on black leather gloves -> g51b
+glvb7 (Roeckl, 1280w): 0.3-5.6 woman in beige trench pulls on black gloves; from 7.0 face mask - use only 0.3-5.6 -> g52a
+glvb36 - NO. glvfit42 TikTok logo - NO. glvknit0 fingerless - NO
+glva8: 8.3-19 black-haired woman, all black, burgundy leather gloves, talks with small mic -> g54b
+glvknit2: 0.3-7.3 fluffy mauve mittens on hand -> g51a
+glvknit33 (720x864): brown fabric gloves with knit cuffs going on over trench - not leather
+bundle3: 3.9-10.3 beanie, big scarf, puffer, mittens, cup, snowy brownstones -> g54a (check text at start)
+glvb1: 0.3-4.4 black leather gloves close (cut at 2.0); text from 7 -> g50
+glva3, glvcoffee27 quick cuts - NO
+market1: 0.3-5.7 two older women walk away through French outdoor market (navy coat, basket); 10.2-14.5 grey-haired woman in navy coat picks lettuce -> x56
+smile34: 0.3-2.9 blonde walks on cobbles (black trench, jeans, sneakers); 3.0-5.3 close smiling -> r62
+conf17 dancing - NO. agee16 phones - NO. ageb1 360w autumn - NO. market34 summer - NO
+cnavy0 text - NO. clena23 phone/quick - NO. laya12/laya22 - NO. capsa48 graphics - NO. capsb5 busy - NO
+jwalk34: 0.3-3.4 long black leather coat, cuffed jeans, black ankle boots, walking past shutter -> j38c
+shopb5: 0.3-9.8 gold rail, pink wall, burgundy/white/beige clothes, hand sliding hangers
+shopa13: 0.3-7.8 close hand sliding along cream shirts on crowded shop rail
+shopa3: 0.3-3.0 shop rack, two long belted wool coats with price tags -> c11a
+agee8: take 0-11.1: 0.3-1.1 walks away; 1.8-4.8 at book box; 5.4-11.0 older woman grey bob camel coat walks toward camera then turns away, village lane
+tryd12: fitting room; 0.3-3.6 swings brown coat on (laughing); 17-26 stands in cream knit set; 30.5-39 coat on over cream set, turns
+labelc20: 12.7 Harris Tweed label close (0.7 s) then tweed cuffs (men's jackets?)
+capsb30: 11-14.8 hand holds shoes/bag in front of neutral rail - NO for that part
+blzcb43: caption mid 22.3-24.6; CLEAN 25.0-28.9: woman silver bob, camel coat over grey belted blazer, black scarf, puts on sunglasses -> b28a
+conf39 (486w): 9.3-14 older blonde woman, dark brown coat, black turtleneck, boots, walking past lit shop windows -> r61b/r65
+vjeans32: 12.0-13.3 close cream V-neck + fine gold chain, hand at V; tiny subtitle at very bottom -> CROP (17,0,1220); 14+ talking face -> v22d
+vneck8: 6.9-7.8 mid close camel cable V-neck walking Paris; 8.1-9.1 full body with brown knee boots -> v21
+flatb38 text/graphics - NO
+capsa0: 2.6-7.6 neutral wardrobe rail (cream/beige blazers, knits) -> h2
+trya7: 18-27 sage-green wool coat, mirror selfie in a shop, phone over face, busy shop behind
+PHOTOS (Pinterest): pttvn 1 (instagram.com/p/DB-q7xcv18Q) blue-grey V-neck over black turtleneck close -> v22c ; pttvnb 9 grey V-neck over black turtleneck + light jeans -> v25a ;
+ pttvn 0 brown V over cream turtleneck + black skirt ; pttdress 29 black short-sleeved midi dress over cream turtleneck, street -> t18c ;
+ pglvbrown 8 camel coat, brown gloves holding brown suede bag -> g53a ; pglvburg 13 charcoal coat + burgundy gloves -> g53b ; pglvburg 7 close crossed arms burgundy gloves; pglvbrown 0, 17 gloves with coat
+--- a1
+shopa30: 0.3-5.3 hand (dark nails) slides white hangers on gold rail: knits, puffer, jackets; close -> h1
+capsa0: text 0.3-2.0; CLEAN 2.3-7.5 (brown blazer alone, then neutral rail) -> h2
+capsb30: text+bare legs 0-2.5; clean only 3.4-5.9 (rail gets coat + striped knit); 6.5-11 logo hoodies NO
+closet8 (720x960): 0.3-4.8 woman (bun, cream blouse/trousers) browsing a tidy cream wardrobe -> i5d
+fulla37: 18.0-22.2 woman in an overfull walk-in closet holding an armful of hangers (take 12.9-22.4) -> i3a
+trya47: 1.5-8.0 blonde, phone mirror selfie in bright boutique, long cream-beige coat, jeans, flats -> i3b
+--- a2
+cmira20: 12.8-16.4 young woman at home takes camel long coat off hanger and puts it on -> i8
+cmira48: leather coat/mini, black end frame - NO
+pstre42: 0.3-6.2 dark-haired woman, black beret, long black wool coat, wide trousers, walks past Paris columns -> i4a
+pstrd14: creator handle '@nataliajohanssonai' (AI persona suspected) - DO NOT USE
+knita17: 4.4-10.5 dark-haired woman, sunglasses, cream ribbed turtleneck under brown blazer, black flares, stone arcade -> i4c
+bflat29: 7.4-12.6 close dark-brown flat tall leather boots stepping, bare knees at top -> CROP (56,190,1090) -> i4d
+--- a3
+boota3: bare thighs, stilettos - NO. boota17: coat with 'BONS BAISERS Paris' print, bare legs; only 1.6-4.6 boot close-ups usable (alt)
+agee2: 0.3-10.3 white-curly-haired woman ~70, taupe long wool coat, navy knit, jeans, street interview (mic from left) -> i5a
+agef0: 0.3-5.6 silver-bob woman ~60s, berry wool coat, wide dark jeans, walks on park path then coat close-ups -> i5b
+agee8: 6.4-11.0 older woman grey bob, camel coat: smiles, walks toward, then walks away to a door -> r64 (7.0-11.0) / i5c
+conf39 (486w): 0.3-4.3 older blonde walks toward camera, backlit, boots; 9.4-14 walks past lit windows
+--- a4
+clena38 (598w): 0.3-10.0 woman, sunglasses, long cream wool coat open over cream turtleneck + black long skirt, black tall boots, black leather gloves, crossing a Paris street, single take -> x59 (exact 4th outfit)
+pstrb42: 0.3-6.0 long dark brown coat with brown fur stole, coffee cup, tights, knee boots, walks toward camera on cobbles -> t17a/i6b
+packa20: 7.8-11.8 hand puts a white knit into a clear storage bag on a bed (brand text 1.7, pump demo after 12) -> i7a
+flatb2, flatb38: graphics/captions - NO
+pstra38: 0.3-4.6 blonde, sunglasses, long black coat, walks from a Paris fountain toward camera -> c9
+--- b1
+agea45: 0.3-9.4 woman ~50, camel long wool coat open over black top/trousers/boots, talks, opens coat, turns; white wardrobe -> c14d (5.0-9.3)
+clenb32: 1.0-6.2 cream long coat (mid-calf), brown wide trousers, coffee, walking past charcoal wall (take 0-6.4) -> c12a
+clenb36: 0.3-4.4 plum long coat walking side view (lace top visible at 7.5 - avoid later part)
+ccamel3: 0.3-5.0 sunglasses, knee-length oversized camel coat, jeans, cream boots, walks toward camera -> j38a / c10a
+cbeltb2: 4.0-9.3 burgundy long coat belted, black tall boots, walking past Christmas trees, DAYTIME (store sign partly visible) -> c14b label 'Or belted'
+cmira6: 2.3-13.3 dark-haired woman ties belt of ankle-length burgundy wool coat, turns, walks back; beige room -> c12b
+--- b2
+cshort33: 0.3-3.9 black knee-length coat, long denim skirt hem showing well below it, boots, square; opens coat 2.4 -> c12c ('A hem peeking out')
+tryd37: 0.3-8.6 woman ~40 blonde ponytail, long brown wool coat over cream turtleneck, white jeans, fitting room with mirror/curtains -> c13a
+tryd1: 0.3-8.6 phone mirror selfie, grey tweed belted wrap coat, jeans, boots; twirls, opens coat -> c13b
+tryd12: 8-17 stands in cream knit set, coat hanging behind
+outa1 (1078w): 1.6-10.3 camel long coat open over burgundy turtleneck, blue jeans, burgundy knee boots, white fence, daylight; EMPTY frames at 0.3 and 11.6 -> c14a
+cnavyc14: 0.3-6.2 woman ~40, navy long wool coat over blue knit, dark jeans, brown boots, puts on sunglasses, shop front -> c14c
+--- b3
+cnavyb28: 4.5-11.3 curly-haired woman, ankle-length BLACK-looking belted coat, light wide jeans, brown bag, modern room, turns to front (0.3-4 back view) -> c10b
+ccamel41 sneakers/leggings - NO. ccamel29: 5-11 camel coat over black top + jeans, bedroom, talking (alt)
+shopa18: woman at a rail of FUR coats - NO
+labelc20: burned-in text 2-4.5; ONLY clean label = 12.5-13.2 (Harris Tweed label, orange lining) -> held still frame at 12.75 for 'look at the label inside'
+trya7: 0.3-2.5 mirror selfie full body sage-green wool coat in a boutique; 4.0-10.3 CLOSE: hand smoothing the coat fabric and lapel -> c11b ; 18-27 selfie again
+--- b4
+aged45: 0.3-6.5 back view blonde bob, dark coat + scarf, Paris crossing at dusk (dark) -> t17a alt
+midid11: 4.2-8.5 blonde, navy cape-knit, camel long skirt, burgundy boots, umbrella: by a green Paris door (4.2-7.0) then crossing (7.1-8.5) -> s41b
+closetc32 360w - NO
+bulk24: 0.3-7.3 long dark green coat open over beige chunky crew sweater, jeans, boots; she tugs the sweater 3.8-4.9; white doors -> t16b
+layt1: step captions at TOP (y~19-23%) always -> CROP (86,310,970); 8.3-16.8 = jeans, then black jumper, then long grey coat (jump cuts = layers one after another); AVOID 2.5-6.5 (leggings) -> t16a
+layt47 captions mid - NO
+--- c1
+ttblk12: product-video look, smooth zoom, AI suspect - DO NOT USE
+ttblk31 (720x1080): 1.2-5.6 woman (bob), dark loose turtleneck knit, black trousers, belt, parquet room; handle badge bottom-left always -> CROP (42,0,1125) -> t18z
+ttcrb1: tiny caption across torso always - NO.  ttcrb40: caption mid - NO
+ttnavb11: 3.9-7.0 blonde bun, navy fitted turtleneck knit DRESS, belt, tights, boots, then puts black coat on (0.3-3.5 barefoot/bending - avoid)
+cafec14: 0.3-7.1 young woman with fringe reads at a marble cafe table (croissants, coffee), warm ornate cafe -> t17b
+--- c2
+cafeb17: 0.3-7.1 two women friends at an outdoor cafe terrace table (rattan chairs), dark coats, sunglasses, chatting over coffee, sunny -> x57 ('Lunch with a friend')
+lunchb11: 0.3-7.0 two women (cream knit / satin shirt) laughing over coffee at a cafe table, top halves; a third wrist with a watch in the foreground from 1.7; logo 'TRUODA' from ~7.3 -> t17c (PARTLY: watch wrist)
+lunch23: 0.3-8.8 blonde, sunglasses, black turtleneck + black blazer on shoulders at a restaurant table with teapot, posing (cut at 5.1, same scene) -> b28b
+ttshc16: woman ~40 white shirt open over black turtleneck, black trousers, dining room; small moving IG handle: 10-16.5 at lower-left -> CROP (215,150,896) window 10.0-16.4 -> t18a
+ttvn38: 0.3-7.5 grey V-neck over black turtleneck, black wide jeans, staircase (cut 3.1 same scene) -> t18b
+ttdress14 TikTok + captions - NO
+--- c3
+ttfold31 (544w): 0.3-9.9 stack of folded ribbed turtlenecks (black, blue, burgundy, pink, tan, cream), slow move; tiny mark bottom-left -> CROP (28,0,1230) -> t19 (whole line)
+knita4: big script title 'Winter Outfits FRENCH STYLE' at top always -> CROP (47,170,1110); woman (dark bob) in a Paris flat, complete outfits changing every ~2.5 s: brown turtleneck + tweed blazer + jeans; belted jacket; belted blazer; camel coat -> i7b ('complete outfits') 0.3-9.0
+knita13 shorts/tights - NO.  ttshc18 TikTok + makeup - NO
+sktt29: 0.3-17 woman ~50s blonde bob, cream ribbed turtleneck tucked into burgundy A-line midi, belt, dark boots (no gap), talks/moves, home -> s43a
+vneck8: 0.3-2.0 full body on Paris crossing; 3.5-6.8 mid: camel cable V-neck, black jeans, brown knee boots -> v21
+--- d1
+vneck37: small caption above her head always -> CROP (100,360,920); 1.2-5.9 navy V-neck sweater (bare neck), wide dark jeans, belt, NYC street (alt)
+vshirt7: big title at 0.3; 'IG @aneeta.j_' bottom-left always -> CROP (14,0,1235); 6.1-9.2 cream cable V-neck over white shirt collar, black trousers -> v22b
+crewa41: collar VISIBLE over crew neck - NO for 'round neck hides'
+crewa7: 0.3-5.8 blonde, plain olive crew-neck sweater, navy trousers (quick cuts ~1.5 s, same sweater) -> v22a
+crewa1 bare midriff - NO
+vjeans32: 8.2-13.4 CLOSE cream V-neck with fine gold chain, hand at the V; tiny subtitle at very bottom -> CROP (17,0,1220) -> v22d
+--- d2
+vjeans20 slouchy/casual - NO. finec10 caption - NO. chunkb43 caption - NO
+blzknit16: 16.2-22.3 blonde, grey wool blazer over fine grey knit, dark straight jeans, heels, bag; home (outfit changes at ~22.6) -> v23a ('A fine knit')
+blzknit30: 0.3-5.9 blonde bob 35-45, charcoal wool blazer over grey knit, grey jeans; white studio; cuts every 2 s: full body, collar close, sleeve/wool texture close; 6.1-9.9 mid/full -> b27a
+woolsw24: 11.0-17.3 woman's hands (red nails) folding/smoothing camel wool knits on a wooden table (6.7-9.7 yellow) -> v24c
+sksw9: 10.5-16.4 chunky oversized brown sweater (over satin skirt, sneakers) -> v23b ('Not a chunky one')
+--- d3
+woolsw23: 1.3-2.6 folded stack of three knits on a hand; 4.3-10.5 knits held up on hangers one by one (grey crew, blue, fair-isle), white wall -> v24a
+pill11: 0.3-2.8 hands hold a blue wool sweater covered in pills (close); from 3.0 a fabric shaver works on it -> v24b (0.3-4.8)
+pill8: 0.3-1.5 red pilled sweater on table (alt)
+bgap28: cardigan + satin skirt, dancing, no clear leg gap - NO
+vskc43: 0.7-5.8 blonde, sunglasses, taupe sweater half-tucked + belt into black straight midi skirt, black boots, tote, arched wooden door on a street -> s44c
+vskc7: 0.3-5.7 brown mock-neck sweater tucked into cream satin midi, ankle boots with a strip of leg, mirror selfie, static (alt for o46b)
+--- d4
+vneck1 static selfie - NO. vneck10 caption - NO
+blzsoft0: 0.3-15.3 long dark wavy hair, taupe blazer belted over white top, white soft midi skirt, heels, burgundy bag, walks toward camera on a SoHo street, single take -> b27b+b27c
+blzsoft8: 0.3-5.9 black blazer, cream top, champagne satin skirt, black boots, white stone wall (takes of 3 s; 6-9 bag close-up - avoid)
+blzknit0: 5.0-14.5 woman 45-55, light grey wool blazer over white tee, light wide jeans, talks; from 15.5 holds sneakers - avoid
+blzcb43: captions until 24.6; CLEAN 25.0-28.9
+--- e1
+shldb8: 10.2-15.9 CLOSE teal-grey blazer shoulder, woman's hand resting on the shoulder seam (caption 16.3-19.5 - avoid) -> b29a
+tailb21: 16.5-23.9 tailor (man, brown suit) measures and pins a woman's navy blazer in a tailoring shop (cut 20.3 same scene); 0.3-3.7 pins a black vest at her waist -> b29b
+blzlong19 leggings/stilettos - NO. blzlong37 caption - NO
+blztt14: 3.0-10.5 blonde, sunglasses, checked brown blazer over black turtleneck, light wide jeans, burgundy flats/bag, cobbled NYC street, walking then close -> b30b
+outb39: closet background looks computer-generated, wig-like hair - AI SUSPECT - DO NOT USE
+--- e2
+blztt3: 24.4-33.0 sunglasses, tweed blazer over black turtleneck, light flared jeans, chunky black boots, sofa room -> x57 (exact outfit 2)
+blzbelt16: caption at top always -> CROP (65,230,1050); cream blazer belted (brown belt) over white pleated midi, heels, bedroom -> x58 ('Dinner')
+blzbelt21 (720x1080): black blazer belted over white pleated skirt, stone balustrade; 0.3-1.4 full body, 2.3-13 mid -> b30c
+blzbig8 title text - NO. tailr41 mannequin atelier (alt). blzknit3: 11.5-16.0 grey blazer over white top, dark wide trousers, in a wardrobe -> b28z
+--- late findings
+sktt21, vskc7, midib24 (all @TrendTeller13, amzn.to links): motion 0.1-0.2 = still images, same synthetic-looking face in three 'outfits' -> AI SUSPECT - DO NOT USE
+flatb35: 'SPRING' text until ~2.8; CLEAN 4.0-9.0 hand lays a white tee, belt, perfume, watch on a camel coat with jeans -> x55 (PARTLY: spring pieces)
+glvknit33 (720x864): brown suede-look gloves with knit cuffs pulled on at the sleeves of a trench; no face -> g52b
+bclose19: zip close-up ~2.5-3.8 ; bare knees elsewhere.  bclose39: bare thighs above the boots -> CROP (130,420,860)
+bundle3: text until ~4.0; CLEAN 4.9-11.0.  jhem43: 9.0-13.7 hem resting on tan pointed boot (hand lifts hem at 14)
+sksw25: 5.0-10.6 woman ~40, cream sweater over olive satin midi (full body + close-ups)
+bzip26: 0.3-2.7 pulls on tall black boot and pulls grey TROUSER leg over it; 3.6-6 stands (PARTLY: trousers, not jeans)
+packb36: 0.3-3.3 opens wardrobe, hangs yellow skirt among skirts; packb21: 1.5-4.9 pink check skirt hung on a rail
+PHOTOS: pvskirt 21 (mirror photo: brown V-neck tucked into black skirt, fine chain; handle at left cropped out) -> v25b ; pslit 2 (net-a-porter: grey wool straight skirt, back slit, back view) -> s42c

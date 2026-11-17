@@ -1,0 +1,92 @@
+{
+ "A.jpg": {
+  "logo": "ce",
+  "top": "Elegant Women",
+  "big": "Never Wear",
+  "small": "*8 things that age you*",
+  "underline": true,
+  "panels": [
+   {
+    "src": "orig/ines1.jpg",
+    "face": [
+     458,
+     256,
+     153,
+     153
+    ],
+    "cw": 510.0,
+    "fy": 0.21,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/kate13.jpg",
+    "face": [
+     140,
+     67,
+     99,
+     99
+    ],
+    "cw": 353.57142857142856,
+    "fy": 0.21,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/amal9.jpg",
+    "face": [
+     363,
+     128,
+     147,
+     147
+    ],
+    "cw": 490.0,
+    "fy": 0.21,
+    "dx": 0.0
+   }
+  ]
+ },
+ "C.jpg": {
+  "logo": "ce",
+  "top": "Clothes That Make You",
+  "big": "Look Older",
+  "small": "*what to wear instead*",
+  "underline": true,
+  "panels": [
+   {
+    "src": "orig/jackie4.jpg",
+    "face": [
+     365,
+     366,
+     170,
+     170
+    ],
+    "cw": 531.25,
+    "fy": 0.18,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/victoria10.jpg",
+    "face": [
+     761,
+     245,
+     211,
+     211
+    ],
+    "cw": 703.3333333333334,
+    "fy": 0.21,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/caroline13.jpg",
+    "face": [
+     335,
+     136,
+     122,
+     122
+    ],
+    "cw": 435.71428571428567,
+    "fy": 0.21,
+    "dx": 0.0
+   }
+  ]
+ }
+}

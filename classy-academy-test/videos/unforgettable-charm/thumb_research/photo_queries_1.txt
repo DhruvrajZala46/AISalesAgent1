@@ -1,0 +1,13 @@
+audrey1=audrey hepburn smiling
+audrey2=audrey hepburn color photo
+audrey3=audrey hepburn candid laughing
+diana1=princess diana smiling
+diana2=princess diana candid
+diana3=princess diana laughing
+grace1=grace kelly smiling
+grace2=grace kelly color photo
+kate1=kate middleton smiling
+kate2=princess of wales smiling candid
+jackie1=jackie kennedy smiling
+cbk1=carolyn bessette kennedy smiling
+cbk2=carolyn bessette kennedy candid

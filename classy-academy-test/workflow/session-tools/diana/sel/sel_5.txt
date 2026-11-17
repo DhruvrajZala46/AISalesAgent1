@@ -1,0 +1,77 @@
+TAG cosyknit
+PICK 2 | close-up of a woman (30s, freckles, hair up, eyes closed) nestled into a soft oatmeal-cream roll-neck knit, arm raised; plain light room | text: none
+PICK 31 | torso of a dark-skinned woman in a cream flecked crew-neck knit, hands resting at the hem, red nails, rings; wood-panel wall behind | text: none
+PICK 16 | torso close-up of a woman in a chunky cream roll-neck knit, hands clasped inside the long sleeves; light room | text: none
+PICK 22 | woman (hair back, gold earrings) in a chunky cream cable knit and cream trousers, hand in pocket, against a plain pale wall; a little editorial | text: none
+PICK 36 | torso close-up of a woman in an off-white ribbed crew-neck knit with a fine gold chain, arm reaching to camera (selfie); at home | text: none
+PICK 37 | woman (long blonde-brown hair, about 30) facing camera in a plain cream V-neck knit, in a white hallway | text: none
+NOTE all six are cream/oatmeal; none is camel (21 is camel cable knit but a mirror selfie with phone in shot). 1 and 20 look AI-made or over-perfect (staged, flawless face) so left out. 24, 32, 33, 35 carry captions; 35 is a product flat-lay. All women are young (20s-30s); no older woman on this sheet.
+
+TAG stiff
+PICK 34 | young woman on a garden path in a tight grey ruched sleeveless mini dress, looking down, one hand fidgeting, drawstring hem riding up; daylight, candid | text: none
+PICK 0 | young woman in a bedroom in a tight green strappy dress, both hands at the neckline pulling it up, twisting sideways; low phone-quality, cluttered room, dress is body-hugging | text: none
+NOTE weak tag. Only 34 really reads as "uncomfortable in a tight dress"; 0 is tugging but looks like a pose and is low quality. Almost everything else is a bodycon / backless "show-off" clip (revealing: 2, 5, 7, 15, 18, 25, 32, 33, 38, 39, 45), a mirror selfie (35, 42) or a couple clip with caption (20, 46). No older woman, nothing fussy (ruffles, stiff collar, tight jacket).
+
+TAG kneelchild
+PICK 26 | dark-haired woman in a denim shirt kneeling on a living-room floor at eye level with a small blonde girl in dungarees, holding her hands, both smiling and talking; warm home interior | text: none
+PICK 3 | woman in cream knit and trousers kneeling on wet sand hugging a small child in cream, seen from the side, sea and dusk sky behind (fully clothed, no swimwear) | text: none
+PICK 28 | woman in a white dress crouched on a marble floor facing a toddler in white, seen from a distance down a grand hallway; landscape/square clip with black bar below | text: none
+PICK 1 | close-up of a Black mother and small child cheek to cheek, eyes closed, smiling, hugging; daylight; kneeling not visible because it is so close | text: none
+PICK 0 | curly-haired woman in a pale blue shirt hugging a girl of about 8-10 in a red top by a bright window; landscape clip with black bar below; child is not small, posture looks crouched/seated | text: none
+PICK 40 | backlit silhouette of a woman kneeling and holding both hands of a small girl in a frilled dress in front of a sunlit curtain; warm but dark | text: none
+NOTE 26 is the only clear "kneels down to talk to a child". Much of the sheet looks AI-made or illustrated and was rejected: 2, 10, 17, 21, 32, 37, 39, 43, 47, 48 (and 15, 36 look doubtful). 16 is a real, pretty clip but the woman (straw hat) is sitting on grass, not kneeling. 44 lifts the child. 38 are fashion-brand clothes with a boy.
+
+TAG holdhands
+PICK 5 | a younger hand laid over and holding an elderly hand resting on a white bed sheet, soft daylight, very calm, vertical | text: none
+PICK 40 | a dark-skinned hand laid gently over a lighter older hand on a lap, grey-blue shirt behind, close | text: none
+PICK 27 | two women's hands clasped across a table, one in an olive top with an amber bangle, the other with a black watch; close, natural light | text: none
+PICK 6 | a younger woman's hands (ring) cupping the wrinkled hands of an elderly person in their lap, pale blue and white clothes | text: none
+PICK 21 | a young hand with manicured nails holding an elderly hand on a lace tablecloth, blurred flowers behind; very soft focus | text: none
+PICK 12 | one hand closed over another person's fist on a dark table, cream sleeve; small round watermark logo upper left | text: small top
+NOTE plenty of good choices, mostly elderly-hand "care" imagery. Rejected as AI-looking or over-rendered: 11, 16, 23, 28, 36, 42, 46, 47. Logos/captions: 2, 9, 32, 38 (banner top), 48 (caption mid). 10 and 33, 34, 48 are couples holding hands, not comforting. 0, 4, 8, 15, 22, 24, 37 are small landscape clips with big black bars.
+
+TAG wedguest
+PICK 1 | five women guests walking arm in arm toward camera on a gravel terrace at golden hour, long dresses in olive, navy, chocolate, dark floral and orange, one holding a glass; stone villa, cypress trees, more guests behind | text: none
+PICK 19 | wide shot of a garden drinks reception, dozens of guests mingling: purple, lilac, sage, yellow dresses, men in suits, white parasol tables, countryside behind | text: none
+PICK 0 | wide shot of a wedding meal in a castle courtyard, guests on their feet cheering and dancing between tables, pink, green and fuchsia dresses, hats | text: none
+PICK 33 | woman in a tiered lilac tulle gown talking with a man in a white dinner jacket outside a grand columned building, another couple behind; black-tie, candid | text: none
+PICK 30 | young woman in a pale sequin dress with a sage shawl adjusting her shoulder beside a bearded man in a dark suit, inside a bright reception hall with guests behind | text: none
+NOTE 1 and 19 are the strong ones. 12, 32, 7, 26, 17 and 14 show real guests mingling/walking but each has a caption across the middle or lower third over the people (cannot be cropped), so not picked; 32 (pink and gold dresses under parasols) is the best of those if a caption can be tolerated. The rest are single-woman outfit showcases (3, 6, 22, 23, 27, 31, 34-41, 45), not guests arriving. Guests are almost all young; older guests only in the wide shots 19 and 0.
+
+TAG bride
+PICK 46 | bride in a white gown and long veil seen from behind walking with the groom through a big cheering crowd of guests in a small town square, children in front, confetti; wide, daylight | text: none
+PICK 14 | smiling dark-haired bride in a full white tulle gown holding a white bouquet while people around her lift her veil; outdoor terrace with string lights, guests close around | text: none
+PICK 44 | bride from behind in a lace gown and long veil walking on her father's arm into a hall, guests standing and watching on the left | text: none
+PICK 43 | bride from behind in a plain white gown and long veil walking down the aisle of a white marquee, guests seated on both sides clapping; small "CAMERA1 PLAY" overlay top left | text: small top
+PICK 23 | bride with long dark curls seated in a lace gown, four women around her (bridesmaids in white, an older woman in black) holding her hands; indoors, chandelier | text: none
+PICK 30 | young bride in a strapless white gown lifting her skirt to walk, bridesmaids in sage green on both sides, white Spanish-style building | text: none
+NOTE good tag. Most of the rest are the bride alone showing the dress (0, 2, 3, 4, 6, 9, 10, 11, 13, 19, 22, 27, 28, 37, 45, 49), so they do not show guests. 39 is a bridal catwalk show (not a wedding), 18 has a caption and bridesmaids all in white, 17 is too dark, 40 is distant with a caption at the bottom, 38 is a stage with LED screen.
+
+TAG dinnerdress
+PICK 48 | woman of about 40 with long brown waves in a cream silk shirt putting on both earrings, seen in a round gold-framed mirror, her shoulder soft in the foreground; very polished: check the motion for AI before use | text: none
+PICK 22 | fair-haired woman of about 40 in a cream collared blouse and dark skirt, seen in a round mirror, hands together, a small pleased smile: the last look; white curtains behind | text: none
+PICK 15 | red-haired woman in a white low V-neck dress putting on an earring, seen in a gilt mirror with a sunny window and pink flowers behind | text: none
+PICK 11 | extreme close-up of a woman's ear as her fingers fasten a gold and pave hoop, dark bob, black high neck | text: none
+PICK 18 | young woman with long brown hair in a beige trench coat fastening a large gold earring, eyes lowered, black door behind (coat, not a dinner dress) | text: none
+PICK 33 | smiling woman with a dark bob in a white strapless top putting on a long gold tassel earring, gold collar necklace; close, plain pale wall | text: none
+NOTE plenty of earring clips; no clean "fastening a necklace" clip (4 does it but has a caption across the chest and a black camisole). Robes rather than outfits: 5, 7, 9, 10, 20, 35, 37, 44. Phone covers the face in 1, 14, 30. 26, 31 and 47 look AI-made or over-retouched; 32 is a collage; 40 and 49 are hands with wine/jewellery; 29 and 35 carry captions.
+
+TAG hostdoor
+PICK 5 | host seen from behind in a white sundress, hair up, holding her front door open; a woman guest in a patterned short dress stands on the sunny doorstep waving hello; wreath on the door, bright hallway | text: none
+NOTE only 5 shows a door and an arriving guest, and the guest is not visibly holding flowers. Everything else on the sheet is dinner tables, tablescapes and toasts (1, 2, 6, 12, 28 toasting; 20, 22, 23, 24, 30, 34 empty set tables). 29 (host standing behind a flower-covered table outside French doors), 26 (host setting a table, dim) and 46 (older host arranging flowers, large "DAY IN MY LIFE" title) are hosts but no door or guest. This tag needs a new search.
+
+TAG outofcar
+PICK 34 | woman with hair up in a short black strappy dress and black heels stepping out of the rear door of a dark limousine at dusk, street lamps behind; leg forward, composed | text: none
+PICK 30 | dark-haired woman in a cream sleeveless button-front maxi dress, white sunglasses and small cream bag standing in the open door of a white SUV in bright daylight, concrete wall behind | text: none
+PICK 4 | young woman with long dark hair in a black halter-neck dress standing up behind the open door of a black car, white fence and flower beds behind, daylight | text: none
+PICK 5 | blonde woman in a cream coat and cream trousers climbing out of a black saloon on a city street, head down so her face is hidden (coat and trousers, not a dress) | text: none
+PICK 15 | close-up of a bare leg in a gold strappy heel stepping out of a black car onto cobblestones; no face, no dress visible | text: none
+NOTE 40 fits the line best (woman in a champagne wrap gown stepping from a black SUV while a capped chauffeur in white gloves holds the door, lit facade behind) but it looks AI-made / too perfect, so I did not pick it: look at it yourself before ruling it out. Most of the sheet is women posing beside G-wagons in car parks in tight black dresses (0, 1, 3, 9, 11, 12, 21, 37, 43, 47), not getting out. 28 shows a lot of leg through a high slit, 13 and 44 are revealing, 31 is opening a bonnet. No woman over about 35.
+
+TAG sitdress
+PICK 2 | dark-haired woman seated on a cream sofa by a sunny window in a taupe sleeveless dress, legs crossed, tan handbag beside her, looking toward the window; natural and calm | text: none
+PICK 21 | woman with hair pulled back in a white shirt and black pencil skirt seated in a brown leather armchair, legs crossed, nude pumps, large hoop earrings; plain studio, editorial pose | text: none
+PICK 3 | Black woman with curly hair seated on a stool at an antique dressing table in a striped and floral wrap dress, legs crossed, white block heels, warm evening light, seen through a doorway | text: none
+PICK 20 | woman with a dark bob seated in a white armchair in a silver sequin strapless dress with feather hem and pink slingbacks, clothes rail behind | text: none
+PICK 38 | woman seated on a low cream sofa in an olive satin slip dress, arms out along the seat, barefoot, soft grey light (thin straps, slit) | text: none
+NOTE nothing shows the act of sitting down to test a dress or skirt; all five are women already seated, posing. 2 and 21 are the closest (you can see how the skirt sits on the knee). Rejected: 1 (low-cut, sultry), 10 (TikTok logo, very short), 14, 0, 25, 23 revealing; 5 and 11 dark; 39 and 40 look like film stills/AI; 6, 26, 31, 34, 46, 48 are standing; 32 is jeans; 12, 18, 33, 42 are getting-ready scenes.

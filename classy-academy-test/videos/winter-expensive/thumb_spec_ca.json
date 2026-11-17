@@ -1,0 +1,138 @@
+{
+ "W1_quiet_luxury": {
+  "top": "The Art of",
+  "big": "Quiet Luxury",
+  "small": "*this winter*",
+  "underline": false,
+  "panels": [
+   {
+    "src": "jt6.jpg",
+    "face": [
+     507,
+     243,
+     191,
+     191
+    ],
+    "fw": 0.28,
+    "fy": 0.2,
+    "dx": 0.0
+   },
+   {
+    "src": "sr17.jpg",
+    "face": [
+     468,
+     408,
+     228,
+     228
+    ],
+    "fw": 0.27,
+    "fy": 0.2,
+    "dx": 0.0
+   },
+   {
+    "src": "lp24.jpg",
+    "face": [
+     618,
+     462,
+     149,
+     149
+    ],
+    "fw": 0.28,
+    "fy": 0.2,
+    "dx": 0.0
+   }
+  ]
+ },
+ "W2_like_600": {
+  "top": "A $60 Coat Can Look",
+  "big": "Like $600",
+  "small": "*if it fits*",
+  "underline": false,
+  "panels": [
+   {
+    "src": "jl11.jpg",
+    "face": [
+     550,
+     240,
+     160,
+     160
+    ],
+    "fw": 0.26,
+    "fy": 0.18,
+    "dx": 0.0
+   },
+   {
+    "src": "kj5.jpg",
+    "face": [
+     594,
+     138,
+     157,
+     157
+    ],
+    "fw": 0.27,
+    "fy": 0.18,
+    "dx": 0.0
+   },
+   {
+    "src": "ec8.jpg",
+    "face": [
+     368,
+     21,
+     211,
+     211
+    ],
+    "fw": 0.27,
+    "fy": 0.18,
+    "dx": 0.0
+   }
+  ]
+ },
+ "W3_polished": {
+  "top": "Always Look",
+  "big": "Polished",
+  "small": "*even in winter*",
+  "underline": false,
+  "panels": [
+   {
+    "src": "jt15.jpg",
+    "face": [
+     560,
+     230,
+     360,
+     360
+    ],
+    "fw": 0.34,
+    "fy": 0.22,
+    "dx": 0.0,
+    "bright": 0.98
+   },
+   {
+    "src": "km26.jpg",
+    "face": [
+     444,
+     63,
+     169,
+     169
+    ],
+    "fw": 0.27,
+    "fy": 0.14,
+    "dx": 0.0,
+    "bright": 0.97
+   },
+   {
+    "src": "lp9.jpg",
+    "face": [
+     583,
+     344,
+     180,
+     180
+    ],
+    "fw": 0.34,
+    "fy": 0.24,
+    "dx": 0.0,
+    "bright": 0.97
+   }
+  ],
+  "dark": 85
+ }
+}

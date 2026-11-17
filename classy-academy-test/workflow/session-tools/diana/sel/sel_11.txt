@@ -1,0 +1,88 @@
+TAG comfortb
+PICK 33 | two women on a green sofa at home, one in a cream cable cardigan and jeans holding her head, the other (glasses, beige trouser suit) has an arm round her shoulder and holds her hand; bright living room | text: none
+PICK 1 | same two women and sofa as 33, friend holds her hand while she covers her face (more distressed, crying look) | text: none
+PICK 3 | two young women hugging tightly, one with curly hair in a chunky grey-blue knitted jumper and jeans, sad faces, sitting low against a brick wall (floor or sofa edge) | text: none
+PICK 10 | two women hugging on a grey sofa, red-haired woman in a pink jumper and jeans holds her friend close, shelves behind | text: none
+NOTE only 4 fit. 33 and 1 are the same footage (use one). 16 (young woman leaning on grandmother on sofa, lamp, rain) and 13 look AI-made; 28 is a real hug but standing by a wall, no sofa; 2 and 17 are friends chatting on a sofa, no comforting; 6 is a mother and child; 14 is a woman with a man; 7 is blurred.
+
+TAG knitc
+PICK 17 | woman in a cream cable-knit V-neck jumper (one shoulder slightly off) pouring from a small metal teapot into a clay cup on a white table, face cropped out, plain room | text: none
+PICK 9 | woman in a cream ribbed knit set pouring coffee from a glass pot into a mug, long wavy hair, face cropped out, by a window | text: none
+PICK 3 | close profile of a brunette woman sipping from a mug by a sunny window, fluffy cream knit sleeve, eyes down, calm | text: none
+PICK 41 | woman in a chunky cream cable jumper and white trousers holding a large cup, mirror selfie with the phone covering her face, warm light at home | text: none
+PICK 18 | woman seen from behind sitting on an unmade bed in a cream jumper with dark stripes, holding a cup, plain white wall, soft light | text: none
+PICK 20 | blonde woman in a pale grey knitted polo jumper leaning back in a wooden chair with a cup and a book, looking away, beige room with dried grasses (jumper is grey, not cream) | text: none
+NOTE most of this sheet is AI-made (sparkle watermark or waxy faces): 14, 16, 23, 25, 30, 31, 32, 37, 39, 40, 42, 43, 44, 45, 46, 47 rejected. None of the real picks shows a calm face plus cream jumper plus cup in one frame except 3 (close-up). 0 is real but a brown mohair jumper; 7 is a cream jumper worn as a dress with bare legs.
+
+TAG doorc
+PICK 20 | seen from inside: woman in a rust-orange sundress, back to camera, holds the front door open as three smiling friends walk up the path; landscape frame, soft quality | text: none
+PICK 33 | young woman in a mauve shirt and black trousers standing in her open wooden front door, smiling at the camera, one hand on the door, cream house with a "WELCOME" mat | text: none
+PICK 27 | young woman pulling a grey front door open and smiling at the camera (visitor's view), dark hoodie, grey cargo trousers, flip-flops, very casual | text: none
+PICK 1 | seen from inside a hallway: grey front door open, a smiling woman in sunglasses and a floral dress stands on the step as the arriving guest; no host in frame | text: none
+NOTE only 20 shows host and friends together and it is landscape and a little soft; no clip shows a hug at the door. 0, 3, 4, 13, 25 look AI-made; 39 is the actress Ellen Pompeo; 24 has a big caption; 7 and 8 are presenters walking to camera; 35 is children at Halloween; 31 is a child.
+
+TAG wedguestd
+PICK 9 | garden drinks reception seen from above: many guests of mixed ages mingling on gravel, long dresses in purple, lilac, sage green and yellow, men in suits, white parasols, countryside behind | text: none
+PICK 26 | two guests chatting under an old tree, one in a pale blue pleated dress fanning herself with a white fan, the other in a green strapless dress holding a glass and a parasol; candid | text: none
+PICK 20 | four guests seen from behind walking along a stone path under olive trees in long green, lilac, cream and pale blue gowns, mountains behind | text: none
+PICK 24 | three young women in satin dresses (magenta, lime, sage) talking on the steps of an ivy-covered brick doorway; candid, landscape frame | text: none
+PICK 37 | two guests talking at a seaside reception, one in an orange print halter dress and sunglasses, one in a yellow and pink floral dress, palms and sea behind | text: none
+PICK 4 | courtyard of a stone manor: guests of all ages on their feet clapping and dancing between the tables, pink and green dresses, a pink fascinator, a band playing | text: none
+NOTE plenty of real footage here. 15 (guests seated at the ceremony, one laughing behind her hand, pale blue and sage dresses) and 31 (guests dancing on a lawn at dusk, a little dark) are good spares. Rejected for captions over the subject: 2, 5, 6, 7, 13, 35, 38, 40, 47, 48. Posed bridesmaid line-ups, not candid guests: 3, 12, 14, 23, 29, 41, 42, 44, 45; a bride is in frame in 1, 10, 17, 21, 22, 28, 39. 11 and 27 are very wide shots.
+
+TAG sitdownb
+PICK 36 | brunette woman in a taupe knee-length sheath dress and nude heels seated on a cream sofa with legs crossed, tan handbag on her lap, looking away, sunny lounge | text: none
+PICK 9 | woman in a black short-sleeved midi dress, white sun hat and black slingbacks seated in a garden chair reading, tea set on a small table, terrace with cypress trees; face hidden by the hat | text: none
+PICK 35 | woman in a pale yellow sleeveless midi dress seated at a mosaic table on a terrace above the sea, putting on sunglasses; landscape frame | text: none
+PICK 45 | Black woman in a cream tweed jacket and skirt set and cream slingbacks seated legs crossed at a red Paris café terrace, checking her lipstick in a compact, coffee and croissant on the table | text: none
+PICK 32 | woman in a cream knitted midi dress, black hat and black boots seated at a café table with a green gingham cloth, chin on hand, evening lights | text: none
+PICK 42 | woman with a high bun in a white satin long-sleeved dress seated at a round café table applying lip gloss, coffee and clutch on the table, white painted wall (dress is white, length not visible) | text: none
+NOTE no first frame shows the ACT of sitting down; all picks are already seated (check the clips for movement). 8 and 13 look AI-made, 5 probably AI; 3, 4, 19, 21 are stylised red-hat shots that look AI; 1 and 10 are revealing poses; 17 is a studio fashion shoot in a skirt; 23 sits on steps in a ball gown; 7 is standing; 33 is black and white.
+
+TAG broochc
+PICK 2 | close view: a woman's hands pinning a round crystal brooch onto the lapel of a grey herringbone wool blazer, white shirt and jeans underneath, face cropped out | text: none
+PICK 15 | older woman with white-blonde hair in a navy wool blazer and cream shirt, looking down as she arranges three jewelled brooches (pink, green, purple) on her lapel; close view | text: none
+PICK 23 | close view of a navy blazer lapel with three brooches (gold bee, diamond bar, gold knot), a hand with pale nails touching the lapel, pale blue shirt | text: none
+PICK 18 | close view of two crystal star-flower brooches on the shoulder of a dark brown blazer, white top, blonde hair, face cropped out | text: none
+PICK 10 | smiling dark-haired woman (about 40s) in a red velvet blazer and cream lace blouse, hand on her chest beside a gold heart brooch, red lipstick; close selfie view | text: none
+PICK 20 | close view of a slim diamond and sapphire bar brooch on a navy blazer lapel, bare neckline, face cropped out; landscape clip with black bars above and below | text: none
+NOTE good tag. Spares: 19 (pearl cluster brooch on a camel trench coat over a white shirt, no face), 6 (silver bee brooch on a white blazer, worn with nothing underneath), 7 (Black woman in glasses, check blazer with five gold brooches, selfie), 8 (same woman as 10, black sequin flower brooch on grey tweed). Rejected: 0, 11, 16, 44 show YSL / Chanel / Dior logo brooches; 5, 17, 22 look AI-made; 9, 13, 14, 21, 24, 29, 30, 32, 37, 39, 40, 41 have big captions; 12 is a blazer on a hanger; 34 is a product shot.
+
+TAG shirtc
+PICK 4 | woman walking along a pavement in a long white shirt with a cream knit over her shoulders, light blue straight jeans and chunky black loafers, black basket bag; side view, hair hides her face; thin pale border on the left edge | text: none
+PICK 9 | red-haired woman standing indoors in a crisp white shirt, wide mid-blue jeans and brown belt, black jumper tied over her shoulders, tan bag, leopard pointed shoes (not loafers); full body, face visible | text: none
+PICK 35 | Black woman standing against a concrete wall in an oversized white shirt, dark blue straight jeans and tan suede ankle boots, hand in pocket, straw basket on the floor; head cut off at the top of the frame | text: none
+PICK 12 | woman walking towards the camera in a white Oxford shirt (tiny polo logo), light blue jeans and white pointed pumps, small black shoulder bag, plain grey room; face cropped at the top | text: none
+PICK 13 | woman with slicked-back hair and sunglasses SEATED at a café table in a white shirt, blue jeans and tan horsebit loafer mules, brown suede bag; not standing or walking | text: none
+NOTE only 4 has the full brief (white shirt, blue jeans, loafers, walking) and her face is hidden. 8 fits the brief but has an AI sparkle watermark and a logo, rejected. 1 and 5 are white T-shirts; 3 and 6 are blue striped shirts; 7 is a denim shirt; 10 is white jeans; 17 is a waist-up selfie; 23 is a beige jumper.
+
+TAG jeansb
+PICK 11 | woman with long wavy hair standing in a camel double-breasted blazer with gold buttons, white shirt, dark blue jeans and black chunky loafers, black bag, grey panelled room; full body; TikTok logo and handle bottom right | text: small bottom
+PICK 1 | silver-blonde woman of about 50 standing in a kitchen in a brown-camel blazer, pale shirt, dark bootcut jeans and pointed boots, holding a tan suede bag, looking to the side; full body | text: none
+PICK 8 | same creator as 11 in the camel blazer with a white top, dark flared jeans and nude heels, navy bag, hallway with clothes rail; TikTok logo and handle bottom right | text: small bottom
+PICK 13 | Black woman in sunglasses standing by a white door in a camel blazer, white T-shirt, mid-blue straight jeans and burgundy ankle boots, black bag; full body (T-shirt, and jeans are mid not dark) | text: none
+NOTE only 4 usable; 11 is the exact brief but carries a TikTok watermark that needs cropping. Rejected for big titles or captions: 2, 4, 5, 12, 21, 23; 14 and 26 are shopping collages; 7 has a black top; 22 is a brown leather jacket with light jeans. No navy blazer anywhere on the sheet.
+
+TAG textc
+PICK 43 | dark-haired woman of about 40 on a rust velvet sofa, laughing as she types on her phone, white linen shirt, cuffed blue jeans and white trainers, yellow cushions, big window and cactus behind | text: none
+PICK 5 | woman with wavy light-brown hair leaning back on a beige sofa smiling at her phone held in both hands, green sleeveless top and jeans, teal room with a lamp; landscape frame | text: none
+PICK 1 | young East Asian woman with long dark hair smiling widely as she types on a black phone, beige top, sofa behind; close shot, landscape frame | text: none
+NOTE this sheet is mostly AI-made: 0, 15, 26 carry the sparkle watermark and 6, 7, 8, 9, 11, 13, 16, 21, 29, 30, 33, 34, 35, 36, 37, 41, 42 have the waxy AI look, all rejected. 43 looks like a real photo shoot; 5 and 1 look like real stock footage but check them in motion. 40 (blonde woman in a black shirt on a grey sofa, small smile at her phone) is uncertain, possibly AI. Real but not smiling: 25, 32, 45; 24 is dim with bare legs; 23 and 10 are talking to camera; 49 has no phone.
+
+TAG rosec
+PICK 25 | young woman with long brown wavy hair in a soft dusty-rose button cardigan and light jeans, glancing to the side with a small smile, white Christmas trees behind | text: none
+PICK 42 | brunette woman seated at an outdoor café table in a dusty-pink cable cardigan over a white top and wide jeans, holding a takeaway coffee, pink roses on the table, museum steps behind | text: none
+PICK 17 | close view of a blonde woman in an oversized soft pink crew-neck jumper and jeans holding an iced green drink, tan bag on her shoulder; face cropped at the top | text: none
+PICK 7 | older woman with grey hair in a bun and sunglasses walking past a stone building in a bright pink roll-neck jumper, camel trousers and a beige coat on her shoulders (pink is vivid, not dusty) | text: none
+PICK 1 | blonde woman in a headband and sunglasses sipping an iced coffee on a tree-lined street in a fluffy pale pink jumper and cream trousers, burgundy bag | text: none
+PICK 2 | woman with long blonde waves seated on a wooden chair in a pale pink mohair jumper and brown satin trousers, drinking from a cup that hides her face, flowers behind | text: none
+NOTE few faces are open and gentle: only 25 and 42 show a calm, approachable face in dusty rose. 0 is a Quince advert, 30 has a brand name and a mini skirt, 14 looks like an AI or catalogue image, 4 looks AI or heavily filtered; 3, 5, 8, 44 are mirror selfies with the phone over the face; 19 is a pouting crouch in a short skirt; 23 is a back view.
+
+TAG redjacketb
+PICK 12 | blonde woman with her hair up walking past a Dior shop front in a red double-breasted blazer with gold buttons and a red knitted midi skirt, red bag and red heels, face visible; a passer-by crosses behind (Dior sign in the background) | text: none
+PICK 19 | dark-haired woman in sunglasses walking past stone columns in a burgundy trouser suit, black clutch and black pointed heels; full body | text: none
+PICK 40 | dark-haired woman in white sunglasses standing on a street in a burgundy belted blazer and matching wide trousers, small black bag, hand raised to her glasses; full body | text: none
+PICK 34 | woman with slicked-back hair and sunglasses standing with hands on hips in a raspberry-red blazer and wide trousers, black roll-neck, long black leather gloves, stone building behind | text: none
+PICK 13 | brunette woman walking beside a shop window at dusk in an oversized red blazer over a short pink shirt dress, looking down, face visible, bare legs | text: none
+PICK 43 | blonde woman in sunglasses standing by a black doorway in a red blazer over a black top and black shorts, black pointed heels, bare legs (38 is the same clip) | text: none
+NOTE almost everyone wears sunglasses; only 12 and 13 show the eyes. Rejected as AI-looking: 1, 4, 9, 24, 31, 33, 37, 41 (4 has the sparkle watermark, 24 a "SILA" logo). 16 looks like a film or paparazzi scene; 15, 23, 39, 42 are long red coats, not blazers; 6, 14, 18, 20, 44 are mini dresses or very short; 26 is a woman climbing out of a red sports car; 3 is a beige suit.

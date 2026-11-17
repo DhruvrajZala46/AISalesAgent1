@@ -1,0 +1,106 @@
+{
+ "A2.jpg": {
+  "top": "Elegant Ladies",
+  "big": "Never Wear",
+  "small": "on Christmas & NYE",
+  "script": false,
+  "xs": [
+   0,
+   414,
+   856,
+   1280
+  ],
+  "panels": [
+   {
+    "src": "orig/kate_white11.jpg",
+    "face": [
+     506,
+     108,
+     208,
+     208
+    ],
+    "fw": 0.27,
+    "fy": 0.18,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/zendaya11.jpg",
+    "face": [
+     201,
+     215,
+     155,
+     155
+    ],
+    "fw": 0.25,
+    "fy": 0.2,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/palermo_velvet8.jpg",
+    "face": [
+     214,
+     116,
+     271,
+     271
+    ],
+    "fw": 0.3,
+    "fy": 0.18,
+    "dx": 0.0
+   }
+  ],
+  "underline": true,
+  "dark": 30
+ },
+ "C2.jpg": {
+  "top": "Holiday Outfits That",
+  "big": "Look Cheap",
+  "small": "What to Wear Instead",
+  "script": false,
+  "xs": [
+   0,
+   414,
+   856,
+   1280
+  ],
+  "panels": [
+   {
+    "src": "orig/cate10.jpg",
+    "face": [
+     375,
+     210,
+     403,
+     403
+    ],
+    "fw": 0.36,
+    "fy": 0.2,
+    "dx": 0.06
+   },
+   {
+    "src": "orig/amal8.jpg",
+    "face": [
+     344,
+     108,
+     167,
+     167
+    ],
+    "fw": 0.25,
+    "fy": 0.18,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/kerry14.jpg",
+    "face": [
+     610,
+     114,
+     177,
+     177
+    ],
+    "fw": 0.27,
+    "fy": 0.19,
+    "dx": 0.0
+   }
+  ],
+  "underline": true,
+  "dark": 30
+ }
+}

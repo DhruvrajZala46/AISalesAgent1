@@ -1,0 +1,63 @@
+TAG diclutch
+PICK 19 | still photo, night arrival: woman presented as Diana in pale blue strapless lace gown, pearl choker, small white clutch held in her hand at hip height (not against the chest), late 1980s / about 1990 | text: none
+PICK 22 | real news film, early 1980s: young Diana in a red full-skirted evening gown beside a car, crowd behind, holding a small bag in both hands at the waist; soft, low-resolution film | text: none
+NOTE no thumbnail shows a clutch held against the chest. 19 and 22 are the only ones with a small bag in hand (hip/waist). 20 (navy lace slip dress, 1996) and 24 (black velvet, tiara) show no bag; 3 is a handbag under a large caption; 32 is a modern woman, not Diana; 36 and 39 have large text. Identity taken from the search tag, captions and known outfits, not confirmed from faces.
+
+TAG digowns
+PICK 1 | still photo, night: pink satin ball gown with wide white portrait collar, long sleeves, full gathered skirt, pearl necklace, men in black tie behind, about 1987 | text: none
+PICK 44 | still photo: seated in a pink chiffon gown with bow-tied shoulder straps, tiara, sapphire pendant, red wall behind, about 1983 | text: small TikTok watermark, left middle
+PICK 28 | still photo, night: stepping out of a car in a pale yellow satin gown with big puffed sleeves and V neck, green clutch, mid 1980s | text: small bottom ("DIANA AFTER MARRIAGE" over the hem)
+PICK 8 | still photo: walking in a pale blue strapless chiffon gown with matching scarf at the neck, crowd and car behind (Cannes look, 1987) | text: small TikTok watermark, left middle
+PICK 31 | still photo: 1981 wedding dress, ivory with huge ruffled sleeves, frilled neckline and bow, veil and tiara, waving, bouquet (wedding dress, not an evening gown, but the clearest ruffles/bows/big sleeves) | text: none
+PICK 30 | real film, night: red sparkly spaghetti-strap gown with tiara, bending forward, photographers behind, about 1983 | text: faint watermark mid-frame
+NOTE true 1980s gowns with ruffles/big sleeves are 1, 44, 28. 26 (close-up of the wedding dress ruffle and bow, no text) and 40 (wedding dress, subtitle at bottom) are extra wedding stills. 3, 6, 16, 17, 29 are the 1994 black revenge dress, not 1980s. 27 looks like a composite (silver gown pasted on a modern red carpet, tumblr watermark): reject. 41 has a large caption; 49 is a mannequin (2013); 47 is 1996.
+
+TAG dicasual
+PICK 1 | still photo, polo field: navy baseball cap, black blazer, white sweatshirt with red balloon logo (British Lung Foundation), jeans tucked into brown boots, hands in pockets, 1988 | text: none
+PICK 3 | still photo: white shirt with rolled sleeves, light blue jeans, tan belt, arms crossed, woodpile behind (the 1997 Bosnia picture) | text: small top (TikTok watermark, top left)
+PICK 32 | still photo, polo field: white blouse, pale blue high-waisted trousers, sunglasses, shoulder bag, early 1980s | text: caption "the TRUE queen" low across her legs (not at the edge)
+NOTE only 4 pins. 42 is a navy satin-lapel trouser suit getting out of a car: evening wear, not off duty. No loafers and no white-shirt-and-jeans full length anywhere.
+
+TAG dipolo
+PICK 0 | still photo, polo field: navy baseball cap, black blazer, white sweatshirt with red balloon logo, jeans, brown boots, spectators blurred behind, 1988 | text: none
+PICK 16 | still photo, car park at polo: navy baseball cap, dark green blazer, white top and white trousers, red-brown cowboy boots, big dark shoulder bag, red car behind, about 1988 | text: none
+PICK 3 | still photo, polo grounds: pink sweatshirt over white collar, patched jeans, polka-dot headscarf and sunglasses, white jumper over the arm, early 1980s; face mostly hidden so I cannot confirm who it is | text: none
+NOTE 0 is the exact brief (cap, blazer, sweatshirt, jeans). 15 is the same photo as 0 with a large caption across the body: reject. 30 is a Miss Vogue fashion shoot with a model copying the look, not Diana: reject.
+
+TAG dibosnia
+PICK 16 | still photo: white shirt with rolled sleeves, light blue jeans, tan belt, arms crossed, rubble and woodpile behind, 1997 | text: small top (TikTok watermark, top left)
+NOTE only 2 pins. 16 is the same photo as dicasual 3. 30 is a white vest top and white trousers with sunglasses (holiday look, not the shirt) and has a caption across the chest: reject. No loafers, no chinos, no film.
+
+TAG dieighties
+PICK 6 | still photo, night, 1981: black velvet dress with a big white ruffled collar and white cuffs, black flat shoes, row of press photographers behind | text: none
+PICK 7 | still photo, 1981: lilac off-the-shoulder chiffon dress with frilled neckline, ribbon bows and satin sash, full skirt, standing by a red wall | text: small bottom (watermark word bottom right)
+PICK 22 | still photo, about 1983: navy brimmed hat, red jacket, white polka-dot blouse with a big pussy bow at the neck, smiling in profile, crowd behind; landscape frame | text: none
+PICK 28 | still photo, early 1980s: close-up, lilac satin off-the-shoulder dress with a large bow at the front, gold heart pendant, night | text: none
+PICK 2 | still photo, 1981 wedding day: ivory dress with huge ruffled sleeves, frilled neckline and bow, veil, tiara, waving, bouquet | text: none
+PICK 1 | still photo, 1981: seated in the same lilac frilled off-the-shoulder dress with bows and sash, head bowed (face hidden), men in black tie behind | text: none
+NOTE good tag. Also usable: 5 and 10 (wedding dress close-ups, ruffles and bow, no text), 43 (pink gown with bow straps and tiara, 1983, TikTok watermark mid-left), 36 (red hat, white dress with red polka dots and puffed sleeves, pearls, about 1986, no text), 16 (turquoise veiled hat and frilled turquoise dress, hand over face, TikTok watermark). Reject 8 and 33 and 21 (large captions), 3 and 46 (late 1980s gowns), 25 (blurred borders).
+
+TAG dinineties
+PICK 4 | still photo, about 1995: pale cream-yellow skirt suit, pearl necklace, clapping in a crowd (Wimbledon stand) | text: none
+PICK 1 | still photo, about 1996-97: black skirt suit with gold clasp, black tights and heels, dark crocodile top-handle bag, paper in hand, walking past stone columns | text: none
+PICK 19 | still photo, 1992: cream short-sleeved belted jacket with gold buttons and pleated skirt, standing in front of a pyramid; thin black frame around the photo | text: none
+PICK 25 | real film frame, mid 1990s: dark green sleeveless shift dress, sunglasses, chain-strap bag, walking in a crowd under red signage with Chinese characters; landscape | text: none
+PICK 20 | still photo, night: navy double-breasted trouser suit with satin lapels, getting out of a car, clutch in hand | text: small top (TikTok watermark, top left)
+PICK 12 | real film frame, indoors: cobalt blue long blazer over a black dress, black tights, hands clasped | text: none
+NOTE 0 looks AI-made or heavily repainted (painterly skin, studio mood, caption): reject. 23 and 44 are the same photo as 1 with text across the middle. 18 (white sleeveless shift, pearls, 1997) is real film but hands block the frame. 7 is a black jacket with pale blue mini skirt (two colours). 13 and 27 are the revenge dress; 14, 22, 41, 42 have large captions; 31 is 1980s.
+
+TAG diauction
+PICK 3 | real film frame, 1997: white beaded sleeveless shift dress, short hair, bracelet, smiling beside a man in a dark suit and spotted tie, bright white-blue interior. Matches the white beaded dress worn to the Christie's New York preview in June 1997, but nothing in the frame (no dresses, no catalogue, no sign) proves the venue | text: small bottom (tiny watermark)
+NOTE no thumbnail shows dresses on mannequins, the catalogue or the saleroom. Everything else on the sheet is general gown footage (revenge dress, 1996 navy slip dress, wedding dress, pink 1983 gown, blue one-shoulder dress with large caption). Check 3 by playing it before use.
+
+TAG direvenge
+PICK 32 | still photo, June 1994: black off-the-shoulder short dress with chiffon side train, pearl choker with sapphire, black tights, striding across grass at golden hour, car bonnet at the edge, photographers behind; vertical | text: none
+PICK 7 | still photo, June 1994: same dress, three-quarter length, arm reaching forward to shake hands, dusk light, photographer behind; vertical | text: small top (TikTok watermark, top left)
+PICK 2 | real news film, June 1994: wide shot, she has just left the car and walks towards a man in a dinner suit, hand out, park trees behind; vertical | text: none
+PICK 5 | real news film, June 1994: mid shot in the dress and choker, hand extended in greeting, clutch in the other hand; landscape frame with black bars | text: none
+PICK 15 | still photo, June 1994: mid shot, smiling, arm out, photographer behind; landscape with black bars | text: small bottom (watermark bottom left of the photo)
+PICK 3 | real news film, June 1994: same greeting moment, full dress visible with the train, warm faded colour; landscape with black bar | text: none
+NOTE strong tag: real arrival film (2, 5, 3) plus clean stills (32, 7, 15). 36 is film of the car pulling up with a man in black tie at the door (she is not visible) and could lead in. Reject 20 (a second woman is pasted into the photo), 28 (too dark, caption), 11 (dress on a mannequin, caption), 37 (a different woman, large caption), 6 and 49 and 44 (large captions, other outfits), 16, 27, 35 (other dresses).
+
+TAG direwear
+NOTE none fits. No thumbnail shows one outfit on two occasions (no side-by-side, no split frame); the sheet is a general mix of single looks, most with large captions. The only side-by-side is 11, which pairs a pink 1980s outfit with a different woman in pink (not a rewear). 23 is a collage around a modern woman; 14 and 41 are modern women recreating outfits; 9 looks AI-made. Clean single frames, if you want to build the pair yourself from two pins: 46 (cap, black blazer, red-balloon sweatshirt, jeans, boots; small TikTok mark bottom right; same look as dipolo 0), 34 (cobalt blue blazer over black dress, film frame, no text), 45 (white shirt, red jumper tied on shoulders, grey skirt, red shoes, seated; no text), 6 (black jacket, pale blue mini skirt, no text), 4 (white shirt and jeans, TikTok mark top left). Whether any of these was worn twice cannot be judged from the frames.

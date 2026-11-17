@@ -1,0 +1,106 @@
+{
+ "A.jpg": {
+  "logo": "ce",
+  "top": "How to Look",
+  "big": "Expensive",
+  "small": "in Winter",
+  "script": false,
+  "underline": true,
+  "xs": [
+   0,
+   414,
+   856,
+   1280
+  ],
+  "panels": [
+   {
+    "src": "orig/rosie24.jpg",
+    "face": [
+     431,
+     79,
+     139,
+     139
+    ],
+    "fw": 0.26,
+    "fy": 0.2,
+    "dx": -0.08
+   },
+   {
+    "src": "orig/katecamel13.jpg",
+    "face": [
+     384,
+     13,
+     240,
+     240
+    ],
+    "fw": 0.23,
+    "fy": 0.15,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/amal11.jpg",
+    "face": [
+     290,
+     59,
+     95,
+     95
+    ],
+    "fw": 0.26,
+    "fy": 0.18,
+    "dx": 0.0
+   }
+  ]
+ },
+ "C.jpg": {
+  "logo": "ce",
+  "top": "Always Look",
+  "big": "Put Together",
+  "small": "This Winter",
+  "script": false,
+  "underline": true,
+  "xs": [
+   0,
+   414,
+   856,
+   1280
+  ],
+  "panels": [
+   {
+    "src": "orig/tookes22.jpg",
+    "face": [
+     143,
+     26,
+     206,
+     206
+    ],
+    "fw": 0.26,
+    "fy": 0.21,
+    "dx": -0.09
+   },
+   {
+    "src": "orig/tracee16.jpg",
+    "face": [
+     240,
+     155,
+     137,
+     137
+    ],
+    "fw": 0.3,
+    "fy": 0.17,
+    "dx": 0.0
+   },
+   {
+    "src": "orig/palermo19.jpg",
+    "face": [
+     271,
+     92,
+     105,
+     105
+    ],
+    "fw": 0.26,
+    "fy": 0.18,
+    "dx": 0.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,81 @@
+TAG drapec
+PICK 11 | analyst in pink shirt stands behind seated client (brown skin, dark hair) and holds a rainbow-striped drape under her face; drape rail behind; bright studio | text: none
+PICK 23 | analyst in white sleeveless dress stands behind seated dark-haired client with a green drape under her chin; drape rail behind | text: none
+PICK 42 | analyst (about 40s) in red dress fastens a green patterned drape on a seated client wearing a white hair band; loft room, onlookers behind | text: none
+PICK 48 | smiling Black woman with curly hair, teal/purple/pink/black drapes fanned under her face; plain white background, close | text: none
+PICK 20 | analyst in beige trench and glasses leans over seated blonde client, laying burgundy and brown drapes under her face; pile of drapes fills the lower third | text: none
+PICK 25 | close face of a woman in a grey hair cap with a pastel wavy-striped drape under her chin; home room | text: none
+NOTE plenty of real drape sessions; 0 (wide shot, analyst in lilac jumper puts a blue drape on a seated client) and 38 (woman about 40 wrapped in rust satin, studio portrait) also fit with no text; 1,3,5,6,7,14,16,17,21,26,27,29,34,41,43,45,46 have captions; 28 is drapes only, no face; 49 is a card frame, not fabric
+
+TAG hairstc
+PICK 30 | low twisted bun seen from back/side, blonde-brown hair, white knit top, pampas grass, light wall | text: none
+PICK 10 | soft low messy bun from the back, brown hair, white off-shoulder top, bright room | text: none
+PICK 44 | smooth low chignon with a blonde face-framing strand, from the back, bare shoulders (small tattoo on arm) | text: small (stylist signature over left shoulder, mid-frame)
+PICK 40 | sleek low chignon from the back, blonde, bright blue open-back top, by a window; clip is not full height | text: small bottom ("ELEGANT UPDO" on her back)
+PICK 46 | twisted low chignon from the back, light brown hair, white top, salon | text: small bottom (website watermark across the bottom edge)
+PICK 20 | neat low bun from the back, dark brown hair, bathroom; tattoo on upper back | text: small top ("Easy bun hack")
+NOTE only buns/chignons, no soft waves; all young women seen from the back; only 30 and 10 are fully clean; 15 and 49 are mannequin heads; 27 is a phone screen recording with a black bar; 33 has a two-line tutorial caption at the top
+
+TAG outfitc
+PICK 41 | real woman standing in an arched doorway in cream sleeveless top, brown belt, cream wide trousers; one outfit only | text: none
+NOTE almost nothing usable: 1,9,17,26,33 are AI-looking rendered flat lays; 6,7,34,35,40 are digital product collages with a cut-out model; 24 is a collage with big text; 2,5,19 are real women but with large title text; 39 is a woman walking in a living room, no outfit shown
+
+TAG whiteshirt
+PICK 3 | dark-haired woman in loose white shirt and mid-dark blue straight jeans, dark shoes, standing by a fireplace, full body | text: none
+PICK 29 | woman in white shirt with rolled sleeves and mid-blue cropped jeans, barefoot, full body, white room; clip is not full height | text: small top ("Power of Styling")
+PICK 8 | white shirt tucked into light-blue straight jeans, black shoulder bag, white pointed shoes, walking to camera, full body, head cropped; small polo logo on shirt | text: none
+PICK 17 | smiling dark-haired woman in white shirt and mid-blue jeans, bedroom, seen to the knees | text: none
+PICK 32 | dark-haired woman in oversized white shirt and light jeans, bedroom, seen to the knees | text: none
+PICK 16 | woman buttoning a white shirt over light jeans, hair over her face, seen to the knees | text: none
+NOTE nobody wears truly dark jeans or loafers with the white shirt; 3 is the darkest denim and the only strong fit; 11 has black loafers but the shirt is hidden under a grey knit; 6 is a white shirt with light jeans outdoors, half body; 2 and 7 are white T-shirts; 4,10,12,18 are other tops; 28,35,37 have captions; all women are young
+
+TAG navyblazer
+PICK 0 | navy double-breasted blazer with gold buttons, white tee, tan belt, dark straight jeans, black pointed heels, black bag; full body, head cropped, white studio | text: none
+PICK 30 | young Black woman in navy blazer, white top, dark wide jeans, black bag, full body, empty room with wood floor | text: none
+PICK 21 | brunette in navy double-breasted blazer, white shirt, mid-dark cropped jeans, trainers, leaning on a wall indoors, full body | text: none
+PICK 9 | short-haired woman (40s or older) in sunglasses, navy blazer and navy jeans, tan loafers, brown bag, side on, living room | text: none
+PICK 44 | dark-haired woman in sunglasses on stone steps by grey doors, navy tweed jacket with white trim, striped top, flared jeans; a boxy jacket rather than a blazer | text: none
+PICK 22 | smiling brunette in navy blazer, white tee, light skinny jeans, white trainers, bedroom | text: small (Instagram handle mid-left)
+NOTE 2,3,7,8,10 look AI-generated (rejected, though they are the most "classic"); 4 is real but the blazer reads black; 6 is a navy cardigan-jacket; 12,18 are collages; 19 has a big caption; 16 is a trench; 1,27,35 are not navy
+
+TAG camelblazer
+PICK 11 | woman with long wavy hair in camel double-breasted blazer, white shirt, dark slim jeans, black loafers, black bag; full body, grey panelled room | text: small bottom (TikTok mark lower right)
+PICK 0 | grey-blonde woman (about 50) in brown-camel blazer, white shirt, brown belt, dark bootcut jeans, tan tote; full body, kitchen, slightly dim | text: none
+PICK 9 | Black woman in sunglasses, tan blazer, white tee, mid-blue jeans, burgundy ankle boots, black bag; full body, plain room | text: none
+PICK 10 | blonde-brown woman in camel double-breasted blazer, black top, dark bootcut jeans, tan bag; full body, dressing room with shoes on floor | text: small bottom (TikTok mark lower right)
+PICK 46 | same creator as 11 in camel double-breasted blazer, black top, white wide jeans, nude heels, beige bag; full body | text: small bottom (TikTok mark lower right)
+PICK 32 | dark-haired woman in caramel blazer, white camisole, cream wide trousers; full body, white room with pampas | text: small bottom (label lower left)
+NOTE 14,28,37,43 look AI-generated (14 carries an AI sparkle mark); 3,5,8,23,26,35 have large title text (3/5 would be good if the title is only at the start); 15 is an older blonde woman but phone covers her face and big captions; 4,34 are belt close-ups with product tags; 17 is an advert collage
+
+TAG loafers
+PICK 45 | black penny loafers with grey slim jeans, standing then stepping in a polished corridor, seen from the hips down | text: none
+PICK 37 | beige horsebit loafers with white frayed jeans, side view close, wood wall and pale floor | text: none
+PICK 17 | dark brown penny loafers with white socks, walking on herringbone paving with autumn leaves; brown blazer and short skirt above, bare legs | text: none
+PICK 5 | point-of-view looking down: black horsebit loafer and black trousers on a paved path with grass | text: none
+PICK 44 | point-of-view seated: burgundy penny loafers with grey jeans, concrete floor | text: none
+PICK 0 | point-of-view walking: black horsebit loafers with white socks on asphalt, green coat edges | text: none
+NOTE 6,7,9 look AI-generated and 20 carries an AI sparkle mark (rejected); 22 (tan penny loafers, white trousers) may be a render; 34,18,21,41 are chunky platform loafers with socks or tights; 13 is a heeled loafer; 23,30,36,40 are product shots; 1,29,35,39 are not loafers; 25 and 38 show bare legs/feet
+
+TAG declutter
+PICK 12 | woman seen from the back in cream top and cream jeans, barefoot, reaching into a full open wardrobe, clothes dropped on the floor | text: none
+PICK 45 | woman at the frame edge lifting a white shirt off the rail of an open wardrobe, looking at it | text: none
+PICK 4 | blonde woman in beige jumpsuit sorting a huge pile of clothes on a bed, attic bedroom | text: none
+PICK 1 | smiling woman carrying a big armful of clothes on hangers out of a closet | text: none
+PICK 17 | dark-haired woman in brown top and cream trousers, from the back, arranging items on the shelves of a tidy white wardrobe (tidying, not choosing clothes) | text: none
+PICK 38 | red-haired woman from the back in grey tee and black trousers taking clothes off a rail in a messy bedroom | text: none
+NOTE 0,31,40 look AI-generated; 8 fits (woman flicking through a rail) but crop top shows midriff and colours are loud; 7 is only a hand on a crammed rail; 5,13,14,24,34,36,42,43,47 have captions or stickers; rest are messy rooms with no one sorting; nobody visibly older than 35
+
+TAG donate
+PICK 15 | woman in cream sweatshirt (face out of frame) pressing folded cream shirt and denim into a cardboard box; bright, close | text: none
+PICK 26 | horizontal clip: person in plaid shirt puts a yellow garment into a clear plastic box with a handwritten "Donations" card | text: none (label is in the scene)
+PICK 2 | horizontal clip, close and a bit soft: woman putting folded clothes into a cardboard box | text: none
+PICK 12 | two pairs of hands on a cardboard box of folded jumpers on a wooden table, clothes rail behind (a hand-over at a donation point, not folding at home; possibly stock) | text: none (box label in the scene)
+PICK 47 | Black woman in white tee bending by a bed of sorted clothes, putting pieces into a grey mesh bag (looks like a laundry hamper, so the meaning is ambiguous) | text: none
+NOTE only 15 is a clean exact fit; 25 (empty box hand-labelled "Donate") and 35 (box of folded clothes) have no person but could work as cutaways; 45 is packing a parcel in tissue, not donating; 1 and 30 carry stock watermarks; 3 and 33 have text/logo; 41 is a brand advert; 19,24 are charity sorting events
+
+TAG tidyrail
+PICK 15 | freestanding white rail with about eight neutral pieces (camel, cream, brown, white) hung with clear gaps, shoes below, warm sunlight on a curtain; small shop bag with logo at the bottom | text: none
+PICK 40 | a hand hangs one pair of cream trousers on a wooden hanger on an otherwise empty wardrobe rail | text: none
+PICK 18 | empty wooden hangers evenly spaced on a chrome rail in a white wardrobe, close (45 is the same shot) | text: none
+PICK 46 | close-up of empty wooden hangers spaced on a wooden rail | text: none
+NOTE only 15 is a true fit (clothes with space between hangers); 12 and 36 show tidy neutral rails but tightly packed and with large titles across the middle; 38 has a "WARDROBE TIPS" label; nearly everything else (5,8,10,14,16,19,20,21,22,23,25,27,30,35,39,42,47) is a hanger-gadget product demo; 7 is a tidy but packed walk-in closet

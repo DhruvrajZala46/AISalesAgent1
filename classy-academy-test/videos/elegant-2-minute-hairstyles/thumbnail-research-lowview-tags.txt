@@ -1,0 +1,90 @@
+1 M b
+2 F w W
+3 R b w e W
+4 T f
+5 F w e W
+6 T b w e
+7 T b w
+8 R b w
+9 M w f
+10 F w e
+11 F w
+12 R b w e W
+13 F f
+14 G b
+15 T f
+16 M f
+17 G f
+18 G f w
+19 F w
+20 F w W n
+21 F w
+22 T b w e
+23 P w W
+24 P w
+25 G f w e
+26 F w W
+27 F w t e W
+28 F w W
+29 G f
+30 T b
+31 M b w
+32 R b w
+33 O
+34 M b w t
+35 F w e W
+36 S b
+37 G b w e
+38 F w t e
+39 G f
+40 F f
+41 F f
+42 G f
+43 F w W
+44 M b
+45 F f
+46 M b w e
+47 F w t W
+48 T b w e
+49 M b
+50 F w W
+51 F w
+52 O
+53 F f
+54 G f
+55 G f w
+56 G f w
+57 F w
+58 G b w e
+59 T f w
+60 G b w t
+61 F
+62 P w W
+63 P w W
+64 T b w t
+65 T f w
+66 G b w
+67 P w W
+68 R b w
+69 F w
+70 T f w
+71 G f w W
+72 R w W
+73 F w W
+74 R b
+75 M b
+76 M b w
+77 M f w
+78 M b w
+79 G b w e
+80 T b w e
+81 M b
+82 O
+83 F w W
+84 R b w W
+85 F w W
+86 F w
+87 O
+88 O
+89 O
+90 F w

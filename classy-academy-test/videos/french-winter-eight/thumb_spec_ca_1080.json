@@ -1,0 +1,113 @@
+{
+ "A_always": {
+  "underline": true,
+  "dark": 105,
+  "scale": 1.5,
+  "logo": "build/logo_ca_hires.png",
+  "logo_dark": 110,
+  "top": "French Women",
+  "big": "Always Wear",
+  "small": "*all winter*",
+  "panels": [
+   {
+    "src": "soft/maigret218.jpg",
+    "box": [
+     552,
+     73,
+     596
+    ]
+   },
+   {
+    "src": "soft/ines229.jpg",
+    "box": [
+     500,
+     133,
+     779
+    ]
+   },
+   {
+    "src": "soft/deneuve11.jpg",
+    "box": [
+     512,
+     1,
+     577
+    ]
+   }
+  ],
+  "small_cap": 35
+ },
+ "B_only8": {
+  "underline": true,
+  "dark": 105,
+  "scale": 1.5,
+  "logo": "build/logo_ca_hires.png",
+  "logo_dark": 110,
+  "top": "All Winter",
+  "big": "Only 8 Pieces",
+  "small": "*the french way*",
+  "panels": [
+   {
+    "src": "soft/cotillard11.jpg",
+    "box": [
+     592,
+     66,
+     679
+    ]
+   },
+   {
+    "src": "soft/charriere22.jpg",
+    "box": [
+     934,
+     482,
+     758
+    ]
+   },
+   {
+    "src": "soft/seydoux12.jpg",
+    "box": [
+     516,
+     49,
+     480
+    ]
+   }
+  ],
+  "small_cap": 35
+ },
+ "C_stop": {
+  "underline": true,
+  "dark": 105,
+  "scale": 1.5,
+  "logo": "build/logo_ca_hires.png",
+  "logo_dark": 110,
+  "top": "This Winter",
+  "big": "Stop Buying",
+  "small": "*wear these 8 instead*",
+  "panels": [
+   {
+    "src": "soft/maigret221.jpg",
+    "box": [
+     1182,
+     0,
+     1027
+    ]
+   },
+   {
+    "src": "soft/binoche14.jpg",
+    "box": [
+     688,
+     96,
+     748
+    ]
+   },
+   {
+    "src": "soft/ines2.jpg",
+    "box": [
+     990,
+     0,
+     961
+    ]
+   }
+  ],
+  "small_cap": 35
+ }
+}

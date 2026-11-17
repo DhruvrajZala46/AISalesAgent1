@@ -1,0 +1,86 @@
+{
+ "A.jpg": {
+  "top": "Classy Women",
+  "big": "Never Do This",
+  "small": "*in public*",
+  "underline": true,
+  "panels": [
+   {
+    "src": "fr/h_cafe39.jpg",
+    "cw": 560,
+    "fy": 0.2
+   },
+   {
+    "src": "fr/h_cafe21.jpg",
+    "cw": 600,
+    "fy": 0.17,
+    "dx": 0.05
+   },
+   {
+    "src": "real/kate2.jpg",
+    "cw": 900,
+    "fy": 0.2,
+    "dx": -0.05
+   }
+  ]
+ },
+ "B.jpg": {
+  "top": "7 Habits That",
+  "big": "Look Unclassy",
+  "small": "*avoid these*",
+  "underline": false,
+  "panels": [
+   {
+    "src": "fr/p1_laugh25.jpg",
+    "cw": 520,
+    "fy": 0.2
+   },
+   {
+    "src": "fr/p7_alone16.jpg",
+    "cw": 480,
+    "fy": 0.17
+   },
+   {
+    "src": "fr/h_phonedown31.jpg",
+    "face": [
+     260,
+     340,
+     140,
+     140
+    ],
+    "cw": 540,
+    "fy": 0.2
+   }
+  ]
+ },
+ "C.jpg": {
+  "top": "Classy Women",
+  "big": "Never Do This",
+  "small": "*at any age*",
+  "underline": true,
+  "panels": [
+   {
+    "src": "src/c_walkold0_4.0.png",
+    "face": [
+     200,
+     320,
+     160,
+     160
+    ],
+    "cw": 540,
+    "fy": 0.24,
+    "dx": 0.04
+   },
+   {
+    "src": "src/p7_older11_10.0.png",
+    "cw": 480,
+    "fy": 0.15
+   },
+   {
+    "src": "real/kate6.jpg",
+    "cw": 740,
+    "fy": 0.2
+   }
+  ]
+ }
+}

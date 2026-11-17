@@ -1,0 +1,73 @@
+TAG dicrowd
+PICK 6 | Diana in royal-blue suit with black polka dots and blue hat, bouquet in arm, leaning over to shake hands with a crowd of children waving Union flags, smiling; early-mid 1980s; sharp press photo (stills) | text: none
+PICK 0 | Diana in white sleeveless dress, pearl necklace, cream chain bag, beside a car, smiling as many hands reach out to her from the crowd; mid 1990s; news film | text: none
+PICK 35 | Diana in tartan jacket holding bouquets on a street walkabout, policeman and crowd behind; head bowed, face partly hidden; news film | text: small top
+PICK 24 | Diana in dark jacket with purple scarf bending into a crowd to take flowers, security men behind; face mostly hidden, looking down; news film | text: none
+PICK 20 | Diana in cream jacket, laughing, holding flowers (irises) just handed to her; very tight crop, top of head cut off; news film | text: none
+PICK 21 | Diana in purple jacket raising a hand to wave beside railings, security men around; small in frame, soft video | text: none
+NOTE 6 and 0 are the only two that clearly show hands being shaken/reached; 37 is children in wheelchairs (see dikids); 33 has photographers behind her (use for dipress); 36 has a large caption; 3, 7, 12, 29, 34, 39, 46, 47 show no crowd greeting.
+
+TAG diiconic
+PICK 41 | Diana full body in the black off-the-shoulder short dress with pearl choker ("revenge dress"), walking on a lawn past a car, evening, 1994; press photo (stills), vertical | text: none
+PICK 36 | Diana full body in navy "Fly Virgin Atlantic" sweatshirt, orange cycling shorts, white trainers, walking past bicycles; mid 1990s gym look; press photo (stills) | text: none
+PICK 14 | Diana full body in pink satin off-the-shoulder ball gown with white collar, pearls, night, men in black tie behind; late 1980s; press photo (stills) | text: none
+PICK 49 | Diana half body in pale blue strapless chiffon dress with matching scarf (Cannes 1987 look), smiling; press photo (stills) | text: none
+PICK 12 | Diana in her wedding dress and veil waving, bouquet in hand, 1981; press photo (stills) | text: none
+PICK 7 | Diana three-quarter body in ice-blue strapless embroidered gown, pearl necklace, clutch in hand, by an open car door at night; press photo (stills) | text: none
+NOTE Nearly all clean ones look like press photos (stills). Real film of the revenge dress: 0 and 6 (half body, landscape), 21 (wide). Other clean alternates: 3 cream skirt suit clapping, 38 purple sweatshirt with white shorts and sunglasses, 24 revenge dress full body, 9 white column gown, 30 black halter dress, 39 red sequin dress, 27 black jumper and grey mini skirt. Rejected for text over her: 5, 11, 13, 20, 26 (Harvard sweatshirt, text mid-frame), 28, 31, 32, 34, 46, 48; 17, 33, 43 carry TikTok logos.
+
+TAG dismile
+PICK 3 | Close shot of Diana in three-quarter profile, broad smile, pearl drop earring and pearl necklace, soft daylight; press photo (stills), vertical | text: none
+PICK 2 | Diana laughing straight at camera in a red jacket, gold earrings, colourful background; mid 1990s; press photo (stills) | text: none
+PICK 25 | Diana laughing with eyes closed, tousled hair, pink fluffy collar over dark polka dots; early 1980s; press photo (stills), vertical | text: none
+PICK 28 | Close shot of Diana smiling, navy jacket, people soft in the background; news film frame | text: small bottom
+PICK 7 | Very close face of Diana smiling, dark top; news film frame | text: small bottom
+PICK 0 | Extreme close-up of young Diana grinning, white bow collar and blue top; early 1980s; video frame that looks sharpened/upscaled | text: none
+NOTE 18 rejected: over-vivid eyes, smoothed skin and edit icons, looks retouched/AI-enhanced. 16 and 47 are smiling but in hats; 21 smiling with photographers behind (better for dipress); 5, 12, 23, 35 face turned away; 8, 22, 26, 32, 37, 42, 43, 46, 49 not really smiling. Many clips carry a small "welondits" watermark at the bottom.
+
+TAG dipress
+PICK 4 | Diana in a dark polka-dot dress and sunglasses running along a pavement past a shop window while a man in jeans runs after her (looks like a photographer with a camera bag); press photo (stills) | text: none
+NOTE Nothing on this sheet shows a pack of photographers or flashes. 18 is hands of a crowd, 29 is her sitting in a car in shorts with two TikTok logos, 41 is a close face. Better from other tags: dicrowd 33 / dismile 21 (red jacket with black velvet collar, photographers with cameras right behind her, small text bottom) and dicar 7 (stepping out of a car lit by flash).
+
+TAG dicaring
+PICK 36 | Diana in a pale blue-green shalwar kameez holding a sick child on her lap, smiling up at someone, patients around her (Pakistan hospital visit, mid 1990s); press photo (stills) | text: small bottom
+PICK 13 | Diana in a pale blue skirt suit sitting on a hospital bed beside a smiling girl patient, ward equipment behind; mid 1990s news film; TikTok logo top left, small caption at right edge, watermark bottom | text: small top
+PICK 6 | Diana in a red coat kneeling among small children, one in a wheelchair, at a children's centre; early 1980s film | text: none
+PICK 15 | Diana in a white dress crouching to hug a small child among schoolchildren in maroon uniforms (a school, not a hospital); press photo (stills) | text: none
+PICK 5 | Diana in a black jacket cheek to cheek with a small child in pink held by another woman, both smiling; film frame, setting not clearly a hospital | text: none
+PICK 8 | Diana in a pale blue shirt with Red Cross badge bending to a girl in a gingham jacket holding a red crutch/prosthetic (landmine victims visit, 1997); film, black bars top and bottom | text: none
+NOTE No clip shows the blue floral "caring dress". 2 is a real hospital ward but with an elderly patient, no child (green jacket, sitting at the bedside, no gloves: could serve "sitting beside a patient"). 4 has "HELLO" text and no child; 11 is a boy kissing her cheek, not a hospital; 16, 29, 32, 44 show no child.
+
+TAG dikids
+PICK 3 | Diana, no hat, in a white dress crouching and hugging a small child among schoolchildren in maroon uniforms, smiling; press photo (stills) | text: none
+PICK 38 | Diana, no hat, crouching on steps in a pastel check suit and pink shoes, bouquet in hand, smiling at a small boy in a brown blazer; early 1990s; press photo (stills), vertical | text: none
+PICK 33 | Diana, no hat, in a red coat kneeling on the floor among toddlers, one in a wheelchair; early 1980s film | text: none
+PICK 6 | Diana, no hat, eyes closed, holding a sick child tight against her chest, pale blue top, pearl earring; press photo (stills), vertical | text: none
+PICK 47 | Diana, no hat, in a black jacket cheek to cheek with a small child in pink, another woman smiling behind; film frame | text: none
+PICK 25 | Diana, no hat, in a Red Cross shirt bending towards a girl holding a red crutch/prosthetic; film with black bars top and bottom | text: none
+NOTE 14 is the same scene as 6 (child on her lap, small watermark). 16 and 27 are a boy kissing/leaning on her, 27 and 34 very blurry; 32 is a beach scene (rejected); 36 has a large caption; 0 has "HELLO" text and no children; 4 is a back view on a sports field.
+
+TAG dihat
+PICK 3 | Diana smiling in a white hat with black band, white and black outfit, long pearl necklace, flowers in hand; late 1980s; clean vertical frame | text: none
+PICK 44 | Diana full body in white dress with black polka dots and matching wide hat, clutch and programme in hand, men in morning dress beside her (races, late 1980s); press photo (stills) | text: none
+PICK 2 | Diana in profile, smiling, navy boater-style hat, red jacket, white polka-dot bow blouse, crowd behind; early 1980s; press photo (stills) | text: none
+PICK 13 | Diana in a wide white hat and navy-and-white striped jacket, looking at camera with a slight smile; press photo (stills) | text: none
+PICK 21 | Diana close up in a pink straw hat and pink collared coat, pearl-and-gold earring, soft smile; early 1990s; press photo (stills), vertical | text: none
+PICK 1 | Diana in a black wide-brim hat, houndstooth jacket with black velvet collar and white high-neck blouse; late 1980s news film | text: none
+NOTE Also usable: 11 pink hat and coat seated in a carriage (soft film), 4 red hat and coat (small text bottom), 5 and 10 red hat with pink dress but unsmiling. dijapan 0 (red hat, red polka dots) also fits. 9, 15, 28, 29, 30, 40, 48 are the wedding veil and tiara, not hats; 31 and 34 no hat; 35, 43, 45 have large captions; 16 and 27 hide her face.
+
+TAG diaids
+NOTE The sheet is blank: no video pins at all for this tag, nothing to pick. Nearest substitute on other sheets is dicaring 2 (green jacket, sitting at an elderly patient's hospital bed, bare hands), which is a ward visit but cannot be confirmed as an AIDS ward.
+
+TAG dijapan
+PICK 0 | Diana in the white dress with large red polka dots and a red wide-brim hat, pearls, smiling down at a bunch of origami paper flowers; Japan 1986; press photo (stills), vertical | text: none
+NOTE Only 0 shows the rising-sun dress; no kimono anywhere. 6 is the black-dot white dress with matching hat (races, not Japan), 1 a blue dress seen from behind on aircraft steps, 25 a plain red hat and coat, 37 a cream suit inside a plane, 44 the pink satin gown.
+
+TAG dicar
+PICK 7 | Diana climbing out of a dark car at night in a black sleeveless dress and pearl choker, clutch bag held against her chest, lit by flash; mid 1990s; press photo (stills), vertical | text: none
+PICK 2 | Diana just out of a car, open door behind her, ice-blue strapless embroidered gown, pearls, clutch in her hand, night; press photo (stills), vertical | text: none
+PICK 10 | Diana bending as she gets out of a car, pale beaded sleeveless dress, hand up at her chest, seen from the side/back, police in hi-vis behind; 1997 look; film | text: small bottom
+PICK 5 | Young Diana standing beside a car in a red strapless ball gown, clutch held in front, crowd behind barriers, night; early 1980s grainy film | text: none
+PICK 35 | Diana in the black off-the-shoulder dress walking away from a car bonnet on a lawn, clutch in hand, evening, 1994; press photo (stills) | text: none
+PICK 1 | Wide film shot: Diana in the black off-the-shoulder dress walking from a dark car across a lawn, man in black tie alongside; 1994; she is small in frame | text: none
+NOTE Only 7 shows the clutch held to her chest while stepping out. 9 is film of the same 1994 car pulling up with the door being opened, but she is still inside and hardly visible. 26 shows her stepping out in a yellow satin gown with a green clutch but has a large "DIANA AFTER MARRIAGE" caption across the skirt; 32 has a large caption; 28 has a TikTok logo mid-frame; 19, 29, 45 show no car.

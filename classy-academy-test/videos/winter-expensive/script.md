@@ -1,0 +1,185 @@
+# How to Look Expensive & Put-Together in Winter (No Matter Your Budget)
+
+The user's own script, given 8 Nov 2026. Headings are labels, not voiced. `beats.txt` is the voiced text, one line per beat.
+
+- **Removed at the user's choice (8 Nov 2026):** the Classy Closet promotion after the three-budget outfits ("Want to try on these outfits? ... It's called Classy Closet"), as in the Christmas video.
+- **Voiced as written otherwise:** "$60" and "$600" are spoken as "sixty-dollar" and "six-hundred-dollar".
+- **Earlier draft:** an earlier draft by Claude is kept as `script-draft-claude.md` for reference; it is not used.
+
+## Hook
+
+1. You might think looking expensive in winter means buying a designer coat and a closet full of cashmere.
+
+2. But what if I told you that most of what makes a winter outfit look expensive costs very little, and some of it costs nothing at all?
+
+3. In today's video, we're sharing eight simple ways to look expensive and put together this winter, with a budget version and a splurge version of every tip.
+
+4. And by the end of this video, you'll have everything you need to build elegant winter outfits from what you already own.
+
+5. Stay until the end, because I'll also show you the same winter outfit at three different budgets. Let's get started.
+
+## 1. Wear a coat that fits you
+
+6. Number one, wear a coat that fits you.
+
+7. Here's the truth no one tells you. In winter, your coat is your outfit. It's the first thing people see, and it's on you in every photo, every walk and every dinner.
+
+8. A $60 coat that fits you well can look more expensive than a $600 coat that doesn't.
+
+9. Here's how to check the fit in the mirror. First, the shoulder seam should sit right at the edge of your shoulder, not hanging down your arm.
+
+10. Second, lift both arms. If the whole coat rides up to your waist, it's too small.
+
+11. Third, the sleeves should end around your wrist bone, with just enough room for a sweater underneath.
+
+12. And for length, aim for just below the hip, or around the knee. Those two lengths always look the most polished.
+
+13. On a budget, look for wool-blend coats in secondhand stores, and check the label for at least fifty percent wool.
+
+14. If the sleeves are a little long, a tailor can shorten them for far less than a new coat would cost.
+
+15. And if you want to splurge, this is the one piece worth spending on, in a classic colour like camel, charcoal or chocolate brown, which is one of the biggest winter colours this season.
+
+## 2. Choose knitwear that looks like quality
+
+16. Number two, choose knitwear that looks like quality.
+
+17. Two sweaters can cost the same and look completely different after one wash. The difference is the fabric and the care.
+
+18. Here's a quick test. Pinch the fabric and let go. It should spring back. Then rub it gently with your thumb. If it already fuzzes in the store, it will pill at home.
+
+19. Natural fibres like merino, lambswool, cashmere and good cotton blends hold their shape and look richer than thin, shiny synthetics.
+
+20. And here's the cheapest luxury upgrade I know. Pilling, those tiny balls of fuzz, is one of the fastest ways to make winter knitwear look old.
+
+21. A fabric shaver costs just a few dollars, and ten minutes with it can make a tired sweater look almost new.
+
+22. Then wash your knits cold or by hand, and dry them flat so they don't stretch.
+
+23. Budget version: secondhand merino and lambswool. Splurge version: one great cashmere sweater in a neutral colour that you'll wear all season.
+
+## 3. Stick to two or three colours from the same family
+
+24. Number three, stick to two or three colours from the same family.
+
+25. Winter outfits can look heavy and messy when too many colours and layers compete. The easiest fix is to keep your whole outfit in two or three colours from the same family.
+
+26. Camel with cream and a little chocolate brown. Charcoal with soft grey and black. Navy with white and grey.
+
+27. When the colours flow, your eye travels up and down instead of stopping in the middle. That's why a tonal outfit instantly looks taller, calmer and more expensive.
+
+28. And here's a simple rule: keep everything in the same temperature, warm with warm or cool with cool. A warm camel next to an icy grey can look like two different outfits.
+
+29. You don't need new clothes for this. Try getting dressed from one colour family first, then add a single contrast, like a black belt or a gold earring.
+
+30. Budget version: neutral basics in one palette. Splurge version: the same palette in richer fabrics, like a wool coat over a cashmere knit.
+
+## 4. Smooth, polished hair and soft lips
+
+31. Number four, smooth, polished hair and soft lips.
+
+32. Winter does funny things to hair and skin. Static, frizz, flat hat hair and chapped lips can undo a perfect outfit in seconds, because no one is looking at your coat when their eyes land on flyaways or dry lips.
+
+33. For your hair, put a tiny drop of hair oil or leave-in cream between your palms and smooth it over your ends and flyaways before you put your hat on.
+
+34. A wooden comb or a boar-bristle brush creates less static than plastic.
+
+35. If you'll be wearing a hat, choose a low, sleek bun or a low ponytail, and when you take the hat off, simply finger-comb the top and let your hair fall naturally.
+
+36. And try not to head out into the cold with wet hair, because it tends to frizz as it dries.
+
+37. For your lips, gently exfoliate once a week with a damp cloth, then use a plain, smooth balm. Soft lips and smooth hair look expensive on anyone.
+
+38. Budget version: one small bottle of hair oil and a simple lip balm. Splurge version: a fresh trim at the start of winter, because healthy ends make everything look smoother.
+
+## Mid-video CTA (after number four)
+
+39. If you're curious about the exact hairstyles, colours and clothing that flatter you best, access the personal stylist guide linked in the description.
+
+40. It will be sent instantly to your email after access. No more second-guessing what truly looks best on you.
+
+## 5. Make your accessories look intentional
+
+41. Number five, make your accessories look intentional.
+
+42. In winter, you have to wear a scarf and gloves, and often a hat, so you may as well make them work for you. Think of them as free luxury.
+
+43. Rule one: match your gloves to your coat and bag. Tan, black or brown leather goes with almost everything.
+
+44. Rule two: choose a soft scarf in a solid colour or a quiet pattern, in wool or a wool blend, with no big logos.
+
+45. Rule three: keep it to one statement. If your scarf is bold, keep your earrings small. Pearl or gold studs sit beautifully under a scarf.
+
+46. And here's a little trick. Add a belt over your coat. It defines your waist and makes even a simple coat look tailored.
+
+47. Budget version: leather or faux-leather gloves and a secondhand wool scarf. Splurge version: one cashmere scarf that you'll reach for every single day.
+
+## 6. Take care of your shoes and your coat
+
+48. Number six, take care of your shoes and your coat.
+
+49. This one isn't glamorous, but it's what separates polished from tired. Winter is rough on everything, from salt and slush to lint and wrinkles.
+
+50. Wipe your boots after wet days. If you see white salt marks, mix equal parts white vinegar and water, dab the marks with a soft cloth and let them dry.
+
+51. Then add a little leather cream or polish. For suede, use a suede brush instead.
+
+52. Check your heels too. Worn-down heel tips are easy for a cobbler to replace, and they make a huge difference to how you walk.
+
+53. For your coat, run a lint roller over dark wool, especially the collar and shoulders. Hang it on a wide hanger so the shoulders keep their shape.
+
+54. A clean, brushed coat looks like it cost twice as much.
+
+55. Budget version: a lint roller, a shoe cream and a wide hanger. Splurge version: a visit to the cobbler and a good garment brush.
+
+## 7. Layer thin, not bulky
+
+56. Number seven, layer thin, not bulky.
+
+57. We all want to stay warm, but bulk is what makes winter outfits look heavy. The secret is layering thin pieces in the right order: thin to thick, and fitted to loose.
+
+58. Start with a thin thermal or merino base layer. Add a shirt or a fine knit. Then put your coat on top as the thickest layer.
+
+59. Let your shirt collar sit outside your sweater, and let a half inch of cuff peek out at your wrist. Those tiny details say you planned this outfit.
+
+60. And avoid stacking two chunky knits together, because it adds bulk at your waist.
+
+61. A thin base layer keeps you warm, so the rest of your outfit can stay sleek.
+
+62. Budget version: a simple thermal base layer that no one can see. Splurge version: a soft merino base layer that doesn't itch.
+
+## 8. Wear a warm signature scent
+
+63. Number eight, wear a warm signature scent.
+
+64. Scent is the finishing touch, and in winter it works a little differently. Warm notes like vanilla, amber, sandalwood and musk tend to feel richer in cold weather, while very light, fresh scents can fade quickly.
+
+65. Apply your fragrance right after moisturising, because moisturised skin holds scent longer.
+
+66. Spray your wrists, the base of your neck and behind your ears, and don't rub your wrists together. A little goes a long way, so that people notice it only when they're close to you.
+
+67. Budget version: a body oil, a solid perfume or a travel size. Splurge version: one full-size bottle that becomes your signature.
+
+## Bonus: the same winter outfit at three budgets
+
+68. As promised, here's one winter outfit at three budgets.
+
+69. The formula is simple: a coat, a knit, trousers and boots in one colour family, like camel, cream and chocolate brown, plus one accessory.
+
+70. Budget: a secondhand camel wool-blend coat, a cream knit with the pills removed, dark trousers hemmed to the boot, and faux-leather gloves.
+
+71. Mid-range: a wool-blend coat from the high street, a merino sweater, tailored trousers and leather boots.
+
+72. Splurge: a wool-cashmere coat, a cashmere knit, wool trousers, leather boots and a soft cashmere scarf.
+
+73. Notice the pattern? It's the same colours and the same shapes. Only the fabric changes. That's what makes an outfit look expensive.
+
+## Ending
+
+74. There are so many more ways to look expensive and put together in winter. If you'd like a part two, let us know in the comments, and tell me which of these tips you're trying first.
+
+75. Thank you so much for spending your time with us today. And if you'd like to elevate your style even further, be sure to access the personal stylist guide linked in the description.
+
+76. A simple like or comment on this video would truly mean so much to us.
+
+77. Until next time, bye everyone.
