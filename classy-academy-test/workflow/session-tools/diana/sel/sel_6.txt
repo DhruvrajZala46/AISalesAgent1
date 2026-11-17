@@ -1,0 +1,70 @@
+TAG tryon
+PICK 15 | young woman in a black long-sleeve knee-length dress standing side-on to a large gold-framed mirror, one hand at her back, looking at her reflection; bright shop interior | text: none
+PICK 3 | woman in a black dress looking out from behind a fitting-room curtain, wooden cubicle, smiling; no mirror in this frame | text: none
+PICK 16 | woman in a long black dress taking a mirror selfie in a row of fitting rooms, phone hides her face; dress is fitted with a low neckline | text: none
+PICK 29 | woman in a black sweetheart-neck midi dress, mirror selfie in a boutique, phone hides her face; standing still | text: none
+PICK 18 | woman in a long red dress stepping out of a dressing-room curtain in a shop, arms crossed | text: small, but in the upper third over the wall ("POV: You're in the dressing rooms at Brooklyn Boulevard"), not at the edge
+NOTE only 15 shows a real "check in the mirror" pose; nobody is visibly turning in the first frame. Extra option: jacketdress 27 is a woman in a fitting room turning to look at her back (grey blazer over black skirt). 9 is a prom gown with a caption in the middle; 46, 11, 13, 33 are bedroom or bathroom selfies, not fitting rooms.
+
+TAG liftarms
+PICK 34 | blonde woman in a cream blouse in front of a bathroom mirror with both hands raised in front of her, seen over her shoulder; soft warm light (looks cinematic, could be from an editorial or film: check the source) | text: none
+PICK 13 | woman in a white top and jeans standing at a tall mirror, forearm half raised; the reflection shows a different outfit (denim jumpsuit), so it is a transition edit | text: none
+NOTE weak tag: no clip clearly shows a woman lifting her arms to test a top. 6 is a woman holding a brown jumper on a hanger against herself (useful for holddress, see there); 10 is a woman tying a cream wrap blazer in a mirror (very polished, possibly AI); 30 looks AI and is a bodysuit; 33 faces camera with arms out holding clothes, no mirror. Also neckline 15: woman in a cream lace-trim slip dress with both arms raised at a round mirror (nightwear look).
+
+TAG stairs
+PICK 2 | blonde woman in a champagne satin midi dress and heels walking up black marble stairs with a gold railing, seen from behind | text: none
+PICK 7 | woman in a long black dress climbing a grand stone staircase with chandeliers (opera-house interior), seen from behind, hand on the balustrade; a little dim | text: none
+PICK 34 | dark-haired woman in a black long-sleeve knee-length dress and heels walking up wide stone steps, close, from behind | text: none
+PICK 47 | long-haired woman in a black velvet dress with white trim walking up a palace staircase, from behind; picture is soft and desaturated | text: none
+PICK 1 | woman with hair up in a beige sequin one-shoulder fitted dress walking up concrete stairs, seen from above and in front; plain modern stairwell with hazard tape on a step | text: none
+PICK 39 | woman in a dark pleated midi skirt, black tights and heels climbing stone steps to a wooden door, from behind; horizontal frame, heavy soft filter, lower quality | text: none
+NOTE all are from behind except 1. Rejected: 3 and 29 (tight or backless), 9 and 11 (dark), 12, 31, 32 (posed gowns with high slits), 43 (very short), 4, 5, 6, 16, 17, 23 (feet only), 49 (white dress and hat, but she is stopping to fix her shoe, not walking up), 22 (tiny figure seen from above).
+
+TAG neckline
+PICK 13 | young woman in a black long-sleeve dress with a square neckline standing side-on to a gold-framed mirror, looking down at her reflection, hand at her back (same clip as tryon 15); bright shop interior | text: none
+NOTE only one usable clip, and she is checking the dress rather than touching the neckline. The three frames that do show a hand at the neckline are AI: 27 carries a "Veo" watermark bottom right, 20 (cream slip, marble bathroom) and 29 (red-haired woman, white dress, earring) have the same waxy too-perfect look. 22 has a hand at the strap but is a deep-V slip dress with a high slit; 18, 5, 39 are static mirror selfies; 43 is zipping the back, horizontal, advert look; 44 is black and white with a necklace; 31 dark.
+
+TAG belt
+PICK 3 | close-up of a woman's hands tying a tan leather wrap belt over a cream ribbed knit dress, face out of frame | text: none
+PICK 6 | blonde woman fastening a tan leather wrap belt over an olive satin shirt dress, face out of frame, bright room | text: none
+PICK 22 | woman around 45 to 55 in a grey tiered midi shirt dress standing full length, holding a long tan leather belt in both hands, about to put it on; plain cream room | text: none
+PICK 28 | close-up of two hands closing a slim black belt at the waist of a cream and red striped dress | text: none
+PICK 16 | close-up of a cream linen sleeveless dress with a black belt and gold buckle already fastened, her hand smoothing the skirt | text: none
+PICK 40 | close-up of hands with dark nails and gold rings buckling a black belt over a camel blazer and black top (blazer, not a dress) | text: none
+NOTE good tag. Spare options: 13 (tying a wide black belt over a houndstooth sleeveless coat-dress, low neckline), 20 (tan belt knotted on a black blazer, no hands). Rejected: 4, 5, 7, 11, 24, 33, 36, 38, 39, 41, 42, 43, 46, 47 (large captions), 15 (comment box on screen), 48 (navy band across the middle), 23 (AI look), 2, 14, 19, 27, 29 (belt already on, posing).
+
+TAG jacketdress
+PICK 29 | Black woman with braids up and yellow earrings in a walk-in wardrobe, closing a grey check blazer she has just put on over an olive knit dress; wardrobe behind her is colourful | text: none
+PICK 8 | young woman with slicked-back hair holding a black oversized blazer on its hanger in front of herself, about to put it on; cream sleeveless top, boho room | text: none
+PICK 46 | navy pinstripe blazer over a silver satin slip dress, woman walking on a street, hand pulling the blazer on her shoulder, face out of frame, beaded bag, green shoes | text: none
+PICK 23 | silver-haired woman around 45 to 55 walking down a street in an oversized charcoal blazer over a cream satin slip dress (deep V neckline, side slit), holding a book | text: none
+PICK 2 | blonde woman around 40 walking past a gallery window with a dark blazer over her shoulders and a blush pleated maxi dress, small brown bag | text: none
+PICK 27 | blonde woman with hair up in a fitting room with pink curtains, grey blazer over a long sheer black skirt, turning to look at her back | text: none
+NOTE only 29 and 8 show the moment of putting the jacket on; the rest show the blazer already worn over a dress. Only 46 is navy. 40 (hands buttoning a black blazer) has a sparkle mark bottom right that looks like an AI watermark: skipped. Spare: 11 (black blazer over white dress, posed), 37 (grey check blazer over white satin dress, New York street), 47 (Black woman, cream blazer over cream slip dress, hotel room). Rejected: 4, 5, 16, 19, 24, 25, 28, 35 (captions), 0, 10, 22, 33, 44, 49 (very short or leggy), 38 (jeans).
+
+TAG hairup
+PICK 34 | blonde woman seen from behind, both hands fixing a twisted updo with a small clip, black ribbed top, calm bedroom | text: none
+PICK 19 | from behind, hands closing a large pearl clip over a twisted updo, cream floral blouse, gold hoop earrings | text: none
+PICK 23 | close-up from behind, two hands sliding a comb clip into a French twist, light brown hair, black collar | text: none
+PICK 43 | blonde woman from behind holding her long ponytail in one hand and lifting a gold hair pin with the other, white sleeveless top | text: none
+PICK 25 | from behind, hands either side of a gold claw clip in a blonde twist, white knit top | text: small top ("easy clawclip updo", in the upper fifth)
+PICK 47 | brunette from behind with a finished low bun in a small claw clip, hand at her shoulder, beige roll-neck jumper | text: none
+NOTE good tag, but almost all are the same blonde creator seen from behind; 47 is the only brunette. Rejected: 1, 4, 42, 44 (captions), 9 (product caption, bare shoulders), 3 (bright orange backdrop), 16 (pink backdrop, product look), 0, 6, 7, 10, 11, 12, 18, 30, 38, 39, 41 (finished style, nothing happening).
+
+TAG samedress
+PICK 12 | woman around 50 to 60 with short grey curly hair in a black long-sleeve maxi polo dress standing at a white door, arm moving across her body (start of a restyle video) | text: large, but only in the top fifth above her head ("One Base, 4 Ways")
+PICK 18 | same woman in a red sleeveless midi dress at the same door, arm raised | text: large, but only in the top fifth above her head ("One Base, 4 Ways")
+PICK 25 | long-haired woman in a cream tiered midi shirt dress standing against a white panelled wall holding a large tote with a visible brand name; one look only in this frame | text: none (brand name on the bag)
+NOTE weak tag: nearly every pin opens on a big title. 12 and 18 fit the idea best and suit the 40 to 70 audience, but the title must be cropped off. Rejected: 1, 2, 5, 15, 17, 19, 21, 22, 23, 24, 28, 32, 37, 40, 42, 48 (large captions over the subject), 26, 33, 43 (several copies of the woman composited in one frame, plus titles), 34 (not a dress), 39 (gold sequin fabric), 35 (mirror selfie with captions).
+
+TAG capsule
+PICK 24 | small black pipe rail on wheels with about six pieces (camel blazer, navy jacket, striped shirt, jeans, black leather jacket, beige knit), black ankle boots on the shelf, plain white wall | text: none
+PICK 7 | white rail with a handful of pieces (two white T-shirts, olive and black trousers, pale blue blazer), sandals on a white plinth, trainers on the floor | text: none
+PICK 35 | small white rail of neutral clothes (white, grey, black, one red piece), brown bag hanging at the end, three pairs of flat shoes on a rug, cream vase | text: none
+PICK 16 | close-up of a rail with six pieces: jeans, navy-striped knit, beige blazer, white shirt, black trousers; white curtain behind | text: none
+PICK 1 | rail of camel, cream and brown pieces in warm sunlight by a curtain, black boots and white shoes below, a shopping bag with a small brand name on the floor | text: none (small logo on the bag, bottom)
+PICK 3 | white rail with about twelve neutral pieces (stripes, navy, cream, denim), four pairs of shoes lined up, basket; fuller than "a few" | text: none (tiny account tag at the left, mid-height)
+NOTE good tag. Spare: 27 (gold arch rail, fuller), 19 (close-up of cream and striped pieces), 49 (hand reaching to a small rail of cream and brown tops, but a title is sliding in at the left edge). Rejected: 5, 9, 14, 15, 20, 21, 25, 28, 31, 34, 36, 38, 40, 44, 46 (captions), 18 and 34 (flat lays), 23 (frame is glitched at the bottom), 42 and 39 (colourful or busy), 33 (bright colours).
+
+TAG holddress
+NOTE nothing fits: no pin shows a woman holding a dress on its hanger against herself. The sheet is all mirror selfies of women already wearing evening dresses, many dark (28, 35, 40, 42) or revealing (36, 44, 45, 47). Closest clips are on other sheets: liftarms 6 (same clip as tryon 21: red-haired woman holding a brown jumper on a hanger against herself in a mirror, warm light, no text; a jumper, not a dress), jacketdress 8 (woman holding a black blazer on its hanger in front of herself), samedress 48 (woman holding a floral dress up by its straps, but a large caption covers it).

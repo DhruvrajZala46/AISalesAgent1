@@ -1,0 +1,78 @@
+TAG mirrore
+PICK 10 | woman about 30, dark hair slicked back, seen in a round wooden-framed mirror fastening/tying a cream blazer over a white shirt, looking down at her hands; bright neutral room | text: none
+PICK 16 | young blonde woman (20s), low ponytail, in a black blazer, hands fastening it at the waist, face to camera; gilt mirror behind her shows her back; soft daylight | text: none
+PICK 18 | woman about 35-40, blonde waves, cream blouse with embroidered collar and black skirt, smiling at her reflection in a round mirror, fingertips together; white curtains | text: none
+PICK 13 | woman with long blonde-brown hair buttoning a black blazer over black trousers, head bowed so hair half hides the face; white room with cabinets, no mirror in frame | text: none
+PICK 33 | Black woman with an afro, oversized black trouser suit, barefoot, standing side-on to a tall floor mirror that shows her front; dressing room with clothes rail | text: none
+PICK 17 | red-haired woman in a cream tee holding a brown jumper up against herself, face seen in a large floor mirror; over-the-shoulder shot, dim warm room | text: none
+NOTE 10 is the only clear "fastening a blazer at a mirror, face visible"; nobody is clearly 40+. 9, 24, 36 and 0 look AI-made (9 carries an AI-creator logo); 3 is an outfit-transformation edit (reflection wears different clothes); 14, 23, 30, 31 are faceless close-ups; 1, 4, 7, 12, 22, 26, 44, 47 have a phone over the face. 33 is a wide, very polished shot: check it moves like real footage.
+
+TAG mirrorf
+PICK 8 | red-haired woman about 40-45 putting an earring into her left ear, smiling, cream V-neck strappy dress, framed by a gilt mirror with garden and pink flowers behind | text: none
+PICK 1 | close-up in an ornate gold oval mirror: dark-haired woman in a white shirt and gold chains fastening a red drop earring; her phone covers half of her face | text: none
+PICK 36 | dark-haired woman in a black strappy top at a lit vanity mirror, hands at her neck/necklaces, face seen in the mirror; table full of make-up palettes | text: none
+PICK 7 | blonde woman in a cream blouse seen from behind at a bathroom mirror, hand raised near her ear/hair, face in the reflection; mosaic-tiled bathroom | text: none
+NOTE only 8 and 1 clearly show an earring going on; 36 is hands at the neck, 7 is unclear (ear or hair). 28 fits the brief exactly (white shirt, earrings, round mirror) but looks AI-made (too-perfect airbrushed face); 14 has a "Veo" AI watermark; 18 and 20 are robes; 2, 17, 33, 46, 47 are lipstick; 25 phone over face and dark; 31 black-and-white.
+
+TAG mirrorg
+PICK 39 | blonde woman (30s) in a chocolate satin shirt, black belted trousers, taking a look in an oval bathroom mirror, phone held beside (not over) her face | text: none
+PICK 4 | young blonde woman (about 20) in a cropped beige tweed jacket, white top and white jeans, smiling at the camera in a hallway; no mirror in frame | text: none
+NOTE almost every pin is a mirror selfie with the phone over the face (0, 2, 3, 6, 7, 9, 16, 18, 26, 30, 34, 44, 45, 46), including the most classic outfits (2 cream suit, 9 white suit). 35 (white shirt, striped trousers, in front of a wall mirror, face visible) has a large "OLD MONEY SUMMER OUTFITS" title across the first frame. 17, 19, 22, 25, 40, 42 are outdoor poses, not a mirror.
+
+TAG hugd
+PICK 1 | two women hugging tightly in a bright cafe, the brunette facing us smiling with eyes closed; other women around, white flowers blurred in the foreground | text: none
+PICK 6 | two women (about 50-60) hugging in a hallway by a wooden door at home: blonde in a black cardigan seen from behind, the other in glasses and a green top; candid phone clip, 4:3 with a black bar below | text: none
+PICK 7 | airport arrivals hug: young dark-haired woman laughing with eyes shut, arms around a friend seen from behind; "Welcome to L..." sign overhead; slightly blurry | text: none
+NOTE only these three show a hug; the rest of the sheet is friends chatting over coffee (3, 4, 18, 31, 41, 42 look AI-made). 36 is three girls hugging on a beach seen from behind; 46 is too dark.
+
+TAG huge
+PICK 24 | two young women in a tight reunion hug outdoors, the one facing us beaming with eyes closed, denim jacket and striped scarf, friend with a pink backpack seen from behind | text: none
+PICK 0 | two women hugging tightly in a bright cafe, brunette smiling with eyes closed, other women around (same pin as hugd 1) | text: none
+PICK 16 | airport arrivals hug, dark-haired woman laughing with eyes shut, friend seen from behind (same pin as hugd 7); slightly blurry | text: none
+PICK 21 | two young women (about 20) hugging and grinning at the camera on a winter beach, dark jumpers, sea behind; posed rather than candid | text: none
+PICK 14 | two young women (about 20) cheek to cheek, laughing at the camera in a selfie-style hug, cream knit; indoors | text: none
+NOTE 2 is a Friends TV scene and 4 is Jennifer Aniston (reject); 6 and 25 look AI-made; 8, 13, 32 are teenagers in shorts/crop tops (13, 32 with TikTok marks); 18, 19, 38, 47 are black-and-white; 17, 28, 44, 45 are blurred; 31 and 33 carry stickers/logos. Nobody on this sheet is over about 30.
+
+TAG grandme
+PICK 22 | young woman and an elderly woman (white hair, pink cardigan, bead necklace) sitting close on a sofa looking down at an album together; tight crop, NO hug in this frame | text: none
+NOTE no clip shows a woman hugging her grandmother. 10 is a real, warm hug at a front door but with an elderly MAN (grandfather); 32 is a granddaughter doing grandma's make-up with a caption across the frame; 11, 13, 2, 4, 19 look AI-made; 5, 7, 8, 12, 20, 28, 39, 44, 49 are small children or babies; 39, 47, 48 carry big captions or a Reader's Digest logo. Use the grandmf picks instead.
+
+TAG grandmf
+PICK 42 | adult daughter (about 50, blonde, blue shirt) hugging her elderly mother (grey bob, glasses, beige top) from behind, both smiling with eyes closed, daisies in the mother's lap; bright living room | text: none
+PICK 40 | close-up of a middle-aged woman and her elderly mother (grey hair pulled back, pearl earring) cheek to cheek, smiling, hands clasped on the shoulder; soft indoor light | text: none
+PICK 33 | two women hugging in a hallway by a wooden door at home, blonde in black seen from behind, the other in glasses and green; candid phone clip, 4:3 with a black bar below (same pin as hugd 6; ages about 50-60, not clearly mother and daughter) | text: none
+PICK 48 | middle-aged woman in glasses leaning her head on her elderly mother's head, arm round her, both in cream, looking down at something together; purple curtain behind | text: small bottom (lamp sticker bottom-right corner)
+PICK 7 | very tight close-up of an elderly white-haired woman smiling as she hugs a younger blonde woman seen from behind | text: small top (Stannah brand logo, top-left corner: it is from an advert)
+NOTE 32, 3 ("Veo" mark), 49 (CapCut "AI" badge) and 43 are AI-made; 3 and 43 also show a child. 40, 42 and 48 look like stock footage with actors, real camera.
+
+TAG agesd
+PICK 34 | woman about 70, white shoulder-length hair, white shirt with rolled sleeves, taupe pleated trousers, red clutch, smiling, standing in her hallway; three-quarter body | text: none
+PICK 13 | blonde woman 60+, sunglasses, black blazer and trousers with a black handbag and nude heels, walking towards the camera past glass and timber walls; full body | text: none
+PICK 35 | same blonde woman 60+, sunglasses, cream linen trouser suit, pearls, straw basket bag, standing in a hotel corridor; full body | text: none
+PICK 9 | blonde woman 60+, navy pinstripe trouser suit, tan tote, hands clasped, smiling, in a hallway at home; full body, no sunglasses | text: none
+PICK 31 | same blonde woman 60+, sunglasses, chocolate-brown blazer, white top, cream wide trousers, pearls, basket bag, on a paved arcade; full body | text: none
+PICK 14 | woman 60+, grey bob, sunglasses, cream linen suit with a green print scarf, coming down outdoor steps holding the rail; full body | text: none
+NOTE about half the sheet is AI-made and rejected: 6, 12, 17, 20, 21, 24, 26, 29, 30, 32, 40, 42, 44, 45 (waxy skin, too-perfect faces; 30 is the only woman of colour and is AI). More real spares of the same women: 4 and 38 (the white-haired woman, grey shirt/brown trousers and white shirt/navy trousers), 25, 39, 33, 22 (the blonde), 0, 11, 19, 15. 23 has "Link biography" text; 18 is holding clothes up, not wearing them; 27 is under 50.
+
+TAG agese
+PICK 28 | woman about 70, short white hair, navy jacket and navy wide trousers, hands in pockets, walking across a sunny city crossing towards the camera, smiling; candid, a little distant | text: none
+PICK 23 | woman about 65-70, grey bob, black blouse, blue jeans, black bag, stepping out of her front door down the steps of a brick house with flower beds; candid | text: none
+PICK 44 | woman about 60-65, blonde hair pulled back, black knit midi dress, chunky necklace, black bag, walking along a brick path in a park, smiling | text: none
+PICK 8 | blonde woman 60+, sunglasses, black blazer and trousers, black handbag, walking towards the camera (same pin as agesd 13) | text: none
+PICK 5 | same blonde woman 60+, sunglasses, beige blazer, white top, wide blue jeans, walking towards the camera through a white arcade with plants; small in frame | text: none
+PICK 14 | same blonde woman 60+, burgundy jacket, black top and trousers, red handbag, walking through a hotel lobby, smiling (same pin as agesd 22) | text: none
+NOTE 28 and 23 are the most natural "real woman of about 70 walking". AI-made and rejected: 11, 13, 18, 22, 24, 31, 32, 33, 34, 38, 42, 46; 41 has a big title, 43 says "KI-Hintergrund" (AI background). 0, 3, 19, 21 are real but about 30-50. Standing spares of the real women: 4, 30, 35, 40, 48, 27, 20, 7, 37, 15. No woman of colour here is real footage.
+
+TAG wardrobeb
+PICK 11 | woman about 40 (East/South-East Asian, blue dress) at an open wardrobe holding up a pink cable-knit jumper and smiling; a girl in pink stands in the foreground with her back to us | text: none
+PICK 9 | dark-haired woman in a black tee seen from behind, looking into an open wardrobe with a hanger in her hand; dim light, no face | text: none
+PICK 16 | close-up of a woman's hand sliding through shirts on hangers in an open wardrobe (stripes, red, yellow, cream); no face, a cutaway | text: none
+PICK 26 | young dark-haired woman holding up two hangers to the camera: white top with black trousers and bag, and a beige trench; hallway, no wardrobe in frame | text: small top ("grwm" in the upper middle, over the doorway, not over her)
+PICK 12 | close-up of a hand touching cream and navy garments on a rail, blurred figure at right; could be a shop rail, no face | text: none
+NOTE no clean shot of an elegant woman, face visible, alone at her wardrobe. 0, 3, 4, 5, 35, 42, 47 look AI-made (35 and 47 carry the same AI-creator logo); 14 and 20 have titles; the rest are outfit poses or mirror selfies, not choosing clothes.
+
+TAG lastlook
+PICK 29 | woman with long brown hair in a dark denim jacket and dark wide trousers standing at a mirror, back to us, her reflection smiling over her shoulder; office-like room, no door or bag | text: none
+PICK 7 | woman about 35-40 in a cream blouse and black skirt smiling at herself in a round mirror, fingertips together (same pin as mirrore 18); no door or bag in frame | text: none
+PICK 23 | blonde woman in a black tee and black wide trousers, barefoot, moving in front of an arched floor mirror in a bedroom; seen only in the reflection | text: none
+NOTE nothing shows the full action (last look near the door, then picking up a bag and leaving). 46 opens on an empty hallway with a door and a foot just entering the frame, so it may be a woman walking out: worth a look, cannot judge from the frame. 2 is an outfit-transformation edit, 41 too (reflection wears different clothes); 40 is an advert with a logo and AR overlay; 32 and 28 have big captions; 0, 8, 9, 10, 11, 16, 22, 30, 37, 39, 43, 45, 47 are phone-over-face selfies; 3, 33, 38 are robes; 5 is AI.

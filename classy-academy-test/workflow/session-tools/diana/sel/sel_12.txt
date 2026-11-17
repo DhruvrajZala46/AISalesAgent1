@@ -1,0 +1,88 @@
+TAG blackdressb
+PICK 39 | woman with dark bob and sunglasses walking towards camera in a black short-sleeved wrap midi dress and heeled sandals, stone staircase and iron lamp behind | text: none
+PICK 10 | woman with hair tied back standing facing camera in a black V-neck midi dress with full sleeves and front slit, roof terrace at dusk with city lights | text: none
+PICK 48 | dark-haired woman in a black knee-length short-sleeved dress holding a small black handbag, standing by a stone wall in evening sun, face visible looking down | text: none
+PICK 20 | black-and-white footage: woman in sunglasses walking on a cobbled street in a black long-sleeved midi dress with a tote bag on her shoulder | text: none
+PICK 41 | woman in sunglasses walking up a wide path in a long sleeveless black dress carrying a handbag, sea and trees behind (dress is ankle-length, small side cut-out) | text: none
+NOTE 14, 15, 36 and 8 look AI-made or airbrushed (8 and 14 are also minis); 7, 17, 25, 28, 29, 31 are back views with no face; 4 has the face hidden by a hat; 37 is a catwalk show; 46 is a thigh-slit on a red carpet. Faces in 39, 20, 41 are behind sunglasses.
+
+TAG blackhangb
+NOTE none fits: no sheet frame shows a black dress on a hanger. 2, 9, 14, 30, 37 are empty black hangers; 41 is a wall hook rack; 45 is jackets on a rail; 25 is a black dress laid flat on a bed with a TikTok watermark; 4 is a hand in a rust jumper reaching into dark clothes on white hangers (nearest, but no dress is identifiable).
+
+TAG tidyrailb
+PICK 45 | white free-standing rail with a few cream and beige tops and knits, plain plaster wall with soft sunlight, no person | text: none
+PICK 0 | rail of cream, camel and brown clothes in warm sunlight in front of a pale curtain, dried grasses beside it, no person | text: none
+PICK 28 | close-up of a hand moving wooden hangers with beige and sage trousers and tops on a white rail | text: none
+PICK 24 | wood wardrobe section with a few pieces on cream velvet hangers (white shirt, black blazer, jeans), bedroom behind | text: none
+PICK 48 | cream and stone linen tops and dresses evenly spaced on a wooden rail, white wall, no person | text: none
+PICK 27 | open wardrobe with cream and beige knits and shirts on wooden hangers, shoes lined up below | text: none
+NOTE spares with no text: 1 (neutral knits in a white wardrobe), 21 (shirts under a shelf of folded knits), 49 (folded trousers on hangers). Rejected for large titles or shop text: 10, 19, 30, 36, 37, 41, 47; 16, 17, 43 are colourful not neutral; 5, 31, 38 are empty hangers.
+
+TAG capsuleb
+PICK 36 | blonde woman in a cream blazer, white top and jeans reaching into an open wooden wardrobe of neutral clothes, bright bedroom with window behind | text: none
+PICK 34 | open oak wardrobe with only a few pieces hanging (blue shirts, cream knit, dark trousers) and a black handbag on the shelf above, no person | text: none
+PICK 48 | a hand lifting a wooden hanger with a white pleated blouse from a rail of light clothes | text: small bottom (TikTok watermark lower left)
+PICK 42 | three cream knits and cardigans on hangers on a white rail, white wall, no person | text: none
+PICK 30 | a few pieces on cream velvet hangers in a wood wardrobe (white shirt, black blazer, jeans), bedroom behind, no person | text: none
+PICK 47 | black arched rail with white and cream shirts on hangers, plain wall, no person | text: none
+NOTE only 36 shows a woman looking through her clothes (frame is very clean, check it is not AI before use); 25 also shows a woman at a rail but has a large "CLOSET REFRESH" title. 7, 10, 11, 22, 41 rejected for large text; 16, 38 are full colourful wardrobes; 0, 2, 4, 30 repeat pins from the tidyrailb sheet.
+
+TAG donateb
+PICK 8 | smiling woman with hair tied up, red striped shirt, carrying a clear plastic box full of clothes by a balcony door | text: none
+PICK 4 | woman in a grey cardigan leaning over a bed pressing clothes into clear storage bags, looking at camera, neutral bedroom | text: none
+PICK 17 | close-up from above of hands putting clothes (ochre top, jeans) into a cardboard box; picture fills only the top half of the frame, bottom half is black | text: none
+PICK 34 | dark-haired woman sitting on the floor of a neat beige walk-in wardrobe packing clothes into clear bags | text: none
+PICK 37 | open cardboard box of folded clothes on the floor under hanging clothes, no person, shoes scattered beside it | text: none
+NOTE nothing shows a woman calmly folding clothes into a donation bag in a tidy home; most pins are huge messy piles (3, 9, 26, 33, 42, 44). 7 has a large "LETTING GO OF STUFF" caption and a Nike bag; 23 has KEEP/DONATE stickers; 24 is a stock clip with watermark and caption; 0, 5, 10 have large titles; 6, 12, 32 look staged or AI-like.
+
+TAG declutterb
+PICK 15 | woman with long hair and a hair clip, beige T-shirt and jeans, going through hangers in an open wardrobe (clothes are colourful: red, orange, denim) | text: none
+PICK 13 | blonde woman in a white T-shirt pulling a hanger out of a full walk-in wardrobe, side view | text: none
+PICK 1 | smiling woman carrying a big armful of clothes still on white hangers out of a wardrobe doorway | text: none
+PICK 48 | woman seen from behind in a white T-shirt and black skirt taking clothes from a wardrobe, piles sorted on the bed, bright window | text: none
+PICK 47 | woman standing in a bright bedroom holding up a garment and looking at it, open boxes and folded piles around her | text: none
+PICK 9 | woman from behind in a beige top and trousers lifting clothes down from a neat fitted wardrobe, small pile on the floor | text: none
+NOTE spares: 46 (woman in a brown hoodie and patterned headwrap sorting folded piles, back view), 40 (woman in a grey jumper holding up a white top over a pile, small "closet clean out vlog" text mid-frame). Large titles on 7, 11, 14, 19, 20, 25, 36, 43, 45; 0 looks staged or AI-like; 6, 16, 23, 24, 26, 28, 37, 41, 42, 44 are mess with no person. Almost all the women are in their 20s or 30s.
+
+TAG necklineb
+PICK 14 | dark-haired woman seen in a gold-framed mirror adjusting the strap of a champagne satin slip dress with lace trim, warm bathroom light | text: none
+PICK 18 | blonde woman facing a mirror in a black slip dress, one hand at her neckline and strap, checking it (neckline is low) | text: none
+PICK 41 | blonde woman seen in a wall mirror straightening the collar of a cream blouse, patterned wallpaper (a blouse, not a dress, but modest and the action is right) | text: none
+PICK 34 | woman in a white off-the-shoulder dress leaning to a bathroom mirror with a hand at her neck, wall lamps | text: none
+PICK 31 | red-haired woman, about 40, in a white V-neck dress at a gold mirror fastening an earring, garden window behind (earring, not the neckline) | text: none
+NOTE only 14 and 18 truly show a strap or neckline being adjusted, and both are low-cut slip dresses. Mirror selfies with the phone over the face: 5, 12, 17, 29, 33, 35, 38, 39, 46. Back views or bare backs: 1, 9, 10, 15, 22, 44, 45, 48. 32 is a bride in a wedding dress; 11, 36, 47 are make-up; 23 is a mini dress; 40 is a trouser suit.
+
+TAG standtallb
+PICK 25 | woman in a black slip dress walking towards camera through a stone colonnade, upright, seen from the front but small in the frame | text: none
+PICK 45 | dark-haired woman coming through tall white panelled doors with a wall lamp behind, seen from the front, only partly in frame | text: none
+PICK 44 | woman with long hair in a black long-sleeved dress walking into an ornate dining room with chandeliers, seen from behind | text: none
+PICK 8 | woman with a sleek ponytail and sunglasses walking towards camera in a white trouser suit and long white coat, palm-lined street (outdoors, bustier top) | text: none
+PICK 41 | woman in sunglasses walking towards camera in a long black dress with a handbag, wide garden path with sea behind (outdoors) | text: none
+PICK 6 | woman in a dark fitted dress walking into a hotel sitting room with two lamps, seen from behind, dim light | text: none
+NOTE no clear front view of a woman walking into a room: indoor shots are back views (6, 44, 36, 24) or tiny (25, 45). 30 and 46 look AI-made; 12 is a posed fashion shot taking off sunglasses; 9, 15, 17, 31, 42 are dark silhouettes; 43 is a thigh-slit on a red carpet; 13 is a mini dress at a mirror; 14 has the face hidden by a hat; 20 is a woman with her feet up on a bar.
+
+TAG commentb
+PICK 44 | dark-haired woman in a burgundy top sitting at a cafe table by a window, looking down at her phone with both hands; horizontal clip, picture fills only the top strip of the frame | text: none
+PICK 21 | blonde woman in a light jacket at a table in a cafe with pink chairs, looking at her phone; horizontal clip, top strip only | text: none
+PICK 5 | young woman with a dark bob in a beige trench coat tapping on a blue phone with a small smile, old building behind (outdoors) | text: none
+PICK 7 | smiling woman in a striped top sitting outside a glass building typing on her phone; horizontal clip, top strip only | text: none
+PICK 19 | woman with long dark hair and black glasses, grey-green cardigan, holding her phone with a faint smile by a bright window at home (cropped close; check it is not AI) | text: none
+NOTE most of this sheet looks AI-made (waxy, too-perfect faces with a glow): 1, 18, 25, 27, 29, 30, 31, 33, 35, 36, 37, 39, 41, 46 rejected. No woman over 40 typing; 4 is a woman of about 45 but on a phone call. 3 and 12 are hands only; 28 is a phone screen with readable message text; 20 is photographing her coffee; 42 has no phone; 8, 9, 22 are further horizontal stock clips (street, park bench, sofa).
+
+TAG gardenb
+PICK 29 | two women in white and pale pink dresses sitting at a small garden table on a porch, talking and laughing, pink flowers in front | text: none
+PICK 22 | dark-haired woman in a floral midi dress walking down stone steps carrying a bouquet of white flowers, alone in frame | text: none
+PICK 49 | smiling woman in a pale blue floral maxi dress walking along a garden path with a drink, friends in dresses behind; black bar across the bottom of the frame | text: none
+PICK 0 | group of women in pastel midi dresses raising glasses under a pergola with big flower arrangements | text: none
+PICK 25 | group of women in pastel and floral dresses laughing together on a lawn by a pond, candid | text: none
+PICK 2 | two women in blue-and-white floral dresses holding white parasols in a garden with hydrangeas | text: none
+NOTE every guest is in her 20s, nobody 40+; the look is pastel "bridesmaid" dresses, many strapless. Spares: 8 (two women laughing close up, one strapless), 6 (three women dancing in a circle). Text overlays on 1, 9, 11, 19, 20, 26, 40, 42; 15 shows a Chanel bag; 31 is bare backs; 21 is a pool; 35 is a seaside table, not a garden.
+
+TAG drapeb
+PICK 0 | colour analyst in a mauve cardigan laying a blue drape under the face of a seated dark-haired client, rail of coloured drapes beside them, bright studio | text: none
+PICK 2 | analyst in a white top standing behind a seated client with a green drape under her face, rail of drapes behind, both facing the mirror/camera | text: none
+PICK 47 | analyst standing behind a seated blonde client of about 50 wearing a pastel swirl drape cape, colour chart on the wall | text: none
+PICK 29 | close-up of hands laying striped red, orange and purple drapes on the shoulder of a blonde woman, face seen in part from the side | text: none
+PICK 19 | smiling woman with dark curly hair wearing a fan of teal, purple, pink and black drapes across her chest, white studio wall | text: none
+PICK 22 | client with hair pulled back facing camera with burgundy and striped drapes under her face, a hand holding a colour fan beside her | text: small bottom (caption box "Client Colour Analysis" in the lower part of the frame)
+NOTE 3, 25, 33 are the same series as 22 with the same caption box low in the frame. Large titles on 5, 6, 8, 10, 14, 17, 20, 30, 48; 12, 21, 36 are fabric only; 26 is a studio fashion shot with swatches; 35 is a face inside a printed colour card. A mirror itself is visible in none of the picks; the client faces the camera as if it were the mirror.

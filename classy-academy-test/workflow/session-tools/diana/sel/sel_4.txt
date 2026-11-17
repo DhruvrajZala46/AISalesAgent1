@@ -1,0 +1,79 @@
+TAG gownparty
+PICK 36 | woman seen from behind in a pale feathered and beaded fishtail gown, filming fireworks at an outdoor evening party, guests and cream sofas around her | text: none
+PICK 48 | dark-haired woman in a gold sequin cape gown standing in profile in the doorway of an ornate panelled room, warm light (brand film look, no logo in frame) | text: none
+PICK 1 | dark-haired woman in a white ruffled off-shoulder gown seen from behind in a crowded ballroom, string lights, guests blurred around her; cinematic and rather dark, check in motion that it is not a film scene or AI | text: none
+PICK 30 | woman from behind in a black sparkling tiered ball gown lifting her skirt to climb the steps of a lit white mansion at night (7 and 46 are the same woman and place) | text: none
+PICK 8 | woman from behind in a champagne glitter ball gown with a very long train and a small tiara, climbing a grand gold staircase; no guests, reads as bridal | text: none
+PICK 23 | dark-haired woman in a fuchsia satin ball gown turning in a marble hotel lobby, daylight; no party visible | text: none
+NOTE only 36 and 1 show a gown among guests. 3 and 29 (red gown among black-tie guests) are the closest to the brief but the pin titles say Cara Delevingne at the Oscars 2023: celebrity red carpet, rejected. 15, 26, 39, 41, 42 look AI-made; 6, 33, 43 heavily airbrushed fashion promos; 35 is a debutante ball from above with a small caption mid-frame.
+
+TAG welcome
+PICK 1 | woman from behind in a white sundress, hair in a bun, opening her front door; a smiling friend in a patterned dress waves on the doorstep; bright hallway | text: none
+PICK 8 | blonde woman from behind in a silk slip dress opening her arms to hug a laughing woman in a camel trench coat, a smiling man behind her, home hallway | text: none
+PICK 6 | smiling blonde woman, around 40-50, in a white shirt dress stepping round a large mahogany front door towards the camera (guest's point of view); she holds a small object in her hand, looks like a key fob or mini microphone | text: none
+PICK 35 | young dark-haired woman in a black vest and white shirt smiling and waving in an open doorway with Christmas wreaths; gold lettering of an inn on the door glass, seasonal | text: none
+NOTE 1 and 8 are exact. 32 is a woman in a cream satin dress opening wooden double doors but no guest and no smile. 49, 34 and 28 are AI-made (28 is credited "AI Visuals"). 16 is a warm hug between two women but in a cafe, not at a door. The rest are hotel staff, hands on handles or wedding scenes.
+
+TAG streetpeople
+PICK 31 | vertical, seen from above: ordinary pedestrians of all ages crossing a paved square, summer clothes, nobody singled out | text: none
+PICK 19 | wide New York avenue, commuters in dark suits crossing in front of yellow taxis, cool blue tone | text: none
+PICK 30 | vertical: dense sunlit crowd walking towards camera beside a road with cars and a yellow taxi | text: none
+PICK 15 | vertical (2:3): crowd walking past shop fronts on a London shopping street, slight motion blur; shop signs visible (Topshop, Outfitters) | text: none
+PICK 6 | people crossing a zebra crossing in a city, strong sun flare, blurred buildings; low resolution (590 px wide source) | text: none
+PICK 41 | square: busy Tokyo zebra crossing, people in coats crossing in both directions, Japanese signs behind | text: none
+NOTE plenty of real footage here. 5 (New York crossing, cinematic) is a spare but only 640 px wide and may be AI. 44, 48 and 14 look AI-made (14 also carries a phone-company logo). 47 has a Shutterstock watermark. 2, 9, 33 are distant aerial crossings; 27 and 16 are packed festival-size crowds.
+
+TAG gardenparty
+PICK 36 | group of women in pastel dresses raising champagne glasses under a pergola at a garden party, big flower arrangement in front; the nearest woman wears a lilac knitted top and long skirt | text: none
+PICK 35 | smiling dark-skinned woman, hair up, in a simple pale yellow strapless gown with a scarf at the neck, turning on a garden path with lawn and palms; no other guests visible | text: none
+PICK 7 | two long-haired women in floral dresses (blue-and-white midi, pale floral gown) holding white paper parasols beside hydrangeas in a garden | text: none
+PICK 20 | two young women in matching white-and-pink floral midi dresses laughing in a flower garden, blue sky | text: none
+PICK 41 | two women laughing together by a fountain in a courtyard garden, one in a white strapless dress and pearls (reads as a bride), one in a floral halter dress | text: none
+NOTE 36 is the only clear party. 5 is a real garden lunch (women with parasols at a table, Tuscany) but has a caption across the middle of the frame. 49 fits well (pale yellow sundress, laughing in a courtyard) but the pin title names the model Elsa Hosk, so rejected as a celebrity. 47 and 4 are AI-made. 21 is a simple navy dress but in a town alley; the rest are indoor try-ons or large captions.
+
+TAG getready
+PICK 34 | fair-haired woman, around 35-45, in a cream blouse with an embroidered collar and black skirt, seen in a round mirror, hands together at her chest, calm smile, soft window light | text: none
+PICK 27 | dark-haired woman from behind in a white robe at a dressing table, applying make-up with a brush, wall lamps either side of the mirror | text: none
+PICK 0 | dark-haired woman from behind in a cream satin robe at a lit bathroom mirror, cosmetics on the counter | text: none
+PICK 26 | woman from behind in a grey shirt and shorts opening sheer white curtains to morning light | text: none
+PICK 11 | woman in white satin pyjamas and a towel headband at a marble bathroom sink, mirror, chandelier | text: none
+NOTE nothing shows buttoning a shirt or putting on earrings; 34 is the only one in day clothes and her hands are posed, not buttoning. Almost everything else is robes and pyjamas. 45 (AI sparkle mark bottom right), 24 and 36 are AI-made. 25, 28, 29, 41, 47 carry captions.
+
+TAG softblue
+PICK 30 | smiling blonde woman, around 45-55, in a soft blue cable-knit cardigan buttoned up, navy jeans and brown belt, standing in her hallway at home | text: none
+PICK 11 | smiling blonde woman, around 50, in a fluffy periwinkle-blue cardigan with pearl buttons and jeans, outdoors by palms and rocks | text: none
+PICK 2 | long-haired woman cuddling a small curly dog against a pale blue oversized cardigan, light jeans, attic living room; her face is hidden by her hair | text: none
+PICK 1 | young dark-haired woman in a light blue ribbed cardigan and blue jeans posing in a living room (outfit try-on) | text: none
+PICK 25 | torso of a woman in a soft blue ribbed cardigan with pearl buttons tucked into camel pleated trousers with a brown belt; face cropped | text: none
+PICK 5 | woman with a dark bob and red lips in a periwinkle wrap cardigan and black trousers in an artist's studio with plaster busts; hair over her eyes; low resolution (288 px wide source) | text: none
+NOTE good tag; 30 and 11 are the gentle, approachable women in the right age range. 18 and 29 are spare torso shots of soft blue cardigans without text. 3 and 10 are cobalt, not soft blue. 13, 14, 17, 19, 28 carry captions; 12 is an airbrushed product promo; 39 has a startled expression.
+
+TAG rose
+PICK 11 | blonde woman seen from behind on a park bench in a dusty-rose mohair jumper with a pink hair ribbon, cream trousers, holding a coffee cup, autumn trees | text: none
+PICK 25 | smiling dark-haired woman, around 35-45, in a rose-pink short-sleeved knit and jeans, hand at her hair, bright room | text: none
+PICK 1 | woman with long wavy blonde hair in a pale pink fluffy jumper and brown satin trousers sitting on a wooden chair, drinking from a mug that hides her face, flowers and plants behind | text: none
+PICK 21 | young woman with long brown hair in a dusty-pink buttoned cardigan and light jeans, white Christmas trees behind (seasonal) | text: none
+PICK 2 | blonde woman in a pale pink fluffy jumper, cream trousers and brown belt, sunglasses and headband, drinking iced coffee on a tree-lined street | text: none
+PICK 12 | blonde woman in a bright pink turtleneck with a camel coat over her shoulders and camel trousers, sunglasses, walking past a stone building (pink is bright, not dusty) | text: none
+NOTE 11 is the only true warm dusty rose worn candidly; most others are pale or bright pink. 37 (rose cable cardigan at a cafe table outside a museum) fits the brief but the face and styling look AI-made: check in motion before use. 6, 7 and 43 are AI-made (7 is from a neural-network account). 0 and 27 are adverts with brand text; 3, 9, 16 are mirror selfies; 8 is a torso shot only 320 px wide.
+
+TAG brooch
+PICK 2 | dark-haired woman, around 45, in a red velvet blazer and cream lace blouse, her hand resting on her chest just below a gold heart brooch on the lapel, leaning towards camera, red lips | text: none
+PICK 18 | close on a torso: black blazer with a pearl bar brooch on the lapel over a lime-green top, both hands fastening the blazer button; no face | text: none
+PICK 30 | woman in a grey wool coat with a gold brooch on the lapel, arms folded, standing against an old stone wall; face cropped at the chin | text: none
+PICK 23 | close on a black blazer covered with about ten gold and red vintage brooches, a hand with pale nails resting on the chest | text: none
+PICK 7 | dark-haired woman, around 45, leaning towards camera in a grey tweed blazer with a large black sequin camellia brooch | text: none
+NOTE no first frame shows a brooch actually being pinned on; 2 and 18 are the closest (hand beside the brooch, hands on the jacket). 41 is a close hand touching a brooch on a black blazer but the brooch is a YSL logo, so rejected. 14 is a pearl brooch on a blazer on a hanger, no person. 37 looks AI-made. 0, 1, 4, 9, 16, 21, 24, 34, 39 carry large captions; 33 has app icons over the frame.
+
+TAG grandma
+PICK 4 | blonde woman seen from behind hugging an older woman with glasses and short fair hair in a hallway beside a wooden door frame; real candid phone footage, 3:4 not full vertical | text: none
+NOTE only 4 pins on this sheet and only this one is usable. 8 (grey-haired mother and daughter hugging in golden light) looks AI-made; 30 carries a Veo watermark (AI) and shows a child; 48 is a 3D cartoon.
+
+TAG tea
+PICK 30 | two women on a green sofa: one in a cream cable cardigan holds her head, upset, the other in a beige blazer and glasses has an arm round her shoulder and holds her hand; a glass of water on the glass table, no tea (16 is the same scene, wider) | text: none
+PICK 6 | close on two women on a sofa by a window: a dark-haired woman in an olive top listens with a kind look, the other (short blonde hair, seen from behind) holds a mug and gestures | text: none
+PICK 0 | two young women wrapped in blankets on a mustard sofa talking, one holding a red cup, a mug on the side table, warm evening lamp light | text: none
+PICK 9 | two women with mugs laughing on a sofa in front of a tall window with rain and trees, dusk, moody light | text: none
+PICK 5 | two young women in jeans laughing together on a cream sofa, two mugs and a candle on a tray in front | text: none
+PICK 13 | two women on a beige sofa, one laughing with a mug in both hands, the other seen from behind, flowers blurred in the foreground | text: none
+NOTE 30/16 is the only real clip that shows one woman comforting another, but with water not tea; the tea clips (0, 9, 5, 13) are happy chats, not comfort. 49 and 47 would fit (one sad, one consoling, mug) but look AI-made, as do 14, 17, 18, 22, 23, 24, 25, 32, 48. 36 and 43 carry a show logo. 19 looks like a commercial; 11 and 37 are in a restaurant or cafe, not at home.

@@ -1,0 +1,93 @@
+TAG hairb
+PICK 33 | back view of a blonde woman with a sleek low knot bun and pearl drop earrings, cream ribbed high-neck jumper, pale bedroom with a lamp | text: none
+PICK 3 | back/three-quarter view of a woman with a smooth low twisted bun, sheer white knit top, seated on a woven chair, white wall and pampas grass | text: none
+PICK 16 | close back view of a soft low twisted bun, dark-blonde hair, gold hoop earring, white blouse with small blue flowers, plain grey wall | text: none
+PICK 12 | close back view of a low chignon in highlighted brown hair, small pearl earring, bare shoulders, beige curtain behind | text: none
+PICK 37 | side/back view of a tight low rolled bun, highlighted hair, big gold-and-pearl earring, black halter collar, bare upper back, pale room | text: none
+PICK 13 | back view of a very sleek dark low bun, thin necklace, black slip dress with a bare back, seated, white panelled wall | text: none
+NOTE all are hairdresser-style back views, no faces. 13 and 37 show a lot of bare back; 18 is a large glossy salon chignon (real but very "bridal"); 45 is a looser messy bun; 8 is a drawing collage, 10 has the Reels app bar, 25 has a signature watermark, 29 has a back tattoo, 30 and 46 are letterboxed.
+
+TAG outfitsb
+PICK 0 | one woman standing in a hallway of cream wardrobes, black fitted turtleneck, long cream satin skirt, black pointed heels, full body, calm | text: none
+PICK 1 | blonde woman in a garden terrace at golden hour, black short-sleeve polo knit, cream wide trousers, tan belt, grey structured bag, full body | text: none
+PICK 36 | woman walking on a white-terrace street, beige jumper and matching long knit skirt, brown belt, sunglasses, brown bag, sandals, full body | text: none
+PICK 5 | dark-haired woman seated on a stone bench, white shirt, striped jumper over shoulders, white trousers, two-tone flats, sunglasses, brown bag, full body | text: none
+PICK 27 | woman walking through a marble arcade, white sleeveless top and white wide trousers, white bag, black-toe shoes, full body | text: small top
+PICK 21 | mirror selfie, brown blazer over brown top, white wide trousers, tan belt, white loafers, burgundy bag on a stool; phone hides her face | text: none
+NOTE all picks are women of about 25-35; nothing here shows an older woman except 37 (about 40, black double-breasted dress, real, but a large "ELEGANT Outfit ideas" title sits above her head). Rejected as AI-looking: 33 (sparkle watermark), 46, 32, 40 (also an infographic). 22, 30, 39, 44, 43, 31 have large captions.
+
+TAG rewearb
+PICK 24 | one woman in a living room, mid-length denim button dress with a short beige trench jacket over it, sunglasses, flats, taupe bag, full body | text: none
+PICK 49 | close view (face cropped at the forehead) of a woman in a cream tiered shirt dress pulling a rope belt round her waist | text: none
+PICK 38 | brunette woman, three-quarter view, black puff-sleeve tiered dress with a black western-buckle belt, hand on hip, white panelled wall | text: none
+PICK 31 | woman in a black short-sleeve wrap dress and black heels tying the sash at her waist, plain grey room, full body; a white "X" mark above her head | text: small top
+PICK 27 | blonde woman outdoors by a glass building, long white lace dress with a red patterned long jacket and a belt over it, boots, sunglasses, full body | text: none
+PICK 21 | young woman in a bedroom, cream blazer cinched with a wide tan belt over a white pleated dress or skirt, full body; caption above her head | text: small top
+NOTE no clean first frame proves "one dress, several ways"; the two that say it outright have big text: 6 (woman about 55, grey curls, black shirt dress, "One Base, 4 Ways" over her head, barefoot) and 10 ("1 summer dress 5 fall outfits", a five-copy composite). Most of this sheet is belts over blazers and coats, not dresses. 46 and 37 have large captions on the body.
+
+TAG beltb
+PICK 10 | woman of about 45-50, full body, taupe tiered shirt dress and tan flats, holding a long tan leather belt in both hands ready to put it on, plain room with roses | text: none
+PICK 20 | close view of hands tying a tan leather wrap belt at the waist of a cream ribbed knit dress, gold bracelet | text: none
+PICK 19 | brunette woman, three-quarter view, navy shirt dress with a tan suede belt and gold buckle, by a white door and wicker mirror | text: none
+PICK 29 | close view of a blonde woman wrapping a wide tan leather belt over an olive satin shirt dress | text: none
+PICK 11 | woman smiling down, full body, long white dress with a wide brown belt and a short linen jacket, sandals, open doorway to a living room | text: none
+PICK 8 | close view of a black blazer dress with a thin tan belt knotted at the waist, no face | text: none
+NOTE 10 is the only older woman and the only "about to put it on" full-body frame. 37 (white knit dress, tan belt) has a "BELT HACK" title bar above the picture that can be cropped; 1 is a clean cream shirt dress with brown belt but a landscape half-frame; 42 is a taupe dress with belt on a street but a heavily filtered look. 26 looks AI-made. 24, 27, 47, 16 have large text; many others are belts on trousers.
+
+TAG navyjacketb
+PICK 6 | woman of about 45, three-quarter view, oversized navy blazer over a cobalt-blue knit dress, silver necklace and woven silver bag, bright room with sheer curtains | text: none
+PICK 2 | woman full body, navy double-breasted blazer belted with a thin tan belt over a matching long navy satin skirt or dress, tan bag, heels, raising one hand | text: none
+PICK 12 | Black woman full body in a dressing room, navy blazer draped on her shoulders over a camel knit top and gold pleated midi skirt, nude heels | text: none
+NOTE only 6 clearly shows a navy blazer over a dress; 2 may be a skirt, 12 is a skirt. 26 (navy blazer over navy satin dress, night rooftop) looks AI-made. 8 is a beige blazer over a blue dress. The rest are navy blazers with trousers or jeans (13, 32, 19, 18, 9, 7, 14) or carry large text (3, 7, 14, 19, 27, 33, 43); 40 is an older woman but a close filtered face with a handle watermark.
+
+TAG loafersb
+PICK 14 | close view of legs mid-step on a pavement: dark straight raw-hem jeans, black penny loafers with white socks, black pinstripe blazer and green bag at the top edge | text: none
+PICK 36 | woman walking away along a pavement, side/back view, white shirt with a cream jumper over the shoulders, light slim jeans, chunky black loafers, small black bag; picture sits inside white borders | text: none
+PICK 18 | blonde woman in long stride crossing a city street, side view, black jacket, grey wide jeans, black loafers, full body | text: none
+PICK 7 | back view of a dark-haired woman walking down a street, white tank top, cuffed blue jeans, black loafers, black tote | text: none
+PICK 35 | woman standing in a room, full body, black blazer, white tee, straight blue jeans, black horsebit loafers, sunglasses, black quilted bag | text: none
+PICK 37 | Black woman smiling over her shoulder in a living room, full body, dark shirt, black slim jeans, black horsebit loafers, black clutch | text: none
+NOTE 14 is the strongest (legs only, loafers clear). 35 and 37 are standing poses, not walking; 44 is a seated legs-and-suede-loafers frame. 7 shows a little midriff. 1 and 2 are nice street walks in jeans but the shoes are too small to confirm as loafers (1 looks like brown suede); 34 is ballet flats, 43 and 19 heels, 47 boots, 16 and 20 trainers.
+
+TAG dinnerb
+PICK 2 | back view of a woman with long hair in a black long-sleeve dress, small bag in hand, walking into a grand gilded restaurant with chandeliers and seated diners | text: none
+PICK 21 | back/side view of a dark-haired woman in a black strapless dress with a black bag walking towards the lit doorway of a grand stone building at dusk | text: none
+PICK 40 | smiling woman in a black jacket standing at a candle-lit long dinner table greeting seated guests, glasses and candles in front | text: none
+PICK 33 | back view of a woman in a long cream satin dress, small black bag, walking out to a set terrace table between columns, water and a bridge at dusk | text: none
+PICK 10 | back view of a woman with a low bun in a dark halter dress, bag in hand, walking into a restaurant towards a dessert display under a gold chandelier | text: none
+PICK 17 | back view of a woman in a long black open-back dress walking beside a long set dinner table in a glass-roofed room, dim light | text: none
+NOTE almost all are back views of young women arriving; no one is shown being greeted except 40 (she is the one greeting). 21, 10, 17 show bare shoulders or back. 0 is the same room as 17 with her standing holding a glass. Rejected as AI-looking: 18, 24, 42, 48 (also a YSL shopfront), 29. 7 and 46 too dark; 25 (slit dress in a library) and 35, 49 (red gowns) are glamour, not dinner arrival; 39 is a sequin gown at a gala door.
+
+TAG kneelb
+PICK 4 | dark-haired woman in a denim shirt and cream trousers kneeling on the floor, holding both hands of a small blonde girl in dungarees and laughing with her, warm room | text: none
+PICK 48 | woman in a beige cardigan crouching by a door while a small boy in grey leans in and hugs her, faces hidden, soft dim light | text: none
+PICK 38 | woman in a white dress kneeling on a polished floor in a wide hallway with a toddler in white beside her; small in frame, landscape picture | text: none
+PICK 3 | back view of a woman in cream knit and white trousers kneeling at the water's edge hugging a small curly-haired child, sea at dusk | text: none
+NOTE only these four show a real kneel or crouch; 3 is on a shore (fully dressed, but a beach). 1 (woman hugging a girl of about 8, real stock footage, landscape) and 0 (close hug, Black mother and child, eyes closed) are warm real hugs with no kneel visible; 8 is a picnic sit. Rejected as AI-looking: 6, 14, 18, 19, 39, 10, 15. 35, 20, 43 are lifting the child; 43 has a web address, 20 logo clothing.
+
+TAG handsb
+PICK 17 | close view of two women's hands clasped together, cream and white sleeves, seated on a sofa, calm | text: none
+PICK 0 | very close view of one pale hand resting over a darker hand, clasped, soft light, cream knit sleeve | text: none
+PICK 28 | close view of two seated women holding hands between their knees, one in a white top, one in jeans, bright room | text: none
+PICK 3 | view from above of two pairs of hands holding on a table, olive-green jumper and amber bangle; the nearer wrist has a black watch | text: none
+PICK 27 | two women standing side by side in cream and camel coats, hands linked low between them, faces out of frame | text: none
+PICK 16 | close view of a younger hand laid over an old woman's wrinkled folded hands, pale blue and white clothes | text: none
+NOTE 17, 0 and 28 fit best. In 3 the nearer hands could be a man's. 16, 20 and 39 are elderly-care frames (39 is a thin landscape strip). 38 has a logo badge, 19 a "VOLUNTEER" T-shirt, 24 is a hand on a shoulder, 21 and 30 are children's hands, 14, 22, 23, 31, 34, 37, 43 are dark or couples.
+
+TAG softblueb
+PICK 12 | woman of about 60 with wavy blonde hair, soft blue buttoned cardigan, blue satin trousers, gold bracelets, palms pressed together, smiling in a home hallway, full body | text: none
+PICK 45 | woman of about 50, blonde, soft blue cable-knit jumper, brown belt and dark navy jeans, smiling warmly in a living room, three-quarter view | text: none
+PICK 7 | woman of about 50 with a blonde fringe, pale blue and cream knit jacket with gold buttons, jeans and tan belt, close gentle smile | text: none
+PICK 3 | woman of about 45 with long wavy hair, pale blue button cardigan and dark jeans, hand on hip, smiling in a bedroom, full body | text: none
+PICK 24 | woman of about 50, short hair, soft blue chunky jumper over a white shirt, white jeans, a small dog in a matching blue jumper at her feet, full body | text: none
+PICK 0 | same woman as 12 in a soft blue open cardigan over a white blouse with light jeans, laughing, full body; caption over her lower legs | text: small bottom
+NOTE good tag: all picks are real women of 45-60 in an influencer "try-on" look, facing camera. 8 (grey-haired woman, mirror selfie in a shop) is a navy cardigan and looks AI-made. 41 is a mid-blue cardigan in a shop, landscape. 10 is cobalt, not soft blue, with a caption. 11 and 40 have large captions; 22 is a studio product shot; 1, 15, 37, 46 show no face.
+
+TAG stairsb
+PICK 2 | back view of a blonde woman in a champagne satin midi dress and nude heels, cream bag, walking up black-and-gold marble stairs with gilded railings, full body | text: none
+PICK 11 | back view of a woman in a long black dress walking up a grand opera-house staircase, hand on the balustrade, candelabra, full body | text: none
+PICK 31 | back view of a woman with a bun in a long black open-back dress, small black bag, walking up a pale stone staircase, hand on the balustrade, full body | text: none
+PICK 41 | front view of a woman in a black sleeveless midi dress and heels, sunglasses, bag in hand, walking up wide shallow steps towards the camera, garden avenue and sea behind | text: none
+PICK 24 | back view from the shoulders down of a woman in a black long-sleeve midi dress and black heels walking up wide stone steps, dim warm light | text: none
+PICK 48 | view from above of a woman in a black dress on a grand curved stone staircase, hand on the rail; small in frame | text: none
+NOTE nearly all are back views; only 41 shows a face while going up (her dress has a small cut-out at the waist). 31 has a bare back. Going DOWN, not up: 28 (floral dress with white flowers, face visible, lovely) and 22 (strapless, tight). 12 is bending to fix a shoe. Rejected as body-focused or revealing: 8, 0, 6, 16, 17, 26. 3, 4, 5, 20, 30, 47 are feet only; 45 is a flat floor; 33 a red gown by a car.

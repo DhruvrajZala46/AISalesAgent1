@@ -1,7 +1,60 @@
 # HANDOFF - read this first in a new chat (written 18 Oct 2026)
 
 This file carries the full history of the previous chat (Oct 2026) so a new chat can continue without it.
-Branch: `claude/youtube-channel-analysis-lghfsv`. The channel's YouTube name is **Classy Academy** (@ClassyAcademy).
+The channel's YouTube name is **Classy Academy** (@ClassyAcademy); the second channel is **The Classy Elegance**. The current branch is named under START HERE.
+
+## START HERE (written 17 Nov 2026 for a new chat)
+
+**Branch: `claude/stoic-tesla-w3up2y`.** All work since 16 Nov is on this branch and is NOT on the repository's default
+branch (`claude/youtube-channel-analysis-lghfsv`). A new chat must start on this branch, or fetch and merge it first:
+`git fetch origin claude/stoic-tesla-w3up2y && git merge --no-edit FETCH_HEAD`.
+
+**Where things stand**
+- **Princess Diana video** (`videos/princess-diana-style-rules/`): script approved; video v1 delivered (12:06); three
+  thumbnails delivered and shipped by the user; titles, description and tags delivered (`PACKAGE.md`). **Waiting for
+  the user's "ship it, or change it?" on the package.** Nothing else is in progress.
+- **Charm video** (`videos/unforgettable-charm/`): finished and uploaded by the user to The Classy Elegance.
+- **Next topic already researched:** "7 Ways to Look Prettier Without Changing Your Face" (`research-2026-11-16b.md`).
+  Second style icon: Carolyn Bessette-Kennedy (`research-2026-11-16c.md`).
+- **Open questions the user has not answered:** CA or CE logo on thumbnails (the videos carry CE, the thumbnails CA);
+  whether the unnamed faces on the charm thumbnails were checked; YouTube Studio numbers (click-through, retention).
+
+**What a new chat has and does not have**
+- Has (in git): every script, edit, clip list, sources log, research report, thumbnail write-up and package; the
+  working scripts of the last build (`workflow/session-tools/diana/`, with `NOTES.md`, the search phrases and both
+  screening passes); the research data (`research-data/`: the 59-channel niche table, the Diana YouTube search table,
+  the Intemporelle transcript the user pasted).
+- **Does not have: any media.** Videos, clips, photos, thumbnails and voice files lived in the old session's scratchpad
+  and are gone. The user has the delivered files. To change the Diana video, rebuild from
+  `videos/princess-diana-style-rules/`: `sources_used.json` (the pin and file link of all 96 clips, 54 photographs and
+  the thumbnail photos), `clips.py` (the seconds used), `edit.py`, `beats.txt`, `beats_tts.txt` (the voice text with
+  years spelled out), `gaps.json`, `words.json`. Steps: `workflow/setup.sh <work folder>`, voice (`tools/tts.py`,
+  Kokoro `af_heart` 0.80), download the clips and photos, `tools/build.py`, `session-tools/diana/bgswap.py`,
+  `tools/flash.py`, snapshots, `render_loop.sh`, `after.sh`. Thumbnails: `thumb_spec_ca_1080.json` with
+  `tools/thumb_ca_real.py` (A) and `thumb_research/build_bc.py` (B, C).
+
+**Rules the user has set (all still stand)**
+- Approve each stage; every hand-back ends "Ship it, or change it?". Plain, direct English. Short progress lines.
+- **Never guess**: every topic, tip, title and thumbnail choice proven from data read that day; say what could not be
+  checked. No topic or thumbnail can be promised to go viral; say so.
+- Real footage only, never AI. Visuals from Pinterest / Instagram / TikTok only, never free stock sites. No clip
+  repeated in a video or from an earlier video (`oldclash.py`). Every visual matches its script line. No sound effects.
+- No Classy Closet promotion (the personal stylist guide line is allowed). No website on screen. No Meghan Markle.
+  No "Part 2". Never say "Classy Academy" in a script. Thumbnails at 1920x1080.
+- Never commit media, keys or cookies. Never use the owner's login. No pull request unless asked.
+
+**What does not work on this machine**
+- YouTube video pages ("Sign in to confirm you're not a bot"): no video file, captions or comments. Public lists and
+  searches work with `yt-dlp --flat-playlist -J` (keep any result with 10+ entries even when it exits non-zero).
+- vidIQ: 0 credits until 12 Dec 2026.
+- Screening helpers stop at the 5-hour usage limit: resume them with a message, do not start new ones.
+
+**The method that produced the last two videos** (`workflow/LEARNINGS.md` has the checks):
+research report -> script in the reference format, every fact sourced -> voice and word timings -> search Pinterest
+video pins (phrases ending in "video") -> first screening on contact sheets -> download, shrink, duplicate / reuse /
+AI checks -> second screening on frame strips -> every chosen window viewed at large size -> edit in the channel's
+own layouts -> snapshots of the whole edit -> render -> QA -> send -> sources log, credits, chapters -> thumbnails
+(research winners against losers first) -> titles, description, tags.
 
 ## 0. Latest (31 Oct 2026)
 

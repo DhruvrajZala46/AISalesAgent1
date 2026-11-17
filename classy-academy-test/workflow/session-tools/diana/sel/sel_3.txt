@@ -1,0 +1,73 @@
+TAG dibalcony
+NOTE NO FIT: no frame shows Diana on a balcony. 39 is the only balcony (palace columns, men in red uniforms, woman in white hat, children) but it is modern HD footage of today's royal family, not 1980s film. Near-misses, NOT balcony: 6 = red-and-white polka dot dress with red wide-brim hat, pearl choker, holding paper flowers, outdoor walkabout, mid-1980s (stills, no text); 2 = white dress with black polka dots, white hat with black trim, beside an open carriage (stills, no text); 0 = white blouse with black dashes, seen from behind at a car. 16 and 14 look heavily smoothed/upscaled.
+
+TAG dijewel
+PICK 22 | tight profile of her in a car, smiling: very large pearl drop earring with diamond top, multi-strand pearl choker with big oval sapphire, black dress, about 1994; looks like a press photo (stills), low resolution 320px | text: none
+PICK 12 | close profile, smiling: emerald-and-diamond choker and long emerald drop earrings, black strappy dress, 1990s; video frame | text: none
+PICK 43 | side view outdoors, talking: four-strand pearl choker, pearl earrings, black tailored jacket, 1995 per pin title; smoothed/upscaled news film | text: small bottom
+PICK 0 | seated at a film premiere, smiling: wide red beaded bib necklace, drop earrings, red sparkly spaghetti-strap dress, about 1981; sharp press photo (stills); pin comes from a jewellery shop account, so check for advert text later in the clip | text: none
+PICK 2 | head and shoulders outdoors against a hedge: chunky large-bead pearl necklace, pearl stud earrings, lilac jacket, mid-1990s; smoothed/upscaled film | text: small bottom
+PICK 7 | head and shoulders, evening: pearl drop earrings, pendant necklace on a pearl chain, blue satin off-the-shoulder dress, 1980s; press photo (stills); jewellery is elegant rather than chunky | text: none
+NOTE none shows chunky jewellery together with a child. 42 (with two small boys) is a phone screenshot with Instagram interface around it; 18 (with a boy) shows only a small gold earring; 35 and 28 are tiara shots; 24 is a dark extreme close-up of one pearl earring.
+
+TAG diwalk
+PICK 10 | full length, striding across a lawn past a dark car, arm out to greet, head high: black off-the-shoulder short dress with trailing sash, pearl choker with sapphire, black clutch, sheer black tights, evening, 1994; very sharp, may be a still | text: none
+PICK 7 | same dress and evening, 1994: walking straight towards camera over the grass, photographers behind her, golden light, car bonnet at right edge | text: none
+PICK 20 | striding past a bike rack, head up: navy "Fly Virgin Atlantic" sweatshirt, orange cycling shorts, white trainers and socks, mid-1990s; sharp press photo (stills) | text: none
+PICK 39 | mid-shot walking past camera through a crowd, smiling: pale blue/silver beaded halter-neck dress, pearl drop earrings, silver clutch, 1997 per pin title; news film | text: small bottom
+PICK 40 | walking on a polo field, hand in pocket: navy baseball cap, black blazer, white sweatshirt with red balloon, jeans tucked into brown boots; press photo (stills); this look is about 1988, not 1990s | text: none
+PICK 5 | striding along a pavement past railings: black jacket, pale blue mini skirt, black tights and heels, large black quilted bag, mid-1990s; press photo (stills); she looks down at her hand, not head-high | text: none
+NOTE 3, 16, 6 and 14 are the same 1994 black-dress evening (3 is 375px, 6 is distant, 14 is head down). Rejected for captions over her: 13 (Harvard sweatshirt, "DRESS CODE"), 15 (black coat dress), 28 (red coat, large caption), 48, 32. 24 (pale blue chiffon gown, 1987) has a TikTok mark mid-frame.
+
+TAG dilaugh
+PICK 2 | head thrown back in a full laugh, holding yellow flowers, navy jacket with white high collar, man in suit smiling beside her, brick wall; press photo (stills) | text: none
+PICK 6 | seated, laughing behind both hands held to her mouth, white short-sleeved shirt, striped skirt, short early-1990s hair; real video frame, very candid | text: none
+PICK 26 | close-up, eyes closed in a broad laugh, pink fringed jacket over black polka dot blouse, early 1980s; sharp press photo (stills) | text: none
+PICK 14 | leaning forward with a wide laughing smile, red jacket, gold earrings, balloons behind, 1990s; press photo (stills) | text: none
+PICK 15 | laughing and looking down, red jacket with black velvet collar, pearl earrings, press photographers behind, mid-1990s; smoothed/upscaled film | text: small bottom
+PICK 5 | laughing at a radio microphone, yellow blouse, a man laughing beside her, children's lettering on the window behind (part of the scene), about 1983; video frame | text: small bottom
+NOTE spare options: 9 (gold beaded top, laughing sideways, dark background), 40 (profile laugh, pearls, looks AI-upscaled), 13 (pale pink jacket, smiling). 49 has TikTok mark and caption; 47, 38, 41, 29 are smiles, not laughs.
+
+TAG wardrobe
+PICK 11 | woman seen from behind, dark shoulder-length hair, dark tee, standing at an open wardrobe and holding up a patterned garment on a hanger; real phone video, slightly dim, rounded video corners | text: none
+PICK 36 | close-up of a woman's hand and sleeve moving along a rail of hanging clothes, cream blouse in front; soft focus; no face or wardrobe doors visible | text: none
+PICK 16 | close-up of a woman's hand with rings pushing through tightly packed shirts in an open wardrobe (white, striped, red, mustard); hand only, bright colours | text: none
+PICK 49 | dark-haired woman in a doorway holding up two outfits on hangers (white top with black trousers and bag; beige trench) and looking at one; no wardrobe in frame | text: small top ("grwm" at about a quarter down)
+PICK 14 | woman about 40s in a blue dress holding up a pink jumper at an open closet rail, with a girl in the foreground seen from behind; real; child is prominent | text: none
+NOTE most of this sheet looks AI-made and is rejected: 0, 2, 3, 9, 22, 35, 38, 42, 45 (22 and 45 carry a logo). 13 is a woman holding a brown top against herself at a mirror, not a wardrobe. 18, 20, 21, 37, 43, 47 are outfit-of-the-day shots with no wardrobe.
+
+TAG twooutfits
+PICK 5 | dark-haired woman in a white jumper standing in a doorway, holding up one hanger with white top, black trousers and black bag and a second hanger with a beige trench coat, looking from one to the other; real phone video | text: small top ("grwm" at about a quarter down)
+PICK 6 | two women in a bright boutique, one in a yellow blazer holding a pale yellow camisole on a hanger, the other holding a lilac tee on a hanger, comparing them; stock-style footage; a shop and two women, not one woman at home | text: none
+NOTE only 5 truly shows one woman weighing two outfits. 4 (blonde holding a beaded gown and jeans) and 10 (woman with two dresses over a pile of clothes) match the brief but look AI-made; 3, 14, 16, 23, 26, 35, 38 also look AI. 36 and 22 show a woman with one outfit on one hanger. 15 and 18 are disembodied hands holding garments (advert style). 25 has a large caption.
+
+TAG dressmirror
+PICK 18 | woman with slicked-back dark hair, brown skin, reflected in a round wood-framed mirror, looking down and tying the belt of a beige blazer over a white shirt; soft daylight, calm | text: none
+PICK 35 | blonde woman about 40s reflected in a round mirror, cream blouse with scalloped collar and black skirt, smoothing her hair with one hand; white curtains, daylight | text: none
+PICK 46 | blonde woman seen from behind at an ornate bathroom mirror, cream blouse, adjusting her hair/sleeve, face visible in the reflection; warm light | text: none
+PICK 40 | same blonde woman and outfit as 35 in the round mirror, facing herself with fingertips together, slight smile | text: none
+PICK 7 | mirror selfie in a wavy full-length mirror: cream double-breasted trouser suit, small bag, ballet flats, phone covers her face; checking the outfit, no adjusting | text: small bottom (name at left edge, lower third)
+PICK 37 | mirror selfie in an arched mirror: beige linen shirt and trousers, hand in pocket, phone covers her face; no adjusting | text: none
+NOTE 30 (beige suit in a standing mirror) looks AI-made and has a logo. Rejected as robes, make-up or revealing: 1, 44, 4, 39, 21, 17, 28, 34, 3, 32. 13 is choosing a top, 2 is a before/after trick edit, 9 shows brand logos, 19, 31, 38, 43, 48 are dark.
+
+TAG posing
+PICK 38 | woman with long dark hair posing in a black strapless corset dress with full midi skirt and black heels in front of an ornate wrought-iron door; daylight | text: none
+PICK 45 | woman with dark waved bob posing in a black satin strapless dress with a slit, grey studio wall with hard shadow | text: none
+PICK 7 | woman with very long blonde hair in a blush tulle gown, looking over her shoulder on a flower-framed terrace above a lake and mountains; low resolution 288px, bodice slightly sheer | text: none
+PICK 39 | woman with long dark hair standing in a black asymmetric midi dress with a side slit and heels in an empty pale room; brand product video | text: none
+PICK 22 | woman with dark hair walking towards camera in a gold satin slip dress, plain studio; brand product video, low neckline | text: none
+PICK 10 | close crop of a woman in a strapless ivory satin column dress with long gloves, backlit, looking down; bridal brand video | text: none
+NOTE rejected as AI: 13 ("Link in Bio" text), 48 (account calls itself an AI content creator), 5 (dreamy glow), 8 (airbrushed). 47 has a man in the foreground and a woman barefoot on a piano; 35 is a mirror selfie; 28 is filmed sideways; 2 has no head; 20 is distant. All women here are young; none looks 40 plus.
+
+TAG hugfriend
+PICK 18 | two women in a tight hug in a bright station hall, one facing camera with a big smile and eyes closed, denim jacket, striped scarf, backpack; candid | text: none
+PICK 1 | two women hugging in a cafe, one smiling with eyes closed, white blouse; out-of-focus leaves and a third woman drinking in the foreground | text: none
+PICK 5 | airport reunion: woman laughing as she hugs a friend, plaid shirt, "Welcome to..." sign overhead; motion blur, large lettering on a tote bag in the foreground | text: none
+PICK 19 | young woman in a brown coat embracing an older woman in a headscarf and grey coat on an evening street; grainy, low resolution 288px | text: none
+NOTE almost every pin is teenagers or women in their twenties; only 19 shows an older woman. 41 (two women holding each other on a sofa) is a sad, comforting hug and may be AI. 6, 33 look like TV drama scenes. 45 and 35 are a woman with a child. 13 and 2 are distant airport hugs with TikTok marks; 3 is teens in crop tops; 36, 34, 27, 39 are beach; 16, 20, 26 black-and-white; 10, 31, 43 dark.
+
+TAG walkin
+PICK 29 | woman in a white satin backless gown seen from behind, walking into a candlelit dining room where guests in white are already seated; arriving only, no greeting visible; low resolution 375px | text: none
+PICK 10 | woman with long brown hair in a black long-sleeved sparkly dress seen from behind, walking into an ornate gilded restaurant full of diners; arriving only, nobody greets her | text: none
+PICK 6 | woman in a black jacket with gold earrings standing at a candlelit dinner table, smiling at seated guests who look up at her; she is already at the table, not arriving | text: none
+NOTE NO TRUE FIT in real footage: nothing real shows the arrival and the warm greeting together. 4 (woman stepping from a car to smiling friends) and 8 (woman leaving a revolving door towards two waiting friends) match the brief but look AI-made, as do 2, 3, 7, 12, 20, 22, 32, 34, 44, 47, 48. 5, 9, 18, 23, 31, 42, 46 are seated dinner tables with no arrival; 1 is a small horizontal brand advert.

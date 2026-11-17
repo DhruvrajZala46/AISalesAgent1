@@ -1,0 +1,64 @@
+TAG blackhang
+PICK 17 | black strapless knee-length dress on a hanger hung in an open window, Paris stone facades and iron balconies behind, daylight, no person | text: none
+PICK 11 | long black sequin evening gown on a wooden hanger hung from a wall sconce, leather armchair with a boutique bag and heels beside it, hotel-style room, no person | text: none
+PICK 3 | a hand in a rust knit sleeve sliding black clothes on white hangers along a wardrobe rail (black garments, not clearly one dress) | text: none
+NOTE Only 17 is an exact fit (classic black dress waiting on a hanger); 11 is an evening gown, 3 is a rail of black clothes. 35 is a black slip dress but carries an AI sparkle mark bottom right, rejected. 33 is a shop rail of black dresses with a "Little black dress" caption in the middle of the frame. 19, 30, 46, 47 are empty hangers; 38 is a dress laid on a bed with a Chanel box.
+
+TAG blackdress
+PICK 39 | dark-haired woman in a black short-sleeved wrap midi dress, sunglasses and heeled sandals walking towards camera, ornate stone staircase and lamps behind, daylight | text: none
+PICK 37 | back view, woman in a black long-sleeved knee-length dress and black heels walking up wide stone steps holding a clutch, warm light | text: none
+PICK 14 | blonde woman in a black satin sleeveless midi dress and strappy heels striding past a stone building, hand on her sunglasses, side view | text: none
+PICK 8 | black and white, back view, woman with long dark hair in a floor-length black dress and heels walking through an underground car park | text: none
+PICK 16 | woman with a sleek bun in a black one-shoulder ankle-length dress and heels, hand on hip, stepping forward in front of a lit hotel entrance at dusk (more posed than walking) | text: none
+NOTE 39 is the cleanest fit (classic dress, face visible, head up). 4 and 45 look AI; 18 (black and white, bag over shoulder) has a garbled shop sign and a too-perfect look, probably AI, rejected. 28 is a catwalk, 36 red-carpet steps, 44 a mini dress, 11 and 42 open backs, 9 and 40 a costume hat and gloves with the face hidden.
+
+TAG redjacket
+PICK 20 | woman with a sleek ponytail and sunglasses in a deep red trouser suit (blazer and trousers), black heels, clutch in hand, walking past a carved stone building | text: none
+PICK 30 | woman with hair pulled back in a burgundy tuxedo blazer with black lapels and matching trousers walking down the middle of a street towards camera, passers-by blurred behind | text: none
+PICK 13 | woman with short dark hair and sunglasses in a long red belted coat-jacket with gold buttons over a black outfit, walking in sunshine, park building behind | text: none
+PICK 14 | blonde woman in a red double-breasted blazer with gold buttons and red pleated skirt walking past a boutique; a large DIOR shop sign is in the background behind her | text: large
+PICK 47 | woman in sunglasses in a red satin jacket and wide red trousers walking past a dark shop window, coffee cup and black bag in hand, side view | text: none
+PICK 48 | woman in a red knee-length coat with a red bag crossing a cobbled Paris crossing among pedestrians; small watermark caption low in the frame | text: small bottom
+NOTE 20 and 30 are the true deep red blazers. 1, 3 (AI sparkle mark), 28, 37 and 32 (big SILA watermark) look AI; 29 (burgundy blazer, yellow car) also looks AI-smooth, left out. 6 has press photographers behind her (looks like a celebrity). 13, 48, 19, 41 are coats rather than jackets. 12, 8, 31 are blazers worn as mini dresses with bare legs. Better than all of these for our viewers: agesstyle 24, a real woman of 60+ in a red tweed jacket walking through a hotel lobby.
+
+TAG standtall
+PICK 47 | back view, woman with long dark wavy hair in a black fitted jacket and midi skirt, black heels, walking along a bright cream hotel corridor with a mosaic floor; frame is nearly square, not vertical | text: none
+PICK 41 | back view, woman with long blonde hair in a black blazer walking along a wood-panelled corridor under a round chandelier, patterned floor | text: none
+PICK 11 | black and white, back view, woman with curled hair in a dark jacket and tall glossy boots walking along a dark corridor with a marble-patterned floor | text: none
+PICK 32 | dark-haired woman in a black short-sleeved midi dress with a chain necklace and small bag stepping through a tall dark wooden doorway towards camera, eyes lowered; her face looks heavily filtered | text: none
+NOTE All four are young women; no one over 40 on this sheet and nobody is seen from the front with head up. 4 (back view walking into a lamp-lit sitting room) fits the brief but looks like a render, probably AI. 6 is a very dark silhouette. 1 is standing at a window, 13 an escalator, 22 and 34 stairs, 46 a car park; the rest are street walks.
+
+TAG agesstyle
+PICK 17 | white-haired woman of about 65-70 with glasses in a grey linen shirt and chocolate wide trousers, standing in her hallway at home, hands at her pockets | text: none
+PICK 16 | blonde woman in her 60s in a navy pinstripe trouser suit with a tan leather tote on her arm, smiling, hallway at home | text: none
+PICK 25 | grey-haired woman in sunglasses and a grey linen jacket and trousers with a yellow bag, walking along a cobbled lane; black bars top and bottom to crop | text: none
+PICK 29 | woman of about 70 with grey hair tied back, sunglasses, chocolate jumper and cream silk scarf, smiling on a shopping street | text: none
+PICK 4 | woman of about 50 with short curly grey hair in a long grey coat, white top, beige wide trousers and white trainers, holding a cream tote, plain room | text: none
+PICK 24 | blonde woman of 60+ in a red tweed jacket with gold buttons, black top, navy trousers and a red handbag, walking smiling through a hotel lobby | text: none
+NOTE All real-looking phone footage; all are white women, no other skin tones on the sheet. Spares that also look real: 44 (same woman as 17, white shirt, taupe trousers), 21, 26, 34, 32, 30. Rejected as AI: 3, 5, 9, 22, 31, 33, 37, 39, 40; 38 is labelled "KI-Hintergrund" (AI background). 19, 20, 28, 36, 42, 43, 45 are one blonde woman in sunglasses whose backgrounds look pasted in, left out. 1 looks under 50. 14 wears a Gucci-monogram scarf.
+
+TAG commenting
+PICK 38 | woman of about 40 with grey-streaked dark hair in a cream blouse and jeans, sitting on a rust sofa by a big window, smiling down at her phone | text: none
+PICK 21 | dark-haired young woman in a white shirt curled up on a sofa under a floor lamp in the evening, smiling at her phone while typing; bare knees in the foreground | text: none
+PICK 5 | young woman in a green sleeveless top and jeans lying back on a sofa, smiling slightly at her phone; horizontal frame | text: none
+PICK 24 | dark-haired woman in a black T-shirt and grey jeans on a grey sofa with a yellow cushion, reading her phone with a neutral face (not smiling); thin black bars top and bottom | text: none
+PICK 32 | young East Asian woman with a top knot in a pink striped shirt on a pink sofa, looking down at her phone, laptop and camera on the table (not smiling) | text: none
+NOTE Only 38 and 21 truly show a smile at the phone in real footage. Most of this sheet is AI stock: 0 and 11 carry the AI sparkle mark, 43 is labelled AI, and 3, 4, 7, 8, 14, 27, 29, 31, 34, 37, 44, 45, 47, 48, 20, 18 have the glossy AI look (45, a Black woman in a cream jumper, and 48, a blonde in a black shirt, are the most convincing but still look generated). 30 is a 3D cartoon. 42 is too dark. No woman over 45 on the sheet.
+
+TAG mirrorsure
+PICK 18 | reflection in a round mirror: blonde woman of about 35-40 in a cream collared blouse and black trousers, one hand smoothing her hair, small calm smile at herself, white curtains behind | text: none
+PICK 39 | reflection in an arched mirror: blonde woman of about 45-50 in a black belted blazer and pearl necklace, chin up, adjusting her hair with one hand at her collar; frame is about 4:5, not full vertical | text: none
+PICK 41 | reflection in a wooden-framed mirror: woman with a sleek dark bun and tan skin fastening a cream wrap blazer over a white shirt, looking down at her hands, soft daylight | text: none
+PICK 5 | same woman and mirror as 18: cream blouse, fingertips together, smiling calmly at her reflection | text: none
+PICK 13 | from behind, blonde woman in a cream blouse touching her hair in front of a bathroom mirror with a dark frame, mosaic-tiled wall | text: none
+PICK 26 | over-the-shoulder close-up: East Asian woman with shoulder-length dark hair in a dark blouse holding a steady, serious look at herself in a bathroom mirror; looks like a film shot, check before use | text: none
+NOTE 18, 39 and 41 fit best (dressed, calm last check). 42 (beige suit, smiling at a floor mirror) fits the brief but is AI with a logo top right; 37 and 38 also look AI. 1 shows a different outfit in the reflection (trick edit). 33, 24, 47 are phone selfies with the face hidden. 0, 4, 25, 46 are make-up being applied; 14, 23, 32 are low-cut or open-back; 29 is a bathrobe; 43 is dark.
+
+TAG leavehome
+PICK 17 | dark-haired woman in a cream satin midi dress with a patterned belt and flat sandals stepping out through tall carved wooden double doors, hand on the handle, eyes down | text: none
+PICK 25 | back view, dark-haired woman in a white shirt and white trousers walking through open black-framed double doors over a stone threshold | text: none
+PICK 38 | side view, woman with sleek dark hair in a cream coat with her hand on the handle of a dark front door, glancing back into a flat with a lit Christmas tree and a city view; very polished look, check it is not AI | text: none
+PICK 31 | wide shot of a sunlit hallway with console table and lamp; a small figure of a woman in a trench coat with a handbag going out through the open green front door at the left; a "Weekend loading...." caption sits across the lower middle | text: large
+PICK 4 | dark-haired woman in a white dress half hidden behind an ornate white panelled door, hand on the gilt handle as it closes, chandelier behind | text: none
+PICK 23 | back view, woman in a beige trench coat with a crossbody bag walking away along a stone arcade (already outside, no door) | text: none
+NOTE Only 17 clearly shows a woman coming out through a door in real footage; nothing shows a front door being closed from outside. The closest matches to the brief are AI and rejected: 2 (beige suit at a front door), 8 (red-haired woman stepping through a white front door), 42 (camel coat in a doorway), 46 (walking out into golden light). 3, 7, 10, 11, 24, 32, 37, 45, 48 are women at balcony doors or windows, not leaving. 44 is the hotel corridor clip from standtall 47; 15 and 20 are dark interiors.
