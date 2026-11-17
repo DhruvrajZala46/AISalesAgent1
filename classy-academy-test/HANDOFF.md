@@ -290,6 +290,14 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **Diana script v1 (17 Nov 2026, `videos/princess-diana-style-rules/script.md`, `research-2026-11-17.md`):** the user
+  asked for the one best proven topic and the script in The Intemporelle's exact format. Pick: "Princess Diana's 8
+  Timeless Style Rules" (title 100/100). Script built beat by beat on the pasted Intemporelle transcript (cold-open
+  question, "most of us / almost no one", the reframe, the promise and open loop, a definition chapter, named rules with
+  "Here's the truth", the "if you're still here" line, a mid-video comment question, the guide as the mid-roll, "let's
+  bring it all together", three actions, the closing echo). 43 lines, 1,676 words; every Diana fact sourced (section
+  B); fit.py FITS; hook 58. Left out: weights in hems (no source), heel-height claim, green-suit count. **Waiting for
+  the user's review; no voice or video started.**
 - **Style-icon videos (16 Nov 2026, `research-2026-11-16c.md`):** the user asked which Intemporelle videos introduce an
   elegant woman, and which woman (Queen Elizabeth, Diana, others) is perfect for the channel. The videos could not be
   watched (YouTube blocks this machine; vidIQ 0 credits). Its two real style introductions (Olivia Palermo, Carolyn
