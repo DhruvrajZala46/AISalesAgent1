@@ -210,3 +210,27 @@ Channel 17 Nov 00:15: 387 subscribers (+30 in 6.5 h), 181,337 total views. Short
 Signal: the wedding "slip/secret" angle wins - #3 (a word left out of the vows) 28.5K and #20 (the wrong name) 24K in
 12 h. #25 (tiara) and #26 (dress secrets) already scheduled Wed match it; next batch: more true wedding-day slips
 and hidden details, each told as one moment.
+
+| Checked (UTC) | Short | Id | Age | Views | Likes | Comments | Note |
+|---|---|---|---|---|---|---|---|
+| 17 Nov 12:20 | #20 Wrong name | -hytnq411RY | 24.3 h | 56,301 | 1,013 | 21 | the channel's biggest Short: +32,289 in 12 h (~2,700/h), still running |
+| 17 Nov 12:20 | #6 Diana broke 5 rules | bC6W4eR1FfY | 90.8 h | 35,020 | 1,074 | 16 | |
+| 17 Nov 12:20 | #3 Diana's vows | Mr_V0fXzsMA | 108.3 h | 28,590 | 758 | 8 | |
+| 17 Nov 12:20 | #1 Revenge dress | KWbkQjkoy2g | 123.3 h | 18,771 | 822 | 14 | |
+| 17 Nov 12:20 | #17 Wedding dress | cqDJf_ZrXbA | 42.8 h | 18,736 | 444 | 5 | |
+| 17 Nov 12:20 | #16 Taj Mahal | OUj53Pj-Wkg | 48.3 h | 17,780 | 466 | 5 | +6,090 in 12 h, still being offered |
+| 17 Nov 12:20 | #21 Whatever in love | 5j64rt-rmMU | 12.3 h | 17,208 | 664 | 9 | strong start: ~1,400/h, 3.9% likes (second-fastest first 12 h after #20) |
+| 17 Nov 12:20 | #19 Barefoot race | mItuZHt4ODY | 36.3 h | 8,270 | 342 | 6 | |
+| 17 Nov 12:20 | #15 Audrey LBD | sVgaKYUNUSM | 60.3 h | 5,746 | 71 | 0 | |
+| 17 Nov 12:20 | #2 Define Grace: Diana | -zgZp0sMIhc | 114.8 h | 5,071 | 203 | 2 | |
+| 17 Nov 12:20 | #18 Engagement ring | oJLgH-P0VTc | 18.8 h | 4,384 | 143 | 4 | |
+| 17 Nov 12:20 | #13 Queen colours | xG3FwJjuE2Q | 84.3 h | 3,985 | 116 | 2 | |
+| 17 Nov 12:20 | #14 Define Elegance: Grace Kelly | e4SHVssyUIU | 66.8 h | 1,443 | 28 | 1 | |
+| 17 Nov 12:20 | #5 Grace Kelly walked away | mxg-TOehFH4 | 111.3 h | 264 | 9 | 0 | |
+| 17 Nov 12:20 | #22 Balcony kiss | veJU_EbGbpo | 20 min | 184 | 10 | 0 | went public on its own at 12:00 |
+| 17 Nov 12:20 | #12 Wine glass | n__XOhL2CtE | 72.3 h | 161 | 3 | 0 | |
+| 17 Nov 12:20 | #4 Afternoon tea | ZM8bGiNtc5k | 96.3 h | 95 | 4 | 0 | |
+
+Channel 17 Nov 12:20: 418 subscribers (+31 in 12 h), 220,948 total views (+39,611 in 12 h). Shorts ~222,000 views by
+the per-video counts (the channel total lags). Signal holds: Diana's own words and slips at the engagement and the
+wedding (#20 wrong name, #21 "whatever in love means", #3 the vows) are the three fastest starts.
