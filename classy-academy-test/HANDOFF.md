@@ -290,6 +290,11 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **Diana package (17 Nov 2026, `videos/princess-diana-style-rules/PACKAGE.md`):** the user shipped the thumbnails
+  ("ship it, now write the description and tags titles"). Three titles (recommended: "Princess Diana's 8 Timeless
+  Style Rules", 100/100; 2: "8 Fashion Rules Princess Diana Lived By"; 3: "The 8 Rules Behind Princess Diana's Most
+  Iconic Outfits"), `DESCRIPTION.txt` (4,955 characters, 12 chapters, credits, signed Classy Academy), `TAGS.txt` (15).
+  Search words taken from the titles of the 77 Diana style videos with 100k+ views. **Waiting for the user.**
 - **Diana thumbnails (17 Nov 2026, `videos/princess-diana-style-rules/THUMBNAIL.md`):** the user asked for the most
   clickable thumbnail, one in the channel's style and one built on the biggest videos, "the one you would bet on".
   Research: 79 YouTube searches (3,480 videos; 690 Diana style videos), 177 thumbnails read, 127 scored against their own
