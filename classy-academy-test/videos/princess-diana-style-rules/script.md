@@ -154,7 +154,7 @@
 
 [ON SCREEN: archive film: Diana in the 1980s in ruffles and bows; then the 1990s in a clean, plain suit]
 
-**In the 1980s, many of her dresses had ruffles and bows. But in the 1990s, after her separation in 1992, her style became simpler and chicer. Clean lines. Plain colours. Beautifully cut suits and dresses.**
+**In the 1980s, many of her dresses had ruffles and bows. But in the 1990s, after her separation in 1992, her style became simpler and more chic. Clean lines. Plain colours. Beautifully cut suits and dresses.**
 
 [ON SCREEN: archive news film: the 1997 auction of her dresses in New York]
 
