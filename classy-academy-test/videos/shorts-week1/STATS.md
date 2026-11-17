@@ -234,3 +234,28 @@ and hidden details, each told as one moment.
 Channel 17 Nov 12:20: 418 subscribers (+31 in 12 h), 220,948 total views (+39,611 in 12 h). Shorts ~222,000 views by
 the per-video counts (the channel total lags). Signal holds: Diana's own words and slips at the engagement and the
 wedding (#20 wrong name, #21 "whatever in love means", #3 the vows) are the three fastest starts.
+
+| Checked (UTC) | Short | Id | Age | Views | Likes | Comments | Note |
+|---|---|---|---|---|---|---|---|
+| 17 Nov 17:46 | #20 Wrong name | -hytnq411RY | 29.8 h | 66,272 | 1,065 | 25 | +9,971 in 5.4 h (~1,800/h), slowing |
+| 17 Nov 17:46 | #6 Diana broke 5 rules | bC6W4eR1FfY | 96.3 h | 35,143 | 1,079 | 16 | |
+| 17 Nov 17:46 | #21 Whatever in love | 5j64rt-rmMU | 17.8 h | 30,718 | 861 | 18 | +13,510 in 5.4 h (~2,500/h), speeding up: second breakout |
+| 17 Nov 17:46 | #3 Diana's vows | Mr_V0fXzsMA | 113.8 h | 28,654 | 759 | 8 | |
+| 17 Nov 17:46 | #16 Taj Mahal | OUj53Pj-Wkg | 53.8 h | 20,265 | 531 | 7 | +2,485 in 5.4 h |
+| 17 Nov 17:46 | #17 Wedding dress | cqDJf_ZrXbA | 48.3 h | 19,236 | 457 | 5 | |
+| 17 Nov 17:46 | #1 Revenge dress | KWbkQjkoy2g | 128.8 h | 18,787 | 822 | 14 | |
+| 17 Nov 17:46 | #19 Barefoot race | mItuZHt4ODY | 41.8 h | 8,406 | 353 | 6 | |
+| 17 Nov 17:46 | #18 Engagement ring | oJLgH-P0VTc | 24.3 h | 6,077 | 176 | 4 | |
+| 17 Nov 17:46 | #15 Audrey LBD | sVgaKYUNUSM | 65.8 h | 5,769 | 71 | 0 | |
+| 17 Nov 17:46 | #2 Define Grace: Diana | -zgZp0sMIhc | 120.3 h | 5,098 | 205 | 2 | |
+| 17 Nov 17:46 | #13 Queen colours | xG3FwJjuE2Q | 89.8 h | 4,017 | 119 | 2 | |
+| 17 Nov 17:46 | #22 Balcony kiss | veJU_EbGbpo | 5.8 h | 1,656 | 82 | 0 | modest start (~285/h), 5.0% likes |
+| 17 Nov 17:46 | #14 Define Elegance: Grace Kelly | e4SHVssyUIU | 72.3 h | 1,475 | 29 | 1 | |
+| 17 Nov 17:46 | #5 Grace Kelly walked away | mxg-TOehFH4 | 116.8 h | 264 | 9 | 0 | |
+| 17 Nov 17:46 | #12 Wine glass | n__XOhL2CtE | 77.8 h | 167 | 3 | 0 | |
+| 17 Nov 17:46 | #4 Afternoon tea | ZM8bGiNtc5k | 101.8 h | 97 | 4 | 0 | |
+| 17 Nov 17:46 | #23 4 rules before 21 | T15CqfLAlTI | 16 min | 88 | 11 | 0 | went public on its own at 17:30 |
+
+Channel 17 Nov 17:46: 444 subscribers (+26 in 5.4 h), 285,520 total views. Shorts ~252,000 views by the per-video
+counts. The two fastest are both Diana's own words on film (#20 at the altar, #21 in the engagement interview);
+the balcony kiss (#22, a moment with no words or slip) started slower.
