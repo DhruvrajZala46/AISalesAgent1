@@ -290,14 +290,30 @@ The user asked for a new video copying the **format** of their own "7 Things Ele
   from the video's clips, "10 Elegant Ways / To Tie a Scarf / this winter", CA logo, 1920x1080. Checked among the channel's
   eight top thumbnails. Told to the user: it matches the channel but is the weakest of the four against the scarf research.
   Waiting for the user's review.
+- **Diana video v1 (17 Nov 2026, `videos/princess-diana-style-rules/`): built and checked at 179 snapshots; the render was running when this was written (QA numbers follow).** The user approved the script
+  ("ship it, now build the full video") and asked for unique, all-new clips and the channel's own old style, researched
+  first. 12:06, 1080p, voice Kokoro `af_heart` 0.80, one piano bed ("Classical vibes 3", 15 dB under), no sound effects.
+  - **96 clips in 105 windows + 54 press photographs of Diana** (about 160 pictures). Every rule is proved with real
+    photographs whose pin captions name the moment (AIDS ward April 1987, Japan 1986, the balcony, polo 1988, London
+    1994, Bosnia 1997, the Christie's sale June 1997, 29 June 1994), framed on the caramel with the place and year, plus
+    13 clips of real archive film. Rule 5 shows two gowns before and after their alteration.
+  - **All new:** 602 reels downloaded from 153 search phrases; 106 repeat earlier videos' footage and are not used
+    (`oldclash.py`, charm video included). No clip repeated inside the video.
+  - **Layouts:** only the channel's own (`VISUAL-ANALYSIS.md`); the named woman shown in photographs and archive film,
+    as `VISUAL-EDITING-DNA.md` records for Audrey and Diana.
+  - **Rights: nothing is licensed**, and this video carries more press photographs than any before (`SOURCES-LOG.md`:
+    every row unresolved). 37 everyday clips are marked PARTLY. The creator decides.
+  - Work folder (media, lost with the container): scratchpad `cdi/`. Text is in the repo: `edit.py`, `clips.py`,
+    `eye_notes.txt`, `picks.md`, `gen_docs_diana.py`, `SOURCES-LOG.md`, `CREDITS.txt`, `CHAPTERS.txt`,
+    `VISUAL-ANALYSIS.md`.
+  - **Waiting for the user's review ("ship it, or change it?").** Not made yet: thumbnails, title, description, tags.
 - **Diana script v1 (17 Nov 2026, `videos/princess-diana-style-rules/script.md`, `research-2026-11-17.md`):** the user
   asked for the one best proven topic and the script in The Intemporelle's exact format. Pick: "Princess Diana's 8
   Timeless Style Rules" (title 100/100). Script built beat by beat on the pasted Intemporelle transcript (cold-open
   question, "most of us / almost no one", the reframe, the promise and open loop, a definition chapter, named rules with
   "Here's the truth", the "if you're still here" line, a mid-video comment question, the guide as the mid-roll, "let's
   bring it all together", three actions, the closing echo). 43 lines, 1,676 words; every Diana fact sourced (section
-  B); fit.py FITS; hook 58. Left out: weights in hems (no source), heel-height claim, green-suit count. **Waiting for
-  the user's review; no voice or video started.**
+  B); fit.py FITS; hook 58. Left out: weights in hems (no source), heel-height claim, green-suit count. **Approved by the user on 17 Nov 2026 ("ship it").**
 - **Style-icon videos (16 Nov 2026, `research-2026-11-16c.md`):** the user asked which Intemporelle videos introduce an
   elegant woman, and which woman (Queen Elizabeth, Diana, others) is perfect for the channel. The videos could not be
   watched (YouTube blocks this machine; vidIQ 0 credits). Its two real style introductions (Olivia Palermo, Carolyn

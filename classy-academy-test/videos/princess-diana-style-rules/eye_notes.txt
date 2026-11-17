@@ -1,0 +1,119 @@
+# my own check of every chosen window (vs/k1..k25, d1..d4: 8 frames per window at 216 px; then 179 snapshots of the edit), 17 Nov
+# slot key window: what I saw. NOTE = the picture is true to the idea of the line but not to every word.
+h3a dieighties2 0.3-8.2: REAL film: Diana steps down from the glass coach in the wedding gown, 1981 (the pin names the wedding). OK.
+h3b dicrowd0 12.3-18: REAL film (square): white sleeveless dress with a red flower, pearls; hands reach to her from a crowd; she bends to shake them. NOTE: real film of Diana reaching to hands in a crowd; the pin gives no date or place.
+h3c dicrowd35 2.4-7.9: REAL film (square, cropped past the fan-account mark): tartan jacket, white collar, bouquets, smiling in a crowd. NOTE: real film of Diana in a tartan jacket with flowers; the pin gives no date or place.
+h3d dijewel43 18.4-22.4: REAL film: close view, black jacket, four-strand pearl choker, she looks up and smiles (cropped past a mark). NOTE: real film, a close view in a black jacket and pearl choker; the pin gives no date or place.
+h4a dinineties12 8.4-12.9: REAL film: royal-blue blazer over a black dress, walking through a panelled hall with men in suits (0.5-7), then smiling (8.4-12.9); cropped past a mark. NOTE: real film: a royal-blue blazer over a black dress; the pin gives no date or place.
+h6a dinineties25 9.7-17: REAL film (square): a stand full of press photographers with long lenses, then Diana in sunglasses and a black sleeveless top, waving. NOTE: real film: press photographers in a stand, then Diana in sunglasses waving; the pin gives no date or place.
+d10a dicrowd0 2.4-12: REAL film (square): white sleeveless dress with a red flower, pearls; hands reach to her from a crowd; she bends to shake them. NOTE: the same walkabout as at 0:31 (earlier seconds of the clip).
+r4a diwalk39 0.3-3.7: REAL film: pale blue beaded halter dress, she is out of the car, silver clutch in her hand, crowd behind (cropped past a mark). NOTE: real film: Diana out of the car in a pale blue halter dress, her clutch in her hand (not held to her chest in this clip).
+r4b dicar5 0.3-2.35: REAL film, soft: red sparkly gown beside a dark car on a red carpet, clutch held in front. NOTE: real film, low resolution: Diana beside a car in a red gown, clutch held in front.
+r5a dicar2x 2.4-6.4: REAL film (bars cut off): pale blue strapless embroidered gown, pearl necklace, walking through a reception among men in suits and naval officers. NOTE: real film: the pale blue strapless gown (the re-made one shown in the photographs that follow).
+r8c dicar1 0.3-5.4: REAL film: the black off-the-shoulder dress, pearl choker with a dark stone, black clutch; 0.3-5.4 wide, across the lawn from the car, greeted by a man in a dinner suit; 9.6-14.6 and 18.6-22.6 close, talking and laughing. Cropped past a "LIKE & FOLLOW" line that shows at about 8 s. OK.
+r8d dicar1 9.6-14.6: REAL film: the black off-the-shoulder dress, pearl choker with a dark stone, black clutch; 0.3-5.4 wide, across the lawn from the car, greeted by a man in a dinner suit; 9.6-14.6 and 18.6-22.6 close, talking and laughing. Cropped past a "LIKE & FOLLOW" line that shows at about 8 s. OK.
+r8e dicar1 18.6-22.6: REAL film: the black off-the-shoulder dress, pearl choker with a dark stone, black clutch; 0.3-5.4 wide, across the lawn from the car, greeted by a man in a dinner suit; 9.6-14.6 and 18.6-22.6 close, talking and laughing. Cropped past a "LIKE & FOLLOW" line that shows at about 8 s. OK.
+e40a dicrowd21 22.5-29.3: REAL film (square): purple jacket with a black collar, talking with people in a city crowd (two different stretches). NOTE: real film: Diana talking with people in a crowd; the pin gives no date or place.
+e40b dicaring5 21-27.6: REAL film (square, low resolution): black blazer; she hugs a small child in red cheek to cheek. NOTE: real film, low resolution: Diana hugging a child.
+e43a dicrowd21 15.3-21.5: REAL film (square): purple jacket with a black collar, talking with people in a city crowd (two different stretches). NOTE: the same crowd as at 10:46 (earlier seconds of the clip).
+e43b dilaugh6 12.5-27.5: REAL film (square): white short-sleeved shirt, seated beside a woman; she talks, then laughs behind her hands. NOTE: real film: Diana in a white shirt, talking, then smiling behind her hands.
+h1a jeansb1 0.3-4: blonde woman about 45 buttons a white shirt and fastens her belt (0.3-4); later full body in dark jeans, white shirt and camel blazer (10.1-17.4). Small logo on the shirt. OK.
+h1b mirrorg4 2.3-9.4: young blonde woman, beige cropped jacket and white trousers, turns and touches her hair in a hallway. NOTE: a woman showing a cream jacket and white trousers; no mirror in shot.
+h2a posing38 0.3-8: woman in a navy strapless corset dress poses and twirls in front of an iron door. OK.
+h2b gardenb2 4.3-9.3: two women in floral gowns with paper parasols pose beside hydrangeas. OK.
+h2c grandmf40 16.1-22.5: grey-haired mother rests her cheek on her adult daughter, both laugh; studio look. OK.
+h2d gownparty36 0.5-9.5: woman in a feathered beaded gown films fireworks at an evening party, guests round her. NOTE: a feathered gown at a party with fireworks; no dinner in shot.
+h5a agese28 1-6.5: woman of about 70 with cropped silver hair puts on and belts a denim jacket in a hotel corridor. OK.
+h5b wedguestd24 0.3-6: three women in magenta and lime satin dresses greet each other at a door (picture is nearly square). OK.
+h5c outfitsb27 0.3-6.5: woman in a white top and trousers walks through an arcade (cropped past a faint caption). NOTE: a woman in white walking through an arcade: stands for "what style actually is".
+h5d navyblazer44 5.6-13.7: woman of about 50, sunglasses, navy trimmed jacket and flared jeans, talks in a stone arcade. NOTE: a woman of about 50 in a navy jacket talking to the camera: stands for "the message your clothes give".
+h6c navyblazer30 3.3-9.3: woman in a navy pinstripe blazer, white top and dark jeans against a plain wall. NOTE: a navy blazer with jeans: stands for "practical".
+h6d rewearb38 12.8-19.2: hands fasten a black belt over a dark dress, then she stands back, hands on hips. NOTE: a belt fastened over a dress: stands for "a little surprising".
+h6e softblueb12 0.3-8.3: blonde woman of about 60 in a dusty-blue cardigan and satin trousers, talking, hallway at home. NOTE: a woman of about 60 in a soft blue cardigan: stands for "any age, any budget".
+h6f agese23 0.3-6.3: woman of about 65 with a silver bob walks out of her front door and down the steps, smiles. OK.
+h7a dieighties1 2.2-6.2: three press photographs in turn: Diana in a pale blue off-the-shoulder ruffled ballgown, seated on a red chair, then smiling to the side. NOTE: real press photographs shown one after another (a blue ruffled ballgown, early 1980s), not moving film.
+h7b blackdressb48 0.3-4.6: woman in a black lace-sleeved knee-length dress walks through a stone arcade (two shots). NOTE: a woman in a black dress walking through a stone arcade, not into a room.
+h7c knitc20 0.3-9.3: blonde woman in a pale knit holds a mug in an armchair, looking aside; she moves a little. OK.
+d8a gownparty30 0.3-8: woman in a black sparkling ball gown climbs the steps of a lit white mansion at night, from behind. NOTE: a black ball gown climbing the steps of a mansion; no room, no other guests.
+d8a2 gownparty23 0.3-5.1: woman in a fuchsia satin ball gown turns in a marble lobby (two shots). OK.
+d8b hugfriend19 1.3-9: young woman hugs an older woman in a headscarf on an evening street; grainy. OK.
+d8c sitdownb9 0.3-4.2: woman in a black midi dress and white hat sits with a book and tea on a terrace; face hidden by the hat. NOTE: a woman in a black dress and hat sitting with tea: stands for "calm".
+d8d outfitc41 2.3-7.3: woman in a cream halter top and wide trousers stands in an arched doorway. NOTE: a woman in a cream outfit standing in an arched room: stands for "respected".
+d9a streetpeople41 5.4-14.5: crowd crossing a Tokyo street in both directions (square picture). OK.
+d9b sitdownb35 19.6-26: woman in a pale yellow midi dress sits at a terrace table above the sea. NOTE: a woman in a yellow dress at a terrace table by the sea: stands for "the outfit that fitted the moment".
+r1a wardrobe11 3-12: woman seen over her shoulder holds up a sequinned dress at her open wardrobe; dim. OK.
+r1b shirtc9 4.6-11.1: woman of about 40 puts on a white shirt and jeans in a pale room (4.6-11.1); later puts on shoes, a jumper over her shoulders and picks up her bag (13.5-26). OK.
+r1c grandme22 3.4-9.5: young woman and her white-haired grandmother in a rose jumper look at an album together. OK.
+r1d softblue5 0.3-7.3: woman with a dark bob adjusts a cornflower-blue mohair cardigan in an artist's studio. OK.
+r1e rosec17 35-39.4: woman in a pale pink jumper and white trousers shows the jumper, turns. NOTE: a pale pink jumper, lighter than a warm dusty rose.
+r1f brooch2 30.3-36.3: woman of about 45 in a red velvet blazer picks a gold heart brooch from a box. OK.
+r1g comfortb3 3-7.5: one woman in a grey knit hugs a friend on a sofa. OK.
+r1h knitc17 0.3-5.3: woman in a cream cable-knit jumper pours milk into a cup; no face. OK.
+r1i wedguestb45 0.3-7: woman in a floral dress carrying white lilies comes down wide steps, smiling. NOTE: a woman with a bouquet of lilies coming down steps, smiling; nobody is greeted in shot.
+r2a stairs47 0.3-8: woman in a long black coat-dress climbs a baroque staircase, from behind; black and white look. NOTE: a woman in a long black coat-dress climbing a grand staircase, seen from behind: stands for "at a distance".
+r2a2 redjacketb34 11.6-15.4: woman in a crimson trouser suit and sunglasses pulls on long black leather gloves. NOTE: a red suit, long leather gloves and sunglasses: stands for "armour".
+r2b grandmab19 1.3-7.4: an elderly white-haired woman is hugged close, smiling (advert footage, logo cropped out). NOTE: footage from a stairlift company advert (the logo is cropped out); an elderly woman hugged close.
+r2c kneelchild3 13.9-18.9: woman in white crouches and hugs a small child at the water's edge at dusk. OK.
+r2d holdhands27 0.3-6.3: two pairs of hands holding each other in a lap. OK.
+r3a wedguestb42 0.3-8.9: woman in a pale yellow caped dress with a clutch, hotel room (small text at the top cropped). OK.
+r3b bride46 4-12: bride in a long veil in a courtyard, a crowd of guests facing her. OK.
+r3c carout46 0.3-6.5: woman in a black off-the-shoulder evening dress and pearls steps out of a small vintage car. NOTE: a woman in a black evening dress stepping out of a car; no dinner table in shot.
+r3d posing22 0.3-5.7: woman in a gold satin slip dress walks and poses in a sunlit studio. NOTE: a woman in a gold slip dress in a studio: stands for "this evening matters to me".
+r3e wedguestd20 0.3-8: four women in pastel gowns walk away under olive trees. NOTE: wedding guests in pastel gowns walking away, seen from behind.
+r4c carouth31 2.3-8.5: woman in a long black dress is helped out of a black car by a man in a suit. NOTE: a woman helped out of a car in a long black dress: the awkward moment itself, not the planning.
+r4d sitdownb32 0.3-7: woman in a cream knit dress and black hat sits at a cafe table with a cup. NOTE: a woman already seated at a cafe table in a knit dress; the act of sitting down is not shown.
+r4e tryon15 7.6-11: woman in a black dress at a large mirror raises both arms to her hair and turns. OK.
+r4f stairs39 0.3-6: woman in a velvet midi dress and heels walks up stone steps to a door, from behind. OK.
+r4g rewearb31 3.3-11.2: woman re-ties the top of a black wrap dress and smooths it. NOTE: a woman re-tying the top of a black wrap dress (the neckline), no gaping shown.
+m24a commentb19 0.3-5.8: young woman in glasses types on her phone at a table by a window, slight smile (two different stretches). NOTE: a young woman smiling at her phone: stands for the viewer who is still here.
+m24b dinineties12 0.5-7: REAL film: royal-blue blazer over a black dress, walking through a panelled hall with men in suits (0.5-7), then smiling (8.4-12.9); cropped past a mark. NOTE: real film: Diana walking through a hall in the royal-blue blazer.
+r5b samedress12 3.5-8.6: grey-haired woman of about 50 in a dark shirt-dress, then the same dress with a sweatshirt and a belt bag. OK.
+r5c wedguestb44 3.5-12: woman in a mint tulle dress; then the same dress under a camel blazer. OK.
+r5d belt22 16.3-27: woman ties a long tan leather belt over a grey shirt-dress, close. OK.
+r5e navyjacketb6 8.1-14.8: woman of about 45 puts a navy blazer on over a blue knit dress, then stands back. OK.
+r5f hairup47 0.3-6.3: woman in a cream jumper twists her long hair up and clips it, from behind. OK.
+r5g tidyrailb24 0.3-7: a tidy rail of white, beige, black and denim pieces; hands hang a white shirt. OK.
+r5h gownparty8 0.3-8: woman in a champagne glitter ball gown with a long train climbs a gold staircase, from behind. NOTE: a gold ball gown on a staircase: stands for the piece you love but rarely wear.
+r5i commenting32 0.3-9: young woman with a top knot in a striped shirt types on her phone on a pink sofa; she does not smile. OK.
+g29a softblueb24 5.6-10: woman of about 50 in a light-blue jumper and white trousers shows the outfit (5.6-10); later smiles holding her small dog (33.3-39.9). NOTE: a woman of about 50 showing a light-blue jumper and white trousers.
+g29b drapeb19 0.3-8: colour drapes changed under a woman's face, seen in an arched mirror, pink room. OK.
+g29c hairup23 3-7.3: hands pin a French twist with a comb, close, from behind. OK.
+g29d drapeb47 21.7-32: a stylist lays colour drapes under the face of a blonde client of about 50 (cropped above the subtitles). OK.
+g29e hairb37 0.3-6: a finished low chignon in profile, then she turns to the camera. OK.
+g29f jacketdress29 6.1-13.8: woman in a green knit dress in a walk-in wardrobe, now with a grey checked blazer over it. OK.
+g29g wedguestb25 0.3-6.2: woman in a sage-green draped midi dress turns on a staircase landing. NOTE: a woman turning in a sage-green dress on a staircase.
+r6a wardrobe14 0.3-9: woman with afro hair looks through the hangers on her clothes rail. OK.
+r6b jeansb1 10.1-17.4: blonde woman about 45 buttons a white shirt and fastens her belt (0.3-4); later full body in dark jeans, white shirt and camel blazer (10.1-17.4). Small logo on the shirt. OK.
+r6c whiteshirt8 3.3-11.3: white Oxford shirt, light jeans, black belt and bag, walking; head out of frame; tiny logo on the shirt. NOTE: white shirt with light (not dark) jeans; her head is out of frame.
+r6d camelblazer9 2.3-6.3: woman in a camel blazer, white top, jeans and sunglasses turns in a white room. OK.
+r6e loafers44 4.3-8.3: burgundy loafers on a woman's feet with grey jeans, close. OK.
+r6f capsule7 0.3-4.1: a small white rail with a few neutral pieces, shoes beneath (stop-motion). OK.
+r6g navyblazer21 0.3-6.2: brunette in a navy double-breasted blazer and jeans leans on a wall, hand in her hair. OK.
+r7a agese44 7.6-13.6: silver-haired woman of about 60 in a black belted midi dress walks along a path, smiling. NOTE: a silver-haired woman in a black dress walking and smiling: stands for "the woman you are now".
+r7b declutter4 3-8.3: two women sort a big pile of clothes on a bed, hangers on the floor. OK.
+r7c declutterb9 11-22: woman takes pieces out of her wardrobe and holds them up (cropped above the subtitles). OK.
+r7d donateb34 3-11: woman sits on the floor of a walk-in wardrobe packing folded clothes into clear bags. NOTE: a woman packing folded clothes into clear bags on her wardrobe floor; no donation box or person receiving them.
+r8a blackdress39 0.3-5.3: woman in a black short-sleeved wrap midi dress and sunglasses walks towards the camera before stone steps. NOTE: a woman in a black dress walking outdoors, not into a room.
+r8g agesd9 21.7-32.4: blonde woman of about 60 in a navy pinstripe trouser suit with a tan tote, hallway at home. OK.
+r8h blackdress16 0.3-9.5: woman with a sleek bun in a long black one-shoulder dress strides past a hotel entrance at dusk. NOTE: a long black one-shoulder evening dress (longer than a "classic black dress").
+r8i redjacketb40 0.3-7: woman in a berry-red belted trouser suit and white sunglasses walks along a stone wall. NOTE: a berry-red trouser suit (jacket and trousers).
+r8j blackhang11 0.3-2.4: a black sequin gown on a hanger on a wall sconce; a hand takes it. NOTE: a black sequin gown on a hanger, a hand takes it down.
+e41a shirtc9 13.5-26: woman of about 40 puts on a white shirt and jeans in a pale room (4.6-11.1); later puts on shoes, a jumper over her shoulders and picks up her bag (13.5-26). OK.
+e41b rose25 16.6-24.8: dark-haired woman of about 40 in a rose-pink knit talks to the camera in a bright room. NOTE: a woman in a pink jumper talking to the camera: stands for "wear it again, proudly".
+e41c sitdownb45 10.5-13.8: woman in a cream tweed suit gets up from a cafe table and walks towards the camera. NOTE: a woman in a cream tweed suit getting up from a cafe table: stands for the courage outfit.
+e42a commentb7 9.4-14.5: young woman in a striped top smiles at her phone as she types, outdoors (landscape picture). OK.
+e42a2 commentb19 15.5-20.4: young woman in glasses types on her phone at a table by a window, slight smile (two different stretches). OK.
+e42b hairup43 0.3-6.3: blonde woman in a white sleeveless top twists her hair up into a clip, from behind. NOTE: a woman pinning her hair up, seen from behind (the guide: hairstyles).
+e42c softblueb24 33.3-39.9: woman of about 50 in a light-blue jumper and white trousers shows the outfit (5.6-10); later smiles holding her small dog (33.3-39.9). NOTE: a smiling woman of about 50 in a blue jumper holding her dog (the guide line).
+
+# rejected after my own look
+dicar10: fan-account name across the lower middle of the picture (cannot be cropped without losing the child).
+dicrowd20: white outline round her, looks processed.
+dismile3: caption "Royal Gala Concert in Australia, 1983" over the first shot; the second shot is a still.
+dijewel43 10.2-15.5: black suit, men in dark suits, a sombre occasion: not used for a comment line.
+dilaugh6 1.5-9 as a "let's go deeper" picture: she looks down, serious; the laughing seconds are kept for the close.
+drapeb29: caption "WOW (the first of many)" beside her face.
+mirrorg39 (phone over the face), rosec7 (quick cuts, a glitch frame), rosec2 (caption over her legs), doorc20 (tiny and soft), getready0 (robe).
+uniformb46 (AI look), hostb42 / welcome1 (caption across the middle), carout13 and carouth0 (she gets INTO the car).
+dikids38: an "AI clips" account animating one photograph. Slideshows with captions: dicar7, dicar35, diiconic14/36/41, digowns1/8/28, dihat1/13/2/21/44, dipolo0/3/16, dicasual1/3/32, direvenge5/7/15/32, diwalk10/20/40/5.
+Photographs not used: prevenge_0 ("PDM" mark), ppolo_17 and ppolo_19 (fan-group mark), peightiesb_10/36/0 and phats_15 (AI-enhanced look), ppink83_11 (app icons), prevengeb_2 (a replica made for The Crown), prevengeb_7 (studio portrait, source unknown), every photograph with a Getty watermark.
