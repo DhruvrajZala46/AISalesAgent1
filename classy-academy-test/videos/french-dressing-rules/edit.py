@@ -4,8 +4,8 @@
 after = lambda i: en(i) + 0.1
 CROP.update({'jeanstry47': (118, 420, 860), 'jeanstry44': (157, 560, 720), 'jeanstry38': (118, 0, 860), 'stretchjeans40': (34, 120, 1160),
              'floralrail27': (107, 0, 900), 'blackturtle18': (50, 0, 1100), 'whitecollar34': (56, 200, 1080), 'neutralout27': (60, 140, 1060),
-             'scarftie8': (98, 0, 930), 'scarfcoat17': (50, 180, 1100), 'scarftie43': (107, 0, 900), 'scarftie46': (118, 0, 860),
-             'socksloafers24': (79, 0, 1000), 'curvychic14': (45, 160, 1120), 'navysweater7': (67, 0, 1040)})
+             'scarftie8': (98, 0, 930), 'scarfcoat17': (79, 270, 1000), 'scarftie43': (107, 0, 900), 'scarftie46': (118, 0, 860),
+             'socksloafers24': (79, 0, 1000), 'curvychic14': (45, 160, 1120), 'tightsskirt3': (90, 300, 960), 'navysweater7': (67, 0, 1040)})
 
 # ================= HOOK =================
 canvas_full(C('parisjeans2', 0.2, 6.9), 0.0, at(1, 'Which') - 0.1, fin=0.01)
@@ -49,14 +49,14 @@ row([C('stripesover8', 11.0, 19.0), C('stripeblazer0', 16.7, 23.5), C('stripecam
     [at(18, 'Wear it'), at(18, 'Under a navy blazer'), at(18, 'Under a camel coat'), at(18, 'With white trousers')], en(18) + 0.4,
     labels=['dark jeans', 'navy blazer', 'camel coat', 'white trousers'])
 pair([C('creamtee20', 8.8, 11.2), C('breton16', 0.3, 4.8)], [st(19) - 0.1, at(19, 'then with the stripes')], en(19) + 0.4, labels=['a plain T-shirt', 'the stripes'])
-stage([(C('leopardskirt45', 0.3, 8.0), st(20) - 0.1), (C('leopardskirt45', 10.7, 16.0), at(20, 'Just wear')),
+stage([(C('leopardskirt45', 3.2, 8.0), st(20) - 0.1), (C('leopardskirt45', 10.7, 16.0), at(20, 'Just wear')),
        (C('stripesover37', 0.3, 6.0), st(21) - 0.1), (C('stripecamel14', 12.5, 20.0), at(21, 'and you still'))], en(21) + 0.75)
 mark('yes', 'one print at a time', at(20, 'Just wear'), en(20) + 0.3)
 
 # ================= 3. Keep light near your face =================
 card('3. Keep light near your face', 22)
 stage([(C('blackturtle18', 0.3, 5.3), after(22)), (C('blackturtle33', 9.1, 14.0), at(23, 'It feels safe')),
-       (C('creamtee1', 0.3, 5.5), st(24) - 0.1), (C('navysweater8', 0.3, 4.5), at(24, 'A light colour')), (C('blackturtle33', 15.0, 18.5), at(24, 'A very dark')),
+       (C('creamtee1', 0.3, 9.5), st(24) - 0.1), (C('blackturtle33', 15.0, 18.5), at(24, 'A very dark')),
        (C('blackturtle33', 18.5, 22.0), st(25) - 0.1),
        (C('navysweater3', 5.7, 12.5), st(26) - 0.1), (C('navysweater10', 0.3, 7.0), at(26, "because it's"))], at(27, 'A white collar') + 0.5)
 mark('yes', 'light sends light back', at(24, 'A light colour'), at(24, 'A very dark') - 0.1)
@@ -115,7 +115,7 @@ mark('yes', 'formal? all the way up', st(48), at(48, 'This one'))
 
 # ================= 6. A scarf carries the colour =================
 card('6. A scarf carries the colour', 50)
-stage([(C('brightcoat1', 4.8, 9.0), after(50)), (C('brightcoat28', 0.3, 6.5), at(51, "And it's easy")),
+stage([(C('brightcoat1', 13.7, 18.0), after(50)), (C('brightcoat28', 0.3, 6.5), at(51, "And it's easy")),
        (C('redscarf44', 0.3, 7.8), st(52) - 0.1), (C('scarftie7', 10.8, 14.4), at(52, 'and you can change'))], at(53, 'Navy and cream') - 0.1)
 mark('yes', 'right by your face', at(52, 'because it sits'), en(52) + 0.3)
 row([C('neutralout27', 0.3, 4.2), C('neutralout27', 5.9, 8.3), C('mensblazer13', 3.3, 5.2)],
@@ -135,14 +135,14 @@ mark('yes', 'the daylight test', st(56), en(56) + 0.3)
 card('7. Socks follow the shoes', 59)
 stage([(C('sockdrawer0', 0.3, 9.0), after(59)), (C('sockdrawer14', 0.3, 3.2), at(60, 'We all do it')),
        (C('socksloafers23', 0.3, 4.2), st(61) - 0.1),
-       (C('socksloafers24', 3.3, 6.2), st(62) - 0.1), (C('socksloafers2', 4.9, 6.4), at(62, 'and that makes'))], at(63, 'dark shoes') - 0.1)
+       (C('socksloafers24', 3.3, 6.2), st(62) - 0.1), (C('crosslegs24', 6.3, 8.3), at(62, 'the eye travels')), (C('tightsskirt3', 0.3, 3.4), at(62, 'and that makes'))], at(63, 'dark shoes') - 0.1)
 mark('no', 'a bright line', at(61, 'a bright line'), en(61) + 0.3)
 mark('yes', 'one line', at(62, 'in one line'), en(62) + 0.2)
 row([C('crosslegs24', 2.3, 4.3), C('whitesocks30', 2.3, 8.0), C('tightsskirt42', 0.3, 6.5)],
     [at(63, 'dark shoes') - 0.1, at(63, 'Light shoes'), at(63, 'And with a skirt')], en(63) + 0.4,
     labels=['dark shoes, dark socks', 'light shoes, light socks', 'black tights, black shoes'])
-stage([(C('crosslegs7', 0.3, 3.5), st(64) - 0.1), (C('crosslegs19', 2.3, 7.5), at(64, 'Whatever shows')),
-       (C('redsocks37', 0.2, 1.2), st(65) - 0.1), (C('socksloafers43', 0.3, 6.0), at(65, 'Let it be')),
+stage([(C('crosslegs7', 0.3, 3.5), st(64) - 0.1), (C('crosslegs19', 2.3, 5.4), at(64, 'Whatever shows')),
+       (C('redsocks37', 0.3, 0.3), st(65) - 0.1), (C('socksloafers43', 0.3, 6.0), at(65, 'Let it be')),
        (C('socksloafers13', 1.3, 10.3), st(66) - 0.1)], en(66) + 0.75)
 mark('yes', 'the sit-down test', st(64), en(64) + 0.3)
 mark('yes', 'on purpose', at(65, 'on purpose') - 0.3, en(65) + 0.3)
@@ -151,7 +151,7 @@ mark('yes', 'on purpose', at(65, 'on purpose') - 0.3, en(65) + 0.3)
 white(en(66) + 0.35, st(67) + 0.5)
 stage([(C('darkjeans6', 14.3, 19.0), st(67) - 0.1), (C('stripesover38', 27.0, 31.0), st(69) - 0.1), (C('navysweater10', 8.5, 12.6), st(70) - 0.1),
        (C('mensblazer16', 2.3, 5.3), st(71) - 0.1), (C('highlow1', 10.0, 14.0), st(72) - 0.1), (C('scarfcoat22', 9.7, 14.0), st(73) - 0.1),
-       (C('crosslegs24', 4.3, 6.2), st(74) - 0.1)], en(74) + 0.6, x0=250)
+       (C('whitesocks30', 8.3, 11.5), st(74) - 0.1)], en(74) + 0.6, x0=250)
 items = ['jeans that hold their shape', 'stripes as your print', 'light near your face', "borrow from the men's side",
          'one dressy, one casual', 'a scarf carries the colour', 'socks follow the shoes']
 for k, txt in enumerate(items):
