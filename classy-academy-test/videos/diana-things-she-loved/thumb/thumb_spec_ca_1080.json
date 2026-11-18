@@ -1,0 +1,11 @@
+{
+ "A_still_sold": {
+  "underline": true, "dark": 105, "scale": 1.5, "maxw": 900, "logo_dark": 110,
+  "top": "Things Diana Loved", "big": "Still Sold", "small": "*you can buy them today*", "small_cap": 35,
+  "panels": [
+   {"src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/cdl/assets/pladydior_0.jpg", "box": [573, 0, 1000]},
+   {"src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/cdl/assets/psheep_1.jpg", "box": [588, 0, 1177]},
+   {"src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/cdl/assets/ptods_2.jpg", "box": [640, 0, 1000]}
+  ]
+ }
+}
