@@ -259,3 +259,30 @@ wedding (#20 wrong name, #21 "whatever in love means", #3 the vows) are the thre
 Channel 17 Nov 17:46: 444 subscribers (+26 in 5.4 h), 285,520 total views. Shorts ~252,000 views by the per-video
 counts. The two fastest are both Diana's own words on film (#20 at the altar, #21 in the engagement interview);
 the balcony kiss (#22, a moment with no words or slip) started slower.
+
+| Checked (UTC) | Short | Id | Age | Views | Likes | Comments | Note |
+|---|---|---|---|---|---|---|---|
+| 18 Nov 12:18 | #20 Wrong name | -hytnq411RY | 48.3 h | 76,501 | 1,118 | 26 | slowing (+2,061 in 12 h) |
+| 18 Nov 12:18 | #21 Whatever in love | 5j64rt-rmMU | 36.3 h | 41,006 | 921 | 21 | |
+| 18 Nov 12:18 | #6 Diana broke 5 rules | bC6W4eR1FfY | 114.8 h | 35,561 | 1,081 | 16 | |
+| 18 Nov 12:18 | #22 Balcony kiss | veJU_EbGbpo | 24.3 h | 32,638 | 743 | 7 | slow start, then +25,800 in 12 h: third breakout |
+| 18 Nov 12:18 | #3 Diana's vows | Mr_V0fXzsMA | 132.3 h | 28,798 | 760 | 8 | |
+| 18 Nov 12:18 | #16 Taj Mahal | OUj53Pj-Wkg | 72.3 h | 23,561 | 583 | 7 | |
+| 18 Nov 12:18 | #17 Wedding dress | cqDJf_ZrXbA | 66.8 h | 21,403 | 502 | 6 | |
+| 18 Nov 12:18 | #1 Revenge dress | KWbkQjkoy2g | 147.3 h | 18,862 | 823 | 14 | |
+| 18 Nov 12:18 | #23 4 rules before 21 | T15CqfLAlTI | 18.8 h | 10,162 | 345 | 4 | |
+| 18 Nov 12:18 | #18 Engagement ring | oJLgH-P0VTc | 42.8 h | 9,148 | 232 | 4 | |
+| 18 Nov 12:18 | #19 Barefoot race | mItuZHt4ODY | 60.3 h | 8,909 | 404 | 6 | |
+| 18 Nov 12:18 | #15 Audrey LBD | sVgaKYUNUSM | 84.3 h | 5,940 | 74 | 0 | |
+| 18 Nov 12:18 | #2 Define Grace: Diana | -zgZp0sMIhc | 138.8 h | 5,192 | 208 | 2 | |
+| 18 Nov 12:18 | #13 Queen colours | xG3FwJjuE2Q | 108.3 h | 4,106 | 122 | 2 | |
+| 18 Nov 12:18 | #14 Define Elegance: Grace Kelly | e4SHVssyUIU | 90.8 h | 1,550 | 33 | 1 | |
+| 18 Nov 12:18 | #24 Revenge dress almost never | 1w6Y8SZIKYs | 12.3 h | 1,519 | 64 | 2 | went public on its own at 00:00; slow so far |
+| 18 Nov 12:18 | #5 Grace Kelly walked away | mxg-TOehFH4 | 135.3 h | 272 | 9 | 0 | |
+| 18 Nov 12:18 | #12 Wine glass | n__XOhL2CtE | 96.3 h | 172 | 3 | 0 | |
+| 18 Nov 12:18 | #25 Wedding tiara | Tm400MqrL4M | 18 min | 164 | 7 | 0 | went public on its own at 12:00 |
+| 18 Nov 12:18 | #4 Afternoon tea | ZM8bGiNtc5k | 120.3 h | 102 | 4 | 0 | |
+
+Channel 18 Nov 12:18: 483 subscribers, 345,714 total views. Shorts ~295,000 views by the per-video counts.
+#29 (FYMS7FtmTi0) and #30 (ZNSsiY9DQTE): processed, HD, private, publishAt kept (19 Nov 17:30 and 20 Nov 00:00).
+The week against the goal (10M views, 10K subscribers by 18 Nov): about 295K Shorts views and +~480 subscribers.
