@@ -5,11 +5,20 @@ The channel's YouTube name is **Classy Academy** (@ClassyAcademy); the second ch
 
 ## START HERE (written 17 Nov 2026 for a new chat)
 
-**Branch: `claude/stoic-tesla-w3up2y`.** All work since 16 Nov is on this branch and is NOT on the repository's default
+**Branch: `claude/stoic-tesla-w3up2y`** (merged into `claude/keen-rubin-47lkl9` on 18 Nov; the 18 Nov work is on `claude/keen-rubin-47lkl9`). All work since 16 Nov is on this branch and is NOT on the repository's default
 branch (`claude/youtube-channel-analysis-lghfsv`). A new chat must start on this branch, or fetch and merge it first:
 `git fetch origin claude/stoic-tesla-w3up2y && git merge --no-edit FETCH_HEAD`.
 
 **Where things stand**
+- **Diana "things she loved" VIDEO v1 (18 Nov 2026, `videos/diana-things-she-loved/`):** the user shipped the script
+  and asked for the full video: every one of the channel's videos re-checked first (49 of 56 storyboards read; the file
+  download was refused), visuals only from Pinterest / Instagram / TikTok, no clip used twice, no sound effects, a new
+  music bed. Built: 12:03, 65 clips (8 real archive film of Diana) and 45 press photographs and product cut-outs, music
+  "Gymnopedie No 1" (Kevin MacLeod, CC BY 4.0: the credit must go in the description), no sound effects. Files:
+  `VISUAL-ANALYSIS.md` (what was inspected and the final checks), `SOURCES-LOG.md`, `sources_used.json`, `clips.py`,
+  `edit.py`, `CREDITS.txt`, `CHAPTERS.txt`, `gen_docs_loved.py`; the working scripts are those of
+  `workflow/session-tools/diana/`. Rights for every clip and photo are unresolved. **Waiting for "ship it, or change
+  it?"** The user also typed "3" with no question open; it is unanswered.
 - **Princess Diana video** (`videos/princess-diana-style-rules/`): script approved; video v1 delivered (12:06); three
   thumbnails delivered and shipped by the user; titles, description and tags delivered (`PACKAGE.md`). **Waiting for
   the user's "ship it, or change it?" on the package.** Nothing else is in progress.

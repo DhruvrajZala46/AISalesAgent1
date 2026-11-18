@@ -1,0 +1,15 @@
+# photo picks (seen by me on the search sheets; originals to download and check at full size)
+pbalmoral 0 2 6 9 36 47      # Balmoral photocall 6 May 1981: patterned jumper, corduroy breeches, red socks, green Hunter wellies (4,13,48 carry Getty/agency marks: NO)
+psheep 0 37 41 10          # 1981 original red sheep jumper (polo; in a car)
+psheep 1 16 35             # 1983 replacement: white collar + black bow; 35 = with navy trousers by a Land Rover
+psheep 43                  # the real 1981 Buckingham Palace letter (vogue.com)
+psheep 28 33               # the jumper on display / framed at the 2023 sale (GMA, Mirror)
+pblueliner 0 3 2           # 1980s bright blue liner (0 = Japan 1986 polka dots, 2736x3648)
+pvogue 1 12                # December 1991 British Vogue cover (people.com); 1990s smile
+ptods 2 4                  # 1990s: light blue suede driving loafers, pastel jumper, white jeans
+pgommino 17 13 20 7        # product: beige suede, light blue suede, tan leather Gommino; 7 = the pebble sole
+pgucci 5 7 4 9 3           # Diana with the bamboo-handle tote, London 1990s
+pgucci 41                  # product: Gucci Diana tote, tan
+pladydior 0 2 4 5 6 8 14      # Diana with the black Lady Dior 1995-96; 6 = Met Gala Dec 1996 (navy Galliano slip); 5/14 white dress, airport
+pchirac 26 1 37 4          # Diana with Bernadette Chirac, Paris 1995 (26 = mariefrance.fr article on Chirac's gift; 1 Daily Mail; 3 Getty mark: NO)
+pwedding 35 46 33 43 18     # 29 July 1981: out of the Glass Coach (35), St Paul's steps (46), holding her skirt (33), smiling with bouquet (43), bodice close-up on display (18)

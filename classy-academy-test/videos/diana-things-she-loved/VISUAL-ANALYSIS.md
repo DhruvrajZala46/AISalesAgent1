@@ -75,3 +75,20 @@ photos get a slow push-in so a still never sits dead. Never: zoom punches, shake
 **Why this track:** the user has disliked every Mixkit bed, so this one comes from somewhere else: a slow, sparse, very
 well-known solo-piano piece, close to the channel's measured bed and almost without low drone. **Honest limit: I cannot
 hear.** If it is still not right, the fastest fix is for the creator to name or send the track she uses.
+
+## 5. What the build used, and the checks before the render (18 Nov 2026)
+
+- **65 clips** (8 of them real archive film of Diana), **45 photographs and product cut-outs**, every clip used once
+  (`clips.py`, `SOURCES-LOG.md`). 723 s, 137 words a minute, no sound effects, "Gymnopedie No 1" at 13 dB under the voice.
+- **Checks:** every used window sheeted at three moments; the last frame of every used clip read; the finished edit read
+  at 161 snapshots, then 24 re-checks of every changed screen; a dark-frame scan of all 65 prepared clips.
+- **Swapped or cut after those checks:** a scarf tutorial and the clip under the comment ask (both reels end on a company card); a
+  brown-liner clip (its caption named a cosmetics brand); a coming-home clip under "usually today" (wrong action, and a
+  caption); a folding clip with "FOLLOW ME" text; Diana's close-up (out of its black letterbox, and cut before a
+  microphone crosses her face); 6 crops past captions, a box label and a fan watermark; two clips trimmed before a dip
+  to black or a shop logo; two overlapping text lines separated; row labels shortened so none is cut off.
+- **Left as it is, said plainly:** two screens are the line alone on the caramel for about 9-10 s (the "fashionable
+  version" line, and "a soft flat loafer in beige, navy or tan"); no clean clip of a heeled rain boot or of a soft
+  loafer in those three colours was found, and the Gommino photographs are already used as cut-outs. The close repeats
+  four cut-outs as a recap of the seven things, because the script names all seven there. The perfume-counter clip shows
+  an Armani Prive sign behind (every perfume-shop clip found shows a brand name).
