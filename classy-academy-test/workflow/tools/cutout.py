@@ -39,6 +39,6 @@ for arg in sys.argv[1:]:
         bb = a.getbbox(); rgba = rgba.crop(bb)
         rgba.save(f'assets/ph_{name}.png')
         chk = Image.new('RGB', rgba.size, (195, 141, 98)); chk.paste(rgba, (0, 0), rgba); chk.thumbnail((400, 500)); chk.save(f'cut/{name}_check.jpg')
-    log[name] = dict(tag=tag, k=k, url=p['url'], link=p['link'], domain=p['domain'], creator=p['creator'], user=p['user'], w=p['w'], h=p['h'])
-    print(name, p['domain'], p['w'], p['h'])
+    log[name] = dict(tag=tag, k=k, url=p['url'], link=p.get('src_link',''), domain='', creator=p['creator'], user=p.get('creator_user',''), w=p['w'], h=p['h'])
+    print(name, p.get('src_link','')[:40], p['w'], p['h'])
 json.dump(log, open('ph_picks.json', 'w'), indent=1)
