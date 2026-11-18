@@ -286,3 +286,8 @@ the balcony kiss (#22, a moment with no words or slip) started slower.
 Channel 18 Nov 12:18: 483 subscribers, 345,714 total views. Shorts ~295,000 views by the per-video counts.
 #29 (FYMS7FtmTi0) and #30 (ZNSsiY9DQTE): processed, HD, private, publishAt kept (19 Nov 17:30 and 20 Nov 00:00).
 The week against the goal (10M views, 10K subscribers by 18 Nov): about 295K Shorts views and +~480 subscribers.
+
+18 Nov 17:47 UTC (short log; only the Shorts that moved): #26 4 dress secrets (DNk1fhtzFWY) public on its own at 17:30,
+145 views in 17 min. #20 77,449 | #21 41,324 | #22 37,251 (+4,613 in 5.5 h) | #6 35,523 | #3 28,824 | #16 23,796 |
+#17 21,695 | #1 18,873 | #23 12,657 | #18 9,749 | #19 9,010 | #25 tiara 4,421 in 5.8 h (4.9% likes) | #24 1,719.
+Channel: 491 subscribers. Shorts ~302,000 views by the per-video counts. Everything is slowing; no new breakout.
