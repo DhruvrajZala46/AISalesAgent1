@@ -21,11 +21,11 @@ the audience, the competitors, the gaps, and only the strongest ideas, each with
 
 | What | Videos | Usual views | Best |
 |---|---|---|---|
-| Shorts: Princess Diana true-story moments | 13 | 12,000 | 75,000 |
+| Shorts: Princess Diana true-story moments | 13 | 18,000 | 75,000 |
 | Shorts: other icons (Audrey Hepburn, the Queen, Grace Kelly) | 4 | 2,800 | 5,900 |
 | Shorts: fashion "save to remember" combinations | 12 | 1,700 | 9,100 |
 | Shorts: etiquette (wine glass, afternoon tea) | 2 | 135 | 168 |
-| Long: style and elegance advice (23 videos) | 23 | 367 | 25,000 (French never wear) |
+| Long: style and elegance advice (23 videos) | 23 | 377 | 25,000 (French never wear) |
 | Long: "Princess Diana's 8 Timeless Style Rules" | 1 | 17 after one day | - |
 
 - **The channel has 319,700 Shorts views and 35,700 long views. Most of its audience came for Diana stories.**
