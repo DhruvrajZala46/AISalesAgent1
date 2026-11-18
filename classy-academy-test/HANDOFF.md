@@ -13,7 +13,7 @@ branch (`claude/youtube-channel-analysis-lghfsv`). A new chat must start on this
 - **Diana "things she loved" VIDEO v1 (18 Nov 2026, `videos/diana-things-she-loved/`):** the user shipped the script
   and asked for the full video: every one of the channel's videos re-checked first (49 of 56 storyboards read; the file
   download was refused), visuals only from Pinterest / Instagram / TikTok, no clip used twice, no sound effects, a new
-  music bed. Built: 12:03, 65 clips (8 real archive film of Diana) and 45 press photographs and product cut-outs, music
+  music bed. Built: 12:03, 66 clips (8 real archive film of Diana) and 45 press photographs and product cut-outs, music
   "Gymnopedie No 1" (Kevin MacLeod, CC BY 4.0: the credit must go in the description), no sound effects. Files:
   `VISUAL-ANALYSIS.md` (what was inspected and the final checks), `SOURCES-LOG.md`, `sources_used.json`, `clips.py`,
   `edit.py`, `CREDITS.txt`, `CHAPTERS.txt`, `gen_docs_loved.py`; the working scripts are those of

@@ -78,7 +78,7 @@ hear.** If it is still not right, the fastest fix is for the creator to name or 
 
 ## 5. What the build used, and the checks before the render (18 Nov 2026)
 
-- **65 clips** (8 of them real archive film of Diana), **45 photographs and product cut-outs**, every clip used once
+- **66 clips** (8 of them real archive film of Diana), **45 photographs and product cut-outs**, every clip used once
   (`clips.py`, `SOURCES-LOG.md`). 723 s, 137 words a minute, no sound effects, "Gymnopedie No 1" at 13 dB under the voice.
 - **Checks:** every used window sheeted at three moments; the last frame of every used clip read; the finished edit read
   at 161 snapshots, then 24 re-checks of every changed screen; a dark-frame scan of all 65 prepared clips.
@@ -87,8 +87,10 @@ hear.** If it is still not right, the fastest fix is for the creator to name or 
   caption); a folding clip with "FOLLOW ME" text; Diana's close-up (out of its black letterbox, and cut before a
   microphone crosses her face); 6 crops past captions, a box label and a fan watermark; two clips trimmed before a dip
   to black or a shop logo; two overlapping text lines separated; row labels shortened so none is cut off.
-- **Left as it is, said plainly:** two screens are the line alone on the caramel for about 9-10 s (the "fashionable
-  version" line, and "a soft flat loafer in beige, navy or tan"); no clean clip of a heeled rain boot or of a soft
-  loafer in those three colours was found, and the Gommino photographs are already used as cut-outs. The close repeats
+- **After the first render:** its contact sheet showed an 11-second still screen on the loafer line; a clip of tan
+  and black loafers now sits beside that line, a "tailored trousers" clip that looked AI-made (and showed a shop sign)
+  was replaced, and a clip's own black bars were cropped. The video was rendered again from scratch.
+- **Left as it is, said plainly:** one screen is the line alone on the caramel for about 9 s (the "fashionable version
+  of something practical" line); no clean clip of a heeled rain boot or a show-off raincoat was found. The close repeats
   four cut-outs as a recap of the seven things, because the script names all seven there. The perfume-counter clip shows
   an Armani Prive sign behind (every perfume-shop clip found shows a brand name).

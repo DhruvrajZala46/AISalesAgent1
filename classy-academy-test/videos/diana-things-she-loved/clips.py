@@ -42,9 +42,10 @@ C = {
  'l32a': ('loaferpair1', 0.3, 12.9),    # a shop shelf of the same loafer in many colours
  'l32b': ('loaferskirt42', 0.3, 7.8),   # loafers with a skirt
  'l32c': ('loaferjean16', 4.7, 10.0),   # loafers with dark jeans
+ 'l33z': ('loaferwalk25', 0.3, 6.9),   # tan leather loafers walking, the loafer close, then black loafers (split screen after 7 s left out)
  'l33a': ('loaferjean14', 0.3, 4.7),    # loafers + jeans, full body
  'l33b': ('loaferskirt20', 0.3, 9.5),   # loafers + midi skirt
- 'l33c': ('loafertrou35', 0.3, 10.0),   # loafers + trousers
+ 'l33c': ('loaferwalk21', 3.8, 9.9),   # tan loafers with cream tailored trousers, walking in a shop (loafertrou35 dropped: looked AI-made, Dr. Scholl's sign)
  'l34a': ('weekday40', 0.3, 6.5),       # walking, at ease
  # ---- 5 tote ----
  't37a': ('bagshelf0', 0.3, 18.2),      # a shelf of many bags
@@ -77,5 +78,5 @@ C = {
  'c55a': ('oldersmile31', 0.3, 8.1),    # a woman of about 60 smiling, sunlit porch
  'c55b': ('perfvanity14', 0.3, 11.7),   # a perfume tray in sunlight
 }
-CROP = {'silkscarf27': (176, 600, 680), 'mascara45': (170, 0, 700), 'jumperdraw23': (62, 0, 1060), 'dlaugh18': (36, 0, 1150), 'dlaugh36': (64, 0, 1050), 'jumperdraw36': (36, 130, 1150)}
-MAXSLOW = {'brownliner2': 1.5, 'brownliner4': 1.6, 'silkscarf27': 1.45, 'oldersmile31': 1.45}
+CROP = {'loaferskirt20': (58, 104, 1072), 'silkscarf27': (176, 600, 680), 'mascara45': (170, 0, 700), 'jumperdraw23': (62, 0, 1060), 'dlaugh18': (36, 0, 1150), 'dlaugh36': (64, 0, 1050), 'jumperdraw36': (36, 130, 1150)}
+MAXSLOW = {'loaferwalk25': 1.58, 'brownliner2': 1.5, 'brownliner4': 1.6, 'silkscarf27': 1.45, 'oldersmile31': 1.45}
