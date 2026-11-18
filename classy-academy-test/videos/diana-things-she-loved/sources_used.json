@@ -214,8 +214,7 @@
 ],
 "title": "",
 "w": 320,
-"h": 569,
-"note": "dsmile20 cropped to 680x856 at 20,212 (its black letterbox removed)"
+"h": 569
 },
 "dwed32": {
 "id": "e1_AfqPShyBsovBzOgUGqvRw8Oapevr80GO_t3ylREbFaSvzxmEjirP",
@@ -397,6 +396,21 @@
 "w": 1080,
 "h": 1920
 },
+"loaferjean11": {
+"id": "e1_AfqPShwaf9k0Z3dbmbx3Mto8Kk4INgS8XjTUCPzMHxCP17uHmKLN",
+"url": "",
+"creator": "Anastasia Finds",
+"creator_user": "anastasiafinds",
+"src_link": "https://www.youtube.com/channel/UCFPXYanKHqKHWIretBSDQaA",
+"orig": "https://i.pinimg.com/originals/64/4b/c8/644bc806336a36e2ef367666b178478a.jpg",
+"thumb": "https://i.pinimg.com/474x/64/4b/c8/644bc806336a36e2ef367666b178478a.jpg",
+"videos": [
+"https://v1.pinimg.com/videos/mc/hls/da/c2/f8/dac2f86bbaf1c15c80774df826bdd982.m3u8"
+],
+"title": "Casual minimalistic outfit idea",
+"w": 2160,
+"h": 3840
+},
 "loaferjean14": {
 "id": "e1_AfqPShypQaG-k-aIxACDRUhtKnEqWhCBRoE35RDtGEmF2SDf66WJ",
 "url": "",
@@ -411,21 +425,6 @@
 "title": "Fall Outfit with Loafers",
 "w": 1000,
 "h": 1500
-},
-"loaferjean16": {
-"id": "e1_AfqPShx3GPAuziC_9TMniLHbMfpLY6oSaUJdqhoLRY4xHw_Mc2lGRg",
-"url": "",
-"creator": "YouCanShopThisFit",
-"creator_user": "youcanshopthisfit",
-"src_link": "https://www.instagram.com/reel/DdPGaJovrdt/",
-"orig": "https://i.pinimg.com/originals/6c/dc/3f/6cdc3f3254efff65489f6f2a79066146.jpg",
-"thumb": "https://i.pinimg.com/474x/6c/dc/3f/6cdc3f3254efff65489f6f2a79066146.jpg",
-"videos": [
-"https://v1.pinimg.com/videos/iht/hls/55/3e/bf/553ebfd8e5b9d5d962e7674ebac07fa7.m3u8"
-],
-"title": "",
-"w": 1320,
-"h": 2347
 },
 "loaferpair1": {
 "id": "e1_AfqPShy5pOE_Co8Swo3C_J10pfaVgMn_YAKOlZB4Q3cKiKyxaqGZ",

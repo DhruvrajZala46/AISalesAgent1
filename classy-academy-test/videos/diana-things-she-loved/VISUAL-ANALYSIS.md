@@ -89,7 +89,8 @@ hear.** If it is still not right, the fastest fix is for the creator to name or 
   to black or a shop logo; two overlapping text lines separated; row labels shortened so none is cut off.
 - **After the first render:** its contact sheet showed an 11-second still screen on the loafer line; a clip of tan
   and black loafers now sits beside that line, a "tailored trousers" clip that looked AI-made (and showed a shop sign)
-  was replaced, and a clip's own black bars were cropped. The video was rendered again from scratch.
+  was replaced, and a clip's own black bars were cropped. The second render's contact sheet showed a "before / after" caption on a
+  shop-the-look loafer clip; it was replaced by a real creator's clip. The final video was rendered a third time from scratch.
 - **Left as it is, said plainly:** one screen is the line alone on the caramel for about 9 s (the "fashionable version
   of something practical" line); no clean clip of a heeled rain boot or a show-off raincoat was found. The close repeats
   four cut-outs as a recap of the seven things, because the script names all seven there. The perfume-counter clip shows

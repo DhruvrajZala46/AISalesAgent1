@@ -41,7 +41,7 @@ C = {
  'l31a': ('shoetry26', 18.0, 31.0),    # in a shoe shop, trying loafers on, white shirt and jeans
  'l32a': ('loaferpair1', 0.3, 12.9),    # a shop shelf of the same loafer in many colours
  'l32b': ('loaferskirt42', 0.3, 7.8),   # loafers with a skirt
- 'l32c': ('loaferjean16', 4.7, 10.0),   # loafers with dark jeans
+ 'l32c': ('loaferjean11', 0.3, 5.0),    # blazer, jeans and black loafers, at ease outdoors (loaferjean16 dropped: before/after caption over a shop picture)
  'l33z': ('loaferwalk25', 0.3, 6.9),   # tan leather loafers walking, the loafer close, then black loafers (split screen after 7 s left out)
  'l33a': ('loaferjean14', 0.3, 4.7),    # loafers + jeans, full body
  'l33b': ('loaferskirt20', 0.3, 9.5),   # loafers + midi skirt
