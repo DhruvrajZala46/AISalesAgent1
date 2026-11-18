@@ -42,6 +42,25 @@ thumbnails copy the layout with a real press photograph and real product photos.
 **My order: B, then C, then A.** Upload all three in YouTube Studio, "Test & compare"; that test is the only real proof.
 Title stays: "7 Things Princess Diana Loved That You Can Still Buy Today".
 
+## 3b. Thumbnail D: the format proven against itself on one channel (added 18 Nov 2026)
+
+The user asked for one more, in a proven winner format that matches the channel's niche (soft, calm, feminine elegance).
+**Laura Jane Atelier** made the same kind of video about the same women in two thumbnail styles, so the same audience
+judged both:
+
+| Same channel, same women | Videos | Result against the channel's usual |
+|---|---|---|
+| **a large portrait of her + her real things on a soft fur rug beside a printed photo of her, a thin white frame, no words** | 6 | **6 of 6 between 4.7x and 25x** (Marilyn 25x, Diana 9.1x, Grace Kelly 9.0x, Audrey Hepburn 8.1x, Elizabeth Taylor 6.7x, Jackie 4.7x) |
+| photos of her cut out on pink with the title written large | 9 | 9 of 9 between 0.6x and 2.9x (Diana 2.3x, Audrey 1.6x, Grace Kelly 1.0x) |
+
+Same woman, same channel: Grace Kelly 9.0x against 1.0x, Audrey 8.1x against 1.6x, Diana 9.1x against 2.3x. It is the
+closest thing to an A/B test in the lane, and unlike the other winners its pictures are real photographs.
+
+**D:** a real press photograph of Diana, her eyes turned toward her things (the gaze leads the viewer to them), blue
+earrings; on a peach-cream fur rug: a printed photograph of her in the sheep jumper, the Lady Dior, Quelques Fleurs and
+First, each with a soft top-light shadow; the thin white double frame with notched corners; no words. Brightness 149.
+Built by `thumb/build_thumb_d.py`. **My order now: D and B in the first test, then C and A.**
+
 ## 4. Light, shadow and the other tricks used
 
 - **Studio light:** a soft window light from the upper right on the cream wall; the table slightly darker.
