@@ -13,6 +13,17 @@ branch (`claude/youtube-channel-analysis-lghfsv`). A new chat must start on this
 - **Princess Diana video** (`videos/princess-diana-style-rules/`): script approved; video v1 delivered (12:06); three
   thumbnails delivered and shipped by the user; titles, description and tags delivered (`PACKAGE.md`). **Waiting for
   the user's "ship it, or change it?" on the package.** Nothing else is in progress.
+- **Diana "things she loved" script v1 (18 Nov 2026, `videos/diana-things-she-loved/script.md` + `beats.txt`):** the
+  user shipped idea 1 of `research-2026-11-18b.md` and asked for the script in the exact format of the channel's own
+  "7 Things Elegant Ladies Never Do in Public" (oHh4T67jJNM). Title "7 Things Princess Diana Loved That You Can Still Buy
+  Today" (94/100). Seven points: green Hunter wellies (Balmoral, 6 May 1981); the black sheep jumper (June 1981; letter
+  asking to mend it; Sotheby's 2023, $1.1M); soft brown instead of blue liner plus mascara (Mary Greenwell, Vogue 1991);
+  Tod's Gommino loafers in three colours; the Gucci bamboo tote (renamed "Diana" in 2021); the Lady Dior (gift from
+  Bernadette Chirac, Sept 1995, renamed 1996); her perfume (Quelques Fleurs spill on the wedding morning per Barbara
+  Daly; First by Van Cleef & Arpels per Harry's "Spare"). Each point: the story, then the channel's teaching and the
+  version on any budget. 55 lines, about 1,650 words (about 12 min). fit.py: no red lines, flags brand names (the
+  topic). Sources in section B; left out: the watch, anachronistic "beauty favourites", rumoured perfumes. **Waiting for
+  "ship it, or change it?"**
 - **Deep channel research (18 Nov 2026, `research-2026-11-18.md` and `research-2026-11-18b.md`):** the user said the
   suggested topics have not brought views and asked for channel-specific research. Found: the channel's audience is its
   Princess Diana story Shorts (13 Shorts, usual 18,000, best 75,000; 319,700 Shorts views against 35,700 long views);
