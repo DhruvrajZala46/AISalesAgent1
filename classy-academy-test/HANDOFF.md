@@ -10,6 +10,14 @@ branch (`claude/youtube-channel-analysis-lghfsv`). A new chat must start on this
 `git fetch origin claude/stoic-tesla-w3up2y && git merge --no-edit FETCH_HEAD`.
 
 **Where things stand**
+- **Diana jewels script v1 (18 Nov 2026, `videos/diana-jewels-who-wears-them/script.md` + `beats.txt`):** the user
+  shipped idea 2 of `research-2026-11-18b.md` and asked for the script in the oHh4T67jJNM format. Title "Princess
+  Diana's 7 Jewels: Who Wears Them Now?" (98/100). Seven jewels, each answering "where is it now?": the Spencer tiara
+  (her niece, 2018); the Lover's Knot (Catherine since 2015); the emerald choker worn as a headband, Melbourne 1985
+  (Catherine, Boston 2022); the Collingwood pearls (Catherine since 2017); the Saudi sapphire studs Catherine reworked
+  into drops (2022); the Attallah cross, lent to her, sold 2023 to Kim Kardashian; the engagement ring (Kenya, 2010).
+  54 lines, about 1,600 words; hook 58; `fit.py` FITS. Every fact sourced in section B. **Waiting for "ship it, or
+  change it?"** Diana "things she loved": video, thumbnails (A-D), title, description and tags delivered.
 - **Diana "things she loved" VIDEO v1 (18 Nov 2026, `videos/diana-things-she-loved/`):** the user shipped the script
   and asked for the full video: every one of the channel's videos re-checked first (49 of 56 storyboards read; the file
   download was refused), visuals only from Pinterest / Instagram / TikTok, no clip used twice, no sound effects, a new
