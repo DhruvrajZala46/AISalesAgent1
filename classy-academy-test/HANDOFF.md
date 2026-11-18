@@ -13,6 +13,15 @@ branch (`claude/youtube-channel-analysis-lghfsv`). A new chat must start on this
 - **Princess Diana video** (`videos/princess-diana-style-rules/`): script approved; video v1 delivered (12:06); three
   thumbnails delivered and shipped by the user; titles, description and tags delivered (`PACKAGE.md`). **Waiting for
   the user's "ship it, or change it?" on the package.** Nothing else is in progress.
+- **Deep channel research (18 Nov 2026, `research-2026-11-18.md` and `research-2026-11-18b.md`):** the user said the
+  suggested topics have not brought views and asked for channel-specific research. Found: the channel's audience is its
+  Princess Diana story Shorts (13 Shorts, usual 12,000, best 75,000; 319,700 Shorts views against 35,700 long views);
+  style-advice long videos sit at a usual 367. No women's style-advice video has reached 10M anywhere (131 searches).
+  A live wave: small faceless channels (1,200 to 78,000 subscribers) get 100,000 to 945,000 on true stories about royal
+  and iconic women. Fair test on 4,834 videos from 179 small channels gave four ideas, in order: things Diana loved you
+  can still buy (3.76x); Diana's jewels, where they are now (2.41x angle); the 10 most elegant royal women ranked
+  (1.44x); the story of Diana's wedding dress (the channel's own best Shorts). **Waiting for the user's pick; no script
+  started.** Needed from the user: Studio numbers (impressions, click-through, view duration) of the last long videos.
 - **New topic and script (17 Nov 2026, later the same day; `research-2026-11-17b.md`,
   `videos/french-beautiful-with-age/script.md` + `beats.txt`):** the user asked again for the one best proven topic
   and its script in The Intemporelle's format. Pick: "French Women Get More Beautiful With Age: 7 Rules" (94/100;
