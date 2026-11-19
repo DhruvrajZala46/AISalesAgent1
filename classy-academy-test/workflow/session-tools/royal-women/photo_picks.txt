@@ -1,0 +1,10 @@
+pmargbeaton 4 8 39 1       # Cecil Beaton portraits, 1951, the Dior birthday gown
+pmargdress 4 8 23 21       # the gown on display
+pletmango 1 25 13 34 35    # the grey Mango suit; 35 = Mango product photo
+pletvarela 19 3 26 21      # Letizia in gowns
+pqmwhite 3 0 2 19 32       # 3 = Hartnell sketch "State Visit to Paris, July 1938"; Beaton 1939 white gowns
+pqueencolour 22 32 40 33 9 # blue, lime, fuchsia, pink portrait; 9 = rainbow row
+pdianashort 24 32 11 46 39 # the short cut, 1990s
+pgracewed 12 46 21 28      # wedding, April 1956
+pkatewed 13 30 12          # Catherine's wedding, 2011
+psledge 8 33 15 1 5 36     # Kate in nude pumps; the Sledge

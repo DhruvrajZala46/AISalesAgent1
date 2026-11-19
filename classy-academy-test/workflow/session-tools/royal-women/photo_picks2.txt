@@ -1,0 +1,5 @@
+pqmportrait 41 31
+pgraceportrait 14 4
+pletportrait 44 25
+pqueenportrait 12 23
+pdianavogue 24 36
