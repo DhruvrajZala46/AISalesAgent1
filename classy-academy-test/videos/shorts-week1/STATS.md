@@ -296,3 +296,8 @@ Channel: 491 subscribers. Shorts ~302,000 views by the per-video counts. Everyth
 #20 78,306 | #21 41,721 | #22 40,852 | #6 35,556 | #3 28,889 | #16 24,091 | #17 22,050 | #1 18,899 |
 #25 tiara 17,362 in 12.3 h (+12,941 in 6.5 h, ~2,000/h: breaking out) | #23 15,567 | #18 10,355 | #19 9,162 |
 #24 2,029 | #26 dress secrets 1,354 in 6.8 h. Channel: 512 subscribers. Shorts ~333,000 views by the per-video counts.
+
+19 Nov 12:18 UTC (short log): #28 three dresses (mRGPT0AD-VY) public on its own at 12:00, 103 views in 18 min.
+#20 79,066 | #22 42,072 | #21 41,937 | #25 tiara 40,642 in 24.3 h (+23,280 in 12 h) | #6 35,579 | #3 28,949 |
+#16 24,957 | #17 22,532 | #1 18,922 | #23 17,801 | #18 10,711 | #19 9,192 | #26 3,187 | #24 2,512 |
+#27 no gloves 1,598 in 12.3 h (5.7% likes). Channel: 529 subscribers, 423,530 total views. Shorts ~360,000 views.
