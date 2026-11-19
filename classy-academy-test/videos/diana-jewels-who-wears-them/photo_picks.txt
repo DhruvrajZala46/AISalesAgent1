@@ -1,0 +1,15 @@
+# photo picks (seen by me on the search sheets; originals downloaded and checked at full size)
+pspencer 9 20 15 5        # wedding 29 July 1981, the Spencer tiara (45 Getty mark: NO)
+pcelia 0 6                # Celia McCorquodale, June 2018, in the Spencer tiara
+pknot 0 16 10 3           # Diana in the Lover's Knot; 3 = the tiara alone (45 Getty: NO)
+pkateknot 12 43 24        # Catherine in the Lover's Knot
+pheadband 4 16 27 10      # Melbourne 1985, the emerald choker as a headband (1 Getty: NO)
+pkateemerald 4 9 32       # Catherine, Boston 2022, the choker as a necklace
+pcoll 19 32 29 18         # Diana in the Collingwood pearl drops; 32 = with the black dress; 29 = the earrings alone
+pkatecoll 10 16 0         # Catherine in the Collingwood pearls
+psapstud 8 2              # Diana, sapphire studs
+pkatesap 5 14 0 18        # Catherine, the reworked sapphire drops, Trooping 2022
+pattallah 2 10 3 15       # Diana in the Attallah cross, Oct 1987; 3 and 15 = the cross alone
+pengage 5 10 2 12         # Feb 1981 photocall, the ring; 12 ring close
+pwkengage 0 17 11         # Nov 2010 engagement; 11 ring close
+pdsmile 29 27 41    # real-looking 1980s press photographs; 0,2,3,5,9,42-45 look AI-smoothed: NO

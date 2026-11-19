@@ -10,6 +10,11 @@ branch (`claude/youtube-channel-analysis-lghfsv`). A new chat must start on this
 `git fetch origin claude/stoic-tesla-w3up2y && git merge --no-edit FETCH_HEAD`.
 
 **Where things stand**
+- **Diana jewels VIDEO v1 (19 Nov 2026, `videos/diana-jewels-who-wears-them/`):** script shipped by the user; built
+  with 48 clips (5 real archive film of Diana) and 41 real press photographs, new music ("Healing" and "Gymnopedie No 2",
+  Kevin MacLeod, CC BY 4.0), no sound effects. Docs: `VISUAL-ANALYSIS.md`, `SOURCES-LOG.md`, `sources_used.json`,
+  `clips.py`, `edit.py`, `CREDITS.txt`, `CHAPTERS.txt`, `gen_docs_jewels.py`; scripts in
+  `workflow/session-tools/diana-jewels/`. Rights unresolved. **Waiting for "ship it, or change it?"**
 - **Diana jewels script v1 (18 Nov 2026, `videos/diana-jewels-who-wears-them/script.md` + `beats.txt`):** the user
   shipped idea 2 of `research-2026-11-18b.md` and asked for the script in the oHh4T67jJNM format. Title "Princess
   Diana's 7 Jewels: Who Wears Them Now?" (98/100). Seven jewels, each answering "where is it now?": the Spencer tiara

@@ -1,0 +1,36 @@
+# Princess Diana's 7 Jewels: Who Wears Them Now? (19 Nov 2026): tag -> (Pinterest search, what the clip must show). Letters only.
+D = "REAL archive film of Princess Diana herself (never an actress from The Crown or Spencer, never AI, never an animated photo, no slideshow)"
+Q = {
+# ---- Diana archive film (video pins)
+'jdwed': ("princess diana wedding 1981 tiara veil video", D + ": the wedding day 29 July 1981, her face under the veil with the tiara"),
+'jdaus': ("princess diana australia 1985 video", D + ": Diana on the 1985 tour of Australia, ideally at an evening event"),
+'jdengage': ("prince charles lady diana engagement 1981 interview video", D + ": the February 1981 engagement: Diana showing her sapphire ring, or the interview"),
+'jdtiara': ("princess diana tiara evening video", D + ": Diana in a tiara at an evening event (state banquet, gala)"),
+'jdpearls': ("princess diana pearl earrings close video", D + ": a close shot of Diana in pearl drop earrings"),
+'jdsmile': ("princess diana smiling candid close up video", D + ": a close shot of Diana smiling"),
+'jdgala': ("princess diana gala evening 1987 video", D + ": Diana at an evening gala in the 1980s"),
+# ---- everyday scenes (video pins)
+'jbox': ("opening vintage jewelry box grandmother video", "hands opening an old jewellery box with a vintage brooch or ring inside; then closing it"),
+'brooch': ("pinning vintage brooch on dress video", "a woman pinning or wearing a vintage brooch or old family ring before going out"),
+'note': ("handwriting note card aesthetic video", "a hand writing a short note on a small card"),
+'earfix': ("woman adjusting earring touching ear video", "a woman touching or fixing her earring, again and again"),
+'earback': ("silicone earring backs how to video", "hands changing earring backs (soft backs) or fastening an earring"),
+'mirrorear': ("trying on earrings in mirror video", "a woman trying earrings on in front of a mirror at home"),
+'neckwrap': ("wrap long necklace as bracelet hack video", "a long necklace looped twice around the wrist as a bracelet"),
+'pendant': ("dainty pendant necklace collarbone close up video", "a pendant on a short chain, sitting at the collarbone, close"),
+'pearlchoker': ("double strand pearl necklace choker styling video", "a pearl strand doubled or worn as a choker at the neck"),
+'pearlbox': ("pearl earrings in jewelry box video", "pearl earrings in a box, the box closed or put away"),
+'pearlday': ("pearl earrings white shirt jeans outfit video", "a woman in pearl earrings with a white shirt and jeans, daytime"),
+'pearlnight': ("pearl earrings black dress evening video", "a woman in pearl earrings with a black or navy dress, evening"),
+'oldring': ("old ring jewelry drawer video", "a woman holding up an old ring, or putting it back in a drawer or box"),
+'jeweler': ("jeweler remaking old ring into pendant redesign video", "a jeweller's hands at a workbench reshaping or resetting a piece; or before/after of a reworked piece"),
+'clasp': ("woman fastening necklace on friend video", "one woman fastening a necklace on another woman"),
+'bridepearl': ("mother helping bride put on pearl necklace wedding morning video", "a mother or friend putting pearls or a necklace on a bride"),
+'counter': ("woman jewelry store trying on rings counter video", "a woman at a jewellery counter looking at rings or big stones"),
+'olderring': ("older woman hands wedding ring close up video", "an older woman's hands, turning a simple ring on her finger"),
+'tiarabox': ("tiara display case museum video", "a tiara in a display case or on a stand"),
+'goldsilver': ("gold vs silver jewelry undertone test video", "a woman comparing gold and silver jewellery against her skin"),
+'smilewomanj': ("elegant woman smiling close up video", "a woman smiling, warm, close"),
+'jewelhands': ("elegant hands rings jewelry close up video", "elegant hands with rings, close"),
+'palace': ("buckingham palace gates video", "Buckingham Palace, the gates or the front"),
+}
