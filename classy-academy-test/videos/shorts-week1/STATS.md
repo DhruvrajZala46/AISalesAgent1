@@ -301,3 +301,8 @@ Channel: 491 subscribers. Shorts ~302,000 views by the per-video counts. Everyth
 #20 79,066 | #22 42,072 | #21 41,937 | #25 tiara 40,642 in 24.3 h (+23,280 in 12 h) | #6 35,579 | #3 28,949 |
 #16 24,957 | #17 22,532 | #1 18,922 | #23 17,801 | #18 10,711 | #19 9,192 | #26 3,187 | #24 2,512 |
 #27 no gloves 1,598 in 12.3 h (5.7% likes). Channel: 529 subscribers, 423,530 total views. Shorts ~360,000 views.
+
+19 Nov 17:47 UTC (short log): #29 stopped the world (FYMS7FtmTi0) public on its own at 17:30, 48 views in 17 min.
+#20 79,274 | #25 tiara 55,533 in 29.8 h (+14,891 in 5.5 h, second-biggest Short) | #22 42,387 | #21 42,124 |
+#16 25,164 | #17 22,926 | #23 18,772 | #26 5,033 | #24 2,937 | #27 1,927 | #28 three dresses 1,640 in 5.8 h.
+Channel: 536 subscribers. Shorts ~378,000 views.
