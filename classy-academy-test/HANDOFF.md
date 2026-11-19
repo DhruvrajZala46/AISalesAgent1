@@ -10,6 +10,13 @@ branch (`claude/youtube-channel-analysis-lghfsv`). A new chat must start on this
 `git fetch origin claude/stoic-tesla-w3up2y && git merge --no-edit FETCH_HEAD`.
 
 **Where things stand**
+- **Most elegant royal women script v1 (19 Nov 2026, `videos/most-elegant-royal-women/script.md` + `beats.txt`):** the
+  user shipped idea 3 of `research-2026-11-18b.md`, in the oHh4T67jJNM format. Title "The 7 Most Elegant Royal Women
+  Ever, Ranked" (94/100). Countdown 7 to 1: Princess Margaret (Dior, 1951: dress for the photograph you'll keep); Queen
+  Letizia (Mango with couture: one good piece among simple ones); the Queen Mother (the White Wardrobe, Paris 1938);
+  Catherine (nude L.K. Bennett pumps: a shoe in your skin tone); Elizabeth II ("I saw the Queen": one clear colour);
+  Diana (Sam McKnight, 1990: ask your hairdresser "what would you do?"); Grace Kelly (1956 wedding dress: covering more).
+  54 lines, about 1,560 words; hook 48; `fit.py` FITS. **Waiting for "ship it, or change it?"**
 - **Diana jewels VIDEO v1 (19 Nov 2026, `videos/diana-jewels-who-wears-them/`):** script shipped by the user; built
   with 48 clips (5 real archive film of Diana) and 41 real press photographs, new music ("Healing" and "Gymnopedie No 2",
   Kevin MacLeod, CC BY 4.0), no sound effects. Docs: `VISUAL-ANALYSIS.md`, `SOURCES-LOG.md`, `sources_used.json`,
