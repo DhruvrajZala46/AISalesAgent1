@@ -1,5 +1,26 @@
 # Princess Diana's 7 Jewels: Who Wears Them Now? - thumbnails (19 Nov 2026)
 
+## v2 (the user rejected v1: "does not match my channel's type")
+
+**What changed and why.** All 24 of the channel's most-viewed videos (1.2M, 971k, 722k, 652k, 560k, 395k...) use
+one format: three real photos edge to edge, a small serif top line, a bold white headline and a small line in
+\*asterisks\*, with the CA logo. That is the format this audience already clicks, so v2 uses it. Inside the format, the
+photos follow the royal-jewels winners (section 2 below): the jewel worn by Diana and by the woman who has it now, side
+by side. "Who Will Inherit The Queen's Tiaras?" (2.3M) is the same idea: royal women in the tiaras, with a question.
+
+| | Panels | Words |
+|---|---|---|
+| **A, the one I would bet on** | Diana in the Lover's Knot tiara, pearl drops; Diana in pearls; Catherine in the same tiara | Princess Diana's / **Jewels** / \*who wears them now?\* |
+| B | Diana in the sapphire suite; Diana in the emerald choker as a headband (Melbourne 1985); Catherine in the same choker (Boston 2022) | Where Are / **Diana's Jewels** / \*today\* |
+| C | Diana on her wedding day in the Spencer tiara; Diana in pearls; William and Catherine, the sapphire ring on her hand | 7 Jewels / **Diana Left Behind** / \*who wears them now\* |
+
+All three were built with `workflow/tools/thumb_ca_real.py` and `thumb/thumb_spec_ca_1080.json`, then checked beside
+the channel's own 1.2M, 971k and 722k thumbnails at feed and phone size. They use real press photos only.
+Order: A, then B, then C; test all three in YouTube Studio under "Test & compare".
+
+## v1 (rejected) - the research below still holds
+
+
 **No thumbnail can guarantee views.** What the research can do is copy what the winners in this exact lane do, and avoid
 what the losers do. In this lane, 14 videos have passed 1M views. The biggest documentary-style ones are "The Crown
 Jewels" (5.9M), "Her Life Through Jewels" (5.1M), "Queen Elizabeth II's Tiaras" (2.3M) and "The 15 Most Beautiful Royal

@@ -1,0 +1,151 @@
+{
+ "A_who_wears_them": {
+  "underline": true,
+  "dark": 110,
+  "scale": 1.5,
+  "maxw": 940,
+  "logo_dark": 110,
+  "top": "Princess Diana's",
+  "big": "Jewels",
+  "small": "*who wears them now?*",
+  "small_cap": 35,
+  "panels": [
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/cdj/assets/pknot_16.jpg",
+    "face": [
+     400,
+     560,
+     470,
+     470
+    ],
+    "fw": 0.36,
+    "fy": 0.2,
+    "dx": 0
+   },
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/cdj/assets/pcoll_19.jpg",
+    "face": [
+     297,
+     498,
+     742,
+     742
+    ],
+    "fw": 0.5,
+    "fy": 0.16
+   },
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/cdj/assets/pkateknot_12.jpg",
+    "face": [
+     279,
+     267,
+     483,
+     483
+    ],
+    "fw": 0.4,
+    "fy": 0.21,
+    "dx": 0
+   }
+  ],
+  "yb": 318
+ },
+ "B_where_are_they": {
+  "underline": false,
+  "dark": 110,
+  "scale": 1.5,
+  "maxw": 980,
+  "logo_dark": 110,
+  "top": "Where Are",
+  "big": "Diana's Jewels",
+  "small": "*today*",
+  "small_cap": 35,
+  "panels": [
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/cdj/assets/pdsmile_29.jpg",
+    "face": [
+     308,
+     832,
+     1695,
+     1695
+    ],
+    "fw": 0.4,
+    "fy": 0.2,
+    "dx": 0
+   },
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/cdj/assets/pheadband_27.jpg",
+    "face": [
+     465,
+     475,
+     679,
+     679
+    ],
+    "fw": 0.4,
+    "fy": 0.2,
+    "dx": 0
+   },
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/cdj/assets/pkateemerald_9.jpg",
+    "face": [
+     329,
+     398,
+     862,
+     862
+    ],
+    "fw": 0.42,
+    "fy": 0.2,
+    "dx": 0
+   }
+  ],
+  "yb": 318
+ },
+ "C_left_behind": {
+  "underline": false,
+  "dark": 110,
+  "scale": 1.5,
+  "maxw": 980,
+  "logo_dark": 110,
+  "top": "7 Jewels",
+  "big": "Diana Left Behind",
+  "small": "*who wears them now*",
+  "small_cap": 35,
+  "panels": [
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/cdj/assets/pspencer_9.jpg",
+    "face": [
+     259,
+     192,
+     321,
+     321
+    ],
+    "fw": 0.36,
+    "fy": 0.2,
+    "dx": 0
+   },
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/cdj/assets/pcoll_19.jpg",
+    "face": [
+     297,
+     498,
+     742,
+     742
+    ],
+    "fw": 0.4,
+    "fy": 0.2,
+    "dx": 0
+   },
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/cdj/assets/pwkengage_17.jpg",
+    "face": [
+     813,
+     683,
+     514,
+     514
+    ],
+    "fw": 0.28,
+    "fy": 0.2,
+    "dx": -0.1
+   }
+  ],
+  "yb": 318
+ }
+}
