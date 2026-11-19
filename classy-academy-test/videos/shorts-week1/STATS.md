@@ -291,3 +291,8 @@ The week against the goal (10M views, 10K subscribers by 18 Nov): about 295K Sho
 145 views in 17 min. #20 77,449 | #21 41,324 | #22 37,251 (+4,613 in 5.5 h) | #6 35,523 | #3 28,824 | #16 23,796 |
 #17 21,695 | #1 18,873 | #23 12,657 | #18 9,749 | #19 9,010 | #25 tiara 4,421 in 5.8 h (4.9% likes) | #24 1,719.
 Channel: 491 subscribers. Shorts ~302,000 views by the per-video counts. Everything is slowing; no new breakout.
+
+19 Nov 00:16 UTC (short log): #27 no gloves (V1IW38o6WZg) public on its own at 00:00, 40 views in 16 min.
+#20 78,306 | #21 41,721 | #22 40,852 | #6 35,556 | #3 28,889 | #16 24,091 | #17 22,050 | #1 18,899 |
+#25 tiara 17,362 in 12.3 h (+12,941 in 6.5 h, ~2,000/h: breaking out) | #23 15,567 | #18 10,355 | #19 9,162 |
+#24 2,029 | #26 dress secrets 1,354 in 6.8 h. Channel: 512 subscribers. Shorts ~333,000 views by the per-video counts.
