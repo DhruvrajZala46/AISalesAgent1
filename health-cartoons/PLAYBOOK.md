@@ -3,6 +3,7 @@
 **The bar is video 003** (`videos/003-food-up-nose/`, "Why Does Food Come Out Your Nose When You Laugh?"), built on the engine of
 video 001 (`videos/001-earwax-cotton-buds/`, which the user called "mind blowing"). After 003 the user said:
 **"Save this standard. Every new video: same effort or MORE effort, in editing and scripting. Never forget it."**
+**Update (row 9 in LEARNINGS):** the user then rejected 003's visuals as basic. The PROCESS in section 0 stays mandatory; the ART must be upgraded to illustrated assets (section 8) before the next video.
 So every new video starts by copying the 003 folder (its `assemble.py` + `parts_*.js` pattern) and goes through **section 0 in full**.
 Skipping a step, guessing instead of measuring, or claiming "99%" without proof is a failure of this standard.
 
