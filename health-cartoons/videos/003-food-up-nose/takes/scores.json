@@ -1,0 +1,306 @@
+{
+ "takes/01_noodle_a.mp3": {
+  "n": 1,
+  "wer": 0.0,
+  "range": 15.4,
+  "dyn": 23.1,
+  "dur": 2.72,
+  "txt": "Yo, what's behind that door?"
+ },
+ "takes/01_noodle_b.mp3": {
+  "n": 1,
+  "wer": 0.0,
+  "range": 12.6,
+  "dyn": 27.1,
+  "dur": 2.8,
+  "txt": "Yo, what's behind that door?"
+ },
+ "takes/02_palate_a.mp3": {
+  "n": 2,
+  "wer": 0.0,
+  "range": 22.4,
+  "dyn": 30.8,
+  "dur": 3.68,
+  "txt": "That's the nose. Food goes down. Not up."
+ },
+ "takes/02_palate_b.mp3": {
+  "n": 2,
+  "wer": 0.0,
+  "range": 22.4,
+  "dyn": 30.5,
+  "dur": 3.76,
+  "txt": "That's the nose. Food goes down, not up."
+ },
+ "takes/03_noodle_a.mp3": {
+  "n": 3,
+  "wer": 0.0,
+  "range": 16.4,
+  "dyn": 22.0,
+  "dur": 2.8,
+  "txt": "Come on. Just one peek."
+ },
+ "takes/03_noodle_b.mp3": {
+  "n": 3,
+  "wer": 0.0,
+  "range": 20.0,
+  "dyn": 21.3,
+  "dur": 2.88,
+  "txt": "Come on. Just one peek."
+ },
+ "takes/04_palate_a.mp3": {
+  "n": 4,
+  "wer": 0.0,
+  "range": 16.2,
+  "dyn": 19.2,
+  "dur": 4.24,
+  "txt": "No way. While he's swallowing, this door stays shut."
+ },
+ "takes/04_palate_b.mp3": {
+  "n": 4,
+  "wer": 0.0,
+  "range": 15.0,
+  "dyn": 19.9,
+  "dur": 4.4,
+  "txt": "No way. While he's swallowing, this door stays shut."
+ },
+ "takes/05_noodle_a.mp3": {
+  "n": 5,
+  "wer": 0.0,
+  "range": 25.7,
+  "dyn": 15.7,
+  "dur": 2.8,
+  "txt": "So what happens if I go up there?"
+ },
+ "takes/05_noodle_b.mp3": {
+  "n": 5,
+  "wer": 0.0,
+  "range": 27.2,
+  "dyn": 15.1,
+  "dur": 2.72,
+  "txt": "So what happens if I go up there?"
+ },
+ "takes/06_palate_a.mp3": {
+  "n": 6,
+  "wer": 0.0,
+  "range": 30.8,
+  "dyn": 27.4,
+  "dur": 3.52,
+  "txt": "You come out his nose in public."
+ },
+ "takes/06_palate_b.mp3": {
+  "n": 6,
+  "wer": 0.0,
+  "range": 16.1,
+  "dyn": 32.1,
+  "dur": 3.68,
+  "txt": "You come out his nose in public."
+ },
+ "takes/07_noodle_a.mp3": {
+  "n": 7,
+  "wer": 0.0,
+  "range": 15.5,
+  "dyn": 26.0,
+  "dur": 3.44,
+  "txt": "Fine. Boring."
+ },
+ "takes/07_noodle_b.mp3": {
+  "n": 7,
+  "wer": 0.0,
+  "range": 4.6,
+  "dyn": 26.7,
+  "dur": 3.36,
+  "txt": "Fine. Boring."
+ },
+ "takes/08_brain_a.mp3": {
+  "n": 8,
+  "wer": 0.09,
+  "range": 9.6,
+  "dyn": 24.4,
+  "dur": 3.52,
+  "txt": "Soft pallet! Heads up! His buddy's about to tell a joke!"
+ },
+ "takes/08_brain_b.mp3": {
+  "n": 8,
+  "wer": 0.09,
+  "range": 11.0,
+  "dyn": 25.1,
+  "dur": 3.44,
+  "txt": "Soft pallet! Heads up! His buddy's about to tell a joke!"
+ },
+ "takes/09_palate_a.mp3": {
+  "n": 9,
+  "wer": 0.0,
+  "range": 17.0,
+  "dyn": 28.7,
+  "dur": 3.68,
+  "txt": "What?! Not now! He's got a mouth full of noodles!"
+ },
+ "takes/09_palate_b.mp3": {
+  "n": 9,
+  "wer": 0.2,
+  "range": 10.2,
+  "dyn": 23.4,
+  "dur": 3.44,
+  "txt": "What?! Not now! He's got a mouthful of noodles!"
+ },
+ "takes/10_brain_a.mp3": {
+  "n": 10,
+  "wer": 0.0,
+  "range": 17.1,
+  "dyn": 23.6,
+  "dur": 1.84,
+  "txt": "Too late."
+ },
+ "takes/10_brain_b.mp3": {
+  "n": 10,
+  "wer": 0.0,
+  "range": 18.6,
+  "dyn": 23.1,
+  "dur": 1.76,
+  "txt": "Too late."
+ },
+ "takes/11_laugh_a.mp3": {
+  "n": 11,
+  "wer": 0.43,
+  "range": 23.1,
+  "dyn": 27.8,
+  "dur": 4.08,
+  "txt": "Ha ha ha ha ha ha ha  Stop it, man!"
+ },
+ "takes/11_laugh_b.mp3": {
+  "n": 11,
+  "wer": 0.14,
+  "range": 16.1,
+  "dyn": 27.9,
+  "dur": 4.24,
+  "txt": "Ha ha ha ha ha! Stop it, man!"
+ },
+ "takes/12_palate_a.mp3": {
+  "n": 12,
+  "wer": 0.0,
+  "range": 15.5,
+  "dyn": 24.4,
+  "dur": 5.68,
+  "txt": "Whoa! He's laughing! He's breathing out! I have to drop! I can't hold the door!"
+ },
+ "takes/12_palate_b.mp3": {
+  "n": 12,
+  "wer": 0.0,
+  "range": 13.2,
+  "dyn": 25.7,
+  "dur": 5.68,
+  "txt": "Whoa! He's laughing! He's breathing out! I have to drop! I can't hold the door!"
+ },
+ "takes/13_noodle_a.mp3": {
+  "n": 13,
+  "wer": 0.33,
+  "range": 20.5,
+  "dyn": 16.8,
+  "dur": 2.24,
+  "txt": "Whee! Going up!"
+ },
+ "takes/13_noodle_b.mp3": {
+  "n": 13,
+  "wer": 0.33,
+  "range": 20.3,
+  "dyn": 18.1,
+  "dur": 2.24,
+  "txt": "Whee! Going up!"
+ },
+ "takes/14_noodle_a.mp3": {
+  "n": 14,
+  "wer": 0.18,
+  "range": 28.0,
+  "dyn": 29.7,
+  "dur": 5.28,
+  "txt": "Huh? Why is it so hairy in here?  Wait, is that daylight?"
+ },
+ "takes/14_noodle_b.mp3": {
+  "n": 14,
+  "wer": 0.18,
+  "range": 24.3,
+  "dyn": 30.2,
+  "dur": 5.2,
+  "txt": "Huh? Why is it so hairy in here? Wait, is that daylight?"
+ },
+ "takes/15_palate_a.mp3": {
+  "n": 15,
+  "wer": 0.4,
+  "range": 13.4,
+  "dyn": 29.7,
+  "dur": 2.4,
+  "txt": "Bring it see what you did"
+ },
+ "takes/15_palate_b.mp3": {
+  "n": 15,
+  "wer": 0.2,
+  "range": 14.4,
+  "dyn": 30.5,
+  "dur": 2.4,
+  "txt": "Bring... see what you did."
+ },
+ "takes/16_brain_a.mp3": {
+  "n": 16,
+  "wer": 0.0,
+  "range": 32.6,
+  "dyn": 19.3,
+  "dur": 2.48,
+  "txt": "Hey, it was a good joke."
+ },
+ "takes/16_brain_b.mp3": {
+  "n": 16,
+  "wer": 0.0,
+  "range": 30.8,
+  "dyn": 18.9,
+  "dur": 2.32,
+  "txt": "Hey, it was a good joke."
+ },
+ "takes/17_patient_a.mp3": {
+  "n": 17,
+  "wer": 0.0,
+  "range": 14.7,
+  "dyn": 16.5,
+  "dur": 4.48,
+  "txt": "Doc, I laughed while eating, and a noodle came out my nose."
+ },
+ "takes/17_patient_b.mp3": {
+  "n": 17,
+  "wer": 0.0,
+  "range": 14.0,
+  "dyn": 15.3,
+  "dur": 4.48,
+  "txt": "Doc, I laughed while eating, and a noodle came out my nose."
+ },
+ "takes/18_doctor_a.mp3": {
+  "n": 18,
+  "wer": 0.0,
+  "range": 15.6,
+  "dyn": 20.3,
+  "dur": 14.88,
+  "txt": "That's called nasal regurgitation.  When you swallow, your soft palate seals off your nose.  But laughing makes you breathe out so it drops and food can shoot right up.  Once in a while, it's harmless.  If it happens a lot, get it checked."
+ },
+ "takes/18_doctor_b.mp3": {
+  "n": 18,
+  "wer": 0.0,
+  "range": 15.6,
+  "dyn": 19.6,
+  "dur": 15.12,
+  "txt": "That's called nasal regurgitation.  When you swallow, your soft palate seals off your nose.  But laughing makes you breathe out, so it drops and food can shoot right up.  Once in a while, it's harmless.  If it happens a lot, get it checked."
+ },
+ "takes/19_noodle_a.mp3": {
+  "n": 19,
+  "wer": 0.0,
+  "range": 20.0,
+  "dyn": 29.2,
+  "dur": 5.2,
+  "txt": "Next time, chew, swallow, then laugh."
+ },
+ "takes/19_noodle_b.mp3": {
+  "n": 19,
+  "wer": 0.0,
+  "range": 17.7,
+  "dyn": 26.3,
+  "dur": 4.8,
+  "txt": "Next time, chew, swallow, then laugh."
+ }
+}

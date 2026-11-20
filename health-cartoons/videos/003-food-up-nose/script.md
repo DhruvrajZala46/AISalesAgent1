@@ -1,6 +1,16 @@
 # 003 - Why Does Food Come Out Your Nose When You Laugh?
 
-Status (20 Nov 2026): **script draft, waiting for the user's approval.** No voices generated, no credits spent.
+Status (20 Nov 2026): script approved by the user ("now okay"); voices generated, scene built, video rendered (`final.mp4`, not committed).
+
+## Build
+`bash ../../tools/process_voice.sh raw proc && python3 -I ../../tools/tighten.py proc 0.30 11` → apply `tempo.txt` (atempo per line, `ffmpeg -nostdin`) →
+`python3 -I ../../tools/words.py proc words.json && python3 build_audio.py && python3 assemble.py && node ../../tools/render.js && bash ../../tools/mix.sh video.mp4 final.mp4`
+
+## Voices (ElevenLabs flow `dAzwWvxtZks9zyUEGV20`, model **eleven_v4**, 2 takes per line, ~2,400 credits)
+Takes were picked by measurement (`takes/scores.json`: whisper word accuracy + pitch range in semitones), never by guess. The raw takes
+are git-ignored; regenerate from the text below. Picked: 01a 02a 03b 04a 05b 06a 07a 08b 09a 10b 11a 12a 13a 14a 15d 16a 17a 18a 19a.
+Line 15 was regenerated as `[annoyed] BRAIN! See what you did?!` because whisper heard "Bring" in both first takes.
+The laugh (11, Davis) is cut before "Stop it, man" and the palate shouts over its tail. Pace after `tempo.txt`: 2.73 words/s (reference 2.8-3.0).
 
 **Why this topic** (`../../research/VIRAL-STUDY.md` §10): "Why Does Food Sometimes Go Up Your Nose?" is the only topic that hit 20M+ on
 BOTH same-format channels (22M = 30.6x median on @Dr_Healthcare1, 20M = 41.9x on Health Manager). Same promise, our own angle

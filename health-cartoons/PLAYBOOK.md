@@ -43,7 +43,12 @@ Say plainly what was not verified.
 | Patient (female) | Jessica (premade) / `cgSgspJ2msm6clMCkdW9` | none | 0.966 |
 | Doctor (male), if needed | Rowan / `kLhAstPcnnPxqzk6gS5i` | none | 0.948 (no exact match was found in about 200 voices) |
 
-- One generation per line; put audio tags in the text: `[surprised]`, `[shouting]`, `[sarcastic]`, `[sulking]` and so on.
+- **From video 003: model `eleven_v4`, 2 takes per line** (paid Starter plan, 40,000 credits/month; 003 cost ~2,400). Put audio tags in the text:
+  `[surprised]`, `[shouting]`, `[panicking]`, `[sulking]`, `[laughs harder]`; CAPS for one stressed word.
+- **Pick takes by measurement, not by guess:** whisper word accuracy (a misheard key word = regenerate that line) and pitch range in semitones
+  (more range = more expressive). Scores are saved in `takes/scores.json`.
+- **Pace:** v4 speaks slower than the reference. After `process_voice.sh`, run `tools/tighten.py proc 0.30` (cuts pauses longer than 0.3 s inside a
+  line) and an `atempo` pass per line from `tempo.txt` (1.05-1.25, never on laughs or sighs) to reach ~2.7-3.0 words/s.
 - Cost: a short line is 40-60 credits; a 17-s doctor part is about 260. Video 001 cost about 680 credits.
   Check the balance with `account_get_usage`.
 - `tools/process_voice.sh raw proc` pitches and trims the lines (files are named `NN_role.mp3`).
