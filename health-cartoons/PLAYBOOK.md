@@ -1,6 +1,6 @@
 # Health-cartoon Shorts: the standard (read before every video)
 
-**The bar is video 003** (`videos/003-food-up-nose/`, "Why Does Food Come Out Your Nose When You Laugh?"), built on the engine of
+**The bar is video 003 v2/v3** (`videos/003-food-up-nose-v2/`: AI-illustrated art animated by our engine; the user: "GREAT, I LOVED IT"; audio and script from `videos/003-food-up-nose/`, "Why Does Food Come Out Your Nose When You Laugh?"), built on the engine of
 video 001 (`videos/001-earwax-cotton-buds/`, which the user called "mind blowing"). After 003 the user said:
 **"Save this standard. Every new video: same effort or MORE effort, in editing and scripting. Never forget it."**
 **Update (row 9 in LEARNINGS):** the user then rejected 003's visuals as basic. The PROCESS in section 0 stays mandatory; the ART must be upgraded to illustrated assets (section 8) before the next video.

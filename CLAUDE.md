@@ -4,7 +4,7 @@
 
 English "talking organs + doctor" cartoon Shorts, drawn and animated entirely in code.
 **New chat about these videos? Read `health-cartoons/README.md`, then `health-cartoons/PLAYBOOK.md` (section 0 first) and `health-cartoons/LEARNINGS.md` FIRST.**
-The standard is `health-cartoons/videos/003-food-up-nose/` (built on the 001 engine; the user called 001 "mind blowing").
+The standard is `health-cartoons/videos/003-food-up-nose-v2/` (Meta Muse Image art + our engine; the user: "GREAT, I LOVED IT"), with script/audio from `videos/003-food-up-nose/`.
 After 003 the user said: **"Save this standard. Every new video: SAME effort or MORE, in editing and scripting. Never forget it."**
 So every video runs PLAYBOOK section 0 in full:
 - data-picked topic;
