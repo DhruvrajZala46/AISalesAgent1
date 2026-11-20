@@ -38,17 +38,20 @@ EV={'drop':0.25,'surgery':wt('03_stomach','SURGERY'),'sleep':wt('05_stomach','SL
     'slipped':wt('16_doctor','SLIPPED'),'six':wt('16_doctor','SIX'),'hours':wt('16_doctor','HOURS'),'stinger':START['17_burger']-.75,
     'after':wt('17_burger','AFTER'),'cta':lend('17_burger')+.1}
 sfx=np.zeros(N,np.float32)
-def S(f,t,g):
-    a=load('../../assets/sfx/'+f)*g; i=max(0,int(t*SR)); n=min(len(a),N-i); sfx[i:i+n]+=a[:n]
-S('1492.mp3',0.0,.3); S('2457.mp3',EV['drop'],.55); S('473.mp3',EV['drop']+.1,.3)          # burger drops in: whoosh + splash + boing
-S('2882.mp3',EV['surgery']-.05,.4); S('2151.mp3',EV['up'],.4); S('2151.mp3',EV['down'],.35)
-S('1351.mp3',EV['ring'],.55); S('2882.mp3',EV['brain'],.3)
-S('2894.mp3',EV['limp']+.55,.3); S('1486.mp3',EV['float']-.1,.35)                          # sad trombone as the door goes limp, float whoosh
-S('1714.mp3',EV['throat'],.45); S('616.mp3',EV['throat']+.3,.4); S('3024.mp3',EV['wrongpipe']-.4,.4)
-S('2364.mp3',EV['land'],.55); S('473.mp3',EV['land']+.08,.4); S('2882.mp3',EV['pipe'],.35)
-S('110.mp3',EV['cant']+.1,.4); S('2999.mp3',EV['nogag']+.5,.3); S('2925.mp3',EV['burn'],.4)
-S('1714.mp3',EV['clinic']-.15,.4); S('2882.mp3',EV['aspiration']-.05,.45); S('1486.mp3',EV['relaxes']-.3,.3); S('2151.mp3',EV['slipped'],.4); S('2882.mp3',EV['six'],.4)
-S('1492.mp3',EV['stinger']-.1,.4); S('2894.mp3',EV['after']+.3,.35); S('2873.mp3',EV['cta'],.45)
+def S(f,t,g,dur=None):   # dur: keep only the first `dur` seconds, with a short fade-out
+    a=load('../../assets/sfx/'+f)*g
+    if dur: a=a[:int(dur*SR)].copy(); fl=min(len(a),int(.25*SR)); a[-fl:]*=np.linspace(1,0,fl)
+    i=max(0,int(t*SR)); n=min(len(a),N-i); sfx[i:i+n]+=a[:n]
+# Mixkit ids checked by title AND by the AST tagger (PLAYBOOK "Sound effects map"; the old map had wrong names)
+S('1492.mp3',0.0,.3); S('1464.mp3',EV['drop'],.45); S('2890.mp3',.6,.4); S('2894.mp3',.66,.35)   # whoosh in, swoosh down, splat + boing on landing
+S('2357.mp3',EV['surgery']-.05,.45); S('1464.mp3',EV['up'],.4); S('1464.mp3',EV['down'],.35)       # label pop, arrows
+S('1351.mp3',EV['ring'],.55); S('2358.mp3',EV['brain'],.35)                                          # phone ring, inset pops in
+S('473.mp3',EV['limp']+.55,.3); S('1486.mp3',EV['float']-.1,.35)                                     # sad "fail" jingle as the door goes limp, float whoosh
+S('1492.mp3',EV['throat'],.4); S('616.mp3',EV['throat']+.3,.35); S('3024.mp3',EV['wrongpipe']-.4,.4)
+S('2364.mp3',EV['land'],.55); S('2894.mp3',EV['land']+.08,.4); S('2357.mp3',EV['pipe'],.35)
+S('473.mp3',EV['cant']+.1,.35); S('123.mp3',EV['burn'],.35,2.2)                                      # can't cough: fail jingle; burning: sizzle
+S('1492.mp3',EV['clinic']-.15,.4); S('2357.mp3',EV['aspiration']-.05,.45); S('2358.mp3',EV['relaxes']-.3,.35); S('2364.mp3',EV['slipped'],.4); S('2256.mp3',EV['six'],.4)
+S('1492.mp3',EV['stinger']-.1,.4); S('473.mp3',EV['after']+.3,.3); S('2359.mp3',EV['cta'],.45)
 mus=np.tile(load('../../assets/music/mixkit-9.mp3'),3)[:N]; fl=int(1.4*SR); mus[-fl:]*=np.linspace(1,0,fl)
 for name,b in [('voice',voice),('sfx',sfx),('music',mus)]:
     subprocess.run(['ffmpeg','-v','error','-y','-f','f32le','-ar',str(SR),'-ac','1','-i','-',f'{name}.wav'],input=np.clip(b,-1,1).tobytes())

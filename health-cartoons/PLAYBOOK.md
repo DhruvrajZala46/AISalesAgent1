@@ -99,22 +99,38 @@ Say plainly what was not verified.
 - **Muffle gag:** when a character says it got quiet, the music gets a 350 Hz low-pass from that line to the clinic cut.
 - **SFX (aim for 18 or more, each tied to a word or action)**, all Mixkit and fetched by `tools/fetch_assets.sh`:
 
-| id | use |
-|---|---|
-| 1492 | object whooshes into frame (hook) |
-| 1714 | zoom-in whoosh, scene transitions |
-| 2882 | label box pops (EAR CANAL, EARWAX, condition label, tip label) |
-| 2886 | scrubbing or sliding |
-| 2151 | ding: arrow or key fact appears |
-| 2209 | punch on a shove |
-| 92 | splat |
-| 324 / 1886 | squish while something is squeezed |
-| 473 | boing on impact |
-| 391 | dizzy birds after impact |
-| 2894 | sad trombone on the payoff ("why'd it get so quiet") |
-| 1486 | thought bubble appears |
-| 2873 | CTA pop |
-| 343, 110, 527, 3050 | spares (falling whistle, fail tone, clown, metal boing) |
+| id | Mixkit title (checked by title AND by the AST tagger, 20 Nov 2026) | use |
+|---|---|---|
+| 2357 | Bubble pop up alert (Plop) | label box pops |
+| 2358 | Long pop (Plop) | thought bubble / inset appears |
+| 2256 | Kids cartoon close bells (Ding) | key fact, tip card |
+| 1492 | Cinematic whoosh fast transition | object whooshes in, scene change |
+| 1464 | Quick swoosh accent | arrows, quick moves |
+| 1486 | (whoosh) | slow float / drift |
+| 3024 | Meteor whoosh | big fall |
+| 772 | Quick zoom impact | punch-zoom |
+| 2894 / 2895 | Boing hit / Metallic boing | impact, bounce |
+| 2890 | Cartoon quick splat | landing in liquid, splat |
+| 2364 | Hard pop click (Plop) | small landing, drop |
+| 2149 / 2151 | Cartoon punch / Soft quick punch | shove, punch |
+| 473 | Cartoon failure piano | sad or fail payoff |
+| 2359 | Silly pop cluster | CTA card |
+| 1351 | Toy telephone ring | phone call |
+| 123 | Frying fish on a hot pan (Sizzle; trim it) | burning, heat |
+| 616 | Cartoon toy whistle | silly rise |
+| 2945 / 2182 | Twig breaking / Wood hard hit | stick snaps, hard knock |
+| 1884 / 1886 | Soap / gel dispenser squish | squish, stirring mush |
+| 2828 | Game magical potion drink | gulp |
+| 3181 / 2833 | Pouring foamy soda / Pouring soda in a glass (trim) | pouring soda |
+| 732 / 1321 | Cartoon bubbles popping / Deep water bubbles | fizz, bubbles |
+| 3207 | Soft slurp | liquid drains away |
+| 2920 | Fish dropped hit (wet slap) | wet thud |
+| 2813 | Funny squeaky toy hits | small squeaky character |
+| 1871 / 1889 | Toilet flush | flush |
+
+**Do NOT use these as "pops" or "dings" (the old map named them wrongly and 003/004 v1 used them that way):** 2882 = cartoon LAUGH voice,
+2873 = creepy creature CRY, 92 = cat MEOW, 2209 = SNEEZE, 391 = falling man SCREAM, 110 = door bell, 2886 = clown horn, 2457 = fish
+flapping, 1714 = rocket whoosh that sounds like an explosion, 2925/2999 = bubble plops. Check every new id the same way before using it.
 
 ## 4. Visual rules
 

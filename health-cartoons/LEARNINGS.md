@@ -22,6 +22,9 @@ Other user preferences:
 - "Save everything": all code and docs live here in git. Media is never committed (repo rule); re-create it from the IDs and scripts.
 
 Checks learned while building 004 (do them before the first full render):
+- **Verify every SFX id by its Mixkit title and the AST tagger.** The old map was wrong for 12+ ids: 003 and the first 004 mix played a
+  cartoon LAUGH on every label pop, a creepy creature CRY on the FOLLOW card and an explosion on scene changes. 004's audio was remixed
+  with verified ids (PLAYBOOK section 3 table).
 - **Look at every AI mouth pair side by side at sprite level** (base, `_c`, `_o`). In 004 three of them were wrong: the stomach's open
   mouth looked like lipstick lips, its "closed" edit had no mouth at all, the lungs' open mouth sat on the lobe's bottom edge and the strain
   pose had none. Fix: make the open mouth first with an exact place ("on the right lobe, just below its eye", "no lips"), then make the
