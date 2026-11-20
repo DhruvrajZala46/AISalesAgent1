@@ -187,3 +187,9 @@ Everything is drawn in code. The clinic people are the weakest part (about 75-80
 The remaining gap is the illustration hand. The upgrades the user can choose later: an image model (Gemini API key in the environment's
 Network secrets, `generativelanguage.googleapis.com`, header `x-goog-api-key`) to draw still assets that we then animate, or an
 illustrator's asset pack. Video models are not needed (the format is cut-out animation).
+
+**Tested 20 Nov 2026: Meta Muse Image works** (`muse-image-1.0`, `https://api.meta.ai/v1/images/generations`, OpenAI-compatible, key in
+`MODEL_API_KEY`, `tools/meta_image.py`). About 20 s and about 21-23K tokens per image; 9:16 comes back as 1152×2016. Quality: a clean,
+professional educational-cartoon look, far above our code drawing. A character on a flat #00FF00 background keys out cleanly for cut-out
+animation. Plan: AI background plates + AI character sprites (expressions via `/v1/images/edits` for consistency) + our code engine for
+motion, blinks, mouths, effects, captions and sound.
