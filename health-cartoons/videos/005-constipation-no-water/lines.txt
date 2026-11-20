@@ -1,0 +1,17 @@
+stomach|Whoa! That's a LOT of food!
+stomach|Time to mix it all up!
+stomach|Huh?! My stick is STUCK!
+stomach|Timmy! Did you drink ANY water?
+brain|Mom, I had soda! Soda's basically water!
+stomach|Soda is NOT water! Drink real water!
+brain|Okaaay, Mom.
+stomach|Ugh! Not soda AGAIN!
+stomach|That was my LAST stick!
+stomach|Intestines... it's YOUR problem now!
+softpoop|Hey! Move it, big guy!
+rockpoop|Nope. I'm a ROCK. I live here.
+boy|Mooom! It won't come out!
+boy|It's STUCK!
+mom|Doctor, my son hasn't pooped in a whole week! What's wrong?
+doctor|That's called constipation. He ate a big meal with soda, and almost no water or fiber. Your large intestine pulls water out of food waste. With too little water and fiber, it pulls out too much, so the stool turns hard and dry, and it hurts to push. Drink water every day, eat fruits and veggies, and swap soda for water.
+rockpoop|Water?! Okay, okay... I'm leaving!

@@ -14,7 +14,11 @@ So every video runs PLAYBOOK section 0 in full:
 - an acting timeline, frame checks, full QA;
 - an upload block, then save everything.
 
-003's measured numbers are the floor. Start every new video by copying the 003 folder.
+003's measured numbers are the floor (004 "Why You Can't Eat Before Surgery" matched or beat them; same theme and quality).
+**User rule (20 Nov 2026): the next 10 videos are remakes of PROVEN 10M+ videos in this format, one per video, from
+`health-cartoons/research/NEXT-10.md`. No guessed ideas.** Study the actual video shot by shot and keep its hook, beats, scene order,
+staging and pacing; redraw in our art and use our own words (a frame-for-frame or word-for-word clone risks reused-content and
+copyright strikes). Start every new video by copying the 004 folder.
 The user writes in Hinglish; reply in simple Hinglish. Be honest about quality (measured, never "99%" claims).
 Never commit media, keys or cookies; `health-cartoons/tools/fetch_assets.sh` and each `script.md` let you re-create the media.
 

@@ -1,5 +1,11 @@
 # Health-cartoon Shorts: the standard (read before every video)
 
+**USER RULE, 20 Nov 2026 (overrides older topic advice): every next video is a remake of ONE proven video that has 10M+ views in this
+exact format** (queue: `research/NEXT-10.md`). No guessed ideas. Study that actual video shot by shot and keep its hook, story beats,
+scene order, staging, silent visual gags, pacing and clinic position. The quality floor is 003 v3 + 004 (same theme, same art pipeline,
+same effort or more). We redraw everything in our own art and say every line in our own words: a frame-for-frame or word-for-word
+clone is what YouTube's reused-content and copyright systems catch, and one strike can end a new channel.
+
 **The bar is video 003 v2/v3** (`videos/003-food-up-nose-v2/`: AI-illustrated art animated by our engine; the user: "GREAT, I LOVED IT"; audio and script from `videos/003-food-up-nose/`, "Why Does Food Come Out Your Nose When You Laugh?"), built on the engine of
 video 001 (`videos/001-earwax-cotton-buds/`, which the user called "mind blowing"). After 003 the user said:
 **"Save this standard. Every new video: same effort or MORE effort, in editing and scripting. Never forget it."**
@@ -20,8 +26,8 @@ Do every step, in order. Each one produced a measured result in 003; the next vi
 
 | # | Step | What 003 did (the minimum) |
 |---|---|---|
-| 1 | **Topic from data** | `yt-viral` ranking by multiple over each channel's own median, across the reference AND Health Manager. Prefer a topic proven on both channels at 10M+ (003: 22M + 20M). Our own angle on it. |
-| 2 | **Study the references again** | Transcribe and contact-sheet the relevant top videos (all the user sends). Write down their hook, acting, camera, art details. |
+| 1 | **Topic = next proven 10M+ video** | Take the next row of `research/NEXT-10.md` (every row is a real video at 10M+ in this format). Refresh its view count; prefer topics repeated on both channels. |
+| 2 | **Study THAT video shot by shot** | 2 fps contact sheets + whisper timings of the actual video (the user sends it; YouTube blocks this server). Write its shot list: every beat with its second, who talks, what moves, silent gags, camera, clinic %. Our script follows that shot list beat for beat. |
 | 3 | **Script in their voice, measured** | Lines of 3-8 words (median 4-6), 100% of cartoon lines ≤ 8 words, questions 11-37%, interjections 10-43%, arc "wants → no + reason → warning of the consequence → outside trigger → it happens → blame/'See?'", clinic 64-83%, doctor "That's called / You're dealing with X" + 2-sentence mechanism + tip, no spoken CTA. Facts checked against named sources. Show the measured table to the user. |
 | 4 | **User approves the script** | Never spend credits before "okay". |
 | 5 | **Voices** | eleven_v4, 2 takes per line, pick by whisper accuracy + pitch range (`takes/scores.json`); regenerate any line with a misheard key word; tighten pauses + tempo pass to 2.7-3.0 words/s. |
@@ -33,6 +39,8 @@ Do every step, in order. Each one produced a measured result in 003; the next vi
 | 11 | **Deliver** | The mp4 plus a copy-ready upload block (Question-formula title, description with sources and "education only", hashtags) and the honest list of what is still weak. End with "Ship it, or change it?" |
 | 12 | **Save** | Code, `script.md` (all ElevenLabs IDs, picked takes, tempo), docs and LEARNINGS committed and pushed. Media never committed. |
 
+**004's measured numbers (71.7 s):** final-mix word match 98.1%, frozen 0.3%, longest nearly-static 0.2 s, clinic 65%, 2.73 words/s,
+about 30 SFX, −11.1 LUFS, true peak −1.0 dB.
 **003's measured numbers (the floor for the next video):** frozen frames 1.7%, longest nearly-static stretch 1.0 s, clinic at 64%,
 2.73 words/s, 27 SFX, final-mix word match 96.8%, −10.8 LUFS, true peak −1.0 dB, 70 s.
 
