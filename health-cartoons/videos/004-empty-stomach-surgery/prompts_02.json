@@ -1,0 +1,47 @@
+[
+{
+"name": "art/stomach_point",
+"src": "art/src/stomach_base.png",
+"prompt": "Same stomach character, same J-shaped cut-away stomach with the visible inside and the juice pool, same food pipe, same colors, same white gloves. Change only the pose and face: stern and serious, pointing up firmly with one gloved hand, the other hand on its side, angry eyebrows. Same flat pure green #00FF00 background, full body visible, same style. NO mouth at all (plain area where the mouth would be)."
+},
+{
+"name": "art/stomach_panic",
+"src": "art/src/stomach_base.png",
+"prompt": "Same stomach character, same J-shaped cut-away stomach with the visible inside and the juice pool, same food pipe, same colors, same white gloves. Change only the pose and face: panicking with both gloved hands pressed on its cheeks, eyes wide with tiny pupils, worried eyebrows, two blue sweat drops. Same flat pure green #00FF00 background, full body visible, same style. NO mouth at all (plain area where the mouth would be)."
+},
+{
+"name": "art/stomach_drowsy",
+"src": "art/src/stomach_base.png",
+"prompt": "Same stomach character, same J-shaped cut-away stomach with the visible inside and the juice pool, same food pipe, same colors, same white gloves. Change only the pose and face: very sleepy and drowsy, heavy half-closed eyelids, droopy eyebrows, arms hanging limp, swaying. Same flat pure green #00FF00 background, full body visible, same style. NO mouth at all (plain area where the mouth would be)."
+},
+{
+"name": "art/stomach_asleep",
+"src": "art/src/stomach_base.png",
+"prompt": "Same stomach character, same J-shaped cut-away stomach with the visible inside and the juice pool, same food pipe, same colors, same white gloves. Change only the pose and face: fast asleep wearing a light blue sleep mask over its eyes, arms limp, a small 'Zzz' floating above, peaceful. Same flat pure green #00FF00 background, full body visible, same style. NO mouth at all (plain area where the mouth would be)."
+},
+{
+"name": "art/burger_scared",
+"src": "art/src/burger_base.png",
+"prompt": "Same cheeseburger character, same bun, lettuce, cheese and patty, same white gloves and shoes. Change only the pose and face: floating up in the air in fear, arms and legs flailing, eyes wide with tiny pupils, the sunglasses flying off its bun, two sweat drops. Same flat pure green #00FF00 background, full body visible, same style. NO mouth at all (plain area where the mouth would be)."
+},
+{
+"name": "art/burger_nervous",
+"src": "art/src/burger_base.png",
+"prompt": "Same cheeseburger character, same bun, lettuce, cheese and patty, same white gloves and shoes. Change only the pose and face: sheepish and nervous, scratching the back of its bun with one gloved hand, awkward eyebrows, sunglasses tilted, a sweat drop. Same flat pure green #00FF00 background, full body visible, same style. NO mouth at all (plain area where the mouth would be)."
+},
+{
+"name": "art/burger_sulk",
+"src": "art/src/burger_base.png",
+"prompt": "Same cheeseburger character, same bun, lettuce, cheese and patty, same white gloves and shoes. Change only the pose and face: sulking, arms crossed, sad droopy half-closed eyes, sunglasses removed and hanging from one hand, looking away. Same flat pure green #00FF00 background, full body visible, same style. NO mouth at all (plain area where the mouth would be)."
+},
+{
+"name": "art/lungs_strain",
+"src": "art/src/lungs_base.png",
+"prompt": "Same lungs character, same pink lungs and windpipe, same white gloves. Change only the pose and face: straining as hard as it can to cough, eyes squeezed shut, red flushed cheeks, gloved fists clenched, tension lines. Same flat pure green #00FF00 background, full body visible, same style. NO mouth at all (plain area where the mouth would be)."
+},
+{
+"name": "art/lungs_burn",
+"src": "art/src/lungs_base.png",
+"prompt": "Same lungs character, same pink lungs and windpipe, same white gloves. Change only the pose and face: inflamed and in pain: the lungs are red-orange and swollen with a hot glow, sweaty, tired pained eyes, one gloved hand on its side. Same flat pure green #00FF00 background, full body visible, same style. NO mouth at all (plain area where the mouth would be)."
+}
+]

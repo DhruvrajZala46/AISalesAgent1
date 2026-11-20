@@ -7,7 +7,7 @@ RAW=$1; OUT=$2; mkdir -p "$OUT"
 for f in "$RAW"/*.mp3; do
   n=$(basename "$f" .mp3); role=${n#*_}
   case $role in
-    swab|gum|noodle|cartoonA) r=1.3348;;      # +5 semitones
+    swab|gum|noodle|burger|cartoonA) r=1.3348;;      # +5 semitones
     wax|stomach|palate|cartoonB)  r=1.0905;;      # +1.5 semitones
     drum|intestine|brain|cartoonC) r=1.1225;;      # +2 semitones
     *) r=1;;

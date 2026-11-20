@@ -1,0 +1,233 @@
+{
+ "bg_throat": {
+  "w": 1152,
+  "h": 2016
+ },
+ "brain_base": {
+  "w": 1419,
+  "h": 1325,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "burger_base": {
+  "w": 1112,
+  "h": 1341,
+  "eyes": [
+   {
+    "cx": 437.0,
+    "cy": 397.5,
+    "rx": 80.0,
+    "ry": 79.5,
+    "dark": 0.74
+   },
+   {
+    "cx": 708.5,
+    "cy": 388.5,
+    "rx": 79.5,
+    "ry": 79.5,
+    "dark": 0.75
+   }
+  ],
+  "lid": "#eaa750",
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "burger_nervous": {
+  "w": 1073,
+  "h": 1384,
+  "eyes": [
+   {
+    "cx": 429.5,
+    "cy": 431.5,
+    "rx": 78.5,
+    "ry": 70.5,
+    "dark": 0.53
+   },
+   {
+    "cx": 697.0,
+    "cy": 434.0,
+    "rx": 79.0,
+    "ry": 70.0,
+    "dark": 0.52
+   }
+  ],
+  "lid": "#e8a450",
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "burger_scared": {
+  "w": 1454,
+  "h": 1416,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "burger_sulk": {
+  "w": 1019,
+  "h": 1340,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "doc_base": {
+  "w": 1034,
+  "h": 1910,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "doc_explain": {
+  "w": 1089,
+  "h": 1898,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "doc_point": {
+  "w": 917,
+  "h": 1906,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "lungs_base": {
+  "w": 1571,
+  "h": 1152,
+  "eyes": [
+   {
+    "cx": 591.5,
+    "cy": 651.5,
+    "rx": 89.5,
+    "ry": 88.5,
+    "dark": 0.6
+   },
+   {
+    "cx": 985.0,
+    "cy": 651.0,
+    "rx": 89.0,
+    "ry": 89.0,
+    "dark": 0.61
+   }
+  ],
+  "lid": "#feabb5",
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "lungs_burn": {
+  "w": 1396,
+  "h": 1265,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "lungs_strain": {
+  "w": 1514,
+  "h": 1146,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "pat_bed": {
+  "w": 1152,
+  "h": 1853,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "plate_abdomen": {
+  "w": 1152,
+  "h": 2016
+ },
+ "plate_chest": {
+  "w": 1152,
+  "h": 2016
+ },
+ "plate_hospital": {
+  "w": 1152,
+  "h": 2016
+ },
+ "plate_tray": {
+  "w": 1152,
+  "h": 2016
+ },
+ "stomach_asleep": {
+  "w": 1395,
+  "h": 1538,
+  "eyes": [],
+  "lid": null
+ },
+ "stomach_base": {
+  "w": 1507,
+  "h": 1521,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "stomach_drowsy": {
+  "w": 1439,
+  "h": 1519,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "stomach_panic": {
+  "w": 1413,
+  "h": 1522,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "stomach_point": {
+  "w": 1451,
+  "h": 1521,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ }
+}

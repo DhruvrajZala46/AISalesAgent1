@@ -1,0 +1,6 @@
+[
+{"name":"art/mouth_unused/lungs_base_c_a","src":"art/src/lungs_base_o_a.png","size":"1024x1024",
+ "prompt":"Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only change the mouth on the right lobe: close it into a small closed cartoon mouth, a short slightly curved dark line in exactly the same spot and the same width, same flat style."},
+{"name":"art/mouth_unused/lungs_strain_c_a","src":"art/src/lungs_strain_o_a.png","size":"1024x1024",
+ "prompt":"Keep EVERYTHING else exactly the same: same character, same pose, same squeezed eyes, same red cheeks, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only change the mouth on the right lobe: close it into a tightly clenched straining closed mouth, a short wavy dark line in exactly the same spot, same flat style."}
+]

@@ -16,6 +16,18 @@
 Other user preferences:
 - Talks in Hinglish; answer in simple Hinglish with plain words, clear and direct.
 - Wants honesty: never claim "99% same" when it is not. Give a measured comparison.
-- Visuals are drawn in code (the user chose code). No image model is connected; video models are not needed at all.
+- Visuals: AI-illustrated plates and sprites (Meta Muse Image) animated by our engine. The code-drawn look was rejected (row 9); video models are not needed.
 - The user wants a separate channel in this format, with a **female doctor** and a different, trustworthy colour theme.
 - "Save everything": all code and docs live here in git. Media is never committed (repo rule); re-create it from the IDs and scripts.
+
+Checks learned while building 004 (do them before the first full render):
+- **Look at every AI mouth pair side by side at sprite level** (base, `_c`, `_o`). In 004 three of them were wrong: the stomach's open
+  mouth looked like lipstick lips, its "closed" edit had no mouth at all, the lungs' open mouth sat on the lobe's bottom edge and the strain
+  pose had none. Fix: make the open mouth first with an exact place ("on the right lobe, just below its eye", "no lips"), then make the
+  closed one as an edit OF that open one, so both sit on the same spot.
+- **Food standing inside an organ must not cover the organ's mouth.** Measure the mouth box in world pixels against the food's top. Keep the
+  food low, and draw a mouth-only layer (`mouth_overlay.py`) above it.
+- **A sprite that turns upside down must turn round its centre**, not its feet, or it jumps by its own height when it lands.
+- **Name a body part on screen when the script names it** (the "DOOR" ring at the food-pipe valve), and show it changing when it fails.
+- **Cut clinic thought-bubble replays on the doctor's own words** (relaxes the muscle -> the door; cough reflex -> the lungs straining;
+  came back up -> floating; slipped into your lungs -> landing), not one long replay.

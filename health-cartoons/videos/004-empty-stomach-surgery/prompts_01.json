@@ -1,0 +1,40 @@
+[
+{
+"name": "art/plate_abdomen",
+"size": "1024x1792",
+"prompt": "Vertical 9:16 2D cartoon medical illustration, background plate only, no characters, no faces: the inside of the human upper belly, soft folded pink and dark red tissue, the coiled intestines along the bottom, the edge of the liver at the top-left, the diaphragm curving across the top, warm and readable; a large empty area in the middle for a big stomach. Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+},
+{
+"name": "art/stomach_base",
+"prompt": "Cute 2D cartoon stomach character on a perfectly flat pure green #00FF00 background, full body, centered, nothing else, no shadow. A big J-shaped human stomach shown as a cut-away cross-section with its inside visible: pink folded inner wall and a small pool of yellow-green stomach juice at the bottom, the food pipe entering at its top-left like a tube. On its upper wall: a surprised face. Big round white googly eyes with black pupils and expressive eyebrows, but NO mouth at all. Thin white rubber-hose arms with white cartoon gloves coming out of its sides. Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+},
+{
+"name": "art/burger_base",
+"prompt": "Cute 2D cartoon cheeseburger character on a perfectly flat pure green #00FF00 background, full body, centered, nothing else, no shadow. Sesame bun, lettuce, cheese and patty, small black sunglasses pushed up on the top bun, cocky confident pose with one gloved hand on its hip. Big round white googly eyes with black pupils and expressive eyebrows, but NO mouth at all. Tiny white rubber-hose arms and legs with white gloves and shoes. Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+},
+{
+"name": "art/lungs_base",
+"prompt": "Cute 2D cartoon lungs character on a perfectly flat pure green #00FF00 background, full body, centered, nothing else, no shadow. A pair of pink human lungs joined at the top by the windpipe with white cartilage rings, a shocked expression across the two lungs. Big round white googly eyes with black pupils and expressive eyebrows, but NO mouth at all. Thin white rubber-hose arms with white gloves. Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+},
+{
+"name": "art/plate_chest",
+"size": "1024x1792",
+"prompt": "Vertical 9:16 2D cartoon medical illustration, background plate only, no characters: inside the human chest seen from the front, curved white-yellow ribs on both sides, soft dark red tissue, a big empty pink space in the middle where the lungs sit, the windpipe coming down from the top center. Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+},
+{
+"name": "art/plate_hospital",
+"size": "1024x1792",
+"prompt": "Vertical 9:16 cartoon hospital recovery room interior background, empty, no people and no bed: light blue-green walls, a window with white blinds, a heart-rate monitor on a wall arm, an IV pole, a small side table, clean tiled floor. Leave the lower half of the frame open for a hospital bed and a standing doctor. Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+},
+{
+"name": "art/plate_tray",
+"size": "1024x1792",
+"prompt": "Vertical 9:16 cartoon close-up of a hospital food tray on an over-bed table: a covered plate, a cup of water with a straw, a small green jelly cup, a folded napkin, the hospital room softly blurred behind. The tray fills the lower half; leave an empty spot in the middle of the tray. No characters. Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+},
+{
+"name": "art/pat_bed",
+"src": "art/src/pat_base003.png",
+"size": "1024x1792",
+"prompt": "Same young man character, same face and black hair, but WITHOUT any noodle. Now he wears a light blue hospital gown and sits up in a white hospital bed with white sheets and pillows (the whole bed visible), a thin clear oxygen tube under his nose, one hand on his chest, weak and tired expression, a little sweaty. NO mouth at all (plain skin where the mouth would be). Same flat pure green #00FF00 background, same style."
+}
+]

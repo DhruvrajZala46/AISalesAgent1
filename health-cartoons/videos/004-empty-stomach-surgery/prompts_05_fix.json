@@ -1,0 +1,6 @@
+[
+{"name":"art/mouth/stomach_base_c_alt1","src":"art/src/stomach_base_alt1o.png","size":"1024x1024",
+ "prompt":"Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only change the mouth: close it into a small closed cartoon mouth, a short slightly curved dark line in exactly the same spot and the same width, same flat cartoon style."},
+{"name":"art/mouth/stomach_base_c_alt2","src":"art/src/stomach_base_alt1o.png","size":"1024x1024",
+ "prompt":"Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only change the mouth: make it a closed mouth, a small surprised closed mouth (a short dark curved line) in exactly the same spot, same flat cartoon style."}
+]

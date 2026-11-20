@@ -1,0 +1,158 @@
+[
+{
+"name": "art/mouth/stomach_base_c",
+"src": "art/src/stomach_base.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a small surprised closed mouth."
+},
+{
+"name": "art/mouth/stomach_base_o",
+"src": "art/src/stomach_base.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an open surprised talking mouth."
+},
+{
+"name": "art/mouth/stomach_panic_c",
+"src": "art/src/stomach_panic.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a wobbly worried closed mouth."
+},
+{
+"name": "art/mouth/stomach_panic_o",
+"src": "art/src/stomach_panic.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a wide open panicked shouting mouth."
+},
+{
+"name": "art/mouth/stomach_point_c",
+"src": "art/src/stomach_point.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a firm stern closed mouth."
+},
+{
+"name": "art/mouth/stomach_point_o",
+"src": "art/src/stomach_point.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an open stern talking mouth."
+},
+{
+"name": "art/mouth/stomach_drowsy_c",
+"src": "art/src/stomach_drowsy.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a sleepy slack closed mouth."
+},
+{
+"name": "art/mouth/stomach_drowsy_o",
+"src": "art/src/stomach_drowsy.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a sleepy open yawning talking mouth."
+},
+{
+"name": "art/mouth/burger_base_c",
+"src": "art/src/burger_base.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a cocky closed smirk."
+},
+{
+"name": "art/mouth/burger_base_o",
+"src": "art/src/burger_base.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an open cocky talking grin."
+},
+{
+"name": "art/mouth/burger_scared_c",
+"src": "art/src/burger_scared.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a small scared wobbly closed mouth."
+},
+{
+"name": "art/mouth/burger_scared_o",
+"src": "art/src/burger_scared.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a wide open screaming mouth."
+},
+{
+"name": "art/mouth/burger_nervous_c",
+"src": "art/src/burger_nervous.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an awkward nervous closed smile."
+},
+{
+"name": "art/mouth/burger_nervous_o",
+"src": "art/src/burger_nervous.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an open nervous talking mouth."
+},
+{
+"name": "art/mouth/burger_sulk_c",
+"src": "art/src/burger_sulk.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a sulky pouting closed mouth."
+},
+{
+"name": "art/mouth/burger_sulk_o",
+"src": "art/src/burger_sulk.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a sulky open talking mouth."
+},
+{
+"name": "art/mouth/lungs_base_c",
+"src": "art/src/lungs_base.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a small shocked closed mouth."
+},
+{
+"name": "art/mouth/lungs_base_o",
+"src": "art/src/lungs_base.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a wide open shouting mouth."
+},
+{
+"name": "art/mouth/lungs_strain_c",
+"src": "art/src/lungs_strain.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: tightly pressed closed lips, straining."
+},
+{
+"name": "art/mouth/lungs_strain_o",
+"src": "art/src/lungs_strain.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an open mouth mid-cough."
+},
+{
+"name": "art/mouth/lungs_burn_c",
+"src": "art/src/lungs_burn.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a pained wobbly closed mouth."
+},
+{
+"name": "art/mouth/lungs_burn_o",
+"src": "art/src/lungs_burn.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an open pained talking mouth."
+},
+{
+"name": "art/mouth/brain_base_c",
+"src": "art/src/brain_base.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a sleepy closed mouth."
+},
+{
+"name": "art/mouth/brain_base_o",
+"src": "art/src/brain_base.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a sleepy open yawning talking mouth."
+},
+{
+"name": "art/mouth/pat_bed_c",
+"src": "art/src/pat_bed.png",
+"size": "1024x1792",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a small tired closed mouth."
+},
+{
+"name": "art/mouth/pat_bed_o",
+"src": "art/src/pat_bed.png",
+"size": "1024x1792",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an open weak talking mouth."
+}
+]

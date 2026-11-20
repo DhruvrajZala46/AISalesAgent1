@@ -1,0 +1,10 @@
+[
+{"name":"art/mouth_unused/lungs_base_o_a","src":"art/src/lungs_base.png","size":"1024x1024",
+ "prompt":"Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth on the right lung lobe, centered just below its eye: a simple cartoon open talking mouth, a dark maroon open oval with a small pink tongue and a thin dark outline, same flat cartoon style as the eyes. Nothing on the left lobe."},
+{"name":"art/mouth_unused/lungs_base_o_b","src":"art/src/lungs_base.png","size":"1024x1024",
+ "prompt":"Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth on the right lung lobe directly under the right eye: an open surprised shouting cartoon mouth, dark red inside with a pink tongue, thin dark outline, simple flat style."},
+{"name":"art/mouth_unused/lungs_strain_o_a","src":"art/src/lungs_strain.png","size":"1024x1024",
+ "prompt":"Keep EVERYTHING else exactly the same: same character, same pose, same squeezed eyes, same red cheeks, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth on the right lung lobe, centered just below its squeezed eye: a wide open straining shouting cartoon mouth showing gritted white teeth, dark red inside, thin dark outline, same flat cartoon style. Nothing on the left lobe."},
+{"name":"art/mouth_unused/lungs_strain_o_b","src":"art/src/lungs_strain.png","size":"1024x1024",
+ "prompt":"Keep EVERYTHING else exactly the same: same character, same pose, same squeezed eyes, same red cheeks, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth on the right lung lobe directly under the right eye: an open coughing cartoon mouth, a dark open oval, thin dark outline, simple flat style."}
+]

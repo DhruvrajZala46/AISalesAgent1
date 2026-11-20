@@ -1,0 +1,206 @@
+{
+ "takes/01_stomach_a.mp3": {
+  "wer": 0.0,
+  "range": 24.5,
+  "dur": 2.8,
+  "txt": "Huh? A burger at six in the morning?"
+ },
+ "takes/01_stomach_b.mp3": {
+  "wer": 0.0,
+  "range": 24.5,
+  "dur": 2.72,
+  "txt": "Huh? A burger at six in the morning?"
+ },
+ "takes/02_burger_a.mp3": {
+  "wer": 0.0,
+  "range": 12.0,
+  "dur": 2.8,
+  "txt": "Morning, big guy. I'm moving in."
+ },
+ "takes/02_burger_b.mp3": {
+  "wer": 0.0,
+  "range": 21.0,
+  "dur": 2.72,
+  "txt": "Morning, big guy. I'm moving in."
+ },
+ "takes/03_stomach_a.mp3": {
+  "wer": 0.0,
+  "range": 14.4,
+  "dur": 2.72,
+  "txt": "Bro, he's got surgery in an hour!"
+ },
+ "takes/03_stomach_b.mp3": {
+  "wer": 0.0,
+  "range": 16.2,
+  "dur": 2.56,
+  "txt": "Bro! He's got surgery in an hour!"
+ },
+ "takes/04_burger_a.mp3": {
+  "wer": 0.0,
+  "range": 23.0,
+  "dur": 3.12,
+  "txt": "Relax. I'll just chill right here."
+ },
+ "takes/04_burger_b.mp3": {
+  "wer": 0.0,
+  "range": 22.3,
+  "dur": 3.12,
+  "txt": "Relax, I'll just chill right here."
+ },
+ "takes/05_stomach_a.mp3": {
+  "wer": 0.0,
+  "range": 19.0,
+  "dur": 6.48,
+  "txt": "You don't get it! They're putting him to sleep!  If my door falls asleep too, you're going up."
+ },
+ "takes/05_stomach_b.mp3": {
+  "wer": 0.0,
+  "range": 23.0,
+  "dur": 6.4,
+  "txt": "You don't get it! They're putting him to sleep!  If my door falls asleep too, you're going up."
+ },
+ "takes/06_burger_a.mp3": {
+  "wer": 0.17,
+  "range": 24.6,
+  "dur": 4.08,
+  "txt": "Ha ha, food only goes down, genius."
+ },
+ "takes/06_burger_b.mp3": {
+  "wer": 0.17,
+  "range": 24.6,
+  "dur": 4.16,
+  "txt": "Ha ha, food only goes down, genius."
+ },
+ "takes/07_brain_a.mp3": {
+  "wer": 0.0,
+  "range": 19.1,
+  "dur": 4.88,
+  "txt": "Anesthesia's in. Lights out, everybody."
+ },
+ "takes/07_brain_b.mp3": {
+  "wer": 0.2,
+  "range": 18.6,
+  "dur": 4.88,
+  "txt": "Oh, Anesthesia's in. Lights out, everybody."
+ },
+ "takes/08_stomach_a.mp3": {
+  "wer": 0.33,
+  "range": 29.7,
+  "dur": 5.52,
+  "txt": "No, no. My door is going limp."
+ },
+ "takes/08_stomach_b.mp3": {
+  "wer": 0.33,
+  "range": 29.3,
+  "dur": 5.28,
+  "txt": "No, no. My door is going limp."
+ },
+ "takes/09_burger_a.mp3": {
+  "wer": 0.0,
+  "range": 11.4,
+  "dur": 2.96,
+  "txt": "Whoa! Why am I floating up?"
+ },
+ "takes/09_burger_b.mp3": {
+  "wer": 0.0,
+  "range": 13.8,
+  "dur": 2.96,
+  "txt": "Whoa! Why am I floating up?"
+ },
+ "takes/10_lungs_a.mp3": {
+  "wer": 0.29,
+  "range": 15.0,
+  "dur": 2.72,
+  "txt": "Hey, why the burger in my pipe?"
+ },
+ "takes/10_lungs_b.mp3": {
+  "wer": 0.29,
+  "range": 13.0,
+  "dur": 2.72,
+  "txt": "Hey! Why is a burger in my pipe?"
+ },
+ "takes/11_burger_a.mp3": {
+  "wer": 0.0,
+  "range": 29.9,
+  "dur": 2.24,
+  "txt": "Uh, wrong room?"
+ },
+ "takes/11_burger_b.mp3": {
+  "wer": 0.0,
+  "range": 25.8,
+  "dur": 2.16,
+  "txt": "Uh, wrong room?"
+ },
+ "takes/12_lungs_a.mp3": {
+  "wer": 0.0,
+  "range": 15.1,
+  "dur": 3.84,
+  "txt": "Cough it out! Cough! Why can't I cough?"
+ },
+ "takes/12_lungs_b.mp3": {
+  "wer": 0.0,
+  "range": 15.5,
+  "dur": 3.84,
+  "txt": "Cough it out! Cough! Why can't I cough?"
+ },
+ "takes/13_burger_a.mp3": {
+  "wer": 0.0,
+  "range": 17.8,
+  "dur": 3.92,
+  "txt": "Bro, the brain's asleep. No cough. No gag."
+ },
+ "takes/13_burger_b.mp3": {
+  "wer": 0.0,
+  "range": 12.1,
+  "dur": 4.08,
+  "txt": "Bro, the brain's asleep. No cough. No gag."
+ },
+ "takes/14_lungs_a.mp3": {
+  "wer": 0.0,
+  "range": 9.8,
+  "dur": 2.96,
+  "txt": "Great! Now I'm burning up!"
+ },
+ "takes/14_lungs_b.mp3": {
+  "wer": 0.0,
+  "range": 17.5,
+  "dur": 2.96,
+  "txt": "Great! Now I'm burning up!"
+ },
+ "takes/15_patient_a.mp3": {
+  "wer": 0.0,
+  "range": 19.8,
+  "dur": 6.72,
+  "txt": "Doc, I only ate one burger before surgery.  Why is my chest so bad?"
+ },
+ "takes/15_patient_b.mp3": {
+  "wer": 0.0,
+  "range": 19.7,
+  "dur": 6.72,
+  "txt": "Doc, I only ate one burger before surgery.  Why is my chest so bad?"
+ },
+ "takes/16_doctor_a.mp3": {
+  "wer": 0.0,
+  "range": 12.2,
+  "dur": 14.8,
+  "txt": "That's called aspiration pneumonia.  Anesthesia relaxes the muscle that keeps food in your stomach  and shuts off your cough reflex,  so the food came back up and slipped into your lungs.  That's why we say no food for six to eight hours  before surgery."
+ },
+ "takes/16_doctor_b.mp3": {
+  "wer": 0.0,
+  "range": 12.7,
+  "dur": 14.72,
+  "txt": "That's called aspiration pneumonia.  Anesthesia relaxes the muscle that keeps food in your stomach  and shuts off your cough reflex,  so the food came back up and slipped into your lungs.  That's why we say no food for six to eight hours before surgery."
+ },
+ "takes/17_burger_a.mp3": {
+  "wer": 0.0,
+  "range": 14.7,
+  "dur": 3.92,
+  "txt": "Fine. See you after surgery."
+ },
+ "takes/17_burger_b.mp3": {
+  "wer": 0.0,
+  "range": 13.3,
+  "dur": 3.92,
+  "txt": "Fine, see you after surgery."
+ }
+}
