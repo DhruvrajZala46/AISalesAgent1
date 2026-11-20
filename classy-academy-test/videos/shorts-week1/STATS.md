@@ -306,3 +306,26 @@ Channel: 491 subscribers. Shorts ~302,000 views by the per-video counts. Everyth
 #20 79,274 | #25 tiara 55,533 in 29.8 h (+14,891 in 5.5 h, second-biggest Short) | #22 42,387 | #21 42,124 |
 #16 25,164 | #17 22,926 | #23 18,772 | #26 5,033 | #24 2,937 | #27 1,927 | #28 three dresses 1,640 in 5.8 h.
 Channel: 536 subscribers. Shorts ~378,000 views.
+
+20 Nov 00:16 UTC: #30 did it first (ZNSsiY9DQTE) public on its own at 00:00, 89 views in 16 min. All 30 are out.
+#20 79,957 | #25 62,971 | #22 42,805 | #21 42,746 | #6 35,670 | #3 29,068 | #16 25,338 | #17 23,149 | #23 20,147 |
+#1 18,933 | #18 11,075 | #19 9,275 | #26 7,503 | #24 3,328 | #28 3,066 (12.3 h) | #27 2,269 | #29 1,427 (6.8 h).
+Channel: 543 subscribers. Shorts ~398,000 views.
+
+## Ranking by the first 24 hours (read from the logs above; times are within about an hour)
+
+| Rank | Short | First 24 h | What it is |
+|---|---|---|---|
+| 1 | #20 Wrong name | ~56,300 | a slip at the wedding, silent, one moment |
+| 2 | #25 Wedding tiara | ~40,600 | a hidden fact about the wedding, silent |
+| 3 | #21 Whatever "in love" means | ~35,000 (between two logs) | her own words, engagement interview |
+| 4 | #22 Balcony kiss | ~32,600 | a wedding-day first, silent |
+| 5 | #3 Vows | ~20,400 | a word left out at the wedding |
+| 6 | #1 Revenge dress | ~13,800 | one dated moment |
+| 7 | #23 4 rules before 21 | ~11,500 (between two logs) | voiced list |
+| 8-12 | #17, #16, #19, #18, #6 | 6,000-12,000 | Diana moments; #6 grew later to 35K |
+| slow | #24, #26, #27, #28 | under ~6,000 | a second revenge-dress story, two voiced/list Shorts, the gloves |
+
+Signal: the five fastest are all about the 1981 engagement and wedding, each one a single surprising fact or slip.
+Lists (#26, #28, #29) and repeats of a story already told (#24) start slower.
+Next batch (not built): more single wedding/engagement facts with real 1981 film; slots are empty from 20 Nov 12:00 UTC.
