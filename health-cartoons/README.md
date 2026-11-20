@@ -5,7 +5,8 @@ English health-explainer Shorts in the "talking organs + doctor" cartoon format.
 **New chat? Read in this order:**
 1. `PLAYBOOK.md`: the fixed standard (script beats, voices, music and SFX map, visual rules, retention targets, pipeline, QA).
 2. `LEARNINGS.md`: every piece of user feedback and the rule it created.
-3. `videos/001-earwax-cotton-buds/`: the quality bar. Copy this folder to start the next video.
+3. `research/VIRAL-STUDY.md`: what makes the reference channel's Shorts hit 10M-27M (topics, hooks, script, sound, retention).
+4. `videos/001-earwax-cotton-buds/`: the quality bar. Copy this folder to start the next video.
 
 Layout:
 - `tools/`: fetch_assets.sh, process_voice.sh, words.py, render.js, snap.js, mix.sh, retention_check.py, and the analysis helpers

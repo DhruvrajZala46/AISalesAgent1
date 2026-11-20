@@ -1,0 +1,458 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:LG;src:url(../../assets/fonts/LuckiestGuy.woff2)}
+html,body{margin:0;background:#000;overflow:hidden}svg{display:block}
+.cap{font-family:LG,sans-serif;font-size:42px;letter-spacing:1px;paint-order:stroke;stroke:#141414;stroke-width:7px;stroke-linejoin:round;fill:#fff}
+.lbl{font-family:Inter,sans-serif;font-weight:900;font-size:22px;letter-spacing:.5px;fill:#111}
+.cta{font-family:LG,sans-serif;paint-order:stroke;stroke:#141414;stroke-linejoin:round}
+</style></head><body>
+<svg id="S" width="720" height="1280" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
+<script src="data.js"></script>
+<script>
+// =============== helpers ===============
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const P=(t,a,b)=>clamp((t-a)/(b-a));
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eo=x=>1-Math.pow(1-x,3);
+const eob=x=>{const c1=1.7,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const lerp=(a,b,x)=>a+(b-a)*x;
+const INK='#2a2322';
+const VE='vector-effect="non-scaling-stroke"';
+const LN=`stroke="${INK}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" ${VE}`;
+const LN2=`stroke="${INK}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" ${VE}`;
+const TH=(c)=>`stroke="${c}" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" fill="none" ${VE}`;
+function tr(id,x,y,sx=1,sy=sx,r=0){const e=$(id);if(e)e.setAttribute('transform',`translate(${x},${y}) rotate(${r}) scale(${sx},${sy})`);}
+function show(id,v){const e=$(id);if(e)e.setAttribute('opacity',v);}
+let DEFS='', UID=0;
+// shape with airbrushed inner shading (soft darker edge), like the reference
+function shaded(d,fill,shade,w=16,extra=''){const id='c'+(UID++);DEFS+=`<clipPath id="${id}"><path d="${d}"/></clipPath>`;
+  return `<path d="${d}" fill="${fill}"/><g clip-path="url(#${id})"><path d="${d}" fill="none" stroke="${shade}" stroke-width="${w}" filter="url(#soft)" opacity=".9"/></g><path d="${d}" fill="none" ${LN} ${extra}/>`;}
+// Catmull-Rom smooth path through points
+function smooth(pts,closed=false){let s=`M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;const n=pts.length;
+  for(let i=0;i<n-1;i++){const p0=pts[Math.max(0,i-1)],p1=pts[i],p2=pts[i+1],p3=pts[Math.min(n-1,i+2)];
+    s+=` C${(p1[0]+(p2[0]-p0[0])/6).toFixed(1)},${(p1[1]+(p2[1]-p0[1])/6).toFixed(1)} ${(p2[0]-(p3[0]-p1[0])/6).toFixed(1)},${(p2[1]-(p3[1]-p1[1])/6).toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;}
+  return s;}
+// tapered limb around a centre line (shoulder, elbow, wrist)
+function limbD(pts,ws){const L=[],R=[];const n=pts.length;
+  for(let i=0;i<n;i++){const a=pts[Math.max(0,i-1)],b=pts[Math.min(n-1,i+1)];let dx=b[0]-a[0],dy=b[1]-a[1];const d=Math.hypot(dx,dy)||1;dx/=d;dy/=d;
+    const w=ws[i]/2;L.push([pts[i][0]-dy*w,pts[i][1]+dx*w]);R.push([pts[i][0]+dy*w,pts[i][1]-dx*w]);}
+  const we=ws[n-1]/2, ws0=ws[0]/2;
+  let s=smooth(L);s+=` A${we},${we} 0 0 0 ${R[n-1][0].toFixed(1)},${R[n-1][1].toFixed(1)}`;
+  const r=smooth(R.slice().reverse());s+=' '+r.replace(/^M[^C]*/,'');s+=` A${ws0},${ws0} 0 0 0 ${L[0][0].toFixed(1)},${L[0][1].toFixed(1)}Z`;return s;}
+
+// ---------- cartoon object eyes (googly, with lids + brows) ----------
+function oEye(id,r,lidCol){const c='e'+(UID++);DEFS+=`<clipPath id="${c}"><ellipse rx="${r*.92}" ry="${r}"/></clipPath>`;
+  return `<g id="${id}"><ellipse rx="${r*.92}" ry="${r}" fill="#fff"/><g clip-path="url(#${c})"><circle id="${id}_p" r="${r*.46}" fill="#1b1717"/><circle id="${id}_h" r="${r*.15}" fill="#fff"/>
+   <g id="${id}_lid"><rect x="${-r*2}" y="${-r*3}" width="${r*4}" height="${r*2}" fill="${lidCol}"/><line x1="${-r*2}" x2="${r*2}" y1="${-r}" y2="${-r}" ${LN2}/></g></g>
+   <ellipse rx="${r*.92}" ry="${r}" fill="none" ${LN2}/></g>`;}
+// lid: amount 0..1 (closed), tilt degrees ; look dx,dy
+function setOEye(id,r,{dx=0,dy=0,lid=.12,tilt=0,blink=0,small=false}={}){const d=Math.hypot(dx,dy)||1,m=r*.42,k=Math.min(1,d/40);
+  const px=dx/d*m*k,py=dy/d*m*k;const p=$(id+'_p');p.setAttribute('cx',px);p.setAttribute('cy',py);p.setAttribute('r',r*(small?.3:.46));
+  const h=$(id+'_h');h.setAttribute('cx',px-r*.13);h.setAttribute('cy',py-r*.15);
+  const L=Math.max(lid,blink);$(id+'_lid').setAttribute('transform',`rotate(${tilt}) translate(0,${L*2*r})`);}
+function blinkK(t,ph){const k=(t+ph)%3.9;return k<.13?1-Math.abs(k-.065)/.065:0;}
+function brow(id){return `<path id="${id}" fill="none" ${LN2}/>`;}
+function setBrow(id,x,y,w,ang,arch=0){$(id).setAttribute('d',`M${x-w/2},${y} Q${x},${y-arch} ${x+w/2},${y}`);$(id).setAttribute('transform',`rotate(${ang},${x},${y})`);}
+function mouthD(o,w,mood=0){ // mood: +1 smile, -1 frown
+  if(o<.08){return {d:`M${-w*.7},0 Q0,${mood*w*.45} ${w*.7},0`,fill:'none'};}
+  const h=3+o*w*1.25;return {d:`M${-w*.75},-1 Q0,${-2+mood*2} ${w*.75},-1 Q${w*.6},${h} 0,${h+1} Q${-w*.6},${h} ${-w*.75},-1Z`,fill:'#5e1a20'};}
+function setMouth(id,o,w,mood=0){const m=mouthD(clamp(o),w,mood);const e=$(id);e.setAttribute('d',m.d);e.setAttribute('fill',m.fill);
+  const t=$(id+'_t');if(t){t.setAttribute('opacity',o>=.25?1:0);t.setAttribute('cy',2+o*w*1.05);t.setAttribute('rx',w*.4);t.setAttribute('ry',o*w*.35);}}
+function mouthEl(id,x,y){return `<g transform="translate(${x},${y})"><path id="${id}" ${LN2}/><path id="${id}_w" fill="#fff" opacity="0"/><ellipse id="${id}_t" cx="0" cy="0" rx="1" ry="1" fill="#d76d72" opacity="0"/></g>`;}
+
+// ---------- data / lip sync ----------
+const D=window.DATA, FPS=30;
+function speak(who,T){for(const L of D.lines){if(L.who===who&&T>=L.t0&&T<L.t0+L.dur){return L.env[Math.floor((T-L.t0)*FPS)]||0;}}return 0;}
+function lineT(id){return D.lines.find(l=>l.id===id).t0;}
+function wordT(id,w,n=0){const L=D.lines.find(l=>l.id===id);const m=L.words.filter(x=>x[2]===w);return m[n]?m[n][0]:L.t0;}
+function labelBox(id,text,x,y,sz=22){const w=text.length*sz*.66+26;return `<g id="${id}" opacity="0" transform="translate(${x},${y})"><rect x="${-w/2}" y="-20" width="${w}" height="40" fill="#fff" ${LN}/><text class="lbl" style="font-size:${sz}px" text-anchor="middle" y="8">${text}</text></g>`;}
+// =============== SCENE 1 : stomach cross-section (world coords) ===============
+function crSample(C,n){const out=[],m=C.length;for(let i=0;i<n;i++){const u=i/(n-1)*(m-1),k=Math.min(m-2,Math.floor(u)),t=u-k;
+  const p0=C[Math.max(0,k-1)],p1=C[k],p2=C[k+1],p3=C[Math.min(m-1,k+2)];
+  const f=(a,b,c,d)=>0.5*((2*b)+(-a+c)*t+(2*a-5*b+4*c-d)*t*t+(-a+3*b-3*c+d)*t*t*t);out.push([f(p0[0],p1[0],p2[0],p3[0]),f(p0[1],p1[1],p2[1],p3[1])]);}return out;}
+function lerpArr(ws,n){const out=[];for(let i=0;i<n;i++){const u=i/(n-1)*(ws.length-1),k=Math.min(ws.length-2,Math.floor(u));out.push(lerp(ws[k],ws[k+1],u-k));}return out;}
+function along(pts,u){u=clamp(u);const L=[0];for(let i=1;i<pts.length;i++)L.push(L[i-1]+Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]));
+  const d=u*L[L.length-1];let i=1;while(i<L.length-1&&L[i]<d)i++;const k=(d-L[i-1])/((L[i]-L[i-1])||1);
+  return [lerp(pts[i-1][0],pts[i][0],k),lerp(pts[i-1][1],pts[i][1],k),Math.atan2(pts[i][1]-pts[i-1][1],pts[i][0]-pts[i-1][0])*180/Math.PI];}
+const STO_C=[[318,372],[470,470],[522,640],[440,830],[262,880]], STO_W=[110,330,340,240,74];
+const NS=15, STO_PTS=crSample(STO_C,NS), STO_WS=lerpArr(STO_W,NS);
+function stoPaths(sq){const wo=STO_WS.map((w,i)=>w*(1-sq(i))), wi=wo.map(w=>Math.max(12,w-46));return [limbD(STO_PTS,wo),limbD(STO_PTS,wi)];}
+const ESO_C=[[262,-90],[285,120],[305,290],[326,380]];
+const DUO_C=[[262,880],[190,905],[150,990],[165,1120],[230,1330]];
+const GUMD='M-30,10 C-36,-4 -30,-18 -16,-20 C-10,-27 4,-27 10,-21 C24,-23 34,-12 32,2 C38,10 32,20 20,20 C10,25 -6,24 -14,21 C-26,23 -34,18 -30,10 Z';
+function gumBody(id,face,sc=1){return `<g id="${id}"><g id="${id}_i" transform="scale(${sc})"><path d="${GUMD}" fill="url(#gGum)"/><path d="${GUMD}" fill="none" ${LN}/>
+  <path d="M-20,-12 C-14,-17 -6,-17 -2,-15" fill="none" stroke="#ffe3ef" stroke-width="3" stroke-linecap="round" ${VE}/>
+  <path d="M-24,12 q4,-4 8,0 M-4,16 q4,-4 8,0 M14,13 q4,-4 8,0" ${TH('#c4467a')}/>
+  ${face?`<g id="${id}F"><g transform="translate(-10,-6)">${oEye(id+'E1',9,'#f58fb9')}</g><g transform="translate(11,-6)">${oEye(id+'E2',9,'#f58fb9')}</g>${brow(id+'B1')}${brow(id+'B2')}${mouthEl(id+'_m',0,9)}</g>`:''}
+  </g></g>`;}
+const TIS='#a95a5d';
+let W=`<g id="world">
+ <rect x="-700" y="-700" width="2120" height="2680" fill="${TIS}"/>
+ <g fill="none" stroke="#934a4e" stroke-width="5" stroke-linecap="round" opacity=".8">${[[60,220,240,170],[560,60,700,180],[40,700,170,820],[620,980,700,1100],[80,1180,300,1240]].map(([a,b,c,d])=>`<path d="M${a},${b} Q${(a+c)/2},${b-40} ${c},${d}"/>`).join('')}</g>
+ ${shaded('M520,-60 C640,-40 760,40 760,160 C700,260 600,260 520,220 C470,180 470,60 520,-60 Z','#8c3a36','#6a2724',22)}
+ <g>${[[110,1080],[300,1150],[520,1110],[640,980],[420,1250],[180,1250]].map(([x,y])=>shaded(`M${x-90},${y} C${x-90},${y-60} ${x+90},${y-60} ${x+90},${y} C${x+90},${y+60} ${x-90},${y+60} ${x-90},${y} Z`,'#e39ea2','#c27479',16)).join('')}</g>
+ ${shaded(limbD(DUO_C,[78,78,78,78,78]),'#e47d85','#b9545e',14)}<path d="${limbD(DUO_C,[50,50,50,50,50])}" fill="#f5c2c1"/>
+ <clipPath id="stoClip"><path id="stoClipP"/></clipPath><clipPath id="lumClip"><path id="lumClipP"/></clipPath>
+ <path id="stoO" fill="#e47d85"/><g clip-path="url(#stoClip)"><path id="stoOs" fill="none" stroke="#b9545e" stroke-width="26" filter="url(#soft)"/></g>
+ <path id="stoI" fill="url(#gSto)"/>
+ <g clip-path="url(#lumClip)">
+   <g fill="none" stroke="#e48e96" stroke-width="5" stroke-linecap="round" opacity=".8">${[0,1,2,3,4,5,6].map(i=>`<path d="M${330+i*40},${420+i*18} q30,40 0,80 q-30,40 0,80 q30,40 0,80"/>`).join('')}</g>
+   <circle id="antGlow" cx="300" cy="860" r="90" fill="#e0473f" filter="url(#soft2)" opacity="0"/>
+   <g id="acidG"><path id="acidP" fill="#d6d36a" opacity=".88"/><path id="acidHi" fill="none" stroke="#f3f0a8" stroke-width="5" stroke-linecap="round"/>
+     ${[0,1,2,3,4,5].map(i=>`<circle id="ab${i}" r="${5+i%3*2}" fill="none" stroke="#f6f3b5" stroke-width="2.5"/>`).join('')}</g>
+   ${[0,1,2,3].map(i=>`<g id="fd${i}" opacity="0">${[`<path d="M-18,-10 L18,-12 L20,10 L-16,12 Z" fill="#e2b062" ${LN2}/>`,`<circle r="11" fill="#86b64e" ${LN2}/>`,`<path d="M-20,0 C-10,-12 10,12 20,0" fill="none" stroke="#f1d27c" stroke-width="7" stroke-linecap="round"/>`,`<path d="M-14,-12 L16,-8 L12,12 L-16,8 Z" fill="#c9673f" ${LN2}/>`][i]}</g>`).join('')}
+ </g>
+ <path id="stoOl" fill="none" ${LN}/><path id="stoIl" fill="none" stroke="#c45f69" stroke-width="2.2" ${VE}/>
+ ${shaded(limbD(ESO_C,[92,90,92,104]),'#e47d85','#b9545e',12)}<path d="${limbD(ESO_C,[60,58,60,66])}" fill="#f5c2c1"/>
+ <g id="stoFace"><g transform="translate(428,318)">${oEye('sfE1',25,'#e47d85')}</g><g transform="translate(500,324)">${oEye('sfE2',25,'#e47d85')}</g>${brow('sfB1')}${brow('sfB2')}${mouthEl('sf_m',466,372)}
+   <g id="sfSweat" opacity="0"><path d="M560,300 C566,312 568,320 560,326 C552,320 554,312 560,300Z" fill="#8fd3f4" ${LN2}/></g></g>
+ ${[0,1,2,3,4].map(i=>`<g id="adrop${i}" opacity="0"><path d="M0,-8 C5,-2 6,4 0,8 C-6,4 -5,-2 0,-8Z" fill="#d6d36a" ${LN2}/></g>`).join('')}
+ ${[0,1,2].map(i=>`<g id="stm${i}" opacity="0"><path d="M0,0 c-10,-10 10,-20 0,-30 c-10,-10 10,-20 0,-30" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".85"/></g>`).join('')}
+ ${[0,1,2,3,4].map(i=>gumBody('gp'+i,false,.62)).join('')}
+ ${gumBody('blob',true,1)}
+ ${gumBody('gum',true,1)}
+ <g id="shades" opacity="0"><path d="M-22,-12 h17 v9 q-8,7 -17,0 Z M4,-12 h17 v9 q-8,7 -17,0 Z" fill="#1d1b20" ${LN2}/><path d="M-5,-10 h9" stroke="${INK}" stroke-width="2.5"/></g>
+ <g id="gSpark" opacity="0">${[[34,-26],[-36,-22],[40,14]].map(([x,y],i)=>`<path id="gs${i}" transform="translate(${x},${y})" d="M0,-9 L2.5,-2.5 9,0 2.5,2.5 0,9 -2.5,2.5 -9,0 -2.5,-2.5Z" fill="#fff6b0" ${LN2}/>`).join('')}</g>
+</g>`;
+let S1=`<g id="s1"><g id="cam">${W}</g>${labelBox('lbSto','STOMACH',560,110)}${labelBox('lbAcid','STOMACH ACID',360,1000,20)}</g>`;
+
+// =============== SCENE 3 : intestines ===============
+const IC=crSample([[-90,130],[560,150],[630,300],[120,380],[80,540],[600,600],[640,760],[110,830],[90,990],[560,1050],[640,1200],[650,1420]],70);
+let S3=`<g id="s3"><g id="icam"><rect x="-700" y="-700" width="2120" height="2680" fill="${TIS}"/>
+ ${shaded(limbD(IC,IC.map(()=>134)),'#e7979c','#bf6a71',18)}<path d="${limbD(IC,IC.map(()=>94))}" fill="#f7cdcc"/>
+ <path d="${limbD(IC,IC.map(()=>94))}" fill="none" stroke="#c45f69" stroke-width="2" ${VE}/>
+ <g transform="translate(332,498)">${oEye('inE1',21,'#e7979c')}</g><g transform="translate(392,504)">${oEye('inE2',21,'#e7979c')}</g>${brow('inB1')}${brow('inB2')}${mouthEl('in_m',362,532)}
+ ${gumBody('igum',true,1)}
+ <g id="swirl" opacity="0" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">${[0,1,2].map(i=>`<path d="M${-40-i*20},0 A${40+i*20},${40+i*20} 0 0 1 0,${-40-i*20}"/>`).join('')}</g>
+ </g>${labelBox('lbInt','INTESTINES',190,110)}</g>`;
+// =============== LATER card ===============
+let SL=`<g id="sL"><rect width="720" height="1280" fill="#0b0b0d"/><text id="laterT" x="360" y="660" text-anchor="middle" class="cta" style="font-size:64px;stroke-width:8px" fill="#ffd21f">2 DAYS LATER...</text></g>`;
+
+// =============== SCENE 2 : ENT clinic ===============
+function hand(x,y,ang,sc,skin,id=''){return `<g ${id?`id="${id}"`:''} transform="translate(${x},${y}) rotate(${ang}) scale(${sc})">
+  <path d="M-11,-12 C-4,-17 9,-16 13,-8 C17,2 15,14 6,18 C-4,22 -14,16 -16,6 C-17,-2 -15,-8 -11,-12 Z" fill="${skin}" ${LN2}/>
+  <path d="M-12,-6 C-20,-12 -24,-6 -18,2" fill="${skin}" ${LN2}/><path d="M-2,4 q4,6 10,6 M0,-4 q5,5 12,5" ${TH('#9c6b52')}/></g>`;}
+function humanEye(id,x,y,w,h){const c='h'+(UID++);DEFS+=`<clipPath id="${c}"><path d="M${-w},0 Q0,${-h*1.5} ${w},0 Q0,${h*1.1} ${-w},0Z"/></clipPath>`;
+  return `<g transform="translate(${x},${y})"><g id="${id}"><path d="M${-w},0 Q0,${-h*1.5} ${w},0 Q0,${h*1.1} ${-w},0Z" fill="#fff"/>
+   <g clip-path="url(#${c})"><circle id="${id}_p" r="${h*.78}" fill="#3a2a20"/><circle id="${id}_q" r="${h*.38}" fill="#111"/><circle id="${id}_h" r="${h*.2}" fill="#fff"/></g>
+   <path d="M${-w-1},0 Q0,${-h*1.55} ${w+1},0" fill="none" stroke="${INK}" stroke-width="2.8" stroke-linecap="round" ${VE}/><path d="M${-w*.8},${h*.35} Q0,${h*1.05} ${w*.8},${h*.35}" fill="none" ${TH('#8d6a5a')}/></g></g>`;}
+function setHEye(id,dx,blink){const p=$(id+'_p'),q=$(id+'_q'),h=$(id+'_h');[p,q].forEach(e=>{e.setAttribute('cx',dx);e.setAttribute('cy',1);});h.setAttribute('cx',dx-2);h.setAttribute('cy',-1.5);
+  $(id).setAttribute('transform',`scale(1,${1-blink*.92})`);}
+
+const DSK='#f0c6a6', DSK_S='#d9a585', DHAIR='#3b2820';
+function doctorSVG(){return `<g id="doc">
+ <ellipse cx="0" cy="782" rx="92" ry="12" fill="#000" opacity=".12"/>
+ <!-- back hair -->
+ <path d="M-64,70 C-74,130 -70,190 -48,214 L50,214 C70,190 74,130 64,70 Z" fill="${DHAIR}" ${LN}/>
+ <!-- legs -->
+ ${shaded(limbD([[-30,500],[-34,640],[-34,760]],[52,44,38]),'#33465f','#22324a',10)}
+ ${shaded(limbD([[30,500],[34,640],[36,760]],[52,44,38]),'#33465f','#22324a',10)}
+ <path d="M-58,756 C-58,744 -12,742 -10,756 L-10,772 L-62,774 Z" fill="#3c3f46" ${LN2}/><path d="M12,756 C14,742 60,744 60,756 L62,774 L10,772 Z" fill="#3c3f46" ${LN2}/>
+ <!-- scrubs + coat -->
+ ${shaded('M-62,214 C-40,204 40,204 62,214 L70,520 L-70,520 Z','#3f9c96','#2c7d78',14)}
+ ${shaded('M-20,206 L-62,212 C-92,222 -100,250 -102,290 L-110,560 L-46,566 L-16,330 L-8,250 Z','#f8f8f6','#d4d9dd',18)}
+ ${shaded('M20,206 L62,212 C92,222 100,250 102,290 L110,560 L46,566 L16,330 L8,250 Z','#f8f8f6','#d4d9dd',18)}
+ <path d="M-20,206 L-2,262 L-8,330 M20,206 L2,262 L8,330" fill="none" ${TH('#9aa3aa')}/>
+ <path d="M-90,430 h34 v40 h-34 Z M56,430 h34 v40 h-34 Z" fill="none" ${TH('#9aa3aa')}/>
+ <rect x="54" y="300" width="30" height="40" rx="4" fill="#d9ecf5" ${LN2}/><rect x="60" y="306" width="18" height="12" fill="#8db4c8"/>
+ <!-- stethoscope -->
+ <path d="M-26,212 C-38,270 -24,322 0,326 C24,322 38,270 26,212" fill="none" stroke="#454b55" stroke-width="5.5" stroke-linecap="round"/>
+ <circle cx="0" cy="334" r="11" fill="#c9cfd6" ${LN2}/>
+ <!-- neck + head -->
+ <path d="M-17,150 L-16,206 L16,206 L17,150 Z" fill="${DSK}" ${LN2}/><path d="M-16,176 C-6,186 6,186 16,176 L16,206 L-16,206Z" fill="${DSK_S}" opacity=".7"/>
+ <g id="docHead">
+  ${shaded('M-50,72 C-52,30 -30,8 0,8 C32,8 54,30 52,74 C51,106 40,134 22,150 C12,158 -12,158 -22,150 C-40,134 -51,106 -50,72 Z',DSK,DSK_S,12)}
+  <path d="M-52,90 C-60,86 -62,104 -52,108" fill="${DSK}" ${LN2}/><path d="M52,90 C60,86 62,104 52,108" fill="${DSK}" ${LN2}/>
+  <path d="M-56,96 C-62,30 -30,0 4,0 C42,0 64,30 58,98 C54,66 44,44 20,34 C2,50 -30,60 -56,96 Z" fill="${DHAIR}" ${LN}/>
+  <path d="M-30,24 C-10,10 20,10 40,26 M-40,50 C-28,36 -12,30 6,30" fill="none" ${TH('#5c4136')}/>
+  <path id="dBrows" d="M-30,72 Q-18,65 -6,70 M14,70 Q26,65 38,72" fill="none" stroke="${DHAIR}" stroke-width="3.6" stroke-linecap="round"/>
+  ${humanEye('dEyeL',-16,90,12,7)}${humanEye('dEyeR',24,90,12,7)}
+  <g fill="none" stroke="#4a3b37" stroke-width="2.2" ${VE}><rect x="-34" y="78" width="34" height="25" rx="9"/><rect x="7" y="78" width="34" height="25" rx="9"/><path d="M0,88 h7 M-34,86 l-16,-3 M41,86 l13,-3"/></g>
+  <path d="M8,98 C14,110 14,118 6,121 C3,122 0,120 -2,118" fill="none" ${TH('#a8735a')}/>
+  <ellipse cx="-24" cy="118" rx="9" ry="5" fill="#e79a8d" opacity=".35"/><ellipse cx="32" cy="118" rx="9" ry="5" fill="#e79a8d" opacity=".35"/>
+  ${mouthEl('doc_m',6,136)}
+ </g>
+ <!-- left arm with clipboard -->
+ ${shaded(limbD([[-86,226],[-104,350],[-72,440]],[40,34,30]),'#f8f8f6','#d4d9dd',10)}
+ <g transform="translate(-58,450) rotate(-12)"><rect x="-40" y="-56" width="80" height="106" rx="6" fill="#b88350" ${LN2}/><rect x="-32" y="-46" width="64" height="88" fill="#fff" ${LN2}/><rect x="-14" y="-62" width="28" height="12" rx="3" fill="#9aa3ad" ${LN2}/>
+   <path d="M-22,-26 h44 M-22,-12 h36 M-22,2 h44 M-22,16 h28" ${TH('#9aa3ad')}/></g>
+ ${hand(-60,452,-20,1.15,DSK)}
+ <!-- right arm holding otoscope -->
+ <g id="docArmR">${shaded(limbD([[86,226],[108,350],[72,330]],[40,34,30]),'#f8f8f6','#d4d9dd',10)}
+   
+   ${hand(68,330,-30,1.15,DSK)}</g>
+</g>`;}
+const PSK='#e2b48f', PSK_S='#c99271';
+function patientSVG(){return `<g id="pat">
+ <ellipse cx="0" cy="782" rx="96" ry="12" fill="#000" opacity=".12"/>
+ ${shaded(limbD([[-32,500],[-36,640],[-36,758]],[56,46,40]),'#4b6286','#344868',10)}
+ ${shaded(limbD([[32,500],[36,640],[38,758]],[56,46,40]),'#4b6286','#344868',10)}
+ <path d="M-64,752 C-64,736 -12,736 -10,752 L-8,770 L-68,772 Z" fill="#f2f2f2" ${LN2}/><path d="M-66,766 h58" ${TH('#9aa0a6')}/>
+ <path d="M10,752 C12,736 64,736 64,752 L68,772 L8,770 Z" fill="#f2f2f2" ${LN2}/><path d="M8,766 h58" ${TH('#9aa0a6')}/>
+ ${shaded('M-66,218 C-40,204 40,204 66,218 C90,232 96,262 96,300 L92,520 L-92,520 L-96,300 C-96,262 -90,232 -66,218 Z','#c7884a','#a86c34',18)}
+ <path d="M-40,206 C-30,232 30,232 40,206" fill="#b47a40" ${LN2}/><path d="M-10,232 v58 M10,232 v58" stroke="#f3eadf" stroke-width="3.5" stroke-linecap="round"/>
+ <path d="M-60,420 C-20,436 20,436 60,420 L58,470 C20,482 -20,482 -58,470 Z" fill="#b47a40" ${LN2}/>
+ <path d="M-92,500 L92,500 L92,520 L-92,520 Z" fill="#a86c34" ${LN2}/>
+ <path d="M-17,150 L-16,210 L16,210 L17,150 Z" fill="${PSK}" ${LN2}/><path d="M-16,178 C-6,188 6,188 16,178 L16,210 L-16,210Z" fill="${PSK_S}" opacity=".7"/>
+ <!-- right arm (hangs) -->
+ ${shaded(limbD([[84,234],[100,370],[90,470]],[44,38,32]),'#c7884a','#a86c34',10)}${hand(88,482,8,1.2,PSK)}
+ <g id="patHead">
+  ${shaded('M-52,70 C-54,28 -30,6 0,6 C32,6 56,28 54,72 C53,108 42,138 24,154 C12,162 -12,162 -24,154 C-42,138 -53,108 -52,70 Z',PSK,PSK_S,12)}
+  <path d="M-54,88 C-62,84 -64,104 -54,108" fill="${PSK}" ${LN2}/><path d="M54,88 C62,84 64,104 54,108" fill="${PSK}" ${LN2}/>
+  <path d="M-56,74 C-64,20 -30,-12 6,-8 C40,-6 64,16 58,72 C52,44 40,30 20,28 C4,34 -14,30 -24,24 C-34,40 -46,52 -56,74 Z" fill="#1f1d24" ${LN}/>
+  <path d="M-36,4 l6,-10 M-14,-6 l4,-10 M10,-6 l2,-10 M30,0 l6,-8" ${TH('#3d3a46')}/>
+  <path id="pBrows" d="M-36,70 Q-24,64 -10,66 M8,66 Q22,64 34,70" fill="none" stroke="#1f1d24" stroke-width="4.2" stroke-linecap="round"/>
+  ${humanEye('pEyeL',-22,88,12,7)}${humanEye('pEyeR',18,88,12,7)}
+  <path d="M-4,96 C-10,110 -10,118 -2,121 C2,122 5,120 7,118" fill="none" ${TH('#9c6b4e')}/>
+  <path d="M-36,130 q4,8 2,14 M30,130 q-4,8 -2,14" ${TH('#c99271')}/>
+  ${mouthEl('pat_m',-4,138)}
+ </g>
+ <!-- left arm: hand to ear -->
+ <g id="patArmL"><path id="patArmLD" fill="#c7884a"/><path id="patArmLO" fill="none" ${LN}/><g id="patHandL"></g></g>
+</g>`;}
+function stomachPoster(){return `<g transform="translate(560,250)"><rect x="-92" y="-118" width="184" height="236" fill="#fbfaf7" ${LN}/><rect x="-80" y="-106" width="160" height="182" fill="#f6ece8"/>
+  <path d="M-36,-80 C-34,-60 -30,-50 -20,-46 C10,-60 50,-40 48,0 C46,40 10,64 -24,58 C-40,56 -50,50 -56,44 L-60,52 L-66,40 C-50,30 -36,20 -32,0 C-30,-20 -40,-40 -46,-80 Z" fill="#ec9aa0" ${LN2}/>
+  <path d="M-10,-30 q20,10 10,30 q-10,20 10,30" fill="none" ${TH('#c45f69')}/>
+  <rect x="-62" y="86" width="124" height="10" rx="3" fill="#d9a3a7"/><rect x="-44" y="100" width="88" height="8" rx="3" fill="#ecc8ca"/></g>`;}
+let S2=`<g id="s2"><g id="ccam">
+ <rect width="720" height="1280" fill="#e8e3d8"/>
+ <rect x="0" y="640" width="720" height="240" fill="#b9c8cd"/><rect x="0" y="632" width="720" height="14" fill="#d6dee0" ${LN2}/>
+ <rect x="0" y="872" width="720" height="408" fill="#b78d67"/><rect x="0" y="866" width="720" height="12" fill="#7d8b90" ${LN2}/>
+ ${[960,1060,1180].map((y,i)=>`<line x1="0" y1="${y}" x2="720" y2="${y}" stroke="#9e7553" stroke-width="2.5"/>`+[0,1,2,3].map(k=>`<line x1="${(k*210+i*90)%720}" y1="${y-([88,100,120][i])}" x2="${(k*210+i*90)%720}" y2="${y}" stroke="#9e7553" stroke-width="2.5"/>`).join('')).join('')}
+ <g transform="translate(130,250)"><rect x="-104" y="-150" width="208" height="300" fill="#f7f7f4" ${LN}/><rect x="-92" y="-138" width="184" height="276" fill="#cfe6f0"/>
+   ${Array.from({length:16},(_,i)=>`<rect x="-92" y="${-138+i*17.2}" width="184" height="11" fill="#f1f2ef" opacity=".92"/>`).join('')}<path d="M-92,-138 h184 v276 h-184 Z" fill="none" ${LN2}/></g>
+ ${stomachPoster()}
+ <g transform="translate(-999,-999)"><path d="M-30,0 L30,0 L24,110 L-24,110 Z" fill="#c77b52" ${LN2}/><path d="M-6,0 C-30,-40 -40,-90 -20,-120 M2,0 C10,-50 30,-80 46,-96 M-2,0 C-10,-50 -2,-100 6,-130" fill="none" stroke="#4d7c4a" stroke-width="5" stroke-linecap="round"/>
+   ${[[-24,-110,-30],[44,-92,30],[6,-128,0],[-30,-70,-50],[24,-60,40]].map(([x,y,r])=>`<ellipse cx="${x}" cy="${y}" rx="15" ry="7" transform="rotate(${r},${x},${y})" fill="#6a9e5c" ${LN2}/>`).join('')}</g>
+ <g transform="translate(360,150)"><circle r="38" fill="#fbfbf8" ${LN}/><circle r="31" fill="none" ${TH('#c9c2b4')}/>${Array.from({length:12},(_,i)=>{const a=i*Math.PI/6;return `<line x1="${Math.sin(a)*25}" y1="${-Math.cos(a)*25}" x2="${Math.sin(a)*30}" y2="${-Math.cos(a)*30}" stroke="#8b8378" stroke-width="2.4"/>`;}).join('')}<line id="clkM" x1="0" y1="0" x2="0" y2="-24" stroke="${INK}" stroke-width="3" stroke-linecap="round"/><line x1="0" y1="0" x2="13" y2="6" stroke="${INK}" stroke-width="3.6" stroke-linecap="round"/><circle r="3.5" fill="${INK}"/></g>
+ <g><rect x="-10" y="752" width="220" height="22" fill="#b07a4a" ${LN}/><rect x="0" y="774" width="196" height="106" fill="#9a6a40" ${LN}/><path d="M98,774 v106 M10,812 h78 M108,812 h78" fill="none" ${TH('#6f4a2b')}/>
+  <rect x="28" y="636" width="124" height="88" rx="6" fill="#2e3238" ${LN}/><rect x="36" y="644" width="108" height="72" fill="#a9d6ea"/><path d="M78,664 C96,656 110,672 104,690 C100,700 90,700 88,708" fill="none" stroke="#e7a58c" stroke-width="4"/><rect x="82" y="724" width="16" height="24" fill="#4a4f57" ${LN2}/><rect x="62" y="746" width="56" height="8" rx="3" fill="#4a4f57" ${LN2}/></g>
+ <g><path d="M610,560 C610,540 700,540 700,560 L702,790 L612,790 Z" fill="#7fb0c9" ${LN}/><path d="M560,800 L720,800 L720,836 L560,836 Z" fill="#8fbdd3" ${LN}/><rect x="626" y="836" width="22" height="40" fill="#9aa3ad" ${LN2}/><path d="M600,876 L680,876" stroke="${INK}" stroke-width="6" stroke-linecap="round"/></g>
+ <g transform="translate(205,300)">${doctorSVG()}</g>
+ <g transform="translate(515,296)">${patientSVG()}</g>
+ <g id="bub" opacity="0"><g transform="translate(265,150)">
+   <ellipse rx="150" ry="100" fill="#fff" ${LN}/><circle cx="-60" cy="118" r="13" fill="#fff" ${LN2}/><circle cx="-48" cy="146" r="8" fill="#fff" ${LN2}/>
+   <clipPath id="bubClip"><ellipse rx="140" ry="90"/></clipPath>
+   <g clip-path="url(#bubClip)"><use href="#world" transform="scale(.6) translate(-370,-800)"/></g>
+   <ellipse rx="150" ry="100" fill="none" ${LN}/></g></g>
+</g>
+ ${labelBox('lbBez','BEZOAR',360,64,30)}
+ <g id="lbMyth" opacity="0" transform="translate(360,64)"><rect x="-150" y="-26" width="300" height="52" fill="#fff" ${LN}/><circle cx="-118" cy="0" r="17" fill="#e0454f" ${LN2}/><path d="M-125,-7 L-111,7 M-111,-7 L-125,7" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/><text class="lbl" style="font-size:27px" x="16" y="9" text-anchor="middle">7-YEAR MYTH</text></g>
+</g>`;
+
+
+// =============== SCENE X : patient's face (hook)  +  SCENE G : gum on its wrapper (stinger) ===============
+function faceSVG(){return `<g id="face" transform="translate(360,300) scale(3.4)">
+  <path d="M-17,150 L-16,212 L16,212 L17,150 Z" fill="${PSK}" ${LN2}/><path d="M-16,178 C-6,188 6,188 16,178 L16,212 L-16,212Z" fill="${PSK_S}" opacity=".7"/>
+  <path d="M-110,300 C-100,230 -60,212 -40,206 C-30,232 30,232 40,206 C60,212 100,230 110,300 Z" fill="#c7884a" ${LN}/><path d="M-40,206 C-30,232 30,232 40,206" fill="#b47a40" ${LN2}/>
+  <ellipse id="lump" cx="0" cy="170" rx="9" ry="7" fill="${PSK_S}" opacity="0"/>
+  ${shaded('M-52,70 C-54,28 -30,6 0,6 C32,6 56,28 54,72 C53,108 42,138 24,154 C12,162 -12,162 -24,154 C-42,138 -53,108 -52,70 Z',PSK,PSK_S,10)}
+  <path d="M-54,88 C-62,84 -64,104 -54,108" fill="${PSK}" ${LN2}/><path d="M54,88 C62,84 64,104 54,108" fill="${PSK}" ${LN2}/>
+  <path d="M-56,74 C-64,20 -30,-12 6,-8 C40,-6 64,16 58,72 C52,44 40,30 20,28 C4,34 -14,30 -24,24 C-34,40 -46,52 -56,74 Z" fill="#1f1d24" ${LN}/>
+  <path id="fBrows" d="M-36,68 Q-24,62 -10,64 M8,64 Q22,62 34,68" fill="none" stroke="#1f1d24" stroke-width="4.2" stroke-linecap="round"/>
+  ${humanEye('fEyeL',-22,88,12,7)}${humanEye('fEyeR',18,88,12,7)}
+  <path d="M-4,96 C-10,110 -10,118 -2,121 C2,122 5,120 7,118" fill="none" ${TH('#9c6b4e')}/>
+  <g transform="translate(-2,138)"><path id="fMouth" fill="#5e1a20" ${LN2}/><path id="fGumIn" fill="#f58fb9" opacity="0"/></g>
+  <g id="bubG" opacity="0"><circle id="bubC" cx="-2" cy="140" r="1" fill="url(#gBub)" ${LN2}/><path id="bubHi" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/></g>
+  <g id="popG" opacity="0" fill="#f58fb9">${[[-40,120,9],[34,118,8],[-18,160,7],[22,158,10],[-50,146,6],[46,142,7]].map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="${r}" ${LN2}/>`).join('')}</g>
+ </g>`;}
+let SX=`<g id="sx"><g id="fcam"><rect x="-400" y="-400" width="1520" height="2080" fill="#e8e3d8"/><rect x="-400" y="900" width="1520" height="900" fill="#b9c8cd"/>${faceSVG()}</g>
+ <rect id="fdark" x="-10" y="-10" width="740" height="1300" fill="#3a0f14" opacity="0"/></g>`;
+let SG=`<g id="sg"><g id="gcam"><rect x="-400" y="-400" width="1520" height="2080" fill="#e8e3d8"/><rect x="-400" y="760" width="1520" height="1000" fill="#c08d63"/><rect x="-400" y="752" width="1520" height="14" fill="#a87650"/>
+  <g transform="translate(360,880) rotate(-6)"><path d="M-170,-40 L-120,-62 L-40,-46 L40,-66 L130,-48 L176,-20 L160,30 L90,52 L0,40 L-90,60 L-160,36 Z" fill="#d9dee4" ${LN}/>
+   <path d="M-120,-62 L-100,40 M-40,-46 L-20,44 M40,-66 L52,46 M130,-48 L110,50" fill="none" ${TH('#a9b1bb')}/><path d="M-150,-20 L150,-30" stroke="#f7f9fb" stroke-width="6" opacity=".8"/></g>
+  <g transform="translate(360,822)">${gumBody('sgum',true,2.1)}</g></g>
+ <g id="cta" opacity="0"><g id="cta_i"><rect x="-250" y="-62" width="500" height="132" rx="26" fill="#fff" ${LN}/>
+  <text class="cta" text-anchor="middle" y="6" style="font-size:66px;stroke-width:9px" fill="#ffd21f">FOLLOW</text>
+  <text class="cta" text-anchor="middle" y="52" style="font-size:30px;stroke-width:6px" fill="#fff">FOR MORE BODY SECRETS</text></g></g></g>`;
+
+// =============== assemble ===============
+const svg=$('S');
+const body=S1+S3+SL+S2+SX+SG+`<rect id="indark" width="720" height="1280" fill="#2a1312" opacity="0"/><g id="capg"><text id="cap" class="cap" x="360" y="1110" text-anchor="middle"></text></g>`;
+svg.innerHTML=`<defs><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter><filter id="soft2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter><filter id="soft3" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+ <linearGradient id="gSto" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8cdcb"/><stop offset="1" stop-color="#eda3a7"/></linearGradient>
+ <radialGradient id="gGum" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="#ffc4dc"/><stop offset=".55" stop-color="#f58fb9"/><stop offset="1" stop-color="#d9608f"/></radialGradient>
+ <radialGradient id="gBub" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#ffd6e7"/><stop offset=".7" stop-color="#f7a1c4"/><stop offset="1" stop-color="#e57aa6"/></radialGradient>
+ ${DEFS}</defs>`+body;
+
+// =============== timing / animation (002) ===============
+const E=D.ev, ST=D.start, END=D.end;
+const GS=1.6, IN0=1.05, T_CLINIC=E.clinic, T_STING=E.stinger;
+const KEY=/^(GUM|SEVEN|YEARS|YEAR|ACID|DIGEST|LEASE|TOILET|PACK|BLOB|MYTH|BEZOAR|KIDS|GUT|SPIT|STOMACH|MOVING|CLASSIC|MELT|BLOCK|SWALLOWED|FOLLOW)$/;
+function lineDur(k){const L=D.lines.find(l=>l.id===k);return L?L.dur:0;}
+function viseme(env,T,seed){if(env<0.08)return 'closed';const f=Math.floor(T*15)+seed;let b=env<0.3?'small':env<0.65?'mid':'wide';if(b==='mid'&&f%4===0)b='oo';if(b==='wide'&&f%5===0)b='mid';return b;}
+function setMouthV(id,env,w,mood,T,seed=0){const v=viseme(env,T,seed);const e=$(id),t=$(id+'_t'),th=$(id+'_w');let d,fill='#5e1a20',tong=0,teeth=0;
+  if(v==='closed'){d=`M${-w*.7},0 Q0,${mood*w*.45} ${w*.7},0`;fill='none';}
+  else if(v==='small'){d=`M${-w*.55},0 Q0,-2.5 ${w*.55},0 Q0,${w*.5} ${-w*.55},0Z`;}
+  else if(v==='oo'){d=`M0,${-w*.32} C${w*.42},${-w*.32} ${w*.42},${w*.55} 0,${w*.55} C${-w*.42},${w*.55} ${-w*.42},${-w*.32} 0,${-w*.32}Z`;}
+  else if(v==='mid'){d=`M${-w*.8},-1 Q0,-4 ${w*.8},-1 Q${w*.6},${w*.85} 0,${w*.9} Q${-w*.6},${w*.85} ${-w*.8},-1Z`;tong=.6;teeth=1;}
+  else {d=`M${-w*.9},-2 Q0,-6 ${w*.9},-2 Q${w*.7},${w*1.3} 0,${w*1.35} Q${-w*.7},${w*1.3} ${-w*.9},-2Z`;tong=1;teeth=1;}
+  e.setAttribute('d',d);e.setAttribute('fill',fill);
+  if(th){th.setAttribute('opacity',teeth);th.setAttribute('d',`M${-w*.62},-1 Q0,-4 ${w*.62},-1 L${w*.56},${w*.2} Q0,${w*.12} ${-w*.56},${w*.2}Z`);}
+  if(t){t.setAttribute('opacity',tong?1:0);t.setAttribute('cy',w*(tong>.8?1.0:.66));t.setAttribute('rx',w*.45);t.setAttribute('ry',w*.2*tong+1);}}
+
+// ---- inside the ear: positions of the cotton bud tip and the wax (world coords)
+function popLabel(id,T,t0,t1,x,y,sc=1){const on=T>=t0&&T<t1;show(id,on?1:0);if(on){const k=eob(P(T,t0,t0+.28));$(id).setAttribute('transform',`translate(${x},${y}) scale(${k*sc})`);}}
+// ---------------- stomach world ----------------
+function stomachSq(T){let pos=-10,amp=0;
+  if(T>=E.kick&&T<E.later){const k=((T-E.kick)/1.5)%1;pos=lerp(3,NS+2,k);amp=.30;}
+  if(T>=E.blob-.4&&T<E.clinic+30){const k=((T-E.blob+.4)/1.1)%1;pos=lerp(5,NS-2,k);amp=.16;}
+  return i=>amp*Math.exp(-Math.pow((i-pos)/1.7,2));}
+function acidLevel(T){let y=640+Math.sin(T*1.7)*6;if(T>=E.acid-.2&&T<E.acid+1.1)y-=46*Math.sin(P(T,E.acid-.2,E.acid+1.1)*Math.PI);return y;}
+const ESO_PTS=crSample(ESO_C,24);
+const GUM_PATH=crSample([[410,610],[470,720],[440,812],[330,866],[262,880],[190,905],[150,990],[165,1140]],48);
+function gumState(T){let x=410,y=600,r=0,sx=1,sy=1;const vis=T<E.later+.15;
+  if(T<IN0+.45){const p=along(ESO_PTS,eo(P(T,IN0,IN0+.45)));x=p[0];y=p[1];r=Math.sin(T*20)*15;}
+  else if(T<E.splash){const k=P(T,IN0+.45,E.splash);x=lerp(326,410,k);y=lerp(380,acidLevel(T)-16,eio(k));r=k*220;}
+  else{x=410+Math.sin(T*1.3)*8;y=acidLevel(T)-16+Math.sin(T*2.1)*3;r=Math.sin(T*1.1)*8;}
+  const k0=E.kick+.15,k1=ST['09_gum']+2.25,k2=E.later+.1;
+  if(T>=k0){const u=T<k1?0.6*eio(P(T,k0,k1)):lerp(0.6,1,eio(P(T,k1,k2)));const p=along(GUM_PATH,u),m=P(T,k0,k0+.35);
+    x=lerp(x,p[0],m);y=lerp(y,p[1],m);r=lerp(r,0,m);const pyl=P(T,k1-.7,k1)*(1-P(T,k1,k1+.2));sx=1+.9*pyl;sy=1-.5*pyl;}
+  return {x,y,r,sx,sy,vis};}
+const GP_T=[[302,842],[334,866],[286,878],[322,834],[306,860]];
+function renderWorld(T){
+  const [o,i]=stoPaths(stomachSq(T));
+  ['stoO','stoOs','stoOl','stoClipP'].forEach(id=>$(id).setAttribute('d',o));['stoI','stoIl','lumClipP'].forEach(id=>$(id).setAttribute('d',i));
+  const ay=acidLevel(T);let d=`M140,${ay}`;for(let x=140;x<=720;x+=24)d+=` L${x},${(ay+Math.sin(x*.04+T*3)*5).toFixed(1)}`;d+=' L720,1120 L140,1120 Z';$('acidP').setAttribute('d',d);
+  let h=`M170,${ay+3}`;for(let x=170;x<=660;x+=24)h+=` L${x},${(ay+3+Math.sin(x*.04+T*3)*5).toFixed(1)}`;$('acidHi').setAttribute('d',h);
+  [0,1,2,3,4,5].forEach(k=>{const ph=(T*.6+k*.17)%1,e=$('ab'+k);e.setAttribute('cx',250+k*70+Math.sin(T+k)*8);e.setAttribute('cy',lerp(910,ay+8,ph));e.setAttribute('opacity',(1-ph).toFixed(2));});
+  // --- the gum
+  const g=gumState(T);show('gum',g.vis?1:0);tr('gum',g.x,g.y);tr('gum_i',0,0,g.sx*GS,g.sy*GS,g.r);$('gumF').setAttribute('transform',`rotate(${-g.r})`);
+  const sh=T>=ST['03_gum']+.35&&T<E.acid;show('shades',sh?1:0);tr('shades',g.x,g.y,GS*eob(P(T,ST['03_gum']+.35,ST['03_gum']+.6)));
+  const tG=speak('gum',T),tS=speak('stomach',T);
+  let ge={lid:.12,mood:1,brow:0,small:false,dx:40,dy:-30};
+  if(T<E.splash+.6) ge={lid:0,mood:0,brow:-12,small:true,dx:0,dy:-40};
+  if(T>=ST['03_gum']&&T<ST['06_stomach']) ge={lid:.42,mood:1,brow:-8,small:false,dx:40,dy:-40};
+  if(T>=ST['06_stomach']&&T<ST['07_gum']) ge={lid:0,mood:-1,brow:-14,small:true,dx:0,dy:30};
+  if(T>=ST['07_gum']&&T<ST['08_stomach']) ge={lid:.62,mood:1,brow:-6,small:false,dx:30,dy:-30};
+  if(T>=ST['08_stomach']) ge={lid:.1,mood:-1,brow:-14,small:T>=ST['09_gum'],dx:-20,dy:-30};
+  ['gumE1','gumE2'].forEach((e,k)=>setOEye(e,9,{dx:ge.dx,dy:ge.dy,lid:ge.lid,tilt:(k?-1:1)*(ge.brow<-10?-10:0),blink:blinkK(T,.5),small:ge.small}));
+  setBrow('gumB1',-10,-19,10,ge.brow,2);setBrow('gumB2',11,-19,10,-ge.brow,2);setMouthV('gum_m',tG,6.5,ge.mood,T,1);
+  // acid drops + steam + sparkle
+  [0,1,2,3,4].forEach(k=>{const t0=E.acid+.05+k*.08,q=P(T,t0,t0+.55);show('adrop'+k,q>0&&q<1?1:0);
+    tr('adrop'+k,lerp(330+k*35,g.x-18+k*9,q),lerp(ay,g.y-40,q)-Math.sin(q*Math.PI)*90,1.4);});
+  [0,1,2].forEach(k=>{const q=((T-E.melt)*.9+k*.33)%1,on=T>=E.melt&&T<ST['07_gum']+.6;show('stm'+k,on?(1-q)*.9:0);tr('stm'+k,g.x-24+k*24,g.y-30-q*44);});
+  const sp=T>=ST['07_gum']&&T<ST['08_stomach'];show('gSpark',sp?1:0);tr('gSpark',g.x,g.y,GS);
+  [0,1,2].forEach(k=>{const q=(T*2.4+k*.3)%1;$('gs'+k).setAttribute('opacity',Math.sin(q*Math.PI).toFixed(2));});
+  // --- twist: the whole pack, merging into one blob
+  const twist=T>=E.packStart;
+  [0,1,2,3,4].forEach(k=>{const t0=E.packStart+.15+k*.32;let x,y,s=1;
+    if(T<t0){show('gp'+k,0);return;}
+    if(T<t0+.45){const p=along(ESO_PTS,eo(P(T,t0,t0+.45)));x=p[0];y=p[1];}
+    else{const q=eio(P(T,t0+.45,t0+1.0));x=lerp(326,GP_T[k][0],q);y=lerp(380,GP_T[k][1],q)-Math.sin(q*Math.PI)*60;}
+    const mg=eio(P(T,E.blob-.45,E.blob-.1));x=lerp(x,305,mg);y=lerp(y,852,mg);s=1-mg;
+    show('gp'+k,s>.02?1:0);tr('gp'+k,x,y,1,1,k*40);tr('gp'+k+'_i',0,0,.62*s,.62*s,0);});
+  const bs=T>=E.blob-.35?eob(P(T,E.blob-.35,E.blob+.1))*1.4:0;show('blob',twist&&bs>0?1:0);
+  const bb=T>=E.blob+.2?1+.08*Math.exp(-(T-E.blob-.2)*4)*Math.sin((T-E.blob-.2)*25):1;tr('blob',305,850,1,1,0);tr('blob_i',0,0,bs*bb,bs/bb,0);
+  ['blobE1','blobE2'].forEach((e,k)=>setOEye(e,9,{dx:40,dy:-30,lid:.35,tilt:(k?1:-1)*-14,blink:blinkK(T,1.1)}));
+  setBrow('blobB1',-10,-19,10,16,1);setBrow('blobB2',11,-19,10,-16,1);setMouthV('blob_m',T>=ST['13_gum']?speak('gum',T):0,6.5,1,T,7);
+  show('antGlow',twist&&T>=E.blob?Math.min(.55,(T-E.blob)*1.5):0);
+  [[402,800],[446,822],[380,768],[432,760]].forEach((p,k)=>{const t0=E.blob+.5+k*.22,q=P(T,t0,t0+.6);show('fd'+k,twist&&T>=t0?1:0);tr('fd'+k,lerp(330,p[0],q),lerp(380,p[1],eio(q))-Math.sin(q*Math.PI)*60,1,1,k*30);});
+  // --- stomach face
+  let se={lid:.12,mood:0,brow:0,small:false};const lookX=g.vis?g.x-464:(twist?305-464:0),lookY=g.vis?g.y-321:(twist?400:0);
+  if(T>=ST['02_stomach']&&T<ST['04_stomach']) se={lid:.45,mood:-1,brow:12,small:false};
+  if(T>=ST['04_stomach']&&T<ST['06_stomach']) se={lid:.1,mood:0,brow:-10,small:false};
+  if(T>=ST['06_stomach']&&T<ST['08_stomach']) se={lid:.5,mood:1,brow:8,small:false};
+  if(T>=ST['08_stomach']&&T<E.later) se={lid:.3,mood:-1,brow:16,small:false};
+  if(twist&&T<E.blob) se={lid:0,mood:-1,brow:-16,small:true};
+  if(twist&&T>=E.blob) se={lid:.62,mood:-1,brow:-16,small:false};
+  ['sfE1','sfE2'].forEach((e,k)=>setOEye(e,25,{dx:lookX,dy:lookY,lid:se.lid,tilt:(k?1:-1)*(se.brow>10?12:se.brow<-10?-12:0),blink:blinkK(T,2.2),small:se.small}));
+  setBrow('sfB1',428,284,26,se.brow,4);setBrow('sfB2',500,290,26,-se.brow,4);setMouthV('sf_m',tS,15,se.mood,T,2);
+  show('sfSweat',twist?1:0);$('sfSweat').setAttribute('transform',`translate(0,${((T*1.4)%1)*30})`);
+  return g;}
+function avgTarget(fn,T){let a=[0,0,0],w=0;for(let k=0;k<6;k++){const t=fn(T-k*.07),ww=1-k*.12;a=a.map((v,i)=>v+t[i]*ww);w+=ww;}return a.map(v=>v/w);}
+function stoTarget(T){const g=gumState(T);
+  if(T<E.splash) return [360,520,1.0];
+  if(T>=E.packStart) return T<E.blob-.3?[400,640,1.0]:(T>=ST['13_gum']-.1?[318,820,1.55]:[440,560,1.18]);
+  if(T>=E.kick+.15) return [Math.max(260,Math.min(470,g.x)),g.y-60,1.32];
+  for(const k of ['02_stomach','04_stomach','06_stomach','08_stomach']) if(T>=ST[k]-.15&&T<ST[k]+lineDur(k)) return [468,420,1.45];
+  for(const k of ['03_gum','05_gum','07_gum']) if(T>=ST[k]-.15&&T<ST[k]+lineDur(k)) return [g.x+10,g.y-40,1.6];
+  return [420,560,1.1];}
+function renderStomach(T){const g=renderWorld(T);const [cx,cy,Z]=avgTarget(stoTarget,T);
+  let sx=0,sy=0;[[E.splash,8],[E.kick,6],[E.blob+.2,10]].forEach(([t0,a])=>{const k=P(T,t0,t0+.4);if(k>0&&k<1){sx+=Math.sin(k*45)*a*(1-k);sy+=Math.cos(k*38)*a*.6*(1-k);}});
+  $('cam').setAttribute('transform',`translate(${360+sx},${640+sy}) scale(${Z}) translate(${-cx},${-cy})`);
+  const lb=(id,t0,t1,x,y)=>{const on=T>=t0&&T<t1;show(id,on?1:0);if(on)$(id).setAttribute('transform',`translate(${x},${y}) scale(${eob(P(T,t0,t0+.28))})`);};
+  lb('lbSto',ST['02_stomach'],E.later,560,110); lb('lbAcid',E.acid,ST['08_stomach'],520,168);
+  show('indark',1-P(T,IN0,IN0+.25));}
+// ---------------- intestines ----------------
+function renderGut(T){const u=lerp(.04,1,eio(P(T,E.intestine,E.flush+.5)));const p=along(IC,u);
+  tr('igum',p[0],p[1]);tr('igum_i',0,0,1.5,1.5,Math.sin(T*3)*10);
+  const sad=T>=ST['11_gum'];['igumE1','igumE2'].forEach((e,k)=>setOEye(e,9,{dx:sad?0:40,dy:sad?30:-20,lid:sad?.5:.15,tilt:(k?-1:1)*(sad?-12:0),blink:blinkK(T,.8)}));
+  setBrow('igumB1',-10,-19,10,sad?-14:0,2);setBrow('igumB2',11,-19,10,sad?14:0,2);setMouthV('igum_m',speak('gum',T),6.5,sad?-1:0,T,3);
+  ['inE1','inE2'].forEach((e,k)=>setOEye(e,21,{dx:p[0]-362,dy:p[1]-500,lid:.15,blink:blinkK(T,1.6)}));
+  setBrow('inB1',332,474,20,0,4);setBrow('inB2',392,480,20,0,4);setMouthV('in_m',speak('intestine',T),12,1,T,4);
+  let Z=1.25,cx=clamp(p[0],250,470),cy=p[1]+40;
+  if(T<ST['10_intestine']+lineDur('10_intestine')+.1&&T>=ST['10_intestine']-.1){cx=lerp(cx,362,.5);cy=lerp(cy,520,.5);}
+  const fl=P(T,E.flush,E.flush+.9);show('swirl',fl>0&&fl<1?1:0);tr('swirl',p[0],p[1],1+fl,1+fl,fl*720);
+  $('icam').setAttribute('transform',`translate(360,640) rotate(${fl*200}) scale(${Z*(1+fl*.6)}) translate(${-cx},${-cy})`);
+  const on=T>=E.intestine+.1;show('lbInt',on?1:0);if(on)$('lbInt').setAttribute('transform',`translate(190,110) scale(${eob(P(T,E.intestine+.1,E.intestine+.4))})`);}
+// ---------------- hook: the patient's face ----------------
+function renderFace(T){
+  const chew=T<.12||(T>.62&&T<.7)?Math.abs(Math.sin(T*22)):0, bub=P(T,.12,.5), popped=T>=.5;
+  let m='M-12,0 Q0,3 12,0';let fill='none';
+  if(chew>.3){m='M-12,0 Q0,-5 12,0 Q0,12 -12,0Z';fill='#5e1a20';}
+  if(T>=.12&&T<.5){m='M-5,1 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0';fill='#5e1a20';}
+  if(T>=.5&&T<.62){m='M-14,-1 Q0,-6 14,-1 Q0,16 -14,-1Z';fill='#5e1a20';}
+  const fm=$('fMouth');fm.setAttribute('d',m);fm.setAttribute('fill',fill);
+  show('fGumIn',chew>.3?1:0);$('fGumIn').setAttribute('d','M-8,3 Q0,0 8,3 Q0,9 -8,3Z');
+  show('bubG',T>=.12&&T<.5?1:0);$('bubC').setAttribute('r',1+eo(bub)*58);$('bubC').setAttribute('cy',140+eo(bub)*10);
+  const r=1+eo(bub)*58;$('bubHi').setAttribute('d',`M${-2-r*.55},${150-r*.35} A${r*.7},${r*.7} 0 0 1 ${-2-r*.1},${150-r*.7}`);
+  show('popG',popped&&T<.8?1:0);$('popG').setAttribute('transform',`translate(0,${(T-.5)*20})`);
+  const gulp=P(T,.68,.95);show('lump',gulp>0&&gulp<1?1:0);$('lump').setAttribute('cy',165+gulp*40);
+  const wide=T>=.68;setHEye('fEyeL',0,T>=.5&&T<.6?.85:0);setHEye('fEyeR',0,T>=.5&&T<.6?.85:0);
+  ['fEyeL','fEyeR'].forEach(e=>{$(e).setAttribute('transform',`scale(${wide?1.25:1},${wide?1.35:1})`);});
+  $('fBrows').setAttribute('transform',`translate(0,${wide?-6:0})`);
+  const z=1+Math.pow(P(T,.82,IN0),2)*5.5;$('fcam').setAttribute('transform',`translate(353,776) scale(${z}) translate(-353,-776)`);
+  show('fdark',P(T,.88,IN0));}
+// ---------------- ending: the gum on its wrapper ----------------
+function renderSting(T){const up=T>=E.cta+.15;
+  $('gcam').setAttribute('transform',`translate(360,760) scale(${1.85+.08*P(T,T_STING,END)}) translate(-360,-815)`);
+  tr('sgum',0,Math.sin(T*2)*3);
+  ['sgumE1','sgumE2'].forEach((e,k)=>setOEye(e,9,{dx:up?0:-10,dy:up?-40:30,lid:up?.1:.48,tilt:(k?-1:1)*(up?0:-12),blink:blinkK(T,1.2)}));
+  setBrow('sgumB1',-10,-19,10,up?0:-14,2);setBrow('sgumB2',11,-19,10,up?0:14,2);setMouthV('sgum_m',speak('gum',T),6.5,up?1:-1,T,4);
+  const ck=P(T,E.cta,E.cta+.35);show('cta',T>=E.cta?1:0);
+  $('cta').setAttribute('transform',`translate(360,${200+Math.sin(T*3)*4}) rotate(${Math.sin(T*2.2)*2})`);$('cta_i').setAttribute('transform',`scale(${eob(ck)})`);}
+// ---------------- clinic ----------------
+function renderS2(T){
+  const dT=speak('doctor',T),pT=speak('patient',T),d0=ST['15_doctor'];
+  let dr=2+(dT>.15?Math.sin(T*6.5)*1.8*dT:0);const shk=P(T,d0,d0+.9);if(shk>0&&shk<1)dr+=Math.sin(shk*Math.PI*4)*3.5;
+  tr('docHead',0,Math.sin(T*1.3)*1.2-(dT>.7?1.5:0),1,1,dr);$('dBrows').setAttribute('transform',`translate(0,${dT>.72?-3.5:0})`);
+  let pr=-3+Math.sin(T*.8);if(T>=E.gut)pr+=Math.sin(P(T,E.gut,E.gut+1)*Math.PI*2)*4;tr('patHead',0,Math.sin(T*1.5+1)*1.2,1,1,pr);
+  const surprised=T>=E.bezoar&&T<E.gut+.3;
+  $('pBrows').setAttribute('d',surprised?'M-36,64 Q-24,56 -10,60 M8,60 Q22,56 34,64':'M-36,66 Q-24,64 -10,60 M8,60 Q22,64 34,66');
+  setMouthV('doc_m',dT,10,.7,T,5);setMouthV('pat_m',pT,10,-.5,T,6);
+  setHEye('dEyeL',3,blinkK(T,.7));setHEye('dEyeR',3,blinkK(T,.7));setHEye('pEyeL',-3,blinkK(T,2.1));setHEye('pEyeR',-3,blinkK(T,2.1));
+  const down=eio(P(T,d0+1.2,d0+2.0));const sh=[-84,234],el=[lerp(-124,-102,down),lerp(338,370,down)],wr=[lerp(-30,-90,down),lerp(408,470,down)];
+  const d=limbD([sh,el,wr],[44,38,32]);$('patArmLD').setAttribute('d',d);$('patArmLO').setAttribute('d',d);
+  $('patHandL').innerHTML=hand(wr[0],wr[1]+(down>.5?12:0),lerp(-25,-8,down),1.2,PSK);
+  $('docArmR').setAttribute('transform',`rotate(${(dT>.75&&Math.floor(T*2)%3===0)?-7:0},86,226)`);$('clkM').setAttribute('transform',`rotate(${T*6})`);
+  const pa=ST['14_patient'],pq=eio(P(T,pa,pa+1.5))*(1-eio(P(T,d0-.2,d0+.4)));
+  let z=1+.035*P(T,d0,E.bezoar)+.07*pq,cx=lerp(360,430,pq),cy=lerp(640,600,pq);
+  const pk=eio(P(T,E.bezoar-.15,E.bezoar+.15))*(1-eio(P(T,E.gut+.5,E.gut+.85)));z=lerp(z,1.42,pk);cx=lerp(cx,232,pk);cy=lerp(cy,430,pk);
+  $('ccam').setAttribute('transform',`translate(360,${lerp(640,560,pk)}) scale(${z}) translate(${-cx},${-cy})`);
+  const b1=T>=E.passes-.3&&T<E.danger-.3,b2=T>=E.clump-.4&&T<E.bezoar-.15;$('bub').setAttribute('opacity',(b1||b2)?1:0);
+  if(b1||b2){const k=b1?P(T,E.passes-.3,E.passes):P(T,E.clump-.4,E.clump-.1);$('bub').setAttribute('transform',`translate(265,150) scale(${1.12*eob(k)}) translate(-265,-150)`);
+    const rt=b1?lerp(E.kick,E.later,P(T,E.passes,E.danger-.4)):lerp(E.packStart+.1,E.blob+1.6,P(T,E.clump,E.bezoar-.3));renderWorld(rt);}
+  popLabel('lbMyth',T,E.myth-.05,E.passes-.4,360,64);popLabel('lbBez',T,E.bezoar-.05,E.gut+.8,360,64);}
+function caption(T){let w='',ws=0;for(const L of D.lines)for(const x of L.words){if(T>=x[0]&&T<Math.max(x[1],x[0]+.12)){w=x[2];ws=x[0];}}
+  if(!w){for(const L of D.lines)for(const x of L.words){if(T>=x[1]&&T<x[1]+.12){w=x[2];ws=x[0];}}}
+  if(T>=E.later&&T<E.intestine)w='';
+  const c=$('cap'),big=KEY.test(w);c.textContent=w;c.style.fontSize=big?'56px':'44px';c.style.fill=big?'#ffd21f':'#fff';
+  const k=eo(P(T,ws,ws+.09));c.setAttribute('transform',`translate(360,1110) scale(${lerp(1.2,1,k)}) translate(-360,-1110)`);}
+window.render=function(T){
+  const face=T<IN0,sto=(T>=IN0&&T<E.later)||(T>=E.packStart&&T<T_CLINIC),later=T>=E.later&&T<E.intestine,gut=T>=E.intestine&&T<E.packStart,cli=T>=T_CLINIC&&T<T_STING,sting=T>=T_STING;
+  [['sx',face],['s1',sto],['sL',later],['s3',gut],['s2',cli],['sg',sting]].forEach(([id,v])=>$(id).setAttribute('display',v?'inline':'none'));
+  show('indark',0);
+  if(face)renderFace(T);
+  if(sto)renderStomach(T);
+  if(later){const k=eob(P(T,E.later,E.later+.3));$('laterT').setAttribute('transform',`translate(360,640) scale(${k}) translate(-360,-640)`);}
+  if(gut)renderGut(T);
+  if(cli){renderWorld(E.blob+1.6);renderS2(T);}
+  if(sting)renderSting(T);
+  if(sto&&T>=E.packStart&&T<E.packStart+.25)show('indark',1-P(T,E.packStart,E.packStart+.25));
+  caption(T);};
+window.render(0);
+
+</script></body></html>

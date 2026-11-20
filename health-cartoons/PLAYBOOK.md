@@ -21,10 +21,12 @@ Do not clone a real person's voice.
 | Inside story | ~1-28 s | 8-9 short lines (2-4 s each) between 2-3 cartoon characters | Every joke beat is also a teaching beat (a physical action that shows the cause). |
 | Teaching gag | late inside | One line that states the mechanism as a joke (e.g. eardrum: *"I can't vibrate!"*) | |
 | Payoff | end of inside | A confused line and a visual of the consequence (e.g. sound waves blocked plus a sad trombone) | |
-| Clinic question | ~6 s | Patient: *"Doc, [symptom]? But I [habit]!"* | |
-| Doctor | **≤ 18 s** | "That's the problem." → mechanism (2 sentences) → **name of the condition** → what to do | Two thought-bubble replays, a punch-in and a label box on the condition name, then a tip label. |
+| Clinic question (starts at **about 60-70% of the runtime**, like the reference) | ~6 s | Patient: *"Doc, [symptom]? But I [habit]!"* | |
+| Doctor | **≤ 15 s** | "That's the problem." → mechanism (2 sentences) → **name of the condition** → what to do | Two thought-bubble replays, a punch-in and a label box on the condition name, then a tip label. |
 | Stinger + CTA | ~4 s | Back outside: the object character sulks with one line that repeats the lesson, then **FOLLOW for more body secrets** | |
-| Total | **45-60 s** | | |
+| Total | **50-68 s** | | Speech about 2.8-3.0 words/s (reference) |
+
+**Topic choice:** follow `research/VIRAL-STUDY.md`. Pick a habit almost everyone has, with a famous belief or a mild fear, that can be shown as an object travelling inside the body (eating and swallowing first). Never pick rare surgeries; they get 20K-120K views.
 
 Medical facts must come from a real guideline or review (001: AAO-HNS Clinical Practice Guideline, Cerumen Impaction, 2017).
 Say plainly what was not verified.
@@ -52,7 +54,7 @@ Say plainly what was not verified.
 ## 3. Music and sound
 
 - **Music:** Mixkit track id 9 (light comedic bed), looped through the whole video at −9.8 dB in the mix
-  (≈ −26 LUFS stem, matching the reference at −21 to −33). Final mix about **−14 LUFS** (the reference is −14.1).
+  (≈ −26 LUFS stem, matching the reference at −21 to −33). Final master about **−10 LUFS** (`tools/mix.sh`: compressor, +5 dB, limiter at 0.75). The reference's YouTube uploads measure −8.7 to −10.2 LUFS; the −14 we measured first came from Instagram re-encodes.
 - **Muffle gag:** when a character says it got quiet, the music gets a 350 Hz low-pass from that line to the clinic cut.
 - **SFX (aim for 18 or more, each tied to a word or action)**, all Mixkit and fetched by `tools/fetch_assets.sh`:
 
@@ -108,7 +110,7 @@ Say plainly what was not verified.
 | Median pause between lines | 0.28-0.44 s | 0.35 s | 0.3-0.45 s |
 | Doctor section | 13-22 s | 17.5 s | ≤ 18 s |
 | SFX count | ~15 | 21 | ≥ 18 |
-| Loudness | −14.1 LUFS | −13.6 | −14 ± 0.5 |
+| Loudness (YouTube) | −8.7 to −10.2 LUFS | 001: −13.6 (too quiet), 002: −10.3 | about −10 |
 
 ## 6. Pipeline
 
@@ -138,7 +140,7 @@ SCENE X exterior (`budSVG`, ear, CTA) → assemble → timing (visemes, `worldSt
 - [ ] Every SFX lands on its word or action; there are 18 or more.
 - [ ] The doctor part is ≤ 18 s and has the bubble replays, the punch-in, the condition label and the tip label.
 - [ ] The medical claims are checked against a named source.
-- [ ] Final loudness is −14 LUFS ± 0.5, the music is audible under the voice, and nothing clips.
+- [ ] Final loudness is about −10 LUFS (true peak below −0.3 dB), the music is audible under the voice, and nothing clips.
 - [ ] A 1 fps contact sheet has been looked at end to end, and the 4-6 fps strips around the hook, the impact and the clinic.
 
 ## 8. Honest limits and upgrade path
