@@ -44,12 +44,12 @@ if(mode==='dp'){
 }else{
   svg.setAttribute('width',2560);svg.setAttribute('height',1440);svg.setAttribute('viewBox','0 0 2560 1440');
   const body=`<ellipse cx="1280" cy="720" rx="900" ry="260" fill="#fff" opacity=".12" filter="url(#glow)"/>
-   <g transform="translate(330,470) scale(1.55)">${doctor()}</g>
+   <g transform="translate(330,515) scale(1.55)">${doctor()}</g>
    <text class="ttl" x="1280" y="742" text-anchor="middle" style="font-size:200px;stroke-width:22px" fill="#ffd21f">GIGGLE MD</text>
    <text class="ttl" x="1280" y="852" text-anchor="middle" style="font-size:66px;stroke-width:12px" fill="#ffffff">FUNNY CARTOONS. REAL BODY SCIENCE.</text>
    <g transform="translate(2060,640) scale(.62) translate(-424,-150)">${brainBuddy('b2')}</g>
    <g transform="translate(2330,820) scale(.95)">${heartBuddy('h1')}</g>
-   <g transform="translate(1995,905) scale(.82)">${toothBuddy('n1')}</g>`;
+   <g transform="translate(1995,838) scale(.82)">${toothBuddy('n1')}</g>`;
   svg.innerHTML=bg(2560,1440)+body;
 }
 // faces: friendly
