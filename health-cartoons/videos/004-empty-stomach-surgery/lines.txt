@@ -1,0 +1,21 @@
+stomach|Huh? A burger at six in the morning?
+burger|Morning, big guy. I'm moving in.
+stomach|Bro, he's got surgery in an hour!
+burger|Relax. I'll just chill right here.
+stomach|You don't get it.
+stomach|They're putting him to sleep.
+stomach|If my door falls asleep too...
+stomach|you're going up.
+burger|Ha! Food only goes down, genius.
+brain|Anesthesia's in... lights out, everybody...
+stomach|No, no, no! My door's going limp!
+burger|Whoa! Why am I floating up?!
+lungs|Hey! Why's a burger in MY pipe?!
+burger|Uh... wrong room?
+lungs|Cough it out! Cough!
+lungs|Why can't I cough?!
+stomach|The brain's asleep. No cough. No gag.
+lungs|Great. Now I'm burning up.
+patient|Doc, I only ate one burger before surgery. Why is my chest so bad?
+doctor|That's called aspiration pneumonia. Anesthesia relaxes the muscle that keeps food in your stomach and shuts off your cough reflex, so the food came back up and slipped into your lungs. That's why we say no food for six to eight hours before surgery.
+burger|Fine... see you AFTER surgery.
