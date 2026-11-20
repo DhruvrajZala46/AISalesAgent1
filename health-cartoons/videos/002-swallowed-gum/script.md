@@ -1,6 +1,7 @@
 # 002 - What Actually Happens When You Swallow Gum?
 
-Status (20 Nov 2026): lines 01-11 are generated and the first 35 s are rendered as a preview (`gum-preview-first35s.mp4`).
+Status (20 Nov 2026): **REJECTED by the user** after the 35 s preview ("10%, glitchy, hard to understand"). Kept only as a record of what not to do;
+see `../../research/VIRAL-STUDY.md` §11 and LEARNINGS row 7. Lines 12-16 were never generated (no credits spent on them).
 **Lines 12-16 are still to generate:** ElevenLabs said "free generations are busy" and nothing was charged.
 `build_audio.py` holds placeholders (silence of the estimated length) until `proc/12_stomach.wav` … `proc/16_gum.wav` exist.
 

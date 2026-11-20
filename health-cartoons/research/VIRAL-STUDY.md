@@ -66,3 +66,30 @@ The #1 video (27M, "why eating without water can make you constipated?") could n
 3. Why Does Your Stomach Growl? (everyday; stomach vs Brain banter).
 4. Why Do You Burp After Soda? (soda already earned 9.3M and 4.3M for them).
 5. What Happens When You Crack Your Knuckles? (famous arthritis myth).
+
+## 10. Cross-channel check with the yt-viral method (20 Nov 2026, second pass)
+Every video is scored as a multiple of its OWN channel's median (public listings only, no login). 1,782 Shorts across 9 channels.
+- **A second channel in exactly this format exists: "Health Manager"** (`UCq5kGeiEq4eC9sdEUyjxvRg`), 367 Shorts, median 477K, 19 Shorts at 10M+.
+  The reference (`UC3wmheybwSk_GMMapnPGl0Q`, @Dr_Healthcare1): 400 Shorts, median 720K, 17 at 10M+.
+- **Only one topic hit 20M+ on both channels:** "Why Does Food Sometimes Go Up Your Nose?" (22M = 30.6x on the reference, 20M = 41.9x on Health Manager).
+  Snoring is the next one that repeated (11M and 3.4M).
+- **Topics that did NOT repeat:** "Sleep right after eating" (26M vs 0.2M) and "Conjoined twins" (22M vs 0.2M). A single 20M+ hit is not proof that a topic works.
+- Health Manager's own top: empty stomach before surgery 32M (67x), manual placenta removal 30M, grapes and bathroom urges 25M,
+  ice water after hot food 21M, a diet trick 20M, food up the nose 20M, skipping breakfast and a stomach ache 12M, still hungry when full 11M.
+- Topic family across both channels (share of Shorts at 10M+): sleep/breath 10%, eating/drinking habit 9.2% (12 of the 36 hits),
+  medicines 12% (small sample), baby/pregnancy 9%, surgery/devices 2.7%, everything else 1.5%.
+- Titles: 30 of the 36 Shorts at 10M+ are a Why/How/What question (yt-viral "The Question" formula; a label for the title, not a proof of why it worked).
+- Similar but different formats (CasiCreativo "Your organs when…", Organ Drama, ORGAN INC., Human Buddy) are much smaller or long-form; not useful as proof.
+
+## 11. Why the 002 preview failed (frame-by-frame against 3 references, 0-21 s)
+1. **Hook:** 002 opened on a flat human face blowing a bubble. All three compared references open INSIDE the body with the talking characters
+   already on screen, and an intruder enters by 0.6 s (a food crumb, a needle).
+2. **Character size:** the gum was about 5% of the frame and the stomach's eyes sat at the top edge. Their speaking characters fill 30-60% of the width.
+3. **Camera:** 002 changed framing on every line, which read as "glitchy". The references hold ONE locked wide shot for 10-20 s;
+   the motion comes from acting (eyes, mouths, arms, props), not from the camera.
+4. **Acting:** their organs have arms and hands and hold props (the stomach holds a fork and knife). 002's characters had no arms.
+5. **Readability:** 002's stomach was dark maroon with curtain-like folds and flat yellow acid; it did not read as a stomach.
+   Theirs: clean pink flesh, yellow bone, recognisable food (fried egg, burger, chicken), and small white labels on the anatomy.
+6. **Script register:** their lines are plain everyday bro talk, 3-7 words each ("Yo, why are you always blocking me off?", "One bite won't hurt.",
+   "See? You're choking!"). The story is "the organ wants something → the other says no (and why) → it does it anyway → the consequence → 'See?'".
+   002's puns ("seven-year lease") were writer jokes, not their voice.

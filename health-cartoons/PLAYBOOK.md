@@ -26,7 +26,7 @@ Do not clone a real person's voice.
 | Stinger + CTA | ~4 s | Back outside: the object character sulks with one line that repeats the lesson, then **FOLLOW for more body secrets** | |
 | Total | **50-68 s** | | Speech about 2.8-3.0 words/s (reference) |
 
-**Topic choice:** follow `research/VIRAL-STUDY.md`. Pick a habit almost everyone has, with a famous belief or a mild fear, that can be shown as an object travelling inside the body (eating and swallowing first). Never pick rare surgeries; they get 20K-120K views.
+**Topic choice:** follow `research/VIRAL-STUDY.md`, and prefer a topic proven on BOTH same-format channels (§10): one 20M+ hit alone is not proof. Pick a habit almost everyone has, with a famous belief or a mild fear, that can be shown as an object travelling inside the body (eating and swallowing first). Never pick rare surgeries; they get 20K-120K views.
 
 Medical facts must come from a real guideline or review (001: AAO-HNS Clinical Practice Guideline, Cerumen Impaction, 2017).
 Say plainly what was not verified.
@@ -88,9 +88,13 @@ Say plainly what was not verified.
   Mouths use **5 visemes held at 15 fps** (closed, small, "oo", mid with teeth, wide with tongue). Blink about every 4 s.
 - **Effects library:** label boxes (white, black border, Inter 900), yellow direction arrow, red pressure glow, yellow tension ticks,
   impact puff, sweat drops, sparkles and dust, dizzy stars, sound waves blocked by an ❌.
-- **Camera:** a new framing for every dialogue line: close-up on the speaker, a whip-pan to the blamed character, a pull-out for the payoff.
-  Punch-zoom and shake on impacts. Never hold a frame static for more than 1.5 s.
-- **Hook:** the outside view (big realistic ear in 001) zooms into the inside through a dark fade.
+- **Camera (corrected after 002):** one LOCKED wide shot per scene, like the reference (it holds one framing for 10-20 s). The motion comes from
+  acting: eyes, lids, brows, mouths, arms, props, sweat, labels. Move the camera only on an impact (punch-zoom plus shake) or a scene change.
+  Changing the framing on every line made 002 look "glitchy". "Nothing static for more than 1.5 s" means the characters keep acting.
+- **Character size:** the speaking characters fill 30-60% of the frame width, and every organ or object character has arms and hands
+  and holds a prop where it fits (the reference stomach holds a fork and knife).
+- **Hook:** open INSIDE the body with the talking characters already on screen, and an intruder (food, a needle, an object) enters by 0.6 s.
+  At most a 0.5 s outside shot first, as in 001. Never open on a flat human face (002 failed with that).
 - **Clinic:** a room with a window and blinds, a poster for the topic, a ticking clock, a desk and monitor, and an exam chair.
   Our doctor is a woman with a dark bun, glasses, teal scrubs, a white coat, a stethoscope and the topic's tool (otoscope in 001).
   The patient is a young man in a mustard hoodie. The patient holds the problem area while asking and reacts (surprised at the
