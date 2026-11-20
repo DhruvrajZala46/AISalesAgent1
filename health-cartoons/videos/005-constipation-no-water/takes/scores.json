@@ -1,0 +1,206 @@
+{
+ "takes/01_stomach_a.mp3": {
+  "wer": 0.0,
+  "range": 19.7,
+  "dur": 3.12,
+  "txt": "Whoa! That's a lot of food!"
+ },
+ "takes/01_stomach_b.mp3": {
+  "wer": 0.0,
+  "range": 18.1,
+  "dur": 3.2,
+  "txt": "Whoa! That's a lot of food!"
+ },
+ "takes/02_stomach_a.mp3": {
+  "wer": 0.0,
+  "range": 13.1,
+  "dur": 2.0,
+  "txt": "Time to mix it all up!"
+ },
+ "takes/02_stomach_b.mp3": {
+  "wer": 0.0,
+  "range": 16.8,
+  "dur": 2.08,
+  "txt": "Time to mix it all up!"
+ },
+ "takes/03_stomach_a.mp3": {
+  "wer": 0.0,
+  "range": 11.5,
+  "dur": 2.96,
+  "txt": "Huh? My stick is stuck!"
+ },
+ "takes/03_stomach_b.mp3": {
+  "wer": 0.0,
+  "range": 12.8,
+  "dur": 3.04,
+  "txt": "Huh? My stick is stuck!"
+ },
+ "takes/04_stomach_a.mp3": {
+  "wer": 0.0,
+  "range": 9.8,
+  "dur": 2.72,
+  "txt": "Timmy, did you drink any water?"
+ },
+ "takes/04_stomach_b.mp3": {
+  "wer": 0.0,
+  "range": 8.3,
+  "dur": 2.72,
+  "txt": "Timmy, did you drink any water?"
+ },
+ "takes/05_brain_a.mp3": {
+  "wer": 0.0,
+  "range": 16.5,
+  "dur": 4.16,
+  "txt": "Mom, I had soda! Soda's basically water!"
+ },
+ "takes/05_brain_b.mp3": {
+  "wer": 0.0,
+  "range": 16.4,
+  "dur": 4.16,
+  "txt": "Mom, I had soda! Soda's basically water!"
+ },
+ "takes/06_stomach_a.mp3": {
+  "wer": 0.0,
+  "range": 20.7,
+  "dur": 3.76,
+  "txt": "Soda is not water! Drink real water!"
+ },
+ "takes/06_stomach_b.mp3": {
+  "wer": 0.0,
+  "range": 21.6,
+  "dur": 3.68,
+  "txt": "Soda is not water. Drink real water."
+ },
+ "takes/07_brain_a.mp3": {
+  "wer": 0.5,
+  "range": 5.7,
+  "dur": 3.12,
+  "txt": "Okay, mom."
+ },
+ "takes/07_brain_b.mp3": {
+  "wer": 0.5,
+  "range": 15.4,
+  "dur": 3.12,
+  "txt": "Okay, mom."
+ },
+ "takes/08_stomach_a.mp3": {
+  "wer": 0.25,
+  "range": 8.7,
+  "dur": 3.84,
+  "txt": "Ugh! Ugh! Not soda again!"
+ },
+ "takes/08_stomach_b.mp3": {
+  "wer": 0.25,
+  "range": 9.9,
+  "dur": 3.92,
+  "txt": "Ugh! Ugh! Not soda again!"
+ },
+ "takes/09_stomach_a.mp3": {
+  "wer": 0.0,
+  "range": 6.6,
+  "dur": 2.56,
+  "txt": "That was my last stick!"
+ },
+ "takes/09_stomach_b.mp3": {
+  "wer": 0.0,
+  "range": 6.0,
+  "dur": 2.48,
+  "txt": "That was my last stick!"
+ },
+ "takes/10_stomach_a.mp3": {
+  "wer": 0.0,
+  "range": 15.3,
+  "dur": 3.04,
+  "txt": "Intestines! It's your problem now!"
+ },
+ "takes/10_stomach_b.mp3": {
+  "wer": 0.0,
+  "range": 12.6,
+  "dur": 2.96,
+  "txt": "Intestines! It's your problem now!"
+ },
+ "takes/11_softpoop_a.mp3": {
+  "wer": 0.0,
+  "range": 21.4,
+  "dur": 2.24,
+  "txt": "Hey! Move it, big guy!"
+ },
+ "takes/11_softpoop_b.mp3": {
+  "wer": 0.0,
+  "range": 21.8,
+  "dur": 2.24,
+  "txt": "Hey! Move it, big guy!"
+ },
+ "takes/12_rockpoop_a.mp3": {
+  "wer": 0.0,
+  "range": 30.7,
+  "dur": 4.0,
+  "txt": "Nope, I'm a rock. I live here"
+ },
+ "takes/12_rockpoop_b.mp3": {
+  "wer": 0.0,
+  "range": 38.1,
+  "dur": 3.92,
+  "txt": "Nope. I'm a rock. I live here."
+ },
+ "takes/13_boy_a.mp3": {
+  "wer": 0.2,
+  "range": 10.1,
+  "dur": 3.28,
+  "txt": "Mom! It won't come out!"
+ },
+ "takes/13_boy_b.mp3": {
+  "wer": 0.2,
+  "range": 11.8,
+  "dur": 3.2,
+  "txt": "Mom! It won't come out!"
+ },
+ "takes/14_boy_a.mp3": {
+  "wer": 0.0,
+  "range": 18.0,
+  "dur": 1.6,
+  "txt": "It's stuck!"
+ },
+ "takes/14_boy_b.mp3": {
+  "wer": 0.0,
+  "range": 15.7,
+  "dur": 1.68,
+  "txt": "It's stuck!"
+ },
+ "takes/15_mom_a.mp3": {
+  "wer": 0.0,
+  "range": 15.4,
+  "dur": 4.48,
+  "txt": "Doctor, my son hasn't pooped in a whole week! What's wrong?"
+ },
+ "takes/15_mom_b.mp3": {
+  "wer": 0.0,
+  "range": 15.1,
+  "dur": 4.64,
+  "txt": "Doctor, my son hasn't pooped in a whole week. What's wrong?"
+ },
+ "takes/16_doctor_a.mp3": {
+  "wer": 0.0,
+  "range": 12.6,
+  "dur": 21.2,
+  "txt": "That's called constipation. He ate a big meal with soda and almost no water or fiber. Your large intestine pulls water out of food waste. With too little water and fiber, it pulls out too much, so the stool turns hard and dry, and it hurts to push. Drink water every day, eat fruits and veggies, and swap soda for water."
+ },
+ "takes/16_doctor_b.mp3": {
+  "wer": 0.0,
+  "range": 13.5,
+  "dur": 20.72,
+  "txt": "That's called constipation. He ate a big meal with soda and almost no water or fiber. Your large intestine pulls water out of food waste. With too little water and fiber, it pulls out too much, so the stool turns hard and dry, and it hurts to push. Drink water every day, eat fruits and veggies, and swap soda for water."
+ },
+ "takes/17_rockpoop_a.mp3": {
+  "wer": 0.0,
+  "range": 12.4,
+  "dur": 3.6,
+  "txt": "Water? Okay, okay, I'm leaving."
+ },
+ "takes/17_rockpoop_b.mp3": {
+  "wer": 0.0,
+  "range": 31.9,
+  "dur": 3.52,
+  "txt": "Water? Okay, okay, I'm leaving!"
+ }
+}

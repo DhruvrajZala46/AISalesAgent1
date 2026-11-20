@@ -14,6 +14,9 @@ def call(path,body,files=None):
             msg=e.read().decode()[:300]
             if e.code in (429,500,502,503) and attempt==0: time.sleep(20); continue
             return {'error':f'HTTP {e.code} {msg}'}
+        except Exception as e:   # dropped connection / timeout: retry once, then report instead of crashing the batch
+            if attempt==0: time.sleep(15); continue
+            return {'error':f'{type(e).__name__}: {e}'}
 def job(j):
     name,prompt,size,src=j['name'],j['prompt'],j.get('size','1024x1024'),j.get('src')
     t=time.time(); body={'model':'muse-image-1.0','prompt':prompt,'size':size,'response_format':'b64_json'}

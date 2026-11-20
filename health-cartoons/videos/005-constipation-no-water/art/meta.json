@@ -1,0 +1,253 @@
+{
+ "boy_toilet": {
+  "w": 957,
+  "h": 1779,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "brain_eyeroll": {
+  "w": 1400,
+  "h": 1558,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "brain_soda": {
+  "w": 1490,
+  "h": 1551,
+  "eyes": [],
+  "lid": null
+ },
+ "brain_timmy": {
+  "w": 1446,
+  "h": 1564,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "clinic_bg": {
+  "w": 1152,
+  "h": 2016
+ },
+ "food_heap": {
+  "w": 1561,
+  "h": 959,
+  "eyes": [],
+  "lid": null
+ },
+ "food_items": {
+  "w": 1437,
+  "h": 1433,
+  "eyes": [],
+  "lid": null
+ },
+ "mom_boy": {
+  "w": 1103,
+  "h": 1832,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "mom_despair": {
+  "w": 1271,
+  "h": 1519,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "mom_grip": {
+  "w": 1264,
+  "h": 1520,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "mom_groan": {
+  "w": 1434,
+  "h": 1517,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "mom_phone": {
+  "w": 1450,
+  "h": 1518,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "mom_shove": {
+  "w": 1232,
+  "h": 1519,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "mom_strain": {
+  "w": 1270,
+  "h": 1522,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "mom_yell": {
+  "w": 1483,
+  "h": 1517,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "plate_bathroom": {
+  "w": 1152,
+  "h": 2016
+ },
+ "plate_rectum": {
+  "w": 1152,
+  "h": 2016
+ },
+ "rock_base": {
+  "w": 1249,
+  "h": 1492,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "rock_panic": {
+  "w": 1540,
+  "h": 1545,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "rock_soggy": {
+  "w": 1351,
+  "h": 1491,
+  "eyes": [],
+  "lid": null
+ },
+ "soft_base": {
+  "w": 979,
+  "h": 1276,
+  "eyes": [
+   {
+    "cx": 299.0,
+    "cy": 631.5,
+    "rx": 74.0,
+    "ry": 73.5,
+    "dark": 0.78
+   },
+   {
+    "cx": 552.5,
+    "cy": 625.5,
+    "rx": 78.5,
+    "ry": 78.5,
+    "dark": 0.67
+   }
+  ],
+  "lid": "#d1a179",
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "stomach_mom": {
+  "w": 1268,
+  "h": 1520,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "food_burger": {
+  "w": 641,
+  "h": 573
+ },
+ "food_drum": {
+  "w": 564,
+  "h": 630
+ },
+ "food_egg": {
+  "w": 668,
+  "h": 512
+ },
+ "food_fries": {
+  "w": 573,
+  "h": 673
+ },
+ "doc_base": {
+  "w": 1034,
+  "h": 1910,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "doc_explain": {
+  "w": 1089,
+  "h": 1898,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "doc_point": {
+  "w": 917,
+  "h": 1906,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "plate_abdomen": {
+  "w": 1152,
+  "h": 2016
+ }
+}

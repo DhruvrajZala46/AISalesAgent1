@@ -1,0 +1,63 @@
+[
+ {
+  "name": "art/mom_grip",
+  "src": "art/src/stomach_mom.png",
+  "prompt": "Same stomach mom character, same J-shaped cut-away stomach with the visible inside and the small juice pool, same food pipe, same pink polka-dot headscarf with the bow, same long eyelashes and blush, same colors, same white gloves. Change only the pose and face: cheerful and busy, both gloved hands held together in front of its open inside, tightly gripping something long like the handle of a big stirring stick (but draw NO stick, only the gripping hands), focused happy eyebrows. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/mom_strain",
+  "src": "art/src/stomach_mom.png",
+  "prompt": "Same stomach mom character, same J-shaped cut-away stomach with the visible inside and the small juice pool, same food pipe, same pink polka-dot headscarf with the bow, same long eyelashes and blush, same colors, same white gloves. Change only the pose and face: pulling as hard as it can on something stuck, both gloved hands gripping tightly in front of its open inside (draw NO stick, only the gripping hands), eyes wide and shocked, eyebrows up, big sweat drops, leaning back. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/mom_phone",
+  "src": "art/src/stomach_mom.png",
+  "prompt": "Same stomach mom character, same J-shaped cut-away stomach with the visible inside and the small juice pool, same food pipe, same pink polka-dot headscarf with the bow, same long eyelashes and blush, same colors, same white gloves. Change only the pose and face: stern and suspicious mom on a phone call, holding a pink old-style phone handset to the side of its face with one gloved hand, the other hand on its side, one eyebrow raised, narrowed eyes. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/mom_yell",
+  "src": "art/src/stomach_mom.png",
+  "prompt": "Same stomach mom character, same J-shaped cut-away stomach with the visible inside and the small juice pool, same food pipe, same pink polka-dot headscarf with the bow, same long eyelashes and blush, same colors, same white gloves. Change only the pose and face: angry scolding mom, both gloved fists on its sides, leaning forward, furious eyebrows, eyes wide, a little red anger mark on the forehead. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/mom_despair",
+  "src": "art/src/stomach_mom.png",
+  "prompt": "Same stomach mom character, same J-shaped cut-away stomach with the visible inside and the small juice pool, same food pipe, same pink polka-dot headscarf with the bow, same long eyelashes and blush, same colors, same white gloves. Change only the pose and face: dramatic despair, both gloved hands pressed on its cheeks, big tears streaming from its eyes, sad worried eyebrows. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/mom_shove",
+  "src": "art/src/stomach_mom.png",
+  "prompt": "Same stomach mom character, same J-shaped cut-away stomach with the visible inside and the small juice pool, same food pipe, same pink polka-dot headscarf with the bow, same long eyelashes and blush, same colors, same white gloves. Change only the pose and face: huffy and fed up, both gloved hands pushing down hard toward the bottom of its own inside as if shoving something away, annoyed half-closed eyes, one eyebrow down. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/mom_groan",
+  "src": "art/src/stomach_mom.png",
+  "prompt": "Same stomach mom character, same J-shaped cut-away stomach with the visible inside and the small juice pool, same food pipe, same pink polka-dot headscarf with the bow, same long eyelashes and blush, same colors, same white gloves. Change only the pose and face: fed up, one gloved hand slapped on its forehead (facepalm), eyes squeezed shut, the other hand on its side, exasperated. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/brain_soda",
+  "src": "art/src/brain_timmy.png",
+  "prompt": "Same brain character, same pink brain, same red Santa hat, same white gloves, legs and shoes. Change only the pose and face: no phone now; happily gulping from a big plastic bottle of dark brown cola held up with both gloved hands, the bottle tilted up to where its mouth would be, eyes closed happily, a few fizzy bubbles. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/brain_eyeroll",
+  "src": "art/src/brain_timmy.png",
+  "prompt": "Same brain character, same pink brain, same red Santa hat, same white gloves, legs and shoes. Change only the pose and face: still holding the red phone to its side, bored and annoyed little kid rolling its eyes up, droopy eyebrows, slouching. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/rock_panic",
+  "src": "art/src/rock_base.png",
+  "prompt": "Same poop character, same dark-brown cracked boulder-like poop, same white gloves. Change only the pose and face: panicking, eyes wide with tiny pupils, both arms thrown up, big sweat drops, blue water splashing over its top. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/rock_soggy",
+  "src": "art/src/rock_base.png",
+  "prompt": "Same poop character, same dark-brown cracked boulder-like poop, same white gloves. Change only the pose and face: now soft, soggy and melting, slumped and droopy, shiny and wet, defeated sad half-closed eyes, arms hanging limp, sliding down. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/mom_boy",
+  "src": "art/src/boy_toilet.png",
+  "size": "1024x1792",
+  "prompt": "Same boy, same messy brown hair and same green and white striped t-shirt, now wearing blue shorts and sneakers, standing (no toilet) next to his worried mother, both full body, on the same flat pure green #00FF00 background, nothing else, no shadow. The boy looks sad and holds his belly with both hands. The mother: a woman in her thirties, brown hair in a low bun, pink cardigan, light jeans, standing beside him with one hand on his shoulder and the other hand raised a little as she talks, worried eyebrows, NO mouth at all (plain skin where her mouth would be). The boy has a small sad mouth. Same style: clean dark-brown outlines, flat soft colors with gentle shading, Korean webtoon. No text."
+ }
+]

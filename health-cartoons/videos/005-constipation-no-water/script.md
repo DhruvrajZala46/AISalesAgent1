@@ -1,6 +1,6 @@
 # 005 - Why Eating Without Water Can Make You Constipated
 
-Status (20 Nov 2026): **script draft, waiting for the user's approval.** No credits spent.
+Status (20 Nov 2026): **script approved by the user ("ship it"); video built, waiting for the user's verdict.**
 
 **Proven video we remake (user rule: only proven 10M+ videos, `research/NEXT-10.md` row 1):** Dr. Healthcare
 "why eating without water can make you constipated?" **27M views** (`B7eX1klo0j0`), that channel's #1 Short (37x its median).
@@ -79,3 +79,32 @@ Sources: NIDDK "Symptoms & Causes of Constipation"; Mayo Clinic "Constipation - 
 ## Voices (after approval)
 eleven_v4, 2 takes per line, picked by whisper accuracy + pitch range. Mom/stomach: a warm, nagging mum voice (the same voice for the clinic
 mom, like the reference). Timmy: kid voice (brain + boy). Rock poop: deep and tough. Soft poop: squeaky (pitched up). Doctor: Hope (brand).
+
+## How it was made (media is never committed; this re-creates it)
+**Voices:** ElevenLabs `eleven_v4`, flow `GLCEMRUIFSs8Qrgx0Flo`, 2 takes per line (session ids in `takes_manifest.tsv`; line 09 was
+re-made with a more dramatic direction, takes c/d). Voices: stomach + clinic mom = Dusty Garner `EMYWJ6jws25NB7xJgDxG`; Timmy (brain + boy)
+= Teddy Twinkle `XjGYkUkzth8BPs29fmcV`; soft poop = Tilly `MkTSSXNgnBULS6ek4pon` (+5 semitones); rock poop = Obsidian `QjEdRoRdZC2i3ncmFpNy`;
+doctor = Hope `tnSpp4vdxKPjI9w0GnoV`. Picked by `tools/score_takes.py` (whisper + pitch range, `takes/scores.json`):
+01a 02b 03b 04a 05a 06a 07b 08b 09c 10a 11b 12b 13b 14a 15a 16b 17b. Then `process_voice.sh`, `tighten.py proc 0.30`, `tempo.txt`, `words.py`.
+`build_audio.py`: the reference's beats and its two silent gags, line levelling to -19 dB, SFX at the reference's moments (verified ids).
+
+**Art:** Meta Muse Image via `tools/meta_art.py` (key only in `MODEL_API_KEY`). `prompts_01.json` plates + bases (rectum, bathroom, clinic
+poster changed to the digestive system, Mom = our 004 stomach + headscarf + lashes, food heap, 4 food items, rock poop, soft poop, the
+boy on the toilet, Timmy = our 003 brain + Santa hat); `prompts_02.json` poses; `prompts_03_open.json` open mouths, then
+`prompts_04_closed.json` closed mouths made FROM the open ones (004 lesson); `prompts_05_strain_c.json`. `prep_art.py` keys,
+`composite_mouths.py` pastes the mouths (`BASE_FROM_C` for mom_phone and rock_base, where the open edit also redrew the phone/arms).
+The clinic mom's closed mouth is her base frown. Doctor sprites + mouths are copied from 004; the stomach plate is 004's.
+The stick, its snap, the soda wave, fizz, water drops, sweat and the water stream are drawn in code (`parts_v5.js`).
+Build: `python3 build_audio.py && python3 assemble.py && node ../../tools/render.js && LIM=0.72 bash ../../tools/mix.sh video.mp4 final.mp4`.
+
+## Upload block
+**Title:** Why Eating Without Water Makes You Constipated 💩🥤  (the proven 27M wording: "Why eating without water can make you constipated?")
+**Cover frame:** Mom stomach yelling on the phone with the food pile (about 13 s), or the rock poop with arms crossed (about 37 s).
+**Description:**
+Timmy ate a HUGE meal... with soda and no water. 🥤 Now his stomach can't stir it, and a rock-hard poop has moved into his gut. Here's why
+too little water and fiber makes stool hard and dry, and the simple fix.
+
+A cartoon for general education, not medical advice. See a doctor if constipation lasts, hurts a lot, or comes with blood, vomiting or fever.
+Sources: NIDDK "Symptoms & Causes of Constipation"; Mayo Clinic "Constipation - Symptoms and causes".
+
+#shorts #health #constipation #digestion #healthfacts #humanbody #doctor #animation

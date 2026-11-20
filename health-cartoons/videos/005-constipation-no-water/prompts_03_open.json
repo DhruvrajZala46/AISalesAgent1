@@ -1,0 +1,92 @@
+[
+ {
+  "name": "art/mouth/stomach_mom_o",
+  "src": "art/src/stomach_mom.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, centered just below the eyes and above the open inside: an open delighted 'whoa!' mouth, a dark maroon oval with a small pink tongue. Simple flat cartoon style matching the eyes, thin dark outline, no lips, no lipstick."
+ },
+ {
+  "name": "art/mouth/mom_grip_o",
+  "src": "art/src/mom_grip.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, centered just below the eyes and above the open inside: an open cheerful talking mouth, dark maroon inside with a small pink tongue. Simple flat cartoon style matching the eyes, thin dark outline, no lips, no lipstick."
+ },
+ {
+  "name": "art/mouth/mom_strain_o",
+  "src": "art/src/mom_strain.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, centered just below the eyes and above the open inside: a wide open shocked mouth showing gritted white teeth. Simple flat cartoon style matching the eyes, thin dark outline, no lips, no lipstick."
+ },
+ {
+  "name": "art/mouth/mom_phone_o",
+  "src": "art/src/mom_phone.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, centered just below the eyes and above the open inside: an open stern talking mouth, dark maroon inside. Simple flat cartoon style matching the eyes, thin dark outline, no lips, no lipstick."
+ },
+ {
+  "name": "art/mouth/mom_yell_o",
+  "src": "art/src/mom_yell.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, centered just below the eyes and above the open inside: a wide open yelling mouth with a pink tongue. Simple flat cartoon style matching the eyes, thin dark outline, no lips, no lipstick."
+ },
+ {
+  "name": "art/mouth/mom_groan_o",
+  "src": "art/src/mom_groan.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, centered just below the eyes and above the open inside: an open groaning mouth, wide and wavy, dark maroon inside. Simple flat cartoon style matching the eyes, thin dark outline, no lips, no lipstick."
+ },
+ {
+  "name": "art/mouth/mom_despair_o",
+  "src": "art/src/mom_despair.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, centered just below the eyes and above the open inside: a wide open wailing crying mouth, wobbly, with a pink tongue. Simple flat cartoon style matching the eyes, thin dark outline, no lips, no lipstick."
+ },
+ {
+  "name": "art/mouth/mom_shove_o",
+  "src": "art/src/mom_shove.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, centered just below the eyes and above the open inside: an open huffy talking mouth, slanted to one side. Simple flat cartoon style matching the eyes, thin dark outline, no lips, no lipstick."
+ },
+ {
+  "name": "art/mouth/brain_timmy_o",
+  "src": "art/src/brain_timmy.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, on the front of the brain just below the eyes: an open whiny kid talking mouth with a small pink tongue. Simple flat cartoon style matching the eyes, thin dark outline, no lips, no lipstick."
+ },
+ {
+  "name": "art/mouth/brain_eyeroll_o",
+  "src": "art/src/brain_eyeroll.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, on the front of the brain just below the eyes: an open bored talking mouth, slanted to one side. Simple flat cartoon style matching the eyes, thin dark outline, no lips, no lipstick."
+ },
+ {
+  "name": "art/mouth/soft_base_o",
+  "src": "art/src/soft_base.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, on the front just below the eyes: a small open shouting mouth, pushy, dark inside with a pink tongue. Simple flat cartoon style matching the eyes, thin dark outline, no lips, no lipstick."
+ },
+ {
+  "name": "art/mouth/rock_base_o",
+  "src": "art/src/rock_base.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, on the front just below the eyes: an open smug talking mouth, a crooked lopsided opening, dark inside. Simple flat cartoon style matching the eyes, thin dark outline, no lips, no lipstick."
+ },
+ {
+  "name": "art/mouth/rock_panic_o",
+  "src": "art/src/rock_panic.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, on the front just below the eyes: a wide open screaming mouth with a pink tongue. Simple flat cartoon style matching the eyes, thin dark outline, no lips, no lipstick."
+ },
+ {
+  "name": "art/mouth/boy_toilet_o",
+  "src": "art/src/boy_toilet.png",
+  "size": "1024x1792",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, on the boy's face just below his nose: a wide open straining mouth with gritted white teeth. Simple flat cartoon style matching the eyes, thin dark outline, no lips, no lipstick."
+ },
+ {
+  "name": "art/mouth/mom_boy_o",
+  "src": "art/src/mom_boy.png",
+  "size": "1024x1792",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, ONLY on the mother's face, just below her nose: an open worried talking mouth with a little pink tongue. Do not change the boy at all. Simple flat cartoon style matching the eyes, thin dark outline, no lips, no lipstick."
+ }
+]

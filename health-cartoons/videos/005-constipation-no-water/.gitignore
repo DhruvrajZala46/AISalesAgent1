@@ -1,0 +1,6 @@
+render.log
+*.log
+snaps/
+art/src/
+art/mouth_unused/
+takes/dl*.tsv

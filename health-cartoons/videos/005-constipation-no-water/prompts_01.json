@@ -1,0 +1,53 @@
+[
+ {
+  "name": "art/plate_rectum",
+  "size": "1024x1792",
+  "prompt": "Vertical 9:16 2D cartoon medical illustration, background plate only, no characters, no faces: inside the end of the human large intestine (the rectum) shown as a cut-away: a wide vertical pink tube with soft wavy folds on its inner walls, running from the top of the frame down to a narrow closed exit at the bottom center, darker red muscle walls on both sides, a little yellow fat at the outer edges, warm and readable; a large empty space in the middle of the tube for two characters. Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+ },
+ {
+  "name": "art/plate_bathroom",
+  "size": "1024x1792",
+  "prompt": "Vertical 9:16 cartoon home bathroom interior background, no people: a white toilet with the lid up in the lower middle of the frame, a toilet paper roll on a wall holder at the left, light cream wall tiles, a small window with soft morning light, a blue bath mat on the floor. Leave the toilet seat free for a sitting child. Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+ },
+ {
+  "name": "art/stomach_mom",
+  "src": "art/src/stomach004.png",
+  "prompt": "Same stomach character, same J-shaped cut-away stomach with the visible inside and the small juice pool, same food pipe, same colors, same white gloves. Turn it into a caring MOM: add long dark curled eyelashes, a pink polka-dot headscarf tied with a small bow on top of its head, and soft pink blush on the cheeks. Happy delighted face, both gloved hands clasped together in front. Same flat pure green #00FF00 background, full body visible, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/food_heap",
+  "size": "1024x1024",
+  "prompt": "A big messy pile of dry, greasy fast food on a perfectly flat pure green #00FF00 background, full body, centered, nothing else, no shadow. Cheeseburgers, fried chicken drumsticks, fried eggs and french fries heaped together in a low, wide mound, seen from the front, no faces, no plate. Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+ },
+ {
+  "name": "art/food_items",
+  "size": "1024x1024",
+  "prompt": "Four separate food items spaced far apart in a 2 by 2 grid on a perfectly flat pure green #00FF00 background, nothing touching each other, no shadows: a cheeseburger, a fried chicken drumstick, a fried egg, a red carton of french fries. No faces. Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+ },
+ {
+  "name": "art/rock_base",
+  "size": "1024x1024",
+  "prompt": "Cute 2D cartoon poop character on a perfectly flat pure green #00FF00 background, full body, centered, nothing else, no shadow. A big, hard, dark-brown lumpy log of poop that looks like a boulder: dry cracked surface, chunky and stubborn, sitting heavily with thick arms crossed. Big round white googly eyes with black pupils, smug half-lidded eyes and heavy confident eyebrows, but NO mouth at all. Thick white rubber-hose arms with white gloves. Cartoon and clean, not gross. Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+ },
+ {
+  "name": "art/soft_base",
+  "size": "1024x1024",
+  "prompt": "Cute 2D cartoon poop character on a perfectly flat pure green #00FF00 background, full body, centered, nothing else, no shadow. A small, soft, light-brown swirl of poop shaped like a soft-serve ice cream, shiny and smooth, pushy and impatient, leaning forward and pushing with both gloved hands. Big round white googly eyes with black pupils and determined eyebrows, but NO mouth at all. Tiny white rubber-hose arms and legs with white gloves and shoes. Cartoon and clean, not gross. Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+ },
+ {
+  "name": "art/boy_toilet",
+  "size": "1024x1792",
+  "prompt": "2D cartoon of an 8-year-old boy sitting on a white toilet, on a perfectly flat pure green #00FF00 background, the whole toilet and the whole boy visible, nothing else, no shadow. Messy brown hair, green and white striped t-shirt, shorts down at his ankles (nothing private visible, his t-shirt covers his lap), straining very hard: red face, eyes squeezed shut, big sweat drops, fists clenched on his knees. NO mouth at all (plain skin where the mouth would be). Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+ },
+ {
+  "name": "art/brain_timmy",
+  "src": "art/src/brain003.png",
+  "prompt": "Same brain character, same pink brain, same red phone in its gloved hand, same white gloves, legs and shoes. Add a red Santa hat with white fur trim and a white pompom on top of the brain, and make the face a cheeky, whiny little kid: big pleading eyes, raised worried eyebrows. Same flat pure green #00FF00 background, full body visible, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/clinic_bg",
+  "src": "art/src/clinic003.png",
+  "size": "1024x1792",
+  "prompt": "Same doctor's office background, same walls, window, clock, desk, computer and blue exam chair, same colors and style. Change only the framed poster on the wall: it now shows a simple cartoon diagram of the human digestive system (stomach and coiled intestines) instead of a head. No text, no people."
+ }
+]
