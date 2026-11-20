@@ -3,9 +3,18 @@
 ## A. Health-cartoon Shorts (`health-cartoons/`) - the CURRENT project (Nov 2026)
 
 English "talking organs + doctor" cartoon Shorts, drawn and animated entirely in code.
-**New chat about these videos? Read `health-cartoons/README.md`, then `health-cartoons/PLAYBOOK.md` and `health-cartoons/LEARNINGS.md` FIRST.**
-The quality bar is `health-cartoons/videos/001-earwax-cotton-buds/` (user: "mind blowing - keep this same standard in ALL next videos":
-same visuals, sounds, SFX, music, hooks, retention, script format and theme). Start every new video by copying that folder.
+**New chat about these videos? Read `health-cartoons/README.md`, then `health-cartoons/PLAYBOOK.md` (section 0 first) and `health-cartoons/LEARNINGS.md` FIRST.**
+The standard is `health-cartoons/videos/003-food-up-nose/` (built on the 001 engine; the user called 001 "mind blowing").
+After 003 the user said: **"Save this standard. Every new video: SAME effort or MORE, in editing and scripting. Never forget it."**
+So every video runs PLAYBOOK section 0 in full:
+- data-picked topic;
+- re-study the references;
+- a script measured against their transcripts and approved before spending credits;
+- 2 voice takes picked by measurement;
+- an acting timeline, frame checks, full QA;
+- an upload block, then save everything.
+
+003's measured numbers are the floor. Start every new video by copying the 003 folder.
 The user writes in Hinglish; reply in simple Hinglish. Be honest about quality (measured, never "99%" claims).
 Never commit media, keys or cookies; `health-cartoons/tools/fetch_assets.sh` and each `script.md` let you re-create the media.
 

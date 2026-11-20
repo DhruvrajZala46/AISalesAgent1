@@ -1,9 +1,10 @@
 # Health-cartoon Shorts: the standard (read before every video)
 
-The quality bar is **video 001**, `videos/001-earwax-cotton-buds/` ("Why Does My Ear Feel Blocked After Cotton Buds?").
-The user called it "mind blowing" and asked that every next video keep exactly this standard:
-the same visuals, sound, sound effects, music, hooks, retention, script format and theme.
-Start every new video by copying 001 and changing only the topic-specific parts.
+**The bar is video 003** (`videos/003-food-up-nose/`, "Why Does Food Come Out Your Nose When You Laugh?"), built on the engine of
+video 001 (`videos/001-earwax-cotton-buds/`, which the user called "mind blowing"). After 003 the user said:
+**"Save this standard. Every new video: same effort or MORE effort, in editing and scripting. Never forget it."**
+So every new video starts by copying the 003 folder (its `assemble.py` + `parts_*.js` pattern) and goes through **section 0 in full**.
+Skipping a step, guessing instead of measuring, or claiming "99%" without proof is a failure of this standard.
 
 The format follows the user's reference channel (dr.healthcare1 on Instagram, 718K followers): body parts and objects with
 googly eyes argue during a procedure or problem, and then a doctor explains it in a clinic.
@@ -12,26 +13,50 @@ Do not clone a real person's voice.
 
 ---
 
+## 0. The effort standard (non-negotiable, every video)
+
+Do every step, in order. Each one produced a measured result in 003; the next video must match or beat it.
+
+| # | Step | What 003 did (the minimum) |
+|---|---|---|
+| 1 | **Topic from data** | `yt-viral` ranking by multiple over each channel's own median, across the reference AND Health Manager. Prefer a topic proven on both channels at 10M+ (003: 22M + 20M). Our own angle on it. |
+| 2 | **Study the references again** | Transcribe and contact-sheet the relevant top videos (all the user sends). Write down their hook, acting, camera, art details. |
+| 3 | **Script in their voice, measured** | Lines of 3-8 words (median 4-6), 100% of cartoon lines ≤ 8 words, questions 11-37%, interjections 10-43%, arc "wants → no + reason → warning of the consequence → outside trigger → it happens → blame/'See?'", clinic 64-83%, doctor "That's called / You're dealing with X" + 2-sentence mechanism + tip, no spoken CTA. Facts checked against named sources. Show the measured table to the user. |
+| 4 | **User approves the script** | Never spend credits before "okay". |
+| 5 | **Voices** | eleven_v4, 2 takes per line, pick by whisper accuracy + pitch range (`takes/scores.json`); regenerate any line with a misheard key word; tighten pauses + tempo pass to 2.7-3.0 words/s. |
+| 6 | **Audio timeline** | `build_audio.py`: tight gaps (0.12-0.25 s), overlaps where people talk over each other (the palate shouts over the laugh), ≥ 25 SFX tied to words and actions; find missing SFX on Mixkit, identify them with the AST tagger, or synthesize them (003's slurp). |
+| 7 | **World art** | One locked wide shot of a real anatomy cross-section that fills the frame (camera zoom so the action area is big); thin dark outlines, flat pink flesh, yellow bone with dots, white labels on the anatomy. Every character: big googly eyes, brows, 5-viseme mouth, white rubber-hose arms with mitten hands. |
+| 8 | **Acting timeline** | A pose for every line (point, shove, cross arms, jazz hands, hands on cheeks, fist), expression changes (stern, dramatic, panic + sweat, sleepy, smug, flinch), and a visual for every teaching word (arrows, X, label pops, thought bubble showing the warned consequence, air streaks, "HA!" letters, speed lines, glow). |
+| 9 | **Look at frames before rendering** | `snap.js` at 4-9 moments per pass; fix what looks wrong (003 needed 6 passes: boxy brain, small hero, empty lower half, antenna arms, arms over eyes, bubble dots on the doctor's face). |
+| 10 | **Full render + QA** | 1 fps contact sheet of the whole video, close-ups of doubtful frames, `retention_check.py`, whisper check of the FINAL mix (≥ 95% word match), loudness about −10 LUFS with true peak ≤ −1 dB. |
+| 11 | **Deliver** | The mp4 plus a copy-ready upload block (Question-formula title, description with sources and "education only", hashtags) and the honest list of what is still weak. End with "Ship it, or change it?" |
+| 12 | **Save** | Code, `script.md` (all ElevenLabs IDs, picked takes, tempo), docs and LEARNINGS committed and pushed. Media never committed. |
+
+**003's measured numbers (the floor for the next video):** frozen frames 1.7%, longest nearly-static stretch 1.0 s, clinic at 64%,
+2.73 words/s, 27 SFX, final-mix word match 96.8%, −10.8 LUFS, true peak −1.0 dB, 70 s.
+
+---
+
 ## 1. Script format (fixed)
 
 | Beat | Time | What happens | Rules |
 |---|---|---|---|
-| Hook | 0.0-1.0 s | Outside view of the real body part (e.g. the ear) with the object going in, then the camera zooms inside | Big action in the first 0.5 s. The first line starts by 0.5 s. |
+| Hook | 0.0-1.0 s | Inside the body from frame 1, characters already on screen, the intruder enters by 0.3-0.6 s (001 used a 1 s outside shot first; 003 starts inside) | Big action in the first 0.5 s. The first line starts by 0.6 s. |
 | Line 1 | ~0.5 s | Confused or pained line from an organ/object: *"Huh?! What's that … doing in here?"* / *"Ow!"* | It must name or show the weird thing. |
-| Inside story | ~1-28 s | 8-9 short lines (2-4 s each) between 2-3 cartoon characters | Every joke beat is also a teaching beat (a physical action that shows the cause). |
+| Inside story | ~1-44 s | 15-22 short lines between 2-3 cartoon characters (003: noodle, soft palate, brain on the phone) | Every joke beat is also a teaching beat (a physical action that shows the cause). |
 | Teaching gag | late inside | One line that states the mechanism as a joke (e.g. eardrum: *"I can't vibrate!"*) | |
 | Payoff | end of inside | A confused line and a visual of the consequence (e.g. sound waves blocked plus a sad trombone) | |
-| Clinic question (starts at **about 60-70% of the runtime**, like the reference) | ~6 s | Patient: *"Doc, [symptom]? But I [habit]!"* | |
+| Clinic question (starts at **64-83% of the runtime**, like the reference) | ~5 s | Patient: *"Doc, [symptom]? But I [habit]!"* | |
 | Doctor | **≤ 15 s** | "That's the problem." → mechanism (2 sentences) → **name of the condition** → what to do | Two thought-bubble replays, a punch-in and a label box on the condition name, then a tip label. |
-| Stinger + CTA | ~4 s | Back outside: the object character sulks with one line that repeats the lesson, then **FOLLOW for more body secrets** | |
-| Total | **50-68 s** | | Speech about 2.8-3.0 words/s (reference) |
+| Stinger + CTA | ~5 s | The object character sulks (003: the noodle on a tissue, a tear) with one line that repeats the lesson, then the **FOLLOW for more body secrets** card. The CTA is on screen only; the reference never speaks one. | |
+| Total | **55-75 s** (their #1 is 75 s) | | Speech about 2.7-3.0 words/s (reference) |
 
 **Topic choice:** follow `research/VIRAL-STUDY.md`, and prefer a topic proven on BOTH same-format channels (§10): one 20M+ hit alone is not proof. Pick a habit almost everyone has, with a famous belief or a mild fear, that can be shown as an object travelling inside the body (eating and swallowing first). Never pick rare surgeries; they get 20K-120K views.
 
 Medical facts must come from a real guideline or review (001: AAO-HNS Clinical Practice Guideline, Cerumen Impaction, 2017).
 Say plainly what was not verified.
 
-## 2. Voices (ElevenLabs, model `eleven_v3`, `generations_count: 1`)
+## 2. Voices (ElevenLabs, model `eleven_v4` from 003; 001 used `eleven_v3`)
 
 | Role | Voice (name / id) | After-processing | Why |
 |---|---|---|---|
@@ -114,11 +139,11 @@ Say plainly what was not verified.
 
 | Metric | Reference channel | Video 001 | Target |
 |---|---|---|---|
-| Frozen frames (%) | 24-44 | 15 | ≤ 20 |
-| Longest nearly-static stretch | 1.6-3.0 s | 1.1 s | ≤ 1.5 s |
+| Frozen frames (%) | 24-44 | 001: 15, **003: 1.7** | ≤ 20 (aim ≤ 5) |
+| Longest nearly-static stretch | 1.6-3.0 s | 001: 1.1 s, **003: 1.0 s** | ≤ 1.5 s |
 | Median pause between lines | 0.28-0.44 s | 0.35 s | 0.3-0.45 s |
 | Doctor section | 13-22 s | 17.5 s | ≤ 18 s |
-| SFX count | ~15 | 21 | ≥ 18 |
+| SFX count | ~15 | 001: 21, **003: 27** | ≥ 25 |
 | Loudness (YouTube) | −8.7 to −10.2 LUFS | 001: −13.6 (too quiet), 002: −10.3 | about −10 |
 
 ## 6. Pipeline
@@ -151,6 +176,9 @@ SCENE X exterior (`budSVG`, ear, CTA) → assemble → timing (visemes, `worldSt
 - [ ] The medical claims are checked against a named source.
 - [ ] Final loudness is about −10 LUFS (true peak below −0.3 dB), the music is audible under the voice, and nothing clips.
 - [ ] A 1 fps contact sheet has been looked at end to end, and the 4-6 fps strips around the hook, the impact and the clinic.
+- [ ] Whisper on the FINAL mix matches the script ≥ 95% (003: 96.8%); every misheard key word is fixed or regenerated.
+- [ ] Thought bubbles are big enough to read on a phone (003 clinic bubble: scale 1.38) and nothing sits on a face.
+- [ ] Section 0 was done in full. The effort is the same as 003 or more.
 
 ## 8. Honest limits and upgrade path
 

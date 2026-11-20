@@ -6,7 +6,9 @@ English health-explainer Shorts in the "talking organs + doctor" cartoon format.
 1. `PLAYBOOK.md`: the fixed standard (script beats, voices, music and SFX map, visual rules, retention targets, pipeline, QA).
 2. `LEARNINGS.md`: every piece of user feedback and the rule it created.
 3. `research/VIRAL-STUDY.md`: what makes the reference channel's Shorts hit 10M-27M (topics, hooks, script, sound, retention).
-4. `videos/001-earwax-cotton-buds/`: the quality bar. Copy this folder to start the next video.
+4. `videos/003-food-up-nose/`: **the standard to copy** (assemble.py + parts files on the 001 engine). `videos/001-earwax-cotton-buds/` is the original engine.
+
+**Every video: PLAYBOOK §0 in full, the same effort as 003 or more.** The user asked for this explicitly and it must never be forgotten.
 
 Layout:
 - `tools/`: fetch_assets.sh, process_voice.sh, words.py, render.js, snap.js, mix.sh, retention_check.py, and the analysis helpers

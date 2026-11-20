@@ -9,10 +9,11 @@
 | 5 | **v3 = video 001** | **"Mind blowing. Keep this same quality in all next videos."** | This is the bar. Copy 001 and change only the topic parts. |
 | 6 | Viral study of the reference channel (406 Shorts, top 10 transcribed) | (requested) | Topic families, hook flavours, clinic at ~70%, YouTube master at about −10 LUFS. Never copy scripts or identity: format only. |
 | 7 | Video 002 preview (swallowed gum, first 35 s) | **"10%. Glitchy, weird visuals, hard to understand, basic, looks AI-made. Voices, sound, pace and story all bad."** | Measured in `research/VIRAL-STUDY.md` §11: open inside the body with the characters on screen; speaking characters fill 30-60% of the width and have arms; one locked wide shot per scene (no camera move per line); clean pink anatomy with recognisable objects; plain 3-7-word bro lines. Pick topics proven on BOTH same-format channels (§10). |
+| 8 | Video 003 (food out the nose when you laugh): measured script, eleven_v4 voices picked by measurement, acting timeline, 6 frame-check passes | **Script: "now okay". After the video: "Save this standard. Every new video: same effort or MORE, in editing and scripting. Never forget it."** | PLAYBOOK §0 (the effort standard) is mandatory for every video, and 003's numbers are the floor. |
 
 Other user preferences:
 - Talks in Hinglish; answer in simple Hinglish with plain words, clear and direct.
 - Wants honesty: never claim "99% same" when it is not. Give a measured comparison.
-- No AI image or video generation for now (the user chose code). Video models are not needed at all.
+- Visuals are drawn in code (the user chose code). No image model is connected; video models are not needed at all.
 - The user wants a separate channel in this format, with a **female doctor** and a different, trustworthy colour theme.
 - "Save everything": all code and docs live here in git. Media is never committed (repo rule); re-create it from the IDs and scripts.
