@@ -49,12 +49,12 @@ No spoken CTA (none of their top 10 speaks one). On screen: the FOLLOW card from
 | Median words per cartoon line | 4-6 | 5 |
 | Lines of 8 words or fewer | 80-100% | 100% |
 | Lines that are questions | 11-37% | 27% |
-| Lines with an interjection (yo, huh, whoa, hey, wait, see…) | 10-43% | 32% |
+| Lines with an interjection (yo, huh, whoa, hey, wait, see…) | 10-43% | 27% |
 | First word | 0.6-1.8 s | ~0.6 s |
-| Clinic start | 64-83% (2 of the top 4 have no clinic) | ~61% |
+| Clinic start | 64-83% (2 of the top 4 have no clinic) | ~62% (estimate, before voicing) |
 | Doctor part | 15-17 s | ~15 s (43 words) |
 | Pace | 2.8-3.0 words/s | voiced at the same pace |
-| Total | 24-97 s, most 52-68 | ~60 s |
+| Total | 24-97 s, most 52-68 | ~61-65 s (estimate) |
 
 ## Beats (one locked wide shot per scene; motion comes from acting)
 - 0.0 Head cross-section: mouth with a ramen bowl at the lips, nose cavity above, throat below. Soft Palate is a fleshy flap with googly eyes
