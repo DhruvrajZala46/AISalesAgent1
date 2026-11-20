@@ -15,7 +15,9 @@ branch (`claude/youtube-channel-analysis-lghfsv`). A new chat must start on this
   11:20. Music "Gymnopedie No 3" and "At Rest" (Kevin MacLeod, CC BY 4.0), no sound effects. Margaret and the Queen
   Mother are shown in photographs only (no real film found). Docs: `VISUAL-ANALYSIS.md`, `SOURCES-LOG.md` (26 of 47
   clips marked PARTLY), `sources_used.json`, `clips.py`, `edit.py`, `CREDITS.txt`, `CHAPTERS.txt`, `gen_docs_royal.py`;
-  scripts in `workflow/session-tools/royal-women/`. Rights unresolved. **Waiting for "ship it, or change it?"**
+  scripts in `workflow/session-tools/royal-women/`. Rights unresolved. Thumbnails (20 Nov): A "Who Is #1?"
+  (Diana, Grace, Kate in tiaras and veil), B "Elegant Royals", C "Timeless", in the channel's three-photo format;
+  research and reasons in `THUMBNAIL.md` (104 thumbnails read). **Waiting for "ship it, or change it?"**
 - **Most elegant royal women script v1 (19 Nov 2026, `videos/most-elegant-royal-women/script.md` + `beats.txt`):** the
   user shipped idea 3 of `research-2026-11-18b.md`, in the oHh4T67jJNM format. Title "The 7 Most Elegant Royal Women
   Ever, Ranked" (94/100). Countdown 7 to 1: Princess Margaret (Dior, 1951: dress for the photograph you'll keep); Queen

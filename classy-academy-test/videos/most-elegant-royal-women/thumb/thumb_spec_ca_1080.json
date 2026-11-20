@@ -1,0 +1,143 @@
+{
+ "A_who_is_1": {
+  "underline": true,
+  "dark": 110,
+  "scale": 1.5,
+  "maxw": 980,
+  "logo_dark": 110,
+  "small_cap": 35,
+  "yb": 318,
+  "top": "Most Elegant Royals",
+  "big": "Who Is #1?",
+  "small": "*ranked*",
+  "panels": [
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/thr/cand/tdiana_6c.jpg",
+    "face": [
+     222,
+     314,
+     461,
+     461
+    ],
+    "fw": 0.5,
+    "fy": 0.22
+   },
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/thr/cand/pgracewed_46.jpg",
+    "face": [
+     139,
+     127,
+     313,
+     313
+    ],
+    "fw": 0.48,
+    "fy": 0.17
+   },
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/thr/cand/tkate_0.jpg",
+    "face": [
+     207,
+     201,
+     322,
+     322
+    ],
+    "fw": 0.46,
+    "fy": 0.2
+   }
+  ]
+ },
+ "B_elegant_royals": {
+  "underline": true,
+  "dark": 110,
+  "scale": 1.5,
+  "maxw": 980,
+  "logo_dark": 110,
+  "small_cap": 35,
+  "yb": 318,
+  "top": "The Most",
+  "big": "Elegant Royals",
+  "small": "*ever, ranked*",
+  "panels": [
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/thr/cand/pgracewed_24.jpg",
+    "face": [
+     471,
+     176,
+     258,
+     258
+    ],
+    "fw": 0.44,
+    "fy": 0.2
+   },
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/thr/cand/pdianavogue_24.jpg",
+    "face": [
+     151,
+     43,
+     330,
+     330
+    ],
+    "fw": 0.46,
+    "fy": 0.18
+   },
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/thr/cand/pkatewed_13.jpg",
+    "face": [
+     337,
+     239,
+     335,
+     335
+    ],
+    "fw": 0.44,
+    "fy": 0.2
+   }
+  ]
+ },
+ "C_timeless": {
+  "underline": true,
+  "dark": 110,
+  "scale": 1.5,
+  "maxw": 980,
+  "logo_dark": 110,
+  "small_cap": 35,
+  "yb": 330,
+  "top": "7 Royal Women",
+  "big": "Timeless",
+  "small": "*who is #1?*",
+  "panels": [
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/thr/cand/pmargportrait_9.jpg",
+    "face": [
+     383,
+     508,
+     837,
+     837
+    ],
+    "fw": 0.5,
+    "fy": 0.18
+   },
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/thr/cand/tdiana_13.jpg",
+    "face": [
+     570,
+     470,
+     300,
+     300
+    ],
+    "fw": 0.3,
+    "fy": 0.24
+   },
+   {
+    "src": "/tmp/claude-0/-home-user-AISalesAgent1/e022df48-ce52-5e1c-9920-7b34f523b018/scratchpad/thr/cand/tgrace_42.jpg",
+    "face": [
+     150,
+     185,
+     492,
+     492
+    ],
+    "fw": 0.55,
+    "fy": 0.2
+   }
+  ]
+ }
+}
