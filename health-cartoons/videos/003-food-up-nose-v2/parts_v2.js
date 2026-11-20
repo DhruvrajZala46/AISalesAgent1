@@ -152,9 +152,9 @@ function renderWorld(T){
   placeActor('pal',ps.pose,ps.x,ps.y,ps.H,{rot:ps.rot,sx:ps.sx,sy:ps.sy,env:ps.env,mood:ps.pose==='pal_drama'?.6:-.3,T,seed:3,blink:blinkK(T,.4),mouth:ps.pose!=='pal_fall'});
   show('ticks',T>=E.shut-.05&&T<E.shut+1.1&&Math.floor(T*10)%2===0?1:0);
   // brain on the phone (inset over the brain)
-  const inA=T>=E.ring-.35&&T<E.laugh+.25, inB=T>=E.blame-.45&&T<T_CLINIC, inOn=inA||inB;
+  const inA=T>=E.ring-.35&&T<E.laugh+.25, inB=T>=E.blame-.05&&T<T_CLINIC, inOn=inA||inB;
   show('bInset',inOn?1:0);
-  if(inOn){const t0=inA?E.ring-.35:E.blame-.45;const k=eob(P(T,t0,t0+.3))*(inA?1-eio(P(T,E.laugh-.05,E.laugh+.25)):1);
+  if(inOn){const t0=inA?E.ring-.35:E.blame-.05;const k=eob(P(T,t0,t0+.3))*(inA?1-eio(P(T,E.laugh-.05,E.laugh+.25)):1);
     const ringOn=T>=E.ring&&T<E.brain-.05, shk=ringOn?Math.sin(T*60)*5:0;
     $('bInset').setAttribute('transform',`translate(${575+shk},176) scale(${k.toFixed(3)})`);
     show('ring',ringOn&&Math.floor(T*8)%2===0?1:0);
@@ -187,7 +187,7 @@ function renderInside(T){
   if(T>=E.laugh&&T<E.launch+.6){const a=T<E.drop?4:8;sx+=Math.sin(T*47)*a;sy+=Math.cos(T*41)*a;}
   const imp=(t0,a)=>{const k=P(T,t0,t0+.3);if(k>0&&k<1){sx+=Math.sin(k*40)*a*(1-k);sy+=Math.cos(k*33)*a*(1-k);}};
   imp(E.noway,6);imp(E.drop+.7,12);imp(E.popout,10);
-  const pz=eio(P(T,E.innose,E.innose+1.2))*(1-eio(P(T,E.popout+.5,E.popout+1.1)));
+  const pz=eio(P(T,E.innose,E.innose+1.2))*(1-eio(P(T,E.popout+.05,E.popout+.45)));
   const z=1.02+.30*pz; let cx=lerp(360,230,pz), cy=lerp(640,500,pz); cx=clamp(cx,360/z-5,725-360/z); cy=clamp(cy,640/z,1280-640/z);
   $('cam').setAttribute('transform',`translate(${360+sx},${640+sy}) scale(${z}) translate(${-cx},${-cy})`);
   popLabel('lbPal',T,1.0,5.2,472,262);
