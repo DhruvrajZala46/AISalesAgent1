@@ -15,3 +15,6 @@ Layout:
   (score_voices.py for voice matching, tag_audio.py for music/SFX tagging, music_similarity.py).
 - `assets/`: font, music and SFX (git-ignored; `tools/fetch_assets.sh` re-creates it).
 - `videos/NNN-slug/`: `scene.html`, `build_audio.py`, `words.json`, `script.md`. Media is never committed.
+
+Channel brand (Nov 2026): name **Giggle MD** (handle @GiggleMD was free when checked). `brand/`: `python3 build.py && node shoot.js`
+renders `dp.png` (800×800) and `banner.png` (2560×1440, text inside the 1546×423 safe area) from the same doctor and organ characters as the videos.

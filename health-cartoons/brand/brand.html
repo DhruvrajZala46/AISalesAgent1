@@ -1,0 +1,176 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:LG;src:url(../assets/fonts/LuckiestGuy.woff2)}
+html,body{margin:0;background:#000;overflow:hidden}svg{display:block}
+.lbl{font-family:Inter,sans-serif;font-weight:900;font-size:22px;fill:#111}
+.ttl{font-family:LG,sans-serif;paint-order:stroke;stroke:#10272d;stroke-linejoin:round}
+</style></head><body>
+<svg id="S" xmlns="http://www.w3.org/2000/svg"></svg>
+<script>window.DATA={lines:[],ev:{},start:{},end:0};</script>
+<script>
+// =============== helpers ===============
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const P=(t,a,b)=>clamp((t-a)/(b-a));
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eo=x=>1-Math.pow(1-x,3);
+const eob=x=>{const c1=1.7,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const lerp=(a,b,x)=>a+(b-a)*x;
+const INK='#2a2322';
+const VE='vector-effect="non-scaling-stroke"';
+const LN=`stroke="${INK}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" ${VE}`;
+const LN2=`stroke="${INK}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" ${VE}`;
+const TH=(c)=>`stroke="${c}" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" fill="none" ${VE}`;
+function tr(id,x,y,sx=1,sy=sx,r=0){const e=$(id);if(e)e.setAttribute('transform',`translate(${x},${y}) rotate(${r}) scale(${sx},${sy})`);}
+function show(id,v){const e=$(id);if(e)e.setAttribute('opacity',v);}
+let DEFS='', UID=0;
+// shape with airbrushed inner shading (soft darker edge), like the reference
+function shaded(d,fill,shade,w=16,extra=''){const id='c'+(UID++);DEFS+=`<clipPath id="${id}"><path d="${d}"/></clipPath>`;
+  return `<path d="${d}" fill="${fill}"/><g clip-path="url(#${id})"><path d="${d}" fill="none" stroke="${shade}" stroke-width="${w}" filter="url(#soft)" opacity=".9"/></g><path d="${d}" fill="none" ${LN} ${extra}/>`;}
+// Catmull-Rom smooth path through points
+function smooth(pts,closed=false){let s=`M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;const n=pts.length;
+  for(let i=0;i<n-1;i++){const p0=pts[Math.max(0,i-1)],p1=pts[i],p2=pts[i+1],p3=pts[Math.min(n-1,i+2)];
+    s+=` C${(p1[0]+(p2[0]-p0[0])/6).toFixed(1)},${(p1[1]+(p2[1]-p0[1])/6).toFixed(1)} ${(p2[0]-(p3[0]-p1[0])/6).toFixed(1)},${(p2[1]-(p3[1]-p1[1])/6).toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;}
+  return s;}
+// tapered limb around a centre line (shoulder, elbow, wrist)
+function limbD(pts,ws){const L=[],R=[];const n=pts.length;
+  for(let i=0;i<n;i++){const a=pts[Math.max(0,i-1)],b=pts[Math.min(n-1,i+1)];let dx=b[0]-a[0],dy=b[1]-a[1];const d=Math.hypot(dx,dy)||1;dx/=d;dy/=d;
+    const w=ws[i]/2;L.push([pts[i][0]-dy*w,pts[i][1]+dx*w]);R.push([pts[i][0]+dy*w,pts[i][1]-dx*w]);}
+  const we=ws[n-1]/2, ws0=ws[0]/2;
+  let s=smooth(L);s+=` A${we},${we} 0 0 0 ${R[n-1][0].toFixed(1)},${R[n-1][1].toFixed(1)}`;
+  const r=smooth(R.slice().reverse());s+=' '+r.replace(/^M[^C]*/,'');s+=` A${ws0},${ws0} 0 0 0 ${L[0][0].toFixed(1)},${L[0][1].toFixed(1)}Z`;return s;}
+
+// ---------- cartoon object eyes (googly, with lids + brows) ----------
+function oEye(id,r,lidCol){const c='e'+(UID++);DEFS+=`<clipPath id="${c}"><ellipse rx="${r*.92}" ry="${r}"/></clipPath>`;
+  return `<g id="${id}"><ellipse rx="${r*.92}" ry="${r}" fill="#fff"/><g clip-path="url(#${c})"><circle id="${id}_p" r="${r*.46}" fill="#1b1717"/><circle id="${id}_h" r="${r*.15}" fill="#fff"/>
+   <g id="${id}_lid"><rect x="${-r*2}" y="${-r*3}" width="${r*4}" height="${r*2}" fill="${lidCol}"/><line x1="${-r*2}" x2="${r*2}" y1="${-r}" y2="${-r}" ${LN2}/></g></g>
+   <ellipse rx="${r*.92}" ry="${r}" fill="none" ${LN2}/></g>`;}
+// lid: amount 0..1 (closed), tilt degrees ; look dx,dy
+function setOEye(id,r,{dx=0,dy=0,lid=.12,tilt=0,blink=0,small=false}={}){const d=Math.hypot(dx,dy)||1,m=r*.42,k=Math.min(1,d/40);
+  const px=dx/d*m*k,py=dy/d*m*k;const p=$(id+'_p');p.setAttribute('cx',px);p.setAttribute('cy',py);p.setAttribute('r',r*(small?.3:.46));
+  const h=$(id+'_h');h.setAttribute('cx',px-r*.13);h.setAttribute('cy',py-r*.15);
+  const L=Math.max(lid,blink);$(id+'_lid').setAttribute('transform',`rotate(${tilt}) translate(0,${L*2*r})`);}
+function blinkK(t,ph){const k=(t+ph)%3.9;return k<.13?1-Math.abs(k-.065)/.065:0;}
+function brow(id){return `<path id="${id}" fill="none" ${LN2}/>`;}
+function setBrow(id,x,y,w,ang,arch=0){$(id).setAttribute('d',`M${x-w/2},${y} Q${x},${y-arch} ${x+w/2},${y}`);$(id).setAttribute('transform',`rotate(${ang},${x},${y})`);}
+function mouthD(o,w,mood=0){ // mood: +1 smile, -1 frown
+  if(o<.08){return {d:`M${-w*.7},0 Q0,${mood*w*.45} ${w*.7},0`,fill:'none'};}
+  const h=3+o*w*1.25;return {d:`M${-w*.75},-1 Q0,${-2+mood*2} ${w*.75},-1 Q${w*.6},${h} 0,${h+1} Q${-w*.6},${h} ${-w*.75},-1Z`,fill:'#5e1a20'};}
+function setMouth(id,o,w,mood=0){const m=mouthD(clamp(o),w,mood);const e=$(id);e.setAttribute('d',m.d);e.setAttribute('fill',m.fill);
+  const t=$(id+'_t');if(t){t.setAttribute('opacity',o>=.25?1:0);t.setAttribute('cy',2+o*w*1.05);t.setAttribute('rx',w*.4);t.setAttribute('ry',o*w*.35);}}
+function mouthEl(id,x,y){return `<g transform="translate(${x},${y})"><path id="${id}" ${LN2}/><path id="${id}_w" fill="#fff" opacity="0"/><ellipse id="${id}_t" cx="0" cy="0" rx="1" ry="1" fill="#d76d72" opacity="0"/></g>`;}
+
+// ---------- data / lip sync ----------
+const D=window.DATA, FPS=30;
+function speak(who,T){for(const L of D.lines){if(L.who===who&&T>=L.t0&&T<L.t0+L.dur){return L.env[Math.floor((T-L.t0)*FPS)]||0;}}return 0;}
+function lineT(id){return D.lines.find(l=>l.id===id).t0;}
+function wordT(id,w,n=0){const L=D.lines.find(l=>l.id===id);const m=L.words.filter(x=>x[2]===w);return m[n]?m[n][0]:L.t0;}
+function labelBox(id,text,x,y,sz=22){const w=text.length*sz*.66+26;return `<g id="${id}" opacity="0" transform="translate(${x},${y})"><rect x="${-w/2}" y="-20" width="${w}" height="40" fill="#fff" ${LN}/><text class="lbl" style="font-size:${sz}px" text-anchor="middle" y="8">${text}</text></g>`;}
+function hand(x,y,ang,sc,skin,id=''){return `<g ${id?`id="${id}"`:''} transform="translate(${x},${y}) rotate(${ang}) scale(${sc})">
+  <path d="M-11,-12 C-4,-17 9,-16 13,-8 C17,2 15,14 6,18 C-4,22 -14,16 -16,6 C-17,-2 -15,-8 -11,-12 Z" fill="${skin}" ${LN2}/>
+  <path d="M-12,-6 C-20,-12 -24,-6 -18,2" fill="${skin}" ${LN2}/><path d="M-2,4 q4,6 10,6 M0,-4 q5,5 12,5" ${TH('#9c6b52')}/></g>`;}
+function humanEye(id,x,y,w,h){const c='h'+(UID++);DEFS+=`<clipPath id="${c}"><path d="M${-w},0 Q0,${-h*1.5} ${w},0 Q0,${h*1.1} ${-w},0Z"/></clipPath>`;
+  return `<g transform="translate(${x},${y})"><g id="${id}"><path d="M${-w},0 Q0,${-h*1.5} ${w},0 Q0,${h*1.1} ${-w},0Z" fill="#fff"/>
+   <g clip-path="url(#${c})"><circle id="${id}_p" r="${h*.78}" fill="#3a2a20"/><circle id="${id}_q" r="${h*.38}" fill="#111"/><circle id="${id}_h" r="${h*.2}" fill="#fff"/></g>
+   <path d="M${-w-1},0 Q0,${-h*1.55} ${w+1},0" fill="none" stroke="${INK}" stroke-width="2.8" stroke-linecap="round" ${VE}/><path d="M${-w*.8},${h*.35} Q0,${h*1.05} ${w*.8},${h*.35}" fill="none" ${TH('#8d6a5a')}/></g></g>`;}
+function setHEye(id,dx,blink){const p=$(id+'_p'),q=$(id+'_q'),h=$(id+'_h');[p,q].forEach(e=>{e.setAttribute('cx',dx);e.setAttribute('cy',1);});h.setAttribute('cx',dx-2);h.setAttribute('cy',-1.5);
+  $(id).setAttribute('transform',`scale(1,${1-blink*.92})`);}
+
+const DSK='#f0c6a6', DSK_S='#d9a585', DHAIR='#3b2820';
+function doctorSVG(){return `<g id="doc">
+ <ellipse cx="0" cy="782" rx="92" ry="12" fill="#000" opacity=".12"/>
+ <!-- back hair -->
+ <path d="M-64,70 C-74,130 -70,190 -48,214 L50,214 C70,190 74,130 64,70 Z" fill="${DHAIR}" ${LN}/>
+ <!-- legs -->
+ ${shaded(limbD([[-30,500],[-34,640],[-34,760]],[52,44,38]),'#33465f','#22324a',10)}
+ ${shaded(limbD([[30,500],[34,640],[36,760]],[52,44,38]),'#33465f','#22324a',10)}
+ <path d="M-58,756 C-58,744 -12,742 -10,756 L-10,772 L-62,774 Z" fill="#3c3f46" ${LN2}/><path d="M12,756 C14,742 60,744 60,756 L62,774 L10,772 Z" fill="#3c3f46" ${LN2}/>
+ <!-- scrubs + coat -->
+ ${shaded('M-62,214 C-40,204 40,204 62,214 L70,520 L-70,520 Z','#3f9c96','#2c7d78',14)}
+ ${shaded('M-20,206 L-62,212 C-92,222 -100,250 -102,290 L-110,560 L-46,566 L-16,330 L-8,250 Z','#f8f8f6','#d4d9dd',18)}
+ ${shaded('M20,206 L62,212 C92,222 100,250 102,290 L110,560 L46,566 L16,330 L8,250 Z','#f8f8f6','#d4d9dd',18)}
+ <path d="M-20,206 L-2,262 L-8,330 M20,206 L2,262 L8,330" fill="none" ${TH('#9aa3aa')}/>
+ <path d="M-90,430 h34 v40 h-34 Z M56,430 h34 v40 h-34 Z" fill="none" ${TH('#9aa3aa')}/>
+ <rect x="54" y="300" width="30" height="40" rx="4" fill="#d9ecf5" ${LN2}/><rect x="60" y="306" width="18" height="12" fill="#8db4c8"/>
+ <!-- stethoscope -->
+ <path d="M-26,212 C-38,270 -24,322 0,326 C24,322 38,270 26,212" fill="none" stroke="#454b55" stroke-width="5.5" stroke-linecap="round"/>
+ <circle cx="0" cy="334" r="11" fill="#c9cfd6" ${LN2}/>
+ <!-- neck + head -->
+ <path d="M-17,150 L-16,206 L16,206 L17,150 Z" fill="${DSK}" ${LN2}/><path d="M-16,176 C-6,186 6,186 16,176 L16,206 L-16,206Z" fill="${DSK_S}" opacity=".7"/>
+ <g id="docHead">
+  ${shaded('M-50,72 C-52,30 -30,8 0,8 C32,8 54,30 52,74 C51,106 40,134 22,150 C12,158 -12,158 -22,150 C-40,134 -51,106 -50,72 Z',DSK,DSK_S,12)}
+  <path d="M-52,90 C-60,86 -62,104 -52,108" fill="${DSK}" ${LN2}/><path d="M52,90 C60,86 62,104 52,108" fill="${DSK}" ${LN2}/>
+  <path d="M-56,96 C-62,30 -30,0 4,0 C42,0 64,30 58,98 C54,66 44,44 20,34 C2,50 -30,60 -56,96 Z" fill="${DHAIR}" ${LN}/>
+  <path d="M-30,24 C-10,10 20,10 40,26 M-40,50 C-28,36 -12,30 6,30" fill="none" ${TH('#5c4136')}/>
+  <path id="dBrows" d="M-30,72 Q-18,65 -6,70 M14,70 Q26,65 38,72" fill="none" stroke="${DHAIR}" stroke-width="3.6" stroke-linecap="round"/>
+  ${humanEye('dEyeL',-16,90,12,7)}${humanEye('dEyeR',24,90,12,7)}
+  <g fill="none" stroke="#4a3b37" stroke-width="2.2" ${VE}><rect x="-34" y="78" width="34" height="25" rx="9"/><rect x="7" y="78" width="34" height="25" rx="9"/><path d="M0,88 h7 M-34,86 l-16,-3 M41,86 l13,-3"/></g>
+  <path d="M8,98 C14,110 14,118 6,121 C3,122 0,120 -2,118" fill="none" ${TH('#a8735a')}/>
+  <ellipse cx="-24" cy="118" rx="9" ry="5" fill="#e79a8d" opacity=".35"/><ellipse cx="32" cy="118" rx="9" ry="5" fill="#e79a8d" opacity=".35"/>
+  ${mouthEl('doc_m',6,136)}
+ </g>
+ <!-- left arm with clipboard -->
+ ${shaded(limbD([[-86,226],[-104,350],[-72,440]],[40,34,30]),'#f8f8f6','#d4d9dd',10)}
+ <g transform="translate(-58,450) rotate(-12)"><rect x="-40" y="-56" width="80" height="106" rx="6" fill="#b88350" ${LN2}/><rect x="-32" y="-46" width="64" height="88" fill="#fff" ${LN2}/><rect x="-14" y="-62" width="28" height="12" rx="3" fill="#9aa3ad" ${LN2}/>
+   <path d="M-22,-26 h44 M-22,-12 h36 M-22,2 h44 M-22,16 h28" ${TH('#9aa3ad')}/></g>
+ ${hand(-60,452,-20,1.15,DSK)}
+ <!-- right arm holding otoscope -->
+ <g id="docArmR">${shaded(limbD([[86,226],[134,170],[128,86]],[40,34,30]),'#f8f8f6','#d4d9dd',10)}${hand(128,74,170,1.25,DSK)}</g>
+</g>`;}
+
+function brainD(sc,off){const cx=420,cy=150,pts=[];for(let i=0;i<72;i++){const a=i/72*Math.PI*2;let r=1+.035*Math.sin(a*11)+.02*Math.sin(a*5+1);
+  let x=cx+Math.cos(a)*(222*sc+off)*r, y=cy+Math.sin(a)*(128*sc+off)*r; if(y>cy+100*sc+off) y=cy+100*sc+off+(y-cy-100*sc-off)*.25; pts.push([x,y]);}return smooth(pts,true);}
+function gyri(){let h='';const R=(i)=>{const v=Math.sin(i*12.9898)*43758.5453;return v-Math.floor(v);};
+  [44,92,140,188,232].forEach((y0,r)=>{const pts=[];for(let x=196;x<=650;x+=18){pts.push([x,y0+Math.sin(x/26+r*1.7)*13+Math.sin(x/9+r)*3]);}
+   h+=`<path d="${smooth(pts)}" fill="none" stroke="#c96f84" stroke-width="3.4" stroke-linecap="round" ${VE}/>`;
+   for(let k=0;k<4;k++){const x=230+R(r*9+k)*380,y=y0+8;h+=`<path d="M${x.toFixed(0)},${y} c${(R(k+r)*16-8).toFixed(0)},14 ${(R(k*2+r)*20-10).toFixed(0)},26 ${(R(k*3+r)*16-8).toFixed(0)},38" fill="none" stroke="#c96f84" stroke-width="3" stroke-linecap="round" ${VE}/>`;}});
+  return h;}
+
+const NOOD='#f6d27a';
+function face(id,x,y,r,col,gap){return `<g transform="translate(${x-gap},${y})">${oEye(id+'L',r,col)}</g><g transform="translate(${x+gap},${y})">${oEye(id+'R',r,col)}</g>`;}
+function smile(x,y,w){return `<path d="M${x-w},${y} Q${x},${y+w*1.1} ${x+w},${y} Z" fill="#5e1a20" ${LN2}/><path d="M${x-w*.5},${y+w*.55} Q${x},${y+w*.95} ${x+w*.5},${y+w*.55}" fill="#e36b78"/>`;}
+function arm(a,b,bend){const mx=(a[0]+b[0])/2,my=(a[1]+b[1])/2,dx=b[0]-a[0],dy=b[1]-a[1],L=Math.hypot(dx,dy);const d=`M${a[0]},${a[1]} Q${mx-dy/L*bend},${my+dx/L*bend} ${b[0]},${b[1]}`;
+  return `<path d="${d}" fill="none" stroke="${INK}" stroke-width="12" stroke-linecap="round"/><path d="${d}" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><g transform="translate(${b[0]},${b[1]})"><circle r="12" fill="#fff" ${LN2}/><circle cx="-10" cy="-6" r="5.5" fill="#fff" ${LN2}/></g>`;}
+function brainBuddy(id){return `<g>${arm([230,230],[150,120],-30)}${arm([610,230],[700,130],30)}
+  <clipPath id="bc_${id}"><path d="${brainD(1,0)}"/></clipPath><path d="${brainD(1,0)}" fill="#f4a8b6" ${LN}/>
+  <g clip-path="url(#bc_${id})"><path d="${brainD(1,0)}" fill="none" stroke="#da8396" stroke-width="22" opacity=".55" filter="url(#soft3)"/>${gyri()}</g>
+  ${face(id,424,172,40,'#f4a8b6',40)}${smile(424,226,26)}</g>`;}
+function heartBuddy(id){const d='M0,60 C-80,10 -120,-40 -100,-90 C-84,-130 -30,-136 0,-96 C30,-136 84,-130 100,-90 C120,-40 80,10 0,60 Z';
+  return `<g>${arm([-92,-40],[-150,-110],-24)}${arm([92,-40],[150,-120],24)}<path d="${d}" fill="#ec5a68" ${LN}/><path d="M-70,-92 C-60,-110 -40,-114 -26,-104" fill="none" stroke="#ff9aa4" stroke-width="10" stroke-linecap="round"/>${face(id,0,-50,30,'#ec5a68',30)}${smile(0,-6,20)}</g>`;}
+function noodleBuddy(id){const P=[[-150,60],[-100,20],[-40,60],[20,20],[70,-20],[80,-80]];const d=smooth(P);
+  return `<g><path d="${d}" fill="none" stroke="${INK}" stroke-width="40" stroke-linecap="round"/><path d="${d}" fill="none" stroke="${NOOD}" stroke-width="32" stroke-linecap="round"/><path d="${smooth(P.slice(2).map(p=>[p[0]-4,p[1]-8]))}" fill="none" stroke="#fff4c6" stroke-width="6" stroke-linecap="round"/>
+   ${face(id,80,-104,24,NOOD,24)}${smile(80,-66,15)}</g>`;}
+function toothBuddy(id){const d='M-70,-80 C-70,-124 -28,-124 0,-102 C28,-124 70,-124 70,-80 C76,-30 60,10 50,40 C44,70 40,112 24,112 C8,112 10,62 0,62 C-10,62 -8,112 -24,112 C-40,112 -44,70 -50,40 C-60,10 -76,-30 -70,-80 Z';
+  return `<g>${arm([-66,-30],[-130,-100],-24)}${arm([66,-30],[128,-96],24)}<path d="${d}" fill="#fbfbf8" ${LN}/><path d="M-48,-96 C-40,-108 -24,-108 -16,-100" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/><path d="M40,-60 C48,-20 40,20 30,46" fill="none" stroke="#d5dde4" stroke-width="10" stroke-linecap="round"/>${face(id,0,-48,26,'#fbfbf8',27)}${smile(0,-8,17)}</g>`;}
+function bg(w,h){let s=`<defs><linearGradient id="gbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1db3a6"/><stop offset="1" stop-color="#0b6a86"/></linearGradient>
+  <filter id="soft3" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter><filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>${DEFS}</defs>
+  <rect width="${w}" height="${h}" fill="url(#gbg)"/>`;
+  const R=(i)=>{const v=Math.sin(i*12.9898)*43758.5453;return v-Math.floor(v);};
+  for(let i=0;i<Math.round(w*h/36000);i++){const x=R(i)*w,y=R(i+999)*h,sz=10+R(i+77)*18,o=.08+R(i+5)*.1;
+    s+=R(i+3)<.6?`<path d="M${x-sz},${y} h${sz*2} M${x},${y-sz} v${sz*2}" stroke="#fff" stroke-width="${sz*.45}" stroke-linecap="round" opacity="${o}"/>`:`<circle cx="${x}" cy="${y}" r="${sz*.45}" fill="#fff" opacity="${o}"/>`;}
+  return s;}
+function doctor(){return doctorSVG();}
+const mode=location.hash.slice(1)||'dp', svg=$('S');
+if(mode==='dp'){
+  svg.setAttribute('width',800);svg.setAttribute('height',800);svg.setAttribute('viewBox','0 0 800 800');
+  const body=`<circle cx="400" cy="420" r="300" fill="#fff" opacity=".14" filter="url(#glow)"/>
+   <g transform="translate(372,138) scale(2.45)">${doctor()}</g>
+   <g transform="translate(612,650) scale(.5) translate(-424,-150)">${brainBuddy('b1')}</g>`;
+  svg.innerHTML=bg(800,800)+body;
+}else{
+  svg.setAttribute('width',2560);svg.setAttribute('height',1440);svg.setAttribute('viewBox','0 0 2560 1440');
+  const body=`<ellipse cx="1280" cy="720" rx="900" ry="260" fill="#fff" opacity=".12" filter="url(#glow)"/>
+   <g transform="translate(330,470) scale(1.55)">${doctor()}</g>
+   <text class="ttl" x="1280" y="742" text-anchor="middle" style="font-size:200px;stroke-width:22px" fill="#ffd21f">GIGGLE MD</text>
+   <text class="ttl" x="1280" y="852" text-anchor="middle" style="font-size:66px;stroke-width:12px" fill="#ffffff">FUNNY CARTOONS. REAL BODY SCIENCE.</text>
+   <g transform="translate(2060,640) scale(.62) translate(-424,-150)">${brainBuddy('b2')}</g>
+   <g transform="translate(2330,820) scale(.95)">${heartBuddy('h1')}</g>
+   <g transform="translate(1995,905) scale(.82)">${toothBuddy('n1')}</g>`;
+  svg.innerHTML=bg(2560,1440)+body;
+}
+// faces: friendly
+document.querySelectorAll('[id$="_lid"]').forEach(e=>{});
+['b1','b2','h1','n1'].forEach(id=>['L','R'].forEach(s=>{const e=$(id+s+'_p');if(e){const r=+e.getAttribute('r')/.46;setOEye(id+s,r,{dx:0,dy:6,lid:.08});}}));
+if($('dEyeL')){setHEye('dEyeL',2,0);setHEye('dEyeR',2,0);setMouth('doc_m',.5,12,1);}
+</script></body></html>

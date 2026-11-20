@@ -1,0 +1,59 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:LG;src:url(../assets/fonts/LuckiestGuy.woff2)}
+html,body{margin:0;background:#000;overflow:hidden}svg{display:block}
+.lbl{font-family:Inter,sans-serif;font-weight:900;font-size:22px;fill:#111}
+.ttl{font-family:LG,sans-serif;paint-order:stroke;stroke:#10272d;stroke-linejoin:round}
+</style></head><body>
+<svg id="S" xmlns="http://www.w3.org/2000/svg"></svg>
+<script>window.DATA={lines:[],ev:{},start:{},end:0};</script>
+<script>
+//__ENGINE__
+const NOOD='#f6d27a';
+function face(id,x,y,r,col,gap){return `<g transform="translate(${x-gap},${y})">${oEye(id+'L',r,col)}</g><g transform="translate(${x+gap},${y})">${oEye(id+'R',r,col)}</g>`;}
+function smile(x,y,w){return `<path d="M${x-w},${y} Q${x},${y+w*1.1} ${x+w},${y} Z" fill="#5e1a20" ${LN2}/><path d="M${x-w*.5},${y+w*.55} Q${x},${y+w*.95} ${x+w*.5},${y+w*.55}" fill="#e36b78"/>`;}
+function arm(a,b,bend){const mx=(a[0]+b[0])/2,my=(a[1]+b[1])/2,dx=b[0]-a[0],dy=b[1]-a[1],L=Math.hypot(dx,dy);const d=`M${a[0]},${a[1]} Q${mx-dy/L*bend},${my+dx/L*bend} ${b[0]},${b[1]}`;
+  return `<path d="${d}" fill="none" stroke="${INK}" stroke-width="12" stroke-linecap="round"/><path d="${d}" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><g transform="translate(${b[0]},${b[1]})"><circle r="12" fill="#fff" ${LN2}/><circle cx="-10" cy="-6" r="5.5" fill="#fff" ${LN2}/></g>`;}
+function brainBuddy(id){return `<g>${arm([230,230],[150,120],-30)}${arm([610,230],[700,130],30)}
+  <clipPath id="bc_${id}"><path d="${brainD(1,0)}"/></clipPath><path d="${brainD(1,0)}" fill="#f4a8b6" ${LN}/>
+  <g clip-path="url(#bc_${id})"><path d="${brainD(1,0)}" fill="none" stroke="#da8396" stroke-width="22" opacity=".55" filter="url(#soft3)"/>${gyri()}</g>
+  ${face(id,424,172,40,'#f4a8b6',40)}${smile(424,226,26)}</g>`;}
+function heartBuddy(id){const d='M0,60 C-80,10 -120,-40 -100,-90 C-84,-130 -30,-136 0,-96 C30,-136 84,-130 100,-90 C120,-40 80,10 0,60 Z';
+  return `<g>${arm([-92,-40],[-150,-110],-24)}${arm([92,-40],[150,-120],24)}<path d="${d}" fill="#ec5a68" ${LN}/><path d="M-70,-92 C-60,-110 -40,-114 -26,-104" fill="none" stroke="#ff9aa4" stroke-width="10" stroke-linecap="round"/>${face(id,0,-50,30,'#ec5a68',30)}${smile(0,-6,20)}</g>`;}
+function noodleBuddy(id){const P=[[-150,60],[-100,20],[-40,60],[20,20],[70,-20],[80,-80]];const d=smooth(P);
+  return `<g><path d="${d}" fill="none" stroke="${INK}" stroke-width="40" stroke-linecap="round"/><path d="${d}" fill="none" stroke="${NOOD}" stroke-width="32" stroke-linecap="round"/><path d="${smooth(P.slice(2).map(p=>[p[0]-4,p[1]-8]))}" fill="none" stroke="#fff4c6" stroke-width="6" stroke-linecap="round"/>
+   ${face(id,80,-104,24,NOOD,24)}${smile(80,-66,15)}</g>`;}
+function toothBuddy(id){const d='M-70,-80 C-70,-124 -28,-124 0,-102 C28,-124 70,-124 70,-80 C76,-30 60,10 50,40 C44,70 40,112 24,112 C8,112 10,62 0,62 C-10,62 -8,112 -24,112 C-40,112 -44,70 -50,40 C-60,10 -76,-30 -70,-80 Z';
+  return `<g>${arm([-66,-30],[-130,-100],-24)}${arm([66,-30],[128,-96],24)}<path d="${d}" fill="#fbfbf8" ${LN}/><path d="M-48,-96 C-40,-108 -24,-108 -16,-100" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/><path d="M40,-60 C48,-20 40,20 30,46" fill="none" stroke="#d5dde4" stroke-width="10" stroke-linecap="round"/>${face(id,0,-48,26,'#fbfbf8',27)}${smile(0,-8,17)}</g>`;}
+function bg(w,h){let s=`<defs><linearGradient id="gbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1db3a6"/><stop offset="1" stop-color="#0b6a86"/></linearGradient>
+  <filter id="soft3" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter><filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>${DEFS}</defs>
+  <rect width="${w}" height="${h}" fill="url(#gbg)"/>`;
+  const R=(i)=>{const v=Math.sin(i*12.9898)*43758.5453;return v-Math.floor(v);};
+  for(let i=0;i<Math.round(w*h/36000);i++){const x=R(i)*w,y=R(i+999)*h,sz=10+R(i+77)*18,o=.08+R(i+5)*.1;
+    s+=R(i+3)<.6?`<path d="M${x-sz},${y} h${sz*2} M${x},${y-sz} v${sz*2}" stroke="#fff" stroke-width="${sz*.45}" stroke-linecap="round" opacity="${o}"/>`:`<circle cx="${x}" cy="${y}" r="${sz*.45}" fill="#fff" opacity="${o}"/>`;}
+  return s;}
+function doctor(){return doctorSVG();}
+const mode=location.hash.slice(1)||'dp', svg=$('S');
+if(mode==='dp'){
+  svg.setAttribute('width',800);svg.setAttribute('height',800);svg.setAttribute('viewBox','0 0 800 800');
+  const body=`<circle cx="400" cy="420" r="300" fill="#fff" opacity=".14" filter="url(#glow)"/>
+   <g transform="translate(372,138) scale(2.45)">${doctor()}</g>
+   <g transform="translate(612,650) scale(.5) translate(-424,-150)">${brainBuddy('b1')}</g>`;
+  svg.innerHTML=bg(800,800)+body;
+}else{
+  svg.setAttribute('width',2560);svg.setAttribute('height',1440);svg.setAttribute('viewBox','0 0 2560 1440');
+  const body=`<ellipse cx="1280" cy="720" rx="900" ry="260" fill="#fff" opacity=".12" filter="url(#glow)"/>
+   <g transform="translate(330,470) scale(1.55)">${doctor()}</g>
+   <text class="ttl" x="1280" y="742" text-anchor="middle" style="font-size:200px;stroke-width:22px" fill="#ffd21f">GIGGLE MD</text>
+   <text class="ttl" x="1280" y="852" text-anchor="middle" style="font-size:66px;stroke-width:12px" fill="#ffffff">FUNNY CARTOONS. REAL BODY SCIENCE.</text>
+   <g transform="translate(2060,640) scale(.62) translate(-424,-150)">${brainBuddy('b2')}</g>
+   <g transform="translate(2330,820) scale(.95)">${heartBuddy('h1')}</g>
+   <g transform="translate(1995,905) scale(.82)">${toothBuddy('n1')}</g>`;
+  svg.innerHTML=bg(2560,1440)+body;
+}
+// faces: friendly
+document.querySelectorAll('[id$="_lid"]').forEach(e=>{});
+['b1','b2','h1','n1'].forEach(id=>['L','R'].forEach(s=>{const e=$(id+s+'_p');if(e){const r=+e.getAttribute('r')/.46;setOEye(id+s,r,{dx:0,dy:6,lid:.08});}}));
+if($('dEyeL')){setHEye('dEyeL',2,0);setHEye('dEyeR',2,0);setMouth('doc_m',.5,12,1);}
+</script></body></html>
