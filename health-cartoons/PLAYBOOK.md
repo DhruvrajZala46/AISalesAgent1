@@ -73,6 +73,8 @@ Say plainly what was not verified.
   `[surprised]`, `[shouting]`, `[panicking]`, `[sulking]`, `[laughs harder]`; CAPS for one stressed word.
 - **Pick takes by measurement, not by guess:** whisper word accuracy (a misheard key word = regenerate that line) and pitch range in semitones
   (more range = more expressive). Scores are saved in `takes/scores.json`.
+- **Level the lines:** takes come out 10-15 dB apart. Pull each line toward -19 dB (`build_audio.py` in 004) before the mix, or the quiet,
+  sleepy or sad lines sink under the music (004: whisper 92% -> 98% after levelling).
 - **Pace:** v4 speaks slower than the reference. After `process_voice.sh`, run `tools/tighten.py proc 0.30` (cuts pauses longer than 0.3 s inside a
   line) and an `atempo` pass per line from `tempo.txt` (1.05-1.25, never on laughs or sighs) to reach ~2.7-3.0 words/s.
 - Cost: a short line is 40-60 credits; a 17-s doctor part is about 260. Video 001 cost about 680 credits.

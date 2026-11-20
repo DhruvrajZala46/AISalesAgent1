@@ -12,6 +12,7 @@
 | 8 | Video 003 (food out the nose when you laugh): measured script, eleven_v4 voices picked by measurement, acting timeline, 6 frame-check passes | **Script: "now okay". After the video: "Save this standard. Every new video: same effort or MORE, in editing and scripting. Never forget it."** | PLAYBOOK §0 (the effort standard) is mandatory for every video, and 003's numbers are the floor. |
 | 9 | Video 003 full render | **"I don't like it at all. Basic, cheap, looks AI-made, hard to understand. Visuals are the main thing. I want 99% the same as Dr. Healthcare: scripts, voice, hook, visuals."** Sent 50 of their transcripts. | Code-drawn art has hit its ceiling for this user; the effort process (PLAYBOOK §0) stays, but the art must come from an illustration source (image model via the full ElevenLabs connector, Gemini, or an illustrator). Their scripts are a pattern bank, never copied word for word. |
 | 10 | 003 v3: same audio, visuals rebuilt with Meta Muse Image art (plates + sprites, AI-drawn mouths patched in for lip-sync, closer camera, ramen-wavy noodle) | **"GREAT, I LOVED IT, WOW."** | This is the new bar. Every next video: AI art pipeline of `videos/003-food-up-nose-v2/` + the PLAYBOOK section-0 process. |
+| 11 | 004 "Why you can't eat before surgery" (stomach + burger + lungs, 32M-proven topic), same pipeline as 003 v3 | (waiting for the user's verdict) | Measured: 71.7 s, 2.73 words/s, final-mix whisper 98.1%, -11.1 LUFS, true peak -1.0 dB, frozen 0.3%, longest still 0.2 s. |
 
 Other user preferences:
 - Talks in Hinglish; answer in simple Hinglish with plain words, clear and direct.
@@ -29,5 +30,8 @@ Checks learned while building 004 (do them before the first full render):
   food low, and draw a mouth-only layer (`mouth_overlay.py`) above it.
 - **A sprite that turns upside down must turn round its centre**, not its feet, or it jumps by its own height when it lands.
 - **Name a body part on screen when the script names it** (the "DOOR" ring at the food-pipe valve), and show it changing when it fails.
+- **Even out line loudness before the mix** (`build_audio.py` pulls each line 80% of the way to -19 dB). 004's takes spanned 14 dB; the
+  sleepy stomach line and the patient sat as loud as the music, and whisper on the final mix lost a whole line and heard "gag" as "gas"
+  (92%). After levelling and moving two SFX off the key words: 98.1%.
 - **Cut clinic thought-bubble replays on the doctor's own words** (relaxes the muscle -> the door; cough reflex -> the lungs straining;
   came back up -> floating; slipped into your lungs -> landing), not one long replay.

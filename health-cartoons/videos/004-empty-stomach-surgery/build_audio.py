@@ -9,6 +9,10 @@ GAP={'01_stomach':.55,'02_burger':.16,'03_stomach':.16,'04_burger':.16,'05_stoma
      '09_burger':1.0,'10_lungs':.9,'11_burger':.18,'12_lungs':.16,'13_burger':.25,'14_lungs':.2,'15_patient':.95,'16_doctor':.3,'17_burger':1.0}
 FIX={'UGH':None}
 A={k:load(f'proc/{k}.wav') for k in ORDER}
+# even out line loudness (takes ranged over 14 dB, the quiet ones sank under the music): pull each line 80% of the way to -19 dB
+for k in ORDER:
+    act=A[k][np.abs(A[k])>0.01]; db=20*np.log10(np.sqrt((act**2).mean())+1e-9); g=float(np.clip((-19-db)*.8,-6,10))
+    A[k]=A[k]*10**(g/20); print(k,'gain %+.1f dB'%g)
 t=0; START={}
 for k in ORDER: t+=GAP[k]; START[k]=round(t,3); t+=len(A[k])/SR
 END=round(t+2.2,3); N=int(END*SR); voice=np.zeros(N,np.float32); lines=[]
@@ -39,10 +43,10 @@ def S(f,t,g):
 S('1492.mp3',0.0,.3); S('2457.mp3',EV['drop'],.55); S('473.mp3',EV['drop']+.1,.3)          # burger drops in: whoosh + splash + boing
 S('2882.mp3',EV['surgery']-.05,.4); S('2151.mp3',EV['up'],.4); S('2151.mp3',EV['down'],.35)
 S('1351.mp3',EV['ring'],.55); S('2882.mp3',EV['brain'],.3)
-S('2894.mp3',EV['limp']+.2,.35); S('1486.mp3',EV['float']-.1,.35)                          # sad trombone as the door goes limp, float whoosh
+S('2894.mp3',EV['limp']+.55,.3); S('1486.mp3',EV['float']-.1,.35)                          # sad trombone as the door goes limp, float whoosh
 S('1714.mp3',EV['throat'],.45); S('616.mp3',EV['throat']+.3,.4); S('3024.mp3',EV['wrongpipe']-.4,.4)
 S('2364.mp3',EV['land'],.55); S('473.mp3',EV['land']+.08,.4); S('2882.mp3',EV['pipe'],.35)
-S('110.mp3',EV['cant']+.1,.4); S('2999.mp3',EV['nogag']+.2,.35); S('2925.mp3',EV['burn'],.4)
+S('110.mp3',EV['cant']+.1,.4); S('2999.mp3',EV['nogag']+.5,.3); S('2925.mp3',EV['burn'],.4)
 S('1714.mp3',EV['clinic']-.15,.4); S('2882.mp3',EV['aspiration']-.05,.45); S('1486.mp3',EV['relaxes']-.3,.3); S('2151.mp3',EV['slipped'],.4); S('2882.mp3',EV['six'],.4)
 S('1492.mp3',EV['stinger']-.1,.4); S('2894.mp3',EV['after']+.3,.35); S('2873.mp3',EV['cta'],.45)
 mus=np.tile(load('../../assets/music/mixkit-9.mp3'),3)[:N]; fl=int(1.4*SR); mus[-fl:]*=np.linspace(1,0,fl)

@@ -36,7 +36,7 @@ let S1=`<g id="s1"><g id="cam1"><g id="wStomach">${IMG('plate_abdomen.jpg')}
 </g>`;
 // ---------- SCENE 1b: the throat (003 plate) ----------
 let S1b=`<g id="s1b"><g id="cam2"><g id="wThroat">${IMG('bg_throat.jpg')}${actorSVG('bur2')}</g></g>
- ${labelBox('lbFood','FOOD PIPE',560,640,22)}${labelBox('lbWind','WINDPIPE',230,640,22)}</g>`;
+ ${labelBox('lbFood','FOOD PIPE',600,980,24)}${labelBox('lbWind','WINDPIPE',190,980,24)}</g>`;
 // ---------- SCENE 1c: the lungs ----------
 let S1c=`<g id="s1c"><g id="cam3"><g id="wLungs">${IMG('plate_chest.jpg')}
   <ellipse id="burnGlow" cx="360" cy="780" rx="370" ry="270" fill="#ff5a2a" opacity="0" filter="url(#soft2)"/>
@@ -52,8 +52,8 @@ let S2=`<g id="s2"><g id="ccam">${IMG('plate_hospital.jpg')}${actorSVG('pat')}${
  <g id="bub" opacity="0"><g transform="translate(360,250)"><ellipse rx="300" ry="196" fill="#fff" ${LN}/><clipPath id="bubClip"><ellipse rx="290" ry="186"/></clipPath>
    <g clip-path="url(#bubClip)"><use id="bubA" href="#wStomach" transform="scale(.66) translate(-340,-700)"/><use id="bubB" href="#wLungs" transform="scale(.66) translate(-360,-720)"/></g>
    <ellipse rx="300" ry="196" fill="none" ${LN}/></g></g></g>
- ${labelBox('lbAsp','ASPIRATION PNEUMONIA',360,64,26)}
- <g id="lbTip" opacity="0" transform="translate(360,80)"><rect x="-274" y="-27" width="548" height="54" fill="#fff" ${LN}/><circle cx="-244" cy="0" r="17" fill="#2fa36b" ${LN2}/><path d="M-252,0 l6,6 l11,-12" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><text class="lbl" style="font-size:22px" x="20" y="8" text-anchor="middle">NO FOOD 6-8 HOURS BEFORE SURGERY</text></g>
+ ${labelBox('lbAsp','ASPIRATION PNEUMONIA',360,74,30)}
+ <g id="lbTip" opacity="0" transform="translate(360,120)"><rect x="-280" y="-58" width="560" height="116" rx="14" fill="#fff" ${LN}/><circle cx="-232" cy="-18" r="26" fill="#2fa36b" ${LN2}/><path d="M-245,-18 l9,9 l17,-18" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><text class="lbl" style="font-size:40px" x="28" y="-4" text-anchor="middle">NO FOOD 6-8 HOURS</text><text class="lbl" style="font-size:30px" x="0" y="40" text-anchor="middle" fill="#e0454f">BEFORE SURGERY</text></g>
 </g>`;
 // ---------- SCENE G: stinger ----------
 let SG=`<g id="sg"><g id="gcam">${IMG('plate_tray.jpg')}${actorSVG('bur4')}</g>
@@ -76,7 +76,7 @@ function renderStomach(T){
   placeActor('sto',sp,382,1052,690,{sy:1+breathe+se*.02-land*.04-pk*.04,sx:1-breathe*.5+land*.03+pk*.05,rot:sp==='stomach_drowsy'?Math.sin(T*1.6)*2.5:(sp==='stomach_panic'?Math.sin(T*28)*.8:0),env:se,T,seed:3});
   // burger: falls down the food pipe into the juice, bobs, then floats back up when the door goes limp
   let bx,by,brot=0,bp='burger_base';
-  if(T<.62){const k=P(T,0,.62);const pts=[[206,380],[214,470],[262,580],[340,700],[402,850],[414,962]];const s=k*k*(pts.length-1);const i=Math.min(pts.length-2,Math.floor(s)),f=s-i;
+  if(T<.62){const k=P(T,0,.62);const pts=[[200,250],[206,380],[226,500],[290,640],[372,790],[414,962]];const s=k*k*(pts.length-1);const i=Math.min(pts.length-2,Math.floor(s)),f=s-i;
     bx=lerp(pts[i][0],pts[i+1][0],f);by=lerp(pts[i][1],pts[i+1][1],f);brot=lerp(-25,0,k);}
   else if(T<E.float){bx=POOL[0]+Math.sin(T*1.3)*8;by=POOL[1]+Math.sin(T*2.1)*5;brot=Math.sin(T*1.7)*4;}
   else {const k=P(T,E.float,T_THROAT+.05);const pts=[[414,962],[380,800],[300,640],[232,500],[208,380],[205,220]];const s=eio(k)*(pts.length-1);const i=Math.min(pts.length-2,Math.floor(s)),f=s-i;
@@ -107,7 +107,7 @@ function renderThroat(T){
   placeActor('bur2','burger_scared',bx,by+95,190,{rot,env:speak('burger',T),T,seed:1});
   const z=1.22, cx=430, cy=Math.min(1280-640/z,760);
   $('cam2').setAttribute('transform',`translate(360,640) scale(${z}) translate(${-cx},${-cy})`);
-  popLabel('lbFood',T,T_THROAT+.2,T_LUNGS,560,640); popLabel('lbWind',T,E.wrongpipe-.5,T_LUNGS,230,640);
+  popLabel('lbFood',T,T_THROAT+.15,T_LUNGS,600,980); popLabel('lbWind',T,E.wrongpipe-.7,T_LUNGS,190,980);
 }
 function renderLungs(T){
   const [lp,l0]=poseAt(T,[[E.cough1-.25,E.cant-.1,'lungs_strain'],[E.burn-.1,1e9,'lungs_burn']],'lungs_base');
@@ -164,14 +164,15 @@ function renderS2(T){
     else if(seg===1) renderLungs(lerp(E.cough1-.3,E.cant+.3,u));
     else if(seg===2) renderStomach(lerp(E.float-.1,T_THROAT-.05,u));
     else {const r=T-t0; renderLungs(r<1.4?E.land-.5+r:Math.min(E.burn-.1+(r-1.4),E.burn+2.5));}}
-  popLabel('lbAsp',T,E.aspiration-.05,E.relaxes-.2,360,64);
-  popLabel('lbTip',T,E.six-.1,END,360,80);
+  popLabel('lbAsp',T,E.aspiration-.05,E.relaxes-.2,360,74);
+  popLabel('lbTip',T,E.six-.1,END,360,120);
   show('indark',Math.max(P(T,T_STING-.22,T_STING),1-P(T,T_CLINIC,T_CLINIC+.22))*.9);
 }
 function renderSting(T){
   const t=T-T_STING, be=speak('burger',T);
-  placeActor('bur4','burger_sulk',352,905,300,{rot:Math.sin(T*1.3)*1.2,sy:1+Math.sin(T*2.1)*.012+be*.02,env:be,T,seed:2});
-  const zin=1.06+.06*eio(P(t,0,2)); $('gcam').setAttribute('transform',`translate(360,640) scale(${zin}) translate(-360,${-Math.min(1280-640/zin,690)})`);
+  const s0=ST['17_burger'], hop=Math.sin(clamp(P(T,s0,s0+.32))*Math.PI)*22, huff=Math.pow(Math.max(0,Math.sin(T*3.4)),10);
+  placeActor('bur4','burger_sulk',352,905-hop,300,{rot:Math.sin(T*1.3)*1.2-huff*2,sy:1+Math.sin(T*2.1)*.012+be*.02-huff*.035+hop*.002,sx:1+huff*.03,env:be,T,seed:2});
+  const zin=1.06+.06*eio(P(t,0,2))+.05*eio(P(T,E.cta-.5,END)); $('gcam').setAttribute('transform',`translate(360,640) scale(${zin}) translate(-360,${-Math.min(1280-640/zin,690)})`);
   const ck=P(T,E.cta,E.cta+.35); show('cta',T>=E.cta?1:0);
   $('cta').setAttribute('transform',`translate(360,${230+Math.sin(T*3)*4}) rotate(${Math.sin(T*2.2)*2})`); $('cta_i').setAttribute('transform',`scale(${eob(ck)})`);
   show('indark',(1-P(t,0,.22))*.9);
