@@ -30,6 +30,12 @@ clinic "Doc, I only ate one burger..." → doctor "That's called aspiration pneu
 | Clinic start | 57-83% | ~62% (estimate) |
 | Total | 52-75 s | ~66 s (estimate) |
 
+## Visual hook from the proven covers (KW6r3s7OzqU 32M, Mt_NjrZoLx4 3.7M, GU7Psg-aRp0 1.5M)
+All three open on ONE big stomach cross-section filling the frame, the stomach itself is the character (googly eyes, brows, arms at its top).
+32M: the stomach wears a SLEEP MASK (anaesthesia) with a food character inside. 3.7M: the brain in a thought bubble with a megaphone.
+1.5M: the stomach eating a tiny burger. We copy that staging: stomach plate first, brain bubble on the phone, stomach falls asleep with a
+sleep mask, then the 003 throat plate (burger up the food pipe, down the windpipe), then a lungs plate.
+
 ## Art plan (003 v2 pipeline)
 Plates: front cut-away of neck + chest + belly (food pipe and windpipe side by side, lungs, stomach with its top valve), a hospital recovery
 room, a hospital food tray. Sprites (green screen, edits for poses, AI mouths for lip-sync): STOMACH (shocked, pointing, panicking, worn out),
