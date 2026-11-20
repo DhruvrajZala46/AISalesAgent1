@@ -89,11 +89,14 @@ function actorSVG(id){return `<g id="${id}"><image id="${id}_img" preserveAspect
 const lastPose={};
 function placeActor(id,pose,fx,fy,H,o={}){
   const m=A[pose], w=H*m.w/m.h, x0=-w/2, y0=-H;
-  const im=$(id+'_img'); if(lastPose[id]!==pose){im.setAttribute('href','art/'+pose+'.png');lastPose[id]=pose;}
+  let file=pose; const V=m.variants||[];
+  if(V.length){const env=o.env||0, f=Math.floor((o.T||0)*15)+(o.seed||0);
+    let open=env>0.12; if(open&&env<0.45&&f%3===0) open=false; file=pose+'_'+(open&&V.includes('o')?'o':'c');}
+  const im=$(id+'_img'); if(lastPose[id]!==file){im.setAttribute('href','art/'+file+'.png');lastPose[id]=file;}
   im.setAttribute('x',x0.toFixed(1)); im.setAttribute('y',y0.toFixed(1)); im.setAttribute('width',w.toFixed(1)); im.setAttribute('height',H.toFixed(1));
   $(id).setAttribute('transform',`translate(${fx.toFixed(1)},${fy.toFixed(1)}) rotate(${(o.rot||0).toFixed(2)}) scale(${(o.sx||1).toFixed(4)},${(o.sy||1).toFixed(4)})`);
   const mg=$(id+'_mg');
-  if(m.mouth&&o.mouth!==false){const [mx,my,mw]=m.mouth;mg.setAttribute('transform',`translate(${(x0+mx*w).toFixed(1)},${(y0+my*H).toFixed(1)})`);mg.setAttribute('opacity',1);
+  if(m.mouth&&o.mouth!==false&&!(m.variants||[]).length){const [mx,my,mw]=m.mouth;mg.setAttribute('transform',`translate(${(x0+mx*w).toFixed(1)},${(y0+my*H).toFixed(1)})`);mg.setAttribute('opacity',1);
     setMouthV(id+'_m',o.env||0,Math.max(4,mw*w*.5),o.mood??.3,o.T||0,o.seed||0);} else mg.setAttribute('opacity',0);
   let L='';const k=o.blink||0;
   if(k>0.02&&m.lid) for(const [ex,ey,er] of m.blink||[]){const cx=x0+ex*w, cy=y0+ey*H, r=er*w*1.08;
@@ -130,7 +133,7 @@ let W=`<g id="world">
  <g id="air"></g><g id="has"></g>
  ${actorSVG('pal')}
  <g id="ticks" opacity="0">${[0,1,2].map(i=>`<path d="M${352-i*6},${380+i*30} l-28,${-8+i*8}" stroke="#ffd21f" stroke-width="6" stroke-linecap="round"/><path d="M${584+i*6},${380+i*30} l28,${-8+i*8}" stroke="#ffd21f" stroke-width="6" stroke-linecap="round"/>`).join('')}</g>
- <g id="pubBub" opacity="0"><g transform="translate(236,196)">
+ <g id="pubBub" opacity="0"><g transform="translate(262,226) scale(.9)">
   <ellipse rx="216" ry="156" fill="#fff" ${LN}/><circle cx="168" cy="150" r="17" fill="#fff" ${LN2}/><circle cx="196" cy="182" r="10" fill="#fff" ${LN2}/>
   <clipPath id="pubClip"><ellipse rx="206" ry="146"/></clipPath>
   <g clip-path="url(#pubClip)"><image href="art/public_scene.jpg" x="-215" y="-215" width="430" height="430"/></g>
@@ -138,12 +141,12 @@ let W=`<g id="world">
   <text id="ha1" class="cap" x="-120" y="-96" text-anchor="middle" style="font-size:42px" opacity="0" transform="rotate(-12,-120,-96)">HA HA!</text>
   <text id="ha2" class="cap" x="128" y="-90" text-anchor="middle" style="font-size:42px" opacity="0" transform="rotate(10,128,-90)">LOL!</text></g></g>
  <g id="bInset" opacity="0"><g id="bInsetI">
-  <circle r="139" fill="none" ${LN}/><circle r="134" fill="#fff"/><clipPath id="bClip"><circle r="126"/></clipPath>
-  <g clip-path="url(#bClip)"><circle r="126" fill="#ffe8de"/><circle r="126" fill="none" stroke="#f4c3b6" stroke-width="30" opacity=".6"/>${actorSVG('brn')}</g><circle r="126" fill="none" ${LN2}/>
-  <g id="ring" opacity="0">${[0,1,2].map(i=>`<path d="M${150+i*14},${-40-i*10} q${16+i*6},${24+i*6} 0,${52+i*14} M${-150-i*14},${-40-i*10} q${-16-i*6},${24+i*6} 0,${52+i*14}" fill="none" stroke="#ffd21f" stroke-width="7" stroke-linecap="round"/>`).join('')}</g></g></g>
+  <circle r="128" fill="none" ${LN}/><circle r="123" fill="#fff"/><clipPath id="bClip"><circle r="115"/></clipPath>
+  <g clip-path="url(#bClip)"><circle r="115" fill="#ffe8de"/><circle r="115" fill="none" stroke="#f4c3b6" stroke-width="28" opacity=".6"/>${actorSVG('brn')}</g><circle r="115" fill="none" ${LN2}/>
+  <g id="ring" opacity="0">${[0,1,2].map(i=>`<path d="M${136+i*14},${-40-i*10} q${16+i*6},${24+i*6} 0,${52+i*14} M${-136-i*14},${-40-i*10} q${-16-i*6},${24+i*6} 0,${52+i*14}" fill="none" stroke="#ffd21f" stroke-width="7" stroke-linecap="round"/>`).join('')}</g></g></g>
 </g>`;
 let S1=`<g id="s1"><g id="cam">${W}</g>
- ${labelBox('lbPal','SOFT PALATE',472,262,22)}${labelBox('lbNose','NOSE',236,446,24)}${labelBox('lbBrain','BRAIN',575,28,24)}</g>`;
+ ${labelBox('lbPal','SOFT PALATE',472,262,22)}${labelBox('lbNose','NOSE',236,446,24)}${labelBox('lbBrain','BRAIN',196,58,24)}</g>`;
 // ---------- SCENE 2 : clinic ----------
 let S2=`<g id="s2"><g id="ccam"><image href="art/clinic_bg.jpg" x="-5.5" y="0" width="731" height="1280" preserveAspectRatio="none"/>
  ${actorSVG('doc')}${actorSVG('pat')}
@@ -157,13 +160,9 @@ let S2=`<g id="s2"><g id="ccam"><image href="art/clinic_bg.jpg" x="-5.5" y="0" w
  <g id="lbTip" opacity="0" transform="translate(360,64)"><rect x="-200" y="-24" width="400" height="48" fill="#fff" ${LN}/><circle cx="-170" cy="0" r="15" fill="#f0a020" ${LN2}/><path d="M-170,-8 v9 M-170,7 v1" stroke="#fff" stroke-width="4" stroke-linecap="round"/><text class="lbl" style="font-size:20px" x="26" y="8" text-anchor="middle">HAPPENS OFTEN? GET CHECKED</text></g>
 </g>`;
 // ---------- SCENE G : stinger ----------
-const SG_PTS=[[268,880],[306,944],[378,956],[458,948],[498,996],[468,1056],[392,1080],[306,1070],[250,1030],[268,984],[336,1000],[408,1014],[458,1004]];
 let SG=`<g id="sg"><g id="gcam"><image href="art/sting_bg.jpg" x="-5.5" y="0" width="731" height="1280" preserveAspectRatio="none"/>
  <ellipse cx="380" cy="1040" rx="200" ry="34" fill="#000" opacity=".10"/>
- <path id="sgO" fill="none" stroke="#4a2a24" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/><path id="sgF" fill="none" stroke="${NOOD}" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
- <path id="sgH" fill="none" stroke="#fff4c6" stroke-width="6" stroke-linecap="round" opacity=".9"/>
- <g id="sgFace"><g transform="translate(-26,-24)">${oEye('sEyeL',26,NOOD)}</g><g transform="translate(26,-24)">${oEye('sEyeR',26,NOOD)}</g>${brow('sBrowL')}${brow('sBrowR')}${mouthEl('sting_m',0,18)}
-  <path id="tear" d="M0,-10 C5,-2 8,4 6,9 C4,14 -5,14 -7,9 C-9,4 -5,-2 0,-10 Z" fill="#8fd3f4" ${LN2} opacity="0"/></g></g>
+ ${actorSVG('sgn')}</g>
  <g id="cta" opacity="0"><g id="cta_i">
   <rect x="-250" y="-62" width="500" height="132" rx="26" fill="#fff" ${LN}/>
   <text class="cta" text-anchor="middle" y="6" style="font-size:66px;stroke-width:9px" fill="#ffd21f">FOLLOW</text>
@@ -205,13 +204,14 @@ function worldState(T){
   }
   s.off=off;return s;
 }
-function noodlePts(st){const pts=[];const tail=st.sh-NL;for(let s=Math.max(0,tail);s<=st.sh;s+=12)pts.push([s,atS(TR,TS,s)]);pts.push([st.sh,atS(TR,TS,st.sh)]);
+function noodlePts(st){const pts=[];const tail=st.sh-NL;for(let s=Math.max(0,tail);s<=st.sh;s+=6)pts.push([s,atS(TR,TS,s)]);pts.push([st.sh,atS(TR,TS,st.sh)]);
   return pts.map(([s,p])=>{const w=clamp(1-(st.sh-s)/150);const k=w*w*(3-2*w);return [p[0]+st.off[0]*k,p[1]+st.off[1]*k];});}
 function renderWorld(T){
   const st=worldState(T);
   let pts=noodlePts(st);
+  const s0=st.sh-NL;
   const wv=pts.map((p,i)=>{const n=pts.length;if(i===0||i===n-1)return p;const dx=pts[i+1][0]-pts[i-1][0],dy=pts[i+1][1]-pts[i-1][1],L=Math.hypot(dx,dy)||1;
-    const a=Math.sin(i*.55-T*6)*2.2*clamp((n-i)/8);return [p[0]-dy/L*a,p[1]+dx/L*a];});
+    const sAbs=Math.max(0,s0)+i*6; const a=(Math.sin(i*.55-T*6)*2.2+Math.sin(sAbs/7.5)*4.2)*clamp((n-i)/5);return [p[0]-dy/L*a,p[1]+dx/L*a];});
   const d=smooth(wv);['ndO','ndF'].forEach(id=>$(id).setAttribute('d',d));
   $('ndS').setAttribute('d',smooth(wv.map(p=>[p[0]+2,p[1]+6])));$('ndH').setAttribute('d',smooth(wv.slice(-Math.min(wv.length,60)).map(p=>[p[0]-2,p[1]-6])));
   const hd=pts[pts.length-1], pv=pts[Math.max(0,pts.length-4)], dirx=hd[0]-pv[0], diry=hd[1]-pv[1];
@@ -238,11 +238,11 @@ function renderWorld(T){
   show('bInset',inOn?1:0);
   if(inOn){const t0=inA?E.ring-.35:E.blame-.05;const k=eob(P(T,t0,t0+.3))*(inA?1-eio(P(T,E.laugh-.05,E.laugh+.25)):1);
     const ringOn=T>=E.ring&&T<E.brain-.05, shk=ringOn?Math.sin(T*60)*5:0;
-    $('bInset').setAttribute('transform',`translate(${575+shk},176) scale(${k.toFixed(3)})`);
+    $('bInset').setAttribute('transform',`translate(${196+shk},196) scale(${k.toFixed(3)})`);
     show('ring',ringOn&&Math.floor(T*8)%2===0?1:0);
     const bpose=T<E.ring?'brain_base':(T>=ST['16_brain']-.1?'brain_smug':'brain_shock');
     const benv=speak('brain',T);
-    placeActor('brn',bpose,0,128,232,{sy:1+benv*.03+Math.sin(T*2.6)*.01,env:benv,mood:bpose==='brain_smug'?1:.2,T,seed:7,blink:bpose==='brain_shock'?blinkK(T,2.6):0});}
+    placeActor('brn',bpose,0,118,212,{sy:1+benv*.03+Math.sin(T*2.6)*.01,env:benv,mood:bpose==='brain_smug'?1:.2,T,seed:7,blink:bpose==='brain_shock'?blinkK(T,2.6):0});}
   // nose: daylight glow
   show('glow',T>=E.daylight-.1?clamp(P(T,E.daylight-.1,E.daylight+.3)*.9-(T>E.popout+.6?.3:0)):0);
   // teaching arrows
@@ -256,7 +256,7 @@ function renderWorld(T){
     for(let k=0;k<6;k++){const u=((T-E.laugh)*(open?1.1:1.6)+k/6)%1, s0=u*Lr;const a=atS(rp,rs,s0), b=atS(rp,rs,s0+60), c=atS(rp,rs,s0+120);
       h+=`<path d="M${a[0].toFixed(1)},${a[1].toFixed(1)} Q${b[0].toFixed(1)},${b[1].toFixed(1)} ${c[0].toFixed(1)},${c[1].toFixed(1)}" fill="none" stroke="#fff" stroke-width="${k%2?6:9}" stroke-linecap="round" opacity="${(.9*Math.sin(u*Math.PI)).toFixed(2)}"/>`;}
     $('air').innerHTML=h;} else $('air').innerHTML='';
-  let hh='';[0,.5,1.0,1.5,2.0].forEach((o,i)=>{const t0=E.laugh+o,k=P(T,t0,t0+1.1);if(k>0&&k<1){const x=420+[0,-60,50,-30,40][i],y=1000-k*260;
+  let hh='';[0,.5,1.0,1.5,2.0].forEach((o,i)=>{const t0=E.laugh+o,k=P(T,t0,t0+1.1);if(k>0&&k<1){const x=430+[0,-60,50,-30,40][i],y=860-k*240;
     hh+=`<text class="cap" x="${x}" y="${y.toFixed(1)}" text-anchor="middle" style="font-size:${50+i*4}px" opacity="${(1-k*k).toFixed(2)}" transform="rotate(${[-10,8,-6,12,-4][i]},${x},${y.toFixed(1)}) translate(${x},${y.toFixed(1)}) scale(${eob(clamp(k*4)).toFixed(3)}) translate(${-x},${(-y).toFixed(1)})">HA!</text>`;}});
   $('has').innerHTML=hh;
   // thought bubble "in public"
@@ -270,19 +270,19 @@ function renderInside(T){
   const imp=(t0,a)=>{const k=P(T,t0,t0+.3);if(k>0&&k<1){sx+=Math.sin(k*40)*a*(1-k);sy+=Math.cos(k*33)*a*(1-k);}};
   imp(E.noway,6);imp(E.drop+.7,12);imp(E.popout,10);
   const pz=eio(P(T,E.innose,E.innose+1.2))*(1-eio(P(T,E.popout+.05,E.popout+.45)));
-  const z=1.02+.30*pz; let cx=lerp(360,230,pz), cy=lerp(640,500,pz); cx=clamp(cx,360/z-5,725-360/z); cy=clamp(cy,640/z,1280-640/z);
+  const z=1.28+.32*pz; let cx=lerp(305,215,pz), cy=lerp(560,480,pz); cx=clamp(cx,360/z-5,725-360/z); cy=clamp(cy,640/z,1280-640/z);
   $('cam').setAttribute('transform',`translate(${360+sx},${640+sy}) scale(${z}) translate(${-cx},${-cy})`);
   popLabel('lbPal',T,1.0,5.2,472,262);
   popLabel('lbNose',T,E.nose-.05,E.peek-.2,236,446);
-  popLabel('lbBrain',T,E.brain,E.notnow-.2,575,28);
+  popLabel('lbBrain',T,E.brain,E.notnow-.2,196,58);
   show('indark',P(T,T_CLINIC-.25,T_CLINIC)*.9);
 }
 function renderS2(T){
   const dT=speak('doctor',T), pT=speak('patient',T), d0=ST['18_doctor'], pa=ST['17_patient'];
-  const dpose=T>=E.harmless-.2?'doc_point':'doc_base', ppose=T>=E.regurg?'pat_surprised':'pat_base';
-  placeActor('doc',dpose,208,1185,790,{rot:dT>.15?Math.sin(T*6.5)*.6*dT:0,sy:1+Math.sin(T*1.3)*.006+dT*.012,env:dT,mood:.7,T,seed:5});
+  const dpose=T>=E.harmless-.2?'doc_point':(T>=E.swallow-.15?'doc_explain':'doc_base'), ppose=T>=E.swallow+.6?'pat_listen':(T>=E.regurg?'pat_surprised':'pat_base');
+  placeActor('doc',dpose,186,1185,790,{rot:dT>.15?Math.sin(T*6.5)*.6*dT:0,sy:1+Math.sin(T*1.3)*.006+dT*.012,env:dT,mood:.7,T,seed:5});
   let pr=0; if(T>=d0&&dT<.05) pr+=Math.sin(T*9)*.6*(speak('doctor',T-.25)>.1?1:0); if(T>=E.checked-.1) pr+=Math.sin(P(T,E.checked-.1,E.checked+.9)*Math.PI*2)*1.2;
-  placeActor('pat',ppose,522,1185,742,{rot:pr+(T<d0&&pT>.2?Math.sin(T*7)*.6:0),sy:1+Math.sin(T*1.5+1)*.006+pT*.012,env:pT,mood:T<E.regurg?-.5:.6,T,seed:6});
+  placeActor('pat',ppose,548,1185,742,{rot:pr+(T<d0&&pT>.2?Math.sin(T*7)*.6:0),sy:1+Math.sin(T*1.5+1)*.006+pT*.012,env:pT,mood:T<E.regurg?-.5:.6,T,seed:6});
   const pq=eio(P(T,pa,pa+1.5))*(1-eio(P(T,d0-.2,d0+.4)));
   let z=1+.035*P(T,d0,END)+.08*pq, cx=lerp(360,470,pq), cy=lerp(640,560,pq);
   const pk=eio(P(T,E.regurg-.15,E.regurg+.15))*(1-eio(P(T,E.swallow-.35,E.swallow)));
@@ -300,15 +300,8 @@ function renderS2(T){
 }
 function renderSting(T){
   const t=T-T_STING, talk=speak('noodle',T);
-  const pts=SG_PTS.map((p,i)=>[p[0]+Math.sin(T*2+i)*2,p[1]+Math.cos(T*1.7+i*.7)*2+(i===0?Math.sin(T*1.4)*4:0)]);
-  const d=smooth(pts); $('sgO').setAttribute('d',d); $('sgF').setAttribute('d',d); $('sgH').setAttribute('d',smooth(pts.slice(0,6).map(p=>[p[0]-3,p[1]-7])));
-  tr('sgFace',pts[0][0],pts[0][1]-8,1,1,talk>.3?Math.sin(T*8)*3:-4);
-  const bl=blinkK(T,.9), sad=T<E.then+.2;
-  setOEye('sEyeL',26,{dx:-6,dy:14,lid:sad?.5:.2,blink:bl});setOEye('sEyeR',26,{dx:-6,dy:14,lid:sad?.5:.2,blink:bl});
-  setBrow('sBrowL',-26,-60,32,sad?-16:4,3);setBrow('sBrowR',26,-60,32,sad?16:-4,3);
-  setMouthV('sting_m',talk,14,sad?-1:.6,T,2);
-  show('tear',sad&&t>.6?1:0); if(sad) $('tear').setAttribute('transform',`translate(-44,${(-6+((t*40)%34)).toFixed(1)})`);
-  const zin=1.22+.08*eio(P(t,0,2)), gcy=Math.min(1280-640/zin,820); $('gcam').setAttribute('transform',`translate(360,640) scale(${zin}) translate(-372,${-gcy})`);
+  placeActor('sgn','noodle_sad',420,1056,292,{rot:Math.sin(T*1.3)*.8,sy:1+Math.sin(T*2.1)*.012+talk*.02,sx:1-Math.sin(T*2.1)*.006,env:talk,T,seed:2});
+  const zin=1.12+.08*eio(P(t,0,2)), gcy=Math.min(1280-640/zin,830); $('gcam').setAttribute('transform',`translate(360,640) scale(${zin}) translate(-404,${-gcy})`);
   const ck=P(T,E.cta,E.cta+.35); show('cta',T>=E.cta?1:0);
   $('cta').setAttribute('transform',`translate(360,${230+Math.sin(T*3)*4}) rotate(${Math.sin(T*2.2)*2})`); $('cta_i').setAttribute('transform',`scale(${eob(ck)})`);
   show('indark',(1-P(t,0,.22))*.9);

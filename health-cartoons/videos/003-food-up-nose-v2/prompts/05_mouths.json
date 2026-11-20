@@ -1,0 +1,164 @@
+[
+{
+"name": "art/mouth/pal_neutral_c",
+"src": "art/src/pal_neutral.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a firm, flat, stern closed mouth line."
+},
+{
+"name": "art/mouth/pal_neutral_o",
+"src": "art/src/pal_neutral.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an open talking mouth, stern, showing a little tongue."
+},
+{
+"name": "art/mouth/pal_point_c",
+"src": "art/src/pal_point.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a firm, flat, stern closed mouth line."
+},
+{
+"name": "art/mouth/pal_point_o",
+"src": "art/src/pal_point.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an open talking mouth, stern, showing a little tongue."
+},
+{
+"name": "art/mouth/pal_stop_c",
+"src": "art/src/pal_stop.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a firm angry closed mouth."
+},
+{
+"name": "art/mouth/pal_stop_o",
+"src": "art/src/pal_stop.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a wide open shouting mouth."
+},
+{
+"name": "art/mouth/pal_drama_c",
+"src": "art/src/pal_drama.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a smug little smirk."
+},
+{
+"name": "art/mouth/pal_drama_o",
+"src": "art/src/pal_drama.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an open talking mouth with a smug grin."
+},
+{
+"name": "art/mouth/pal_panic_c",
+"src": "art/src/pal_panic.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a small wobbly worried closed mouth."
+},
+{
+"name": "art/mouth/pal_panic_o",
+"src": "art/src/pal_panic.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a wide open panicked screaming mouth."
+},
+{
+"name": "art/mouth/pal_fist_c",
+"src": "art/src/pal_fist.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an angry closed mouth with gritted teeth."
+},
+{
+"name": "art/mouth/pal_fist_o",
+"src": "art/src/pal_fist.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an angry wide open shouting mouth."
+},
+{
+"name": "art/mouth/brain_shock_c",
+"src": "art/src/brain_shock.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a small worried closed mouth."
+},
+{
+"name": "art/mouth/brain_shock_o",
+"src": "art/src/brain_shock.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an open urgent talking mouth."
+},
+{
+"name": "art/mouth/brain_smug_c",
+"src": "art/src/brain_smug.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a cheeky closed smirk."
+},
+{
+"name": "art/mouth/brain_smug_o",
+"src": "art/src/brain_smug.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an open talking mouth with a cheeky grin."
+},
+{
+"name": "art/mouth/doc_base_c",
+"src": "art/src/doc_base.png",
+"size": "1024x1792",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a gentle closed smile."
+},
+{
+"name": "art/mouth/doc_base_o",
+"src": "art/src/doc_base.png",
+"size": "1024x1792",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a small open friendly talking mouth."
+},
+{
+"name": "art/mouth/doc_explain_c",
+"src": "art/src/doc_explain.png",
+"size": "1024x1792",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a gentle closed smile."
+},
+{
+"name": "art/mouth/doc_explain_o",
+"src": "art/src/doc_explain.png",
+"size": "1024x1792",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a small open friendly talking mouth."
+},
+{
+"name": "art/mouth/doc_point_c",
+"src": "art/src/doc_point.png",
+"size": "1024x1792",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a gentle closed smile."
+},
+{
+"name": "art/mouth/doc_point_o",
+"src": "art/src/doc_point.png",
+"size": "1024x1792",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a small open friendly talking mouth."
+},
+{
+"name": "art/mouth/pat_base_c",
+"src": "art/src/pat_base.png",
+"size": "1024x1792",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a small embarrassed closed mouth."
+},
+{
+"name": "art/mouth/pat_base_o",
+"src": "art/src/pat_base.png",
+"size": "1024x1792",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: an open embarrassed talking mouth."
+},
+{
+"name": "art/mouth/pat_surprised_c",
+"src": "art/src/pat_surprised.png",
+"size": "1024x1792",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a small surprised round 'o' mouth."
+},
+{
+"name": "art/mouth/noodle_sad_c",
+"src": "art/src/noodle_sad.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a sad wobbly frown."
+},
+{
+"name": "art/mouth/noodle_sad_o",
+"src": "art/src/noodle_sad.png",
+"size": "1024x1024",
+"prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add a mouth in the natural mouth position: a sad open talking mouth."
+}
+]
