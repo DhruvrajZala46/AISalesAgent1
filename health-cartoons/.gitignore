@@ -10,3 +10,4 @@ videos/*/raw/
 videos/*/proc/
 videos/*/data.js
 videos/*/data.json
+*.webp

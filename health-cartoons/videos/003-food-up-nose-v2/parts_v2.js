@@ -1,0 +1,247 @@
+// =============== 003 v2: AI-illustrated plates + sprites (Meta Muse Image), animated by our engine ===============
+const A=window.ART, E=D.ev, ST=D.start, END=D.end, T_CLINIC=E.clinic, T_STING=E.stinger;
+const NOOD='#f6d27a', NOOD_S='#dcaa48';
+const KEY=/^(NOSE|DOWN|DOOR|SHUT|PUBLIC|JOKE|NOODLES|LAUGHING|DROP|HAIRY|DAYLIGHT|NASAL|REGURGITATION|PALATE|SEALS|BREATHE|HARMLESS|CHECKED|LAUGH|THEN|FOLLOW|BRAIN|UP)$/;
+//__VISEME__
+function actorSVG(id){return `<g id="${id}"><image id="${id}_img" preserveAspectRatio="none"/><g id="${id}_lids"></g><g id="${id}_mg">${mouthEl(id+'_m',0,0)}</g></g>`;}
+const lastPose={};
+function placeActor(id,pose,fx,fy,H,o={}){
+  const m=A[pose], w=H*m.w/m.h, x0=-w/2, y0=-H;
+  const im=$(id+'_img'); if(lastPose[id]!==pose){im.setAttribute('href','art/'+pose+'.png');lastPose[id]=pose;}
+  im.setAttribute('x',x0.toFixed(1)); im.setAttribute('y',y0.toFixed(1)); im.setAttribute('width',w.toFixed(1)); im.setAttribute('height',H.toFixed(1));
+  $(id).setAttribute('transform',`translate(${fx.toFixed(1)},${fy.toFixed(1)}) rotate(${(o.rot||0).toFixed(2)}) scale(${(o.sx||1).toFixed(4)},${(o.sy||1).toFixed(4)})`);
+  const mg=$(id+'_mg');
+  if(m.mouth&&o.mouth!==false){const [mx,my,mw]=m.mouth;mg.setAttribute('transform',`translate(${(x0+mx*w).toFixed(1)},${(y0+my*H).toFixed(1)})`);mg.setAttribute('opacity',1);
+    setMouthV(id+'_m',o.env||0,Math.max(4,mw*w*.5),o.mood??.3,o.T||0,o.seed||0);} else mg.setAttribute('opacity',0);
+  let L='';const k=o.blink||0;
+  if(k>0.02&&m.lid) for(const [ex,ey,er] of m.blink||[]){const cx=x0+ex*w, cy=y0+ey*H, r=er*w*1.08;
+    L+=`<ellipse cx="${cx.toFixed(1)}" cy="${(cy-r+r*k).toFixed(1)}" rx="${r.toFixed(1)}" ry="${(r*k).toFixed(1)}" fill="${m.lid}"/><path d="M${(cx-r).toFixed(1)},${(cy-r+2*r*k).toFixed(1)} Q${cx.toFixed(1)},${(cy-r+2*r*k+r*.25*k).toFixed(1)} ${(cx+r).toFixed(1)},${(cy-r+2*r*k).toFixed(1)}" fill="none" stroke="#4a2a24" stroke-width="2.4" stroke-linecap="round"/>`;}
+  $(id+'_lids').innerHTML=L;
+}
+// ---------- geometry helpers ----------
+function crSample(P,n=10){const out=[];for(let i=0;i<P.length-1;i++){const p0=P[Math.max(0,i-1)],p1=P[i],p2=P[i+1],p3=P[Math.min(P.length-1,i+2)];
+  for(let k=0;k<n;k++){const t=k/n,t2=t*t,t3=t2*t;out.push([0,1].map(j=>.5*((2*p1[j])+(-p0[j]+p2[j])*t+(2*p0[j]-5*p1[j]+4*p2[j]-p3[j])*t2+(-p0[j]+3*p1[j]-3*p2[j]+p3[j])*t3)));}}
+  out.push(P[P.length-1]);return out;}
+function arcTab(pts){const s=[0];for(let i=1;i<pts.length;i++)s.push(s[i-1]+Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]));return s;}
+function atS(pts,S,s){s=clamp(s,0,S[S.length-1]);let lo=0,hi=S.length-1;while(hi-lo>1){const m=(lo+hi)>>1;if(S[m]<=s)lo=m;else hi=m;}
+  const k=(s-S[lo])/((S[hi]-S[lo])||1);return [lerp(pts[lo][0],pts[hi][0],k),lerp(pts[lo][1],pts[hi][1],k)];}
+function key(T,ks){if(T<=ks[0][0])return ks[0][1];for(let i=1;i<ks.length;i++){if(T<ks[i][0]){const k=eio(P(T,ks[i-1][0],ks[i][0]));const a=ks[i-1][1],b=ks[i][1];return Array.isArray(a)?a.map((v,j)=>lerp(v,b[j],k)):lerp(a,b,k);}}return ks[ks.length-1][1];}
+const BODY_R=[[-900,652],[-200,651],[-40,649],[60,646],[105,642],[170,632],[250,619],[330,611],[400,612],[440,604],[455,590]];
+const LAUNCH_R=[[472,560],[492,505],[488,452],[462,420],[420,446],[360,470],[280,478],[200,481],[140,483],[100,486],[70,490],[44,502],[30,540],[26,592]];
+const TR=crSample(BODY_R.concat(LAUNCH_R),14), TS=arcTab(TR);
+function sNear(x,y){let b=0,bd=1e9;TR.forEach((p,i)=>{const d=Math.hypot(p[0]-x,p[1]-y);if(d<bd){bd=d;b=i;}});return TS[b];}
+const S_LIPS=sNear(80,644), S_IDLE=sNear(455,590), S_MID=sNear(280,478), S_HAIR=sNear(118,484), S_OUT=sNear(32,530), S_HANG=sNear(26,590), NL=1500;
+const w03=ST['03_noodle'], wUp2=wordT('02_palate','UP'), L09=ST['09_palate'];
+// ---------- SCENE 1 : the head (AI plate) ----------
+let W=`<g id="world">
+ <image href="art/bg_throat.jpg" x="-5.5" y="0" width="731" height="1280" preserveAspectRatio="none"/>
+ <ellipse id="glow" cx="40" cy="492" rx="80" ry="64" fill="#fffbe0" opacity="0" filter="url(#soft2)"/>
+ <g id="arDown" opacity="0"><path d="M492,630 L492,720 L474,720 L506,768 L538,720 L520,720 L520,630 Z" fill="#ffd21f" ${LN}/></g>
+ <g id="arUpX" opacity="0"><path d="M380,380 L380,312 L364,312 L390,276 L416,312 L400,312 L400,380 Z" fill="#ffd21f" ${LN2}/><circle cx="390" cy="350" r="24" fill="#e0454f" ${LN2}/><path d="M380,340 L400,360 M400,340 L380,360" stroke="#fff" stroke-width="5" stroke-linecap="round"/></g>
+ <g id="noodleG"><path id="ndO" fill="none" stroke="#4a2a24" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="ndF" fill="none" stroke="${NOOD}" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="ndS" fill="none" stroke="${NOOD_S}" stroke-width="6" stroke-linecap="round" opacity=".75"/>
+  <path id="ndH" fill="none" stroke="#fff4c6" stroke-width="4.5" stroke-linecap="round" opacity=".95"/>
+  <g id="ndFace"><g transform="translate(-21,-18)">${oEye('nEyeL',23,NOOD)}</g><g transform="translate(21,-18)">${oEye('nEyeR',23,NOOD)}</g>${brow('nBrowL')}${brow('nBrowR')}${mouthEl('noodle_m',0,14)}
+   <g id="tickle" opacity="0"><path d="M-40,-30 q-10,-8 -4,-18 M-46,-4 q-14,-2 -12,-14 M-38,22 q-14,4 -16,-8" fill="none" stroke="#4a2a24" stroke-width="3" stroke-linecap="round"/></g></g>
+  <g id="speed" opacity="0"></g></g>
+ <g id="air"></g><g id="has"></g>
+ ${actorSVG('pal')}
+ <g id="ticks" opacity="0">${[0,1,2].map(i=>`<path d="M${352-i*6},${380+i*30} l-28,${-8+i*8}" stroke="#ffd21f" stroke-width="6" stroke-linecap="round"/><path d="M${584+i*6},${380+i*30} l28,${-8+i*8}" stroke="#ffd21f" stroke-width="6" stroke-linecap="round"/>`).join('')}</g>
+ <g id="pubBub" opacity="0"><g transform="translate(236,196)">
+  <ellipse rx="216" ry="156" fill="#fff" ${LN}/><circle cx="168" cy="150" r="17" fill="#fff" ${LN2}/><circle cx="196" cy="182" r="10" fill="#fff" ${LN2}/>
+  <clipPath id="pubClip"><ellipse rx="206" ry="146"/></clipPath>
+  <g clip-path="url(#pubClip)"><image href="art/public_scene.jpg" x="-215" y="-215" width="430" height="430"/></g>
+  <ellipse rx="216" ry="156" fill="none" ${LN}/>
+  <text id="ha1" class="cap" x="-120" y="-96" text-anchor="middle" style="font-size:42px" opacity="0" transform="rotate(-12,-120,-96)">HA HA!</text>
+  <text id="ha2" class="cap" x="128" y="-90" text-anchor="middle" style="font-size:42px" opacity="0" transform="rotate(10,128,-90)">LOL!</text></g></g>
+ <g id="bInset" opacity="0"><g id="bInsetI">
+  <circle r="139" fill="none" ${LN}/><circle r="134" fill="#fff"/><clipPath id="bClip"><circle r="126"/></clipPath>
+  <g clip-path="url(#bClip)"><circle r="126" fill="#ffe8de"/><circle r="126" fill="none" stroke="#f4c3b6" stroke-width="30" opacity=".6"/>${actorSVG('brn')}</g><circle r="126" fill="none" ${LN2}/>
+  <g id="ring" opacity="0">${[0,1,2].map(i=>`<path d="M${150+i*14},${-40-i*10} q${16+i*6},${24+i*6} 0,${52+i*14} M${-150-i*14},${-40-i*10} q${-16-i*6},${24+i*6} 0,${52+i*14}" fill="none" stroke="#ffd21f" stroke-width="7" stroke-linecap="round"/>`).join('')}</g></g></g>
+</g>`;
+let S1=`<g id="s1"><g id="cam">${W}</g>
+ ${labelBox('lbPal','SOFT PALATE',472,262,22)}${labelBox('lbNose','NOSE',236,446,24)}${labelBox('lbBrain','BRAIN',575,28,24)}</g>`;
+// ---------- SCENE 2 : clinic ----------
+let S2=`<g id="s2"><g id="ccam"><image href="art/clinic_bg.jpg" x="-5.5" y="0" width="731" height="1280" preserveAspectRatio="none"/>
+ ${actorSVG('doc')}${actorSVG('pat')}
+ <g id="bub" opacity="0"><g transform="translate(360,214)">
+   <ellipse rx="234" ry="152" fill="#fff" ${LN}/>
+   <clipPath id="bubClip"><ellipse rx="224" ry="142"/></clipPath>
+   <g clip-path="url(#bubClip)"><use href="#world" transform="scale(.74) translate(-282,-480)"/></g>
+   <ellipse rx="234" ry="152" fill="none" ${LN}/></g></g>
+</g>
+ ${labelBox('lbReg','NASAL REGURGITATION',360,64,26)}
+ <g id="lbTip" opacity="0" transform="translate(360,64)"><rect x="-200" y="-24" width="400" height="48" fill="#fff" ${LN}/><circle cx="-170" cy="0" r="15" fill="#f0a020" ${LN2}/><path d="M-170,-8 v9 M-170,7 v1" stroke="#fff" stroke-width="4" stroke-linecap="round"/><text class="lbl" style="font-size:20px" x="26" y="8" text-anchor="middle">HAPPENS OFTEN? GET CHECKED</text></g>
+</g>`;
+// ---------- SCENE G : stinger ----------
+const SG_PTS=[[268,880],[306,944],[378,956],[458,948],[498,996],[468,1056],[392,1080],[306,1070],[250,1030],[268,984],[336,1000],[408,1014],[458,1004]];
+let SG=`<g id="sg"><g id="gcam"><image href="art/sting_bg.jpg" x="-5.5" y="0" width="731" height="1280" preserveAspectRatio="none"/>
+ <ellipse cx="380" cy="1040" rx="200" ry="34" fill="#000" opacity=".10"/>
+ <path id="sgO" fill="none" stroke="#4a2a24" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/><path id="sgF" fill="none" stroke="${NOOD}" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+ <path id="sgH" fill="none" stroke="#fff4c6" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+ <g id="sgFace"><g transform="translate(-26,-24)">${oEye('sEyeL',26,NOOD)}</g><g transform="translate(26,-24)">${oEye('sEyeR',26,NOOD)}</g>${brow('sBrowL')}${brow('sBrowR')}${mouthEl('sting_m',0,18)}
+  <path id="tear" d="M0,-10 C5,-2 8,4 6,9 C4,14 -5,14 -7,9 C-9,4 -5,-2 0,-10 Z" fill="#8fd3f4" ${LN2} opacity="0"/></g></g>
+ <g id="cta" opacity="0"><g id="cta_i">
+  <rect x="-250" y="-62" width="500" height="132" rx="26" fill="#fff" ${LN}/>
+  <text class="cta" text-anchor="middle" y="6" style="font-size:66px;stroke-width:9px" fill="#ffd21f">FOLLOW</text>
+  <text class="cta" text-anchor="middle" y="52" style="font-size:30px;stroke-width:6px" fill="#fff">FOR MORE BODY SECRETS</text></g></g>
+</g>`;
+// =============== assemble ===============
+const svg=$('S');
+const body=S1+S2+SG+`<rect id="indark" width="720" height="1280" fill="#1e1012" opacity="0"/><g id="capg"><text id="cap" class="cap" x="360" y="1110" text-anchor="middle"></text></g>`;
+svg.innerHTML=`<defs><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter><filter id="soft2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter><filter id="soft3" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>${DEFS}</defs>`+body;
+// =============== timing ===============
+function palState(T){
+  let pose='pal_neutral',x=472,y=586,H=300,rot=0,sx=1,sy=1;
+  const seg=[[E.down-.25,E.down+1.15,'pal_point'],[E.noway-.1,E.noway+.95,'pal_stop'],[E.bubble-.2,E.bubbleEnd,'pal_drama'],[L09-.1,E.drop,'pal_panic'],[E.drop,E.blame-.25,'pal_fall'],[E.blame-.25,1e9,'pal_fist']];
+  let t0=0;for(const [a,b,p] of seg) if(T>=a&&T<b){pose=p;t0=a;}
+  if(pose==='pal_neutral'){for(const [a,b] of seg) if(T>=b&&b>t0) t0=b;}
+  const pop=P(T,t0,t0+.18); if(pop<1){const k=Math.sin(pop*Math.PI);sx*=1+.06*k;sy*=1-.05*k;}
+  const env=speak('palate',T);
+  sy*=1+Math.sin(T*3)*.012+env*.025; sx*=1-Math.sin(T*3)*.006;
+  if(pose==='pal_panic'){x+=Math.sin(T*31)*(T>=E.laugh?4:2);}
+  if(pose==='pal_stop'){const k=Math.sin(P(T,E.noway,E.noway+.35)*Math.PI);x-=10*k;y+=6*k;}
+  if(pose==='pal_fall'){const k=P(T,E.drop,E.drop+.7);x=lerp(472,474,k);y=lerp(566,850,k*k);rot=lerp(0,-14,k)+Math.sin(T*9)*4*(1-P(T,E.drop+.7,E.drop+1.4));
+    const land=P(T,E.drop+.7,E.drop+1.05);if(land>0&&land<1){sy*=1-.12*Math.sin(land*Math.PI);sx*=1+.08*Math.sin(land*Math.PI);}}
+  if(pose==='pal_fist'){x=474;y=850;rot=Math.sin(T*16)*1.5;}
+  return {pose,x,y,H,rot,sx,sy,env};
+}
+function worldState(T){
+  const s={};let sh;
+  if(T<E.launch) sh=lerp(S_LIPS-40,S_IDLE,eo(P(T,.12,.95)));
+  else if(T<E.popout){sh=lerp(S_IDLE,S_MID,eio(P(T,E.launch,E.launch+1.6)));sh=lerp(sh,S_HAIR,eio(P(T,E.launch+1.6,E.innose+.4)));}
+  else {sh=lerp(S_HAIR,S_OUT,eo(P(T,E.popout,E.popout+.18)));sh=lerp(sh,S_HANG,eob(P(T,E.popout+.18,E.popout+.6)));}
+  if(T>=E.innose+.4&&T<E.popout) sh+=Math.sin(T*24)*3;
+  s.sh=sh;let off=[0,Math.sin(T*2.3)*4];
+  if(T<E.launch){
+    const pk=key(T,[[w03,[0,0]],[w03+.5,[4,-24]],[E.peek+.2,[8,-46]],[E.noway,[8,-46]],[E.noway+.15,[-4,26]],[E.noway+.7,[0,8]],[E.noway+1.3,[0,0]]]);
+    off=[off[0]+pk[0],off[1]+pk[1]];
+    const up=key(T,[[E.up-.6,0],[E.up,1],[E.public,1],[E.public+.4,0]]); off[1]-=up*16;
+    const dp=key(T,[[E.boring-.5,0],[E.boring,1],[E.ring,1],[E.ring+.3,0]]); off=[off[0]-dp*8,off[1]+dp*22];
+    if(T>=E.laugh){off[0]+=Math.sin(T*37)*4;off[1]+=Math.cos(T*29)*4;}
+  }
+  s.off=off;return s;
+}
+function noodlePts(st){const pts=[];const tail=st.sh-NL;for(let s=Math.max(0,tail);s<=st.sh;s+=12)pts.push([s,atS(TR,TS,s)]);pts.push([st.sh,atS(TR,TS,st.sh)]);
+  return pts.map(([s,p])=>{const w=clamp(1-(st.sh-s)/150);const k=w*w*(3-2*w);return [p[0]+st.off[0]*k,p[1]+st.off[1]*k];});}
+function renderWorld(T){
+  const st=worldState(T);
+  let pts=noodlePts(st);
+  const wv=pts.map((p,i)=>{const n=pts.length;if(i===0||i===n-1)return p;const dx=pts[i+1][0]-pts[i-1][0],dy=pts[i+1][1]-pts[i-1][1],L=Math.hypot(dx,dy)||1;
+    const a=Math.sin(i*.55-T*6)*2.2*clamp((n-i)/8);return [p[0]-dy/L*a,p[1]+dx/L*a];});
+  const d=smooth(wv);['ndO','ndF'].forEach(id=>$(id).setAttribute('d',d));
+  $('ndS').setAttribute('d',smooth(wv.map(p=>[p[0]+2,p[1]+6])));$('ndH').setAttribute('d',smooth(wv.slice(-Math.min(wv.length,60)).map(p=>[p[0]-2,p[1]-6])));
+  const hd=pts[pts.length-1], pv=pts[Math.max(0,pts.length-4)], dirx=hd[0]-pv[0], diry=hd[1]-pv[1];
+  const launched=T>=E.launch, out=T>=E.popout;
+  tr('ndFace',hd[0],hd[1]-6,1,1,0);
+  let lx=launched?dirx*6:(T>=E.ring&&T<E.laugh?30:10), ly=launched?diry*6:(T>=E.ring&&T<E.laugh?-40:-34);
+  if(out){lx=Math.sin(T*1.7)*20;ly=-6;}
+  const nb=blinkK(T,1.3), nlid=(T>=E.boring-.3&&T<E.ring)?.55:(T>=E.noway&&T<E.noway+.9?.35:.12);
+  const panic=(T>=E.launch&&T<E.innose+.5)||(T>=E.wait&&T<E.popout+.6);
+  setOEye('nEyeL',23,{dx:lx,dy:ly,lid:panic?0:nlid,blink:nb,small:panic});setOEye('nEyeR',23,{dx:lx,dy:ly,lid:panic?0:nlid,blink:nb,small:panic});
+  const nbr=T>=E.boring-.3&&T<E.ring?-6:(panic?10:(T>=E.peek-.8&&T<E.noway?8:2));
+  setBrow('nBrowL',-21,-48-Math.max(0,nbr)*.4,18,-nbr*.8,3);setBrow('nBrowR',21,-48-Math.max(0,nbr)*.4,18,nbr*.8,3);
+  setMouthV('noodle_m',speak('noodle',T),13,(T>=E.boring-.3&&T<E.ring)||out?-.6:.8,T,1);
+  show('tickle',T>=E.innose+.4&&T<E.popout&&Math.floor(T*6)%2===0?1:0);
+  const fly=T>=E.launch&&T<E.innose+.3;
+  if(fly){const L=Math.hypot(dirx,diry)||1,ux=dirx/L,uy=diry/L;$('speed').innerHTML=[-16,0,16].map((o,i)=>{const bx=hd[0]-ux*(40+i*8)-uy*o,by=hd[1]-uy*(40+i*8)+ux*o;return `<path d="M${bx.toFixed(1)},${by.toFixed(1)} l${(-ux*(46+i*10)).toFixed(1)},${(-uy*(46+i*10)).toFixed(1)}" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".9"/>`;}).join('');}
+  show('speed',fly?1:0);
+  // soft palate (the bouncer)
+  const ps=palState(T);
+  placeActor('pal',ps.pose,ps.x,ps.y,ps.H,{rot:ps.rot,sx:ps.sx,sy:ps.sy,env:ps.env,mood:ps.pose==='pal_drama'?.6:-.3,T,seed:3,blink:blinkK(T,.4),mouth:ps.pose!=='pal_fall'});
+  show('ticks',T>=E.shut-.05&&T<E.shut+1.1&&Math.floor(T*10)%2===0?1:0);
+  // brain on the phone (inset over the brain)
+  const inA=T>=E.ring-.35&&T<E.laugh+.25, inB=T>=E.blame-.45&&T<T_CLINIC, inOn=inA||inB;
+  show('bInset',inOn?1:0);
+  if(inOn){const t0=inA?E.ring-.35:E.blame-.45;const k=eob(P(T,t0,t0+.3))*(inA?1-eio(P(T,E.laugh-.05,E.laugh+.25)):1);
+    const ringOn=T>=E.ring&&T<E.brain-.05, shk=ringOn?Math.sin(T*60)*5:0;
+    $('bInset').setAttribute('transform',`translate(${575+shk},176) scale(${k.toFixed(3)})`);
+    show('ring',ringOn&&Math.floor(T*8)%2===0?1:0);
+    const bpose=T<E.ring?'brain_base':(T>=ST['16_brain']-.1?'brain_smug':'brain_shock');
+    const benv=speak('brain',T);
+    placeActor('brn',bpose,0,128,232,{sy:1+benv*.03+Math.sin(T*2.6)*.01,env:benv,mood:bpose==='brain_smug'?1:.2,T,seed:7,blink:bpose==='brain_shock'?blinkK(T,2.6):0});}
+  // nose: daylight glow
+  show('glow',T>=E.daylight-.1?clamp(P(T,E.daylight-.1,E.daylight+.3)*.9-(T>E.popout+.6?.3:0)):0);
+  // teaching arrows
+  const ad1=T>=E.down&&T<E.down+1.3, ad2=T>=wUp2&&T<wUp2+1.1;
+  show('arDown',ad1?1:0); if(ad1) $('arDown').setAttribute('transform',`translate(506,640) scale(${eob(P(T,E.down,E.down+.25))}) translate(-506,-640) translate(0,${Math.sin(T*9)*5})`);
+  show('arUpX',ad2?1:0); if(ad2) $('arUpX').setAttribute('transform',`translate(390,330) scale(${eob(P(T,wUp2,wUp2+.25))}) translate(-390,-330)`);
+  // the laugh: air from the lungs, HA! letters
+  const lg=T>=E.laugh-.05&&T<E.innose;
+  if(lg){const open=T>=E.drop+.1;const R=open?[[505,1250],[505,900],[500,700],[495,600],[492,505],[470,430],[400,450],[280,478],[140,483],[60,490],[20,500]]:[[505,1250],[505,900],[500,700],[496,600]];
+    const rp=crSample(R,8), rs=arcTab(rp), Lr=rs[rs.length-1];let h='';
+    for(let k=0;k<6;k++){const u=((T-E.laugh)*(open?1.1:1.6)+k/6)%1, s0=u*Lr;const a=atS(rp,rs,s0), b=atS(rp,rs,s0+60), c=atS(rp,rs,s0+120);
+      h+=`<path d="M${a[0].toFixed(1)},${a[1].toFixed(1)} Q${b[0].toFixed(1)},${b[1].toFixed(1)} ${c[0].toFixed(1)},${c[1].toFixed(1)}" fill="none" stroke="#fff" stroke-width="${k%2?6:9}" stroke-linecap="round" opacity="${(.9*Math.sin(u*Math.PI)).toFixed(2)}"/>`;}
+    $('air').innerHTML=h;} else $('air').innerHTML='';
+  let hh='';[0,.5,1.0,1.5,2.0].forEach((o,i)=>{const t0=E.laugh+o,k=P(T,t0,t0+1.1);if(k>0&&k<1){const x=420+[0,-60,50,-30,40][i],y=1000-k*260;
+    hh+=`<text class="cap" x="${x}" y="${y.toFixed(1)}" text-anchor="middle" style="font-size:${50+i*4}px" opacity="${(1-k*k).toFixed(2)}" transform="rotate(${[-10,8,-6,12,-4][i]},${x},${y.toFixed(1)}) translate(${x},${y.toFixed(1)}) scale(${eob(clamp(k*4)).toFixed(3)}) translate(${-x},${(-y).toFixed(1)})">HA!</text>`;}});
+  $('has').innerHTML=hh;
+  // thought bubble "in public"
+  const bo=T>=E.bubble&&T<E.bubbleEnd; show('pubBub',bo?1:0);
+  if(bo){const k=eob(P(T,E.bubble,E.bubble+.3));$('pubBub').setAttribute('transform',`translate(430,360) scale(${k}) translate(-430,-360)`);show('ha1',T>=E.public?1:0);show('ha2',T>=E.public+.25?1:0);}
+}
+function renderInside(T){
+  renderWorld(T);
+  let sx=0,sy=0;
+  if(T>=E.laugh&&T<E.launch+.6){const a=T<E.drop?4:8;sx+=Math.sin(T*47)*a;sy+=Math.cos(T*41)*a;}
+  const imp=(t0,a)=>{const k=P(T,t0,t0+.3);if(k>0&&k<1){sx+=Math.sin(k*40)*a*(1-k);sy+=Math.cos(k*33)*a*(1-k);}};
+  imp(E.noway,6);imp(E.drop+.7,12);imp(E.popout,10);
+  const pz=eio(P(T,E.innose,E.innose+1.2))*(1-eio(P(T,E.popout+.5,E.popout+1.1)));
+  const z=1.02+.30*pz; let cx=lerp(360,230,pz), cy=lerp(640,500,pz); cx=clamp(cx,360/z-5,725-360/z); cy=clamp(cy,640/z,1280-640/z);
+  $('cam').setAttribute('transform',`translate(${360+sx},${640+sy}) scale(${z}) translate(${-cx},${-cy})`);
+  popLabel('lbPal',T,1.0,5.2,472,262);
+  popLabel('lbNose',T,E.nose-.05,E.peek-.2,236,446);
+  popLabel('lbBrain',T,E.brain,E.notnow-.2,575,28);
+  show('indark',P(T,T_CLINIC-.25,T_CLINIC)*.9);
+}
+function renderS2(T){
+  const dT=speak('doctor',T), pT=speak('patient',T), d0=ST['18_doctor'], pa=ST['17_patient'];
+  const dpose=T>=E.harmless-.2?'doc_point':'doc_base', ppose=T>=E.regurg?'pat_surprised':'pat_base';
+  placeActor('doc',dpose,208,1185,790,{rot:dT>.15?Math.sin(T*6.5)*.6*dT:0,sy:1+Math.sin(T*1.3)*.006+dT*.012,env:dT,mood:.7,T,seed:5});
+  let pr=0; if(T>=d0&&dT<.05) pr+=Math.sin(T*9)*.6*(speak('doctor',T-.25)>.1?1:0); if(T>=E.checked-.1) pr+=Math.sin(P(T,E.checked-.1,E.checked+.9)*Math.PI*2)*1.2;
+  placeActor('pat',ppose,522,1185,742,{rot:pr+(T<d0&&pT>.2?Math.sin(T*7)*.6:0),sy:1+Math.sin(T*1.5+1)*.006+pT*.012,env:pT,mood:T<E.regurg?-.5:.6,T,seed:6});
+  const pq=eio(P(T,pa,pa+1.5))*(1-eio(P(T,d0-.2,d0+.4)));
+  let z=1+.035*P(T,d0,END)+.08*pq, cx=lerp(360,470,pq), cy=lerp(640,560,pq);
+  const pk=eio(P(T,E.regurg-.15,E.regurg+.15))*(1-eio(P(T,E.swallow-.35,E.swallow)));
+  z=lerp(z,1.55,pk); cx=lerp(cx,250,pk); cy=lerp(cy,560,pk);
+  const ty=lerp(640,600,pk); cx=clamp(cx,360/z,720-360/z); cy=clamp(cy,ty/z,1280-(1280-ty)/z);
+  $('ccam').setAttribute('transform',`translate(360,${ty}) scale(${z}) translate(${-cx},${-cy})`);
+  const b1=T>=E.swallow-.15&&T<E.laughing-.15, b2=T>=E.laughing-.15&&T<E.harmless-.3;
+  $('bub').setAttribute('opacity',(b1||b2)?1:0);
+  if(b1||b2){const k=P(T,E.swallow-.15,E.swallow+.15);$('bub').setAttribute('transform',`translate(360,214) scale(${eob(k)}) translate(-360,-214)`);
+    const rt=b1?lerp(E.peek-.6,E.shut+.6,P(T,E.swallow,E.laughing-.3)):lerp(E.drop-.3,E.innose+.3,P(T,E.laughing,E.harmless-.6));
+    renderWorld(rt);}
+  popLabel('lbReg',T,E.regurg-.05,E.swallow-.2,360,64);
+  popLabel('lbTip',T,E.lot-.1,END,360,64);
+  show('indark',Math.max(P(T,T_STING-.22,T_STING),1-P(T,T_CLINIC,T_CLINIC+.22))*.9);
+}
+function renderSting(T){
+  const t=T-T_STING, talk=speak('noodle',T);
+  const pts=SG_PTS.map((p,i)=>[p[0]+Math.sin(T*2+i)*2,p[1]+Math.cos(T*1.7+i*.7)*2+(i===0?Math.sin(T*1.4)*4:0)]);
+  const d=smooth(pts); $('sgO').setAttribute('d',d); $('sgF').setAttribute('d',d); $('sgH').setAttribute('d',smooth(pts.slice(0,6).map(p=>[p[0]-3,p[1]-7])));
+  tr('sgFace',pts[0][0],pts[0][1]-8,1,1,talk>.3?Math.sin(T*8)*3:-4);
+  const bl=blinkK(T,.9), sad=T<E.then+.2;
+  setOEye('sEyeL',26,{dx:-6,dy:14,lid:sad?.5:.2,blink:bl});setOEye('sEyeR',26,{dx:-6,dy:14,lid:sad?.5:.2,blink:bl});
+  setBrow('sBrowL',-26,-60,32,sad?-16:4,3);setBrow('sBrowR',26,-60,32,sad?16:-4,3);
+  setMouthV('sting_m',talk,14,sad?-1:.6,T,2);
+  show('tear',sad&&t>.6?1:0); if(sad) $('tear').setAttribute('transform',`translate(-44,${(-6+((t*40)%34)).toFixed(1)})`);
+  const zin=1.22+.08*eio(P(t,0,2)), gcy=Math.min(1280-640/zin,820); $('gcam').setAttribute('transform',`translate(360,640) scale(${zin}) translate(-372,${-gcy})`);
+  const ck=P(T,E.cta,E.cta+.35); show('cta',T>=E.cta?1:0);
+  $('cta').setAttribute('transform',`translate(360,${230+Math.sin(T*3)*4}) rotate(${Math.sin(T*2.2)*2})`); $('cta_i').setAttribute('transform',`scale(${eob(ck)})`);
+  show('indark',(1-P(t,0,.22))*.9);
+}
+function caption(T){let w='',ws=0;for(const L of D.lines)for(const x of L.words){if(T>=x[0]&&T<Math.max(x[1],x[0]+.12)){w=x[2];ws=x[0];}}
+  if(!w){for(const L of D.lines)for(const x of L.words){if(T>=x[1]&&T<x[1]+.12){w=x[2];ws=x[0];}}}
+  const c=$('cap'),big=KEY.test(w.replace(/[^A-Z']/g,'')); c.textContent=w; c.style.fontSize=big?'56px':'44px'; c.style.fill=big?'#ffd21f':'#fff';
+  const k=eo(P(T,ws,ws+.09)); c.setAttribute('transform',`translate(360,1110) scale(${lerp(1.2,1,k)}) translate(-360,-1110)`);}
+window.render=function(T){
+  const ins=T<T_CLINIC, cli=T>=T_CLINIC&&T<T_STING, stg=T>=T_STING;
+  $('s1').setAttribute('display',ins?'inline':'none'); $('s2').setAttribute('display',cli?'inline':'none'); $('sg').setAttribute('display',stg?'inline':'none');
+  show('indark',0);
+  if(ins) renderInside(T);
+  if(cli) renderS2(T);
+  if(stg) renderSting(T);
+  caption(T);
+};
+window.render(0);
