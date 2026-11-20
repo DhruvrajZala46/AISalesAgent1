@@ -1,6 +1,17 @@
-# The Classy Elegance - YouTube videos
+# Two projects live in this repo
 
-This repo makes videos for the YouTube channel The Classy Elegance (calm, kind, timeless elegance for
+## A. Health-cartoon Shorts (`health-cartoons/`) - the CURRENT project (Nov 2026)
+
+English "talking organs + doctor" cartoon Shorts, drawn and animated entirely in code.
+**New chat about these videos? Read `health-cartoons/README.md`, then `health-cartoons/PLAYBOOK.md` and `health-cartoons/LEARNINGS.md` FIRST.**
+The quality bar is `health-cartoons/videos/001-earwax-cotton-buds/` (user: "mind blowing - keep this same standard in ALL next videos":
+same visuals, sounds, SFX, music, hooks, retention, script format and theme). Start every new video by copying that folder.
+The user writes in Hinglish; reply in simple Hinglish. Be honest about quality (measured, never "99%" claims).
+Never commit media, keys or cookies; `health-cartoons/tools/fetch_assets.sh` and each `script.md` let you re-create the media.
+
+## B. The Classy Elegance - YouTube videos
+
+This repo also makes videos for the YouTube channel The Classy Elegance (calm, kind, timeless elegance for
 women of every age). Everything lives in `classy-academy-test/`.
 
 **New chat? Read `classy-academy-test/HANDOFF.md` FIRST** - the state of the work, the user's last (rejected) video and the open task.

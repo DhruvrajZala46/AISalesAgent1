@@ -1,0 +1,12 @@
+# media is never committed (repo rule); re-create with tools/fetch_assets.sh and the ElevenLabs IDs in each video's script.md
+assets/
+*.mp3
+*.wav
+*.mp4
+*.png
+*.jpg
+*.woff2
+videos/*/raw/
+videos/*/proc/
+videos/*/data.js
+videos/*/data.json
