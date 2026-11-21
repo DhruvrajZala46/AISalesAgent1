@@ -100,11 +100,12 @@ function renderBrain(T){
 }
 function renderBed(T){
   const me=speak('man',T), b0=ST['23_man'];
-  placeActor('man','man_bed',430,1270,880,{sy:1+Math.sin(T*1.4)*.006+me*.01,rot:me>.3?Math.sin(T*9)*.5:0,env:me,T,seed:6});
+  const after=T>=lastEnd('24_man')?Math.min(1,(T-lastEnd('24_man'))/.3):0;   // after his last line: a grossed-out shudder, so the end never freezes
+  placeActor('man','man_bed',430,1270,880,{sy:1+Math.sin(T*1.4)*.006+me*.01+after*Math.sin(T*6)*.012,rot:(me>.3?Math.sin(T*9)*.5:0)+after*Math.sin(T*4.5)*1.6,env:me,T,seed:6});
   // a green burp cloud on every *BURP*
   let h='';const L=D.lines.find(l=>l.id==='23_man');L.words.filter(w=>w[2]==='*BURP*').forEach((w,i)=>{const k=P(T,w[0],w[0]+1.4);if(k>0&&k<1)h+=`<ellipse cx="${(392+k*80+i*6).toFixed(1)}" cy="${(650-k*110).toFixed(1)}" rx="${(30+k*70).toFixed(1)}" ry="${(22+k*45).toFixed(1)}" fill="#8fb84a" opacity="${(.7*(1-k)).toFixed(2)}"/>`;});
   $('burps').innerHTML=h;
-  let s='';if(T>=b0+.3)for(let i=0;i<3;i++){const u=((T*.7)+i/3)%1;s+=`<path d="M${(420+i*45).toFixed(1)},${(690-u*130).toFixed(1)} q12,-16 0,-32 q-12,-16 0,-32" fill="none" stroke="#7fa83a" stroke-width="6" stroke-linecap="round" opacity="${(.8*Math.sin(u*Math.PI)).toFixed(2)}"/>`;}
+  let s='';if(T>=b0+.3)for(let i=0;i<5;i++){const u=((T*.7)+i/3)%1;s+=`<path d="M${(420+i*45).toFixed(1)},${(690-u*130).toFixed(1)} q12,-16 0,-32 q-12,-16 0,-32" fill="none" stroke="#7fa83a" stroke-width="6" stroke-linecap="round" opacity="${(.8*Math.sin(u*Math.PI)).toFixed(2)}"/>`;}
   $('stink').innerHTML=s;
   const z=1.02+.06*eio(P(T,T_BED,E.tip)); $('cam3').setAttribute('transform',`translate(360,640) scale(${z.toFixed(4)}) translate(-372,${-Math.min(700,1280-640/z).toFixed(1)})`);
   popLabel('lbTip',T,E.tip,END,360,130);
