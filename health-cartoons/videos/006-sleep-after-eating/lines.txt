@@ -1,0 +1,24 @@
+stomach|Mmm... late dinner again.
+stomach|Wait, what? MORE food?
+stomach|I thought we were already full!
+stomach|He's still shoving more in!
+stomach|Hmm... not bad. I've still got some room.
+brain|Yaaawn... long day. I'm going to bed.
+stomach|Brain, NO! You just sent down a whole meal!
+stomach|Who sleeps right after eating?!
+brain|Mmm... deal with it tomorrow.
+intestine|Poor guy, he's exhausted.
+intestine|We could still digest it while he sleeps.
+stomach|We're tired too!
+stomach|Cover for him, and it becomes a habit.
+stomach|Late dinner, straight to bed. Every single night.
+intestine|So... what do we do now?
+stomach|Easy. He sleeps, we sleep.
+stomach|Tomorrow's problem.
+intestine|You SURE about this?
+stomach|Positive.
+intestine|Ugh... what is that SMELL?
+stomach|Hydrogen sulfide. The rotten egg gas.
+stomach|Maybe THAT will teach him a lesson.
+man|Ugh... why do I keep burping?
+man|And why does it smell like rotten eggs?!
