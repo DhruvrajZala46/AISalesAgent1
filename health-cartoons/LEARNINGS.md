@@ -14,6 +14,7 @@
 | 10 | 003 v3: same audio, visuals rebuilt with Meta Muse Image art (plates + sprites, AI-drawn mouths patched in for lip-sync, closer camera, ramen-wavy noodle) | **"GREAT, I LOVED IT, WOW."** | This is the new bar. Every next video: AI art pipeline of `videos/003-food-up-nose-v2/` + the PLAYBOOK section-0 process. |
 | 11 | 004 "Why you can't eat before surgery" (stomach + burger + lungs, 32M-proven topic), same pipeline as 003 v3 | (waiting for the user's verdict) | Measured: 71.7 s, 2.73 words/s, final-mix whisper 98.1%, -11.1 LUFS, true peak -1.0 dB, frozen 0.3%, longest still 0.2 s. |
 | 12 | 005 "Why eating without water makes you constipated": first remake under the proven-10M rule (27M reference, studied shot by shot; same beats, the same two silent gags, our art and words) | (waiting for the user's verdict) | Measured: 76.3 s, clinic 61%, final-mix whisper 96.6% (98% ignoring spellings like "Okaaay"), -11.1 LUFS, true peak -1.2 dB, frozen 0.4%, longest still 0.2 s. |
+| 13 | 006 "Why you shouldn't sleep right after eating": remake of the proven 26M video (no clinic, like the reference; studied at 2 fps + whisper) | (waiting for the user's verdict) | Measured on the first render: whisper 97.0%, -11.3 LUFS; the black "A FEW HOURS LATER" card was 1.6 s of still frames (frozen 2.8%), so it got twinkling stars, a swinging clock, floating Zs and a text pop. A card must move too. |
 
 Other user preferences:
 - Talks in Hinglish; answer in simple Hinglish with plain words, clear and direct.
@@ -37,5 +38,7 @@ Checks learned while building 004 (do them before the first full render):
 - **Even out line loudness before the mix** (`build_audio.py` pulls each line 80% of the way to -19 dB). 004's takes spanned 14 dB; the
   sleepy stomach line and the patient sat as loud as the music, and whisper on the final mix lost a whole line and heard "gag" as "gas"
   (92%). After levelling and moving two SFX off the key words: 98.1%.
+- **When the AI closed-mouth edit moves the whole drawing** (006's yawning brain shifted ~10 px), do not patch from it: draw the closed
+  mouth on the mouthless base at the open mouth's spot (`yawn_closed.py`). Check open/closed bounding boxes before compositing.
 - **Cut clinic thought-bubble replays on the doctor's own words** (relaxes the muscle -> the door; cough reflex -> the lungs straining;
   came back up -> floating; slipped into your lungs -> landing), not one long replay.

@@ -47,7 +47,7 @@ let S2=`<g id="s2"><g id="cam2"><g id="wBrain"><defs><radialGradient id="bgB" cx
 </g>`;
 // ---------- black card ----------
 let CARD=`<g id="card" opacity="0"><rect width="720" height="1280" fill="#0b0b10"/>
- <text class="cta" x="360" y="640" text-anchor="middle" style="font-size:58px;stroke-width:8px" fill="#fff">A FEW HOURS LATER...</text>
+ <g id="cardStars"></g><g id="cardTxt"><text class="cta" x="0" y="0" text-anchor="middle" style="font-size:58px;stroke-width:8px" fill="#fff">A FEW HOURS LATER...</text></g><g id="cardZ"></g>
  <g id="clk" transform="translate(360,500)"><circle r="54" fill="#fff" stroke="#888" stroke-width="5"/><path id="clkH" d="M0,0 L0,-30" stroke="#222" stroke-width="7" stroke-linecap="round"/><path id="clkM" d="M0,0 L0,-44" stroke="#e0454f" stroke-width="5" stroke-linecap="round"/></g></g>`;
 // ---------- SCENE 3: the bedroom ----------
 let S3=`<g id="s3"><g id="cam3"><g id="wBed">${IMG('plate_bedroom.jpg')}${actorSVG('man')}<g id="burps" filter="url(#soft)"></g><g id="stink"></g></g></g>
@@ -126,7 +126,12 @@ window.render=function(T){
     dark=Math.max(1-P(T,T_BRAIN,T_BRAIN+.15),P(T,T_BACK-.15,T_BACK));}
   if(sc===3){renderBed(T); dark=1-P(T,T_BED,T_BED+.15);}
   const cardOn=T>=T_CARD&&T<T_GAS; show('card',cardOn?1:0);
-  if(cardOn){const u=P(T,T_CARD,T_GAS);$('clkH').setAttribute('transform',`rotate(${u*120})`);$('clkM').setAttribute('transform',`rotate(${u*1440})`);}
+  if(cardOn){const u=P(T,T_CARD,T_GAS), pop=eob(P(T,T_CARD,T_CARD+.35));
+    $('clkH').setAttribute('transform',`rotate(${u*120})`);$('clkM').setAttribute('transform',`rotate(${u*1440})`);
+    $('clk').setAttribute('transform',`translate(360,${(500+Math.sin(T*5)*6).toFixed(1)}) rotate(${(Math.sin(T*7)*8).toFixed(1)}) scale(${pop.toFixed(3)})`);
+    $('cardTxt').setAttribute('transform',`translate(360,640) scale(${(lerp(.6,1,pop)*(1+.03*Math.sin(T*4))).toFixed(3)})`);
+    let st='';for(let i=0;i<18;i++){const x=40+rnd(i)*640,y=80+rnd(i+30)*1100,tw=.3+.7*Math.abs(Math.sin(T*3+i*1.7));st+=`<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${(2+rnd(i+60)*3).toFixed(1)}" fill="#fff" opacity="${tw.toFixed(2)}"/>`;}$('cardStars').innerHTML=st;
+    let z='';for(let i=0;i<3;i++){const k=((T*.7)+i/3)%1;z+=`<text class="cta" x="${(440+k*60).toFixed(1)}" y="${(780-k*160).toFixed(1)}" style="font-size:${(30+k*26).toFixed(0)}px;stroke-width:5px" fill="#9fd0ff" opacity="${Math.sin(k*Math.PI).toFixed(2)}">Z</text>`;}$('cardZ').innerHTML=z;}
   show('indark',dark*.9);
   if(cardOn) $('cap').textContent=''; else caption(T);
 };
