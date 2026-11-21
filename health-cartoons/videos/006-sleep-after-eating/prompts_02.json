@@ -1,0 +1,60 @@
+[
+ {
+  "name": "art/buddy_mask",
+  "src": "art/src/buddy_base.png",
+  "prompt": "Same small-intestine character, same chubby pink coil, same colors, same white gloves. Change only the pose and face: fast asleep wearing a tiny light blue sleep mask over its eyes, arms limp, peaceful, a small 'Zzz' above. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/buddy_sniff",
+  "src": "art/src/buddy_base.png",
+  "prompt": "Same small-intestine character, same chubby pink coil, same colors, same white gloves. Change only the pose and face: disgusted by a terrible smell, one gloved hand pinching the top of its coil like holding a nose, eyes squinting and watering, a faint green tint, grossed-out eyebrows. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/mouth/stomach_fork_o",
+  "src": "art/src/stomach_fork.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, centered just below the eyes and above the open inside: an open happy chewing mouth, dark maroon inside with a small pink tongue. Simple flat cartoon style matching the eyes, thin dark outline, no lips."
+ },
+ {
+  "name": "art/mouth/stomach_shout_o",
+  "src": "art/src/stomach_shout.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, centered just below the eyes and above the open inside, between the cupped hands: a wide open shouting mouth with a pink tongue. Simple flat cartoon style matching the eyes, thin dark outline, no lips."
+ },
+ {
+  "name": "art/mouth/stomach_smug_o",
+  "src": "art/src/stomach_smug.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, centered just below the eyes and above the open inside: an open sly smirking talking mouth, slanted to one side. Simple flat cartoon style matching the eyes, thin dark outline, no lips."
+ },
+ {
+  "name": "art/mouth/stomach_sniff_o",
+  "src": "art/src/stomach_sniff.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, centered just below the eyes and above the open inside: an open grossed-out talking mouth, wavy, dark maroon inside. Simple flat cartoon style matching the eyes, thin dark outline, no lips."
+ },
+ {
+  "name": "art/mouth/buddy_base_o",
+  "src": "art/src/buddy_base.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, on the front of the coil just below the eyes: a small open worried talking mouth with a pink tongue. Simple flat cartoon style matching the eyes, thin dark outline, no lips."
+ },
+ {
+  "name": "art/mouth/brain_yawn_o",
+  "src": "art/src/brain_yawn.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, on the front of the brain just below the eyes: a huge wide open yawning mouth with a pink tongue. Simple flat cartoon style matching the eyes, thin dark outline, no lips."
+ },
+ {
+  "name": "art/mouth/brain_mask_o",
+  "src": "art/src/brain_mask.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, on the front of the brain just below the sleep mask: a small open sleepy mumbling mouth. Simple flat cartoon style matching the eyes, thin dark outline, no lips."
+ },
+ {
+  "name": "art/mouth/man_bed_o",
+  "src": "art/src/man_bed.png",
+  "size": "1024x1792",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only add ONE mouth, on the man's face just below his nose, partly beside his hand: an open grossed-out talking mouth. Simple flat cartoon style matching the eyes, thin dark outline, no lips."
+ }
+]

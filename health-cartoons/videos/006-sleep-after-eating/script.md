@@ -1,6 +1,6 @@
 # 006 - Why You Shouldn't Sleep Right After Eating
 
-Status (21 Nov 2026): **script draft, waiting for the user's approval.** No credits spent.
+Status (21 Nov 2026): **built** (the user asked "video kha hai?", read as go-ahead); waiting for the user's verdict.
 
 **Proven video we remake (user rule: only proven 10M+ videos, `research/NEXT-10.md` row 2):** Dr. Healthcare
 "Why You Shouldn't Sleep Right After Eating?" **26M views** (`zAIArWsRp-E`, 36x its median). The user uploaded the video; it was studied
@@ -73,3 +73,29 @@ a joke, like the reference's; the on-screen tip at the end is the real advice.
 ## Voices (after approval)
 eleven_v4, 2 takes per line. Stomach = Liam (our 004 stomach voice), brain = Laura (004 brain), buddy = My Stephanie +5 semitones (high, like
 the reference's ~445 Hz buddy), man = Davis (our 004 patient), all picked by whisper accuracy + pitch range.
+
+## How it was made (media is never committed; this re-creates it)
+**Voices:** ElevenLabs `eleven_v4`, flow `Og3G8ozKJiQtmoO4aTHk`, 2 takes per line (session ids in `takes_manifest.tsv`). Stomach = Liam
+`TX3LPaxmHKxFdv7VOQHJ`, brain = Laura `FGY2WhTYpPnrIDTdsKH5`, buddy = My Stephanie `oAoF4NpW2Aqxplg9HdYB` (+5 semitones), man = Davis
+`Z2fsAwk7IblvPhYzfslC`. Picked by `tools/score_takes.py`: 01b 02b 03a 04b 05b 06b 07b 08a 09a 10a 11a 12a 13b 14b 15b 16b 17a 18a 19b 20a 21a 22a 23a 24a.
+Then `process_voice.sh`, `tighten.py proc 0.26`, `tempo.txt` (faster than 005 to match the reference's pace), `words.py`; `build_audio.py`
+levels each line to -19 dB, shows the long yawn as one caption word "YAAAWN" and the man's burps as "*BURP*".
+**Art:** Meta Muse Image via `tools/meta_art.py`: `prompts_01.json` (stomach poses as edits of our 004 stomach, the small-intestine buddy,
+brain yawning/masked as edits of our 003 brain, bedroom, the man as an edit of our 004/003 patient), `prompts_02.json` (buddy poses + open
+mouths), `prompts_03_closed.json` (closed mouths made FROM the open edits). `composite_mouths.py` uses the closed edit as the base
+(`BASE_FROM_C`), and `yawn_closed.py` hand-draws the closed yawn mouth (the AI edit shifted the whole brain). Reused: 004 stomach plate and
+stomach point/panic/asleep sprites, 005 food heap and items. Code-drawn: brain stem and background, sound waves, Zzz, the black card
+with a spinning clock, green gas, burp clouds and stink lines.
+Build: `python3 build_audio.py && python3 assemble.py && node ../../tools/render.js && LIM=0.72 bash ../../tools/mix.sh video.mp4 final.mp4`.
+
+## Upload block
+**Title:** Why You Shouldn't Sleep Right After Eating 😴🍔  (the proven 26M wording, word for word: "Why You Shouldn't Sleep Right After Eating?")
+**Cover frame:** the stomach and the small intestine asleep in sleep masks (about 46 s), or the brain putting on its sleep mask (about 23 s).
+**Description:**
+Late dinner... straight to bed. 😴 The brain clocks out, the stomach and gut go on strike, and by morning: rotten-egg burps. Here's why
+lying down right after a big meal is a bad habit, and the simple rule: wait about 3 hours after eating before you lie down.
+
+A cartoon for general education, not medical advice. If you get heartburn or reflux often, talk to a doctor.
+Sources: NIDDK "Eating, Diet & Nutrition for GER & GERD"; Mayo Clinic News Network "Timing snacks to avoid heartburn"; Healthline "Sulfur burps".
+
+#shorts #health #digestion #heartburn #healthfacts #humanbody #sleep #animation

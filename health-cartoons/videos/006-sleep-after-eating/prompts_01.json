@@ -1,0 +1,48 @@
+[
+ {
+  "name": "art/stomach_fork",
+  "src": "art/src/stomach004.png",
+  "prompt": "Same stomach character, same J-shaped cut-away stomach with the visible inside and the juice pool, same food pipe, same colors, same white gloves. Change only the pose and face: happily eating a late dinner, holding a big silver fork upright in one gloved hand, the other hand patting its side, content half-closed eyes, relaxed happy eyebrows. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/stomach_shout",
+  "src": "art/src/stomach004.png",
+  "prompt": "Same stomach character, same J-shaped cut-away stomach with the visible inside and the juice pool, same food pipe, same colors, same white gloves. Change only the pose and face: yelling upward in alarm, both gloved hands cupped beside its face like a megaphone, eyes wide looking up, angry worried eyebrows. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/stomach_smug",
+  "src": "art/src/stomach004.png",
+  "prompt": "Same stomach character, same J-shaped cut-away stomach with the visible inside and the juice pool, same food pipe, same colors, same white gloves. Change only the pose and face: smug and sly, both arms crossed in front of its upper body, one eyebrow raised, half-lidded confident eyes. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/stomach_sniff",
+  "src": "art/src/stomach004.png",
+  "prompt": "Same stomach character, same J-shaped cut-away stomach with the visible inside and the juice pool, same food pipe, same colors, same white gloves. Change only the pose and face: disgusted by a terrible smell, one gloved hand fanning the air beside its face, eyes squinting and watering, a faint green tint on its cheeks, grossed-out eyebrows. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/buddy_base",
+  "size": "1024x1024",
+  "prompt": "Cute 2D cartoon small-intestine character on a perfectly flat pure green #00FF00 background, full body, centered, nothing else, no shadow. A short, chubby pink tube of small intestine curled into a soft round coil, with folds, worried and sweet expression. Big round white googly eyes with black pupils and worried eyebrows, but NO mouth at all. Tiny white rubber-hose arms with white gloves. Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+ },
+ {
+  "name": "art/brain_yawn",
+  "src": "art/src/brain003.png",
+  "prompt": "Same brain character, same pink brain, same white gloves, legs and shoes. Remove the phone completely. Change only the pose and face: very sleepy, stretching both arms up high in a huge yawn, eyes squeezed shut, droopy tired eyebrows, a small tear of tiredness. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/brain_mask",
+  "src": "art/src/brain003.png",
+  "prompt": "Same brain character, same pink brain, same white gloves, legs and shoes. Remove the phone completely. Change only the pose and face: fast asleep standing, wearing a light blue sleep mask over its eyes, arms hanging limp, peaceful, a small 'Zzz' floating above. Same flat pure green #00FF00 background, full body visible, same size and position, same style. NO mouth at all (plain area where the mouth would be)."
+ },
+ {
+  "name": "art/plate_bedroom",
+  "size": "1024x1792",
+  "prompt": "Vertical 9:16 cartoon bedroom interior background, no people: a bed with white sheets and a pillow across the lower part of the frame, a window with a dark blue night sky and a moon, a wooden nightstand with an alarm clock and a small lamp, warm cozy colors. Leave the edge of the bed free for a sitting man. Clean dark-brown outlines, flat soft colors with gentle shading and small highlights, professional Korean webtoon educational-cartoon style. No text."
+ },
+ {
+  "name": "art/man_bed",
+  "src": "art/src/pat003.png",
+  "size": "1024x1792",
+  "prompt": "Same young man character, same face and black hair. Now he wears dark navy pajamas and sits on the edge of a bed with white sheets (the whole bed edge visible), one hand held up near his mouth, sleepy and grossed out, slightly hunched. NO mouth at all (plain skin where the mouth would be). Same flat pure green #00FF00 background, same style."
+ }
+]

@@ -7,17 +7,17 @@ brain|Yaaawn... long day. I'm going to bed.
 stomach|Brain, NO! You just sent down a whole meal!
 stomach|Who sleeps right after eating?!
 brain|Mmm... deal with it tomorrow.
-intestine|Poor guy, he's exhausted.
-intestine|We could still digest it while he sleeps.
+buddy|Poor guy, he's exhausted.
+buddy|We could still digest it while he sleeps.
 stomach|We're tired too!
 stomach|Cover for him, and it becomes a habit.
 stomach|Late dinner, straight to bed. Every single night.
-intestine|So... what do we do now?
+buddy|So... what do we do now?
 stomach|Easy. He sleeps, we sleep.
 stomach|Tomorrow's problem.
-intestine|You SURE about this?
+buddy|You SURE about this?
 stomach|Positive.
-intestine|Ugh... what is that SMELL?
+buddy|Ugh... what is that SMELL?
 stomach|Hydrogen sulfide. The rotten egg gas.
 stomach|Maybe THAT will teach him a lesson.
 man|Ugh... why do I keep burping?

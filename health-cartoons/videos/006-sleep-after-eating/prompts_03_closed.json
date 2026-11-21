@@ -1,0 +1,50 @@
+[
+ {
+  "name": "art/mouth/stomach_fork_c",
+  "src": "art/src/stomach_fork_o.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only change the mouth: close it into a closed contented smile, a short curved dark line, in exactly the same spot and the same width. Same flat cartoon style."
+ },
+ {
+  "name": "art/mouth/stomach_shout_c",
+  "src": "art/src/stomach_shout_o.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only change the mouth: close it into a closed worried mouth, a short wavy line, in exactly the same spot and the same width. Same flat cartoon style."
+ },
+ {
+  "name": "art/mouth/stomach_smug_c",
+  "src": "art/src/stomach_smug_o.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only change the mouth: close it into a closed sly smirk, a short lopsided line, in exactly the same spot and the same width. Same flat cartoon style."
+ },
+ {
+  "name": "art/mouth/stomach_sniff_c",
+  "src": "art/src/stomach_sniff_o.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only change the mouth: close it into a closed grossed-out mouth, a short wavy line, in exactly the same spot and the same width. Same flat cartoon style."
+ },
+ {
+  "name": "art/mouth/buddy_base_c",
+  "src": "art/src/buddy_base_o.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only change the mouth: close it into a small closed worried mouth, a short wavy line, in exactly the same spot and the same width. Same flat cartoon style."
+ },
+ {
+  "name": "art/mouth/brain_yawn_c",
+  "src": "art/src/brain_yawn_o.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only change the mouth: close it into a closed sleepy mouth, a short flat line, in exactly the same spot and the same width. Same flat cartoon style."
+ },
+ {
+  "name": "art/mouth/brain_mask_c",
+  "src": "art/src/brain_mask_o.png",
+  "size": "1024x1024",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only change the mouth: close it into a closed sleepy mouth, a tiny flat line, in exactly the same spot and the same width. Same flat cartoon style."
+ },
+ {
+  "name": "art/mouth/man_bed_c",
+  "src": "art/src/man_bed_o.png",
+  "size": "1024x1792",
+  "prompt": "Keep EVERYTHING else exactly the same: same character, same pose, same eyes and eyebrows, same colors, same position and size in the frame, same flat pure green #00FF00 background. Only change the mouth: close it into a closed grossed-out mouth, a short wavy line, in exactly the same spot and the same width. Same flat cartoon style."
+ }
+]
