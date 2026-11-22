@@ -1,0 +1,15 @@
+eso|Ahh! What the heck is this? It's burning me!
+eso|Brain! Ice water! Quick!
+brain|Fine, I got it.
+eso|Ahh, that's better... wait. Too cold! Way too cold!
+eso|Hot, then freezing? My muscles are cramping!
+heart|Bro, stop squeezing! You're pressing right on me!
+eso|I can't stop! It's squeezing by itself!
+heart|And now the food's stuck too. Great.
+brain|Heart! Chest pain! Is it you?!
+heart|It's not me! It's him!
+patient|Doc, was that a heart attack?
+doctor|Your heart's fine. Hot food, then ice water, made your food pipe cramp.
+doctor|That's called an esophageal spasm.
+doctor|It sits right behind your heart, so it can feel like a heart attack.
+doctor|Let hot food cool a little first. And always get chest pain checked.
