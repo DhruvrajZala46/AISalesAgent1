@@ -4,6 +4,9 @@
 
 English "talking organs + doctor" cartoon Shorts, drawn and animated entirely in code.
 **New chat about these videos? Read `health-cartoons/README.md`, then `health-cartoons/PLAYBOOK.md` (section 0 first) and `health-cartoons/LEARNINGS.md` FIRST.**
+**THE STANDARD NOW (22 Nov 2026): `health-cartoons/videos/012-why-we-snore/`.** The user: "VIDEO KA EDITING BHUT PSND AAYA, PERFECT HAI...
+AAGE JITNE VIDEO BNAUGI SAB KO AESE STYLE ME BANANA" (every future video in this style). Start every new video by copying the 012 folder
+and follow the 012 recipe at the top of PLAYBOOK.md. The older 003/004 notes below are history.
 The standard is `health-cartoons/videos/003-food-up-nose-v2/` (Meta Muse Image art + our engine; the user: "GREAT, I LOVED IT"), with script/audio from `videos/003-food-up-nose/`.
 After 003 the user said: **"Save this standard. Every new video: SAME effort or MORE, in editing and scripting. Never forget it."**
 So every video runs PLAYBOOK section 0 in full:
@@ -18,7 +21,7 @@ So every video runs PLAYBOOK section 0 in full:
 **User rule (20 Nov 2026): the next 10 videos are remakes of PROVEN 10M+ videos in this format, one per video, from
 `health-cartoons/research/NEXT-10.md`. No guessed ideas.** Study the actual video shot by shot and keep its hook, beats, scene order,
 staging and pacing; redraw in our art and use our own words (a frame-for-frame or word-for-word clone risks reused-content and
-copyright strikes). Start every new video by copying the 004 folder.
+copyright strikes). Start every new video by copying the 012 folder (it replaced the 004 template).
 The user writes in Hinglish; reply in simple Hinglish. Be honest about quality (measured, never "99%" claims).
 **User rule (22 Nov 2026): NO Meta image generation any more** (keys deleted, no paid billing). `tools/meta_art.py` and
 `tools/meta_image.py` are disabled on purpose; never re-enable or work around them, and never use another paid image API without

@@ -1,5 +1,57 @@
 # Health-cartoon Shorts: the standard (read before every video)
 
+## THE STANDARD NOW: 012 "Why Do We Snore When We Sleep?" (22 Nov 2026)
+The user: **"VIDEO KA EDITING BHUT PSND AAYA, PERFECT HAI... AAGE JITNE VIDEO BNAUGI SAB KO AESE STYLE ME BANANA."**
+Every new video copies `videos/012-why-we-snore/` and follows this recipe. Section 0 (effort) still applies in full.
+
+**1. Topic:** a proven Dr. Healthcare Short with 10M+ views (better still, one that hit again on another channel). Keep its exact title.
+
+**2. Study the reference:**
+- With the mp4: 5 fps frames.
+- Without it: the caption timings plus the public storyboard (`sb0` in the yt-dlp info JSON, one frame per second) plus the cover.
+- Write down the sets, the cuts, the hook timing, the beats and the ending gag.
+
+**3. Script:**
+- The reference's beats, order and timing, in our words. Make anything vague concrete ("the other room" became "the nose").
+- Add the real stake in a line ("Breathing IS our business!").
+- End with the reference's ending gag, then a short **Dr. Mira** clinic: the patient asks "Doc, ...?"; Dr. Mira names the cause in 2-3 short lines plus one safety line.
+- Facts come from Mayo Clinic or the NHS.
+
+**4. Voices:**
+- ElevenLabs `eleven_v4`, 2 takes per line, with audio tags ([groggy], [annoyed], [sleepy, grumpy], [relaxed], [sighs]).
+- Character voices from the library, e.g. Marshal (grumpy), Goofy Cartoon Kid, Quibble, Grimblewood (raspy), Laura (partner), Chill (patient).
+- **Dr. Mira is always Hope** (`tnSpp4vdxKPjI9w0GnoV`).
+- `prep_voice.py`: pick by WER and range; force takes that keep each character's pitch consistent; one pitch shift and one pace per character.
+- Then `tighten.py` (0.14 for the doctor, 0.22 for the others) and `words.py`.
+- Whisper on the final mix must be at least 97%.
+
+**5. Sound:**
+- ElevenLabs `eleven_text_to_sound_v2` for the topic's own sounds (snore, slap, breathing), kept in `sfxgen/`.
+- Mixkit hits from section 3 on every action.
+- mixkit-9 music ducked under speech.
+- `LIM=0.66 mix.sh`, which gives about -12 LUFS with a true peak of -2 dB.
+
+**6. Picture (all code, the 001 / 003-v1 style):**
+- The reference's layout and colours, one locked shot per set.
+- Open close on the hero and pull back at about 1.5 s.
+- Cute objects with googly `oEye` eyes, brows and viseme mouths. Sleeping eyes are drawn as arcs.
+- Small white labels pop on each body part's first line (AIR, TONGUE, SOFT PALATE).
+- The physical gag is animated: things squeeze, flutter, slap; a handprint appears.
+
+**7. Text and brand:**
+- Captions: one word at a time in white Luckiest Guy 48 px with a 7 px black stroke, baseline y 1015, every word the same size, popping 1.4 → 1 in 0.12 s.
+- Faint "@DrMiraExplains" watermark at the top left.
+- The clinic is teal and mint (`clinicRoom12`), with 001's female doctor = Dr. Mira (clipboard at the chest, open hand) and the patient.
+
+**8. QA:**
+- A pair sheet against the reference.
+- 5 fps checks on the action moments.
+- Whisper, loudness and motion.
+- An honest list of what still differs.
+- Upload block in `script.md`; commit with no media.
+
+---
+
 **USER RULE, 22 Nov 2026: no Meta image generation** (keys deleted, no billing). The Meta tools are disabled. Build every new
 video in code, in the style below. The AI art library (`art/meta.json` in videos 003-006) is kept, never deleted. Ask the user before
 using any other image source that costs money.
