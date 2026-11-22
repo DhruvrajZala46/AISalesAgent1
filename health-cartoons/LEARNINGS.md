@@ -17,6 +17,7 @@
 | 13 | 006 "Why you shouldn't sleep right after eating": remake of the proven 26M video (no clinic, like the reference; studied at 2 fps + whisper) | (waiting for the user's verdict) | Final: 68.5 s, whisper 97.0%, -11.6 LUFS, true peak -1.2 dB, frozen 0.0%, longest still 0.4 s. First render: the black "A FEW HOURS LATER" card was 1.6 s of still frames (frozen 2.8%), so it got twinkling stars, a swinging clock, floating Zs and a text pop. A card must move too. |
 
 Other user preferences:
+- **No Meta image generation any more (22 Nov 2026)**: the user deleted the keys and will not pay. Reuse the art library; ask before any paid image source.
 - Talks in Hinglish; answer in simple Hinglish with plain words, clear and direct.
 - Wants honesty: never claim "99% same" when it is not. Give a measured comparison.
 - Visuals: AI-illustrated plates and sprites (Meta Muse Image) animated by our engine. The code-drawn look was rejected (row 9); video models are not needed.

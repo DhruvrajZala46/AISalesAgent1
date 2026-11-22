@@ -1,3 +1,7 @@
+import sys as _sys
+# DISABLED by the user on 22 Nov 2026: "no more Meta image generation" (keys deleted, no paid billing). Do not re-enable, do not
+# work around this guard, and do not switch to another paid image API without the user's explicit OK.
+_sys.exit("Meta Muse Image is disabled by the user (22 Nov 2026). Reuse the art library or ask the user first.")
 import json,urllib.request,base64,time,uuid,sys,concurrent.futures as cf
 import os; key=os.environ['MODEL_API_KEY']
 def call(path,body,files=None):

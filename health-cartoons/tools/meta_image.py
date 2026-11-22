@@ -2,6 +2,11 @@
 usage: MODEL_API_KEY=... python3 -I tools/meta_image.py jobs.json
 jobs.json = [["out_name", "prompt", "1024x1792"], ...]   -> out_name.webp (size comes back as 1152x2016 for 9:16, 1600x1600 for square)
 The key is read from the MODEL_API_KEY environment variable only; never write it into the repo."""
+import sys as _sys
+# DISABLED by the user on 22 Nov 2026: "no more Meta image generation" (keys deleted, no paid billing). Do not re-enable, do not
+# work around this guard, and do not switch to another paid image API without the user's explicit OK.
+_sys.exit("Meta Muse Image is disabled by the user (22 Nov 2026). Reuse the art library or ask the user first.")
+
 import json,urllib.request,base64,time,sys,os,concurrent.futures as cf
 key=os.environ['MODEL_API_KEY']
 def gen(name,prompt,size="1024x1792"):

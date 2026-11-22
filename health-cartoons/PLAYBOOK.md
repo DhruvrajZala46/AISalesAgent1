@@ -1,5 +1,9 @@
 # Health-cartoon Shorts: the standard (read before every video)
 
+**USER RULE, 22 Nov 2026: no Meta image generation** (keys deleted, no billing). The Meta tools are disabled. Build every new
+video from the existing art library (see `art/meta.json` in videos 003-006) plus code-drawn effects, and ask the user before using any
+other image source that costs money.
+
 **USER RULE, 20 Nov 2026 (overrides older topic advice): every next video is a remake of ONE proven video that has 10M+ views in this
 exact format** (queue: `research/NEXT-10.md`). No guessed ideas. Study that actual video shot by shot and keep its hook, story beats,
 scene order, staging, silent visual gags, pacing and clinic position. The quality floor is 003 v3 + 004 (same theme, same art pipeline,
