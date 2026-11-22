@@ -1,6 +1,6 @@
 # 009 - The Epiglottis and the Spicy Bite
 
-Status (22 Nov 2026): **v2 built** after the user rejected v1 ("5%... I can't understand what that body part is... confusing"). v1 was first built on the user's order. The user sent the reference file (`WhatsApp_Video_2026-11-22_at_3.21.00_PM.mp4`, a
+Status (22 Nov 2026): **v3 built** after the user rejected v1 and v2 ("still not what I expect"). v2 was built after the user rejected v1 ("5%... I can't understand what that body part is... confusing"). v1 was first built on the user's order. The user sent the reference file (`WhatsApp_Video_2026-11-22_at_3.21.00_PM.mp4`, a
 Dr. Healthcare short, 23.7 s) and asked for the **exact same script and style, only our characters**: "EXACT SAME SCRIPT, SAME VIDEO
 STYLE, EVERYTHING SAME... ONLY MERA CHARACTER". So this one keeps the reference's words **word for word**, unlike 004-008, where we
 reworded. The user decided this and was told the reused-content/copyright risk.
@@ -79,11 +79,34 @@ Other details:
 
 Build: `python3 build_audio.py && python3 assemble_009.py && node ../../tools/render.js && LIM=0.66 bash ../../tools/mix.sh video.mp4 final.mp4`
 
-## Final QA v2 (`epiglottis-spicy-bite-v2.mp4`)
+## v3: what the 5 fps study of the reference found (v2 still missed it)
+**Story:**
+1. The epiglottis folds shut over the airway **every time** food comes (0.8, 7.8, 12.3 s). That is why the trachea says "always blocking me off"; v2 closed it only once.
+2. Each chunk slides over the shut flap and is seen going **down inside** the food pipe.
+3. The epiglottis grits its teeth and looks up while straining; its yellow bone squashes.
+4. Drop 3: the trachea snatches only a **small bite**; the chunk still goes down the food pipe. It holds the bite at its mouth, eats it, and the spice hits. No zoom, no shaking.
+
+**Drawing:**
+5. Eyes with small black pupil dots, no shine, thick outline; simple dark oval mouths; thin brows.
+6. The epiglottis base is part of the wall, not a separate head.
+7. The food pipe has an inner channel.
+8. The chunk is tan with a dark-brown underside.
+
+**The man:**
+9. He looks normal (eyes open), then a coughing fit (eyes shut, round open red mouth; v2 looked like he was laughing), then red eyes and tears. He comes in at 20.9 s, and the video ends on a black frame.
+
+**Text:**
+10. Labels in a comic font (Comic Neue), captions in a black serif (Merriweather Black), with the key words bigger.
+
+**Sound:**
+11. A plop every time the flap shuts, a boing as the eyes turn red, the man's cough kept, and the music ducked 6 dB under speech.
+12. The trachea voice is now +4 semitones (about 330 Hz). At +6, "yo" and "blocking" were heard wrong in the mix.
+
+## Final QA v3 (`epiglottis-spicy-bite-v3.mp4`)
 - 24.4 s (reference 23.7 s). Every line starts within 0.35 s of the reference.
-- Final-mix whisper 95.2%: the high trachea voice makes "chest" sound like "just"; the caption shows "CHEST".
-- -11.6 LUFS (reference -11.7), true peak -1.3 dB.
-- Motion 1.70, frozen 6.2%, longest still 0.7 s (reference: 1.88, 35.6%, 2.3 s).
+- Final-mix whisper 95.2% (twice). "Yo" and "blocking" are now right; "chest" is still heard as "just", and the caption shows "chest".
+- -11.7 LUFS (reference -11.7), true peak -1.3 dB.
+- Motion 1.81, frozen 2.1%, longest still 0.4 s (reference: 1.88, 35.6%, 2.3 s).
 - Checked against the reference second by second at 1 fps (24 frames each) before delivery.
 
 ## Upload block

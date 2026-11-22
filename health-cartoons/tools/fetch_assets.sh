@@ -9,6 +9,9 @@ if [ ! -s fonts/LuckiestGuy.woff2 ]; then
   url=$(curl -s -A "$UA" "https://fonts.googleapis.com/css2?family=Luckiest+Guy" | awk '/\/\* latin \*\//{f=1} f&&/src:/{print; exit}' | grep -oE "https://[^)]+")
   curl -s -o fonts/LuckiestGuy.woff2 "$url"
 fi
+# 009 fonts (SIL Open Font License): Comic Neue for labels, Merriweather Black for captions
+[ -s fonts/comic-neue-latin-700-normal.woff2 ] || curl -s -o fonts/comic-neue-latin-700-normal.woff2 https://cdn.jsdelivr.net/npm/@fontsource/comic-neue@5.0.8/files/comic-neue-latin-700-normal.woff2
+[ -s fonts/merriweather-latin-900-normal.woff2 ] || curl -s -o fonts/merriweather-latin-900-normal.woff2 https://cdn.jsdelivr.net/npm/@fontsource/merriweather@5.0.8/files/merriweather-latin-900-normal.woff2
 # music: Mixkit track id 9 ("Keep Smiling" family, light comedic) - the channel's bed
 [ -s music/mixkit-9.mp3 ] || curl -s -o music/mixkit-9.mp3 https://assets.mixkit.co/music/9/9.mp3
 # sound effects (Mixkit sfx ids) - see the verified table in PLAYBOOK.md section 3 (titles checked; several old ids are NOT what their old names said)

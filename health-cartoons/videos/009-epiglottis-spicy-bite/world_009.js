@@ -7,12 +7,20 @@ const OLW=`stroke="${INK}" stroke-width="3.6" stroke-linejoin="round" stroke-lin
 const SAL='#f07e7c', WALL='#b9474f', WALL_L='#d4626a', CART='#f3c4c4', MUC='#cf5f60', BONE='#f7e48e', BONE_D='#eebb5e', DISC='#efe2d4';
 function hose(id){return `<g id="${id}"><path id="${id}_o" fill="none" stroke="${INK}" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/><path id="${id}_i" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><g id="${id}_h"></g></g>`;}
 function setHose(id,pts,rot,s=1){const d=smooth(pts);$(id+'_o').setAttribute('d',d);$(id+'_i').setAttribute('d',d);const e=pts[pts.length-1];$(id+'_h').innerHTML=glove(e[0],e[1],rot,s);}
+function cEye(id,r,lidCol){const c='ce'+(UID++);DEFS+=`<clipPath id="${c}"><circle r="${r}"/></clipPath>`;
+  return `<g id="${id}"><circle r="${r}" fill="#fff"/><g clip-path="url(#${c})"><circle id="${id}_p" r="${(r*.22).toFixed(1)}" fill="#111"/><g id="${id}_lid"><rect x="${-r*2}" y="${-r*3}" width="${r*4}" height="${r*2}" fill="${lidCol}"/><line x1="${-r*2}" x2="${r*2}" y1="${-r}" y2="${-r}" stroke="${INK}" stroke-width="3.4"/></g></g><circle r="${r}" fill="none" stroke="${INK}" stroke-width="3.6"/></g>`;}
+function setCEye(id,r,{dx=0,dy=0,lid=0,blink=0}={}){const d=Math.hypot(dx,dy)||1,m=r*.62,k=Math.min(1,d/40);$(id+'_p').setAttribute('cx',(dx/d*m*k).toFixed(1));$(id+'_p').setAttribute('cy',(dy/d*m*k).toFixed(1));
+  const L=Math.max(lid,blink);$(id+'_lid').setAttribute('transform',`translate(0,${(L*2*r).toFixed(1)})`);}
+function cMouth(id,x,y){return `<g transform="translate(${x},${y})"><path id="${id}_l" fill="none" stroke="${INK}" stroke-width="3.6" stroke-linecap="round"/><ellipse id="${id}" fill="#4d2e2b" stroke="${INK}" stroke-width="3.4"/></g>`;}
+function setCMouth(id,env,w,mood=0,fill='#4d2e2b'){const o=env>.08;$(id).setAttribute('opacity',o?1:0);$(id+'_l').setAttribute('opacity',o?0:1);
+  $(id).setAttribute('rx',(w*(.55+.35*env)).toFixed(1));$(id).setAttribute('ry',(w*(.22+.6*env)).toFixed(1));$(id).setAttribute('fill',fill);
+  $(id+'_l').setAttribute('d',`M${-w*.6},0 Q0,${(mood*w*.4).toFixed(1)} ${w*.6},0`);}
 function dots(list){return list.map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${BONE_D}"/>`).join('');}
 // a big meat chunk with a spicy red coat (the reference's food chunk, same size)
-function chunkSVG(id){return `<g id="${id}"><path d="M-30,-92 C-8,-102 18,-88 24,-62 C42,-50 46,-20 36,0 C48,20 48,54 30,72 C16,94 -12,96 -28,78 C-44,62 -46,30 -38,10 C-50,-10 -48,-40 -40,-56 C-44,-74 -40,-88 -30,-92Z" fill="#d79b72" ${OLW}/>
-  <path d="M-38,10 C-30,30 -10,40 10,34 C26,30 36,14 36,0 C48,20 48,54 30,72 C16,94 -12,96 -28,78 C-44,62 -46,30 -38,10Z" fill="#8c4a2b" ${OLW}/>
+function chunkSVG(id){return `<g id="${id}"><path d="M-30,-92 C-8,-102 18,-88 24,-62 C42,-50 46,-20 36,0 C48,20 48,54 30,72 C16,94 -12,96 -28,78 C-44,62 -46,30 -38,10 C-50,-10 -48,-40 -40,-56 C-44,-74 -40,-88 -30,-92Z" fill="#d9b28c" ${OLW}/>
+  <path d="M-38,10 C-30,30 -10,40 10,34 C26,30 36,14 36,0 C48,20 48,54 30,72 C16,94 -12,96 -28,78 C-44,62 -46,30 -38,10Z" fill="#7a4528" ${OLW}/>
   <path d="M-20,-70 C-8,-78 8,-74 14,-62" fill="none" stroke="#f3cfae" stroke-width="6" stroke-linecap="round"/>
-  ${[[-18,-40],[6,-20],[-24,-6],[18,-48],[-4,56],[20,40]].map(([x,y])=>`<path d="M${x},${y} l9,-4" stroke="#e3262c" stroke-width="5" stroke-linecap="round"/>`).join('')}</g>`;}
+  ${[[-18,-40],[10,-24],[16,-56]].map(([x,y])=>`<path d="M${x},${y} l8,-3" stroke="#d8262c" stroke-width="4" stroke-linecap="round"/>`).join('')}</g>`;}
 function vbody(y0,y1,xl,dl){return `<path d="M${xl+18},${y0} C${xl-6},${y0+10} ${xl-10},${(y0+y1)/2} ${xl},${y1-14} C${xl+6},${y1} ${xl+20},${y1+2} ${xl+40},${y1} L780,${y1} L780,${y0}Z" fill="${BONE}" ${OLW}/>${dots(dl)}`;}
 function throatWorld(){
   let s=`<g id="wThroat"><rect x="-200" y="-200" width="1120" height="1680" fill="${SAL}"/>`;
@@ -32,10 +40,11 @@ function throatWorld(){
   s+=`<path d="M506,-40 C498,200 510,500 538,800 C558,1000 570,1150 578,1340 L626,1340 C614,1120 602,920 590,720 C578,460 566,220 570,-40Z" fill="${MUC}" ${OLW}/>
    <path d="M514,-30 C506,210 518,505 546,800 C564,1000 576,1150 584,1330" fill="none" stroke="#e98482" stroke-width="10" stroke-linecap="round"/>`;
   // food pipe (esophagus): a narrow tube with its opening at the top
-  s+=`<g id="eso"><path d="M372,706 C366,684 384,668 410,668 C438,668 454,686 452,710 C456,840 474,1000 500,1120 C512,1180 528,1240 542,1340 L470,1340 C452,1230 430,1120 412,1000 C396,900 378,800 372,706Z" fill="${WALL}" ${OLW}/>
-   <path d="M392,718 C392,698 430,696 434,718 C440,800 442,860 438,914 C432,934 404,934 398,914 C392,860 390,790 392,718Z" fill="#c76b6e" ${OLW}/>
-   <path d="M424,960 C440,958 454,1000 462,1060 C468,1110 466,1140 454,1144 C440,1148 432,1110 426,1060 C420,1010 414,962 424,960Z" fill="${CART}" ${OLW}/>
-   <ellipse cx="412" cy="684" rx="28" ry="10" fill="#7e2630" ${OLW}/></g>`;
+  s+=`<g id="eso"><path d="M372,706 C366,684 384,668 410,668 C438,668 454,686 452,710 C456,840 474,1000 500,1120 C512,1180 528,1240 542,1340 L470,1340 C452,1230 430,1120 412,1000 C396,900 378,800 372,706Z" fill="${WALL}"/>
+   <path d="M394,708 C394,690 428,688 430,708 C436,820 452,980 476,1100 C488,1170 500,1240 512,1350 L490,1350 C478,1240 464,1160 452,1100 C428,980 410,840 394,708Z" fill="#e19396" ${OLW}/>
+   <clipPath id="esoClip"><path d="M394,708 C394,690 428,688 430,708 C436,820 452,980 476,1100 C488,1170 500,1240 512,1350 L490,1350 C478,1240 464,1160 452,1100 C428,980 410,840 394,708Z"/></clipPath><g clip-path="url(#esoClip)"><g id="esoFood"></g></g>
+   <path d="M372,706 C366,684 384,668 410,668 C438,668 454,686 452,710 C456,840 474,1000 500,1120 C512,1180 528,1240 542,1340 L470,1340 C452,1230 430,1120 412,1000 C396,900 378,800 372,706Z" fill="none" ${OLW}/>
+   <ellipse cx="412" cy="690" rx="20" ry="8" fill="#7e2630" ${OLW}/></g>`;
   // front wall of the windpipe with its cartilage rings, and the neck skin in front of it
   s+=`<path d="M-30,632 C40,690 72,800 112,920 C150,1040 176,1160 200,1340 L-30,1340Z" fill="#f4e3d1" ${OLW}/>
    <path d="M-30,632 C40,690 72,800 112,920 C150,1040 176,1160 200,1340 L338,1340 C306,1170 264,1030 234,910 C214,830 216,760 250,704 L240,650 C160,640 60,620 -30,600Z" fill="${WALL}" ${OLW}/>
@@ -48,21 +57,21 @@ function throatWorld(){
    <path d="M0,130 l58,-24 M0,282 l52,18 M0,342 l62,30" stroke="${INK}" stroke-width="3.6" stroke-linecap="round"/>`;
   // the epiglottis: the flap (animated) + its root with the hyoid bone and the face
   s+=`<g id="epiG"><path id="flapO" fill="${WALL}" ${OLW}/><path id="flapS1" fill="none" stroke="${INK}" stroke-width="26" stroke-linecap="round"/><path id="flapS2" fill="none" stroke="#f7cdcb" stroke-width="18" stroke-linecap="round"/>
-   <path d="M30,700 C14,650 24,592 70,556 C110,526 168,520 214,548 C246,570 252,640 246,700 C230,720 60,724 30,700Z" fill="${WALL}" ${OLW}/>
-   <path d="M14,506 C10,462 50,428 110,428 C150,428 166,452 158,480 C150,522 110,552 60,558 C30,562 16,540 14,506Z" fill="${BONE}" ${OLW}/>${dots([[50,470,7],[92,450,6],[118,486,7],[70,520,6],[34,500,5]])}
-   <g id="epiFace"><g transform="translate(105,592)">${oEye('eEyeL',40,WALL)}</g><g transform="translate(192,586)">${oEye('eEyeR',40,WALL)}</g>
-    <path id="eBrowL" fill="none" stroke="${INK}" stroke-width="7" stroke-linecap="round"/><path id="eBrowR" fill="none" stroke="${INK}" stroke-width="7" stroke-linecap="round"/>
-    ${mouthEl('epi_m',150,648)}<g id="grit" opacity="0"><rect x="124" y="638" width="52" height="20" rx="6" fill="#fff" ${OLW}/><path d="M137,638 v20 M150,638 v20 M163,638 v20 M124,648 h52" stroke="${INK}" stroke-width="2.4"/></g></g></g>`;
+   <path d="M30,720 C14,650 24,592 70,556 C110,526 168,520 214,548 C246,570 252,640 250,720Z" fill="${WALL}"/><path d="M30,700 C14,650 24,592 70,556" fill="none" ${OLW}/>
+   <g id="hyoid"><path d="M14,506 C10,462 50,428 110,428 C150,428 166,452 158,480 C150,522 110,552 60,558 C30,562 16,540 14,506Z" fill="${BONE}" ${OLW}/>${dots([[50,470,7],[92,450,6],[118,486,7],[70,520,6],[34,500,5]])}</g>
+   <g id="epiFace"><g transform="translate(105,592)">${cEye('eEyeL',40,WALL)}</g><g transform="translate(192,586)">${cEye('eEyeR',40,WALL)}</g>
+    <path id="eBrowL" fill="none" stroke="${INK}" stroke-width="4" stroke-linecap="round"/><path id="eBrowR" fill="none" stroke="${INK}" stroke-width="4" stroke-linecap="round"/>
+    ${cMouth('epi_m',140,652)}<g id="grit" opacity="0"><rect x="124" y="638" width="52" height="20" rx="6" fill="#fff" ${OLW}/><path d="M137,638 v20 M150,638 v20 M163,638 v20 M124,648 h52" stroke="${INK}" stroke-width="2.4"/></g></g></g>`;
   // the windpipe's face (inside the open airway) + its arms
-  s+=`<g id="traFace"><g transform="translate(246,946)">${oEye('tEyeL',42,SAL)}</g><g transform="translate(332,946)">${oEye('tEyeR',42,SAL)}</g>
+  s+=`<g id="traFace"><g transform="translate(246,946)">${cEye('tEyeL',42,SAL)}</g><g transform="translate(332,946)">${cEye('tEyeR',42,SAL)}</g>
    <g id="redEyes" opacity="0">${[246,332].map(x=>`<circle cx="${x}" cy="946" r="40" fill="#e3242c" ${OLW}/><path d="M${x-26},${930} q10,8 4,22 M${x+22},${926} q-12,10 -6,24 M${x-10},${970} q8,-10 18,-4" fill="none" stroke="#9e141c" stroke-width="3" stroke-linecap="round"/><circle cx="${x-4}" cy="${938}" r="11" fill="#1b1717"/><ellipse cx="${x-16}" cy="${926}" rx="10" ry="6" fill="#ff9ea2" opacity=".9"/>
      <path d="M${x-30},${972} C${x-34},${992} ${x-20},${1004} ${x-12},${990} C${x-4},${1006} ${x+12},${1002} ${x+10},${984} C${x+22},${996} ${x+34},${986} ${x+28},${970}" fill="#7fc8ef" ${OLW}/>`).join('')}</g>
-   <path id="tBrowL" fill="none" stroke="${INK}" stroke-width="6" stroke-linecap="round"/><path id="tBrowR" fill="none" stroke="${INK}" stroke-width="6" stroke-linecap="round"/>
-   ${mouthEl('tra_m',290,1008)}<g id="tTears"></g></g>
+   <path id="tBrowL" fill="none" stroke="${INK}" stroke-width="4" stroke-linecap="round"/><path id="tBrowR" fill="none" stroke="${INK}" stroke-width="4" stroke-linecap="round"/>
+   ${cMouth('tra_m',290,1010)}<g id="tTears"></g></g>
    ${hose('tArmL')}${hose('tArmR')}`;
-  s+=`${chunkSVG('food1')}${chunkSVG('food2')}${chunkSVG('food3')}`;
+  s+=`${chunkSVG('food1')}${chunkSVG('food2')}${chunkSVG('food3')}<g id="bite">${chunkSVG('biteC')}</g>`;
   s+=`</g>`;return s;}
-function throatLabels(){const box=(id,t,x,y,r,w,fs)=>`<g id="${id}" transform="translate(${x},${y}) rotate(${r})"><rect x="${-w/2}" y="-24" width="${w}" height="48" fill="#fff" ${OLW}/><text x="0" y="10" text-anchor="middle" style="font-family:'DejaVu Sans',sans-serif;font-weight:700;font-size:${fs}px;letter-spacing:1px" fill="#111">${t}</text></g>`;
+function throatLabels(){const box=(id,t,x,y,r,w,fs)=>`<g id="${id}" transform="translate(${x},${y}) rotate(${r})"><rect x="${-w/2}" y="-24" width="${w}" height="48" fill="#fff" ${OLW}/><text x="0" y="10" text-anchor="middle" style="font-family:'ComicNeue',sans-serif;font-weight:700;font-size:${fs}px;letter-spacing:.5px" fill="#111">${t}</text></g>`;
   return box('lbEpi','EPIGLOTTIS',52,676,-90,150,18)+box('lbTra','TRACHEA',256,850,-4,166,28)+box('lbEso','ESOPHAGUS',536,824,-4,152,20);}
 
 // ---------------- SCENE B: the man at the dinner table (medium close-up, like the reference) ----------------

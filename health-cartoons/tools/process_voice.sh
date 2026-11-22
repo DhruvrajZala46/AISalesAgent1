@@ -7,7 +7,7 @@ RAW=$1; OUT=$2; mkdir -p "$OUT"
 for f in "$RAW"/*.mp3; do
   n=$(basename "$f" .mp3); role=${n#*_}
   case $role in
-    trachea) r=1.4142;;                                              # +6 semitones (009: reference trachea ~450 Hz; +8 hurt clarity)
+    trachea) r=1.2599;;                                              # +4 semitones (009: +6/+8 made "yo", "blocking", "chest" unclear in the mix)
     swab|gum|noodle|burger|softpoop|buddy|pill2|epiglottis|cartoonA) r=1.3348;;      # +5 semitones
     wax|stomach|palate|cartoonB)  r=1.0905;;      # +1.5 semitones
     drum|intestine|brain|pill|cartoonC) r=1.1225;;      # +2 semitones
