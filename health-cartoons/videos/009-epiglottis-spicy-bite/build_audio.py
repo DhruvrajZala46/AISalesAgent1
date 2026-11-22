@@ -41,19 +41,16 @@ for k,txt in zip(ORDER,SCRIPT):
 def wt(k,word,n=0):
     L=[l for l in lines if l['id']==k][0]; m=[w for w in L['words'] if w[2]==word]; return m[n][0] if m else L['t0']
 def lend(k): return START[k]+len(A[k])/SR
-EV={'food1':.05,'food2':lend('02_epiglottis')+.02,'close':lend('04_epiglottis')+.08,'grab':lend('04_epiglottis')+.55,
+EV={'food1':-.27,'food2':7.03,'food3':lend('04_epiglottis')+.32-.6,'close':lend('04_epiglottis')+.32,'grab':lend('04_epiglottis')+.7,
     'eat':START['06_trachea']-.3,'spicy':wt('06_trachea','SPICY'),'fire':wt('06_trachea','FIRE'),'man':lend('07_epiglottis')+.12,'end':END}
 sfx=np.zeros(N,np.float32)
 def S(f,t,g,dur=None):
     a=load('../../assets/sfx/'+f)*g
     if dur: a=a[:int(dur*SR)].copy(); fl=min(len(a),int(.2*SR)); a[-fl:]*=np.linspace(1,0,fl)
     i=max(0,int(t*SR)); n=min(len(a),N-i); sfx[i:i+n]+=a[:n]
-S('1464.mp3',EV['food1'],.35); S('2364.mp3',EV['food1']+1.0,.3)                     # food drops into the food pipe
-S('1464.mp3',EV['food2'],.35); S('2364.mp3',EV['food2']+1.0,.3)
-S('2357.mp3',EV['close'],.45); S('2813.mp3',EV['grab'],.3)                           # the flap shuts (plop), the trachea grabs the crumb
-S('2828.mp3',EV['eat'],.35,1.0)                                                       # gulp
-S('2894.mp3',EV['spicy'],.4); S('123.mp3',EV['fire']-.1,.25,1.8)                    # spicy boing, chest on fire
-S('1492.mp3',EV['man']-.12,.35)                                                       # cut to the man
+S('1464.mp3',EV['food1'],.22); S('1464.mp3',EV['food2'],.22); S('1464.mp3',EV['food3'],.22)    # chunks drop (soft swoosh)
+S('2357.mp3',EV['close'],.5)                                                                         # the flap shuts: plop (reference: plop at 12 s)
+S('2894.mp3',EV['spicy'],.45)                                                                        # spicy: boing (reference: boing at 16 s)
 mus=np.tile(load('../../assets/music/mixkit-9.mp3'),3)[:N]; fl=int(.8*SR); mus[-fl:]*=np.linspace(1,0,fl)
 for name,b in [('voice',voice),('sfx',sfx),('music',mus)]:
     subprocess.run(['ffmpeg','-v','error','-y','-f','f32le','-ar',str(SR),'-ac','1','-i','-',f'{name}.wav'],input=np.clip(b,-1,1).tobytes())

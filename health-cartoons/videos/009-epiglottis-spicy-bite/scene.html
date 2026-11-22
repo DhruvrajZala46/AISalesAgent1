@@ -195,78 +195,90 @@ function tissueSVG(){return `<g id="tissue"><rect width="720" height="1280" fill
   <g id="cut"><path d="M300,170 C318,260 330,360 352,470 C364,360 382,260 410,166 Z" fill="${grad('tg3','#7a0f14','#c4232c')}" ${STK}/>
    <path d="M330,200 C342,280 348,360 356,430" fill="none" stroke="#ff6b6b" stroke-width="6" stroke-linecap="round" opacity=".7"/></g></g>`;}
 
-// =============== 009 worlds: ALL code, our 001 / 003-v1 style (thin INK lines, shaded(), the 003 v1 throat colours) ===============
-const FLESH='#e3807f', FLESH_S='#c9615f', LUMEN='#f39c97', LUMEN_S='#e07f7c', BONEY='#f5e3a3', BONEY_D='#e9b85e';
-const EPI='#f2a3a8', EPI_S='#d8808a', TRA='#f6b8b6', TRA_S='#e3938f', ESO='#d86a70', ESO_S='#b9505a', TONGUE='#c9545d', TONGUE_S='#a8404b';
-function hose(id){return `<g id="${id}"><path id="${id}_o" fill="none" stroke="${INK}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path id="${id}_i" fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/><g id="${id}_h"></g></g>`;}
+// =============== 009 v2 worlds: the reference's layout and staging, redrawn in code (our characters) ===============
+// v1 was rejected ("5%"): the throat could not be read. v2 copies the reference's anatomy layout 1:1 (measured on its 720x1280 frame):
+// open salmon throat, tongue base top-left, the epiglottis as a curved flap rising from the front wall with its face at the base,
+// the TRACHEA = the open space behind the front wall (face inside it), the ESOPHAGUS = a narrow tube with an opening at the top,
+// a thick back wall and big vertebrae on the right. Thick outlines, high contrast, big eyes.
+const OLW=`stroke="${INK}" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round"`;
+const SAL='#f07e7c', WALL='#b9474f', WALL_L='#d4626a', CART='#f3c4c4', MUC='#cf5f60', BONE='#f7e48e', BONE_D='#eebb5e', DISC='#efe2d4';
+function hose(id){return `<g id="${id}"><path id="${id}_o" fill="none" stroke="${INK}" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/><path id="${id}_i" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><g id="${id}_h"></g></g>`;}
 function setHose(id,pts,rot,s=1){const d=smooth(pts);$(id+'_o').setAttribute('d',d);$(id+'_i').setAttribute('d',d);const e=pts[pts.length-1];$(id+'_h').innerHTML=glove(e[0],e[1],rot,s);}
-function boneDots(pts){return pts.map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${BONEY_D}" opacity=".8"/>`).join('');}
-function vertebra(y){return `<g transform="translate(0,${y})"><path d="M590,0 C620,-6 700,-6 760,0 L760,96 C700,102 620,102 590,96 C580,66 580,30 590,0 Z" fill="${BONEY}" ${LN}/>
- ${boneDots([[620,24,5],[652,58,4],[690,28,5],[636,80,4],[712,70,4],[676,14,3]])}
- <path d="M588,100 C620,110 700,110 760,104 L760,122 C700,128 620,128 588,120 Z" fill="#f8efe1" ${LN2}/></g>`;}
-// spicy chicken chunk (red-orange, chili flakes)
-function foodSVG(id,s=1){return `<g id="${id}"><g transform="scale(${s})"><path d="M-30,-40 C-6,-52 24,-44 34,-20 C44,6 36,34 14,44 C-8,54 -34,42 -40,18 C-46,-6 -46,-30 -30,-40Z" fill="#c9622f" ${LN}/>
-  <path d="M-30,-40 C-6,-52 24,-44 34,-20 C26,-30 4,-36 -12,-32 C-26,-28 -34,-18 -36,-6 C-42,-18 -40,-32 -30,-40Z" fill="#9c3f1c" opacity=".8"/>
-  ${[[-14,-10],[10,4],[-20,18],[18,-22],[4,26]].map(([x,y])=>`<path d="M${x},${y} l7,-3" stroke="#e0262c" stroke-width="4" stroke-linecap="round"/>`).join('')}
-  <path d="M-22,-30 C-12,-36 4,-36 12,-32" fill="none" stroke="#f3a26e" stroke-width="4" stroke-linecap="round"/></g></g>`;}
-
-// ---------------- SCENE A: close-up of the throat (face to the left, spine to the right) ----------------
+function dots(list){return list.map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${BONE_D}"/>`).join('');}
+// a big meat chunk with a spicy red coat (the reference's food chunk, same size)
+function chunkSVG(id){return `<g id="${id}"><path d="M-30,-92 C-8,-102 18,-88 24,-62 C42,-50 46,-20 36,0 C48,20 48,54 30,72 C16,94 -12,96 -28,78 C-44,62 -46,30 -38,10 C-50,-10 -48,-40 -40,-56 C-44,-74 -40,-88 -30,-92Z" fill="#d79b72" ${OLW}/>
+  <path d="M-38,10 C-30,30 -10,40 10,34 C26,30 36,14 36,0 C48,20 48,54 30,72 C16,94 -12,96 -28,78 C-44,62 -46,30 -38,10Z" fill="#8c4a2b" ${OLW}/>
+  <path d="M-20,-70 C-8,-78 8,-74 14,-62" fill="none" stroke="#f3cfae" stroke-width="6" stroke-linecap="round"/>
+  ${[[-18,-40],[6,-20],[-24,-6],[18,-48],[-4,56],[20,40]].map(([x,y])=>`<path d="M${x},${y} l9,-4" stroke="#e3262c" stroke-width="5" stroke-linecap="round"/>`).join('')}</g>`;}
+function vbody(y0,y1,xl,dl){return `<path d="M${xl+18},${y0} C${xl-6},${y0+10} ${xl-10},${(y0+y1)/2} ${xl},${y1-14} C${xl+6},${y1} ${xl+20},${y1+2} ${xl+40},${y1} L780,${y1} L780,${y0}Z" fill="${BONE}" ${OLW}/>${dots(dl)}`;}
 function throatWorld(){
-  DEFS+=`<clipPath id="traClip"><path d="M150,760 C190,744 300,744 336,760 L336,1400 L150,1400Z"/></clipPath><clipPath id="esoClip"><path d="M372,700 L470,700 L470,1400 L372,1400Z"/></clipPath>`;
-  let s=`<g id="wThroat"><rect x="-200" y="-200" width="1120" height="1680" fill="${LUMEN}"/>
-   <path d="M-200,-200 H920 V1480 H-200Z M40,-40 C200,-80 520,-80 680,-40 L680,1320 L40,1320Z" fill="${LUMEN_S}" opacity=".5" filter="url(#soft)"/>`;
-  // spine + the back wall of the throat
-  s+=[-60,62,184,306,428,550,672,794,916,1038,1160,1282].map(vertebra).join('');
-  s+=shaded('M500,-200 C520,200 520,700 500,1480 L590,1480 L590,-200Z',FLESH,FLESH_S,14);
-  s+=`<path d="M512,-100 C530,300 530,800 512,1400" fill="none" stroke="#f3a09d" stroke-width="6" stroke-linecap="round" opacity=".7"/>`;
-  // food pipe (behind the windpipe)
-  s+=shaded('M360,700 C360,690 482,690 484,700 L484,1480 L360,1480Z',ESO,ESO_S,16);
-  s+=`<path d="M422,712 C418,900 426,1100 420,1480" fill="none" stroke="#f6a7ab" stroke-width="18" stroke-linecap="round"/><path d="M422,712 C418,900 426,1100 420,1480" fill="none" ${TH('#c4586a')} stroke-width="2.4"/>`;
-  // tongue base / front tissue (top left) and the front of the neck (left edge)
-  s+=shaded('M-200,-200 L300,-200 C310,40 300,240 250,380 C220,460 170,520 100,560 L-200,620Z',TONGUE,TONGUE_S,18);
-  s+=`<path d="M60,-40 C140,60 200,200 210,330" fill="none" stroke="#e07b84" stroke-width="7" stroke-linecap="round" opacity=".7"/>`;
-  s+=shaded('M-200,560 C40,560 120,600 150,700 L150,1480 L-200,1480Z','#f1c9b0','#dca98c',16);
-  s+=`<path d="M-40,760 C40,780 100,820 140,880" ${TH('#d6a587')} stroke-width="3"/><path d="M-60,1040 C20,1060 90,1100 140,1150" ${TH('#d6a587')} stroke-width="3"/>`;
-  // windpipe (front), cartilage rings, the trachea's face
-  s+=`<g id="tra">${shaded('M150,760 C190,744 300,744 336,760 L336,1480 L150,1480Z',TRA,TRA_S,18)}
-   <g clip-path="url(#traClip)">${[800,880,1060,1140,1220,1300].map(y=>`<path d="M150,${y} C200,${y+16} 290,${y+16} 336,${y}" fill="none" stroke="#fbe0da" stroke-width="12" stroke-linecap="round"/><path d="M150,${y+7} C200,${y+23} 290,${y+23} 336,${y+7}" ${TH('#e2a19b')} stroke-width="2"/>`).join('')}
-    <ellipse cx="243" cy="762" rx="88" ry="16" fill="#8e2a35" opacity=".85"/></g>
-   <g id="traFace"><g transform="translate(212,960)">${oEye('tEyeL',30,TRA)}</g><g transform="translate(276,960)">${oEye('tEyeR',30,TRA)}</g>
-    <g id="redEyes" opacity="0"><circle cx="212" cy="960" r="27" fill="#e2323c"/><circle cx="276" cy="960" r="27" fill="#e2323c"/>
-     <path d="M196,948 l12,8 M222,946 l-8,12 M262,948 l10,8 M290,950 l-10,8" stroke="#a51d27" stroke-width="2.5" stroke-linecap="round"/>
-     <circle cx="212" cy="962" r="11" fill="#1b1717"/><circle cx="276" cy="962" r="11" fill="#1b1717"/><circle cx="208" cy="957" r="4" fill="#fff"/><circle cx="272" cy="957" r="4" fill="#fff"/>
-     <circle cx="212" cy="960" r="27" fill="none" ${LN2}/><circle cx="276" cy="960" r="27" fill="none" ${LN2}/></g>
-    ${brow('tBrowL')}${brow('tBrowR')}<g id="traBlush" opacity="0"><ellipse cx="190" cy="1004" rx="16" ry="9" fill="#ef5e66"/><ellipse cx="300" cy="1004" rx="16" ry="9" fill="#ef5e66"/></g>
-    ${mouthEl('tra_m',244,1016)}<g id="tears"></g></g>
-   ${hose('tArmL')}${hose('tArmR')}</g>`;
-  s+=`<path d="M336,740 L336,1480" ${LN}/>`;
-  // the epiglottis: a flap that hinges at its base (pivot 186,742) and folds back over the windpipe
-  s+=`<g id="epi"><g id="epiFlap">${shaded('M128,742 C112,640 128,520 170,430 C204,360 250,310 300,300 C318,298 322,316 310,330 C276,372 262,430 258,520 C256,600 250,680 246,742Z',EPI,EPI_S,16)}
-    <path d="M168,700 C160,600 176,500 214,430 C238,388 268,350 298,320" fill="none" stroke="#fbd0d3" stroke-width="8" stroke-linecap="round" opacity=".8"/>
-    ${shaded('M70,520 C60,470 110,440 150,456 C180,470 182,520 160,560 C140,592 90,590 76,560Z',BONEY,BONEY_D,10)}${boneDots([[100,500,4],[132,488,3],[118,540,4],[148,524,3]])}
-    <g id="epiFace"><g transform="translate(168,600)">${oEye('eEyeL',28,EPI)}</g><g transform="translate(228,592)">${oEye('eEyeR',28,EPI)}</g>${brow('eBrowL')}${brow('eBrowR')}${mouthEl('epi_m',198,650)}</g></g>
-    ${hose('eArm')}</g>`;
-  s+=`${foodSVG('food1')}${foodSVG('food2')}${foodSVG('crumb',.5)}<g id="steam"></g><g id="flames"></g>`;
+  let s=`<g id="wThroat"><rect x="-200" y="-200" width="1120" height="1680" fill="${SAL}"/>`;
+  // spine (right): big vertebral bodies with discs, following the curve of the neck
+  s+=vbody(-60,222,600,[[650,40,9],[700,90,7],[660,150,8],[722,180,6],[690,10,6]]);
+  s+=`<path d="M582,226 C640,214 720,218 780,226 L780,300 C720,306 640,304 576,300 C566,280 570,240 582,226Z" fill="${DISC}" ${OLW}/>`;
+  s+=vbody(302,454,574,[[620,350,8],[672,400,7],[700,340,6],[640,420,6]]);
+  s+=`<path d="M584,458 C640,452 720,454 780,458 L780,486 C720,490 640,490 586,486Z" fill="${DISC}" ${OLW}/>`;
+  s+=vbody(488,614,586,[[630,530,7],[690,575,8],[660,600,5]]);
+  s+=`<path d="M596,618 C650,612 720,614 780,618 L780,646 C720,650 650,650 600,646Z" fill="${DISC}" ${OLW}/>`;
+  s+=vbody(648,834,610,[[656,700,8],[712,760,7],[676,800,6],[730,690,5]]);
+  s+=`<path d="M624,838 C680,832 730,834 780,838 L780,872 C730,876 680,876 630,872Z" fill="${DISC}" ${OLW}/>`;
+  s+=vbody(874,1096,640,[[690,930,8],[740,1000,7],[700,1060,6]]);
+  s+=`<path d="M652,1100 C700,1094 740,1096 780,1100 L780,1132 C740,1136 700,1136 656,1132Z" fill="${DISC}" ${OLW}/>`;
+  s+=vbody(1134,1340,664,[[710,1190,7],[750,1260,6]]);
+  // back wall of the throat
+  s+=`<path d="M506,-40 C498,200 510,500 538,800 C558,1000 570,1150 578,1340 L626,1340 C614,1120 602,920 590,720 C578,460 566,220 570,-40Z" fill="${MUC}" ${OLW}/>
+   <path d="M514,-30 C506,210 518,505 546,800 C564,1000 576,1150 584,1330" fill="none" stroke="#e98482" stroke-width="10" stroke-linecap="round"/>`;
+  // food pipe (esophagus): a narrow tube with its opening at the top
+  s+=`<g id="eso"><path d="M372,706 C366,684 384,668 410,668 C438,668 454,686 452,710 C456,840 474,1000 500,1120 C512,1180 528,1240 542,1340 L470,1340 C452,1230 430,1120 412,1000 C396,900 378,800 372,706Z" fill="${WALL}" ${OLW}/>
+   <path d="M392,718 C392,698 430,696 434,718 C440,800 442,860 438,914 C432,934 404,934 398,914 C392,860 390,790 392,718Z" fill="#c76b6e" ${OLW}/>
+   <path d="M424,960 C440,958 454,1000 462,1060 C468,1110 466,1140 454,1144 C440,1148 432,1110 426,1060 C420,1010 414,962 424,960Z" fill="${CART}" ${OLW}/>
+   <ellipse cx="412" cy="684" rx="28" ry="10" fill="#7e2630" ${OLW}/></g>`;
+  // front wall of the windpipe with its cartilage rings, and the neck skin in front of it
+  s+=`<path d="M-30,632 C40,690 72,800 112,920 C150,1040 176,1160 200,1340 L-30,1340Z" fill="#f4e3d1" ${OLW}/>
+   <path d="M-30,632 C40,690 72,800 112,920 C150,1040 176,1160 200,1340 L338,1340 C306,1170 264,1030 234,910 C214,830 216,760 250,704 L240,650 C160,640 60,620 -30,600Z" fill="${WALL}" ${OLW}/>
+   <path d="M246,712 C214,766 214,834 236,912 C266,1032 306,1170 334,1330" fill="none" stroke="${WALL_L}" stroke-width="12" stroke-linecap="round"/>
+   <g transform="translate(126,872) rotate(-20)"><rect x="-46" y="-130" width="92" height="260" rx="44" fill="${CART}" ${OLW}/></g>
+   <g transform="translate(226,1152) rotate(-18)"><rect x="-38" y="-86" width="76" height="172" rx="36" fill="${CART}" ${OLW}/></g>`;
+  // tongue base (top left)
+  s+=`<path d="M-30,-40 L212,-40 C208,80 192,190 174,262 C162,314 172,340 204,348 L230,354 C196,390 140,420 40,436 L-30,444Z" fill="${WALL}" ${OLW}/>
+   <path d="M200,-30 C196,90 182,196 166,262 C156,308 168,334 196,344" fill="none" stroke="${WALL_L}" stroke-width="10" stroke-linecap="round"/>
+   <path d="M0,130 l58,-24 M0,282 l52,18 M0,342 l62,30" stroke="${INK}" stroke-width="3.6" stroke-linecap="round"/>`;
+  // the epiglottis: the flap (animated) + its root with the hyoid bone and the face
+  s+=`<g id="epiG"><path id="flapO" fill="${WALL}" ${OLW}/><path id="flapS1" fill="none" stroke="${INK}" stroke-width="26" stroke-linecap="round"/><path id="flapS2" fill="none" stroke="#f7cdcb" stroke-width="18" stroke-linecap="round"/>
+   <path d="M30,700 C14,650 24,592 70,556 C110,526 168,520 214,548 C246,570 252,640 246,700 C230,720 60,724 30,700Z" fill="${WALL}" ${OLW}/>
+   <path d="M14,506 C10,462 50,428 110,428 C150,428 166,452 158,480 C150,522 110,552 60,558 C30,562 16,540 14,506Z" fill="${BONE}" ${OLW}/>${dots([[50,470,7],[92,450,6],[118,486,7],[70,520,6],[34,500,5]])}
+   <g id="epiFace"><g transform="translate(105,592)">${oEye('eEyeL',40,WALL)}</g><g transform="translate(192,586)">${oEye('eEyeR',40,WALL)}</g>
+    <path id="eBrowL" fill="none" stroke="${INK}" stroke-width="7" stroke-linecap="round"/><path id="eBrowR" fill="none" stroke="${INK}" stroke-width="7" stroke-linecap="round"/>
+    ${mouthEl('epi_m',150,648)}<g id="grit" opacity="0"><rect x="124" y="638" width="52" height="20" rx="6" fill="#fff" ${OLW}/><path d="M137,638 v20 M150,638 v20 M163,638 v20 M124,648 h52" stroke="${INK}" stroke-width="2.4"/></g></g></g>`;
+  // the windpipe's face (inside the open airway) + its arms
+  s+=`<g id="traFace"><g transform="translate(246,946)">${oEye('tEyeL',42,SAL)}</g><g transform="translate(332,946)">${oEye('tEyeR',42,SAL)}</g>
+   <g id="redEyes" opacity="0">${[246,332].map(x=>`<circle cx="${x}" cy="946" r="40" fill="#e3242c" ${OLW}/><path d="M${x-26},${930} q10,8 4,22 M${x+22},${926} q-12,10 -6,24 M${x-10},${970} q8,-10 18,-4" fill="none" stroke="#9e141c" stroke-width="3" stroke-linecap="round"/><circle cx="${x-4}" cy="${938}" r="11" fill="#1b1717"/><ellipse cx="${x-16}" cy="${926}" rx="10" ry="6" fill="#ff9ea2" opacity=".9"/>
+     <path d="M${x-30},${972} C${x-34},${992} ${x-20},${1004} ${x-12},${990} C${x-4},${1006} ${x+12},${1002} ${x+10},${984} C${x+22},${996} ${x+34},${986} ${x+28},${970}" fill="#7fc8ef" ${OLW}/>`).join('')}</g>
+   <path id="tBrowL" fill="none" stroke="${INK}" stroke-width="6" stroke-linecap="round"/><path id="tBrowR" fill="none" stroke="${INK}" stroke-width="6" stroke-linecap="round"/>
+   ${mouthEl('tra_m',290,1008)}<g id="tTears"></g></g>
+   ${hose('tArmL')}${hose('tArmR')}`;
+  s+=`${chunkSVG('food1')}${chunkSVG('food2')}${chunkSVG('food3')}`;
   s+=`</g>`;return s;}
-function throatLabels(){const v=`<g id="lbEpi" transform="translate(52,690) rotate(-90)"><rect x="-74" y="-17" width="148" height="34" fill="#fff" ${LN}/><text class="lbl" style="font-size:19px" text-anchor="middle" y="7">EPIGLOTTIS</text></g>`;
-  return v+labelBox('lbTra','TRACHEA',246,852,22)+labelBox('lbEso','ESOPHAGUS',560,800,20);}
+function throatLabels(){const box=(id,t,x,y,r,w,fs)=>`<g id="${id}" transform="translate(${x},${y}) rotate(${r})"><rect x="${-w/2}" y="-24" width="${w}" height="48" fill="#fff" ${OLW}/><text x="0" y="10" text-anchor="middle" style="font-family:'DejaVu Sans',sans-serif;font-weight:700;font-size:${fs}px;letter-spacing:1px" fill="#111">${t}</text></g>`;
+  return box('lbEpi','EPIGLOTTIS',52,676,-90,150,18)+box('lbTra','TRACHEA',256,850,-4,166,28)+box('lbEso','ESOPHAGUS',536,824,-4,152,20);}
 
-// ---------------- SCENE B: the man at the dinner table, eating spicy food ----------------
+// ---------------- SCENE B: the man at the dinner table (medium close-up, like the reference) ----------------
 function dinnerWorld(){
-  let s=`<g id="wDinner"><rect x="-200" y="-200" width="1120" height="1680" fill="#eef0f1"/>
-   <rect x="-200" y="-200" width="1120" height="260" fill="#e3e6e8"/>
-   <g transform="translate(70,-40)"><rect x="0" y="0" width="300" height="420" fill="#f9fbfc" ${LN}/><rect x="16" y="16" width="268" height="388" fill="#dcebf2"/><path d="M150,16 V404 M16,210 H284" stroke="#9aa5ac" stroke-width="10"/><rect x="0" y="0" width="300" height="420" fill="none" ${LN}/></g>
-   <rect x="580" y="-200" width="40" height="760" fill="#8a9298" ${LN2}/>
-   <g transform="translate(360,430) scale(1.32)">${patientSVG()}</g>
-   <g id="spicyFace" opacity="0"></g>
-   <path d="M-200,930 C100,910 620,910 920,930 L920,1480 L-200,1480Z" fill="#7a5235" ${LN}/><path d="M-200,944 C100,926 620,926 920,944" ${TH('#9c6d49')} stroke-width="4"/>
-   ${plate(170,1010,1.25,true)}${plate(540,1060,1.05,false)}${plate(330,1190,.9,true)}
-   </g>`;
-  return s;}
-function plate(x,y,s,chicken){return `<g transform="translate(${x},${y}) scale(${s})"><ellipse rx="150" ry="52" fill="#f7f6f2" ${LN}/><ellipse rx="118" ry="38" fill="none" ${TH('#d4d0c8')} stroke-width="3"/>
-  ${chicken?[[-60,-14],[-10,-24],[40,-12],[-34,10],[18,8],[66,4]].map(([a,b],i)=>`<g transform="translate(${a},${b}) rotate(${i*40}) scale(.55)"><path d="M-30,-40 C-6,-52 24,-44 34,-20 C44,6 36,34 14,44 C-8,54 -34,42 -40,18 C-46,-6 -46,-30 -30,-40Z" fill="${i%2?'#c9422c':'#d65a2e'}" ${LN}/><path d="M-12,-18 l8,-3 M8,6 l8,-3" stroke="#a31b22" stroke-width="5" stroke-linecap="round"/></g>`).join('')+
-   [[-80,-30],[70,-26],[0,16]].map(([a,b])=>`<path d="M${a},${b} c10,-14 26,-14 30,0" fill="#e0262c" ${LN2}/>`).join(''):
-   [[-50,-10],[-10,-18],[30,-8],[60,6],[-30,10]].map(([a,b],i)=>`<path d="M${a},${b} c-10,-22 20,-30 26,-8 c10,-16 28,-6 18,10 c-8,12 -36,14 -44,-2z" fill="${i%2?'#6fb04f':'#8ccf5e'}" ${LN2}/>`).join('')+`<circle cx="-60" cy="4" r="12" fill="#e2474b" ${LN2}/><circle cx="52" cy="-18" r="10" fill="#e2474b" ${LN2}/>`}</g>`;}
+  return `<g id="wDinner"><rect x="-200" y="-200" width="1120" height="1680" fill="#eceeef"/>
+   <g transform="translate(-30,-60)"><rect x="0" y="0" width="330" height="380" fill="#f8fafb" ${OLW}/><rect x="18" y="18" width="294" height="344" fill="#d9e9f1"/><path d="M165,18 V362 M18,190 H312" stroke="#8d989f" stroke-width="12"/><rect x="0" y="0" width="330" height="380" fill="none" ${OLW}/></g>
+   <rect x="600" y="-200" width="46" height="740" fill="#7f878d" ${OLW}/>
+   <path d="M150,700 L150,520 C150,500 640,500 640,520 L640,700Z" fill="#6b4a33" ${OLW}/>
+   <g transform="translate(390,206) scale(1.9)">${patientSVG()}</g>
+   <g id="manFx"></g>
+   <path d="M-200,880 C120,866 600,866 920,880 L920,1480 L-200,1480Z" fill="#7a5235" ${OLW}/><path d="M-200,896 C120,882 600,882 920,896" fill="none" stroke="#956744" stroke-width="5"/>
+   ${plateBig(200,1000)}${saladBowl(560,1060)}${plateBig(300,1210,.85)}
+   </g>`;}
+function plateBig(x,y,s=1){return `<g transform="translate(${x},${y}) scale(${s})"><ellipse rx="210" ry="74" fill="#f8f7f3" ${OLW}/><ellipse rx="168" ry="54" fill="none" stroke="#d8d3c9" stroke-width="4"/>
+  ${[[-110,-30,0],[-50,-44,40],[10,-36,80],[70,-30,120],[-80,6,160],[-14,0,200],[54,8,240],[110,-6,280]].map(([a,b,r],i)=>`<g transform="translate(${a},${b}) rotate(${r}) scale(.62)"><path d="M-30,-40 C-6,-52 24,-44 34,-20 C44,6 36,34 14,44 C-8,54 -34,42 -40,18 C-46,-6 -46,-30 -30,-40Z" fill="${i%2?'#c63a2a':'#da4f2c'}" ${OLW}/><path d="M-12,-18 l9,-4 M10,8 l9,-4" stroke="#8f1219" stroke-width="5" stroke-linecap="round"/></g>`).join('')}
+  ${[[-150,-40],[140,-34],[-20,24]].map(([a,b])=>`<path d="M${a},${b} c12,-18 32,-18 38,0 c-4,10 -30,12 -38,0z" fill="#e3262c" ${OLW}/><path d="M${a+36},${b-2} l10,-8" stroke="#3f8a3a" stroke-width="5" stroke-linecap="round"/>`).join('')}</g>`;}
+function saladBowl(x,y){return `<g transform="translate(${x},${y})"><path d="M-150,-10 C-140,70 140,70 150,-10Z" fill="#f2efe7" ${OLW}/><ellipse cx="0" cy="-10" rx="150" ry="34" fill="#f8f7f3" ${OLW}/>
+  ${[[-90,-22],[-40,-34],[10,-28],[60,-30],[100,-16],[-60,-4],[30,-6]].map(([a,b],i)=>`<path d="M${a},${b} c-12,-26 24,-34 30,-8 c12,-18 32,-6 22,12 c-10,14 -42,16 -52,-4z" fill="${i%2?'#5fa64a':'#86cc5a'}" ${OLW}/>`).join('')}
+  <circle cx="-110" cy="-16" r="15" fill="#e3474b" ${OLW}/><circle cx="84" cy="-40" r="13" fill="#e3474b" ${OLW}/></g>`;}
 
 // =============== SCENE 2 : ENT clinic ===============
 function hand(x,y,ang,sc,skin,id=''){return `<g ${id?`id="${id}"`:''} transform="translate(${x},${y}) rotate(${ang}) scale(${sc})">
@@ -383,9 +395,8 @@ let S_CLINIC_UNUSED=`<g id="s2x"><g id="ccamx">
 </g>`;
 
 
-// =============== 009: the epiglottis and the trachea (exact script of the user's reference), ALL code, 001 / 003-v1 style ===============
+// =============== 009 v2: the reference's staging shot for shot (exact script), our code characters ===============
 const E=D.ev, ST=D.start, END=D.end;
-const KEY=/^(BLOCKING|BREATHING|FOOD|GAME|OVER|BITE|DANGEROUS|SPICY|FIRE|BREATHE|CHOKING|BLACK)$/;
 function viseme(env,T,seed){if(env<0.08)return 'closed';const f=Math.floor(T*15)+seed;let b=env<0.3?'small':env<0.65?'mid':'wide';if(b==='mid'&&f%4===0)b='oo';if(b==='wide'&&f%5===0)b='mid';return b;}
 function setMouthV(id,env,w,mood,T,seed=0){const v=viseme(env,T,seed);const e=$(id),t=$(id+'_t'),th=$(id+'_w');let d,fill='#5e1a20',tong=0,teeth=0;
   if(v==='closed'){d=`M${-w*.7},0 Q0,${mood*w*.45} ${w*.7},0`;fill='none';}
@@ -401,101 +412,105 @@ function setMouthV(id,env,w,mood,T,seed=0){const v=viseme(env,T,seed);const e=$(
 function popLabel(id,T,t0,t1,x,y,sc=1){const on=T>=t0&&T<t1;show(id,on?1:0);if(on){const k=eob(P(T,t0,t0+.28));$(id).setAttribute('transform',`translate(${x},${y}) scale(${k*sc})`);}}
 function rnd(i){const x=Math.sin(i*127.1+311.7)*43758.5453;return x-Math.floor(x);}
 function popK(T,t0){const k=P(T,t0,t0+.18);return k<1?Math.sin(k*Math.PI):0;}
-function along(pts,s){s=clamp(s)*(pts.length-1);const i=Math.min(pts.length-2,Math.floor(s)),f=s-i;return [lerp(pts[i][0],pts[i+1][0],f),lerp(pts[i][1],pts[i+1][1],f)];}
 const lend=id=>{const L=D.lines.find(l=>l.id===id);return L.t0+L.dur;};
 const T_MAN=E.man;
 let SA=`<g id="sA"><g id="camA">${throatWorld()}</g>${throatLabels()}</g>`;
 let SB=`<g id="sB"><g id="camB">${dinnerWorld()}</g></g>`;
 const svg=$('S');
 svg.innerHTML=`<defs><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>${DEFS}${GDEF}</defs>`
- +SA+SB+`<rect id="indark" width="720" height="1280" fill="#1e1012" opacity="0"/><g id="capg"><text id="cap" class="cap" x="360" y="1110" text-anchor="middle"></text></g>`;
+ +SA+SB+`<g id="capg"><text id="cap" x="370" y="1004" text-anchor="middle" style="font-family:'DejaVu Serif',serif;font-weight:700;font-size:50px;paint-order:stroke;stroke:#111;stroke-width:8px;stroke-linejoin:round" fill="#fff"></text></g>`;
 
-// ---------- the throat ----------
-function dropFood(id,t0,T){const q=(T-t0)/1.1; if(q<0||q>1.25){show(id,0);return null;} show(id,1);
-  const p=q<1?[lerp(450,424,eio(q)),lerp(-90,700,q*q)]:[424,700+(q-1)*240];
-  $(id).setAttribute('transform',`translate(${p[0].toFixed(1)},${p[1].toFixed(1)}) rotate(${(q*200).toFixed(1)})`); $(id).setAttribute('opacity',q<1?1:Math.max(0,1-(q-1)*4)); return p;}
+// ---------- the epiglottis flap: one tapered shape that bends from "open" (up) to "shut" (lying over the airway) ----------
+const FLAP_UP=[[150,620],[205,500],[262,412],[318,350],[346,326]], FLAP_DN=[[150,620],[214,598],[290,592],[370,598],[424,604]], FLAP_W=[170,112,80,54,30];
+function setFlap(k){const pts=FLAP_UP.map((p,i)=>[lerp(p[0],FLAP_DN[i][0],k),lerp(p[1],FLAP_DN[i][1],k)]);
+  $('flapO').setAttribute('d',limbD(pts,FLAP_W)); const st=smooth(pts.slice(1)); $('flapS1').setAttribute('d',st); $('flapS2').setAttribute('d',st);}
+// ---------- food chunks: fall down the middle of the throat into the top of the food pipe ----------
+function dropChunk(id,t0,T,dur=.9){const q=(T-t0)/dur; if(q<0||q>1.3){show(id,0);return null;} show(id,1);
+  let x=lerp(456,412,eio(Math.min(q,1))), y=lerp(-130,640,Math.min(q,1)*Math.min(q,1)), sx=1, sy=1, op=1;
+  if(q>1){const u=(q-1)/.3; y=640+u*70; sx=1-u*.45; sy=1-u*.6; op=1-u;}
+  $(id).setAttribute('transform',`translate(${x.toFixed(1)},${y.toFixed(1)}) rotate(${(Math.sin(q*5)*8).toFixed(1)}) scale(${sx.toFixed(3)},${sy.toFixed(3)})`); $(id).setAttribute('opacity',op.toFixed(2));
+  return [x,y];}
 function renderThroat(T){
   const tT=speak('trachea',T), eT=speak('epiglottis',T);
-  const f1=dropFood('food1',E.food1,T), f2=dropFood('food2',E.food2,T), fp=f1||f2;
-  // the epiglottis folds back over the windpipe while the spicy crumb goes by, then springs up again
-  const shut=eob(P(T,E.close,E.close+.25))*(1-eio(P(T,E.grab+.1,E.grab+.42)));
+  const f1=dropChunk('food1',E.food1,T), f2=dropChunk('food2',E.food2,T);
+  // the third chunk: lands on the closing flap by the food pipe, the windpipe grabs it and eats it
+  let f3=null;
+  if(T>=E.food3&&T<E.spicy-.05){show('food3',1); let x,y,sc=1;
+    if(T<E.close+.1){const q=P(T,E.food3,E.close+.1); x=lerp(462,436,q); y=lerp(-130,600,q*q);}
+    else if(T<E.grab+.05){x=436+Math.sin(T*30)*2; y=600;}
+    else {const k=eio(P(T,E.grab+.05,E.grab+.5)); x=lerp(436,300,k); y=lerp(600,1004,k); sc=lerp(1,.55,k);
+      sc*=T>=ST['05_epiglottis']+1.5?.7:(T>=ST['05_epiglottis']+.9?.85:1);}
+    f3=[x,y]; $('food3').setAttribute('transform',`translate(${x.toFixed(1)},${y.toFixed(1)}) rotate(${(T<E.close?Math.sin(T*6)*8:-16).toFixed(1)}) scale(${sc.toFixed(3)})`);}
+  else show('food3',0);
+  const fp=f1||f2||(T<E.close+.1?f3:null);
+  // epiglottis
+  const shut=eob(P(T,E.close-.05,E.close+.22))*(1-eio(P(T,E.grab+.25,E.grab+.55)));
+  setFlap(clamp(shut,0,1.08));
   const e0=ST['02_epiglottis'], e4=ST['04_epiglottis'], e5=ST['05_epiglottis'], e7=ST['07_epiglottis'];
-  const mood=T>=e7?'worried':(T>=e5?'angry':(T>=e4?'firm':(T>=e0?'annoyed':'calm')));
-  const rot=shut*72+(eT>.1?Math.sin(T*9)*2*eT:Math.sin(T*1.4)*1.2)-popK(T,e5)*4;
-  $('epi').setAttribute('transform',`rotate(${rot.toFixed(2)},186,742)`);
-  const elook=fp?[22,-24]:(mood==='calm'?[16,26]:[18,34]), ebl=blinkK(T,.4);
-  setOEye('eEyeL',28,{dx:elook[0],dy:elook[1],lid:mood==='angry'?.38:(mood==='annoyed'||mood==='firm'?.25:.08),blink:ebl,small:mood==='worried'&&shut<.1});
-  setOEye('eEyeR',28,{dx:elook[0],dy:elook[1],lid:mood==='angry'?.38:(mood==='annoyed'||mood==='firm'?.25:.08),blink:ebl,small:mood==='worried'&&shut<.1});
-  const eb={calm:[4,-4,4],annoyed:[16,-16,2],firm:[18,-18,0],angry:[26,-26,0],worried:[-18,18,8]}[mood];
-  setBrow('eBrowL',166,560,36,eb[0],eb[2]); setBrow('eBrowR',230,552,36,eb[1],eb[2]);
-  setMouthV('epi_m',eT,16,{calm:.2,annoyed:-.5,firm:-.6,angry:-1,worried:-.8}[mood],T,2);
-  const ew=Math.sin(T*3.4)*6;
-  const EA={calm:[[250,650],[300,690],[316,742+ew]],annoyed:[[250,650],[300,700],[310,780+ew]],firm:[[250,650],[320,620],[372,600+ew]],
-            angry:[[250,650],[318,686],[352,760+ew]],worried:[[250,650],[290,720],[290,820+ew]]}[mood];
-  setHose('eArm',EA,mood==='firm'?-80:150,.8); show('eArm',shut>.3?0:1);
-  // the crumb: falls on the shut flap, slides off; the trachea snatches it and eats it
-  const cq=P(T,E.close-.55,E.close+.12); let cp=null;
-  if(T>=E.close-.55&&T<E.eat+.15){
-    if(T<E.close+.12) cp=[lerp(470,486,cq),lerp(-60,706,cq*cq)];
-    else if(T<E.grab) cp=[lerp(486,420,P(T,E.close+.12,E.grab)),lerp(706,770,P(T,E.close+.12,E.grab))];
-    else {const k=eio(P(T,E.grab+.15,E.eat)); cp=[lerp(420,244,k),lerp(770,1010,k)];}
-    show('crumb',1); $('crumb').setAttribute('transform',`translate(${cp[0].toFixed(1)},${cp[1].toFixed(1)}) rotate(${(T*260).toFixed(1)})`);
-  } else show('crumb',0);
-  // the trachea: whines, pleads, snatches, then the spice hits
-  const t1=ST['01_trachea'], t3=ST['03_trachea'], spicy=T>=E.spicy, ate=T>=E.eat;
-  const tlook=fp?[26,-34]:(cp?[(cp[0]-244)/4,(cp[1]-960)/4]:(T>=e0&&T<t3||T>=e4&&T<E.close?[-12,-36]:[0,4])), tbl=blinkK(T,1.9);
-  setOEye('tEyeL',30,{dx:tlook[0],dy:tlook[1],lid:T>=t3&&T<e4?.0:.1,blink:tbl}); setOEye('tEyeR',30,{dx:tlook[0],dy:tlook[1],lid:T>=t3&&T<e4?.0:.1,blink:tbl});
-  show('redEyes',spicy?1:0); show('traBlush',spicy?.9:(ate?.4:0));
-  const tb=spicy?[-20,20,10]:(T>=t3&&T<e4?[-14,14,8]:(T<t3?[-8,8,6]:[4,-4,4]));
-  setBrow('tBrowL',212,918,40,tb[0],tb[2]); setBrow('tBrowR',276,918,40,tb[1],tb[2]);
-  setMouthV('tra_m',tT,spicy?20:15,spicy?-1:(T>=t3&&T<e4?.6:-.3),T,5);
-  const shake=spicy?Math.sin(T*40)*4:0, puff=ate&&!spicy?Math.sin(P(T,E.eat,E.eat+.4)*Math.PI)*.06:0;
-  $('tra').setAttribute('transform',`translate(${shake.toFixed(1)},0) translate(243,1100) scale(${(1+puff).toFixed(3)},${(1-puff*.5+tT*.012).toFixed(3)}) translate(-243,-1100)`);
+  const mood=shut>.2?'shock':(T>=e7?'worried':(T>=e5?'angry':(T>=e4?'firm':(T>=e0?'annoyed':'calm'))));
+  const el=fp&&shut<.2?[26,-38]:(mood==='shock'?[34,-6]:(T>=ST['01_trachea']?[16,38]:[18,30])), ebl=blinkK(T,.4);
+  const lid={calm:.1,annoyed:.32,firm:.3,angry:.45,worried:.12,shock:0}[mood];
+  setOEye('eEyeL',40,{dx:el[0],dy:el[1],lid,blink:mood==='shock'?0:ebl}); setOEye('eEyeR',40,{dx:el[0],dy:el[1],lid,blink:mood==='shock'?0:ebl});
+  const bb={calm:[0,0,6],annoyed:[14,-14,2],firm:[16,-16,0],angry:[24,-24,0],worried:[-16,16,8],shock:[-20,20,10]}[mood];
+  $('eBrowL').setAttribute('d',`M80,${538-bb[2]} Q105,${524-bb[2]} 132,${538-bb[2]}`); $('eBrowL').setAttribute('transform',`rotate(${bb[0]},105,534)`);
+  $('eBrowR').setAttribute('d',`M166,${532-bb[2]} Q192,${518-bb[2]} 218,${532-bb[2]}`); $('eBrowR').setAttribute('transform',`rotate(${bb[1]},192,528)`);
+  show('grit',mood==='shock'?1:0); show('epi_m',mood==='shock'?0:1);
+  setMouthV('epi_m',eT,18,{calm:.2,annoyed:-.5,firm:-.6,angry:-1,worried:-.8,shock:0}[mood],T,2);
+  $('epiG').setAttribute('transform',`translate(150,700) rotate(${(eT>.1?Math.sin(T*9)*1.6*eT:Math.sin(T*1.4)*.8).toFixed(2)}) translate(-150,-700)`);
+  // the windpipe
+  const t3=ST['03_trachea'], red=T>=E.fire-.3, eating=T>=E.grab+.3&&T<E.spicy-.05;
+  const tl=fp&&shut<.2?[16,-40]:(T>=E.grab-.3&&T<E.grab+.3&&f3?[20,-40]:(eating?[-6,10]:[-14,-38])), tb=blinkK(T,1.9);
+  const tlid=T>=t3&&T<e4?0:.08;
+  setOEye('tEyeL',42,{dx:tl[0],dy:tl[1],lid:tlid,blink:tb}); setOEye('tEyeR',42,{dx:tl[0],dy:tl[1],lid:tlid,blink:tb});
+  show('redEyes',red?1:0);
+  const plead=T>=t3&&T<e4+.5, tbr=red?[-18,18,12]:(plead?[-16,16,10]:[-6,6,6]);
+  $('tBrowL').setAttribute('d',`M218,${890-tbr[2]} Q246,${876-tbr[2]} 274,${890-tbr[2]}`); $('tBrowL').setAttribute('transform',`rotate(${tbr[0]},246,886)`);
+  $('tBrowR').setAttribute('d',`M304,${890-tbr[2]} Q332,${876-tbr[2]} 360,${890-tbr[2]}`); $('tBrowR').setAttribute('transform',`rotate(${tbr[1]},332,886)`);
+  const chew=eating?(.35+.3*Math.abs(Math.sin(T*9))):0;
+  setMouthV('tra_m',Math.max(tT,chew),20,red?-1:(plead?.6:-.3),T,5);
+  const sh=red?Math.sin(T*34)*3:0; $('traFace').setAttribute('transform',`translate(${sh.toFixed(1)},${(Math.sin(T*2.2)*3).toFixed(1)})`);
+  let tears='';if(red){for(let i=0;i<4;i++){const u=((T*1.4)+i/4)%1,x=i%2?332:246;tears+=`<path d="M${x-12},${(1000+u*120).toFixed(1)} c6,8 8,15 0,19 c-8,-4 -6,-11 0,-19z" fill="#7fc8ef" ${OLW} opacity="${Math.sin(u*Math.PI).toFixed(2)}"/>`;}} $('tTears').innerHTML=tears;
   const armsOn=T>=E.close-.25; show('tArmL',armsOn?1:0); show('tArmR',armsOn?1:0);
-  if(armsOn){const aw=Math.sin(T*14)*18;
-    if(spicy){setHose('tArmL',[[150,1000],[100,950],[150+aw*.6,880]],60,.85); setHose('tArmR',[[336,1000],[390,950],[336-aw*.6,880]],-60,.85);}
-    else{const g=cp&&T>=E.grab-.2?cp:[392,1040];setHose('tArmL',[[150,1000],[110,1050],[124,1110]],10,.85);
-      setHose('tArmR',[[336,1000],[lerp(390,(g[0]+336)/2+40,cp?1:0),lerp(1040,(g[1]+1000)/2,cp?1:0)],[g[0]+8,g[1]+10]],cp?-150:-10,.85);}}
-  // tears, steam, flames
-  let tr2='';if(spicy){for(let i=0;i<4;i++){const u=((T*1.3)+i/4)%1, x=i%2?300:188;tr2+=`<path d="M${x},${(980+u*120).toFixed(1)} c5,7 7,13 0,16 c-7,-3 -5,-9 0,-16z" fill="#8fd3f4" ${LN2} opacity="${Math.sin(u*Math.PI).toFixed(2)}"/>`;}}
-  $('tears').innerHTML=tr2;
-  let st='';if(spicy){for(let i=0;i<5;i++){const u=((T*.9)+i/5)%1;st+=`<circle cx="${(200+i*22+Math.sin(T*3+i)*14).toFixed(1)}" cy="${(760-u*240).toFixed(1)}" r="${(16+u*26).toFixed(1)}" fill="#fff" opacity="${(.75*Math.sin(u*Math.PI)).toFixed(2)}" ${LN2}/>`;}}
-  $('steam').innerHTML=st;
-  const fk=P(T,E.fire-.1,E.fire+1.6); let fl='';if(fk>0&&fk<1){for(let i=0;i<3;i++){const s=(.7+.3*Math.sin(T*18+i))*(1-Math.max(0,fk-.8)*5);
-    fl+=`<g transform="translate(${190+i*54},${760}) scale(${s.toFixed(2)})"><path d="M0,0 C-26,-10 -24,-44 -6,-70 C-4,-48 10,-44 12,-60 C30,-36 30,-8 0,0Z" fill="#ffb21f" ${LN2}/><path d="M0,-6 C-12,-12 -10,-30 -2,-42 C2,-30 10,-28 10,-38 C18,-24 16,-10 0,-6Z" fill="#ff5a1f"/></g>`;}}
-  $('flames').innerHTML=fl;
-  [['lbEpi',.15],['lbTra',.25],['lbEso',.35]].forEach(([id,t0])=>{const k=eob(P(T,t0,t0+.3));const e=$(id);if(id==='lbEpi'){e.setAttribute('transform',`translate(52,690) rotate(-90) scale(${k.toFixed(3)})`);}else{show(id,1);e.setAttribute('transform',`translate(${id==='lbTra'?246:560},${id==='lbTra'?852:800}) scale(${k.toFixed(3)})`);}});
+  if(armsOn){const w=Math.sin(T*14)*14;
+    if(T<E.grab+.08){const g=f3||[436,600], k=eob(P(T,E.close-.25,E.close+.1));
+      setHose('tArmL',[[212,980],[lerp(190,300,k),lerp(1040,800,k)],[lerp(170,g[0]-34,k),lerp(1080,g[1]+60,k)]],lerp(20,170,k),.9);
+      setHose('tArmR',[[378,980],[lerp(420,450,k),lerp(1040,800,k)],[lerp(430,g[0]+30,k),lerp(1080,g[1]+66,k)]],lerp(-20,-170,k),.9);}
+    else if(!red){const g=f3||[300,1004];
+      setHose('tArmL',[[212,980],[176,1040],[184,1100]],10,.9); setHose('tArmR',[[378,980],[400,1040],[g[0]+34,g[1]+30]],-120,.9);}
+    else {setHose('tArmL',[[212,980],[150,1030],[150+w*.4,1100]],30,.9); setHose('tArmR',[[378,980],[440,1030],[440-w*.4,1100]],-30,.9);}}
+  // labels as in the reference (always on, pop in at the start)
+  [['lbEpi',.1],['lbTra',.2],['lbEso',.3]].forEach(([id,t0])=>{const k=eob(P(T,t0,t0+.3)),e=$(id); if(!e.getAttribute('data-b'))e.setAttribute('data-b',e.getAttribute('transform')); e.setAttribute('transform',e.getAttribute('data-b')+` scale(${k.toFixed(3)})`);});
 }
 // ---------- the man at the table ----------
 function renderDinner(T){
-  const mT=speak('man',T), t0=E.man;
-  const cough=Math.max(0,1-P(T,t0+.1,t0+1.1))*Math.abs(Math.sin(T*16));
-  tr('patHead',0,Math.sin(T*1.5)*1.5+cough*6,1,1,-4+Math.sin(T*9)*2*cough+(mT>.1?Math.sin(T*6)*1.5:0));
-  $('pBrows').setAttribute('d','M-36,62 Q-24,56 -10,62 M8,62 Q22,56 34,62');
-  setMouthV('pat_m',Math.max(mT,cough*.7),11,-.8,T,6);
-  const sq=.45+.3*cough; setHEye('pEyeL',0,Math.min(.9,sq+blinkK(T,.8))); setHEye('pEyeR',0,Math.min(.9,sq+blinkK(T,.8)));
-  show('patBlush',1); show('pSweat',1); $('pSweat').setAttribute('transform',`translate(46,${(70+((T*14)%24)).toFixed(1)})`);
-  // hand up at his mouth / throat while he coughs
-  const up=eio(P(T,t0,t0+.4)); const sh=[-84,234], el=[lerp(-102,-128,up),lerp(370,330,up)], wr=[lerp(-90,-30,up),lerp(470,190,up)];
-  const d=limbD([sh,el,wr],[44,38,32]); $('patArmLD').setAttribute('d',d); $('patArmLO').setAttribute('d',d);
-  $('patHandL').innerHTML=hand(wr[0],wr[1],lerp(-8,140,up),1.2,PSK);
-  // red spicy lips, tears and heat lines (drawn over him in scene coords)
-  let s=`<g transform="translate(360,430) scale(1.32)"><g transform="translate(0,${(Math.sin(T*1.5)*1.5+cough*6).toFixed(1)}) rotate(${(-4+Math.sin(T*9)*2*cough).toFixed(1)})"><ellipse cx="-4" cy="140" rx="17" ry="9" fill="none" stroke="#e0262c" stroke-width="4" opacity=".8"/>`;
-  for(let i=0;i<2;i++){const u=((T*1.2)+i*.5)%1;[-22,18].forEach(x=>{s+=`<path d="M${x},${(100+u*60).toFixed(1)} c4,6 6,11 0,14 c-6,-3 -4,-8 0,-14z" fill="#8fd3f4" ${LN2} opacity="${Math.sin(u*Math.PI).toFixed(2)}"/>`;});}
-  s+=`</g></g>`; for(let i=0;i<4;i++){const u=((T*.8)+i/4)%1;s+=`<path d="M${(120+i*130).toFixed(0)},${(940-u*90).toFixed(1)} q12,-14 0,-28 q-12,-14 0,-28" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity="${(.8*Math.sin(u*Math.PI)).toFixed(2)}"/>`;}
-  $('spicyFace').innerHTML=s; show('spicyFace',1);
+  const mT=speak('man',T), m0=ST['08_man'], hit=T>=m0-.1;
+  const hy=Math.sin(T*1.5)*1.5+(hit?Math.abs(Math.sin(T*15))*4*(1-P(T,m0,m0+1.2)):0), hr=hit?-4+Math.sin(T*8)*2.5:Math.sin(T*1.2)*1;
+  tr('patHead',0,hy,1,1,hr);
+  $('pBrows').setAttribute('d',hit?'M-36,62 Q-24,54 -10,62 M8,62 Q22,54 34,62':'M-36,70 Q-24,64 -10,66 M8,66 Q22,64 34,70');
+  const chew=!hit?.3+.3*Math.abs(Math.sin(T*8)):0;
+  setMouthV('pat_m',Math.max(mT,chew,hit&&T<m0+.5?.6:0),11,hit?-.8:.2,T,6);
+  const shut=hit?.15:.92; setHEye('pEyeL',0,Math.min(.95,shut+blinkK(T,.8))); setHEye('pEyeR',0,Math.min(.95,shut+blinkK(T,.8)));
+  show('patBlush',hit?1:0); show('pSweat',hit?1:0); $('pSweat').setAttribute('transform',`translate(46,${(70+((T*14)%24)).toFixed(1)})`);
+  const d=limbD([[-84,234],[-132,300],[-112,356]],[44,38,32]); $('patArmLD').setAttribute('d',d); $('patArmLO').setAttribute('d',d);
+  $('patHandL').innerHTML=hand(-112,360,-10,1.2,PSK);
+  let s='';if(hit){s=`<g transform="translate(390,206) scale(1.9)"><g transform="translate(0,${hy.toFixed(2)}) rotate(${hr.toFixed(2)})">
+    <ellipse cx="-22" cy="88" rx="11" ry="6" fill="#e3242c" opacity=".7"/><ellipse cx="18" cy="88" rx="11" ry="6" fill="#e3242c" opacity=".7"/>
+    <ellipse cx="-4" cy="${(142+mT*3).toFixed(1)}" rx="${(10+mT*3).toFixed(1)}" ry="${(6+mT*5).toFixed(1)}" fill="#e3242c" stroke="${INK}" stroke-width="1.6"/>`;
+    for(let i=0;i<2;i++){const u=((T*1.1)+i*.5)%1;[-30,26].forEach(x=>{s+=`<path d="M${x},${(98+u*44).toFixed(1)} c4,5 5,10 0,12 c-5,-2 -4,-7 0,-12z" fill="#7fc8ef" stroke="${INK}" stroke-width="1.2" opacity="${Math.sin(u*Math.PI).toFixed(2)}"/>`;});}
+    s+=`</g></g>`;}
+  $('manFx').innerHTML=s;
 }
 function caption(T){let w='',ws=0;for(const L of D.lines)for(const x of L.words){if(T>=x[0]&&T<Math.max(x[1],x[0]+.12)){w=x[2];ws=x[0];}}
   if(!w){for(const L of D.lines)for(const x of L.words){if(T>=x[1]&&T<x[1]+.12){w=x[2];ws=x[0];}}}
-  const c=$('cap'),big=KEY.test(w.replace(/[^A-Z'\-]/g,'')); c.textContent=w; c.style.fontSize=big?'56px':'44px'; c.style.fill=big?'#ffd21f':'#fff';
-  const k=eo(P(T,ws,ws+.09)); c.setAttribute('transform',`translate(360,1110) scale(${lerp(1.2,1,k)}) translate(-360,-1110)`);}
+  const c=$('cap'); c.textContent=w==='I'?'I':w.toLowerCase();
+  const k=eo(P(T,ws,ws+.08)); c.setAttribute('transform',`translate(370,1004) scale(${lerp(1.12,1,k)}) translate(-370,-1004)`);}
 window.render=function(T){
   const sc=T<T_MAN?1:2; $('sA').setAttribute('display',sc===1?'inline':'none'); $('sB').setAttribute('display',sc===2?'inline':'none');
-  const dark=Math.max(P(T,T_MAN-.12,T_MAN)*(T<T_MAN?1:0),T>=T_MAN?1-P(T,T_MAN,T_MAN+.12):0);
-  if(sc===1){renderThroat(T); const sh=T>=E.spicy?Math.sin(T*60)*3:0, z=1+.03*P(T,0,T_MAN)+(T>=E.close&&T<E.close+.3?.02*Math.sin(P(T,E.close,E.close+.3)*Math.PI):0);
-    $('camA').setAttribute('transform',`translate(${(360+sh).toFixed(1)},640) scale(${z.toFixed(4)}) translate(-360,-660)`);}
-  else {renderDinner(T); const z=1.1+.06*eio(P(T,T_MAN,END)); $('camB').setAttribute('transform',`translate(360,600) scale(${z.toFixed(4)}) translate(-360,-575)`);}
-  show('indark',dark*.9);
+  if(sc===1){renderThroat(T);
+    const pin=eio(P(T,E.close-.2,E.close+.1))*(1-eio(P(T,E.grab+.55,E.grab+.95)));
+    const z=1+.13*pin, cx=lerp(360,300,pin), cy=lerp(640,690,pin);
+    $('camA').setAttribute('transform',`translate(360,640) scale(${z.toFixed(4)}) translate(${(-cx).toFixed(1)},${(-cy).toFixed(1)})`);}
+  else {renderDinner(T); const z=1+.04*eio(P(T,T_MAN,END)); $('camB').setAttribute('transform',`translate(360,600) scale(${z.toFixed(4)}) translate(-360,-600)`);}
   caption(T);
 };
 window.render(0);

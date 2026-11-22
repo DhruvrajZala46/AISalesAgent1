@@ -1,6 +1,6 @@
 # 009 - The Epiglottis and the Spicy Bite
 
-Status (22 Nov 2026): **built** on the user's order. The user sent the reference file (`WhatsApp_Video_2026-11-22_at_3.21.00_PM.mp4`, a
+Status (22 Nov 2026): **v2 built** after the user rejected v1 ("5%... I can't understand what that body part is... confusing"). v1 was first built on the user's order. The user sent the reference file (`WhatsApp_Video_2026-11-22_at_3.21.00_PM.mp4`, a
 Dr. Healthcare short, 23.7 s) and asked for the **exact same script and style, only our characters**: "EXACT SAME SCRIPT, SAME VIDEO
 STYLE, EVERYTHING SAME... ONLY MERA CHARACTER". So this one keeps the reference's words **word for word**, unlike 004-008, where we
 reworded. The user decided this and was told the reused-content/copyright risk.
@@ -45,23 +45,46 @@ Generation: ElevenLabs `eleven_v4`, flow `7EI6KSiseFaKHMsGmvmw`, 2 takes per lin
 Lines are sped up 1.15-1.45x (`tempo.txt`) to the reference's fast pace, and the extra coughs at the start of line 6 are trimmed.
 Captions use the exact script words, timed by aligning them to whisper's words (`build_audio.py`).
 
-## Art (all code, our 001 / 003-v1 style)
-- `world_009.js`:
-  - the throat in 003 v1's colours (salmon throat, yellow spine with dots, tongue base);
-  - the epiglottis flap with a face and an arm, hinged so it folds shut;
-  - the windpipe with cartilage rings, a face and rubber-hose arms (red eyes, tears, steam, flames when the spice hits);
-  - the food pipe and the spicy chicken chunks;
-  - the dinner room (window, table, plates of red chicken and salad).
-- The man is 001's patient (orange hoodie), drawn with flushed cheeks, red lips, tears and a hand at his mouth.
-- Labels as in the reference: EPIGLOTTIS (vertical), TRACHEA, ESOPHAGUS.
+## Art v2 (all code): the reference's anatomy and staging, measured on its 720x1280 frame
+**v1 was rejected ("5%")**: the throat could not be read. Mistakes found side by side with the reference:
+- the windpipe was a solid striped "can" instead of an open airway;
+- the food pipe was a thin rod with no opening;
+- the epiglottis was a banana shape on top of the can;
+- the anatomy did not join up into one throat;
+- eyes and food were half the reference's size;
+- one food drop was missing;
+- the grab-and-eat moment was too fast;
+- I added fire, steam and an epiglottis arm (none in the reference) and a dark dip;
+- the man was far away, and the caption style was different.
+
+v2 copies the layout 1:1 in our own code drawing:
+- salmon throat, tongue base top-left;
+- the epiglottis as a curved flap rising from the front wall, with its face at the base by the yellow hyoid bone;
+- the TRACHEA as the open airway behind the cartilage front wall, with the face inside it;
+- the ESOPHAGUS as a narrow tube with an opening at the top;
+- a thick back wall and big vertebrae.
+
+Same sizes and positions as the reference: eyes r 40-42, a food chunk about 90x190.
+
+The action, beat for beat:
+- 3 food drops at 0 / 7 / 11.7 s;
+- the flap bends shut at 12.3 s with a worried, teeth-gritting face, while the trachea reaches up with both arms and grabs the chunk;
+- it eats it while the epiglottis scolds;
+- red glossy eyes with blue tears from "chest on fire".
+
+Other details:
+- The man is 001's patient in a medium close-up at the table with big plates of red spicy chicken: he eats calmly with his eyes closed, then gets red eyes, a red mouth and tears.
+- Captions are white serif, lowercase.
+- Hard cut, no extras.
 
 Build: `python3 build_audio.py && python3 assemble_009.py && node ../../tools/render.js && LIM=0.66 bash ../../tools/mix.sh video.mp4 final.mp4`
 
-## Final QA (`epiglottis-spicy-bite.mp4`)
+## Final QA v2 (`epiglottis-spicy-bite-v2.mp4`)
 - 24.4 s (reference 23.7 s). Every line starts within 0.35 s of the reference.
 - Final-mix whisper 95.2%: the high trachea voice makes "chest" sound like "just"; the caption shows "CHEST".
 - -11.6 LUFS (reference -11.7), true peak -1.3 dB.
-- Motion 2.34, frozen 0.0%, longest still 0.3 s (reference: 1.88, 35.6%, 2.3 s).
+- Motion 1.70, frozen 6.2%, longest still 0.7 s (reference: 1.88, 35.6%, 2.3 s).
+- Checked against the reference second by second at 1 fps (24 frames each) before delivery.
 
 ## Upload block
 **Title:** Why Spicy Food Makes You Choke 🌶️😵  (question style; the reference's own title is unknown to us)
