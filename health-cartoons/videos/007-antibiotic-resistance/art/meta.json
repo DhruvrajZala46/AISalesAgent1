@@ -1,0 +1,110 @@
+{
+ "stomach_base": {
+  "w": 1507,
+  "h": 1521,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "stomach_panic": {
+  "w": 1413,
+  "h": 1522,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "stomach_point": {
+  "w": 1451,
+  "h": 1521,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "pat_bed": {
+  "w": 1152,
+  "h": 1853,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "doc_base": {
+  "w": 1034,
+  "h": 1910,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "doc_explain": {
+  "w": 1089,
+  "h": 1898,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "doc_point": {
+  "w": 917,
+  "h": 1906,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "plate_abdomen": {
+  "w": 1152,
+  "h": 2016
+ },
+ "plate_hospital": {
+  "w": 1152,
+  "h": 2016
+ },
+ "stomach_shout": {
+  "w": 1401,
+  "h": 1518,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "stomach_smug": {
+  "w": 1265,
+  "h": 1516,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ },
+ "buddy_base": {
+  "w": 1459,
+  "h": 1068,
+  "eyes": [],
+  "lid": null,
+  "variants": [
+   "c",
+   "o"
+  ]
+ }
+}

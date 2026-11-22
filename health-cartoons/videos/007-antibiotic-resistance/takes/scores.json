@@ -1,0 +1,314 @@
+{
+ "takes/01_stomach_a.mp3": {
+  "wer": 0.25,
+  "range": 23.9,
+  "dur": 2.88,
+  "txt": "Huh? What? What's this now?"
+ },
+ "takes/01_stomach_b.mp3": {
+  "wer": 0.25,
+  "range": 26.9,
+  "dur": 3.04,
+  "txt": "Huh? What? What's this now?"
+ },
+ "takes/02_stomach_a.mp3": {
+  "wer": 0.0,
+  "range": 23.3,
+  "dur": 3.44,
+  "txt": "Antibiotics? For what? It's just a headache!"
+ },
+ "takes/02_stomach_b.mp3": {
+  "wer": 0.0,
+  "range": 24.1,
+  "dur": 3.52,
+  "txt": "Antibiotics? For what? It's just a headache!"
+ },
+ "takes/03_stomach_a.mp3": {
+  "wer": 0.17,
+  "range": 10.4,
+  "dur": 2.72,
+  "txt": "WHO TAKES ANTIBIOTICS FOR A HEADAKE?!"
+ },
+ "takes/03_stomach_b.mp3": {
+  "wer": 0.0,
+  "range": 8.7,
+  "dur": 2.64,
+  "txt": "Who takes antibiotics for a headache?"
+ },
+ "takes/04_buddy_a.mp3": {
+  "wer": 0.0,
+  "range": 21.2,
+  "dur": 3.2,
+  "txt": "Relax. I'm sure he knows what he's doing."
+ },
+ "takes/04_buddy_b.mp3": {
+  "wer": 0.0,
+  "range": 19.2,
+  "dur": 3.2,
+  "txt": "Relax. I'm sure he knows what he's doing."
+ },
+ "takes/05_stomach_a.mp3": {
+  "wer": 0.0,
+  "range": 12.9,
+  "dur": 1.68,
+  "txt": "No, he doesn't!"
+ },
+ "takes/05_stomach_b.mp3": {
+  "wer": 0.0,
+  "range": 14.6,
+  "dur": 1.68,
+  "txt": "No, he doesn't!"
+ },
+ "takes/06_buddy_a.mp3": {
+  "wer": 0.0,
+  "range": 32.1,
+  "dur": 2.08,
+  "txt": "Then stop complaining."
+ },
+ "takes/06_buddy_b.mp3": {
+  "wer": 0.0,
+  "range": 25.3,
+  "dur": 2.16,
+  "txt": "Then stop complaining."
+ },
+ "takes/07_stomach_a.mp3": {
+  "wer": 0.0,
+  "range": 16.0,
+  "dur": 3.76,
+  "txt": "Fine, let's just push it down before it burns my walls again"
+ },
+ "takes/07_stomach_b.mp3": {
+  "wer": 0.0,
+  "range": 16.2,
+  "dur": 4.24,
+  "txt": "Fine. Let's just push it down before it burns my walls again."
+ },
+ "takes/08_guard_a.mp3": {
+  "wer": 0.0,
+  "range": 19.5,
+  "dur": 1.84,
+  "txt": "Hey! Stop right there!"
+ },
+ "takes/08_guard_b.mp3": {
+  "wer": 0.0,
+  "range": 21.6,
+  "dur": 1.84,
+  "txt": "Hey, stop right there!"
+ },
+ "takes/09_guard_a.mp3": {
+  "wer": 0.0,
+  "range": 27.9,
+  "dur": 1.52,
+  "txt": "Who let you in here?"
+ },
+ "takes/09_guard_b.mp3": {
+  "wer": 0.0,
+  "range": 26.7,
+  "dur": 1.52,
+  "txt": "Who let you in here?"
+ },
+ "takes/10_bacteria_a.mp3": {
+  "wer": 0.0,
+  "range": 22.3,
+  "dur": 4.0,
+  "txt": "Chill, officer. I found a nice cozy cut."
+ },
+ "takes/10_bacteria_b.mp3": {
+  "wer": 0.0,
+  "range": 23.7,
+  "dur": 3.84,
+  "txt": "Chill, officer. I found a nice, cozy cut."
+ },
+ "takes/11_bacteria_a.mp3": {
+  "wer": 0.0,
+  "range": 23.5,
+  "dur": 3.44,
+  "txt": "Why wouldn't I come in? Who are you to stop me?"
+ },
+ "takes/11_bacteria_b.mp3": {
+  "wer": 0.0,
+  "range": 26.6,
+  "dur": 3.52,
+  "txt": "Why wouldn't I come in? Who are you to stop me?"
+ },
+ "takes/12_bacteria_a.mp3": {
+  "wer": 0.0,
+  "range": 26.3,
+  "dur": 1.2,
+  "txt": "Outta my way!"
+ },
+ "takes/12_bacteria_b.mp3": {
+  "wer": 0.0,
+  "range": 23.4,
+  "dur": 1.2,
+  "txt": "Outta my way!"
+ },
+ "takes/13_guard_a.mp3": {
+  "wer": 0.0,
+  "range": 14.6,
+  "dur": 3.52,
+  "txt": "Hello? We've got a problem! The skin is torn open!"
+ },
+ "takes/13_guard_b.mp3": {
+  "wer": 0.0,
+  "range": 14.0,
+  "dur": 3.52,
+  "txt": "Hello? We've got a problem! The skin is torn open!"
+ },
+ "takes/14_guard_a.mp3": {
+  "wer": 0.0,
+  "range": 22.3,
+  "dur": 3.76,
+  "txt": "Bacteria are pouring in! Send white blood cells. Now!"
+ },
+ "takes/14_guard_b.mp3": {
+  "wer": 0.0,
+  "range": 25.9,
+  "dur": 3.68,
+  "txt": "Bacteria are pouring in! Send white blood cells now!"
+ },
+ "takes/15_wbc_a.mp3": {
+  "wer": 0.0,
+  "range": 14.2,
+  "dur": 2.72,
+  "txt": "Hey! How did you get in here and make this mess?"
+ },
+ "takes/15_wbc_b.mp3": {
+  "wer": 0.0,
+  "range": 13.0,
+  "dur": 2.64,
+  "txt": "Hey! How did you get in here and make this mess?"
+ },
+ "takes/16_bacteria_a.mp3": {
+  "wer": 0.0,
+  "range": 24.6,
+  "dur": 3.28,
+  "txt": "Mess? I'll show you a real mess!"
+ },
+ "takes/16_bacteria_b.mp3": {
+  "wer": 0.0,
+  "range": 18.2,
+  "dur": 3.36,
+  "txt": "Mess I'll show you a real mess"
+ },
+ "takes/17_wbc_a.mp3": {
+  "wer": 0.33,
+  "range": 29.2,
+  "dur": 1.28,
+  "txt": "I bring it on!"
+ },
+ "takes/17_wbc_b.mp3": {
+  "wer": 0.33,
+  "range": 12.9,
+  "dur": 1.2,
+  "txt": "But bring it on!"
+ },
+ "takes/18_guard_a.mp3": {
+  "wer": 0.0,
+  "range": 6.8,
+  "dur": 2.16,
+  "txt": "Hello? They're spreading fast!"
+ },
+ "takes/18_guard_b.mp3": {
+  "wer": 0.0,
+  "range": 6.8,
+  "dur": 2.24,
+  "txt": "Hello? They're spreading fast!"
+ },
+ "takes/19_guard_a.mp3": {
+  "wer": 0.0,
+  "range": 22.3,
+  "dur": 3.28,
+  "txt": "The white blood cell couldn't stop them! We need backup!"
+ },
+ "takes/19_guard_b.mp3": {
+  "wer": 0.0,
+  "range": 24.7,
+  "dur": 3.28,
+  "txt": "The white blood cell couldn't stop them! We need backup!"
+ },
+ "takes/20_stomach_a.mp3": {
+  "wer": 0.0,
+  "range": 19.0,
+  "dur": 1.92,
+  "txt": "Huh? Another one?"
+ },
+ "takes/20_stomach_b.mp3": {
+  "wer": 0.0,
+  "range": 19.7,
+  "dur": 1.84,
+  "txt": "Huh? Another one?"
+ },
+ "takes/21_antibiotic_a.mp3": {
+  "wer": 0.0,
+  "range": 20.9,
+  "dur": 2.96,
+  "txt": "Intruder! You've met your match!"
+ },
+ "takes/21_antibiotic_b.mp3": {
+  "wer": 0.0,
+  "range": 21.9,
+  "dur": 3.04,
+  "txt": "Intruder! You've met your match!"
+ },
+ "takes/22_bacteria_a.mp3": {
+  "wer": 0.0,
+  "range": 17.7,
+  "dur": 2.24,
+  "txt": "You think that still works on me?"
+ },
+ "takes/22_bacteria_b.mp3": {
+  "wer": 0.0,
+  "range": 17.6,
+  "dur": 2.32,
+  "txt": "You think that still works on me?"
+ },
+ "takes/23_bacteria_a.mp3": {
+  "wer": 0.0,
+  "range": 33.7,
+  "dur": 5.36,
+  "txt": "I've learned to resist you. Your weapons can't hurt me anymore."
+ },
+ "takes/23_bacteria_b.mp3": {
+  "wer": 0.0,
+  "range": 23.5,
+  "dur": 5.2,
+  "txt": "I've learned to resist you. Your weapons can't hurt me anymore."
+ },
+ "takes/24_patient_a.mp3": {
+  "wer": 0.0,
+  "range": 21.2,
+  "dur": 5.28,
+  "txt": "Doc, can anything stop this infection? It's getting worse every day."
+ },
+ "takes/24_patient_b.mp3": {
+  "wer": 0.0,
+  "range": 13.8,
+  "dur": 5.12,
+  "txt": "Doc, can anything stop this infection? It's getting worse every day."
+ },
+ "takes/25_doctor_a.mp3": {
+  "wer": 0.0,
+  "range": 12.2,
+  "dur": 16.56,
+  "txt": "That's called antibiotic resistance. It happens when antibiotics are misused, like taking them for a headache they can't treat or not taking them the way your doctor told you. The bacteria adapt, so the usual antibiotics stop working. Now we'll have to try stronger ones."
+ },
+ "takes/25_doctor_b.mp3": {
+  "wer": 0.0,
+  "range": 11.2,
+  "dur": 16.32,
+  "txt": "That's called antibiotic resistance. It happens when antibiotics are misused, like taking them for a headache they can't treat or not taking them the way your doctor told you. The bacteria adapt so the usual antibiotics stop working. Now we'll have to try stronger ones."
+ },
+ "takes/26_bacteria_a.mp3": {
+  "wer": 0.0,
+  "range": 30.4,
+  "dur": 3.44,
+  "txt": "Uh-oh. A stronger one?"
+ },
+ "takes/26_bacteria_b.mp3": {
+  "wer": 0.0,
+  "range": 27.3,
+  "dur": 3.12,
+  "txt": "Uh-oh. A stronger one?"
+ }
+}

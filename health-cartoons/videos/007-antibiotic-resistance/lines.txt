@@ -1,0 +1,26 @@
+stomach|Huh? What's this now?
+stomach|Antibiotics? For what? It's just a headache!
+stomach|Who takes antibiotics for a headache?!
+buddy|Relax. I'm sure he knows what he's doing.
+stomach|No, he doesn't!
+buddy|Then stop complaining.
+stomach|Fine. Let's just push it down before it burns my walls again.
+guard|Hey! Stop right there!
+guard|Who let you in here?
+bacteria|Chill, officer. I found a nice, cozy cut.
+bacteria|Why wouldn't I come in? Who are you to stop me?
+bacteria|Outta my way!
+guard|Hello? We've got a problem! The skin is torn open!
+guard|Bacteria are pouring in! Send white blood cells, now!
+wbc|Hey! How did you get in here and make this mess?
+bacteria|Mess? I'll show you a real mess!
+wbc|Bring it on!
+guard|Hello?! They're spreading fast!
+guard|The white blood cell couldn't stop them. We need backup!
+stomach|Huh? Another one?
+antibiotic|Intruder! You've met your match!
+bacteria|You think that still works on me?
+bacteria|I've learned to resist you. Your weapons can't hurt me anymore.
+patient|Doc, can anything stop this infection? It's getting worse every day.
+doctor|That's called antibiotic resistance. It happens when antibiotics are misused, like taking them for a headache they can't treat, or not taking them the way your doctor told you. The bacteria adapt, so the usual antibiotics stop working. Now we'll have to try stronger ones.
+bacteria|Uh-oh... a stronger one?
