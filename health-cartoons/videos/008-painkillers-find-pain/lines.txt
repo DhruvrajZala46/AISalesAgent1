@@ -1,0 +1,21 @@
+guard|Whoa! That's a HUGE cut!
+guard|I'd better call this in.
+guard|Hello, Brain? Listen up. We've got a deep cut down here.
+guard|Blood is pouring out! Send platelets and painkillers, fast!
+brain|Relax. The nerve already told me. Help is on the way.
+stomach|Huh? What kind of medicine is this?
+pill|We're painkillers!
+stomach|Wait... you can talk?
+pill2|Uh, yeah. Who can't?
+stomach|Besides, nothing hurts down here. Who sent you?
+pill|Ha! You really have no idea what's going on in your own body.
+pill2|Every second we chat, he hurts more. Bro, stir us in!
+pill2|So... how do we know which way the pain is?
+pill|Only one way to find out. We split up.
+pill|You go east, I'll go north.
+pill|Gotcha! So YOU'RE the one causing all the pain!
+prost|Hey, I'm just doing my job!
+pill2|Well, we're here to do ours.
+patient|Doc, how fast does this painkiller work? My foot is killing me.
+doctor|Painkillers like ibuprofen don't heal the wound. They stop your body from making prostaglandins, the chemicals that make your nerves send pain signals to your brain. So the pain fades, even though the medicine never went looking for the injury. It just turned the signal down.
+patient|Oh... that makes sense.

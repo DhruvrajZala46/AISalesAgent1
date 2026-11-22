@@ -1,0 +1,254 @@
+{
+ "takes/01_guarda.mp3": {
+  "wer": 0.0,
+  "range": 28.7,
+  "dur": 2.88,
+  "txt": "Whoa! That's a huge cut!"
+ },
+ "takes/01_guardb.mp3": {
+  "wer": 0.0,
+  "range": 31.0,
+  "dur": 2.88,
+  "txt": "Whoa! That's a huge cut!"
+ },
+ "takes/02_guarda.mp3": {
+  "wer": 0.0,
+  "range": 36.2,
+  "dur": 1.92,
+  "txt": "I'd better call this in."
+ },
+ "takes/02_guardb.mp3": {
+  "wer": 0.0,
+  "range": 10.0,
+  "dur": 2.0,
+  "txt": "I'd better call this in."
+ },
+ "takes/03_guarda.mp3": {
+  "wer": 0.0,
+  "range": 29.4,
+  "dur": 3.92,
+  "txt": "Hello, brain? Listen up. We've got a deep cut down here."
+ },
+ "takes/03_guardb.mp3": {
+  "wer": 0.0,
+  "range": 17.1,
+  "dur": 3.84,
+  "txt": "Hello, Brain? Listen up. We've got a deep cut down here."
+ },
+ "takes/04_guarda.mp3": {
+  "wer": 0.0,
+  "range": 9.9,
+  "dur": 4.16,
+  "txt": "Blood is pouring out! Send platelets and painkillers! Fast!"
+ },
+ "takes/04_guardb.mp3": {
+  "wer": 0.0,
+  "range": 10.9,
+  "dur": 4.16,
+  "txt": "Blood is pouring out! Send platelets and painkillers! Fast!"
+ },
+ "takes/05_braina.mp3": {
+  "wer": 0.0,
+  "range": 18.8,
+  "dur": 4.32,
+  "txt": "Relax the nerve already told me help is on the way"
+ },
+ "takes/05_brainb.mp3": {
+  "wer": 0.0,
+  "range": 16.8,
+  "dur": 4.24,
+  "txt": "Relax. The nerve already told me. Help is on the way."
+ },
+ "takes/06_stomacha.mp3": {
+  "wer": 0.14,
+  "range": 30.5,
+  "dur": 3.68,
+  "txt": "Huh? Huh? What kind of medicine is this?"
+ },
+ "takes/06_stomachb.mp3": {
+  "wer": 0.0,
+  "range": 34.4,
+  "dur": 2.96,
+  "txt": "Huh? What kind of medicine is this?"
+ },
+ "takes/07_pilla.mp3": {
+  "wer": 0.0,
+  "range": 27.3,
+  "dur": 1.6,
+  "txt": "We're painkillers!"
+ },
+ "takes/07_pillb.mp3": {
+  "wer": 0.0,
+  "range": 26.3,
+  "dur": 1.6,
+  "txt": "We're painkillers!"
+ },
+ "takes/08_stomacha.mp3": {
+  "wer": 0.0,
+  "range": 22.3,
+  "dur": 2.08,
+  "txt": "Wait, you can talk?"
+ },
+ "takes/08_stomachb.mp3": {
+  "wer": 0.0,
+  "range": 31.2,
+  "dur": 2.08,
+  "txt": "Wait, you can talk?"
+ },
+ "takes/09_pill2a.mp3": {
+  "wer": 0.25,
+  "range": 13.3,
+  "dur": 2.48,
+  "txt": "Yeah, who can't?"
+ },
+ "takes/09_pill2b.mp3": {
+  "wer": 0.25,
+  "range": 25.7,
+  "dur": 2.32,
+  "txt": "Yeah, who can't?"
+ },
+ "takes/10_stomacha.mp3": {
+  "wer": 0.0,
+  "range": 17.7,
+  "dur": 3.36,
+  "txt": "Besides, nothing hurts down here. Who sent you?"
+ },
+ "takes/10_stomachb.mp3": {
+  "wer": 0.0,
+  "range": 16.9,
+  "dur": 3.44,
+  "txt": "Besides, nothing hurts down here. Who sent you?"
+ },
+ "takes/11_pilla.mp3": {
+  "wer": 0.0,
+  "range": 34.8,
+  "dur": 4.88,
+  "txt": "Ha! You really have no idea what's going on in your own body!"
+ },
+ "takes/11_pillb.mp3": {
+  "wer": 0.0,
+  "range": 34.5,
+  "dur": 4.88,
+  "txt": "Ha! You really have no idea what's going on in your own body!"
+ },
+ "takes/12_pill2a.mp3": {
+  "wer": 0.0,
+  "range": 15.5,
+  "dur": 4.32,
+  "txt": "Every second we chat, he hurts more. Bro, stir us in!"
+ },
+ "takes/12_pill2b.mp3": {
+  "wer": 0.0,
+  "range": 15.8,
+  "dur": 4.24,
+  "txt": "Every second we chat, he hurts more. Bro, stir us in!"
+ },
+ "takes/13_pill2a.mp3": {
+  "wer": 0.0,
+  "range": 26.1,
+  "dur": 3.52,
+  "txt": "So how do we know which way the pain is?"
+ },
+ "takes/13_pill2b.mp3": {
+  "wer": 0.0,
+  "range": 22.3,
+  "dur": 3.68,
+  "txt": "So how do we know which way the pain is?"
+ },
+ "takes/14_pilla.mp3": {
+  "wer": 0.0,
+  "range": 21.7,
+  "dur": 3.04,
+  "txt": "Only one way to find out, we split up."
+ },
+ "takes/14_pillb.mp3": {
+  "wer": 0.11,
+  "range": 25.3,
+  "dur": 3.04,
+  "txt": "Only one way to find out, which split up."
+ },
+ "takes/15_pilla.mp3": {
+  "wer": 0.0,
+  "range": 29.0,
+  "dur": 2.32,
+  "txt": "You go east, I'll go north."
+ },
+ "takes/15_pillb.mp3": {
+  "wer": 0.0,
+  "range": 25.9,
+  "dur": 2.32,
+  "txt": "You go east, I'll go north."
+ },
+ "takes/16_pilla.mp3": {
+  "wer": 0.0,
+  "range": 38.6,
+  "dur": 3.92,
+  "txt": "Gotcha! So you're the one causing all the pain!"
+ },
+ "takes/16_pillb.mp3": {
+  "wer": 0.0,
+  "range": 36.8,
+  "dur": 3.68,
+  "txt": "Gotcha! So you're the one causing all the pain."
+ },
+ "takes/17_prosta.mp3": {
+  "wer": 0.0,
+  "range": 26.7,
+  "dur": 2.4,
+  "txt": "Hey, I'm just doing my job."
+ },
+ "takes/17_prostb.mp3": {
+  "wer": 0.0,
+  "range": 26.9,
+  "dur": 2.32,
+  "txt": "Hey, I'm just doing my job."
+ },
+ "takes/18_pill2a.mp3": {
+  "wer": 0.0,
+  "range": 11.4,
+  "dur": 2.32,
+  "txt": "Well, we're here to do ours."
+ },
+ "takes/18_pill2b.mp3": {
+  "wer": 0.0,
+  "range": 12.2,
+  "dur": 2.48,
+  "txt": "Well, we're here to do ours."
+ },
+ "takes/19_patienta.mp3": {
+  "wer": 0.0,
+  "range": 34.6,
+  "dur": 5.12,
+  "txt": "Doc! How fast does this painkiller work? My foot is killing me!"
+ },
+ "takes/19_patientb.mp3": {
+  "wer": 0.0,
+  "range": 17.5,
+  "dur": 4.88,
+  "txt": "Doc! How fast does this painkiller work? My foot is killing me!"
+ },
+ "takes/20_doctora.mp3": {
+  "wer": 0.04,
+  "range": 15.1,
+  "dur": 14.96,
+  "txt": "Pain killers like ibuprofen don't heal the wound. They stop your body from making prostaglandins, the chemicals that make your nerves send pain signals to your brain. So the pain fades, even though the medicine never went looking for the injury. It just turned the signal down."
+ },
+ "takes/20_doctorb.mp3": {
+  "wer": 0.04,
+  "range": 15.3,
+  "dur": 15.12,
+  "txt": "Pain killers like ibuprofen don't heal the wound. They stop your body from making prostaglandins, the chemicals that make your nerves send pain signals to your brain. So the pain fades, even though the medicine never went looking for the injury. It just turned the signal down."
+ },
+ "takes/21_patienta.mp3": {
+  "wer": 0.0,
+  "range": 15.7,
+  "dur": 2.24,
+  "txt": "Oh, that makes sense."
+ },
+ "takes/21_patientb.mp3": {
+  "wer": 0.0,
+  "range": 16.1,
+  "dur": 2.4,
+  "txt": "Oh, that makes sense."
+ }
+}

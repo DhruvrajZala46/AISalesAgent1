@@ -1,0 +1,681 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:LG;src:url(../../assets/fonts/LuckiestGuy.woff2)}
+html,body{margin:0;background:#000;overflow:hidden}svg{display:block}
+.cap{font-family:LG,sans-serif;font-size:42px;letter-spacing:1px;paint-order:stroke;stroke:#141414;stroke-width:7px;stroke-linejoin:round;fill:#fff}
+.lbl{font-family:Inter,sans-serif;font-weight:900;font-size:22px;letter-spacing:.5px;fill:#111}
+.cta{font-family:LG,sans-serif;paint-order:stroke;stroke:#141414;stroke-linejoin:round}
+</style></head><body>
+<svg id="S" width="720" height="1280" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
+<script src="data.js"></script>
+<script>
+// =============== helpers ===============
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const P=(t,a,b)=>clamp((t-a)/(b-a));
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eo=x=>1-Math.pow(1-x,3);
+const eob=x=>{const c1=1.7,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const lerp=(a,b,x)=>a+(b-a)*x;
+const INK='#2a2322';
+const VE='vector-effect="non-scaling-stroke"';
+const LN=`stroke="${INK}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" ${VE}`;
+const LN2=`stroke="${INK}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" ${VE}`;
+const TH=(c)=>`stroke="${c}" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" fill="none" ${VE}`;
+function tr(id,x,y,sx=1,sy=sx,r=0){const e=$(id);if(e)e.setAttribute('transform',`translate(${x},${y}) rotate(${r}) scale(${sx},${sy})`);}
+function show(id,v){const e=$(id);if(e)e.setAttribute('opacity',v);}
+let DEFS='', UID=0;
+// shape with airbrushed inner shading (soft darker edge), like the reference
+function shaded(d,fill,shade,w=16,extra=''){const id='c'+(UID++);DEFS+=`<clipPath id="${id}"><path d="${d}"/></clipPath>`;
+  return `<path d="${d}" fill="${fill}"/><g clip-path="url(#${id})"><path d="${d}" fill="none" stroke="${shade}" stroke-width="${w}" filter="url(#soft)" opacity=".9"/></g><path d="${d}" fill="none" ${LN} ${extra}/>`;}
+// Catmull-Rom smooth path through points
+function smooth(pts,closed=false){let s=`M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;const n=pts.length;
+  for(let i=0;i<n-1;i++){const p0=pts[Math.max(0,i-1)],p1=pts[i],p2=pts[i+1],p3=pts[Math.min(n-1,i+2)];
+    s+=` C${(p1[0]+(p2[0]-p0[0])/6).toFixed(1)},${(p1[1]+(p2[1]-p0[1])/6).toFixed(1)} ${(p2[0]-(p3[0]-p1[0])/6).toFixed(1)},${(p2[1]-(p3[1]-p1[1])/6).toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;}
+  return s;}
+// tapered limb around a centre line (shoulder, elbow, wrist)
+function limbD(pts,ws){const L=[],R=[];const n=pts.length;
+  for(let i=0;i<n;i++){const a=pts[Math.max(0,i-1)],b=pts[Math.min(n-1,i+1)];let dx=b[0]-a[0],dy=b[1]-a[1];const d=Math.hypot(dx,dy)||1;dx/=d;dy/=d;
+    const w=ws[i]/2;L.push([pts[i][0]-dy*w,pts[i][1]+dx*w]);R.push([pts[i][0]+dy*w,pts[i][1]-dx*w]);}
+  const we=ws[n-1]/2, ws0=ws[0]/2;
+  let s=smooth(L);s+=` A${we},${we} 0 0 0 ${R[n-1][0].toFixed(1)},${R[n-1][1].toFixed(1)}`;
+  const r=smooth(R.slice().reverse());s+=' '+r.replace(/^M[^C]*/,'');s+=` A${ws0},${ws0} 0 0 0 ${L[0][0].toFixed(1)},${L[0][1].toFixed(1)}Z`;return s;}
+
+// ---------- cartoon object eyes (googly, with lids + brows) ----------
+function oEye(id,r,lidCol){const c='e'+(UID++);DEFS+=`<clipPath id="${c}"><ellipse rx="${r*.92}" ry="${r}"/></clipPath>`;
+  return `<g id="${id}"><ellipse rx="${r*.92}" ry="${r}" fill="#fff"/><g clip-path="url(#${c})"><circle id="${id}_p" r="${r*.46}" fill="#1b1717"/><circle id="${id}_h" r="${r*.15}" fill="#fff"/>
+   <g id="${id}_lid"><rect x="${-r*2}" y="${-r*3}" width="${r*4}" height="${r*2}" fill="${lidCol}"/><line x1="${-r*2}" x2="${r*2}" y1="${-r}" y2="${-r}" ${LN2}/></g></g>
+   <ellipse rx="${r*.92}" ry="${r}" fill="none" ${LN2}/></g>`;}
+// lid: amount 0..1 (closed), tilt degrees ; look dx,dy
+function setOEye(id,r,{dx=0,dy=0,lid=.12,tilt=0,blink=0,small=false}={}){const d=Math.hypot(dx,dy)||1,m=r*.42,k=Math.min(1,d/40);
+  const px=dx/d*m*k,py=dy/d*m*k;const p=$(id+'_p');p.setAttribute('cx',px);p.setAttribute('cy',py);p.setAttribute('r',r*(small?.3:.46));
+  const h=$(id+'_h');h.setAttribute('cx',px-r*.13);h.setAttribute('cy',py-r*.15);
+  const L=Math.max(lid,blink);$(id+'_lid').setAttribute('transform',`rotate(${tilt}) translate(0,${L*2*r})`);}
+function blinkK(t,ph){const k=(t+ph)%3.9;return k<.13?1-Math.abs(k-.065)/.065:0;}
+function brow(id){return `<path id="${id}" fill="none" ${LN2}/>`;}
+function setBrow(id,x,y,w,ang,arch=0){$(id).setAttribute('d',`M${x-w/2},${y} Q${x},${y-arch} ${x+w/2},${y}`);$(id).setAttribute('transform',`rotate(${ang},${x},${y})`);}
+function mouthD(o,w,mood=0){ // mood: +1 smile, -1 frown
+  if(o<.08){return {d:`M${-w*.7},0 Q0,${mood*w*.45} ${w*.7},0`,fill:'none'};}
+  const h=3+o*w*1.25;return {d:`M${-w*.75},-1 Q0,${-2+mood*2} ${w*.75},-1 Q${w*.6},${h} 0,${h+1} Q${-w*.6},${h} ${-w*.75},-1Z`,fill:'#5e1a20'};}
+function setMouth(id,o,w,mood=0){const m=mouthD(clamp(o),w,mood);const e=$(id);e.setAttribute('d',m.d);e.setAttribute('fill',m.fill);
+  const t=$(id+'_t');if(t){t.setAttribute('opacity',o>=.25?1:0);t.setAttribute('cy',2+o*w*1.05);t.setAttribute('rx',w*.4);t.setAttribute('ry',o*w*.35);}}
+function mouthEl(id,x,y){return `<g transform="translate(${x},${y})"><path id="${id}" ${LN2}/><path id="${id}_w" fill="#fff" opacity="0"/><ellipse id="${id}_t" cx="0" cy="0" rx="1" ry="1" fill="#d76d72" opacity="0"/></g>`;}
+
+// ---------- data / lip sync ----------
+const D=window.DATA, FPS=30;
+function speak(who,T){for(const L of D.lines){if(L.who===who&&T>=L.t0&&T<L.t0+L.dur){return L.env[Math.floor((T-L.t0)*FPS)]||0;}}return 0;}
+function lineT(id){return D.lines.find(l=>l.id===id).t0;}
+function wordT(id,w,n=0){const L=D.lines.find(l=>l.id===id);const m=L.words.filter(x=>x[2]===w);return m[n]?m[n][0]:L.t0;}
+function labelBox(id,text,x,y,sz=22){const w=text.length*sz*.66+26;return `<g id="${id}" opacity="0" transform="translate(${x},${y})"><rect x="${-w/2}" y="-20" width="${w}" height="40" fill="#fff" ${LN}/><text class="lbl" style="font-size:${sz}px" text-anchor="middle" y="8">${text}</text></g>`;}
+// 007: code-drawn characters in the style of our AI art (thick dark-brown outline, soft gradients, highlights, googly eyes, white gloves).
+// No image model is used (user rule, 22 Nov 2026).
+const OL='#2a2322', OW=3;   // v2: the thin INK line of 001 / 003-v1
+const STK=`stroke="${OL}" stroke-width="${OW}" stroke-linejoin="round" stroke-linecap="round"`;
+const STK2=`stroke="${OL}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"`;
+let GDEF='';
+function grad(id,c1,c2,radial=true,fx='35%',fy='30%'){GDEF+=radial?`<radialGradient id="${id}" cx="40%" cy="35%" r="75%" fx="${fx}" fy="${fy}"><stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></radialGradient>`:
+  `<linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient>`;return `url(#${id})`;}
+// googly eye with lid + brow, drawn bigger than the 001 ones to match the AI art
+function gEye(id,r){const c='ce'+(UID++);DEFS+=`<clipPath id="${c}"><ellipse rx="${r*.9}" ry="${r}"/></clipPath>`;
+  return `<g id="${id}"><ellipse rx="${r*.9}" ry="${r}" fill="#fff"/><g clip-path="url(#${c})"><circle id="${id}_p" r="${r*.5}" fill="#231a18"/><circle id="${id}_h" r="${r*.17}" fill="#fff"/>
+  <g id="${id}_lid"><rect x="${-r*2}" y="${-r*3}" width="${r*4}" height="${r*2}" fill="#000" opacity="0"/><path d="M${-r*2},${-r} L${r*2},${-r}" ${STK2}/></g></g><ellipse rx="${r*.9}" ry="${r}" fill="none" ${STK2}/></g>`;}
+function setGEye(id,r,{dx=0,dy=0,lid=0,lidCol='#000',blink=0}={}){const d=Math.hypot(dx,dy)||1,m=r*.4,k=Math.min(1,d/40);const px=dx/d*m*k,py=dy/d*m*k;
+  $(id+'_p').setAttribute('cx',px);$(id+'_p').setAttribute('cy',py);$(id+'_h').setAttribute('cx',px-r*.15);$(id+'_h').setAttribute('cy',py-r*.18);
+  const L=Math.max(lid,blink);const g=$(id+'_lid');g.setAttribute('transform',`translate(0,${L*2*r})`);g.firstElementChild.setAttribute('fill',lidCol);g.firstElementChild.setAttribute('opacity',L>0.01?1:0);g.lastElementChild.setAttribute('opacity',L>0.01?1:0);}
+function gBrow(id){return `<path id="${id}" fill="none" stroke="${OL}" stroke-width="3.6" stroke-linecap="round"/>`;}
+// mouth: dark maroon with pink tongue, like the AI mouths
+function gMouth(id){return `<g id="${id}"><path id="${id}_o" fill="#6a1f22" ${STK2}/><ellipse id="${id}_t" rx="1" ry="1" fill="#e88a8f"/></g>`;}
+function setGMouth(id,o,w,mood=0){const e=$(id+'_o'),t=$(id+'_t');o=clamp(o);
+  if(o<.1){e.setAttribute('d',`M${-w*.6},0 Q0,${mood*w*.5} ${w*.6},0`);e.setAttribute('fill','none');t.setAttribute('opacity',0);return;}
+  const h=4+o*w*1.1;e.setAttribute('d',`M${-w*.62},0 Q0,${-3+mood*3} ${w*.62},0 Q${w*.55},${h} 0,${h+2} Q${-w*.55},${h} ${-w*.62},0Z`);e.setAttribute('fill','#5e1a20');
+  t.setAttribute('opacity',o>.3?1:0);t.setAttribute('cx',0);t.setAttribute('cy',h*.72);t.setAttribute('rx',w*.32);t.setAttribute('ry',h*.22);}
+// white rubber-hose arm with a cartoon glove at the end
+function glove(x,y,rot,s=1){return `<g transform="translate(${x},${y}) rotate(${rot}) scale(${s})"><path d="M-14,-10 C-22,-6 -24,8 -16,16 C-10,22 8,22 16,14 C22,8 22,-4 16,-10 C14,-20 4,-22 0,-14 C-4,-22 -12,-18 -14,-10Z" fill="#fff" ${STK2}/><path d="M-8,4 L6,4 M-6,10 L8,10" fill="none" stroke="#c9c2bf" stroke-width="2.5" stroke-linecap="round"/></g>`;}
+function arm(id){return `<g id="${id}"><path id="${id}_a" fill="none" stroke="${OL}" stroke-width="10" stroke-linecap="round"/><path id="${id}_b" fill="none" stroke="#fff" stroke-width="6.4" stroke-linecap="round"/><g id="${id}_g"></g></g>`;}
+function setArm(id,x0,y0,x1,y1,bend,rot,s=1){const mx=(x0+x1)/2+bend,my=(y0+y1)/2-Math.abs(bend)*.3;const d=`M${x0},${y0} Q${mx},${my} ${x1},${y1}`;
+  $(id+'_a').setAttribute('d',d);$(id+'_b').setAttribute('d',d);$(id+'_g').innerHTML=glove(x1,y1,rot,s);}
+function leg(x,y,len,ang){const ex=x+Math.sin(ang*Math.PI/180)*len,ey=y+Math.cos(ang*Math.PI/180)*len;
+  return `<path d="M${x},${y} L${ex},${ey}" stroke="${OL}" stroke-width="10" stroke-linecap="round"/><path d="M${x},${y} L${ex},${ey}" stroke="#fff" stroke-width="6.4" stroke-linecap="round"/>
+   <path d="M${ex-16},${ey+10} C${ex-18},${ey-6} ${ex+8},${ey-8} ${ex+22},${ey+2} C${ex+28},${ey+8} ${ex+24},${ey+16} ${ex+12},${ey+16} L${ex-12},${ey+16} C${ex-18},${ey+16} ${ex-18},${ey+12} ${ex-16},${ey+10}Z" fill="#fff" ${STK2}/>`;}
+
+// ---------- the skin-cell GUARD (police cap, STOP sign) ----------
+function guardSVG(id){return `<g id="${id}"><g id="${id}_body">
+  ${leg(-34,100,46,4)}${leg(34,100,46,-4)}
+  <path d="M-95,-30 C-100,-95 -60,-128 0,-128 C60,-128 100,-95 95,-30 C100,40 80,108 0,112 C-80,108 -100,40 -95,-30Z" fill="${grad(id+'g1','#ffe0c4','#e8a87f')}" ${STK}/>
+  <path d="M-70,-90 C-50,-112 -10,-118 20,-112" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".4"/>
+  <circle cx="-62" cy="40" r="5" fill="#d98b66" opacity=".7"/><circle cx="58" cy="58" r="6" fill="#d98b66" opacity=".7"/><circle cx="40" cy="80" r="4" fill="#d98b66" opacity=".7"/>
+  <path d="M-58,-40 C-40,-8 40,-8 58,-40" fill="none" stroke="#e8a87f" stroke-width="3" opacity=".0"/>
+  <g transform="translate(0,-118)"><path d="M-92,22 C-90,-6 -60,-30 0,-32 C60,-30 90,-6 92,22 Z" fill="${grad(id+'g2','#3d4f86','#1f2a52')}" ${STK}/>
+   <path d="M-104,22 C-60,40 60,40 104,22 C96,36 60,46 0,46 C-60,46 -96,36 -104,22Z" fill="#1a1f38" ${STK2}/>
+   <path d="M-12,-16 L12,-16 L14,4 L0,12 L-14,4Z" fill="#f2c74a" ${STK2}/></g>
+  <g transform="translate(-30,-40)">${gEye(id+'_eL',24)}</g><g transform="translate(30,-40)">${gEye(id+'_eR',24)}</g>${gBrow(id+'_bL')}${gBrow(id+'_bR')}
+  <path d="M-34,6 C-22,-6 -6,0 0,4 C6,0 22,-6 34,6 C24,12 10,10 0,8 C-10,10 -24,12 -34,6Z" fill="#6b3b22" ${STK2}/>
+  <g transform="translate(0,26)">${gMouth(id+'_m')}</g>
+  <path d="M-30,78 L30,78" stroke="#1f2a52" stroke-width="0"/>
+  </g>${arm(id+'_aL')}${arm(id+'_aR')}
+  <g id="${id}_sign"><path d="M0,0 L0,150" stroke="${OL}" stroke-width="9" stroke-linecap="round"/><path d="M0,0 L0,150" stroke="#9b9b9b" stroke-width="5" stroke-linecap="round"/>
+   <path d="M-23,-56 L23,-56 L56,-23 L56,23 L23,56 L-23,56 L-56,23 L-56,-23Z" transform="translate(0,-40)" fill="#e0392f" ${STK}/>
+   <path d="M-19,-46 L19,-46 L46,-19 L46,19 L19,46 L-19,46 L-46,19 L-46,-19Z" transform="translate(0,-40)" fill="none" stroke="#fff" stroke-width="4"/>
+   <text x="0" y="-31" text-anchor="middle" style="font-family:LG,sans-serif;font-size:27px" fill="#fff">STOP</text></g>
+  <g id="${id}_phone" opacity="0"><rect x="-14" y="-28" width="28" height="56" rx="7" fill="#2b2b33" ${STK2}/><rect x="-9" y="-21" width="18" height="38" rx="3" fill="#7fd0ff"/></g></g>`;}
+function setGuard(id,x,y,s,{talk=0,T=0,pose='stop',rot=0,look=0,mood=0,brows=0}={}){
+  $(id).setAttribute('transform',`translate(${x},${y}) rotate(${rot}) scale(${s})`);
+  const bl=blinkK(T,.4); [['_eL',-1],['_eR',1]].forEach(([e,sg])=>setGEye(id+e,24,{dx:look*40,dy:pose==='fallen'?10:2,blink:bl,lidCol:'#f3c6a2',lid:pose==='phone'?.2:0}));
+  const by=-74-brows*6;$(id+'_bL').setAttribute('d',`M-50,${by+brows*8} Q-32,${by-10} -14,${by-brows*6}`);$(id+'_bR').setAttribute('d',`M14,${by-brows*6} Q32,${by-10} 50,${by+brows*8}`);
+  setGMouth(id+'_m',talk,26,mood);
+  const sw=Math.sin(T*3)*4;
+  if(pose==='stop'){setArm(id+'_aL',-90,0,-128,50+sw,-10,20);setArm(id+'_aR',90,-10,132,-10+sw,10,-30);$(id+'_sign').setAttribute('transform',`translate(142,${-38+sw}) rotate(8)`);show(id+'_sign',1);show(id+'_phone',0);}
+  else if(pose==='phone'){setArm(id+'_aL',-90,0,-120,60,-10,20);setArm(id+'_aR',88,-10,88,-58,30,-60);$(id+'_phone').setAttribute('transform',`translate(86,-70) rotate(-12)`);show(id+'_phone',1);
+     $(id+'_sign').setAttribute('transform',`translate(-150,40) rotate(-70)`);show(id+'_sign',1);}
+  else {setArm(id+'_aL',-90,0,-140,-40,-20,40);setArm(id+'_aR',90,0,140,-40,20,-40);show(id+'_sign',0);show(id+'_phone',0);}
+}
+// ---------- BACTERIA (green rod, little hairs) ----------
+function bactSVG(id,col1='#b4dc86',col2='#76a852'){let hairs='';for(let i=0;i<14;i++){const a=i/14*Math.PI*2,x=Math.cos(a)*112,y=Math.sin(a)*70;hairs+=`<path d="M${x.toFixed(0)},${y.toFixed(0)} q${(Math.cos(a)*18).toFixed(0)},${(Math.sin(a)*18-10).toFixed(0)} ${(Math.cos(a)*30).toFixed(0)},${(Math.sin(a)*30).toFixed(0)}" fill="none" stroke="${OL}" stroke-width="2.6" stroke-linecap="round"/>`;}
+  return `<g id="${id}"><g id="${id}_hair">${hairs}</g>
+  <path d="M-110,0 C-110,-60 -70,-74 0,-74 C70,-74 110,-60 110,0 C110,60 70,74 0,74 C-70,74 -110,60 -110,0Z" fill="${grad(id+'g',col1,col2)}" ${STK}/>
+  <path d="M-80,-44 C-50,-62 10,-64 50,-56" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".4"/>
+  <circle cx="-70" cy="30" r="9" fill="${col2}" opacity=".6"/><circle cx="74" cy="34" r="7" fill="${col2}" opacity=".6"/><circle cx="50" cy="-20" r="6" fill="${col2}" opacity=".5"/>
+  <g transform="translate(-26,-16)">${gEye(id+'_eL',22)}</g><g transform="translate(26,-16)">${gEye(id+'_eR',22)}</g>${gBrow(id+'_bL')}${gBrow(id+'_bR')}
+  <g transform="translate(0,26)">${gMouth(id+'_m')}</g>${arm(id+'_aL')}${arm(id+'_aR')}<g id="${id}_shield" opacity="0"></g></g>`;}
+function setBact(id,x,y,s,{talk=0,T=0,smug=.5,rot=0,look=0,arms='hips',mood=.4,seed=0}={}){
+  $(id).setAttribute('transform',`translate(${x},${y}) rotate(${rot}) scale(${s})`);
+  $(id+'_hair').setAttribute('transform',`rotate(${Math.sin(T*6+seed)*4})`);
+  const bl=blinkK(T,seed);['_eL','_eR'].forEach(e=>setGEye(id+e,22,{dx:look*40,dy:2,lid:smug*.45,lidCol:'#7cc94e',blink:bl}));
+  $(id+'_bL').setAttribute('d',`M-46,${-44+smug*6} Q-28,${-50} -10,${-40-smug*4}`);$(id+'_bR').setAttribute('d',`M10,${-40-smug*4} Q28,-50 46,${-44+smug*6}`);
+  setGMouth(id+'_m',talk,24,mood);
+  const w=Math.sin(T*4+seed)*5;
+  if(arms==='hips'){setArm(id+'_aL',-104,14,-126,52+w,-18,30,.9);setArm(id+'_aR',104,14,126,52-w,18,-30,.9);}
+  else if(arms==='push'){setArm(id+'_aL',-100,0,-170,-6+w,-10,90,.9);setArm(id+'_aR',100,0,40,-90,40,0,.0001);}
+  else {setArm(id+'_aL',-104,0,-150,-60+w,-20,40,.9);setArm(id+'_aR',104,0,150,-60-w,20,-40,.9);}
+}
+// ---------- WHITE BLOOD CELL (bumpy round cell, boxing gloves) ----------
+function wbcSVG(id){let d='';const n=16;for(let i=0;i<=n;i++){const a=i/n*Math.PI*2,r=118+(i%2?8:-4);d+=(i?' ':'M')+(Math.cos(a)*r).toFixed(1)+','+(Math.sin(a)*r).toFixed(1);}
+  return `<g id="${id}"><path d="${smooth(Array.from({length:n},(_,i)=>{const a=i/n*Math.PI*2,r=118+(i%2?9:-5);return [Math.cos(a)*r,Math.sin(a)*r];}).concat([[Math.cos(0)*113,0]]))}Z" fill="${grad(id+'g','#ffffff','#d9d4ef')}" ${STK}/>
+  <path d="M-40,40 C-60,20 -30,0 -10,20 C0,0 40,0 30,30 C50,40 30,70 10,60 C-10,80 -40,70 -40,40Z" fill="#c8b8ec" opacity=".55"/>
+  <path d="M-70,-70 C-40,-96 10,-100 40,-92" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".4"/>
+  <g transform="translate(-30,-26)">${gEye(id+'_eL',24)}</g><g transform="translate(30,-26)">${gEye(id+'_eR',24)}</g>${gBrow(id+'_bL')}${gBrow(id+'_bR')}
+  <g transform="translate(0,22)">${gMouth(id+'_m')}</g>${arm(id+'_aL')}${arm(id+'_aR')}</g>`;}
+function setWbc(id,x,y,s,{talk=0,T=0,rot=0,look=0,mood=0,angry=1,punch=0}={}){
+  $(id).setAttribute('transform',`translate(${x},${y}) rotate(${rot}) scale(${s})`);
+  const bl=blinkK(T,1.3);['_eL','_eR'].forEach(e=>setGEye(id+e,24,{dx:look*40,dy:2,blink:bl,lidCol:'#efecf8'}));
+  $(id+'_bL').setAttribute('d',`M-56,${-56-angry*2} Q-36,${-66+angry*6} -12,${-50+angry*10}`);$(id+'_bR').setAttribute('d',`M12,${-50+angry*10} Q36,${-66+angry*6} 56,${-56-angry*2}`);
+  setGMouth(id+'_m',talk,26,mood);
+  const j=Math.sin(T*8)*6;setArm(id+'_aL',-110,10,-150+punch*-40,0+j,-10,80,1.15);setArm(id+'_aR',110,10,150,-10-j,10,-80,1.15);
+}
+// ---------- ANTIBIOTIC (capsule soldier with a helmet and a spear) ----------
+function abSVG(id){return `<g id="${id}">${leg(-26,96,40,4)}${leg(26,96,40,-4)}
+  <path d="M-72,-10 L-72,-60 C-72,-110 72,-110 72,-60 L72,-10Z" fill="${grad(id+'g1','#ff8a7a','#d8362f')}" ${STK}/>
+  <path d="M-72,-10 L-72,50 C-72,110 72,110 72,50 L72,-10Z" fill="${grad(id+'g2','#ffffff','#dcdfe6')}" ${STK}/>
+  <path d="M-50,-80 C-30,-96 10,-98 30,-92" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".4"/>
+  <g transform="translate(0,-92)"><path d="M-84,14 C-84,-34 84,-34 84,14Z" fill="${grad(id+'g3','#6f8d47','#3f5a24')}" ${STK}/><path d="M-96,14 L96,14" stroke="${OL}" stroke-width="8" stroke-linecap="round"/><path d="M-96,14 L96,14" stroke="#4f6c2e" stroke-width="5" stroke-linecap="round"/></g>
+  <g transform="translate(-26,-34)">${gEye(id+'_eL',22)}</g><g transform="translate(26,-34)">${gEye(id+'_eR',22)}</g>${gBrow(id+'_bL')}${gBrow(id+'_bR')}
+  <g transform="translate(0,16)">${gMouth(id+'_m')}</g>${arm(id+'_aL')}${arm(id+'_aR')}
+  <g id="${id}_spear"><path d="M0,-140 L0,120" stroke="${OL}" stroke-width="8" stroke-linecap="round"/><path d="M0,-140 L0,120" stroke="#b07a46" stroke-width="4" stroke-linecap="round"/><path d="M0,-190 L16,-140 L-16,-140Z" fill="#cfd6de" ${STK2}/></g></g>`;}
+function setAb(id,x,y,s,{talk=0,T=0,rot=0,look=0,mood=0,poke=0,shock=0}={}){
+  $(id).setAttribute('transform',`translate(${x},${y}) rotate(${rot}) scale(${s})`);
+  const bl=blinkK(T,2.2);['_eL','_eR'].forEach(e=>setGEye(id+e,22,{dx:look*40,dy:2,blink:bl,lidCol:'#e5473e'}));
+  $(id+'_bL').setAttribute('d',`M-48,${-62+shock*-8} Q-30,${-74+(1-shock)*6} -10,${-58+(1-shock)*8}`);$(id+'_bR').setAttribute('d',`M10,${-58+(1-shock)*8} Q30,${-74+(1-shock)*6} 48,${-62+shock*-8}`);
+  setGMouth(id+'_m',talk,24,mood);
+  setArm(id+'_aL',-70,10,-110,40,-10,20,.9);setArm(id+'_aR',70,10,112-poke*60,44,10,-60,.9);
+  $(id+'_spear').setAttribute('transform',`translate(${(118-poke*60).toFixed(1)},44) rotate(-92)`);
+}
+// ---------- the tissue background (skin on top, the cut, dermis) ----------
+function tissueSVG(){return `<g id="tissue"><rect width="720" height="1280" fill="${grad('tg0','#f6b3a8','#d97f78',false)}"/>
+  ${Array.from({length:22},(_,i)=>{const x=20+i*33+rnd(i)*14;return `<path d="M${x},230 C${x+20},${380+rnd(i+3)*80} ${x-24},${560+rnd(i+5)*60} ${x+6},${760+rnd(i+7)*60}" fill="none" stroke="#c9625d" stroke-width="${2+rnd(i+9)*2}" opacity=".55"/>`;}).join('')}
+  <path d="M0,180 C120,170 240,196 360,186 C480,176 600,196 720,184 L720,0 L0,0Z" fill="${grad('tg1','#ffe2c8','#eeb994',false)}" ${STK}/>
+  <path d="M0,200 C120,190 240,216 360,206 C480,196 600,216 720,204" fill="none" stroke="#d98f73" stroke-width="10" opacity=".6"/>
+  <path d="M0,880 C140,860 260,900 380,884 C520,866 620,896 720,882 L720,1280 L0,1280Z" fill="${grad('tg2','#e78b82','#b9534f',false)}" ${STK}/>
+  ${Array.from({length:9},(_,i)=>`<ellipse cx="${40+i*80}" cy="${950+rnd(i)*40}" rx="${26+rnd(i+2)*14}" ry="10" fill="#f2a59a" opacity=".55"/>`).join('')}
+  ${Array.from({length:11},(_,i)=>`<ellipse cx="${30+i*66}" cy="${120+rnd(i+40)*30}" rx="${26+rnd(i+41)*8}" ry="${16+rnd(i+42)*6}" fill="#f9d2b4" stroke="#d9a27f" stroke-width="3"/>`).join('')}
+  <path d="M-20,640 C160,600 300,690 470,650 C590,622 680,660 740,640" fill="none" stroke="${OL}" stroke-width="44" stroke-linecap="round"/>
+  <path d="M-20,640 C160,600 300,690 470,650 C590,622 680,660 740,640" fill="none" stroke="#d5434a" stroke-width="34" stroke-linecap="round"/>
+  <path d="M-20,632 C160,592 300,682 470,642 C590,614 680,652 740,632" fill="none" stroke="#f07a7d" stroke-width="7" stroke-linecap="round" opacity=".8"/>
+  ${Array.from({length:5},(_,i)=>`<ellipse cx="${80+i*140}" cy="${640+Math.sin(i)*14}" rx="13" ry="8" fill="#ff8f8f" stroke="#a8282e" stroke-width="2"/>`).join('')}
+  <g id="cut"><path d="M300,170 C318,260 330,360 352,470 C364,360 382,260 410,166 Z" fill="${grad('tg3','#7a0f14','#c4232c')}" ${STK}/>
+   <path d="M330,200 C342,280 348,360 356,430" fill="none" stroke="#ff6b6b" stroke-width="6" stroke-linecap="round" opacity=".7"/></g></g>`;}
+
+// =============== 008 worlds: ALL code, in the 001 / 003-v1 style (thin INK lines, shaded(), muted colours, objects with faces) ===============
+const STW='#ee9ea3', STW_S='#d47c86', LUM='#f9c8c2', LUM_S='#eaa39f', JUICE='#e9c97c', JUICE_S='#c9a654';
+const FLESH='#ec9a90', FLESH_S='#d07a72', FLOOR='#f2a6a3', FLOOR_S='#d98785';
+function closedD(pts){return smooth(pts.concat([pts[0],pts[1]]))+'Z';}
+function tubeL(d,w,fill,shade,id=''){return `<path ${id?`id="${id}"`:''} d="${d}" fill="none" stroke="${INK}" stroke-width="${w+5.2}" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="${d}" fill="none" stroke="${fill}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="${d}" fill="none" stroke="${shade}" stroke-width="${(w*.22).toFixed(1)}" stroke-linecap="round" stroke-linejoin="round" opacity=".55" transform="translate(0,${(w*.28).toFixed(1)})"/>`;}
+function hose(id){return `<g id="${id}"><path id="${id}_o" fill="none" stroke="${INK}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path id="${id}_i" fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/><g id="${id}_h"></g></g>`;}
+function setHose(id,pts,rot,s=1){const d=smooth(pts);$(id+'_o').setAttribute('d',d);$(id+'_i').setAttribute('d',d);const e=pts[pts.length-1];$(id+'_h').innerHTML=glove(e[0],e[1],rot,s);}
+function wrinkles(n,x0,x1,y0,y1,col,seed){let s='';for(let i=0;i<n;i++){const x=x0+rnd(seed+i)*(x1-x0),y=y0+rnd(seed+i+50)*(y1-y0),h=60+rnd(seed+i+90)*140;
+  s+=`<path d="M${x.toFixed(0)},${y.toFixed(0)} c${(rnd(i+7)*16-8).toFixed(0)},${(h*.3).toFixed(0)} ${(rnd(i+9)*20-10).toFixed(0)},${(h*.6).toFixed(0)} ${(rnd(i+11)*12-6).toFixed(0)},${h.toFixed(0)}" ${TH(col)} stroke-width="2.4"/>`;}return s;}
+
+// ---------- characters ----------
+// painkiller capsule with a face (pill2 wears a pink bow)
+function pillSVG(id,bow=false){return `<g id="${id}"><g id="${id}_b">${leg(-16,84,34,4)}${leg(16,84,34,-4)}
+  <path d="M-36,0 L-36,-48 A36,36 0 0 1 36,-48 L36,0Z" fill="#e2474b" ${STK}/><path d="M-36,0 L-36,48 A36,36 0 0 0 36,48 L36,0Z" fill="#f8f6f2" ${STK}/>
+  <path d="M-22,-62 C-14,-74 6,-78 18,-72" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".55"/><path d="M22,10 L22,52" stroke="#e3ded6" stroke-width="5" stroke-linecap="round"/>
+  <g transform="translate(-14,-44)">${oEye(id+'_eL',13,'#e2474b')}</g><g transform="translate(14,-44)">${oEye(id+'_eR',13,'#e2474b')}</g>${brow(id+'_bL')}${brow(id+'_bR')}
+  ${mouthEl(id+'_m',0,-16)}
+  ${bow?`<g transform="translate(-20,-80) rotate(-18)"><path d="M0,0 L-22,-14 L-22,14Z M0,0 L22,-14 L22,14Z" fill="#f06aa6" ${LN2}/><circle r="6" fill="#d94b8c" ${LN2}/></g>`:''}
+  </g>${hose(id+'_aL')}${hose(id+'_aR')}</g>`;}
+function setPill(id,x,y,s,{talk=0,T=0,look=0,lookY=0,mood=.4,rot=0,arms='down',seed=0,angry=0,run=0}={}){
+  const hop=run?Math.abs(Math.sin(T*16+seed))*14:0;
+  $(id).setAttribute('transform',`translate(${x.toFixed(1)},${(y-hop).toFixed(1)}) rotate(${rot.toFixed(1)}) scale(${s})`);
+  const bl=blinkK(T,seed*.7+.2); setOEye(id+'_eL',13,{dx:look*40,dy:lookY*40,lid:.1,blink:bl}); setOEye(id+'_eR',13,{dx:look*40,dy:lookY*40,lid:.1,blink:bl});
+  setBrow(id+'_bL',-14,-62+angry*3,16,angry*18,2); setBrow(id+'_bR',14,-62+angry*3,16,-angry*18,2);
+  setMouthV(id+'_m',talk,9,mood,T,seed);
+  const w=Math.sin(T*4+seed)*5, sw=run?Math.sin(T*16+seed)*16:0;
+  const A={down:[[[-36,4],[-54,30],[-58,58+w]],[[36,4],[54,30],[58,58-w]],40,-40],
+           wave:[[[-36,4],[-56,24],[-60,56]],[[36,4],[62,-20],[70,-62+w]],40,-150],
+           point:[[[-36,4],[-54,30],[-58,58]],[[36,4],[72,-2],[104,-10]],40,-90],
+           fist:[[[-36,4],[-66,-10],[-80,-40+w]],[[36,4],[66,-10],[80,-40-w]],150,-150],
+           run:[[[-36,4],[-56,20+sw],[-62,40+sw]],[[36,4],[56,20-sw],[62,40-sw]],40,-40]}[arms];
+  setHose(id+'_aL',A[0],A[2],.62); setHose(id+'_aR',A[1],A[3],.62);}
+// red blood cell with eyes
+function rbcSVG(id){return `<g id="${id}">${shaded('M-52,0 C-52,-30 -28,-46 0,-46 C28,-46 52,-30 52,0 C52,30 28,46 0,46 C-28,46 -52,30 -52,0Z','#e2474b','#c3363c',12)}
+  <ellipse rx="28" ry="22" fill="#cc3a41" opacity=".55"/><path d="M-30,-28 C-18,-38 4,-40 16,-36" fill="none" stroke="#ff9a9d" stroke-width="5" stroke-linecap="round"/>
+  <g transform="translate(-14,-8)">${oEye(id+'_eL',13,'#e2474b')}</g><g transform="translate(14,-8)">${oEye(id+'_eR',13,'#e2474b')}</g></g>`;}
+// prostaglandin: a spiky magenta ball (the pain messenger)
+function prostSVG(id){let sp='';for(let i=0;i<10;i++){const a=i/10*Math.PI*2-.2,x=Math.cos(a)*84,y=Math.sin(a)*80,x2=Math.cos(a)*112,y2=Math.sin(a)*108;
+   sp+=`<path d="M${x.toFixed(0)},${y.toFixed(0)} L${x2.toFixed(0)},${y2.toFixed(0)}" stroke="${INK}" stroke-width="11" stroke-linecap="round"/><path d="M${x.toFixed(0)},${y.toFixed(0)} L${x2.toFixed(0)},${y2.toFixed(0)}" stroke="#d63c95" stroke-width="6.5" stroke-linecap="round"/><circle cx="${x2.toFixed(0)}" cy="${y2.toFixed(0)}" r="13" fill="#e46aae" ${LN2}/>`;}
+  return `<g id="${id}"><g id="${id}_sp">${sp}</g>${shaded('M-90,0 C-90,-52 -50,-88 0,-88 C50,-88 90,-52 90,0 C90,52 50,88 0,88 C-50,88 -90,52 -90,0Z','#dc4a9c','#b52d7c',18)}
+  <path d="M-54,-52 C-34,-70 0,-74 22,-68" fill="none" stroke="#f7a3cf" stroke-width="6" stroke-linecap="round"/>
+  <g id="${id}_face"><g transform="translate(-26,-16)">${oEye(id+'_eL',22,'#dc4a9c')}</g><g transform="translate(26,-16)">${oEye(id+'_eR',22,'#dc4a9c')}</g>${brow(id+'_bL')}${brow(id+'_bR')}${mouthEl(id+'_m',0,30)}</g>
+  <g id="${id}_ko" opacity="0"><path d="M-40,-30 l26,26 M-14,-30 l-26,26 M14,-30 l26,26 M40,-30 l-26,26" stroke="${INK}" stroke-width="5" stroke-linecap="round"/><path d="M-16,30 Q0,40 16,30" fill="none" ${LN}/><path d="M4,34 q8,18 18,6" fill="#e88a8f" ${LN2}/></g>
+  ${hose(id+'_aL')}${hose(id+'_aR')}</g>`;}
+function setProst(id,x,y,s,{talk=0,T=0,look=0,mood=.2,rot=0,ko=0,angry=0}={}){
+  $(id).setAttribute('transform',`translate(${x.toFixed(1)},${y.toFixed(1)}) rotate(${rot.toFixed(1)}) scale(${s})`);
+  $(id+'_sp').setAttribute('transform',`rotate(${(Math.sin(T*3)*4).toFixed(1)})`);
+  show(id+'_face',ko?0:1); show(id+'_ko',ko?1:0);
+  const bl=blinkK(T,1.7); setOEye(id+'_eL',22,{dx:look*40,dy:2,lid:.15,blink:bl}); setOEye(id+'_eR',22,{dx:look*40,dy:2,lid:.15,blink:bl});
+  setBrow(id+'_bL',-26,-46,26,angry*20,3); setBrow(id+'_bR',26,-46,26,-angry*20,3);
+  setMouthV(id+'_m',talk,16,mood,T,4);
+  const w=Math.sin(T*4)*6;
+  if(ko){setHose(id+'_aL',[[-84,10],[-120,30],[-140,60]],20,.8);setHose(id+'_aR',[[84,10],[120,30],[140,60]],-20,.8);}
+  else if(talk>.05){setHose(id+'_aL',[[-84,10],[-122,-10],[-136,-50+w]],60,.8);setHose(id+'_aR',[[84,10],[122,-10],[136,-50-w]],-60,.8);}
+  else {setHose(id+'_aL',[[-84,10],[-114,40],[-104,74+w]],0,.8);setHose(id+'_aR',[[84,10],[114,40],[104,74-w]],0,.8);}}
+
+// ---------------- SCENE A / E: inside the foot, the cut (later boarded up by the platelets) ----------------
+const GASH='M258,-60 L346,-60 C338,300 322,640 306,968 L270,968 C266,640 260,300 258,-60Z';
+function cutWorld(){
+  let s=`<g id="wCut"><rect x="-200" y="-200" width="1120" height="1680" fill="${FLESH}"/>
+   <path d="M-200,-200 H920 V1480 H-200Z M-60,-60 C200,-90 520,-90 780,-60 L780,1340 L-60,1340Z" fill="${FLESH_S}" opacity=".45" filter="url(#soft)"/>
+   ${wrinkles(26,-40,760,-40,860,'#c76c66',3)}
+   <g id="bloodTrail"></g>
+   ${shaded(GASH,'#fbe5d0','#e6c0a2',18)}
+   <path d="M290,40 C292,300 286,600 280,900" fill="none" stroke="#fff6ea" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+   ${shaded('M-200,968 C40,948 200,986 360,966 C520,948 640,980 920,962 L920,1480 L-200,1480Z',FLOOR,FLOOR_S,20)}
+   ${Array.from({length:14},(_,i)=>`<path d="M${(i*58-20+rnd(i+300)*20).toFixed(0)},${(1010+rnd(i+310)*240).toFixed(0)} q22,-10 44,0" ${TH('#e08f8c')} stroke-width="3"/>`).join('')}
+   <g id="drips"></g>
+   <g id="planks" opacity="0">${[[300,-10,320],[296,8,500],[292,-6,680]].map(([x,r,y],i)=>`<g transform="translate(${x},${y}) rotate(${r})">${shaded('M-112,-26 L112,-26 C118,-26 120,-20 120,-14 L120,14 C120,22 116,26 110,26 L-112,26 C-118,26 -120,20 -120,14 L-120,-14 C-120,-22 -116,-26 -112,-26Z','#deb985','#c29c63',10)}
+     <path d="M-96,-8 C-50,-14 10,-2 90,-10 M-90,10 C-30,4 40,14 96,6" ${TH('#b98d55')} stroke-width="2.4"/><circle cx="-98" cy="0" r="5" fill="#9aa3ad" ${LN2}/><circle cx="98" cy="0" r="5" fill="#9aa3ad" ${LN2}/></g>`).join('')}</g>
+   ${rbcSVG('rb0')}${rbcSVG('rb1')}${rbcSVG('rb2')}
+   ${prostSVG('pg')}${guardSVG('gd')}${pillSVG('pA')}${pillSVG('pB',true)}
+   <g id="dust"></g><g id="stars"></g></g>`;
+  return s;}
+
+// ---------------- SCENE B: the stomach (asleep under an eye mask; the painkillers drop in) ----------------
+const STOM_OUT=[[384,318],[420,402],[452,494],[502,574],[562,606],[614,598],[648,572],[678,558],[702,568],[702,608],[670,654],[618,726],[548,802],[448,854],[338,848],[246,798],[184,706],[162,594],[172,472],[210,372],[264,310],[314,292],[344,298]];
+const STOM_LUM=[[358,330],[392,410],[422,500],[472,590],[548,634],[620,628],[668,594],[688,596],[676,624],[630,688],[562,762],[454,814],[352,810],[278,768],[250,714],[292,666],[352,624],[384,544],[376,446],[356,370]];
+const CAP_PATH=[[356,-60],[356,80],[357,200],[360,320],[384,400],[410,480],[432,570],[444,660],[440,700]];
+function stomachWorld(){
+  DEFS+=`<clipPath id="lumClip"><path d="${closedD(STOM_LUM)}"/></clipPath>`;
+  let s=`<g id="wStomach"><rect x="-200" y="-200" width="1120" height="1680" fill="#f6d6cb"/>
+  <path d="M-200,-200 H920 V1480 H-200Z M-40,60 C80,20 640,20 760,60 L760,1340 L-40,1340Z" fill="#e9b8ab" opacity=".5" filter="url(#soft)"/>
+  <path d="M-60,-60 H780 V150 C620,96 480,86 360,86 C240,86 100,96 -60,150Z" fill="#f5c0c6"/>
+  ${shaded('M-60,150 C100,96 240,86 360,86 C480,86 620,96 780,150 L780,196 C620,142 480,132 360,132 C240,132 100,142 -60,196Z','#dc7c82','#c2616a',10)}
+  ${shaded('M-60,170 C80,150 250,160 330,206 C300,262 240,300 190,334 C120,382 40,420 -60,452Z','#c8716a','#a8564f',16)}`;
+  {const pts=[];[904,986,1068,1150,1232,1314].forEach((y,r)=>{const xs=r%2?[690,560,420,280,140,44]:[44,140,280,420,560,690];xs.forEach((x,k)=>pts.push([x,y+Math.sin(k*1.3+r)*14]));});
+   s+=tubeL(smooth(pts),70,'#f1aca2','#d68d86');}
+  s+=tubeL('M698,588 C744,640 748,760 700,860',46,'#f3aea6','#da8e88');
+  s+=tubeL('M356,-80 C356,60 356,200 362,326',62,STW,STW_S)+`<path d="M356,-80 C356,60 356,200 362,326" fill="none" stroke="${LUM}" stroke-width="24" stroke-linecap="round"/>`;
+  s+=`<g id="stoBody">${shaded(closedD(STOM_OUT),STW,STW_S,26)}
+   <path d="M200,420 C190,500 200,600 236,680" fill="none" stroke="#f8c0c3" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+   ${shaded(closedD(STOM_LUM),LUM,LUM_S,30)}
+   <g clip-path="url(#lumClip)">
+    ${[[300,690,120],[330,740,170],[420,780,190],[520,700,150],[560,660,110],[420,520,90]].map(([x,y,w],i)=>`<path d="M${x-w/2},${y} q${w/4},-14 ${w/2},0 t${w/2},0" ${TH(i%2?'#e3999a':'#df9294')} stroke-width="2.6"/>`).join('')}
+    <g id="juice"><path id="juiceD" fill="${JUICE}"/><path id="juiceH" fill="none" stroke="#fbf0c8" stroke-width="4" stroke-linecap="round"/><g id="bubbles"></g></g>
+    <g id="swirl" opacity="0"></g>
+    ${pillSVG('sA')}${pillSVG('sB',true)}
+   </g>
+   <path d="${closedD(STOM_LUM)}" fill="none" ${LN}/>
+   <g id="stoFace"><g transform="translate(226,454)">${oEye('sEyeL',36,STW)}</g><g transform="translate(306,446)">${oEye('sEyeR',36,STW)}</g>${brow('sBrowL')}${brow('sBrowR')}
+    <ellipse cx="206" cy="520" rx="16" ry="9" fill="#e9838f" opacity=".45"/><ellipse cx="330" cy="512" rx="14" ry="8" fill="#e9838f" opacity=".45"/>
+    ${mouthEl('sto_m',266,532)}
+    <g id="sMask"><path d="M178,420 C200,404 330,398 356,414 C364,440 356,476 340,482 C300,470 230,476 196,486 C180,472 174,440 178,420Z" fill="#7aa6d6" ${LN}/><path d="M188,430 C230,416 320,412 348,424" ${TH('#a9c8ea')} stroke-width="4"/>
+     <path d="M178,426 C150,420 140,440 150,452 M356,418 C380,410 392,426 384,440" fill="none" stroke="#5f86b8" stroke-width="6" stroke-linecap="round"/></g>
+    <g id="zzz"></g></g>
+   <g id="stick" opacity="0"><path d="M0,0 L0,330" stroke="${INK}" stroke-width="13" stroke-linecap="round"/><path d="M0,0 L0,330" stroke="#f4efe6" stroke-width="8" stroke-linecap="round"/><path d="M-3,10 L-3,320" stroke="#e45b62" stroke-width="2.5" stroke-dasharray="14 14"/></g>
+   ${hose('sArmL')}${hose('sArmR')}</g>`;
+  s+=`</g>`;return s;}
+
+// ---------------- SCENE C: riding a vein ----------------
+function veinWorld(){
+  let s=`<g id="wVein"><rect x="-200" y="-200" width="1120" height="1680" fill="#ef9f96"/>
+   ${Array.from({length:10},(_,i)=>{const x=-40+i*90,y=rnd(i+500)*1280;return `<path d="M${x},${y.toFixed(0)} c40,${(rnd(i+510)*80-40).toFixed(0)} 80,${(rnd(i+520)*80).toFixed(0)} 140,${(rnd(i+530)*60-30).toFixed(0)} m-60,10 c10,30 30,50 20,90" ${TH('#d45f5b')} stroke-width="5"/>`;}).join('')}
+   ${tubeL('M-120,980 C160,900 300,740 420,620 C540,500 660,420 860,360',330,'#f3aab2','#d98692')}
+   <path d="M-120,930 C160,850 300,690 420,570 C540,450 660,370 860,310" fill="none" stroke="#fbd0d4" stroke-width="16" stroke-linecap="round" opacity=".8"/>
+   ${Array.from({length:7},(_,i)=>`<path d="M${(-40+i*130).toFixed(0)},${(960-i*95).toFixed(0)} q30,-22 60,-30" ${TH('#e597a2')} stroke-width="3"/>`).join('')}
+   <g id="vRbc">${rbcSVG('vr0')}${rbcSVG('vr1')}</g>${pillSVG('vA')}${pillSVG('vB',true)}<g id="speed"></g></g>`;
+  return s;}
+
+// ---------------- SCENE D: a fork in the tunnel ----------------
+function forkWorld(){
+  DEFS+=`<radialGradient id="holeG" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#3e0d16"/><stop offset=".7" stop-color="#6e1a28"/><stop offset="1" stop-color="#a43344"/></radialGradient>`;
+  let s=`<g id="wFork"><rect x="-200" y="-200" width="1120" height="1680" fill="#f4a8aa"/>
+   ${wrinkles(18,-40,760,-40,700,'#d77c80',40)}
+   <g id="holes"><path d="M-40,140 C20,80 230,60 300,180 C340,260 330,700 300,880 L-40,900Z" fill="url(#holeG)" ${LN}/>
+   <path d="M760,120 C700,70 480,60 420,180 C384,260 392,700 420,880 L760,900Z" fill="url(#holeG)" ${LN}/>
+   <path d="M300,180 C340,260 330,700 300,880 M420,180 C384,260 392,700 420,880" fill="none" stroke="#f9c3c4" stroke-width="10" stroke-linecap="round" opacity=".7"/></g><g id="specks"></g>
+   ${shaded('M-200,900 C60,870 220,930 360,904 C520,878 640,920 920,890 L920,1480 L-200,1480Z','#f6b5b6','#dd9395',20)}
+   ${Array.from({length:12},(_,i)=>`<path d="M${(i*64-10+rnd(i+600)*20).toFixed(0)},${(960+rnd(i+610)*260).toFixed(0)} q24,-12 48,0" ${TH('#e69a9c')} stroke-width="3"/>`).join('')}
+   ${pillSVG('fA')}${pillSVG('fB',true)}</g>`;
+  return s;}
+
+// ---------------- the brain on the phone (inset) ----------------
+function brainInset(){return `<g id="bInset" opacity="0"><g id="bInset_i"><circle r="150" fill="#e6f1f6" ${LN}/><clipPath id="binClip"><circle r="146"/></clipPath>
+  <g clip-path="url(#binClip)"><path d="M-150,90 L150,90 L150,160 L-150,160Z" fill="#cfe2ea"/>
+   ${shaded('M-110,20 C-120,-40 -80,-86 -20,-90 C30,-96 90,-80 110,-30 C126,10 110,56 70,66 C20,76 -40,74 -80,62 C-104,54 -108,40 -110,20Z','#f4a8b6','#da8396',14)}
+   ${[-60,-28,6,40].map((x,i)=>`<path d="M${x},-80 c${i%2?14:-10},20 ${i%2?-6:12},40 ${i%2?8:-4},62" ${TH('#c96f84')} stroke-width="3.2"/>`).join('')}
+   <path d="M-96,0 C-60,-12 -30,6 0,-6 C30,-16 60,0 96,-10" ${TH('#c96f84')} stroke-width="3.2"/>
+   <g transform="translate(-30,8)">${oEye('brEyeL',20,'#f4a8b6')}</g><g transform="translate(18,6)">${oEye('brEyeR',20,'#f4a8b6')}</g>${mouthEl('brain_m',-6,44)}
+   <path d="M76,30 C110,20 118,-20 96,-40" fill="none" stroke="${INK}" stroke-width="12" stroke-linecap="round"/><path d="M76,30 C110,20 118,-20 96,-40" fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round"/>
+   <g transform="translate(92,-44) rotate(-30) scale(1.1)"><path d="M-30,-34 C-40,-30 -42,-14 -34,-8 L-24,-2 C-18,4 -12,0 -10,-6 L-6,-14 C-2,-22 -8,-28 -14,-30 Z" fill="#e2474b" ${LN2}/><path d="M14,24 C24,30 40,26 44,16 L46,4 C46,-4 38,-6 32,-2 L22,4 C16,8 14,16 14,24 Z" fill="#e2474b" ${LN2}/><path d="M-30,-14 C-14,8 8,20 30,6" fill="none" stroke="${INK}" stroke-width="12" stroke-linecap="round"/><path d="M-30,-14 C-14,8 8,20 30,6" fill="none" stroke="#e2474b" stroke-width="8" stroke-linecap="round"/></g>
+  </g><circle r="150" fill="none" ${LN}/><g id="waves"></g></g></g>`;}
+
+// ---------------- clinic extras ----------------
+function painPoster(){return `<g transform="translate(560,250)"><rect x="-92" y="-118" width="184" height="236" fill="#fbfaf7" ${LN}/><rect x="-80" y="-106" width="160" height="182" fill="#eaf3f6"/>
+  <path d="M-40,-80 C-30,-60 -34,-10 -30,40 C-28,58 -8,64 10,60 C40,54 58,44 60,30 C62,16 40,14 20,16 C6,18 -6,10 -8,-10 L-12,-80Z" fill="#f2cbb2" ${LN2}/>
+  <path d="M26,22 l10,-16 l6,14 l12,-18" fill="none" stroke="#e0454f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="-62" y="86" width="124" height="10" rx="3" fill="#8fb2bf"/><rect x="-44" y="100" width="88" height="8" rx="3" fill="#bcd2da"/></g>`;}
+function glassAt(x,y,s=1){return `<g transform="translate(${x},${y}) scale(${s})"><path d="M-16,-26 L16,-26 L12,24 C12,28 -12,28 -12,24Z" fill="#e6f4fa" ${LN2} opacity=".95"/><path d="M-14,-6 L14,-6 L12,22 C12,25 -12,25 -12,22Z" fill="#a9d6ea"/><path d="M-9,-20 L-8,16" stroke="#fff" stroke-width="3" stroke-linecap="round"/></g>`;}
+
+// =============== SCENE 2 : ENT clinic ===============
+function hand(x,y,ang,sc,skin,id=''){return `<g ${id?`id="${id}"`:''} transform="translate(${x},${y}) rotate(${ang}) scale(${sc})">
+  <path d="M-11,-12 C-4,-17 9,-16 13,-8 C17,2 15,14 6,18 C-4,22 -14,16 -16,6 C-17,-2 -15,-8 -11,-12 Z" fill="${skin}" ${LN2}/>
+  <path d="M-12,-6 C-20,-12 -24,-6 -18,2" fill="${skin}" ${LN2}/><path d="M-2,4 q4,6 10,6 M0,-4 q5,5 12,5" ${TH('#9c6b52')}/></g>`;}
+function humanEye(id,x,y,w,h){const c='h'+(UID++);DEFS+=`<clipPath id="${c}"><path d="M${-w},0 Q0,${-h*1.5} ${w},0 Q0,${h*1.1} ${-w},0Z"/></clipPath>`;
+  return `<g transform="translate(${x},${y})"><g id="${id}"><path d="M${-w},0 Q0,${-h*1.5} ${w},0 Q0,${h*1.1} ${-w},0Z" fill="#fff"/>
+   <g clip-path="url(#${c})"><circle id="${id}_p" r="${h*.78}" fill="#3a2a20"/><circle id="${id}_q" r="${h*.38}" fill="#111"/><circle id="${id}_h" r="${h*.2}" fill="#fff"/></g>
+   <path d="M${-w-1},0 Q0,${-h*1.55} ${w+1},0" fill="none" stroke="${INK}" stroke-width="2.8" stroke-linecap="round" ${VE}/><path d="M${-w*.8},${h*.35} Q0,${h*1.05} ${w*.8},${h*.35}" fill="none" ${TH('#8d6a5a')}/></g></g>`;}
+function setHEye(id,dx,blink){const p=$(id+'_p'),q=$(id+'_q'),h=$(id+'_h');[p,q].forEach(e=>{e.setAttribute('cx',dx);e.setAttribute('cy',1);});h.setAttribute('cx',dx-2);h.setAttribute('cy',-1.5);
+  $(id).setAttribute('transform',`scale(1,${1-blink*.92})`);}
+
+const DSK='#f0c6a6', DSK_S='#d9a585', DHAIR='#3b2820';
+function doctorSVG(){return `<g id="doc">
+ <ellipse cx="0" cy="782" rx="92" ry="12" fill="#000" opacity=".12"/>
+ <!-- back hair -->
+ <path d="M-64,70 C-74,130 -70,190 -48,214 L50,214 C70,190 74,130 64,70 Z" fill="${DHAIR}" ${LN}/>
+ <!-- legs -->
+ ${shaded(limbD([[-30,500],[-34,640],[-34,760]],[52,44,38]),'#33465f','#22324a',10)}
+ ${shaded(limbD([[30,500],[34,640],[36,760]],[52,44,38]),'#33465f','#22324a',10)}
+ <path d="M-58,756 C-58,744 -12,742 -10,756 L-10,772 L-62,774 Z" fill="#3c3f46" ${LN2}/><path d="M12,756 C14,742 60,744 60,756 L62,774 L10,772 Z" fill="#3c3f46" ${LN2}/>
+ <!-- scrubs + coat -->
+ ${shaded('M-62,214 C-40,204 40,204 62,214 L70,520 L-70,520 Z','#3f9c96','#2c7d78',14)}
+ ${shaded('M-20,206 L-62,212 C-92,222 -100,250 -102,290 L-110,560 L-46,566 L-16,330 L-8,250 Z','#f8f8f6','#d4d9dd',18)}
+ ${shaded('M20,206 L62,212 C92,222 100,250 102,290 L110,560 L46,566 L16,330 L8,250 Z','#f8f8f6','#d4d9dd',18)}
+ <path d="M-20,206 L-2,262 L-8,330 M20,206 L2,262 L8,330" fill="none" ${TH('#9aa3aa')}/>
+ <path d="M-90,430 h34 v40 h-34 Z M56,430 h34 v40 h-34 Z" fill="none" ${TH('#9aa3aa')}/>
+ <rect x="54" y="300" width="30" height="40" rx="4" fill="#d9ecf5" ${LN2}/><rect x="60" y="306" width="18" height="12" fill="#8db4c8"/>
+ <!-- stethoscope -->
+ <path d="M-26,212 C-38,270 -24,322 0,326 C24,322 38,270 26,212" fill="none" stroke="#454b55" stroke-width="5.5" stroke-linecap="round"/>
+ <circle cx="0" cy="334" r="11" fill="#c9cfd6" ${LN2}/>
+ <!-- neck + head -->
+ <path d="M-17,150 L-16,206 L16,206 L17,150 Z" fill="${DSK}" ${LN2}/><path d="M-16,176 C-6,186 6,186 16,176 L16,206 L-16,206Z" fill="${DSK_S}" opacity=".7"/>
+ <g id="docHead">
+  ${shaded('M-50,72 C-52,30 -30,8 0,8 C32,8 54,30 52,74 C51,106 40,134 22,150 C12,158 -12,158 -22,150 C-40,134 -51,106 -50,72 Z',DSK,DSK_S,12)}
+  <path d="M-52,90 C-60,86 -62,104 -52,108" fill="${DSK}" ${LN2}/><path d="M52,90 C60,86 62,104 52,108" fill="${DSK}" ${LN2}/>
+  <path d="M-56,96 C-62,30 -30,0 4,0 C42,0 64,30 58,98 C54,66 44,44 20,34 C2,50 -30,60 -56,96 Z" fill="${DHAIR}" ${LN}/>
+  <path d="M-30,24 C-10,10 20,10 40,26 M-40,50 C-28,36 -12,30 6,30" fill="none" ${TH('#5c4136')}/>
+  <path id="dBrows" d="M-30,72 Q-18,65 -6,70 M14,70 Q26,65 38,72" fill="none" stroke="${DHAIR}" stroke-width="3.6" stroke-linecap="round"/>
+  ${humanEye('dEyeL',-16,90,12,7)}${humanEye('dEyeR',24,90,12,7)}
+  <g fill="none" stroke="#4a3b37" stroke-width="2.2" ${VE}><rect x="-34" y="78" width="34" height="25" rx="9"/><rect x="7" y="78" width="34" height="25" rx="9"/><path d="M0,88 h7 M-34,86 l-16,-3 M41,86 l13,-3"/></g>
+  <path d="M8,98 C14,110 14,118 6,121 C3,122 0,120 -2,118" fill="none" ${TH('#a8735a')}/>
+  <ellipse cx="-24" cy="118" rx="9" ry="5" fill="#e79a8d" opacity=".35"/><ellipse cx="32" cy="118" rx="9" ry="5" fill="#e79a8d" opacity=".35"/>
+  ${mouthEl('doc_m',6,136)}
+ </g>
+ <!-- left arm with clipboard -->
+ ${shaded(limbD([[-86,226],[-104,350],[-72,440]],[40,34,30]),'#f8f8f6','#d4d9dd',10)}
+ <g transform="translate(-58,450) rotate(-12)"><rect x="-40" y="-56" width="80" height="106" rx="6" fill="#b88350" ${LN2}/><rect x="-32" y="-46" width="64" height="88" fill="#fff" ${LN2}/><rect x="-14" y="-62" width="28" height="12" rx="3" fill="#9aa3ad" ${LN2}/>
+   <path d="M-22,-26 h44 M-22,-12 h36 M-22,2 h44 M-22,16 h28" ${TH('#9aa3ad')}/></g>
+ ${hand(-60,452,-20,1.15,DSK)}
+ <!-- right arm holding otoscope -->
+ <g id="docArmR">${shaded(limbD([[86,226],[108,350],[72,330]],[40,34,30]),'#f8f8f6','#d4d9dd',10)}
+   
+   ${hand(68,330,-30,1.15,DSK)}</g>
+</g>`;}
+const PSK='#e2b48f', PSK_S='#c99271';
+function patientSVG(){return `<g id="pat">
+ <ellipse cx="0" cy="782" rx="96" ry="12" fill="#000" opacity=".12"/>
+ ${shaded(limbD([[-32,500],[-36,640],[-36,758]],[56,46,40]),'#4b6286','#344868',10)}
+ ${shaded(limbD([[32,500],[36,640],[38,758]],[56,46,40]),'#4b6286','#344868',10)}
+ <path d="M-64,752 C-64,736 -12,736 -10,752 L-8,770 L-68,772 Z" fill="#f2f2f2" ${LN2}/><path d="M-66,766 h58" ${TH('#9aa0a6')}/>
+ <path d="M10,752 C12,736 64,736 64,752 L68,772 L8,770 Z" fill="#f2f2f2" ${LN2}/><path d="M8,766 h58" ${TH('#9aa0a6')}/><path d="M4,742 C16,724 64,726 72,744 L74,774 L4,774Z" fill="#fbf7ef" ${LN2}/><path d="M10,736 l60,14 M6,752 l66,10 M8,766 l64,4" ${TH('#d9cfc4')} stroke-width="2.6"/><circle cx="56" cy="748" r="4" fill="#d6404a" opacity=".5"/>
+ ${shaded('M-66,218 C-40,204 40,204 66,218 C90,232 96,262 96,300 L92,520 L-92,520 L-96,300 C-96,262 -90,232 -66,218 Z','#c7884a','#a86c34',18)}
+ <path d="M-40,206 C-30,232 30,232 40,206" fill="#b47a40" ${LN2}/><path d="M-10,232 v58 M10,232 v58" stroke="#f3eadf" stroke-width="3.5" stroke-linecap="round"/>
+ <path d="M-60,420 C-20,436 20,436 60,420 L58,470 C20,482 -20,482 -58,470 Z" fill="#b47a40" ${LN2}/>
+ <path d="M-92,500 L92,500 L92,520 L-92,520 Z" fill="#a86c34" ${LN2}/>
+ <path d="M-17,150 L-16,210 L16,210 L17,150 Z" fill="${PSK}" ${LN2}/><path d="M-16,178 C-6,188 6,188 16,178 L16,210 L-16,210Z" fill="${PSK_S}" opacity=".7"/>
+ <!-- right arm (hangs) -->
+ ${shaded(limbD([[84,234],[100,370],[90,470]],[44,38,32]),'#c7884a','#a86c34',10)}${hand(88,482,8,1.2,PSK)}
+ <g id="patHead">
+  ${shaded('M-52,70 C-54,28 -30,6 0,6 C32,6 56,28 54,72 C53,108 42,138 24,154 C12,162 -12,162 -24,154 C-42,138 -53,108 -52,70 Z',PSK,PSK_S,12)}
+  <path d="M-54,88 C-62,84 -64,104 -54,108" fill="${PSK}" ${LN2}/><path d="M54,88 C62,84 64,104 54,108" fill="${PSK}" ${LN2}/>
+  <path d="M-56,74 C-64,20 -30,-12 6,-8 C40,-6 64,16 58,72 C52,44 40,30 20,28 C4,34 -14,30 -24,24 C-34,40 -46,52 -56,74 Z" fill="#1f1d24" ${LN}/>
+  <path d="M-36,4 l6,-10 M-14,-6 l4,-10 M10,-6 l2,-10 M30,0 l6,-8" ${TH('#3d3a46')}/>
+  <path id="pBrows" d="M-36,70 Q-24,64 -10,66 M8,66 Q22,64 34,70" fill="none" stroke="#1f1d24" stroke-width="4.2" stroke-linecap="round"/>
+  ${humanEye('pEyeL',-22,88,12,7)}${humanEye('pEyeR',18,88,12,7)}
+  <path d="M-4,96 C-10,110 -10,118 -2,121 C2,122 5,120 7,118" fill="none" ${TH('#9c6b4e')}/>
+  <path d="M-36,130 q4,8 2,14 M30,130 q-4,8 -2,14" ${TH('#c99271')}/>
+  ${mouthEl('pat_m',-4,138)}
+  <g id="patBlush" opacity="0"><ellipse cx="-38" cy="124" rx="10" ry="6" fill="#ef8f86"/><ellipse cx="32" cy="124" rx="10" ry="6" fill="#ef8f86"/></g>
+  <path id="pSweat" d="M0,-9 C5,-2 7,3 5,7 C3,11 -4,11 -5,7 C-7,3 -4,-2 0,-9Z" fill="#9fd8f5" ${LN2}/>
+ </g>
+ <!-- left arm: hand to ear -->
+ <g id="patArmL"><path id="patArmLD" fill="#c7884a"/><path id="patArmLO" fill="none" ${LN}/><g id="patHandL"></g></g>
+</g>`;}
+
+let S5=`<g id="s5"><g id="ccam">
+ <rect width="720" height="1280" fill="#e8e3d8"/>
+ <rect x="0" y="640" width="720" height="240" fill="#b9c8cd"/><rect x="0" y="632" width="720" height="14" fill="#d6dee0" ${LN2}/>
+ <rect x="0" y="872" width="720" height="408" fill="#b78d67"/><rect x="0" y="866" width="720" height="12" fill="#7d8b90" ${LN2}/>
+ ${[960,1060,1180].map((y,i)=>`<line x1="0" y1="${y}" x2="720" y2="${y}" stroke="#9e7553" stroke-width="2.5"/>`+[0,1,2,3].map(k=>`<line x1="${(k*210+i*90)%720}" y1="${y-([88,100,120][i])}" x2="${(k*210+i*90)%720}" y2="${y}" stroke="#9e7553" stroke-width="2.5"/>`).join('')).join('')}
+ <g transform="translate(130,250)"><rect x="-104" y="-150" width="208" height="300" fill="#f7f7f4" ${LN}/><rect x="-92" y="-138" width="184" height="276" fill="#cfe6f0"/>
+   ${Array.from({length:16},(_,i)=>`<rect x="-92" y="${-138+i*17.2}" width="184" height="11" fill="#f1f2ef" opacity=".92"/>`).join('')}<path d="M-92,-138 h184 v276 h-184 Z" fill="none" ${LN2}/></g>
+ ${painPoster()}
+ <g transform="translate(-999,-999)"><path d="M-30,0 L30,0 L24,110 L-24,110 Z" fill="#c77b52" ${LN2}/><path d="M-6,0 C-30,-40 -40,-90 -20,-120 M2,0 C10,-50 30,-80 46,-96 M-2,0 C-10,-50 -2,-100 6,-130" fill="none" stroke="#4d7c4a" stroke-width="5" stroke-linecap="round"/>
+   ${[[-24,-110,-30],[44,-92,30],[6,-128,0],[-30,-70,-50],[24,-60,40]].map(([x,y,r])=>`<ellipse cx="${x}" cy="${y}" rx="15" ry="7" transform="rotate(${r},${x},${y})" fill="#6a9e5c" ${LN2}/>`).join('')}</g>
+ <g transform="translate(360,150)"><circle r="38" fill="#fbfbf8" ${LN}/><circle r="31" fill="none" ${TH('#c9c2b4')}/>${Array.from({length:12},(_,i)=>{const a=i*Math.PI/6;return `<line x1="${Math.sin(a)*25}" y1="${-Math.cos(a)*25}" x2="${Math.sin(a)*30}" y2="${-Math.cos(a)*30}" stroke="#8b8378" stroke-width="2.4"/>`;}).join('')}<line id="clkM" x1="0" y1="0" x2="0" y2="-24" stroke="${INK}" stroke-width="3" stroke-linecap="round"/><line x1="0" y1="0" x2="13" y2="6" stroke="${INK}" stroke-width="3.6" stroke-linecap="round"/><circle r="3.5" fill="${INK}"/></g>
+ <g><rect x="-10" y="752" width="220" height="22" fill="#b07a4a" ${LN}/><rect x="0" y="774" width="196" height="106" fill="#9a6a40" ${LN}/><path d="M98,774 v106 M10,812 h78 M108,812 h78" fill="none" ${TH('#6f4a2b')}/>
+  <rect x="28" y="636" width="124" height="88" rx="6" fill="#2e3238" ${LN}/><rect x="36" y="644" width="108" height="72" fill="#a9d6ea"/><path d="M78,664 C96,656 110,672 104,690 C100,700 90,700 88,708" fill="none" stroke="#e7a58c" stroke-width="4"/><rect x="82" y="724" width="16" height="24" fill="#4a4f57" ${LN2}/><rect x="62" y="746" width="56" height="8" rx="3" fill="#4a4f57" ${LN2}/></g>
+ <g><path d="M610,560 C610,540 700,540 700,560 L702,790 L612,790 Z" fill="#7fb0c9" ${LN}/><path d="M560,800 L720,800 L720,836 L560,836 Z" fill="#8fbdd3" ${LN}/><rect x="626" y="836" width="22" height="40" fill="#9aa3ad" ${LN2}/><path d="M600,876 L680,876" stroke="${INK}" stroke-width="6" stroke-linecap="round"/></g>
+ <g transform="translate(205,300)">${doctorSVG()}</g>
+ <g transform="translate(515,296)">${patientSVG()}</g>
+ <g id="bub" opacity="0"><g transform="translate(265,150)">
+   <ellipse rx="150" ry="100" fill="#fff" ${LN}/>
+   <clipPath id="bubClip"><ellipse rx="140" ry="90"/></clipPath>
+   <g clip-path="url(#bubClip)"><use id="bubA" href="#wCut" transform="scale(.42) translate(-440,-820)"/><use id="bubB" href="#wFork" transform="scale(.36) translate(-360,-760)"/></g>
+   <ellipse rx="150" ry="100" fill="none" ${LN}/></g></g>
+</g>
+ ${labelBox('lbPro','PROSTAGLANDINS',360,64,26)}
+ <g id="lbTip" opacity="0" transform="translate(360,84)"><rect x="-300" y="-44" width="600" height="88" fill="#fff" ${LN}/><circle cx="-264" cy="-14" r="15" fill="#2fa36b" ${LN2}/><path d="M-272,-14 l6,6 l11,-12" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="lbl" style="font-size:22px" x="20" y="-6" text-anchor="middle">PAINKILLERS DON'T HEAL THE WOUND</text><text class="lbl" style="font-size:22px" x="0" y="28" text-anchor="middle" fill="#e0454f">THEY TURN THE PAIN SIGNAL DOWN</text></g>
+</g>`;
+
+
+// =============== 008: how painkillers "find" the pain - remake of the 21M reference. ALL code, 001 / 003-v1 style. No image model. ===============
+const E=D.ev, ST=D.start, END=D.end;
+const KEY=/^(HUGE|CUT|BRAIN|BLOOD|PLATELETS|PAINKILLERS|PAINKILLER|MEDICINE|TALK|PAIN|STIR|SPLIT|EAST|NORTH|JOB|OURS|FOOT|HEAL|WOUND|IBUPROFEN|PROSTAGLANDINS|NERVES|SIGNALS|SIGNAL|INJURY|DOWN|NERVE)$/;
+function viseme(env,T,seed){if(env<0.08)return 'closed';const f=Math.floor(T*15)+seed;let b=env<0.3?'small':env<0.65?'mid':'wide';if(b==='mid'&&f%4===0)b='oo';if(b==='wide'&&f%5===0)b='mid';return b;}
+function setMouthV(id,env,w,mood,T,seed=0){const v=viseme(env,T,seed);const e=$(id),t=$(id+'_t'),th=$(id+'_w');let d,fill='#5e1a20',tong=0,teeth=0;
+  if(v==='closed'){d=`M${-w*.7},0 Q0,${mood*w*.45} ${w*.7},0`;fill='none';}
+  else if(v==='small'){d=`M${-w*.55},0 Q0,-2.5 ${w*.55},0 Q0,${w*.5} ${-w*.55},0Z`;}
+  else if(v==='oo'){d=`M0,${-w*.32} C${w*.42},${-w*.32} ${w*.42},${w*.55} 0,${w*.55} C${-w*.42},${w*.55} ${-w*.42},${-w*.32} 0,${-w*.32}Z`;}
+  else if(v==='mid'){d=`M${-w*.8},-1 Q0,-4 ${w*.8},-1 Q${w*.6},${w*.85} 0,${w*.9} Q${-w*.6},${w*.85} ${-w*.8},-1Z`;tong=.6;teeth=1;}
+  else {d=`M${-w*.9},-2 Q0,-6 ${w*.9},-2 Q${w*.7},${w*1.3} 0,${w*1.35} Q${-w*.7},${w*1.3} ${-w*.9},-2Z`;tong=1;teeth=1;}
+  e.setAttribute('d',d);e.setAttribute('fill',fill);
+  if(th){th.setAttribute('opacity',teeth);th.setAttribute('d',`M${-w*.62},-1 Q0,-4 ${w*.62},-1 L${w*.56},${w*.2} Q0,${w*.12} ${-w*.56},${w*.2}Z`);}
+  if(t){t.setAttribute('opacity',tong?1:0);t.setAttribute('cy',w*(tong>.8?1.0:.66));t.setAttribute('rx',w*.45);t.setAttribute('ry',w*.2*tong+1);}}
+
+// ---- inside the ear: positions of the cotton bud tip and the wax (world coords)
+function popLabel(id,T,t0,t1,x,y,sc=1){const on=T>=t0&&T<t1;show(id,on?1:0);if(on){const k=eob(P(T,t0,t0+.28));$(id).setAttribute('transform',`translate(${x},${y}) scale(${k*sc})`);}}
+function rnd(i){const x=Math.sin(i*127.1+311.7)*43758.5453;return x-Math.floor(x);}
+function poseAt(T,segs,def){let p=def,t0=0;for(const [a,b,q] of segs) if(T>=a&&T<b){p=q;t0=a;} return [p,t0];}
+function popK(T,t0){const k=P(T,t0,t0+.18);return k<1?Math.sin(k*Math.PI):0;}
+function along(pts,s){s=clamp(s)*(pts.length-1);const i=Math.min(pts.length-2,Math.floor(s)),f=s-i;return [lerp(pts[i][0],pts[i+1][0],f),lerp(pts[i][1],pts[i+1][1],f)];}
+const lend=id=>{const L=D.lines.find(l=>l.id===id);return L.t0+L.dur;};
+const T_STOM=E.stom, T_VEIN=E.vein, T_FORK=E.fork, T_CUT2=E.cut2, T_CLIN=E.clinic;
+// ---------- scenes ----------
+let S1=`<g id="s1"><g id="cam1">${cutWorld()}</g>${brainInset()}
+ ${labelBox('lbFoot','INSIDE THE FOOT',360,80,24)}${labelBox('lbCut','CUT',420,250,24)}${labelBox('lbBrain','BRAIN',500,140,22)}${labelBox('lbPg','PROSTAGLANDIN',360,700,22)}</g>`;
+let S2=`<g id="s2"><g id="cam2">${stomachWorld()}</g>${labelBox('lbSto','STOMACH',560,300,24)}${labelBox('lbPk','PAINKILLERS',560,640,22)}</g>`;
+let S3=`<g id="s3"><g id="cam3">${veinWorld()}</g>${labelBox('lbVein','VEIN',560,120,26)}</g>`;
+let S4=`<g id="s4"><g id="cam4">${forkWorld()}</g></g>`;
+let CTA=`<g id="cta" opacity="0"><g id="cta_i"><rect x="-250" y="-62" width="500" height="132" rx="26" fill="#fff" ${LN}/>
+  <text class="cta" text-anchor="middle" y="6" style="font-size:66px;stroke-width:9px" fill="#ffd21f">FOLLOW</text>
+  <text class="cta" text-anchor="middle" y="52" style="font-size:30px;stroke-width:6px" fill="#fff">FOR MORE BODY SECRETS</text></g></g>`;
+const svg=$('S');
+svg.innerHTML=`<defs><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>${DEFS}${GDEF}</defs>`
+ +S1+S2+S3+S4+S5+CTA+`<rect id="indark" width="720" height="1280" fill="#1e1012" opacity="0"/><g id="capg"><text id="cap" class="cap" x="360" y="1110" text-anchor="middle"></text></g>`;
+
+// ---------- SCENE A / E: the cut ----------
+function renderCut(T){
+  const boarded=T>=T_CUT2;
+  show('planks',boarded?1:0);
+  // red blood cells roll along the floor (fewer once the cut is boarded up)
+  [0,1,2].forEach(i=>{const per=boarded?7:4.6, ph=i*per/3, u=((T+ph)%per)/per, on=!boarded||i===0;
+    show('rb'+i,on?1:0); if(!on)return; const x=lerp(-90,820,u), y=912+Math.abs(Math.sin(u*per*5))*-8;
+    $('rb'+i).setAttribute('transform',`translate(${x.toFixed(1)},${y.toFixed(1)}) rotate(${(Math.sin(T*6+i)*6).toFixed(1)}) scale(.9)`);
+    setOEye('rb'+i+'_eL',13,{dx:20,dy:-6,lid:.1,blink:blinkK(T,i)}); setOEye('rb'+i+'_eR',13,{dx:20,dy:-6,lid:.1,blink:blinkK(T,i)});});
+  // blood drips out of the cut and pools (before the platelets board it up)
+  let dr='';if(!boarded){for(let i=0;i<4;i++){const u=((T*.8)+i/4)%1;dr+=`<path d="M${(286+i*6).toFixed(0)},${(870+u*90).toFixed(1)} c6,8 8,15 0,19 c-8,-4 -6,-11 0,-19z" fill="#d8303a" ${LN2} opacity="${Math.sin(u*Math.PI).toFixed(2)}"/>`;}}
+  const pool=boarded?1:clamp(T/6); dr+=`<ellipse cx="300" cy="986" rx="${(30+70*pool).toFixed(1)}" ry="${(8+10*pool).toFixed(1)}" fill="#c9303a" ${LN2} opacity="${boarded?.55:.9}"/>`;
+  $('drips').innerHTML=dr;
+  // the officer cell: walks in, sees the cut, phones the brain
+  const gOn=!boarded; show('gd',gOn?1:0);
+  if(gOn){const wk=eio(P(T,E.walk,E.walk+1.4)); let gx=lerp(860,520,wk), pose=T>=E.phone?'phone':'up';
+    const gt=speak('guard',T), pk=popK(T,E.whoa);
+    setGuard('gd',gx,804+(wk<1?Math.abs(Math.sin(T*12))*-10:Math.sin(T*2)*3)-pk*10,1.0,{talk:gt,T,pose,look:-1,mood:-.6,brows:T<E.phone?-1:1}); show('gd_sign',0);}
+  // prostaglandin + the painkillers (scene E)
+  const eOn=boarded; ['pg','pA','pB'].forEach(id=>show(id,eOn?1:0));
+  if(eOn){
+    const arr=eio(P(T,E.arrive,E.arrive+.9)), run=arr<1&&T>=E.arrive;
+    const ko=T>=E.ko, inFight=T>=E.fight&&T<E.ko;
+    const pgT=speak('prost',T);
+    if(!inFight) setProst('pg',ko?330:360,ko?930:862+Math.sin(T*2)*4,ko?.9:.95,{talk:pgT,T,look:ko?0:1,rot:ko?-96:(pgT>.1?Math.sin(T*9)*3:0),ko,angry:T<ST['17_prost']?0:.6,mood:.2});
+    show('pg',inFight?0:1);
+    const aT=speak('pill',T), bT=speak('pill2',T);
+    const ax=lerp(860,560,arr), bx=lerp(960,660,arr);
+    const armsA=T>=E.ko?'fist':(aT>.05?'point':(run?'run':'down')), armsB=T>=E.ko?'fist':(bT>.05?'fist':(run?'run':'down'));
+    if(!inFight){setPill('pA',ax,840+(run?0:Math.sin(T*3)*7),.85,{talk:aT,T,look:-1,mood:T>=E.ko?1:.6,arms:armsA,seed:1,run,angry:.5,flip:-1});
+      setPill('pB',bx,846+(run?0:Math.sin(T*2.6+1)*7),.8,{talk:bT,T,look:-1,mood:T>=E.ko?1:-.2,arms:armsB,seed:3,run,angry:.8,flip:-1});}
+    show('pA',inFight?0:1); show('pB',inFight?0:1);
+    const fk=P(T,E.fight,E.ko); if(fk>0&&fk<1){let h='';for(let i=0;i<12;i++){const a=i/12*6.283+T*3,r=96+Math.sin(T*9+i)*20;
+        h+=`<circle cx="${(470+Math.cos(a)*r).toFixed(1)}" cy="${(830+Math.sin(a)*r*.7).toFixed(1)}" r="${(62+rnd(i)*30+Math.sin(T*12+i)*8).toFixed(1)}" fill="#fff" stroke="${INK}" stroke-width="2.6"/>`;}
+      h+=`<circle cx="470" cy="830" r="112" fill="#fff"/>`; $('dust').innerHTML=h;
+      let s='';for(let i=0;i<5;i++){const k=((T*2.2)+i/5)%1;s+=`<path transform="translate(${(470+Math.cos(i*1.3)*k*200).toFixed(1)},${(800+Math.sin(i*1.9)*k*160).toFixed(1)}) scale(${(.6+k).toFixed(2)})" d="M0,-16 L5,-5 L16,-5 L7,2 L10,14 L0,7 L-10,14 L-7,2 L-16,-5 L-5,-5Z" fill="#ffd21f" stroke="${INK}" stroke-width="2" opacity="${(1-k).toFixed(2)}"/>`;}
+      $('stars').innerHTML=s;} else {$('dust').innerHTML='';$('stars').innerHTML='';}
+  } else {$('dust').innerHTML='';$('stars').innerHTML='';}
+}
+// setPill flip support (characters on the right face left)
+const _setPill=setPill; setPill=function(id,x,y,s,o={}){_setPill(id,x,y,s,o); if(o.flip===-1){const tr0=$(id).getAttribute('transform');$(id).setAttribute('transform',tr0.replace(/scale\(([^)]+)\)/,(m,v)=>`scale(${-parseFloat(v)},${parseFloat(v)})`));}};
+
+// ---------- SCENE B: the stomach ----------
+const S_POSE={base:{L:[[176,540],[130,580],[116,646]],R:[[330,372],[380,342],[408,362]],rl:-10,rr:30},
+  shrug:{L:[[176,540],[112,500],[96,450]],R:[[330,372],[400,330],[440,300]],rl:-70,rr:60},
+  point:{L:[[176,540],[130,580],[116,646]],R:[[330,372],[400,420],[430,520]],rl:-10,rr:150},
+  stir:{L:[[176,540],[130,580],[116,646]],R:[[330,372],[400,420],[430,470]],rl:-10,rr:100}};
+function poseLerp(a,b,k){return a.map((p,i)=>[lerp(p[0],b[i][0],k),lerp(p[1],b[i][1],k)]);}
+function renderStomach(T){
+  const [pz,p0]=poseAt(T,[[ST['08_stomach']-.1,ST['09_pill2'],'point'],[ST['10_stomach']-.1,ST['11_pill'],'shrug'],[E.stir-.3,1e9,'stir']],'base');
+  const se=speak('stomach',T), pk=popK(T,p0), P0=S_POSE[pz], k=eo(P(T,p0,p0+.22)), PB=S_POSE.base, w=Math.sin(T*3.2)*5;
+  const stirring=T>=E.stir;
+  const sw=stirring?[Math.cos((T-E.stir)*9)*40,Math.sin((T-E.stir)*9)*14]:[0,0];
+  let R=poseLerp(PB.R,P0.R,k); if(stirring){R=[R[0],R[1],[440+sw[0],460+sw[1]]];}
+  setHose('sArmL',poseLerp(PB.L,P0.L,k).map((p,i)=>i?[p[0],p[1]+w*i*.4]:p),P0.rl,1.05);
+  setHose('sArmR',R.map((p,i)=>i&&!stirring?[p[0]+w*i*.3,p[1]]:p),P0.rr,1.05);
+  show('stick',stirring?1:0); if(stirring) $('stick').setAttribute('transform',`translate(${(440+sw[0]).toFixed(1)},${(440+sw[1]).toFixed(1)}) rotate(${(sw[0]*.3).toFixed(1)})`);
+  const asleep=T<E.wake, maskK=eio(P(T,E.wake,E.wake+.35));
+  const rot=asleep?Math.sin(T*1.3)*1.2:(stirring?Math.sin(T*9)*1.2:Math.sin(T*1.1)*.6), sy=1+Math.sin(T*(asleep?1.4:2.6))*(asleep?.02:.008)+se*.018-pk*.03;
+  $('stoBody').setAttribute('transform',`translate(430,850) rotate(${rot.toFixed(2)}) scale(${(1+pk*.03).toFixed(4)},${sy.toFixed(4)}) translate(-430,-850)`);
+  $('sMask').setAttribute('transform',`translate(0,${(-maskK*140).toFixed(1)}) rotate(${(-maskK*12).toFixed(1)},266,440)`); show('sMask',1-P(T,E.wake+.2,E.wake+.45));
+  let zz='';if(asleep){for(let i=0;i<3;i++){const u=((T*.5)+i/3)%1;zz+=`<text x="${(370+u*60).toFixed(0)}" y="${(400-u*120).toFixed(0)}" style="font-family:LG,sans-serif;font-size:${(26+u*20).toFixed(0)}px" fill="#7aa6d6" stroke="${INK}" stroke-width="2" opacity="${Math.sin(u*Math.PI).toFixed(2)}">Z</text>`;}}
+  $('zzz').innerHTML=zz;
+  const lookPills=T>=E.drop+.6, groggy=T<ST['07_pill'], shocked=T>=ST['08_stomach']-.1&&T<ST['09_pill2']+.5, grumpy=T>=ST['10_stomach']-.1&&T<E.stir;
+  const bl=blinkK(T,.3), lid=asleep?1:(groggy?.45:(grumpy?.3:.08));
+  const dx=lookPills?24:4, dy=lookPills?34:2;
+  setOEye('sEyeL',36,{dx,dy,lid,blink:bl,small:shocked}); setOEye('sEyeR',36,{dx,dy,lid,blink:bl,small:shocked});
+  const ang=grumpy?[16,-16,2]:(shocked?[-14,14,10]:[6,-6,6]);
+  setBrow('sBrowL',224,404-(shocked?8:0),44,ang[0],ang[2]); setBrow('sBrowR',308,396-(shocked?8:0),44,ang[1],ang[2]);
+  setMouthV('sto_m',se,20,asleep?.2:(grumpy?-.7:(shocked?-.3:.1)),T,3);
+  // juice surface, bubbles
+  let jd='M180,736';for(let x=180;x<=720;x+=20){jd+=` L${x},${(736+Math.sin(x/34+T*2.2)*5+(stirring?Math.sin(x/20+T*14)*6:0)).toFixed(1)}`;}jd+=' L720,900 L180,900Z';
+  $('juiceD').setAttribute('d',jd); let jh='';for(let x=200;x<=700;x+=20){jh+=(jh?' L':'M')+`${x},${(732+Math.sin(x/34+T*2.2)*5+(stirring?Math.sin(x/20+T*14)*6:0)).toFixed(1)}`;} $('juiceH').setAttribute('d',jh);
+  let bb='';const nb=stirring?16:6;for(let i=0;i<nb;i++){const u=((T*(stirring?1.4:.5))+i/nb)%1;bb+=`<circle cx="${(300+(i*37)%320+Math.sin(T*3+i)*6).toFixed(1)}" cy="${(800-u*70).toFixed(1)}" r="${(4+i%3*2)}" fill="none" ${TH(JUICE_S)} opacity="${Math.sin(u*Math.PI).toFixed(2)}"/>`;} $('bubbles').innerHTML=bb;
+  let sw2='';if(stirring){for(let i=0;i<3;i++){const a=(T-E.stir)*8+i*2.1;sw2+=`<path d="M${(440+Math.cos(a)*70).toFixed(1)},${(770+Math.sin(a)*18).toFixed(1)} A70,18 0 0 1 ${(440+Math.cos(a+1.4)*70).toFixed(1)},${(770+Math.sin(a+1.4)*18).toFixed(1)}" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".8"/>`;}}
+  $('swirl').innerHTML=sw2; show('swirl',stirring?1:0);
+  // the two painkillers: drop down the food pipe, splash, talk, then dissolve as they are stirred
+  [['sA',E.drop,'pill',0,412],['sB',E.drop+.22,'pill2',1,478]].forEach(([id,t0,who,i,lx])=>{const q=(T-t0)/.85; if(q<0){show(id,0);return;} show(id,1);
+    const dis=stirring?P(T,E.stir+.3,E.vein-.15):0;
+    let p=q<1?along(CAP_PATH,eio(q)):[lx,708+Math.sin(T*2+i)*4];
+    if(stirring){const a=(T-E.stir)*7+i*3.1;p=[lerp(p[0],440+Math.cos(a)*60,P(T,E.stir,E.stir+.3)),lerp(p[1],750+Math.sin(a)*14,P(T,E.stir,E.stir+.3))];}
+    setPill(id,p[0],p[1],.4*(1-dis*.85),{talk:speak(who,T),T,look:i?-.6:.6,lookY:-.8,mood:.6,arms:speak(who,T)>.05?'wave':'down',seed:i*2,rot:q<1?Math.sin(q*9)*30:(stirring?(T-E.stir)*300:0)});
+    $(id).setAttribute('opacity',(1-dis).toFixed(2));});
+}
+// ---------- SCENE C: the vein ----------
+function renderVein(T){
+  const u=P(T,T_VEIN-.1,T_FORK+.1);
+  const path=[[-160,1000],[120,900],[300,760],[420,640],[560,520],[720,430],[900,350]];
+  [['vA',0,'pill'],['vB',.12,'pill2']].forEach(([id,o,who],i)=>{const p=along(path,clamp(u*1.05-o+.05));setPill(id,p[0],p[1]+Math.sin(T*10+i)*6,.62,{T,look:1,lookY:-.4,mood:1,arms:'fist',seed:i,rot:-30});});
+  [0,1].forEach(i=>{const p=along(path,clamp(u*1.2-.2-i*.35));$('vr'+i).setAttribute('transform',`translate(${p[0].toFixed(1)},${(p[1]+40).toFixed(1)}) rotate(${(T*200+i*90)%360}) scale(.7)`);});
+  let sl='';for(let i=0;i<8;i++){const k=((T*3)+i/8)%1;const p=along(path,clamp(u-.1-k*.15));sl+=`<path d="M${(p[0]-60).toFixed(0)},${(p[1]+30+(i%3-1)*34).toFixed(0)} l-70,36" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity="${(1-k).toFixed(2)}"/>`;}
+  $('speed').innerHTML=sl;
+}
+// ---------- SCENE D: the fork ----------
+function renderFork(T){
+  $('holes').setAttribute('transform',`translate(360,520) scale(${(1+.025*Math.sin(T*2.2)).toFixed(4)},${(1+.02*Math.sin(T*2.2+1)).toFixed(4)}) translate(-360,-520)`);
+  let spk='';for(let i=0;i<10;i++){const u=((T*.12)+i/10)%1;spk+=`<circle cx="${(60+(i*71)%600+Math.sin(T*1.3+i)*20).toFixed(1)}" cy="${(880-u*700).toFixed(1)}" r="${(3+i%3*2)}" fill="#fff" opacity="${(.6*Math.sin(u*Math.PI)).toFixed(2)}"/>`;} $('specks').innerHTML=spk;
+  const aT=speak('pill',T), bT=speak('pill2',T), sp=eio(P(T,E.split,E.split+1.0)), run=T>=E.split;
+  const ax=lerp(428,620,sp), bx=lerp(286,100,sp), sc=1-.45*sp, y=lerp(900,760,sp);
+  const looking=T>=ST['13_pill2']-.1&&T<ST['14_pill'];
+  const bobA=run?0:Math.sin(T*3.1)*8, bobB=run?0:Math.sin(T*2.7+1)*8;
+  setPill('fA',ax,y+bobA,1.05*sc,{talk:aT,T,look:run?1:(looking?Math.sin(T*2):-.8),mood:.6,arms:run?'run':(aT>.05?(T>=ST['15_pill']?'point':'wave'):'down'),seed:1,run,flip:run?1:1});
+  setPill('fB',bx,y+6+bobB,1.0*sc,{talk:bT,T,look:run?-1:(looking?Math.sin(T*2.4+1):.8),mood:-.2,arms:run?'run':(bT>.05?'wave':'down'),seed:3,run,flip:run?-1:1});
+  if(run){$('fB').setAttribute('opacity',(1-P(T,E.split+.7,E.split+1.0)).toFixed(2));$('fA').setAttribute('opacity',(1-P(T,E.split+.7,E.split+1.0)).toFixed(2));}
+  else {$('fB').setAttribute('opacity',1);$('fA').setAttribute('opacity',1);}
+}
+// ---------- the clinic (001's code doctor + patient) ----------
+function renderClinic(T){
+  const dT=speak('doctor',T), pT=speak('patient',T), d0=ST['20_doctor'], pa=ST['19_patient'], p2=ST['21_patient'];
+  let dr=2+(dT>.15?Math.sin(T*6.5)*1.8*dT:0);
+  tr('docHead',0,Math.sin(T*1.3)*1.2-(dT>.7?1.5:0),1,1,dr);
+  $('dBrows').setAttribute('transform',`translate(0,${dT>.72?-3.5:0})`);
+  let pr=-3+Math.sin(T*.8)*1; if(T>=d0&&T<p2&&dT<.05) pr+=Math.sin(T*9)*1.5*(speak('doctor',T-.25)>.1?1:0);
+  if((T<d0||T>=p2)&&pT>.2) pr+=Math.sin(T*7)*2;
+  if(T>=p2-.1&&T<p2+.9) pr+=Math.sin(P(T,p2-.1,p2+.9)*Math.PI*2)*4;
+  tr('patHead',0,Math.sin(T*1.5+1)*1.2,1,1,pr);
+  const hurt=T<E.prost, aha=T>=p2-.2;
+  $('pBrows').setAttribute('d',aha?'M-36,64 Q-24,56 -10,60 M8,60 Q22,56 34,64':(hurt?'M-36,66 Q-24,64 -10,60 M8,60 Q22,64 34,66':'M-36,70 Q-24,64 -10,66 M8,66 Q22,64 34,70'));
+  setMouthV('doc_m',dT,10,.7,T,5); setMouthV('pat_m',pT,10,aha?.8:(hurt?-.6:.1),T,6);
+  setHEye('dEyeL',3,blinkK(T,.7)); setHEye('dEyeR',3,blinkK(T,.7));
+  setHEye('pEyeL',-3,blinkK(T,2.1)); setHEye('pEyeR',-3,blinkK(T,2.1));
+  show('patBlush',hurt?.6:.3); show('pSweat',hurt?1:0); $('pSweat').setAttribute('transform',`translate(46,${(70+((T*14)%24)).toFixed(1)})`);
+  // left hand holds the glass of water: up while he asks, then down
+  const up=eio(P(T,pa-.4,pa+.3)), down=eio(P(T,d0+.2,d0+1.0));
+  const sh=[-84,234], el=[lerp(lerp(-102,-124,up),-102,down),lerp(lerp(370,344,up),370,down)], wr=[lerp(lerp(-90,-44,up),-90,down),lerp(lerp(470,286,up),470,down)];
+  const d=limbD([sh,el,wr],[44,38,32]); $('patArmLD').setAttribute('d',d); $('patArmLO').setAttribute('d',d);
+  const ha=lerp(lerp(-8,150,up),-8,down), gy=wr[1]+(down>.5?12:0);
+  $('patHandL').innerHTML=glassAt(wr[0]+2,gy-22,1.15)+hand(wr[0],gy,ha,1.2,PSK);
+  $('docArmR').setAttribute('transform',`rotate(${(dT>.2?-6+Math.sin(T*4.2)*7*dT:0).toFixed(2)},86,226)`);
+  $('clkM').setAttribute('transform',`rotate(${T*6})`);
+  // camera: push in on his question, punch in on the doctor at "prostaglandins"
+  const pq=eio(P(T,pa,pa+1.5))*(1-eio(P(T,d0-.2,d0+.4)));
+  let z=1+.035*P(T,d0,END)+.07*pq, cx=lerp(360,430,pq), cy=lerp(640,600,pq);
+  const pk=eio(P(T,E.prost-.15,E.prost+.15))*(1-eio(P(T,E.brainW-.6,E.brainW-.25)));
+  z=lerp(z,1.42,pk); cx=lerp(cx,232,pk); cy=lerp(cy,430,pk);
+  const ty=lerp(640,560,pk); cx=clamp(cx,360/z,720-360/z); cy=clamp(cy,ty/z,1280-(1280-ty)/z);
+  $('ccam').setAttribute('transform',`translate(360,${ty}) scale(${z}) translate(${-cx},${-cy})`);
+  // thought bubbles cut on his words: "...to your brain" -> the painkillers knock out the prostaglandin; "never went looking" -> the fork
+  const sA=E.brainW-.3, sB=E.looking-.15, sE=E.down-.3, bOn=T>=sA&&T<sE;
+  $('bub').setAttribute('opacity',bOn?1:0);
+  if(bOn){const seg=T<sB?0:1, t0=[sA,sB][seg], t1=[sB,sE][seg], u=P(T,t0,t1);
+    const pop=seg===0?eob(P(T,sA,sA+.3)):1+.06*Math.sin(clamp(P(T,t0,t0+.25))*Math.PI);
+    $('bub').setAttribute('transform',`translate(300,178) scale(${(1.38*pop).toFixed(3)}) translate(-265,-150)`);
+    show('bubA',seg===0?1:0); show('bubB',seg===1?1:0);
+    if(seg===0) renderCut(lerp(E.fight-.4,E.ko+.25,u)); else renderFork(lerp(ST['13_pill2'],E.split+.9,u));}
+  popLabel('lbPro',T,E.prost-.05,E.brainW-.35,360,64);
+  popLabel('lbTip',T,E.down-.15,END,360,84);
+}
+function caption(T){let w='',ws=0;for(const L of D.lines)for(const x of L.words){if(T>=x[0]&&T<Math.max(x[1],x[0]+.12)){w=x[2];ws=x[0];}}
+  if(!w){for(const L of D.lines)for(const x of L.words){if(T>=x[1]&&T<x[1]+.12){w=x[2];ws=x[0];}}}
+  const c=$('cap'),big=KEY.test(w.replace(/[^A-Z'\-]/g,'')); c.textContent=w; c.style.fontSize=big?'56px':'44px'; c.style.fill=big?'#ffd21f':'#fff';
+  const k=eo(P(T,ws,ws+.09)); c.setAttribute('transform',`translate(360,1110) scale(${lerp(1.2,1,k)}) translate(-360,-1110)`);}
+window.render=function(T){
+  const sc=T<T_STOM?1:T<T_VEIN?2:T<T_FORK?3:T<T_CUT2?4:T<T_CLIN?1:5;
+  ['s1','s2','s3','s4','s5'].forEach((id,i)=>$(id).setAttribute('display',sc===i+1?'inline':'none'));
+  const bounds=[[0,T_STOM],[T_STOM,T_VEIN],[T_VEIN,T_FORK],[T_FORK,T_CUT2],[T_CUT2,T_CLIN],[T_CLIN,END]];
+  const seg=bounds.find(([a,b])=>T>=a&&T<b)||bounds[5];
+  const dark=Math.max(seg[0]>0?1-P(T,seg[0],seg[0]+.14):0, seg[1]<END?P(T,seg[1]-.14,seg[1]):0);
+  if(sc===1){renderCut(T);
+    const pz=eob(P(T,E.whoa,E.whoa+.25))*(1-P(T,E.whoa+1.2,E.whoa+1.8)), fight=T>=E.fight&&T<E.ko;
+    const shake=(fight?.6:0)*Math.sin(T*70)*7+(T>=E.ko&&T<E.ko+.3?Math.sin(T*90)*8:0);
+    const pe=T>=T_CUT2?eio(P(T,T_CUT2,E.fight)):0, z=1+.08*pz+.14*pe+.01*Math.sin(T*.3), cx=lerp(lerp(360,300,pz),470,pe), cy=lerp(lerp(640,600,pz),760,pe); $('cam1').setAttribute('transform',`translate(${(360+shake).toFixed(1)},640) scale(${z.toFixed(4)}) translate(${(-cx).toFixed(1)},${(-cy).toFixed(1)})`);
+    // brain on the phone
+    const bOn=T>=E.brainUp&&T<T_STOM, bk=eob(P(T,E.brainUp,E.brainUp+.3)); show('bInset',bOn?1:0);
+    if(bOn){$('bInset').setAttribute('transform',`translate(500,330) scale(${bk.toFixed(3)})`); const bt=speak('brain',T);
+      setOEye('brEyeL',20,{dx:-14,dy:4,lid:.35,blink:blinkK(T,.5)}); setOEye('brEyeR',20,{dx:-14,dy:4,lid:.35,blink:blinkK(T,.5)}); setMouthV('brain_m',bt,12,.3,T,8);
+      let wv='';if(bt>.1||speak('guard',T)>.1){for(let i=0;i<3;i++){const k=((T*2)+i/3)%1;wv+=`<path d="M${(-150-k*40).toFixed(0)},${(-20-k*30).toFixed(0)} q-14,20 0,40" fill="none" stroke="#ffd21f" stroke-width="5" stroke-linecap="round" opacity="${(1-k).toFixed(2)}"/>`;}} $('waves').innerHTML=wv;}
+    popLabel('lbFoot',T,.3,2.8,360,80); popLabel('lbCut',T,E.whoa+.1,E.whoa+2.2,420,250); popLabel('lbBrain',T,E.brainUp+.2,T_STOM-.2,500,140);
+    popLabel('lbPg',T,ST['17_prost']-.25,ST['18_pill2'],360,700);}
+  if(sc===2){renderStomach(T); let zz=0,n=0;for(let i=0;i<=14;i++){const t=T-.7+i*.05;zz+=(speak('pill',t)>.02||speak('pill2',t)>.02||D.lines.some(l=>(l.who==='pill'||l.who==='pill2')&&t>=l.t0-.1&&t<l.t0+l.dur+.2&&l.t0<E.stir))?1:0;n++;}
+    const k=eio(zz/n), z=1+.32*k+.01*Math.sin(T*.3), cx=lerp(360,440,k), cy=lerp(640,690,k);
+    $('cam2').setAttribute('transform',`translate(360,640) scale(${z.toFixed(4)}) translate(${(-cx).toFixed(1)},${(-cy).toFixed(1)})`);
+    popLabel('lbSto',T,ST['06_stomach']+.1,ST['06_stomach']+2.2,560,300); popLabel('lbPk',T,ST['07_pill']-.05,ST['07_pill']+2.2,600,620);}
+  if(sc===3){renderVein(T); popLabel('lbVein',T,T_VEIN+.1,T_FORK,560,120);}
+  if(sc===4){renderFork(T); const z=1+.12*eio(P(T,T_FORK,E.split))+.01*Math.sin(T*1.7); $('cam4').setAttribute('transform',`translate(360,640) scale(${z.toFixed(4)}) translate(-360,-700)`);}
+  if(sc===5) renderClinic(T);
+  const ck=P(T,E.cta,E.cta+.35); show('cta',T>=E.cta?1:0); $('cta').setAttribute('transform',`translate(360,${250+Math.sin(T*3)*4}) rotate(${Math.sin(T*2.2)*2})`); $('cta_i').setAttribute('transform',`scale(${eob(ck)})`);
+  show('indark',dark*.9);
+  caption(T);
+};
+window.render(0);
+
+</script></body></html>
