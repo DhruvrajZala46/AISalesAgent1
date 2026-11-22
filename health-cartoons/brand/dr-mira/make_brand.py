@@ -1,8 +1,8 @@
 # Channel art for the new channel (avatar 800x800, banner 2560x1440), drawn in code with 001's female doctor.
-# Usage: python3 make_brand.py && node render_brand.js   -> avatar.png, banner.png (media: not committed)
-L=open('../videos/001-earwax-cotton-buds/scene.html').read().split('\n')
+# Usage: python3 make_brand.py && node render_brand.js   -> avatar.png, banner.png (in this folder) (media: not committed)
+L=open('../../videos/001-earwax-cotton-buds/scene.html').read().split('\n')
 head='\n'.join(L[0:69]).replace('@font-face{font-family:LG;src:url(../../assets/fonts/LuckiestGuy.woff2)}',
-  '@font-face{font-family:LG;src:url(../assets/fonts/LuckiestGuy.woff2)}@font-face{font-family:ComicNeue;font-weight:700;src:url(../assets/fonts/comic-neue-latin-700-normal.woff2)}')
+  '@font-face{font-family:LG;src:url(../../assets/fonts/LuckiestGuy.woff2)}@font-face{font-family:ComicNeue;font-weight:700;src:url(../../assets/fonts/comic-neue-latin-700-normal.woff2)}')
 clinic='\n'.join(L[144:257]); clinic=clinic[:clinic.index('function earPoster(){')]
 k=clinic.index('<g transform="translate(66,316) rotate(-30)">'); k2=clinic.index('</g>',clinic.index('<path d="M-4,-26 L4,-26',k))+4
 clinic=clinic[:k]+clinic[k2:]                                    # no otoscope
@@ -32,4 +32,4 @@ window.drawBanner=function(){const S=$('S');S.setAttribute('width',2560);S.setAt
   setMouthV('doc_m',0,10,.8,0,5); setHEye('dEyeL',3,0); setHEye('dEyeR',3,0);};
 '''
 out=head+'\n'+clinic+'\n'+viseme+'\n'+art+'\n</script></body></html>\n'
-open('brand.html','w').write(out); print('ok',len(out))
+open('mira.html','w').write(out); print('ok',len(out))
