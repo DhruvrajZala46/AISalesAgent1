@@ -28,7 +28,7 @@ let S1=`<g id="s1"><g id="cam1"><g id="wStomach">${IMG('plate_abdomen.jpg')}${ac
  ${labelBox('lbSto','STOMACH',560,300,24)}${labelBox('lbAb','ANTIBIOTIC',540,900,22)}
 </g>`;
 // ---------- SCENE 2: the skin (all code) ----------
-let S2=`<g id="s2"><g id="cam2"><g id="wSkin">${skinPlate()}
+let S2=`<g id="s2"><g id="cam2"><g id="wSkin">${tissueSVG()}
   ${bactSVG('cl1','#b7ee84','#6fb846')}${bactSVG('cl2','#b7ee84','#6fb846')}
   ${guardSVG('gd')}${wbcSVG('wb')}${bactSVG('bc')}<g id="shield" opacity="0"><ellipse rx="150" ry="112" fill="#9be86a" opacity=".25" stroke="#5fae3a" stroke-width="6"/><path d="M-90,-60 C-50,-96 40,-98 80,-70" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" opacity=".7"/></g>
   ${abSVG('ab')}${abSVG('ab2')}<g id="drops"></g><g id="dust"></g><g id="stars"></g></g></g>
@@ -72,7 +72,6 @@ function renderStomach(T,second){
   $('steam1').innerHTML=st;
 }
 function renderSkin(T){
-  skinAnim(T);
   const stinger=T>=T_STING, sk2=T>=T_SKIN2;
   // the bacterium: slips down through the cut, argues, shoves, fights, multiplies; shield later
   const bTalk=speak('bacteria',T);
@@ -117,7 +116,7 @@ function renderSkin(T){
   if(shK>0) $('shield').setAttribute('transform',`translate(330,770) scale(${(1.0*shK).toFixed(3)})`);
   // stinger: a bigger antibiotic with a gold helmet slides in
   const a2=stinger; show('ab2',a2?1:0); if(a2){const k=eob(P(T,E.big,E.big+.8));setAb('ab2',lerp(900,560,k),690,1.3,{T,look:-1,mood:.6,poke:0});}
-  let dr='';for(let i=0;i<3;i++){const u=((T*.4)+i/3)%1, x=lerp(i===1?400:306,352,u), y=lerp(130,470,u);dr+=`<path d="M${x.toFixed(1)},${y.toFixed(1)} c7,9 9,17 0,21 c-9,-4 -7,-12 0,-21z" fill="#e0303a" stroke="${OL}" stroke-width="2.5" opacity="${Math.sin(u*Math.PI).toFixed(2)}"/>`;}$('drops').innerHTML=dr;
+  let dr='';for(let i=0;i<3;i++){const u=((T*.45)+i/3)%1;dr+=`<path d="M${(352+i*4).toFixed(0)},${(430+u*300).toFixed(1)} c7,9 9,17 0,21 c-9,-4 -7,-12 0,-21z" fill="#c4232c" stroke="${OL}" stroke-width="2.5" opacity="${Math.sin(u*Math.PI).toFixed(2)}"/>`;}$('drops').innerHTML=dr;
   // labels
   popLabel('lbSkin',T,T_SKIN+.2,T_SKIN+2.4,120,90); popLabel('lbCut',T,T_SKIN+.4,T_SKIN+2.4,470,330);
   popLabel('lbBac',T,ST['10_bacteria']-.1,ST['10_bacteria']+2.2,560,600); popLabel('lbWbc',T,E.wbc+.5,E.wbc+2.8,520,560);
