@@ -1,0 +1,6 @@
+takes/dl*.tsv
+render.log
+*.log
+snaps/
+render.time
+takes/*.mp3

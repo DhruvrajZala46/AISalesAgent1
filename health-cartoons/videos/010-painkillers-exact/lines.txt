@@ -1,0 +1,36 @@
+guard|Whoa, that's a huge cut!
+guard|I better call for help.
+guard|Hello, Brain.
+guard|Listen up.
+guard|We've got a serious cut section down here.
+guard|Blood is already gushing out.
+guard|I need you to send blood platelets and painkillers to come fix this ASAP.
+brain|Alright, the nerve's already told me.
+brain|Help is on the way.
+stomach|Huh? What kind of medicine is this?
+pill|We're painkillers!
+stomach|Oh, so you can talk?
+pill|Yeah, who doesn't?
+stomach|Besides, I'm not even feeling pain.
+stomach|Who assigned you to come here?
+pill|You are actually hilarious.
+pill|You really don't know what's going on in your own body.
+pill2|The more we talk, the more the host feels pain.
+pill2|Bro, stir it up.
+pill|Bro, how do we know which way the pain is?
+pill2|There's only one way to find out.
+pill2|We split up.
+pill2|You go east, I'll go north.
+pill2|Aha!
+pill|So you're the ones causing the pain.
+prost|Hey, I'm just doing my job.
+pill2|Well, we're here to do ours.
+patient|Doc, how fast will this painkiller work?
+patient|My foot hurts so bad.
+doctor|Painkillers don't heal the wound.
+doctor|They simply block prostaglandins.
+doctor|Those are the chemicals that send pain signals to your brain.
+doctor|So the pain feels like it's gone.
+doctor|Even though the medicine never actually searched for the injury,
+doctor|it just turned the signal down.
+patient|Oh, that makes sense.

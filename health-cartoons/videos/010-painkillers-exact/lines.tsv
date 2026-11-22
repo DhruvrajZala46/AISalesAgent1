@@ -1,0 +1,36 @@
+01	guard	3.60	Whoa, that's a huge cut!
+02	guard	5.88	I better call for help.
+03	guard	7.38	Hello, Brain.
+04	guard	8.40	Listen up.
+05	guard	9.32	We've got a serious cut section down here.
+06	guard	12.18	Blood is already gushing out.
+07	guard	14.10	I need you to send blood platelets and painkillers to come fix this ASAP.
+08	brain	18.44	Alright, the nerve's already told me.
+09	brain	20.26	Help is on the way.
+10	stomach	22.18	Huh? What kind of medicine is this?
+11	pill	25.10	We're painkillers!
+12	stomach	26.06	Oh, so you can talk?
+13	pill	26.90	Yeah, who doesn't?
+14	stomach	27.64	Besides, I'm not even feeling pain.
+15	stomach	29.72	Who assigned you to come here?
+16	pill	30.88	You are actually hilarious.
+17	pill	32.52	You really don't know what's going on in your own body.
+18	pill2	34.92	The more we talk, the more the host feels pain.
+19	pill2	37.50	Bro, stir it up.
+20	pill	42.04	Bro, how do we know which way the pain is?
+21	pill2	44.04	There's only one way to find out.
+22	pill2	45.74	We split up.
+23	pill2	46.68	You go east, I'll go north.
+24	pill2	51.80	Aha!
+25	pill	52.56	So you're the ones causing the pain.
+26	prost	54.20	Hey, I'm just doing my job.
+27	pill2	55.38	Well, we're here to do ours.
+28	patient	58.50	Doc, how fast will this painkiller work?
+29	patient	61.72	My foot hurts so bad.
+30	doctor	63.18	Painkillers don't heal the wound.
+31	doctor	65.54	They simply block prostaglandins.
+32	doctor	67.80	Those are the chemicals that send pain signals to your brain.
+33	doctor	71.38	So the pain feels like it's gone.
+34	doctor	73.42	Even though the medicine never actually searched for the injury,
+35	doctor	76.70	it just turned the signal down.
+36	patient	78.74	Oh, that makes sense.

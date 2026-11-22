@@ -1,0 +1,326 @@
+{
+ "01_guard": {
+  "take": "a",
+  "f0": 240,
+  "shift_st": -3.16,
+  "tempo": 1.212,
+  "dur": 1.98,
+  "slot": 2.22,
+  "start": 3.6
+ },
+ "02_guard": {
+  "take": "b",
+  "f0": 240,
+  "shift_st": -3.16,
+  "tempo": 1.0,
+  "dur": 1.24,
+  "slot": 1.44,
+  "start": 5.88
+ },
+ "03_guard": {
+  "take": "b",
+  "f0": 240,
+  "shift_st": -3.16,
+  "tempo": 1.212,
+  "dur": 0.86,
+  "slot": 0.96,
+  "start": 7.38
+ },
+ "04_guard": {
+  "take": "b",
+  "f0": 240,
+  "shift_st": -3.16,
+  "tempo": 1.0,
+  "dur": 0.59,
+  "slot": 0.86,
+  "start": 8.4
+ },
+ "05_guard": {
+  "take": "b",
+  "f0": 240,
+  "shift_st": -3.16,
+  "tempo": 1.0,
+  "dur": 2.15,
+  "slot": 2.8,
+  "start": 9.32
+ },
+ "06_guard": {
+  "take": "b",
+  "f0": 240,
+  "shift_st": -3.16,
+  "tempo": 1.095,
+  "dur": 1.66,
+  "slot": 1.86,
+  "start": 12.18
+ },
+ "07_guard": {
+  "take": "a",
+  "f0": 240,
+  "shift_st": -3.16,
+  "tempo": 1.176,
+  "dur": 3.82,
+  "slot": 4.28,
+  "start": 14.1
+ },
+ "08_brain": {
+  "take": "b",
+  "f0": 172,
+  "shift_st": 5.66,
+  "tempo": 1.38,
+  "dur": 1.68,
+  "slot": 1.76,
+  "start": 18.44
+ },
+ "09_brain": {
+  "take": "b",
+  "f0": 172,
+  "shift_st": 5.66,
+  "tempo": 1.0,
+  "dur": 1.21,
+  "slot": 1.86,
+  "start": 20.26
+ },
+ "10_stomach": {
+  "take": "a",
+  "f0": 155,
+  "shift_st": 7.0,
+  "tempo": 1.006,
+  "dur": 2.55,
+  "slot": 2.86,
+  "start": 22.18
+ },
+ "11_pill": {
+  "take": "b",
+  "f0": 248,
+  "shift_st": 6.0,
+  "tempo": 1.38,
+  "dur": 0.96,
+  "slot": 0.9,
+  "start": 25.1
+ },
+ "12_stomach": {
+  "take": "a",
+  "f0": 155,
+  "shift_st": 7.0,
+  "tempo": 1.38,
+  "dur": 1.39,
+  "slot": 0.78,
+  "start": 26.06
+ },
+ "13_pill": {
+  "take": "b",
+  "f0": 248,
+  "shift_st": 6.0,
+  "tempo": 1.38,
+  "dur": 1.25,
+  "slot": 0.68,
+  "start": 26.9
+ },
+ "14_stomach": {
+  "take": "b",
+  "f0": 155,
+  "shift_st": 7.0,
+  "tempo": 1.38,
+  "dur": 1.86,
+  "slot": 2.02,
+  "start": 27.64
+ },
+ "15_stomach": {
+  "take": "a",
+  "f0": 155,
+  "shift_st": 7.0,
+  "tempo": 1.38,
+  "dur": 1.4,
+  "slot": 1.1,
+  "start": 29.72
+ },
+ "16_pill": {
+  "take": "b",
+  "f0": 248,
+  "shift_st": 6.0,
+  "tempo": 1.38,
+  "dur": 1.99,
+  "slot": 1.58,
+  "start": 30.88
+ },
+ "17_pill": {
+  "take": "b",
+  "f0": 248,
+  "shift_st": 6.0,
+  "tempo": 1.38,
+  "dur": 2.21,
+  "slot": 2.34,
+  "start": 32.52
+ },
+ "18_pill2": {
+  "take": "b",
+  "f0": 133,
+  "shift_st": 5.72,
+  "tempo": 1.38,
+  "dur": 2.5,
+  "slot": 2.52,
+  "start": 34.92
+ },
+ "19_pill2": {
+  "take": "b",
+  "f0": 133,
+  "shift_st": 5.72,
+  "tempo": 1.0,
+  "dur": 1.58,
+  "slot": 4.48,
+  "start": 37.5
+ },
+ "20_pill": {
+  "take": "b",
+  "f0": 248,
+  "shift_st": 6.0,
+  "tempo": 1.38,
+  "dur": 2.01,
+  "slot": 1.94,
+  "start": 42.04
+ },
+ "21_pill2": {
+  "take": "a",
+  "f0": 133,
+  "shift_st": 5.72,
+  "tempo": 1.31,
+  "dur": 1.46,
+  "slot": 1.64,
+  "start": 44.04
+ },
+ "22_pill2": {
+  "take": "b",
+  "f0": 133,
+  "shift_st": 5.72,
+  "tempo": 1.163,
+  "dur": 0.79,
+  "slot": 0.88,
+  "start": 45.74
+ },
+ "23_pill2": {
+  "take": "b",
+  "f0": 133,
+  "shift_st": 5.72,
+  "tempo": 1.0,
+  "dur": 2.19,
+  "slot": 5.06,
+  "start": 46.68
+ },
+ "24_pill2": {
+  "take": "a",
+  "f0": 133,
+  "shift_st": 5.72,
+  "tempo": 1.38,
+  "dur": 0.7,
+  "slot": 0.7,
+  "start": 51.8
+ },
+ "25_pill": {
+  "take": "a",
+  "f0": 248,
+  "shift_st": 6.0,
+  "tempo": 1.38,
+  "dur": 1.56,
+  "slot": 1.58,
+  "start": 52.56
+ },
+ "26_prost": {
+  "take": "a",
+  "f0": 170,
+  "shift_st": 3.94,
+  "tempo": 1.38,
+  "dur": 1.59,
+  "slot": 1.12,
+  "start": 54.2
+ },
+ "27_pill2": {
+  "take": "a",
+  "f0": 133,
+  "shift_st": 5.72,
+  "tempo": 1.0,
+  "dur": 2.21,
+  "slot": 3.06,
+  "start": 55.38
+ },
+ "28_patient": {
+  "take": "a",
+  "f0": 187,
+  "shift_st": -5,
+  "tempo": 1.036,
+  "dur": 2.82,
+  "slot": 3.16,
+  "start": 58.5
+ },
+ "29_patient": {
+  "take": "b",
+  "f0": 187,
+  "shift_st": -5,
+  "tempo": 1.12,
+  "dur": 2.1,
+  "slot": 1.4,
+  "start": 61.72
+ },
+ "30_doctor": {
+  "take": "b",
+  "f0": 141,
+  "shift_st": -2.75,
+  "tempo": 1.108,
+  "dur": 2.05,
+  "slot": 2.3,
+  "start": 63.18
+ },
+ "31_doctor": {
+  "take": "a",
+  "f0": 141,
+  "shift_st": -2.75,
+  "tempo": 1.12,
+  "dur": 2.02,
+  "slot": 2.2,
+  "start": 65.54
+ },
+ "32_doctor": {
+  "take": "a",
+  "f0": 141,
+  "shift_st": -2.75,
+  "tempo": 1.12,
+  "dur": 3.17,
+  "slot": 3.52,
+  "start": 67.8
+ },
+ "33_doctor": {
+  "take": "b",
+  "f0": 141,
+  "shift_st": -2.75,
+  "tempo": 1.12,
+  "dur": 2.13,
+  "slot": 1.98,
+  "start": 71.38
+ },
+ "34_doctor": {
+  "take": "a",
+  "f0": 141,
+  "shift_st": -2.75,
+  "tempo": 1.12,
+  "dur": 3.27,
+  "slot": 3.22,
+  "start": 73.42
+ },
+ "35_doctor": {
+  "take": "a",
+  "f0": 141,
+  "shift_st": -2.75,
+  "tempo": 1.104,
+  "dur": 1.77,
+  "slot": 1.98,
+  "start": 76.7
+ },
+ "36_patient": {
+  "take": "b",
+  "f0": 187,
+  "shift_st": -5,
+  "tempo": 1.12,
+  "dur": 1.56,
+  "slot": 1.6,
+  "start": 78.74
+ }
+}
