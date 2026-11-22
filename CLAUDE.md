@@ -22,8 +22,9 @@ copyright strikes). Start every new video by copying the 004 folder.
 The user writes in Hinglish; reply in simple Hinglish. Be honest about quality (measured, never "99%" claims).
 **User rule (22 Nov 2026): NO Meta image generation any more** (keys deleted, no paid billing). `tools/meta_art.py` and
 `tools/meta_image.py` are disabled on purpose; never re-enable or work around them, and never use another paid image API without
-the user's explicit OK. New videos reuse the existing art library (003-006 sprites, plates and mouth variants; backup zip
-`health-cartoons/art-library-backup.zip`, git-ignored) plus code-drawn effects. That art cannot be re-created any more, so never delete it.
+the user's explicit OK. New videos are drawn entirely in code in the style of 001 / 003 v1, the user's references (template:
+`videos/007-antibiotic-resistance/assemble_v2.py` + `world_v2.js`); never mix AI sprites with code characters. The AI art library
+(003-006 sprites, plates and mouth variants; backup zip `health-cartoons/art-library-backup.zip`, git-ignored) stays. That art cannot be re-created any more, so never delete it.
 Never commit media, keys or cookies; `health-cartoons/tools/fetch_assets.sh` and each `script.md` let you re-create the audio.
 
 ## B. The Classy Elegance - YouTube videos

@@ -1,9 +1,20 @@
 # 007 - What Actually Causes Antibiotic Resistance?
 
-Status (22 Nov 2026): **built** on the user's direct order ("generate kr ke hi de"); no Meta image generation (user rule, 22 Nov 2026); waiting for the user's verdict.
+Status (22 Nov 2026): **v2 built, waiting for the user's verdict.** v1 mixed AI-art sprites from the library (stomach, clinic) with
+thick-outlined code characters. The user answered with the reference files 003 v3, then 001 (ear, cotton bud) and 003 v1 (food out the nose,
+the fully code-drawn version): "i want video like this reference video". So **v2 is drawn entirely in code, in the 001 / 003-v1 style**:
+- clean anatomy and thin INK lines;
+- airbrushed inner shading (`shaded()`), muted colours, cream backgrounds;
+- the organs themselves have the faces;
+- 001's own code clinic (the same doctor and patient).
 
-**Final QA (`what-actually-causes-antibiotic-resistance.mp4`):** 94.1 s, final-mix whisper 97.7% (misses: "cozy cut" heard as "cove of your
-kind" - the caption shows the right words; "uh-oh" dropped), -11.2 LUFS, true peak -1.3 dB, frozen 0.2%, longest still 0.6 s, mean motion 4.5.
+No image model, no AI art. Script, voices and audio are unchanged from v1.
+
+**Final QA v2 (`what-actually-causes-antibiotic-resistance.mp4`):**
+- 94.0 s.
+- Final-mix whisper 97.7%. Misses: "cozy cut" heard as "cove of your kind" (the caption shows the right words), and "uh-oh" dropped.
+- -11.2 LUFS, true peak -1.3 dB.
+- Motion 2.82, frozen 0.5 s longest, frozen frames 1.8%. Same tool on the references: 001 = 2.52 / 15.3%, 003 v1 = 3.16 / 1.7%.
 
 **Proven video we remake (user rule: only proven 10M+ videos):** Dr. Healthcare "What Actually Causes Antibiotic Resistance?"
 **17M views** (`W08YsWO93qQ`, 24x its median). The reference file was already downloaded on 20 Nov (`scratchpad/yt/vids`); studied at 1 fps
@@ -30,11 +41,19 @@ Resistance" / "Be Antibiotics Aware"; WHO "Antimicrobial resistance" fact sheet.
 ## Our lines (`lines.txt`): every beat kept, our own words
 26 lines, 215 words (reference 271), doctor 45 words (reference 48). Longest cartoon line split as in the reference's pacing.
 
-## Art (no image model)
-Library: 004 plate_abdomen + stomach poses, 006 small-intestine buddy, 004 hospital plate + patient in bed + doctor poses.
-Code (`chars.js`): skin cross-section with a cut, the guard cell (cap, badge, mustache, STOP sign, phone), the bacterium (and its
-clones), the white blood cell, the antibiotic capsule soldier, capsules, dust cloud, shield glow, bandage. Same outline colour and
-thickness as the AI art, soft gradients and highlights, googly eyes with lids and brows, AI-style maroon mouths with tongues.
+## Art v2: all code, the 001 / 003-v1 style
+- **Stomach** (`world_v2.js`): the stomach itself has the face (eyes, brows, visemes, white rubber-hose arms like 003 v1's brain).
+  - It is cut open on the right to show the juice, and the capsules slide down the open food pipe.
+  - Behind it: the liver, the diaphragm, and the lung bases. Below it: the small intestine as one winding tube, plus the coiled
+    small-intestine buddy with a face.
+- **Skin**: a clean cross-section like 001's ear canal.
+  - Layers: skin layer, dermis, blood vessel with flowing cells, two hair follicles, fat cells, and a V-shaped cut.
+  - The `chars.js` characters (guard, bacterium, white blood cell, antibiotic soldier) are restyled to the thin INK line and muted colours.
+  - One locked wide shot (z 1.1), only a slow drift plus a shake on impacts.
+- **Clinic**: 001's code clinic (doctor + patient, room, clock), as 003 v1 used it.
+  - Poster: germs under a magnifier.
+  - The patient holds up his bandaged hand while he asks.
+  - Push-in on the question, punch-in at "antibiotic resistance", thought-bubble replays cut on "misused" and "adapt", and a tip card.
 
 ## Measured against the reference
 | | This 17M video | Ours |
@@ -60,7 +79,8 @@ silent beats (`GAP`) and the verified Mixkit SFX (PLAYBOOK section 3).
 006 small-intestine buddy, 004 plate_hospital, patient in bed, doctor base/explain/point). Everything in the skin scene is code: `chars.js`
 (skin cross-section with a cut, blood vessel, blood drops, the guard cell, the bacterium + clones, the white blood cell, the antibiotic capsule
 soldier with spear and helmet, shield glow, dust cloud, capsules, bandage).
-Build: `python3 build_audio.py && python3 assemble.py && node ../../tools/render.js && LIM=0.72 bash ../../tools/mix.sh video.mp4 final.mp4`.
+Build v2: `python3 build_audio.py && python3 assemble_v2.py && node ../../tools/render.js && LIM=0.72 bash ../../tools/mix.sh video.mp4 final.mp4`
+(v1 with library sprites: `assemble.py` + `parts_v7.js`, kept as a record).
 
 ## Upload block
 **Title:** What Actually Causes Antibiotic Resistance? 🦠💊  (the proven 17M wording, word for word)

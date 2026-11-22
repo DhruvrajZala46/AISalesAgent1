@@ -1,8 +1,12 @@
 # Health-cartoon Shorts: the standard (read before every video)
 
 **USER RULE, 22 Nov 2026: no Meta image generation** (keys deleted, no billing). The Meta tools are disabled. Build every new
-video from the existing art library (see `art/meta.json` in videos 003-006) plus code-drawn effects, and ask the user before using any
-other image source that costs money.
+video in code, in the style below. The AI art library (`art/meta.json` in videos 003-006) is kept, never deleted. Ask the user before
+using any other image source that costs money.
+
+**Style without AI art (the user's references, 22 Nov 2026): 001 and 003 v1.** Build every scene in code in that one style
+(template: `videos/007-antibiotic-resistance/assemble_v2.py` + `world_v2.js`: the 001 engine, organs with faces, the 001 code clinic).
+Never mix library AI sprites with code characters in one video.
 
 **USER RULE, 20 Nov 2026 (overrides older topic advice): every next video is a remake of ONE proven video that has 10M+ views in this
 exact format** (queue: `research/NEXT-10.md`). No guessed ideas. Study that actual video shot by shot and keep its hook, story beats,
