@@ -85,9 +85,9 @@ Food up the nose, constipation, sleep after eating, the empty stomach before sur
 | | Dr. Healthcare | Ours |
 |---|---|---|
 | Name | Dr. Healthcare (@Dr_Healthcare1) | **Dr. Mira Explains** (@DrMiraExplains). Backups: "Body Talk with Dr. Mira", "Dr. Mira Health". Check the handle is free. |
-| Avatar | the cartoon doctor from its own clinic scenes (white hair, green mask) | **Dr. Mira**: our female doctor from the clinic scenes (glasses, white coat, teal scrubs). `brand/avatar.png` |
+| Avatar | the cartoon doctor from its own clinic scenes (white hair, green mask) | **Dr. Mira**: our female doctor from the clinic scenes (glasses, white coat, teal scrubs). `brand/dr-mira/avatar.png` |
 | Colours | sky blue | **teal #14A3A0 / deep teal #0B6E6B / mint #E8F7F5, with a coral accent #FF7A66.** Teal reads as medical and calm, and it is not their blue. |
-| Banner | "Hi, I'm Doc!" | **"HI, I'M DR. MIRA!"** + "Your body, explained in 60 funny seconds." `brand/banner.png` (text inside the 1546x423 safe area) |
+| Banner | "Hi, I'm Doc!" | **"HI, I'M DR. MIRA!"** + "Your body, explained in 60 funny seconds." `brand/dr-mira/banner.png` (text inside the 1546x423 safe area) |
 | Description | "Your daily dose of health explained in simple, fun, and easy-to-understand 2D animated shorts... not made for children" | "Your daily dose of health, explained in simple, funny 2D animated shorts. Talking organs, real science, one simple rule at the end. For general education, not medical advice. This channel is not made for children." Set **Not made for kids**. |
 | Clinic | a plain blue-white room, the doctor on the left | the same layout (doctor left, patient right, vent, door), in our mint-and-teal colours |
 | Watermark | "@Dr_healthcare", faint, top middle | "@DrMiraExplains", faint, same spot (stops re-uploaders) |
