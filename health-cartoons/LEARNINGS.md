@@ -15,6 +15,7 @@
 | 11 | 004 "Why you can't eat before surgery" (stomach + burger + lungs, 32M-proven topic), same pipeline as 003 v3 | (waiting for the user's verdict) | Measured: 71.7 s, 2.73 words/s, final-mix whisper 98.1%, -11.1 LUFS, true peak -1.0 dB, frozen 0.3%, longest still 0.2 s. |
 | 12 | 005 "Why eating without water makes you constipated": first remake under the proven-10M rule (27M reference, studied shot by shot; same beats, the same two silent gags, our art and words) | (waiting for the user's verdict) | Measured: 76.3 s, clinic 61%, final-mix whisper 96.6% (98% ignoring spellings like "Okaaay"), -11.1 LUFS, true peak -1.2 dB, frozen 0.4%, longest still 0.2 s. |
 | 13 | 006 "Why you shouldn't sleep right after eating": remake of the proven 26M video (no clinic, like the reference; studied at 2 fps + whisper) | (waiting for the user's verdict) | Final: 68.5 s, whisper 97.0%, -11.6 LUFS, true peak -1.2 dB, frozen 0.0%, longest still 0.4 s. First render: the black "A FEW HOURS LATER" card was 1.6 s of still frames (frozen 2.8%), so it got twinkling stars, a swinging clock, floating Zs and a text pop. A card must move too. |
+| 14 | 007 "What actually causes antibiotic resistance?": remake of the proven 17M video, the first one with NO image generation (library sprites for stomach/buddy/clinic, every skin-scene character drawn in code) | (waiting for the user's verdict) | Final: 94.1 s, whisper 97.7%, -11.2 LUFS, true peak -1.3 dB, frozen 0.2%, longest still 0.6 s. First render: 20 s of skin-scene dialogue at motion ~0.8/s, so the camera now punches in on whoever talks and goes wide on the silent action beats (mean motion 3.7 -> 4.5). |
 
 Other user preferences:
 - **No Meta image generation any more (22 Nov 2026)**: the user deleted the keys and will not pay. Reuse the art library; ask before any paid image source.
@@ -39,6 +40,11 @@ Checks learned while building 004 (do them before the first full render):
 - **Even out line loudness before the mix** (`build_audio.py` pulls each line 80% of the way to -19 dB). 004's takes spanned 14 dB; the
   sleepy stomach line and the patient sat as loud as the music, and whisper on the final mix lost a whole line and heard "gag" as "gas"
   (92%). After levelling and moving two SFX off the key words: 98.1%.
+- **A dialogue scene with a fixed camera reads as static even when the mouths move** (007 skin scene: ~0.8 motion/s for 20 s). Give the
+  camera a target per line (punch in ~1.14x toward the speaker, wide 1.0x on silent action), averaged over the last 0.6 s so every frame is
+  still a pure function of T. Check the stinger/reveal frames: the punch-in must not push the reveal character out of frame.
+- **Whisper splits "Uh-oh" into "Uh" + "-oh"**: merge any word that starts with "-" into the previous caption word (`build_audio.py`).
+- **Code-drawn props must not cross a face**: 007's spear first ran across the antibiotic's eyes; hold weapons at waist height.
 - **When the AI closed-mouth edit moves the whole drawing** (006's yawning brain shifted ~10 px), do not patch from it: draw the closed
   mouth on the mouthless base at the open mouth's spot (`yawn_closed.py`). Check open/closed bounding boxes before compositing.
 - **Cut clinic thought-bubble replays on the doctor's own words** (relaxes the muscle -> the door; cough reflex -> the lungs straining;

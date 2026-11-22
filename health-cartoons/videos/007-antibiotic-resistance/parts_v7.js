@@ -149,6 +149,14 @@ function caption(T){let w='',ws=0;for(const L of D.lines)for(const x of L.words)
   if(!w){for(const L of D.lines)for(const x of L.words){if(T>=x[1]&&T<x[1]+.12){w=x[2];ws=x[0];}}}
   const c=$('cap'),big=KEY.test(w.replace(/[^A-Z'\-]/g,'')); c.textContent=w; c.style.fontSize=big?'56px':'44px'; c.style.fill=big?'#ffd21f':'#fff';
   const k=eo(P(T,ws,ws+.09)); c.setAttribute('transform',`translate(360,1110) scale(${lerp(1.2,1,k)}) translate(-360,-1110)`);}
+// skin-scene camera: punch in on whoever talks, go wide on the silent action beats; averaged over the last 0.6 s (deterministic per T)
+function camTarget(t){
+  const L=D.lines.find(l=>t>=l.t0-.15&&t<l.t0+l.dur+.25&&['guard','bacteria','wbc','antibiotic'].includes(l.who));
+  if(!L) return [360,1.0];
+  if(t>=T_STING) return [470,1.06];   // stinger: keep the big new antibiotic fully in frame
+  const x=L.who==='guard'?(t<E.radio?200:120):L.who==='bacteria'?(t>=T_STING?280:t>=T_SKIN2?330:t>=E.radio?370:510):L.who==='wbc'?600:590;
+  return [x,1.14];}
+function skinCam(T){let sx=0,sz=0,n=0;for(let i=0;i<=12;i++){const [x,z]=camTarget(T-.6+i*.05);sx+=x;sz+=z;n++;}return [sx/n,sz/n];}
 window.render=function(T){
   const sc=T<T_SKIN?1:T<T_ST2?2:T<T_SKIN2?1:T<T_CLIN?2:T<T_STING?3:2;
   ['s1','s2','s3'].forEach((id,i)=>$(id).setAttribute('display',sc===i+1?'inline':'none'));
@@ -159,7 +167,8 @@ window.render=function(T){
   if(sc===1){renderStomach(T); const c=1.05+.02*Math.sin(T*.3); $('cam1').setAttribute('transform',`translate(360,640) scale(${c}) translate(-366,-660)`);
     popLabel('lbSto',T,1.6,3.4,560,300); popLabel('lbAb',T,E.drop+.9,E.drop+3.0,540,900);}
   if(sc===2){renderSkin(T); const shake=(Math.sin(clamp(P(T,E.shove,E.shove+.3))*Math.PI)+Math.sin(clamp(P(T,E.bounce,E.bounce+.3))*Math.PI)+(T>=E.fight&&T<E.clones?.5:0))*Math.sin(T*70)*7;
-    const z=1.02+.03*Math.sin(T*.25); $('cam2').setAttribute('transform',`translate(${(360+shake).toFixed(1)},640) scale(${z.toFixed(4)}) translate(-360,-640)`);}
+    const [tx,tz]=skinCam(T); const z=tz+.02*Math.sin(T*.25), cx=clamp(360+(tx-360)*.6,360/z,720-360/z), cy=clamp(lerp(640,700,(tz-1)/.14),640/z,1280-640/z);
+    $('cam2').setAttribute('transform',`translate(${(360+shake).toFixed(1)},640) scale(${z.toFixed(4)}) translate(${(-cx).toFixed(1)},${(-cy).toFixed(1)})`);}
   if(sc===3) renderClinic(T);
   const ck=P(T,E.cta,E.cta+.35); show('cta',T>=E.cta?1:0); $('cta').setAttribute('transform',`translate(360,${250+Math.sin(T*3)*4}) rotate(${Math.sin(T*2.2)*2})`); $('cta_i').setAttribute('transform',`scale(${eob(ck)})`);
   show('indark',dark*.9);

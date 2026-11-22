@@ -1,6 +1,9 @@
 # 007 - What Actually Causes Antibiotic Resistance?
 
-Status (22 Nov 2026): **built on the user's direct order** ("generate kr ke hi de"); no Meta image generation (user rule, 22 Nov 2026).
+Status (22 Nov 2026): **built** on the user's direct order ("generate kr ke hi de"); no Meta image generation (user rule, 22 Nov 2026); waiting for the user's verdict.
+
+**Final QA (`what-actually-causes-antibiotic-resistance.mp4`):** 94.1 s, final-mix whisper 97.7% (misses: "cozy cut" heard as "cove of your
+kind" - the caption shows the right words; "uh-oh" dropped), -11.2 LUFS, true peak -1.3 dB, frozen 0.2%, longest still 0.6 s, mean motion 4.5.
 
 **Proven video we remake (user rule: only proven 10M+ videos):** Dr. Healthcare "What Actually Causes Antibiotic Resistance?"
 **17M views** (`W08YsWO93qQ`, 24x its median). The reference file was already downloaded on 20 Nov (`scratchpad/yt/vids`); studied at 1 fps

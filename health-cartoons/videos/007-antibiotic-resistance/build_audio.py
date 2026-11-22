@@ -36,6 +36,7 @@ for k in ORDER:
     words=[]
     for s,e,w in W[k]:
         u=re.sub(r"[^A-Za-z'\-]","",w).upper(); u=FIX.get(u,u)
+        if u.startswith('-') and words: words[-1][1]=round(t0+e,3); words[-1][2]+=u; continue   # "Uh" + "-oh" -> one caption "UH-OH"
         if u: words.append([round(t0+s,3),round(t0+e,3),u])
     lines.append({'id':k,'who':k.split('_')[1],'t0':t0,'dur':round(len(a)/SR,3),'env':env,'words':words})
 def wt(k,word,n=0):

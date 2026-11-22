@@ -107,8 +107,8 @@ function setAb(id,x,y,s,{talk=0,T=0,rot=0,look=0,mood=0,poke=0,shock=0}={}){
   const bl=blinkK(T,2.2);['_eL','_eR'].forEach(e=>setGEye(id+e,22,{dx:look*40,dy:2,blink:bl}));
   $(id+'_bL').setAttribute('d',`M-48,${-62+shock*-8} Q-30,${-74+(1-shock)*6} -10,${-58+(1-shock)*8}`);$(id+'_bR').setAttribute('d',`M10,${-58+(1-shock)*8} Q30,${-74+(1-shock)*6} 48,${-62+shock*-8}`);
   setGMouth(id+'_m',talk,24,mood);
-  setArm(id+'_aL',-70,10,-110,40,-10,20,.9);setArm(id+'_aR',70,0,110+poke*30,-10,10,-60,.9);
-  $(id+'_spear').setAttribute('transform',`translate(${118+poke*30},-10) rotate(${-70+poke*-20})`);
+  setArm(id+'_aL',-70,10,-110,40,-10,20,.9);setArm(id+'_aR',70,10,112-poke*60,44,10,-60,.9);
+  $(id+'_spear').setAttribute('transform',`translate(${(118-poke*60).toFixed(1)},44) rotate(-92)`);
 }
 // ---------- the tissue background (skin on top, the cut, dermis) ----------
 function tissueSVG(){return `<g id="tissue"><rect width="720" height="1280" fill="${grad('tg0','#f6b3a8','#d97f78',false)}"/>
