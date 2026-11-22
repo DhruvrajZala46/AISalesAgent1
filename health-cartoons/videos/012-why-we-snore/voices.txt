@@ -1,0 +1,8 @@
+flow nPeSrxC7WIHh4KzHo1D9 (eleven_v4 voices, eleven_text_to_sound_v2 SFX), 2 takes per line
+puff (air from the mouth, small)=Goofy Cartoon Kid BRruTxiLM2nszrcCIpz1
+tongue (big, tired, grumpy)=Marshal - Grumpy Sourpuss LysucvtFmzi1NVAE0rKp
+puff2 (air from the nose, bossy)=Quibble eWEzadEUnDSDRle0PsQx
+palate (soft palate, sleepy, raspy)=Grimblewood Thornwhisker ouL9IsyrSnUkCmfnD02u
+partner (off screen)=Laura FGY2WhTYpPnrIDTdsKH5
+patient=Chill N5m2ReaeSIcn4Ssu8rpQ
+doctor (Dr. Mira)=Hope tnSpp4vdxKPjI9w0GnoV

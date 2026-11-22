@@ -1,0 +1,121 @@
+{
+ "01_puff": {
+  "take": "b",
+  "f0": 234,
+  "shift_st": 0.0,
+  "tempo": 1.12,
+  "dur": 2.56
+ },
+ "02_tongue": {
+  "take": "a",
+  "f0": 121,
+  "shift_st": -1.0,
+  "tempo": 1.22,
+  "dur": 4.23
+ },
+ "03_puff": {
+  "take": "a",
+  "f0": 164,
+  "shift_st": 4.0,
+  "tempo": 1.12,
+  "dur": 3.01
+ },
+ "04_tongue": {
+  "take": "b",
+  "f0": 130,
+  "shift_st": -1.0,
+  "tempo": 1.22,
+  "dur": 5.44
+ },
+ "05_puff2": {
+  "take": "a",
+  "f0": 226,
+  "shift_st": 3.0,
+  "tempo": 1.14,
+  "dur": 3.46
+ },
+ "06_puff": {
+  "take": "b",
+  "f0": 256,
+  "shift_st": 0.0,
+  "tempo": 1.12,
+  "dur": 3.44
+ },
+ "07_tongue": {
+  "take": "a",
+  "f0": 90,
+  "shift_st": -1.0,
+  "tempo": 1.22,
+  "dur": 1.67
+ },
+ "08_palate": {
+  "take": "b",
+  "f0": 179,
+  "shift_st": 0.0,
+  "tempo": 1.12,
+  "dur": 5.42
+ },
+ "09_puff2": {
+  "take": "b",
+  "f0": 243,
+  "shift_st": 3.0,
+  "tempo": 1.14,
+  "dur": 4.02
+ },
+ "10_tongue": {
+  "take": "a",
+  "f0": 95,
+  "shift_st": -1.0,
+  "tempo": 1.22,
+  "dur": 2.83
+ },
+ "11_palate": {
+  "take": "b",
+  "f0": 227,
+  "shift_st": 0.0,
+  "tempo": 1.12,
+  "dur": 3.22
+ },
+ "12_tongue": {
+  "take": "a",
+  "f0": 109,
+  "shift_st": -1.0,
+  "tempo": 1.22,
+  "dur": 4.08
+ },
+ "13_partner": {
+  "take": "a",
+  "f0": 297,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 3.56
+ },
+ "14_patient": {
+  "take": "b",
+  "f0": 129,
+  "shift_st": 0.0,
+  "tempo": 1.04,
+  "dur": 2.51
+ },
+ "15_doctor": {
+  "take": "b",
+  "f0": 221,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 4.76
+ },
+ "16_doctor": {
+  "take": "b",
+  "f0": 214,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 3.39
+ },
+ "17_doctor": {
+  "take": "b",
+  "f0": 237,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 4.39
+ }
+}

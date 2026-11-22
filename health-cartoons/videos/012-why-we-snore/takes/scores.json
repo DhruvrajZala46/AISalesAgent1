@@ -1,0 +1,206 @@
+{
+ "takes/01_puffa.mp3": {
+  "wer": 0.0,
+  "range": 13.6,
+  "dur": 3.2,
+  "txt": "Hey, can you move up a bit? I need to get through."
+ },
+ "takes/01_puffb.mp3": {
+  "wer": 0.0,
+  "range": 20.1,
+  "dur": 3.12,
+  "txt": "Hey, can you move up a bit? I need to get through."
+ },
+ "takes/02_tonguea.mp3": {
+  "wer": 0.0,
+  "range": 20.0,
+  "dur": 5.52,
+  "txt": "Can I get a moment of peace? I've been talking and chewing all day."
+ },
+ "takes/02_tongueb.mp3": {
+  "wer": 0.0,
+  "range": 19.7,
+  "dur": 5.84,
+  "txt": "Can I get a moment of peace? I've been talking and chewing all day."
+ },
+ "takes/03_puffa.mp3": {
+  "wer": 0.0,
+  "range": 17.3,
+  "dur": 3.6,
+  "txt": "Sorry to bother you, but I really have to get through."
+ },
+ "takes/03_puffb.mp3": {
+  "wer": 0.0,
+  "range": 16.8,
+  "dur": 3.52,
+  "txt": "Sorry to bother you, but I really have to get through."
+ },
+ "takes/04_tonguea.mp3": {
+  "wer": 0.0,
+  "range": 22.8,
+  "dur": 7.04,
+  "txt": "No! Go use the nose! I've told you a hundred times! Nobody's passing! I'm resting!"
+ },
+ "takes/04_tongueb.mp3": {
+  "wer": 0.0,
+  "range": 28.6,
+  "dur": 6.88,
+  "txt": "No! Go use the nose! I've told you a hundred times! Nobody's passing! I'm resting!"
+ },
+ "takes/05_puff2a.mp3": {
+  "wer": 0.0,
+  "range": 22.3,
+  "dur": 4.08,
+  "txt": "What are you two arguing about? Just move and let us through!"
+ },
+ "takes/05_puff2b.mp3": {
+  "wer": 0.0,
+  "range": 21.9,
+  "dur": 4.0,
+  "txt": "What are you two arguing about? Just move and let us through!"
+ },
+ "takes/06_puffa.mp3": {
+  "wer": 0.0,
+  "range": 13.0,
+  "dur": 4.08,
+  "txt": "Bro, you're making it worse! Just let us pass already!"
+ },
+ "takes/06_puffb.mp3": {
+  "wer": 0.0,
+  "range": 15.1,
+  "dur": 4.08,
+  "txt": "Bro, you're making it worse! Just let us pass already!"
+ },
+ "takes/07_tonguea.mp3": {
+  "wer": 0.0,
+  "range": 18.7,
+  "dur": 2.32,
+  "txt": "Nope, not moving a muscle."
+ },
+ "takes/07_tongueb.mp3": {
+  "wer": 0.0,
+  "range": 29.2,
+  "dur": 2.32,
+  "txt": "Nope. Not moving a muscle."
+ },
+ "takes/08_palatea.mp3": {
+  "wer": 0.06,
+  "range": 26.9,
+  "dur": 6.56,
+  "txt": "What's all this yapping? Can't a pallet get some sleep around here? Mind your own business."
+ },
+ "takes/08_palateb.mp3": {
+  "wer": 0.06,
+  "range": 20.6,
+  "dur": 6.48,
+  "txt": "What's all this yapping? Can't a pallet get some sleep around here? Mind your own business!"
+ },
+ "takes/09_puff2a.mp3": {
+  "wer": 0.17,
+  "range": 20.2,
+  "dur": 4.72,
+  "txt": "Breathing is our business. If you two wanna sleep, scoot over."
+ },
+ "takes/09_puff2b.mp3": {
+  "wer": 0.17,
+  "range": 21.9,
+  "dur": 4.72,
+  "txt": "Breathing is our business. If you two wanna sleep, scoot over."
+ },
+ "takes/10_tonguea.mp3": {
+  "wer": 0.0,
+  "range": 13.0,
+  "dur": 3.76,
+  "txt": "Ugh. Then just squeeze through."
+ },
+ "takes/10_tongueb.mp3": {
+  "wer": 0.2,
+  "range": 14.6,
+  "dur": 3.6,
+  "txt": "Then just squeeze through."
+ },
+ "takes/11_palatea.mp3": {
+  "wer": 0.0,
+  "range": 36.3,
+  "dur": 3.76,
+  "txt": "Ow! Watch it! Hey! Stop shaking me!"
+ },
+ "takes/11_palateb.mp3": {
+  "wer": 0.0,
+  "range": 33.4,
+  "dur": 3.76,
+  "txt": "Ow! Watch it! Hey! Stop shaking me!"
+ },
+ "takes/12_tonguea.mp3": {
+  "wer": 0.0,
+  "range": 30.7,
+  "dur": 5.2,
+  "txt": "Ooh, nice vibration. That's actually kind of relaxing."
+ },
+ "takes/12_tongueb.mp3": {
+  "wer": 0.0,
+  "range": 29.8,
+  "dur": 5.36,
+  "txt": "Ooh, nice vibration. That's actually kind of relaxing."
+ },
+ "takes/13_partnera.mp3": {
+  "wer": 0.0,
+  "range": 17.8,
+  "dur": 3.92,
+  "txt": "Snoring every single night! So annoying!"
+ },
+ "takes/13_partnerb.mp3": {
+  "wer": 0.17,
+  "range": 19.7,
+  "dur": 4.08,
+  "txt": "S'moring every single night! So annoying!"
+ },
+ "takes/14_patienta.mp3": {
+  "wer": 0.0,
+  "range": 25.6,
+  "dur": 2.64,
+  "txt": "Doc, why do I snore every night?"
+ },
+ "takes/14_patientb.mp3": {
+  "wer": 0.0,
+  "range": 26.1,
+  "dur": 2.64,
+  "txt": "Doc, why do I snore every night?"
+ },
+ "takes/15_doctora.mp3": {
+  "wer": 0.0,
+  "range": 12.6,
+  "dur": 5.28,
+  "txt": "In sleep, your throat muscles relax so your tongue and soft palate fall back."
+ },
+ "takes/15_doctorb.mp3": {
+  "wer": 0.0,
+  "range": 13.3,
+  "dur": 5.2,
+  "txt": "In sleep, your throat muscles relax so your tongue and soft palate fall back."
+ },
+ "takes/16_doctora.mp3": {
+  "wer": 0.0,
+  "range": 12.0,
+  "dur": 3.92,
+  "txt": "Air squeezing past makes them vibrate. That's the snore."
+ },
+ "takes/16_doctorb.mp3": {
+  "wer": 0.0,
+  "range": 17.5,
+  "dur": 3.84,
+  "txt": "Air-squeezing past makes them vibrate. That's the snore."
+ },
+ "takes/17_doctora.mp3": {
+  "wer": 0.07,
+  "range": 15.6,
+  "dur": 4.72,
+  "txt": "sleep on your side, and if you gasp at night, get checked for sleep acne."
+ },
+ "takes/17_doctorb.mp3": {
+  "wer": 0.0,
+  "range": 15.8,
+  "dur": 4.8,
+  "txt": "Sleep on your side, and if you gasp at night, get checked for sleep apnea."
+ }
+}

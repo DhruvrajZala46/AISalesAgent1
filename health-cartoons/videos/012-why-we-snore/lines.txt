@@ -1,0 +1,17 @@
+puff|Hey, can you move up a bit? I need to get through.
+tongue|Can I get a moment of peace? I've been talking and chewing all day.
+puff|Sorry to bother you, but I really have to get through.
+tongue|No. Go use the nose. I've told you a hundred times. Nobody's passing. I'm resting.
+puff2|What are you two arguing about? Just move and let us through!
+puff|Bro, you're making it worse. Just let us pass already!
+tongue|Nope. Not moving a muscle.
+palate|What's all this yapping? Can't a palate get some sleep around here? Mind your own business.
+puff2|Breathing IS our business! If you two want to sleep, scoot over!
+tongue|Ugh. Then just squeeze through.
+palate|Ow! Watch it! Hey! Stop shaking me!
+tongue|Ooh... nice vibration. That's actually... kind of relaxing.
+partner|Snoring every single night. So annoying!
+patient|Doc, why do I snore every night?
+doctor|In sleep, your throat muscles relax, so your tongue and soft palate fall back.
+doctor|Air squeezing past makes them vibrate. That's the snore.
+doctor|Sleep on your side. And if you gasp at night, get checked for sleep apnea.
