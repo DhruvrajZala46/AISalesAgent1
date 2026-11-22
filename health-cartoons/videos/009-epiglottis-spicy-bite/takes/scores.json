@@ -1,0 +1,98 @@
+{
+ "takes/01_tracheaa.mp3": {
+  "wer": 0.14,
+  "range": 18.9,
+  "dur": 3.04,
+  "txt": "Yo, why are you always blocking me off?"
+ },
+ "takes/01_tracheab.mp3": {
+  "wer": 0.14,
+  "range": 21.6,
+  "dur": 3.2,
+  "txt": "Yo, why are you always blocking me off?"
+ },
+ "takes/02_epiglottisa.mp3": {
+  "wer": 0.13,
+  "range": 24.7,
+  "dur": 5.04,
+  "txt": "Because this lanes for breathing, not food. If that stuff hits you, it's game over."
+ },
+ "takes/02_epiglottisb.mp3": {
+  "wer": 0.13,
+  "range": 27.3,
+  "dur": 5.28,
+  "txt": "Cause this lanes for breathing, not food. If that stuff hits you, it's game over."
+ },
+ "takes/03_tracheaa.mp3": {
+  "wer": 0.0,
+  "range": 17.4,
+  "dur": 4.0,
+  "txt": "Man, just let me try a bite. One bite won't hurt."
+ },
+ "takes/03_tracheab.mp3": {
+  "wer": 0.0,
+  "range": 15.5,
+  "dur": 4.0,
+  "txt": "Man, just let me try a bite. One bite won't hurt."
+ },
+ "takes/04_epiglottisa.mp3": {
+  "wer": 0.0,
+  "range": 20.2,
+  "dur": 2.32,
+  "txt": "No way! Too dangerous!"
+ },
+ "takes/04_epiglottisb.mp3": {
+  "wer": 0.0,
+  "range": 20.9,
+  "dur": 2.32,
+  "txt": "No way. Too dangerous."
+ },
+ "takes/05_epiglottisa.mp3": {
+  "wer": 0.0,
+  "range": 23.8,
+  "dur": 2.16,
+  "txt": "Bro, what did I just say?"
+ },
+ "takes/05_epiglottisb.mp3": {
+  "wer": 0.0,
+  "range": 23.2,
+  "dur": 2.24,
+  "txt": "Bro, what did I just say?"
+ },
+ "takes/06_tracheaa.mp3": {
+  "wer": 0.0,
+  "range": 15.1,
+  "dur": 5.68,
+  "txt": "Whoa! Spicy! Chest on fire! Can't breathe!"
+ },
+ "takes/06_tracheab.mp3": {
+  "wer": 0.14,
+  "range": 13.2,
+  "dur": 5.52,
+  "txt": "Whoa spicy just on fire can't breathe"
+ },
+ "takes/07_epiglottisa.mp3": {
+  "wer": 0.0,
+  "range": 18.3,
+  "dur": 3.44,
+  "txt": "See? You're choking! Don't black out on me!"
+ },
+ "takes/07_epiglottisb.mp3": {
+  "wer": 0.0,
+  "range": 17.6,
+  "dur": 3.44,
+  "txt": "See? You're choking! Don't black out on me!"
+ },
+ "takes/08_mana.mp3": {
+  "wer": 0.75,
+  "range": 29.2,
+  "dur": 3.84,
+  "txt": "Cough, cough, cough. I can't breathe."
+ },
+ "takes/08_manb.mp3": {
+  "wer": 0.0,
+  "range": 33.2,
+  "dur": 4.8,
+  "txt": "Oh, I can't breathe."
+ }
+}
