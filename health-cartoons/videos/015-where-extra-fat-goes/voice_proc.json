@@ -1,0 +1,107 @@
+{
+ "01_liver": {
+  "take": "a",
+  "f0": 207,
+  "shift_st": 0.0,
+  "tempo": 1.1,
+  "dur": 10.37
+ },
+ "02_liver": {
+  "take": "a",
+  "f0": 111,
+  "shift_st": 0.0,
+  "tempo": 1.1,
+  "dur": 1.77
+ },
+ "03_ins": {
+  "take": "a",
+  "f0": 269,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.09
+ },
+ "04_ins": {
+  "take": "a",
+  "f0": 193,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.16
+ },
+ "05_ins": {
+  "take": "a",
+  "f0": 118,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 1.34
+ },
+ "06_ins": {
+  "take": "a",
+  "f0": 243,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 8.75
+ },
+ "07_ins2": {
+  "take": "a",
+  "f0": 169,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 1.08
+ },
+ "08_ins": {
+  "take": "a",
+  "f0": 284,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 4.14
+ },
+ "09_ins2": {
+  "take": "a",
+  "f0": 116,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 5.08
+ },
+ "10_ins": {
+  "take": "a",
+  "f0": 302,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 0.85
+ },
+ "11_ins2": {
+  "take": "a",
+  "f0": 187,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 1.62
+ },
+ "12_patient": {
+  "take": "a",
+  "f0": 221,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 1.89
+ },
+ "13_doctor": {
+  "take": "a",
+  "f0": 219,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 12.99
+ },
+ "14_patient": {
+  "take": "a",
+  "f0": 112,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 2.46
+ },
+ "15_doctor": {
+  "take": "a",
+  "f0": 251,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 7.15
+ }
+}

@@ -1,0 +1,182 @@
+{
+ "takes/01_livera.mp3": {
+  "wer": 0.03,
+  "range": 32.7,
+  "dur": 11.52,
+  "txt": "I work out every single day just to burn off all this fat and the guy upstairs keeps stuffing in more calories He has no idea how hard this is"
+ },
+ "takes/01_liverb.mp3": {
+  "wer": 0.03,
+  "range": 32.7,
+  "dur": 11.52,
+  "txt": "I work out every single day just to burn off all this fat and the guy upstairs keeps stuffing in more calories He has no idea how hard this is"
+ },
+ "takes/02_livera.mp3": {
+  "wer": 0.0,
+  "range": 15.7,
+  "dur": 2.4,
+  "txt": "I'm wiped out already."
+ },
+ "takes/02_liverb.mp3": {
+  "wer": 0.0,
+  "range": 15.7,
+  "dur": 2.4,
+  "txt": "I'm wiped out already."
+ },
+ "takes/03_insa.mp3": {
+  "wer": 0.0,
+  "range": 16.2,
+  "dur": 3.68,
+  "txt": "We're out of room! Where do I put all this fat?"
+ },
+ "takes/03_insb.mp3": {
+  "wer": 0.0,
+  "range": 16.2,
+  "dur": 3.68,
+  "txt": "We're out of room! Where do I put all this fat?"
+ },
+ "takes/04_insa.mp3": {
+  "wer": 0.0,
+  "range": 27.7,
+  "dur": 2.8,
+  "txt": "This storage is full."
+ },
+ "takes/04_insb.mp3": {
+  "wer": 0.0,
+  "range": 27.7,
+  "dur": 2.8,
+  "txt": "This storage is full."
+ },
+ "takes/05_insa.mp3": {
+  "wer": 0.0,
+  "range": 8.4,
+  "dur": 2.0,
+  "txt": "This one too."
+ },
+ "takes/05_insb.mp3": {
+  "wer": 0.0,
+  "range": 8.4,
+  "dur": 2.0,
+  "txt": "This one too."
+ },
+ "takes/06_insa.mp3": {
+  "wer": 0.0,
+  "range": 17.6,
+  "dur": 9.76,
+  "txt": "Ugh, it's no use! And the owner isn't helping one bit! If he only knew how much fat he's carrying, he'd take his health seriously."
+ },
+ "takes/06_insb.mp3": {
+  "wer": 0.0,
+  "range": 17.6,
+  "dur": 9.76,
+  "txt": "Ugh, it's no use! And the owner isn't helping one bit! If he only knew how much fat he's carrying, he'd take his health seriously."
+ },
+ "takes/07_ins2a.mp3": {
+  "wer": 0.0,
+  "range": 37.8,
+  "dur": 1.52,
+  "txt": "Yo, what's going on?"
+ },
+ "takes/07_ins2b.mp3": {
+  "wer": 0.0,
+  "range": 37.8,
+  "dur": 1.52,
+  "txt": "Yo, what's going on?"
+ },
+ "takes/08_insa.mp3": {
+  "wer": 0.0,
+  "range": 18.2,
+  "dur": 4.72,
+  "txt": "Every fat storage is full. I don't know where to dump this anymore."
+ },
+ "takes/08_insb.mp3": {
+  "wer": 0.0,
+  "range": 18.2,
+  "dur": 4.72,
+  "txt": "Every fat storage is full. I don't know where to dump this anymore."
+ },
+ "takes/09_ins2a.mp3": {
+  "wer": 0.0,
+  "range": 29.9,
+  "dur": 5.68,
+  "txt": "Whoa, you're right. Okay, let's dump it in the body fat, then he'll notice."
+ },
+ "takes/09_ins2b.mp3": {
+  "wer": 0.0,
+  "range": 29.9,
+  "dur": 5.68,
+  "txt": "Whoa, you're right. Okay, let's dump it in the body fat, then he'll notice."
+ },
+ "takes/10_insa.mp3": {
+  "wer": 0.0,
+  "range": 26.7,
+  "dur": 1.44,
+  "txt": "You sure?"
+ },
+ "takes/10_insb.mp3": {
+  "wer": 0.0,
+  "range": 26.7,
+  "dur": 1.44,
+  "txt": "You sure?"
+ },
+ "takes/11_ins2a.mp3": {
+  "wer": 0.0,
+  "range": 21.9,
+  "dur": 2.0,
+  "txt": "Yep. Come on. I'll help you."
+ },
+ "takes/11_ins2b.mp3": {
+  "wer": 0.0,
+  "range": 21.9,
+  "dur": 2.0,
+  "txt": "Yep. Come on. I'll help you."
+ },
+ "takes/12_patienta.mp3": {
+  "wer": 0.0,
+  "range": 27.6,
+  "dur": 2.24,
+  "txt": "Doc, am I losing weight yet?"
+ },
+ "takes/12_patientb.mp3": {
+  "wer": 0.0,
+  "range": 27.6,
+  "dur": 2.24,
+  "txt": "Doc, am I losing weight yet?"
+ },
+ "takes/13_doctora.mp3": {
+  "wer": 0.0,
+  "range": 16.0,
+  "dur": 14.24,
+  "txt": "No, you've gained even more since your last visit. When you eat more calories than you burn, insulin tells your body to store the extra as fat. It fills your fat cells and it can build up in your liver too. That's how the weight creeps up."
+ },
+ "takes/13_doctorb.mp3": {
+  "wer": 0.0,
+  "range": 16.0,
+  "dur": 14.24,
+  "txt": "No, you've gained even more since your last visit. When you eat more calories than you burn, insulin tells your body to store the extra as fat. It fills your fat cells and it can build up in your liver too. That's how the weight creeps up."
+ },
+ "takes/14_patienta.mp3": {
+  "wer": 0.0,
+  "range": 16.4,
+  "dur": 3.04,
+  "txt": "So, I did this to myself?"
+ },
+ "takes/14_patientb.mp3": {
+  "wer": 0.0,
+  "range": 16.4,
+  "dur": 3.04,
+  "txt": "So, I did this to myself?"
+ },
+ "takes/15_doctora.mp3": {
+  "wer": 0.0,
+  "range": 13.3,
+  "dur": 7.92,
+  "txt": "You can turn it around, cut the extra calories, eat lighter, and move every day. And you can start with a walk, right now."
+ },
+ "takes/15_doctorb.mp3": {
+  "wer": 0.0,
+  "range": 13.3,
+  "dur": 7.92,
+  "txt": "You can turn it around, cut the extra calories, eat lighter, and move every day. And you can start with a walk, right now."
+ }
+}
