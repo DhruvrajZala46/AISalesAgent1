@@ -1,0 +1,15 @@
+01	liver	[strained, grunting] Ugh! I work out every single day, just to burn off all this fat. [annoyed] And the guy upstairs keeps stuffing in more calories. He has no idea how hard this is!
+02	liver	[exhausted, panting] I'm wiped out already.
+03	ins	[worried] We're out of room! Where do I put all this fat?
+04	ins	[sighs] This storage is full.
+05	ins	[disappointed] This one too.
+06	ins	[frustrated] Ugh, it's no use! And the owner isn't helping one bit. [sighs] If he only knew how much fat he's carrying, he'd take his health seriously.
+07	ins2	[casual] Yo, what's going on?
+08	ins	[stressed] Every fat storage is full! I don't know where to dump this anymore.
+09	ins2	Whoa, you're right. Okay... let's dump it in the body fat. Then he'll notice.
+10	ins	[unsure] You sure?
+11	ins2	[confident] Yep. Come on, I'll help you.
+12	patient	[hopeful] Doc, am I losing weight yet?
+13	doctor	No. You've gained even more since your last visit. When you eat more calories than you burn, insulin tells your body to store the extra as fat. It fills your fat cells, and it can build up in your liver too. That's how the weight creeps up.
+14	patient	[guilty] So... I did this to myself?
+15	doctor	[warm] You can turn it around. Cut the extra calories, eat lighter, and move every day. And you can start with a walk, right now.
