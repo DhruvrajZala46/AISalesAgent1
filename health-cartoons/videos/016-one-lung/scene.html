@@ -1,0 +1,331 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:LG;src:url(../../assets/fonts/LuckiestGuy.woff2)}@font-face{font-family:ComicNeue;font-weight:700;src:url(../../assets/fonts/comic-neue-latin-700-normal.woff2)}
+html,body{margin:0;background:#000;overflow:hidden}svg{display:block}
+.cap{font-family:LG,sans-serif;font-size:42px;letter-spacing:1px;paint-order:stroke;stroke:#141414;stroke-width:7px;stroke-linejoin:round;fill:#fff}
+.lbl{font-family:Inter,sans-serif;font-weight:900;font-size:22px;letter-spacing:.5px;fill:#111}
+.cta{font-family:LG,sans-serif;paint-order:stroke;stroke:#141414;stroke-linejoin:round}
+</style></head><body>
+<svg id="S" width="720" height="1280" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
+<script src="data.js"></script>
+<script>
+// =============== helpers ===============
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const P=(t,a,b)=>clamp((t-a)/(b-a));
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eo=x=>1-Math.pow(1-x,3);
+const eob=x=>{const c1=1.7,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const lerp=(a,b,x)=>a+(b-a)*x;
+const INK='#2a2322';
+const VE='vector-effect="non-scaling-stroke"';
+const LN=`stroke="${INK}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" ${VE}`;
+const LN2=`stroke="${INK}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" ${VE}`;
+const TH=(c)=>`stroke="${c}" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" fill="none" ${VE}`;
+function tr(id,x,y,sx=1,sy=sx,r=0){const e=$(id);if(e)e.setAttribute('transform',`translate(${x},${y}) rotate(${r}) scale(${sx},${sy})`);}
+function show(id,v){const e=$(id);if(e)e.setAttribute('opacity',v);}
+let DEFS='', UID=0;
+// shape with airbrushed inner shading (soft darker edge), like the reference
+function shaded(d,fill,shade,w=16,extra=''){const id='c'+(UID++);DEFS+=`<clipPath id="${id}"><path d="${d}"/></clipPath>`;
+  return `<path d="${d}" fill="${fill}"/><g clip-path="url(#${id})"><path d="${d}" fill="none" stroke="${shade}" stroke-width="${w}" filter="url(#soft)" opacity=".9"/></g><path d="${d}" fill="none" ${LN} ${extra}/>`;}
+// Catmull-Rom smooth path through points
+function smooth(pts,closed=false){let s=`M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;const n=pts.length;
+  for(let i=0;i<n-1;i++){const p0=pts[Math.max(0,i-1)],p1=pts[i],p2=pts[i+1],p3=pts[Math.min(n-1,i+2)];
+    s+=` C${(p1[0]+(p2[0]-p0[0])/6).toFixed(1)},${(p1[1]+(p2[1]-p0[1])/6).toFixed(1)} ${(p2[0]-(p3[0]-p1[0])/6).toFixed(1)},${(p2[1]-(p3[1]-p1[1])/6).toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;}
+  return s;}
+// tapered limb around a centre line (shoulder, elbow, wrist)
+function limbD(pts,ws){const L=[],R=[];const n=pts.length;
+  for(let i=0;i<n;i++){const a=pts[Math.max(0,i-1)],b=pts[Math.min(n-1,i+1)];let dx=b[0]-a[0],dy=b[1]-a[1];const d=Math.hypot(dx,dy)||1;dx/=d;dy/=d;
+    const w=ws[i]/2;L.push([pts[i][0]-dy*w,pts[i][1]+dx*w]);R.push([pts[i][0]+dy*w,pts[i][1]-dx*w]);}
+  const we=ws[n-1]/2, ws0=ws[0]/2;
+  let s=smooth(L);s+=` A${we},${we} 0 0 0 ${R[n-1][0].toFixed(1)},${R[n-1][1].toFixed(1)}`;
+  const r=smooth(R.slice().reverse());s+=' '+r.replace(/^M[^C]*/,'');s+=` A${ws0},${ws0} 0 0 0 ${L[0][0].toFixed(1)},${L[0][1].toFixed(1)}Z`;return s;}
+
+// ---------- cartoon object eyes (googly, with lids + brows) ----------
+function oEye(id,r,lidCol){const c='e'+(UID++);DEFS+=`<clipPath id="${c}"><ellipse rx="${r*.92}" ry="${r}"/></clipPath>`;
+  return `<g id="${id}"><ellipse rx="${r*.92}" ry="${r}" fill="#fff"/><g clip-path="url(#${c})"><circle id="${id}_p" r="${r*.46}" fill="#1b1717"/><circle id="${id}_h" r="${r*.15}" fill="#fff"/>
+   <g id="${id}_lid"><rect x="${-r*2}" y="${-r*3}" width="${r*4}" height="${r*2}" fill="${lidCol}"/><line x1="${-r*2}" x2="${r*2}" y1="${-r}" y2="${-r}" ${LN2}/></g></g>
+   <ellipse rx="${r*.92}" ry="${r}" fill="none" ${LN2}/></g>`;}
+// lid: amount 0..1 (closed), tilt degrees ; look dx,dy
+function setOEye(id,r,{dx=0,dy=0,lid=.12,tilt=0,blink=0,small=false}={}){const d=Math.hypot(dx,dy)||1,m=r*.42,k=Math.min(1,d/40);
+  const px=dx/d*m*k,py=dy/d*m*k;const p=$(id+'_p');p.setAttribute('cx',px);p.setAttribute('cy',py);p.setAttribute('r',r*(small?.3:.46));
+  const h=$(id+'_h');h.setAttribute('cx',px-r*.13);h.setAttribute('cy',py-r*.15);
+  const L=Math.max(lid,blink);$(id+'_lid').setAttribute('transform',`rotate(${tilt}) translate(0,${L*2*r})`);}
+function blinkK(t,ph){const k=(t+ph)%3.9;return k<.13?1-Math.abs(k-.065)/.065:0;}
+function brow(id){return `<path id="${id}" fill="none" ${LN2}/>`;}
+function setBrow(id,x,y,w,ang,arch=0){$(id).setAttribute('d',`M${x-w/2},${y} Q${x},${y-arch} ${x+w/2},${y}`);$(id).setAttribute('transform',`rotate(${ang},${x},${y})`);}
+function mouthD(o,w,mood=0){ // mood: +1 smile, -1 frown
+  if(o<.08){return {d:`M${-w*.7},0 Q0,${mood*w*.45} ${w*.7},0`,fill:'none'};}
+  const h=3+o*w*1.25;return {d:`M${-w*.75},-1 Q0,${-2+mood*2} ${w*.75},-1 Q${w*.6},${h} 0,${h+1} Q${-w*.6},${h} ${-w*.75},-1Z`,fill:'#5e1a20'};}
+function setMouth(id,o,w,mood=0){const m=mouthD(clamp(o),w,mood);const e=$(id);e.setAttribute('d',m.d);e.setAttribute('fill',m.fill);
+  const t=$(id+'_t');if(t){t.setAttribute('opacity',o>=.25?1:0);t.setAttribute('cy',2+o*w*1.05);t.setAttribute('rx',w*.4);t.setAttribute('ry',o*w*.35);}}
+function mouthEl(id,x,y){return `<g transform="translate(${x},${y})"><path id="${id}" ${LN2}/><path id="${id}_w" fill="#fff" opacity="0"/><ellipse id="${id}_t" cx="0" cy="0" rx="1" ry="1" fill="#d76d72" opacity="0"/></g>`;}
+
+// ---------- data / lip sync ----------
+const D=window.DATA, FPS=30;
+function speak(who,T){for(const L of D.lines){if(L.who===who&&T>=L.t0&&T<L.t0+L.dur){return L.env[Math.floor((T-L.t0)*FPS)]||0;}}return 0;}
+function lineT(id){return D.lines.find(l=>l.id===id).t0;}
+function wordT(id,w,n=0){const L=D.lines.find(l=>l.id===id);const m=L.words.filter(x=>x[2]===w);return m[n]?m[n][0]:L.t0;}
+function labelBox(id,text,x,y,sz=22){const w=text.length*sz*.66+26;return `<g id="${id}" opacity="0" transform="translate(${x},${y})"><rect x="${-w/2}" y="-20" width="${w}" height="40" fill="#fff" ${LN}/><text class="lbl" style="font-size:${sz}px" text-anchor="middle" y="8">${text}</text></g>`;}
+// =============== 016: "this habit left him with one lung". The reference's scenes; our drawings, all code ===============
+const OLW=`stroke="${INK}" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"`;
+const OLW2=`stroke="${INK}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"`;
+const C_PINK='#f29aa8', C_PINK_S='#cf7086', C_DARK='#5d3d38', C_DARK_S='#392320', C_STEEL='#c3cad3', C_TEAL='#14a3a0';
+const PINK_D='M250,250 C300,250 326,330 326,430 C326,520 318,610 320,700 C322,790 250,880 150,890 C60,896 14,820 20,700 C26,560 90,400 150,310 C180,266 215,250 250,250 Z';
+const DARK_D='M470,250 C420,250 396,330 396,430 C396,520 402,610 400,690 C398,760 450,820 540,826 C630,830 690,760 686,660 C680,540 620,400 570,310 C544,266 505,250 470,250 Z';
+const darkArt=()=>`<path d="${DARK_D}" fill="${C_DARK}"/><path d="${DARK_D}" fill="none" stroke="${C_DARK_S}" stroke-width="20" opacity=".55"/>
+  <path d="M400,600 C470,560 560,580 680,640 M410,440 C470,480 540,470 610,420" fill="none" stroke="${C_DARK_S}" stroke-width="6" stroke-linecap="round"/>
+  ${[[450,330,9],[520,360,7],[560,520,10],[470,560,8],[610,600,9],[500,700,11],[590,730,8],[440,690,7],[640,680,6],[540,300,6]].map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="${r}" fill="#2a1917" opacity=".8"/>`).join('')}
+  <path d="M430,380 q14,10 6,26 M600,470 q-12,14 0,28 M480,640 q16,6 12,24" fill="none" stroke="#2a1917" stroke-width="4" stroke-linecap="round"/><path d="${DARK_D}" fill="none" ${OLW}/>`;
+const packSVG=()=>`<rect x="-26" y="-34" width="52" height="68" rx="5" fill="#f7ead0" ${OLW2}/><rect x="-26" y="-34" width="52" height="20" rx="5" fill="#d8443a" ${OLW2}/>${[-14,0,14].map(x=>`<rect x="${x-5}" y="-48" width="10" height="18" rx="2" fill="#fff" ${OLW2}/><rect x="${x-5}" y="-48" width="10" height="6" fill="#e9a23b"/>`).join('')}`;
+const cigSVG=()=>`<rect x="-24" y="-5" width="48" height="10" rx="3" fill="#fff" ${OLW2}/><rect x="-24" y="-5" width="14" height="10" rx="3" fill="#e9a23b" ${OLW2}/><circle cx="26" cy="0" r="4.5" fill="#ff6a2b"/>`;
+function chestWorld(){
+  DEFS+=`<clipPath id="pc1"><path d="M380,200 H720 V452 L380,488 Z"/></clipPath><clipPath id="pc2"><path d="M380,488 L720,452 V628 L380,652 Z"/></clipPath><clipPath id="pc3"><path d="M380,652 L720,628 V900 H380 Z"/></clipPath>`;
+  let s=`<g id="chest"><rect x="-40" y="-40" width="800" height="1360" fill="#ad6a63"/>
+   <path d="M-40,-40 H250 C250,60 210,150 130,170 C70,184 20,170 -40,190 Z" fill="#7b4a46" stroke="#c98a80" stroke-width="8"/><path d="M760,-40 H470 C470,60 510,150 590,170 C650,184 700,170 760,190 Z" fill="#7b4a46" stroke="#c98a80" stroke-width="8"/>
+   <path d="M60,1000 q40,80 30,180 M660,1000 q-40,80 -30,180" fill="none" stroke="#96564f" stroke-width="7" stroke-linecap="round"/>
+   <path d="M-40,1010 C120,900 600,900 760,1010 L760,1320 L-40,1320 Z" fill="#a1605a"/><path d="M-40,1010 C120,900 600,900 760,1010" fill="none" stroke="#8a4d48" stroke-width="6"/>
+   <g id="ccam" transform="translate(360,600) scale(1.04) translate(-358,-590)"><path d="M336,-130 V400 C336,440 300,450 286,470 M384,-130 V400 C384,440 420,450 434,470" fill="none" stroke="${INK}" stroke-width="5"/>
+   <path d="M336,-130 H384 V404 C384,436 414,448 432,470 L410,490 C392,468 372,452 360,452 C348,452 328,468 310,490 L288,470 C306,448 336,436 336,404 Z" fill="#c4c7ce" ${OLW}/>
+   ${Array.from({length:20},(_,i)=>`<path d="M338,${-114+i*26} q22,9 44,0" fill="none" stroke="#8d919b" stroke-width="5" stroke-linecap="round"/>`).join('')}
+   <path id="cavity" d="${DARK_D}" fill="#cf7a6e" stroke="#9a4f48" stroke-width="5" transform="translate(540,540) scale(1.04) translate(-540,-540)"/>
+   <g id="tray"><rect x="-215" y="-62" width="430" height="124" rx="16" fill="#8f98a5" ${OLW}/><rect x="-196" y="-46" width="392" height="92" rx="10" fill="#c9d0d9" ${OLW2}/><path d="M-180,-34 h200" stroke="#eef1f5" stroke-width="7" stroke-linecap="round"/></g>
+   <g id="pinkG"><g id="pinkB">${shaded(PINK_D,C_PINK,C_PINK_S,22)}<path d="M40,640 C130,600 230,640 320,700 M120,420 C200,470 270,470 326,440" fill="none" stroke="${C_PINK_S}" stroke-width="6" stroke-linecap="round"/><path d="M70,560 C80,460 130,370 190,310" fill="none" stroke="#ffc6cf" stroke-width="10" stroke-linecap="round" opacity=".8"/>
+     <g transform="translate(228,452)"><g transform="translate(-42,0)">${oEye('pk_eL',40,C_PINK)}</g><g transform="translate(42,0)">${oEye('pk_eR',40,C_PINK)}</g>${brow('pk_bL')}${brow('pk_bR')}${mouthEl('pk_m',2,86)}</g></g>
+     <g id="pkHand"><path id="pkArm" fill="none" stroke="${INK}" stroke-width="6" stroke-linecap="round"/><g id="pkPack">${packSVG()}</g><g id="pkCig">${cigSVG()}</g></g><g id="pkSweat"></g></g>
+   <g id="darkG"><g id="dp3" clip-path="url(#pc3)"><g id="dp3m">${darkArt()}</g></g><g id="dp2" clip-path="url(#pc2)"><g id="dp2m">${darkArt()}</g></g><g id="dp1" clip-path="url(#pc1)"><g id="dp1m">${darkArt()}<path id="dSleep" d="M446,440 q22,14 44,0 M524,440 q22,14 44,0" fill="none" stroke="#f4e9e6" stroke-width="6" stroke-linecap="round" opacity="0"/></g></g>
+     <g id="darkFace" transform="translate(508,440)"><g transform="translate(-40,0)">${oEye('dk_eL',38,C_DARK)}</g><g transform="translate(40,0)">${oEye('dk_eR',38,C_DARK)}</g>${brow('dk_bL')}${brow('dk_bR')}${mouthEl('dk_m',0,80)}</g>
+     <g id="dkHand"><path id="dkArm" fill="none" stroke="${INK}" stroke-width="6" stroke-linecap="round"/><g id="dkCig">${cigSVG()}</g></g><g id="cuts"></g></g>
+   <g id="smoke"></g><g id="dkPack">${packSVG()}</g>
+   
+   <g id="cone" opacity="0"><path d="M0,0 L-190,-250 L40,-330 Z" fill="#8fe3ff" opacity=".42" stroke="#49b8e0" stroke-width="3"/>${[[-70,-170,16],[-30,-230,13],[-100,-220,11],[-50,-120,10],[-10,-280,9]].map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="${r}" fill="#2f4a52" opacity=".7"/>`).join('')}</g>
+   <g id="scope"><path d="M60,70 C160,200 260,330 420,460" fill="none" stroke="${INK}" stroke-width="16" stroke-linecap="round"/><path d="M60,70 C160,200 260,330 420,460" fill="none" stroke="#2d313c" stroke-width="10" stroke-linecap="round"/>
+     <g transform="rotate(38)"><rect x="-34" y="-10" width="68" height="230" rx="30" fill="#f4f6f8" ${OLW}/><rect x="-20" y="96" width="40" height="96" rx="12" fill="#dfe5ec" ${OLW2}/>${[112,130,148,166].map(y=>`<path d="M-12,${y} h24" stroke="#9aa3b0" stroke-width="5" stroke-linecap="round"/>`).join('')}
+      <rect x="-22" y="30" width="44" height="50" rx="9" fill="#6fb6f2" ${OLW2}/><path d="M0,42 v26 M-13,55 h26" stroke="#fff" stroke-width="7" stroke-linecap="round"/></g>
+     <circle r="40" fill="#1d2a44" ${OLW}/><circle r="27" fill="#5ed0ff" ${OLW2}/><circle cx="-8" cy="-9" r="8" fill="#fff" opacity=".8"/>
+     <g id="scFace" opacity="0" transform="translate(-58,84) scale(1.25)"><g transform="translate(-17,0)">${oEye('sc_eL',16,'#f4f6f8')}</g><g transform="translate(17,0)">${oEye('sc_eR',16,'#f4f6f8')}</g>${mouthEl('sc_m',0,30)}</g></g>
+   <g id="scalpel"><path d="M0,0 L20,-70 L48,-54 Z" fill="#eef2f6" ${OLW}/><path d="M30,-60 L150,-270" stroke="${INK}" stroke-width="28" stroke-linecap="round"/><path d="M30,-60 L150,-270" stroke="${C_STEEL}" stroke-width="21" stroke-linecap="round"/><path d="M60,-112 L120,-216" stroke="#8f98a5" stroke-width="5" stroke-linecap="round"/>
+     <g transform="translate(34,-96)"><g transform="translate(-13,6)">${oEye('sl_eL',14,C_STEEL)}</g><g transform="translate(15,-8)">${oEye('sl_eR',14,C_STEEL)}</g></g></g>
+   <g id="syringe"><path d="M0,0 L40,-66" stroke="${INK}" stroke-width="5" stroke-linecap="round"/><g transform="translate(40,-66) rotate(31)"><rect x="-24" y="-170" width="48" height="170" rx="6" fill="#f5f8fb" ${OLW}/><rect x="-18" y="-90" width="36" height="84" rx="3" fill="#ffd93b"/>${[-150,-125,-100].map(y=>`<path d="M-24,${y} h16" stroke="${INK}" stroke-width="3"/>`).join('')}<rect x="-34" y="-180" width="68" height="14" rx="5" fill="#dfe5ec" ${OLW2}/><rect id="plunger" x="-9" y="-250" width="18" height="74" fill="#dfe5ec" ${OLW2}/><rect x="-28" y="-262" width="56" height="16" rx="6" fill="#f5f8fb" ${OLW2}/></g></g>
+   <g id="forceps"><path d="M0,0 L130,-190 L144,-180 L12,8 Z" fill="${C_STEEL}" ${OLW2}/><path d="M8,10 L152,-170 L164,-158 L16,18 Z" fill="#e3e8ee" ${OLW2}/></g></g></g>`;
+  return s;}
+// ---- the hospital room: our patient in bed, our doctor beside him ----
+function ward(){
+  DEFS+=`<clipPath id="bedC"><rect x="-300" y="-100" width="600" height="700"/></clipPath>`;
+  return `<rect x="-40" y="-40" width="800" height="1360" fill="#cfe0e6"/><rect x="430" y="-40" width="26" height="700" fill="#eef7fa"/><rect x="456" y="-40" width="8" height="700" fill="#b9cdd4"/>
+   <rect x="-40" y="560" width="800" height="14" fill="#b9cdd4"/>
+   <g transform="translate(360,640) scale(1.3) translate(-372,-560)"><g transform="translate(176,330) scale(1.22)">${doctorSVG()}</g>
+   <path d="M440,560 C440,500 700,500 700,560 L720,900 L420,900 Z" fill="#fff" ${OLW}/><path d="M470,590 q90,-40 200,0" fill="none" stroke="#d5dde2" stroke-width="6" stroke-linecap="round"/>
+   <g id="patWrap"><g transform="translate(545,470) scale(1.3)"><g clip-path="url(#bedC)">${patientSVG()}</g></g></g></g><g transform="translate(0,84)">
+   <path d="M-40,1000 C60,930 180,880 300,930 C380,880 520,850 640,880 C700,892 740,900 760,910 L760,1320 L-40,1320 Z" fill="#fff" ${OLW}/>
+   <path d="M60,1010 C160,960 240,950 300,1000 C330,1040 330,1120 300,1200 M360,960 C460,910 580,910 700,950 M420,1040 C500,1010 600,1010 700,1060 M120,1120 C180,1100 230,1110 260,1150" fill="none" stroke="#cfd6db" stroke-width="7" stroke-linecap="round"/></g>`;}
+
+// =============== SCENE 2 : ENT clinic ===============
+function hand(x,y,ang,sc,skin,id=''){return `<g ${id?`id="${id}"`:''} transform="translate(${x},${y}) rotate(${ang}) scale(${sc})">
+  <path d="M-11,-12 C-4,-17 9,-16 13,-8 C17,2 15,14 6,18 C-4,22 -14,16 -16,6 C-17,-2 -15,-8 -11,-12 Z" fill="${skin}" ${LN2}/>
+  <path d="M-12,-6 C-20,-12 -24,-6 -18,2" fill="${skin}" ${LN2}/><path d="M-2,4 q4,6 10,6 M0,-4 q5,5 12,5" ${TH('#9c6b52')}/></g>`;}
+function humanEye(id,x,y,w,h){const c='h'+(UID++);DEFS+=`<clipPath id="${c}"><path d="M${-w},0 Q0,${-h*1.5} ${w},0 Q0,${h*1.1} ${-w},0Z"/></clipPath>`;
+  return `<g transform="translate(${x},${y})"><g id="${id}"><path d="M${-w},0 Q0,${-h*1.5} ${w},0 Q0,${h*1.1} ${-w},0Z" fill="#fff"/>
+   <g clip-path="url(#${c})"><circle id="${id}_p" r="${h*.78}" fill="#3a2a20"/><circle id="${id}_q" r="${h*.38}" fill="#111"/><circle id="${id}_h" r="${h*.2}" fill="#fff"/></g>
+   <path d="M${-w-1},0 Q0,${-h*1.55} ${w+1},0" fill="none" stroke="${INK}" stroke-width="2.8" stroke-linecap="round" ${VE}/><path d="M${-w*.8},${h*.35} Q0,${h*1.05} ${w*.8},${h*.35}" fill="none" ${TH('#8d6a5a')}/></g></g>`;}
+function setHEye(id,dx,blink){const p=$(id+'_p'),q=$(id+'_q'),h=$(id+'_h');[p,q].forEach(e=>{e.setAttribute('cx',dx);e.setAttribute('cy',1);});h.setAttribute('cx',dx-2);h.setAttribute('cy',-1.5);
+  $(id).setAttribute('transform',`scale(1,${1-blink*.92})`);}
+
+const DSK='#f0c6a6', DSK_S='#d9a585', DHAIR='#3b2820';
+function doctorSVG(){return `<g id="doc">
+ <ellipse cx="0" cy="782" rx="92" ry="12" fill="#000" opacity=".12"/>
+ <!-- back hair -->
+ <path d="M-64,70 C-74,130 -70,190 -48,214 L50,214 C70,190 74,130 64,70 Z" fill="${DHAIR}" ${LN}/>
+ <!-- legs -->
+ ${shaded(limbD([[-30,500],[-34,640],[-34,760]],[52,44,38]),'#33465f','#22324a',10)}
+ ${shaded(limbD([[30,500],[34,640],[36,760]],[52,44,38]),'#33465f','#22324a',10)}
+ <path d="M-58,756 C-58,744 -12,742 -10,756 L-10,772 L-62,774 Z" fill="#3c3f46" ${LN2}/><path d="M12,756 C14,742 60,744 60,756 L62,774 L10,772 Z" fill="#3c3f46" ${LN2}/>
+ <!-- scrubs + coat -->
+ ${shaded('M-62,214 C-40,204 40,204 62,214 L70,520 L-70,520 Z','#3f9c96','#2c7d78',14)}
+ ${shaded('M-20,206 L-62,212 C-92,222 -100,250 -102,290 L-110,560 L-46,566 L-16,330 L-8,250 Z','#f8f8f6','#d4d9dd',18)}
+ ${shaded('M20,206 L62,212 C92,222 100,250 102,290 L110,560 L46,566 L16,330 L8,250 Z','#f8f8f6','#d4d9dd',18)}
+ <path d="M-20,206 L-2,262 L-8,330 M20,206 L2,262 L8,330" fill="none" ${TH('#9aa3aa')}/>
+ <path d="M-90,430 h34 v40 h-34 Z M56,430 h34 v40 h-34 Z" fill="none" ${TH('#9aa3aa')}/>
+ <rect x="54" y="300" width="30" height="40" rx="4" fill="#d9ecf5" ${LN2}/><rect x="60" y="306" width="18" height="12" fill="#8db4c8"/>
+ <!-- stethoscope -->
+ <path d="M-26,212 C-38,270 -24,322 0,326 C24,322 38,270 26,212" fill="none" stroke="#454b55" stroke-width="5.5" stroke-linecap="round"/>
+ <circle cx="0" cy="334" r="11" fill="#c9cfd6" ${LN2}/>
+ <!-- neck + head -->
+ <path d="M-17,150 L-16,206 L16,206 L17,150 Z" fill="${DSK}" ${LN2}/><path d="M-16,176 C-6,186 6,186 16,176 L16,206 L-16,206Z" fill="${DSK_S}" opacity=".7"/>
+ <g id="docHead">
+  ${shaded('M-50,72 C-52,30 -30,8 0,8 C32,8 54,30 52,74 C51,106 40,134 22,150 C12,158 -12,158 -22,150 C-40,134 -51,106 -50,72 Z',DSK,DSK_S,12)}
+  <path d="M-52,90 C-60,86 -62,104 -52,108" fill="${DSK}" ${LN2}/><path d="M52,90 C60,86 62,104 52,108" fill="${DSK}" ${LN2}/>
+  <path d="M-56,96 C-62,30 -30,0 4,0 C42,0 64,30 58,98 C54,66 44,44 20,34 C2,50 -30,60 -56,96 Z" fill="${DHAIR}" ${LN}/>
+  <path d="M-30,24 C-10,10 20,10 40,26 M-40,50 C-28,36 -12,30 6,30" fill="none" ${TH('#5c4136')}/>
+  <path id="dBrows" d="M-30,72 Q-18,65 -6,70 M14,70 Q26,65 38,72" fill="none" stroke="${DHAIR}" stroke-width="3.6" stroke-linecap="round"/>
+  ${humanEye('dEyeL',-16,90,12,7)}${humanEye('dEyeR',24,90,12,7)}
+  <g fill="none" stroke="#4a3b37" stroke-width="2.2" ${VE}><rect x="-34" y="78" width="34" height="25" rx="9"/><rect x="7" y="78" width="34" height="25" rx="9"/><path d="M0,88 h7 M-34,86 l-16,-3 M41,86 l13,-3"/></g>
+  <path d="M8,98 C14,110 14,118 6,121 C3,122 0,120 -2,118" fill="none" ${TH('#a8735a')}/>
+  <ellipse cx="-24" cy="118" rx="9" ry="5" fill="#e79a8d" opacity=".35"/><ellipse cx="32" cy="118" rx="9" ry="5" fill="#e79a8d" opacity=".35"/>
+  ${mouthEl('doc_m',6,136)}
+ </g>
+ <!-- left arm with clipboard -->
+ ${shaded(limbD([[-86,226],[-74,336],[-6,352]],[40,34,30]),'#f8f8f6','#d4d9dd',10)}
+ <g transform="translate(8,316) rotate(-8)"><rect x="-40" y="-56" width="80" height="106" rx="6" fill="#b88350" ${LN2}/><rect x="-32" y="-46" width="64" height="88" fill="#fff" ${LN2}/><rect x="-14" y="-62" width="28" height="12" rx="3" fill="#9aa3ad" ${LN2}/>
+   <path d="M-22,-26 h44 M-22,-12 h36 M-22,2 h44 M-22,16 h28" ${TH('#9aa3ad')}/></g>
+ ${hand(-2,356,-70,1.15,DSK)}
+ <!-- right arm holding otoscope -->
+ <g id="docArmR">${shaded(limbD([[86,226],[110,318],[96,346]],[40,34,30]),'#f8f8f6','#d4d9dd',10)}
+   
+   ${hand(98,350,-60,1.15,DSK)}</g>
+</g>`;}
+const PSK='#e2b48f', PSK_S='#c99271';
+function patientSVG(){return `<g id="pat">
+ <ellipse cx="0" cy="782" rx="96" ry="12" fill="#000" opacity=".12"/>
+ ${shaded(limbD([[-32,500],[-36,640],[-36,758]],[56,46,40]),'#4b6286','#344868',10)}
+ ${shaded(limbD([[32,500],[36,640],[38,758]],[56,46,40]),'#4b6286','#344868',10)}
+ <path d="M-64,752 C-64,736 -12,736 -10,752 L-8,770 L-68,772 Z" fill="#f2f2f2" ${LN2}/><path d="M-66,766 h58" ${TH('#9aa0a6')}/>
+ <path d="M10,752 C12,736 64,736 64,752 L68,772 L8,770 Z" fill="#f2f2f2" ${LN2}/><path d="M8,766 h58" ${TH('#9aa0a6')}/>
+ ${shaded('M-66,218 C-40,204 40,204 66,218 C90,232 96,262 96,300 L92,520 L-92,520 L-96,300 C-96,262 -90,232 -66,218 Z','#c7884a','#a86c34',18)}
+ <path d="M-40,206 C-30,232 30,232 40,206" fill="#b47a40" ${LN2}/><path d="M-10,232 v58 M10,232 v58" stroke="#f3eadf" stroke-width="3.5" stroke-linecap="round"/>
+ <path d="M-60,420 C-20,436 20,436 60,420 L58,470 C20,482 -20,482 -58,470 Z" fill="#b47a40" ${LN2}/>
+ <path d="M-92,500 L92,500 L92,520 L-92,520 Z" fill="#a86c34" ${LN2}/>
+ <path d="M-17,150 L-16,210 L16,210 L17,150 Z" fill="${PSK}" ${LN2}/><path d="M-16,178 C-6,188 6,188 16,178 L16,210 L-16,210Z" fill="${PSK_S}" opacity=".7"/>
+ <!-- right arm (hangs) -->
+ ${shaded(limbD([[84,234],[100,370],[90,470]],[44,38,32]),'#c7884a','#a86c34',10)}${hand(88,482,8,1.2,PSK)}
+ <g id="patHead">
+  ${shaded('M-52,70 C-54,28 -30,6 0,6 C32,6 56,28 54,72 C53,108 42,138 24,154 C12,162 -12,162 -24,154 C-42,138 -53,108 -52,70 Z',PSK,PSK_S,12)}
+  <path d="M-54,88 C-62,84 -64,104 -54,108" fill="${PSK}" ${LN2}/><path d="M54,88 C62,84 64,104 54,108" fill="${PSK}" ${LN2}/>
+  <path d="M-56,74 C-64,20 -30,-12 6,-8 C40,-6 64,16 58,72 C52,44 40,30 20,28 C4,34 -14,30 -24,24 C-34,40 -46,52 -56,74 Z" fill="#1f1d24" ${LN}/>
+  <path d="M-36,4 l6,-10 M-14,-6 l4,-10 M10,-6 l2,-10 M30,0 l6,-8" ${TH('#3d3a46')}/>
+  <path id="pBrows" d="M-36,70 Q-24,64 -10,66 M8,66 Q22,64 34,70" fill="none" stroke="#1f1d24" stroke-width="4.2" stroke-linecap="round"/>
+  ${humanEye('pEyeL',-22,88,12,7)}${humanEye('pEyeR',18,88,12,7)}
+  <path d="M-4,96 C-10,110 -10,118 -2,121 C2,122 5,120 7,118" fill="none" ${TH('#9c6b4e')}/>
+  <path d="M-36,130 q4,8 2,14 M30,130 q-4,8 -2,14" ${TH('#c99271')}/>
+  ${mouthEl('pat_m',-4,138)}
+  <g id="patBlush" opacity="0"><ellipse cx="-38" cy="124" rx="10" ry="6" fill="#ef8f86"/><ellipse cx="32" cy="124" rx="10" ry="6" fill="#ef8f86"/></g>
+  <path id="pSweat" d="M0,-9 C5,-2 7,3 5,7 C3,11 -4,11 -5,7 C-7,3 -4,-2 0,-9Z" fill="#9fd8f5" ${LN2}/>
+ </g>
+ <!-- left arm: hand to ear -->
+ <g id="patArmL"><path id="patArmLD" fill="#c7884a"/><path id="patArmLO" fill="none" ${LN}/><g id="patHandL"></g></g>
+</g>`;}
+
+// =============== 016: "This habit left him with one lung". One locked chest scene, then the hospital room. ===============
+const E=D.ev, ST=D.start, END=D.end;
+function viseme(env,T,seed){if(env<0.08)return 'closed';const f=Math.floor(T*15)+seed;let b=env<0.3?'small':env<0.65?'mid':'wide';if(b==='mid'&&f%4===0)b='oo';if(b==='wide'&&f%5===0)b='mid';return b;}
+function setMouthV(id,env,w,mood,T,seed=0){const v=viseme(env,T,seed);const e=$(id),t=$(id+'_t'),th=$(id+'_w');let d,fill='#5e1a20',tong=0,teeth=0;
+  if(v==='closed'){d=`M${-w*.7},0 Q0,${mood*w*.45} ${w*.7},0`;fill='none';}
+  else if(v==='small'){d=`M${-w*.55},0 Q0,-2.5 ${w*.55},0 Q0,${w*.5} ${-w*.55},0Z`;}
+  else if(v==='oo'){d=`M0,${-w*.32} C${w*.42},${-w*.32} ${w*.42},${w*.55} 0,${w*.55} C${-w*.42},${w*.55} ${-w*.42},${-w*.32} 0,${-w*.32}Z`;}
+  else if(v==='mid'){d=`M${-w*.8},-1 Q0,-4 ${w*.8},-1 Q${w*.6},${w*.85} 0,${w*.9} Q${-w*.6},${w*.85} ${-w*.8},-1Z`;tong=.6;teeth=1;}
+  else {d=`M${-w*.9},-2 Q0,-6 ${w*.9},-2 Q${w*.7},${w*1.3} 0,${w*1.35} Q${-w*.7},${w*1.3} ${-w*.9},-2Z`;tong=1;teeth=1;}
+  e.setAttribute('d',d);e.setAttribute('fill',fill);
+  if(th){th.setAttribute('opacity',teeth);th.setAttribute('d',`M${-w*.62},-1 Q0,-4 ${w*.62},-1 L${w*.56},${w*.2} Q0,${w*.12} ${-w*.56},${w*.2}Z`);}
+  if(t){t.setAttribute('opacity',tong?1:0);t.setAttribute('cy',w*(tong>.8?1.0:.66));t.setAttribute('rx',w*.45);t.setAttribute('ry',w*.2*tong+1);}}
+
+// ---- inside the ear: positions of the cotton bud tip and the wax (world coords)
+function popLabel(id,T,t0,t1,x,y,sc=1){const on=T>=t0&&T<t1;show(id,on?1:0);if(on){const k=eob(P(T,t0,t0+.28));$(id).setAttribute('transform',`translate(${x},${y}) scale(${k*sc})`);}}
+const lend=id=>{const L=D.lines.find(l=>l.id===id);return L.t0+L.dur;};
+const inL=(id,T,pre=.05,post=.1)=>T>=ST[id]-pre&&T<lend(id)+post;
+const svg=$('S');
+const S1=`<g id="s1">${chestWorld()}${labelBox('lbH','HEALTHY LUNG',170,206,26)}${labelBox('lbS',"SMOKER'S LUNG",548,206,26)}</g>`, S3=`<g id="s3">${ward()}</g>`;
+svg.innerHTML=`<defs><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>${DEFS}</defs>`
+ +S1+S3+`<text id="wm" x="360" y="50" text-anchor="middle" style="font-family:ComicNeue,sans-serif;font-weight:700;font-size:24px" fill="#fff" stroke="#0b6e6b" stroke-width=".6" opacity=".6">@GiggleMD</text>`
+ +`<g id="capg"><text id="cap" class="cap" x="360" y="1085" text-anchor="middle" style="stroke-width:7px;font-size:48px"></text></g>`;
+function face(id,r,{dx=0,dy=0,lid=.1,blink=0,small=false,bx=27,by=48,bw=26,bA=0,arch=3,talk=0,mw=12,mood=0,T=0,seed=0}){
+  setOEye(id+'_eL',r,{dx,dy,lid,blink,small});setOEye(id+'_eR',r,{dx,dy,lid,blink,small});
+  setBrow(id+'_bL',-bx,by,bw,bA,arch);setBrow(id+'_bR',bx,by,bw,-bA,arch);setMouthV(id+'_m',talk,mw,mood,T,seed);}
+const drop=(x,y,o)=>`<path transform="translate(${x.toFixed(1)},${y.toFixed(1)}) scale(1.6)" d="M0,-9 C5,-2 7,3 5,7 C3,11 -4,11 -5,7 C-7,3 -4,-2 0,-9Z" fill="#bfe9ff" stroke="${INK}" stroke-width="1.8" opacity="${o.toFixed(2)}"/>`;
+const mv=(id,x,y,r=0,s=1)=>$(id).setAttribute('transform',`translate(${x.toFixed(1)},${y.toFixed(1)}) rotate(${r.toFixed(1)}) scale(${s})`);
+// where each cut piece of the dark lung goes: [lift start, centre of the piece, its spot on the tray, turn]
+const PIECES=[['dp1m',E.cut+3.2,[530,370],[280,988],78],['dp2m',E.cut+4.4,[545,560],[360,980],-84],['dp3m',E.cut+5.6,[545,740],[440,992],100]];
+function renderChest(T){
+  const breath=Math.sin(T*1.9),asleep=T>=E.inj+.45,cutting=T>=E.cut,gone=T>=E.done;
+  // ---- the dark (smoker's) lung ----
+  const dT=speak('dark',T),hasPack=T<E.give+.5;
+  $('darkG').setAttribute('transform',cutting?'':`translate(540,540) scale(${(1+breath*.008).toFixed(4)},${(1+breath*.012).toFixed(4)}) translate(-540,-540)`);
+  show('darkFace',(cutting||asleep)?0:1);show('dSleep',asleep?1:0);
+  let df={dx:-26,dy:4,lid:.25,bA:-6,arch:8,mood:.8,small:false};                                        // smug
+  if(T>=E.scope)df={dx:20,dy:26,lid:.05,bA:-12,arch:6,mood:-.3,small:false};
+  if(T>=E.scal)df={dx:24,dy:20,lid:0,bA:-16,arch:5,mood:-.6,small:true};
+  if(T>=E.syr)df={dx:30,dy:14,lid:0,bA:-18,arch:6,mood:-.9,small:true};
+  const dz=P(T,E.inj,E.inj+.45);
+  face('dk',38,{...df,lid:asleep?1:lerp(df.lid,.95,dz),blink:asleep?1:blinkK(T,1.3),bx:40,by:-56,bw:36,talk:dT,mw:18,T,seed:4});
+  // its hand: the cigarette, and handing over the pack
+  const puffK=T<E.give?.5+.5*Math.sin(T*2.2):0,g=eio(P(T,E.give,E.give+.5)),gb=eio(P(T,E.give+.7,E.give+1.1));
+  const hx=lerp(lerp(450,430,puffK),388,g*(1-gb)),hy=lerp(lerp(560,528,puffK),600,g*(1-gb));
+  $('dkArm').setAttribute('d',`M430,590 Q${(hx-22).toFixed(1)},${(hy+34).toFixed(1)} ${hx.toFixed(1)},${hy.toFixed(1)}`);
+  mv('dkCig',lerp(hx-22,hx-8,g),lerp(hy-6,hy+30,g),lerp(170,120,g),1.3);show('dkHand',T<E.scal+.2&&!cutting?1:0);show('dkCig',T<E.scope+.3?1:0);
+  const px=lerp(452,300,g),py=lerp(640,610,g)-Math.sin(g*Math.PI)*40;mv('dkPack',px,py,lerp(-8,6,g),1.35);show('dkPack',T<E.give+.5&&T>=E.give-1.2?1:0);
+  // smoke from the cigarette
+  let sm='';if(T<E.scope+.3){for(let j=0;j<4;j++){const p=((T*.6+j/4)%1),x=lerp(hx-46,hx-70,g)+Math.sin(p*6+j)*14,y=lerp(hy-10,hy+22,g)-p*150;sm+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(10+p*20).toFixed(1)}" fill="#e9e3e0" opacity="${((1-p)*.6).toFixed(2)}"/>`;}}
+  // ---- the pink (healthy) lung ----
+  const pT=speak('pink',T),hide=eio(P(T,E.sus+.45,E.sus+.8)),shock=T>=E.cut-.2&&T<E.sus,nerv=T>=E.sus;
+  $('pinkB').setAttribute('transform',`translate(170,560) scale(${(1+breath*.01).toFixed(4)},${(1+breath*.014+(pT>.4?.004:0)).toFixed(4)}) translate(-170,-560) translate(${(shock?Math.sin(T*40)*2.2:0).toFixed(1)},0)`);
+  let pf={dx:26,dy:2,lid:.08,bA:-6,arch:7,mood:.3,small:false};
+  if(inL('02_pink',T))pf={dx:26,dy:0,lid:.05,bA:-8,arch:9,mood:.8,small:false};
+  if(T>=E.give)pf={dx:18,dy:26,lid:.1,bA:-4,arch:8,mood:.7,small:false};
+  if(T>=E.scope)pf={dx:30,dy:20,lid:.05,bA:-10,arch:6,mood:-.1,small:false};
+  if(T>=E.syr)pf={dx:30,dy:8,lid:0,bA:-14,arch:6,mood:-.5,small:true};
+  if(shock)pf={dx:28,dy:cutting&&T>E.cut+2.6?30:10,lid:0,bA:-18,arch:6,mood:-.9,small:true};
+  if(nerv)pf={dx:inL('09_pink',T)?Math.sin(T*7)*18:22,dy:6,lid:.05,bA:-12,arch:8,mood:inL('09_pink',T)?.4:-.4,small:!inL('09_pink',T)};
+  face('pk',40,{...pf,blink:blinkK(T,.5),bx:42,by:-58,bw:38,talk:pT,mw:19,T,seed:1});
+  const got=T>=E.give+.5,tk=eio(P(T,E.take,E.take+.5));
+  show('pkHand',got&&hide<1?1-hide:0);
+  if(got){const hx2=lerp(300,246,hide),hy2=612+Math.sin(T*2.2)*2;$('pkArm').setAttribute('d',`M318,650 Q${(hx2+26).toFixed(1)},${(hy2+40).toFixed(1)} ${hx2.toFixed(1)},${hy2.toFixed(1)}`);mv('pkPack',hx2,hy2,6,1.35);
+    show('pkCig',tk>0?1:0);mv('pkCig',hx2+lerp(0,40,tk),hy2-lerp(46,96,tk),lerp(90,150,tk),1.3);}
+  let sw='';if(shock||nerv){[[70,360,0],[300,330,1]].forEach(([x,y,j])=>{const p=((T*1.4+j*.5)%1);sw+=drop(x,y+p*50,1-p);});}$('pkSweat').innerHTML=sw;
+  $('smoke').innerHTML=sm;
+  // ---- the camera tool ----
+  const sIn=eo(P(T,E.scope,E.scope+.9)),sOut=eio(P(T,E.scal-.1,E.scal+.5)),scOn=T>=E.scope&&sOut<1;show('scope',scOn?1:0);
+  const sx=lerp(900,470,sIn)+sOut*420,sy=lerp(1250,700,sIn)+sOut*520+Math.sin(T*3)*4;mv('scope',sx,sy,0,1.3);
+  const scan=T>=E.scope+1.0&&T<E.scope+2.25;show('cone',scan?.9:0);if(scan)mv('cone',sx-20,sy-28,Math.sin((T-E.scope)*5)*7);
+  const scT=speak('scope',T);show('scFace',T>=E.scope+2.2?1:0);
+  setOEye('sc_eL',16,{dx:22,dy:-18,lid:0,blink:blinkK(T,.3),small:true});setOEye('sc_eR',16,{dx:22,dy:-18,lid:0,blink:blinkK(T,.3),small:true});setMouthV('sc_m',scT,9,-.6,T,8);
+  // ---- the scalpel: arrives, cuts three times, later turns on the pink lung ----
+  const cutK=j=>eio(P(T,E.cut+j*.85,E.cut+.55+j*.85));
+  let kx=1000,ky=300,kr=0,kOn=false;const slT=speak('scalpel',T);
+  if(T>=E.scal&&T<E.cut){const k=eo(P(T,E.scal,E.scal+.6));const o=eio(P(T,E.syr-.1,E.syr+.35));kx=lerp(900,470,k)+o*520;ky=lerp(1100,900,k)-slT*8+o*200;kr=-10;kOn=o<1;}
+  if(cutting&&T<E.cut+2.7){const j=Math.min(2,Math.floor((T-E.cut)/.85)),k=cutK(j),yy=[470,640,770][j];kx=lerp(740,392,k);ky=lerp(yy-22,yy+14,k);kr=14;kOn=true;}
+  if(T>=E.cut+2.7&&T<E.sus){const k=eio(P(T,E.cut+2.7,E.cut+3.1));kx=lerp(392,940,k);ky=lerp(780,700,k);kr=14;kOn=k<1;}
+  if(T>=E.sus){const k=eo(P(T,E.sus,E.sus+.5));kx=lerp(900,400,k);ky=lerp(1100,860,k)-slT*8;kr=-4;kOn=true;}
+  show('scalpel',kOn?1:0);mv('scalpel',kx,ky,kr,1.35);
+  const look=T>=E.sus?[-28,-16]:[10,-26];setOEye('sl_eL',14,{dx:look[0],dy:look[1],lid:T>=E.sus?.3:.05,blink:blinkK(T,2.7)});setOEye('sl_eR',14,{dx:look[0],dy:look[1],lid:T>=E.sus?.3:.05,blink:blinkK(T,2.7)});
+  let cu='';[[398,486,640,460],[400,650,684,632],[452,786,660,764]].forEach(([x1,y1,x2,y2],j)=>{const k=cutK(j);if(k>0&&T<PIECES[Math.min(j,2)][1]+ (j===2?0:0)+9)cu+=`<path d="M${x2},${y2} L${lerp(x2,x1,k).toFixed(1)},${lerp(y2,y1,k).toFixed(1)}" stroke="#ff8f86" stroke-width="5" stroke-linecap="round"/>`;});
+  $('cuts').innerHTML=T<E.cut+3.2?cu:'';
+  // ---- the syringe ----
+  const yIn=eo(P(T,E.syr,E.syr+.5)),jab=eio(P(T,E.inj-.15,E.inj)),yOut=eio(P(T,E.inj+.45,E.inj+.9));show('syringe',T>=E.syr&&yOut<1?1:0);
+  mv('syringe',lerp(900,lerp(548,520,jab),yIn)+yOut*320,lerp(420,lerp(700,726,jab),yIn)-yOut*380,0,1.2);
+  $('plunger').setAttribute('transform',`translate(0,${(P(T,E.inj,E.inj+.4)*60).toFixed(1)})`);
+  // ---- the tray, and the three pieces lifted onto it ----
+  const tIn=eo(P(T,E.cut+2.6,E.cut+3.1)),tOut=eio(P(T,E.done-.45,E.done));show('tray',T>=E.cut+2.6&&tOut<1?1:0);
+  const ty=lerp(1420,1010,tIn)+tOut*420;mv('tray',360,ty,0,1.22);
+  let fOn=false,fxp=0,fyp=0;
+  PIECES.forEach(([id,t0,c,to,rot],i)=>{const k=eio(P(T,t0,t0+.95)),x=lerp(0,to[0]-c[0],k),y=lerp(0,to[1]-c[1],k)-Math.sin(k*Math.PI)*70+(k>=1?ty-1010:0);
+    $(id).setAttribute('transform',`translate(${x.toFixed(1)},${y.toFixed(1)}) rotate(${(rot*k).toFixed(1)},${c[0]},${c[1]}) translate(${c[0]},${c[1]}) scale(${lerp(1,.78,k).toFixed(3)}) translate(${-c[0]},${-c[1]})`);
+    $(id.slice(0,3)).setAttribute('clip-path',k>0?'':`url(#pc${i+1})`);
+    if(k>0)$(id).setAttribute('clip-path',`url(#pc${i+1})`);
+    if(T>=t0-.35&&T<t0+1.2){fOn=true;const a=eo(P(T,t0-.35,t0)),b=eio(P(T,t0+.95,t0+1.2));fxp=c[0]+x+40+(1-a)*260+b*260;fyp=c[1]+y-30-(1-a)*300-b*300;}
+    show(id,gone?0:1);});
+  show('forceps',fOn?1:0);mv('forceps',fxp,fyp,0,1.25);
+  ['lbH','lbS'].forEach((id,i)=>{const on=T<4.2;show(id,on?1:0);if(on)$(id).setAttribute('transform',`translate(${i?548:170},206) scale(${(T<.02?1:Math.max(1,eob(P(T,-.3,.02)))).toFixed(3)})`);});
+}
+function renderWard(T){
+  const dT=speak('doctor',T),pT=speak('patient',T),d0=ST['11_doctor'],hope=T>=lend('11_doctor')-5.2;
+  tr('docHead',0,Math.sin(T*1.3)*1.2-(dT>.7?1.5:0),1,1,4+(dT>.15?Math.sin(T*6.5)*1.8*dT:0));
+  $('dBrows').setAttribute('transform',`translate(0,${dT>.72?-3.5:0})`);
+  setMouthV('doc_m',dT,10,hope?.6:.1,T,5);setHEye('dEyeL',4,blinkK(T,.7));setHEye('dEyeR',4,blinkK(T,.7));
+  $('docArmR').setAttribute('transform',`rotate(${(dT>.2?-6+Math.sin(T*4.2)*7*dT:0).toFixed(2)},86,226)`);
+  let pr=-6+Math.sin(T*.8)*1;if(pT>.2)pr+=Math.sin(T*7)*2;
+  tr('patHead',0,Math.sin(T*1.5+1)*1.2+(T>=d0&&!hope?3:0),1,1,pr);
+  $('pBrows').setAttribute('d','M-36,66 Q-24,64 -10,60 M8,60 Q22,64 34,66');
+  setMouthV('pat_m',pT,10,hope?-.1:-.6,T,6);setHEye('pEyeL',-4,blinkK(T,2.1));setHEye('pEyeR',-4,blinkK(T,2.1));
+  show('patBlush',.2);show('pSweat',0);
+  const sh=[-84,234],el=[-108,356],wr=[-100,470];const d=limbD([sh,el,wr],[44,38,32]);$('patArmLD').setAttribute('d',d);$('patArmLO').setAttribute('d',d);
+  $('patHandL').innerHTML=hand(wr[0],wr[1]+8,10,1.2,PSK);
+}
+function caption(T){let w='',ws=0;for(const L of D.lines)for(const x of L.words){if(T>=x[0]&&T<Math.max(x[1],x[0]+.12)){w=x[2];ws=x[0];}}
+  if(!w){for(const L of D.lines)for(const x of L.words){if(T>=x[1]&&T<x[1]+.1){w=x[2];ws=x[0];}}}
+  const c=$('cap');c.textContent=w;const k=eo(P(T,ws,ws+.12));c.setAttribute('transform',`translate(360,1068) scale(${lerp(1.4,1,k).toFixed(3)}) translate(-360,-1068)`);}
+window.render=function(T){
+  const sc=T<E.clinic?1:3;$('s1').setAttribute('display',sc===1?'inline':'none');$('s3').setAttribute('display',sc===3?'inline':'none');
+  if(sc===1)renderChest(T);else renderWard(T);caption(T);};
+window.render(0);
+
+</script></body></html>

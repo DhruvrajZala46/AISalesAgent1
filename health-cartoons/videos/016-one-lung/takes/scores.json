@@ -1,0 +1,134 @@
+{
+ "takes/01_darka.mp3": {
+  "wer": 0.0,
+  "range": 29.6,
+  "dur": 4.08,
+  "txt": "Bro, check out my dark shade. Pretty cool, huh?"
+ },
+ "takes/01_darkb.mp3": {
+  "wer": 0.0,
+  "range": 29.6,
+  "dur": 4.08,
+  "txt": "Bro, check out my dark shade. Pretty cool, huh?"
+ },
+ "takes/02_pinka.mp3": {
+  "wer": 0.22,
+  "range": 25.2,
+  "dur": 3.68,
+  "txt": "Yeah, I kind of want to look like that too."
+ },
+ "takes/02_pinkb.mp3": {
+  "wer": 0.22,
+  "range": 25.2,
+  "dur": 3.68,
+  "txt": "Yeah, I kind of want to look like that too."
+ },
+ "takes/03_darka.mp3": {
+  "wer": 0.0,
+  "range": 36.8,
+  "dur": 3.36,
+  "txt": "Here, take these, and finish the whole pack!"
+ },
+ "takes/03_darkb.mp3": {
+  "wer": 0.0,
+  "range": 36.8,
+  "dur": 3.36,
+  "txt": "Here, take these, and finish the whole pack!"
+ },
+ "takes/04_scopea.mp3": {
+  "wer": 0.0,
+  "range": 11.8,
+  "dur": 4.08,
+  "txt": "Boss! Come quick! Something's really wrong with this lung!"
+ },
+ "takes/04_scopeb.mp3": {
+  "wer": 0.0,
+  "range": 11.8,
+  "dur": 4.08,
+  "txt": "Boss! Come quick! Something's really wrong with this lung!"
+ },
+ "takes/05_scalpela.mp3": {
+  "wer": 0.0,
+  "range": 19.6,
+  "dur": 4.88,
+  "txt": "This lung is badly damaged from smoking. It has to come out. All of it."
+ },
+ "takes/05_scalpelb.mp3": {
+  "wer": 0.0,
+  "range": 19.6,
+  "dur": 4.88,
+  "txt": "This lung is badly damaged from smoking. It has to come out. All of it."
+ },
+ "takes/06_darka.mp3": {
+  "wer": 0.0,
+  "range": 14.5,
+  "dur": 2.16,
+  "txt": "Hey! Stay away from me!"
+ },
+ "takes/06_darkb.mp3": {
+  "wer": 0.0,
+  "range": 14.5,
+  "dur": 2.16,
+  "txt": "Hey! Stay away from me!"
+ },
+ "takes/07_pinka.mp3": {
+  "wer": 0.0,
+  "range": 21.7,
+  "dur": 3.12,
+  "txt": "Oh no! Oh no, no, no!"
+ },
+ "takes/07_pinkb.mp3": {
+  "wer": 0.0,
+  "range": 21.7,
+  "dur": 3.12,
+  "txt": "Oh no! Oh no, no, no!"
+ },
+ "takes/08_scalpela.mp3": {
+  "wer": 0.0,
+  "range": 22.2,
+  "dur": 2.96,
+  "txt": "Wait, did I just see you holding something?"
+ },
+ "takes/08_scalpelb.mp3": {
+  "wer": 0.0,
+  "range": 22.2,
+  "dur": 2.96,
+  "txt": "Wait, did I just see you holding something?"
+ },
+ "takes/09_pinka.mp3": {
+  "wer": 0.0,
+  "range": 27.2,
+  "dur": 4.24,
+  "txt": "Me? No way! Lungs don't even have hands!"
+ },
+ "takes/09_pinkb.mp3": {
+  "wer": 0.0,
+  "range": 27.2,
+  "dur": 4.24,
+  "txt": "Me? No way! Lungs don't even have hands!"
+ },
+ "takes/10_patienta.mp3": {
+  "wer": 0.0,
+  "range": 18.0,
+  "dur": 2.64,
+  "txt": "Doc, how's my lung?"
+ },
+ "takes/10_patientb.mp3": {
+  "wer": 0.0,
+  "range": 18.0,
+  "dur": 2.64,
+  "txt": "Doc, how's my lung?"
+ },
+ "takes/11_doctora.mp3": {
+  "wer": 0.0,
+  "range": 13.4,
+  "dur": 15.36,
+  "txt": "Years of smoking damaged your lung badly. One part was too damaged to save. Taking it out was the safest way to protect the healthy lung you have left. You can still live a normal life, but you must quit smoking starting today."
+ },
+ "takes/11_doctorb.mp3": {
+  "wer": 0.0,
+  "range": 13.4,
+  "dur": 15.36,
+  "txt": "Years of smoking damaged your lung badly. One part was too damaged to save. Taking it out was the safest way to protect the healthy lung you have left. You can still live a normal life, but you must quit smoking starting today."
+ }
+}

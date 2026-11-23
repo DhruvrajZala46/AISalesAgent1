@@ -1,0 +1,79 @@
+{
+ "01_dark": {
+  "take": "a",
+  "f0": 131,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 3.55
+ },
+ "02_pink": {
+  "take": "a",
+  "f0": 200,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.21
+ },
+ "03_dark": {
+  "take": "a",
+  "f0": 192,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 2.8
+ },
+ "04_scope": {
+  "take": "a",
+  "f0": 355,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.53
+ },
+ "05_scalpel": {
+  "take": "a",
+  "f0": 104,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 4.41
+ },
+ "06_dark": {
+  "take": "a",
+  "f0": 317,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 1.62
+ },
+ "07_pink": {
+  "take": "a",
+  "f0": 357,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.72
+ },
+ "08_scalpel": {
+  "take": "a",
+  "f0": 136,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 2.56
+ },
+ "09_pink": {
+  "take": "a",
+  "f0": 269,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.55
+ },
+ "10_patient": {
+  "take": "a",
+  "f0": 120,
+  "shift_st": 0.0,
+  "tempo": 1.04,
+  "dur": 2.19
+ },
+ "11_doctor": {
+  "take": "a",
+  "f0": 198,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 14.05
+ }
+}

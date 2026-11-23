@@ -1,0 +1,11 @@
+dark|Bro, check out my dark shade. Pretty cool, huh?
+pink|Yeah... I kinda want to look like that too.
+dark|Here, take these. And finish the whole pack!
+scope|Boss! Come quick! Something's really wrong with this lung!
+scalpel|This lung is badly damaged from smoking. It has to come out. All of it.
+dark|Hey! Stay away from me!
+pink|Oh no! Oh no, no, no!
+scalpel|Wait. Did I just see you holding something?
+pink|Me? No way! Lungs don't even have hands!
+patient|Doc... how's my lung?
+doctor|Years of smoking damaged your lung badly. One part was too damaged to save. Taking it out was the safest way to protect the healthy lung you have left. You can still live a normal life. But you must quit smoking, starting today.
