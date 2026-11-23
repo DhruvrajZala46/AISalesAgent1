@@ -1,100 +1,72 @@
 {
  "01_tl": {
   "take": "b",
-  "f0": 320,
+  "f0": 382,
   "shift_st": 0.0,
   "tempo": 1.08,
-  "dur": 2.17
+  "dur": 3.63
  },
  "02_tr": {
   "take": "b",
-  "f0": 236,
+  "f0": 128,
   "shift_st": 0.0,
-  "tempo": 1.06,
-  "dur": 2.56
+  "tempo": 1.08,
+  "dur": 2.2
  },
  "03_can": {
   "take": "a",
-  "f0": 75,
+  "f0": 511,
   "shift_st": 0.0,
   "tempo": 1.08,
-  "dur": 2.21
+  "dur": 2.88
  },
  "04_tl": {
   "take": "b",
-  "f0": 292,
+  "f0": 238,
   "shift_st": 0.0,
   "tempo": 1.08,
-  "dur": 2.77
+  "dur": 3.05
  },
  "05_can": {
-  "take": "b",
-  "f0": 335,
-  "shift_st": 0.0,
-  "tempo": 1.08,
-  "dur": 2.33
- },
- "06_can": {
-  "take": "b",
-  "f0": 287,
-  "shift_st": 0.0,
-  "tempo": 1.08,
-  "dur": 2.11
- },
- "07_tr": {
   "take": "a",
-  "f0": 188,
+  "f0": 256,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.18
+ },
+ "06_tr": {
+  "take": "a",
+  "f0": 175,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.55
+ },
+ "07_patient": {
+  "take": "a",
+  "f0": 185,
   "shift_st": 0.0,
   "tempo": 1.06,
-  "dur": 2.91
+  "dur": 3.21
  },
- "08_can": {
+ "08_doctor": {
   "take": "a",
-  "f0": 232,
+  "f0": 215,
   "shift_st": 0.0,
   "tempo": 1.08,
-  "dur": 1.66
+  "dur": 3.46
  },
- "09_tl": {
+ "09_doctor": {
   "take": "a",
-  "f0": 282,
+  "f0": 235,
   "shift_st": 0.0,
   "tempo": 1.08,
-  "dur": 2.33
+  "dur": 6.08
  },
  "10_doctor": {
-  "take": "b",
-  "f0": 204,
-  "shift_st": 0.0,
-  "tempo": 1.08,
-  "dur": 4.31
- },
- "11_doctor": {
-  "take": "b",
-  "f0": 207,
-  "shift_st": 0.0,
-  "tempo": 1.08,
-  "dur": 3.93
- },
- "12_doctor": {
-  "take": "b",
-  "f0": 203,
-  "shift_st": 0.0,
-  "tempo": 1.08,
-  "dur": 3.15
- },
- "13_doctor": {
   "take": "a",
-  "f0": 229,
+  "f0": 217,
   "shift_st": 0.0,
   "tempo": 1.08,
-  "dur": 3.38
- },
- "14_can": {
-  "take": "b",
-  "f0": 279,
-  "shift_st": 0.0,
-  "tempo": 1.08,
-  "dur": 0.69
+  "dur": 4.47
  }
 }

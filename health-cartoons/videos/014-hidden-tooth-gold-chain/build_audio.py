@@ -18,17 +18,13 @@ def seq(keys,t,gap=.16):
     return t-gap
 EV={}
 t=seq(K[0:1],0.0)                                   # 01: on the first frame, while the scalpel is cutting
-EV['open']=t+.05; t=seq(K[1:2],t+.3)                # the flap opens; 02
-EV['canCam']=t+.05; t=seq(K[2:3],t+.25)             # 03: the sleepy canine
-t=seq(K[3:4],t+.2)                                  # 04
-EV['chain']=t+.75; t=seq(K[4:5],EV['chain']+.15)    # the button and chain go on; 05
-EV['tug']=t+.15; t=seq(K[5:6],EV['tug']+.3)         # the first pulls; 06
-t=seq(K[6:7],t+.18); t=seq(K[7:8],t+.18)            # 07, 08
-EV['seat']=t+.1; t=seq(K[8:9],t+.18)                # 09: the saved seat
-EV['doc']=t+.15; t=seq(K[9:13],t+.3,.2)             # 10-13: the doctor, in a bubble
-EV['tl0']=START['13_doctor']-.1; EV['tl1']=t+.3     # twelve months go by
-t=seq(K[13:14],EV['tl1']+.15)                       # 14: Made it!
-END=round(t+0.8,3); N=int(END*SR); voice=np.zeros(N,np.float32)
+EV['chain']=t+.45; t=seq(K[1:2],EV['chain']+.3)     # the button and the gold chain go on; 02
+EV['tug']=t+.2; t=seq(K[2:3],EV['tug']+.15)         # the tweezers pull the chain down; 03
+EV['hook']=EV['tug']+1.4
+t=seq(K[3:6],t+.2,.2)                               # 04-06
+EV['later']=t+.35; EV['clinic']=EV['later']+1.0     # a "LATER..." card, then the clinic
+t=seq(K[6:10],EV['clinic']+.35,.2)                  # 07-10
+END=round(t+0.6,3); N=int(END*SR); voice=np.zeros(N,np.float32)
 norm=lambda w: re.sub(r"[^a-z']","",w.lower())
 for n,who,txt in L:
     k=f'{n}_{who}'; a=A[k]; t0=START[k]; i=int(t0*SR); voice[i:i+len(a)]+=a[:max(0,N-i)]
@@ -48,7 +44,7 @@ for n,who,txt in L:
     lines.append({'id':k,'who':who,'t0':t0,'dur':round(len(a)/SR,3),'env':env,'words':[w for w in words if w[2]]})
 LW={l['id']:l['words'] for l in lines}
 def wt(k,w,n=0): return [x[0] for x in LW[k] if x[2]==w][n]
-EV['lbCan']=wt('10_doctor','IMPACTED')-.05; EV['lbBtn']=wt('11_doctor','BUTTON')-.05; EV['lbChain']=wt('11_doctor','CHAIN')-.05; EV['lbBr']=wt('12_doctor','BRACES')-.05
+EV['open']=max(.8,wt('01_tl','TOOTH')-.45)
 EV={k:round(float(v),3) for k,v in EV.items()}
 sfx=np.zeros(N,np.float32)
 def S(f,t,g,dur=None,start=0.0):
@@ -60,18 +56,17 @@ def tick(t,g,f0=900):                               # a small metal click (chain
     n=int(.07*SR); x=np.arange(n)/SR
     a=(np.sin(2*np.pi*f0*x)*np.exp(-x*70)+.5*np.sin(2*np.pi*f0*2.4*x)*np.exp(-x*110)).astype(np.float32)*g
     i=int(t*SR); m=min(n,N-i); sfx[i:i+m]+=a[:m]
-S('1492.mp3',0.05,.2,.6); S('1492.mp3',0.9,.16,.6)                           # the scalpel
-S('2364.mp3',EV['open'],.3); S('2357.mp3',EV['open']+.12,.2)                 # the gum flap opens
+S('1492.mp3',0.05,.2,.6)                                                     # the scalpel
+S('2364.mp3',EV['open'],.3); S('2357.mp3',EV['open']+.12,.2)                 # the gum opens, the tooth shows
 S('2182.mp3',EV['chain']-.05,.26,.35)                                        # the button goes on
 for j in range(6): tick(EV['chain']+.08+j*.07,.2,1100+j*60)                  # the chain drops
-for j in range(9):
-    tt=EV['tug']+j*.55
-    if tt<EV['seat']-.2: S('2358.mp3',tt,.14,.3); tick(tt+.05,.12,700)        # tug, tug
-S('2357.mp3',EV['seat']+.5,.2)                                               # the RESERVED sign
-S('2357.mp3',EV['doc'],.22)
-for k in ('lbCan','lbBtn','lbChain','lbBr'): S('2357.mp3',EV[k],.15)
-for m_ in range(12): tick(EV['tl0']+.25+(EV['tl1']-EV['tl0']-.3)*m_/11,.2,900+m_*45)   # the months tick by
-S('sfxgen/sfx_dingb.mp3',EV['tl1']-.05,.4,.9); S('2256.mp3',EV['tl1']+.05,.28,1.2)   # it clicks into its seat
+for j in range(4): S('2358.mp3',EV['tug']+j*.35,.15,.3); tick(EV['tug']+.05+j*.35,.13,700)   # pulling the chain down
+S('2182.mp3',EV['hook'],.22,.35)                                             # hooked to the wire
+for j in range(12):
+    tt=EV['hook']+.6+j*.9
+    if tt<EV['later']-.3: tick(tt,.1,700)                                     # the chain stays tight
+S('sfxgen/sfx_dingb.mp3',EV['later']+.05,.3,.9)                              # "LATER..."
+S('1492.mp3',EV['clinic']-.05,.22)
 mus=np.tile(load('../../assets/music/mixkit-9.mp3'),3)[:N]; fl=int(1.0*SR); mus[-fl:]*=np.linspace(1,0,fl)
 act=np.convolve((np.abs(voice)>0.02).astype(np.float32),np.ones(int(.25*SR),np.float32)/int(.25*SR),'same'); mus*=10**(-5*np.clip(act*4,0,1)/20)
 for name,b in [('voice',voice),('sfx',sfx),('music',mus)]:

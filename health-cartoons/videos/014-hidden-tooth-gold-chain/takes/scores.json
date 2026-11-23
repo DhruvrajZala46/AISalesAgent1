@@ -1,170 +1,122 @@
 {
  "takes/01_tla.mp3": {
-  "wer": 0.0,
-  "range": 16.8,
-  "dur": 2.8,
-  "txt": "Whoa! Why are they cutting the gum?"
+  "wer": 0.15,
+  "range": 33.1,
+  "dur": 4.08,
+  "txt": "Huh? Is that a tooth up there? How do they get stuck there?"
  },
  "takes/01_tlb.mp3": {
   "wer": 0.0,
-  "range": 17.5,
-  "dur": 2.72,
-  "txt": "Whoa! Why are they cutting the gum?"
+  "range": 32.8,
+  "dur": 4.24,
+  "txt": "Huh? Is that a tooth up there? How did it get stuck there?"
  },
  "takes/02_tra.mp3": {
   "wer": 0.0,
-  "range": 29.9,
-  "dur": 3.04,
-  "txt": "Look! There's a tooth hiding up there!"
+  "range": 18.9,
+  "dur": 2.56,
+  "txt": "And why are they putting a gold chain on it?"
  },
  "takes/02_trb.mp3": {
   "wer": 0.0,
-  "range": 33.8,
-  "dur": 2.96,
-  "txt": "Look! There's a tooth hiding up there!"
+  "range": 20.8,
+  "dur": 2.56,
+  "txt": "And why are they putting a gold chain on it?"
  },
  "takes/03_cana.mp3": {
   "wer": 0.0,
-  "range": 42.3,
-  "dur": 2.88,
-  "txt": "Five more minutes?"
+  "range": 21.2,
+  "dur": 3.52,
+  "txt": "Ow! Stop! You're gonna rip my head off!"
  },
  "takes/03_canb.mp3": {
   "wer": 0.0,
-  "range": 25.0,
-  "dur": 2.8,
-  "txt": "Five more minutes."
+  "range": 18.3,
+  "dur": 3.52,
+  "txt": "Ow! Stop! You're gonna rip my head off!"
  },
  "takes/04_tla.mp3": {
   "wer": 0.0,
-  "range": 17.1,
-  "dur": 3.36,
-  "txt": "Dude! You were supposed to come down years ago!"
+  "range": 24.7,
+  "dur": 3.52,
+  "txt": "Dude, I think they're pulling him down here, next to us."
  },
  "takes/04_tlb.mp3": {
   "wer": 0.0,
-  "range": 17.4,
-  "dur": 3.36,
-  "txt": "Dude! You were supposed to come down years ago!"
+  "range": 29.6,
+  "dur": 3.44,
+  "txt": "Dude, I think they're pulling him down here, next to us!"
  },
  "takes/05_cana.mp3": {
   "wer": 0.0,
-  "range": 24.6,
-  "dur": 2.72,
-  "txt": "Hey, what's this gold chain for?"
+  "range": 24.5,
+  "dur": 3.84,
+  "txt": "Wait, where am I? What is this place?"
  },
  "takes/05_canb.mp3": {
   "wer": 0.0,
-  "range": 27.1,
-  "dur": 2.88,
-  "txt": "Hey, what's this gold chain for?"
+  "range": 24.5,
+  "dur": 3.84,
+  "txt": "Wait, where am I? What is this place?"
  },
- "takes/06_cana.mp3": {
+ "takes/06_tra.mp3": {
   "wer": 0.0,
-  "range": 28.2,
-  "dur": 2.48,
-  "txt": "Ow! Ow! Stop pulling!"
+  "range": 31.3,
+  "dur": 4.0,
+  "txt": "Relax, buddy. In a few months, you'll be hanging out down here with us."
  },
- "takes/06_canb.mp3": {
+ "takes/06_trb.mp3": {
   "wer": 0.0,
-  "range": 30.0,
-  "dur": 2.64,
-  "txt": "Ow! Ow! Stop pulling!"
+  "range": 31.3,
+  "dur": 4.0,
+  "txt": "Relax, buddy. In a few months, you'll be hanging out down here with us."
  },
- "takes/07_tra.mp3": {
+ "takes/07_patienta.mp3": {
   "wer": 0.0,
-  "range": 28.7,
-  "dur": 3.36,
-  "txt": "Relax, they're pulling you down next to us."
+  "range": 29.3,
+  "dur": 3.92,
+  "txt": "Thanks, Doc. But that really hurt."
  },
- "takes/07_trb.mp3": {
+ "takes/07_patientb.mp3": {
   "wer": 0.0,
-  "range": 27.2,
-  "dur": 3.36,
-  "txt": "Relax, they're pulling you down next to us."
+  "range": 29.3,
+  "dur": 3.92,
+  "txt": "Thanks, Doc. But that really hurt."
  },
- "takes/08_cana.mp3": {
+ "takes/08_doctora.mp3": {
   "wer": 0.0,
-  "range": 16.3,
-  "dur": 2.24,
-  "txt": "How long is this gonna take?"
+  "range": 12.3,
+  "dur": 3.92,
+  "txt": "You had an impacted canine stuck under your gum and bone."
  },
- "takes/08_canb.mp3": {
+ "takes/08_doctorb.mp3": {
   "wer": 0.0,
-  "range": 8.4,
-  "dur": 2.32,
-  "txt": "How long is this gonna take?"
+  "range": 12.3,
+  "dur": 3.92,
+  "txt": "You had an impacted canine stuck under your gum and bone."
  },
- "takes/09_tla.mp3": {
-  "wer": 0.14,
-  "range": 24.6,
-  "dur": 2.96,
-  "txt": "While but we saved your seat"
+ "takes/09_doctora.mp3": {
+  "wer": 0.0,
+  "range": 13.3,
+  "dur": 6.72,
+  "txt": "We uncovered the tooth, bonded a small button and chain to it, and hooked it to your braces to gently pull it down."
  },
- "takes/09_tlb.mp3": {
-  "wer": 0.14,
-  "range": 17.0,
-  "dur": 2.96,
-  "txt": "While, but we saved your seat"
+ "takes/09_doctorb.mp3": {
+  "wer": 0.0,
+  "range": 13.3,
+  "dur": 6.72,
+  "txt": "We uncovered the tooth, bonded a small button and chain to it, and hooked it to your braces to gently pull it down."
  },
  "takes/10_doctora.mp3": {
   "wer": 0.0,
-  "range": 15.0,
-  "dur": 4.8,
-  "txt": "This is an impacted canine, a tooth stuck under the gum and bone."
+  "range": 12.0,
+  "dur": 4.96,
+  "txt": "At each visit, we'll adjust the tension until the tooth slowly moves into place."
  },
  "takes/10_doctorb.mp3": {
   "wer": 0.0,
-  "range": 29.5,
-  "dur": 4.8,
-  "txt": "This is an impacted canine, a tooth stuck under the gum and bone."
- },
- "takes/11_doctora.mp3": {
-  "wer": 0.0,
-  "range": 14.5,
-  "dur": 4.48,
-  "txt": "The dentist uncovers it and glues on a tiny button with a gold chain."
- },
- "takes/11_doctorb.mp3": {
-  "wer": 0.0,
-  "range": 15.3,
-  "dur": 4.48,
-  "txt": "The dentist uncovers it and glues on a tiny button with a gold chain."
- },
- "takes/12_doctora.mp3": {
-  "wer": 0.0,
-  "range": 12.9,
-  "dur": 3.6,
-  "txt": "The chain hooks to the braces and pulls it down gently."
- },
- "takes/12_doctorb.mp3": {
-  "wer": 0.0,
-  "range": 13.8,
-  "dur": 3.6,
-  "txt": "The chain hooks to the braces and pulls it down gently."
- },
- "takes/13_doctora.mp3": {
-  "wer": 0.0,
-  "range": 20.3,
-  "dur": 3.84,
-  "txt": "It moves slowly, so it usually takes about a year."
- },
- "takes/13_doctorb.mp3": {
-  "wer": 0.0,
-  "range": 16.5,
-  "dur": 3.76,
-  "txt": "It moves slowly, so it usually takes about a year."
- },
- "takes/14_cana.mp3": {
-  "wer": 0.0,
-  "range": 12.9,
-  "dur": 1.12,
-  "txt": "made it"
- },
- "takes/14_canb.mp3": {
-  "wer": 0.0,
-  "range": 17.6,
-  "dur": 1.12,
-  "txt": "Made it!"
+  "range": 12.0,
+  "dur": 4.96,
+  "txt": "At each visit, we'll adjust the tension until the tooth slowly moves into place."
  }
 }

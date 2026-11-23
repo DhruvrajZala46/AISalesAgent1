@@ -2,9 +2,9 @@
 import json, subprocess, numpy as np, parselmouth
 S=json.load(open('takes/scores.json'))
 L=[l.rstrip('\n').split('\t') for l in open('lines.tsv') if l.strip()]
-SHIFT={'tl':0.0,'tr':0.0,'can':0.0,'doctor':0.0}
+SHIFT={'tl':0.0,'tr':0.0,'can':0.0,'doctor':0.0,'patient':0.0}
 LSHIFT={}
-TEMPO={'tl':1.08,'tr':1.06,'can':1.08,'doctor':1.08}
+TEMPO={'tl':1.08,'tr':1.08,'can':1.08,'doctor':1.08,'patient':1.06}
 FORCE={}
 def f0(path):
     p=parselmouth.Sound(path).to_pitch(pitch_floor=60,pitch_ceiling=900).selected_array['frequency']; p=p[p>0]

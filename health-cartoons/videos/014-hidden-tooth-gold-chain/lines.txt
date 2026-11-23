@@ -1,14 +1,10 @@
-tl|Whoa! Why are they cutting the gum?!
-tr|Look! There's a tooth hiding up there!
-can|Five more minutes...
-tl|Dude! You were supposed to come down years ago!
-can|Hey! What's this gold chain for?!
-can|Ow, ow! Stop pulling!
-tr|Relax. They're pulling you down next to us.
-can|How long is this gonna take?
-tl|A while. But we saved your seat!
-doctor|This is an impacted canine: a tooth stuck under the gum and bone.
-doctor|The dentist uncovers it and glues on a tiny button with a gold chain.
-doctor|The chain hooks to the braces, and pulls it down gently.
-doctor|It moves slowly, so it usually takes about a year.
-can|Made it!
+tl|Huh? Is that a tooth up there? How did it get stuck there?
+tr|And why are they putting a gold chain on it?
+can|Ow! Stop! You're gonna rip my head off!
+tl|Dude, I think they're pulling him down here, next to us.
+can|Wait... where am I? What is this place?
+tr|Relax, buddy. In a few months, you'll be hanging out down here with us.
+patient|Thanks, Doc. But that really hurt!
+doctor|You had an impacted canine, stuck under your gum and bone.
+doctor|We uncovered the tooth, bonded a small button and chain to it, and hooked it to your braces to gently pull it down.
+doctor|At each visit, we'll adjust the tension, until the tooth slowly moves into place.

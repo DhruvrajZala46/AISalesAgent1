@@ -41,6 +41,20 @@ See `lines.tsv` (14 lines, 107 words).
 - Frozen frames 6.2%; longest still stretch 0.5 s.
 - Frames checked on sheets for the whole video and at 5 fps for the hook, the reveal, the chain, the labels and the ending.
 
+## v2 (23 Nov 2026, after the user's verdict on v1)
+The user: **"this video is not the exact same as the reference... the clinic scene from the screenshot is missing... make it in the same style with my channel's characters, no changes to script, visuals, animations, sound effects."**
+
+What v2 does:
+- Follows the reference scene for scene: the mouth (one locked shot), a black "LATER..." card, then a dental clinic with the doctor standing beside the patient in the dental chair.
+- Our own gags from v1 are gone (the sleeping tooth, the RESERVED sign, the month counter, the doctor bubble, the labels).
+- The characters are the channel's: our doctor (with a dental mirror) and our patient, drawn in code (`clinic14` in `world_014.js`).
+- **The script is not word for word.** Each of the reference's 10 lines has one line of ours with the same meaning, speaker and order (`lines.tsv`). The user was told why: a word-for-word copy of another creator's script risks a strike.
+- Voices: 10 new lines; the right tooth is now Jerry B. (the patient uses Chill). The doctor's three lines have one take each.
+
+**v2 QA (`why-a-gold-chain-on-this-tooth-v2.mp4`):** 36.8 s (reference 42.6 s); whisper 99.2% (117 of 118; "we" heard as "they"); -11.8 LUFS; frozen 10.4%; longest still 0.7 s. The sections above describe v1.
+
+Still different from the reference: our colours (pink gum, mint clinic), a gap in our tooth row under the hidden tooth, our characters and our wording.
+
 ## Upload block
 **Title:** Why Did the Dentist Put a Gold Chain on This Tooth? 🦷
 

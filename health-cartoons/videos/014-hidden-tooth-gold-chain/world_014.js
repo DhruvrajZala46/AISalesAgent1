@@ -42,3 +42,23 @@ function docBubble(){
   return `<g id="docB" opacity="0"><circle r="100" cx="5" cy="7" fill="#000" opacity=".16"/><circle r="92" fill="#e8f7f5"/><g clip-path="url(#dbC)"><g transform="translate(0,-92) scale(1.02)">${doctorSVG()}</g></g>
    <circle r="92" fill="none" stroke="${C_TEAL}" stroke-width="10"/><circle r="97" fill="none" stroke="${INK}" stroke-width="3.4"/><circle r="87" fill="none" stroke="${INK}" stroke-width="2.4"/>
    <g transform="translate(0,104)"><rect x="-72" y="-17" width="144" height="34" rx="17" fill="#fff" ${OLW2}/><text y="8" text-anchor="middle" style="font-family:LG,sans-serif;font-size:21px;letter-spacing:.5px" fill="#0b6e6b">GIGGLEMD</text></g></g>`;}
+// ---------------- the dental clinic: our doctor beside our patient in the dental chair ----------------
+function clinic14(){
+  DEFS+=`<clipPath id="patTop"><rect x="-200" y="-60" width="400" height="582"/></clipPath>`;
+  const cush='#7fd0cc',shell='#eef2f6',shellS='#cfd8e2';
+  return `<rect x="-60" y="-60" width="840" height="1400" fill="#e8f7f5"/>
+   <rect x="640" y="-60" width="140" height="1230" fill="#f7fdfc" ${OLW}/>
+   <g transform="translate(262,52)"><rect x="0" y="0" width="304" height="192" fill="#2b3b3b" ${OLW}/>${[0,1,2,3].map(i=>`<rect x="10" y="${10+i*45}" width="284" height="36" fill="#c6d4d2"/><rect x="10" y="${36+i*45}" width="284" height="8" fill="#8b9b99"/>`).join('')}</g>
+   <rect x="-10" y="300" width="60" height="880" fill="#14a3a0" ${OLW}/>
+   <rect x="-60" y="1150" width="840" height="200" fill="#cfe3e1"/><path d="M-60,1150 H780" ${OLW}/>
+   <g transform="translate(360,1150) scale(1.15) translate(-385,-1150)"><g transform="translate(150,338) scale(1.0)">${doctorSVG()}</g>
+   <g id="mirror"><path d="M0,0 L58,-26" stroke="${INK}" stroke-width="9" stroke-linecap="round"/><path d="M0,0 L58,-26" stroke="${C_STEEL}" stroke-width="5" stroke-linecap="round"/><circle cx="66" cy="-30" r="12" fill="#eaf6ff" ${OLW2}/></g>
+   <ellipse cx="390" cy="1158" rx="170" ry="16" fill="#000" opacity=".12"/>
+   <path d="M330,1000 L450,1000 L474,1140 L306,1140 Z" fill="${shellS}" ${OLW}/><rect x="270" y="1132" width="240" height="24" rx="10" fill="#b9c3cf" ${OLW}/>
+   <path d="M404,990 L600,470" stroke="${INK}" stroke-width="168" stroke-linecap="round"/><path d="M404,990 L600,470" stroke="${shell}" stroke-width="161" stroke-linecap="round"/><path d="M414,950 L590,500" stroke="${cush}" stroke-width="112" stroke-linecap="round"/>
+   <path d="M246,972 L470,972" stroke="${INK}" stroke-width="76" stroke-linecap="round"/><path d="M246,972 L470,972" stroke="${shell}" stroke-width="69" stroke-linecap="round"/>
+   <path d="M250,990 L84,1096" stroke="${INK}" stroke-width="66" stroke-linecap="round"/><path d="M250,990 L84,1096" stroke="${shell}" stroke-width="59" stroke-linecap="round"/><path d="M240,984 L96,1076" stroke="${cush}" stroke-width="30" stroke-linecap="round"/>
+   <g id="patWrap"><g transform="translate(540,470) rotate(18) scale(.92)"><g clip-path="url(#patTop)">${patientSVG()}</g></g>
+    <path d="M396,930 L262,948 L104,1052" fill="none" stroke="${INK}" stroke-width="70" stroke-linecap="round" stroke-linejoin="round"/><path d="M396,930 L262,948 L104,1052" fill="none" stroke="#4b6286" stroke-width="63" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M118,1016 C92,1000 60,1016 56,1050 C54,1074 70,1092 92,1090 L128,1064 Z" fill="#f2f2f2" ${OLW}/></g>
+   <path d="M352,884 L520,858" stroke="${INK}" stroke-width="40" stroke-linecap="round"/><path d="M352,884 L520,858" stroke="${shell}" stroke-width="33" stroke-linecap="round"/></g>`;}
