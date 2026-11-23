@@ -99,4 +99,4 @@ function docBubble(){
   DEFS+=`<clipPath id="dbC"><circle r="92"/></clipPath>`;
   return `<g id="docB" opacity="0"><circle r="100" cx="5" cy="7" fill="#000" opacity=".16"/><circle r="92" fill="#e8f7f5"/><g clip-path="url(#dbC)"><g transform="translate(0,-92) scale(1.02)">${doctorSVG()}</g></g>
    <circle r="92" fill="none" stroke="${C_TEAL}" stroke-width="10"/><circle r="97" fill="none" stroke="${INK}" stroke-width="3.4"/><circle r="87" fill="none" stroke="${INK}" stroke-width="2.4"/>
-   <g transform="translate(0,104)"><rect x="-72" y="-17" width="144" height="34" rx="17" fill="#fff" ${OLW2}/><text y="8" text-anchor="middle" style="font-family:LG,sans-serif;font-size:21px;letter-spacing:.5px" fill="#0b6e6b">DR. MIRA</text></g></g>`;}
+   <g transform="translate(0,104)"><rect x="-72" y="-17" width="144" height="34" rx="17" fill="#fff" ${OLW2}/><text y="8" text-anchor="middle" style="font-family:LG,sans-serif;font-size:21px;letter-spacing:.5px" fill="#0b6e6b">GIGGLEMD</text></g></g>`;}

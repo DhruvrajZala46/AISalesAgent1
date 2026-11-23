@@ -14,7 +14,7 @@ let S1=`<g id="s1"><g id="cam">${legWorld()}</g>
  <g transform="translate(0,252)">${studyCard()}</g>${docBubble()}</g>`;
 const svg=$('S');
 svg.innerHTML=`<defs><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>${DEFS}</defs>`
- +S1+`<text id="wm" x="360" y="64" text-anchor="middle" style="font-family:ComicNeue,sans-serif;font-weight:700;font-size:24px" fill="#fff" stroke="#0b6e6b" stroke-width=".6" opacity=".55">@DrMiraExplains</text>`
+ +S1+`<text id="wm" x="360" y="64" text-anchor="middle" style="font-family:ComicNeue,sans-serif;font-weight:700;font-size:24px" fill="#fff" stroke="#0b6e6b" stroke-width=".6" opacity=".55">@GiggleMD</text>`
  +`<g id="capg"><text id="cap" class="cap" x="360" y="1015" text-anchor="middle" style="stroke-width:7px;font-size:48px"></text></g>`;
 
 // ---------- the bounce: the heel taps the floor 4 times a second ----------

@@ -169,7 +169,7 @@ function docBubble(){
   DEFS+=`<clipPath id="dbC"><circle r="92"/></clipPath>`;
   return `<g id="docB" opacity="0"><circle r="100" cx="5" cy="7" fill="#000" opacity=".16"/><circle r="92" fill="#e8f7f5"/><g clip-path="url(#dbC)"><g transform="translate(0,-92) scale(1.02)">${doctorSVG()}</g></g>
    <circle r="92" fill="none" stroke="${C_TEAL}" stroke-width="10"/><circle r="97" fill="none" stroke="${INK}" stroke-width="3.4"/><circle r="87" fill="none" stroke="${INK}" stroke-width="2.4"/>
-   <g transform="translate(0,104)"><rect x="-72" y="-17" width="144" height="34" rx="17" fill="#fff" ${OLW2}/><text y="8" text-anchor="middle" style="font-family:LG,sans-serif;font-size:21px;letter-spacing:.5px" fill="#0b6e6b">DR. MIRA</text></g></g>`;}
+   <g transform="translate(0,104)"><rect x="-72" y="-17" width="144" height="34" rx="17" fill="#fff" ${OLW2}/><text y="8" text-anchor="middle" style="font-family:LG,sans-serif;font-size:21px;letter-spacing:.5px" fill="#0b6e6b">GIGGLEMD</text></g></g>`;}
 
 // =============== SCENE 2 : ENT clinic ===============
 function hand(x,y,ang,sc,skin,id=''){return `<g ${id?`id="${id}"`:''} transform="translate(${x},${y}) rotate(${ang}) scale(${sc})">
@@ -284,7 +284,7 @@ let S1=`<g id="s1"><g id="cam">${legWorld()}</g>
  <g transform="translate(0,252)">${studyCard()}</g>${docBubble()}</g>`;
 const svg=$('S');
 svg.innerHTML=`<defs><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>${DEFS}</defs>`
- +S1+`<text id="wm" x="360" y="64" text-anchor="middle" style="font-family:ComicNeue,sans-serif;font-weight:700;font-size:24px" fill="#fff" stroke="#0b6e6b" stroke-width=".6" opacity=".55">@DrMiraExplains</text>`
+ +S1+`<text id="wm" x="360" y="64" text-anchor="middle" style="font-family:ComicNeue,sans-serif;font-weight:700;font-size:24px" fill="#fff" stroke="#0b6e6b" stroke-width=".6" opacity=".55">@GiggleMD</text>`
  +`<g id="capg"><text id="cap" class="cap" x="360" y="1015" text-anchor="middle" style="stroke-width:7px;font-size:48px"></text></g>`;
 
 // ---------- the bounce: the heel taps the floor 4 times a second ----------

@@ -3,6 +3,7 @@
 ## A. Health-cartoon Shorts (`health-cartoons/`) - the CURRENT project (Nov 2026)
 
 English "talking organs + doctor" cartoon Shorts, drawn and animated entirely in code.
+**The user's channel is @GiggleMD (GiggleMD).** Every video's watermark is "@GiggleMD"; never "@DrMiraExplains" (user, 23 Nov 2026).
 **New chat about these videos? Read `health-cartoons/README.md`, then `health-cartoons/PLAYBOOK.md` (section 0 first) and `health-cartoons/LEARNINGS.md` FIRST.**
 **THE STANDARD NOW (22 Nov 2026): `health-cartoons/videos/012-why-we-snore/`.** The user: "VIDEO KA EDITING BHUT PSND AAYA, PERFECT HAI...
 AAGE JITNE VIDEO BNAUGI SAB KO AESE STYLE ME BANANA" (every future video in this style). Start every new video by copying the 012 folder
