@@ -28,6 +28,32 @@ An 88.6 s Dr. Healthcare Short (the user's WhatsApp file; views not measured her
 - Frozen frames 8.3%; longest still stretch 0.6 s.
 - Checked on a reference-vs-ours sheet (12 frames each) and at 5 fps for the hook, the first knock and the tip into BODY FAT STORAGE.
 
+## v2 (23 Nov 2026, after the user's verdict on v1)
+The user: **"VERY BAD VIDEO, 5%... I can't understand what that body part is or what you are talking about. A 5-year-old or a 60-year-old cannot understand this. I want it easiest to understand VISUALLY... compare their visual storytelling with what you made."**
+
+What a large reference-over-ours sheet showed (the main ones):
+1. Their liver looks like a liver: a big wedge with the stomach and the intestines under it. Ours was a brown oval floating in pink, with a pink blob and wavy lines.
+2. Nothing in ours was labelled.
+3. Their fat drips like melted cheese; ours was smooth icing.
+4. Their wheelbarrow carries the same lumpy yellow fat that sits on the liver. Ours carried gold balls, so the two never read as the same thing.
+5. Their doors fill half the frame and the door name and "STORAGE FULL" can be read at once. Ours were small; the sign could not be read.
+6. Their insulin has big eyes high on its body. Ours had small eyes hidden behind the wheelbarrow.
+7. The top half of our corridor frame was empty.
+8. Our second insulin stood on top of the wheelbarrow and the door.
+9. Our liver had long dangling arms; theirs has short arms holding the bar.
+10. Our liver and barbell were small; theirs fill the frame.
+11. Their patient is clearly overweight (the story's payoff); ours was slim.
+12. Nothing told the viewer that the corridor is inside the liver.
+
+What v2 changed (drawings and motion only; the audio is the same):
+- Scene 1 redrawn: a liver-shaped liver with its lobe line, dripping lumpy fat, a J-shaped stomach, intestines, the food pipe; labels LIVER, FAT, STOMACH on the first frame; a bigger face and barbell.
+- A zoom into the liver before the corridor, and the "INSIDE THE LIVER" tag.
+- Corridor redrawn: doors 392 px wide with 54 px names and a 34 px "STORAGE FULL"; a taller insulin with big eyes above the wheelbarrow; the same lumpy, dripping fat in the wheelbarrow; the second insulin stands just behind the first.
+- Body scene: the belly grows more and a "BODY FAT" label pops.
+- Clinic: the patient has a belly.
+
+**v2 QA (`where-does-the-extra-fat-go-v2.mp4`):** 77.4 s; whisper 97.5% (195 of 200); -11.9 LUFS; frozen 6.9%; longest still 0.6 s. Checked on a reference-over-ours sheet and at 5 fps for the hook, the zoom, the first knock, the second insulin's entry, the tip and the body scene.
+
 ## Upload block
 **Title:** Where Does All the Extra Fat Go? 🍔
 

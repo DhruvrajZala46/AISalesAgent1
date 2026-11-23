@@ -29,6 +29,8 @@ Every new video copies `videos/012-why-we-snore/` and follows this recipe. Secti
 
 **4c. Hook and look (from 013 v2):** the title's action moves on frame 0 and a voice speaks at 0.0 s; every character is big and has a face; bright wall, a prop colour that pops.
 
+**4d. Understood with the sound off (from 015 v2):** organs in their real shape and place with a label on the first frame; the same thing drawn the same in every scene; names 50 px+, signs 30 px+; eyes big and never behind a prop; no empty half of the frame; the patient shows the result. Check on 330 px reference-over-ours tiles, not on a small contact sheet.
+
 **5. Sound:**
 - ElevenLabs `eleven_text_to_sound_v2` for the topic's own sounds (snore, slap, breathing), kept in `sfxgen/`.
 - Mixkit hits from section 3 on every action.
