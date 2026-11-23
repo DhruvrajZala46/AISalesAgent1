@@ -1,0 +1,8 @@
+flow ZNrvkdwc06K8SFtEm4f7 (eleven_v4 voices, eleven_text_to_sound_v2 SFX), 2 takes per line
+cell (blood cell A, panicky)=Goofy Cartoon Kid BRruTxiLM2nszrcCIpz1
+cell2 (blood cell B)=Quibble eWEzadEUnDSDRle0PsQx
+calf (the calf muscle, proud gym type)=Jerry B. - Heroic Action Protagonist NPVegEkwslClHaSZqnyS
+gate (the one-way valve, deadpan door guard)=Marshal - Grumpy Sourpuss LysucvtFmzi1NVAE0rKp
+partner (off screen)=Laura FGY2WhTYpPnrIDTdsKH5
+patient=Chill N5m2ReaeSIcn4Ssu8rpQ
+doctor (Dr. Mira)=Hope tnSpp4vdxKPjI9w0GnoV

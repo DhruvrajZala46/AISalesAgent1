@@ -1,0 +1,218 @@
+{
+ "takes/01_cella.mp3": {
+  "wer": 0.0,
+  "range": 29.1,
+  "dur": 2.64,
+  "txt": "Hey, is this elevator broken?"
+ },
+ "takes/01_cellb.mp3": {
+  "wer": 0.0,
+  "range": 30.1,
+  "dur": 2.56,
+  "txt": "Hey, is this elevator broken?"
+ },
+ "takes/02_cell2a.mp3": {
+  "wer": 0.11,
+  "range": 28.2,
+  "dur": 4.64,
+  "txt": "Ugh, we've been stuck at the ankle for three hours!"
+ },
+ "takes/02_cell2b.mp3": {
+  "wer": 0.0,
+  "range": 13.0,
+  "dur": 4.72,
+  "txt": "We've been stuck at the ankle for three hours!"
+ },
+ "takes/03_cella.mp3": {
+  "wer": 0.0,
+  "range": 9.0,
+  "dur": 3.04,
+  "txt": "Yo, calf! We need a lift up to the heart!"
+ },
+ "takes/03_cellb.mp3": {
+  "wer": 0.1,
+  "range": 9.2,
+  "dur": 2.88,
+  "txt": "Yo, calf! We need to lift up to the heart!"
+ },
+ "takes/04_calfa.mp3": {
+  "wer": 0.0,
+  "range": 17.7,
+  "dur": 4.48,
+  "txt": "Can't he hasn't moved in hours. I only pump when he moves"
+ },
+ "takes/04_calfb.mp3": {
+  "wer": 0.0,
+  "range": 10.8,
+  "dur": 4.4,
+  "txt": "Can't. He hasn't moved in hours. I only pump when he moves."
+ },
+ "takes/05_gatea.mp3": {
+  "wer": 0.0,
+  "range": 10.4,
+  "dur": 4.0,
+  "txt": "And I'm a one-way door, up only, no exceptions."
+ },
+ "takes/05_gateb.mp3": {
+  "wer": 0.0,
+  "range": 19.7,
+  "dur": 4.0,
+  "txt": "And I'm a one-way door, up only, no exceptions."
+ },
+ "takes/06_cell2a.mp3": {
+  "wer": 0.0,
+  "range": 38.4,
+  "dur": 2.88,
+  "txt": "Wait, why is the floor shaking?"
+ },
+ "takes/06_cell2b.mp3": {
+  "wer": 0.0,
+  "range": 25.9,
+  "dur": 2.88,
+  "txt": "Wait, why is the floor shaking?"
+ },
+ "takes/07_calfa.mp3": {
+  "wer": 0.0,
+  "range": 15.9,
+  "dur": 2.72,
+  "txt": "He's bouncing his leg! That's my cue!"
+ },
+ "takes/07_calfb.mp3": {
+  "wer": 0.0,
+  "range": 11.9,
+  "dur": 2.64,
+  "txt": "He's bouncing his leg! That's my cue!"
+ },
+ "takes/08_calfa.mp3": {
+  "wer": 0.0,
+  "range": 16.5,
+  "dur": 2.16,
+  "txt": "Squeeze, going up!"
+ },
+ "takes/08_calfb.mp3": {
+  "wer": 0.0,
+  "range": 19.8,
+  "dur": 2.16,
+  "txt": "Squeeze going up"
+ },
+ "takes/09_cell2a.mp3": {
+  "wer": 1.0,
+  "range": 26.8,
+  "dur": 1.52,
+  "txt": "WOOHOO!"
+ },
+ "takes/09_cell2b.mp3": {
+  "wer": 1.0,
+  "range": 30.9,
+  "dur": 1.52,
+  "txt": "Woohoo!"
+ },
+ "takes/10_gatea.mp3": {
+  "wer": 0.0,
+  "range": 8.6,
+  "dur": 2.48,
+  "txt": "Up only. Door closed."
+ },
+ "takes/10_gateb.mp3": {
+  "wer": 0.0,
+  "range": 7.1,
+  "dur": 2.64,
+  "txt": "Up only. Door closed."
+ },
+ "takes/11_calfa.mp3": {
+  "wer": 0.0,
+  "range": 18.7,
+  "dur": 2.64,
+  "txt": "That's why they call me the second heart."
+ },
+ "takes/11_calfb.mp3": {
+  "wer": 0.0,
+  "range": 7.1,
+  "dur": 2.4,
+  "txt": "That's why they call me the second heart."
+ },
+ "takes/12_partnera.mp3": {
+  "wer": 0.0,
+  "range": 11.6,
+  "dur": 3.36,
+  "txt": "Ugh, can you stop shaking the whole couch?"
+ },
+ "takes/12_partnerb.mp3": {
+  "wer": 0.0,
+  "range": 13.2,
+  "dur": 3.2,
+  "txt": "Ugh, can you stop shaking the whole couch?"
+ },
+ "takes/13_cella.mp3": {
+  "wer": 0.0,
+  "range": 14.7,
+  "dur": 2.8,
+  "txt": "No! No! No! Keep bouncing!"
+ },
+ "takes/13_cellb.mp3": {
+  "wer": 0.0,
+  "range": 18.4,
+  "dur": 2.8,
+  "txt": "No! No! No! Keep bouncing!"
+ },
+ "takes/14_patienta.mp3": {
+  "wer": 0.0,
+  "range": 23.4,
+  "dur": 4.16,
+  "txt": "Doc, everyone says stop bouncing my leg, is it bad?"
+ },
+ "takes/14_patientb.mp3": {
+  "wer": 0.0,
+  "range": 24.0,
+  "dur": 4.16,
+  "txt": "Doc, everyone says stop bouncing my leg. Is it bad?"
+ },
+ "takes/15_doctora.mp3": {
+  "wer": 0.0,
+  "range": 27.4,
+  "dur": 5.76,
+  "txt": "Not for your blood flow, each calf squeeze pushes blood up your veins back to your heart."
+ },
+ "takes/15_doctorb.mp3": {
+  "wer": 0.0,
+  "range": 25.5,
+  "dur": 5.6,
+  "txt": "Not for your blood flow, each calf squeeze pushes blood up your veins, back to your heart."
+ },
+ "takes/16_doctora.mp3": {
+  "wer": 0.0,
+  "range": 14.8,
+  "dur": 2.8,
+  "txt": "One-way valves keep it from sliding back down."
+ },
+ "takes/16_doctorb.mp3": {
+  "wer": 0.0,
+  "range": 14.5,
+  "dur": 2.8,
+  "txt": "One-way valves keep it from sliding back down."
+ },
+ "takes/17_doctora.mp3": {
+  "wer": 0.0,
+  "range": 27.1,
+  "dur": 7.2,
+  "txt": "In a small study, people sat for three hours. Blood flow dropped in the still leg and rose in the fidgeting one."
+ },
+ "takes/17_doctorb.mp3": {
+  "wer": 0.0,
+  "range": 14.9,
+  "dur": 7.28,
+  "txt": "In a small study, people sat for three hours. Blood flow dropped in the still leg and rose in the fidgeting one."
+ },
+ "takes/18_doctora.mp3": {
+  "wer": 0.0,
+  "range": 15.1,
+  "dur": 3.68,
+  "txt": "But the best fix is simple. Get up and walk."
+ },
+ "takes/18_doctorb.mp3": {
+  "wer": 0.0,
+  "range": 13.6,
+  "dur": 3.6,
+  "txt": "But the best fix is simple. Get up and walk."
+ }
+}

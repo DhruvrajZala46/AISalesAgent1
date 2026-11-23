@@ -1,0 +1,18 @@
+cell|Hey! Is this elevator broken?!
+cell2|We've been stuck at the ankle for three hours!
+cell|Yo, Calf! We need a lift up to the heart!
+calf|Can't. He hasn't moved in hours. I only pump when he moves.
+gate|And I'm a one-way door. Up only. No exceptions.
+cell2|Wait... why is the floor shaking?
+calf|He's bouncing his leg! That's my cue!
+calf|Squeeze! Going up!
+cell2|Woo-hoo!
+gate|Up only. Door closed.
+calf|That's why they call me the second heart.
+partner|Ugh! Can you stop shaking the whole couch?!
+cell|No, no, no! Keep bouncing!
+patient|Doc, everyone says stop bouncing my leg. Is it bad?
+doctor|Not for your blood flow. Each calf squeeze pushes blood up your veins, back to your heart.
+doctor|One-way valves keep it from sliding back down.
+doctor|In a small study, people sat for three hours. Blood flow dropped in the still leg and rose in the fidgeting one.
+doctor|But the best fix is simple. Get up and walk.

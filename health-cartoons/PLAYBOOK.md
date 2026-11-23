@@ -25,6 +25,8 @@ Every new video copies `videos/012-why-we-snore/` and follows this recipe. Secti
 - Then `tighten.py` (0.14 for the doctor, 0.22 for the others) and `words.py`.
 - Whisper on the final mix must be at least 97%.
 
+**4b. Clinic (from 013):** do not leave the doctor's lines on a static two-shot. Replay the body scene on her words (`renderReplay` in `videos/013-leg-bounce-second-heart/parts_013.js`), and show a study or a rule as a card that pops over the clinic wall.
+
 **5. Sound:**
 - ElevenLabs `eleven_text_to_sound_v2` for the topic's own sounds (snore, slap, breathing), kept in `sfxgen/`.
 - Mixkit hits from section 3 on every action.
