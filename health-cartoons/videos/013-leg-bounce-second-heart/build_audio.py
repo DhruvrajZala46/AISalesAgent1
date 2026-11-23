@@ -16,22 +16,23 @@ lend=lambda k: START[k]+dur(k)
 def seq(keys,t,gap=.16):
     for k in keys: START[k]=round(t,3); t=lend(k)+gap
     return t-gap
-EV={'drop':.2,'land':.48,'zoomOut':2.55}
-t=seq(K[0:3],.6)                                   # 01-03: the cells, stuck at the ankle
-EV['calfCam']=t-.15; t=seq(K[3:4],t+.22)            # 04: the calf
-EV['gateCam']=t+.02; t=seq(K[4:5],t+.22)            # 05: the gate
-EV['bounce']=t+.3                                   # the leg starts to bounce
-t=seq(K[5:8],EV['bounce']+.75,.14)                  # 06-08
-EV['up']=START['08_calf']+ (W['08_calf'][1][0] if len(W['08_calf'])>1 else .6)   # "Going up!"
-t=seq(K[8:9],lend('08_calf')+.05)                   # 09: Woo-hoo!
-EV['shut']=t+.18; t=seq(K[9:10],EV['shut']+.12)     # 10: the gate snaps shut
-EV['flex']=t+.2; t=seq(K[10:11],t+.3)               # 11: second heart
-EV['shout']=t+.35; t=seq(K[11:12],EV['shout'])      # 12: the partner
-EV['stop']=t+.12                                    # the leg stops
-t=seq(K[12:13],EV['stop']+.45)                      # 13
-EV['clinic']=t+.4
-t=seq(K[13:18],EV['clinic']+.35,.2)
-END=round(t+.7,3); N=int(END*SR); voice=np.zeros(N,np.float32)
+EV={}
+t=seq(K[0:1],0.0)                                   # 01: the partner, on the very first frame (the leg is already bouncing)
+t=seq(K[1:2],t+.12)                                 # 02: "Okay, okay. Sorry."
+EV['stop1']=START['02_patient']+.35                 # the leg stops
+t=seq(K[2:4],EV['stop1']+.75,.2)                    # 03-04: the cells slide back
+EV['caught']=t+.1; t=seq(K[4:5],t+.3)               # 05: the valve guard
+EV['twoA']=t+.05; t=seq(K[5:6],t+.2)                # 06
+EV['calfCam']=t+.02; t=seq(K[6:7],t+.2)             # 07: the calf
+EV['crowd']=t+.05; t=seq(K[7:8],t+.2)               # 08
+EV['bounce']=t+.2                                   # the leg starts again
+t=seq(K[8:11],EV['bounce']+.6,.14)                  # 09-11
+EV['up']=START['11_calf']+(W['11_calf'][1][0] if len(W['11_calf'])>1 else .6)   # "Going up!"
+t=seq(K[11:12],lend('11_calf')+.05)                 # 12: Woo-hoo!
+EV['flex']=t+.25; t=seq(K[12:13],t+.35)             # 13: second heart
+EV['ask']=t+.25; t=seq(K[13:14],t+.4)               # 14: the question
+EV['doc']=t+.1; t=seq(K[14:18],t+.3,.2)             # 15-18: Dr. Mira, in a bubble over the leg
+END=round(t+0.55,3); N=int(END*SR); voice=np.zeros(N,np.float32)
 norm=lambda w: re.sub(r"[^a-z']","",w.lower())
 for n,who,txt in L:
     k=f'{n}_{who}'; a=A[k]; t0=START[k]; i=int(t0*SR); voice[i:i+len(a)]+=a[:max(0,N-i)]
@@ -51,12 +52,14 @@ for n,who,txt in L:
     lines.append({'id':k,'who':who,'t0':t0,'dur':round(len(a)/SR,3),'env':env,'words':[w for w in words if w[2]]})
 LW={l['id']:l['words'] for l in lines}
 def wt(k,w,n=0): return [x[0] for x in LW[k] if x[2]==w][n]
-EV['two']=wt('02_cell2','FOR')-.1; EV['second']=wt('11_calf','SECOND')-.05
-EV['rp0']=wt('15_doctor','EACH')-.06; EV['rpHeart']=wt('15_doctor','BACK')-.05; EV['rpCut']=START['16_doctor']-.08   # the doctor's words over the leg
-EV['rpStop']=wt('16_doctor','KEEP')-.2; EV['rp1']=START['17_doctor']-.08
+EV['second']=wt('13_calf','SECOND')-.05
+EV['rp0']=wt('15_doctor','EACH')-.1; EV['rpHeart']=wt('15_doctor','BACK')-.05
+EV['stop2']=START['16_doctor']-.1; EV['bounce3']=START['17_doctor']-.15
 EV['card0']=wt('17_doctor','PEOPLE')-.1; EV['arrDown']=wt('17_doctor','DROPPED'); EV['arrUp']=wt('17_doctor','ROSE'); EV['card1']=START['18_doctor']-.1
 EV['getUp']=wt('18_doctor','GET'); EV['walk']=wt('18_doctor','WALK')
 EV={k:round(float(v),3) for k,v in EV.items()}
+BI=[[-10.0,EV['stop1']],[EV['bounce'],EV['stop2']],[EV['bounce3'],EV['getUp']]]      # when the leg bounces
+PI=[[-10.0,EV['stop1']],[EV['up'],EV['stop2']],[EV['bounce3'],EV['getUp']]]          # when the calf pumps
 sfx=np.zeros(N,np.float32)
 def S(f,t,g,dur=None,start=0.0):
     a=load(f if '/' in f else '../../assets/sfx/'+f); a=a[int(start*SR):]
@@ -67,35 +70,29 @@ def tap(t,g):                                       # a soft heel tap on the flo
     n=int(.11*SR); x=np.arange(n)/SR
     a=(np.sin(2*np.pi*(150*x-260*x*x))*np.exp(-x*38)+.25*np.random.RandomState(int(t*1000)).randn(n)*np.exp(-x*220)).astype(np.float32)*g
     i=int(t*SR); m=min(n,N-i); sfx[i:i+m]+=a[:m]
-S('2364.mp3',EV['land'],.32)                                              # the second cell plops onto the pile
-S('2364.mp3',START['01_cell']+.55,.16); S('2364.mp3',START['01_cell']+.85,.16)   # jabbing the call button
-S('1486.mp3',EV['zoomOut'],.14,1.0)
-S('2357.mp3',EV['calfCam']+.25,.2); S('2357.mp3',EV['gateCam']+.3,.2)      # labels pop
-TAPS=[round(float(x),3) for x in np.arange(EV['bounce'],EV['stop']-.05,.25)]
-for j,tt in enumerate(TAPS): tap(tt,.34 if j<6 else .22)                    # the bouncing leg: 4 taps a second
-S('sfxgen/sfx_dingb.mp3',EV['up']-.02,.5,.9); S('1492.mp3',EV['up']+.05,.3)  # elevator ding, cells shoot up
-S('2357.mp3',EV['up']+.45,.2); S('2357.mp3',EV['up']+.75,.18)
-S('2182.mp3',EV['shut'],.3,.35)                                             # the gate claps shut
-S('2256.mp3',START['11_calf']+ .9,.26,1.2)                                  # sparkle on "second heart"
-S('sfxgen/down_fast.wav',EV['stop'],.34)                                    # the elevator powers down
-S('sfxgen/whistle_down.wav',EV['stop']+.35,.2,1.1); S('2364.mp3',EV['stop']+1.3,.25)   # the cell slides back down
-S('1492.mp3',EV['clinic']-.05,.25)
-S('1492.mp3',EV['rp0']-.05,.15)                                             # back inside the leg while the doctor explains
-for tt in TAPS:
-    tq=EV['rpStop']+(tt-EV['stop'])
-    if tq>=EV['rp0']: tap(tq,.11)
-S('2182.mp3',EV['rpStop']+.02,.15,.35); S('2364.mp3',EV['rpStop']+1.3,.13)   # the valves catch the blood
-S('1492.mp3',EV['rp1']-.05,.13)
-S('2357.mp3',EV['card0'],.2)                                                # the study card pops up
-for tt in np.arange(EV['card0']+.25,EV['card1']-.1,.25): tap(float(tt),.085)  # the fidgeting leg on the card
-S('sfxgen/down_fast.wav',EV['arrDown'],.2,.6); S('sfxgen/sfx_dingb.mp3',EV['arrUp'],.3,.9)
-S('2357.mp3',EV['getUp'],.16)
-for j in range(4): tap(EV['walk']+.1+j*.28,.26)                             # he gets up and walks out
+TAPS=[]
+for a0,b0 in BI:
+    for j,tt in enumerate(np.arange(max(a0,0.0),b0-.05,.25)):
+        tt=round(float(tt),3); TAPS.append(tt); tap(tt,.13 if tt>=EV['doc'] else (.34 if j<6 else .24))
+S('sfxgen/down_fast.wav',EV['stop1'],.3)                                     # the leg stops: everything winds down
+S('sfxgen/whistle_down.wav',EV['stop1']+.9,.15,1.6)                          # the cells slide back
+for dt_,g in [(2.2,.16),(3.0,.2),(3.8,.2),(4.6,.22)]: S('2364.mp3',EV['stop1']+dt_,g)   # and land on the valve
+S('2357.mp3',EV['caught']+.55,.2); S('2357.mp3',EV['calfCam']+.55,.2)        # labels pop
+S('1492.mp3',EV['bounce']-.05,.2)
+S('sfxgen/sfx_dingb.mp3',EV['up']-.02,.5,.9); S('1492.mp3',EV['up']+.05,.3)   # "Going up!"
+S('2256.mp3',EV['second'],.26,1.2)                                           # sparkle on "second heart"
+S('2357.mp3',EV['doc'],.22)                                                  # Dr. Mira's bubble pops in
+S('2357.mp3',EV['rpHeart'],.16)
+S('2182.mp3',EV['stop2']+.05,.16,.35); S('2364.mp3',EV['stop2']+1.1,.14); S('2364.mp3',EV['stop2']+1.5,.14)   # the valves catch the blood
+S('2357.mp3',EV['card0'],.2)
+S('sfxgen/down_fast.wav',EV['arrDown'],.18,.6); S('sfxgen/sfx_dingb.mp3',EV['arrUp'],.28,.9)
+S('1492.mp3',EV['walk']-.02,.22)
+for j in range(3): tap(EV['walk']+.17+j*.34,.3)                              # he gets up and walks off
 mus=np.tile(load('../../assets/music/mixkit-9.mp3'),3)[:N]; fl=int(1.0*SR); mus[-fl:]*=np.linspace(1,0,fl)
 act=np.convolve((np.abs(voice)>0.02).astype(np.float32),np.ones(int(.25*SR),np.float32)/int(.25*SR),'same'); mus*=10**(-5*np.clip(act*4,0,1)/20)
 for name,b in [('voice',voice),('sfx',sfx),('music',mus)]:
     subprocess.run(['ffmpeg','-v','error','-y','-f','f32le','-ar',str(SR),'-ac','1','-i','-',f'{name}.wav'],input=np.clip(b,-1,1).tobytes())
-EV['taps']=TAPS
+EV['taps']=TAPS; EV['B']=BI; EV['P']=PI
 data={'end':END,'lines':lines,'ev':EV,'start':START}
 open('data.js','w').write('window.DATA='+json.dumps(data)+';'); json.dump(data,open('data.json','w'))
 print('END',END); print({k:(round(v,2) if not isinstance(v,list) else len(v)) for k,v in EV.items()}); print({k:round(v,2) for k,v in START.items()})

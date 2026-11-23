@@ -1,159 +1,159 @@
 {
- "takes/01_cella.mp3": {
-  "wer": 0.0,
-  "range": 29.1,
-  "dur": 2.64,
-  "txt": "Hey, is this elevator broken?"
- },
- "takes/01_cellb.mp3": {
-  "wer": 0.0,
-  "range": 30.1,
-  "dur": 2.56,
-  "txt": "Hey, is this elevator broken?"
- },
- "takes/02_cell2a.mp3": {
-  "wer": 0.11,
-  "range": 28.2,
-  "dur": 4.64,
-  "txt": "Ugh, we've been stuck at the ankle for three hours!"
- },
- "takes/02_cell2b.mp3": {
-  "wer": 0.0,
-  "range": 13.0,
-  "dur": 4.72,
-  "txt": "We've been stuck at the ankle for three hours!"
- },
- "takes/03_cella.mp3": {
-  "wer": 0.0,
-  "range": 9.0,
-  "dur": 3.04,
-  "txt": "Yo, calf! We need a lift up to the heart!"
- },
- "takes/03_cellb.mp3": {
-  "wer": 0.1,
-  "range": 9.2,
-  "dur": 2.88,
-  "txt": "Yo, calf! We need to lift up to the heart!"
- },
- "takes/04_calfa.mp3": {
-  "wer": 0.0,
-  "range": 17.7,
-  "dur": 4.48,
-  "txt": "Can't he hasn't moved in hours. I only pump when he moves"
- },
- "takes/04_calfb.mp3": {
-  "wer": 0.0,
-  "range": 10.8,
-  "dur": 4.4,
-  "txt": "Can't. He hasn't moved in hours. I only pump when he moves."
- },
- "takes/05_gatea.mp3": {
-  "wer": 0.0,
-  "range": 10.4,
-  "dur": 4.0,
-  "txt": "And I'm a one-way door, up only, no exceptions."
- },
- "takes/05_gateb.mp3": {
-  "wer": 0.0,
-  "range": 19.7,
-  "dur": 4.0,
-  "txt": "And I'm a one-way door, up only, no exceptions."
- },
- "takes/06_cell2a.mp3": {
-  "wer": 0.0,
-  "range": 38.4,
-  "dur": 2.88,
-  "txt": "Wait, why is the floor shaking?"
- },
- "takes/06_cell2b.mp3": {
-  "wer": 0.0,
-  "range": 25.9,
-  "dur": 2.88,
-  "txt": "Wait, why is the floor shaking?"
- },
- "takes/07_calfa.mp3": {
-  "wer": 0.0,
-  "range": 15.9,
-  "dur": 2.72,
-  "txt": "He's bouncing his leg! That's my cue!"
- },
- "takes/07_calfb.mp3": {
-  "wer": 0.0,
-  "range": 11.9,
-  "dur": 2.64,
-  "txt": "He's bouncing his leg! That's my cue!"
- },
- "takes/08_calfa.mp3": {
-  "wer": 0.0,
-  "range": 16.5,
-  "dur": 2.16,
-  "txt": "Squeeze, going up!"
- },
- "takes/08_calfb.mp3": {
-  "wer": 0.0,
-  "range": 19.8,
-  "dur": 2.16,
-  "txt": "Squeeze going up"
- },
- "takes/09_cell2a.mp3": {
-  "wer": 1.0,
-  "range": 26.8,
-  "dur": 1.52,
-  "txt": "WOOHOO!"
- },
- "takes/09_cell2b.mp3": {
-  "wer": 1.0,
-  "range": 30.9,
-  "dur": 1.52,
-  "txt": "Woohoo!"
- },
- "takes/10_gatea.mp3": {
-  "wer": 0.0,
-  "range": 8.6,
-  "dur": 2.48,
-  "txt": "Up only. Door closed."
- },
- "takes/10_gateb.mp3": {
-  "wer": 0.0,
-  "range": 7.1,
-  "dur": 2.64,
-  "txt": "Up only. Door closed."
- },
- "takes/11_calfa.mp3": {
-  "wer": 0.0,
-  "range": 18.7,
-  "dur": 2.64,
-  "txt": "That's why they call me the second heart."
- },
- "takes/11_calfb.mp3": {
-  "wer": 0.0,
-  "range": 7.1,
-  "dur": 2.4,
-  "txt": "That's why they call me the second heart."
- },
- "takes/12_partnera.mp3": {
+ "takes/01_partnera.mp3": {
   "wer": 0.0,
   "range": 11.6,
   "dur": 3.36,
   "txt": "Ugh, can you stop shaking the whole couch?"
  },
- "takes/12_partnerb.mp3": {
+ "takes/01_partnerb.mp3": {
   "wer": 0.0,
   "range": 13.2,
   "dur": 3.2,
   "txt": "Ugh, can you stop shaking the whole couch?"
  },
- "takes/13_cella.mp3": {
+ "takes/02_patienta.mp3": {
   "wer": 0.0,
-  "range": 14.7,
+  "range": 8.3,
   "dur": 2.8,
-  "txt": "No! No! No! Keep bouncing!"
+  "txt": "Okay, okay. Sorry."
  },
- "takes/13_cellb.mp3": {
+ "takes/02_patientb.mp3": {
   "wer": 0.0,
-  "range": 18.4,
-  "dur": 2.8,
-  "txt": "No! No! No! Keep bouncing!"
+  "range": 8.1,
+  "dur": 2.88,
+  "txt": "Okay, okay. Sorry."
+ },
+ "takes/03_cella.mp3": {
+  "wer": 0.0,
+  "range": 9.4,
+  "dur": 2.16,
+  "txt": "Hey! Why did we stop?"
+ },
+ "takes/03_cellb.mp3": {
+  "wer": 0.0,
+  "range": 12.0,
+  "dur": 2.16,
+  "txt": "Hey! Why did we stop?"
+ },
+ "takes/04_cella.mp3": {
+  "wer": 0.0,
+  "range": 9.2,
+  "dur": 2.88,
+  "txt": "Whoa! We're sliding back down!"
+ },
+ "takes/04_cellb.mp3": {
+  "wer": 0.0,
+  "range": 11.2,
+  "dur": 2.88,
+  "txt": "Whoa! We're sliding back down!"
+ },
+ "takes/05_gatea.mp3": {
+  "wer": 0.0,
+  "range": 11.6,
+  "dur": 3.36,
+  "txt": "Gotcha. I'm a one-way door. Up only."
+ },
+ "takes/05_gateb.mp3": {
+  "wer": 0.0,
+  "range": 8.4,
+  "dur": 3.44,
+  "txt": "Gotcha. I'm a one-way door. Up only."
+ },
+ "takes/06_cella.mp3": {
+  "wer": 0.0,
+  "range": 9.0,
+  "dur": 3.04,
+  "txt": "Yo, calf! We need a lift up to the heart!"
+ },
+ "takes/06_cellb.mp3": {
+  "wer": 0.1,
+  "range": 9.2,
+  "dur": 2.88,
+  "txt": "Yo, calf! We need to lift up to the heart!"
+ },
+ "takes/07_calfa.mp3": {
+  "wer": 0.0,
+  "range": 12.0,
+  "dur": 3.04,
+  "txt": "Can't. I only pump when he moves."
+ },
+ "takes/07_calfb.mp3": {
+  "wer": 0.0,
+  "range": 13.5,
+  "dur": 2.88,
+  "txt": "Can't. I only pump when he moves."
+ },
+ "takes/08_cella.mp3": {
+  "wer": 0.0,
+  "range": 15.8,
+  "dur": 2.72,
+  "txt": "But it's getting so crowded down here."
+ },
+ "takes/08_cellb.mp3": {
+  "wer": 0.0,
+  "range": 15.8,
+  "dur": 2.72,
+  "txt": "But it's getting so crowded down here."
+ },
+ "takes/09_cell2a.mp3": {
+  "wer": 0.0,
+  "range": 38.4,
+  "dur": 2.88,
+  "txt": "Wait, why is the floor shaking?"
+ },
+ "takes/09_cell2b.mp3": {
+  "wer": 0.0,
+  "range": 25.9,
+  "dur": 2.88,
+  "txt": "Wait, why is the floor shaking?"
+ },
+ "takes/10_calfa.mp3": {
+  "wer": 0.0,
+  "range": 15.9,
+  "dur": 2.72,
+  "txt": "He's bouncing his leg! That's my cue!"
+ },
+ "takes/10_calfb.mp3": {
+  "wer": 0.0,
+  "range": 11.9,
+  "dur": 2.64,
+  "txt": "He's bouncing his leg! That's my cue!"
+ },
+ "takes/11_calfa.mp3": {
+  "wer": 0.0,
+  "range": 16.5,
+  "dur": 2.16,
+  "txt": "Squeeze, going up!"
+ },
+ "takes/11_calfb.mp3": {
+  "wer": 0.0,
+  "range": 19.8,
+  "dur": 2.16,
+  "txt": "Squeeze going up"
+ },
+ "takes/12_cell2a.mp3": {
+  "wer": 1.0,
+  "range": 26.8,
+  "dur": 1.52,
+  "txt": "WOOHOO!"
+ },
+ "takes/12_cell2b.mp3": {
+  "wer": 1.0,
+  "range": 30.9,
+  "dur": 1.52,
+  "txt": "Woohoo!"
+ },
+ "takes/13_calfa.mp3": {
+  "wer": 0.0,
+  "range": 18.7,
+  "dur": 2.64,
+  "txt": "That's why they call me the second heart."
+ },
+ "takes/13_calfb.mp3": {
+  "wer": 0.0,
+  "range": 7.1,
+  "dur": 2.4,
+  "txt": "That's why they call me the second heart."
  },
  "takes/14_patienta.mp3": {
   "wer": 0.0,

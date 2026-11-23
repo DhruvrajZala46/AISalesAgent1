@@ -1,94 +1,94 @@
 {
- "01_cell": {
-  "take": "b",
-  "f0": 344,
-  "shift_st": 0.0,
-  "tempo": 1.08,
-  "dur": 2.11
- },
- "02_cell2": {
-  "take": "b",
-  "f0": 253,
-  "shift_st": 0.0,
-  "tempo": 1.1,
-  "dur": 3.98
- },
- "03_cell": {
-  "take": "a",
-  "f0": 279,
-  "shift_st": 0.0,
-  "tempo": 1.08,
-  "dur": 2.49
- },
- "04_calf": {
-  "take": "b",
-  "f0": 95,
-  "shift_st": 0.0,
-  "tempo": 1.08,
-  "dur": 3.93
- },
- "05_gate": {
-  "take": "b",
-  "f0": 111,
-  "shift_st": 0.0,
-  "tempo": 1.16,
-  "dur": 3.21
- },
- "06_cell2": {
-  "take": "a",
-  "f0": 144,
-  "shift_st": 0.0,
-  "tempo": 1.1,
-  "dur": 2.35
- },
- "07_calf": {
-  "take": "a",
-  "f0": 260,
-  "shift_st": 0.0,
-  "tempo": 1.08,
-  "dur": 2.3
- },
- "08_calf": {
-  "take": "b",
-  "f0": 336,
-  "shift_st": 0.0,
-  "tempo": 1.08,
-  "dur": 1.68
- },
- "09_cell2": {
-  "take": "b",
-  "f0": 405,
-  "shift_st": 0.0,
-  "tempo": 1.1,
-  "dur": 1.14
- },
- "10_gate": {
-  "take": "a",
-  "f0": 98,
-  "shift_st": 0.0,
-  "tempo": 1.16,
-  "dur": 1.9
- },
- "11_calf": {
-  "take": "a",
-  "f0": 91,
-  "shift_st": 0.0,
-  "tempo": 1.08,
-  "dur": 2.16
- },
- "12_partner": {
+ "01_partner": {
   "take": "b",
   "f0": 323,
   "shift_st": 0.0,
   "tempo": 1.05,
   "dur": 2.78
  },
- "13_cell": {
+ "02_patient": {
+  "take": "a",
+  "f0": 88,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 2.2
+ },
+ "03_cell": {
   "take": "b",
-  "f0": 368,
+  "f0": 354,
   "shift_st": 0.0,
   "tempo": 1.08,
+  "dur": 1.66
+ },
+ "04_cell": {
+  "take": "b",
+  "f0": 324,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.3
+ },
+ "05_gate": {
+  "take": "a",
+  "f0": 107,
+  "shift_st": 0.0,
+  "tempo": 1.16,
+  "dur": 2.65
+ },
+ "06_cell": {
+  "take": "a",
+  "f0": 279,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.49
+ },
+ "07_calf": {
+  "take": "b",
+  "f0": 86,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.47
+ },
+ "08_cell": {
+  "take": "a",
+  "f0": 189,
+  "shift_st": 3.0,
+  "tempo": 1.08,
+  "dur": 2.12
+ },
+ "09_cell2": {
+  "take": "a",
+  "f0": 144,
+  "shift_st": 0.0,
+  "tempo": 1.1,
   "dur": 2.35
+ },
+ "10_calf": {
+  "take": "a",
+  "f0": 260,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.3
+ },
+ "11_calf": {
+  "take": "b",
+  "f0": 336,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 1.68
+ },
+ "12_cell2": {
+  "take": "b",
+  "f0": 405,
+  "shift_st": 0.0,
+  "tempo": 1.1,
+  "dur": 1.14
+ },
+ "13_calf": {
+  "take": "a",
+  "f0": 91,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.16
  },
  "14_patient": {
   "take": "b",

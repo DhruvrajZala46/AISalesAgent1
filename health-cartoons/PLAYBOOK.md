@@ -25,7 +25,9 @@ Every new video copies `videos/012-why-we-snore/` and follows this recipe. Secti
 - Then `tighten.py` (0.14 for the doctor, 0.22 for the others) and `words.py`.
 - Whisper on the final mix must be at least 97%.
 
-**4b. Clinic (from 013):** do not leave the doctor's lines on a static two-shot. Replay the body scene on her words (`renderReplay` in `videos/013-leg-bounce-second-heart/parts_013.js`), and show a study or a rule as a card that pops over the clinic wall.
+**4b. Doctor part (from 013 v2):** never cut to a static two-shot clinic. Dr. Mira talks from a round bubble (`docBubble` in `videos/013-leg-bounce-second-heart/world_013.js`) while the body scene keeps showing what she says; a study or rule pops up as a card over the scene.
+
+**4c. Hook and look (from 013 v2):** the title's action moves on frame 0 and a voice speaks at 0.0 s; every character is big and has a face; bright wall, a prop colour that pops.
 
 **5. Sound:**
 - ElevenLabs `eleven_text_to_sound_v2` for the topic's own sounds (snore, slap, breathing), kept in `sfxgen/`.

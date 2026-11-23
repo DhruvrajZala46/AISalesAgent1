@@ -3,8 +3,9 @@ import json, subprocess, numpy as np, parselmouth
 S=json.load(open('takes/scores.json'))
 L=[l.rstrip('\n').split('\t') for l in open('lines.tsv') if l.strip()]
 SHIFT={'cell':0.0,'cell2':0.0,'calf':0.0,'gate':0.0,'partner':0.0,'patient':0.0,'doctor':0.0}   # semitones
+LSHIFT={'08_cell':3.0}   # this take came out lower than the cell's other lines
 TEMPO={'cell':1.08,'cell2':1.10,'calf':1.08,'gate':1.16,'partner':1.05,'patient':1.06,'doctor':1.08}
-FORCE={'04_calf':'b'}     # take b says "Can't." as its own beat (take a runs it into the next word)
+FORCE={}
 def f0(path):
     p=parselmouth.Sound(path).to_pitch(pitch_floor=60,pitch_ceiling=900).selected_array['frequency']; p=p[p>0]
     return float(np.median(p)) if len(p) else 0
@@ -12,7 +13,7 @@ subprocess.run(['mkdir','-p','proc']); rec={}
 for n,role,txt in L:
     k=f'{n}_{role}'; a,b=S[f'takes/{k}a.mp3'],S[f'takes/{k}b.mp3']
     t=FORCE.get(k) or ('a' if (a['wer'],-a['range'])<=(b['wer'],-b['range']) else 'b')
-    src=f'takes/{k}{t}.mp3'; st=SHIFT[role]; r=2**(st/12); tp=TEMPO[role]
+    src=f'takes/{k}{t}.mp3'; st=SHIFT[role]+LSHIFT.get(k,0); r=2**(st/12); tp=TEMPO[role]
     af=f"asetrate=44100*{r:.4f},aresample=44100,atempo={tp/r:.4f},silenceremove=start_periods=1:start_threshold=-42dB:start_silence=0.02,areverse,silenceremove=start_periods=1:start_threshold=-42dB:start_silence=0.05,areverse"
     subprocess.run(['ffmpeg','-v','error','-y','-i',src,'-af',af,'-ac','1','-ar','44100',f'proc/{k}.wav'])
     dur=float(subprocess.run(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',f'proc/{k}.wav'],capture_output=True,text=True).stdout)

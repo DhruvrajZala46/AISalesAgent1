@@ -1,16 +1,16 @@
-01	cell	[panicked] Hey! Is this elevator broken?!
-02	cell2	[groaning] We've been stuck at the ankle for three hours!
-03	cell	Yo, Calf! We need a lift up to the heart!
-04	calf	[lazy] Can't. He hasn't moved in hours. I only pump when he moves.
-05	gate	[deadpan] And I'm a one-way door. Up only. No exceptions.
-06	cell2	[confused] Wait... why is the floor shaking?
-07	calf	[excited] He's bouncing his leg! That's my cue!
-08	calf	[shouting] Squeeze! Going up!
-09	cell2	[cheering] Woo-hoo!
-10	gate	[deadpan] Up only. Door closed.
-11	calf	[smug] That's why they call me the second heart.
-12	partner	[annoyed] Ugh! Can you stop shaking the whole couch?!
-13	cell	[panicked] No, no, no! Keep bouncing!
+01	partner	[annoyed] Ugh! Can you stop shaking the whole couch?!
+02	patient	[sheepish] Okay, okay. Sorry.
+03	cell	[panicked] Hey! Why did we stop?!
+04	cell	[scared] Whoa! We're sliding back down!
+05	gate	[deadpan] Gotcha. I'm a one-way door. Up only.
+06	cell	Yo, Calf! We need a lift up to the heart!
+07	calf	[lazy] Can't. I only pump when he moves.
+08	cell	[worried] But it's getting so crowded down here!
+09	cell2	[confused] Wait... why is the floor shaking?
+10	calf	[excited] He's bouncing his leg! That's my cue!
+11	calf	[shouting] Squeeze! Going up!
+12	cell2	[cheering] Woo-hoo!
+13	calf	[smug] That's why they call me the second heart.
 14	patient	Doc, everyone says stop bouncing my leg. Is it bad?
 15	doctor	Not for your blood flow. Each calf squeeze pushes blood up your veins, back to your heart.
 16	doctor	One-way valves keep it from sliding back down.

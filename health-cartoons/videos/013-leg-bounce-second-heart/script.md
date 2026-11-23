@@ -129,6 +129,23 @@ the replay and the ending.
 - The reference's view count is unknown, so "proven" rests on the topic and the format, not on a measured number.
 - No video is guaranteed to go viral.
 
+## v2 (23 Nov 2026, after the user's verdict on v1: "still 20% there... hook, visuals, engaging elements")
+Pair sheets against the reference (hook at 5 fps, whole video every 5 s) showed why v1 was weak:
+- **Hook:** the reference bounces from frame 0 and speaks at 0.0 s ("stop bouncing your leg": the viewer's own habit). v1 opened on a still pile of cells, spoke at 0.6 s, and the leg did not move for 16 s.
+- **Characters:** theirs are big, every cell has a face. Ours were small, most cells had no face, and half the frame was beige bone.
+- **Colour:** theirs is bright (sky blue, orange shoe). Ours was pale mint with a teal shoe on a teal-ish wall.
+- **It never leaves the leg:** the doctor talks in a bubble over the action. v1 cut to a static clinic for 22 s.
+- **The elevator idea** (button, lift, guard bar across the vein) added a layer the viewer had to decode.
+
+What v2 changed (still our own words, art and characters):
+- New order: the partner's line is on frame 0 over the bouncing leg; he stops; the cells slide back and the valve catches them; the calf will not pump; it gets crowded; the leg starts again; "Going up!"; second heart; Dr. Mira.
+- 6 new lines recorded (2, 3, 4, 5, 7, 8). The Quibble voice was disabled by its owner, so cell B keeps only its two old lines.
+- New set: bright blue wall, yellow couch, coral sneaker, a wide vein, a second muscle instead of bare bone, a big calf face, 30 cells with faces, a small valve guard on the vein wall.
+- The cells are a small simulation (`SIM` in `parts_013.js`): they ride up on each squeeze, slide back when the leg stops, and stack on the closed valves.
+- Dr. Mira explains from a round bubble; the study card pops over the leg; at "Get up and walk" the leg walks out of frame.
+
+**v2 QA (`why-is-bouncing-your-leg-good-for-you-v2.mp4`):** 50.0 s; first word at 0.0 s; whisper 98.0% (144 of 147; missed "Sorry", and heard "calf"/"can't" as "cat"); -11.9 LUFS; frozen 2.2% (v1: 10.5%); longest still 0.3 s (v1: 0.6 s). The script list, shot table and QA table above describe v1; `lines.tsv` holds the v2 script.
+
 ## Upload block
 **Title:** Why Is Bouncing Your Leg Actually Good for You? 🦵
 
