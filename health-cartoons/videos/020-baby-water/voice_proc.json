@@ -1,0 +1,100 @@
+{
+ "01_dad": {
+  "take": "a",
+  "f0": 145,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.01
+ },
+ "02_stomach": {
+  "take": "a",
+  "f0": 230,
+  "shift_st": 1.0,
+  "tempo": 1.1,
+  "dur": 1.61
+ },
+ "03_stomach": {
+  "take": "a",
+  "f0": 204,
+  "shift_st": 1.0,
+  "tempo": 1.1,
+  "dur": 3.92
+ },
+ "04_stomach": {
+  "take": "a",
+  "f0": 262,
+  "shift_st": 1.0,
+  "tempo": 1.1,
+  "dur": 7.41
+ },
+ "05_stomach": {
+  "take": "a",
+  "f0": 288,
+  "shift_st": 1.0,
+  "tempo": 1.1,
+  "dur": 2.92
+ },
+ "06_stomach": {
+  "take": "a",
+  "f0": 233,
+  "shift_st": 1.0,
+  "tempo": 1.1,
+  "dur": 6.15
+ },
+ "07_intestine": {
+  "take": "a",
+  "f0": 199,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 2.41
+ },
+ "08_stomach": {
+  "take": "a",
+  "f0": 295,
+  "shift_st": 1.0,
+  "tempo": 1.1,
+  "dur": 4.19
+ },
+ "09_dad": {
+  "take": "a",
+  "f0": 124,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.83
+ },
+ "10_mom": {
+  "take": "a",
+  "f0": 209,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.09
+ },
+ "11_dad": {
+  "take": "a",
+  "f0": 147,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.7
+ },
+ "12_mom": {
+  "take": "a",
+  "f0": 317,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 1.11
+ },
+ "13_dad": {
+  "take": "a",
+  "f0": 249,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 5.13
+ },
+ "14_doctor": {
+  "take": "a",
+  "f0": 181,
+  "shift_st": 0.0,
+  "tempo": 1.1,
+  "dur": 11.21
+ }
+}

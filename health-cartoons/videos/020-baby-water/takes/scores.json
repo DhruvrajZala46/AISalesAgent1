@@ -1,0 +1,170 @@
+{
+ "takes/01_dada.mp3": {
+  "wer": 0.0,
+  "range": 14.4,
+  "dur": 3.6,
+  "txt": "Open wide, buddy. Time for your very first meal."
+ },
+ "takes/01_dadb.mp3": {
+  "wer": 0.0,
+  "range": 14.4,
+  "dur": 3.6,
+  "txt": "Open wide, buddy. Time for your very first meal."
+ },
+ "takes/02_stomacha.mp3": {
+  "wer": 0.0,
+  "range": 24.1,
+  "dur": 2.0,
+  "txt": "Ooh, dinner time!"
+ },
+ "takes/02_stomachb.mp3": {
+  "wer": 0.0,
+  "range": 24.1,
+  "dur": 2.0,
+  "txt": "Ooh, dinner time!"
+ },
+ "takes/03_stomacha.mp3": {
+  "wer": 0.0,
+  "range": 18.9,
+  "dur": 4.64,
+  "txt": "Mmm, that smell. Mom must have pumped this last night."
+ },
+ "takes/03_stomachb.mp3": {
+  "wer": 0.0,
+  "range": 18.9,
+  "dur": 4.64,
+  "txt": "Mmm, that smell. Mom must have pumped this last night."
+ },
+ "takes/04_stomacha.mp3": {
+  "wer": 0.05,
+  "range": 24.9,
+  "dur": 8.48,
+  "txt": "Woah, water? Why is he giving me water? Doesn't he know I'm only a baby? My body can't handle plain water yet."
+ },
+ "takes/04_stomachb.mp3": {
+  "wer": 0.05,
+  "range": 24.9,
+  "dur": 8.48,
+  "txt": "Woah, water? Why is he giving me water? Doesn't he know I'm only a baby? My body can't handle plain water yet."
+ },
+ "takes/05_stomacha.mp3": {
+  "wer": 0.0,
+  "range": 21.8,
+  "dur": 3.6,
+  "txt": "Great! Look at my food! It's all ruined!"
+ },
+ "takes/05_stomachb.mp3": {
+  "wer": 0.0,
+  "range": 21.8,
+  "dur": 3.6,
+  "txt": "Great! Look at my food! It's all ruined!"
+ },
+ "takes/06_stomacha.mp3": {
+  "wer": 0.0,
+  "range": 12.1,
+  "dur": 6.96,
+  "txt": "Hey, Intestine, I'm sending this down to you. It's mostly water. Do what you can and push the extra water into the blood."
+ },
+ "takes/06_stomachb.mp3": {
+  "wer": 0.0,
+  "range": 12.1,
+  "dur": 6.96,
+  "txt": "Hey, Intestine, I'm sending this down to you. It's mostly water. Do what you can and push the extra water into the blood."
+ },
+ "takes/07_intestinea.mp3": {
+  "wer": 0.0,
+  "range": 18.3,
+  "dur": 2.8,
+  "txt": "But you know the body isn't ready for that."
+ },
+ "takes/07_intestineb.mp3": {
+  "wer": 0.0,
+  "range": 18.3,
+  "dur": 2.8,
+  "txt": "But you know the body isn't ready for that."
+ },
+ "takes/08_stomacha.mp3": {
+  "wer": 0.0,
+  "range": 6.9,
+  "dur": 4.72,
+  "txt": "I know, but we have to keep the baby going! Just do your best!"
+ },
+ "takes/08_stomachb.mp3": {
+  "wer": 0.0,
+  "range": 6.9,
+  "dur": 4.72,
+  "txt": "I know, but we have to keep the baby going! Just do your best!"
+ },
+ "takes/09_dada.mp3": {
+  "wer": 0.0,
+  "range": 20.8,
+  "dur": 4.48,
+  "txt": "Honey, what's wrong with him? Why do his eyes look strange?"
+ },
+ "takes/09_dadb.mp3": {
+  "wer": 0.0,
+  "range": 20.8,
+  "dur": 4.48,
+  "txt": "Honey, what's wrong with him? Why do his eyes look strange?"
+ },
+ "takes/10_moma.mp3": {
+  "wer": 0.0,
+  "range": 25.6,
+  "dur": 3.84,
+  "txt": "He must be hungry. Give him the milk I pumped last night."
+ },
+ "takes/10_momb.mp3": {
+  "wer": 0.0,
+  "range": 25.6,
+  "dur": 3.84,
+  "txt": "He must be hungry. Give him the milk I pumped last night."
+ },
+ "takes/11_dada.mp3": {
+  "wer": 0.0,
+  "range": 33.0,
+  "dur": 4.4,
+  "txt": "I did. He kept crying, so I gave him a sip."
+ },
+ "takes/11_dadb.mp3": {
+  "wer": 0.0,
+  "range": 33.0,
+  "dur": 4.4,
+  "txt": "I did. He kept crying, so I gave him a sip."
+ },
+ "takes/12_moma.mp3": {
+  "wer": 0.0,
+  "range": 16.6,
+  "dur": 1.52,
+  "txt": "A sip of what?"
+ },
+ "takes/12_momb.mp3": {
+  "wer": 0.0,
+  "range": 16.6,
+  "dur": 1.52,
+  "txt": "A sip of what?"
+ },
+ "takes/13_dada.mp3": {
+  "wer": 0.0,
+  "range": 19.8,
+  "dur": 5.84,
+  "txt": "Doc, I gave him water, only a little, and since then, he's been like this."
+ },
+ "takes/13_dadb.mp3": {
+  "wer": 0.0,
+  "range": 19.8,
+  "dur": 5.84,
+  "txt": "Doc, I gave him water, only a little, and since then, he's been like this."
+ },
+ "takes/14_doctora.mp3": {
+  "wer": 0.0,
+  "range": 10.4,
+  "dur": 12.48,
+  "txt": "This is called water intoxication. Babies under six months don't have mature kidneys yet, so plain water dilutes the sodium in their blood, and that makes the brain swell. That's why he's having these seizures."
+ },
+ "takes/14_doctorb.mp3": {
+  "wer": 0.0,
+  "range": 10.4,
+  "dur": 12.48,
+  "txt": "This is called water intoxication. Babies under six months don't have mature kidneys yet, so plain water dilutes the sodium in their blood, and that makes the brain swell. That's why he's having these seizures."
+ }
+}

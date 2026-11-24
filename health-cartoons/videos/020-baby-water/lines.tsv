@@ -1,0 +1,14 @@
+01	dad	[warm, gentle] Open wide, buddy. Time for your very first meal.
+02	stomach	[excited] Ooh, dinner time!
+03	stomach	[delighted] Mmm, that smell. Mom must have pumped this last night.
+04	stomach	[shocked] Whoa, water? Why is he giving me water? [worried] Doesn't he know I'm only a baby? My body can't handle plain water yet.
+05	stomach	[annoyed] Great. Look at my food. It's all ruined.
+06	stomach	[urgent] Hey, intestine, I'm sending this down to you. It's mostly water. Do what you can, and push the extra water into the blood.
+07	intestine	[worried] But you know the body isn't ready for that.
+08	stomach	[desperate] I know, but we have to keep the baby going! Just do your best!
+09	dad	[worried] Honey, what's wrong with him? Why do his eyes look strange?
+10	mom	[calm] He must be hungry. Give him the milk I pumped last night.
+11	dad	[nervous] I did. He kept crying, so I gave him a sip.
+12	mom	[alarmed] A sip of what?
+13	dad	[scared] Doc, I gave him water. Only a little. And since then, he's been like this.
+14	doctor	[serious, calm] This is called water intoxication. Babies under six months don't have mature kidneys yet. So plain water dilutes the sodium in their blood, and that makes the brain swell. That's why he's having these seizures.
