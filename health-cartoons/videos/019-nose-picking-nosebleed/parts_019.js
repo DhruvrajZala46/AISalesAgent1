@@ -18,47 +18,58 @@ const lab=(id,T,a,b,x,y)=>{const on=T>=a&&T<b;show(id,on?1:0);if(on)$(id).setAtt
 // ---------- scene 1 ----------
 const WX=404,WY=694;
 function renderInside(T){
-  const picked=T>=E.pick,pull=eio(P(T,E.pick+.05,E.pick+.6)),bleed=T>=E.bleed,lt=speak('lining',T);
-  // the finger comes up through the nostril, scrapes the dry mucus off and pulls it out
-  const up=eo(P(T,0,.28)),wig=picked?0:Math.sin(T*30)*8;
-  const fy=picked?lerp(WY+20,1500,pull):lerp(930,WY+20,up),fx=lerp(350,WX,picked?1-pull:up)+wig;
-  $('finger').setAttribute('transform',`translate(${fx.toFixed(1)},${fy.toFixed(1)}) rotate(${(-7+pull*4).toFixed(1)})`);
-  mv('booger',lerp(WX,fx,clamp(pull*5)),lerp(WY,fy-40,clamp(pull*5)),pull*50,1.25);show('booger',pull<.97?1:0);
-  show('scratch',picked?1:0);if(picked)$('scratch').setAttribute('transform',`translate(${WX},${WY}) scale(${(eob(P(T,E.pick,E.pick+.25))*1.5).toFixed(3)}) translate(-405,-690)`);
-  let b='',b2='',d='';if(bleed){const k=eo(P(T,E.bleed,E.bleed+1.4)),L=k*330,w=22+k*14;
-    b+=`<path d="M${WX-w},${WY-30} q${w},-30 ${2*w},0 C${WX+w+10},${WY+L*.3} ${WX+w-12},${WY+L*.6} ${WX+w},${WY+L} L${WX-w},${WY+L} C${WX-w-10},${WY+L*.6} ${WX-w+12},${WY+L*.3} ${WX-w},${WY-30} Z" fill="${C_BLOOD}" opacity=".93"/>`;
-    if(k>.55){const m=eo(P(k,.55,1))*90;b2+=`<path d="M${WX-34},900 L${WX-36},${930+m} q6,26 16,4 q8,30 22,6 q10,22 20,-10 L${WX+30},900 Z" fill="${C_BLOOD}"/>`;
-      for(let j=0;j<3;j++){const p=((T-E.bleed)*1.1+j/3)%1,y=1040+p*p*300;d+=`<path transform="translate(${WX-14+j*10},${y.toFixed(1)}) scale(2.6)" d="${dropD}" fill="${C_BLOOD}"/>`;}}}
+  const pk=E.pick,picked=T>=pk,pull=eio(P(T,pk+.05,pk+.55)),bleed=T>=E.bleed,lt=speak('lining',T);
+  // the finger is deep in the nose on frame 0, comes out, goes back in, scrapes the dry mucus off and pulls it out
+  let tip; if(T<.3)tip=470+Math.sin(T*40)*14; else if(T<.5)tip=lerp(470,1080,eio(P(T,.3,.5))); else if(T<.7)tip=1080; else if(T<.92)tip=lerp(1080,WY-10,eo(P(T,.7,.92))); else if(!picked)tip=WY-10+Math.sin(T*46)*16; else tip=lerp(WY-10,1500,pull);
+  const fx=lerp(388,WX,clamp((1000-tip)/300))+(T>.92&&!picked?Math.sin(T*33)*7:0);
+  $('finger').setAttribute('transform',`translate(${fx.toFixed(1)},${tip.toFixed(1)}) rotate(-5)`);
+  mv('booger',picked?fx+10:WX,picked?tip-26:WY,pull*40,1.3);show('booger',pull<.97?1:0);
+  show('scratch',picked?1:0);if(picked)$('scratch').setAttribute('transform',`translate(${WX},${WY}) scale(${(eob(P(T,pk,pk+.25))*1.55).toFixed(3)}) translate(-405,-690)`);
+  let b='',b2='',d='';if(picked){const o=eo(P(T,pk+.3,E.bleed));b+=`<circle cx="${WX}" cy="${WY}" r="${(6+o*20).toFixed(1)}" fill="#e0303a" opacity=".9"/>`;}
+  if(bleed){const k=eo(P(T,E.bleed,E.bleed+1.5)),L=k*300,wd=40+k*26;
+    b+=`<ellipse cx="${WX}" cy="${WY}" rx="${(30+k*26).toFixed(1)}" ry="${(30+k*20).toFixed(1)}" fill="#e0303a" opacity=".92"/><path d="${streamD(WX,WY,L,wd,T)}" fill="#e0303a" opacity=".92"/><ellipse cx="${WX-12}" cy="${WY-10}" rx="${(8+k*6).toFixed(1)}" ry="${(5+k*4).toFixed(1)}" fill="#ff9aa0" opacity=".8"/>`;
+    if(k>.6){const m=eo(P(k,.6,1))*120;b2+=`<path d="${streamD(WX-14,905,20+m,58,T)}" fill="#e0303a" opacity=".92"/>`;
+      for(let j=0;j<3;j++){const q=((T-E.bleed)*1.1+j/3)%1,y=1040+m+q*q*260;d+=`<path transform="translate(${WX-24+j*14},${y.toFixed(1)}) scale(2.8)" d="${dropD}" fill="#e0303a"/>`;}}}
   $('blood1').innerHTML=b;$('blood1b').innerHTML=b2;$('drip1').innerHTML=d;
-  let f={dx:-10,dy:26,lid:.05,bA:-10,arch:7,mood:-.4,small:false};
-  if(picked)f={dx:Math.sin(T*30)*6,dy:22,lid:0,bA:-22,arch:6,mood:-1,small:true};
-  if(bleed)f={dx:-10,dy:28,lid:0,bA:-18,arch:8,mood:-.9,small:false};
-  face('ln',33,{...f,blink:picked?0:blinkK(T,.4),bx:36,by:-50,bw:34,talk:lt,mw:15,T,seed:2});
-  $('lface').setAttribute('transform',`translate(${(548+(picked&&T<E.pick+.6?Math.sin(T*50)*5:0)).toFixed(1)},${(420+Math.sin(T*2.4)*4).toFixed(1)}) scale(1.35)`);}
+  const scream=picked&&T<pk+.75;show('lnShut',scream?1:0);show('lnOpen',scream?0:1);
+  let f={dx:-16,dy:30,lid:.02,bA:-8,arch:8,mood:-.3,small:false},talk=lt;
+  if(T>.9&&!picked)f={dx:-10,dy:30,lid:0,bA:-18,arch:6,mood:-.8,small:true};
+  if(scream){f={dx:0,dy:0,lid:0,bA:-26,arch:4,mood:-1,small:true};talk=Math.max(lt,.95);}
+  else if(picked&&!bleed)f={dx:-8,dy:26,lid:.3,bA:-24,arch:9,mood:-1,small:false};
+  else if(bleed)f={dx:-14,dy:34,lid:0,bA:-20,arch:9,mood:-.9,small:true};
+  face('ln',33,{...f,blink:picked?0:blinkK(T,2.4),bx:34,by:-52,bw:34,talk,mw:13,T,seed:2});
+  const sh=scream?Math.sin(T*55)*7:0;
+  $('lface').setAttribute('transform',`translate(${(552+sh).toFixed(1)},${(420+Math.sin(T*2.4)*4).toFixed(1)}) scale(1.42)`);}
 // ---------- scene 2 ----------
-const dripStarts=[[E.front+.1,E.wipe1+.2],[E.wipe1+.9,E.wipe2+.2],[E.wipe2+.9,E.pinch]];
+const NX=500,NY=764,dripStarts=[[E.front+.05,E.wipe1+.15],[E.wipe1+1.0,E.wipe2+.15],[E.wipe2+1.0,E.wipe3+.15],[E.rebleed,E.pinch+1]];
 function renderFront(T){
-  let L=0;for(const [a,b] of dripStarts)if(T>=a&&T<b)L=eo(P(T,a,a+1.8))*210+Math.sin(T*3)*4;
-  if(T>=E.wipe2-.6&&T<E.wipe2-.1)L*=1-.5*Math.sin(P(T,E.wipe2-.6,E.wipe2-.1)*Math.PI);
-  const plugOn=T>=E.plug,pk=eo(P(T,E.plug,E.plug+.5)),tT=speak('tissue',T);
-  let d='';if(L>4){const y=756+L,s=Math.sin(T*5)*3;d+=`<path d="M418,752 C414,${756+L*.5} ${424+s},${756+L*.7} 420,${y-10} q6,30 18,6 q8,32 22,8 q10,20 18,-12 C${486-s},${756+L*.7} 494,${756+L*.5} 492,752 Z" fill="#e5484d"/><path d="M420,752 q36,26 72,0 Z" fill="#b3202b"/>`;}
+  let L=0;for(const [a,b] of dripStarts)if(T>=a&&T<b)L=eo(P(T,a,a+2.0))*230+Math.sin(T*3)*5;
+  [E.wipe2,E.wipe3].forEach(t0=>{if(T>=t0-.65&&T<t0-.1)L*=1-.55*Math.sin(P(T,t0-.65,t0-.1)*Math.PI);});
+  const tT=speak('tissue',T),pt=T-E.plug;
+  let d='';if(L>4){d+=`<path d="M432,770 C462,752 540,752 568,766 C536,786 462,788 432,770 Z" fill="#b3202b"/><path d="${streamD(NX,NY,L,72,T)}" fill="#e5484d"/><path d="M${NX-28},${NY} q28,22 56,0 l-4,26 q-24,10 -48,0 Z" fill="#c52a35"/>`;}
   $('drip2').innerHTML=d;
-  // both hands wipe with a tissue from below; it leaves with a red stain
-  let wOn=false;[E.wipe1,E.wipe2].forEach((t0)=>{if(T>=t0-.35&&T<t0+.9){wOn=true;const a=eo(P(T,t0-.35,t0)),o=eio(P(T,t0+.45,t0+.9)),sw=Math.sin(clamp(P(T,t0,t0+.45))*Math.PI*3)*26;
-    mv('wipe',400+sw,lerp(1500,850,a)+o*700,sw*.1,1);
-    $('wipeRed').innerHTML=T>=t0+.15?`<path d="M0,-70 C34,-90 70,-60 60,-24 C76,6 40,30 14,14 C-16,22 -30,-30 0,-70 Z" fill="#e5484d"/>`:'';}});
+  // both hands bring a tissue up from below, wipe, and take it away with a red stain
+  let wOn=false;[E.wipe1,E.wipe2,E.wipe3].forEach((t0)=>{if(T>=t0-.4&&T<t0+1.0){wOn=true;const a=eo(P(T,t0-.4,t0)),o=eio(P(T,t0+.5,t0+1.0)),sw=Math.sin(clamp(P(T,t0,t0+.5))*Math.PI*3)*24;
+    mv('wipe',400+sw,lerp(1500,820,a)+o*760,sw*.1,1);
+    $('wipeRed').innerHTML=T>=t0+.15?`<path d="M70,-50 C104,-70 140,-40 130,-4 C146,26 110,50 84,34 C54,42 40,-10 70,-50 Z" fill="#e5484d"/>`:'';}});
   show('wipe',wOn?1:0);
-  let sn='';if(T>=E.wipe2-.6&&T<E.wipe2-.1){const k=P(T,E.wipe2-.6,E.wipe2-.1);[0,1,2].forEach(j=>{sn+=`<path d="M${385},${1060-j*30-k*40} q70,-34 140,0" fill="none" stroke="${INK}" stroke-width="20" stroke-linecap="round" opacity="${(1-k).toFixed(2)}"/><path d="M${385},${1060-j*30-k*40} q70,-34 140,0" fill="none" stroke="#fff01f" stroke-width="13" stroke-linecap="round" opacity="${(1-k).toFixed(2)}"/>`;});}
+  let sn='';[E.wipe2,E.wipe3].forEach(t0=>{if(T>=t0-.65&&T<t0-.1){const k=P(T,t0-.65,t0-.1);[0,1,2].forEach(j=>{const y=1090-j*34-k*50,dd=`M${NX-80},${y} q80,-40 160,0`;sn+=`<path d="${dd}" fill="none" stroke="${INK}" stroke-width="24" stroke-linecap="round" opacity="${(1-k*k).toFixed(2)}"/><path d="${dd}" fill="none" stroke="#fff01f" stroke-width="16" stroke-linecap="round" opacity="${(1-k*k).toFixed(2)}"/>`;});}});
   $('sniff').innerHTML=sn;
-  // a hand holds up a small ball of tissue; it soaks pink and gets worried
-  show('plug',plugOn?1:0);if(plugOn){mv('plug',300+Math.sin(T*1.3)*8,lerp(1500,1010,pk)+Math.sin(T*2.4)*5-tT*5,Math.sin(T*1.8)*3,1.3);
-    const s=eio(P(T,E.plug+.4,E.plug+2.4));$('plugRed').innerHTML=`<circle cx="-8" cy="8" r="${(8+s*26).toFixed(1)}" fill="#ef7f8a" opacity="${(.5+s*.4).toFixed(2)}" filter="url(#soft)"/><circle cx="-8" cy="10" r="${(4+s*12).toFixed(1)}" fill="#e5484d" opacity=".8"/>`;
-    face('tp',18,{dx:-6,dy:-10,lid:0,blink:blinkK(T,1.3),small:s>.6,bx:18,by:-27,bw:18,bA:-16,arch:6,talk:tT,mw:9,mood:-.8,T,seed:4});}}
+  // a hand rolls a small ball of tissue, pushes it into the nostril, and it comes back out soaked and worried
+  const on=pt>=0;show('plug',on?1:0);if(on){const up=eo(P(pt,0,.4)),inn=eio(P(pt,.5,.9)),out=eio(P(pt,1.9,2.3));
+    const hx=lerp(lerp(420,NX-4,inn),390,out),hy=lerp(lerp(lerp(1500,1050,up),NY+22,inn),1040,out)+(pt>.9&&pt<1.9?Math.sin(pt*30)*5:0)+(pt>2.3?Math.sin(T*2.4)*5-tT*5:0);
+    mv('plug',hx,hy,pt>2.3?Math.sin(T*1.8)*2:0,1.15);
+    const s=clamp(P(pt,.9,1.9));$('plugRed').innerHTML=`<circle cx="6" cy="-10" r="${(8+s*40).toFixed(1)}" fill="#ef7f8a" opacity="${(s*.9).toFixed(2)}" filter="url(#soft)"/><circle cx="4" cy="-8" r="${(s*20).toFixed(1)}" fill="#e5484d" opacity=".75"/>`;
+    const fo=clamp(P(pt,2.25,2.4));show('tface',fo);$('tface').setAttribute('transform',`scale(${eob(P(pt,2.2,2.5)).toFixed(3)})`);
+    const scared=T>=E.rebleed;
+    face('tp',18,{dx:scared?10:-4,dy:scared?-30:8,lid:0,blink:blinkK(T,1.3),small:scared,bx:30,by:-58,bw:22,bA:scared?-24:-12,arch:7,talk:tT,mw:11,mood:-.9,T,seed:4});}}
 // ---------- scene 3 ----------
-function renderProfile(T){const t=T-E.pinch,lean=eio(P(t,.1,.8)),pin=eo(P(t,.9,1.35));
-  $('head').setAttribute('transform',`rotate(${(-9*lean).toFixed(2)},700,1100) translate(0,${(Math.sin(T*2)*3).toFixed(1)})`);
-  mv('phand',lerp(-80,292,pin),lerp(250,470,pin)+Math.sin(T*3)*2,0);
-  $('pblood').setAttribute('opacity',(1-.25*P(t,1.6,2.8)).toFixed(2));}
+function renderProfile(T){const t=T-E.pinch,lean=eio(P(t,.1,.8)),pin=eo(P(t,.75,1.15));
+  $('head').setAttribute('transform',`rotate(${(-10*lean).toFixed(2)},700,1100) translate(0,${(Math.sin(T*2)*3).toFixed(1)})`);
+  mv('phand',lerp(-120,300,pin),lerp(200,478,pin)+Math.sin(T*3)*2,0);
+  show('pmouth',clamp(P(t,1.15,1.4)));
+  $('head').setAttribute('transform',`translate(${(150*lean).toFixed(1)},0) rotate(${(-10*lean).toFixed(2)},700,1100) translate(0,${(Math.sin(T*2)*3).toFixed(1)})`);
+  $('pblood').setAttribute('opacity',(1-.2*P(t,1.6,2.6)).toFixed(2));}
 // ---------- scene 5 ----------
 function renderClinic(T){
   const dT=speak('doctor',T),pT=speak('patient',T),d0=ST['06_doctor'];
@@ -71,13 +82,13 @@ function renderClinic(T){
   $('pBrows').setAttribute('d','M-36,66 Q-24,64 -10,60 M8,60 Q22,64 34,66');
   setMouthV('pat_m',pT,10,-.4,T,6);setHEye('pEyeL',-3,blinkK(T,2.1));setHEye('pEyeR',-3,blinkK(T,2.1));
   show('patBlush',.3);show('pSweat',0);
-  const sh=[-84,234],el=[-120,290],wr=[-140,176+Math.sin(T*2.2)*3];const d=limbD([sh,el,wr],[44,38,32]);$('patArmLD').setAttribute('d',d);$('patArmLO').setAttribute('d',d);
+  const lift=pT>.2?Math.sin(T*8)*4:0,sh=[-84,234],el=[-128,300],wr=[-170,236+Math.sin(T*2.2)*3+lift];const d=limbD([sh,el,wr],[44,38,32]);$('patArmLD').setAttribute('d',d);$('patArmLO').setAttribute('d',d);
   $('patHandL').innerHTML=hand(wr[0],wr[1]-6,-170,1.2,PSK);
-  $('ptis').setAttribute('transform',`translate(${548+wr[0]*1.25},${500+wr[1]*1.25+4}) rotate(${(Math.sin(T*2.2)*4+(pT>.2?Math.sin(T*9)*3:0)).toFixed(1)})`);
+  $('ptis').setAttribute('transform',`translate(${(540+wr[0]*1.08-4).toFixed(1)},${(330+wr[1]*1.08+6).toFixed(1)}) rotate(${(Math.sin(T*2.2)*4+lift).toFixed(1)})`);
   $('patWrap').setAttribute('transform',`translate(${(Math.sin(T*1.1)*2).toFixed(1)},0)`);}
 function caption(T,sc){let w='',ws=0;for(const L of D.lines)for(const x of L.words){if(T>=x[0]&&T<Math.max(x[1],x[0]+.12)){w=x[2];ws=x[0];}}
   if(!w){for(const L of D.lines)for(const x of L.words){if(T>=x[1]&&T<x[1]+.1){w=x[2];ws=x[0];}}}
-  const c=$('cap');c.textContent=w;const y0={1:1120,2:880,3:1130,4:1130,5:1100}[sc];c.setAttribute('y',y0+17);const k=eo(P(T,ws,ws+.12));c.setAttribute('transform',`translate(360,${y0}) scale(${lerp(1.4,1,k).toFixed(3)}) translate(-360,${-y0})`);}
+  const c=$('cap');c.textContent=w;const y0={1:1150,2:940,3:1130,4:1130,5:1130}[sc];c.setAttribute('y',y0+17);const k=eo(P(T,ws,ws+.12));const x0=sc===2?250:360;c.setAttribute('x',x0);c.setAttribute('transform',`translate(${x0},${y0}) scale(${lerp(1.4,1,k).toFixed(3)}) translate(${-x0},${-y0})`);}
 window.render=function(T){
   const sc=T<E.front?1:(T<E.pinch?2:(T<E.later?3:(T<E.clinic?4:5)));
   [1,2,3,4,5].forEach(i=>$('s'+i).setAttribute('display',sc===i?'inline':'none'));show('wm',sc===4?0:.7);

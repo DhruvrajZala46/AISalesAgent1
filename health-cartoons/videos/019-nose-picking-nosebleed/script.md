@@ -1,6 +1,6 @@
 # 019 - How Picking Your Nose Can Make It Bleed (GiggleMD)
 
-Status (24 Nov 2026): **v2 built and delivered** (see the v2 section). Waiting for the user's verdict. The user: "now make the next video as we made the previous one" (018).
+Status (24 Nov 2026): **v3 built and delivered** (see the v3 section). Waiting for the user's verdict. The user: "now make the next video as we made the previous one" (018).
 
 ## The reference the user sent
 A 55.5 s vertical video by Dr. Healthcare, "How picking your nose…" (the user's mp4; views not measured here).
@@ -54,6 +54,24 @@ Not copied, on purpose: the reference's audio. Its voice recordings and its musi
 **v2 QA (`how-picking-your-nose-makes-it-bleed-v2.mp4`):** 48.3 s; whisper 96.5% (110 of 114, the same four misses); -11.8 LUFS; frozen 10.4% (the clinic is a still two-shot, as in the reference); longest still 1.1 s. Checked on reference-over-ours tiles (9 moments) of the final render.
 
 Still different from the reference: its clinic shows both people full length, ours shows them from about the knee up; its pinching hand shows curled fingers, ours shows two fingers and part of the palm.
+
+## v3 (24 Nov 2026, after the user's verdict on v2)
+The user: **"VERY BAD VIDEO, 5%... I can't understand what that body part is... study that viral video, compare their visual storytelling with what you made."** (the same verdict as 015 v1 and 018 v1).
+
+The cause: v1 and v2 were drawn from a 1 fps sheet, so the reference's acting was missed. v3 was built from sheets at 0.4 to 0.6 s steps. What they showed, and what changed:
+1. The reference opens with a fat finger already deep in the nose; it comes out, goes back in and scrapes for 1.6 s before the scream. Ours touched for 0.3 s. **Now:** the same in-out-in-scrape, with the nostril rim drawn over the finger so it reads as going inside.
+2. The lining barely reacted. **Now:** eyes squeezed shut and a big open mouth on the rip, a teary look, then wide eyes on the blood.
+3. The blood was a straight bar. **Now:** a wobbly stream that wells up in the wound, runs out of the nostril and drips.
+4. The front nose was a three-lobed cloud shape. **Now:** a smooth nose outline with wings, nostrils and bridge shading.
+5. There were two wipes; the reference has three, with a sniff before the second and third. **Now:** three wipes and two sniffs.
+6. The tissue ball was only held up. In the reference a hand rolls it, pushes it into the nostril, and it comes back out pink with a face; the bleeding stops, then starts again on "still bleeding". **Now:** that whole beat.
+7. The pinching hand was two bars. **Now:** a fist with thumb and finger; the head leans and moves in, and the mouth opens to breathe.
+8. The clinic showed people from the knee up. **Now:** full length, with the desk and the hanging stained tissue.
+9. The audio timeline was rebuilt around these beats (51.4 s).
+
+**v3 QA (`how-picking-your-nose-makes-it-bleed-v3.mp4`):** 51.4 s (reference 55.5 s); whisper 97.4% (111 of 114; "Picking" heard as "Kicking", "ten" and "fifteen" written as digits); -11.9 LUFS; frozen 9.0% (the clinic is one still two-shot, as in the reference); longest still 0.8 s. Checked on 16 reference-over-ours pairs of the render and a 6-frame sheet of the tissue beat.
+
+Still different from the reference: its hands are drawn with more detail than ours; the audio, the wording and the doctor and patient are ours, as explained in v2.
 
 ## Upload block
 **Title:** How Picking Your Nose Can Make It Bleed 😳

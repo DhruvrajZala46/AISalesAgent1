@@ -17,14 +17,14 @@ def seq(keys,t,gap=.16):
     for k in keys: START[k]=round(t,3); t=lend(k)+gap
     return t-gap
 EV={}
-EV['pick']=.35                                      # the finger is already inside on frame 0; it scrapes the dry mucus off
-t=seq(K[0:1],.45)                                   # 01: the lining
-EV['bleed']=1.5
+EV['pick']=1.15                                      # the finger is already inside on frame 0; it scrapes the dry mucus off
+t=seq(K[0:1],1.25)                                   # 01: the lining
+EV['bleed']=EV['pick']+1.3
 EV['front']=t+.35                                   # the nose from the front: a drip, a wipe, another drip
-EV['wipe1']=EV['front']+1.0; t=seq(K[1:2],EV['front']+1.7)   # 02
-EV['wipe2']=t+.2; t=seq(K[2:3],EV['wipe2']+1.3)     # 03
-EV['plug']=t+.3; t=seq(K[3:4],EV['plug']+1.3)       # the tissue plug soaks through; 04
-EV['pinch']=t+.35; EV['later']=EV['pinch']+3.0      # he leans forward and pinches; "15 MINUTES LATER"
+EV['wipe1']=EV['front']+1.0; t=seq(K[1:2],EV['front']+1.9)   # 02
+EV['wipe2']=t+.3; t=seq(K[2:3],EV['wipe2']+1.4)     # 03
+EV['wipe3']=t+.3; EV['plug']=EV['wipe3']+1.1; t=seq(K[3:4],EV['plug']+2.3)       # the tissue plug soaks through; 04
+EV['pinch']=t+.35; EV['later']=EV['pinch']+2.8      # he leans forward and pinches; "15 MINUTES LATER"
 EV['clinic']=EV['later']+1.1; t=seq(K[4:6],EV['clinic']+.4,.25)   # 05-06
 END=round(t+0.6,3); N=int(END*SR); voice=np.zeros(N,np.float32)
 norm=lambda w: re.sub(r"[^a-z']","",w.lower())
@@ -46,7 +46,7 @@ for n,who,txt in L:
     lines.append({'id':k,'who':who,'t0':t0,'dur':round(len(a)/SR,3),'env':env,'words':[w for w in words if w[2]]})
 LW={l['id']:l['words'] for l in lines}
 def wt(k,w,n=0): return [x[0] for x in LW[k] if x[2]==w][n]
-EV['i0']=wt('06_doctor','SCRATCH')-.1; EV['i1']=wt('06_doctor','LEAN')-.1; EV['i2']=wt('06_doctor','PINCH')-.1; EV['i3']=wt('06_doctor','TEN')-.1
+EV['rebleed']=wt('04_tissue','STILL')-.35
 EV={k:round(float(v),3) for k,v in EV.items()}
 sfx=np.zeros(N,np.float32)
 def S(f,t,g,dur=None,start=0.0):
@@ -62,18 +62,16 @@ def thud(t,g):                                      # a soft thud (steps, knocks
     n=int(.11*SR); x=np.arange(n)/SR
     a=(np.sin(2*np.pi*(150*x-260*x*x))*np.exp(-x*38)+.25*np.random.RandomState(int(t*1000)).randn(n)*np.exp(-x*220)).astype(np.float32)*g
     i=int(t*SR); m=min(n,N-i); sfx[i:i+m]+=a[:m]
-S('1492.mp3',EV['pick']-.1,.3,.5); S('2182.mp3',EV['pick']+.1,.24,.3)                # scrape, rip
-for j in range(4): S('2364.mp3',EV['bleed']+j*.45,.14)                         # blood drips
+S('1492.mp3',.02,.2,.3); S('1492.mp3',.75,.22,.35); S('2182.mp3',EV['pick'],.26,.3)   # the finger scrapes twice, then the rip
+for j in range(4): S('2364.mp3',EV['bleed']+.3+j*.45,.14)                         # blood drips
 S('1492.mp3',EV['front']-.05,.2)
-for tt in (EV['front']+.35,EV['wipe1']+.9,EV['wipe2']+.8,EV['plug']+2.2,EV['plug']+3.4): S('2364.mp3',tt,.18)   # drip
-for tt in (EV['wipe1'],EV['wipe2']): S('1492.mp3',tt,.22,.5); S('1492.mp3',tt+.3,.18,.5)   # wiping
-S('2358.mp3',EV['wipe2']-.55,.2,.5)                                           # sniff
-S('2357.mp3',EV['plug'],.2); S('2358.mp3',EV['plug']+.7,.18,.6)                # the plug goes in and soaks
-S('1492.mp3',EV['pinch']-.05,.2); S('2182.mp3',EV['pinch']+1.2,.2,.3); S('2357.mp3',EV['pinch']+1.3,.18)   # lean, pinch
-pass                         # the clock ticks
+for tt in (EV['front']+.35,EV['wipe1']+1.1,EV['wipe2']+1.1,EV['rebleed']+.2,EV['rebleed']+1.0): S('2364.mp3',tt,.18)   # drip
+for tt in (EV['wipe1'],EV['wipe2'],EV['wipe3']): S('1492.mp3',tt,.22,.5); S('1492.mp3',tt+.3,.18,.5)   # wiping
+S('2358.mp3',EV['wipe2']-.6,.2,.5); S('2358.mp3',EV['wipe3']-.6,.2,.5)            # sniff
+S('2357.mp3',EV['plug']+.9,.2); S('2357.mp3',EV['plug']+2.0,.24)                  # the tissue ball goes in, and pops out soaked
+S('1492.mp3',EV['pinch']-.05,.2); S('2182.mp3',EV['pinch']+1.0,.2,.3); S('2357.mp3',EV['pinch']+1.1,.18)   # lean, pinch
 S('sfxgen/sfx_dingb.mp3',EV['later']+.05,.3,.9)
 S('1492.mp3',EV['clinic']-.05,.22)
-pass
 mus=np.tile(load('../../assets/music/mixkit-9.mp3'),3)[:N]; fl=int(1.0*SR); mus[-fl:]*=np.linspace(1,0,fl)
 act=np.convolve((np.abs(voice)>0.02).astype(np.float32),np.ones(int(.25*SR),np.float32)/int(.25*SR),'same'); mus*=10**(-5*np.clip(act*4,0,1)/20)
 for name,b in [('voice',voice),('sfx',sfx),('music',mus)]:
