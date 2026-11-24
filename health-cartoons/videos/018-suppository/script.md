@@ -32,6 +32,23 @@ A 70.6 s vertical video by @dr_healthsimplified (the user's WhatsApp file; views
 
 **Fixed after the first sheets:** the melted patch covered the rectum's face; the board covered the doctor's head; the caption covered the glove's face; faces were small; long still stretches.
 
+## v2 (24 Nov 2026, after the user's verdict on v1)
+The user: **"VERY BAD VIDEO, 5%... I can't understand what that body part is... a 5-year-old or a 60-year-old cannot understand this. I want it easiest to understand VISUALLY... compare their visual storytelling with what you made."** (the same verdict as 015 v1; row 27's rule was not applied well enough).
+
+What the large reference-over-ours tiles showed, and what v2 changed (drawings and motion only; the audio is the same):
+1. Nothing showed where in the body this is, and the skin line was a flat wave. **Now:** a small body card with the gut and a pulsing ring ("INSIDE HERE"), and the skin below is drawn as two round cheeks.
+2. The stool looked like coffee beans. **Now:** lumpy, shaded poop shapes; dark and cracked when hard, lighter and glossy when soft.
+3. The glove was an odd three-finger shape. **Now:** a hand with a cuff, knuckles, and a thumb and finger pinching the suppository.
+4. The melt was one pink patch. **Now:** water fills the tube from the suppository up to the stool (as in the reference), with drops.
+5. Nothing said what was happening. **Now:** a step label at each beat: IT MELTS, WATER COMES IN, POOP GETS SOFT, OUT IT GOES!
+6. The stool fell into empty space. **Now:** a toilet slides in and each piece drops into it with a splash; the glove steps aside.
+7. Hard words. **Now:** HARD POOP instead of HARD STOOL; the board says "PULLS WATER INTO THE POOP".
+8. The gut ended in a plain pipe. **Now:** scalloped bumps on the part that continues to the right.
+
+**v2 QA (`how-a-suppository-works-v2.mp4`):** 52.3 s; whisper 97.8% (132 of 135); -11.9 LUFS; frozen 0.0%; longest still 0.4 s. Checked on 290 px reference-over-ours tiles (10 moments) of the final render.
+
+Still different from the reference: its faces have larger eyes; ours keep the inset card and labels it does not have.
+
 ## Upload block
 **Title:** How Does a Suppository Actually Fix Constipation? 😳
 

@@ -31,6 +31,8 @@ Every new video copies `videos/012-why-we-snore/` and follows this recipe. Secti
 
 **4d. Understood with the sound off (from 015 v2):** organs in their real shape and place with a label on the first frame; the same thing drawn the same in every scene; names 50 px+, signs 30 px+; eyes big and never behind a prop; no empty half of the frame; the patient shows the result. Check on 330 px reference-over-ours tiles, not on a small contact sheet.
 
+**4e. Before the first delivery of any inside-the-body scene (from 018 v2):** a body card showing where it is; the outside of the body recognisable; everyday shapes (poop like poop, a glove like a hand); a step label on every beat; an everyday object for the result (toilet, bin, cup); child words on screen.
+
 **5. Sound:**
 - ElevenLabs `eleven_text_to_sound_v2` for the topic's own sounds (snore, slap, breathing), kept in `sfxgen/`.
 - Mixkit hits from section 3 on every action.
