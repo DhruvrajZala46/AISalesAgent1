@@ -1,0 +1,154 @@
+{
+ "name": "S31_wedding_shoes",
+ "shade": true,
+ "segs": [
+  {
+   "clip": "wd1_48",
+   "start": 8.7,
+   "dur": 2.9,
+   "mode": "fit"
+  },
+  {
+   "clip": "wd1_48",
+   "start": 11.6,
+   "dur": 2.6,
+   "mode": "fit"
+  },
+  {
+   "clip": "wd1_33",
+   "start": 2.4,
+   "dur": 3.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:0"
+  },
+  {
+   "clip": "wd1_1",
+   "start": 6.0,
+   "dur": 2.6,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:0",
+   "slow": 2
+  },
+  {
+   "clip": "wd1_48",
+   "start": 15.7,
+   "dur": 2.8,
+   "mode": "fit"
+  },
+  {
+   "clip": "wd1_33",
+   "start": 22.9,
+   "dur": 4.3,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.88:0:0"
+  }
+ ],
+ "texts": [
+  {
+   "text": "July 29, 1981.",
+   "a": 0,
+   "b": 2.9,
+   "y": 1170,
+   "size": 80
+  },
+  {
+   "text": "750 million people watched.",
+   "a": 0,
+   "b": 2.9,
+   "y": 1262,
+   "size": 64
+  },
+  {
+   "text": "St Paul\u2019s Cathedral, London",
+   "a": 0,
+   "b": 2.9,
+   "y": 1350,
+   "size": 46,
+   "small": true
+  },
+  {
+   "text": "But nobody saw",
+   "a": 2.9,
+   "b": 5.5,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "her shoes.",
+   "a": 2.9,
+   "b": 5.5,
+   "y": 1262,
+   "size": 84
+  },
+  {
+   "text": "Under the dress,",
+   "a": 5.5,
+   "b": 8.5,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "ivory silk shoes.",
+   "a": 5.5,
+   "b": 8.5,
+   "y": 1262,
+   "size": 76
+  },
+  {
+   "text": "Painted on the soles:",
+   "a": 8.5,
+   "b": 11.1,
+   "y": 1170,
+   "size": 72
+  },
+  {
+   "text": "a C and a D,",
+   "a": 8.5,
+   "b": 11.1,
+   "y": 1262,
+   "size": 80
+  },
+  {
+   "text": "with a heart",
+   "a": 11.1,
+   "b": 13.9,
+   "y": 1170,
+   "size": 80
+  },
+  {
+   "text": "between them.",
+   "a": 11.1,
+   "b": 13.9,
+   "y": 1262,
+   "size": 80
+  },
+  {
+   "text": "The loveliest details",
+   "a": 13.9,
+   "b": 99,
+   "y": 1170,
+   "size": 70
+  },
+  {
+   "text": "are the ones no one sees.",
+   "a": 13.9,
+   "b": 99,
+   "y": 1262,
+   "size": 66
+  }
+ ],
+ "music": {
+  "file": "m712",
+  "start": 54.0
+ },
+ "check": [
+  0.5,
+  1.5,
+  4.0,
+  6.8,
+  9.5,
+  12.5,
+  15.0,
+  17.6
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "name": "S33_fairytale",
+ "shade": true,
+ "segs": [
+  {
+   "clip": "wd1_48",
+   "start": 1.7,
+   "dur": 3.0,
+   "mode": "fit"
+  },
+  {
+   "clip": "wd1_1",
+   "start": 2.6,
+   "dur": 2.2,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:0",
+   "slow": 2
+  },
+  {
+   "clip": "wd1_1",
+   "start": 3.75,
+   "dur": 2.4,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:0",
+   "slow": 2
+  },
+  {
+   "clip": "wd1_33",
+   "start": 8.6,
+   "dur": 3.4,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:0"
+  },
+  {
+   "clip": "wd1_33",
+   "start": 20.8,
+   "dur": 2.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:0"
+  },
+  {
+   "clip": "wd1_28",
+   "start": 0.3,
+   "dur": 3.4,
+   "mode": "fit"
+  },
+  {
+   "clip": "wd1_33",
+   "start": 25.2,
+   "dur": 3.6,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.88:0:0"
+  }
+ ],
+ "texts": [
+  {
+   "text": "July 29, 1981.",
+   "a": 0,
+   "b": 3.0,
+   "y": 1215,
+   "size": 84
+  },
+  {
+   "text": "St Paul\u2019s Cathedral, London",
+   "a": 0,
+   "b": 3.0,
+   "y": 1320,
+   "size": 46,
+   "small": true
+  },
+  {
+   "text": "At the altar,",
+   "a": 3.0,
+   "b": 7.6,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "the Archbishop said:",
+   "a": 3.0,
+   "b": 7.6,
+   "y": 1262,
+   "size": 72
+  },
+  {
+   "text": "\u201cHere is the stuff",
+   "a": 7.6,
+   "b": 13.0,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "of which fairytales are made.\u201d",
+   "a": 7.6,
+   "b": 13.0,
+   "y": 1262,
+   "size": 60
+  },
+  {
+   "text": "Fifteen years later,",
+   "a": 13.0,
+   "b": 16.4,
+   "y": 1170,
+   "size": 74
+  },
+  {
+   "text": "they divorced.",
+   "a": 13.0,
+   "b": 16.4,
+   "y": 1262,
+   "size": 80
+  },
+  {
+   "text": "Fairytales end.",
+   "a": 16.4,
+   "b": 99,
+   "y": 1170,
+   "size": 80
+  },
+  {
+   "text": "Grace doesn\u2019t.",
+   "a": 16.4,
+   "b": 99,
+   "y": 1262,
+   "size": 80
+  }
+ ],
+ "music": {
+  "file": "m712",
+  "start": 150.5
+ },
+ "check": [
+  0.5,
+  2.5,
+  5.0,
+  8.0,
+  11.0,
+  14.0,
+  17.0,
+  19.5
+ ]
+}

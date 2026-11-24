@@ -1,0 +1,194 @@
+{
+ "name": "S32_elegance_tricks",
+ "speed": 0.9,
+ "gap": 0.35,
+ "music": {
+  "file": "m716",
+  "start": 22.5,
+  "gain": -16
+ },
+ "lines": [
+  {
+   "say": "Three elegance tricks Princess Diana used, that any woman can copy.",
+   "shots": [
+    {
+     "clip": "clutch36",
+     "start": 0.3,
+     "mode": "fit"
+    },
+    {
+     "clip": "wd1_33",
+     "start": 23.5,
+     "mode": "fit",
+     "crop": "crop=iw:ih*0.88:0:0"
+    }
+   ],
+   "screen": [
+    {
+     "text": "3 elegance tricks",
+     "y": 1170,
+     "size": 80
+    },
+    {
+     "text": "Princess Diana used",
+     "y": 1262,
+     "size": 76
+    }
+   ]
+  },
+  {
+   "say": "One. Stepping out of a car in a low dress, she held her clutch bag over her neckline.",
+   "shots": [
+    {
+     "clip": "clutch37",
+     "start": 2.5,
+     "mode": "fit",
+     "crop": "crop=iw:ih*0.66:0:ih*0.07"
+    },
+    {
+     "clip": "clutch36",
+     "start": 4.5,
+     "mode": "fit"
+    }
+   ],
+   "screen": [
+    {
+     "text": "1. The clutch trick",
+     "y": 1215,
+     "size": 80
+    },
+    {
+     "text": "stepping out of a car",
+     "y": 1330,
+     "size": 46,
+     "small": true
+    }
+   ]
+  },
+  {
+   "say": "Her bag designer remembers she called them her cleavage bags.",
+   "shots": [
+    {
+     "clip": "clutch0",
+     "start": 8.9,
+     "mode": "fit"
+    }
+   ],
+   "screen": [
+    {
+     "text": "\u201cMy cleavage bags\u201d",
+     "y": 1215,
+     "size": 80
+    }
+   ]
+  },
+  {
+   "say": "Two. With children, she never leaned over them. She knelt down to their eye level.",
+   "shots": [
+    {
+     "clip": "kneel1",
+     "start": 3.6,
+     "mode": "fit",
+     "w": 0.8
+    },
+    {
+     "clip": "hug1_2",
+     "start": 6.8,
+     "mode": "fill",
+     "w": 1.2
+    }
+   ],
+   "screen": [
+    {
+     "text": "2. Eye level",
+     "y": 1215,
+     "size": 84
+    },
+    {
+     "text": "with children",
+     "y": 1330,
+     "size": 46,
+     "small": true
+    }
+   ]
+  },
+  {
+   "say": "Three. On visits with children, she left her hat at home.",
+   "shots": [
+    {
+     "clip": "kneel1",
+     "start": 12.0,
+     "mode": "fit"
+    }
+   ],
+   "screen": [
+    {
+     "text": "3. No hat",
+     "y": 1215,
+     "size": 84
+    },
+    {
+     "text": "on visits with children",
+     "y": 1330,
+     "size": 46,
+     "small": true
+    }
+   ]
+  },
+  {
+   "say": "A palace curator says her reason was simple. You can't cuddle a child in a hat.",
+   "shots": [
+    {
+     "clip": "kneel15",
+     "start": 8.4,
+     "mode": "fit"
+    },
+    {
+     "clip": "kneel15",
+     "start": 16.6,
+     "mode": "fit"
+    }
+   ],
+   "screen": [
+    {
+     "text": "\u201cYou can\u2019t cuddle",
+     "y": 1170,
+     "size": 76
+    },
+    {
+     "text": "a child in a hat.\u201d",
+     "y": 1262,
+     "size": 76
+    }
+   ]
+  },
+  {
+   "say": "Elegance isn't only what you wear. It's how you make people feel.",
+   "shots": [
+    {
+     "clip": "kneel15",
+     "start": 22.7,
+     "mode": "fit"
+    },
+    {
+     "clip": "wd1_33",
+     "start": 27.0,
+     "mode": "fill",
+     "crop": "crop=iw:ih*0.88:0:0"
+    }
+   ],
+   "screen": [
+    {
+     "text": "Elegance is how",
+     "y": 1170,
+     "size": 78
+    },
+    {
+     "text": "you make people feel.",
+     "y": 1262,
+     "size": 70
+    }
+   ]
+  }
+ ]
+}
