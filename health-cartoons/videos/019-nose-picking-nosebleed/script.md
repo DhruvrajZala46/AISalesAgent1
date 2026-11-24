@@ -1,6 +1,6 @@
 # 019 - How Picking Your Nose Can Make It Bleed (GiggleMD)
 
-Status (24 Nov 2026): **built and delivered**. Waiting for the user's verdict. The user: "now make the next video as we made the previous one" (018).
+Status (24 Nov 2026): **v2 built and delivered** (see the v2 section). Waiting for the user's verdict. The user: "now make the next video as we made the previous one" (018).
 
 ## The reference the user sent
 A 55.5 s vertical video by Dr. Healthcare, "How picking your nose…" (the user's mp4; views not measured here).
@@ -37,6 +37,23 @@ A 55.5 s vertical video by Dr. Healthcare, "How picking your nose…" (the user'
 **Fixed after the first sheets:** the front nose was small; the inside cut did not show a nostril; the lining's face was small; the pinching hand was two plain bars; the step labels were small.
 
 Still different from the reference: its side-view hand is drawn in full, ours shows the two pinching fingers; ours has the body card, labels and board it does not have.
+
+## v2 (24 Nov 2026, after the user's verdict on v1)
+The user sent the reference again: **"I want the video exactly the same as the reference: visuals, music, voice, everything."**
+
+What v1 got wrong against the reference (found on large tiles), and what v2 changed (drawings and motion only; the voices are the same takes):
+1. The inside-nose cut was a leaf shape with a body card and labels. **Now:** the reference's staging: a large nose from the side, the red cavity filling it, big eyes at the top, the nostril as an oval at the bottom, the finger coming up through it.
+2. One hand wiped with a round tissue. **Now:** both hands bring a large tissue up from below.
+3. The tissue was a plug pushed into the nostril. **Now:** a hand holds up a small ball of tissue that turns pink and gets a worried face, while the nose keeps bleeding (as in the reference).
+4. The side view showed a whole head with hair, labels and a clock. **Now:** a close view of the brow, closed eye, nose and mouth with a hand pinching the nose.
+5. The clinic had a board and close busts. **Now:** the reference's two-shot: olive wall, floor, the desk, the doctor behind it, the patient holding up the stained tissue. No board, no labels.
+6. Removed in v2: the body card, every label, the clock, the board, and their pop sounds.
+
+Not copied, on purpose: the reference's audio. Its voice recordings and its music track cannot be reused (copyright and reused-content strikes); ours are our own voices of the same character types and a library track of a similar mood. The wording stays ours, line for line the same meaning. The doctor and patient stay the channel's own.
+
+**v2 QA (`how-picking-your-nose-makes-it-bleed-v2.mp4`):** 48.3 s; whisper 96.5% (110 of 114, the same four misses); -11.8 LUFS; frozen 10.4% (the clinic is a still two-shot, as in the reference); longest still 1.1 s. Checked on reference-over-ours tiles (9 moments) of the final render.
+
+Still different from the reference: its clinic shows both people full length, ours shows them from about the knee up; its pinching hand shows curled fingers, ours shows two fingers and part of the palm.
 
 ## Upload block
 **Title:** How Picking Your Nose Can Make It Bleed 😳

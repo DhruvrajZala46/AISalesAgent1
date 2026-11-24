@@ -70,10 +70,10 @@ for tt in (EV['wipe1'],EV['wipe2']): S('1492.mp3',tt,.22,.5); S('1492.mp3',tt+.3
 S('2358.mp3',EV['wipe2']-.55,.2,.5)                                           # sniff
 S('2357.mp3',EV['plug'],.2); S('2358.mp3',EV['plug']+.7,.18,.6)                # the plug goes in and soaks
 S('1492.mp3',EV['pinch']-.05,.2); S('2182.mp3',EV['pinch']+1.2,.2,.3); S('2357.mp3',EV['pinch']+1.3,.18)   # lean, pinch
-for j in range(3): tick(EV['pinch']+1.7+j*.4,.14,1200)                         # the clock ticks
+pass                         # the clock ticks
 S('sfxgen/sfx_dingb.mp3',EV['later']+.05,.3,.9)
 S('1492.mp3',EV['clinic']-.05,.22)
-for k in ('i0','i1','i2','i3'): S('2357.mp3',EV[k],.16)
+pass
 mus=np.tile(load('../../assets/music/mixkit-9.mp3'),3)[:N]; fl=int(1.0*SR); mus[-fl:]*=np.linspace(1,0,fl)
 act=np.convolve((np.abs(voice)>0.02).astype(np.float32),np.ones(int(.25*SR),np.float32)/int(.25*SR),'same'); mus*=10**(-5*np.clip(act*4,0,1)/20)
 for name,b in [('voice',voice),('sfx',sfx),('music',mus)]:
