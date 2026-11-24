@@ -1,0 +1,122 @@
+{
+ "takes/01_recta.mp3": {
+  "wer": 0.0,
+  "range": 19.3,
+  "dur": 5.04,
+  "txt": "Whoa, stop! This is an exit! Why are you bringing a capsule in here?"
+ },
+ "takes/01_rectb.mp3": {
+  "wer": 0.0,
+  "range": 19.3,
+  "dur": 5.04,
+  "txt": "Whoa, stop! This is an exit! Why are you bringing a capsule in here?"
+ },
+ "takes/02_glovea.mp3": {
+  "wer": 0.0,
+  "range": 27.4,
+  "dur": 4.0,
+  "txt": "It's not a capsule. It's a suppository for your constipation."
+ },
+ "takes/02_gloveb.mp3": {
+  "wer": 0.0,
+  "range": 27.4,
+  "dur": 4.0,
+  "txt": "It's not a capsule. It's a suppository for your constipation."
+ },
+ "takes/03_recta.mp3": {
+  "wer": 0.0,
+  "range": 22.6,
+  "dur": 5.04,
+  "txt": "We already tried, Fiber! How is something coming in the wrong way going to help?"
+ },
+ "takes/03_rectb.mp3": {
+  "wer": 0.0,
+  "range": 22.6,
+  "dur": 5.04,
+  "txt": "We already tried, Fiber! How is something coming in the wrong way going to help?"
+ },
+ "takes/04_glovea.mp3": {
+  "wer": 0.0,
+  "range": 32.7,
+  "dur": 2.24,
+  "txt": "Just trust me. Open up."
+ },
+ "takes/04_gloveb.mp3": {
+  "wer": 0.0,
+  "range": 32.7,
+  "dur": 2.24,
+  "txt": "Just trust me. Open up."
+ },
+ "takes/05_recta.mp3": {
+  "wer": 0.2,
+  "range": 40.8,
+  "dur": 3.92,
+  "txt": "Ugh, this feels so, so wrong."
+ },
+ "takes/05_rectb.mp3": {
+  "wer": 0.2,
+  "range": 40.8,
+  "dur": 3.92,
+  "txt": "Ugh, this feels so, so wrong."
+ },
+ "takes/06_glovea.mp3": {
+  "wer": 0.0,
+  "range": 23.0,
+  "dur": 1.36,
+  "txt": "Just watch."
+ },
+ "takes/06_gloveb.mp3": {
+  "wer": 0.0,
+  "range": 23.0,
+  "dur": 1.36,
+  "txt": "Just watch."
+ },
+ "takes/07_stoola.mp3": {
+  "wer": 0.0,
+  "range": 18.1,
+  "dur": 4.56,
+  "txt": "Wait! I'm not a rock anymore! I can actually move!"
+ },
+ "takes/07_stoolb.mp3": {
+  "wer": 0.0,
+  "range": 18.1,
+  "dur": 4.56,
+  "txt": "Wait! I'm not a rock anymore! I can actually move!"
+ },
+ "takes/08_glovea.mp3": {
+  "wer": 0.0,
+  "range": 13.5,
+  "dur": 1.12,
+  "txt": "Told you."
+ },
+ "takes/08_gloveb.mp3": {
+  "wer": 0.0,
+  "range": 13.5,
+  "dur": 1.12,
+  "txt": "Told you."
+ },
+ "takes/09_patienta.mp3": {
+  "wer": 0.0,
+  "range": 22.2,
+  "dur": 4.56,
+  "txt": "Doc, how does something put in back there fix constipation?"
+ },
+ "takes/09_patientb.mp3": {
+  "wer": 0.0,
+  "range": 22.2,
+  "dur": 4.56,
+  "txt": "Doc, how does something put in back there fix constipation?"
+ },
+ "takes/10_doctora.mp3": {
+  "wer": 0.02,
+  "range": 14.8,
+  "dur": 20.88,
+  "txt": "A glycerin suppository melts once it's inside the rectum. As it melts, it pulls water toward the stool and softens it from the inside. It also gently irritates the rectal wall, and that triggers the urge to go. No pill to digest, no long trip through the stomach. It works right where the problem is, often within 15 minutes to an hour."
+ },
+ "takes/10_doctorb.mp3": {
+  "wer": 0.02,
+  "range": 14.8,
+  "dur": 20.88,
+  "txt": "A glycerin suppository melts once it's inside the rectum. As it melts, it pulls water toward the stool and softens it from the inside. It also gently irritates the rectal wall, and that triggers the urge to go. No pill to digest, no long trip through the stomach. It works right where the problem is, often within 15 minutes to an hour."
+ }
+}

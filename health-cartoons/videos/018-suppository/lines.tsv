@@ -1,0 +1,10 @@
+01	rect	[alarmed] Whoa, stop! This is an exit! Why are you bringing a capsule in here?
+02	glove	[calm, friendly] It's not a capsule. It's a suppository, for your constipation.
+03	rect	[annoyed] We already tried fiber! How is something coming in the wrong way going to help?
+04	glove	[cheerful] Just trust me. Open up!
+05	rect	[uncomfortable, groaning] This feels so, so wrong.
+06	glove	[confident] Just watch.
+07	stool	[amazed] Wait... I'm not a rock anymore! I can actually move!
+08	glove	[smug] Told you!
+09	patient	[puzzled] Doc, how does something put in back there fix constipation?
+10	doctor	A glycerin suppository melts once it's inside the rectum. As it melts, it pulls water toward the stool, and softens it from the inside. It also gently irritates the rectal wall, and that triggers the urge to go. No pill to digest. No long trip through the stomach. It works right where the problem is, often within fifteen minutes to an hour.

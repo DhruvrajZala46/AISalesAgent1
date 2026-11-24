@@ -1,0 +1,72 @@
+{
+ "01_rect": {
+  "take": "a",
+  "f0": 239,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 4.38
+ },
+ "02_glove": {
+  "take": "a",
+  "f0": 144,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 3.41
+ },
+ "03_rect": {
+  "take": "a",
+  "f0": 151,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 4.58
+ },
+ "04_glove": {
+  "take": "a",
+  "f0": 256,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 1.83
+ },
+ "05_rect": {
+  "take": "a",
+  "f0": 126,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.27
+ },
+ "06_glove": {
+  "take": "a",
+  "f0": 137,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 0.96
+ },
+ "07_stool": {
+  "take": "a",
+  "f0": 284,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.84
+ },
+ "08_glove": {
+  "take": "a",
+  "f0": 123,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 0.76
+ },
+ "09_patient": {
+  "take": "a",
+  "f0": 139,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 3.89
+ },
+ "10_doctor": {
+  "take": "a",
+  "f0": 215,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 19.23
+ }
+}
