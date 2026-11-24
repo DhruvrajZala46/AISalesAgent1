@@ -1,0 +1,16 @@
+sm|Eww! What's this sticky stuff he's spreading on us?
+big|Relax. It's just a peel-off mask. It never gets me.
+sm|It's drying up! I can't move!
+big|Hold on to your heads, boys!
+sm|Aah! It tore my head off!
+big|Just the top. The rest of you is still down there.
+sm|So... we just fill back up?
+big|Every. Single. Time.
+sm|We're back!
+big|Told you. Nothing reaches us down here.
+acid|I do. I'm salicylic acid. I slide into the pore, and melt the oil.
+big|Please. You're just water.
+acid|Oil-soluble, actually.
+big|Wait... I'm melting?! Nooo!
+patient|Doc, why do my blackheads keep coming back after a peel-off mask?
+doctor|A peel-off mask only pulls off the top of the plug. The oil deeper in the pore stays, so it fills right back up. Try a salicylic acid cleanser or serum, a few times a week. It gets inside the pore and dissolves the oil. Give it a few weeks, and don't squeeze them.

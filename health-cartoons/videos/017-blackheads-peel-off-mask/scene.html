@@ -1,0 +1,303 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:LG;src:url(../../assets/fonts/LuckiestGuy.woff2)}@font-face{font-family:ComicNeue;font-weight:700;src:url(../../assets/fonts/comic-neue-latin-700-normal.woff2)}
+html,body{margin:0;background:#000;overflow:hidden}svg{display:block}
+.cap{font-family:LG,sans-serif;font-size:42px;letter-spacing:1px;paint-order:stroke;stroke:#141414;stroke-width:7px;stroke-linejoin:round;fill:#fff}
+.lbl{font-family:Inter,sans-serif;font-weight:900;font-size:22px;letter-spacing:.5px;fill:#111}
+.cta{font-family:LG,sans-serif;paint-order:stroke;stroke:#141414;stroke-linejoin:round}
+</style></head><body>
+<svg id="S" width="720" height="1280" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
+<script src="data.js"></script>
+<script>
+// =============== helpers ===============
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const P=(t,a,b)=>clamp((t-a)/(b-a));
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eo=x=>1-Math.pow(1-x,3);
+const eob=x=>{const c1=1.7,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const lerp=(a,b,x)=>a+(b-a)*x;
+const INK='#2a2322';
+const VE='vector-effect="non-scaling-stroke"';
+const LN=`stroke="${INK}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" ${VE}`;
+const LN2=`stroke="${INK}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" ${VE}`;
+const TH=(c)=>`stroke="${c}" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" fill="none" ${VE}`;
+function tr(id,x,y,sx=1,sy=sx,r=0){const e=$(id);if(e)e.setAttribute('transform',`translate(${x},${y}) rotate(${r}) scale(${sx},${sy})`);}
+function show(id,v){const e=$(id);if(e)e.setAttribute('opacity',v);}
+let DEFS='', UID=0;
+// shape with airbrushed inner shading (soft darker edge), like the reference
+function shaded(d,fill,shade,w=16,extra=''){const id='c'+(UID++);DEFS+=`<clipPath id="${id}"><path d="${d}"/></clipPath>`;
+  return `<path d="${d}" fill="${fill}"/><g clip-path="url(#${id})"><path d="${d}" fill="none" stroke="${shade}" stroke-width="${w}" filter="url(#soft)" opacity=".9"/></g><path d="${d}" fill="none" ${LN} ${extra}/>`;}
+// Catmull-Rom smooth path through points
+function smooth(pts,closed=false){let s=`M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;const n=pts.length;
+  for(let i=0;i<n-1;i++){const p0=pts[Math.max(0,i-1)],p1=pts[i],p2=pts[i+1],p3=pts[Math.min(n-1,i+2)];
+    s+=` C${(p1[0]+(p2[0]-p0[0])/6).toFixed(1)},${(p1[1]+(p2[1]-p0[1])/6).toFixed(1)} ${(p2[0]-(p3[0]-p1[0])/6).toFixed(1)},${(p2[1]-(p3[1]-p1[1])/6).toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;}
+  return s;}
+// tapered limb around a centre line (shoulder, elbow, wrist)
+function limbD(pts,ws){const L=[],R=[];const n=pts.length;
+  for(let i=0;i<n;i++){const a=pts[Math.max(0,i-1)],b=pts[Math.min(n-1,i+1)];let dx=b[0]-a[0],dy=b[1]-a[1];const d=Math.hypot(dx,dy)||1;dx/=d;dy/=d;
+    const w=ws[i]/2;L.push([pts[i][0]-dy*w,pts[i][1]+dx*w]);R.push([pts[i][0]+dy*w,pts[i][1]-dx*w]);}
+  const we=ws[n-1]/2, ws0=ws[0]/2;
+  let s=smooth(L);s+=` A${we},${we} 0 0 0 ${R[n-1][0].toFixed(1)},${R[n-1][1].toFixed(1)}`;
+  const r=smooth(R.slice().reverse());s+=' '+r.replace(/^M[^C]*/,'');s+=` A${ws0},${ws0} 0 0 0 ${L[0][0].toFixed(1)},${L[0][1].toFixed(1)}Z`;return s;}
+
+// ---------- cartoon object eyes (googly, with lids + brows) ----------
+function oEye(id,r,lidCol){const c='e'+(UID++);DEFS+=`<clipPath id="${c}"><ellipse rx="${r*.92}" ry="${r}"/></clipPath>`;
+  return `<g id="${id}"><ellipse rx="${r*.92}" ry="${r}" fill="#fff"/><g clip-path="url(#${c})"><circle id="${id}_p" r="${r*.46}" fill="#1b1717"/><circle id="${id}_h" r="${r*.15}" fill="#fff"/>
+   <g id="${id}_lid"><rect x="${-r*2}" y="${-r*3}" width="${r*4}" height="${r*2}" fill="${lidCol}"/><line x1="${-r*2}" x2="${r*2}" y1="${-r}" y2="${-r}" ${LN2}/></g></g>
+   <ellipse rx="${r*.92}" ry="${r}" fill="none" ${LN2}/></g>`;}
+// lid: amount 0..1 (closed), tilt degrees ; look dx,dy
+function setOEye(id,r,{dx=0,dy=0,lid=.12,tilt=0,blink=0,small=false}={}){const d=Math.hypot(dx,dy)||1,m=r*.42,k=Math.min(1,d/40);
+  const px=dx/d*m*k,py=dy/d*m*k;const p=$(id+'_p');p.setAttribute('cx',px);p.setAttribute('cy',py);p.setAttribute('r',r*(small?.3:.46));
+  const h=$(id+'_h');h.setAttribute('cx',px-r*.13);h.setAttribute('cy',py-r*.15);
+  const L=Math.max(lid,blink);$(id+'_lid').setAttribute('transform',`rotate(${tilt}) translate(0,${L*2*r})`);}
+function blinkK(t,ph){const k=(t+ph)%3.9;return k<.13?1-Math.abs(k-.065)/.065:0;}
+function brow(id){return `<path id="${id}" fill="none" ${LN2}/>`;}
+function setBrow(id,x,y,w,ang,arch=0){$(id).setAttribute('d',`M${x-w/2},${y} Q${x},${y-arch} ${x+w/2},${y}`);$(id).setAttribute('transform',`rotate(${ang},${x},${y})`);}
+function mouthD(o,w,mood=0){ // mood: +1 smile, -1 frown
+  if(o<.08){return {d:`M${-w*.7},0 Q0,${mood*w*.45} ${w*.7},0`,fill:'none'};}
+  const h=3+o*w*1.25;return {d:`M${-w*.75},-1 Q0,${-2+mood*2} ${w*.75},-1 Q${w*.6},${h} 0,${h+1} Q${-w*.6},${h} ${-w*.75},-1Z`,fill:'#5e1a20'};}
+function setMouth(id,o,w,mood=0){const m=mouthD(clamp(o),w,mood);const e=$(id);e.setAttribute('d',m.d);e.setAttribute('fill',m.fill);
+  const t=$(id+'_t');if(t){t.setAttribute('opacity',o>=.25?1:0);t.setAttribute('cy',2+o*w*1.05);t.setAttribute('rx',w*.4);t.setAttribute('ry',o*w*.35);}}
+function mouthEl(id,x,y){return `<g transform="translate(${x},${y})"><path id="${id}" ${LN2}/><path id="${id}_w" fill="#fff" opacity="0"/><ellipse id="${id}_t" cx="0" cy="0" rx="1" ry="1" fill="#d76d72" opacity="0"/></g>`;}
+
+// ---------- data / lip sync ----------
+const D=window.DATA, FPS=30;
+function speak(who,T){for(const L of D.lines){if(L.who===who&&T>=L.t0&&T<L.t0+L.dur){return L.env[Math.floor((T-L.t0)*FPS)]||0;}}return 0;}
+function lineT(id){return D.lines.find(l=>l.id===id).t0;}
+function wordT(id,w,n=0){const L=D.lines.find(l=>l.id===id);const m=L.words.filter(x=>x[2]===w);return m[n]?m[n][0]:L.t0;}
+function labelBox(id,text,x,y,sz=22){const w=text.length*sz*.66+26;return `<g id="${id}" opacity="0" transform="translate(${x},${y})"><rect x="${-w/2}" y="-20" width="${w}" height="40" fill="#fff" ${LN}/><text class="lbl" style="font-size:${sz}px" text-anchor="middle" y="8">${text}</text></g>`;}
+// =============== 017: blackheads, the peel-off mask and salicylic acid. The reference's scenes; our drawings, all code ===============
+const OLW=`stroke="${INK}" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"`;
+const OLW2=`stroke="${INK}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"`;
+const C_OIL='#d6c35a', C_OIL_L='#e9dc8c', C_TEAL='#14a3a0', SURF=470;
+const PORES={big:{cx:360,r:150},sL:{cx:112,r:70},sR:{cx:608,r:70}};
+Object.values(PORES).forEach(p=>{p.n=p.r*.36;p.cy=SURF+p.r*1.75;p.bot=p.cy+p.r;
+  p.d=`M${p.cx-p.n},${SURF-6} C${p.cx-p.n},${SURF+p.r*.55} ${p.cx-p.r},${SURF+p.r*.75} ${p.cx-p.r},${p.cy} A${p.r},${p.r} 0 0 0 ${p.cx+p.r},${p.cy} C${p.cx+p.r},${SURF+p.r*.75} ${p.cx+p.n},${SURF+p.r*.55} ${p.cx+p.n},${SURF-6} Z`;});
+function rnd(i){const x=Math.sin(i*127.1+311.7)*43758.5453;return x-Math.floor(x);}
+function poreSVG(id,er,mw){const p=PORES[id];
+  DEFS+=`<clipPath id="${id}_c"><path d="${p.d}"/></clipPath><clipPath id="${id}_lc"><rect id="${id}_lr" x="${p.cx-p.r-10}" y="${SURF}" width="${p.r*2+20}" height="${p.r*3}"/></clipPath>`;
+  const bub=Array.from({length:id==='big'?16:8},(_,i)=>{const a=rnd(i+p.r)*6.28,d=Math.sqrt(rnd(i*3+p.cx))*p.r*.82;return `<circle cx="${(p.cx+Math.cos(a)*d).toFixed(0)}" cy="${(p.cy+Math.sin(a)*d*.9).toFixed(0)}" r="${(p.r*(.08+rnd(i*7)*.13)).toFixed(0)}" fill="${C_OIL_L}" opacity=".85"/>`;}).join('');
+  return `<path d="${p.d}" fill="#fbdcc0" stroke="${INK}" stroke-width="24" stroke-linejoin="round"/><path d="${p.d}" fill="#fbdcc0" stroke="#f6c9a6" stroke-width="17" stroke-linejoin="round"/>
+   <g clip-path="url(#${id}_c)"><g clip-path="url(#${id}_lc)"><rect x="${p.cx-p.r-10}" y="${SURF-20}" width="${p.r*2+20}" height="${p.r*3.2}" fill="${C_OIL}"/>${bub}</g>
+    <g id="${id}_dark"><rect x="${-p.r-10}" y="-30" width="${p.r*2+20}" height="${p.r*.42+30}" fill="#19130f"/><rect x="${-p.r-10}" y="${p.r*.42-1}" width="${p.r*2+20}" height="${p.r*.8}" fill="url(#darkG)"/></g>
+    <path id="${id}_surf" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity="0"/></g>
+   <g id="${id}_face"><g transform="translate(${-er*1.15},0)">${oEye(id+'_eL',er,C_OIL)}</g><g transform="translate(${er*1.15},0)">${oEye(id+'_eR',er,C_OIL)}</g>${brow(id+'_bL')}${brow(id+'_bR')}${mouthEl(id+'_m',0,er*1.9)}</g>`;}
+function skinWorld(){
+  DEFS+=`<linearGradient id="darkG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#19130f"/><stop offset="1" stop-color="#19130f" stop-opacity="0"/></linearGradient>`;
+  const top='M-140,472 C80,462 200,476 330,468 C460,460 600,476 860,468';
+  let s=`<g id="skin" transform="translate(360,500) scale(1.15) translate(-360,-470)"><rect x="-140" y="-540" width="1000" height="2100" fill="#cfe6f5"/>
+   <path d="${top} L860,1420 L-140,1420 Z" fill="#fde3c6"/><path d="M-140,566 H860 V1420 H-140 Z" fill="#f7b7c7"/><path d="M-140,556 H860 V582 H-140 Z" fill="#f28d9f"/>
+   <path d="M-40,1050 C80,1020 200,1070 330,1040 C460,1012 600,1066 760,1036 L760,1320 L-40,1320 Z" fill="#ec9fb6"/><path d="M-40,1190 C100,1170 260,1210 400,1184 C540,1160 660,1200 760,1180 L760,1320 L-40,1320 Z" fill="#e08ca8"/>
+   ${[[230,500],[250,520],[470,496],[500,522],[560,506],[200,530],[690,520],[30,512]].map(([x,y],i)=>`<ellipse cx="${x}" cy="${y}" rx="${7+i%3*2}" ry="3.5" fill="#c9825f" opacity=".7"/>`).join('')}
+   ${[[150,760],[560,820],[230,940],[620,980],[90,900],[470,960]].map(([x,y])=>`<ellipse cx="${x}" cy="${y}" rx="26" ry="8" fill="#f29db3" opacity=".7"/>`).join('')}
+   <path d="${top}" fill="none" ${OLW}/>
+   ${poreSVG('sL',19,8)}${poreSVG('sR',19,8)}${poreSVG('big',40,20)}
+   <g id="drops"></g>
+   <g id="mask"><path id="maskP" fill="#17171a" ${OLW}/><path id="maskHi" fill="none" stroke="#5a5a62" stroke-width="5" stroke-linecap="round"/><g id="maskDry" opacity="0">${Array.from({length:46},(_,i)=>`<circle cx="${(rnd(i)*760-20).toFixed(0)}" cy="${(392+rnd(i*5)*78).toFixed(0)}" r="${(1.6+rnd(i*9)*2).toFixed(1)}" fill="#8a8a92"/>`).join('')}
+     <path d="M120,400 l14,28 l-10,26 M330,396 l-12,30 l14,28 M540,400 l12,26 l-12,28 M650,398 l-8,42" fill="none" stroke="#6b6b73" stroke-width="3" stroke-linecap="round"/></g>
+    <g id="tops" opacity="0">${['sL','sR'].map(k=>{const p=PORES[k];return `<path d="M${p.cx-p.n+3},470 L${p.cx+p.n-3},470 L${p.cx+p.n*1.5},${470+p.r*.7} C${p.cx},${470+p.r*.95} ${p.cx},${470+p.r*.95} ${p.cx-p.n*1.5},${470+p.r*.7} Z" fill="#19130f" ${OLW2}/>`;}).join('')}</g></g>
+   <g id="brush"><path d="M0,0 L150,-420" stroke="${INK}" stroke-width="30" stroke-linecap="round"/><path d="M0,0 L150,-420" stroke="#e7a85c" stroke-width="23" stroke-linecap="round"/><path d="M-34,34 C-44,6 -20,-22 10,-28 C40,-30 54,0 44,30 C30,52 -18,54 -34,34 Z" fill="#232326" ${OLW}/></g>
+   <g id="bottle"><path d="M0,0 L-7,-46 L7,-46 Z" fill="#e8f6ff" ${OLW2}/><rect x="-24" y="-128" width="48" height="84" rx="8" fill="#232326" ${OLW}/><path d="M-24,-104 h48 M-24,-84 h48" stroke="#4a4a52" stroke-width="5"/>
+     <rect x="-70" y="-336" width="140" height="212" rx="20" fill="#d8eefb" ${OLW}/><path d="M-52,-316 v170" stroke="#fff" stroke-width="9" stroke-linecap="round" opacity=".8"/>
+     <rect x="-58" y="-232" width="116" height="78" rx="6" fill="#fff" ${OLW2}/><text x="0" y="-200" text-anchor="middle" style="font-family:LG,sans-serif;font-size:24px" fill="#1d2a44">SALICYLIC</text><text x="0" y="-170" text-anchor="middle" style="font-family:LG,sans-serif;font-size:24px" fill="#1d2a44">ACID</text>
+     <g transform="translate(0,-280)"><g transform="translate(-24,0)">${oEye('ac_eL',19,'#d8eefb')}</g><g transform="translate(24,0)">${oEye('ac_eR',19,'#d8eefb')}</g>${brow('ac_bL')}${brow('ac_bR')}${mouthEl('ac_m',0,30)}</g></g>
+   <g id="fx"></g></g>`;
+  return s;}
+// ---- the clinic: a cheat sheet board over our doctor and patient ----
+function clinic17(){
+  const card=(x,ttl,sub,ok,col,l1,l2,foot,id)=>`<g id="${id}" opacity="0"><rect x="${x}" y="170" width="290" height="340" rx="18" fill="#fff" stroke="#1d2a44" stroke-width="4"/>
+    <text x="${x+145}" y="214" text-anchor="middle" style="font-family:LG,sans-serif;font-size:27px" fill="#1d2a44">${ttl}</text><text x="${x+145}" y="246" text-anchor="middle" style="font-family:LG,sans-serif;font-size:${sub.length>12?19:27}px" fill="#1d2a44">${sub}</text>
+    <path d="M${x+131},266 h28 l-14,18 Z" fill="#8a94a6"/>
+    <rect x="${x+16}" y="300" width="258" height="112" rx="16" fill="${col}" stroke="#1d2a44" stroke-width="3.4"/><text x="${x+145}" y="346" text-anchor="middle" style="font-family:LG,sans-serif;font-size:25px" fill="#fff">${l1}</text><text x="${x+145}" y="384" text-anchor="middle" style="font-family:LG,sans-serif;font-size:25px" fill="#fff">${l2}</text>
+    <text x="${x+145}" y="462" text-anchor="middle" style="font-family:ComicNeue,sans-serif;font-weight:700;font-size:21px" fill="#1d2a44">${foot}</text>
+    <g transform="translate(${x+268},180)"><circle r="27" fill="${ok?'#2fae62':'#e8473f'}" stroke="#1d2a44" stroke-width="3.4"/>${ok?'<path d="M-12,1 l8,9 l15,-17" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>':'<path d="M-10,-10 L10,10 M10,-10 L-10,10" stroke="#fff" stroke-width="7" stroke-linecap="round"/>'}</g></g>`;
+  return `<rect x="-60" y="-60" width="840" height="1400" fill="#dcefe9"/>
+   <rect x="38" y="52" width="656" height="494" rx="24" fill="#000" opacity=".12"/><rect x="30" y="40" width="660" height="494" rx="24" fill="#fff" stroke="#1d2a44" stroke-width="5"/>
+   <text x="360" y="118" text-anchor="middle" style="font-family:LG,sans-serif;font-size:60px;letter-spacing:2px" fill="#1d2a44">CHEAT SHEET</text>
+   ${card(52,'PEEL-OFF','MASK',false,'#e8473f','ONLY PULLS','THE TOP OFF','the pore fills right back up','cd1')}${card(378,'SALICYLIC ACID','A FEW TIMES A WEEK',true,'#2fae62','DISSOLVES OIL','INSIDE THE PORE','cleanser or serum','cd2')}
+   <g id="cd3" opacity="0"><rect x="110" y="556" width="500" height="64" rx="32" fill="#e8473f" stroke="#1d2a44" stroke-width="4"/><text x="360" y="601" text-anchor="middle" style="font-family:LG,sans-serif;font-size:35px;letter-spacing:1px" fill="#fff">DON'T SQUEEZE THEM</text></g>
+   <g transform="translate(190,660) scale(1.5)">${doctorSVG()}</g><g id="patWrap"><g transform="translate(565,790) scale(1.6)">${patientSVG()}</g></g>`;}
+
+// =============== SCENE 2 : ENT clinic ===============
+function hand(x,y,ang,sc,skin,id=''){return `<g ${id?`id="${id}"`:''} transform="translate(${x},${y}) rotate(${ang}) scale(${sc})">
+  <path d="M-11,-12 C-4,-17 9,-16 13,-8 C17,2 15,14 6,18 C-4,22 -14,16 -16,6 C-17,-2 -15,-8 -11,-12 Z" fill="${skin}" ${LN2}/>
+  <path d="M-12,-6 C-20,-12 -24,-6 -18,2" fill="${skin}" ${LN2}/><path d="M-2,4 q4,6 10,6 M0,-4 q5,5 12,5" ${TH('#9c6b52')}/></g>`;}
+function humanEye(id,x,y,w,h){const c='h'+(UID++);DEFS+=`<clipPath id="${c}"><path d="M${-w},0 Q0,${-h*1.5} ${w},0 Q0,${h*1.1} ${-w},0Z"/></clipPath>`;
+  return `<g transform="translate(${x},${y})"><g id="${id}"><path d="M${-w},0 Q0,${-h*1.5} ${w},0 Q0,${h*1.1} ${-w},0Z" fill="#fff"/>
+   <g clip-path="url(#${c})"><circle id="${id}_p" r="${h*.78}" fill="#3a2a20"/><circle id="${id}_q" r="${h*.38}" fill="#111"/><circle id="${id}_h" r="${h*.2}" fill="#fff"/></g>
+   <path d="M${-w-1},0 Q0,${-h*1.55} ${w+1},0" fill="none" stroke="${INK}" stroke-width="2.8" stroke-linecap="round" ${VE}/><path d="M${-w*.8},${h*.35} Q0,${h*1.05} ${w*.8},${h*.35}" fill="none" ${TH('#8d6a5a')}/></g></g>`;}
+function setHEye(id,dx,blink){const p=$(id+'_p'),q=$(id+'_q'),h=$(id+'_h');[p,q].forEach(e=>{e.setAttribute('cx',dx);e.setAttribute('cy',1);});h.setAttribute('cx',dx-2);h.setAttribute('cy',-1.5);
+  $(id).setAttribute('transform',`scale(1,${1-blink*.92})`);}
+
+const DSK='#f0c6a6', DSK_S='#d9a585', DHAIR='#3b2820';
+function doctorSVG(){return `<g id="doc">
+ <ellipse cx="0" cy="782" rx="92" ry="12" fill="#000" opacity=".12"/>
+ <!-- back hair -->
+ <path d="M-64,70 C-74,130 -70,190 -48,214 L50,214 C70,190 74,130 64,70 Z" fill="${DHAIR}" ${LN}/>
+ <!-- legs -->
+ ${shaded(limbD([[-30,500],[-34,640],[-34,760]],[52,44,38]),'#33465f','#22324a',10)}
+ ${shaded(limbD([[30,500],[34,640],[36,760]],[52,44,38]),'#33465f','#22324a',10)}
+ <path d="M-58,756 C-58,744 -12,742 -10,756 L-10,772 L-62,774 Z" fill="#3c3f46" ${LN2}/><path d="M12,756 C14,742 60,744 60,756 L62,774 L10,772 Z" fill="#3c3f46" ${LN2}/>
+ <!-- scrubs + coat -->
+ ${shaded('M-62,214 C-40,204 40,204 62,214 L70,520 L-70,520 Z','#3f9c96','#2c7d78',14)}
+ ${shaded('M-20,206 L-62,212 C-92,222 -100,250 -102,290 L-110,560 L-46,566 L-16,330 L-8,250 Z','#f8f8f6','#d4d9dd',18)}
+ ${shaded('M20,206 L62,212 C92,222 100,250 102,290 L110,560 L46,566 L16,330 L8,250 Z','#f8f8f6','#d4d9dd',18)}
+ <path d="M-20,206 L-2,262 L-8,330 M20,206 L2,262 L8,330" fill="none" ${TH('#9aa3aa')}/>
+ <path d="M-90,430 h34 v40 h-34 Z M56,430 h34 v40 h-34 Z" fill="none" ${TH('#9aa3aa')}/>
+ <rect x="54" y="300" width="30" height="40" rx="4" fill="#d9ecf5" ${LN2}/><rect x="60" y="306" width="18" height="12" fill="#8db4c8"/>
+ <!-- stethoscope -->
+ <path d="M-26,212 C-38,270 -24,322 0,326 C24,322 38,270 26,212" fill="none" stroke="#454b55" stroke-width="5.5" stroke-linecap="round"/>
+ <circle cx="0" cy="334" r="11" fill="#c9cfd6" ${LN2}/>
+ <!-- neck + head -->
+ <path d="M-17,150 L-16,206 L16,206 L17,150 Z" fill="${DSK}" ${LN2}/><path d="M-16,176 C-6,186 6,186 16,176 L16,206 L-16,206Z" fill="${DSK_S}" opacity=".7"/>
+ <g id="docHead">
+  ${shaded('M-50,72 C-52,30 -30,8 0,8 C32,8 54,30 52,74 C51,106 40,134 22,150 C12,158 -12,158 -22,150 C-40,134 -51,106 -50,72 Z',DSK,DSK_S,12)}
+  <path d="M-52,90 C-60,86 -62,104 -52,108" fill="${DSK}" ${LN2}/><path d="M52,90 C60,86 62,104 52,108" fill="${DSK}" ${LN2}/>
+  <path d="M-56,96 C-62,30 -30,0 4,0 C42,0 64,30 58,98 C54,66 44,44 20,34 C2,50 -30,60 -56,96 Z" fill="${DHAIR}" ${LN}/>
+  <path d="M-30,24 C-10,10 20,10 40,26 M-40,50 C-28,36 -12,30 6,30" fill="none" ${TH('#5c4136')}/>
+  <path id="dBrows" d="M-30,72 Q-18,65 -6,70 M14,70 Q26,65 38,72" fill="none" stroke="${DHAIR}" stroke-width="3.6" stroke-linecap="round"/>
+  ${humanEye('dEyeL',-16,90,12,7)}${humanEye('dEyeR',24,90,12,7)}
+  <g fill="none" stroke="#4a3b37" stroke-width="2.2" ${VE}><rect x="-34" y="78" width="34" height="25" rx="9"/><rect x="7" y="78" width="34" height="25" rx="9"/><path d="M0,88 h7 M-34,86 l-16,-3 M41,86 l13,-3"/></g>
+  <path d="M8,98 C14,110 14,118 6,121 C3,122 0,120 -2,118" fill="none" ${TH('#a8735a')}/>
+  <ellipse cx="-24" cy="118" rx="9" ry="5" fill="#e79a8d" opacity=".35"/><ellipse cx="32" cy="118" rx="9" ry="5" fill="#e79a8d" opacity=".35"/>
+  ${mouthEl('doc_m',6,136)}
+ </g>
+ <!-- left arm with clipboard -->
+ ${shaded(limbD([[-86,226],[-74,336],[-6,352]],[40,34,30]),'#f8f8f6','#d4d9dd',10)}
+ <g transform="translate(8,316) rotate(-8)"><rect x="-40" y="-56" width="80" height="106" rx="6" fill="#b88350" ${LN2}/><rect x="-32" y="-46" width="64" height="88" fill="#fff" ${LN2}/><rect x="-14" y="-62" width="28" height="12" rx="3" fill="#9aa3ad" ${LN2}/>
+   <path d="M-22,-26 h44 M-22,-12 h36 M-22,2 h44 M-22,16 h28" ${TH('#9aa3ad')}/></g>
+ ${hand(-2,356,-70,1.15,DSK)}
+ <!-- right arm holding otoscope -->
+ <g id="docArmR">${shaded(limbD([[86,226],[110,318],[96,346]],[40,34,30]),'#f8f8f6','#d4d9dd',10)}
+   
+   ${hand(98,350,-60,1.15,DSK)}</g>
+</g>`;}
+const PSK='#e2b48f', PSK_S='#c99271';
+function patientSVG(){return `<g id="pat">
+ <ellipse cx="0" cy="782" rx="96" ry="12" fill="#000" opacity=".12"/>
+ ${shaded(limbD([[-32,500],[-36,640],[-36,758]],[56,46,40]),'#4b6286','#344868',10)}
+ ${shaded(limbD([[32,500],[36,640],[38,758]],[56,46,40]),'#4b6286','#344868',10)}
+ <path d="M-64,752 C-64,736 -12,736 -10,752 L-8,770 L-68,772 Z" fill="#f2f2f2" ${LN2}/><path d="M-66,766 h58" ${TH('#9aa0a6')}/>
+ <path d="M10,752 C12,736 64,736 64,752 L68,772 L8,770 Z" fill="#f2f2f2" ${LN2}/><path d="M8,766 h58" ${TH('#9aa0a6')}/>
+ ${shaded('M-66,218 C-40,204 40,204 66,218 C90,232 96,262 96,300 L92,520 L-92,520 L-96,300 C-96,262 -90,232 -66,218 Z','#c7884a','#a86c34',18)}
+ <path d="M-40,206 C-30,232 30,232 40,206" fill="#b47a40" ${LN2}/><path d="M-10,232 v58 M10,232 v58" stroke="#f3eadf" stroke-width="3.5" stroke-linecap="round"/>
+ <path d="M-60,420 C-20,436 20,436 60,420 L58,470 C20,482 -20,482 -58,470 Z" fill="#b47a40" ${LN2}/>
+ <path d="M-92,500 L92,500 L92,520 L-92,520 Z" fill="#a86c34" ${LN2}/>
+ <path d="M-17,150 L-16,210 L16,210 L17,150 Z" fill="${PSK}" ${LN2}/><path d="M-16,178 C-6,188 6,188 16,178 L16,210 L-16,210Z" fill="${PSK_S}" opacity=".7"/>
+ <!-- right arm (hangs) -->
+ ${shaded(limbD([[84,234],[100,370],[90,470]],[44,38,32]),'#c7884a','#a86c34',10)}${hand(88,482,8,1.2,PSK)}
+ <g id="patHead">
+  ${shaded('M-52,70 C-54,28 -30,6 0,6 C32,6 56,28 54,72 C53,108 42,138 24,154 C12,162 -12,162 -24,154 C-42,138 -53,108 -52,70 Z',PSK,PSK_S,12)}
+  <path d="M-54,88 C-62,84 -64,104 -54,108" fill="${PSK}" ${LN2}/><path d="M54,88 C62,84 64,104 54,108" fill="${PSK}" ${LN2}/>
+  <path d="M-56,74 C-64,20 -30,-12 6,-8 C40,-6 64,16 58,72 C52,44 40,30 20,28 C4,34 -14,30 -24,24 C-34,40 -46,52 -56,74 Z" fill="#1f1d24" ${LN}/>
+  <path d="M-36,4 l6,-10 M-14,-6 l4,-10 M10,-6 l2,-10 M30,0 l6,-8" ${TH('#3d3a46')}/>
+  <path id="pBrows" d="M-36,70 Q-24,64 -10,66 M8,66 Q22,64 34,70" fill="none" stroke="#1f1d24" stroke-width="4.2" stroke-linecap="round"/>
+  ${humanEye('pEyeL',-22,88,12,7)}${humanEye('pEyeR',18,88,12,7)}
+  <path d="M-4,96 C-10,110 -10,118 -2,121 C2,122 5,120 7,118" fill="none" ${TH('#9c6b4e')}/>
+  <path d="M-36,130 q4,8 2,14 M30,130 q-4,8 -2,14" ${TH('#c99271')}/>
+  ${mouthEl('pat_m',-4,138)}
+  <g id="patBlush" opacity="0"><ellipse cx="-38" cy="124" rx="10" ry="6" fill="#ef8f86"/><ellipse cx="32" cy="124" rx="10" ry="6" fill="#ef8f86"/></g>
+  <path id="pSweat" d="M0,-9 C5,-2 7,3 5,7 C3,11 -4,11 -5,7 C-7,3 -4,-2 0,-9Z" fill="#9fd8f5" ${LN2}/>
+ </g>
+ <!-- left arm: hand to ear -->
+ <g id="patArmL"><path id="patArmLD" fill="#c7884a"/><path id="patArmLO" fill="none" ${LN}/><g id="patHandL"></g></g>
+</g>`;}
+
+// =============== 017: "Why do blackheads come back after a peel-off mask?" One locked skin scene, then the clinic. ===============
+const E=D.ev, ST=D.start, END=D.end;
+function viseme(env,T,seed){if(env<0.08)return 'closed';const f=Math.floor(T*15)+seed;let b=env<0.3?'small':env<0.65?'mid':'wide';if(b==='mid'&&f%4===0)b='oo';if(b==='wide'&&f%5===0)b='mid';return b;}
+function setMouthV(id,env,w,mood,T,seed=0){const v=viseme(env,T,seed);const e=$(id),t=$(id+'_t'),th=$(id+'_w');let d,fill='#5e1a20',tong=0,teeth=0;
+  if(v==='closed'){d=`M${-w*.7},0 Q0,${mood*w*.45} ${w*.7},0`;fill='none';}
+  else if(v==='small'){d=`M${-w*.55},0 Q0,-2.5 ${w*.55},0 Q0,${w*.5} ${-w*.55},0Z`;}
+  else if(v==='oo'){d=`M0,${-w*.32} C${w*.42},${-w*.32} ${w*.42},${w*.55} 0,${w*.55} C${-w*.42},${w*.55} ${-w*.42},${-w*.32} 0,${-w*.32}Z`;}
+  else if(v==='mid'){d=`M${-w*.8},-1 Q0,-4 ${w*.8},-1 Q${w*.6},${w*.85} 0,${w*.9} Q${-w*.6},${w*.85} ${-w*.8},-1Z`;tong=.6;teeth=1;}
+  else {d=`M${-w*.9},-2 Q0,-6 ${w*.9},-2 Q${w*.7},${w*1.3} 0,${w*1.35} Q${-w*.7},${w*1.3} ${-w*.9},-2Z`;tong=1;teeth=1;}
+  e.setAttribute('d',d);e.setAttribute('fill',fill);
+  if(th){th.setAttribute('opacity',teeth);th.setAttribute('d',`M${-w*.62},-1 Q0,-4 ${w*.62},-1 L${w*.56},${w*.2} Q0,${w*.12} ${-w*.56},${w*.2}Z`);}
+  if(t){t.setAttribute('opacity',tong?1:0);t.setAttribute('cy',w*(tong>.8?1.0:.66));t.setAttribute('rx',w*.45);t.setAttribute('ry',w*.2*tong+1);}}
+
+// ---- inside the ear: positions of the cotton bud tip and the wax (world coords)
+function popLabel(id,T,t0,t1,x,y,sc=1){const on=T>=t0&&T<t1;show(id,on?1:0);if(on){const k=eob(P(T,t0,t0+.28));$(id).setAttribute('transform',`translate(${x},${y}) scale(${k*sc})`);}}
+const lend=id=>{const L=D.lines.find(l=>l.id===id);return L.t0+L.dur;};
+const inL=(id,T,pre=.05,post=.1)=>T>=ST[id]-pre&&T<lend(id)+post;
+const svg=$('S');
+const S1=`<g id="s1">${skinWorld()}${labelBox('lbMask','PEEL-OFF MASK',470,318,28)}<path id="lbLine" d="M440,340 L420,398" stroke="#111" stroke-width="3.4" stroke-linecap="round" opacity="0"/>${labelBox('lbBH','BLACKHEAD',360,596,26)}${labelBox('lbOil','OIL',360,846,26)}${labelBox('lbPore','PORE',624,720,22)}</g>`, S3=`<g id="s3">${clinic17()}</g>`;
+svg.innerHTML=`<defs><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>${DEFS}</defs>`
+ +S1+S3+`<text id="wm" x="360" y="58" text-anchor="middle" style="font-family:ComicNeue,sans-serif;font-weight:700;font-size:24px" fill="#fff" stroke="#0b6e6b" stroke-width=".6" opacity=".6">@GiggleMD</text>`
+ +`<g id="capg"><text id="cap" class="cap" x="360" y="1125" text-anchor="middle" style="stroke-width:7px;font-size:48px"></text></g>`;
+function face(id,r,{dx=0,dy=0,lid=.1,blink=0,small=false,bx=27,by=48,bw=26,bA=0,arch=3,talk=0,mw=12,mood=0,T=0,seed=0}){
+  setOEye(id+'_eL',r,{dx,dy,lid,blink,small});setOEye(id+'_eR',r,{dx,dy,lid,blink,small});
+  setBrow(id+'_bL',-bx,by,bw,bA,arch);setBrow(id+'_bR',bx,by,bw,-bA,arch);setMouthV(id+'_m',talk,mw,mood,T,seed);}
+// how full each pore is (0 = full to the surface, 1 = empty) and how dark its top is
+function state(id,T){const p=PORES[id];let empty=0,dark=1;
+  if(id!=='big'){const rip=eo(P(T,E.peel+.05,E.peel+.3)),re=eio(P(T,E.refill,E.back));empty=.6*rip*(1-re);dark=1-rip*(1-re*re);
+    const m=eio(P(T,E.melt+1.3,E.gone));empty=lerp(empty,1,m);dark*=1-P(T,E.melt+1.0,E.melt+1.6);}
+  else{const m=eio(P(T,E.melt+.5,E.gone-.1));empty=m;dark=1-P(T,E.melt+.2,E.melt+1.3);}
+  return {level:lerp(SURF-8,p.bot+6,empty),empty,dark};}
+function renderSkin(T){
+  const peelK=eio(P(T,E.peel,E.peel+.5)),dryK=P(T,E.dry,E.dry+2.2),melting=T>=E.melt,gone=T>=E.gone;
+  // ---- the mask: brushed on from the first frame, dries, then is ripped away with the small plugs' tops ----
+  const mx=lerp(150,880,eio(P(T,-.2,1.7)));
+  let d='M-140,480 L-140,386';for(let x=-140;x<=mx;x+=40)d+=` Q${x+20},${372+((Math.round(x/40))%2?10:-2)} ${Math.min(x+40,mx)},${384}`;d+=` L${mx},480 Z`;
+  $('maskP').setAttribute('d',d);$('maskP').setAttribute('fill',dryK>0?`rgb(${23+dryK*34},${23+dryK*34},${26+dryK*36})`:'#17171a');
+  $('maskHi').setAttribute('d',`M0,410 q60,-10 120,0 M${Math.min(mx-150,260)},416 q70,-10 140,0 M${Math.min(mx-150,470)},408 q60,-10 120,0`);show('maskHi',1-dryK);show('maskDry',dryK);
+  show('tops',T>=E.peel?1:0);show('mask',peelK<1?1:0);
+  $('mask').setAttribute('transform',`translate(${(-peelK*160).toFixed(1)},${(-peelK*peelK*760).toFixed(1)}) rotate(${(-peelK*16).toFixed(1)},0,470)`);
+  const bOn=T<2.3;show('brush',bOn?1:0);if(bOn){const out=eio(P(T,1.7,2.3));$('brush').setAttribute('transform',`translate(${(mx+out*300).toFixed(1)},${(420-out*500+Math.sin(T*20)*3).toFixed(1)}) rotate(${(Math.sin(T*9)*5).toFixed(1)})`);}
+  const mlOn=T>=1.7&&T<E.peel;show('lbLine',mlOn?1:0);popLabel('lbMask',T,1.7,E.peel,470,318);
+  ['lbBH','lbOil','lbPore'].forEach((id,i)=>{const on=T<3.5;show(id,on?1:0);if(on)$(id).setAttribute('transform',`translate(${[360,360,596][i]},${[640,940,800][i]}) scale(1)`);});
+  // ---- the pores ----
+  const bT=speak('big',T),sT=speak('sm',T),st={};
+  ['sL','sR','big'].forEach(id=>{const p=PORES[id],s=state(id,T);st[id]=s;
+    $(id+'_lr').setAttribute('y',s.level.toFixed(1));$(id+'_dark').setAttribute('transform',`translate(${p.cx},${s.level.toFixed(1)})`);show(id+'_dark',clamp(s.dark));
+    const wob=Math.sin(T*3+p.cx)*3;$(id+'_surf').setAttribute('d',`M${p.cx-p.r},${(s.level+4).toFixed(1)} q${p.r/2},${(-6+wob).toFixed(1)} ${p.r},0 t${p.r},0`);show(id+'_surf',s.dark<.5&&s.empty<.98?.5:0);
+    const fy=Math.min(p.bot-p.r*.42,Math.max(p.cy,s.level+p.r*.5)),sq=s.empty>.5?lerp(1,.25,(s.empty-.5)*2):1;
+    $(id+'_face').setAttribute('transform',`translate(${(p.cx+Math.sin(T*1.3+p.cx)*3).toFixed(1)},${(fy+Math.sin(T*2.6+p.cx)*5).toFixed(1)}) scale(${(1+Math.sin(T*2.6+p.cx)*.02).toFixed(3)},${(sq*(1-Math.sin(T*2.6+p.cx)*.02)).toFixed(3)})`);show(id+'_face',s.empty<.97?1:0);});
+  // faces
+  let bf={dx:0,dy:-6,lid:.46,bA:2,arch:3,mood:.3,small:false};                                          // smug
+  if(inL('04_big',T))bf={dx:0,dy:-24,lid:0,bA:-8,arch:8,mood:.2,small:false};
+  if(T>=E.peel&&T<E.refill)bf={dx:-20,dy:-4,lid:.42,bA:0,arch:3,mood:.4,small:false};
+  if(T>=E.acid+.5)bf={dx:0,dy:-30,lid:.3,bA:6,arch:2,mood:-.1,small:false};
+  if(inL('12_big',T))bf={dx:0,dy:-28,lid:.5,bA:4,arch:3,mood:.6,small:false};
+  if(melting)bf={dx:Math.sin(T*12)*10,dy:-20,lid:0,bA:-18,arch:8,mood:-.9,small:true};
+  face('big',40,{...bf,blink:melting?0:blinkK(T,1.1),bx:46,by:-62,bw:42,talk:bT,mw:22,T,seed:3});
+  const leftTalk=inL('01_sm',T)||inL('05_sm',T)||inL('07_sm',T)||inL('09_sm',T),rightTalk=inL('03_sm',T)||inL('09_sm',T);
+  const scared=(T>=E.dry-.2&&T<E.refill)||melting,happy=T>=E.back&&T<E.acid+.6;
+  ['sL','sR'].forEach((id,i)=>{const tk=(i?rightTalk:leftTalk)?sT:0;
+    face(id,19,{dx:scared?(i?-8:8):(i?-18:18),dy:T<E.peel?-22:(T>=E.acid?-26:-8),lid:scared?0:.1,blink:blinkK(T,i?2.4:.4),small:scared&&!happy,bx:22,by:-30,bw:20,bA:scared?-16:(happy?-4:-8),arch:scared?5:7,talk:tk,mw:9,mood:happy?.9:(scared?-.8:-.3),T,seed:i+5});});
+  // ---- the salicylic acid bottle and its drops ----
+  const aIn=eo(P(T,E.acid,E.acid+.8)),aT=speak('acid',T);show('bottle',T>=E.acid?1:0);
+  const bx=lerp(560,372,aIn),by=lerp(-80,412,aIn)+Math.sin(T*2.4)*5-aT*5;$('bottle').setAttribute('transform',`translate(${bx.toFixed(1)},${by.toFixed(1)}) rotate(${(lerp(14,4,aIn)+Math.sin(T*1.7)*2).toFixed(1)})`);
+  face('ac',19,{dx:-4,dy:26,lid:inL('13_acid',T)?.35:.08,blink:blinkK(T,3.1),bx:24,by:-30,bw:22,bA:inL('13_acid',T)?6:-4,arch:6,talk:aT,mw:10,mood:.7,T,seed:9});
+  let dr='',fx='';
+  if(melting&&T<E.gone-.3){for(let j=0;j<3;j++){const p=((T-E.melt)/.32+j/3)%1,y=lerp(by+6,SURF+20,p*p);dr+=`<path transform="translate(${bx.toFixed(1)},${y.toFixed(1)}) scale(${(1.7).toFixed(2)})" d="M0,-9 C5,-2 7,3 5,7 C3,11 -4,11 -5,7 C-7,3 -4,-2 0,-9Z" fill="#7ec8f7" stroke="${INK}" stroke-width="1.6"/>`;}}
+  if(melting&&!gone){const p=PORES.big;for(let j=0;j<7;j++){const q=((T*.9+j/7)%1),x=p.cx+Math.sin(j*2.3)*p.r*.7,y=lerp(p.cy+p.r*.6,st.big.level,q);if(y>st.big.level+8)fx+=`<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${(6+j%3*4)}" fill="#bfe6ff" stroke="#5aa9dd" stroke-width="2.4" opacity="${(1-q).toFixed(2)}"/>`;}}
+  if(gone){[[250,660,0],[470,640,1],[360,560,2],[96,560,3],[624,560,4]].forEach(([x,y,j])=>{const k=.5+.5*Math.sin(T*7+j*1.9),r=9+11*k;fx+=`<path d="M${x},${y-r} Q${x+2},${y-2} ${x+r},${y} Q${x+2},${y+2} ${x},${y+r} Q${x-2},${y+2} ${x-r},${y} Q${x-2},${y-2} ${x},${y-r}Z" fill="#fff" stroke="${INK}" stroke-width="2" opacity="${(.5+.5*k).toFixed(2)}"/>`;});}
+  $('drops').innerHTML=dr;$('fx').innerHTML=fx;
+}
+function renderClinic(T){
+  const dT=speak('doctor',T),pT=speak('patient',T),d0=ST['16_doctor'];
+  tr('docHead',0,Math.sin(T*1.3)*1.2-(dT>.7?1.5:0),1,1,2+(dT>.15?Math.sin(T*6.5)*1.8*dT:0));
+  $('dBrows').setAttribute('transform',`translate(0,${dT>.72?-3.5:0})`);
+  setMouthV('doc_m',dT,10,.5,T,5);setHEye('dEyeL',3,blinkK(T,.7));setHEye('dEyeR',3,blinkK(T,.7));
+  $('docArmR').setAttribute('transform',`rotate(${(dT>.2?-6+Math.sin(T*4.2)*7*dT:0).toFixed(2)},86,226)`);
+  let pr=-3+Math.sin(T*.8)*1;if(pT>.2)pr+=Math.sin(T*7)*2;
+  tr('patHead',0,Math.sin(T*1.5+1)*1.2,1,1,pr-(T>=d0?4:0));
+  $('pBrows').setAttribute('d',T<d0?'M-36,66 Q-24,64 -10,60 M8,60 Q22,64 34,66':'M-36,70 Q-24,64 -10,66 M8,66 Q22,64 34,70');
+  setMouthV('pat_m',pT,10,T>=E.c2?.5:-.2,T,6);setHEye('pEyeL',-3,blinkK(T,2.1));setHEye('pEyeR',-3,blinkK(T,2.1));
+  show('patBlush',.3);show('pSweat',0);
+  const sh=[-84,234],el=[-108,356],wr=[-100,470];const d=limbD([sh,el,wr],[44,38,32]);$('patArmLD').setAttribute('d',d);$('patArmLO').setAttribute('d',d);
+  $('patHandL').innerHTML=hand(wr[0],wr[1]+8,10,1.2,PSK);
+  [['cd1',E.c1,197,340],['cd2',E.c2,523,340],['cd3',E.c3,360,588]].forEach(([id,t0,x,y])=>{const on=T>=t0;show(id,on?1:0);if(on){const k=eob(P(T,t0,t0+.3));$(id).setAttribute('transform',`translate(${x},${y}) scale(${k.toFixed(3)}) translate(${-x},${-y})`);}});
+}
+function caption(T){let w='',ws=0;for(const L of D.lines)for(const x of L.words){if(T>=x[0]&&T<Math.max(x[1],x[0]+.12)){w=x[2];ws=x[0];}}
+  if(!w){for(const L of D.lines)for(const x of L.words){if(T>=x[1]&&T<x[1]+.1){w=x[2];ws=x[0];}}}
+  const c=$('cap');c.textContent=w;const k=eo(P(T,ws,ws+.12));c.setAttribute('transform',`translate(360,1108) scale(${lerp(1.4,1,k).toFixed(3)}) translate(-360,-1108)`);}
+window.render=function(T){
+  const sc=T<E.clinic?1:3;$('s1').setAttribute('display',sc===1?'inline':'none');$('s3').setAttribute('display',sc===3?'inline':'none');
+  if(sc===1)renderSkin(T);else renderClinic(T);caption(T);};
+window.render(0);
+
+</script></body></html>

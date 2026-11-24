@@ -1,0 +1,194 @@
+{
+ "takes/01_sma.mp3": {
+  "wer": 0.11,
+  "range": 25.2,
+  "dur": 3.76,
+  "txt": "Ew, what's this sticky stuff he's spreading on us?"
+ },
+ "takes/01_smb.mp3": {
+  "wer": 0.11,
+  "range": 25.2,
+  "dur": 3.76,
+  "txt": "Ew, what's this sticky stuff he's spreading on us?"
+ },
+ "takes/02_biga.mp3": {
+  "wer": 0.0,
+  "range": 19.1,
+  "dur": 4.4,
+  "txt": "Relax. It's just a peel-off mask. It never gets me."
+ },
+ "takes/02_bigb.mp3": {
+  "wer": 0.0,
+  "range": 19.1,
+  "dur": 4.4,
+  "txt": "Relax. It's just a peel-off mask. It never gets me."
+ },
+ "takes/03_sma.mp3": {
+  "wer": 0.0,
+  "range": 15.1,
+  "dur": 2.48,
+  "txt": "It's drying up! I can't move!"
+ },
+ "takes/03_smb.mp3": {
+  "wer": 0.0,
+  "range": 15.1,
+  "dur": 2.48,
+  "txt": "It's drying up! I can't move!"
+ },
+ "takes/04_biga.mp3": {
+  "wer": 0.0,
+  "range": 26.3,
+  "dur": 2.32,
+  "txt": "Hold on to your heads, boys!"
+ },
+ "takes/04_bigb.mp3": {
+  "wer": 0.0,
+  "range": 26.3,
+  "dur": 2.32,
+  "txt": "Hold on to your heads, boys!"
+ },
+ "takes/05_sma.mp3": {
+  "wer": 0.17,
+  "range": 18.2,
+  "dur": 2.88,
+  "txt": "AHH! It tore my head off!"
+ },
+ "takes/05_smb.mp3": {
+  "wer": 0.17,
+  "range": 18.2,
+  "dur": 2.88,
+  "txt": "AHH! It tore my head off!"
+ },
+ "takes/06_biga.mp3": {
+  "wer": 0.0,
+  "range": 13.9,
+  "dur": 3.44,
+  "txt": "Just the top. The rest of you is still down there."
+ },
+ "takes/06_bigb.mp3": {
+  "wer": 0.0,
+  "range": 13.9,
+  "dur": 3.44,
+  "txt": "Just the top. The rest of you is still down there."
+ },
+ "takes/07_sma.mp3": {
+  "wer": 0.0,
+  "range": 16.9,
+  "dur": 2.88,
+  "txt": "So, we just fill back up?"
+ },
+ "takes/07_smb.mp3": {
+  "wer": 0.0,
+  "range": 16.9,
+  "dur": 2.88,
+  "txt": "So, we just fill back up?"
+ },
+ "takes/08_biga.mp3": {
+  "wer": 0.0,
+  "range": 14.4,
+  "dur": 2.72,
+  "txt": "Every. Single. Time."
+ },
+ "takes/08_bigb.mp3": {
+  "wer": 0.0,
+  "range": 14.4,
+  "dur": 2.72,
+  "txt": "Every. Single. Time."
+ },
+ "takes/09_sma.mp3": {
+  "wer": 0.0,
+  "range": 7.5,
+  "dur": 1.52,
+  "txt": "We're back"
+ },
+ "takes/09_smb.mp3": {
+  "wer": 0.0,
+  "range": 7.5,
+  "dur": 1.52,
+  "txt": "We're back"
+ },
+ "takes/10_biga.mp3": {
+  "wer": 0.0,
+  "range": 10.3,
+  "dur": 3.04,
+  "txt": "Told you, nothing reaches us down here."
+ },
+ "takes/10_bigb.mp3": {
+  "wer": 0.0,
+  "range": 10.3,
+  "dur": 3.04,
+  "txt": "Told you, nothing reaches us down here."
+ },
+ "takes/11_acida.mp3": {
+  "wer": 0.07,
+  "range": 24.3,
+  "dur": 5.36,
+  "txt": "I do. I'm salicylic acid. I slide into the pour and melt the oil."
+ },
+ "takes/11_acidb.mp3": {
+  "wer": 0.07,
+  "range": 24.3,
+  "dur": 5.36,
+  "txt": "I do. I'm salicylic acid. I slide into the pour and melt the oil."
+ },
+ "takes/12_biga.mp3": {
+  "wer": 0.0,
+  "range": 40.2,
+  "dur": 2.56,
+  "txt": "Please, you're just water."
+ },
+ "takes/12_bigb.mp3": {
+  "wer": 0.0,
+  "range": 40.2,
+  "dur": 2.56,
+  "txt": "Please, you're just water."
+ },
+ "takes/13_acida.mp3": {
+  "wer": 0.0,
+  "range": 25.8,
+  "dur": 2.4,
+  "txt": "Oil soluble, actually."
+ },
+ "takes/13_acidb.mp3": {
+  "wer": 0.0,
+  "range": 25.8,
+  "dur": 2.4,
+  "txt": "Oil soluble, actually."
+ },
+ "takes/14_biga.mp3": {
+  "wer": 0.25,
+  "range": 13.7,
+  "dur": 3.68,
+  "txt": "Wait, I'm melting? Nooooo!"
+ },
+ "takes/14_bigb.mp3": {
+  "wer": 0.25,
+  "range": 13.7,
+  "dur": 3.68,
+  "txt": "Wait, I'm melting? Nooooo!"
+ },
+ "takes/15_patienta.mp3": {
+  "wer": 0.0,
+  "range": 25.1,
+  "dur": 4.64,
+  "txt": "Doc, why do my blackheads keep coming back after a peel-off mask?"
+ },
+ "takes/15_patientb.mp3": {
+  "wer": 0.0,
+  "range": 25.1,
+  "dur": 4.64,
+  "txt": "Doc, why do my blackheads keep coming back after a peel-off mask?"
+ },
+ "takes/16_doctora.mp3": {
+  "wer": 0.04,
+  "range": 15.1,
+  "dur": 16.72,
+  "txt": "A peel-off mask only pulls off the top of the plug. The oil deeper in the pour stays, so it fills right back up. Try a salicylic acid cleanser or serum a few times a week. It gets inside the pour and dissolves the oil. Give it a few weeks and don't squeeze them."
+ },
+ "takes/16_doctorb.mp3": {
+  "wer": 0.04,
+  "range": 15.1,
+  "dur": 16.72,
+  "txt": "A peel-off mask only pulls off the top of the plug. The oil deeper in the pour stays, so it fills right back up. Try a salicylic acid cleanser or serum a few times a week. It gets inside the pour and dissolves the oil. Give it a few weeks and don't squeeze them."
+ }
+}
