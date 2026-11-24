@@ -1,0 +1,167 @@
+{
+ "name": "S35_dress_rules",
+ "speed": 0.9,
+ "gap": 0.35,
+ "music": {
+  "file": "m717",
+  "start": 88.0,
+  "gain": -16
+ },
+ "lines": [
+  {
+   "say": "Three royal dress rules Princess Diana followed, that still work today.",
+   "shots": [
+    {
+     "clip": "handshake5",
+     "start": 10.4,
+     "mode": "fit"
+    },
+    {
+     "clip": "engsuit10",
+     "start": 22.0,
+     "mode": "fit"
+    }
+   ],
+   "screen": [
+    {
+     "text": "3 royal dress rules",
+     "y": 1170,
+     "size": 80
+    },
+    {
+     "text": "Princess Diana followed",
+     "y": 1262,
+     "size": 70
+    }
+   ]
+  },
+  {
+   "say": "One. Carry your bag on the left, so your right hand is free to shake hands.",
+   "shots": [
+    {
+     "clip": "clutch0",
+     "start": 5.4,
+     "mode": "fit"
+    },
+    {
+     "clip": "handshake9",
+     "start": 20.3,
+     "mode": "fit"
+    }
+   ],
+   "screen": [
+    {
+     "text": "1. Bag on the left",
+     "y": 1215,
+     "size": 80
+    },
+    {
+     "text": "right hand free",
+     "y": 1330,
+     "size": 46,
+     "small": true
+    }
+   ]
+  },
+  {
+   "say": "Etiquette expert Myka Meier says royals are taught exactly this.",
+   "shots": [
+    {
+     "clip": "handshake9",
+     "start": 14.5,
+     "mode": "fit"
+    }
+   ],
+   "screen": [
+    {
+     "text": "Taught to royals",
+     "y": 1215,
+     "size": 80
+    }
+   ]
+  },
+  {
+   "say": "Two. Hats are for the day. Indoors, after six in the evening, the hat comes off.",
+   "shots": [
+    {
+     "clip": "handshake5",
+     "start": 6.4,
+     "mode": "fit"
+    },
+    {
+     "clip": "engsuit10",
+     "start": 18.0,
+     "mode": "fit"
+    }
+   ],
+   "screen": [
+    {
+     "text": "2. Hats by day",
+     "y": 1215,
+     "size": 84
+    },
+    {
+     "text": "off indoors after 6 pm",
+     "y": 1330,
+     "size": 46,
+     "small": true
+    }
+   ]
+  },
+  {
+   "say": "Three. Tiaras are for the evening. Traditionally, for married women. A bride on her wedding day is the exception.",
+   "shots": [
+    {
+     "clip": "engsuit10",
+     "start": 22.2,
+     "mode": "fit"
+    },
+    {
+     "clip": "bal15",
+     "start": 29.4,
+     "mode": "fit"
+    }
+   ],
+   "screen": [
+    {
+     "text": "3. Tiaras by night",
+     "y": 1215,
+     "size": 80
+    },
+    {
+     "text": "a bride is the exception",
+     "y": 1330,
+     "size": 46,
+     "small": true
+    }
+   ]
+  },
+  {
+   "say": "The right piece, at the right moment. That is what elegance looks like. Follow for more elegance rules.",
+   "shots": [
+    {
+     "clip": "bal15",
+     "start": 35.1,
+     "mode": "fit"
+    },
+    {
+     "clip": "engsuit0",
+     "start": 0.3,
+     "mode": "fill"
+    }
+   ],
+   "screen": [
+    {
+     "text": "The right piece,",
+     "y": 1170,
+     "size": 80
+    },
+    {
+     "text": "at the right moment.",
+     "y": 1262,
+     "size": 74
+    }
+   ]
+  }
+ ]
+}

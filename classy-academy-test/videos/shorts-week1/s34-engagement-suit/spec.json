@@ -1,0 +1,127 @@
+{
+ "name": "S34_engagement_suit",
+ "shade": true,
+ "segs": [
+  {
+   "clip": "engsuit4",
+   "start": 0.1,
+   "dur": 3.2,
+   "mode": "fit",
+   "slow": 1.3
+  },
+  {
+   "clip": "engsuit0",
+   "start": 0.3,
+   "dur": 3.0,
+   "mode": "fit"
+  },
+  {
+   "clip": "engsuit10",
+   "start": 12.0,
+   "dur": 2.8,
+   "mode": "fit",
+   "slow": 1.4,
+   "crop": "crop=iw:ih*0.9:0:0"
+  },
+  {
+   "clip": "engsuit4",
+   "start": 1.3,
+   "dur": 2.8,
+   "mode": "fit",
+   "slow": 2
+  },
+  {
+   "clip": "engsuit0",
+   "start": 3.4,
+   "dur": 4.6,
+   "mode": "fill"
+  }
+ ],
+ "texts": [
+  {
+   "text": "February 24, 1981.",
+   "a": 0,
+   "b": 3.2,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "Diana\u2019s engagement day.",
+   "a": 0,
+   "b": 3.2,
+   "y": 1262,
+   "size": 70
+  },
+  {
+   "text": "Buckingham Palace, London",
+   "a": 0,
+   "b": 3.2,
+   "y": 1350,
+   "size": 46,
+   "small": true
+  },
+  {
+   "text": "The whole world",
+   "a": 3.2,
+   "b": 6.2,
+   "y": 1170,
+   "size": 80
+  },
+  {
+   "text": "saw this blue suit.",
+   "a": 3.2,
+   "b": 6.2,
+   "y": 1262,
+   "size": 76
+  },
+  {
+   "text": "It wasn\u2019t made for her.",
+   "a": 6.2,
+   "b": 9.0,
+   "y": 1215,
+   "size": 72
+  },
+  {
+   "text": "She bought it off the rack",
+   "a": 9.0,
+   "b": 11.8,
+   "y": 1170,
+   "size": 68
+  },
+  {
+   "text": "at Harrods.",
+   "a": 9.0,
+   "b": 11.8,
+   "y": 1262,
+   "size": 84
+  },
+  {
+   "text": "Elegance was never",
+   "a": 11.8,
+   "b": 99,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "the price tag.",
+   "a": 11.8,
+   "b": 99,
+   "y": 1262,
+   "size": 84
+  }
+ ],
+ "music": {
+  "file": "m717",
+  "start": 58.5
+ },
+ "check": [
+  0.5,
+  2.5,
+  4.5,
+  7.5,
+  10.0,
+  12.5,
+  15.0,
+  16.0
+ ]
+}
