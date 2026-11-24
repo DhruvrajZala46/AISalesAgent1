@@ -1,0 +1,74 @@
+{
+ "takes/01_lininga.mp3": {
+  "wer": 0.0,
+  "range": 17.6,
+  "dur": 4.64,
+  "txt": "Ow! My skin! Oh no! Now I'm bleeding!"
+ },
+ "takes/01_liningb.mp3": {
+  "wer": 0.0,
+  "range": 17.6,
+  "dur": 4.64,
+  "txt": "Ow! My skin! Oh no! Now I'm bleeding!"
+ },
+ "takes/02_patienta.mp3": {
+  "wer": 0.0,
+  "range": 36.3,
+  "dur": 4.08,
+  "txt": "Why is it bleeding so much? I only picked my nose once!"
+ },
+ "takes/02_patientb.mp3": {
+  "wer": 0.0,
+  "range": 36.3,
+  "dur": 4.08,
+  "txt": "Why is it bleeding so much? I only picked my nose once!"
+ },
+ "takes/03_patienta.mp3": {
+  "wer": 0.0,
+  "range": 16.0,
+  "dur": 3.84,
+  "txt": "Ugh, why won't it stop? I can't keep doing this!"
+ },
+ "takes/03_patientb.mp3": {
+  "wer": 0.0,
+  "range": 16.0,
+  "dur": 3.84,
+  "txt": "Ugh, why won't it stop? I can't keep doing this!"
+ },
+ "takes/04_tissuea.mp3": {
+  "wer": 0.0,
+  "range": 18.8,
+  "dur": 5.92,
+  "txt": "Huh? I'm soaked already? It's still bleeding? This is getting scary."
+ },
+ "takes/04_tissueb.mp3": {
+  "wer": 0.0,
+  "range": 18.8,
+  "dur": 5.92,
+  "txt": "Huh? I'm soaked already? It's still bleeding? This is getting scary."
+ },
+ "takes/05_patienta.mp3": {
+  "wer": 0.0,
+  "range": 22.2,
+  "dur": 5.2,
+  "txt": "Doc, I picked my nose just once and it started bleeding. Why?"
+ },
+ "takes/05_patientb.mp3": {
+  "wer": 0.0,
+  "range": 22.2,
+  "dur": 5.2,
+  "txt": "Doc, I picked my nose just once and it started bleeding. Why?"
+ },
+ "takes/06_doctora.mp3": {
+  "wer": 0.05,
+  "range": 13.9,
+  "dur": 21.2,
+  "txt": "Kicking at dry mucus can scratch the lining and damage the tiny blood vessels inside. Dry air and allergies can cause nosebleeds too. Lean forward so the blood stays out of your throat. Then pinch the soft part of your nose. That helps a clot form. If it hasn't stopped after 10 to 15 minutes of steady pressure, get it checked."
+ },
+ "takes/06_doctorb.mp3": {
+  "wer": 0.05,
+  "range": 13.9,
+  "dur": 21.2,
+  "txt": "Kicking at dry mucus can scratch the lining and damage the tiny blood vessels inside. Dry air and allergies can cause nosebleeds too. Lean forward so the blood stays out of your throat. Then pinch the soft part of your nose. That helps a clot form. If it hasn't stopped after 10 to 15 minutes of steady pressure, get it checked."
+ }
+}
