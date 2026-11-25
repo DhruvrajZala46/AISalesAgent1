@@ -1,0 +1,15 @@
+01	stomach	[annoyed] A sleeping pill? Today? I never said we're going to sleep.
+02	stomach	[shouting up] Hey, up there!
+03	brain	[tired] What's going on down there?
+04	stomach	You just swallowed a sleeping pill.
+05	brain	[exhausted, pleading] I can't take it anymore. I've been fighting anxiety for days. I can't sleep at all. Please, break it down faster.
+06	stomach	[grumbling] Fine. But you owe me one.
+07	officer	[firm] Everyone, calm down! We're not dying. Nothing is wrong!
+08	officer	[frustrated] Why do you never listen? I'm so tired of this job.
+09	officer	[beaten, sulky] They never listen. I quit.
+10	pill	[curious] Hey, what's going on in here?
+11	officer	[grumpy] Why do you care? If you came to gossip, do it outside.
+12	pill	[friendly] No gossip. We're sleeping pills. We're here to calm things down, so the owner can finally get some real rest.
+13	officer	[perking up] Oh, in that case, let's go.
+14	officer	[calm, firm] Okay, everyone. Quiet down. Settle down. Yep, just like that.
+15	husband	[warm] Honey, after that sleeping pill last night, you finally slept better than you have in weeks.

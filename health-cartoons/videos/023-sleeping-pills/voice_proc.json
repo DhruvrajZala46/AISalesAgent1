@@ -1,0 +1,107 @@
+{
+ "01_stomach": {
+  "take": "a",
+  "f0": 274,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.82
+ },
+ "02_stomach": {
+  "take": "a",
+  "f0": 356,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 1.24
+ },
+ "03_brain": {
+  "take": "a",
+  "f0": 118,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 1.61
+ },
+ "04_stomach": {
+  "take": "a",
+  "f0": 206,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 1.95
+ },
+ "05_brain": {
+  "take": "a",
+  "f0": 201,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 8.02
+ },
+ "06_stomach": {
+  "take": "a",
+  "f0": 128,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.03
+ },
+ "07_officer": {
+  "take": "a",
+  "f0": 156,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 4.13
+ },
+ "08_officer": {
+  "take": "a",
+  "f0": 141,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.73
+ },
+ "09_officer": {
+  "take": "a",
+  "f0": 124,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.47
+ },
+ "10_pill": {
+  "take": "a",
+  "f0": 248,
+  "shift_st": 1.0,
+  "tempo": 1.08,
+  "dur": 1.88
+ },
+ "11_officer": {
+  "take": "a",
+  "f0": 114,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.27
+ },
+ "12_pill": {
+  "take": "a",
+  "f0": 214,
+  "shift_st": 1.0,
+  "tempo": 1.08,
+  "dur": 6.48
+ },
+ "13_officer": {
+  "take": "a",
+  "f0": 216,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 1.97
+ },
+ "14_officer": {
+  "take": "a",
+  "f0": 105,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 4.61
+ },
+ "15_husband": {
+  "take": "a",
+  "f0": 164,
+  "shift_st": 0.0,
+  "tempo": 1.04,
+  "dur": 5.07
+ }
+}

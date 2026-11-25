@@ -1,0 +1,182 @@
+{
+ "takes/01_stomacha.mp3": {
+  "wer": 0.0,
+  "range": 17.4,
+  "dur": 4.56,
+  "txt": "A sleeping pill? Today? I never said we're going to sleep."
+ },
+ "takes/01_stomachb.mp3": {
+  "wer": 0.0,
+  "range": 17.4,
+  "dur": 4.56,
+  "txt": "A sleeping pill? Today? I never said we're going to sleep."
+ },
+ "takes/02_stomacha.mp3": {
+  "wer": 0.0,
+  "range": 10.2,
+  "dur": 1.68,
+  "txt": "Hey! Up there!"
+ },
+ "takes/02_stomachb.mp3": {
+  "wer": 0.0,
+  "range": 10.2,
+  "dur": 1.68,
+  "txt": "Hey! Up there!"
+ },
+ "takes/03_braina.mp3": {
+  "wer": 0.0,
+  "range": 26.2,
+  "dur": 2.4,
+  "txt": "What's going on down there?"
+ },
+ "takes/03_brainb.mp3": {
+  "wer": 0.0,
+  "range": 26.2,
+  "dur": 2.4,
+  "txt": "What's going on down there?"
+ },
+ "takes/04_stomacha.mp3": {
+  "wer": 0.0,
+  "range": 36.3,
+  "dur": 2.32,
+  "txt": "You just swallowed a sleeping pill."
+ },
+ "takes/04_stomachb.mp3": {
+  "wer": 0.0,
+  "range": 36.3,
+  "dur": 2.32,
+  "txt": "You just swallowed a sleeping pill."
+ },
+ "takes/05_braina.mp3": {
+  "wer": 0.0,
+  "range": 15.1,
+  "dur": 8.96,
+  "txt": "I can't take it anymore. I've been fighting anxiety for days. I can't sleep at all. Please, break it down faster."
+ },
+ "takes/05_brainb.mp3": {
+  "wer": 0.0,
+  "range": 15.1,
+  "dur": 8.96,
+  "txt": "I can't take it anymore. I've been fighting anxiety for days. I can't sleep at all. Please, break it down faster."
+ },
+ "takes/06_stomacha.mp3": {
+  "wer": 0.0,
+  "range": 26.2,
+  "dur": 3.6,
+  "txt": "Fine. But you owe me one."
+ },
+ "takes/06_stomachb.mp3": {
+  "wer": 0.0,
+  "range": 26.2,
+  "dur": 3.6,
+  "txt": "Fine. But you owe me one."
+ },
+ "takes/07_officera.mp3": {
+  "wer": 0.0,
+  "range": 21.4,
+  "dur": 4.8,
+  "txt": "Everyone calm down. We're not dying. Nothing is wrong"
+ },
+ "takes/07_officerb.mp3": {
+  "wer": 0.0,
+  "range": 21.4,
+  "dur": 4.8,
+  "txt": "Everyone calm down. We're not dying. Nothing is wrong"
+ },
+ "takes/08_officera.mp3": {
+  "wer": 0.0,
+  "range": 21.7,
+  "dur": 4.24,
+  "txt": "Why do you never listen? I'm so tired of this job!"
+ },
+ "takes/08_officerb.mp3": {
+  "wer": 0.0,
+  "range": 21.7,
+  "dur": 4.24,
+  "txt": "Why do you never listen? I'm so tired of this job!"
+ },
+ "takes/09_officera.mp3": {
+  "wer": 0.0,
+  "range": 40.4,
+  "dur": 2.96,
+  "txt": "They never listen. I quit."
+ },
+ "takes/09_officerb.mp3": {
+  "wer": 0.0,
+  "range": 40.4,
+  "dur": 2.96,
+  "txt": "They never listen. I quit."
+ },
+ "takes/10_pilla.mp3": {
+  "wer": 0.0,
+  "range": 32.2,
+  "dur": 2.4,
+  "txt": "Hey, what's going on in here?"
+ },
+ "takes/10_pillb.mp3": {
+  "wer": 0.0,
+  "range": 32.2,
+  "dur": 2.4,
+  "txt": "Hey, what's going on in here?"
+ },
+ "takes/11_officera.mp3": {
+  "wer": 0.0,
+  "range": 19.9,
+  "dur": 3.92,
+  "txt": "Why do you care? If you came to gossip, do it outside!"
+ },
+ "takes/11_officerb.mp3": {
+  "wer": 0.0,
+  "range": 19.9,
+  "dur": 3.92,
+  "txt": "Why do you care? If you came to gossip, do it outside!"
+ },
+ "takes/12_pilla.mp3": {
+  "wer": 0.0,
+  "range": 28.4,
+  "dur": 7.2,
+  "txt": "No gossip. We're sleeping pills. We're here to calm things down so the owner can finally get some real rest."
+ },
+ "takes/12_pillb.mp3": {
+  "wer": 0.0,
+  "range": 28.4,
+  "dur": 7.2,
+  "txt": "No gossip. We're sleeping pills. We're here to calm things down so the owner can finally get some real rest."
+ },
+ "takes/13_officera.mp3": {
+  "wer": 0.0,
+  "range": 25.4,
+  "dur": 2.32,
+  "txt": "Oh, in that case, let's go!"
+ },
+ "takes/13_officerb.mp3": {
+  "wer": 0.0,
+  "range": 25.4,
+  "dur": 2.32,
+  "txt": "Oh, in that case, let's go!"
+ },
+ "takes/14_officera.mp3": {
+  "wer": 0.0,
+  "range": 15.7,
+  "dur": 5.2,
+  "txt": "Okay, everyone quiet down settle down. Yep, just like that."
+ },
+ "takes/14_officerb.mp3": {
+  "wer": 0.0,
+  "range": 15.7,
+  "dur": 5.2,
+  "txt": "Okay, everyone quiet down settle down. Yep, just like that."
+ },
+ "takes/15_husbanda.mp3": {
+  "wer": 0.0,
+  "range": 17.9,
+  "dur": 5.44,
+  "txt": "Honey, after that sleeping pill last night, you finally slept better than you have in weeks!"
+ },
+ "takes/15_husbandb.mp3": {
+  "wer": 0.0,
+  "range": 17.9,
+  "dur": 5.44,
+  "txt": "Honey, after that sleeping pill last night, you finally slept better than you have in weeks!"
+ }
+}
