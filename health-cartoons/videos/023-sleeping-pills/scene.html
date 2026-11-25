@@ -298,7 +298,7 @@ function flame(w,h,T,seed){let s='';for(let j=0;j<7;j++){const a=(-165+j*25)*Mat
   const tg=(k,f,st)=>`<path d="M${(bx-w*.22*k).toFixed(1)},${by.toFixed(1)} C${(bx-w*.3*k).toFixed(1)},${(by-hh*.45*k).toFixed(1)} ${(bx+sw-w*.1*k).toFixed(1)},${(by-hh*.75*k).toFixed(1)} ${(bx+sw).toFixed(1)},${(by-hh*k).toFixed(1)} C${(bx+sw+w*.08*k).toFixed(1)},${(by-hh*.7*k).toFixed(1)} ${(bx+w*.32*k).toFixed(1)},${(by-hh*.45*k).toFixed(1)} ${(bx+w*.22*k).toFixed(1)},${by.toFixed(1)} Z" fill="${f}" ${st}/>`;
   s+=tg(1,'#f3921c','stroke="#c9561a" stroke-width="3"')+tg(.55,'#fcd94a','');}return s;}
 function renderAmyg(T){
-  const h=heat(T),blast=T>=E.blast&&T<E.blast+1.4,beaten=T>=E.blast+1.1;
+  const h=heat(T),blast=T>=E.blast&&T<E.blast+1.3,beaten=T>=E.blast+1.3;
   BL.forEach(([g,id,x,y,w],i)=>{const sh=h>.5?Math.sin(T*(30+i*6))*4*h:0;mv(g,x+sh,y+Math.sin(T*2+i)*4,0,1);
     $(g).querySelector('.fl').innerHTML=h>.08?`<g transform="scale(${Math.min(1,h).toFixed(2)})">${flame(w,w*1.7,T,i*3)}</g>`:'';$(g).querySelector('.mark').setAttribute('opacity',h>.4?'1':'0');
     const calm=h<.4;face(id,w*.24,{dx:calm?0:-14,dy:calm?4:-2,lid:calm?.4:0,blink:calm?blinkK(T,i):0,small:false,bx:w*.34,by:-w*.58,bw:w*.34,bA:calm?-4:30,arch:calm?6:1,talk:0,mw:12,mood:calm?.8:-1,T,seed:i});
@@ -312,8 +312,10 @@ function renderAmyg(T){
   const mad=inL('08_officer',T)||inL('11_officer',T);
   face('cp',14,{dx:14,dy:beaten&&T<E.pillin?18:0,lid:beaten?.45:.1,blink:blinkK(T,.6),bx:22,by:-20,bw:22,bA:mad||beaten?18:2,arch:3,talk:cT,mw:12,mood:T>=ST['13_officer']?.6:-.5,T,seed:4});
   // the smoke cloud of the brawl
-  show('smoke',blast?1:0);if(blast){let s='';for(let j=0;j<9;j++){const a=j*.7+T*3,r=110+Math.sin(T*9+j)*20;s+=`<circle cx="${(440+Math.cos(a)*120).toFixed(0)}" cy="${(790+Math.sin(a)*90).toFixed(0)}" r="${r.toFixed(0)}" fill="#f4f4f2" ${OLW2}/>`;}
-    for(let j=0;j<5;j++){const a=T*7+j*1.3;s+=`<path transform="translate(${(440+Math.cos(a)*190).toFixed(0)},${(780+Math.sin(a)*150).toFixed(0)}) rotate(${(a*60).toFixed(0)})" d="M-16,0 l12,-4 l4,-12 l4,12 l12,4 l-12,4 l-4,12 l-4,-12 Z" fill="#ffe81a" stroke="${INK}" stroke-width="2"/>`;}$('smoke').innerHTML=s;}
+  show('smoke',blast?1:0);show('copW',blast?0:1);if(blast){const st=Math.floor((T-E.blast)*10),rn=k=>{const x=Math.sin(st*12.9898+k*78.233)*43758.5453;return x-Math.floor(x);};
+    const cx=470+(rn(1)-.5)*60,cy=840,N=11,left=st%3===1;let pts=[];for(let k=0;k<N;k++){const a=k/N*Math.PI*2,rx=(left&&Math.cos(a)<-.6?420:250)+rn(k+3)*50,ry=230+rn(k+20)*40;pts.push([cx+Math.cos(a)*rx,cy+Math.sin(a)*ry]);}
+    let d=`M${pts[0][0].toFixed(0)},${pts[0][1].toFixed(0)}`;for(let k=0;k<N;k++){const p0=pts[k],p1=pts[(k+1)%N],mx=(p0[0]+p1[0])/2,my=(p0[1]+p1[1])/2,ox=mx-cx,oy=my-cy,l=Math.hypot(ox,oy)||1,bul=60+rn(k+40)*50;d+=` Q${(mx+ox/l*bul).toFixed(0)},${(my+oy/l*bul).toFixed(0)} ${p1[0].toFixed(0)},${p1[1].toFixed(0)}`;}
+    $('smoke').innerHTML=`<path d="${d} Z" fill="#f3f3f1" stroke="${INK}" stroke-width="5" stroke-linejoin="round"/>`;}
   // the sleeping pill walks in from the bottom left
   const pk=eo(P(T,E.pillin,E.pillin+.7)),pT=speak('pill',T),pOn=T>=E.pillin;show('spW',pOn?1:0);
   if(pOn){const walk=T<E.pillin+.7?Math.abs(Math.sin(T*14))*-10:0;mv('spW',lerp(-120,150,pk),1196+walk+(pT>.2?-Math.abs(Math.sin(T*9))*4:0),Math.sin(T*2)*3,.75);

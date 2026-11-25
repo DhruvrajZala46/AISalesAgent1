@@ -62,17 +62,21 @@ def thud(t,g):                                      # a soft thud (steps, knocks
     n=int(.11*SR); x=np.arange(n)/SR
     a=(np.sin(2*np.pi*(150*x-260*x*x))*np.exp(-x*38)+.25*np.random.RandomState(int(t*1000)).randn(n)*np.exp(-x*220)).astype(np.float32)*g
     i=int(t*SR); m=min(n,N-i); sfx[i:i+m]+=a[:m]
-S('1492.mp3',EV['drop']+.1,.035,.4); S('2357.mp3',EV['drop']+.8,.16); S('2357.mp3',EV['drop']+.95,.14)   # pills fall and plop
-S('2357.mp3',EV['brain'],.2)                                                                       # the bubble pops in
-S('2828.mp3',EV['melt'],.18,1.2); S('1492.mp3',EV['melt']+1.0,.2,.6)                               # fizz, whoosh up
-S('1492.mp3',EV['amyg']-.05,.22); S('2182.mp3',EV['flare'],.22,.4); S('2182.mp3',EV['flare']+.25,.2,.4)   # flames flare
-S('2182.mp3',EV['blast'],.3,.5); thud(EV['blast']+.1,.6); thud(EV['blast']+.35,.5); thud(EV['blast']+.6,.5)   # the brawl
-S('2357.mp3',EV['pillin'],.2)
-for k in ('q1','q2','q3'): S('2364.mp3',EV[k],.16)                                                   # flames go out
-S('sfxgen/sfx_dingb.mp3',EV['q3']+.3,.24,.9); S('1492.mp3',EV['home']-.05,.22)
-mus=np.tile(load('../../assets/music/mixkit-9.mp3'),3)[:N]; fl=int(1.0*SR); mus[-fl:]*=np.linspace(1,0,fl); fi=int(1.6*SR); mus[:fi]*=np.linspace(0,1,fi)**2   # soft start, as in the top videos
+# the reference's sound map (demucs split + AudioSet classifier, LEARNINGS row 34): one plop as the pills drop, a whip on the cut,
+# a loud burst of bangs and hits for the brawl, a ding after it, a whip as the pill walks in, a soft whoosh into the bedroom. No fire sound.
+S('2925.mp3',.16,.32)                                                              # plop (ref 0.16 s)
+S('2151.mp3',EV['amyg']-.1,.45)                                                    # whip on the cut (ref 21.7 s)
+pre=sfx.copy()
+b0=EV['blast']; S('1714.mp3',b0,.95,.55)                                           # the brawl (ref 32.3-33.4 s, louder than the voice)
+for j,(f,g) in enumerate([('2149.mp3',1.0),('2920.mp3',.9),('2151.mp3',.95),('772.mp3',.85),('2980.mp3',.9),('2149.mp3',1.0),('1464.mp3',.85),('2920.mp3',.9)]): S(f,b0+.1+j*.14,g,.35)
+S('1714.mp3',b0+1.0,.8,.4)
+brawl=sfx-pre; sfx=pre   # the brawl goes on after mastering (post_mix.sh), so the compressor does not flatten it
+S('1107.mp3',b0+2.2,.4)                                                            # ding after the brawl (ref 34.3 s)
+S('2151.mp3',EV['pillin'],.32)                                                     # whip as the pill comes in (ref 36.4 s)
+S('175.mp3',EV['home']-.45,.2)                                                     # soft whoosh into the bedroom (ref 59.7 s)
+mus=np.tile(load('../../assets/music/mixkit-508.mp3'),3)[:N]; fl=int(1.0*SR); mus[-fl:]*=np.linspace(1,0,fl); fi=int(1.6*SR); mus[:fi]*=np.linspace(0,1,fi)**2   # soft start, as in the top videos
 act=np.convolve((np.abs(voice)>0.02).astype(np.float32),np.ones(int(.25*SR),np.float32)/int(.25*SR),'same'); mus*=10**(-5*np.clip(act*4,0,1)/20)
-for name,b in [('voice',voice),('sfx',sfx),('music',mus)]:
+for name,b in [('voice',voice),('sfx',sfx),('music',mus),('brawl',brawl)]:
     subprocess.run(['ffmpeg','-v','error','-y','-f','f32le','-ar',str(SR),'-ac','1','-i','-',f'{name}.wav'],input=np.clip(b,-1,1).tobytes())
 pass
 data={'end':END,'lines':lines,'ev':EV,'start':START}

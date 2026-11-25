@@ -1,6 +1,6 @@
 # 023 - How Do Sleeping Pills Actually Work? (GiggleMD)
 
-Status (25 Nov 2026): **v4 built and delivered** (see the v4 section). Waiting for the user's verdict. The user's message named "Still craving food when you're full", but the attached mp4 was "How Do Sleeping Pills Really Work" (10M on Dr. Healthcare, `OJS2ONcmZ58`, in `research/NEXT-10.md` reserves; views as of 20 Nov, not re-checked). The video follows the attached file; the user was told.
+Status (25 Nov 2026): **v5 built and delivered** (see the v5 section). Waiting for the user's verdict. The user's message named "Still craving food when you're full", but the attached mp4 was "How Do Sleeping Pills Really Work" (10M on Dr. Healthcare, `OJS2ONcmZ58`, in `research/NEXT-10.md` reserves; views as of 20 Nov, not re-checked). The video follows the attached file; the user was told.
 
 ## The reference the user sent
 A 65.0 s vertical video by Dr. Healthcare. Frame 0 compared side by side first (LEARNINGS row 31), then studied at 0.5 s steps (row 29). Beat list:
@@ -76,6 +76,32 @@ Everything the reference does not have was removed, and each scene was laid out 
 What stays ours: the drawings (code), the channel's patient as the husband, the voices, the music and the wording (one line of ours per line of theirs, same meaning).
 
 **v4 QA (`how-sleeping-pills-actually-work-v4.mp4`):** 60.4 s; whisper 99.3% (146 of 147); -13.3 LUFS, peak -2.5 dB; frozen 0.3%; longest still 0.1 s. Checked on 16 reference-over-ours pairs of the final render and 8 large (360 px) pairs.
+
+## v5 (25 Nov 2026): the brawl, the sound effects and the music, measured from the reference
+The user, with a screenshot of the brawl: **"the police officer is outside, fighting; the sound effect the reference uses for it is not used at all. Watch the video, understand which sound effects there are and how the visuals look; everything exactly the same; no guessing."**
+
+**How the reference's sound was mapped (not guessed):** the reference audio was split with demucs (voice / non-voice), loud moments in the non-voice part were found
+(more than 6 dB over a rolling median), and each moment was labelled with an AudioSet classifier (MIT AST). Our own Mixkit library was labelled with the same classifier.
+
+| Reference time | What the classifier hears | What happens | Ours (Mixkit id, same labels) |
+|---|---|---|---|
+| 0.16 s | Plop, boing | the pills drop | 2925 (Plop 0.77), 0.16 s |
+| 21.7 s | Slap, door, whip, whack | the cut to the worry centre | 2151 (Whack, slap, whip), on the cut |
+| 32.3-33.4 s | **Bang, gunshot, burst, explosion, slap** (the loudest moment, 4.6 dB over the median, peaks 9 dB) | the brawl cloud | 1714 (explosion, burst) + 8 hits from 2149, 2920, 2151, 772, 2980, 1464 over 1.1 s |
+| 34.3 s | Jingle, ding | after the brawl | 1107 (ding, ding-dong, jingle) |
+| 36.4 s | Whip, ping | the pill comes in | 2151, soft |
+| 59.7 s | weak whoosh | the cut to the bedroom | 175, soft, before the first word |
+| whole video | quiet music bed: double bass, cello, bowed strings, piano, organ | | Mixkit 508 "Jazz 2" (instrument-profile match 0.84; our old bed mixkit-9 scored -0.14) |
+
+No fire sound in the reference, so ours has none (v1-v4 had flame flares, drips, a fizz, a bubble pop and a ding that the reference does not have).
+
+**The brawl, from 0.2 s frames:** at "...this job" one big wobbling white cloud swallows the officer and the three blobs for 1.3 s; its outline changes every 0.1-0.2 s and sometimes
+a puff stretches to the left; then it vanishes and the officer is back at his spot with a black eye and a plaster. v1-v4 drew small circles while the officer stood outside; v5 does what the reference does.
+
+**Loudness:** the brawl is added after mastering (`post_mix.sh`), so the compressor does not flatten it: brawl 4.5 dB over the median (reference 4.6). The master is -14.5 LUFS (YouTube's own target), peak -1.0 dB.
+Build: `... && LIM=0.46 bash ../../tools/mix.sh video.mp4 tmp.mp4 && BG=5 bash post_mix.sh video.mp4 final.mp4`.
+
+**v5 QA (`how-sleeping-pills-actually-work-v5.mp4`):** 60.4 s; whisper 98.6% (145 of 147; "I'm" heard as "you're", "They" as "I"); frozen 0.3%; longest still 0.1 s. Brawl checked on 6 reference-over-ours pairs; our own SFX labelled by the same classifier (plop / whack-whip / bang-whack-slap / ding / whip, as in the reference).
 
 ## Upload block
 **Title:** How Do Sleeping Pills Actually Work? 😴
