@@ -1,0 +1,333 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:LG;src:url(../../assets/fonts/LuckiestGuy.woff2)}@font-face{font-family:ComicNeue;font-weight:700;src:url(../../assets/fonts/comic-neue-latin-700-normal.woff2)}
+html,body{margin:0;background:#000;overflow:hidden}svg{display:block}
+.cap{font-family:LG,sans-serif;font-size:42px;letter-spacing:1px;paint-order:stroke;stroke:#141414;stroke-width:7px;stroke-linejoin:round;fill:#fff}
+.lbl{font-family:Inter,sans-serif;font-weight:900;font-size:22px;letter-spacing:.5px;fill:#111}
+.cta{font-family:LG,sans-serif;paint-order:stroke;stroke:#141414;stroke-linejoin:round}
+</style></head><body>
+<svg id="S" width="720" height="1280" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
+<script src="data.js"></script>
+<script>
+// =============== helpers ===============
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const P=(t,a,b)=>clamp((t-a)/(b-a));
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eo=x=>1-Math.pow(1-x,3);
+const eob=x=>{const c1=1.7,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const lerp=(a,b,x)=>a+(b-a)*x;
+const INK='#2a2322';
+const VE='vector-effect="non-scaling-stroke"';
+const LN=`stroke="${INK}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" ${VE}`;
+const LN2=`stroke="${INK}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" ${VE}`;
+const TH=(c)=>`stroke="${c}" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" fill="none" ${VE}`;
+function tr(id,x,y,sx=1,sy=sx,r=0){const e=$(id);if(e)e.setAttribute('transform',`translate(${x},${y}) rotate(${r}) scale(${sx},${sy})`);}
+function show(id,v){const e=$(id);if(e)e.setAttribute('opacity',v);}
+let DEFS='', UID=0;
+// shape with airbrushed inner shading (soft darker edge), like the reference
+function shaded(d,fill,shade,w=16,extra=''){const id='c'+(UID++);DEFS+=`<clipPath id="${id}"><path d="${d}"/></clipPath>`;
+  return `<path d="${d}" fill="${fill}"/><g clip-path="url(#${id})"><path d="${d}" fill="none" stroke="${shade}" stroke-width="${w}" filter="url(#soft)" opacity=".9"/></g><path d="${d}" fill="none" ${LN} ${extra}/>`;}
+// Catmull-Rom smooth path through points
+function smooth(pts,closed=false){let s=`M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;const n=pts.length;
+  for(let i=0;i<n-1;i++){const p0=pts[Math.max(0,i-1)],p1=pts[i],p2=pts[i+1],p3=pts[Math.min(n-1,i+2)];
+    s+=` C${(p1[0]+(p2[0]-p0[0])/6).toFixed(1)},${(p1[1]+(p2[1]-p0[1])/6).toFixed(1)} ${(p2[0]-(p3[0]-p1[0])/6).toFixed(1)},${(p2[1]-(p3[1]-p1[1])/6).toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;}
+  return s;}
+// tapered limb around a centre line (shoulder, elbow, wrist)
+function limbD(pts,ws){const L=[],R=[];const n=pts.length;
+  for(let i=0;i<n;i++){const a=pts[Math.max(0,i-1)],b=pts[Math.min(n-1,i+1)];let dx=b[0]-a[0],dy=b[1]-a[1];const d=Math.hypot(dx,dy)||1;dx/=d;dy/=d;
+    const w=ws[i]/2;L.push([pts[i][0]-dy*w,pts[i][1]+dx*w]);R.push([pts[i][0]+dy*w,pts[i][1]-dx*w]);}
+  const we=ws[n-1]/2, ws0=ws[0]/2;
+  let s=smooth(L);s+=` A${we},${we} 0 0 0 ${R[n-1][0].toFixed(1)},${R[n-1][1].toFixed(1)}`;
+  const r=smooth(R.slice().reverse());s+=' '+r.replace(/^M[^C]*/,'');s+=` A${ws0},${ws0} 0 0 0 ${L[0][0].toFixed(1)},${L[0][1].toFixed(1)}Z`;return s;}
+
+// ---------- cartoon object eyes (googly, with lids + brows) ----------
+function oEye(id,r,lidCol){const c='e'+(UID++);DEFS+=`<clipPath id="${c}"><ellipse rx="${r*.92}" ry="${r}"/></clipPath>`;
+  return `<g id="${id}"><ellipse rx="${r*.92}" ry="${r}" fill="#fff"/><g clip-path="url(#${c})"><circle id="${id}_p" r="${r*.46}" fill="#1b1717"/><circle id="${id}_h" r="${r*.15}" fill="#fff"/>
+   <g id="${id}_lid"><rect x="${-r*2}" y="${-r*3}" width="${r*4}" height="${r*2}" fill="${lidCol}"/><line x1="${-r*2}" x2="${r*2}" y1="${-r}" y2="${-r}" ${LN2}/></g></g>
+   <ellipse rx="${r*.92}" ry="${r}" fill="none" ${LN2}/></g>`;}
+// lid: amount 0..1 (closed), tilt degrees ; look dx,dy
+function setOEye(id,r,{dx=0,dy=0,lid=.12,tilt=0,blink=0,small=false}={}){const d=Math.hypot(dx,dy)||1,m=r*.42,k=Math.min(1,d/40);
+  const px=dx/d*m*k,py=dy/d*m*k;const p=$(id+'_p');p.setAttribute('cx',px);p.setAttribute('cy',py);p.setAttribute('r',r*(small?.3:.46));
+  const h=$(id+'_h');h.setAttribute('cx',px-r*.13);h.setAttribute('cy',py-r*.15);
+  const L=Math.max(lid,blink);$(id+'_lid').setAttribute('transform',`rotate(${tilt}) translate(0,${L*2*r})`);}
+function blinkK(t,ph){const k=(t+ph)%3.9;return k<.13?1-Math.abs(k-.065)/.065:0;}
+function brow(id){return `<path id="${id}" fill="none" ${LN2}/>`;}
+function setBrow(id,x,y,w,ang,arch=0){$(id).setAttribute('d',`M${x-w/2},${y} Q${x},${y-arch} ${x+w/2},${y}`);$(id).setAttribute('transform',`rotate(${ang},${x},${y})`);}
+function mouthD(o,w,mood=0){ // mood: +1 smile, -1 frown
+  if(o<.08){return {d:`M${-w*.7},0 Q0,${mood*w*.45} ${w*.7},0`,fill:'none'};}
+  const h=3+o*w*1.25;return {d:`M${-w*.75},-1 Q0,${-2+mood*2} ${w*.75},-1 Q${w*.6},${h} 0,${h+1} Q${-w*.6},${h} ${-w*.75},-1Z`,fill:'#5e1a20'};}
+function setMouth(id,o,w,mood=0){const m=mouthD(clamp(o),w,mood);const e=$(id);e.setAttribute('d',m.d);e.setAttribute('fill',m.fill);
+  const t=$(id+'_t');if(t){t.setAttribute('opacity',o>=.25?1:0);t.setAttribute('cy',2+o*w*1.05);t.setAttribute('rx',w*.4);t.setAttribute('ry',o*w*.35);}}
+function mouthEl(id,x,y){return `<g transform="translate(${x},${y})"><path id="${id}" ${LN2}/><path id="${id}_w" fill="#fff" opacity="0"/><ellipse id="${id}_t" cx="0" cy="0" rx="1" ry="1" fill="#d76d72" opacity="0"/></g>`;}
+
+// ---------- data / lip sync ----------
+const D=window.DATA, FPS=30;
+function speak(who,T){for(const L of D.lines){if(L.who===who&&T>=L.t0&&T<L.t0+L.dur){return L.env[Math.floor((T-L.t0)*FPS)]||0;}}return 0;}
+function lineT(id){return D.lines.find(l=>l.id===id).t0;}
+function wordT(id,w,n=0){const L=D.lines.find(l=>l.id===id);const m=L.words.filter(x=>x[2]===w);return m[n]?m[n][0]:L.t0;}
+function labelBox(id,text,x,y,sz=22){const w=text.length*sz*.66+26;return `<g id="${id}" opacity="0" transform="translate(${x},${y})"><rect x="${-w/2}" y="-20" width="${w}" height="40" fill="#fff" ${LN}/><text class="lbl" style="font-size:${sz}px" text-anchor="middle" y="8">${text}</text></g>`;}
+// =============== 021: how cutting your toenails can cause an ingrown toenail. The reference's scenes; our drawings, all code ===============
+const OLW=`stroke="${INK}" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round"`;
+const OLW2=`stroke="${INK}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"`;
+const C_SK='#f3dccb', C_SK_S='#e6b9a6', C_NAIL='#f9e6da', C_RED='#e2504a', C_MET='#d9dde2', C_MET_D='#b4bac2';
+const BIG_D='M-40,1330 L-40,650 C-40,520 60,446 200,446 C340,446 436,530 436,664 C436,800 384,900 344,1040 C322,1120 318,1220 322,1330 Z';
+const SEC_D='M440,1330 C428,1100 418,900 424,704 C426,600 482,536 572,536 C662,536 718,600 718,704 C718,900 704,1100 694,1330 Z';
+// the big toe's nail: top edge y, corner radius r, half-width grows with w
+function nailD(top,r,w=0){const x0=48-w,x1=402+w;return `M${x0},780 L${x0},${top+r} Q${x0},${top} ${x0+r},${top} L${x1-r},${top} Q${x1},${top} ${x1},${top+r} L${x1},780 Q${x1},842 ${x1-62},842 L${x0+62},842 Q${x0},842 ${x0},780 Z`;}
+const arcsD=(n=3)=>Array.from({length:n},(_,j)=>`<path d="M${-34-j*4},${-j*24} q${34+j*4},-26 ${68+j*8},0" fill="none" stroke="${INK}" stroke-width="19" stroke-linecap="round"/><path d="M${-34-j*4},${-j*24} q${34+j*4},-26 ${68+j*8},0" fill="none" stroke="#ffe81a" stroke-width="12" stroke-linecap="round"/>`).join('');
+function clipperSVG(){return `<g id="clip"><path d="M-66,-150 L66,-150 L92,124 L-92,124 Z" fill="${C_MET}" ${OLW}/><path d="M-98,124 L98,124 L104,168 L-104,168 Z" fill="${C_MET_D}" ${OLW}/><path d="M-98,140 H98" ${OLW2}/>
+   <path d="M-44,-196 L44,-196 L58,70 L-58,70 Z" fill="#f1f3f6" ${OLW}/><path d="M-30,-180 L-40,50" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+   <rect id="cmouth" x="-17" y="-70" width="34" height="70" rx="15" fill="#2a2326" ${OLW2}/><ellipse id="ctong" cx="0" cy="-20" rx="10" ry="8" fill="#e8474f" opacity="0"/>
+   <circle cx="0" cy="44" r="17" fill="#8c939c" ${OLW2}/>
+   <g id="carms" opacity="0"><path d="M-70,-40 C-120,-80 -110,-140 -44,-128 M70,-40 C120,-80 110,-140 44,-128" fill="none" stroke="${INK}" stroke-width="13" stroke-linecap="round"/><path d="M-70,-40 C-120,-80 -110,-140 -44,-128 M70,-40 C120,-80 110,-140 44,-128" fill="none" stroke="${C_MET}" stroke-width="7" stroke-linecap="round"/><circle cx="-38" cy="-124" r="13" fill="#fff" ${OLW2}/><circle cx="38" cy="-124" r="13" fill="#fff" ${OLW2}/></g>
+   <g transform="translate(0,-176)"><g transform="translate(-36,0)">${oEye('cl_eL',34,'#f1f3f6')}</g><g transform="translate(36,0)">${oEye('cl_eR',34,'#f1f3f6')}</g>${brow('cl_bL')}${brow('cl_bR')}</g></g>`;}
+function footCard(){return `<g id="inset"><rect x="500" y="170" width="204" height="300" rx="18" fill="#fff" ${OLW}/>
+   <path d="M560,430 C540,380 548,300 566,260 C584,228 650,228 660,268 C672,320 664,390 650,430 C630,450 580,450 560,430 Z" fill="${C_SK}" ${OLW2}/>
+   ${[[574,232,20,26],[608,226,15,20],[632,232,13,18],[652,244,12,16],[668,260,11,14]].map(([x,y,a,b])=>`<ellipse cx="${x}" cy="${y}" rx="${a}" ry="${b}" fill="${C_SK}" ${OLW2}/>`).join('')}
+   <path d="M562,222 q12,-12 24,0 v14 h-24 Z" fill="#fff" ${OLW2}/><circle id="ring" cx="574" cy="230" r="30" fill="none" stroke="#e02626" stroke-width="6"/>
+   <text x="602" y="456" text-anchor="middle" style="font-family:LG,sans-serif;font-size:21px" fill="#1d2a44">BIG TOE NAIL</text></g>`;}
+// ---- scene 1: two toes and the clipper ----
+function toesScene(){
+  DEFS+=`<clipPath id="bigC"><path d="${BIG_D}"/></clipPath><clipPath id="secC"><path d="${SEC_D}"/></clipPath><clipPath id="nailC"><path id="nailCP" d="${nailD(430,40)}"/></clipPath><filter id="soft2" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>`;
+  return `<rect x="-40" y="-40" width="800" height="1360" fill="#d8e9f6"/><rect x="-40" y="90" width="800" height="110" fill="#b7cfe2" filter="url(#soft2)"/>
+   <g id="stink"></g>
+   <path d="${SEC_D}" fill="${C_SK}" ${OLW}/><g clip-path="url(#secC)"><path d="${SEC_D}" fill="none" stroke="${C_SK_S}" stroke-width="26" opacity=".7"/></g><path d="${SEC_D}" fill="none" ${OLW}/>
+   <path d="M462,640 Q462,566 530,566 L622,566 Q690,566 690,640 L690,720 Q690,764 646,764 L506,764 Q462,764 462,720 Z" fill="${C_NAIL}" ${OLW}/><path d="M476,596 Q486,572 530,572 L622,572 Q668,572 678,596" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+   <g id="tface" transform="translate(576,660)"><g transform="translate(-42,0)">${oEye('t2_eL',36,C_NAIL)}</g><g transform="translate(42,0)">${oEye('t2_eR',36,C_NAIL)}</g>${brow('t2_bL')}${brow('t2_bR')}<g transform="translate(0,62) scale(1.6)">${mouthEl('t2_m',0,0)}</g></g>
+   <path d="${BIG_D}" fill="${C_SK}" ${OLW}/><g clip-path="url(#bigC)"><path d="${BIG_D}" fill="none" stroke="${C_SK_S}" stroke-width="34" opacity=".75"/><g id="swell"></g></g><path d="${BIG_D}" fill="none" ${OLW}/>
+   <path d="M60,1070 q60,-14 110,6 M40,1100 q70,-10 120,10 M90,1130 q40,-6 80,6" fill="none" ${OLW2}/>
+   <path id="nail" d="${nailD(430,40)}" fill="${C_NAIL}" ${OLW}/><g clip-path="url(#nailC)"><rect id="free" x="0" y="400" width="460" height="70" fill="#fff"/><path id="freeL" d="M0,500 H460" stroke="${INK}" stroke-width="2.4"/></g><path id="nailO" d="${nailD(430,40)}" fill="none" ${OLW}/>
+   <g id="swell2"></g><path id="dash" d="" fill="none" stroke="#2fd24a" stroke-width="10" stroke-dasharray="26 16" stroke-linecap="round" opacity="0"/>
+   <g id="bface" transform="translate(225,650)"><g id="bOpen"><g transform="translate(-68,0)">${oEye('bt_eL',40,C_NAIL)}</g><g transform="translate(68,0)">${oEye('bt_eR',40,C_NAIL)}</g></g>
+     <g id="bShut" opacity="0">${[-68,68].map(x=>`<g transform="translate(${x},0) scale(1.4)"><ellipse rx="37" ry="40" fill="#fff" ${OLW2}/><path d="M${x<0?-16:16},-16 L${x<0?12:-12},0 L${x<0?-16:16},16" fill="none" stroke="${INK}" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></g>`).join('')}</g>
+     ${brow('bt_bL')}${brow('bt_bR')}<g transform="translate(0,104) scale(2.3)">${mouthEl('bt_m',0,0)}</g></g>
+   <g id="chip" opacity="0"><path d="M-70,10 C-40,-30 40,-30 70,10 C40,-6 -40,-6 -70,10 Z" fill="#fff" ${OLW2}/></g>
+   <g id="spark"></g>
+   ${footCard()}
+   <g id="clipW">${clipperSVG()}</g>`;}
+// ---- the clinic ----
+function miniToe(id,x,y,bad){const top=bad?-70:-96,r=bad?70:22;
+  return `<g id="${id}" opacity="0"><g transform="translate(${x},${y})"><path d="M-104,150 L-104,-40 C-104,-120 104,-120 104,-40 L104,150 Z" fill="${C_SK}" ${OLW}/>
+   ${bad?`<ellipse cx="-80" cy="-10" rx="30" ry="60" fill="${C_RED}" opacity=".85" filter="url(#soft)"/><ellipse cx="80" cy="-10" rx="30" ry="60" fill="${C_RED}" opacity=".85" filter="url(#soft)"/>`:''}
+   <path d="M-74,70 L-74,${top+r} Q-74,${top} ${-74+r},${top} L${74-r},${top} Q74,${top} 74,${top+r} L74,70 Q74,100 44,100 L-44,100 Q-74,100 -74,70 Z" fill="${C_NAIL}" ${OLW}/>
+   <path d="M${-74+r*.5},${top+10} Q0,${top-(bad?6:0)} ${74-r*.5},${top+10}" fill="none" stroke="${bad?'#e02626':'#22b04a'}" stroke-width="9" stroke-dasharray="18 12" stroke-linecap="round"/>
+   <circle cx="96" cy="-104" r="38" fill="${bad?'#e8473f':'#2fae62'}" stroke="#1d2a44" stroke-width="4"/>${bad?`<path d="M80,-120 L112,-88 M112,-120 L80,-88" stroke="#fff" stroke-width="10" stroke-linecap="round"/>`:`<path d="M78,-104 L92,-88 L116,-120" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>`}
+   <rect x="-124" y="168" width="248" height="56" rx="12" fill="${bad?'#e8473f':'#2fae62'}" stroke="#1d2a44" stroke-width="4"/><text x="0" y="207" text-anchor="middle" style="font-family:LG,sans-serif;font-size:26px" fill="#fff">${bad?'ROUND CORNERS':'STRAIGHT ACROSS'}</text></g></g>`;}
+function clinic21(){
+  return `<rect x="-60" y="-60" width="840" height="1400" fill="#b9c6cc"/><path d="M-60,560 H780 M240,-60 V1000 M520,-60 V1000" stroke="#a3b1b8" stroke-width="6"/>
+   <path d="M-60,1010 H780 V1400 H-60 Z" fill="#8f8d8a"/><path d="M-60,1010 H780 M-60,1120 H780 M140,1010 L60,1340 M400,1010 L390,1340 M640,1010 L720,1340" stroke="#74726f" stroke-width="3" fill="none"/>
+   <g id="brd"><rect x="38" y="46" width="660" height="470" rx="26" fill="#000" opacity=".12"/><rect x="30" y="36" width="660" height="470" rx="26" fill="#fff" stroke="#1d2a44" stroke-width="5"/>
+    ${miniToe('m0',196,200,true)}${miniToe('m1',524,200,false)}
+    <g id="m2" opacity="0"><text x="360" y="486" text-anchor="middle" style="font-family:LG,sans-serif;font-size:30px" fill="#1d2a44">NAIL GROWS OUT, NOT INTO THE SKIN</text></g></g>
+   <g transform="translate(176,540) scale(.8)">${doctorSVG()}</g>
+   <g transform="translate(274,806) rotate(160) scale(.27)"><path d="M-66,-150 L66,-150 L92,124 L-92,124 Z" fill="${C_MET}" ${OLW}/><path d="M-98,124 L98,124 L104,168 L-104,168 Z" fill="${C_MET_D}" ${OLW}/><path d="M-44,-196 L44,-196 L58,70 L-58,70 Z" fill="#f1f3f6" ${OLW}/></g>
+   <path d="M-60,950 H330 V990 H-60 Z" fill="#8a7a6c" ${OLW}/><path d="M150,990 H310 V1200 H150 Z" fill="#7d6e62" ${OLW}/>
+   <g id="patWrap"><path d="M660,700 H730 V960 H660 Z" fill="#5a95d0" ${OLW}/>
+    <g transform="translate(560,540) scale(.8)">${patientSVG()}</g>
+    <path d="M410,925 H730 V1010 H410 Z" fill="#6aa5e0" ${OLW}/><path d="M440,1010 H730 V1200 H440 Z" fill="#c9cdd2" ${OLW}/><path d="M440,1040 H730" ${OLW2}/>
+    <path d="M520,960 L440,1030" stroke="${INK}" stroke-width="5" stroke-dasharray="10 9" stroke-linecap="round"/>
+    <g id="pfoot" transform="translate(400,1110)"><circle r="122" fill="#fff" ${OLW}/><circle r="122" fill="none" stroke="#e02626" stroke-width="7" stroke-dasharray="16 10"/>
+     <path d="M-66,110 L-66,-20 C-66,-90 66,-90 66,-20 L66,110 Z" fill="${PSK}" ${OLW}/><ellipse cx="-54" cy="6" rx="22" ry="48" fill="${C_RED}" opacity=".9" filter="url(#soft)"/><ellipse cx="54" cy="6" rx="22" ry="48" fill="${C_RED}" opacity=".9" filter="url(#soft)"/>
+     <path d="M-44,60 L-44,-10 Q-44,-52 0,-52 Q44,-52 44,-10 L44,60 Q44,80 24,80 L-24,80 Q-44,80 -44,60 Z" fill="${C_NAIL}" ${OLW}/><g id="pain"></g></g></g>`;}
+
+// =============== SCENE 2 : ENT clinic ===============
+function hand(x,y,ang,sc,skin,id=''){return `<g ${id?`id="${id}"`:''} transform="translate(${x},${y}) rotate(${ang}) scale(${sc})">
+  <path d="M-11,-12 C-4,-17 9,-16 13,-8 C17,2 15,14 6,18 C-4,22 -14,16 -16,6 C-17,-2 -15,-8 -11,-12 Z" fill="${skin}" ${LN2}/>
+  <path d="M-12,-6 C-20,-12 -24,-6 -18,2" fill="${skin}" ${LN2}/><path d="M-2,4 q4,6 10,6 M0,-4 q5,5 12,5" ${TH('#9c6b52')}/></g>`;}
+function humanEye(id,x,y,w,h){const c='h'+(UID++);DEFS+=`<clipPath id="${c}"><path d="M${-w},0 Q0,${-h*1.5} ${w},0 Q0,${h*1.1} ${-w},0Z"/></clipPath>`;
+  return `<g transform="translate(${x},${y})"><g id="${id}"><path d="M${-w},0 Q0,${-h*1.5} ${w},0 Q0,${h*1.1} ${-w},0Z" fill="#fff"/>
+   <g clip-path="url(#${c})"><circle id="${id}_p" r="${h*.78}" fill="#3a2a20"/><circle id="${id}_q" r="${h*.38}" fill="#111"/><circle id="${id}_h" r="${h*.2}" fill="#fff"/></g>
+   <path d="M${-w-1},0 Q0,${-h*1.55} ${w+1},0" fill="none" stroke="${INK}" stroke-width="2.8" stroke-linecap="round" ${VE}/><path d="M${-w*.8},${h*.35} Q0,${h*1.05} ${w*.8},${h*.35}" fill="none" ${TH('#8d6a5a')}/></g></g>`;}
+function setHEye(id,dx,blink){const p=$(id+'_p'),q=$(id+'_q'),h=$(id+'_h');[p,q].forEach(e=>{e.setAttribute('cx',dx);e.setAttribute('cy',1);});h.setAttribute('cx',dx-2);h.setAttribute('cy',-1.5);
+  $(id).setAttribute('transform',`scale(1,${1-blink*.92})`);}
+
+const DSK='#f0c6a6', DSK_S='#d9a585', DHAIR='#3b2820';
+function doctorSVG(){return `<g id="doc">
+ <ellipse cx="0" cy="782" rx="92" ry="12" fill="#000" opacity=".12"/>
+ <!-- back hair -->
+ <path d="M-64,70 C-74,130 -70,190 -48,214 L50,214 C70,190 74,130 64,70 Z" fill="${DHAIR}" ${LN}/>
+ <!-- legs -->
+ ${shaded(limbD([[-30,500],[-34,640],[-34,760]],[52,44,38]),'#33465f','#22324a',10)}
+ ${shaded(limbD([[30,500],[34,640],[36,760]],[52,44,38]),'#33465f','#22324a',10)}
+ <path d="M-58,756 C-58,744 -12,742 -10,756 L-10,772 L-62,774 Z" fill="#3c3f46" ${LN2}/><path d="M12,756 C14,742 60,744 60,756 L62,774 L10,772 Z" fill="#3c3f46" ${LN2}/>
+ <!-- scrubs + coat -->
+ ${shaded('M-62,214 C-40,204 40,204 62,214 L70,520 L-70,520 Z','#3f9c96','#2c7d78',14)}
+ ${shaded('M-20,206 L-62,212 C-92,222 -100,250 -102,290 L-110,560 L-46,566 L-16,330 L-8,250 Z','#f8f8f6','#d4d9dd',18)}
+ ${shaded('M20,206 L62,212 C92,222 100,250 102,290 L110,560 L46,566 L16,330 L8,250 Z','#f8f8f6','#d4d9dd',18)}
+ <path d="M-20,206 L-2,262 L-8,330 M20,206 L2,262 L8,330" fill="none" ${TH('#9aa3aa')}/>
+ <path d="M-90,430 h34 v40 h-34 Z M56,430 h34 v40 h-34 Z" fill="none" ${TH('#9aa3aa')}/>
+ <rect x="54" y="300" width="30" height="40" rx="4" fill="#d9ecf5" ${LN2}/><rect x="60" y="306" width="18" height="12" fill="#8db4c8"/>
+ <!-- stethoscope -->
+ <path d="M-26,212 C-38,270 -24,322 0,326 C24,322 38,270 26,212" fill="none" stroke="#454b55" stroke-width="5.5" stroke-linecap="round"/>
+ <circle cx="0" cy="334" r="11" fill="#c9cfd6" ${LN2}/>
+ <!-- neck + head -->
+ <path d="M-17,150 L-16,206 L16,206 L17,150 Z" fill="${DSK}" ${LN2}/><path d="M-16,176 C-6,186 6,186 16,176 L16,206 L-16,206Z" fill="${DSK_S}" opacity=".7"/>
+ <g id="docHead">
+  ${shaded('M-50,72 C-52,30 -30,8 0,8 C32,8 54,30 52,74 C51,106 40,134 22,150 C12,158 -12,158 -22,150 C-40,134 -51,106 -50,72 Z',DSK,DSK_S,12)}
+  <path d="M-52,90 C-60,86 -62,104 -52,108" fill="${DSK}" ${LN2}/><path d="M52,90 C60,86 62,104 52,108" fill="${DSK}" ${LN2}/>
+  <path d="M-56,96 C-62,30 -30,0 4,0 C42,0 64,30 58,98 C54,66 44,44 20,34 C2,50 -30,60 -56,96 Z" fill="${DHAIR}" ${LN}/>
+  <path d="M-30,24 C-10,10 20,10 40,26 M-40,50 C-28,36 -12,30 6,30" fill="none" ${TH('#5c4136')}/>
+  <path id="dBrows" d="M-30,72 Q-18,65 -6,70 M14,70 Q26,65 38,72" fill="none" stroke="${DHAIR}" stroke-width="3.6" stroke-linecap="round"/>
+  ${humanEye('dEyeL',-16,90,12,7)}${humanEye('dEyeR',24,90,12,7)}
+  <g fill="none" stroke="#4a3b37" stroke-width="2.2" ${VE}><rect x="-34" y="78" width="34" height="25" rx="9"/><rect x="7" y="78" width="34" height="25" rx="9"/><path d="M0,88 h7 M-34,86 l-16,-3 M41,86 l13,-3"/></g>
+  <path d="M8,98 C14,110 14,118 6,121 C3,122 0,120 -2,118" fill="none" ${TH('#a8735a')}/>
+  <ellipse cx="-24" cy="118" rx="9" ry="5" fill="#e79a8d" opacity=".35"/><ellipse cx="32" cy="118" rx="9" ry="5" fill="#e79a8d" opacity=".35"/>
+  ${mouthEl('doc_m',6,136)}
+ </g>
+ <!-- left arm with clipboard -->
+ ${shaded(limbD([[-86,226],[-74,336],[-6,352]],[40,34,30]),'#f8f8f6','#d4d9dd',10)}
+ <g transform="translate(8,316) rotate(-8)"><rect x="-40" y="-56" width="80" height="106" rx="6" fill="#b88350" ${LN2}/><rect x="-32" y="-46" width="64" height="88" fill="#fff" ${LN2}/><rect x="-14" y="-62" width="28" height="12" rx="3" fill="#9aa3ad" ${LN2}/>
+   <path d="M-22,-26 h44 M-22,-12 h36 M-22,2 h44 M-22,16 h28" ${TH('#9aa3ad')}/></g>
+ ${hand(-2,356,-70,1.15,DSK)}
+ <!-- right arm holding otoscope -->
+ <g id="docArmR">${shaded(limbD([[86,226],[110,318],[96,346]],[40,34,30]),'#f8f8f6','#d4d9dd',10)}
+   
+   ${hand(98,350,-60,1.15,DSK)}</g>
+</g>`;}
+const PSK='#e2b48f', PSK_S='#c99271';
+function patientSVG(){return `<g id="pat">
+ <ellipse cx="0" cy="782" rx="96" ry="12" fill="#000" opacity=".12"/>
+ ${shaded(limbD([[-32,500],[-36,640],[-36,758]],[56,46,40]),'#4b6286','#344868',10)}
+ ${shaded(limbD([[32,500],[36,640],[38,758]],[56,46,40]),'#4b6286','#344868',10)}
+ <path d="M-64,752 C-64,736 -12,736 -10,752 L-8,770 L-68,772 Z" fill="#f2f2f2" ${LN2}/><path d="M-66,766 h58" ${TH('#9aa0a6')}/>
+ <path d="M10,752 C12,736 64,736 64,752 L68,772 L8,770 Z" fill="#f2f2f2" ${LN2}/><path d="M8,766 h58" ${TH('#9aa0a6')}/>
+ ${shaded('M-66,218 C-40,204 40,204 66,218 C90,232 96,262 96,300 L92,520 L-92,520 L-96,300 C-96,262 -90,232 -66,218 Z','#c7884a','#a86c34',18)}
+ <path d="M-40,206 C-30,232 30,232 40,206" fill="#b47a40" ${LN2}/><path d="M-10,232 v58 M10,232 v58" stroke="#f3eadf" stroke-width="3.5" stroke-linecap="round"/>
+ <path d="M-60,420 C-20,436 20,436 60,420 L58,470 C20,482 -20,482 -58,470 Z" fill="#b47a40" ${LN2}/>
+ <path d="M-92,500 L92,500 L92,520 L-92,520 Z" fill="#a86c34" ${LN2}/>
+ <path d="M-17,150 L-16,210 L16,210 L17,150 Z" fill="${PSK}" ${LN2}/><path d="M-16,178 C-6,188 6,188 16,178 L16,210 L-16,210Z" fill="${PSK_S}" opacity=".7"/>
+ <!-- right arm (hangs) -->
+ ${shaded(limbD([[84,234],[100,370],[90,470]],[44,38,32]),'#c7884a','#a86c34',10)}${hand(88,482,8,1.2,PSK)}
+ <g id="patHead">
+  ${shaded('M-52,70 C-54,28 -30,6 0,6 C32,6 56,28 54,72 C53,108 42,138 24,154 C12,162 -12,162 -24,154 C-42,138 -53,108 -52,70 Z',PSK,PSK_S,12)}
+  <path d="M-54,88 C-62,84 -64,104 -54,108" fill="${PSK}" ${LN2}/><path d="M54,88 C62,84 64,104 54,108" fill="${PSK}" ${LN2}/>
+  <path d="M-56,74 C-64,20 -30,-12 6,-8 C40,-6 64,16 58,72 C52,44 40,30 20,28 C4,34 -14,30 -24,24 C-34,40 -46,52 -56,74 Z" fill="#1f1d24" ${LN}/>
+  <path d="M-36,4 l6,-10 M-14,-6 l4,-10 M10,-6 l2,-10 M30,0 l6,-8" ${TH('#3d3a46')}/>
+  <path id="pBrows" d="M-36,70 Q-24,64 -10,66 M8,66 Q22,64 34,70" fill="none" stroke="#1f1d24" stroke-width="4.2" stroke-linecap="round"/>
+  ${humanEye('pEyeL',-22,88,12,7)}${humanEye('pEyeR',18,88,12,7)}
+  <path d="M-4,96 C-10,110 -10,118 -2,121 C2,122 5,120 7,118" fill="none" ${TH('#9c6b4e')}/>
+  <path d="M-36,130 q4,8 2,14 M30,130 q-4,8 -2,14" ${TH('#c99271')}/>
+  ${mouthEl('pat_m',-4,138)}
+  <g id="patBlush" opacity="0"><ellipse cx="-38" cy="124" rx="10" ry="6" fill="#ef8f86"/><ellipse cx="32" cy="124" rx="10" ry="6" fill="#ef8f86"/></g>
+  <path id="pSweat" d="M0,-9 C5,-2 7,3 5,7 C3,11 -4,11 -5,7 C-7,3 -4,-2 0,-9Z" fill="#9fd8f5" ${LN2}/>
+ </g>
+ <!-- left arm: hand to ear -->
+ <g id="patArmL"><path id="patArmLD" fill="#c7884a"/><path id="patArmLO" fill="none" ${LN}/><g id="patHandL"></g></g>
+</g>`;}
+
+// =============== 021: "How cutting your toenails can cause an ingrown toenail". Two toes and a clipper, "LATER...", the clinic. ===============
+const E=D.ev, ST=D.start, END=D.end;
+function viseme(env,T,seed){if(env<0.08)return 'closed';const f=Math.floor(T*15)+seed;let b=env<0.3?'small':env<0.65?'mid':'wide';if(b==='mid'&&f%4===0)b='oo';if(b==='wide'&&f%5===0)b='mid';return b;}
+function setMouthV(id,env,w,mood,T,seed=0){const v=viseme(env,T,seed);const e=$(id),t=$(id+'_t'),th=$(id+'_w');let d,fill='#5e1a20',tong=0,teeth=0;
+  if(v==='closed'){d=`M${-w*.7},0 Q0,${mood*w*.45} ${w*.7},0`;fill='none';}
+  else if(v==='small'){d=`M${-w*.55},0 Q0,-2.5 ${w*.55},0 Q0,${w*.5} ${-w*.55},0Z`;}
+  else if(v==='oo'){d=`M0,${-w*.32} C${w*.42},${-w*.32} ${w*.42},${w*.55} 0,${w*.55} C${-w*.42},${w*.55} ${-w*.42},${-w*.32} 0,${-w*.32}Z`;}
+  else if(v==='mid'){d=`M${-w*.8},-1 Q0,-4 ${w*.8},-1 Q${w*.6},${w*.85} 0,${w*.9} Q${-w*.6},${w*.85} ${-w*.8},-1Z`;tong=.6;teeth=1;}
+  else {d=`M${-w*.9},-2 Q0,-6 ${w*.9},-2 Q${w*.7},${w*1.3} 0,${w*1.35} Q${-w*.7},${w*1.3} ${-w*.9},-2Z`;tong=1;teeth=1;}
+  e.setAttribute('d',d);e.setAttribute('fill',fill);
+  if(th){th.setAttribute('opacity',teeth);th.setAttribute('d',`M${-w*.62},-1 Q0,-4 ${w*.62},-1 L${w*.56},${w*.2} Q0,${w*.12} ${-w*.56},${w*.2}Z`);}
+  if(t){t.setAttribute('opacity',tong?1:0);t.setAttribute('cy',w*(tong>.8?1.0:.66));t.setAttribute('rx',w*.45);t.setAttribute('ry',w*.2*tong+1);}}
+
+// ---- inside the ear: positions of the cotton bud tip and the wax (world coords)
+function popLabel(id,T,t0,t1,x,y,sc=1){const on=T>=t0&&T<t1;show(id,on?1:0);if(on){const k=eob(P(T,t0,t0+.28));$(id).setAttribute('transform',`translate(${x},${y}) scale(${k*sc})`);}}
+const lend=id=>{const L=D.lines.find(l=>l.id===id);return L.t0+L.dur;};
+const inL=(id,T,pre=.05,post=.1)=>T>=ST[id]-pre&&T<lend(id)+post;
+const svg=$('S');
+const S1=`<g id="s1">${toesScene()}</g>`, S4=`<g id="s4"><rect x="-10" y="-10" width="740" height="1300" fill="#0b0b0d"/><rect x="-10" y="450" width="740" height="380" fill="#3a2a8a"/><text id="later" x="360" y="668" text-anchor="middle" style="font-family:LG,sans-serif;font-size:96px;letter-spacing:4px" fill="#5fe3e8" stroke="#141418" stroke-width="5" paint-order="stroke">LATER...</text></g>`, S5=`<g id="s5">${clinic21()}</g>`;
+svg.innerHTML=`<defs><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>${DEFS}</defs>`
+ +`<g id="cam">`+S1+S5+S4+`</g>`+labelBox('lbR','CORNERS CUT ROUND',0,0,28)+labelBox('lbS','EVEN SHORTER!',0,0,30)+labelBox('lbG','GROWS INTO THE SKIN',0,0,28)+labelBox('lbI','INGROWN TOENAIL',0,0,32)
+ +`<text id="wm" x="360" y="58" text-anchor="middle" style="font-family:ComicNeue,sans-serif;font-weight:700;font-size:24px" fill="#fff" stroke="#0b6e6b" stroke-width=".6" opacity=".7">@GiggleMD</text>`
+ +`<g id="capg"><text id="cap" class="cap" x="360" y="1015" text-anchor="middle" style="stroke-width:7px;font-size:48px"></text></g>`;
+function face(id,r,{dx=0,dy=0,lid=.1,blink=0,small=false,bx=27,by=48,bw=26,bA=0,arch=3,talk=0,mw=12,mood=0,T=0,seed=0}){
+  setOEye(id+'_eL',r,{dx,dy,lid,blink,small});setOEye(id+'_eR',r,{dx,dy,lid,blink,small});
+  setBrow(id+'_bL',-bx,by,bw,bA,arch);setBrow(id+'_bR',bx,by,bw,-bA,arch);if($(id+'_m'))setMouthV(id+'_m',talk,mw,mood,T,seed);}
+const mv=(id,x,y,r=0,s=1)=>$(id).setAttribute('transform',`translate(${x.toFixed(1)},${y.toFixed(1)}) rotate(${r.toFixed(1)}) scale(${s})`);
+const lab=(id,T,a,b,x,y)=>{const on=T>=a&&T<b;show(id,on?1:0);if(on)$(id).setAttribute('transform',`translate(${x},${y}) scale(${(T<.02?1:Math.max(.01,eob(P(T,a-.01,a+.28)))).toFixed(3)})`);};
+// the nail's state over time: [top, corner radius, extra half-width]
+const LONG=[430,40,0],SHORT1=[512,112,0],SHORT2=[548,118,0],IN=[470,60,16];
+function nailState(T){const mix=(a,b,k)=>a.map((v,i)=>lerp(v,b[i],k));
+  if(T<E.cut1+.38)return LONG; if(T<E.grow1+.55)return SHORT1; if(T<E.cut2+.38)return mix(SHORT1,LONG,eob(P(T,E.grow1+.55,E.grow1+.85)));
+  if(T<E.grow2+.55)return SHORT2; return mix(SHORT2,IN,eo(P(T,E.grow2+.55,E.grow2+1.1)));}
+function renderToes(T){
+  const bad=T>=E.later,[top,r,w]=nailState(T),d=nailD(top,r,w);
+  ['nail','nailO','nailCP'].forEach(id=>$(id).setAttribute('d',d));
+  const isLong=top<500;$('free').setAttribute('y',top-6);$('free').setAttribute('height',isLong?76:0);$('freeL').setAttribute('d',isLong?`M0,${top+70} H460`:'');
+  // the clipper: home at the top left; swoops to the nail's corner and snips; leaves and returns
+  const cT=speak('clipper',T);let cx=118,cy=236,cr=-14,cs=.92;
+  const sw=t0=>{const a=eio(P(T,t0,t0+.34)),b=eio(P(T,t0+.46,t0+.8)),k=a-b;cx=lerp(118,318,k);cy=lerp(236,360,k);cr=lerp(-14,38,k)+(T>t0+.34&&T<t0+.46?Math.sin(T*90)*4:0);};
+  if(T>=E.cut1&&T<E.cut1+.8)sw(E.cut1);if(T>=E.cut2&&T<E.cut2+.8)sw(E.cut2);
+  let off=0;if(T>=E.exit1&&T<E.back1)off=T<E.back1-.01?eio(P(T,E.exit1,E.exit1+.35)):0;if(T>=E.back1)off=1-eo(P(T,E.back1,E.back1+.35));if(T>=E.exit2&&!bad)off=eio(P(T,E.exit2,E.exit2+.35));
+  cx-=off*330;cy-=off*260;
+  if(bad){const k=eo(P(T,E.bad+.15,E.bad+.6)),rec=eo(P(T,E.bad+.6,E.bad+.9));cx=lerp(900,500,k)+rec*40;cy=lerp(60,330,k)-rec*40;cr=24+rec*10+Math.sin(T*3)*3;cs=.9;}
+  mv('clipW',cx,cy+Math.sin(T*2.2)*5,cr,cs);
+  $('cmouth').setAttribute('height',(46+cT*56).toFixed(1));show('ctong',cT>.3?1:0);
+  show('carms',bad&&T>=E.bad+.6?1:0);
+  const lookB=bad?{dx:-20,dy:26}:{dx:14,dy:30};
+  face('cl',34,{dx:lookB.dx,dy:lookB.dy,lid:bad?0:.22,blink:blinkK(T,.4),small:bad,bx:36,by:-46,bw:30,bA:bad?-22:10,arch:5,T});
+  // the clipping flies off
+  let ch=0;[E.cut1,E.cut2].forEach(t0=>{const t=T-t0-.38;if(t>=0&&t<.7){ch=1;mv('chip',330+t*420,430-t*260+t*t*900,t*500,1);}});show('chip',ch);
+  // the dashed line on the rounded edge
+  const dOn=T>=E.dash&&T<lend('02_bigtoe')+.2;show('dash',dOn?(.7+.3*Math.sin(T*10)):0);if(dOn)$('dash').setAttribute('d',`M36,${top+r+40} Q36,${top-14} ${48+r},${top-14} L${402-r},${top-14} Q414,${top-14} 414,${top+r+40}`);
+  // growing: strain, sparkles
+  const g1=T>=E.grow1&&T<E.grow1+.6,g2=T>=E.grow2&&T<E.grow2+1.1,strain=g1||g2;
+  let sp='';if(strain||(T>=E.grow1+.55&&T<E.grow1+1.1)){for(let j=0;j<7;j++){const a=j*.9+T*2,x=225+Math.cos(a)*(230+j%2*30),y=600+Math.sin(a)*(250+j%3*20)*.8;sp+=`<path transform="translate(${x.toFixed(0)},${y.toFixed(0)}) scale(${(1.2+Math.sin(T*9+j)*.5).toFixed(2)})" d="M0,-14 L4,-4 L14,0 L4,4 L0,14 L-4,4 L-14,0 L-4,-4 Z" fill="#fff" stroke="${INK}" stroke-width="1.6"/>`;}}
+  $('spark').innerHTML=sp;
+  // swelling and smell
+  const sK=bad?1:eo(P(T,E.grow2+.5,E.grow2+1.2));let swl='';if(sK>0){const pu=1+Math.sin(T*5)*.06;swl=`<ellipse cx="34" cy="640" rx="${62*sK*pu}" ry="${170*sK}" fill="${C_RED}" opacity="${(.85*sK).toFixed(2)}" filter="url(#soft2)"/><ellipse cx="420" cy="650" rx="${62*sK*pu}" ry="${170*sK}" fill="${C_RED}" opacity="${(.85*sK).toFixed(2)}" filter="url(#soft2)"/><ellipse cx="225" cy="${top-10}" rx="${200*sK}" ry="${34*sK}" fill="#e98b6a" opacity="${(.5*sK).toFixed(2)}" filter="url(#soft2)"/>`;}
+  $('swell').innerHTML=swl;
+  $('swell2').innerHTML=sK>0?[[40,1],[410,-1]].map(([x,s])=>{const pu=1+Math.sin(T*5+x)*.05;return `<path d="M${x-s*34*sK},${top+40} C${x+s*50*sK*pu},${top+90} ${x+s*56*sK*pu},${top+300} ${x-s*30*sK},${top+350} C${x-s*60*sK},${top+260} ${x-s*60*sK},${top+120} ${x-s*34*sK},${top+40} Z" fill="#e2504a" stroke="${INK}" stroke-width="3" opacity="${Math.min(1,sK*1.2).toFixed(2)}"/><path d="M${x+s*10*sK},${top+110} q${s*14},70 0,150" fill="none" stroke="#f59a8e" stroke-width="8" stroke-linecap="round" opacity="${sK.toFixed(2)}"/>`;}).join(''):'';
+  let stk='';if(bad){const o=clamp(P(T,E.bad,E.bad+.5));for(let j=0;j<6;j++){const x=40+j*76,ph=T*2+j;let dd=`M${x},470`;for(let k=1;k<=5;k++)dd+=` q${(k%2?26:-26)+Math.sin(ph+k)*8},-34 0,-68`;stk+=`<path d="${dd}" fill="none" stroke="#8fc46a" stroke-width="14" stroke-linecap="round" opacity="${(o*.6).toFixed(2)}"/>`;}}
+  $('stink').innerHTML=stk;
+  // faces
+  const bT=speak('bigtoe',T),tT=speak('toe',T);
+  let f={dx:-16,dy:-30,lid:.05,bA:0,arch:5,mood:.1,small:false};                         // watching the clipper
+  if(T>=E.cut1+.38)f={dx:-10,dy:-26,lid:0,bA:-16,arch:8,mood:-.8,small:true};
+  if(T>=ST['03_clipper'])f={dx:-16,dy:-28,lid:.2,bA:14,arch:3,mood:-.8,small:false};
+  if(T>=E.exit1)f={dx:22,dy:0,lid:.1,bA:6,arch:4,mood:-.5,small:false};                  // listens to the second toe
+  if(T>=E.grow1+.55)f={dx:0,dy:-20,lid:0,bA:0,arch:8,mood:1,small:false};
+  if(T>=E.back1)f={dx:-16,dy:-30,lid:.05,bA:-4,arch:6,mood:.1,small:false};
+  if(T>=E.cut2+.38)f={dx:-12,dy:-26,lid:.1,bA:20,arch:2,mood:-1,small:false};            // angry
+  if(T>=E.exit2)f={dx:22,dy:2,lid:.15,bA:16,arch:2,mood:-.8,small:false};
+  if(T>=ST['09_bigtoe'])f={dx:8,dy:-6,lid:.12,bA:22,arch:2,mood:-.6,small:false};
+  if(bad)f={dx:16,dy:-22,lid:.2,bA:-4,arch:5,mood:.8,small:false};                       // smug
+  show('bShut',strain?1:0);show('bOpen',strain?0:1);
+  face('bt',40,{...f,blink:blinkK(T,1.3),bx:68,by:-66,bw:50,talk:strain?.8:bT,mw:13,T,seed:1});
+  $('bface').setAttribute('transform',`translate(${(225+(strain?Math.sin(T*50)*6:0)).toFixed(1)},${(lerp(650,676,clamp((top-430)/118))+Math.sin(T*2.1)*3).toFixed(1)}) scale(${bad?1.3:1.42})`);
+  let g={dx:-22,dy:-16,lid:.1,bA:0,arch:4,mood:0,small:false};
+  if(inL('04_toe',T))g={dx:-24,dy:4,lid:.2,bA:6,arch:3,mood:.4,small:false};
+  if(T>=E.cut2+.38)g={dx:-24,dy:-8,lid:.1,bA:-8,arch:6,mood:-.4,small:false};
+  if(inL('08_toe',T))g={dx:-24,dy:4,lid:.3,bA:14,arch:2,mood:-.4,small:false};
+  if(T>=E.grow2+.5)g={dx:-26,dy:6,lid:0,bA:-18,arch:8,mood:-.9,small:true};
+  face('t2',36,{...g,blink:blinkK(T,2.6),bx:42,by:-52,bw:34,talk:tT,mw:11,T,seed:2});
+  $('tface').setAttribute('transform',`translate(576,${(662+Math.sin(T*2.4+1)*3).toFixed(1)}) scale(1.18)`);
+  show('inset',bad?0:1);$('ring').setAttribute('r',(28+Math.abs(Math.sin(T*3.2))*8).toFixed(1));}
+function renderClinic(T){
+  const dT=speak('doctor',T),pT=speak('patient',T),d0=ST['12_doctor'];
+  tr('docHead',0,Math.sin(T*1.3)*1.2-(dT>.7?1.5:0),1,1,2+(dT>.15?Math.sin(T*6.5)*1.8*dT:0));
+  $('dBrows').setAttribute('transform',`translate(0,${dT>.72?-3.5:0})`);
+  setMouthV('doc_m',dT,10,.4,T,5);setHEye('dEyeL',3,blinkK(T,.7));setHEye('dEyeR',3,blinkK(T,.7));
+  $('docArmR').setAttribute('transform',`rotate(${(dT>.2?-6+Math.sin(T*4.2)*7*dT:0).toFixed(2)},86,226)`);
+  tr('patHead',0,Math.sin(T*1.5+1)*1.2,1,1,-4+(pT>.2?Math.sin(T*7)*2:0));
+  $('pBrows').setAttribute('d','M-36,66 Q-24,64 -10,60 M8,60 Q22,64 34,66');
+  setMouthV('pat_m',pT,10,-.5,T,6);setHEye('pEyeL',-3,blinkK(T,2.1));setHEye('pEyeR',-3,blinkK(T,2.1));show('patBlush',0);show('pSweat',0);
+  const P3=[[-84,234],[-116,340],[-96,440]],d=limbD(P3,[44,38,32]);$('patArmLD').setAttribute('d',d);$('patArmLO').setAttribute('d',d);$('patHandL').innerHTML=hand(-94,452,-10,1.2,PSK);
+  let pn='';for(let j=0;j<4;j++){const q=((T*1.4+j/4)%1),a=-2.4+j*.55;pn+=`<path d="M${(Math.cos(a)*(84+q*20)).toFixed(0)},${(Math.sin(a)*(84+q*20)-10).toFixed(0)} l${(Math.cos(a)*18).toFixed(0)},${(Math.sin(a)*18).toFixed(0)}" stroke="#e02626" stroke-width="7" stroke-linecap="round" opacity="${(1-q).toFixed(2)}"/>`;}$('pain').innerHTML=pn;
+  $('pfoot').setAttribute('transform',`translate(400,1110) scale(${(1+Math.sin(T*5)*.02).toFixed(3)})`);
+  const on=T>=d0;show('brd',on?1:0);if(on)$('brd').setAttribute('transform',`translate(360,270) scale(${(eob(P(T,d0,d0+.35))*(1+Math.sin(T*2.4)*.005)).toFixed(4)}) translate(-360,-270)`);
+  [['m0',E.i0,196,200],['m1',E.i1,524,200],['m2',E.i3,360,476]].forEach(([id,t0,x,y])=>{const o=T>=t0;show(id,o?1:0);if(o){const k=eob(P(T,t0,t0+.3));$(id).setAttribute('transform',`translate(${x},${y}) scale(${k.toFixed(3)}) translate(${-x},${-y})`);}});}
+function caption(T,sc){let w='',ws=0;for(const L of D.lines)for(const x of L.words){if(T>=x[0]&&T<Math.max(x[1],x[0]+.12)){w=x[2];ws=x[0];}}
+  if(!w){for(const L of D.lines)for(const x of L.words){if(T>=x[1]&&T<x[1]+.1){w=x[2];ws=x[0];}}}
+  const c=$('cap');c.textContent=w;const y0={1:1010,4:1130,5:1235}[sc];c.setAttribute('y',y0+17);const k=eo(P(T,ws,ws+.12));c.setAttribute('transform',`translate(360,${y0}) scale(${lerp(1.4,1,k).toFixed(3)}) translate(-360,${-y0})`);}
+window.render=function(T){
+  const sc=T>=E.clinic?5:(T>=E.later&&T<E.bad?4:1);
+  [1,4,5].forEach(i=>$('s'+i).setAttribute('display',sc===i?'inline':'none'));show('wm',sc===4?0:.7);
+  if(sc===1)renderToes(T);if(sc===5)renderClinic(T);
+  if(sc===4){const k=eob(P(T,E.later,E.later+.25));$('later').setAttribute('transform',`translate(360,640) scale(${k.toFixed(3)}) translate(-360,-640)`);}
+  $('cam').setAttribute('transform',`translate(360,640) scale(${(1.012+Math.sin(T*1.4)*.012).toFixed(4)}) translate(-360,-640)`);
+  const s1=sc===1;lab('lbR',T,s1?E.cut1+.5:99,E.exit1,230,404);lab('lbS',T,s1?E.cut2+.5:99,E.exit2,230,430);lab('lbG',T,s1?E.grow2+.6:99,E.later,230,404);lab('lbI',T,s1?E.bad+.2:99,E.clinic,230,404);
+  caption(T,sc);};
+window.render(0);
+
+</script></body></html>

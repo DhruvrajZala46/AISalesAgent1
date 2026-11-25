@@ -1,0 +1,146 @@
+{
+ "takes/01_clippera.mp3": {
+  "wer": 0.0,
+  "range": 35.0,
+  "dur": 2.8,
+  "txt": "Okay, time to trim these nails."
+ },
+ "takes/01_clipperb.mp3": {
+  "wer": 0.0,
+  "range": 35.0,
+  "dur": 2.8,
+  "txt": "Okay, time to trim these nails."
+ },
+ "takes/02_bigtoea.mp3": {
+  "wer": 0.0,
+  "range": 14.9,
+  "dur": 2.96,
+  "txt": "Hey! Why did you round off my corners?"
+ },
+ "takes/02_bigtoeb.mp3": {
+  "wer": 0.0,
+  "range": 14.9,
+  "dur": 2.96,
+  "txt": "Hey! Why did you round off my corners?"
+ },
+ "takes/03_clippera.mp3": {
+  "wer": 0.0,
+  "range": 17.3,
+  "dur": 3.36,
+  "txt": "Honestly, you should thank me. I did it for free."
+ },
+ "takes/03_clipperb.mp3": {
+  "wer": 0.0,
+  "range": 17.3,
+  "dur": 3.36,
+  "txt": "Honestly, you should thank me. I did it for free."
+ },
+ "takes/04_toea.mp3": {
+  "wer": 0.0,
+  "range": 25.3,
+  "dur": 2.8,
+  "txt": "Calm down, buddy. It'll grow back."
+ },
+ "takes/04_toeb.mp3": {
+  "wer": 0.0,
+  "range": 25.3,
+  "dur": 2.8,
+  "txt": "Calm down, buddy. It'll grow back."
+ },
+ "takes/05_clippera.mp3": {
+  "wer": 0.0,
+  "range": 33.6,
+  "dur": 4.24,
+  "txt": "Wow! You grow fast! Looks like it's time for another trim!"
+ },
+ "takes/05_clipperb.mp3": {
+  "wer": 0.0,
+  "range": 33.6,
+  "dur": 4.24,
+  "txt": "Wow! You grow fast! Looks like it's time for another trim!"
+ },
+ "takes/06_bigtoea.mp3": {
+  "wer": 0.0,
+  "range": 18.6,
+  "dur": 4.64,
+  "txt": "Come on! That's even shorter. Any closer and you'd cut the skin!"
+ },
+ "takes/06_bigtoeb.mp3": {
+  "wer": 0.0,
+  "range": 18.6,
+  "dur": 4.64,
+  "txt": "Come on! That's even shorter. Any closer and you'd cut the skin!"
+ },
+ "takes/07_clippera.mp3": {
+  "wer": 0.0,
+  "range": 41.4,
+  "dur": 2.72,
+  "txt": "Relax. Shorter is cleaner."
+ },
+ "takes/07_clipperb.mp3": {
+  "wer": 0.0,
+  "range": 41.4,
+  "dur": 2.72,
+  "txt": "Relax. Shorter is cleaner."
+ },
+ "takes/08_toea.mp3": {
+  "wer": 0.0,
+  "range": 41.6,
+  "dur": 2.88,
+  "txt": "Buddy, I think he's messing with you."
+ },
+ "takes/08_toeb.mp3": {
+  "wer": 0.0,
+  "range": 41.6,
+  "dur": 2.88,
+  "txt": "Buddy, I think he's messing with you."
+ },
+ "takes/09_bigtoea.mp3": {
+  "wer": 0.0,
+  "range": 16.0,
+  "dur": 4.64,
+  "txt": "You're right. I'll just grow straight into the skin. That will teach him."
+ },
+ "takes/09_bigtoeb.mp3": {
+  "wer": 0.0,
+  "range": 16.0,
+  "dur": 4.64,
+  "txt": "You're right. I'll just grow straight into the skin. That will teach him."
+ },
+ "takes/10_clippera.mp3": {
+  "wer": 0.07,
+  "range": 22.5,
+  "dur": 5.28,
+  "txt": "Ew! What happened to you? I can't trim this anymore! I can't even breathe!"
+ },
+ "takes/10_clipperb.mp3": {
+  "wer": 0.07,
+  "range": 22.5,
+  "dur": 5.28,
+  "txt": "Ew! What happened to you? I can't trim this anymore! I can't even breathe!"
+ },
+ "takes/11_patienta.mp3": {
+  "wer": 0.0,
+  "range": 18.6,
+  "dur": 3.68,
+  "txt": "Doc, why does my ingrown toenail keep coming back?"
+ },
+ "takes/11_patientb.mp3": {
+  "wer": 0.0,
+  "range": 18.6,
+  "dur": 3.68,
+  "txt": "Doc, why does my ingrown toenail keep coming back?"
+ },
+ "takes/12_doctora.mp3": {
+  "wer": 0.0,
+  "range": 10.8,
+  "dur": 11.92,
+  "txt": "because you're trimming it the wrong way. Always cut your toenails straight across. Don't round the corners. Then the nail grows straight out, not into the skin. That's what gave you this ingrown toenail."
+ },
+ "takes/12_doctorb.mp3": {
+  "wer": 0.0,
+  "range": 10.8,
+  "dur": 11.92,
+  "txt": "because you're trimming it the wrong way. Always cut your toenails straight across. Don't round the corners. Then the nail grows straight out, not into the skin. That's what gave you this ingrown toenail."
+ }
+}

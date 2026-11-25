@@ -1,0 +1,86 @@
+{
+ "01_clipper": {
+  "take": "a",
+  "f0": 183,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.49
+ },
+ "02_bigtoe": {
+  "take": "a",
+  "f0": 315,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.61
+ },
+ "03_clipper": {
+  "take": "a",
+  "f0": 101,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.92
+ },
+ "04_toe": {
+  "take": "a",
+  "f0": 140,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 2.35
+ },
+ "05_clipper": {
+  "take": "a",
+  "f0": 146,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 3.62
+ },
+ "06_bigtoe": {
+  "take": "a",
+  "f0": 364,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 4.02
+ },
+ "07_clipper": {
+  "take": "a",
+  "f0": 129,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.23
+ },
+ "08_toe": {
+  "take": "a",
+  "f0": 172,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 2.38
+ },
+ "09_bigtoe": {
+  "take": "a",
+  "f0": 184,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 4.05
+ },
+ "10_clipper": {
+  "take": "a",
+  "f0": 179,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 4.68
+ },
+ "11_patient": {
+  "take": "a",
+  "f0": 192,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 3.15
+ },
+ "12_doctor": {
+  "take": "a",
+  "f0": 204,
+  "shift_st": 0.0,
+  "tempo": 1.1,
+  "dur": 10.6
+ }
+}
