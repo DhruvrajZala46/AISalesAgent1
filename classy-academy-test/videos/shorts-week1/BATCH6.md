@@ -1,10 +1,12 @@
 # Batch 6 - Wed 25 / Thu 26 Nov (built 24 Nov; same mix as batch 5)
 
+Uploaded 25 Nov 17:06 UTC (24 Nov tries got Zapier HTTP 429; the 12:00 slot was missed, so the times moved).
+
 | # | UTC | Short | Format | Id |
 |---|---|---|---|---|
-| 34 | 25 Nov 12:00 | Diana's Engagement Suit Came Off the Rack | silent, one engagement fact | (upload pending) |
-| 35 | 25 Nov 17:30 | 3 Royal Dress Rules Diana Followed | voiced list (bag left, hats by day, tiaras by night) | (upload pending) |
-| 36 | 26 Nov 00:00 | No Royal Had Married at St Paul's in 480 Years | silent, wedding fact | (upload pending) |
+| 34 | 25 Nov 17:30 | Diana's Engagement Suit Came Off the Rack | silent, one engagement fact | 5QvZbWUNHwQ |
+| 35 | 25 Nov 21:00 | 3 Royal Dress Rules Princess Diana Followed | voiced list (bag left, hats by day, tiaras by night) | WkYPheVRUiQ |
+| 36 | 26 Nov 00:00 | No Royal Had Married Here in 480 Years | silent, wedding fact | xgYzt7hw0eA |
 
 Facts (checked 24 Nov):
 - #34: blue Cojana skirt suit bought off the rack at Harrods for the engagement photocall, 24 Feb 1981 (Royal Central,
