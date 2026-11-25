@@ -1,6 +1,6 @@
 # 023 - How Do Sleeping Pills Actually Work? (GiggleMD)
 
-Status (25 Nov 2026): **built and delivered**. Waiting for the user's verdict. The user's message named "Still craving food when you're full", but the attached mp4 was "How Do Sleeping Pills Really Work" (10M on Dr. Healthcare, `OJS2ONcmZ58`, in `research/NEXT-10.md` reserves; views as of 20 Nov, not re-checked). The video follows the attached file; the user was told.
+Status (25 Nov 2026): **v2 built and delivered** (see the v2 section). Waiting for the user's verdict. The user's message named "Still craving food when you're full", but the attached mp4 was "How Do Sleeping Pills Really Work" (10M on Dr. Healthcare, `OJS2ONcmZ58`, in `research/NEXT-10.md` reserves; views as of 20 Nov, not re-checked). The video follows the attached file; the user was told.
 
 ## The reference the user sent
 A 65.0 s vertical video by Dr. Healthcare. Frame 0 compared side by side first (LEARNINGS row 31), then studied at 0.5 s steps (row 29). Beat list:
@@ -34,6 +34,22 @@ A 65.0 s vertical video by Dr. Healthcare. Frame 0 compared side by side first (
 - Frame 0 checked at 450 px next to the reference's (the stomach was redrawn once: a thick muscle wall so it reads as a bag); 16 reference-over-ours pairs of the final render.
 
 Still different from the reference: its stomach is drawn at an angle with more wall layers and its liver is larger; its wife sits on the bed, ours sits on a chair beside it; its pill is a small capsule, ours a bigger tablet with legs.
+
+## v2 (25 Nov 2026, after the user's verdict on v1)
+The user sent the same reference again: **"VERY BAD VIDEO, 5%... I can't understand what that body part is... compare their visual storytelling with what you made."**
+
+v1 had compared only frame 0. v2 put 12 moments of the reference next to ours at 360 px and found:
+1. The stomach was a pink box with a flat top and square corners; it read as a wall, not an organ. **Now:** a bag: the food pipe curves into a body with a round dome on the right, a red muscle wall, acid at the bottom, the small intestine as one coiled tube below, the liver and the yellow bile duct on the left.
+2. The brain in the bubble was pale pink with a stem, like a balloon. **Now:** red-brown with deep folds, as in the reference.
+3. The body cards were a plain torso with a ring. **Now:** the stomach card shows the stomach shape on the body (moved to the bottom left, clear of the face); the brain card shows the brain inside the head.
+4. The worry blobs had thin spikes on top. **Now:** tongues of fire all round each blob, red angry eyes, anger marks and a burning puddle; the fire shrinks as they calm.
+5. The sleeping pill in the brain was a square with legs and did not look like the pills in the stomach. **Now:** the same round white tablet, so the viewer links the two.
+6. The wife sat on a chair and the husband covered her. **Now:** she sits on the bed, as in the reference, and he stands clear.
+7. Captions sat at the bottom edge. **Now:** larger, at the reference's height.
+
+**v2 QA (`how-sleeping-pills-actually-work-v2.mp4`):** 60.4 s; whisper 98.6% (145 of 147); -12.0 LUFS, peak -1.9 dB; frozen 0.3%; longest still 0.2 s. Checked on 16 reference-over-ours pairs of the final render and 3 large pairs of the stomach scene.
+
+Still different from the reference: its stomach is drawn at an angle with more wall layers; its officer is short and stocky, ours is the taller code figure; the audio, wording, husband and wife are ours, as explained above.
 
 ## Upload block
 **Title:** How Do Sleeping Pills Actually Work? 😴
