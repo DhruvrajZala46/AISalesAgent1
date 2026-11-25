@@ -1,0 +1,146 @@
+{
+ "takes/01_adenoida.mp3": {
+  "wer": 0.1,
+  "range": 38.0,
+  "dur": 5.2,
+  "txt": "Ugh, ugh, I'm so tired of being stuck here all day."
+ },
+ "takes/01_adenoidb.mp3": {
+  "wer": 0.1,
+  "range": 38.0,
+  "dur": 5.2,
+  "txt": "Ugh, ugh, I'm so tired of being stuck here all day."
+ },
+ "takes/02_aira.mp3": {
+  "wer": 0.0,
+  "range": 23.1,
+  "dur": 4.4,
+  "txt": "Huh? Why are you lying here? Move! You're blocking the way!"
+ },
+ "takes/02_airb.mp3": {
+  "wer": 0.0,
+  "range": 23.1,
+  "dur": 4.4,
+  "txt": "Huh? Why are you lying here? Move! You're blocking the way!"
+ },
+ "takes/03_adenoida.mp3": {
+  "wer": 0.0,
+  "range": 37.1,
+  "dur": 2.8,
+  "txt": "Not moving. I'm tired."
+ },
+ "takes/03_adenoidb.mp3": {
+  "wer": 0.0,
+  "range": 37.1,
+  "dur": 2.8,
+  "txt": "Not moving. I'm tired."
+ },
+ "takes/04_airba.mp3": {
+  "wer": 0.22,
+  "range": 15.5,
+  "dur": 4.0,
+  "txt": "Forget this, lazy bones! The lungs are already rushing us!"
+ },
+ "takes/04_airbb.mp3": {
+  "wer": 0.22,
+  "range": 15.5,
+  "dur": 4.0,
+  "txt": "Forget this, lazy bones! The lungs are already rushing us!"
+ },
+ "takes/05_aira.mp3": {
+  "wer": 0.0,
+  "range": 37.8,
+  "dur": 4.4,
+  "txt": "Fine! You're off the hook today. Come on, let's take the road below."
+ },
+ "takes/05_airb.mp3": {
+  "wer": 0.0,
+  "range": 37.8,
+  "dur": 4.4,
+  "txt": "Fine! You're off the hook today. Come on, let's take the road below."
+ },
+ "takes/06_palatea.mp3": {
+  "wer": 0.0,
+  "range": 17.7,
+  "dur": 8.16,
+  "txt": "Ugh, I've had enough! Every day I work overtime, holding the mouth open, while the nose just lies around doing nothing!"
+ },
+ "takes/06_palateb.mp3": {
+  "wer": 0.0,
+  "range": 17.7,
+  "dur": 8.16,
+  "txt": "Ugh, I've had enough! Every day I work overtime, holding the mouth open, while the nose just lies around doing nothing!"
+ },
+ "takes/07_tonguea.mp3": {
+  "wer": 0.0,
+  "range": 9.0,
+  "dur": 4.64,
+  "txt": "What choice do we have? If we stop working, our owner can't breathe."
+ },
+ "takes/07_tongueb.mp3": {
+  "wer": 0.0,
+  "range": 9.0,
+  "dur": 4.64,
+  "txt": "What choice do we have? If we stop working, our owner can't breathe."
+ },
+ "takes/08_palatea.mp3": {
+  "wer": 0.0,
+  "range": 17.2,
+  "dur": 4.96,
+  "txt": "But we shouldn't do all this for nothing! He needs to know how tired we are."
+ },
+ "takes/08_palateb.mp3": {
+  "wer": 0.0,
+  "range": 17.2,
+  "dur": 4.96,
+  "txt": "But we shouldn't do all this for nothing! He needs to know how tired we are."
+ },
+ "takes/09_tonguea.mp3": {
+  "wer": 0.0,
+  "range": 18.0,
+  "dur": 1.28,
+  "txt": "Any ideas?"
+ },
+ "takes/09_tongueb.mp3": {
+  "wer": 0.0,
+  "range": 18.0,
+  "dur": 1.28,
+  "txt": "Any ideas?"
+ },
+ "takes/10_palatea.mp3": {
+  "wer": 0.0,
+  "range": 25.4,
+  "dur": 3.6,
+  "txt": "Let's give him a makeover. Then he'll get it."
+ },
+ "takes/10_palateb.mp3": {
+  "wer": 0.0,
+  "range": 25.4,
+  "dur": 3.6,
+  "txt": "Let's give him a makeover. Then he'll get it."
+ },
+ "takes/11_patienta.mp3": {
+  "wer": 0.0,
+  "range": 27.8,
+  "dur": 2.48,
+  "txt": "Why do I keep getting uglier?"
+ },
+ "takes/11_patientb.mp3": {
+  "wer": 0.0,
+  "range": 27.8,
+  "dur": 2.48,
+  "txt": "Why do I keep getting uglier?"
+ },
+ "takes/12_doctora.mp3": {
+  "wer": 0.0,
+  "range": 11.3,
+  "dur": 10.64,
+  "txt": "Years of mouth breathing while you're growing can change your face. A long face, a narrow jaw, crowded teeth. If your nose is always blocked, get it checked."
+ },
+ "takes/12_doctorb.mp3": {
+  "wer": 0.0,
+  "range": 11.3,
+  "dur": 10.64,
+  "txt": "Years of mouth breathing while you're growing can change your face. A long face, a narrow jaw, crowded teeth. If your nose is always blocked, get it checked."
+ }
+}

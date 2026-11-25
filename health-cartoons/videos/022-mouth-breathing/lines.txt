@@ -1,0 +1,12 @@
+01_adenoid|Ugh, I'm so tired of being stuck here all day!
+02_air|Huh? Why are you lying here? Move! You're blocking the way!
+03_adenoid|Not moving. I'm tired.
+04_airb|Forget this lazybones. The lungs are already rushing us!
+05_air|Fine. You're off the hook today. Come on, let's take the road below.
+06_palate|Ugh, I've had enough. Every day I work overtime, holding the mouth open, while the nose just lies around doing nothing!
+07_tongue|What choice do we have? If we stop working, our owner can't breathe.
+08_palate|But we shouldn't do all this for nothing. He needs to know how tired we are.
+09_tongue|Any ideas?
+10_palate|Let's give him a makeover. Then he'll get it.
+11_patient|Why do I keep getting uglier?
+12_doctor|Years of mouth breathing while you're growing can change your face. A long face, a narrow jaw, crowded teeth. If your nose is always blocked, get it checked.

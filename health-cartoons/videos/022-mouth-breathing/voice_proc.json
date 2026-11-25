@@ -1,0 +1,86 @@
+{
+ "01_adenoid": {
+  "take": "a",
+  "f0": 117,
+  "shift_st": 0.0,
+  "tempo": 1.1,
+  "dur": 4.38
+ },
+ "02_air": {
+  "take": "a",
+  "f0": 326,
+  "shift_st": 1.0,
+  "tempo": 1.08,
+  "dur": 3.77
+ },
+ "03_adenoid": {
+  "take": "a",
+  "f0": 104,
+  "shift_st": 0.0,
+  "tempo": 1.1,
+  "dur": 2.21
+ },
+ "04_airb": {
+  "take": "a",
+  "f0": 291,
+  "shift_st": 1.0,
+  "tempo": 1.08,
+  "dur": 3.37
+ },
+ "05_air": {
+  "take": "a",
+  "f0": 172,
+  "shift_st": 1.0,
+  "tempo": 1.08,
+  "dur": 3.78
+ },
+ "06_palate": {
+  "take": "a",
+  "f0": 227,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 7.34
+ },
+ "07_tongue": {
+  "take": "a",
+  "f0": 108,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 4.13
+ },
+ "08_palate": {
+  "take": "a",
+  "f0": 243,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 4.44
+ },
+ "09_tongue": {
+  "take": "a",
+  "f0": 105,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 0.84
+ },
+ "10_palate": {
+  "take": "a",
+  "f0": 145,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.99
+ },
+ "11_patient": {
+  "take": "a",
+  "f0": 153,
+  "shift_st": 0.0,
+  "tempo": 1.04,
+  "dur": 1.79
+ },
+ "12_doctor": {
+  "take": "a",
+  "f0": 211,
+  "shift_st": 0.0,
+  "tempo": 1.1,
+  "dur": 9.56
+ }
+}
