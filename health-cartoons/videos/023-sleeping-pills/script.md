@@ -1,6 +1,6 @@
 # 023 - How Do Sleeping Pills Actually Work? (GiggleMD)
 
-Status (25 Nov 2026): **v2 built and delivered** (see the v2 section). Waiting for the user's verdict. The user's message named "Still craving food when you're full", but the attached mp4 was "How Do Sleeping Pills Really Work" (10M on Dr. Healthcare, `OJS2ONcmZ58`, in `research/NEXT-10.md` reserves; views as of 20 Nov, not re-checked). The video follows the attached file; the user was told.
+Status (25 Nov 2026): **v3 built and delivered** (see the v3 section). Waiting for the user's verdict. The user's message named "Still craving food when you're full", but the attached mp4 was "How Do Sleeping Pills Really Work" (10M on Dr. Healthcare, `OJS2ONcmZ58`, in `research/NEXT-10.md` reserves; views as of 20 Nov, not re-checked). The video follows the attached file; the user was told.
 
 ## The reference the user sent
 A 65.0 s vertical video by Dr. Healthcare. Frame 0 compared side by side first (LEARNINGS row 31), then studied at 0.5 s steps (row 29). Beat list:
@@ -50,6 +50,16 @@ v1 had compared only frame 0. v2 put 12 moments of the reference next to ours at
 **v2 QA (`how-sleeping-pills-actually-work-v2.mp4`):** 60.4 s; whisper 98.6% (145 of 147); -12.0 LUFS, peak -1.9 dB; frozen 0.3%; longest still 0.2 s. Checked on 16 reference-over-ours pairs of the final render and 3 large pairs of the stomach scene.
 
 Still different from the reference: its stomach is drawn at an angle with more wall layers; its officer is short and stocky, ours is the taller code figure; the audio, wording, husband and wife are ours, as explained above.
+
+## v3 (25 Nov 2026): the hook, after a study of the channel's best videos
+The user: **"still no proven hook, no visual hook. Study this channel's best-performing videos, understand their visual hook and animation, then edit the best video."**
+The study is in `research/HOOK-STUDY.md` (8 of the channel's top 16 Shorts, first 2.4 s at 0.2 s steps). Applied here:
+1. A 2-frame cover with the climax (the worry centre on fire, the bruised officer, the pill), as the #1, 15M and 13M videos do.
+2. The stomach's face next to the food pipe, bigger, with thick angry brows; its eyes follow the pills down.
+3. A "STOMACH" label box at the top; the body card pops in at 2.0 s, so the first second is clean.
+4. A soft opening: music fades in from silence, the whoosh is quieter (first half second -25.6 dB; reference -28.7 dB).
+
+**v3 QA (`how-sleeping-pills-actually-work-v3.mp4`):** 60.4 s; whisper 99.3% (146 of 147); -13.3 LUFS, peak -2.5 dB; frozen 0.3%; longest still 0.2 s. Hook compared at 11 moments (0-2.4 s) against the 27M and 10M videos.
 
 ## Upload block
 **Title:** How Do Sleeping Pills Actually Work? 😴

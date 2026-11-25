@@ -19,6 +19,7 @@ const lab=(id,T,a,b,x,y)=>{const on=T>=a&&T<b;show(id,on?1:0);if(on)$(id).setAtt
 const ACID=742;
 // ---------- scene 1 ----------
 function renderStomach(T){
+  {const on=T>=2.0;show('inset_S',on?1:0);if(on)$('inset_S').setAttribute('transform',`translate(111,1124) scale(${eob(P(T,2.0,2.3)).toFixed(3)}) translate(-111,-1124)`);}
   // the acid pool, sloshing
   const slosh=T>=ST['06_stomach']&&T<E.melt+1.4?1:0;let d=`M-60,${ACID}`;for(let x=-60;x<=820;x+=40)d+=` L${x},${(ACID+Math.sin(x*.02+T*(slosh?7:2.2))*(slosh?16:6)).toFixed(1)}`;d+=' L820,1100 L-60,1100 Z';
   $('acid').innerHTML=`<path d="${d}" fill="${C_ACID}" opacity=".9"/><path d="M-60,${ACID+30} ${Array.from({length:12},(_,k)=>`q36,${k%2?-10:10} 72,0`).join(' ')}" fill="none" stroke="#f6c49c" stroke-width="7" opacity=".7"/>`;
@@ -35,12 +36,12 @@ function renderStomach(T){
   $('brainW').setAttribute('transform',`translate(190,${(224+Math.sin(T*2)*3).toFixed(1)}) rotate(${(brT>.3?Math.sin(T*8)*2:0).toFixed(1)})`);
   // the stomach's face
   const sT=speak('stomach',T);let f={dx:-18,dy:34,lid:.1,bA:16,arch:3,mood:-.6,small:false};
-  if(T<ST['02_stomach'])f={dx:-30,dy:T<E.drop+.8?lerp(-10,36,P(T,0,.8)):36,lid:.12,bA:20,arch:2,mood:-.8,small:false};
+  if(T<ST['02_stomach']){const k=P(T,0,.8),px=lerp(282,320,k),py=lerp(120,ACID+70,k*k);f={dx:(px-540)*.25,dy:(py-390)*.25,lid:.08,bA:22,arch:2,mood:-.9,small:false};}
   if(inL('02_stomach',T))f={dx:-30,dy:-38,lid:0,bA:-4,arch:7,mood:-.2,small:false};
   if(T>=E.brain&&T<E.melt)f={dx:-36,dy:-34,lid:.08,bA:inL('06_stomach',T)?18:-10,arch:inL('06_stomach',T)?2:7,mood:-.7,small:false};
   if(T>=E.melt)f={dx:-20,dy:40,lid:.2,bA:14,arch:3,mood:-.6,small:false};
-  face('st',44,{...f,blink:blinkK(T,1.4),bx:52,by:-60,bw:46,talk:sT,mw:13,T,seed:1});
-  $('sface').setAttribute('transform',`translate(560,${(430+Math.sin(T*2.1)*4).toFixed(1)})`);
+  face('st',60,{...f,blink:T<1.2?0:blinkK(T,1.4),bx:68,by:-74,bw:64,talk:sT,mw:sT>.05?13:18,T,seed:1});['st_bL','st_bR'].forEach(b=>$(b).setAttribute('stroke-width','9'));
+  $('sface').setAttribute('transform',`translate(540,${(390+Math.sin(T*2.1)*4).toFixed(1)})`);
   document.querySelectorAll('.ring').forEach(r=>r.setAttribute('r',(20+Math.abs(Math.sin(T*3.2))*8).toFixed(1)));}
 // ---------- scene 2 ----------
 const BL=[['bG','bg',470,860,90],['bB','bb',615,920,86],['bY','by',530,1050,96]];
@@ -81,6 +82,7 @@ function caption(T,sc){let w='',ws=0;for(const L of D.lines)for(const x of L.wor
   if(!w){for(const L of D.lines)for(const x of L.words){if(T>=x[1]&&T<x[1]+.1){w=x[2];ws=x[0];}}}
   const c=$('cap');c.textContent=w;const y0={1:1020,2:1020,3:1020}[sc],x0=360;c.setAttribute('x',x0);c.setAttribute('y',y0+17);const k=eo(P(T,ws,ws+.12));c.setAttribute('transform',`translate(${x0},${y0}) scale(${lerp(1.4,1,k).toFixed(3)}) translate(${-x0},${-y0})`);}
 window.render=function(T){
+  if(T<0.066){[1,2,3].forEach(i=>$('s'+i).setAttribute('display',i===2?'inline':'none'));renderAmyg(ST['12_pill']+1.2);document.querySelectorAll('.ring').forEach(r=>r.setAttribute('r','26'));['lbP','lbD','lbB','lbW','lbC','lbS','lbZ'].forEach(id=>show(id,0));$('cap').textContent='';$('cam').setAttribute('transform','translate(0,0)');return;}
   const sc=T<E.amyg?1:(T<E.home?2:3);[1,2,3].forEach(i=>$('s'+i).setAttribute('display',sc===i?'inline':'none'));
   if(sc===1)renderStomach(T);if(sc===2)renderAmyg(T);if(sc===3)renderBed(T);
   document.querySelectorAll('.ring').forEach(r=>r.setAttribute('r',(20+Math.abs(Math.sin(T*3.2))*8).toFixed(1)));

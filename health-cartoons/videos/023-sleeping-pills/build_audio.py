@@ -62,7 +62,7 @@ def thud(t,g):                                      # a soft thud (steps, knocks
     n=int(.11*SR); x=np.arange(n)/SR
     a=(np.sin(2*np.pi*(150*x-260*x*x))*np.exp(-x*38)+.25*np.random.RandomState(int(t*1000)).randn(n)*np.exp(-x*220)).astype(np.float32)*g
     i=int(t*SR); m=min(n,N-i); sfx[i:i+m]+=a[:m]
-S('1492.mp3',EV['drop'],.2,.5); S('2357.mp3',EV['drop']+.55,.18); S('2357.mp3',EV['drop']+.75,.16)   # pills fall and plop
+S('1492.mp3',EV['drop']+.1,.035,.4); S('2357.mp3',EV['drop']+.8,.16); S('2357.mp3',EV['drop']+.95,.14)   # pills fall and plop
 S('2357.mp3',EV['brain'],.2)                                                                       # the bubble pops in
 S('2828.mp3',EV['melt'],.18,1.2); S('1492.mp3',EV['melt']+1.0,.2,.6)                               # fizz, whoosh up
 S('1492.mp3',EV['amyg']-.05,.22); S('2182.mp3',EV['flare'],.22,.4); S('2182.mp3',EV['flare']+.25,.2,.4)   # flames flare
@@ -70,7 +70,7 @@ S('2182.mp3',EV['blast'],.3,.5); thud(EV['blast']+.1,.6); thud(EV['blast']+.35,.
 S('2357.mp3',EV['pillin'],.2)
 for k in ('q1','q2','q3'): S('2364.mp3',EV[k],.16)                                                   # flames go out
 S('sfxgen/sfx_dingb.mp3',EV['q3']+.3,.24,.9); S('1492.mp3',EV['home']-.05,.22)
-mus=np.tile(load('../../assets/music/mixkit-9.mp3'),3)[:N]; fl=int(1.0*SR); mus[-fl:]*=np.linspace(1,0,fl)
+mus=np.tile(load('../../assets/music/mixkit-9.mp3'),3)[:N]; fl=int(1.0*SR); mus[-fl:]*=np.linspace(1,0,fl); fi=int(1.6*SR); mus[:fi]*=np.linspace(0,1,fi)**2   # soft start, as in the top videos
 act=np.convolve((np.abs(voice)>0.02).astype(np.float32),np.ones(int(.25*SR),np.float32)/int(.25*SR),'same'); mus*=10**(-5*np.clip(act*4,0,1)/20)
 for name,b in [('voice',voice),('sfx',sfx),('music',mus)]:
     subprocess.run(['ffmpeg','-v','error','-y','-f','f32le','-ar',str(SR),'-ac','1','-i','-',f'{name}.wav'],input=np.clip(b,-1,1).tobytes())

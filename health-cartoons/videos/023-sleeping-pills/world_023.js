@@ -29,13 +29,13 @@ function stomachScene(){
     ${[[380,380],[460,370],[700,380],[430,600],[650,610],[560,640]].map(([x,y])=>`<path d="M${x},${y} q-18,50 4,100 q18,50 -6,100" fill="none" stroke="${C_ST_D}" stroke-width="5" stroke-linecap="round" opacity=".55"/>`).join('')}
     <g id="acid"></g><g id="pills">${PILL('p1')}${PILL('p2')}</g><g id="fizz"></g></g>
    <path d="${ST_D}" fill="none" ${OLW}/>
-   <g id="sface" transform="translate(560,430)"><g transform="translate(-52,0)">${oEye('st_eL',44,C_ST)}</g><g transform="translate(52,0)">${oEye('st_eR',44,C_ST)}</g>${brow('st_bL')}${brow('st_bR')}<g transform="translate(0,70) scale(2)">${mouthEl('st_m',0,0)}</g></g>
+   <g id="sface" transform="translate(540,390)"><g transform="translate(-68,0)">${oEye('st_eL',60,C_ST)}</g><g transform="translate(68,0)">${oEye('st_eR',60,C_ST)}</g>${brow('st_bL')}${brow('st_bR')}<g transform="translate(0,96) scale(2.4)">${mouthEl('st_m',0,0)}</g></g>
    <g id="bub" opacity="0"><path d="M300,460 L330,350 L246,372 Z" fill="#fff" ${OLW}/><circle cx="190" cy="220" r="170" fill="#fff" ${OLW}/><path d="M246,384 L316,362" stroke="#fff" stroke-width="14"/>
     <g id="brainW" transform="translate(190,224)"><path d="M-130,24 C-142,-46 -92,-104 -20,-106 C44,-124 116,-98 132,-36 C150,14 128,64 80,72 C60,96 8,94 -12,82 C-62,96 -112,80 -130,24 Z" fill="#c46a5f" ${OLW}/>
      <path d="M-104,-20 q14,-26 40,-14 q10,-30 40,-20 M-30,-80 q20,10 14,36 q20,6 22,30 M30,-92 q-4,30 22,36 M70,-70 q-10,26 16,40 q24,0 26,26 M-112,30 q24,-20 50,0 q20,-20 46,0 M-40,10 q10,24 40,18 M20,-10 q30,-6 40,20 M-60,60 q20,-14 40,4 M30,50 q20,-18 46,-6" fill="none" stroke="#7a3a33" stroke-width="5.5" stroke-linecap="round"/>
      <g transform="translate(40,4)"><g transform="translate(-30,0)">${oEye('br_eL',26,'#c46a5f')}</g><g transform="translate(30,0)">${oEye('br_eR',26,'#c46a5f')}</g>${brow('br_bL')}${brow('br_bR')}<g transform="translate(0,44) scale(1.3)">${mouthEl('br_m',0,0)}</g></g></g></g>
    <g id="upArrow" opacity="0"><path d="M480,760 C640,700 712,560 706,300 L700,40" fill="none" stroke="#fff" stroke-width="16" stroke-dasharray="26 18" stroke-linecap="round"/><path d="M672,70 L702,8 L730,74 Z" fill="#fff" ${OLW2}/></g>
-   ${bodyCard(16,990,'1154','INSIDE THE STOMACH','st')}`;}
+   ${bodyCard(16,990,'1154','INSIDE THE STOMACH','st')}<g transform="translate(560,120)"><rect x="-130" y="-34" width="260" height="68" rx="14" fill="#fff" ${OLW}/><text x="0" y="14" text-anchor="middle" style="font-family:LG,sans-serif;font-size:40px;letter-spacing:2px" fill="#1d2a44">STOMACH</text></g>`;}
 // ---- scene 2: the worry centre of the brain ----
 function blob(id,col,label,w){return `<g id="${id}"><g class="fl"></g><ellipse rx="${w}" ry="${w*.9}" fill="${col}" ${OLW}/><path d="M${-w*.55},${-w*.45} q${w*.3},-${w*.3} ${w*.6},-${w*.2}" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".5"/>
    <rect x="${-w*.95}" y="${w*.12}" width="${w*1.9}" height="36" rx="6" fill="#fff" ${OLW2}/><text x="0" y="${w*.12+27}" text-anchor="middle" style="font-family:LG,sans-serif;font-size:${label.length>8?21:24}px" fill="#1d2a44">${label}</text>
