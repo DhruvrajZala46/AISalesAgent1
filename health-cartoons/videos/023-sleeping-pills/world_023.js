@@ -21,7 +21,7 @@ function stomachScene(){
    <path d="M90,140 C112,260 96,420 116,548" fill="none" stroke="${INK}" stroke-width="26" stroke-linecap="round"/><path d="M90,140 C112,260 96,420 116,548" fill="none" stroke="#e8b23a" stroke-width="18" stroke-linecap="round"/><path d="M116,548 q-12,20 0,30 q12,-10 0,-30 Z" fill="#e8b23a" ${OLW2}/>
    <path d="M-60,900 C120,950 380,950 560,900 C660,870 720,840 780,820 L780,1080 L-60,1080 Z" fill="#ea8e8c" ${OLW}/>
    ${Array.from({length:11},(_,i)=>`<path d="M${-40+i*76},${940+Math.sin(i)*14} q38,-34 76,0" fill="none" stroke="${INK}" stroke-width="3"/>`).join('')}
-   ${(()=>{const d='M-80,1090 H600 C680,1090 680,1180 600,1180 H120 C40,1180 40,1270 120,1270 H800';return `<path d="${d}" fill="none" stroke="${INK}" stroke-width="96" stroke-linejoin="round"/><path d="${d}" fill="none" stroke="#f6a8a4" stroke-width="88" stroke-linejoin="round"/><path d="${d}" fill="none" stroke="#fbd0cc" stroke-width="12" stroke-dasharray="60 40" transform="translate(0,-22)"/>`;})()}
+   ${Array.from({length:16},(_,i)=>{const r=Math.floor(i/6),x=-30+(i%6)*140+(r%2)*70,y=1010+r*120;return `<path d="M${x-74},${y+34} C${x-96},${y-40} ${x-14},${y-74} ${x+18},${y-34} C${x+60},${y-84} ${x+126},${y-24} ${x+92},${y+40} C${x+104},${y+104} ${x-58},${y+112} ${x-74},${y+34} Z" fill="#f6a8a4" ${OLW}/><path d="M${x-44},${y-4} q30,-30 62,-6" fill="none" stroke="#fbd0cc" stroke-width="8" stroke-linecap="round"/>`;}).join('')}
    <path d="${ST_D}" fill="none" stroke="${INK}" stroke-width="84"/><path d="${ST_D}" fill="none" stroke="#f1c3b8" stroke-width="76"/><path d="${ST_D}" fill="none" stroke="${INK}" stroke-width="54"/><path d="${ST_D}" fill="none" stroke="#d24d50" stroke-width="46"/>
    <path d="${ST_D}" fill="${C_ST}" ${OLW}/>
    <g clip-path="url(#stC)"><path d="${ST_D}" fill="none" stroke="#fbd5cf" stroke-width="22" stroke-dasharray="2 22" stroke-linecap="round"/><path d="${ST_D}" fill="none" stroke="#f4b9b2" stroke-width="10"/>
@@ -34,8 +34,8 @@ function stomachScene(){
     <g id="brainW" transform="translate(190,224)"><path d="M-130,24 C-142,-46 -92,-104 -20,-106 C44,-124 116,-98 132,-36 C150,14 128,64 80,72 C60,96 8,94 -12,82 C-62,96 -112,80 -130,24 Z" fill="#c46a5f" ${OLW}/>
      <path d="M-104,-20 q14,-26 40,-14 q10,-30 40,-20 M-30,-80 q20,10 14,36 q20,6 22,30 M30,-92 q-4,30 22,36 M70,-70 q-10,26 16,40 q24,0 26,26 M-112,30 q24,-20 50,0 q20,-20 46,0 M-40,10 q10,24 40,18 M20,-10 q30,-6 40,20 M-60,60 q20,-14 40,4 M30,50 q20,-18 46,-6" fill="none" stroke="#7a3a33" stroke-width="5.5" stroke-linecap="round"/>
      <g transform="translate(40,4)"><g transform="translate(-30,0)">${oEye('br_eL',26,'#c46a5f')}</g><g transform="translate(30,0)">${oEye('br_eR',26,'#c46a5f')}</g>${brow('br_bL')}${brow('br_bR')}<g transform="translate(0,44) scale(1.3)">${mouthEl('br_m',0,0)}</g></g></g></g>
-   <g id="upArrow" opacity="0"><path d="M480,760 C640,700 712,560 706,300 L700,40" fill="none" stroke="#fff" stroke-width="16" stroke-dasharray="26 18" stroke-linecap="round"/><path d="M672,70 L702,8 L730,74 Z" fill="#fff" ${OLW2}/></g>
-   ${bodyCard(16,990,'1154','INSIDE THE STOMACH','st')}<g transform="translate(560,120)"><rect x="-130" y="-34" width="260" height="68" rx="14" fill="#fff" ${OLW}/><text x="0" y="14" text-anchor="middle" style="font-family:LG,sans-serif;font-size:40px;letter-spacing:2px" fill="#1d2a44">STOMACH</text></g>`;}
+   
+   `;}
 // ---- scene 2: the worry centre of the brain ----
 function blob(id,col,label,w){return `<g id="${id}"><g class="fl"></g><ellipse rx="${w}" ry="${w*.9}" fill="${col}" ${OLW}/><path d="M${-w*.55},${-w*.45} q${w*.3},-${w*.3} ${w*.6},-${w*.2}" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".5"/>
    <rect x="${-w*.95}" y="${w*.12}" width="${w*1.9}" height="36" rx="6" fill="#fff" ${OLW2}/><text x="0" y="${w*.12+27}" text-anchor="middle" style="font-family:LG,sans-serif;font-size:${label.length>8?21:24}px" fill="#1d2a44">${label}</text>
@@ -43,7 +43,7 @@ function blob(id,col,label,w){return `<g id="${id}"><g class="fl"></g><ellipse r
 function copSVG(){return `<g id="cop"><path d="M-46,330 L-50,460 M46,330 L50,460" stroke="${INK}" stroke-width="44" stroke-linecap="round"/><path d="M-46,330 L-50,460 M46,330 L50,460" stroke="#2c3346" stroke-width="36" stroke-linecap="round"/>
    <path d="M-84,470 q30,-26 64,0 v12 h-64 Z M20,470 q30,-26 64,0 v12 h-64 Z" fill="#17171a" ${OLW2}/>
    <path d="M-80,170 C-80,140 80,140 80,170 L88,340 L-88,340 Z" fill="#9ec3e6" ${OLW}/><path d="M-88,318 H88 V340 H-88 Z" fill="#2c3346" ${OLW2}/><path d="M0,160 L-12,220 L0,290 L12,220 Z" fill="#2c3346" ${OLW2}/>
-   <g transform="translate(-46,212)"><path d="M-22,-24 L22,-24 L22,8 L0,26 L-22,8 Z" fill="#f0c94a" ${OLW2}/><text x="0" y="2" text-anchor="middle" style="font-family:LG,sans-serif;font-size:16px" fill="#1d2a44">GABA</text></g>
+   <g transform="translate(-46,212)"><path d="M-16,-18 L16,-18 L16,6 L0,20 L-16,6 Z" fill="#cfd6de" ${OLW2}/><circle cx="0" cy="-2" r="6" fill="#f0c94a"/></g>
    <g id="copArmL">${lim('M-78,180 C-104,240 -100,290 -84,320',30,'#9ec3e6')}</g><g id="copArmR">${lim('M78,180 C104,240 100,290 84,320',30,'#9ec3e6')}</g>
    <g id="copHead"><circle cx="0" cy="96" r="62" fill="${DSK}" ${OLW}/><path d="M-66,96 C-78,88 -80,112 -62,118 M66,96 C78,88 80,112 62,118" fill="${DSK}" ${OLW2}/>
     <path d="M-74,50 C-70,10 70,10 74,50 L84,64 L-84,64 Z" fill="#2c3346" ${OLW}/><path d="M-90,60 H90 Q90,78 70,78 H-70 Q-90,78 -90,60 Z" fill="#1b1f2c" ${OLW2}/><circle cx="0" cy="36" r="10" fill="#f0c94a" ${OLW2}/>
@@ -56,8 +56,7 @@ function amygScene(){
   return `<rect x="-40" y="-40" width="800" height="1360" fill="#c4847a"/><ellipse cx="360" cy="420" rx="520" ry="420" fill="#d9a095" opacity=".7"/>
    <path d="M-40,760 C60,730 140,780 240,750 C340,720 420,770 520,740 C620,710 700,750 760,730 L760,1330 L-40,1330 Z" fill="#e2724e" ${OLW}/>
    ${[[60,880],[300,940],[520,860],[160,1060],[440,1090],[620,1010],[80,1200],[380,1220]].map(([x,y])=>`<path d="M${x},${y} q30,-16 60,0 q30,16 60,0" fill="none" stroke="#a84a30" stroke-width="5" stroke-linecap="round"/>`).join('')}
-   <g transform="translate(360,92)"><rect x="-300" y="-36" width="600" height="72" rx="14" fill="#fff" ${OLW}/><text x="0" y="12" text-anchor="middle" style="font-family:LG,sans-serif;font-size:30px" fill="#1d2a44">AMYGDALA: THE WORRY CENTRE</text></g>
-   ${bodyCard(16,150,'200','INSIDE THE BRAIN','br')}
+   <g transform="translate(30,232)"><rect x="0" y="0" width="430" height="46" fill="#fff" stroke="#1d2a44" stroke-width="3"/><text x="215" y="31" text-anchor="middle" style="font-family:ComicNeue,sans-serif;font-weight:700;font-size:24px" fill="#1d2a44">Amygdala (Brain's Anxiety Centre)</text></g>
    <g id="firePool"></g><g id="bG" transform="translate(470,860)">${blob('bg','#9bc25a','CORTISOL',96)}</g><g id="bB" transform="translate(615,920)">${blob('bb','#2f7fd0','GLUTAMATE',92)}</g><g id="bY" transform="translate(530,1050)">${blob('by','#f6d78a','ADRENALINE',104)}</g>
    <g id="copW">${copSVG()}</g>
    <g id="spW">${sleepPill()}</g>

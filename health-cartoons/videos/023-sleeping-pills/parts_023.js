@@ -4,13 +4,10 @@ const E=D.ev, ST=D.start, END=D.end;
 const lend=id=>{const L=D.lines.find(l=>l.id===id);return L.t0+L.dur;};
 const inL=(id,T,pre=.05,post=.1)=>T>=ST[id]-pre&&T<lend(id)+post;
 const svg=$('S');
-const S1=`<g id="s1">${stomachScene()}</g>`, S2=`<g id="s2">${amygScene()}</g>`, S3=`<g id="s3">${bedroomScene()}</g>`;
+const S1=`<g id="s1">${stomachScene()}</g>`, S2=`<g id="s2">${amygScene()}</g>`, S3=`<g id="s3">${bedroomScene().replace('<g id="wifeW"></g><g id="husW"></g>',`<g id="wifeW"><g transform="translate(230,880) scale(1.35)">${wifeSVG()}</g></g><g id="husW"><g id="husI" transform="translate(545,300) scale(1.25)">${patientSVG()}</g></g>`)}</g>`;
 svg.innerHTML=`<defs><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>${DEFS}</defs>`
- +`<g id="cam">`+S1+S2+S3+`</g>`+labelBox('lbP','SLEEPING PILLS',0,0,28)+labelBox('lbD','PILL DISSOLVES',0,0,28)+labelBox('lbB','OFF TO THE BRAIN!',0,0,28)+labelBox('lbW','WORRY SIGNALS ON FIRE',0,0,26)+labelBox('lbC','THE CALMING SIGNAL',0,0,26)+labelBox('lbS','PILL BOOSTS THE CALMING SIGNAL',0,0,22)+labelBox('lbZ','CALM. TIME TO SLEEP.',0,0,28)
- +`<text id="wm" x="360" y="58" text-anchor="middle" style="font-family:ComicNeue,sans-serif;font-weight:700;font-size:24px" fill="#fff" stroke="#0b6e6b" stroke-width=".6" opacity=".7">@GiggleMD</text>`
+ +`<g id="cam">`+S1+S2+S3+`</g>`+`<text id="wm" x="360" y="58" text-anchor="middle" style="font-family:ComicNeue,sans-serif;font-weight:700;font-size:24px" fill="#fff" stroke="#0b6e6b" stroke-width=".6" opacity=".7">@GiggleMD</text>`
  +`<g id="capg"><text id="cap" class="cap" x="360" y="1015" text-anchor="middle" style="stroke-width:8px;font-size:58px"></text></g>`;
-$('wifeW').innerHTML=`<g transform="translate(200,830) scale(1.15)">${wifeSVG()}</g>`;
-$('husW').innerHTML=`<g id="husI" transform="translate(575,440) scale(1.0)">${patientSVG()}</g>`;
 function face(id,r,{dx=0,dy=0,lid=.1,blink=0,small=false,bx=27,by=48,bw=26,bA=0,arch=3,talk=0,mw=12,mood=0,T=0,seed=0}){
   setOEye(id+'_eL',r,{dx,dy,lid,blink,small});setOEye(id+'_eR',r,{dx,dy,lid,blink,small});
   setBrow(id+'_bL',-bx,by,bw,bA,arch);setBrow(id+'_bR',bx,by,bw,-bA,arch);if($(id+'_m'))setMouthV(id+'_m',talk,mw,mood,T,seed);}
@@ -19,7 +16,6 @@ const lab=(id,T,a,b,x,y)=>{const on=T>=a&&T<b;show(id,on?1:0);if(on)$(id).setAtt
 const ACID=742;
 // ---------- scene 1 ----------
 function renderStomach(T){
-  {const on=T>=2.0;show('inset_S',on?1:0);if(on)$('inset_S').setAttribute('transform',`translate(111,1124) scale(${eob(P(T,2.0,2.3)).toFixed(3)}) translate(-111,-1124)`);}
   // the acid pool, sloshing
   const slosh=T>=ST['06_stomach']&&T<E.melt+1.4?1:0;let d=`M-60,${ACID}`;for(let x=-60;x<=820;x+=40)d+=` L${x},${(ACID+Math.sin(x*.02+T*(slosh?7:2.2))*(slosh?16:6)).toFixed(1)}`;d+=' L820,1100 L-60,1100 Z';
   $('acid').innerHTML=`<path d="${d}" fill="${C_ACID}" opacity=".9"/><path d="M-60,${ACID+30} ${Array.from({length:12},(_,k)=>`q36,${k%2?-10:10} 72,0`).join(' ')}" fill="none" stroke="#f6c49c" stroke-width="7" opacity=".7"/>`;
@@ -29,7 +25,6 @@ function renderStomach(T){
     const melt=clamp(P(T,E.melt,E.melt+1.2));mv(id,x,y,t*200*(t<.8)+Math.sin(T*2)*8,(t>.8?1.15:1.3)*(1-melt*.9));});
   let fz='';if(T>=E.melt&&T<E.melt+1.6){for(let j=0;j<10;j++){const q=((T*1.3+j/10)%1);fz+=`<circle cx="${(300+Math.sin(j*2.1)*60).toFixed(0)}" cy="${(ACID+130-q*160).toFixed(0)}" r="${(6+j%3*4)}" fill="#fff" opacity="${(1-q).toFixed(2)}"/>`;}}
   $('fizz').innerHTML=fz;
-  show('upArrow',T>=E.melt+.7&&T<E.amyg?1:0);
   // the brain in a thought bubble
   const bOn=T>=E.brain&&T<E.melt,bk=eob(P(T,E.brain,E.brain+.3));show('bub',bOn?1:0);if(bOn)$('bub').setAttribute('transform',`translate(190,222) scale(${bk.toFixed(3)}) translate(-190,-222)`);
   const brT=speak('brain',T);face('br',26,{dx:-14,dy:26,lid:.3,blink:blinkK(T,.9),bx:30,by:-36,bw:26,bA:-12,arch:6,talk:brT,mw:10,mood:-.8,T,seed:3});
@@ -42,7 +37,7 @@ function renderStomach(T){
   if(T>=E.melt)f={dx:-20,dy:40,lid:.2,bA:14,arch:3,mood:-.6,small:false};
   face('st',60,{...f,blink:T<1.2?0:blinkK(T,1.4),bx:68,by:-74,bw:64,talk:sT,mw:sT>.05?13:18,T,seed:1});['st_bL','st_bR'].forEach(b=>$(b).setAttribute('stroke-width','9'));
   $('sface').setAttribute('transform',`translate(540,${(390+Math.sin(T*2.1)*4).toFixed(1)})`);
-  document.querySelectorAll('.ring').forEach(r=>r.setAttribute('r',(20+Math.abs(Math.sin(T*3.2))*8).toFixed(1)));}
+  }
 // ---------- scene 2 ----------
 const BL=[['bG','bg',470,860,90],['bB','bb',615,920,86],['bY','by',530,1050,96]];
 function heat(T){if(T<E.amyg+.2)return 1;if(T<ST['07_officer']+1.8)return 1;if(T<E.flare)return 1-eio(P(T,ST['07_officer']+1.8,ST['07_officer']+2.8))*.75;if(T<E.calm)return Math.min(1.25,.25+eob(P(T,E.flare,E.flare+.5)));
@@ -58,8 +53,8 @@ function renderAmyg(T){
     ['_eL','_eR'].forEach(s=>{const e=$(id+s+'_p');if(e){e.setAttribute('fill',calm?'#1b1717':'#d81e1e');e.setAttribute('r',(w*.24*(calm?.46:.36)).toFixed(1));}});});
   $('firePool').innerHTML=h>.3?`<path d="M420,1140 ${Array.from({length:6},(_,k)=>`q${15},${-(18+Math.abs(Math.sin(T*6+k))*22).toFixed(0)} 30,0`).join(' ')} q-60,26 -180,0 Z" fill="#fcd94a" stroke="#e39a1a" stroke-width="4" opacity="${Math.min(1,h).toFixed(2)}"/>`:'';
   // the cop: walks in, waves his arms, gets caught in the brawl
-  const cT=speak('officer',T),ik=eo(P(T,E.amyg,E.amyg+.6));let cx=lerp(-160,170,ik);
-  mv('copW',cx+(beaten?0:Math.sin(T*1.6)*3),600+(cT>.2?-Math.abs(Math.sin(T*10))*5:0),0,1.1);
+  const cT=speak('officer',T),ik=eo(P(T,E.amyg,E.amyg+.6));let cx=lerp(-160,190,ik);
+  mv('copW',cx+(beaten?0:Math.sin(T*1.6)*3),700+(cT>.2?-Math.abs(Math.sin(T*10))*5:0),0,.86);
   $('copArmR').setAttribute('transform',`rotate(${(cT>.25&&!beaten?-60+Math.sin(T*8)*25:0).toFixed(1)},78,180)`);$('copArmL').setAttribute('transform',`rotate(${(cT>.25&&!beaten?40+Math.sin(T*8+1)*20:0).toFixed(1)},-78,180)`);
   show('bruise',beaten?1:0);
   const mad=inL('08_officer',T)||inL('11_officer',T);
@@ -69,7 +64,7 @@ function renderAmyg(T){
     for(let j=0;j<5;j++){const a=T*7+j*1.3;s+=`<path transform="translate(${(440+Math.cos(a)*190).toFixed(0)},${(780+Math.sin(a)*150).toFixed(0)}) rotate(${(a*60).toFixed(0)})" d="M-16,0 l12,-4 l4,-12 l4,12 l12,4 l-12,4 l-4,12 l-4,-12 Z" fill="#ffe81a" stroke="${INK}" stroke-width="2"/>`;}$('smoke').innerHTML=s;}
   // the sleeping pill walks in from the bottom left
   const pk=eo(P(T,E.pillin,E.pillin+.7)),pT=speak('pill',T),pOn=T>=E.pillin;show('spW',pOn?1:0);
-  if(pOn){const walk=T<E.pillin+.7?Math.abs(Math.sin(T*14))*-10:0;mv('spW',lerp(-140,320,pk),1112+walk+(pT>.2?-Math.abs(Math.sin(T*9))*4:0),Math.sin(T*2)*3,1.2);
+  if(pOn){const walk=T<E.pillin+.7?Math.abs(Math.sin(T*14))*-10:0;mv('spW',lerp(-120,150,pk),1196+walk+(pT>.2?-Math.abs(Math.sin(T*9))*4:0),Math.sin(T*2)*3,.75);
     face('sp',18,{dx:16,dy:-8,lid:0,blink:blinkK(T,1.8),bx:22,by:-28,bw:18,bA:-6,arch:6,talk:pT,mw:9,mood:.8,T,seed:5});}}
 // ---------- scene 3 ----------
 function renderBed(T){const hT=speak('husband',T);
@@ -82,13 +77,9 @@ function caption(T,sc){let w='',ws=0;for(const L of D.lines)for(const x of L.wor
   if(!w){for(const L of D.lines)for(const x of L.words){if(T>=x[1]&&T<x[1]+.1){w=x[2];ws=x[0];}}}
   const c=$('cap');c.textContent=w;const y0={1:1020,2:1020,3:1020}[sc],x0=360;c.setAttribute('x',x0);c.setAttribute('y',y0+17);const k=eo(P(T,ws,ws+.12));c.setAttribute('transform',`translate(${x0},${y0}) scale(${lerp(1.4,1,k).toFixed(3)}) translate(${-x0},${-y0})`);}
 window.render=function(T){
-  if(T<0.066){[1,2,3].forEach(i=>$('s'+i).setAttribute('display',i===2?'inline':'none'));renderAmyg(ST['12_pill']+1.2);document.querySelectorAll('.ring').forEach(r=>r.setAttribute('r','26'));['lbP','lbD','lbB','lbW','lbC','lbS','lbZ'].forEach(id=>show(id,0));$('cap').textContent='';$('cam').setAttribute('transform','translate(0,0)');return;}
   const sc=T<E.amyg?1:(T<E.home?2:3);[1,2,3].forEach(i=>$('s'+i).setAttribute('display',sc===i?'inline':'none'));
   if(sc===1)renderStomach(T);if(sc===2)renderAmyg(T);if(sc===3)renderBed(T);
-  document.querySelectorAll('.ring').forEach(r=>r.setAttribute('r',(20+Math.abs(Math.sin(T*3.2))*8).toFixed(1)));
+  
   $('cam').setAttribute('transform',`translate(360,640) scale(${(1.012+Math.sin(T*1.4)*.012).toFixed(4)}) translate(-360,-640)`);
-  lab('lbP',T,sc===1?1.0:99,E.brain,440,660);lab('lbD',T,sc===1?E.melt+.1:99,E.melt+.8,440,660);lab('lbB',T,sc===1?E.melt+.8:99,E.amyg,430,620);
-  lab('lbW',T,sc===2?E.amyg+.3:99,ST['07_officer']+2,540,620);lab('lbC',T,sc===2?ST['07_officer']+2:99,E.blast,180,560);lab('lbW',T,sc===2&&T>=E.flare?E.flare:99,E.blast,540,620);
-  lab('lbS',T,sc===2?ST['12_pill']+1.5:99,E.calm,360,520);lab('lbZ',T,sc===2?E.q3:99,E.home,360,520);
   caption(T,sc);};
 window.render(0);

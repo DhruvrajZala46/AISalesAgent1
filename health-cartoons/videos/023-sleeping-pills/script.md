@@ -1,6 +1,6 @@
 # 023 - How Do Sleeping Pills Actually Work? (GiggleMD)
 
-Status (25 Nov 2026): **v3 built and delivered** (see the v3 section). Waiting for the user's verdict. The user's message named "Still craving food when you're full", but the attached mp4 was "How Do Sleeping Pills Really Work" (10M on Dr. Healthcare, `OJS2ONcmZ58`, in `research/NEXT-10.md` reserves; views as of 20 Nov, not re-checked). The video follows the attached file; the user was told.
+Status (25 Nov 2026): **v4 built and delivered** (see the v4 section). Waiting for the user's verdict. The user's message named "Still craving food when you're full", but the attached mp4 was "How Do Sleeping Pills Really Work" (10M on Dr. Healthcare, `OJS2ONcmZ58`, in `research/NEXT-10.md` reserves; views as of 20 Nov, not re-checked). The video follows the attached file; the user was told.
 
 ## The reference the user sent
 A 65.0 s vertical video by Dr. Healthcare. Frame 0 compared side by side first (LEARNINGS row 31), then studied at 0.5 s steps (row 29). Beat list:
@@ -60,6 +60,22 @@ The study is in `research/HOOK-STUDY.md` (8 of the channel's top 16 Shorts, firs
 4. A soft opening: music fades in from silence, the whoosh is quieter (first half second -25.6 dB; reference -28.7 dB).
 
 **v3 QA (`how-sleeping-pills-actually-work-v3.mp4`):** 60.4 s; whisper 99.3% (146 of 147); -13.3 LUFS, peak -2.5 dB; frozen 0.3%; longest still 0.2 s. Hook compared at 11 moments (0-2.4 s) against the 27M and 10M videos.
+
+## v4 (25 Nov 2026): exactly the reference's look, only the characters ours
+The user, with the reference again: **"5%... I want exactly the same video as this, only the characters mine. Don't change anything else. Keep it the same as the reference... the video editing style, everything."**
+
+Everything the reference does not have was removed, and each scene was laid out from the reference's frames:
+1. Removed: the 2-frame cover, the "STOMACH" box, both body cards, all labels (SLEEPING PILLS, PILL DISSOLVES, OFF TO THE BRAIN!, WORRY SIGNALS ON FIRE, THE CALMING SIGNAL, PILL BOOSTS THE CALMING SIGNAL, CALM. TIME TO SLEEP.), the dotted arrow, the "GABA" badge (now a plain police badge).
+2. The worry centre's label is now the reference's: a small box at the top left, "Amygdala (Brain's Anxiety Centre)".
+3. The intestines under the stomach are lumpy coils, as in the reference, not one long tube.
+4. The officer is shorter and stands lower (feet at 86% of the height), as in the reference.
+5. The sleeping pill is a small tablet that rolls in at the bottom left, as in the reference.
+6. The bedroom: the wife sits on the bed edge, big, the husband stands close on the right, as in the reference.
+7. Bug fixed: the husband had an orange glow round his clothes in v1-v3 (his shading clips were made after the picture was written, so the blur was not clipped). He is now built with the rest of the scene.
+
+What stays ours: the drawings (code), the channel's patient as the husband, the voices, the music and the wording (one line of ours per line of theirs, same meaning).
+
+**v4 QA (`how-sleeping-pills-actually-work-v4.mp4`):** 60.4 s; whisper 99.3% (146 of 147); -13.3 LUFS, peak -2.5 dB; frozen 0.3%; longest still 0.1 s. Checked on 16 reference-over-ours pairs of the final render and 8 large (360 px) pairs.
 
 ## Upload block
 **Title:** How Do Sleeping Pills Actually Work? 😴
