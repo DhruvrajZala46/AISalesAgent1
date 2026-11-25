@@ -1,6 +1,6 @@
 # 022 - Why Mouth Breathing Changes Your Face (GiggleMD)
 
-Status (25 Nov 2026): **built and delivered**. Waiting for the user's verdict. Topic: #8 in `research/NEXT-10.md` ("Why do you get uglier as you grow older?", 13M on Health Manager, `hv6656awMl8`; views as of 20 Nov, not re-checked).
+Status (25 Nov 2026): **v2 built and delivered** (see the v2 section). Waiting for the user's verdict. Topic: #8 in `research/NEXT-10.md` ("Why do you get uglier as you grow older?", 13M on Health Manager, `hv6656awMl8`; views as of 20 Nov, not re-checked).
 
 ## The reference the user sent
 A 42.2 s vertical video by Health Manager. Studied at 0.5 s steps (LEARNINGS row 29). Beat list:
@@ -34,6 +34,23 @@ A 42.2 s vertical video by Health Manager. Studied at 0.5 s steps (LEARNINGS row
 - Checked on 18 reference-over-ours pairs (the render before the head was enlarged) and on 22 frames of the later renders.
 
 Still different from the reference: its anatomy is more detailed (jaw muscles, throat layers, a curved soft palate) and its man has a drawn long face with teeth; ours is simpler and the patient's face is only stretched. In our mirror close-up the mirror is partly out of frame.
+
+## v2 (25 Nov 2026, after the user's verdict on v1)
+The user: **"the hook is not the same either... 5%... I can't understand what that body part is."**
+
+Our first frame next to the reference's at 450 px showed why: the reference's cut reads as a head at once (nose, lips, teeth, chin, neck); ours was a red blob in a cream wedge with no lips, no teeth and no chin.
+
+What v2 changed (drawings and motion; the same voices):
+1. The profile is redrawn: nose tip and nostril, upper lip, lower lip, chin, the jaw line and the neck.
+2. Upper and lower front teeth; the lower jaw (with its lip, teeth and tongue) swings open when the air takes the mouth.
+3. The tongue has a tip behind the teeth; the throat has an air pipe and a food pipe.
+4. A card "INSIDE THE HEAD": a small head from the side with a pulsing red box on the nose and mouth.
+5. Captions are bigger (60 px) and sit to the right of the card.
+6. The stray eyebrow and eye added in v1 are removed (the reference has none at this crop).
+
+**v2 QA (`why-mouth-breathing-changes-your-face-v2.mp4`):** 56.5 s; whisper 98.6% (140 of 142); -11.9 LUFS; frozen 1.4%; longest still 0.7 s. Checked on 10 reference-over-ours pairs of the final render.
+
+Still different from the reference: its nose passage has curved shelves and its soft palate hangs down to the adenoid; our chin is lumpier; the patient at the mirror is the channel's patient with a stretched face, not a redrawn long face with teeth; the doctor ending is ours.
 
 ## Upload block
 **Title:** Why Mouth Breathing Changes Your Face 😳
