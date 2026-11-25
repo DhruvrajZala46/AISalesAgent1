@@ -46,7 +46,7 @@ for n,who,txt in L:
     lines.append({'id':k,'who':who,'t0':t0,'dur':round(len(a)/SR,3),'env':env,'words':[w for w in words if w[2]]})
 LW={l['id']:l['words'] for l in lines}
 def wt(k,w,n=0): return [x[0] for x in LW[k] if x[2]==w][n]
-EV['swell']=wt('14_doctor','BRAIN')-.1
+EV['i0']=wt('14_doctor','KIDNEYS')-.3; EV['i1']=wt('14_doctor','DILUTES')-.2; EV['i2']=wt('14_doctor','BRAIN')-.15; EV['i3']=wt('14_doctor','SEIZURES')+.5
 EV={k:round(float(v),3) for k,v in EV.items()}
 sfx=np.zeros(N,np.float32)
 def S(f,t,g,dur=None,start=0.0):
@@ -68,6 +68,7 @@ S('2357.mp3',EV['spoon'],.2); S('1884.mp3',EV['spoon']+.45,.16,.5)              
 S('2828.mp3',EV['water'],.3,1.2); S('2364.mp3',EV['water']+1.1,.18); S('473.mp3',EV['water']+.9,.14,1.6)   # water glugs in; a sad sting
 S('1351.mp3',EV['phone'],.2,.7)                                                   # the phone
 S('1492.mp3',EV['gut']-.05,.22); S('2828.mp3',EV['gut']+.3,.26,1.6)               # the flood in the intestine
+for k in ('i0','i1','i2','i3'): S('2357.mp3',EV[k],.16)
 S('1492.mp3',EV['home']-.05,.22); S('1492.mp3',EV['clinic']-.05,.22)
 mus=np.tile(load('../../assets/music/mixkit-9.mp3'),3)[:N]; fl=int(1.0*SR); mus[-fl:]*=np.linspace(1,0,fl)
 act=np.convolve((np.abs(voice)>0.02).astype(np.float32),np.ones(int(.25*SR),np.float32)/int(.25*SR),'same'); mus*=10**(-5*np.clip(act*4,0,1)/20)

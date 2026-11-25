@@ -33,8 +33,14 @@ function stomachScene(){
      ${brow('st_bL')}${brow('st_bR')}<g transform="translate(0,74) scale(2)">${mouthEl('st_m',0,0)}</g>
      <path id="tongue" d="M0,78 C30,70 56,84 60,104 C62,118 44,122 34,110 C22,98 10,92 0,92 Z" fill="#ef6f86" ${OLW2} opacity="0"/>
      <g id="paci" transform="translate(0,84)"><ellipse rx="34" ry="22" fill="#9fd4ee" ${OLW2}/><circle r="12" fill="#e6f5fc" ${OLW2}/><circle cx="0" cy="26" r="13" fill="none" stroke="${INK}" stroke-width="6.5"/><circle cx="0" cy="26" r="13" fill="none" stroke="#6fb6d8" stroke-width="3"/></g></g>
-   <g id="spoon" opacity="0"><path d="M0,0 L60,150" stroke="${INK}" stroke-width="13" stroke-linecap="round"/><path d="M0,0 L60,150" stroke="#b9bec4" stroke-width="7" stroke-linecap="round"/><path d="M44,146 C40,186 96,190 96,150 Z" fill="#b9bec4" ${OLW2}/></g>
+   ${bodyCard()}<g id="spoon" opacity="0"><path d="M0,0 L60,150" stroke="${INK}" stroke-width="13" stroke-linecap="round"/><path d="M0,0 L60,150" stroke="#b9bec4" stroke-width="7" stroke-linecap="round"/><path d="M44,146 C40,186 96,190 96,150 Z" fill="#b9bec4" ${OLW2}/></g>
    <g id="phone" opacity="0"><g transform="rotate(18)"><rect x="-26" y="-56" width="52" height="112" rx="10" fill="#17171a" ${OLW2}/><rect x="-19" y="-44" width="38" height="78" rx="4" fill="#2c3440"/></g><g id="pArcs" transform="translate(36,-74) rotate(30) scale(.7)" opacity="0">${arcsD()}</g></g>`;}
+function bodyCard(){return `<g id="inset"><rect x="14" y="640" width="200" height="330" rx="18" fill="#fff" ${OLW}/>
+   <circle cx="114" cy="712" r="44" fill="${C_BSK}" ${OLW2}/><path d="M104,668 C108,654 124,654 122,668" fill="none" ${OLW2}/><circle cx="100" cy="708" r="5" fill="${INK}"/><circle cx="128" cy="708" r="5" fill="${INK}"/><path d="M104,726 q10,8 20,0" fill="none" ${OLW2}/>
+   <path d="M70,772 C70,750 158,750 158,772 L164,868 C164,900 64,900 64,868 Z" fill="${C_BSK}" ${OLW2}/><path d="M64,852 C90,838 138,838 164,852 L164,868 C164,900 64,900 64,868 Z" fill="#fff" ${OLW2}/>
+   <path d="M70,780 L40,826 M158,780 L188,826" stroke="${INK}" stroke-width="19" stroke-linecap="round"/><path d="M70,780 L40,826 M158,780 L188,826" stroke="${C_BSK}" stroke-width="13" stroke-linecap="round"/>
+   <path d="M104,790 C120,780 140,792 136,812 C132,828 110,830 102,816 C98,806 98,796 104,790 Z" fill="${C_ST}" ${OLW2}/><circle id="ring" cx="118" cy="806" r="26" fill="none" stroke="#e02626" stroke-width="6"/>
+   <text x="114" y="930" text-anchor="middle" style="font-family:LG,sans-serif;font-size:19px" fill="#1d2a44">INSIDE THE</text><text x="114" y="954" text-anchor="middle" style="font-family:LG,sans-serif;font-size:19px" fill="#1d2a44">BABY'S TUMMY</text></g>`;}
 // ---- scene 2: inside the small intestine ----
 function gutScene(){
   const villi=(y,dir,seed)=>Array.from({length:17},(_,i)=>{const x=-10+i*46,L=58+((i*37+seed*13)%5)*13,w=17;
@@ -48,18 +54,21 @@ function gutScene(){
    <path d="M-40,1090 H760 V1180 H-40 Z" fill="#ef6471" ${OLW}/><path d="M-40,1110 H760" stroke="#f9a1a6" stroke-width="10"/>
    <g id="gface" transform="translate(360,214)"><g transform="translate(-46,0)">${oEye('gt_eL',38,'#f78a8d')}</g><g transform="translate(46,0)">${oEye('gt_eR',38,'#f78a8d')}</g>${brow('gt_bL')}${brow('gt_bR')}<g transform="translate(0,62) scale(1.8)">${mouthEl('gt_m',0,0)}</g></g>`;}
 // ---- the baby ----
-function babySVG(id){return `<g id="${id}"><path d="M-6,-14 C30,-34 86,-26 96,6 C104,36 66,52 26,46 C-4,42 -20,10 -6,-14 Z" fill="${C_BSK}" ${OLW2}/>
-   <path d="M52,-22 C88,-22 104,10 94,34 C76,52 50,48 44,40 C56,20 56,0 52,-22 Z" fill="#fff" ${OLW2}/>
-   ${lim('M84,28 C104,40 112,58 100,72',22,C_BSK)}${lim('M66,36 C80,52 82,70 68,80',22,C_BSK)}
-   <g id="${id}_arm">${lim('M14,2 C26,22 44,26 56,14',16,C_BSK)}</g>
-   <g id="${id}_head" transform="translate(-34,-22)"><circle r="46" fill="${C_BSK}" ${OLW2}/><path d="M-44,2 C-54,-2 -56,16 -44,18" fill="${C_BSK}" ${OLW2}/><path d="M-6,-46 q10,-14 20,-2" fill="none" ${OLW2}/>
-    <g transform="translate(-6,-4)"><circle r="12" fill="#fff" ${OLW2}/><circle id="${id}_pL" r="5.5" fill="#171313"/></g><g transform="translate(24,-2)"><circle r="12" fill="#fff" ${OLW2}/><circle id="${id}_pR" r="5.5" fill="#171313"/></g>
-    <path d="M-18,-22 q10,-8 20,-2 M16,-20 q10,-6 18,2" fill="none" ${OLW2}/><ellipse id="${id}_m" cx="10" cy="22" rx="7" ry="5" fill="#8c3a3a" ${OLW2}/><ellipse cx="-20" cy="16" rx="8" ry="5" fill="#f3a9a0" opacity=".7"/></g></g>`;}
+function babySVG(id){return `<g id="${id}"><g transform="rotate(-14)">
+   <path d="M-30,-34 C20,-62 120,-34 136,26 C144,62 110,84 66,72 C8,58 -40,26 -30,-34 Z" fill="#bfe3f5" ${OLW}/>
+   <path d="M-12,-30 C36,-6 84,14 128,56 M40,-44 C30,-10 24,20 30,58" fill="none" stroke="#8fc4de" stroke-width="5" stroke-linecap="round"/>
+   <g id="${id}_arm"><circle cx="34" cy="-8" r="13" fill="${C_BSK}" ${OLW2}/></g>
+   <g id="${id}_head" transform="translate(-52,-40)"><circle r="50" fill="${C_BSK}" ${OLW}/><path d="M-46,8 C-58,4 -60,24 -46,26" fill="${C_BSK}" ${OLW2}/>
+    <path d="M-10,-50 C-4,-70 14,-70 12,-52 M4,-50 C14,-64 28,-58 22,-46" fill="none" ${OLW2}/>
+    <g transform="translate(-10,-4)"><circle r="14" fill="#fff" ${OLW2}/><circle id="${id}_pL" r="6.5" fill="#171313"/></g><g transform="translate(26,-2)"><circle r="14" fill="#fff" ${OLW2}/><circle id="${id}_pR" r="6.5" fill="#171313"/></g>
+    <path d="M-24,-26 q12,-8 24,0 M16,-24 q12,-8 22,2" fill="none" ${OLW2}/><ellipse id="${id}_m" cx="10" cy="26" rx="8" ry="6" fill="#8c3a3a" ${OLW2}/>
+    <ellipse cx="-24" cy="20" rx="9" ry="6" fill="#f3a9a0" opacity=".75"/><ellipse cx="38" cy="20" rx="8" ry="6" fill="#f3a9a0" opacity=".75"/></g>
+   <path d="M-34,-6 C-10,14 10,6 22,-30" fill="none" stroke="#bfe3f5" stroke-width="16" stroke-linecap="round"/><path d="M-36,2 C-10,24 18,12 30,-28" fill="none" ${OLW2}/></g></g>`;}
 // ---- dad: the channel's patient, with one arm bent to hold a glass and the baby in the other ----
 function dadSVG(){let s=patientSVG();const a=s.indexOf('<!-- right arm (hangs) -->'),b=s.indexOf('<g id="patHead">');
   const armR=`<g id="dadArmR">${shaded(limbD([[84,234],[124,336],[164,296]],[44,38,32]),'#c7884a','#a86c34',10)}<g id="glass" transform="translate(112,-116)"><path d="M26,318 L36,412 L84,412 L94,318 Z" fill="#eaf8fd" ${OLW2}/><path d="M30,352 L36,410 L84,410 L90,352 Z" fill="#7cc8ea"/><path d="M26,318 L36,412 L84,412 L94,318 Z" fill="none" ${OLW}/></g>${hand(170,292,-150,1.2,PSK)}</g>`;
   s=s.slice(0,a)+armR+s.slice(b);
-  return s.replace('<!-- left arm: hand to ear -->',`<g id="dadBaby" transform="translate(-40,352) scale(1.25)">${babySVG('bb1')}</g>`);}
+  return s.replace('<!-- left arm: hand to ear -->',`<g id="dadBaby" transform="translate(-36,356) scale(1.12)">${babySVG('bb1')}</g>`);}
 // ---- mom, seated, holding the baby ----
 function momSVG(){return `<g id="mom"><path d="M-78,-176 V160 M-78,20 H84 M84,20 V160 M-30,24 V150" fill="none" stroke="#141418" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/><path d="M-84,6 H92 V28 H-84 Z" fill="#26262c" ${OLW2}/>
    ${lim('M-20,-8 C30,-16 70,-12 96,0 C104,50 100,100 98,146',50,'#24242a')}${lim('M-34,-2 C20,-14 60,-10 76,2 C84,50 82,100 80,150',50,'#2c2c33')}
@@ -72,7 +81,7 @@ function momSVG(){return `<g id="mom"><path d="M-78,-176 V160 M-78,20 H84 M84,20
     ${humanEye('mEyeL',-22,-286,12,8)}${humanEye('mEyeR',18,-286,12,8)}
     <path d="M-36,-306 Q-22,-314 -10,-304 M6,-304 Q20,-314 32,-306" fill="none" stroke="#3a1820" stroke-width="4" stroke-linecap="round"/>
     <path d="M0,-280 C6,-268 6,-262 0,-258" fill="none" ${TH('#b98468')}/><ellipse id="momMouth" cx="-2" cy="-242" rx="9" ry="6" fill="#8c2f3a" ${OLW2}/><ellipse cx="-34" cy="-262" rx="9" ry="5" fill="#ef8f86" opacity=".6"/><ellipse cx="26" cy="-262" rx="9" ry="5" fill="#ef8f86" opacity=".6"/></g>
-   <g transform="translate(26,-74) scale(1.35)">${babySVG('bb2')}</g>
+   <g transform="translate(24,-84) scale(1.05)">${babySVG('bb2')}</g>
    ${lim('M-50,-170 C-70,-110 -60,-60 -20,-40 C20,-28 60,-30 96,-44',34,'#f6adc4')}<circle cx="100" cy="-46" r="16" fill="${DSK}" ${OLW2}/></g>`;}
 // ---- scene 3: the living room (background only; dad is a shared layer) ----
 function homeBG(){
@@ -86,9 +95,10 @@ function homeBG(){
    <path d="M690,400 L698,470 H744 L752,400 Z" fill="#f4f4f0" ${OLW2}/>
    <g id="spArcs" transform="translate(700,330) rotate(60)" opacity="0">${arcsD()}</g>`;}
 // ---- scene 4: the clinic ----
-function clinicBG(){const cert=(x,y)=>`<g transform="translate(${x},${y})"><rect x="-52" y="-64" width="104" height="128" fill="#7a4a2c" ${OLW2}/><rect x="-42" y="-54" width="84" height="108" fill="#fbf7ea" ${OLW2}/><path d="M-28,-34 h56 M-28,-18 h56 M-28,-2 h40 M-28,14 h56" stroke="#6b6b6b" stroke-width="5" stroke-linecap="round"/><circle cx="24" cy="36" r="9" fill="#f0d24a"/></g>`;
+function clinicBG(){const row=(id,y,col,txt)=>`<g id="${id}" opacity="0"><rect x="60" y="${y}" width="600" height="66" rx="14" fill="${col}" stroke="#1d2a44" stroke-width="4"/><text x="360" y="${y+46}" text-anchor="middle" style="font-family:LG,sans-serif;font-size:31px;letter-spacing:.5px" fill="#fff">${txt}</text></g>`;
   return `<rect x="-40" y="-40" width="800" height="1360" fill="#dcdcf0"/>
-   <rect x="-40" y="700" width="800" height="330" fill="#c8d27c"/><rect x="-40" y="680" width="800" height="26" fill="#7a5a3c" ${OLW2}/>
-   <path d="M-40,1030 H760 V1330 H-40 Z" fill="#6b5f58"/><path d="M-40,1030 H760" ${OLW}/>
-   <path d="M-40,150 H250 V700 H-40 Z" fill="#7a4a2c" ${OLW}/><path d="M-40,176 H224 V700 H-40 Z" fill="#fff" ${OLW2}/><path d="M-40,200 H200 V700 H-40 Z" fill="#d6f1f8" ${OLW2}/><path d="M20,300 L120,220 M40,420 L170,300" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
-   ${cert(420,330)}${cert(600,290)}`;}
+   <rect x="-40" y="760" width="800" height="290" fill="#c8d27c"/><rect x="-40" y="740" width="800" height="26" fill="#7a5a3c" ${OLW2}/>
+   <path d="M-40,1050 H760 V1330 H-40 Z" fill="#6b5f58"/><path d="M-40,1050 H760" ${OLW}/>
+   <g id="brd"><rect x="36" y="46" width="660" height="424" rx="24" fill="#000" opacity=".12"/><rect x="28" y="36" width="660" height="424" rx="24" fill="#fff" stroke="#1d2a44" stroke-width="5"/>
+   <text x="360" y="104" text-anchor="middle" style="font-family:LG,sans-serif;font-size:46px;letter-spacing:1px" fill="#1d2a44">WATER INTOXICATION</text>
+   ${row('b0',128,'#2f8fe0','1. TINY KIDNEYS CAN\'T COPE')}${row('b1',206,'#8a5bd1','2. BLOOD GETS TOO WATERY')}${row('b2',284,'#e8473f','3. THE BRAIN SWELLS')}${row('b3',362,'#2fae62','UNDER 6 MONTHS: MILK ONLY')}</g>`;}

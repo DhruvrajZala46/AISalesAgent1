@@ -5,9 +5,9 @@ const lend=id=>{const L=D.lines.find(l=>l.id===id);return L.t0+L.dur;};
 const inL=(id,T,pre=.05,post=.1)=>T>=ST[id]-pre&&T<lend(id)+post;
 const svg=$('S');
 const S1=`<g id="s1">${stomachScene()}</g>`, S2=`<g id="s2">${gutScene()}</g>`, S3=`<g id="s3">${homeBG()}</g>`, S4B=`<g id="s4b">${clinicBG()}</g>`,
- DAD=`<g id="dadL">${dadSVG()}</g>`, S4F=`<g id="s4f"><g transform="translate(170,985) scale(1.1)">${momSVG()}</g><g transform="translate(575,404) scale(.95)">${doctorSVG()}</g></g>`;
+ DAD=`<g id="dadL">${dadSVG()}</g>`, S4F=`<g id="s4f"><g transform="translate(170,1010) scale(1.02)">${momSVG()}</g><g transform="translate(575,476) scale(.88)">${doctorSVG()}</g></g>`;
 svg.innerHTML=`<defs><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>${DEFS}</defs>`
- +`<g id="cam">`+S1+S2+S3+S4B+DAD+S4F+`</g>`+labelBox('lbA',"BABY'S TUMMY",0,0,30)+labelBox('lbM','MILK',0,0,34)+labelBox('lbW','WATER',0,0,34)+labelBox('lbD','TOO WATERY!',0,0,30)+labelBox('lbI','INTESTINE',0,0,30)+`<text id="wm" x="360" y="58" text-anchor="middle" style="font-family:ComicNeue,sans-serif;font-weight:700;font-size:24px" fill="#fff" stroke="#0b6e6b" stroke-width=".6" opacity=".7">@GiggleMD</text>`
+ +`<g id="cam">`+S1+S2+S3+S4B+DAD+S4F+`</g>`+labelBox('lbG','WATER',0,0,26)+labelBox('lbC','MOM ON A CALL',0,0,24)+labelBox('lbM','MILK',0,0,34)+labelBox('lbW','WATER',0,0,34)+labelBox('lbD','TOO WATERY!',0,0,30)+labelBox('lbI','INTESTINE',0,0,30)+`<text id="wm" x="360" y="58" text-anchor="middle" style="font-family:ComicNeue,sans-serif;font-weight:700;font-size:24px" fill="#fff" stroke="#0b6e6b" stroke-width=".6" opacity=".7">@GiggleMD</text>`
  +`<g id="capg"><text id="cap" class="cap" x="360" y="1015" text-anchor="middle" style="stroke-width:7px;font-size:48px"></text></g>`;
 function face(id,r,{dx=0,dy=0,lid=.1,blink=0,small=false,bx=27,by=48,bw=26,bA=0,arch=3,talk=0,mw=12,mood=0,T=0,seed=0}){
   setOEye(id+'_eL',r,{dx,dy,lid,blink,small});setOEye(id+'_eR',r,{dx,dy,lid,blink,small});
@@ -79,14 +79,14 @@ function dadPose(T,home){const dT=speak('dad',T);
   $('pBrows').setAttribute('d','M-36,64 Q-24,62 -10,56 M8,56 Q22,62 34,64');
   setMouthV('pat_m',dT,10,-.5,T,6);const look=home?(speak('mom',T)>0||inL('10_mom',T)||inL('12_mom',T)?5:-4):4;setHEye('pEyeL',look,blinkK(T,2.1));setHEye('pEyeR',look,blinkK(T,2.1));
   show('patBlush',0);show('pSweat',home?0:1);if(!home)$('pSweat').setAttribute('transform',`translate(46,${(60+((T*30)%30)).toFixed(0)}) scale(1.3)`);
-  const P3=home?[[-84,234],[-136,336],[-34,412+Math.sin(T*2.2)*2]]:[[-84,234],[-100,370],[-92,468]];const d=limbD(P3,[44,38,32]);$('patArmLD').setAttribute('d',d);$('patArmLO').setAttribute('d',d);
+  const P3=home?[[-84,234],[-140,344],[-10,430+Math.sin(T*2.2)*2]]:[[-84,234],[-100,370],[-92,468]];const d=limbD(P3,[44,38,32]);$('patArmLD').setAttribute('d',d);$('patArmLO').setAttribute('d',d);
   $('patHandL').innerHTML=hand(P3[2][0],P3[2][1]+(home?0:12),home?-100:-8,1.2,PSK);
   show('dadBaby',home?1:0);show('glass',home?1:0);if(home)babyAnim('bb1',T);
   $('dadArmR').setAttribute('transform',home?`rotate(${(Math.sin(T*1.7)*2+(dT>.3?Math.sin(T*6)*2:0)).toFixed(1)},84,234)`:'rotate(40,84,234)');}
 function renderHome(T){$('dadL').setAttribute('transform',`translate(${(260+Math.sin(T*1.1)*2).toFixed(1)},262) scale(1.18)`);dadPose(T,true);
   show('spArcs',pulse(T,inL('10_mom',T,0,0)||inL('12_mom',T,0,0)));
   $('spk').setAttribute('transform',`translate(0,${(inL('10_mom',T,0,0)||inL('12_mom',T,0,0)?Math.sin(T*30)*2:0).toFixed(1)})`);}
-function renderClinic(T){$('dadL').setAttribute('transform',`translate(${(330+Math.sin(T*1.1)*2).toFixed(1)},400) scale(.95)`);dadPose(T,false);
+function renderClinic(T){$('dadL').setAttribute('transform',`translate(${(330+Math.sin(T*1.1)*2).toFixed(1)},476) scale(.88)`);dadPose(T,false);
   const dT=speak('doctor',T);
   tr('docHead',0,Math.sin(T*1.3)*1.2-(dT>.7?1.5:0),1,1,-2+(dT>.15?Math.sin(T*6.5)*1.8*dT:0));
   $('dBrows').setAttribute('transform',`translate(0,${dT>.72?-3.5:0})`);
@@ -94,15 +94,17 @@ function renderClinic(T){$('dadL').setAttribute('transform',`translate(${(330+Ma
   $('docArmR').setAttribute('transform',`rotate(${(dT>.2?-6+Math.sin(T*4.2)*7*dT:0).toFixed(2)},86,226)`);
   setHEye('mEyeL',dT>0?4:1,blinkK(T,1.6));setHEye('mEyeR',dT>0?4:1,blinkK(T,1.6));
   $('momHead').setAttribute('transform',`rotate(${(Math.sin(T*1.2)*1.5).toFixed(2)},-8,-230) translate(0,${(Math.sin(T*2.4)*1.5).toFixed(1)})`);
+  {const t0=ST['14_doctor'],on=T>=t0;show('brd',on?1:0);if(on)$('brd').setAttribute('transform',`translate(360,250) scale(${(eob(P(T,t0,t0+.35))*(1+Math.sin(T*2.4)*.005)).toFixed(4)}) translate(-360,-250)`);}
+  [['b0',E.i0],['b1',E.i1],['b2',E.i2],['b3',E.i3]].forEach(([id,t0],i)=>{const on=T>=t0;show(id,on?1:0);if(on){const k=eob(P(T,t0,t0+.3)),y=161+i*78;$(id).setAttribute('transform',`translate(360,${y}) scale(${k.toFixed(3)}) translate(-360,${-y})`);}});
   $('momMouth').setAttribute('ry',(5+Math.abs(Math.sin(T*1.3))*2).toFixed(1));babyAnim('bb2',T);}
 function caption(T,sc){let w='',ws=0;for(const L of D.lines)for(const x of L.words){if(T>=x[0]&&T<Math.max(x[1],x[0]+.12)){w=x[2];ws=x[0];}}
   if(!w){for(const L of D.lines)for(const x of L.words){if(T>=x[1]&&T<x[1]+.1){w=x[2];ws=x[0];}}}
-  const c=$('cap');c.textContent=w;const y0={1:1010,2:1010,3:1150,4:1200}[sc];c.setAttribute('y',y0+17);const k=eo(P(T,ws,ws+.12));c.setAttribute('transform',`translate(360,${y0}) scale(${lerp(1.4,1,k).toFixed(3)}) translate(-360,${-y0})`);}
+  const c=$('cap');c.textContent=w;const y0={1:1010,2:1010,3:1150,4:1215}[sc];c.setAttribute('y',y0+17);const k=eo(P(T,ws,ws+.12));c.setAttribute('transform',`translate(360,${y0}) scale(${lerp(1.4,1,k).toFixed(3)}) translate(-360,${-y0})`);}
 window.render=function(T){
   const sc=T<E.gut?1:(T<E.home?2:(T<E.clinic?3:4));
   const vis={s1:sc===1,s2:sc===2,s3:sc===3,s4b:sc===4,s4f:sc===4,dadL:sc>=3};for(const k in vis)$(k).setAttribute('display',vis[k]?'inline':'none');
   if(sc===1)renderStomach(T);if(sc===2)renderGut(T);if(sc===3)renderHome(T);if(sc===4)renderClinic(T);
   $('cam').setAttribute('transform',`translate(360,640) scale(${(1.012+Math.sin(T*1.4)*.012).toFixed(4)}) translate(-360,-640)`);
-  lab('lbA',T,0,E.toss,250,640);lab('lbM',T,E.milk+.2,E.spoon,170,440);lab('lbW',T,E.water+.2,ST['05_stomach'],170,440);lab('lbD',T,ST['05_stomach'],E.phone,420,700);lab('lbI',T,E.gut+.1,E.home,360,380);
+  lab('lbG',T,E.home+.3,E.clinic,560,470+0*T);lab('lbC',T,ST['10_mom']-.1,E.clinic,560,250);$('ring').setAttribute('r',(24+Math.abs(Math.sin(T*3.2))*9).toFixed(1));lab('lbM',T,E.milk+.2,E.spoon,170,440);lab('lbW',T,E.water+.2,ST['05_stomach'],170,440);lab('lbD',T,ST['05_stomach'],E.phone,420,700);lab('lbI',T,E.gut+.1,E.home,360,380);
   caption(T,sc);};
 window.render(0);

@@ -1,6 +1,6 @@
 # 020 - Why Babies Under 6 Months Shouldn't Drink Water (GiggleMD)
 
-Status (24 Nov 2026): **built and delivered**. Waiting for the user's verdict. Topic: #9 in `research/NEXT-10.md` (13M on Dr. Healthcare, `tg4bhFvYe_M`; views as of 20 Nov, not re-checked).
+Status (24 Nov 2026): **v2 built and delivered** (see the v2 section). Waiting for the user's verdict. Topic: #9 in `research/NEXT-10.md` (13M on Dr. Healthcare, `tg4bhFvYe_M`; views as of 20 Nov, not re-checked).
 
 ## The reference the user sent
 A 68.0 s vertical video by Dr. Healthcare. Studied at 0.5 s steps (LEARNINGS row 29). Beat list:
@@ -34,6 +34,17 @@ A 68.0 s vertical video by Dr. Healthcare. Studied at 0.5 s steps (LEARNINGS row
 - Checked on 16 reference-over-ours pairs (first render) and a 12-frame sheet of the final render.
 
 Still different from the reference: its stomach sits higher with scalloped intestines below, ours is larger with smoother bands; its clinic people are full length and smaller, ours are larger; our baby and mom are simple drawings.
+
+## v2 (25 Nov 2026, after the user's verdict on v1)
+The user, with a screenshot of dad holding the baby: **"baby look so weird... VERY BAD VIDEO, 5%... I can't understand what that body part is... easiest to understand VISUALLY."**
+
+What was wrong, and what v2 changed (drawings and motion; the voices are the same takes):
+1. The baby was a large head on a blob with stray limbs. **Now:** a swaddled baby (blue blanket, round head, hair tuft, cheeks), cradled on dad's arm and on mom's lap.
+2. Nothing showed where the stomach is (row 28's body card was skipped). **Now:** a card with a baby and a pulsing ring on the tummy, "INSIDE THE BABY'S TUMMY", through the whole stomach scene.
+3. The doctor's 11 s were one still shot, so nothing was explained with the sound off. **Now:** a "WATER INTOXICATION" board pops in on her first words; rows pop on her words: 1. TINY KIDNEYS CAN'T COPE, 2. BLOOD GETS TOO WATERY, 3. THE BRAIN SWELLS, then UNDER 6 MONTHS: MILK ONLY.
+4. In the living room nothing said what the glass was or who the voice was. **Now:** labels WATER (on the glass) and MOM ON A CALL (at the speaker).
+
+**v2 QA (`why-babies-shouldnt-drink-water-v2.mp4`):** 65.9 s; whisper 97.8% (182 of 186, the same misses); -11.8 LUFS; frozen 0.3%; longest still 0.3 s. Checked on a 16-frame sheet of the final render and three 400 px frames. Not re-compared side by side with the reference after v2.
 
 ## Upload block
 **Title:** Why Babies Under 6 Months Shouldn't Drink Water 😳
