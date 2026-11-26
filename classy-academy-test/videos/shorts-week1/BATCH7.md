@@ -1,5 +1,7 @@
 # Batch 7 - Thu 26 Nov (built 26 Nov): five Shorts in the style of our top views
 
+**NOT POSTED.** Uploads were refused by Zapier (HTTP 429), and on 26 Nov the user said: "STOP AUTOMATION AND YOUR WORK NEVER POST AGAIN". Nothing from this batch is on the channel. Do not upload.
+
 Our top Shorts by views are single 1981 wedding/engagement secrets or slips, silent, real film (tiara 91K, wrong
 name 83K, balcony kiss 46K), and Diana's own words on film (#21 "whatever in love means" 43K). All five copy that.
 
