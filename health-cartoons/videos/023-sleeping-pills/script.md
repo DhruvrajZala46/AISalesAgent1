@@ -1,6 +1,6 @@
 # 023 - How Do Sleeping Pills Actually Work? (GiggleMD)
 
-Status (25 Nov 2026): **v5 built and delivered** (see the v5 section). Waiting for the user's verdict. The user's message named "Still craving food when you're full", but the attached mp4 was "How Do Sleeping Pills Really Work" (10M on Dr. Healthcare, `OJS2ONcmZ58`, in `research/NEXT-10.md` reserves; views as of 20 Nov, not re-checked). The video follows the attached file; the user was told.
+Status (25 Nov 2026): **v6 built and delivered** (see the v6 section and `BLUEPRINT.md`). Waiting for the user's verdict. The user's message named "Still craving food when you're full", but the attached mp4 was "How Do Sleeping Pills Really Work" (10M on Dr. Healthcare, `OJS2ONcmZ58`, in `research/NEXT-10.md` reserves; views as of 20 Nov, not re-checked). The video follows the attached file; the user was told.
 
 ## The reference the user sent
 A 65.0 s vertical video by Dr. Healthcare. Frame 0 compared side by side first (LEARNINGS row 31), then studied at 0.5 s steps (row 29). Beat list:
@@ -99,9 +99,24 @@ No fire sound in the reference, so ours has none (v1-v4 had flame flares, drips,
 a puff stretches to the left; then it vanishes and the officer is back at his spot with a black eye and a plaster. v1-v4 drew small circles while the officer stood outside; v5 does what the reference does.
 
 **Loudness:** the brawl is added after mastering (`post_mix.sh`), so the compressor does not flatten it: brawl 4.5 dB over the median (reference 4.6). The master is -14.5 LUFS (YouTube's own target), peak -1.0 dB.
-Build: `... && LIM=0.46 bash ../../tools/mix.sh video.mp4 tmp.mp4 && BG=5 bash post_mix.sh video.mp4 final.mp4`.
+Build (v5): LIM=0.46, BG=5. (v6: LIM=0.66, BG=12.).
 
 **v5 QA (`how-sleeping-pills-actually-work-v5.mp4`):** 60.4 s; whisper 98.6% (145 of 147; "I'm" heard as "you're", "They" as "I"); frozen 0.3%; longest still 0.1 s. Brawl checked on 6 reference-over-ours pairs; our own SFX labelled by the same classifier (plop / whack-whip / bang-whack-slap / ding / whip, as in the reference).
+
+## v6 (26 Nov 2026): the reference creator's visual DNA applied
+The user sent 5 more videos by a creator whose style they love and asked: "decode their complete visual language, write a style guide and a scene-by-scene blueprint, and make my video in that style."
+The decode is in `../../research/STYLE-DECODE.md`; the timestamped plan and the measured before/after check are in `BLUEPRINT.md`.
+
+Changed from v5 (story, drawings, voices and SFX map unchanged):
+1. **Captions:** Luckiest Guy 50 px (was 58), outline 2.5 px visible (was about 4), a small drop shadow, centred 78% down. They change on the word's first frame and pop 90% -> 125% -> 100% over 3 frames. They are held through pauses under 0.3 s.
+2. **Static camera:** the slow breathing zoom on every frame is gone.
+3. **Animation on twos:** drawings update 15 times a second (still frames 8.8% -> 51.9%; references 44-85%). Captions stay frame-accurate.
+4. **Watermark:** "@GiggleMD" repeated 5 times, faint, 4 of them tilted, as in the references.
+5. **Music bed:** 12 dB quieter, now about 17 dB under the voice (was 5.3 dB; references 13-22 dB).
+6. **Master:** -12.3 LUFS (was -14.5; references -8.5 to -11.1, clipped); the brawl is still 4.5 dB over the median.
+7. **Bug fixed:** a comment in `build_audio.py` had switched off the music's fade-in and fade-out.
+
+**v6 QA (`how-sleeping-pills-actually-work-v6.mp4`):** 60.5 s; whisper 100% (147 of 147); -12.3 LUFS, peak -0.7 dB; still frames 51.9%; 15.6 drawing changes a second; caption timing +0.016 s from the word start (references -0.02 to +0.01 s); checked on 14 reference-over-ours pairs.
 
 ## Upload block
 **Title:** How Do Sleeping Pills Actually Work? 😴

@@ -257,9 +257,9 @@ const lend=id=>{const L=D.lines.find(l=>l.id===id);return L.t0+L.dur;};
 const inL=(id,T,pre=.05,post=.1)=>T>=ST[id]-pre&&T<lend(id)+post;
 const svg=$('S');
 const S1=`<g id="s1">${stomachScene()}</g>`, S2=`<g id="s2">${amygScene()}</g>`, S3=`<g id="s3">${bedroomScene().replace('<g id="wifeW"></g><g id="husW"></g>',`<g id="wifeW"><g transform="translate(230,880) scale(1.35)">${wifeSVG()}</g></g><g id="husW"><g id="husI" transform="translate(545,300) scale(1.25)">${patientSVG()}</g></g>`)}</g>`;
-svg.innerHTML=`<defs><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>${DEFS}</defs>`
- +`<g id="cam">`+S1+S2+S3+`</g>`+`<text id="wm" x="360" y="58" text-anchor="middle" style="font-family:ComicNeue,sans-serif;font-weight:700;font-size:24px" fill="#fff" stroke="#0b6e6b" stroke-width=".6" opacity=".7">@GiggleMD</text>`
- +`<g id="capg"><text id="cap" class="cap" x="360" y="1015" text-anchor="middle" style="stroke-width:8px;font-size:58px"></text></g>`;
+svg.innerHTML=`<defs><filter id="capsh" x="-20%" y="-40%" width="140%" height="180%"><feDropShadow dx="2" dy="3" stdDeviation="1" flood-color="#000" flood-opacity=".5"/></filter><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>${DEFS}</defs>`
+ +`<g id="cam">`+S1+S2+S3+`</g>`+`<g id="wm" style="font-family:ComicNeue,sans-serif;font-weight:700;font-size:23px" fill="#fff" stroke="#000" stroke-opacity=".25" stroke-width=".8" opacity=".42" text-anchor="middle">${[[360,46,0],[560,330,-28],[150,620,-28],[575,860,-28],[170,1180,-28]].map(([x,y,r])=>`<text x="${x}" y="${y}" transform="rotate(${r},${x},${y})">@GiggleMD</text>`).join('')}</g>`
+ +`<g id="capg" filter="url(#capsh)"><text id="cap" class="cap" x="360" y="1015" text-anchor="middle" style="stroke-width:5px;font-size:50px;letter-spacing:.5px"></text></g>`;
 function face(id,r,{dx=0,dy=0,lid=.1,blink=0,small=false,bx=27,by=48,bw=26,bA=0,arch=3,talk=0,mw=12,mood=0,T=0,seed=0}){
   setOEye(id+'_eL',r,{dx,dy,lid,blink,small});setOEye(id+'_eR',r,{dx,dy,lid,blink,small});
   setBrow(id+'_bL',-bx,by,bw,bA,arch);setBrow(id+'_bR',bx,by,bw,-bA,arch);if($(id+'_m'))setMouthV(id+'_m',talk,mw,mood,T,seed);}
@@ -327,15 +327,18 @@ function renderBed(T){const hT=speak('husband',T);
   const P3=[[-84,234],[-100,370],[-92,468]],dd=limbD(P3,[44,38,32]);$('patArmLD').setAttribute('d',dd);$('patArmLO').setAttribute('d',dd);$('patHandL').innerHTML=hand(-92,480,-8,1.2,PSK);
   setHEye('wEyeL',4,blinkK(T,1.6));setHEye('wEyeR',4,blinkK(T,1.6));$('wifeMouth').setAttribute('ry',(4+Math.abs(Math.sin(T*.8))*1).toFixed(1));$('wifeMouth').setAttribute('rx','13');
   $('wifeHead').setAttribute('transform',`rotate(${(Math.sin(T*1.2)*1.5+4).toFixed(2)},-8,-230)`);}
-function caption(T,sc){let w='',ws=0;for(const L of D.lines)for(const x of L.words){if(T>=x[0]&&T<Math.max(x[1],x[0]+.12)){w=x[2];ws=x[0];}}
-  if(!w){for(const L of D.lines)for(const x of L.words){if(T>=x[1]&&T<x[1]+.1){w=x[2];ws=x[0];}}}
-  const c=$('cap');c.textContent=w;const y0={1:1020,2:1020,3:1020}[sc],x0=360;c.setAttribute('x',x0);c.setAttribute('y',y0+17);const k=eo(P(T,ws,ws+.12));c.setAttribute('transform',`translate(${x0},${y0}) scale(${lerp(1.4,1,k).toFixed(3)}) translate(${-x0},${-y0})`);}
-window.render=function(T){
+// reference caption system: one word, on the word's start frame; held to the next word unless the pause is over 0.3 s;
+// pop = 90% on the first frame, 125% on the second, 100% from the third (no easing)
+const WL=D.lines.flatMap(L=>L.words);
+function caption(T,sc){let w='',ws=0;
+  for(let i=0;i<WL.length;i++){const x=WL[i],nx=WL[i+1],end=nx&&nx[0]-x[1]<0.3?nx[0]:Math.max(x[1],x[0]+.15)+.1;if(T>=x[0]&&T<end){w=x[2];ws=x[0];}}
+  const c=$('cap');c.textContent=w;const y0=1000;c.setAttribute('y',y0+18);const f=Math.floor((T-ws)*30+1e-6),k=f<=0?.9:(f===1?1.25:1);
+  c.setAttribute('transform',`translate(360,${y0}) scale(${k}) translate(-360,${-y0})`);}
+window.render=function(Tf){const T=Math.floor(Tf*15+1e-6)/15;
   const sc=T<E.amyg?1:(T<E.home?2:3);[1,2,3].forEach(i=>$('s'+i).setAttribute('display',sc===i?'inline':'none'));
   if(sc===1)renderStomach(T);if(sc===2)renderAmyg(T);if(sc===3)renderBed(T);
   
-  $('cam').setAttribute('transform',`translate(360,640) scale(${(1.012+Math.sin(T*1.4)*.012).toFixed(4)}) translate(-360,-640)`);
-  caption(T,sc);};
+  caption(Tf,sc);};
 window.render(0);
 
 </script></body></html>

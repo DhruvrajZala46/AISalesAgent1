@@ -74,7 +74,8 @@ brawl=sfx-pre; sfx=pre   # the brawl goes on after mastering (post_mix.sh), so t
 S('1107.mp3',b0+2.2,.4)                                                            # ding after the brawl (ref 34.3 s)
 S('2151.mp3',EV['pillin'],.32)                                                     # whip as the pill comes in (ref 36.4 s)
 S('175.mp3',EV['home']-.45,.2)                                                     # soft whoosh into the bedroom (ref 59.7 s)
-mus=np.tile(load('../../assets/music/mixkit-508.mp3'),3)[:N]; fl=int(1.0*SR); mus[-fl:]*=np.linspace(1,0,fl); fi=int(1.6*SR); mus[:fi]*=np.linspace(0,1,fi)**2   # soft start, as in the top videos
+# music bed ~17 dB under the voice (references: 13-22 dB; sleeping-pills ref 18 dB)
+mus=np.tile(load('../../assets/music/mixkit-508.mp3'),3)[:N]; mus*=10**(-12/20); fl=int(1.0*SR); mus[-fl:]*=np.linspace(1,0,fl); fi=int(1.6*SR); mus[:fi]*=np.linspace(0,1,fi)**2   # soft start, as in the top videos
 act=np.convolve((np.abs(voice)>0.02).astype(np.float32),np.ones(int(.25*SR),np.float32)/int(.25*SR),'same'); mus*=10**(-5*np.clip(act*4,0,1)/20)
 for name,b in [('voice',voice),('sfx',sfx),('music',mus),('brawl',brawl)]:
     subprocess.run(['ffmpeg','-v','error','-y','-f','f32le','-ar',str(SR),'-ac','1','-i','-',f'{name}.wav'],input=np.clip(b,-1,1).tobytes())
