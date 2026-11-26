@@ -1,0 +1,126 @@
+{
+ "segs": [
+  {
+   "clip": "wd17",
+   "start": 9.3,
+   "dur": 2.8,
+   "mode": "fit"
+  },
+  {
+   "clip": "wd1_1",
+   "start": 6.0,
+   "dur": 2.6,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:0"
+  },
+  {
+   "clip": "wd6",
+   "start": 6.3,
+   "dur": 3.0,
+   "mode": "fit",
+   "crop": "crop=iw*0.94:ih*0.94:iw*0.03:ih*0.03"
+  },
+  {
+   "clip": "wed1131",
+   "start": 0.3,
+   "dur": 2.6,
+   "mode": "fit",
+   "slow": 1.35
+  },
+  {
+   "clip": "vcl3",
+   "start": 26.0,
+   "dur": 3.6,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.92:0:0"
+  }
+ ],
+ "texts": [
+  {
+   "text": "Look closely at",
+   "a": 0,
+   "b": 2.8,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "Diana\u2019s bouquet.",
+   "a": 0,
+   "b": 2.8,
+   "y": 1262,
+   "size": 84
+  },
+  {
+   "text": "Among the gardenias:",
+   "a": 2.8,
+   "b": 5.4,
+   "y": 1170,
+   "size": 72
+  },
+  {
+   "text": "a sprig of myrtle.",
+   "a": 2.8,
+   "b": 5.4,
+   "y": 1262,
+   "size": 78
+  },
+  {
+   "text": "It came from a bush",
+   "a": 5.4,
+   "b": 8.4,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "at Queen Victoria\u2019s home.",
+   "a": 5.4,
+   "b": 8.4,
+   "y": 1262,
+   "size": 66
+  },
+  {
+   "text": "Kate\u2019s bouquet",
+   "a": 8.4,
+   "b": 11.0,
+   "y": 1170,
+   "size": 80
+  },
+  {
+   "text": "had it too, in 2011.",
+   "a": 8.4,
+   "b": 11.0,
+   "y": 1262,
+   "size": 74
+  },
+  {
+   "text": "Some things are",
+   "a": 11.0,
+   "b": 99,
+   "y": 1170,
+   "size": 80
+  },
+  {
+   "text": "passed down, not bought.",
+   "a": 11.0,
+   "b": 99,
+   "y": 1262,
+   "size": 68
+  }
+ ],
+ "music": {
+  "file": "m711",
+  "start": 38.0
+ },
+ "name": "S41_myrtle",
+ "shade": true,
+ "check": [
+  0.5,
+  2.4,
+  4.4,
+  6.3,
+  8.3,
+  10.2,
+  12.2,
+  14.1
+ ]
+}

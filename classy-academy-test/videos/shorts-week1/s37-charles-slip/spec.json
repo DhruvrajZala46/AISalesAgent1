@@ -1,0 +1,141 @@
+{
+ "segs": [
+  {
+   "clip": "wd1_1",
+   "start": 2.6,
+   "dur": 2.6,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:0",
+   "slow": 2
+  },
+  {
+   "clip": "bal15",
+   "start": 21.7,
+   "dur": 2.8,
+   "mode": "fit",
+   "slow": 1.2
+  },
+  {
+   "clip": "wed810",
+   "start": 3.7,
+   "dur": 2.6,
+   "mode": "fit"
+  },
+  {
+   "clip": "wd1_33",
+   "start": 8.6,
+   "dur": 3.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:0"
+  },
+  {
+   "clip": "bal15",
+   "start": 32.0,
+   "dur": 2.6,
+   "mode": "fit",
+   "slow": 1.2
+  },
+  {
+   "clip": "wd1_12",
+   "start": 15.4,
+   "dur": 3.6,
+   "mode": "fill"
+  }
+ ],
+ "texts": [
+  {
+   "text": "July 29, 1981.",
+   "a": 0,
+   "b": 2.6,
+   "y": 1170,
+   "size": 84
+  },
+  {
+   "text": "St Paul\u2019s Cathedral, London",
+   "a": 0,
+   "b": 2.6,
+   "y": 1262,
+   "size": 46,
+   "small": true
+  },
+  {
+   "text": "Everyone remembers",
+   "a": 2.6,
+   "b": 5.4,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "Diana\u2019s slip.",
+   "a": 2.6,
+   "b": 5.4,
+   "y": 1262,
+   "size": 84
+  },
+  {
+   "text": "But Charles slipped too.",
+   "a": 5.4,
+   "b": 8.0,
+   "y": 1215,
+   "size": 74
+  },
+  {
+   "text": "He was meant to say",
+   "a": 8.0,
+   "b": 11.0,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "\u201call my worldly goods\u201d.",
+   "a": 8.0,
+   "b": 11.0,
+   "y": 1262,
+   "size": 70
+  },
+  {
+   "text": "The word \u201cworldly\u201d",
+   "a": 11.0,
+   "b": 13.6,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "went missing.",
+   "a": 11.0,
+   "b": 13.6,
+   "y": 1262,
+   "size": 80
+  },
+  {
+   "text": "Nobody is perfect.",
+   "a": 13.6,
+   "b": 99,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "Not even on the big day.",
+   "a": 13.6,
+   "b": 99,
+   "y": 1262,
+   "size": 68
+  }
+ ],
+ "music": {
+  "file": "m716",
+  "start": 118.0
+ },
+ "name": "S37_charles_slip",
+ "shade": true,
+ "check": [
+  0.5,
+  2.8,
+  5.1,
+  7.4,
+  9.8,
+  12.1,
+  14.4,
+  16.7
+ ]
+}

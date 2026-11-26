@@ -1,0 +1,125 @@
+{
+ "segs": [
+  {
+   "clip": "wd1_33",
+   "start": 2.4,
+   "dur": 3.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:0"
+  },
+  {
+   "clip": "wed472",
+   "start": 6.4,
+   "dur": 3.2,
+   "mode": "fit",
+   "crop": "crop=iw*0.7:ih*0.55:iw*0.12:ih*0.12"
+  },
+  {
+   "clip": "wed113",
+   "start": 17.8,
+   "dur": 2.8,
+   "mode": "fit",
+   "slow": 2
+  },
+  {
+   "clip": "wed1131",
+   "start": 0.3,
+   "dur": 2.6,
+   "mode": "fit"
+  },
+  {
+   "clip": "wd1_12",
+   "start": 12.9,
+   "dur": 3.6,
+   "mode": "fill"
+  }
+ ],
+ "texts": [
+  {
+   "text": "Diana\u2019s wedding ring",
+   "a": 0,
+   "b": 3.0,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "was made of Welsh gold.",
+   "a": 0,
+   "b": 3.0,
+   "y": 1262,
+   "size": 72
+  },
+  {
+   "text": "From the same nugget",
+   "a": 3.0,
+   "b": 6.2,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "as the Queen\u2019s ring in 1947.",
+   "a": 3.0,
+   "b": 6.2,
+   "y": 1262,
+   "size": 62
+  },
+  {
+   "text": "In 2011, Kate\u2019s ring",
+   "a": 6.2,
+   "b": 9.0,
+   "y": 1170,
+   "size": 76
+  },
+  {
+   "text": "was Welsh gold too.",
+   "a": 6.2,
+   "b": 9.0,
+   "y": 1262,
+   "size": 76
+  },
+  {
+   "text": "A royal tradition",
+   "a": 9.0,
+   "b": 11.6,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "since 1923.",
+   "a": 9.0,
+   "b": 11.6,
+   "y": 1262,
+   "size": 84
+  },
+  {
+   "text": "Some things are",
+   "a": 11.6,
+   "b": 99,
+   "y": 1170,
+   "size": 80
+  },
+  {
+   "text": "worth more than gold.",
+   "a": 11.6,
+   "b": 99,
+   "y": 1262,
+   "size": 72
+  }
+ ],
+ "music": {
+  "file": "m717",
+  "start": 168.0
+ },
+ "name": "S40_welsh_gold",
+ "shade": true,
+ "check": [
+  0.5,
+  2.5,
+  4.6,
+  6.6,
+  8.6,
+  10.6,
+  12.7,
+  14.7
+ ]
+}

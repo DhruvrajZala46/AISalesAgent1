@@ -1,0 +1,118 @@
+{
+ "segs": [
+  {
+   "clip": "wd1_12",
+   "start": 15.4,
+   "dur": 2.6,
+   "mode": "fill"
+  },
+  {
+   "clip": "pano3",
+   "start": 0.3,
+   "dur": 10.3,
+   "mode": "fit",
+   "crop": "crop=iw*0.82:ih*0.6:0:ih*0.08"
+  },
+  {
+   "clip": "pano48",
+   "start": 4.3,
+   "dur": 3.6,
+   "mode": "fill",
+   "crop": "crop=iw:ih*0.86:0:0"
+  }
+ ],
+ "texts": [
+  {
+   "text": "1981: the fairytale.",
+   "a": 0,
+   "b": 2.6,
+   "y": 1170,
+   "size": 80
+  },
+  {
+   "text": "1995: the truth.",
+   "a": 0,
+   "b": 2.6,
+   "y": 1262,
+   "size": 80
+  },
+  {
+   "text": "\u201cDo you think Mrs Parker-Bowles",
+   "a": 2.6,
+   "b": 6.9,
+   "y": 1170,
+   "size": 54
+  },
+  {
+   "text": "was a factor?\u201d",
+   "a": 2.6,
+   "b": 6.9,
+   "y": 1250,
+   "size": 66
+  },
+  {
+   "text": "BBC Panorama, November 1995",
+   "a": 2.6,
+   "b": 6.9,
+   "y": 1330,
+   "size": 44,
+   "small": true
+  },
+  {
+   "text": "\u201cWell, there were",
+   "a": 6.9,
+   "b": 8.6,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "three of us in this marriage,\u201d",
+   "a": 6.9,
+   "b": 10.0,
+   "y": 1262,
+   "size": 62
+  },
+  {
+   "text": "\u201cso it was a bit crowded.\u201d",
+   "a": 10.0,
+   "b": 12.9,
+   "y": 1215,
+   "size": 66
+  },
+  {
+   "text": "She said it",
+   "a": 12.9,
+   "b": 99,
+   "y": 1170,
+   "size": 84
+  },
+  {
+   "text": "with grace.",
+   "a": 12.9,
+   "b": 99,
+   "y": 1262,
+   "size": 84
+  }
+ ],
+ "music": {
+  "file": "m712",
+  "start": 113.0,
+  "gain": -19
+ },
+ "voice": {
+  "file": "tts/S38/voice.wav",
+  "gain": 0
+ },
+ "name": "S38_three_of_us",
+ "shade": true,
+ "check": [
+  0.5,
+  2.7,
+  4.9,
+  7.1,
+  9.4,
+  11.6,
+  13.8,
+  16.0
+ ]
+}

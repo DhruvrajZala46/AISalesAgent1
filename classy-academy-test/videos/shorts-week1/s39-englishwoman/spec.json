@@ -1,0 +1,124 @@
+{
+ "segs": [
+  {
+   "clip": "wed8114",
+   "start": 8.3,
+   "dur": 2.8,
+   "mode": "fit"
+  },
+  {
+   "clip": "wd18",
+   "start": 0.3,
+   "dur": 3.0,
+   "mode": "fit"
+  },
+  {
+   "clip": "wd1_48",
+   "start": 8.7,
+   "dur": 2.8,
+   "mode": "fit"
+  },
+  {
+   "clip": "wd1_33",
+   "start": 12.6,
+   "dur": 3.0,
+   "mode": "fit",
+   "crop": "crop=iw:ih*0.88:0:0"
+  },
+  {
+   "clip": "wd1_12",
+   "start": 9.1,
+   "dur": 3.6,
+   "mode": "fill"
+  }
+ ],
+ "texts": [
+  {
+   "text": "July 29, 1981.",
+   "a": 0,
+   "b": 2.8,
+   "y": 1170,
+   "size": 84
+  },
+  {
+   "text": "London",
+   "a": 0,
+   "b": 2.8,
+   "y": 1262,
+   "size": 46,
+   "small": true
+  },
+  {
+   "text": "Diana did something",
+   "a": 2.8,
+   "b": 5.8,
+   "y": 1170,
+   "size": 78
+  },
+  {
+   "text": "no woman had in 300 years.",
+   "a": 2.8,
+   "b": 5.8,
+   "y": 1262,
+   "size": 60
+  },
+  {
+   "text": "An Englishwoman married",
+   "a": 5.8,
+   "b": 8.6,
+   "y": 1170,
+   "size": 70
+  },
+  {
+   "text": "the heir to the throne.",
+   "a": 5.8,
+   "b": 8.6,
+   "y": 1262,
+   "size": 72
+  },
+  {
+   "text": "The last one before her:",
+   "a": 8.6,
+   "b": 11.6,
+   "y": 1170,
+   "size": 70
+  },
+  {
+   "text": "Anne Hyde, in 1660.",
+   "a": 8.6,
+   "b": 11.6,
+   "y": 1262,
+   "size": 78
+  },
+  {
+   "text": "Some brides",
+   "a": 11.6,
+   "b": 99,
+   "y": 1170,
+   "size": 84
+  },
+  {
+   "text": "make history.",
+   "a": 11.6,
+   "b": 99,
+   "y": 1262,
+   "size": 84
+  }
+ ],
+ "music": {
+  "file": "m711",
+  "start": 59.0
+ },
+ "name": "S39_englishwoman",
+ "shade": true,
+ "check": [
+  0.5,
+  2.5,
+  4.6,
+  6.6,
+  8.6,
+  10.6,
+  12.7,
+  14.7
+ ]
+}
