@@ -1,0 +1,107 @@
+{
+ "01_pipe": {
+  "take": "a",
+  "f0": 258,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.47
+ },
+ "02_pill": {
+  "take": "a",
+  "f0": 343,
+  "shift_st": 1.0,
+  "tempo": 1.08,
+  "dur": 4.06
+ },
+ "03_pipe": {
+  "take": "a",
+  "f0": 202,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 1.86
+ },
+ "04_pipe": {
+  "take": "a",
+  "f0": 280,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.64
+ },
+ "05_brain": {
+  "take": "a",
+  "f0": 132,
+  "shift_st": 0.0,
+  "tempo": 1.06,
+  "dur": 3.85
+ },
+ "06_pipe": {
+  "take": "a",
+  "f0": 298,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.81
+ },
+ "07_pill": {
+  "take": "a",
+  "f0": 206,
+  "shift_st": 1.0,
+  "tempo": 1.08,
+  "dur": 2.42
+ },
+ "08_pipe": {
+  "take": "a",
+  "f0": 197,
+  "shift_st": 0.0,
+  "tempo": 1.08,
+  "dur": 2.49
+ },
+ "09_pill": {
+  "take": "a",
+  "f0": 236,
+  "shift_st": 1.0,
+  "tempo": 1.08,
+  "dur": 2.69
+ },
+ "10_patient": {
+  "take": "a",
+  "f0": 166,
+  "shift_st": 0.0,
+  "tempo": 1.04,
+  "dur": 3.67
+ },
+ "11_doctor": {
+  "take": "a",
+  "f0": 217,
+  "shift_st": 0.0,
+  "tempo": 1.05,
+  "dur": 2.29
+ },
+ "12_patient": {
+  "take": "a",
+  "f0": 96,
+  "shift_st": 0.0,
+  "tempo": 1.04,
+  "dur": 2.56
+ },
+ "13_doctor": {
+  "take": "a",
+  "f0": 202,
+  "shift_st": 0.0,
+  "tempo": 1.05,
+  "dur": 6.88
+ },
+ "14_doctor": {
+  "take": "a",
+  "f0": 214,
+  "shift_st": 0.0,
+  "tempo": 1.05,
+  "dur": 4.99
+ },
+ "15_patient": {
+  "take": "a",
+  "f0": 169,
+  "shift_st": 0.0,
+  "tempo": 1.04,
+  "dur": 2.13
+ }
+}

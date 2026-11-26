@@ -1,0 +1,15 @@
+01	pipe	[annoyed] Hey! Why'd you stop? Keep moving!
+02	pill	[straining] I can't! I'm stuck! There's no water down here!
+03	pipe	[shocked] No water? Again?
+04	pipe	[shouting up] Hey, Brain! Send some water down here!
+05	brain	[sleepy, lazy] Nah. I swallowed it dry. I'm going to bed.
+06	pipe	[panicking] No, no, no! Don't lie down now!
+07	pill	[worried] Uh oh... I'm starting to melt.
+08	pipe	[in pain] Ow! Ow! You're burning me!
+09	pill	[guilty] Sorry! Nobody gave me any water!
+10	patient	[worried] Doctor, it burns right here every time I swallow.
+11	doctor	[calm] Did you take a pill last night without water?
+12	patient	[guilty] Yeah. Then I went straight to bed.
+13	doctor	[calm, clear] That's called pill esophagitis. The pill got stuck in your food pipe, melted there, and burned a sore into the wall.
+14	doctor	[warm, clear] Always take pills with a full glass of water, and stay sitting or standing for thirty minutes.
+15	patient	[realizing] So water is the pill's slide!

@@ -1,0 +1,182 @@
+{
+ "takes/01_pipea.mp3": {
+  "wer": 0.0,
+  "range": 32.5,
+  "dur": 2.88,
+  "txt": "Hey, why'd you stop? Keep moving!"
+ },
+ "takes/01_pipeb.mp3": {
+  "wer": 0.0,
+  "range": 32.5,
+  "dur": 2.88,
+  "txt": "Hey, why'd you stop? Keep moving!"
+ },
+ "takes/02_pilla.mp3": {
+  "wer": 0.0,
+  "range": 15.3,
+  "dur": 4.72,
+  "txt": "I can't! I'm stuck! There's no water down here!"
+ },
+ "takes/02_pillb.mp3": {
+  "wer": 0.0,
+  "range": 15.3,
+  "dur": 4.72,
+  "txt": "I can't! I'm stuck! There's no water down here!"
+ },
+ "takes/03_pipea.mp3": {
+  "wer": 0.0,
+  "range": 24.3,
+  "dur": 2.32,
+  "txt": "No water? Again?"
+ },
+ "takes/03_pipeb.mp3": {
+  "wer": 0.0,
+  "range": 24.3,
+  "dur": 2.32,
+  "txt": "No water? Again?"
+ },
+ "takes/04_pipea.mp3": {
+  "wer": 0.0,
+  "range": 17.1,
+  "dur": 3.04,
+  "txt": "Hey, Brain! Send some water down here!"
+ },
+ "takes/04_pipeb.mp3": {
+  "wer": 0.0,
+  "range": 17.1,
+  "dur": 3.04,
+  "txt": "Hey, Brain! Send some water down here!"
+ },
+ "takes/05_braina.mp3": {
+  "wer": 0.0,
+  "range": 32.2,
+  "dur": 4.4,
+  "txt": "Nah, I swallowed it dry. I'm going to bed."
+ },
+ "takes/05_brainb.mp3": {
+  "wer": 0.0,
+  "range": 32.2,
+  "dur": 4.4,
+  "txt": "Nah, I swallowed it dry. I'm going to bed."
+ },
+ "takes/06_pipea.mp3": {
+  "wer": 0.0,
+  "range": 7.6,
+  "dur": 3.28,
+  "txt": "No! No! No! Don't lie down now!"
+ },
+ "takes/06_pipeb.mp3": {
+  "wer": 0.0,
+  "range": 7.6,
+  "dur": 3.28,
+  "txt": "No! No! No! Don't lie down now!"
+ },
+ "takes/07_pilla.mp3": {
+  "wer": 0.0,
+  "range": 24.2,
+  "dur": 2.96,
+  "txt": "Uh-oh. I'm starting to melt."
+ },
+ "takes/07_pillb.mp3": {
+  "wer": 0.0,
+  "range": 24.2,
+  "dur": 2.96,
+  "txt": "Uh-oh. I'm starting to melt."
+ },
+ "takes/08_pipea.mp3": {
+  "wer": 0.0,
+  "range": 32.1,
+  "dur": 2.96,
+  "txt": "Ow! Ow! You're burning me!"
+ },
+ "takes/08_pipeb.mp3": {
+  "wer": 0.0,
+  "range": 32.1,
+  "dur": 2.96,
+  "txt": "Ow! Ow! You're burning me!"
+ },
+ "takes/09_pilla.mp3": {
+  "wer": 0.0,
+  "range": 17.3,
+  "dur": 3.28,
+  "txt": "Sorry, nobody gave me any water."
+ },
+ "takes/09_pillb.mp3": {
+  "wer": 0.0,
+  "range": 17.3,
+  "dur": 3.28,
+  "txt": "Sorry, nobody gave me any water."
+ },
+ "takes/10_patienta.mp3": {
+  "wer": 0.0,
+  "range": 33.0,
+  "dur": 4.48,
+  "txt": "Doctor it burns right here every time I swallow"
+ },
+ "takes/10_patientb.mp3": {
+  "wer": 0.0,
+  "range": 33.0,
+  "dur": 4.48,
+  "txt": "Doctor it burns right here every time I swallow"
+ },
+ "takes/11_doctora.mp3": {
+  "wer": 0.0,
+  "range": 18.9,
+  "dur": 2.88,
+  "txt": "Did you take a pill last night without water?"
+ },
+ "takes/11_doctorb.mp3": {
+  "wer": 0.0,
+  "range": 18.9,
+  "dur": 2.88,
+  "txt": "Did you take a pill last night without water?"
+ },
+ "takes/12_patienta.mp3": {
+  "wer": 0.0,
+  "range": 7.3,
+  "dur": 3.12,
+  "txt": "Yeah, then I went straight to bed."
+ },
+ "takes/12_patientb.mp3": {
+  "wer": 0.0,
+  "range": 7.3,
+  "dur": 3.12,
+  "txt": "Yeah, then I went straight to bed."
+ },
+ "takes/13_doctora.mp3": {
+  "wer": 0.05,
+  "range": 15.1,
+  "dur": 7.6,
+  "txt": "That's called pill esophagitis. The pill got stuck in your food pipe, melted there, and burned a soar into the wall."
+ },
+ "takes/13_doctorb.mp3": {
+  "wer": 0.05,
+  "range": 15.1,
+  "dur": 7.6,
+  "txt": "That's called pill esophagitis. The pill got stuck in your food pipe, melted there, and burned a soar into the wall."
+ },
+ "takes/14_doctora.mp3": {
+  "wer": 0.06,
+  "range": 16.3,
+  "dur": 5.36,
+  "txt": "Always take pills with a full glass of water and stay sitting or standing for 30 minutes."
+ },
+ "takes/14_doctorb.mp3": {
+  "wer": 0.06,
+  "range": 16.3,
+  "dur": 5.36,
+  "txt": "Always take pills with a full glass of water and stay sitting or standing for 30 minutes."
+ },
+ "takes/15_patienta.mp3": {
+  "wer": 0.0,
+  "range": 20.6,
+  "dur": 2.64,
+  "txt": "So water is the pill's slide!"
+ },
+ "takes/15_patientb.mp3": {
+  "wer": 0.0,
+  "range": 20.6,
+  "dur": 2.64,
+  "txt": "So water is the pill's slide!"
+ }
+}
