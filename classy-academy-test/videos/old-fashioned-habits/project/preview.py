@@ -10,7 +10,9 @@ def one(i, frac=0.6):
     tm = s.t0 + (s.t1 - s.t0) * frac
     for L in s.layers:
         if isinstance(L, Clip) and L.live(tm):
-            L.tin += (tm - L.t0); L.t0 = tm; L.appear = 'none'
+            off = (tm - L.t0) * L.speed
+            if L.hold: off = min(off, L.hold - 0.2)
+            L.tin += off; L.t0 = tm; L.appear = 'none'; L.hold = None
     f = s.render(tm); s.close()
     im = Image.fromarray(np.clip(f, 0, 255).astype(np.uint8)).resize((480, 270))
     return i, s.name, s.t0, im

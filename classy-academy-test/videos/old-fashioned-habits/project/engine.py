@@ -55,12 +55,12 @@ class Reader:
         pre = f'crop={crop[2]}:{crop[3]}:{crop[0]}:{crop[1]},' if crop else ''
         g = grade or ''
         if mode == 'cover':
-            vf = f'{pre}fps={FPS},scale={w}:{h}:force_original_aspect_ratio=increase:flags=lanczos,crop={w}:{h}:(iw-{w})*{focus[0]}:(ih-{h})*{focus[1]},setsar=1{g}'
+            vf = f'{pre}fps={FPS},scale={w}:{h}:force_original_aspect_ratio=increase:flags=lanczos,crop={w}:{h}:(iw-{w})*{focus[0]}:(ih-{h})*{focus[1]},unsharp=5:5:0.35,setsar=1{g}'
             args = ['-vf', vf]
         else:  # fitblur
             fc = (f'[0:v]{pre}fps={FPS},split[a][b];'
                   f'[a]scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},gblur=sigma=40,eq=brightness=-0.10:saturation=0.85[bg];'
-                  f'[b]scale=-2:{h}:flags=lanczos[fg];[bg][fg]overlay=(W-w)/2:0,setsar=1{g}')
+                  f'[b]scale=-2:{h}:flags=lanczos,unsharp=5:5:0.45[fg];[bg][fg]overlay=(W-w)/2:0,setsar=1{g}')
             args = ['-filter_complex', fc]
         cmd = ['ffmpeg', '-v', 'error', '-ss', f'{tin:.3f}', '-t', f'{dur:.2f}', '-i', src, *args,
                '-pix_fmt', 'rgb24', '-f', 'rawvideo', '-']
