@@ -74,8 +74,8 @@ class Rect(Layer):
         _paste(f, blk, x, y, p)
 
 # ---- the channel's own logo: the user's uploaded file, used exactly as provided ----
-LOGO_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'user_logo.png')
-LOGO_CORNER = 112   # px width in the corner (height follows the file's own proportions)
+LOGO_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'user_logo.jpg')
+LOGO_CORNER = 104   # px square in the corner (the file is square; proportions kept)
 _ul = {}
 def user_logo(width):
     """Load the uploaded logo unchanged: no recolouring, no opacity change; only a proportional resize."""
