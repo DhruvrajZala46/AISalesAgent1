@@ -1,0 +1,27 @@
+CREDITS AND LICENSING - "7 Old-Fashioned Habits That Make Any Outfit Look Expensive"
+
+FOOTAGE (all public domain; Prelinger Archives collection at the Internet Archive; item licence field:
+http://creativecommons.org/licenses/publicdomain/ ). Clip-by-clip log with timecodes: SOURCES.csv
+- How to Be Well Groomed (Coronet Instructional Films, 1949)  https://archive.org/details/HowtoBeW1949
+- Habit Patterns (Knickerbocker Productions / McGraw-Hill, 1954)  https://archive.org/details/HabitPat1954
+- Speech: Platform Posture and Appearance (Centron Corporation, 1949)  https://archive.org/details/SpeechPl1949
+- Body Care and Grooming (1948)  https://archive.org/details/BodyCare1948
+- Office Etiquette (Encyclopaedia Britannica Films, 1950)  https://archive.org/details/OfficeEt1950
+- Aristocrats of Fashion (Roland Reed Productions for American Bemberg Corp., c. 1940)  https://archive.org/details/Aristocr1940
+- Fashion Horizons (Harry D. Donahue for TWA and others, 1940)  https://archive.org/details/FashionH1940
+- Design for Dreaming (MPO Productions for General Motors, 1956)  https://archive.org/details/Designfo1956
+- The Girl on the Magazine Cover (Jam Handy Organization for Chevrolet, 1940)  https://archive.org/details/Girlonth1940
+- Harper's Bazaar Talks Fashion (c. 1971)  https://archive.org/details/HarpersBazaa
+- A Story of Shoes, Part II  https://archive.org/details/story_of_shoes_2
+Films courtesy of the Prelinger Archives (credit given voluntarily; not required for public-domain works).
+
+MUSIC
+- Frederic Chopin, Nocturne Op. 55 No. 2 and Nocturne Op. 72 No. 1, recordings from "Musopen - The Complete
+  Chopin Collection", released under CC0 1.0 (public domain dedication). https://archive.org/details/musopen-chopin
+
+VOICE
+- Narration synthesised with Kokoro-82M (Apache-2.0 licensed model), voice af_heart.
+
+FONTS (SIL Open Font License 1.1): Pinyon Script, Prata, Cormorant (Google Fonts).
+
+LOGO: The Classy Elegance logo, supplied by the channel owner.

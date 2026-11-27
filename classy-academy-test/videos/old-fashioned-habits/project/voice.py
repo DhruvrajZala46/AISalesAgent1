@@ -4,7 +4,7 @@ SR=24000
 keys=[l.split('|',1)[0] for l in open('beats.txt') if l.strip()]
 texts={l.split('|',1)[0]:l.strip().split('|',1)[1] for l in open('beats.txt') if l.strip()}
 def gap_before(k,prev):
-    if k=='H1': return 0.7
+    if k=='H1': return 2.2
     if k[1]=='1' and k[0] in 'ABCDEFG': return 1.25   # fade to white before number card
     if k=='Z1': return 1.0
     if k in ('G6',): return 0.6

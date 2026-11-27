@@ -1,5 +1,6 @@
 # scenes.py - layers, scenes and the frame loop
-import numpy as np, subprocess, sys, json, cv2
+import numpy as np, subprocess, sys, json, cv2, os
+from PIL import Image
 from engine import *
 
 class Layer:
@@ -8,14 +9,14 @@ class Layer:
 
 class Clip(Layer):
     """A footage layer. box=None -> full frame. appear: none | top (reveal from top, the panel move) | fade | grow"""
-    def __init__(self, key, tin, t0, t1, box=None, mode='cover', crop=None, appear='none', adur=0.35, speed=1.0, focus=(0.5, 0.5)):
-        self.key, self.tin, self.t0, self.t1 = key, tin, t0, t1; self.focus = focus
+    def __init__(self, key, tin, t0, t1, box=None, mode='cover', crop=None, appear='none', adur=0.35, speed=1.0, focus=(0.5, 0.5), hold=None):
+        self.key, self.tin, self.t0, self.t1 = key, tin, t0, t1; self.focus = focus; self.hold = hold
         self.box = box or (0, 0, W, H); self.mode, self.crop = mode, crop
         self.appear, self.adur = appear, adur; self.r = None; self.speed = speed
     def draw(self, f, t):
         x, y, w, h = self.box
         if self.r is None:
-            self.r = Reader(self.key, self.tin, w, h, self.mode, self.crop, dur=(self.t1 - self.t0) * self.speed + 1.5, focus=self.focus)
+            self.r = Reader(self.key, self.tin, w, h, self.mode, self.crop, dur=self.hold if self.hold else (self.t1 - self.t0) * self.speed + 1.5, focus=self.focus)
         img = self.r.get(int((t - self.t0) * FPS * self.speed)).astype(np.float32)
         p = 1.0 if self.appear == 'none' else ease((t - self.t0) / self.adur)
         if self.appear == 'top':
@@ -72,6 +73,32 @@ class Rect(Layer):
         if isinstance(self.col, np.ndarray) and self.col.ndim == 3: blk = self.col
         _paste(f, blk, x, y, p)
 
+# ---- the channel's own logo: the user's uploaded file, used exactly as provided ----
+LOGO_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'user_logo.png')
+LOGO_CORNER = 112   # px width in the corner (height follows the file's own proportions)
+_ul = {}
+def user_logo(width):
+    """Load the uploaded logo unchanged: no recolouring, no opacity change; only a proportional resize."""
+    if width in _ul: return _ul[width]
+    if not os.path.exists(LOGO_PATH): _ul[width] = None; return None
+    im = Image.open(LOGO_PATH)
+    im = im.convert('RGBA') if ('A' in im.getbands() or im.mode == 'P') else im.convert('RGB').convert('RGBA')
+    h = round(width * im.height / im.width)
+    a = np.asarray(im.resize((width, h), Image.LANCZOS), np.float32)
+    spr = np.zeros_like(a); spr[..., :3] = a[..., :3]; spr[..., 3] = a[..., 3] / 255.0
+    _ul[width] = spr; return spr
+
+class UserLogo(Layer):
+    """Centred logo for the black intro / outro cards; fades with the card only."""
+    def __init__(self, t0, t1, width=460, fin=0.6, fout=0.6):
+        self.t0, self.t1, self.w, self.fin, self.fout = t0, t1, width, fin, fout; self.tail = 0
+    def draw(self, f, t):
+        spr = user_logo(self.w)
+        if spr is None: return
+        op = ease((t - self.t0) / self.fin) if self.fin else 1.0
+        if self.fout and t > self.t1 - self.fout: op *= max(0.0, (self.t1 - t) / self.fout)
+        blend_sprite(f, spr, W / 2, H / 2 - spr.shape[0] / 2, opacity=op)
+
 class Logo(Layer):
     def __init__(self, t0, t1, kind='white', size=118, pos=(44, 34), opacity=0.82, fade=0.0):
         self.t0, self.t1, self.kind, self.size, self.pos, self.op, self.fade = t0, t1, kind, size, pos, opacity, fade
@@ -90,11 +117,13 @@ class Scene:
         elif self.bg == 'cream': f = flat_bg(CREAM)
         elif self.bg == 'taupe': f = flat_bg(TAUPE)
         elif self.bg == 'choc': f = flat_bg(CHOC)
+        elif self.bg == 'black': f = np.zeros((H, W, 3), np.float32)
         else: f = np.zeros((H, W, 3), np.float32)
         for L in self.layers:
             if L.live(t): L.draw(f, t)
-        if self.logo: blend_sprite(f, logo('white' if self.logo is True else self.logo, 118), 44, 34,
-                                   opacity=0.82 if self.logo is True else 0.9, anchor='left')
+        if self.logo:
+            ul = user_logo(LOGO_CORNER)
+            if ul is not None: blend_sprite(f, ul, 40, 32, opacity=1.0, anchor='left')
         return f
     def close(self):
         for L in self.layers:
