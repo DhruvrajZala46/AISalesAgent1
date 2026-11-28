@@ -155,7 +155,7 @@ def build():
     sc.append(card(2, 'Clothes That Do Not Fit You', E('A6') + 0.45, E('B1') + 0.45))
     t0 = E('B1') + 0.45; tpool = Wd('B2', 'trousers')
     sc.append(Scene(t0, S('B3') - 0.1, 'caramel', [
-        PN('blazerfit11', 0.3, Wd('B2', 'blazer') - 0.1, S('B3'), PANEL2[0], crop=(0, 330, 720, 950), hold=2.8),
+        PN('blazerfit11', 0.3, t0, S('B3'), PANEL2[0], crop=(0, 330, 720, 950), hold=2.8),
         PN('trouserhem42', 11.0, tpool - 0.1, S('B3'), PANEL2[1], crop=(0, 0, 720, 1000))], trans='cut', name='fit_problems'))
     sc.append(split([LM('tailor33', 1.0, S('B3') - 0.1, S('B4'), crop=(0, 330, 720, 950))], 'caramel',
                     [('Even a beautiful piece looks inexpensive', 'serif', 50, S('B3')),
@@ -177,12 +177,12 @@ def build():
     # ---------- 3. FABRICS ----------
     sc.append(card(3, 'Shiny, Synthetic Fabrics', E('B7b') + 0.45, E('C1') + 0.45))
     t0 = E('C1') + 0.45
-    sc.append(Scene(t0, S('C3') - 0.1, 'cream', [FR('shinysatin28', 0.4, t0, S('C3'), hold=1.8)], name='shiny'))
+    sc.append(Scene(t0, S('C3') - 0.1, 'cream', [FR('shinysatin28', 0.4, t0, S('C3'), speed=0.27)], name='shiny'))
     sc.append(white_quote([('Elegant women reach for', 'serif', 52, S('C3')),
                            ('texture instead.', 'script', 96, Wd('C3', 'texture') - 0.2)], S('C3') - 0.1, S('C4') - 0.1, trans='dissolve'))
     w1, w2, w3, w4 = Wd('C4', 'wool'), Wd('C4', 'crisp'), Wd('C4', 'linen'), Wd('C4', 'silk')
     sc.append(Scene(S('C4') - 0.1, S('C5') - 0.1, 'caramel', [
-        Clip('m_woolfabric37', 0.2, w1 - 0.1, S('C5'), P4[0], 'cover', None, 'top', hold=6.0),
+        Clip('m_woolfabric37', 0.2, S('C4') - 0.1, S('C5'), P4[0], 'cover', None, 'top', hold=6.0),
         Clip('m_darkjeans5', 12.0, w2 - 0.1, S('C5'), P4[1], 'cover', (0, 200, 720, 1080), 'top'),
         Clip('m_linen15', 1.0, w3 - 0.1, S('C5'), P4[2], 'cover', None, 'top'),
         Clip('m_silk0', 19.0, w4 - 0.1, S('C5'), P4[3], 'cover', None, 'top')], trans='dissolve', name='textures'))
@@ -197,12 +197,12 @@ def build():
     sc.append(card(4, 'Heavily Distressed Denim', E('C6') + 0.45, E('D1') + 0.45))
     t0 = E('D1') + 0.45; tr = Wd('D2', 'rips')
     sc.append(Scene(t0, tr - 0.1, None, [FS('loafers23', 0.6, t0, tr, hold=3.0)], name='denim_belongs'))
-    sc.append(Scene(tr - 0.1, S('D3') - 0.1, 'cream', [FR('rippedjeans41', 0.4, tr - 0.1, S('D3'), crop=(0, 560, 720, 720), hold=1.6)],
+    sc.append(Scene(tr - 0.1, S('D3') - 0.1, 'cream', [FR('rippedjeans41', 0.4, tr - 0.1, S('D3'), crop=(0, 560, 720, 720), speed=0.3)],
                     trans='dissolve', name='ripped'))
     sc.append(Scene(S('D3') - 0.1, S('D4') - 0.1, None, [FS('darkjeans1', 0.6, S('D3') - 0.1, S('D4'))], trans='dissolve', name='intentional'))
     d1, d2, d3 = Wd('D4', 'dark'), Wd('D4', 'straight'), Wd('D4', 'clean')
     sc.append(Scene(S('D4') - 0.1, S('D4b') - 0.1, 'caramel', [
-        PN('darkjeans1', 7.3, d1 - 0.1, S('D4b'), PANEL3[0], crop=(0, 500, 720, 780)),
+        PN('darkjeans1', 7.3, S('D4') - 0.1, S('D4b'), PANEL3[0], crop=(0, 500, 720, 780)),
         PN('cobalt45', 1.0, d2 - 0.1, S('D4b'), PANEL3[1], crop=(0, 0, 720, 1100)),
         PN('trouserhem33', 0.3, d3 - 0.1, S('D4b'), PANEL3[2], crop=(0, 380, 720, 900), hold=1.5)], trans='dissolve', name='dark_wash'))
     sc.append(split([LM('whiteshirt17', 1.8, S('D4b') - 0.1, S('D5'))], 'caramel',
@@ -284,7 +284,7 @@ def build():
     sc.append(Scene(S('I4') - 0.1, S('I5') - 0.1, None, [FS('heelswalk48', 5.0, S('I4') - 0.1, S('I5'))], trans='dissolve', name='walk_gracefully'))
     f1, f2, f3, f4 = Wd('I5', 'loafers'), Wd('I5', 'ballet'), Wd('I5', 'block'), Wd('I5', 'slingback')
     sc.append(Scene(S('I5') - 0.1, S('I5b') - 0.1, 'caramel', [
-        Clip('m_shoetree26', 10.4, f1 - 0.1, S('I5b'), P4[0], 'cover', None, 'top'),
+        Clip('m_shoetree26', 10.4, S('I5') - 0.1, S('I5b'), P4[0], 'cover', None, 'top'),
         Clip('m_balletflats2', 4.0, f2 - 0.1, S('I5b'), P4[1], 'cover', (0, 600, 720, 680), 'top', hold=4.5),
         Clip('m_blockheel2', 6.0, f3 - 0.1, S('I5b'), P4[2], 'cover', None, 'top'),
         Clip('m_slingback41', 0.5, f4 - 0.1, S('I5b'), P4[3], 'cover', None, 'top')], trans='dissolve', name='good_shoes'))
@@ -297,7 +297,7 @@ def build():
     sc.append(white_quote([('None of these things', 'serif', 52, S('Z1')),
                            ('are about money.', 'script', 100, Wd('Z1', 'money') - 0.3)], E('I7') + 0.6, S('Z2') - 0.1, trans='dissolve'))
     sc.append(Scene(S('Z2') - 0.1, S('Z2b') - 0.1, None, [FS('silk40', 20.0, S('Z2') - 0.1, S('Z2b'))], trans='dissolve', name='well_fitted'))
-    sc.append(Scene(S('Z2b') - 0.1, S('Z3') - 0.1, None, [FS('simpledress34', 4.4, S('Z2b') - 0.1, S('Z3'), hold=2.6)], trans='dissolve', name='less_better'))
+    sc.append(Scene(S('Z2b') - 0.1, S('Z3') - 0.1, None, [FS('simpledress34', 4.4, S('Z2b') - 0.1, S('Z3'), speed=0.35)], trans='dissolve', name='less_better'))
     rec = [('quiet', 'leatherbag23', 9.0), ('fit', 'blazerfit30', 33.0), ('beautiful', 'woolfabric37', 5.2), ('clean', 'darkjeans1', 2.5),
            ('one', 'simpledress30', 0.5), ('calm', 'cobalt30', 0.5), ('simple', 'goldhoops0', 1.0), ('shoes', 'balletflats2', 5.5)]
     times = [S('Z3') - 0.1] + [Wd('Z3', w) - 0.1 for w, _, _ in rec[1:]] + [S('Z4') - 0.1]
