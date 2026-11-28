@@ -1,15 +1,15 @@
 # Batch 7 - Thu 26 Nov (built 26 Nov): five Shorts in the style of our top views
 
-**NOT POSTED.** Uploads were refused by Zapier (HTTP 429), and on 26 Nov the user said: "STOP AUTOMATION AND YOUR WORK NEVER POST AGAIN". Nothing from this batch is on the channel. Do not upload.
+**28 Nov: #37, #38, #40 scheduled at the owner's request; #39 and #41 not posted.** Earlier: Uploads were refused by Zapier (HTTP 429), and on 26 Nov the user said: "STOP AUTOMATION AND YOUR WORK NEVER POST AGAIN". Nothing from this batch is on the channel. Do not upload.
 
 Our top Shorts by views are single 1981 wedding/engagement secrets or slips, silent, real film (tiara 91K, wrong
 name 83K, balcony kiss 46K), and Diana's own words on film (#21 "whatever in love means" 43K). All five copy that.
 
 | # | UTC | Short | Style | Id |
 |---|---|---|---|---|
-| 37 | 26 Nov 12:00 | Charles Got His Wedding Vows Wrong Too | wedding slip (= #20) | pending |
-| 40 | 26 Nov 15:00 | Diana's Wedding Ring Was Made of Welsh Gold | wedding secret (= #25) | pending |
-| 38 | 26 Nov 17:30 | "There Were Three of Us in This Marriage" | her own words + her voice (= #21) | pending |
+| 37 | 28 Nov 12:00 | Charles Got His Wedding Vows Wrong Too | wedding slip (= #20) | wxfE3B_Oivg |
+| 40 | 29 Nov 00:00 | Diana's Wedding Ring Was Made of Welsh Gold | wedding secret (= #25) | dUv8Urieqhg |
+| 38 | 28 Nov 17:30 | "There Were Three of Us in This Marriage" | her own words + her voice (= #21) | ZurxFPPax5Y |
 | 41 | 26 Nov 21:00 | The Secret Hidden in Diana's Wedding Bouquet | wedding secret | pending |
 | 39 | 27 Nov 00:00 | Diana Did Something No Woman Had in 300 Years | wedding fact | pending |
 
