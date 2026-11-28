@@ -1,0 +1,407 @@
+{
+ "beats": [
+  {
+   "k": "H1",
+   "s": 2.2,
+   "e": 8.129,
+   "text": "Some women walk into a room in a simple outfit, and somehow, everyone notices."
+  },
+  {
+   "k": "H1b",
+   "s": 8.629,
+   "e": 14.159,
+   "text": "Not because she is wearing something expensive. Often, it is the opposite."
+  },
+  {
+   "k": "H2",
+   "s": 14.659,
+   "e": 22.579,
+   "text": "Her elegance comes from a quiet set of choices. And just as important, from the things she leaves in the shop."
+  },
+  {
+   "k": "H3",
+   "s": 23.079,
+   "e": 28.84,
+   "text": "Today, eight things elegant ladies never wear, and exactly what they wear instead."
+  },
+  {
+   "k": "H4",
+   "s": 29.34,
+   "e": 37.307,
+   "text": "A few of these might already be in your wardrobe. That is completely fine. Each one comes with a simple swap."
+  },
+  {
+   "k": "A1",
+   "s": 38.557,
+   "e": 41.86,
+   "text": "Number one. Loud, oversized logos."
+  },
+  {
+   "k": "A2",
+   "s": 42.91,
+   "e": 53.368,
+   "text": "A logo can feel like a shortcut to luxury. But when it covers the whole bag or the whole sweater, people notice the brand before they notice you."
+  },
+  {
+   "k": "A3",
+   "s": 53.868,
+   "e": 56.783,
+   "text": "Elegance rarely needs to announce itself."
+  },
+  {
+   "k": "A4",
+   "s": 57.283,
+   "e": 63.594,
+   "text": "Instead of a monogram print, choose a structured leather bag in black, tan or cream."
+  },
+  {
+   "k": "A5",
+   "s": 64.094,
+   "e": 68.885,
+   "text": "Instead of a slogan sweatshirt, try a fine knit in a soft neutral."
+  },
+  {
+   "k": "A5b",
+   "s": 69.385,
+   "e": 79.92,
+   "text": "Small details still speak, a clean stitch, good hardware, a leather that softens with time. Those are the signals elegant women notice."
+  },
+  {
+   "k": "A6",
+   "s": 80.42,
+   "e": 85.346,
+   "text": "When the quality is in the cut and the fabric, there is nothing left to prove."
+  },
+  {
+   "k": "B1",
+   "s": 86.596,
+   "e": 89.537,
+   "text": "Number two. Clothes that do not fit you."
+  },
+  {
+   "k": "B2",
+   "s": 90.587,
+   "e": 99.787,
+   "text": "This is the quiet one. A blazer that pulls across the shoulders. Buttons that gape. Trousers that pool around the ankle."
+  },
+  {
+   "k": "B3",
+   "s": 100.287,
+   "e": 104.941,
+   "text": "Even a beautiful piece looks inexpensive when it fights your body."
+  },
+  {
+   "k": "B4",
+   "s": 105.441,
+   "e": 110.287,
+   "text": "Elegant women often own fewer clothes, but almost everything fits."
+  },
+  {
+   "k": "B5",
+   "s": 110.787,
+   "e": 119.304,
+   "text": "Shoulder seams sit on the edge of the shoulder. Sleeves end at the wrist bone. Trousers just kiss the top of the shoe."
+  },
+  {
+   "k": "B6",
+   "s": 119.804,
+   "e": 127.394,
+   "text": "And here is a secret many well-dressed women share. They buy for the shoulders, and let a tailor do the rest."
+  },
+  {
+   "k": "B7",
+   "s": 127.894,
+   "e": 132.357,
+   "text": "A small alteration can make a simple blazer look made for you."
+  },
+  {
+   "k": "B7b",
+   "s": 132.857,
+   "e": 141.535,
+   "text": "Shortening sleeves or hemming trousers is one of the simplest changes a tailor can make, and it changes everything."
+  },
+  {
+   "k": "C1",
+   "s": 142.785,
+   "e": 145.849,
+   "text": "Number three. Shiny, synthetic fabrics."
+  },
+  {
+   "k": "C2",
+   "s": 146.899,
+   "e": 157.325,
+   "text": "Some fabrics catch the light in a way that looks cheap, even when the piece is new. A plastic-looking satin. A stiff, glossy polyester."
+  },
+  {
+   "k": "C3",
+   "s": 157.825,
+   "e": 160.873,
+   "text": "Elegant women reach for texture instead."
+  },
+  {
+   "k": "C4",
+   "s": 161.373,
+   "e": 170.385,
+   "text": "Wool that falls softly. Crisp cotton. Linen with its natural crease. Silk with a gentle glow rather than a shine."
+  },
+  {
+   "k": "C5",
+   "s": 170.885,
+   "e": 179.419,
+   "text": "You do not need a designer label to choose well. Read the composition on the label, and touch the fabric before you buy."
+  },
+  {
+   "k": "C6",
+   "s": 179.919,
+   "e": 185.808,
+   "text": "Often, the fabric is what people see as quality, long before they notice the cut."
+  },
+  {
+   "k": "D1",
+   "s": 187.058,
+   "e": 189.97,
+   "text": "Number four. Heavily distressed denim."
+  },
+  {
+   "k": "D2",
+   "s": 191.02,
+   "e": 201.734,
+   "text": "Denim belongs in an elegant wardrobe. But large rips, frayed holes and patchy fading can make even a polished outfit look careless."
+  },
+  {
+   "k": "D3",
+   "s": 202.234,
+   "e": 205.698,
+   "text": "The elegant version of jeans looks intentional."
+  },
+  {
+   "k": "D4",
+   "s": 206.198,
+   "e": 210.827,
+   "text": "A dark, even wash. A straight or wide leg. A clean hem."
+  },
+  {
+   "k": "D4b",
+   "s": 211.327,
+   "e": 218.392,
+   "text": "Dark denim looks dressier, holds its colour longer, and pairs with almost everything in your wardrobe."
+  },
+  {
+   "k": "D5",
+   "s": 218.892,
+   "e": 226.76,
+   "text": "Wear them with a white shirt and a camel coat, or a fine knit and loafers, and denim suddenly looks expensive."
+  },
+  {
+   "k": "E1",
+   "s": 228.01,
+   "e": 230.626,
+   "text": "Number five. Every trend at once."
+  },
+  {
+   "k": "E2",
+   "s": 231.676,
+   "e": 240.742,
+   "text": "A puff sleeve, a bold print, platform shoes and a statement bag. Each might be lovely on its own. Together, they compete."
+  },
+  {
+   "k": "E3",
+   "s": 241.242,
+   "e": 248.841,
+   "text": "Elegant women do not chase every trend. They choose the one that suits them, and let the rest pass by."
+  },
+  {
+   "k": "E4",
+   "s": 249.341,
+   "e": 254.468,
+   "text": "So keep one modern piece, and build the rest of the outfit from classics."
+  },
+  {
+   "k": "E5",
+   "s": 254.968,
+   "e": 260.301,
+   "text": "A trendy bag with a simple dress. A modern shoe with tailored trousers."
+  },
+  {
+   "k": "E5b",
+   "s": 260.801,
+   "e": 268.537,
+   "text": "If a trend makes you feel like yourself, keep it. If you are only wearing it because everyone else is, let it go."
+  },
+  {
+   "k": "E6",
+   "s": 269.037,
+   "e": 273.45,
+   "text": "The outfit looks current, but it will still look good in five years."
+  },
+  {
+   "k": "F1",
+   "s": 274.7,
+   "e": 278.227,
+   "text": "Number six. Too many competing colours and prints."
+  },
+  {
+   "k": "F2",
+   "s": 279.277,
+   "e": 285.77,
+   "text": "This is not about avoiding colour. Colour can be beautiful, and on many women it is stunning."
+  },
+  {
+   "k": "F3",
+   "s": 286.27,
+   "e": 288.134,
+   "text": "The difference is harmony."
+  },
+  {
+   "k": "F4",
+   "s": 288.634,
+   "e": 296.217,
+   "text": "When stripes, florals and four bright shades all meet in one outfit, the eye does not know where to rest."
+  },
+  {
+   "k": "F5",
+   "s": 296.717,
+   "e": 300.607,
+   "text": "Most elegant outfits are built on two or three colours."
+  },
+  {
+   "k": "F6",
+   "s": 301.107,
+   "e": 308.766,
+   "text": "Start with a calm base, like navy, cream or camel. Then let one colour, or one print, be the star."
+  },
+  {
+   "k": "F6b",
+   "s": 309.266,
+   "e": 314.785,
+   "text": "Neutrals are not boring. They are the frame that lets your chosen colour shine."
+  },
+  {
+   "k": "F7",
+   "s": 315.285,
+   "e": 322.366,
+   "text": "A cobalt blouse with cream trousers. A floral skirt with a plain knit. Bold, but calm."
+  },
+  {
+   "k": "G1",
+   "s": 323.616,
+   "e": 326.671,
+   "text": "Number seven. Accessories that compete."
+  },
+  {
+   "k": "G2",
+   "s": 327.721,
+   "e": 336.907,
+   "text": "A chunky necklace, stacked bracelets, large earrings and a busy belt, all at once. Each piece is fighting for attention."
+  },
+  {
+   "k": "G3",
+   "s": 337.407,
+   "e": 344.544,
+   "text": "Accessories are the punctuation of an outfit. Too many, and the sentence becomes hard to read."
+  },
+  {
+   "k": "G4",
+   "s": 345.044,
+   "e": 352.923,
+   "text": "Choose one piece to speak. Small gold hoops with a statement bag. Or a beautiful watch with simple studs."
+  },
+  {
+   "k": "G5",
+   "s": 353.423,
+   "e": 360.946,
+   "text": "A silk scarf, a slim leather belt, classic pearls. Pieces that work with the outfit, not against it."
+  },
+  {
+   "k": "G6",
+   "s": 361.546,
+   "e": 368.041,
+   "text": "And before you leave, look in the mirror and remove one thing. It is an old rule, and it still works."
+  },
+  {
+   "k": "I1",
+   "s": 369.291,
+   "e": 371.908,
+   "text": "Number eight. Shoes you cannot walk in."
+  },
+  {
+   "k": "I2",
+   "s": 372.958,
+   "e": 381.311,
+   "text": "A beautiful heel loses all its charm when you wobble, stop every few steps, or carry the shoes home in your hand."
+  },
+  {
+   "k": "I3",
+   "s": 381.811,
+   "e": 386.116,
+   "text": "Elegance is in the way you move. And that begins with your feet."
+  },
+  {
+   "k": "I4",
+   "s": 386.616,
+   "e": 390.324,
+   "text": "Elegant women choose shoes they can walk in gracefully."
+  },
+  {
+   "k": "I5",
+   "s": 390.824,
+   "e": 398.063,
+   "text": "Leather loafers. Ballet flats. A low block heel. A pointed slingback with a comfortable height."
+  },
+  {
+   "k": "I5b",
+   "s": 398.563,
+   "e": 405.561,
+   "text": "If you love heels, choose a height you could comfortably walk in for an hour, and practise at home first."
+  },
+  {
+   "k": "I7",
+   "s": 406.061,
+   "e": 412.985,
+   "text": "When your shoes are comfortable, you stand taller and walk with ease. And that is what people remember."
+  },
+  {
+   "k": "Z1",
+   "s": 413.985,
+   "e": 416.115,
+   "text": "None of these things are about money."
+  },
+  {
+   "k": "Z2",
+   "s": 416.615,
+   "e": 425.277,
+   "text": "A woman in a well-fitted shirt, clean denim and simple loafers can look more elegant than someone covered in logos."
+  },
+  {
+   "k": "Z2b",
+   "s": 425.777,
+   "e": 431.992,
+   "text": "Elegance is in the choices. Choosing less, but better, and caring for what you choose."
+  },
+  {
+   "k": "Z3",
+   "s": 432.492,
+   "e": 444.087,
+   "text": "Quiet logos. Clothes that fit. Beautiful fabric. Clean denim. One trend. Calm colour. Simple accessories. And shoes you can walk in."
+  },
+  {
+   "k": "Z4",
+   "s": 444.587,
+   "e": 454.04,
+   "text": "And remember, elegance was never only about clothes. It is also in how you carry yourself, and how you treat the people around you."
+  },
+  {
+   "k": "Z5",
+   "s": 454.54,
+   "e": 458.454,
+   "text": "Which of these surprised you the most? Tell us in the comments."
+  },
+  {
+   "k": "Z6",
+   "s": 458.954,
+   "e": 463.32,
+   "text": "And if you love timeless elegance, you are always welcome here."
+  }
+ ],
+ "duration": 475.82
+}
